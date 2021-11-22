@@ -7410,9 +7410,7 @@ public readonly authType: string;
 
 Specifies an authentication method for use with a channel.
 
-Supported by the webhook channel type. Only HTTP basic authentication is currently supported via the value BASIC.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#auth_type AlertChannel#auth_type}
+Supported by the webhook channel type. Only HTTP basic authentication is currently supported via the value BASIC.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#auth_type AlertChannel#auth_type}
 
 ---
 
@@ -7496,9 +7494,7 @@ public readonly includeJsonAttachment: string;
 
 true or false.
 
-Flag for whether or not to attach a JSON document containing information about the associated alert to the email that is sent to recipients.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#include_json_attachment AlertChannel#include_json_attachment}
+Flag for whether or not to attach a JSON document containing information about the associated alert to the email that is sent to recipients.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#include_json_attachment AlertChannel#include_json_attachment}
 
 ---
 
@@ -7814,9 +7810,7 @@ public readonly conditionScope: string;
 
 One of (application, instance).
 
-Choose application for most scenarios. If you are using the JVM plugin in New Relic, the instance setting allows your condition to trigger for specific app instances.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#condition_scope AlertCondition#condition_scope}
+Choose application for most scenarios. If you are using the JVM plugin in New Relic, the instance setting allows your condition to trigger for specific app instances.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#condition_scope AlertCondition#condition_scope}
 
 ---
 
@@ -7900,9 +7894,7 @@ public readonly violationCloseTimer: number;
 
 Automatically close instance-based violations, including JVM health metric violations, after the number of hours specified.
 
-Must be: 1, 2, 4, 8, 12 or 24.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#violation_close_timer AlertCondition#violation_close_timer}
+Must be: 1, 2, 4, 8, 12 or 24.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#violation_close_timer AlertCondition#violation_close_timer}
 
 ---
 
@@ -8378,9 +8370,7 @@ public readonly channelIds: number[];
 
 Array of channel IDs to apply to the specified policy.
 
-We recommended sorting channel IDs in ascending order to avoid drift your Terraform state.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel.html#channel_ids AlertPolicyChannel#channel_ids}
+We recommended sorting channel IDs in ascending order to avoid drift your Terraform state.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel.html#channel_ids AlertPolicyChannel#channel_ids}
 
 ---
 
@@ -8486,9 +8476,7 @@ public readonly channelIds: number[];
 
 An array of channel IDs (integers) to assign to the policy.
 
-Adding or removing channel IDs from this array will result in a new alert policy resource being created and the old one being destroyed. Also note that channel IDs cannot be imported via terraform import.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy.html#channel_ids AlertPolicy#channel_ids}
+Adding or removing channel IDs from this array will result in a new alert policy resource being created and the old one being destroyed. Also note that channel IDs cannot be imported via terraform import.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy.html#channel_ids AlertPolicy#channel_ids}
 
 ---
 
@@ -8800,9 +8788,7 @@ public readonly editable: string;
 
 Determines who can edit the dashboard in an account.
 
-Valid values are all, editable_by_all, editable_by_owner, or read_only. Defaults to editable_by_all.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#editable Dashboard#editable}
+Valid values are all, editable_by_all, editable_by_owner, or read_only. Defaults to editable_by_all.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#editable Dashboard#editable}
 
 ---
 
@@ -8830,9 +8816,7 @@ public readonly gridColumnCount: number;
 
 New Relic One supports a 3 column grid or a 12 column grid.
 
-New Relic Insights supports a 3 column grid.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#grid_column_count Dashboard#grid_column_count}
+New Relic Insights supports a 3 column grid.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#grid_column_count Dashboard#grid_column_count}
 
 ---
 
@@ -9724,9 +9708,7 @@ public readonly name: string;
 
 The name of the entity in New Relic One.
 
-The first entity matching this name for the given search parameters will be returned.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#name DataNewrelicEntity#name}
+The first entity matching this name for the given search parameters will be returned.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#name DataNewrelicEntity#name}
 
 ---
 
@@ -9740,9 +9722,7 @@ public readonly domain: string;
 
 The entity's domain.
 
-Valid values are APM, BROWSER, INFRA, MOBILE, SYNTH, and VIZ. If not specified, all domains are searched.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#domain DataNewrelicEntity#domain}
+Valid values are APM, BROWSER, INFRA, MOBILE, SYNTH, and VIZ. If not specified, all domains are searched.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#domain DataNewrelicEntity#domain}
 
 ---
 
@@ -10220,9 +10200,7 @@ public readonly key: string;
 
 The secure credential's key name.
 
-Regardless of the case used in the configuration, the provider will provide an upcased key to the underlying API.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential.html#key DataNewrelicSyntheticsSecureCredential#key}
+Regardless of the case used in the configuration, the provider will provide an upcased key to the underlying API.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential.html#key DataNewrelicSyntheticsSecureCredential#key}
 
 ---
 
@@ -10600,9 +10578,7 @@ public readonly comparison: string;
 
 The operator used to evaluate the threshold value.
 
-Valid values are above, below, and equal. Supported by the infra_metric and infra_process_running condition types.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#comparison InfraAlertCondition#comparison}
+Valid values are above, below, and equal. Supported by the infra_metric and infra_process_running condition types.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#comparison InfraAlertCondition#comparison}
 
 ---
 
@@ -10714,9 +10690,7 @@ public readonly select: string;
 
 The attribute name to identify the metric being targeted;
 
-for example, cpuPercent, diskFreePercent, or memoryResidentSizeBytes. The underlying API will automatically populate this value for Infrastructure integrations (for example diskFreePercent), so make sure to explicitly include this value to avoid diff issues. Supported by the infra_metric condition type.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#select InfraAlertCondition#select}
+for example, cpuPercent, diskFreePercent, or memoryResidentSizeBytes. The underlying API will automatically populate this value for Infrastructure integrations (for example diskFreePercent), so make sure to explicitly include this value to avoid diff issues. Supported by the infra_metric condition type.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#select InfraAlertCondition#select}
 
 ---
 
@@ -10730,9 +10704,7 @@ public readonly violationCloseTimer: number;
 
 Determines how much time, in hours, will pass before a violation is automatically closed.
 
-Valid values are 1, 2, 4, 8, 12, 24, 48, or 72
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#violation_close_timer InfraAlertCondition#violation_close_timer}
+Valid values are 1, 2, 4, 8, 12, 24, 48, or 72  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#violation_close_timer InfraAlertCondition#violation_close_timer}
 
 ---
 
@@ -11020,9 +10992,7 @@ public readonly type: string;
 
 Specify the type for the attribute value.
 
-This is useful when passing integer or float values to Insights. Allowed values are string, int, or float. Defaults to string.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html#type InsightsEvent#type}
+This is useful when passing integer or float values to Insights. Allowed values are string, int, or float. Defaults to string.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html#type InsightsEvent#type}
 
 ---
 
@@ -11324,9 +11294,7 @@ public readonly aggregationDelay: number;
 
 How long we wait for data that belongs in each aggregation window.
 
-Depending on your data, a longer delay may increase accuracy but delay notifications. Use aggregationDelay with the EVENT_FLOW and CADENCE aggregation methods.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#aggregation_delay NrqlAlertCondition#aggregation_delay}
+Depending on your data, a longer delay may increase accuracy but delay notifications. Use aggregationDelay with the EVENT_FLOW and CADENCE aggregation methods.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#aggregation_delay NrqlAlertCondition#aggregation_delay}
 
 ---
 
@@ -11340,9 +11308,7 @@ public readonly aggregationMethod: string;
 
 The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for violations.
 
-Default is CADENCE.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#aggregation_method NrqlAlertCondition#aggregation_method}
+Default is CADENCE.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#aggregation_method NrqlAlertCondition#aggregation_method}
 
 ---
 
@@ -11356,9 +11322,7 @@ public readonly aggregationTimer: number;
 
 How long we wait after each data point arrives to make sure we've processed the whole batch.
 
-Use aggregationTimer with the EVENT_TIMER aggregation method.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#aggregation_timer NrqlAlertCondition#aggregation_timer}
+Use aggregationTimer with the EVENT_TIMER aggregation method.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#aggregation_timer NrqlAlertCondition#aggregation_timer}
 
 ---
 
@@ -11484,9 +11448,7 @@ public readonly fillOption: string;
 
 Which strategy to use when filling gaps in the signal.
 
-If static, the 'fill value' will be used for filling gaps in the signal. Valid values are: 'NONE', 'LAST_VALUE', or 'STATIC' (case insensitive).
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#fill_option NrqlAlertCondition#fill_option}
+If static, the 'fill value' will be used for filling gaps in the signal. Valid values are: 'NONE', 'LAST_VALUE', or 'STATIC' (case insensitive).  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#fill_option NrqlAlertCondition#fill_option}
 
 ---
 
@@ -11612,9 +11574,7 @@ public readonly violationTimeLimit: string;
 
 Sets a time limit, in hours, that will automatically force-close a long-lasting violation after the time limit you select.
 
-Possible values are 'ONE_HOUR', 'TWO_HOURS', 'FOUR_HOURS', 'EIGHT_HOURS', 'TWELVE_HOURS', 'TWENTY_FOUR_HOURS', 'THIRTY_DAYS' (case insensitive).
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#violation_time_limit NrqlAlertCondition#violation_time_limit}
+Possible values are 'ONE_HOUR', 'TWO_HOURS', 'FOUR_HOURS', 'EIGHT_HOURS', 'TWELVE_HOURS', 'TWENTY_FOUR_HOURS', 'THIRTY_DAYS' (case insensitive).  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#violation_time_limit NrqlAlertCondition#violation_time_limit}
 
 ---
 
@@ -11628,9 +11588,7 @@ public readonly violationTimeLimitSeconds: number;
 
 Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you select.
 
-Must be in the range of 300 to 2592000 (inclusive)
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#violation_time_limit_seconds NrqlAlertCondition#violation_time_limit_seconds}
+Must be in the range of 300 to 2592000 (inclusive)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#violation_time_limit_seconds NrqlAlertCondition#violation_time_limit_seconds}
 
 ---
 
@@ -11710,9 +11668,7 @@ public readonly thresholdDuration: number;
 
 The duration, in seconds, that the threshold must violate in order to create a violation.
 
-Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline and outlier conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_duration NrqlAlertCondition#threshold_duration}
+Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline and outlier conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_duration NrqlAlertCondition#threshold_duration}
 
 ---
 
@@ -11726,9 +11682,7 @@ public readonly thresholdOccurrences: string;
 
 The criteria for how many data points must be in violation for the specified threshold duration.
 
-Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
+Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
 
 ---
 
@@ -11778,9 +11732,7 @@ public readonly evaluationOffset: number;
 
 NRQL queries are evaluated in one-minute time windows.
 
-The start time depends on the value you provide in the NRQL condition's `evaluation_offset`.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#evaluation_offset NrqlAlertCondition#evaluation_offset}
+The start time depends on the value you provide in the NRQL condition's `evaluation_offset`.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#evaluation_offset NrqlAlertCondition#evaluation_offset}
 
 ---
 
@@ -11794,9 +11746,7 @@ public readonly sinceValue: string;
 
 NRQL queries are evaluated in one-minute time windows.
 
-The start time depends on the value you provide in the NRQL condition's `since_value`.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#since_value NrqlAlertCondition#since_value}
+The start time depends on the value you provide in the NRQL condition's `since_value`.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#since_value NrqlAlertCondition#since_value}
 
 ---
 
@@ -11876,9 +11826,7 @@ public readonly thresholdDuration: number;
 
 The duration, in seconds, that the threshold must violate in order to create a violation.
 
-Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline and outlier conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_duration NrqlAlertCondition#threshold_duration}
+Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline and outlier conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_duration NrqlAlertCondition#threshold_duration}
 
 ---
 
@@ -11892,9 +11840,7 @@ public readonly thresholdOccurrences: string;
 
 The criteria for how many data points must be in violation for the specified threshold duration.
 
-Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
+Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
 
 ---
 
@@ -11974,9 +11920,7 @@ public readonly thresholdDuration: number;
 
 The duration, in seconds, that the threshold must violate in order to create a violation.
 
-Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline and outlier conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_duration NrqlAlertCondition#threshold_duration}
+Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline and outlier conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_duration NrqlAlertCondition#threshold_duration}
 
 ---
 
@@ -11990,9 +11934,7 @@ public readonly thresholdOccurrences: string;
 
 The criteria for how many data points must be in violation for the specified threshold duration.
 
-Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
+Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
 
 ---
 
@@ -15302,9 +15244,7 @@ public readonly frequency: number;
 
 The interval (in minutes) at which this monitor should run.
 
-Valid values are 1, 5, 10, 15, 30, 60, 360, 720, or 1440.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#frequency SyntheticsMonitor#frequency}
+Valid values are 1, 5, 10, 15, 30, 60, 360, 720, or 1440.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#frequency SyntheticsMonitor#frequency}
 
 ---
 
@@ -15694,9 +15634,7 @@ public readonly violationTimeLimitSeconds: number;
 
 The maximum number of seconds a violation can remain open before being closed by the system.
 
-Must be one of: 0, 3600, 7200, 14400, 28800, 43200, 86400
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#violation_time_limit_seconds SyntheticsMultilocationAlertCondition#violation_time_limit_seconds}
+Must be one of: 0, 3600, 7200, 14400, 28800, 43200, 86400  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#violation_time_limit_seconds SyntheticsMultilocationAlertCondition#violation_time_limit_seconds}
 
 ---
 
@@ -15850,9 +15788,7 @@ public readonly key: string;
 
 The secure credential's key name.
 
-Regardless of the case used in the configuration, the provider will provide an upcased key to the underlying API.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential.html#key SyntheticsSecureCredential#key}
+Regardless of the case used in the configuration, the provider will provide an upcased key to the underlying API.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential.html#key SyntheticsSecureCredential#key}
 
 ---
 
