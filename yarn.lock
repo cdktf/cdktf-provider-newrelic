@@ -3450,10 +3450,10 @@ jsii-diff@^1.46.0:
     typescript "~3.9.10"
     yargs "^16.2.0"
 
-jsii-docgen@^4.1.9:
-  version "4.1.9"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-4.1.9.tgz#83c1eebabb212adbeba9dc8ea7530d6659aea1ac"
-  integrity sha512-w4dRWgyaI1Vl2BSQUT6OikeBawe1oPrJROvE37e7sXut60W7SrK3KorweFa9R7izt1YXsZkJ2iRzRxj5Et7Egg==
+jsii-docgen@^4.1.10:
+  version "4.1.10"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-4.1.10.tgz#a1b79594a3f1738f8e28f05ab96d3d856c15317e"
+  integrity sha512-ngJ09d5M1Tw1Po4QOjy6GsoZRwm2b0wu/61ouJZRLZo+qOuNFv++CARCLgEFv/a+/Ls5pE7mM3Uz6h7Ft/11mA==
   dependencies:
     "@jsii/spec" "^1.46.0"
     case "^1.6.3"
@@ -5374,9 +5374,9 @@ sprintf-js@~1.0.2:
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
 sscaff@^1.2.0:
-  version "1.2.137"
-  resolved "https://registry.yarnpkg.com/sscaff/-/sscaff-1.2.137.tgz#a0eeb42b7824e2a8bbe3526df6861ca68de7e308"
-  integrity sha512-2idrr9XG8Xs0r683k1gXiUcbuAuG7ep5dYTtE95lNyXMtOBGWF7DCErUEnErA617HXwoHRc2M2AgjvTJ1tvphQ==
+  version "1.2.138"
+  resolved "https://registry.yarnpkg.com/sscaff/-/sscaff-1.2.138.tgz#00e9ae0e7a2fca2e18cac27f08d85368d2e76be3"
+  integrity sha512-EaiWFpkSocWogZzsD2q7T4tCQfM3roLyCHPqaCKxxYsLrlSLplRWdtq6HUQoucG90pzud9P2lfX0fvQkkz0A3A==
 
 sshpk@^1.7.0:
   version "1.16.1"
