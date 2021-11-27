@@ -7794,7 +7794,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
+The type of condition. One of: (apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#type AlertCondition#type}
 
