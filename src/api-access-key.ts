@@ -87,7 +87,7 @@ export class ApiAccessKey extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
-    return this._accountId
+    return this._accountId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -96,11 +96,11 @@ export class ApiAccessKey extends cdktf.TerraformResource {
   }
 
   // ingest_type - computed: true, optional: true, required: false
-  private _ingestType?: string | undefined; 
+  private _ingestType?: string; 
   public get ingestType() {
     return this.getStringAttribute('ingest_type');
   }
-  public set ingestType(value: string | undefined) {
+  public set ingestType(value: string) {
     this._ingestType = value;
   }
   public resetIngestType() {
@@ -108,7 +108,7 @@ export class ApiAccessKey extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ingestTypeInput() {
-    return this._ingestType
+    return this._ingestType;
   }
 
   // key - computed: true, optional: false, required: false
@@ -126,15 +126,15 @@ export class ApiAccessKey extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get keyTypeInput() {
-    return this._keyType
+    return this._keyType;
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -142,15 +142,15 @@ export class ApiAccessKey extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // notes - computed: true, optional: true, required: false
-  private _notes?: string | undefined; 
+  private _notes?: string; 
   public get notes() {
     return this.getStringAttribute('notes');
   }
-  public set notes(value: string | undefined) {
+  public set notes(value: string) {
     this._notes = value;
   }
   public resetNotes() {
@@ -158,15 +158,15 @@ export class ApiAccessKey extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get notesInput() {
-    return this._notes
+    return this._notes;
   }
 
   // user_id - computed: true, optional: true, required: false
-  private _userId?: number | undefined; 
+  private _userId?: number; 
   public get userId() {
     return this.getNumberAttribute('user_id');
   }
-  public set userId(value: number | undefined) {
+  public set userId(value: number) {
     this._userId = value;
   }
   public resetUserId() {
@@ -174,7 +174,7 @@ export class ApiAccessKey extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get userIdInput() {
-    return this._userId
+    return this._userId;
   }
 
   // =========

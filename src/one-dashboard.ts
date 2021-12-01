@@ -53,7 +53,7 @@ export interface OneDashboardPageWidgetAreaNrqlQuery {
   readonly query: string;
 }
 
-function oneDashboardPageWidgetAreaNrqlQueryToTerraform(struct?: OneDashboardPageWidgetAreaNrqlQuery): any {
+export function oneDashboardPageWidgetAreaNrqlQueryToTerraform(struct?: OneDashboardPageWidgetAreaNrqlQuery): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -95,7 +95,7 @@ export interface OneDashboardPageWidgetArea {
   readonly nrqlQuery: OneDashboardPageWidgetAreaNrqlQuery[];
 }
 
-function oneDashboardPageWidgetAreaToTerraform(struct?: OneDashboardPageWidgetArea): any {
+export function oneDashboardPageWidgetAreaToTerraform(struct?: OneDashboardPageWidgetArea): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -125,7 +125,7 @@ export interface OneDashboardPageWidgetBarNrqlQuery {
   readonly query: string;
 }
 
-function oneDashboardPageWidgetBarNrqlQueryToTerraform(struct?: OneDashboardPageWidgetBarNrqlQuery): any {
+export function oneDashboardPageWidgetBarNrqlQueryToTerraform(struct?: OneDashboardPageWidgetBarNrqlQuery): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -179,7 +179,7 @@ export interface OneDashboardPageWidgetBar {
   readonly nrqlQuery: OneDashboardPageWidgetBarNrqlQuery[];
 }
 
-function oneDashboardPageWidgetBarToTerraform(struct?: OneDashboardPageWidgetBar): any {
+export function oneDashboardPageWidgetBarToTerraform(struct?: OneDashboardPageWidgetBar): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -211,7 +211,7 @@ export interface OneDashboardPageWidgetBillboardNrqlQuery {
   readonly query: string;
 }
 
-function oneDashboardPageWidgetBillboardNrqlQueryToTerraform(struct?: OneDashboardPageWidgetBillboardNrqlQuery): any {
+export function oneDashboardPageWidgetBillboardNrqlQueryToTerraform(struct?: OneDashboardPageWidgetBillboardNrqlQuery): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -265,7 +265,7 @@ export interface OneDashboardPageWidgetBillboard {
   readonly nrqlQuery: OneDashboardPageWidgetBillboardNrqlQuery[];
 }
 
-function oneDashboardPageWidgetBillboardToTerraform(struct?: OneDashboardPageWidgetBillboard): any {
+export function oneDashboardPageWidgetBillboardToTerraform(struct?: OneDashboardPageWidgetBillboard): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -297,7 +297,7 @@ export interface OneDashboardPageWidgetBulletNrqlQuery {
   readonly query: string;
 }
 
-function oneDashboardPageWidgetBulletNrqlQueryToTerraform(struct?: OneDashboardPageWidgetBulletNrqlQuery): any {
+export function oneDashboardPageWidgetBulletNrqlQueryToTerraform(struct?: OneDashboardPageWidgetBulletNrqlQuery): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -345,7 +345,7 @@ export interface OneDashboardPageWidgetBullet {
   readonly nrqlQuery: OneDashboardPageWidgetBulletNrqlQuery[];
 }
 
-function oneDashboardPageWidgetBulletToTerraform(struct?: OneDashboardPageWidgetBullet): any {
+export function oneDashboardPageWidgetBulletToTerraform(struct?: OneDashboardPageWidgetBullet): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -376,7 +376,7 @@ export interface OneDashboardPageWidgetFunnelNrqlQuery {
   readonly query: string;
 }
 
-function oneDashboardPageWidgetFunnelNrqlQueryToTerraform(struct?: OneDashboardPageWidgetFunnelNrqlQuery): any {
+export function oneDashboardPageWidgetFunnelNrqlQueryToTerraform(struct?: OneDashboardPageWidgetFunnelNrqlQuery): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -418,7 +418,7 @@ export interface OneDashboardPageWidgetFunnel {
   readonly nrqlQuery: OneDashboardPageWidgetFunnelNrqlQuery[];
 }
 
-function oneDashboardPageWidgetFunnelToTerraform(struct?: OneDashboardPageWidgetFunnel): any {
+export function oneDashboardPageWidgetFunnelToTerraform(struct?: OneDashboardPageWidgetFunnel): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -448,7 +448,7 @@ export interface OneDashboardPageWidgetHeatmapNrqlQuery {
   readonly query: string;
 }
 
-function oneDashboardPageWidgetHeatmapNrqlQueryToTerraform(struct?: OneDashboardPageWidgetHeatmapNrqlQuery): any {
+export function oneDashboardPageWidgetHeatmapNrqlQueryToTerraform(struct?: OneDashboardPageWidgetHeatmapNrqlQuery): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -490,7 +490,7 @@ export interface OneDashboardPageWidgetHeatmap {
   readonly nrqlQuery: OneDashboardPageWidgetHeatmapNrqlQuery[];
 }
 
-function oneDashboardPageWidgetHeatmapToTerraform(struct?: OneDashboardPageWidgetHeatmap): any {
+export function oneDashboardPageWidgetHeatmapToTerraform(struct?: OneDashboardPageWidgetHeatmap): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -520,7 +520,7 @@ export interface OneDashboardPageWidgetHistogramNrqlQuery {
   readonly query: string;
 }
 
-function oneDashboardPageWidgetHistogramNrqlQueryToTerraform(struct?: OneDashboardPageWidgetHistogramNrqlQuery): any {
+export function oneDashboardPageWidgetHistogramNrqlQueryToTerraform(struct?: OneDashboardPageWidgetHistogramNrqlQuery): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -562,7 +562,7 @@ export interface OneDashboardPageWidgetHistogram {
   readonly nrqlQuery: OneDashboardPageWidgetHistogramNrqlQuery[];
 }
 
-function oneDashboardPageWidgetHistogramToTerraform(struct?: OneDashboardPageWidgetHistogram): any {
+export function oneDashboardPageWidgetHistogramToTerraform(struct?: OneDashboardPageWidgetHistogram): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -592,7 +592,7 @@ export interface OneDashboardPageWidgetJsonNrqlQuery {
   readonly query: string;
 }
 
-function oneDashboardPageWidgetJsonNrqlQueryToTerraform(struct?: OneDashboardPageWidgetJsonNrqlQuery): any {
+export function oneDashboardPageWidgetJsonNrqlQueryToTerraform(struct?: OneDashboardPageWidgetJsonNrqlQuery): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -634,7 +634,7 @@ export interface OneDashboardPageWidgetJson {
   readonly nrqlQuery: OneDashboardPageWidgetJsonNrqlQuery[];
 }
 
-function oneDashboardPageWidgetJsonToTerraform(struct?: OneDashboardPageWidgetJson): any {
+export function oneDashboardPageWidgetJsonToTerraform(struct?: OneDashboardPageWidgetJson): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -664,7 +664,7 @@ export interface OneDashboardPageWidgetLineNrqlQuery {
   readonly query: string;
 }
 
-function oneDashboardPageWidgetLineNrqlQueryToTerraform(struct?: OneDashboardPageWidgetLineNrqlQuery): any {
+export function oneDashboardPageWidgetLineNrqlQueryToTerraform(struct?: OneDashboardPageWidgetLineNrqlQuery): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -706,7 +706,7 @@ export interface OneDashboardPageWidgetLine {
   readonly nrqlQuery: OneDashboardPageWidgetLineNrqlQuery[];
 }
 
-function oneDashboardPageWidgetLineToTerraform(struct?: OneDashboardPageWidgetLine): any {
+export function oneDashboardPageWidgetLineToTerraform(struct?: OneDashboardPageWidgetLine): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -750,7 +750,7 @@ export interface OneDashboardPageWidgetMarkdown {
   readonly width?: number;
 }
 
-function oneDashboardPageWidgetMarkdownToTerraform(struct?: OneDashboardPageWidgetMarkdown): any {
+export function oneDashboardPageWidgetMarkdownToTerraform(struct?: OneDashboardPageWidgetMarkdown): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -780,7 +780,7 @@ export interface OneDashboardPageWidgetPieNrqlQuery {
   readonly query: string;
 }
 
-function oneDashboardPageWidgetPieNrqlQueryToTerraform(struct?: OneDashboardPageWidgetPieNrqlQuery): any {
+export function oneDashboardPageWidgetPieNrqlQueryToTerraform(struct?: OneDashboardPageWidgetPieNrqlQuery): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -834,7 +834,7 @@ export interface OneDashboardPageWidgetPie {
   readonly nrqlQuery: OneDashboardPageWidgetPieNrqlQuery[];
 }
 
-function oneDashboardPageWidgetPieToTerraform(struct?: OneDashboardPageWidgetPie): any {
+export function oneDashboardPageWidgetPieToTerraform(struct?: OneDashboardPageWidgetPie): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -866,7 +866,7 @@ export interface OneDashboardPageWidgetStackedBarNrqlQuery {
   readonly query: string;
 }
 
-function oneDashboardPageWidgetStackedBarNrqlQueryToTerraform(struct?: OneDashboardPageWidgetStackedBarNrqlQuery): any {
+export function oneDashboardPageWidgetStackedBarNrqlQueryToTerraform(struct?: OneDashboardPageWidgetStackedBarNrqlQuery): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -908,7 +908,7 @@ export interface OneDashboardPageWidgetStackedBar {
   readonly nrqlQuery: OneDashboardPageWidgetStackedBarNrqlQuery[];
 }
 
-function oneDashboardPageWidgetStackedBarToTerraform(struct?: OneDashboardPageWidgetStackedBar): any {
+export function oneDashboardPageWidgetStackedBarToTerraform(struct?: OneDashboardPageWidgetStackedBar): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -938,7 +938,7 @@ export interface OneDashboardPageWidgetTableNrqlQuery {
   readonly query: string;
 }
 
-function oneDashboardPageWidgetTableNrqlQueryToTerraform(struct?: OneDashboardPageWidgetTableNrqlQuery): any {
+export function oneDashboardPageWidgetTableNrqlQueryToTerraform(struct?: OneDashboardPageWidgetTableNrqlQuery): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -992,7 +992,7 @@ export interface OneDashboardPageWidgetTable {
   readonly nrqlQuery: OneDashboardPageWidgetTableNrqlQuery[];
 }
 
-function oneDashboardPageWidgetTableToTerraform(struct?: OneDashboardPageWidgetTable): any {
+export function oneDashboardPageWidgetTableToTerraform(struct?: OneDashboardPageWidgetTable): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1102,7 +1102,7 @@ export interface OneDashboardPage {
   readonly widgetTable?: OneDashboardPageWidgetTable[];
 }
 
-function oneDashboardPageToTerraform(struct?: OneDashboardPage): any {
+export function oneDashboardPageToTerraform(struct?: OneDashboardPage): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1171,11 +1171,11 @@ export class OneDashboard extends cdktf.TerraformResource {
   // ==========
 
   // account_id - computed: true, optional: true, required: false
-  private _accountId?: number | undefined; 
+  private _accountId?: number; 
   public get accountId() {
     return this.getNumberAttribute('account_id');
   }
-  public set accountId(value: number | undefined) {
+  public set accountId(value: number) {
     this._accountId = value;
   }
   public resetAccountId() {
@@ -1183,15 +1183,15 @@ export class OneDashboard extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
-    return this._accountId
+    return this._accountId;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -1199,7 +1199,7 @@ export class OneDashboard extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // guid - computed: true, optional: false, required: false
@@ -1222,7 +1222,7 @@ export class OneDashboard extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // permalink - computed: true, optional: false, required: false
@@ -1231,11 +1231,11 @@ export class OneDashboard extends cdktf.TerraformResource {
   }
 
   // permissions - computed: false, optional: true, required: false
-  private _permissions?: string | undefined; 
+  private _permissions?: string; 
   public get permissions() {
     return this.getStringAttribute('permissions');
   }
-  public set permissions(value: string | undefined) {
+  public set permissions(value: string) {
     this._permissions = value;
   }
   public resetPermissions() {
@@ -1243,7 +1243,7 @@ export class OneDashboard extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get permissionsInput() {
-    return this._permissions
+    return this._permissions;
   }
 
   // page - computed: false, optional: false, required: true
@@ -1257,7 +1257,7 @@ export class OneDashboard extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get pageInput() {
-    return this._page
+    return this._page;
   }
 
   // =========

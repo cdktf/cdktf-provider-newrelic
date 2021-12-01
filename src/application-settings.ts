@@ -77,7 +77,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get appApdexThresholdInput() {
-    return this._appApdexThreshold
+    return this._appApdexThreshold;
   }
 
   // enable_real_user_monitoring - computed: false, optional: false, required: true
@@ -90,7 +90,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get enableRealUserMonitoringInput() {
-    return this._enableRealUserMonitoring
+    return this._enableRealUserMonitoring;
   }
 
   // end_user_apdex_threshold - computed: false, optional: false, required: true
@@ -103,7 +103,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get endUserApdexThresholdInput() {
-    return this._endUserApdexThreshold
+    return this._endUserApdexThreshold;
   }
 
   // id - computed: true, optional: true, required: false
@@ -121,7 +121,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // =========

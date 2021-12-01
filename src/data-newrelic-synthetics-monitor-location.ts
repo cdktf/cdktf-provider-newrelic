@@ -79,7 +79,7 @@ export class DataNewrelicSyntheticsMonitorLocation extends cdktf.TerraformDataSo
   }
   // Temporarily expose input value. Use with caution.
   public get labelInput() {
-    return this._label
+    return this._label;
   }
 
   // name - computed: true, optional: false, required: false

@@ -72,7 +72,7 @@ export class AlertPolicyChannel extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get channelIdsInput() {
-    return this._channelIds
+    return this._channelIds;
   }
 
   // id - computed: true, optional: true, required: false
@@ -90,7 +90,7 @@ export class AlertPolicyChannel extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get policyIdInput() {
-    return this._policyId
+    return this._policyId;
   }
 
   // =========

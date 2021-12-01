@@ -81,7 +81,7 @@ export class DataNewrelicPluginComponent extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // plugin_id - computed: false, optional: false, required: true
@@ -94,7 +94,7 @@ export class DataNewrelicPluginComponent extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get pluginIdInput() {
-    return this._pluginId
+    return this._pluginId;
   }
 
   // =========

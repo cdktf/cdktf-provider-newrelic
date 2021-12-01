@@ -64,7 +64,7 @@ export class DataNewrelicPlugin extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get guidInput() {
-    return this._guid
+    return this._guid;
   }
 
   // id - computed: true, optional: false, required: false

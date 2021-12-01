@@ -58,10 +58,10 @@ Must be unique amongst siblings in the same scope
 ##### `putConfig` <a name="@cdktf/provider-newrelic.AlertChannel.putConfig" id="cdktfprovidernewrelicalertchannelputconfig"></a>
 
 ```typescript
-public putConfig(value?: AlertChannelConfigA)
+public putConfig(value: AlertChannelConfigA)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannel.parameter.value" id="cdktfprovidernewrelicalertchannelparametervalue"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannel.parameter.value" id="cdktfprovidernewrelicalertchannelparametervalue"></a>
 
 - *Type:* [`@cdktf/provider-newrelic.AlertChannelConfigA`](#@cdktf/provider-newrelic.AlertChannelConfigA)
 
@@ -291,19 +291,19 @@ public resetViolationCloseTimer()
 | [`userDefinedMetricInput`](#cdktfprovidernewrelicalertconditionpropertyuserdefinedmetricinput) | `string` | *No description.* |
 | [`userDefinedValueFunctionInput`](#cdktfprovidernewrelicalertconditionpropertyuserdefinedvaluefunctioninput) | `string` | *No description.* |
 | [`violationCloseTimerInput`](#cdktfprovidernewrelicalertconditionpropertyviolationclosetimerinput) | `number` | *No description.* |
+| [`conditionScope`](#cdktfprovidernewrelicalertconditionpropertyconditionscope)<span title="Required">*</span> | `string` | *No description.* |
+| [`enabled`](#cdktfprovidernewrelicalertconditionpropertyenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`entities`](#cdktfprovidernewrelicalertconditionpropertyentities)<span title="Required">*</span> | `number`[] | *No description.* |
+| [`gcMetric`](#cdktfprovidernewrelicalertconditionpropertygcmetric)<span title="Required">*</span> | `string` | *No description.* |
 | [`metric`](#cdktfprovidernewrelicalertconditionpropertymetric)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertconditionpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`policyId`](#cdktfprovidernewrelicalertconditionpropertypolicyid)<span title="Required">*</span> | `number` | *No description.* |
+| [`runbookUrl`](#cdktfprovidernewrelicalertconditionpropertyrunbookurl)<span title="Required">*</span> | `string` | *No description.* |
 | [`term`](#cdktfprovidernewrelicalertconditionpropertyterm)<span title="Required">*</span> | [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | *No description.* |
 | [`type`](#cdktfprovidernewrelicalertconditionpropertytype)<span title="Required">*</span> | `string` | *No description.* |
-| [`conditionScope`](#cdktfprovidernewrelicalertconditionpropertyconditionscope) | `string` | *No description.* |
-| [`enabled`](#cdktfprovidernewrelicalertconditionpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`gcMetric`](#cdktfprovidernewrelicalertconditionpropertygcmetric) | `string` | *No description.* |
-| [`runbookUrl`](#cdktfprovidernewrelicalertconditionpropertyrunbookurl) | `string` | *No description.* |
-| [`userDefinedMetric`](#cdktfprovidernewrelicalertconditionpropertyuserdefinedmetric) | `string` | *No description.* |
-| [`userDefinedValueFunction`](#cdktfprovidernewrelicalertconditionpropertyuserdefinedvaluefunction) | `string` | *No description.* |
-| [`violationCloseTimer`](#cdktfprovidernewrelicalertconditionpropertyviolationclosetimer) | `number` | *No description.* |
+| [`userDefinedMetric`](#cdktfprovidernewrelicalertconditionpropertyuserdefinedmetric)<span title="Required">*</span> | `string` | *No description.* |
+| [`userDefinedValueFunction`](#cdktfprovidernewrelicalertconditionpropertyuserdefinedvaluefunction)<span title="Required">*</span> | `string` | *No description.* |
+| [`violationCloseTimer`](#cdktfprovidernewrelicalertconditionpropertyviolationclosetimer)<span title="Required">*</span> | `number` | *No description.* |
 
 ---
 
@@ -447,6 +447,26 @@ public readonly violationCloseTimerInput: number;
 
 ---
 
+##### `conditionScope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.conditionScope" id="cdktfprovidernewrelicalertconditionpropertyconditionscope"></a>
+
+```typescript
+public readonly conditionScope: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.enabled" id="cdktfprovidernewrelicalertconditionpropertyenabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `entities`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.entities" id="cdktfprovidernewrelicalertconditionpropertyentities"></a>
 
 ```typescript
@@ -454,6 +474,16 @@ public readonly entities: number[];
 ```
 
 - *Type:* `number`[]
+
+---
+
+##### `gcMetric`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.gcMetric" id="cdktfprovidernewrelicalertconditionpropertygcmetric"></a>
+
+```typescript
+public readonly gcMetric: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -487,6 +517,16 @@ public readonly policyId: number;
 
 ---
 
+##### `runbookUrl`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.runbookUrl" id="cdktfprovidernewrelicalertconditionpropertyrunbookurl"></a>
+
+```typescript
+public readonly runbookUrl: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `term`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.term" id="cdktfprovidernewrelicalertconditionpropertyterm"></a>
 
 ```typescript
@@ -507,47 +547,7 @@ public readonly type: string;
 
 ---
 
-##### `conditionScope`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.conditionScope" id="cdktfprovidernewrelicalertconditionpropertyconditionscope"></a>
-
-```typescript
-public readonly conditionScope: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `enabled`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.enabled" id="cdktfprovidernewrelicalertconditionpropertyenabled"></a>
-
-```typescript
-public readonly enabled: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `gcMetric`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.gcMetric" id="cdktfprovidernewrelicalertconditionpropertygcmetric"></a>
-
-```typescript
-public readonly gcMetric: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `runbookUrl`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.runbookUrl" id="cdktfprovidernewrelicalertconditionpropertyrunbookurl"></a>
-
-```typescript
-public readonly runbookUrl: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `userDefinedMetric`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.userDefinedMetric" id="cdktfprovidernewrelicalertconditionpropertyuserdefinedmetric"></a>
+##### `userDefinedMetric`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.userDefinedMetric" id="cdktfprovidernewrelicalertconditionpropertyuserdefinedmetric"></a>
 
 ```typescript
 public readonly userDefinedMetric: string;
@@ -557,7 +557,7 @@ public readonly userDefinedMetric: string;
 
 ---
 
-##### `userDefinedValueFunction`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.userDefinedValueFunction" id="cdktfprovidernewrelicalertconditionpropertyuserdefinedvaluefunction"></a>
+##### `userDefinedValueFunction`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.userDefinedValueFunction" id="cdktfprovidernewrelicalertconditionpropertyuserdefinedvaluefunction"></a>
 
 ```typescript
 public readonly userDefinedValueFunction: string;
@@ -567,7 +567,7 @@ public readonly userDefinedValueFunction: string;
 
 ---
 
-##### `violationCloseTimer`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.violationCloseTimer" id="cdktfprovidernewrelicalertconditionpropertyviolationclosetimer"></a>
+##### `violationCloseTimer`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.violationCloseTimer" id="cdktfprovidernewrelicalertconditionpropertyviolationclosetimer"></a>
 
 ```typescript
 public readonly violationCloseTimer: number;
@@ -662,10 +662,10 @@ public putCondition(value: AlertMutingRuleCondition)
 ##### `putSchedule` <a name="@cdktf/provider-newrelic.AlertMutingRule.putSchedule" id="cdktfprovidernewrelicalertmutingruleputschedule"></a>
 
 ```typescript
-public putSchedule(value?: AlertMutingRuleSchedule)
+public putSchedule(value: AlertMutingRuleSchedule)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRule.parameter.value" id="cdktfprovidernewrelicalertmutingruleparametervalue"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRule.parameter.value" id="cdktfprovidernewrelicalertmutingruleparametervalue"></a>
 
 - *Type:* [`@cdktf/provider-newrelic.AlertMutingRuleSchedule`](#@cdktf/provider-newrelic.AlertMutingRuleSchedule)
 
@@ -703,10 +703,10 @@ public resetSchedule()
 | [`enabledInput`](#cdktfprovidernewrelicalertmutingrulepropertyenabledinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`nameInput`](#cdktfprovidernewrelicalertmutingrulepropertynameinput) | `string` | *No description.* |
 | [`scheduleInput`](#cdktfprovidernewrelicalertmutingrulepropertyscheduleinput) | [`@cdktf/provider-newrelic.AlertMutingRuleSchedule`](#@cdktf/provider-newrelic.AlertMutingRuleSchedule) | *No description.* |
+| [`accountId`](#cdktfprovidernewrelicalertmutingrulepropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`description`](#cdktfprovidernewrelicalertmutingrulepropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`enabled`](#cdktfprovidernewrelicalertmutingrulepropertyenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertmutingrulepropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`accountId`](#cdktfprovidernewrelicalertmutingrulepropertyaccountid) | `number` | *No description.* |
-| [`description`](#cdktfprovidernewrelicalertmutingrulepropertydescription) | `string` | *No description.* |
 
 ---
 
@@ -800,6 +800,26 @@ public readonly scheduleInput: AlertMutingRuleSchedule;
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRule.property.accountId" id="cdktfprovidernewrelicalertmutingrulepropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRule.property.description" id="cdktfprovidernewrelicalertmutingrulepropertydescription"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRule.property.enabled" id="cdktfprovidernewrelicalertmutingrulepropertyenabled"></a>
 
 ```typescript
@@ -814,26 +834,6 @@ public readonly enabled: boolean | IResolvable;
 
 ```typescript
 public readonly name: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRule.property.accountId" id="cdktfprovidernewrelicalertmutingrulepropertyaccountid"></a>
-
-```typescript
-public readonly accountId: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `description`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRule.property.description" id="cdktfprovidernewrelicalertmutingrulepropertydescription"></a>
-
-```typescript
-public readonly description: string;
 ```
 
 - *Type:* `string`
@@ -936,10 +936,10 @@ public resetIncidentPreference()
 | [`channelIdsInput`](#cdktfprovidernewrelicalertpolicypropertychannelidsinput) | `number`[] | *No description.* |
 | [`incidentPreferenceInput`](#cdktfprovidernewrelicalertpolicypropertyincidentpreferenceinput) | `string` | *No description.* |
 | [`nameInput`](#cdktfprovidernewrelicalertpolicypropertynameinput) | `string` | *No description.* |
+| [`accountId`](#cdktfprovidernewrelicalertpolicypropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`channelIds`](#cdktfprovidernewrelicalertpolicypropertychannelids)<span title="Required">*</span> | `number`[] | *No description.* |
+| [`incidentPreference`](#cdktfprovidernewrelicalertpolicypropertyincidentpreference)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertpolicypropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`accountId`](#cdktfprovidernewrelicalertpolicypropertyaccountid) | `number` | *No description.* |
-| [`channelIds`](#cdktfprovidernewrelicalertpolicypropertychannelids) | `number`[] | *No description.* |
-| [`incidentPreference`](#cdktfprovidernewrelicalertpolicypropertyincidentpreference) | `string` | *No description.* |
 
 ---
 
@@ -993,17 +993,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertPolicy.property.name" id="cdktfprovidernewrelicalertpolicypropertyname"></a>
-
-```typescript
-public readonly name: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicy.property.accountId" id="cdktfprovidernewrelicalertpolicypropertyaccountid"></a>
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertPolicy.property.accountId" id="cdktfprovidernewrelicalertpolicypropertyaccountid"></a>
 
 ```typescript
 public readonly accountId: number;
@@ -1013,7 +1003,7 @@ public readonly accountId: number;
 
 ---
 
-##### `channelIds`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicy.property.channelIds" id="cdktfprovidernewrelicalertpolicypropertychannelids"></a>
+##### `channelIds`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertPolicy.property.channelIds" id="cdktfprovidernewrelicalertpolicypropertychannelids"></a>
 
 ```typescript
 public readonly channelIds: number[];
@@ -1023,10 +1013,20 @@ public readonly channelIds: number[];
 
 ---
 
-##### `incidentPreference`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicy.property.incidentPreference" id="cdktfprovidernewrelicalertpolicypropertyincidentpreference"></a>
+##### `incidentPreference`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertPolicy.property.incidentPreference" id="cdktfprovidernewrelicalertpolicypropertyincidentpreference"></a>
 
 ```typescript
 public readonly incidentPreference: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertPolicy.property.name" id="cdktfprovidernewrelicalertpolicypropertyname"></a>
+
+```typescript
+public readonly name: string;
 ```
 
 - *Type:* `string`
@@ -1262,11 +1262,11 @@ public resetUserId()
 | [`notesInput`](#cdktfprovidernewrelicapiaccesskeypropertynotesinput) | `string` | *No description.* |
 | [`userIdInput`](#cdktfprovidernewrelicapiaccesskeypropertyuseridinput) | `number` | *No description.* |
 | [`accountId`](#cdktfprovidernewrelicapiaccesskeypropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`ingestType`](#cdktfprovidernewrelicapiaccesskeypropertyingesttype)<span title="Required">*</span> | `string` | *No description.* |
 | [`keyType`](#cdktfprovidernewrelicapiaccesskeypropertykeytype)<span title="Required">*</span> | `string` | *No description.* |
-| [`ingestType`](#cdktfprovidernewrelicapiaccesskeypropertyingesttype) | `string` | *No description.* |
-| [`name`](#cdktfprovidernewrelicapiaccesskeypropertyname) | `string` | *No description.* |
-| [`notes`](#cdktfprovidernewrelicapiaccesskeypropertynotes) | `string` | *No description.* |
-| [`userId`](#cdktfprovidernewrelicapiaccesskeypropertyuserid) | `number` | *No description.* |
+| [`name`](#cdktfprovidernewrelicapiaccesskeypropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`notes`](#cdktfprovidernewrelicapiaccesskeypropertynotes)<span title="Required">*</span> | `string` | *No description.* |
+| [`userId`](#cdktfprovidernewrelicapiaccesskeypropertyuserid)<span title="Required">*</span> | `number` | *No description.* |
 
 ---
 
@@ -1360,6 +1360,16 @@ public readonly accountId: number;
 
 ---
 
+##### `ingestType`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ApiAccessKey.property.ingestType" id="cdktfprovidernewrelicapiaccesskeypropertyingesttype"></a>
+
+```typescript
+public readonly ingestType: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `keyType`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ApiAccessKey.property.keyType" id="cdktfprovidernewrelicapiaccesskeypropertykeytype"></a>
 
 ```typescript
@@ -1370,17 +1380,7 @@ public readonly keyType: string;
 
 ---
 
-##### `ingestType`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApiAccessKey.property.ingestType" id="cdktfprovidernewrelicapiaccesskeypropertyingesttype"></a>
-
-```typescript
-public readonly ingestType: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `name`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApiAccessKey.property.name" id="cdktfprovidernewrelicapiaccesskeypropertyname"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ApiAccessKey.property.name" id="cdktfprovidernewrelicapiaccesskeypropertyname"></a>
 
 ```typescript
 public readonly name: string;
@@ -1390,7 +1390,7 @@ public readonly name: string;
 
 ---
 
-##### `notes`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApiAccessKey.property.notes" id="cdktfprovidernewrelicapiaccesskeypropertynotes"></a>
+##### `notes`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ApiAccessKey.property.notes" id="cdktfprovidernewrelicapiaccesskeypropertynotes"></a>
 
 ```typescript
 public readonly notes: string;
@@ -1400,7 +1400,7 @@ public readonly notes: string;
 
 ---
 
-##### `userId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApiAccessKey.property.userId" id="cdktfprovidernewrelicapiaccesskeypropertyuserid"></a>
+##### `userId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ApiAccessKey.property.userId" id="cdktfprovidernewrelicapiaccesskeypropertyuserid"></a>
 
 ```typescript
 public readonly userId: number;
@@ -1651,10 +1651,10 @@ Must be unique amongst siblings in the same scope
 ##### `putFilter` <a name="@cdktf/provider-newrelic.Dashboard.putFilter" id="cdktfprovidernewrelicdashboardputfilter"></a>
 
 ```typescript
-public putFilter(value?: DashboardFilter)
+public putFilter(value: DashboardFilter)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Dashboard.parameter.value" id="cdktfprovidernewrelicdashboardparametervalue"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.parameter.value" id="cdktfprovidernewrelicdashboardparametervalue"></a>
 
 - *Type:* [`@cdktf/provider-newrelic.DashboardFilter`](#@cdktf/provider-newrelic.DashboardFilter)
 
@@ -1711,12 +1711,12 @@ public resetWidget()
 | [`titleInput`](#cdktfprovidernewrelicdashboardpropertytitleinput) | `string` | *No description.* |
 | [`visibilityInput`](#cdktfprovidernewrelicdashboardpropertyvisibilityinput) | `string` | *No description.* |
 | [`widgetInput`](#cdktfprovidernewrelicdashboardpropertywidgetinput) | [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[] | *No description.* |
+| [`editable`](#cdktfprovidernewrelicdashboardpropertyeditable)<span title="Required">*</span> | `string` | *No description.* |
+| [`gridColumnCount`](#cdktfprovidernewrelicdashboardpropertygridcolumncount)<span title="Required">*</span> | `number` | *No description.* |
+| [`icon`](#cdktfprovidernewrelicdashboardpropertyicon)<span title="Required">*</span> | `string` | *No description.* |
 | [`title`](#cdktfprovidernewrelicdashboardpropertytitle)<span title="Required">*</span> | `string` | *No description.* |
-| [`editable`](#cdktfprovidernewrelicdashboardpropertyeditable) | `string` | *No description.* |
-| [`gridColumnCount`](#cdktfprovidernewrelicdashboardpropertygridcolumncount) | `number` | *No description.* |
-| [`icon`](#cdktfprovidernewrelicdashboardpropertyicon) | `string` | *No description.* |
-| [`visibility`](#cdktfprovidernewrelicdashboardpropertyvisibility) | `string` | *No description.* |
-| [`widget`](#cdktfprovidernewrelicdashboardpropertywidget) | [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[] | *No description.* |
+| [`visibility`](#cdktfprovidernewrelicdashboardpropertyvisibility)<span title="Required">*</span> | `string` | *No description.* |
+| [`widget`](#cdktfprovidernewrelicdashboardpropertywidget)<span title="Required">*</span> | [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[] | *No description.* |
 
 ---
 
@@ -1820,6 +1820,36 @@ public readonly widgetInput: DashboardWidget[];
 
 ---
 
+##### `editable`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.editable" id="cdktfprovidernewrelicdashboardpropertyeditable"></a>
+
+```typescript
+public readonly editable: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `gridColumnCount`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.gridColumnCount" id="cdktfprovidernewrelicdashboardpropertygridcolumncount"></a>
+
+```typescript
+public readonly gridColumnCount: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `icon`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.icon" id="cdktfprovidernewrelicdashboardpropertyicon"></a>
+
+```typescript
+public readonly icon: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `title`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.title" id="cdktfprovidernewrelicdashboardpropertytitle"></a>
 
 ```typescript
@@ -1830,37 +1860,7 @@ public readonly title: string;
 
 ---
 
-##### `editable`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.editable" id="cdktfprovidernewrelicdashboardpropertyeditable"></a>
-
-```typescript
-public readonly editable: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `gridColumnCount`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.gridColumnCount" id="cdktfprovidernewrelicdashboardpropertygridcolumncount"></a>
-
-```typescript
-public readonly gridColumnCount: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `icon`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.icon" id="cdktfprovidernewrelicdashboardpropertyicon"></a>
-
-```typescript
-public readonly icon: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `visibility`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.visibility" id="cdktfprovidernewrelicdashboardpropertyvisibility"></a>
+##### `visibility`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.visibility" id="cdktfprovidernewrelicdashboardpropertyvisibility"></a>
 
 ```typescript
 public readonly visibility: string;
@@ -1870,7 +1870,7 @@ public readonly visibility: string;
 
 ---
 
-##### `widget`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.widget" id="cdktfprovidernewrelicdashboardpropertywidget"></a>
+##### `widget`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.widget" id="cdktfprovidernewrelicdashboardpropertywidget"></a>
 
 ```typescript
 public readonly widget: DashboardWidget[];
@@ -1975,9 +1975,9 @@ public resetScope()
 | [`accountIdInput`](#cdktfprovidernewrelicdatanewrelicaccountpropertyaccountidinput) | `number` | *No description.* |
 | [`nameInput`](#cdktfprovidernewrelicdatanewrelicaccountpropertynameinput) | `string` | *No description.* |
 | [`scopeInput`](#cdktfprovidernewrelicdatanewrelicaccountpropertyscopeinput) | `string` | *No description.* |
-| [`accountId`](#cdktfprovidernewrelicdatanewrelicaccountpropertyaccountid) | `number` | *No description.* |
-| [`name`](#cdktfprovidernewrelicdatanewrelicaccountpropertyname) | `string` | *No description.* |
-| [`scope`](#cdktfprovidernewrelicdatanewrelicaccountpropertyscope) | `string` | *No description.* |
+| [`accountId`](#cdktfprovidernewrelicdatanewrelicaccountpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`name`](#cdktfprovidernewrelicdatanewrelicaccountpropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`scope`](#cdktfprovidernewrelicdatanewrelicaccountpropertyscope)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
 
@@ -2021,7 +2021,7 @@ public readonly scopeInput: string;
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAccount.property.accountId" id="cdktfprovidernewrelicdatanewrelicaccountpropertyaccountid"></a>
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAccount.property.accountId" id="cdktfprovidernewrelicdatanewrelicaccountpropertyaccountid"></a>
 
 ```typescript
 public readonly accountId: number;
@@ -2031,7 +2031,7 @@ public readonly accountId: number;
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAccount.property.name" id="cdktfprovidernewrelicdatanewrelicaccountpropertyname"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAccount.property.name" id="cdktfprovidernewrelicdatanewrelicaccountpropertyname"></a>
 
 ```typescript
 public readonly name: string;
@@ -2041,7 +2041,7 @@ public readonly name: string;
 
 ---
 
-##### `scope`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAccount.property.scope" id="cdktfprovidernewrelicdatanewrelicaccountpropertyscope"></a>
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAccount.property.scope" id="cdktfprovidernewrelicdatanewrelicaccountpropertyscope"></a>
 
 ```typescript
 public readonly scope: string;
@@ -2282,9 +2282,9 @@ public resetIncidentPreference()
 | [`accountIdInput`](#cdktfprovidernewrelicdatanewrelicalertpolicypropertyaccountidinput) | `number` | *No description.* |
 | [`incidentPreferenceInput`](#cdktfprovidernewrelicdatanewrelicalertpolicypropertyincidentpreferenceinput) | `string` | *No description.* |
 | [`nameInput`](#cdktfprovidernewrelicdatanewrelicalertpolicypropertynameinput) | `string` | *No description.* |
+| [`accountId`](#cdktfprovidernewrelicdatanewrelicalertpolicypropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`incidentPreference`](#cdktfprovidernewrelicdatanewrelicalertpolicypropertyincidentpreference)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicalertpolicypropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`accountId`](#cdktfprovidernewrelicdatanewrelicalertpolicypropertyaccountid) | `number` | *No description.* |
-| [`incidentPreference`](#cdktfprovidernewrelicdatanewrelicalertpolicypropertyincidentpreference) | `string` | *No description.* |
 
 ---
 
@@ -2348,17 +2348,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertPolicy.property.name" id="cdktfprovidernewrelicdatanewrelicalertpolicypropertyname"></a>
-
-```typescript
-public readonly name: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertPolicy.property.accountId" id="cdktfprovidernewrelicdatanewrelicalertpolicypropertyaccountid"></a>
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertPolicy.property.accountId" id="cdktfprovidernewrelicdatanewrelicalertpolicypropertyaccountid"></a>
 
 ```typescript
 public readonly accountId: number;
@@ -2368,10 +2358,20 @@ public readonly accountId: number;
 
 ---
 
-##### `incidentPreference`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertPolicy.property.incidentPreference" id="cdktfprovidernewrelicdatanewrelicalertpolicypropertyincidentpreference"></a>
+##### `incidentPreference`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertPolicy.property.incidentPreference" id="cdktfprovidernewrelicdatanewrelicalertpolicypropertyincidentpreference"></a>
 
 ```typescript
 public readonly incidentPreference: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertPolicy.property.name" id="cdktfprovidernewrelicdatanewrelicalertpolicypropertyname"></a>
+
+```typescript
+public readonly name: string;
 ```
 
 - *Type:* `string`
@@ -2573,10 +2573,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTag` <a name="@cdktf/provider-newrelic.DataNewrelicEntity.putTag" id="cdktfprovidernewrelicdatanewrelicentityputtag"></a>
 
 ```typescript
-public putTag(value?: DataNewrelicEntityTag)
+public putTag(value: DataNewrelicEntityTag)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntity.parameter.value" id="cdktfprovidernewrelicdatanewrelicentityparametervalue"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntity.parameter.value" id="cdktfprovidernewrelicdatanewrelicentityparametervalue"></a>
 
 - *Type:* [`@cdktf/provider-newrelic.DataNewrelicEntityTag`](#@cdktf/provider-newrelic.DataNewrelicEntityTag)
 
@@ -2622,10 +2622,10 @@ public resetType()
 | [`nameInput`](#cdktfprovidernewrelicdatanewrelicentitypropertynameinput) | `string` | *No description.* |
 | [`tagInput`](#cdktfprovidernewrelicdatanewrelicentitypropertytaginput) | [`@cdktf/provider-newrelic.DataNewrelicEntityTag`](#@cdktf/provider-newrelic.DataNewrelicEntityTag) | *No description.* |
 | [`typeInput`](#cdktfprovidernewrelicdatanewrelicentitypropertytypeinput) | `string` | *No description.* |
+| [`domain`](#cdktfprovidernewrelicdatanewrelicentitypropertydomain)<span title="Required">*</span> | `string` | *No description.* |
+| [`ignoreCase`](#cdktfprovidernewrelicdatanewrelicentitypropertyignorecase)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicentitypropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`domain`](#cdktfprovidernewrelicdatanewrelicentitypropertydomain) | `string` | *No description.* |
-| [`ignoreCase`](#cdktfprovidernewrelicdatanewrelicentitypropertyignorecase) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`type`](#cdktfprovidernewrelicdatanewrelicentitypropertytype) | `string` | *No description.* |
+| [`type`](#cdktfprovidernewrelicdatanewrelicentitypropertytype)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
 
@@ -2739,6 +2739,26 @@ public readonly typeInput: string;
 
 ---
 
+##### `domain`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntity.property.domain" id="cdktfprovidernewrelicdatanewrelicentitypropertydomain"></a>
+
+```typescript
+public readonly domain: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `ignoreCase`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntity.property.ignoreCase" id="cdktfprovidernewrelicdatanewrelicentitypropertyignorecase"></a>
+
+```typescript
+public readonly ignoreCase: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntity.property.name" id="cdktfprovidernewrelicdatanewrelicentitypropertyname"></a>
 
 ```typescript
@@ -2749,27 +2769,7 @@ public readonly name: string;
 
 ---
 
-##### `domain`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntity.property.domain" id="cdktfprovidernewrelicdatanewrelicentitypropertydomain"></a>
-
-```typescript
-public readonly domain: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `ignoreCase`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntity.property.ignoreCase" id="cdktfprovidernewrelicdatanewrelicentitypropertyignorecase"></a>
-
-```typescript
-public readonly ignoreCase: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `type`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntity.property.type" id="cdktfprovidernewrelicdatanewrelicentitypropertytype"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntity.property.type" id="cdktfprovidernewrelicdatanewrelicentitypropertytype"></a>
 
 ```typescript
 public readonly type: string;
@@ -3570,10 +3570,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-newrelic.EntityTags.putTimeouts" id="cdktfprovidernewrelicentitytagsputtimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: EntityTagsTimeouts)
+public putTimeouts(value: EntityTagsTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EntityTags.parameter.value" id="cdktfprovidernewrelicentitytagsparametervalue"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.EntityTags.parameter.value" id="cdktfprovidernewrelicentitytagsparametervalue"></a>
 
 - *Type:* [`@cdktf/provider-newrelic.EntityTagsTimeouts`](#@cdktf/provider-newrelic.EntityTagsTimeouts)
 
@@ -3768,11 +3768,11 @@ public resetEnabled()
 | [`enabledInput`](#cdktfprovidernewreliceventstometricsrulepropertyenabledinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`nameInput`](#cdktfprovidernewreliceventstometricsrulepropertynameinput) | `string` | *No description.* |
 | [`nrqlInput`](#cdktfprovidernewreliceventstometricsrulepropertynrqlinput) | `string` | *No description.* |
+| [`accountId`](#cdktfprovidernewreliceventstometricsrulepropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`description`](#cdktfprovidernewreliceventstometricsrulepropertydescription)<span title="Required">*</span> | `string` | *No description.* |
+| [`enabled`](#cdktfprovidernewreliceventstometricsrulepropertyenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`name`](#cdktfprovidernewreliceventstometricsrulepropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`nrql`](#cdktfprovidernewreliceventstometricsrulepropertynrql)<span title="Required">*</span> | `string` | *No description.* |
-| [`accountId`](#cdktfprovidernewreliceventstometricsrulepropertyaccountid) | `number` | *No description.* |
-| [`description`](#cdktfprovidernewreliceventstometricsrulepropertydescription) | `string` | *No description.* |
-| [`enabled`](#cdktfprovidernewreliceventstometricsrulepropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 
 ---
 
@@ -3846,6 +3846,36 @@ public readonly nrqlInput: string;
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.EventsToMetricsRule.property.accountId" id="cdktfprovidernewreliceventstometricsrulepropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-newrelic.EventsToMetricsRule.property.description" id="cdktfprovidernewreliceventstometricsrulepropertydescription"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-newrelic.EventsToMetricsRule.property.enabled" id="cdktfprovidernewreliceventstometricsrulepropertyenabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.EventsToMetricsRule.property.name" id="cdktfprovidernewreliceventstometricsrulepropertyname"></a>
 
 ```typescript
@@ -3863,36 +3893,6 @@ public readonly nrql: string;
 ```
 
 - *Type:* `string`
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EventsToMetricsRule.property.accountId" id="cdktfprovidernewreliceventstometricsrulepropertyaccountid"></a>
-
-```typescript
-public readonly accountId: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `description`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EventsToMetricsRule.property.description" id="cdktfprovidernewreliceventstometricsrulepropertydescription"></a>
-
-```typescript
-public readonly description: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `enabled`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EventsToMetricsRule.property.enabled" id="cdktfprovidernewreliceventstometricsrulepropertyenabled"></a>
-
-```typescript
-public readonly enabled: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -3978,10 +3978,10 @@ Must be unique amongst siblings in the same scope
 ##### `putCritical` <a name="@cdktf/provider-newrelic.InfraAlertCondition.putCritical" id="cdktfprovidernewrelicinfraalertconditionputcritical"></a>
 
 ```typescript
-public putCritical(value?: InfraAlertConditionCritical)
+public putCritical(value: InfraAlertConditionCritical)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.parameter.value" id="cdktfprovidernewrelicinfraalertconditionparametervalue"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.parameter.value" id="cdktfprovidernewrelicinfraalertconditionparametervalue"></a>
 
 - *Type:* [`@cdktf/provider-newrelic.InfraAlertConditionCritical`](#@cdktf/provider-newrelic.InfraAlertConditionCritical)
 
@@ -3990,10 +3990,10 @@ public putCritical(value?: InfraAlertConditionCritical)
 ##### `putWarning` <a name="@cdktf/provider-newrelic.InfraAlertCondition.putWarning" id="cdktfprovidernewrelicinfraalertconditionputwarning"></a>
 
 ```typescript
-public putWarning(value?: InfraAlertConditionWarning)
+public putWarning(value: InfraAlertConditionWarning)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.parameter.value" id="cdktfprovidernewrelicinfraalertconditionparametervalue"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.parameter.value" id="cdktfprovidernewrelicinfraalertconditionparametervalue"></a>
 
 - *Type:* [`@cdktf/provider-newrelic.InfraAlertConditionWarning`](#@cdktf/provider-newrelic.InfraAlertConditionWarning)
 
@@ -4096,19 +4096,19 @@ public resetWhere()
 | [`violationCloseTimerInput`](#cdktfprovidernewrelicinfraalertconditionpropertyviolationclosetimerinput) | `number` | *No description.* |
 | [`warningInput`](#cdktfprovidernewrelicinfraalertconditionpropertywarninginput) | [`@cdktf/provider-newrelic.InfraAlertConditionWarning`](#@cdktf/provider-newrelic.InfraAlertConditionWarning) | *No description.* |
 | [`whereInput`](#cdktfprovidernewrelicinfraalertconditionpropertywhereinput) | `string` | *No description.* |
+| [`comparison`](#cdktfprovidernewrelicinfraalertconditionpropertycomparison)<span title="Required">*</span> | `string` | *No description.* |
+| [`description`](#cdktfprovidernewrelicinfraalertconditionpropertydescription)<span title="Required">*</span> | `string` | *No description.* |
+| [`enabled`](#cdktfprovidernewrelicinfraalertconditionpropertyenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`event`](#cdktfprovidernewrelicinfraalertconditionpropertyevent)<span title="Required">*</span> | `string` | *No description.* |
+| [`integrationProvider`](#cdktfprovidernewrelicinfraalertconditionpropertyintegrationprovider)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidernewrelicinfraalertconditionpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`policyId`](#cdktfprovidernewrelicinfraalertconditionpropertypolicyid)<span title="Required">*</span> | `number` | *No description.* |
+| [`processWhere`](#cdktfprovidernewrelicinfraalertconditionpropertyprocesswhere)<span title="Required">*</span> | `string` | *No description.* |
+| [`runbookUrl`](#cdktfprovidernewrelicinfraalertconditionpropertyrunbookurl)<span title="Required">*</span> | `string` | *No description.* |
+| [`select`](#cdktfprovidernewrelicinfraalertconditionpropertyselect)<span title="Required">*</span> | `string` | *No description.* |
 | [`type`](#cdktfprovidernewrelicinfraalertconditionpropertytype)<span title="Required">*</span> | `string` | *No description.* |
-| [`comparison`](#cdktfprovidernewrelicinfraalertconditionpropertycomparison) | `string` | *No description.* |
-| [`description`](#cdktfprovidernewrelicinfraalertconditionpropertydescription) | `string` | *No description.* |
-| [`enabled`](#cdktfprovidernewrelicinfraalertconditionpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`event`](#cdktfprovidernewrelicinfraalertconditionpropertyevent) | `string` | *No description.* |
-| [`integrationProvider`](#cdktfprovidernewrelicinfraalertconditionpropertyintegrationprovider) | `string` | *No description.* |
-| [`processWhere`](#cdktfprovidernewrelicinfraalertconditionpropertyprocesswhere) | `string` | *No description.* |
-| [`runbookUrl`](#cdktfprovidernewrelicinfraalertconditionpropertyrunbookurl) | `string` | *No description.* |
-| [`select`](#cdktfprovidernewrelicinfraalertconditionpropertyselect) | `string` | *No description.* |
-| [`violationCloseTimer`](#cdktfprovidernewrelicinfraalertconditionpropertyviolationclosetimer) | `number` | *No description.* |
-| [`where`](#cdktfprovidernewrelicinfraalertconditionpropertywhere) | `string` | *No description.* |
+| [`violationCloseTimer`](#cdktfprovidernewrelicinfraalertconditionpropertyviolationclosetimer)<span title="Required">*</span> | `number` | *No description.* |
+| [`where`](#cdktfprovidernewrelicinfraalertconditionpropertywhere)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
 
@@ -4312,6 +4312,56 @@ public readonly whereInput: string;
 
 ---
 
+##### `comparison`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.comparison" id="cdktfprovidernewrelicinfraalertconditionpropertycomparison"></a>
+
+```typescript
+public readonly comparison: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.description" id="cdktfprovidernewrelicinfraalertconditionpropertydescription"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.enabled" id="cdktfprovidernewrelicinfraalertconditionpropertyenabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `event`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.event" id="cdktfprovidernewrelicinfraalertconditionpropertyevent"></a>
+
+```typescript
+public readonly event: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `integrationProvider`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.integrationProvider" id="cdktfprovidernewrelicinfraalertconditionpropertyintegrationprovider"></a>
+
+```typescript
+public readonly integrationProvider: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.name" id="cdktfprovidernewrelicinfraalertconditionpropertyname"></a>
 
 ```typescript
@@ -4332,6 +4382,36 @@ public readonly policyId: number;
 
 ---
 
+##### `processWhere`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.processWhere" id="cdktfprovidernewrelicinfraalertconditionpropertyprocesswhere"></a>
+
+```typescript
+public readonly processWhere: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `runbookUrl`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.runbookUrl" id="cdktfprovidernewrelicinfraalertconditionpropertyrunbookurl"></a>
+
+```typescript
+public readonly runbookUrl: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `select`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.select" id="cdktfprovidernewrelicinfraalertconditionpropertyselect"></a>
+
+```typescript
+public readonly select: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.type" id="cdktfprovidernewrelicinfraalertconditionpropertytype"></a>
 
 ```typescript
@@ -4342,87 +4422,7 @@ public readonly type: string;
 
 ---
 
-##### `comparison`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.comparison" id="cdktfprovidernewrelicinfraalertconditionpropertycomparison"></a>
-
-```typescript
-public readonly comparison: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `description`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.description" id="cdktfprovidernewrelicinfraalertconditionpropertydescription"></a>
-
-```typescript
-public readonly description: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `enabled`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.enabled" id="cdktfprovidernewrelicinfraalertconditionpropertyenabled"></a>
-
-```typescript
-public readonly enabled: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `event`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.event" id="cdktfprovidernewrelicinfraalertconditionpropertyevent"></a>
-
-```typescript
-public readonly event: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `integrationProvider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.integrationProvider" id="cdktfprovidernewrelicinfraalertconditionpropertyintegrationprovider"></a>
-
-```typescript
-public readonly integrationProvider: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `processWhere`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.processWhere" id="cdktfprovidernewrelicinfraalertconditionpropertyprocesswhere"></a>
-
-```typescript
-public readonly processWhere: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `runbookUrl`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.runbookUrl" id="cdktfprovidernewrelicinfraalertconditionpropertyrunbookurl"></a>
-
-```typescript
-public readonly runbookUrl: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `select`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.select" id="cdktfprovidernewrelicinfraalertconditionpropertyselect"></a>
-
-```typescript
-public readonly select: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `violationCloseTimer`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.violationCloseTimer" id="cdktfprovidernewrelicinfraalertconditionpropertyviolationclosetimer"></a>
+##### `violationCloseTimer`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.violationCloseTimer" id="cdktfprovidernewrelicinfraalertconditionpropertyviolationclosetimer"></a>
 
 ```typescript
 public readonly violationCloseTimer: number;
@@ -4432,7 +4432,7 @@ public readonly violationCloseTimer: number;
 
 ---
 
-##### `where`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.where" id="cdktfprovidernewrelicinfraalertconditionpropertywhere"></a>
+##### `where`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertCondition.property.where" id="cdktfprovidernewrelicinfraalertconditionpropertywhere"></a>
 
 ```typescript
 public readonly where: string;
@@ -5109,10 +5109,10 @@ Must be unique amongst siblings in the same scope
 ##### `putCritical` <a name="@cdktf/provider-newrelic.NrqlAlertCondition.putCritical" id="cdktfprovidernewrelicnrqlalertconditionputcritical"></a>
 
 ```typescript
-public putCritical(value?: NrqlAlertConditionCritical)
+public putCritical(value: NrqlAlertConditionCritical)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.parameter.value" id="cdktfprovidernewrelicnrqlalertconditionparametervalue"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.parameter.value" id="cdktfprovidernewrelicnrqlalertconditionparametervalue"></a>
 
 - *Type:* [`@cdktf/provider-newrelic.NrqlAlertConditionCritical`](#@cdktf/provider-newrelic.NrqlAlertConditionCritical)
 
@@ -5133,10 +5133,10 @@ public putNrql(value: NrqlAlertConditionNrql)
 ##### `putWarning` <a name="@cdktf/provider-newrelic.NrqlAlertCondition.putWarning" id="cdktfprovidernewrelicnrqlalertconditionputwarning"></a>
 
 ```typescript
-public putWarning(value?: NrqlAlertConditionWarning)
+public putWarning(value: NrqlAlertConditionWarning)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.parameter.value" id="cdktfprovidernewrelicnrqlalertconditionparametervalue"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.parameter.value" id="cdktfprovidernewrelicnrqlalertconditionparametervalue"></a>
 
 - *Type:* [`@cdktf/provider-newrelic.NrqlAlertConditionWarning`](#@cdktf/provider-newrelic.NrqlAlertConditionWarning)
 
@@ -5322,30 +5322,30 @@ public resetWarning()
 | [`violationTimeLimitInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyviolationtimelimitinput) | `string` | *No description.* |
 | [`violationTimeLimitSecondsInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyviolationtimelimitsecondsinput) | `number` | *No description.* |
 | [`warningInput`](#cdktfprovidernewrelicnrqlalertconditionpropertywarninginput) | [`@cdktf/provider-newrelic.NrqlAlertConditionWarning`](#@cdktf/provider-newrelic.NrqlAlertConditionWarning) | *No description.* |
+| [`accountId`](#cdktfprovidernewrelicnrqlalertconditionpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`aggregationDelay`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationdelay)<span title="Required">*</span> | `number` | *No description.* |
+| [`aggregationMethod`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationmethod)<span title="Required">*</span> | `string` | *No description.* |
+| [`aggregationTimer`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationtimer)<span title="Required">*</span> | `number` | *No description.* |
+| [`aggregationWindow`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationwindow)<span title="Required">*</span> | `number` | *No description.* |
+| [`baselineDirection`](#cdktfprovidernewrelicnrqlalertconditionpropertybaselinedirection)<span title="Required">*</span> | `string` | *No description.* |
+| [`closeViolationsOnExpiration`](#cdktfprovidernewrelicnrqlalertconditionpropertycloseviolationsonexpiration)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`description`](#cdktfprovidernewrelicnrqlalertconditionpropertydescription)<span title="Required">*</span> | `string` | *No description.* |
+| [`enabled`](#cdktfprovidernewrelicnrqlalertconditionpropertyenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`expectedGroups`](#cdktfprovidernewrelicnrqlalertconditionpropertyexpectedgroups)<span title="Required">*</span> | `number` | *No description.* |
+| [`expirationDuration`](#cdktfprovidernewrelicnrqlalertconditionpropertyexpirationduration)<span title="Required">*</span> | `number` | *No description.* |
+| [`fillOption`](#cdktfprovidernewrelicnrqlalertconditionpropertyfilloption)<span title="Required">*</span> | `string` | *No description.* |
+| [`fillValue`](#cdktfprovidernewrelicnrqlalertconditionpropertyfillvalue)<span title="Required">*</span> | `number` | *No description.* |
+| [`ignoreOverlap`](#cdktfprovidernewrelicnrqlalertconditionpropertyignoreoverlap)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`name`](#cdktfprovidernewrelicnrqlalertconditionpropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`openViolationOnExpiration`](#cdktfprovidernewrelicnrqlalertconditionpropertyopenviolationonexpiration)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`openViolationOnGroupOverlap`](#cdktfprovidernewrelicnrqlalertconditionpropertyopenviolationongroupoverlap)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`policyId`](#cdktfprovidernewrelicnrqlalertconditionpropertypolicyid)<span title="Required">*</span> | `number` | *No description.* |
-| [`accountId`](#cdktfprovidernewrelicnrqlalertconditionpropertyaccountid) | `number` | *No description.* |
-| [`aggregationDelay`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationdelay) | `number` | *No description.* |
-| [`aggregationMethod`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationmethod) | `string` | *No description.* |
-| [`aggregationTimer`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationtimer) | `number` | *No description.* |
-| [`aggregationWindow`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationwindow) | `number` | *No description.* |
-| [`baselineDirection`](#cdktfprovidernewrelicnrqlalertconditionpropertybaselinedirection) | `string` | *No description.* |
-| [`closeViolationsOnExpiration`](#cdktfprovidernewrelicnrqlalertconditionpropertycloseviolationsonexpiration) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`description`](#cdktfprovidernewrelicnrqlalertconditionpropertydescription) | `string` | *No description.* |
-| [`enabled`](#cdktfprovidernewrelicnrqlalertconditionpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`expectedGroups`](#cdktfprovidernewrelicnrqlalertconditionpropertyexpectedgroups) | `number` | *No description.* |
-| [`expirationDuration`](#cdktfprovidernewrelicnrqlalertconditionpropertyexpirationduration) | `number` | *No description.* |
-| [`fillOption`](#cdktfprovidernewrelicnrqlalertconditionpropertyfilloption) | `string` | *No description.* |
-| [`fillValue`](#cdktfprovidernewrelicnrqlalertconditionpropertyfillvalue) | `number` | *No description.* |
-| [`ignoreOverlap`](#cdktfprovidernewrelicnrqlalertconditionpropertyignoreoverlap) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`openViolationOnExpiration`](#cdktfprovidernewrelicnrqlalertconditionpropertyopenviolationonexpiration) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`openViolationOnGroupOverlap`](#cdktfprovidernewrelicnrqlalertconditionpropertyopenviolationongroupoverlap) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`runbookUrl`](#cdktfprovidernewrelicnrqlalertconditionpropertyrunbookurl) | `string` | *No description.* |
-| [`term`](#cdktfprovidernewrelicnrqlalertconditionpropertyterm) | [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[] | *No description.* |
-| [`type`](#cdktfprovidernewrelicnrqlalertconditionpropertytype) | `string` | *No description.* |
-| [`valueFunction`](#cdktfprovidernewrelicnrqlalertconditionpropertyvaluefunction) | `string` | *No description.* |
-| [`violationTimeLimit`](#cdktfprovidernewrelicnrqlalertconditionpropertyviolationtimelimit) | `string` | *No description.* |
-| [`violationTimeLimitSeconds`](#cdktfprovidernewrelicnrqlalertconditionpropertyviolationtimelimitseconds) | `number` | *No description.* |
+| [`runbookUrl`](#cdktfprovidernewrelicnrqlalertconditionpropertyrunbookurl)<span title="Required">*</span> | `string` | *No description.* |
+| [`term`](#cdktfprovidernewrelicnrqlalertconditionpropertyterm)<span title="Required">*</span> | [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[] | *No description.* |
+| [`type`](#cdktfprovidernewrelicnrqlalertconditionpropertytype)<span title="Required">*</span> | `string` | *No description.* |
+| [`valueFunction`](#cdktfprovidernewrelicnrqlalertconditionpropertyvaluefunction)<span title="Required">*</span> | `string` | *No description.* |
+| [`violationTimeLimit`](#cdktfprovidernewrelicnrqlalertconditionpropertyviolationtimelimit)<span title="Required">*</span> | `string` | *No description.* |
+| [`violationTimeLimitSeconds`](#cdktfprovidernewrelicnrqlalertconditionpropertyviolationtimelimitseconds)<span title="Required">*</span> | `number` | *No description.* |
 
 ---
 
@@ -5659,6 +5659,146 @@ public readonly warningInput: NrqlAlertConditionWarning;
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.accountId" id="cdktfprovidernewrelicnrqlalertconditionpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `aggregationDelay`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.aggregationDelay" id="cdktfprovidernewrelicnrqlalertconditionpropertyaggregationdelay"></a>
+
+```typescript
+public readonly aggregationDelay: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `aggregationMethod`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.aggregationMethod" id="cdktfprovidernewrelicnrqlalertconditionpropertyaggregationmethod"></a>
+
+```typescript
+public readonly aggregationMethod: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `aggregationTimer`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.aggregationTimer" id="cdktfprovidernewrelicnrqlalertconditionpropertyaggregationtimer"></a>
+
+```typescript
+public readonly aggregationTimer: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `aggregationWindow`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.aggregationWindow" id="cdktfprovidernewrelicnrqlalertconditionpropertyaggregationwindow"></a>
+
+```typescript
+public readonly aggregationWindow: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `baselineDirection`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.baselineDirection" id="cdktfprovidernewrelicnrqlalertconditionpropertybaselinedirection"></a>
+
+```typescript
+public readonly baselineDirection: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `closeViolationsOnExpiration`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.closeViolationsOnExpiration" id="cdktfprovidernewrelicnrqlalertconditionpropertycloseviolationsonexpiration"></a>
+
+```typescript
+public readonly closeViolationsOnExpiration: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.description" id="cdktfprovidernewrelicnrqlalertconditionpropertydescription"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.enabled" id="cdktfprovidernewrelicnrqlalertconditionpropertyenabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `expectedGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.expectedGroups" id="cdktfprovidernewrelicnrqlalertconditionpropertyexpectedgroups"></a>
+
+```typescript
+public readonly expectedGroups: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `expirationDuration`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.expirationDuration" id="cdktfprovidernewrelicnrqlalertconditionpropertyexpirationduration"></a>
+
+```typescript
+public readonly expirationDuration: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `fillOption`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.fillOption" id="cdktfprovidernewrelicnrqlalertconditionpropertyfilloption"></a>
+
+```typescript
+public readonly fillOption: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `fillValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.fillValue" id="cdktfprovidernewrelicnrqlalertconditionpropertyfillvalue"></a>
+
+```typescript
+public readonly fillValue: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `ignoreOverlap`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.ignoreOverlap" id="cdktfprovidernewrelicnrqlalertconditionpropertyignoreoverlap"></a>
+
+```typescript
+public readonly ignoreOverlap: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.name" id="cdktfprovidernewrelicnrqlalertconditionpropertyname"></a>
 
 ```typescript
@@ -5666,6 +5806,26 @@ public readonly name: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `openViolationOnExpiration`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.openViolationOnExpiration" id="cdktfprovidernewrelicnrqlalertconditionpropertyopenviolationonexpiration"></a>
+
+```typescript
+public readonly openViolationOnExpiration: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `openViolationOnGroupOverlap`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.openViolationOnGroupOverlap" id="cdktfprovidernewrelicnrqlalertconditionpropertyopenviolationongroupoverlap"></a>
+
+```typescript
+public readonly openViolationOnGroupOverlap: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -5679,167 +5839,7 @@ public readonly policyId: number;
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.accountId" id="cdktfprovidernewrelicnrqlalertconditionpropertyaccountid"></a>
-
-```typescript
-public readonly accountId: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `aggregationDelay`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.aggregationDelay" id="cdktfprovidernewrelicnrqlalertconditionpropertyaggregationdelay"></a>
-
-```typescript
-public readonly aggregationDelay: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `aggregationMethod`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.aggregationMethod" id="cdktfprovidernewrelicnrqlalertconditionpropertyaggregationmethod"></a>
-
-```typescript
-public readonly aggregationMethod: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `aggregationTimer`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.aggregationTimer" id="cdktfprovidernewrelicnrqlalertconditionpropertyaggregationtimer"></a>
-
-```typescript
-public readonly aggregationTimer: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `aggregationWindow`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.aggregationWindow" id="cdktfprovidernewrelicnrqlalertconditionpropertyaggregationwindow"></a>
-
-```typescript
-public readonly aggregationWindow: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `baselineDirection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.baselineDirection" id="cdktfprovidernewrelicnrqlalertconditionpropertybaselinedirection"></a>
-
-```typescript
-public readonly baselineDirection: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `closeViolationsOnExpiration`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.closeViolationsOnExpiration" id="cdktfprovidernewrelicnrqlalertconditionpropertycloseviolationsonexpiration"></a>
-
-```typescript
-public readonly closeViolationsOnExpiration: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `description`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.description" id="cdktfprovidernewrelicnrqlalertconditionpropertydescription"></a>
-
-```typescript
-public readonly description: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `enabled`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.enabled" id="cdktfprovidernewrelicnrqlalertconditionpropertyenabled"></a>
-
-```typescript
-public readonly enabled: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `expectedGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.expectedGroups" id="cdktfprovidernewrelicnrqlalertconditionpropertyexpectedgroups"></a>
-
-```typescript
-public readonly expectedGroups: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `expirationDuration`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.expirationDuration" id="cdktfprovidernewrelicnrqlalertconditionpropertyexpirationduration"></a>
-
-```typescript
-public readonly expirationDuration: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `fillOption`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.fillOption" id="cdktfprovidernewrelicnrqlalertconditionpropertyfilloption"></a>
-
-```typescript
-public readonly fillOption: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `fillValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.fillValue" id="cdktfprovidernewrelicnrqlalertconditionpropertyfillvalue"></a>
-
-```typescript
-public readonly fillValue: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `ignoreOverlap`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.ignoreOverlap" id="cdktfprovidernewrelicnrqlalertconditionpropertyignoreoverlap"></a>
-
-```typescript
-public readonly ignoreOverlap: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `openViolationOnExpiration`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.openViolationOnExpiration" id="cdktfprovidernewrelicnrqlalertconditionpropertyopenviolationonexpiration"></a>
-
-```typescript
-public readonly openViolationOnExpiration: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `openViolationOnGroupOverlap`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.openViolationOnGroupOverlap" id="cdktfprovidernewrelicnrqlalertconditionpropertyopenviolationongroupoverlap"></a>
-
-```typescript
-public readonly openViolationOnGroupOverlap: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `runbookUrl`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.runbookUrl" id="cdktfprovidernewrelicnrqlalertconditionpropertyrunbookurl"></a>
+##### `runbookUrl`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.runbookUrl" id="cdktfprovidernewrelicnrqlalertconditionpropertyrunbookurl"></a>
 
 ```typescript
 public readonly runbookUrl: string;
@@ -5849,7 +5849,7 @@ public readonly runbookUrl: string;
 
 ---
 
-##### `term`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.term" id="cdktfprovidernewrelicnrqlalertconditionpropertyterm"></a>
+##### `term`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.term" id="cdktfprovidernewrelicnrqlalertconditionpropertyterm"></a>
 
 ```typescript
 public readonly term: NrqlAlertConditionTerm[];
@@ -5859,7 +5859,7 @@ public readonly term: NrqlAlertConditionTerm[];
 
 ---
 
-##### `type`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.type" id="cdktfprovidernewrelicnrqlalertconditionpropertytype"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.type" id="cdktfprovidernewrelicnrqlalertconditionpropertytype"></a>
 
 ```typescript
 public readonly type: string;
@@ -5869,7 +5869,7 @@ public readonly type: string;
 
 ---
 
-##### `valueFunction`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.valueFunction" id="cdktfprovidernewrelicnrqlalertconditionpropertyvaluefunction"></a>
+##### `valueFunction`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.valueFunction" id="cdktfprovidernewrelicnrqlalertconditionpropertyvaluefunction"></a>
 
 ```typescript
 public readonly valueFunction: string;
@@ -5879,7 +5879,7 @@ public readonly valueFunction: string;
 
 ---
 
-##### `violationTimeLimit`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.violationTimeLimit" id="cdktfprovidernewrelicnrqlalertconditionpropertyviolationtimelimit"></a>
+##### `violationTimeLimit`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.violationTimeLimit" id="cdktfprovidernewrelicnrqlalertconditionpropertyviolationtimelimit"></a>
 
 ```typescript
 public readonly violationTimeLimit: string;
@@ -5889,7 +5889,7 @@ public readonly violationTimeLimit: string;
 
 ---
 
-##### `violationTimeLimitSeconds`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.violationTimeLimitSeconds" id="cdktfprovidernewrelicnrqlalertconditionpropertyviolationtimelimitseconds"></a>
+##### `violationTimeLimitSeconds`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.violationTimeLimitSeconds" id="cdktfprovidernewrelicnrqlalertconditionpropertyviolationtimelimitseconds"></a>
 
 ```typescript
 public readonly violationTimeLimitSeconds: number;
@@ -5989,10 +5989,10 @@ public resetDescription()
 | [`actionInput`](#cdktfprovidernewrelicnrqldroprulepropertyactioninput) | `string` | *No description.* |
 | [`descriptionInput`](#cdktfprovidernewrelicnrqldroprulepropertydescriptioninput) | `string` | *No description.* |
 | [`nrqlInput`](#cdktfprovidernewrelicnrqldroprulepropertynrqlinput) | `string` | *No description.* |
+| [`accountId`](#cdktfprovidernewrelicnrqldroprulepropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
 | [`action`](#cdktfprovidernewrelicnrqldroprulepropertyaction)<span title="Required">*</span> | `string` | *No description.* |
+| [`description`](#cdktfprovidernewrelicnrqldroprulepropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`nrql`](#cdktfprovidernewrelicnrqldroprulepropertynrql)<span title="Required">*</span> | `string` | *No description.* |
-| [`accountId`](#cdktfprovidernewrelicnrqldroprulepropertyaccountid) | `number` | *No description.* |
-| [`description`](#cdktfprovidernewrelicnrqldroprulepropertydescription) | `string` | *No description.* |
 
 ---
 
@@ -6056,6 +6056,16 @@ public readonly nrqlInput: string;
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlDropRule.property.accountId" id="cdktfprovidernewrelicnrqldroprulepropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
 ##### `action`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlDropRule.property.action" id="cdktfprovidernewrelicnrqldroprulepropertyaction"></a>
 
 ```typescript
@@ -6066,30 +6076,20 @@ public readonly action: string;
 
 ---
 
-##### `nrql`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlDropRule.property.nrql" id="cdktfprovidernewrelicnrqldroprulepropertynrql"></a>
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlDropRule.property.description" id="cdktfprovidernewrelicnrqldroprulepropertydescription"></a>
 
 ```typescript
-public readonly nrql: string;
+public readonly description: string;
 ```
 
 - *Type:* `string`
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlDropRule.property.accountId" id="cdktfprovidernewrelicnrqldroprulepropertyaccountid"></a>
+##### `nrql`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlDropRule.property.nrql" id="cdktfprovidernewrelicnrqldroprulepropertynrql"></a>
 
 ```typescript
-public readonly accountId: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `description`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlDropRule.property.description" id="cdktfprovidernewrelicnrqldroprulepropertydescription"></a>
-
-```typescript
-public readonly description: string;
+public readonly nrql: string;
 ```
 
 - *Type:* `string`
@@ -6195,11 +6195,11 @@ public resetPermissions()
 | [`nameInput`](#cdktfprovidernewreliconedashboardpropertynameinput) | `string` | *No description.* |
 | [`pageInput`](#cdktfprovidernewreliconedashboardpropertypageinput) | [`@cdktf/provider-newrelic.OneDashboardPage`](#@cdktf/provider-newrelic.OneDashboardPage)[] | *No description.* |
 | [`permissionsInput`](#cdktfprovidernewreliconedashboardpropertypermissionsinput) | `string` | *No description.* |
+| [`accountId`](#cdktfprovidernewreliconedashboardpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`description`](#cdktfprovidernewreliconedashboardpropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidernewreliconedashboardpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`page`](#cdktfprovidernewreliconedashboardpropertypage)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPage`](#@cdktf/provider-newrelic.OneDashboardPage)[] | *No description.* |
-| [`accountId`](#cdktfprovidernewreliconedashboardpropertyaccountid) | `number` | *No description.* |
-| [`description`](#cdktfprovidernewreliconedashboardpropertydescription) | `string` | *No description.* |
-| [`permissions`](#cdktfprovidernewreliconedashboardpropertypermissions) | `string` | *No description.* |
+| [`permissions`](#cdktfprovidernewreliconedashboardpropertypermissions)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
 
@@ -6283,6 +6283,26 @@ public readonly permissionsInput: string;
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboard.property.accountId" id="cdktfprovidernewreliconedashboardpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboard.property.description" id="cdktfprovidernewreliconedashboardpropertydescription"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboard.property.name" id="cdktfprovidernewreliconedashboardpropertyname"></a>
 
 ```typescript
@@ -6303,27 +6323,7 @@ public readonly page: OneDashboardPage[];
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboard.property.accountId" id="cdktfprovidernewreliconedashboardpropertyaccountid"></a>
-
-```typescript
-public readonly accountId: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `description`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboard.property.description" id="cdktfprovidernewreliconedashboardpropertydescription"></a>
-
-```typescript
-public readonly description: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `permissions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboard.property.permissions" id="cdktfprovidernewreliconedashboardpropertypermissions"></a>
+##### `permissions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboard.property.permissions" id="cdktfprovidernewreliconedashboardpropertypermissions"></a>
 
 ```typescript
 public readonly permissions: string;
@@ -6432,11 +6432,11 @@ public resetPermissions()
 | [`nameInput`](#cdktfprovidernewreliconedashboardrawpropertynameinput) | `string` | *No description.* |
 | [`pageInput`](#cdktfprovidernewreliconedashboardrawpropertypageinput) | [`@cdktf/provider-newrelic.OneDashboardRawPage`](#@cdktf/provider-newrelic.OneDashboardRawPage)[] | *No description.* |
 | [`permissionsInput`](#cdktfprovidernewreliconedashboardrawpropertypermissionsinput) | `string` | *No description.* |
+| [`accountId`](#cdktfprovidernewreliconedashboardrawpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`description`](#cdktfprovidernewreliconedashboardrawpropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidernewreliconedashboardrawpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`page`](#cdktfprovidernewreliconedashboardrawpropertypage)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardRawPage`](#@cdktf/provider-newrelic.OneDashboardRawPage)[] | *No description.* |
-| [`accountId`](#cdktfprovidernewreliconedashboardrawpropertyaccountid) | `number` | *No description.* |
-| [`description`](#cdktfprovidernewreliconedashboardrawpropertydescription) | `string` | *No description.* |
-| [`permissions`](#cdktfprovidernewreliconedashboardrawpropertypermissions) | `string` | *No description.* |
+| [`permissions`](#cdktfprovidernewreliconedashboardrawpropertypermissions)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
 
@@ -6520,6 +6520,26 @@ public readonly permissionsInput: string;
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardRaw.property.accountId" id="cdktfprovidernewreliconedashboardrawpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardRaw.property.description" id="cdktfprovidernewreliconedashboardrawpropertydescription"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardRaw.property.name" id="cdktfprovidernewreliconedashboardrawpropertyname"></a>
 
 ```typescript
@@ -6540,27 +6560,7 @@ public readonly page: OneDashboardRawPage[];
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardRaw.property.accountId" id="cdktfprovidernewreliconedashboardrawpropertyaccountid"></a>
-
-```typescript
-public readonly accountId: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `description`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardRaw.property.description" id="cdktfprovidernewreliconedashboardrawpropertydescription"></a>
-
-```typescript
-public readonly description: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `permissions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardRaw.property.permissions" id="cdktfprovidernewreliconedashboardrawpropertypermissions"></a>
+##### `permissions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardRaw.property.permissions" id="cdktfprovidernewreliconedashboardrawpropertypermissions"></a>
 
 ```typescript
 public readonly permissions: string;
@@ -6666,6 +6666,7 @@ public resetRunbookUrl()
 | [`runbookUrlInput`](#cdktfprovidernewrelicpluginsalertconditionpropertyrunbookurlinput) | `string` | *No description.* |
 | [`termInput`](#cdktfprovidernewrelicpluginsalertconditionpropertyterminput) | [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[] | *No description.* |
 | [`valueFunctionInput`](#cdktfprovidernewrelicpluginsalertconditionpropertyvaluefunctioninput) | `string` | *No description.* |
+| [`enabled`](#cdktfprovidernewrelicpluginsalertconditionpropertyenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`entities`](#cdktfprovidernewrelicpluginsalertconditionpropertyentities)<span title="Required">*</span> | `number`[] | *No description.* |
 | [`metric`](#cdktfprovidernewrelicpluginsalertconditionpropertymetric)<span title="Required">*</span> | `string` | *No description.* |
 | [`metricDescription`](#cdktfprovidernewrelicpluginsalertconditionpropertymetricdescription)<span title="Required">*</span> | `string` | *No description.* |
@@ -6673,10 +6674,9 @@ public resetRunbookUrl()
 | [`pluginGuid`](#cdktfprovidernewrelicpluginsalertconditionpropertypluginguid)<span title="Required">*</span> | `string` | *No description.* |
 | [`pluginId`](#cdktfprovidernewrelicpluginsalertconditionpropertypluginid)<span title="Required">*</span> | `string` | *No description.* |
 | [`policyId`](#cdktfprovidernewrelicpluginsalertconditionpropertypolicyid)<span title="Required">*</span> | `number` | *No description.* |
+| [`runbookUrl`](#cdktfprovidernewrelicpluginsalertconditionpropertyrunbookurl)<span title="Required">*</span> | `string` | *No description.* |
 | [`term`](#cdktfprovidernewrelicpluginsalertconditionpropertyterm)<span title="Required">*</span> | [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[] | *No description.* |
 | [`valueFunction`](#cdktfprovidernewrelicpluginsalertconditionpropertyvaluefunction)<span title="Required">*</span> | `string` | *No description.* |
-| [`enabled`](#cdktfprovidernewrelicpluginsalertconditionpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`runbookUrl`](#cdktfprovidernewrelicpluginsalertconditionpropertyrunbookurl) | `string` | *No description.* |
 
 ---
 
@@ -6800,6 +6800,16 @@ public readonly valueFunctionInput: string;
 
 ---
 
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.enabled" id="cdktfprovidernewrelicpluginsalertconditionpropertyenabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `entities`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.entities" id="cdktfprovidernewrelicpluginsalertconditionpropertyentities"></a>
 
 ```typescript
@@ -6870,6 +6880,16 @@ public readonly policyId: number;
 
 ---
 
+##### `runbookUrl`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.runbookUrl" id="cdktfprovidernewrelicpluginsalertconditionpropertyrunbookurl"></a>
+
+```typescript
+public readonly runbookUrl: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `term`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.term" id="cdktfprovidernewrelicpluginsalertconditionpropertyterm"></a>
 
 ```typescript
@@ -6884,26 +6904,6 @@ public readonly term: PluginsAlertConditionTerm[];
 
 ```typescript
 public readonly valueFunction: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `enabled`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.enabled" id="cdktfprovidernewrelicpluginsalertconditionpropertyenabled"></a>
-
-```typescript
-public readonly enabled: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `runbookUrl`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.runbookUrl" id="cdktfprovidernewrelicpluginsalertconditionpropertyrunbookurl"></a>
-
-```typescript
-public readonly runbookUrl: string;
 ```
 
 - *Type:* `string`
@@ -7015,10 +7015,10 @@ public resetObjective()
 | [`guidInput`](#cdktfprovidernewrelicservicelevelpropertyguidinput) | `string` | *No description.* |
 | [`nameInput`](#cdktfprovidernewrelicservicelevelpropertynameinput) | `string` | *No description.* |
 | [`objectiveInput`](#cdktfprovidernewrelicservicelevelpropertyobjectiveinput) | [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[] | *No description.* |
+| [`description`](#cdktfprovidernewrelicservicelevelpropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`guid`](#cdktfprovidernewrelicservicelevelpropertyguid)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidernewrelicservicelevelpropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`description`](#cdktfprovidernewrelicservicelevelpropertydescription) | `string` | *No description.* |
-| [`objective`](#cdktfprovidernewrelicservicelevelpropertyobjective) | [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[] | *No description.* |
+| [`objective`](#cdktfprovidernewrelicservicelevelpropertyobjective)<span title="Required">*</span> | [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[] | *No description.* |
 
 ---
 
@@ -7102,6 +7102,16 @@ public readonly objectiveInput: ServiceLevelObjective[];
 
 ---
 
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevel.property.description" id="cdktfprovidernewrelicservicelevelpropertydescription"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `guid`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevel.property.guid" id="cdktfprovidernewrelicservicelevelpropertyguid"></a>
 
 ```typescript
@@ -7122,17 +7132,7 @@ public readonly name: string;
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevel.property.description" id="cdktfprovidernewrelicservicelevelpropertydescription"></a>
-
-```typescript
-public readonly description: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `objective`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevel.property.objective" id="cdktfprovidernewrelicservicelevelpropertyobjective"></a>
+##### `objective`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevel.property.objective" id="cdktfprovidernewrelicservicelevelpropertyobjective"></a>
 
 ```typescript
 public readonly objective: ServiceLevelObjective[];
@@ -7232,11 +7232,11 @@ public resetRunbookUrl()
 | [`nameInput`](#cdktfprovidernewrelicsyntheticsalertconditionpropertynameinput) | `string` | *No description.* |
 | [`policyIdInput`](#cdktfprovidernewrelicsyntheticsalertconditionpropertypolicyidinput) | `number` | *No description.* |
 | [`runbookUrlInput`](#cdktfprovidernewrelicsyntheticsalertconditionpropertyrunbookurlinput) | `string` | *No description.* |
+| [`enabled`](#cdktfprovidernewrelicsyntheticsalertconditionpropertyenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`monitorId`](#cdktfprovidernewrelicsyntheticsalertconditionpropertymonitorid)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidernewrelicsyntheticsalertconditionpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`policyId`](#cdktfprovidernewrelicsyntheticsalertconditionpropertypolicyid)<span title="Required">*</span> | `number` | *No description.* |
-| [`enabled`](#cdktfprovidernewrelicsyntheticsalertconditionpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`runbookUrl`](#cdktfprovidernewrelicsyntheticsalertconditionpropertyrunbookurl) | `string` | *No description.* |
+| [`runbookUrl`](#cdktfprovidernewrelicsyntheticsalertconditionpropertyrunbookurl)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
 
@@ -7300,6 +7300,16 @@ public readonly runbookUrlInput: string;
 
 ---
 
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsAlertCondition.property.enabled" id="cdktfprovidernewrelicsyntheticsalertconditionpropertyenabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `monitorId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsAlertCondition.property.monitorId" id="cdktfprovidernewrelicsyntheticsalertconditionpropertymonitorid"></a>
 
 ```typescript
@@ -7330,17 +7340,7 @@ public readonly policyId: number;
 
 ---
 
-##### `enabled`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsAlertCondition.property.enabled" id="cdktfprovidernewrelicsyntheticsalertconditionpropertyenabled"></a>
-
-```typescript
-public readonly enabled: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `runbookUrl`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsAlertCondition.property.runbookUrl" id="cdktfprovidernewrelicsyntheticsalertconditionpropertyrunbookurl"></a>
+##### `runbookUrl`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsAlertCondition.property.runbookUrl" id="cdktfprovidernewrelicsyntheticsalertconditionpropertyrunbookurl"></a>
 
 ```typescript
 public readonly runbookUrl: string;
@@ -7474,17 +7474,17 @@ public resetVerifySsl()
 | [`uriInput`](#cdktfprovidernewrelicsyntheticsmonitorpropertyuriinput) | `string` | *No description.* |
 | [`validationStringInput`](#cdktfprovidernewrelicsyntheticsmonitorpropertyvalidationstringinput) | `string` | *No description.* |
 | [`verifySslInput`](#cdktfprovidernewrelicsyntheticsmonitorpropertyverifysslinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`bypassHeadRequest`](#cdktfprovidernewrelicsyntheticsmonitorpropertybypassheadrequest)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`frequency`](#cdktfprovidernewrelicsyntheticsmonitorpropertyfrequency)<span title="Required">*</span> | `number` | *No description.* |
 | [`locations`](#cdktfprovidernewrelicsyntheticsmonitorpropertylocations)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicsyntheticsmonitorpropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`slaThreshold`](#cdktfprovidernewrelicsyntheticsmonitorpropertyslathreshold)<span title="Required">*</span> | `number` | *No description.* |
 | [`status`](#cdktfprovidernewrelicsyntheticsmonitorpropertystatus)<span title="Required">*</span> | `string` | *No description.* |
+| [`treatRedirectAsFailure`](#cdktfprovidernewrelicsyntheticsmonitorpropertytreatredirectasfailure)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`type`](#cdktfprovidernewrelicsyntheticsmonitorpropertytype)<span title="Required">*</span> | `string` | *No description.* |
-| [`bypassHeadRequest`](#cdktfprovidernewrelicsyntheticsmonitorpropertybypassheadrequest) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`slaThreshold`](#cdktfprovidernewrelicsyntheticsmonitorpropertyslathreshold) | `number` | *No description.* |
-| [`treatRedirectAsFailure`](#cdktfprovidernewrelicsyntheticsmonitorpropertytreatredirectasfailure) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`uri`](#cdktfprovidernewrelicsyntheticsmonitorpropertyuri) | `string` | *No description.* |
-| [`validationString`](#cdktfprovidernewrelicsyntheticsmonitorpropertyvalidationstring) | `string` | *No description.* |
-| [`verifySsl`](#cdktfprovidernewrelicsyntheticsmonitorpropertyverifyssl) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`uri`](#cdktfprovidernewrelicsyntheticsmonitorpropertyuri)<span title="Required">*</span> | `string` | *No description.* |
+| [`validationString`](#cdktfprovidernewrelicsyntheticsmonitorpropertyvalidationstring)<span title="Required">*</span> | `string` | *No description.* |
+| [`verifySsl`](#cdktfprovidernewrelicsyntheticsmonitorpropertyverifyssl)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 
 ---
 
@@ -7608,6 +7608,16 @@ public readonly verifySslInput: boolean | IResolvable;
 
 ---
 
+##### `bypassHeadRequest`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitor.property.bypassHeadRequest" id="cdktfprovidernewrelicsyntheticsmonitorpropertybypassheadrequest"></a>
+
+```typescript
+public readonly bypassHeadRequest: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `frequency`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitor.property.frequency" id="cdktfprovidernewrelicsyntheticsmonitorpropertyfrequency"></a>
 
 ```typescript
@@ -7638,6 +7648,16 @@ public readonly name: string;
 
 ---
 
+##### `slaThreshold`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitor.property.slaThreshold" id="cdktfprovidernewrelicsyntheticsmonitorpropertyslathreshold"></a>
+
+```typescript
+public readonly slaThreshold: number;
+```
+
+- *Type:* `number`
+
+---
+
 ##### `status`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitor.property.status" id="cdktfprovidernewrelicsyntheticsmonitorpropertystatus"></a>
 
 ```typescript
@@ -7645,6 +7665,16 @@ public readonly status: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `treatRedirectAsFailure`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitor.property.treatRedirectAsFailure" id="cdktfprovidernewrelicsyntheticsmonitorpropertytreatredirectasfailure"></a>
+
+```typescript
+public readonly treatRedirectAsFailure: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -7658,37 +7688,7 @@ public readonly type: string;
 
 ---
 
-##### `bypassHeadRequest`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitor.property.bypassHeadRequest" id="cdktfprovidernewrelicsyntheticsmonitorpropertybypassheadrequest"></a>
-
-```typescript
-public readonly bypassHeadRequest: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `slaThreshold`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitor.property.slaThreshold" id="cdktfprovidernewrelicsyntheticsmonitorpropertyslathreshold"></a>
-
-```typescript
-public readonly slaThreshold: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `treatRedirectAsFailure`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitor.property.treatRedirectAsFailure" id="cdktfprovidernewrelicsyntheticsmonitorpropertytreatredirectasfailure"></a>
-
-```typescript
-public readonly treatRedirectAsFailure: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `uri`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitor.property.uri" id="cdktfprovidernewrelicsyntheticsmonitorpropertyuri"></a>
+##### `uri`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitor.property.uri" id="cdktfprovidernewrelicsyntheticsmonitorpropertyuri"></a>
 
 ```typescript
 public readonly uri: string;
@@ -7698,7 +7698,7 @@ public readonly uri: string;
 
 ---
 
-##### `validationString`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitor.property.validationString" id="cdktfprovidernewrelicsyntheticsmonitorpropertyvalidationstring"></a>
+##### `validationString`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitor.property.validationString" id="cdktfprovidernewrelicsyntheticsmonitorpropertyvalidationstring"></a>
 
 ```typescript
 public readonly validationString: string;
@@ -7708,7 +7708,7 @@ public readonly validationString: string;
 
 ---
 
-##### `verifySsl`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitor.property.verifySsl" id="cdktfprovidernewrelicsyntheticsmonitorpropertyverifyssl"></a>
+##### `verifySsl`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitor.property.verifySsl" id="cdktfprovidernewrelicsyntheticsmonitorpropertyverifyssl"></a>
 
 ```typescript
 public readonly verifySsl: boolean | IResolvable;
@@ -7799,9 +7799,9 @@ public resetLocation()
 | [`locationInput`](#cdktfprovidernewrelicsyntheticsmonitorscriptpropertylocationinput) | [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[] | *No description.* |
 | [`monitorIdInput`](#cdktfprovidernewrelicsyntheticsmonitorscriptpropertymonitoridinput) | `string` | *No description.* |
 | [`textInput`](#cdktfprovidernewrelicsyntheticsmonitorscriptpropertytextinput) | `string` | *No description.* |
+| [`location`](#cdktfprovidernewrelicsyntheticsmonitorscriptpropertylocation)<span title="Required">*</span> | [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[] | *No description.* |
 | [`monitorId`](#cdktfprovidernewrelicsyntheticsmonitorscriptpropertymonitorid)<span title="Required">*</span> | `string` | *No description.* |
 | [`text`](#cdktfprovidernewrelicsyntheticsmonitorscriptpropertytext)<span title="Required">*</span> | `string` | *No description.* |
-| [`location`](#cdktfprovidernewrelicsyntheticsmonitorscriptpropertylocation) | [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[] | *No description.* |
 
 ---
 
@@ -7845,6 +7845,16 @@ public readonly textInput: string;
 
 ---
 
+##### `location`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorScript.property.location" id="cdktfprovidernewrelicsyntheticsmonitorscriptpropertylocation"></a>
+
+```typescript
+public readonly location: SyntheticsMonitorScriptLocation[];
+```
+
+- *Type:* [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[]
+
+---
+
 ##### `monitorId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorScript.property.monitorId" id="cdktfprovidernewrelicsyntheticsmonitorscriptpropertymonitorid"></a>
 
 ```typescript
@@ -7862,16 +7872,6 @@ public readonly text: string;
 ```
 
 - *Type:* `string`
-
----
-
-##### `location`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorScript.property.location" id="cdktfprovidernewrelicsyntheticsmonitorscriptpropertylocation"></a>
-
-```typescript
-public readonly location: SyntheticsMonitorScriptLocation[];
-```
-
-- *Type:* [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[]
 
 ---
 
@@ -7960,10 +7960,10 @@ public putCritical(value: SyntheticsMultilocationAlertConditionCritical)
 ##### `putWarning` <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertCondition.putWarning" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionputwarning"></a>
 
 ```typescript
-public putWarning(value?: SyntheticsMultilocationAlertConditionWarning)
+public putWarning(value: SyntheticsMultilocationAlertConditionWarning)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertCondition.parameter.value" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionparametervalue"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertCondition.parameter.value" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionparametervalue"></a>
 
 - *Type:* [`@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionWarning`](#@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionWarning)
 
@@ -8003,12 +8003,12 @@ public resetWarning()
 | [`runbookUrlInput`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionpropertyrunbookurlinput) | `string` | *No description.* |
 | [`violationTimeLimitSecondsInput`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionpropertyviolationtimelimitsecondsinput) | `number` | *No description.* |
 | [`warningInput`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionpropertywarninginput) | [`@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionWarning`](#@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionWarning) | *No description.* |
+| [`enabled`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionpropertyenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`entities`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionpropertyentities)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`policyId`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionpropertypolicyid)<span title="Required">*</span> | `number` | *No description.* |
+| [`runbookUrl`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionpropertyrunbookurl)<span title="Required">*</span> | `string` | *No description.* |
 | [`violationTimeLimitSeconds`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionpropertyviolationtimelimitseconds)<span title="Required">*</span> | `number` | *No description.* |
-| [`enabled`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`runbookUrl`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionpropertyrunbookurl) | `string` | *No description.* |
 
 ---
 
@@ -8122,6 +8122,16 @@ public readonly warningInput: SyntheticsMultilocationAlertConditionWarning;
 
 ---
 
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertCondition.property.enabled" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionpropertyenabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `entities`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertCondition.property.entities" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionpropertyentities"></a>
 
 ```typescript
@@ -8152,6 +8162,16 @@ public readonly policyId: number;
 
 ---
 
+##### `runbookUrl`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertCondition.property.runbookUrl" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionpropertyrunbookurl"></a>
+
+```typescript
+public readonly runbookUrl: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `violationTimeLimitSeconds`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertCondition.property.violationTimeLimitSeconds" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionpropertyviolationtimelimitseconds"></a>
 
 ```typescript
@@ -8159,26 +8179,6 @@ public readonly violationTimeLimitSeconds: number;
 ```
 
 - *Type:* `number`
-
----
-
-##### `enabled`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertCondition.property.enabled" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionpropertyenabled"></a>
-
-```typescript
-public readonly enabled: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `runbookUrl`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertCondition.property.runbookUrl" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionpropertyrunbookurl"></a>
-
-```typescript
-public readonly runbookUrl: string;
-```
-
-- *Type:* `string`
 
 ---
 
@@ -8279,11 +8279,11 @@ public resetLastUpdated()
 | [`keyInput`](#cdktfprovidernewrelicsyntheticssecurecredentialpropertykeyinput) | `string` | *No description.* |
 | [`lastUpdatedInput`](#cdktfprovidernewrelicsyntheticssecurecredentialpropertylastupdatedinput) | `string` | *No description.* |
 | [`valueInput`](#cdktfprovidernewrelicsyntheticssecurecredentialpropertyvalueinput) | `string` | *No description.* |
+| [`createdAt`](#cdktfprovidernewrelicsyntheticssecurecredentialpropertycreatedat)<span title="Required">*</span> | `string` | *No description.* |
+| [`description`](#cdktfprovidernewrelicsyntheticssecurecredentialpropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`key`](#cdktfprovidernewrelicsyntheticssecurecredentialpropertykey)<span title="Required">*</span> | `string` | *No description.* |
+| [`lastUpdated`](#cdktfprovidernewrelicsyntheticssecurecredentialpropertylastupdated)<span title="Required">*</span> | `string` | *No description.* |
 | [`value`](#cdktfprovidernewrelicsyntheticssecurecredentialpropertyvalue)<span title="Required">*</span> | `string` | *No description.* |
-| [`createdAt`](#cdktfprovidernewrelicsyntheticssecurecredentialpropertycreatedat) | `string` | *No description.* |
-| [`description`](#cdktfprovidernewrelicsyntheticssecurecredentialpropertydescription) | `string` | *No description.* |
-| [`lastUpdated`](#cdktfprovidernewrelicsyntheticssecurecredentialpropertylastupdated) | `string` | *No description.* |
 
 ---
 
@@ -8347,6 +8347,26 @@ public readonly valueInput: string;
 
 ---
 
+##### `createdAt`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsSecureCredential.property.createdAt" id="cdktfprovidernewrelicsyntheticssecurecredentialpropertycreatedat"></a>
+
+```typescript
+public readonly createdAt: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsSecureCredential.property.description" id="cdktfprovidernewrelicsyntheticssecurecredentialpropertydescription"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsSecureCredential.property.key" id="cdktfprovidernewrelicsyntheticssecurecredentialpropertykey"></a>
 
 ```typescript
@@ -8357,40 +8377,20 @@ public readonly key: string;
 
 ---
 
+##### `lastUpdated`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsSecureCredential.property.lastUpdated" id="cdktfprovidernewrelicsyntheticssecurecredentialpropertylastupdated"></a>
+
+```typescript
+public readonly lastUpdated: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsSecureCredential.property.value" id="cdktfprovidernewrelicsyntheticssecurecredentialpropertyvalue"></a>
 
 ```typescript
 public readonly value: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `createdAt`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsSecureCredential.property.createdAt" id="cdktfprovidernewrelicsyntheticssecurecredentialpropertycreatedat"></a>
-
-```typescript
-public readonly createdAt: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `description`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsSecureCredential.property.description" id="cdktfprovidernewrelicsyntheticssecurecredentialpropertydescription"></a>
-
-```typescript
-public readonly description: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `lastUpdated`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsSecureCredential.property.lastUpdated" id="cdktfprovidernewrelicsyntheticssecurecredentialpropertylastupdated"></a>
-
-```typescript
-public readonly lastUpdated: string;
 ```
 
 - *Type:* `string`
@@ -8505,11 +8505,11 @@ public resetScopeAccountIds()
 | [`entitySearchQueryInput`](#cdktfprovidernewrelicworkloadpropertyentitysearchqueryinput) | [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[] | *No description.* |
 | [`nameInput`](#cdktfprovidernewrelicworkloadpropertynameinput) | `string` | *No description.* |
 | [`scopeAccountIdsInput`](#cdktfprovidernewrelicworkloadpropertyscopeaccountidsinput) | `number`[] | *No description.* |
+| [`accountId`](#cdktfprovidernewrelicworkloadpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`entityGuids`](#cdktfprovidernewrelicworkloadpropertyentityguids)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`entitySearchQuery`](#cdktfprovidernewrelicworkloadpropertyentitysearchquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicworkloadpropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`accountId`](#cdktfprovidernewrelicworkloadpropertyaccountid) | `number` | *No description.* |
-| [`entityGuids`](#cdktfprovidernewrelicworkloadpropertyentityguids) | `string`[] | *No description.* |
-| [`entitySearchQuery`](#cdktfprovidernewrelicworkloadpropertyentitysearchquery) | [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[] | *No description.* |
-| [`scopeAccountIds`](#cdktfprovidernewrelicworkloadpropertyscopeaccountids) | `number`[] | *No description.* |
+| [`scopeAccountIds`](#cdktfprovidernewrelicworkloadpropertyscopeaccountids)<span title="Required">*</span> | `number`[] | *No description.* |
 
 ---
 
@@ -8613,6 +8613,36 @@ public readonly scopeAccountIdsInput: number[];
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workload.property.accountId" id="cdktfprovidernewrelicworkloadpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `entityGuids`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workload.property.entityGuids" id="cdktfprovidernewrelicworkloadpropertyentityguids"></a>
+
+```typescript
+public readonly entityGuids: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `entitySearchQuery`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workload.property.entitySearchQuery" id="cdktfprovidernewrelicworkloadpropertyentitysearchquery"></a>
+
+```typescript
+public readonly entitySearchQuery: WorkloadEntitySearchQuery[];
+```
+
+- *Type:* [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[]
+
+---
+
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workload.property.name" id="cdktfprovidernewrelicworkloadpropertyname"></a>
 
 ```typescript
@@ -8623,37 +8653,7 @@ public readonly name: string;
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Workload.property.accountId" id="cdktfprovidernewrelicworkloadpropertyaccountid"></a>
-
-```typescript
-public readonly accountId: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `entityGuids`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Workload.property.entityGuids" id="cdktfprovidernewrelicworkloadpropertyentityguids"></a>
-
-```typescript
-public readonly entityGuids: string[];
-```
-
-- *Type:* `string`[]
-
----
-
-##### `entitySearchQuery`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Workload.property.entitySearchQuery" id="cdktfprovidernewrelicworkloadpropertyentitysearchquery"></a>
-
-```typescript
-public readonly entitySearchQuery: WorkloadEntitySearchQuery[];
-```
-
-- *Type:* [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[]
-
----
-
-##### `scopeAccountIds`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Workload.property.scopeAccountIds" id="cdktfprovidernewrelicworkloadpropertyscopeaccountids"></a>
+##### `scopeAccountIds`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workload.property.scopeAccountIds" id="cdktfprovidernewrelicworkloadpropertyscopeaccountids"></a>
 
 ```typescript
 public readonly scopeAccountIds: number[];
@@ -9140,7 +9140,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
-| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric). |
+| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
 | [`gcMetric`](#cdktfprovidernewrelicalertconditionconfigpropertygcmetric) | `string` | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -9269,7 +9269,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
+The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#type AlertCondition#type}
 
@@ -18913,27 +18913,28 @@ public resetUserId()
 | [`teamsInput`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyteamsinput) | `string` | *No description.* |
 | [`urlInput`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyurlinput) | `string` | *No description.* |
 | [`userIdInput`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyuseridinput) | `string` | *No description.* |
-| [`apiKey`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyapikey) | `string` | *No description.* |
-| [`authPassword`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyauthpassword) | `string` | *No description.* |
-| [`authType`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyauthtype) | `string` | *No description.* |
-| [`authUsername`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyauthusername) | `string` | *No description.* |
-| [`baseUrl`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertybaseurl) | `string` | *No description.* |
-| [`channel`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertychannel) | `string` | *No description.* |
-| [`headers`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyheaders) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`headersString`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyheadersstring) | `string` | *No description.* |
-| [`includeJsonAttachment`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyincludejsonattachment) | `string` | *No description.* |
-| [`key`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertykey) | `string` | *No description.* |
-| [`payload`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayload) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`payloadString`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayloadstring) | `string` | *No description.* |
-| [`payloadType`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayloadtype) | `string` | *No description.* |
-| [`recipients`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyrecipients) | `string` | *No description.* |
-| [`region`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyregion) | `string` | *No description.* |
-| [`routeKey`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyroutekey) | `string` | *No description.* |
-| [`serviceKey`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyservicekey) | `string` | *No description.* |
-| [`tags`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertytags) | `string` | *No description.* |
-| [`teams`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyteams) | `string` | *No description.* |
-| [`url`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyurl) | `string` | *No description.* |
-| [`userId`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyuserid) | `string` | *No description.* |
+| [`apiKey`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyapikey)<span title="Required">*</span> | `string` | *No description.* |
+| [`authPassword`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyauthpassword)<span title="Required">*</span> | `string` | *No description.* |
+| [`authType`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyauthtype)<span title="Required">*</span> | `string` | *No description.* |
+| [`authUsername`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyauthusername)<span title="Required">*</span> | `string` | *No description.* |
+| [`baseUrl`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertybaseurl)<span title="Required">*</span> | `string` | *No description.* |
+| [`channel`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertychannel)<span title="Required">*</span> | `string` | *No description.* |
+| [`headers`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyheaders)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`headersString`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyheadersstring)<span title="Required">*</span> | `string` | *No description.* |
+| [`includeJsonAttachment`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyincludejsonattachment)<span title="Required">*</span> | `string` | *No description.* |
+| [`key`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertykey)<span title="Required">*</span> | `string` | *No description.* |
+| [`payload`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayload)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`payloadString`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayloadstring)<span title="Required">*</span> | `string` | *No description.* |
+| [`payloadType`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayloadtype)<span title="Required">*</span> | `string` | *No description.* |
+| [`recipients`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyrecipients)<span title="Required">*</span> | `string` | *No description.* |
+| [`region`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyregion)<span title="Required">*</span> | `string` | *No description.* |
+| [`routeKey`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyroutekey)<span title="Required">*</span> | `string` | *No description.* |
+| [`serviceKey`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyservicekey)<span title="Required">*</span> | `string` | *No description.* |
+| [`tags`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertytags)<span title="Required">*</span> | `string` | *No description.* |
+| [`teams`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyteams)<span title="Required">*</span> | `string` | *No description.* |
+| [`url`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyurl)<span title="Required">*</span> | `string` | *No description.* |
+| [`userId`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyuserid)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.AlertChannelConfigA`](#@cdktf/provider-newrelic.AlertChannelConfigA) | *No description.* |
 
 ---
 
@@ -19147,7 +19148,7 @@ public readonly userIdInput: string;
 
 ---
 
-##### `apiKey`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.apiKey" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyapikey"></a>
+##### `apiKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.apiKey" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyapikey"></a>
 
 ```typescript
 public readonly apiKey: string;
@@ -19157,7 +19158,7 @@ public readonly apiKey: string;
 
 ---
 
-##### `authPassword`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.authPassword" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyauthpassword"></a>
+##### `authPassword`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.authPassword" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyauthpassword"></a>
 
 ```typescript
 public readonly authPassword: string;
@@ -19167,7 +19168,7 @@ public readonly authPassword: string;
 
 ---
 
-##### `authType`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.authType" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyauthtype"></a>
+##### `authType`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.authType" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyauthtype"></a>
 
 ```typescript
 public readonly authType: string;
@@ -19177,7 +19178,7 @@ public readonly authType: string;
 
 ---
 
-##### `authUsername`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.authUsername" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyauthusername"></a>
+##### `authUsername`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.authUsername" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyauthusername"></a>
 
 ```typescript
 public readonly authUsername: string;
@@ -19187,7 +19188,7 @@ public readonly authUsername: string;
 
 ---
 
-##### `baseUrl`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.baseUrl" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertybaseurl"></a>
+##### `baseUrl`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.baseUrl" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertybaseurl"></a>
 
 ```typescript
 public readonly baseUrl: string;
@@ -19197,7 +19198,7 @@ public readonly baseUrl: string;
 
 ---
 
-##### `channel`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.channel" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertychannel"></a>
+##### `channel`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.channel" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertychannel"></a>
 
 ```typescript
 public readonly channel: string;
@@ -19207,7 +19208,7 @@ public readonly channel: string;
 
 ---
 
-##### `headers`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.headers" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyheaders"></a>
+##### `headers`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.headers" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyheaders"></a>
 
 ```typescript
 public readonly headers: IResolvable | {[ key: string ]: string};
@@ -19217,7 +19218,7 @@ public readonly headers: IResolvable | {[ key: string ]: string};
 
 ---
 
-##### `headersString`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.headersString" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyheadersstring"></a>
+##### `headersString`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.headersString" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyheadersstring"></a>
 
 ```typescript
 public readonly headersString: string;
@@ -19227,7 +19228,7 @@ public readonly headersString: string;
 
 ---
 
-##### `includeJsonAttachment`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.includeJsonAttachment" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyincludejsonattachment"></a>
+##### `includeJsonAttachment`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.includeJsonAttachment" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyincludejsonattachment"></a>
 
 ```typescript
 public readonly includeJsonAttachment: string;
@@ -19237,7 +19238,7 @@ public readonly includeJsonAttachment: string;
 
 ---
 
-##### `key`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.key" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertykey"></a>
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.key" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertykey"></a>
 
 ```typescript
 public readonly key: string;
@@ -19247,7 +19248,7 @@ public readonly key: string;
 
 ---
 
-##### `payload`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.payload" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayload"></a>
+##### `payload`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.payload" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayload"></a>
 
 ```typescript
 public readonly payload: IResolvable | {[ key: string ]: string};
@@ -19257,7 +19258,7 @@ public readonly payload: IResolvable | {[ key: string ]: string};
 
 ---
 
-##### `payloadString`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.payloadString" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayloadstring"></a>
+##### `payloadString`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.payloadString" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayloadstring"></a>
 
 ```typescript
 public readonly payloadString: string;
@@ -19267,7 +19268,7 @@ public readonly payloadString: string;
 
 ---
 
-##### `payloadType`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.payloadType" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayloadtype"></a>
+##### `payloadType`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.payloadType" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayloadtype"></a>
 
 ```typescript
 public readonly payloadType: string;
@@ -19277,7 +19278,7 @@ public readonly payloadType: string;
 
 ---
 
-##### `recipients`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.recipients" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyrecipients"></a>
+##### `recipients`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.recipients" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyrecipients"></a>
 
 ```typescript
 public readonly recipients: string;
@@ -19287,7 +19288,7 @@ public readonly recipients: string;
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.region" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyregion"></a>
+##### `region`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.region" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyregion"></a>
 
 ```typescript
 public readonly region: string;
@@ -19297,7 +19298,7 @@ public readonly region: string;
 
 ---
 
-##### `routeKey`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.routeKey" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyroutekey"></a>
+##### `routeKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.routeKey" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyroutekey"></a>
 
 ```typescript
 public readonly routeKey: string;
@@ -19307,7 +19308,7 @@ public readonly routeKey: string;
 
 ---
 
-##### `serviceKey`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.serviceKey" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyservicekey"></a>
+##### `serviceKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.serviceKey" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyservicekey"></a>
 
 ```typescript
 public readonly serviceKey: string;
@@ -19317,7 +19318,7 @@ public readonly serviceKey: string;
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.tags" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertytags"></a>
+##### `tags`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.tags" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertytags"></a>
 
 ```typescript
 public readonly tags: string;
@@ -19327,7 +19328,7 @@ public readonly tags: string;
 
 ---
 
-##### `teams`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.teams" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyteams"></a>
+##### `teams`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.teams" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyteams"></a>
 
 ```typescript
 public readonly teams: string;
@@ -19337,7 +19338,7 @@ public readonly teams: string;
 
 ---
 
-##### `url`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.url" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyurl"></a>
+##### `url`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.url" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyurl"></a>
 
 ```typescript
 public readonly url: string;
@@ -19347,13 +19348,23 @@ public readonly url: string;
 
 ---
 
-##### `userId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.userId" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyuserid"></a>
+##### `userId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.userId" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyuserid"></a>
 
 ```typescript
 public readonly userId: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.internalValue" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: AlertChannelConfigA;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.AlertChannelConfigA`](#@cdktf/provider-newrelic.AlertChannelConfigA)
 
 ---
 
@@ -19410,6 +19421,7 @@ True if this is a block, false if it's a list.
 | [`operatorInput`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyoperatorinput) | `string` | *No description.* |
 | [`conditions`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyconditions)<span title="Required">*</span> | [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] | *No description.* |
 | [`operator`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyoperator)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.AlertMutingRuleCondition`](#@cdktf/provider-newrelic.AlertMutingRuleCondition) | *No description.* |
 
 ---
 
@@ -19450,6 +19462,16 @@ public readonly operator: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleConditionOutputReference.property.internalValue" id="cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: AlertMutingRuleCondition;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.AlertMutingRuleCondition`](#@cdktf/provider-newrelic.AlertMutingRuleCondition)
 
 ---
 
@@ -19557,13 +19579,14 @@ public resetWeeklyRepeatDays()
 | [`startTimeInput`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertystarttimeinput) | `string` | *No description.* |
 | [`timeZoneInput`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertytimezoneinput) | `string` | *No description.* |
 | [`weeklyRepeatDaysInput`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyweeklyrepeatdaysinput) | `string`[] | *No description.* |
+| [`endRepeat`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyendrepeat)<span title="Required">*</span> | `string` | *No description.* |
+| [`endTime`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyendtime)<span title="Required">*</span> | `string` | *No description.* |
+| [`repeat`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyrepeat)<span title="Required">*</span> | `string` | *No description.* |
+| [`repeatCount`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyrepeatcount)<span title="Required">*</span> | `number` | *No description.* |
+| [`startTime`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertystarttime)<span title="Required">*</span> | `string` | *No description.* |
 | [`timeZone`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertytimezone)<span title="Required">*</span> | `string` | *No description.* |
-| [`endRepeat`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyendrepeat) | `string` | *No description.* |
-| [`endTime`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyendtime) | `string` | *No description.* |
-| [`repeat`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyrepeat) | `string` | *No description.* |
-| [`repeatCount`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyrepeatcount) | `number` | *No description.* |
-| [`startTime`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertystarttime) | `string` | *No description.* |
-| [`weeklyRepeatDays`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyweeklyrepeatdays) | `string`[] | *No description.* |
+| [`weeklyRepeatDays`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyweeklyrepeatdays)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.AlertMutingRuleSchedule`](#@cdktf/provider-newrelic.AlertMutingRuleSchedule) | *No description.* |
 
 ---
 
@@ -19637,6 +19660,56 @@ public readonly weeklyRepeatDaysInput: string[];
 
 ---
 
+##### `endRepeat`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleScheduleOutputReference.property.endRepeat" id="cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyendrepeat"></a>
+
+```typescript
+public readonly endRepeat: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `endTime`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleScheduleOutputReference.property.endTime" id="cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyendtime"></a>
+
+```typescript
+public readonly endTime: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `repeat`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleScheduleOutputReference.property.repeat" id="cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyrepeat"></a>
+
+```typescript
+public readonly repeat: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `repeatCount`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleScheduleOutputReference.property.repeatCount" id="cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyrepeatcount"></a>
+
+```typescript
+public readonly repeatCount: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `startTime`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleScheduleOutputReference.property.startTime" id="cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertystarttime"></a>
+
+```typescript
+public readonly startTime: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `timeZone`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleScheduleOutputReference.property.timeZone" id="cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertytimezone"></a>
 
 ```typescript
@@ -19647,63 +19720,23 @@ public readonly timeZone: string;
 
 ---
 
-##### `endRepeat`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleScheduleOutputReference.property.endRepeat" id="cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyendrepeat"></a>
-
-```typescript
-public readonly endRepeat: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `endTime`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleScheduleOutputReference.property.endTime" id="cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyendtime"></a>
-
-```typescript
-public readonly endTime: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `repeat`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleScheduleOutputReference.property.repeat" id="cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyrepeat"></a>
-
-```typescript
-public readonly repeat: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `repeatCount`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleScheduleOutputReference.property.repeatCount" id="cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyrepeatcount"></a>
-
-```typescript
-public readonly repeatCount: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `startTime`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleScheduleOutputReference.property.startTime" id="cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertystarttime"></a>
-
-```typescript
-public readonly startTime: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `weeklyRepeatDays`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleScheduleOutputReference.property.weeklyRepeatDays" id="cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyweeklyrepeatdays"></a>
+##### `weeklyRepeatDays`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleScheduleOutputReference.property.weeklyRepeatDays" id="cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyweeklyrepeatdays"></a>
 
 ```typescript
 public readonly weeklyRepeatDays: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleScheduleOutputReference.property.internalValue" id="cdktfprovidernewrelicalertmutingrulescheduleoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: AlertMutingRuleSchedule;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.AlertMutingRuleSchedule`](#@cdktf/provider-newrelic.AlertMutingRuleSchedule)
 
 ---
 
@@ -19771,8 +19804,9 @@ public resetAttributes()
 | --- | --- | --- |
 | [`attributesInput`](#cdktfprovidernewrelicdashboardfilteroutputreferencepropertyattributesinput) | `string`[] | *No description.* |
 | [`eventTypesInput`](#cdktfprovidernewrelicdashboardfilteroutputreferencepropertyeventtypesinput) | `string`[] | *No description.* |
+| [`attributes`](#cdktfprovidernewrelicdashboardfilteroutputreferencepropertyattributes)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`eventTypes`](#cdktfprovidernewrelicdashboardfilteroutputreferencepropertyeventtypes)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`attributes`](#cdktfprovidernewrelicdashboardfilteroutputreferencepropertyattributes) | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicdashboardfilteroutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.DashboardFilter`](#@cdktf/provider-newrelic.DashboardFilter) | *No description.* |
 
 ---
 
@@ -19796,6 +19830,16 @@ public readonly eventTypesInput: string[];
 
 ---
 
+##### `attributes`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardFilterOutputReference.property.attributes" id="cdktfprovidernewrelicdashboardfilteroutputreferencepropertyattributes"></a>
+
+```typescript
+public readonly attributes: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
 ##### `eventTypes`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardFilterOutputReference.property.eventTypes" id="cdktfprovidernewrelicdashboardfilteroutputreferencepropertyeventtypes"></a>
 
 ```typescript
@@ -19806,13 +19850,13 @@ public readonly eventTypes: string[];
 
 ---
 
-##### `attributes`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardFilterOutputReference.property.attributes" id="cdktfprovidernewrelicdashboardfilteroutputreferencepropertyattributes"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardFilterOutputReference.property.internalValue" id="cdktfprovidernewrelicdashboardfilteroutputreferencepropertyinternalvalue"></a>
 
 ```typescript
-public readonly attributes: string[];
+public readonly internalValue: DashboardFilter;
 ```
 
-- *Type:* `string`[]
+- *Type:* [`@cdktf/provider-newrelic.DashboardFilter`](#@cdktf/provider-newrelic.DashboardFilter)
 
 ---
 
@@ -19869,6 +19913,7 @@ True if this is a block, false if it's a list.
 | [`nameInput`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferencepropertynameinput) | `string` | *No description.* |
 | [`color`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferencepropertycolor)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferencepropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation`](#@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation) | *No description.* |
 
 ---
 
@@ -19909,6 +19954,16 @@ public readonly name: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentationOutputReference.property.internalValue" id="cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: DashboardWidgetCompareWithPresentation;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation`](#@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation)
 
 ---
 
@@ -20220,6 +20275,7 @@ True if this is a block, false if it's a list.
 | [`valueInput`](#cdktfprovidernewrelicdatanewrelicentitytagoutputreferencepropertyvalueinput) | `string` | *No description.* |
 | [`key`](#cdktfprovidernewrelicdatanewrelicentitytagoutputreferencepropertykey)<span title="Required">*</span> | `string` | *No description.* |
 | [`value`](#cdktfprovidernewrelicdatanewrelicentitytagoutputreferencepropertyvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicdatanewrelicentitytagoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.DataNewrelicEntityTag`](#@cdktf/provider-newrelic.DataNewrelicEntityTag) | *No description.* |
 
 ---
 
@@ -20260,6 +20316,16 @@ public readonly value: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntityTagOutputReference.property.internalValue" id="cdktfprovidernewrelicdatanewrelicentitytagoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: DataNewrelicEntityTag;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.DataNewrelicEntityTag`](#@cdktf/provider-newrelic.DataNewrelicEntityTag)
 
 ---
 
@@ -20326,7 +20392,8 @@ public resetCreate()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`createInput`](#cdktfprovidernewrelicentitytagstimeoutsoutputreferencepropertycreateinput) | `string` | *No description.* |
-| [`create`](#cdktfprovidernewrelicentitytagstimeoutsoutputreferencepropertycreate) | `string` | *No description.* |
+| [`create`](#cdktfprovidernewrelicentitytagstimeoutsoutputreferencepropertycreate)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicentitytagstimeoutsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.EntityTagsTimeouts`](#@cdktf/provider-newrelic.EntityTagsTimeouts) | *No description.* |
 
 ---
 
@@ -20340,13 +20407,23 @@ public readonly createInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EntityTagsTimeoutsOutputReference.property.create" id="cdktfprovidernewrelicentitytagstimeoutsoutputreferencepropertycreate"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-newrelic.EntityTagsTimeoutsOutputReference.property.create" id="cdktfprovidernewrelicentitytagstimeoutsoutputreferencepropertycreate"></a>
 
 ```typescript
 public readonly create: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EntityTagsTimeoutsOutputReference.property.internalValue" id="cdktfprovidernewrelicentitytagstimeoutsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: EntityTagsTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.EntityTagsTimeouts`](#@cdktf/provider-newrelic.EntityTagsTimeouts)
 
 ---
 
@@ -20423,8 +20500,9 @@ public resetValue()
 | [`timeFunctionInput`](#cdktfprovidernewrelicinfraalertconditioncriticaloutputreferencepropertytimefunctioninput) | `string` | *No description.* |
 | [`valueInput`](#cdktfprovidernewrelicinfraalertconditioncriticaloutputreferencepropertyvalueinput) | `number` | *No description.* |
 | [`duration`](#cdktfprovidernewrelicinfraalertconditioncriticaloutputreferencepropertyduration)<span title="Required">*</span> | `number` | *No description.* |
-| [`timeFunction`](#cdktfprovidernewrelicinfraalertconditioncriticaloutputreferencepropertytimefunction) | `string` | *No description.* |
-| [`value`](#cdktfprovidernewrelicinfraalertconditioncriticaloutputreferencepropertyvalue) | `number` | *No description.* |
+| [`timeFunction`](#cdktfprovidernewrelicinfraalertconditioncriticaloutputreferencepropertytimefunction)<span title="Required">*</span> | `string` | *No description.* |
+| [`value`](#cdktfprovidernewrelicinfraalertconditioncriticaloutputreferencepropertyvalue)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicinfraalertconditioncriticaloutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.InfraAlertConditionCritical`](#@cdktf/provider-newrelic.InfraAlertConditionCritical) | *No description.* |
 
 ---
 
@@ -20468,7 +20546,7 @@ public readonly duration: number;
 
 ---
 
-##### `timeFunction`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionCriticalOutputReference.property.timeFunction" id="cdktfprovidernewrelicinfraalertconditioncriticaloutputreferencepropertytimefunction"></a>
+##### `timeFunction`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionCriticalOutputReference.property.timeFunction" id="cdktfprovidernewrelicinfraalertconditioncriticaloutputreferencepropertytimefunction"></a>
 
 ```typescript
 public readonly timeFunction: string;
@@ -20478,13 +20556,23 @@ public readonly timeFunction: string;
 
 ---
 
-##### `value`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionCriticalOutputReference.property.value" id="cdktfprovidernewrelicinfraalertconditioncriticaloutputreferencepropertyvalue"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionCriticalOutputReference.property.value" id="cdktfprovidernewrelicinfraalertconditioncriticaloutputreferencepropertyvalue"></a>
 
 ```typescript
 public readonly value: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionCriticalOutputReference.property.internalValue" id="cdktfprovidernewrelicinfraalertconditioncriticaloutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: InfraAlertConditionCritical;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.InfraAlertConditionCritical`](#@cdktf/provider-newrelic.InfraAlertConditionCritical)
 
 ---
 
@@ -20561,8 +20649,9 @@ public resetValue()
 | [`timeFunctionInput`](#cdktfprovidernewrelicinfraalertconditionwarningoutputreferencepropertytimefunctioninput) | `string` | *No description.* |
 | [`valueInput`](#cdktfprovidernewrelicinfraalertconditionwarningoutputreferencepropertyvalueinput) | `number` | *No description.* |
 | [`duration`](#cdktfprovidernewrelicinfraalertconditionwarningoutputreferencepropertyduration)<span title="Required">*</span> | `number` | *No description.* |
-| [`timeFunction`](#cdktfprovidernewrelicinfraalertconditionwarningoutputreferencepropertytimefunction) | `string` | *No description.* |
-| [`value`](#cdktfprovidernewrelicinfraalertconditionwarningoutputreferencepropertyvalue) | `number` | *No description.* |
+| [`timeFunction`](#cdktfprovidernewrelicinfraalertconditionwarningoutputreferencepropertytimefunction)<span title="Required">*</span> | `string` | *No description.* |
+| [`value`](#cdktfprovidernewrelicinfraalertconditionwarningoutputreferencepropertyvalue)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicinfraalertconditionwarningoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.InfraAlertConditionWarning`](#@cdktf/provider-newrelic.InfraAlertConditionWarning) | *No description.* |
 
 ---
 
@@ -20606,7 +20695,7 @@ public readonly duration: number;
 
 ---
 
-##### `timeFunction`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionWarningOutputReference.property.timeFunction" id="cdktfprovidernewrelicinfraalertconditionwarningoutputreferencepropertytimefunction"></a>
+##### `timeFunction`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionWarningOutputReference.property.timeFunction" id="cdktfprovidernewrelicinfraalertconditionwarningoutputreferencepropertytimefunction"></a>
 
 ```typescript
 public readonly timeFunction: string;
@@ -20616,13 +20705,23 @@ public readonly timeFunction: string;
 
 ---
 
-##### `value`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionWarningOutputReference.property.value" id="cdktfprovidernewrelicinfraalertconditionwarningoutputreferencepropertyvalue"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionWarningOutputReference.property.value" id="cdktfprovidernewrelicinfraalertconditionwarningoutputreferencepropertyvalue"></a>
 
 ```typescript
 public readonly value: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionWarningOutputReference.property.internalValue" id="cdktfprovidernewrelicinfraalertconditionwarningoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: InfraAlertConditionWarning;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.InfraAlertConditionWarning`](#@cdktf/provider-newrelic.InfraAlertConditionWarning)
 
 ---
 
@@ -20722,12 +20821,13 @@ public resetTimeFunction()
 | [`thresholdInput`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertythresholdinput) | `number` | *No description.* |
 | [`thresholdOccurrencesInput`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertythresholdoccurrencesinput) | `string` | *No description.* |
 | [`timeFunctionInput`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertytimefunctioninput) | `string` | *No description.* |
+| [`duration`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertyduration)<span title="Required">*</span> | `number` | *No description.* |
+| [`operator`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertyoperator)<span title="Required">*</span> | `string` | *No description.* |
 | [`threshold`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertythreshold)<span title="Required">*</span> | `number` | *No description.* |
-| [`duration`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertyduration) | `number` | *No description.* |
-| [`operator`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertyoperator) | `string` | *No description.* |
-| [`thresholdDuration`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertythresholdduration) | `number` | *No description.* |
-| [`thresholdOccurrences`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertythresholdoccurrences) | `string` | *No description.* |
-| [`timeFunction`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertytimefunction) | `string` | *No description.* |
+| [`thresholdDuration`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertythresholdduration)<span title="Required">*</span> | `number` | *No description.* |
+| [`thresholdOccurrences`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertythresholdoccurrences)<span title="Required">*</span> | `string` | *No description.* |
+| [`timeFunction`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertytimefunction)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.NrqlAlertConditionCritical`](#@cdktf/provider-newrelic.NrqlAlertConditionCritical) | *No description.* |
 
 ---
 
@@ -20791,6 +20891,26 @@ public readonly timeFunctionInput: string;
 
 ---
 
+##### `duration`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionCriticalOutputReference.property.duration" id="cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertyduration"></a>
+
+```typescript
+public readonly duration: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `operator`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionCriticalOutputReference.property.operator" id="cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertyoperator"></a>
+
+```typescript
+public readonly operator: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `threshold`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionCriticalOutputReference.property.threshold" id="cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertythreshold"></a>
 
 ```typescript
@@ -20801,27 +20921,7 @@ public readonly threshold: number;
 
 ---
 
-##### `duration`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionCriticalOutputReference.property.duration" id="cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertyduration"></a>
-
-```typescript
-public readonly duration: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `operator`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionCriticalOutputReference.property.operator" id="cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertyoperator"></a>
-
-```typescript
-public readonly operator: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `thresholdDuration`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionCriticalOutputReference.property.thresholdDuration" id="cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertythresholdduration"></a>
+##### `thresholdDuration`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionCriticalOutputReference.property.thresholdDuration" id="cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertythresholdduration"></a>
 
 ```typescript
 public readonly thresholdDuration: number;
@@ -20831,7 +20931,7 @@ public readonly thresholdDuration: number;
 
 ---
 
-##### `thresholdOccurrences`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionCriticalOutputReference.property.thresholdOccurrences" id="cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertythresholdoccurrences"></a>
+##### `thresholdOccurrences`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionCriticalOutputReference.property.thresholdOccurrences" id="cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertythresholdoccurrences"></a>
 
 ```typescript
 public readonly thresholdOccurrences: string;
@@ -20841,13 +20941,23 @@ public readonly thresholdOccurrences: string;
 
 ---
 
-##### `timeFunction`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionCriticalOutputReference.property.timeFunction" id="cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertytimefunction"></a>
+##### `timeFunction`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionCriticalOutputReference.property.timeFunction" id="cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertytimefunction"></a>
 
 ```typescript
 public readonly timeFunction: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionCriticalOutputReference.property.internalValue" id="cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: NrqlAlertConditionCritical;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.NrqlAlertConditionCritical`](#@cdktf/provider-newrelic.NrqlAlertConditionCritical)
 
 ---
 
@@ -20923,9 +21033,10 @@ public resetSinceValue()
 | [`evaluationOffsetInput`](#cdktfprovidernewrelicnrqlalertconditionnrqloutputreferencepropertyevaluationoffsetinput) | `number` | *No description.* |
 | [`queryInput`](#cdktfprovidernewrelicnrqlalertconditionnrqloutputreferencepropertyqueryinput) | `string` | *No description.* |
 | [`sinceValueInput`](#cdktfprovidernewrelicnrqlalertconditionnrqloutputreferencepropertysincevalueinput) | `string` | *No description.* |
+| [`evaluationOffset`](#cdktfprovidernewrelicnrqlalertconditionnrqloutputreferencepropertyevaluationoffset)<span title="Required">*</span> | `number` | *No description.* |
 | [`query`](#cdktfprovidernewrelicnrqlalertconditionnrqloutputreferencepropertyquery)<span title="Required">*</span> | `string` | *No description.* |
-| [`evaluationOffset`](#cdktfprovidernewrelicnrqlalertconditionnrqloutputreferencepropertyevaluationoffset) | `number` | *No description.* |
-| [`sinceValue`](#cdktfprovidernewrelicnrqlalertconditionnrqloutputreferencepropertysincevalue) | `string` | *No description.* |
+| [`sinceValue`](#cdktfprovidernewrelicnrqlalertconditionnrqloutputreferencepropertysincevalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicnrqlalertconditionnrqloutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.NrqlAlertConditionNrql`](#@cdktf/provider-newrelic.NrqlAlertConditionNrql) | *No description.* |
 
 ---
 
@@ -20959,6 +21070,16 @@ public readonly sinceValueInput: string;
 
 ---
 
+##### `evaluationOffset`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionNrqlOutputReference.property.evaluationOffset" id="cdktfprovidernewrelicnrqlalertconditionnrqloutputreferencepropertyevaluationoffset"></a>
+
+```typescript
+public readonly evaluationOffset: number;
+```
+
+- *Type:* `number`
+
+---
+
 ##### `query`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionNrqlOutputReference.property.query" id="cdktfprovidernewrelicnrqlalertconditionnrqloutputreferencepropertyquery"></a>
 
 ```typescript
@@ -20969,23 +21090,23 @@ public readonly query: string;
 
 ---
 
-##### `evaluationOffset`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionNrqlOutputReference.property.evaluationOffset" id="cdktfprovidernewrelicnrqlalertconditionnrqloutputreferencepropertyevaluationoffset"></a>
-
-```typescript
-public readonly evaluationOffset: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `sinceValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionNrqlOutputReference.property.sinceValue" id="cdktfprovidernewrelicnrqlalertconditionnrqloutputreferencepropertysincevalue"></a>
+##### `sinceValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionNrqlOutputReference.property.sinceValue" id="cdktfprovidernewrelicnrqlalertconditionnrqloutputreferencepropertysincevalue"></a>
 
 ```typescript
 public readonly sinceValue: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionNrqlOutputReference.property.internalValue" id="cdktfprovidernewrelicnrqlalertconditionnrqloutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: NrqlAlertConditionNrql;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.NrqlAlertConditionNrql`](#@cdktf/provider-newrelic.NrqlAlertConditionNrql)
 
 ---
 
@@ -21085,12 +21206,13 @@ public resetTimeFunction()
 | [`thresholdInput`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertythresholdinput) | `number` | *No description.* |
 | [`thresholdOccurrencesInput`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertythresholdoccurrencesinput) | `string` | *No description.* |
 | [`timeFunctionInput`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertytimefunctioninput) | `string` | *No description.* |
+| [`duration`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertyduration)<span title="Required">*</span> | `number` | *No description.* |
+| [`operator`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertyoperator)<span title="Required">*</span> | `string` | *No description.* |
 | [`threshold`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertythreshold)<span title="Required">*</span> | `number` | *No description.* |
-| [`duration`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertyduration) | `number` | *No description.* |
-| [`operator`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertyoperator) | `string` | *No description.* |
-| [`thresholdDuration`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertythresholdduration) | `number` | *No description.* |
-| [`thresholdOccurrences`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertythresholdoccurrences) | `string` | *No description.* |
-| [`timeFunction`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertytimefunction) | `string` | *No description.* |
+| [`thresholdDuration`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertythresholdduration)<span title="Required">*</span> | `number` | *No description.* |
+| [`thresholdOccurrences`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertythresholdoccurrences)<span title="Required">*</span> | `string` | *No description.* |
+| [`timeFunction`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertytimefunction)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.NrqlAlertConditionWarning`](#@cdktf/provider-newrelic.NrqlAlertConditionWarning) | *No description.* |
 
 ---
 
@@ -21154,6 +21276,26 @@ public readonly timeFunctionInput: string;
 
 ---
 
+##### `duration`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionWarningOutputReference.property.duration" id="cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertyduration"></a>
+
+```typescript
+public readonly duration: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `operator`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionWarningOutputReference.property.operator" id="cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertyoperator"></a>
+
+```typescript
+public readonly operator: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `threshold`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionWarningOutputReference.property.threshold" id="cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertythreshold"></a>
 
 ```typescript
@@ -21164,27 +21306,7 @@ public readonly threshold: number;
 
 ---
 
-##### `duration`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionWarningOutputReference.property.duration" id="cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertyduration"></a>
-
-```typescript
-public readonly duration: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `operator`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionWarningOutputReference.property.operator" id="cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertyoperator"></a>
-
-```typescript
-public readonly operator: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `thresholdDuration`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionWarningOutputReference.property.thresholdDuration" id="cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertythresholdduration"></a>
+##### `thresholdDuration`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionWarningOutputReference.property.thresholdDuration" id="cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertythresholdduration"></a>
 
 ```typescript
 public readonly thresholdDuration: number;
@@ -21194,7 +21316,7 @@ public readonly thresholdDuration: number;
 
 ---
 
-##### `thresholdOccurrences`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionWarningOutputReference.property.thresholdOccurrences" id="cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertythresholdoccurrences"></a>
+##### `thresholdOccurrences`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionWarningOutputReference.property.thresholdOccurrences" id="cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertythresholdoccurrences"></a>
 
 ```typescript
 public readonly thresholdOccurrences: string;
@@ -21204,13 +21326,23 @@ public readonly thresholdOccurrences: string;
 
 ---
 
-##### `timeFunction`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionWarningOutputReference.property.timeFunction" id="cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertytimefunction"></a>
+##### `timeFunction`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionWarningOutputReference.property.timeFunction" id="cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertytimefunction"></a>
 
 ```typescript
 public readonly timeFunction: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionWarningOutputReference.property.internalValue" id="cdktfprovidernewrelicnrqlalertconditionwarningoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: NrqlAlertConditionWarning;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.NrqlAlertConditionWarning`](#@cdktf/provider-newrelic.NrqlAlertConditionWarning)
 
 ---
 
@@ -21279,7 +21411,8 @@ public resetWhere()
 | [`fromInput`](#cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferencepropertyfrominput) | `string` | *No description.* |
 | [`whereInput`](#cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferencepropertywhereinput) | `string` | *No description.* |
 | [`from`](#cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferencepropertyfrom)<span title="Required">*</span> | `string` | *No description.* |
-| [`where`](#cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferencepropertywhere) | `string` | *No description.* |
+| [`where`](#cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferencepropertywhere)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.ServiceLevelEventsBadEvents`](#@cdktf/provider-newrelic.ServiceLevelEventsBadEvents) | *No description.* |
 
 ---
 
@@ -21313,13 +21446,23 @@ public readonly from: string;
 
 ---
 
-##### `where`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsBadEventsOutputReference.property.where" id="cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferencepropertywhere"></a>
+##### `where`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsBadEventsOutputReference.property.where" id="cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferencepropertywhere"></a>
 
 ```typescript
 public readonly where: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsBadEventsOutputReference.property.internalValue" id="cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: ServiceLevelEventsBadEvents;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.ServiceLevelEventsBadEvents`](#@cdktf/provider-newrelic.ServiceLevelEventsBadEvents)
 
 ---
 
@@ -21388,7 +21531,8 @@ public resetWhere()
 | [`fromInput`](#cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferencepropertyfrominput) | `string` | *No description.* |
 | [`whereInput`](#cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferencepropertywhereinput) | `string` | *No description.* |
 | [`from`](#cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferencepropertyfrom)<span title="Required">*</span> | `string` | *No description.* |
-| [`where`](#cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferencepropertywhere) | `string` | *No description.* |
+| [`where`](#cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferencepropertywhere)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.ServiceLevelEventsGoodEvents`](#@cdktf/provider-newrelic.ServiceLevelEventsGoodEvents) | *No description.* |
 
 ---
 
@@ -21422,13 +21566,23 @@ public readonly from: string;
 
 ---
 
-##### `where`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsGoodEventsOutputReference.property.where" id="cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferencepropertywhere"></a>
+##### `where`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsGoodEventsOutputReference.property.where" id="cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferencepropertywhere"></a>
 
 ```typescript
 public readonly where: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsGoodEventsOutputReference.property.internalValue" id="cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: ServiceLevelEventsGoodEvents;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.ServiceLevelEventsGoodEvents`](#@cdktf/provider-newrelic.ServiceLevelEventsGoodEvents)
 
 ---
 
@@ -21490,10 +21644,10 @@ True if this is a block, false if it's a list.
 ##### `putBadEvents` <a name="@cdktf/provider-newrelic.ServiceLevelEventsOutputReference.putBadEvents" id="cdktfprovidernewrelicserviceleveleventsoutputreferenceputbadevents"></a>
 
 ```typescript
-public putBadEvents(value?: ServiceLevelEventsBadEvents)
+public putBadEvents(value: ServiceLevelEventsBadEvents)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsOutputReference.parameter.value" id="cdktfprovidernewrelicserviceleveleventsoutputreferenceparametervalue"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsOutputReference.parameter.value" id="cdktfprovidernewrelicserviceleveleventsoutputreferenceparametervalue"></a>
 
 - *Type:* [`@cdktf/provider-newrelic.ServiceLevelEventsBadEvents`](#@cdktf/provider-newrelic.ServiceLevelEventsBadEvents)
 
@@ -21502,10 +21656,10 @@ public putBadEvents(value?: ServiceLevelEventsBadEvents)
 ##### `putGoodEvents` <a name="@cdktf/provider-newrelic.ServiceLevelEventsOutputReference.putGoodEvents" id="cdktfprovidernewrelicserviceleveleventsoutputreferenceputgoodevents"></a>
 
 ```typescript
-public putGoodEvents(value?: ServiceLevelEventsGoodEvents)
+public putGoodEvents(value: ServiceLevelEventsGoodEvents)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsOutputReference.parameter.value" id="cdktfprovidernewrelicserviceleveleventsoutputreferenceparametervalue"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsOutputReference.parameter.value" id="cdktfprovidernewrelicserviceleveleventsoutputreferenceparametervalue"></a>
 
 - *Type:* [`@cdktf/provider-newrelic.ServiceLevelEventsGoodEvents`](#@cdktf/provider-newrelic.ServiceLevelEventsGoodEvents)
 
@@ -21548,6 +21702,7 @@ public resetGoodEvents()
 | [`goodEventsInput`](#cdktfprovidernewrelicserviceleveleventsoutputreferencepropertygoodeventsinput) | [`@cdktf/provider-newrelic.ServiceLevelEventsGoodEvents`](#@cdktf/provider-newrelic.ServiceLevelEventsGoodEvents) | *No description.* |
 | [`validEventsInput`](#cdktfprovidernewrelicserviceleveleventsoutputreferencepropertyvalideventsinput) | [`@cdktf/provider-newrelic.ServiceLevelEventsValidEvents`](#@cdktf/provider-newrelic.ServiceLevelEventsValidEvents) | *No description.* |
 | [`accountId`](#cdktfprovidernewrelicserviceleveleventsoutputreferencepropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicserviceleveleventsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.ServiceLevelEvents`](#@cdktf/provider-newrelic.ServiceLevelEvents) | *No description.* |
 
 ---
 
@@ -21631,6 +21786,16 @@ public readonly accountId: number;
 
 ---
 
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsOutputReference.property.internalValue" id="cdktfprovidernewrelicserviceleveleventsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: ServiceLevelEvents;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.ServiceLevelEvents`](#@cdktf/provider-newrelic.ServiceLevelEvents)
+
+---
+
 
 ### ServiceLevelEventsValidEventsOutputReference <a name="@cdktf/provider-newrelic.ServiceLevelEventsValidEventsOutputReference" id="cdktfprovidernewrelicserviceleveleventsvalideventsoutputreference"></a>
 
@@ -21696,7 +21861,8 @@ public resetWhere()
 | [`fromInput`](#cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferencepropertyfrominput) | `string` | *No description.* |
 | [`whereInput`](#cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferencepropertywhereinput) | `string` | *No description.* |
 | [`from`](#cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferencepropertyfrom)<span title="Required">*</span> | `string` | *No description.* |
-| [`where`](#cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferencepropertywhere) | `string` | *No description.* |
+| [`where`](#cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferencepropertywhere)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.ServiceLevelEventsValidEvents`](#@cdktf/provider-newrelic.ServiceLevelEventsValidEvents) | *No description.* |
 
 ---
 
@@ -21730,13 +21896,23 @@ public readonly from: string;
 
 ---
 
-##### `where`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsValidEventsOutputReference.property.where" id="cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferencepropertywhere"></a>
+##### `where`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsValidEventsOutputReference.property.where" id="cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferencepropertywhere"></a>
 
 ```typescript
 public readonly where: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsValidEventsOutputReference.property.internalValue" id="cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: ServiceLevelEventsValidEvents;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.ServiceLevelEventsValidEvents`](#@cdktf/provider-newrelic.ServiceLevelEventsValidEvents)
 
 ---
 
@@ -21810,6 +21986,7 @@ public putRolling(value: ServiceLevelObjectiveTimeWindowRolling)
 | --- | --- | --- |
 | [`rolling`](#cdktfprovidernewrelicservicelevelobjectivetimewindowoutputreferencepropertyrolling)<span title="Required">*</span> | [`@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowRollingOutputReference`](#@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowRollingOutputReference) | *No description.* |
 | [`rollingInput`](#cdktfprovidernewrelicservicelevelobjectivetimewindowoutputreferencepropertyrollinginput) | [`@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowRolling`](#@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowRolling) | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicservicelevelobjectivetimewindowoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindow`](#@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindow) | *No description.* |
 
 ---
 
@@ -21830,6 +22007,16 @@ public readonly rollingInput: ServiceLevelObjectiveTimeWindowRolling;
 ```
 
 - *Type:* [`@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowRolling`](#@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowRolling)
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowOutputReference.property.internalValue" id="cdktfprovidernewrelicservicelevelobjectivetimewindowoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: ServiceLevelObjectiveTimeWindow;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindow`](#@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindow)
 
 ---
 
@@ -21886,6 +22073,7 @@ True if this is a block, false if it's a list.
 | [`unitInput`](#cdktfprovidernewrelicservicelevelobjectivetimewindowrollingoutputreferencepropertyunitinput) | `string` | *No description.* |
 | [`count`](#cdktfprovidernewrelicservicelevelobjectivetimewindowrollingoutputreferencepropertycount)<span title="Required">*</span> | `number` | *No description.* |
 | [`unit`](#cdktfprovidernewrelicservicelevelobjectivetimewindowrollingoutputreferencepropertyunit)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicservicelevelobjectivetimewindowrollingoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowRolling`](#@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowRolling) | *No description.* |
 
 ---
 
@@ -21926,6 +22114,16 @@ public readonly unit: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowRollingOutputReference.property.internalValue" id="cdktfprovidernewrelicservicelevelobjectivetimewindowrollingoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: ServiceLevelObjectiveTimeWindowRolling;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowRolling`](#@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowRolling)
 
 ---
 
@@ -21980,6 +22178,7 @@ True if this is a block, false if it's a list.
 | --- | --- | --- |
 | [`thresholdInput`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditioncriticaloutputreferencepropertythresholdinput) | `number` | *No description.* |
 | [`threshold`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditioncriticaloutputreferencepropertythreshold)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditioncriticaloutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionCritical`](#@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionCritical) | *No description.* |
 
 ---
 
@@ -22000,6 +22199,16 @@ public readonly threshold: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionCriticalOutputReference.property.internalValue" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditioncriticaloutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: SyntheticsMultilocationAlertConditionCritical;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionCritical`](#@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionCritical)
 
 ---
 
@@ -22054,6 +22263,7 @@ True if this is a block, false if it's a list.
 | --- | --- | --- |
 | [`thresholdInput`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionwarningoutputreferencepropertythresholdinput) | `number` | *No description.* |
 | [`threshold`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionwarningoutputreferencepropertythreshold)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionwarningoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionWarning`](#@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionWarning) | *No description.* |
 
 ---
 
@@ -22074,6 +22284,16 @@ public readonly threshold: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionWarningOutputReference.property.internalValue" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionwarningoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: SyntheticsMultilocationAlertConditionWarning;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionWarning`](#@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionWarning)
 
 ---
 

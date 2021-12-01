@@ -65,7 +65,7 @@ export interface SyntheticsMultilocationAlertConditionCritical {
   readonly threshold: number;
 }
 
-function syntheticsMultilocationAlertConditionCriticalToTerraform(struct?: SyntheticsMultilocationAlertConditionCriticalOutputReference | SyntheticsMultilocationAlertConditionCritical): any {
+export function syntheticsMultilocationAlertConditionCriticalToTerraform(struct?: SyntheticsMultilocationAlertConditionCriticalOutputReference | SyntheticsMultilocationAlertConditionCritical): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -85,6 +85,25 @@ export class SyntheticsMultilocationAlertConditionCriticalOutputReference extend
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): SyntheticsMultilocationAlertConditionCritical | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._threshold) {
+      hasAnyValues = true;
+      internalValueResult.threshold = this._threshold;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsMultilocationAlertConditionCritical | undefined) {
+    if (value === undefined) {
+      this._threshold = undefined;
+    }
+    else {
+      this._threshold = value.threshold;
+    }
+  }
+
   // threshold - computed: false, optional: false, required: true
   private _threshold?: number; 
   public get threshold() {
@@ -95,7 +114,7 @@ export class SyntheticsMultilocationAlertConditionCriticalOutputReference extend
   }
   // Temporarily expose input value. Use with caution.
   public get thresholdInput() {
-    return this._threshold
+    return this._threshold;
   }
 }
 export interface SyntheticsMultilocationAlertConditionWarning {
@@ -107,7 +126,7 @@ export interface SyntheticsMultilocationAlertConditionWarning {
   readonly threshold: number;
 }
 
-function syntheticsMultilocationAlertConditionWarningToTerraform(struct?: SyntheticsMultilocationAlertConditionWarningOutputReference | SyntheticsMultilocationAlertConditionWarning): any {
+export function syntheticsMultilocationAlertConditionWarningToTerraform(struct?: SyntheticsMultilocationAlertConditionWarningOutputReference | SyntheticsMultilocationAlertConditionWarning): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -127,6 +146,25 @@ export class SyntheticsMultilocationAlertConditionWarningOutputReference extends
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): SyntheticsMultilocationAlertConditionWarning | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._threshold) {
+      hasAnyValues = true;
+      internalValueResult.threshold = this._threshold;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsMultilocationAlertConditionWarning | undefined) {
+    if (value === undefined) {
+      this._threshold = undefined;
+    }
+    else {
+      this._threshold = value.threshold;
+    }
+  }
+
   // threshold - computed: false, optional: false, required: true
   private _threshold?: number; 
   public get threshold() {
@@ -137,7 +175,7 @@ export class SyntheticsMultilocationAlertConditionWarningOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get thresholdInput() {
-    return this._threshold
+    return this._threshold;
   }
 }
 
@@ -179,8 +217,8 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
     this._policyId = config.policyId;
     this._runbookUrl = config.runbookUrl;
     this._violationTimeLimitSeconds = config.violationTimeLimitSeconds;
-    this._critical = config.critical;
-    this._warning = config.warning;
+    this._critical.internalValue = config.critical;
+    this._warning.internalValue = config.warning;
   }
 
   // ==========
@@ -188,11 +226,11 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
   // ==========
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable | undefined; 
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -200,7 +238,7 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 
   // entities - computed: false, optional: false, required: true
@@ -213,7 +251,7 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
   }
   // Temporarily expose input value. Use with caution.
   public get entitiesInput() {
-    return this._entities
+    return this._entities;
   }
 
   // id - computed: true, optional: true, required: false
@@ -231,7 +269,7 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // policy_id - computed: false, optional: false, required: true
@@ -244,15 +282,15 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
   }
   // Temporarily expose input value. Use with caution.
   public get policyIdInput() {
-    return this._policyId
+    return this._policyId;
   }
 
   // runbook_url - computed: false, optional: true, required: false
-  private _runbookUrl?: string | undefined; 
+  private _runbookUrl?: string; 
   public get runbookUrl() {
     return this.getStringAttribute('runbook_url');
   }
-  public set runbookUrl(value: string | undefined) {
+  public set runbookUrl(value: string) {
     this._runbookUrl = value;
   }
   public resetRunbookUrl() {
@@ -260,7 +298,7 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
   }
   // Temporarily expose input value. Use with caution.
   public get runbookUrlInput() {
-    return this._runbookUrl
+    return this._runbookUrl;
   }
 
   // violation_time_limit_seconds - computed: false, optional: false, required: true
@@ -273,38 +311,36 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
   }
   // Temporarily expose input value. Use with caution.
   public get violationTimeLimitSecondsInput() {
-    return this._violationTimeLimitSeconds
+    return this._violationTimeLimitSeconds;
   }
 
   // critical - computed: false, optional: false, required: true
-  private _critical?: SyntheticsMultilocationAlertConditionCritical; 
-  private __criticalOutput = new SyntheticsMultilocationAlertConditionCriticalOutputReference(this as any, "critical", true);
+  private _critical = new SyntheticsMultilocationAlertConditionCriticalOutputReference(this as any, "critical", true);
   public get critical() {
-    return this.__criticalOutput;
+    return this._critical;
   }
   public putCritical(value: SyntheticsMultilocationAlertConditionCritical) {
-    this._critical = value;
+    this._critical.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get criticalInput() {
-    return this._critical
+    return this._critical.internalValue;
   }
 
   // warning - computed: false, optional: true, required: false
-  private _warning?: SyntheticsMultilocationAlertConditionWarning | undefined; 
-  private __warningOutput = new SyntheticsMultilocationAlertConditionWarningOutputReference(this as any, "warning", true);
+  private _warning = new SyntheticsMultilocationAlertConditionWarningOutputReference(this as any, "warning", true);
   public get warning() {
-    return this.__warningOutput;
+    return this._warning;
   }
-  public putWarning(value: SyntheticsMultilocationAlertConditionWarning | undefined) {
-    this._warning = value;
+  public putWarning(value: SyntheticsMultilocationAlertConditionWarning) {
+    this._warning.internalValue = value;
   }
   public resetWarning() {
-    this._warning = undefined;
+    this._warning.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get warningInput() {
-    return this._warning
+    return this._warning.internalValue;
   }
 
   // =========
@@ -319,8 +355,8 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
       policy_id: cdktf.numberToTerraform(this._policyId),
       runbook_url: cdktf.stringToTerraform(this._runbookUrl),
       violation_time_limit_seconds: cdktf.numberToTerraform(this._violationTimeLimitSeconds),
-      critical: syntheticsMultilocationAlertConditionCriticalToTerraform(this._critical),
-      warning: syntheticsMultilocationAlertConditionWarningToTerraform(this._warning),
+      critical: syntheticsMultilocationAlertConditionCriticalToTerraform(this._critical.internalValue),
+      warning: syntheticsMultilocationAlertConditionWarningToTerraform(this._warning.internalValue),
     };
   }
 }

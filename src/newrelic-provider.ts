@@ -124,20 +124,20 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   public get accountId() {
     return this._accountId;
   }
-  public set accountId(value: number| undefined) {
+  public set accountId(value: number | undefined) {
     this._accountId = value;
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
-    return this._accountId
+    return this._accountId;
   }
 
   // admin_api_key - computed: false, optional: true, required: false
-  private _adminApiKey?: string | undefined; 
+  private _adminApiKey?: string; 
   public get adminApiKey() {
     return this._adminApiKey;
   }
-  public set adminApiKey(value: string | undefined| undefined) {
+  public set adminApiKey(value: string | undefined) {
     this._adminApiKey = value;
   }
   public resetAdminApiKey() {
@@ -145,15 +145,15 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get adminApiKeyInput() {
-    return this._adminApiKey
+    return this._adminApiKey;
   }
 
   // api_key - computed: false, optional: true, required: false
-  private _apiKey?: string | undefined; 
+  private _apiKey?: string; 
   public get apiKey() {
     return this._apiKey;
   }
-  public set apiKey(value: string | undefined| undefined) {
+  public set apiKey(value: string | undefined) {
     this._apiKey = value;
   }
   public resetApiKey() {
@@ -161,15 +161,15 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get apiKeyInput() {
-    return this._apiKey
+    return this._apiKey;
   }
 
   // api_url - computed: false, optional: true, required: false
-  private _apiUrl?: string | undefined; 
+  private _apiUrl?: string; 
   public get apiUrl() {
     return this._apiUrl;
   }
-  public set apiUrl(value: string | undefined| undefined) {
+  public set apiUrl(value: string | undefined) {
     this._apiUrl = value;
   }
   public resetApiUrl() {
@@ -177,15 +177,15 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get apiUrlInput() {
-    return this._apiUrl
+    return this._apiUrl;
   }
 
   // cacert_file - computed: false, optional: true, required: false
-  private _cacertFile?: string | undefined; 
+  private _cacertFile?: string; 
   public get cacertFile() {
     return this._cacertFile;
   }
-  public set cacertFile(value: string | undefined| undefined) {
+  public set cacertFile(value: string | undefined) {
     this._cacertFile = value;
   }
   public resetCacertFile() {
@@ -193,15 +193,15 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get cacertFileInput() {
-    return this._cacertFile
+    return this._cacertFile;
   }
 
   // infrastructure_api_url - computed: false, optional: true, required: false
-  private _infrastructureApiUrl?: string | undefined; 
+  private _infrastructureApiUrl?: string; 
   public get infrastructureApiUrl() {
     return this._infrastructureApiUrl;
   }
-  public set infrastructureApiUrl(value: string | undefined| undefined) {
+  public set infrastructureApiUrl(value: string | undefined) {
     this._infrastructureApiUrl = value;
   }
   public resetInfrastructureApiUrl() {
@@ -209,15 +209,15 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get infrastructureApiUrlInput() {
-    return this._infrastructureApiUrl
+    return this._infrastructureApiUrl;
   }
 
   // insecure_skip_verify - computed: false, optional: true, required: false
-  private _insecureSkipVerify?: boolean | cdktf.IResolvable | undefined; 
+  private _insecureSkipVerify?: boolean | cdktf.IResolvable; 
   public get insecureSkipVerify() {
     return this._insecureSkipVerify;
   }
-  public set insecureSkipVerify(value: boolean | cdktf.IResolvable | undefined| undefined) {
+  public set insecureSkipVerify(value: boolean | cdktf.IResolvable | undefined) {
     this._insecureSkipVerify = value;
   }
   public resetInsecureSkipVerify() {
@@ -225,15 +225,15 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get insecureSkipVerifyInput() {
-    return this._insecureSkipVerify
+    return this._insecureSkipVerify;
   }
 
   // insights_insert_key - computed: false, optional: true, required: false
-  private _insightsInsertKey?: string | undefined; 
+  private _insightsInsertKey?: string; 
   public get insightsInsertKey() {
     return this._insightsInsertKey;
   }
-  public set insightsInsertKey(value: string | undefined| undefined) {
+  public set insightsInsertKey(value: string | undefined) {
     this._insightsInsertKey = value;
   }
   public resetInsightsInsertKey() {
@@ -241,15 +241,15 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get insightsInsertKeyInput() {
-    return this._insightsInsertKey
+    return this._insightsInsertKey;
   }
 
   // insights_insert_url - computed: false, optional: true, required: false
-  private _insightsInsertUrl?: string | undefined; 
+  private _insightsInsertUrl?: string; 
   public get insightsInsertUrl() {
     return this._insightsInsertUrl;
   }
-  public set insightsInsertUrl(value: string | undefined| undefined) {
+  public set insightsInsertUrl(value: string | undefined) {
     this._insightsInsertUrl = value;
   }
   public resetInsightsInsertUrl() {
@@ -257,15 +257,15 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get insightsInsertUrlInput() {
-    return this._insightsInsertUrl
+    return this._insightsInsertUrl;
   }
 
   // insights_query_url - computed: false, optional: true, required: false
-  private _insightsQueryUrl?: string | undefined; 
+  private _insightsQueryUrl?: string; 
   public get insightsQueryUrl() {
     return this._insightsQueryUrl;
   }
-  public set insightsQueryUrl(value: string | undefined| undefined) {
+  public set insightsQueryUrl(value: string | undefined) {
     this._insightsQueryUrl = value;
   }
   public resetInsightsQueryUrl() {
@@ -273,15 +273,15 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get insightsQueryUrlInput() {
-    return this._insightsQueryUrl
+    return this._insightsQueryUrl;
   }
 
   // nerdgraph_api_url - computed: false, optional: true, required: false
-  private _nerdgraphApiUrl?: string | undefined; 
+  private _nerdgraphApiUrl?: string; 
   public get nerdgraphApiUrl() {
     return this._nerdgraphApiUrl;
   }
-  public set nerdgraphApiUrl(value: string | undefined| undefined) {
+  public set nerdgraphApiUrl(value: string | undefined) {
     this._nerdgraphApiUrl = value;
   }
   public resetNerdgraphApiUrl() {
@@ -289,15 +289,15 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get nerdgraphApiUrlInput() {
-    return this._nerdgraphApiUrl
+    return this._nerdgraphApiUrl;
   }
 
   // region - computed: false, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this._region;
   }
-  public set region(value: string | undefined| undefined) {
+  public set region(value: string | undefined) {
     this._region = value;
   }
   public resetRegion() {
@@ -305,15 +305,15 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // synthetics_api_url - computed: false, optional: true, required: false
-  private _syntheticsApiUrl?: string | undefined; 
+  private _syntheticsApiUrl?: string; 
   public get syntheticsApiUrl() {
     return this._syntheticsApiUrl;
   }
-  public set syntheticsApiUrl(value: string | undefined| undefined) {
+  public set syntheticsApiUrl(value: string | undefined) {
     this._syntheticsApiUrl = value;
   }
   public resetSyntheticsApiUrl() {
@@ -321,15 +321,15 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get syntheticsApiUrlInput() {
-    return this._syntheticsApiUrl
+    return this._syntheticsApiUrl;
   }
 
   // alias - computed: false, optional: true, required: false
-  private _alias?: string | undefined; 
+  private _alias?: string; 
   public get alias() {
     return this._alias;
   }
-  public set alias(value: string | undefined| undefined) {
+  public set alias(value: string | undefined) {
     this._alias = value;
   }
   public resetAlias() {
@@ -337,7 +337,7 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get aliasInput() {
-    return this._alias
+    return this._alias;
   }
 
   // =========

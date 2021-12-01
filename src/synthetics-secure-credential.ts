@@ -83,11 +83,11 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
   // ==========
 
   // created_at - computed: true, optional: true, required: false
-  private _createdAt?: string | undefined; 
+  private _createdAt?: string; 
   public get createdAt() {
     return this.getStringAttribute('created_at');
   }
-  public set createdAt(value: string | undefined) {
+  public set createdAt(value: string) {
     this._createdAt = value;
   }
   public resetCreatedAt() {
@@ -95,15 +95,15 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get createdAtInput() {
-    return this._createdAt
+    return this._createdAt;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -111,7 +111,7 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -129,15 +129,15 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get keyInput() {
-    return this._key
+    return this._key;
   }
 
   // last_updated - computed: true, optional: true, required: false
-  private _lastUpdated?: string | undefined; 
+  private _lastUpdated?: string; 
   public get lastUpdated() {
     return this.getStringAttribute('last_updated');
   }
-  public set lastUpdated(value: string | undefined) {
+  public set lastUpdated(value: string) {
     this._lastUpdated = value;
   }
   public resetLastUpdated() {
@@ -145,7 +145,7 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get lastUpdatedInput() {
-    return this._lastUpdated
+    return this._lastUpdated;
   }
 
   // value - computed: false, optional: false, required: true
@@ -158,7 +158,7 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
-    return this._value
+    return this._value;
   }
 
   // =========

@@ -65,7 +65,7 @@ export interface AlertMutingRuleConditionConditions {
   readonly values: string[];
 }
 
-function alertMutingRuleConditionConditionsToTerraform(struct?: AlertMutingRuleConditionConditions): any {
+export function alertMutingRuleConditionConditionsToTerraform(struct?: AlertMutingRuleConditionConditions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -92,7 +92,7 @@ export interface AlertMutingRuleCondition {
   readonly conditions: AlertMutingRuleConditionConditions[];
 }
 
-function alertMutingRuleConditionToTerraform(struct?: AlertMutingRuleConditionOutputReference | AlertMutingRuleCondition): any {
+export function alertMutingRuleConditionToTerraform(struct?: AlertMutingRuleConditionOutputReference | AlertMutingRuleCondition): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -113,6 +113,31 @@ export class AlertMutingRuleConditionOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): AlertMutingRuleCondition | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._operator) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._conditions) {
+      hasAnyValues = true;
+      internalValueResult.conditions = this._conditions;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AlertMutingRuleCondition | undefined) {
+    if (value === undefined) {
+      this._operator = undefined;
+      this._conditions = undefined;
+    }
+    else {
+      this._operator = value.operator;
+      this._conditions = value.conditions;
+    }
+  }
+
   // operator - computed: false, optional: false, required: true
   private _operator?: string; 
   public get operator() {
@@ -123,7 +148,7 @@ export class AlertMutingRuleConditionOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get operatorInput() {
-    return this._operator
+    return this._operator;
   }
 
   // conditions - computed: false, optional: false, required: true
@@ -137,7 +162,7 @@ export class AlertMutingRuleConditionOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get conditionsInput() {
-    return this._conditions
+    return this._conditions;
   }
 }
 export interface AlertMutingRuleSchedule {
@@ -185,7 +210,7 @@ export interface AlertMutingRuleSchedule {
   readonly weeklyRepeatDays?: string[];
 }
 
-function alertMutingRuleScheduleToTerraform(struct?: AlertMutingRuleScheduleOutputReference | AlertMutingRuleSchedule): any {
+export function alertMutingRuleScheduleToTerraform(struct?: AlertMutingRuleScheduleOutputReference | AlertMutingRuleSchedule): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -211,12 +236,67 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): AlertMutingRuleSchedule | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._endRepeat) {
+      hasAnyValues = true;
+      internalValueResult.endRepeat = this._endRepeat;
+    }
+    if (this._endTime) {
+      hasAnyValues = true;
+      internalValueResult.endTime = this._endTime;
+    }
+    if (this._repeat) {
+      hasAnyValues = true;
+      internalValueResult.repeat = this._repeat;
+    }
+    if (this._repeatCount) {
+      hasAnyValues = true;
+      internalValueResult.repeatCount = this._repeatCount;
+    }
+    if (this._startTime) {
+      hasAnyValues = true;
+      internalValueResult.startTime = this._startTime;
+    }
+    if (this._timeZone) {
+      hasAnyValues = true;
+      internalValueResult.timeZone = this._timeZone;
+    }
+    if (this._weeklyRepeatDays) {
+      hasAnyValues = true;
+      internalValueResult.weeklyRepeatDays = this._weeklyRepeatDays;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AlertMutingRuleSchedule | undefined) {
+    if (value === undefined) {
+      this._endRepeat = undefined;
+      this._endTime = undefined;
+      this._repeat = undefined;
+      this._repeatCount = undefined;
+      this._startTime = undefined;
+      this._timeZone = undefined;
+      this._weeklyRepeatDays = undefined;
+    }
+    else {
+      this._endRepeat = value.endRepeat;
+      this._endTime = value.endTime;
+      this._repeat = value.repeat;
+      this._repeatCount = value.repeatCount;
+      this._startTime = value.startTime;
+      this._timeZone = value.timeZone;
+      this._weeklyRepeatDays = value.weeklyRepeatDays;
+    }
+  }
+
   // end_repeat - computed: false, optional: true, required: false
-  private _endRepeat?: string | undefined; 
+  private _endRepeat?: string; 
   public get endRepeat() {
     return this.getStringAttribute('end_repeat');
   }
-  public set endRepeat(value: string | undefined) {
+  public set endRepeat(value: string) {
     this._endRepeat = value;
   }
   public resetEndRepeat() {
@@ -224,15 +304,15 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get endRepeatInput() {
-    return this._endRepeat
+    return this._endRepeat;
   }
 
   // end_time - computed: false, optional: true, required: false
-  private _endTime?: string | undefined; 
+  private _endTime?: string; 
   public get endTime() {
     return this.getStringAttribute('end_time');
   }
-  public set endTime(value: string | undefined) {
+  public set endTime(value: string) {
     this._endTime = value;
   }
   public resetEndTime() {
@@ -240,15 +320,15 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get endTimeInput() {
-    return this._endTime
+    return this._endTime;
   }
 
   // repeat - computed: false, optional: true, required: false
-  private _repeat?: string | undefined; 
+  private _repeat?: string; 
   public get repeat() {
     return this.getStringAttribute('repeat');
   }
-  public set repeat(value: string | undefined) {
+  public set repeat(value: string) {
     this._repeat = value;
   }
   public resetRepeat() {
@@ -256,15 +336,15 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get repeatInput() {
-    return this._repeat
+    return this._repeat;
   }
 
   // repeat_count - computed: false, optional: true, required: false
-  private _repeatCount?: number | undefined; 
+  private _repeatCount?: number; 
   public get repeatCount() {
     return this.getNumberAttribute('repeat_count');
   }
-  public set repeatCount(value: number | undefined) {
+  public set repeatCount(value: number) {
     this._repeatCount = value;
   }
   public resetRepeatCount() {
@@ -272,15 +352,15 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get repeatCountInput() {
-    return this._repeatCount
+    return this._repeatCount;
   }
 
   // start_time - computed: false, optional: true, required: false
-  private _startTime?: string | undefined; 
+  private _startTime?: string; 
   public get startTime() {
     return this.getStringAttribute('start_time');
   }
-  public set startTime(value: string | undefined) {
+  public set startTime(value: string) {
     this._startTime = value;
   }
   public resetStartTime() {
@@ -288,7 +368,7 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get startTimeInput() {
-    return this._startTime
+    return this._startTime;
   }
 
   // time_zone - computed: false, optional: false, required: true
@@ -301,15 +381,15 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get timeZoneInput() {
-    return this._timeZone
+    return this._timeZone;
   }
 
   // weekly_repeat_days - computed: false, optional: true, required: false
-  private _weeklyRepeatDays?: string[] | undefined; 
+  private _weeklyRepeatDays?: string[]; 
   public get weeklyRepeatDays() {
     return this.getListAttribute('weekly_repeat_days');
   }
-  public set weeklyRepeatDays(value: string[] | undefined) {
+  public set weeklyRepeatDays(value: string[]) {
     this._weeklyRepeatDays = value;
   }
   public resetWeeklyRepeatDays() {
@@ -317,7 +397,7 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get weeklyRepeatDaysInput() {
-    return this._weeklyRepeatDays
+    return this._weeklyRepeatDays;
   }
 }
 
@@ -357,8 +437,8 @@ export class AlertMutingRule extends cdktf.TerraformResource {
     this._description = config.description;
     this._enabled = config.enabled;
     this._name = config.name;
-    this._condition = config.condition;
-    this._schedule = config.schedule;
+    this._condition.internalValue = config.condition;
+    this._schedule.internalValue = config.schedule;
   }
 
   // ==========
@@ -366,11 +446,11 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   // ==========
 
   // account_id - computed: true, optional: true, required: false
-  private _accountId?: number | undefined; 
+  private _accountId?: number; 
   public get accountId() {
     return this.getNumberAttribute('account_id');
   }
-  public set accountId(value: number | undefined) {
+  public set accountId(value: number) {
     this._accountId = value;
   }
   public resetAccountId() {
@@ -378,15 +458,15 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
-    return this._accountId
+    return this._accountId;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -394,7 +474,7 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // enabled - computed: false, optional: false, required: true
@@ -407,7 +487,7 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 
   // id - computed: true, optional: true, required: false
@@ -425,38 +505,36 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // condition - computed: false, optional: false, required: true
-  private _condition?: AlertMutingRuleCondition; 
-  private __conditionOutput = new AlertMutingRuleConditionOutputReference(this as any, "condition", true);
+  private _condition = new AlertMutingRuleConditionOutputReference(this as any, "condition", true);
   public get condition() {
-    return this.__conditionOutput;
+    return this._condition;
   }
   public putCondition(value: AlertMutingRuleCondition) {
-    this._condition = value;
+    this._condition.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get conditionInput() {
-    return this._condition
+    return this._condition.internalValue;
   }
 
   // schedule - computed: false, optional: true, required: false
-  private _schedule?: AlertMutingRuleSchedule | undefined; 
-  private __scheduleOutput = new AlertMutingRuleScheduleOutputReference(this as any, "schedule", true);
+  private _schedule = new AlertMutingRuleScheduleOutputReference(this as any, "schedule", true);
   public get schedule() {
-    return this.__scheduleOutput;
+    return this._schedule;
   }
-  public putSchedule(value: AlertMutingRuleSchedule | undefined) {
-    this._schedule = value;
+  public putSchedule(value: AlertMutingRuleSchedule) {
+    this._schedule.internalValue = value;
   }
   public resetSchedule() {
-    this._schedule = undefined;
+    this._schedule.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get scheduleInput() {
-    return this._schedule
+    return this._schedule.internalValue;
   }
 
   // =========
@@ -469,8 +547,8 @@ export class AlertMutingRule extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       enabled: cdktf.booleanToTerraform(this._enabled),
       name: cdktf.stringToTerraform(this._name),
-      condition: alertMutingRuleConditionToTerraform(this._condition),
-      schedule: alertMutingRuleScheduleToTerraform(this._schedule),
+      condition: alertMutingRuleConditionToTerraform(this._condition.internalValue),
+      schedule: alertMutingRuleScheduleToTerraform(this._schedule.internalValue),
     };
   }
 }

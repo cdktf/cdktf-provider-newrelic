@@ -41,7 +41,7 @@ export interface SyntheticsMonitorScriptLocation {
   readonly name: string;
 }
 
-function syntheticsMonitorScriptLocationToTerraform(struct?: SyntheticsMonitorScriptLocation): any {
+export function syntheticsMonitorScriptLocationToTerraform(struct?: SyntheticsMonitorScriptLocation): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -109,7 +109,7 @@ export class SyntheticsMonitorScript extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get monitorIdInput() {
-    return this._monitorId
+    return this._monitorId;
   }
 
   // text - computed: false, optional: false, required: true
@@ -122,16 +122,16 @@ export class SyntheticsMonitorScript extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get textInput() {
-    return this._text
+    return this._text;
   }
 
   // location - computed: false, optional: true, required: false
-  private _location?: SyntheticsMonitorScriptLocation[] | undefined; 
+  private _location?: SyntheticsMonitorScriptLocation[]; 
   public get location() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('location') as any;
   }
-  public set location(value: SyntheticsMonitorScriptLocation[] | undefined) {
+  public set location(value: SyntheticsMonitorScriptLocation[]) {
     this._location = value;
   }
   public resetLocation() {
@@ -139,7 +139,7 @@ export class SyntheticsMonitorScript extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get locationInput() {
-    return this._location
+    return this._location;
   }
 
   // =========

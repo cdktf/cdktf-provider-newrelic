@@ -53,7 +53,7 @@ export interface DataNewrelicEntityTag {
   readonly value: string;
 }
 
-function dataNewrelicEntityTagToTerraform(struct?: DataNewrelicEntityTagOutputReference | DataNewrelicEntityTag): any {
+export function dataNewrelicEntityTagToTerraform(struct?: DataNewrelicEntityTagOutputReference | DataNewrelicEntityTag): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -74,6 +74,31 @@ export class DataNewrelicEntityTagOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DataNewrelicEntityTag | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._key) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataNewrelicEntityTag | undefined) {
+    if (value === undefined) {
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else {
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
   // key - computed: false, optional: false, required: true
   private _key?: string; 
   public get key() {
@@ -84,7 +109,7 @@ export class DataNewrelicEntityTagOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get keyInput() {
-    return this._key
+    return this._key;
   }
 
   // value - computed: false, optional: false, required: true
@@ -97,7 +122,7 @@ export class DataNewrelicEntityTagOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
-    return this._value
+    return this._value;
   }
 }
 
@@ -137,7 +162,7 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
     this._ignoreCase = config.ignoreCase;
     this._name = config.name;
     this._type = config.type;
-    this._tag = config.tag;
+    this._tag.internalValue = config.tag;
   }
 
   // ==========
@@ -155,11 +180,11 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
   }
 
   // domain - computed: true, optional: true, required: false
-  private _domain?: string | undefined; 
+  private _domain?: string; 
   public get domain() {
     return this.getStringAttribute('domain');
   }
-  public set domain(value: string | undefined) {
+  public set domain(value: string) {
     this._domain = value;
   }
   public resetDomain() {
@@ -167,7 +192,7 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get domainInput() {
-    return this._domain
+    return this._domain;
   }
 
   // guid - computed: true, optional: false, required: false
@@ -181,11 +206,11 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
   }
 
   // ignore_case - computed: false, optional: true, required: false
-  private _ignoreCase?: boolean | cdktf.IResolvable | undefined; 
+  private _ignoreCase?: boolean | cdktf.IResolvable; 
   public get ignoreCase() {
     return this.getBooleanAttribute('ignore_case') as any;
   }
-  public set ignoreCase(value: boolean | cdktf.IResolvable | undefined) {
+  public set ignoreCase(value: boolean | cdktf.IResolvable) {
     this._ignoreCase = value;
   }
   public resetIgnoreCase() {
@@ -193,7 +218,7 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get ignoreCaseInput() {
-    return this._ignoreCase
+    return this._ignoreCase;
   }
 
   // name - computed: false, optional: false, required: true
@@ -206,7 +231,7 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // serving_apm_application_id - computed: true, optional: false, required: false
@@ -215,11 +240,11 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
   }
 
   // type - computed: true, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -227,24 +252,23 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // tag - computed: false, optional: true, required: false
-  private _tag?: DataNewrelicEntityTag | undefined; 
-  private __tagOutput = new DataNewrelicEntityTagOutputReference(this as any, "tag", true);
+  private _tag = new DataNewrelicEntityTagOutputReference(this as any, "tag", true);
   public get tag() {
-    return this.__tagOutput;
+    return this._tag;
   }
-  public putTag(value: DataNewrelicEntityTag | undefined) {
-    this._tag = value;
+  public putTag(value: DataNewrelicEntityTag) {
+    this._tag.internalValue = value;
   }
   public resetTag() {
-    this._tag = undefined;
+    this._tag.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get tagInput() {
-    return this._tag
+    return this._tag.internalValue;
   }
 
   // =========
@@ -257,7 +281,7 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
       ignore_case: cdktf.booleanToTerraform(this._ignoreCase),
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
-      tag: dataNewrelicEntityTagToTerraform(this._tag),
+      tag: dataNewrelicEntityTagToTerraform(this._tag.internalValue),
     };
   }
 }
