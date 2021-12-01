@@ -113,7 +113,7 @@ export interface InfraAlertConditionCritical {
   readonly value?: number;
 }
 
-function infraAlertConditionCriticalToTerraform(struct?: InfraAlertConditionCriticalOutputReference | InfraAlertConditionCritical): any {
+export function infraAlertConditionCriticalToTerraform(struct?: InfraAlertConditionCriticalOutputReference | InfraAlertConditionCritical): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -135,6 +135,37 @@ export class InfraAlertConditionCriticalOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): InfraAlertConditionCritical | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._duration) {
+      hasAnyValues = true;
+      internalValueResult.duration = this._duration;
+    }
+    if (this._timeFunction) {
+      hasAnyValues = true;
+      internalValueResult.timeFunction = this._timeFunction;
+    }
+    if (this._value) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: InfraAlertConditionCritical | undefined) {
+    if (value === undefined) {
+      this._duration = undefined;
+      this._timeFunction = undefined;
+      this._value = undefined;
+    }
+    else {
+      this._duration = value.duration;
+      this._timeFunction = value.timeFunction;
+      this._value = value.value;
+    }
+  }
+
   // duration - computed: false, optional: false, required: true
   private _duration?: number; 
   public get duration() {
@@ -145,15 +176,15 @@ export class InfraAlertConditionCriticalOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get durationInput() {
-    return this._duration
+    return this._duration;
   }
 
   // time_function - computed: false, optional: true, required: false
-  private _timeFunction?: string | undefined; 
+  private _timeFunction?: string; 
   public get timeFunction() {
     return this.getStringAttribute('time_function');
   }
-  public set timeFunction(value: string | undefined) {
+  public set timeFunction(value: string) {
     this._timeFunction = value;
   }
   public resetTimeFunction() {
@@ -161,15 +192,15 @@ export class InfraAlertConditionCriticalOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get timeFunctionInput() {
-    return this._timeFunction
+    return this._timeFunction;
   }
 
   // value - computed: false, optional: true, required: false
-  private _value?: number | undefined; 
+  private _value?: number; 
   public get value() {
     return this.getNumberAttribute('value');
   }
-  public set value(value: number | undefined) {
+  public set value(value: number) {
     this._value = value;
   }
   public resetValue() {
@@ -177,7 +208,7 @@ export class InfraAlertConditionCriticalOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
-    return this._value
+    return this._value;
   }
 }
 export interface InfraAlertConditionWarning {
@@ -195,7 +226,7 @@ export interface InfraAlertConditionWarning {
   readonly value?: number;
 }
 
-function infraAlertConditionWarningToTerraform(struct?: InfraAlertConditionWarningOutputReference | InfraAlertConditionWarning): any {
+export function infraAlertConditionWarningToTerraform(struct?: InfraAlertConditionWarningOutputReference | InfraAlertConditionWarning): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -217,6 +248,37 @@ export class InfraAlertConditionWarningOutputReference extends cdktf.ComplexObje
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): InfraAlertConditionWarning | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._duration) {
+      hasAnyValues = true;
+      internalValueResult.duration = this._duration;
+    }
+    if (this._timeFunction) {
+      hasAnyValues = true;
+      internalValueResult.timeFunction = this._timeFunction;
+    }
+    if (this._value) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: InfraAlertConditionWarning | undefined) {
+    if (value === undefined) {
+      this._duration = undefined;
+      this._timeFunction = undefined;
+      this._value = undefined;
+    }
+    else {
+      this._duration = value.duration;
+      this._timeFunction = value.timeFunction;
+      this._value = value.value;
+    }
+  }
+
   // duration - computed: false, optional: false, required: true
   private _duration?: number; 
   public get duration() {
@@ -227,15 +289,15 @@ export class InfraAlertConditionWarningOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get durationInput() {
-    return this._duration
+    return this._duration;
   }
 
   // time_function - computed: false, optional: true, required: false
-  private _timeFunction?: string | undefined; 
+  private _timeFunction?: string; 
   public get timeFunction() {
     return this.getStringAttribute('time_function');
   }
-  public set timeFunction(value: string | undefined) {
+  public set timeFunction(value: string) {
     this._timeFunction = value;
   }
   public resetTimeFunction() {
@@ -243,15 +305,15 @@ export class InfraAlertConditionWarningOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get timeFunctionInput() {
-    return this._timeFunction
+    return this._timeFunction;
   }
 
   // value - computed: false, optional: true, required: false
-  private _value?: number | undefined; 
+  private _value?: number; 
   public get value() {
     return this.getNumberAttribute('value');
   }
-  public set value(value: number | undefined) {
+  public set value(value: number) {
     this._value = value;
   }
   public resetValue() {
@@ -259,7 +321,7 @@ export class InfraAlertConditionWarningOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
-    return this._value
+    return this._value;
   }
 }
 
@@ -308,8 +370,8 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
     this._type = config.type;
     this._violationCloseTimer = config.violationCloseTimer;
     this._where = config.where;
-    this._critical = config.critical;
-    this._warning = config.warning;
+    this._critical.internalValue = config.critical;
+    this._warning.internalValue = config.warning;
   }
 
   // ==========
@@ -317,11 +379,11 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   // ==========
 
   // comparison - computed: false, optional: true, required: false
-  private _comparison?: string | undefined; 
+  private _comparison?: string; 
   public get comparison() {
     return this.getStringAttribute('comparison');
   }
-  public set comparison(value: string | undefined) {
+  public set comparison(value: string) {
     this._comparison = value;
   }
   public resetComparison() {
@@ -329,7 +391,7 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get comparisonInput() {
-    return this._comparison
+    return this._comparison;
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -338,11 +400,11 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -350,15 +412,15 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable | undefined; 
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -366,15 +428,15 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 
   // event - computed: true, optional: true, required: false
-  private _event?: string | undefined; 
+  private _event?: string; 
   public get event() {
     return this.getStringAttribute('event');
   }
-  public set event(value: string | undefined) {
+  public set event(value: string) {
     this._event = value;
   }
   public resetEvent() {
@@ -382,7 +444,7 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get eventInput() {
-    return this._event
+    return this._event;
   }
 
   // id - computed: true, optional: true, required: false
@@ -391,11 +453,11 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
 
   // integration_provider - computed: false, optional: true, required: false
-  private _integrationProvider?: string | undefined; 
+  private _integrationProvider?: string; 
   public get integrationProvider() {
     return this.getStringAttribute('integration_provider');
   }
-  public set integrationProvider(value: string | undefined) {
+  public set integrationProvider(value: string) {
     this._integrationProvider = value;
   }
   public resetIntegrationProvider() {
@@ -403,7 +465,7 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get integrationProviderInput() {
-    return this._integrationProvider
+    return this._integrationProvider;
   }
 
   // name - computed: false, optional: false, required: true
@@ -416,7 +478,7 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // policy_id - computed: false, optional: false, required: true
@@ -429,15 +491,15 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get policyIdInput() {
-    return this._policyId
+    return this._policyId;
   }
 
   // process_where - computed: false, optional: true, required: false
-  private _processWhere?: string | undefined; 
+  private _processWhere?: string; 
   public get processWhere() {
     return this.getStringAttribute('process_where');
   }
-  public set processWhere(value: string | undefined) {
+  public set processWhere(value: string) {
     this._processWhere = value;
   }
   public resetProcessWhere() {
@@ -445,15 +507,15 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get processWhereInput() {
-    return this._processWhere
+    return this._processWhere;
   }
 
   // runbook_url - computed: false, optional: true, required: false
-  private _runbookUrl?: string | undefined; 
+  private _runbookUrl?: string; 
   public get runbookUrl() {
     return this.getStringAttribute('runbook_url');
   }
-  public set runbookUrl(value: string | undefined) {
+  public set runbookUrl(value: string) {
     this._runbookUrl = value;
   }
   public resetRunbookUrl() {
@@ -461,15 +523,15 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get runbookUrlInput() {
-    return this._runbookUrl
+    return this._runbookUrl;
   }
 
   // select - computed: false, optional: true, required: false
-  private _select?: string | undefined; 
+  private _select?: string; 
   public get select() {
     return this.getStringAttribute('select');
   }
-  public set select(value: string | undefined) {
+  public set select(value: string) {
     this._select = value;
   }
   public resetSelect() {
@@ -477,7 +539,7 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get selectInput() {
-    return this._select
+    return this._select;
   }
 
   // type - computed: false, optional: false, required: true
@@ -490,7 +552,7 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // updated_at - computed: true, optional: false, required: false
@@ -499,11 +561,11 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
 
   // violation_close_timer - computed: false, optional: true, required: false
-  private _violationCloseTimer?: number | undefined; 
+  private _violationCloseTimer?: number; 
   public get violationCloseTimer() {
     return this.getNumberAttribute('violation_close_timer');
   }
-  public set violationCloseTimer(value: number | undefined) {
+  public set violationCloseTimer(value: number) {
     this._violationCloseTimer = value;
   }
   public resetViolationCloseTimer() {
@@ -511,15 +573,15 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get violationCloseTimerInput() {
-    return this._violationCloseTimer
+    return this._violationCloseTimer;
   }
 
   // where - computed: false, optional: true, required: false
-  private _where?: string | undefined; 
+  private _where?: string; 
   public get where() {
     return this.getStringAttribute('where');
   }
-  public set where(value: string | undefined) {
+  public set where(value: string) {
     this._where = value;
   }
   public resetWhere() {
@@ -527,41 +589,39 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get whereInput() {
-    return this._where
+    return this._where;
   }
 
   // critical - computed: false, optional: true, required: false
-  private _critical?: InfraAlertConditionCritical | undefined; 
-  private __criticalOutput = new InfraAlertConditionCriticalOutputReference(this as any, "critical", true);
+  private _critical = new InfraAlertConditionCriticalOutputReference(this as any, "critical", true);
   public get critical() {
-    return this.__criticalOutput;
+    return this._critical;
   }
-  public putCritical(value: InfraAlertConditionCritical | undefined) {
-    this._critical = value;
+  public putCritical(value: InfraAlertConditionCritical) {
+    this._critical.internalValue = value;
   }
   public resetCritical() {
-    this._critical = undefined;
+    this._critical.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get criticalInput() {
-    return this._critical
+    return this._critical.internalValue;
   }
 
   // warning - computed: false, optional: true, required: false
-  private _warning?: InfraAlertConditionWarning | undefined; 
-  private __warningOutput = new InfraAlertConditionWarningOutputReference(this as any, "warning", true);
+  private _warning = new InfraAlertConditionWarningOutputReference(this as any, "warning", true);
   public get warning() {
-    return this.__warningOutput;
+    return this._warning;
   }
-  public putWarning(value: InfraAlertConditionWarning | undefined) {
-    this._warning = value;
+  public putWarning(value: InfraAlertConditionWarning) {
+    this._warning.internalValue = value;
   }
   public resetWarning() {
-    this._warning = undefined;
+    this._warning.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get warningInput() {
-    return this._warning
+    return this._warning.internalValue;
   }
 
   // =========
@@ -583,8 +643,8 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       violation_close_timer: cdktf.numberToTerraform(this._violationCloseTimer),
       where: cdktf.stringToTerraform(this._where),
-      critical: infraAlertConditionCriticalToTerraform(this._critical),
-      warning: infraAlertConditionWarningToTerraform(this._warning),
+      critical: infraAlertConditionCriticalToTerraform(this._critical.internalValue),
+      warning: infraAlertConditionWarningToTerraform(this._warning.internalValue),
     };
   }
 }

@@ -69,11 +69,11 @@ export class DataNewrelicAccount extends cdktf.TerraformDataSource {
   // ==========
 
   // account_id - computed: false, optional: true, required: false
-  private _accountId?: number | undefined; 
+  private _accountId?: number; 
   public get accountId() {
     return this.getNumberAttribute('account_id');
   }
-  public set accountId(value: number | undefined) {
+  public set accountId(value: number) {
     this._accountId = value;
   }
   public resetAccountId() {
@@ -81,7 +81,7 @@ export class DataNewrelicAccount extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
-    return this._accountId
+    return this._accountId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -90,11 +90,11 @@ export class DataNewrelicAccount extends cdktf.TerraformDataSource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -102,15 +102,15 @@ export class DataNewrelicAccount extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // scope - computed: false, optional: true, required: false
-  private _scope?: string | undefined; 
+  private _scope?: string; 
   public get scope() {
     return this.getStringAttribute('scope');
   }
-  public set scope(value: string | undefined) {
+  public set scope(value: string) {
     this._scope = value;
   }
   public resetScope() {
@@ -118,7 +118,7 @@ export class DataNewrelicAccount extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get scopeInput() {
-    return this._scope
+    return this._scope;
   }
 
   // =========

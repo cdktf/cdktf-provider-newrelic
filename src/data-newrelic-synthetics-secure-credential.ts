@@ -79,7 +79,7 @@ export class DataNewrelicSyntheticsSecureCredential extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get keyInput() {
-    return this._key
+    return this._key;
   }
 
   // last_updated - computed: true, optional: false, required: false

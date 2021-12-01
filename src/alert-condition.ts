@@ -56,7 +56,7 @@ export interface AlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly runbookUrl?: string;
   /**
-  * The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
+  * The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#type AlertCondition#type}
   */
@@ -119,7 +119,7 @@ export interface AlertConditionTerm {
   readonly timeFunction: string;
 }
 
-function alertConditionTermToTerraform(struct?: AlertConditionTerm): any {
+export function alertConditionTermToTerraform(struct?: AlertConditionTerm): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -186,11 +186,11 @@ export class AlertCondition extends cdktf.TerraformResource {
   // ==========
 
   // condition_scope - computed: false, optional: true, required: false
-  private _conditionScope?: string | undefined; 
+  private _conditionScope?: string; 
   public get conditionScope() {
     return this.getStringAttribute('condition_scope');
   }
-  public set conditionScope(value: string | undefined) {
+  public set conditionScope(value: string) {
     this._conditionScope = value;
   }
   public resetConditionScope() {
@@ -198,15 +198,15 @@ export class AlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get conditionScopeInput() {
-    return this._conditionScope
+    return this._conditionScope;
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable | undefined; 
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -214,7 +214,7 @@ export class AlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 
   // entities - computed: false, optional: false, required: true
@@ -228,15 +228,15 @@ export class AlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get entitiesInput() {
-    return this._entities
+    return this._entities;
   }
 
   // gc_metric - computed: false, optional: true, required: false
-  private _gcMetric?: string | undefined; 
+  private _gcMetric?: string; 
   public get gcMetric() {
     return this.getStringAttribute('gc_metric');
   }
-  public set gcMetric(value: string | undefined) {
+  public set gcMetric(value: string) {
     this._gcMetric = value;
   }
   public resetGcMetric() {
@@ -244,7 +244,7 @@ export class AlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get gcMetricInput() {
-    return this._gcMetric
+    return this._gcMetric;
   }
 
   // id - computed: true, optional: true, required: false
@@ -262,7 +262,7 @@ export class AlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get metricInput() {
-    return this._metric
+    return this._metric;
   }
 
   // name - computed: false, optional: false, required: true
@@ -275,7 +275,7 @@ export class AlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // policy_id - computed: false, optional: false, required: true
@@ -288,15 +288,15 @@ export class AlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get policyIdInput() {
-    return this._policyId
+    return this._policyId;
   }
 
   // runbook_url - computed: false, optional: true, required: false
-  private _runbookUrl?: string | undefined; 
+  private _runbookUrl?: string; 
   public get runbookUrl() {
     return this.getStringAttribute('runbook_url');
   }
-  public set runbookUrl(value: string | undefined) {
+  public set runbookUrl(value: string) {
     this._runbookUrl = value;
   }
   public resetRunbookUrl() {
@@ -304,7 +304,7 @@ export class AlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get runbookUrlInput() {
-    return this._runbookUrl
+    return this._runbookUrl;
   }
 
   // type - computed: false, optional: false, required: true
@@ -317,15 +317,15 @@ export class AlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // user_defined_metric - computed: false, optional: true, required: false
-  private _userDefinedMetric?: string | undefined; 
+  private _userDefinedMetric?: string; 
   public get userDefinedMetric() {
     return this.getStringAttribute('user_defined_metric');
   }
-  public set userDefinedMetric(value: string | undefined) {
+  public set userDefinedMetric(value: string) {
     this._userDefinedMetric = value;
   }
   public resetUserDefinedMetric() {
@@ -333,15 +333,15 @@ export class AlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get userDefinedMetricInput() {
-    return this._userDefinedMetric
+    return this._userDefinedMetric;
   }
 
   // user_defined_value_function - computed: false, optional: true, required: false
-  private _userDefinedValueFunction?: string | undefined; 
+  private _userDefinedValueFunction?: string; 
   public get userDefinedValueFunction() {
     return this.getStringAttribute('user_defined_value_function');
   }
-  public set userDefinedValueFunction(value: string | undefined) {
+  public set userDefinedValueFunction(value: string) {
     this._userDefinedValueFunction = value;
   }
   public resetUserDefinedValueFunction() {
@@ -349,15 +349,15 @@ export class AlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get userDefinedValueFunctionInput() {
-    return this._userDefinedValueFunction
+    return this._userDefinedValueFunction;
   }
 
   // violation_close_timer - computed: false, optional: true, required: false
-  private _violationCloseTimer?: number | undefined; 
+  private _violationCloseTimer?: number; 
   public get violationCloseTimer() {
     return this.getNumberAttribute('violation_close_timer');
   }
-  public set violationCloseTimer(value: number | undefined) {
+  public set violationCloseTimer(value: number) {
     this._violationCloseTimer = value;
   }
   public resetViolationCloseTimer() {
@@ -365,7 +365,7 @@ export class AlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get violationCloseTimerInput() {
-    return this._violationCloseTimer
+    return this._violationCloseTimer;
   }
 
   // term - computed: false, optional: false, required: true
@@ -379,7 +379,7 @@ export class AlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get termInput() {
-    return this._term
+    return this._term;
   }
 
   // =========

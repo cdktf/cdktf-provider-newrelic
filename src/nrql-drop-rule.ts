@@ -76,11 +76,11 @@ export class NrqlDropRule extends cdktf.TerraformResource {
   // ==========
 
   // account_id - computed: true, optional: true, required: false
-  private _accountId?: number | undefined; 
+  private _accountId?: number; 
   public get accountId() {
     return this.getNumberAttribute('account_id');
   }
-  public set accountId(value: number | undefined) {
+  public set accountId(value: number) {
     this._accountId = value;
   }
   public resetAccountId() {
@@ -88,7 +88,7 @@ export class NrqlDropRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
-    return this._accountId
+    return this._accountId;
   }
 
   // action - computed: false, optional: false, required: true
@@ -101,15 +101,15 @@ export class NrqlDropRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get actionInput() {
-    return this._action
+    return this._action;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -117,7 +117,7 @@ export class NrqlDropRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -135,7 +135,7 @@ export class NrqlDropRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nrqlInput() {
-    return this._nrql
+    return this._nrql;
   }
 
   // rule_id - computed: true, optional: false, required: false

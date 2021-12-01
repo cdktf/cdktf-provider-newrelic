@@ -83,11 +83,11 @@ export class SyntheticsAlertCondition extends cdktf.TerraformResource {
   // ==========
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable | undefined; 
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -95,7 +95,7 @@ export class SyntheticsAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 
   // id - computed: true, optional: true, required: false
@@ -113,7 +113,7 @@ export class SyntheticsAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get monitorIdInput() {
-    return this._monitorId
+    return this._monitorId;
   }
 
   // name - computed: false, optional: false, required: true
@@ -126,7 +126,7 @@ export class SyntheticsAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // policy_id - computed: false, optional: false, required: true
@@ -139,15 +139,15 @@ export class SyntheticsAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get policyIdInput() {
-    return this._policyId
+    return this._policyId;
   }
 
   // runbook_url - computed: false, optional: true, required: false
-  private _runbookUrl?: string | undefined; 
+  private _runbookUrl?: string; 
   public get runbookUrl() {
     return this.getStringAttribute('runbook_url');
   }
-  public set runbookUrl(value: string | undefined) {
+  public set runbookUrl(value: string) {
     this._runbookUrl = value;
   }
   public resetRunbookUrl() {
@@ -155,7 +155,7 @@ export class SyntheticsAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get runbookUrlInput() {
-    return this._runbookUrl
+    return this._runbookUrl;
   }
 
   // =========

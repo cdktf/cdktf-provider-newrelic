@@ -125,11 +125,11 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   // ==========
 
   // bypass_head_request - computed: false, optional: true, required: false
-  private _bypassHeadRequest?: boolean | cdktf.IResolvable | undefined; 
+  private _bypassHeadRequest?: boolean | cdktf.IResolvable; 
   public get bypassHeadRequest() {
     return this.getBooleanAttribute('bypass_head_request') as any;
   }
-  public set bypassHeadRequest(value: boolean | cdktf.IResolvable | undefined) {
+  public set bypassHeadRequest(value: boolean | cdktf.IResolvable) {
     this._bypassHeadRequest = value;
   }
   public resetBypassHeadRequest() {
@@ -137,7 +137,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get bypassHeadRequestInput() {
-    return this._bypassHeadRequest
+    return this._bypassHeadRequest;
   }
 
   // frequency - computed: false, optional: false, required: true
@@ -150,7 +150,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get frequencyInput() {
-    return this._frequency
+    return this._frequency;
   }
 
   // id - computed: true, optional: true, required: false
@@ -168,7 +168,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get locationsInput() {
-    return this._locations
+    return this._locations;
   }
 
   // name - computed: false, optional: false, required: true
@@ -181,15 +181,15 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // sla_threshold - computed: false, optional: true, required: false
-  private _slaThreshold?: number | undefined; 
+  private _slaThreshold?: number; 
   public get slaThreshold() {
     return this.getNumberAttribute('sla_threshold');
   }
-  public set slaThreshold(value: number | undefined) {
+  public set slaThreshold(value: number) {
     this._slaThreshold = value;
   }
   public resetSlaThreshold() {
@@ -197,7 +197,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get slaThresholdInput() {
-    return this._slaThreshold
+    return this._slaThreshold;
   }
 
   // status - computed: false, optional: false, required: true
@@ -210,15 +210,15 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // treat_redirect_as_failure - computed: false, optional: true, required: false
-  private _treatRedirectAsFailure?: boolean | cdktf.IResolvable | undefined; 
+  private _treatRedirectAsFailure?: boolean | cdktf.IResolvable; 
   public get treatRedirectAsFailure() {
     return this.getBooleanAttribute('treat_redirect_as_failure') as any;
   }
-  public set treatRedirectAsFailure(value: boolean | cdktf.IResolvable | undefined) {
+  public set treatRedirectAsFailure(value: boolean | cdktf.IResolvable) {
     this._treatRedirectAsFailure = value;
   }
   public resetTreatRedirectAsFailure() {
@@ -226,7 +226,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get treatRedirectAsFailureInput() {
-    return this._treatRedirectAsFailure
+    return this._treatRedirectAsFailure;
   }
 
   // type - computed: false, optional: false, required: true
@@ -239,15 +239,15 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // uri - computed: false, optional: true, required: false
-  private _uri?: string | undefined; 
+  private _uri?: string; 
   public get uri() {
     return this.getStringAttribute('uri');
   }
-  public set uri(value: string | undefined) {
+  public set uri(value: string) {
     this._uri = value;
   }
   public resetUri() {
@@ -255,15 +255,15 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get uriInput() {
-    return this._uri
+    return this._uri;
   }
 
   // validation_string - computed: false, optional: true, required: false
-  private _validationString?: string | undefined; 
+  private _validationString?: string; 
   public get validationString() {
     return this.getStringAttribute('validation_string');
   }
-  public set validationString(value: string | undefined) {
+  public set validationString(value: string) {
     this._validationString = value;
   }
   public resetValidationString() {
@@ -271,15 +271,15 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get validationStringInput() {
-    return this._validationString
+    return this._validationString;
   }
 
   // verify_ssl - computed: false, optional: true, required: false
-  private _verifySsl?: boolean | cdktf.IResolvable | undefined; 
+  private _verifySsl?: boolean | cdktf.IResolvable; 
   public get verifySsl() {
     return this.getBooleanAttribute('verify_ssl') as any;
   }
-  public set verifySsl(value: boolean | cdktf.IResolvable | undefined) {
+  public set verifySsl(value: boolean | cdktf.IResolvable) {
     this._verifySsl = value;
   }
   public resetVerifySsl() {
@@ -287,7 +287,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get verifySslInput() {
-    return this._verifySsl
+    return this._verifySsl;
   }
 
   // =========

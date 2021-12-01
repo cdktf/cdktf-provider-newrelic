@@ -83,11 +83,11 @@ export class EventsToMetricsRule extends cdktf.TerraformResource {
   // ==========
 
   // account_id - computed: true, optional: true, required: false
-  private _accountId?: number | undefined; 
+  private _accountId?: number; 
   public get accountId() {
     return this.getNumberAttribute('account_id');
   }
-  public set accountId(value: number | undefined) {
+  public set accountId(value: number) {
     this._accountId = value;
   }
   public resetAccountId() {
@@ -95,15 +95,15 @@ export class EventsToMetricsRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
-    return this._accountId
+    return this._accountId;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -111,15 +111,15 @@ export class EventsToMetricsRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable | undefined; 
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -127,7 +127,7 @@ export class EventsToMetricsRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 
   // id - computed: true, optional: true, required: false
@@ -145,7 +145,7 @@ export class EventsToMetricsRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // nrql - computed: false, optional: false, required: true
@@ -158,7 +158,7 @@ export class EventsToMetricsRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nrqlInput() {
-    return this._nrql
+    return this._nrql;
   }
 
   // rule_id - computed: true, optional: false, required: false

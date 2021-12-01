@@ -81,7 +81,7 @@ export interface OneDashboardRawPageWidget {
   readonly width?: number;
 }
 
-function oneDashboardRawPageWidgetToTerraform(struct?: OneDashboardRawPageWidget): any {
+export function oneDashboardRawPageWidgetToTerraform(struct?: OneDashboardRawPageWidget): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -119,7 +119,7 @@ export interface OneDashboardRawPage {
   readonly widget?: OneDashboardRawPageWidget[];
 }
 
-function oneDashboardRawPageToTerraform(struct?: OneDashboardRawPage): any {
+export function oneDashboardRawPageToTerraform(struct?: OneDashboardRawPage): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -176,11 +176,11 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
   // ==========
 
   // account_id - computed: true, optional: true, required: false
-  private _accountId?: number | undefined; 
+  private _accountId?: number; 
   public get accountId() {
     return this.getNumberAttribute('account_id');
   }
-  public set accountId(value: number | undefined) {
+  public set accountId(value: number) {
     this._accountId = value;
   }
   public resetAccountId() {
@@ -188,15 +188,15 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
-    return this._accountId
+    return this._accountId;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -204,7 +204,7 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // guid - computed: true, optional: false, required: false
@@ -227,7 +227,7 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // permalink - computed: true, optional: false, required: false
@@ -236,11 +236,11 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
   }
 
   // permissions - computed: false, optional: true, required: false
-  private _permissions?: string | undefined; 
+  private _permissions?: string; 
   public get permissions() {
     return this.getStringAttribute('permissions');
   }
-  public set permissions(value: string | undefined) {
+  public set permissions(value: string) {
     this._permissions = value;
   }
   public resetPermissions() {
@@ -248,7 +248,7 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get permissionsInput() {
-    return this._permissions
+    return this._permissions;
   }
 
   // page - computed: false, optional: false, required: true
@@ -262,7 +262,7 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get pageInput() {
-    return this._page
+    return this._page;
   }
 
   // =========

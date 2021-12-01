@@ -43,7 +43,7 @@ export interface ServiceLevelEventsBadEvents {
   readonly where?: string;
 }
 
-function serviceLevelEventsBadEventsToTerraform(struct?: ServiceLevelEventsBadEventsOutputReference | ServiceLevelEventsBadEvents): any {
+export function serviceLevelEventsBadEventsToTerraform(struct?: ServiceLevelEventsBadEventsOutputReference | ServiceLevelEventsBadEvents): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -64,6 +64,31 @@ export class ServiceLevelEventsBadEventsOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ServiceLevelEventsBadEvents | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._from) {
+      hasAnyValues = true;
+      internalValueResult.from = this._from;
+    }
+    if (this._where) {
+      hasAnyValues = true;
+      internalValueResult.where = this._where;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceLevelEventsBadEvents | undefined) {
+    if (value === undefined) {
+      this._from = undefined;
+      this._where = undefined;
+    }
+    else {
+      this._from = value.from;
+      this._where = value.where;
+    }
+  }
+
   // from - computed: false, optional: false, required: true
   private _from?: string; 
   public get from() {
@@ -74,15 +99,15 @@ export class ServiceLevelEventsBadEventsOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get fromInput() {
-    return this._from
+    return this._from;
   }
 
   // where - computed: false, optional: true, required: false
-  private _where?: string | undefined; 
+  private _where?: string; 
   public get where() {
     return this.getStringAttribute('where');
   }
-  public set where(value: string | undefined) {
+  public set where(value: string) {
     this._where = value;
   }
   public resetWhere() {
@@ -90,7 +115,7 @@ export class ServiceLevelEventsBadEventsOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get whereInput() {
-    return this._where
+    return this._where;
   }
 }
 export interface ServiceLevelEventsGoodEvents {
@@ -104,7 +129,7 @@ export interface ServiceLevelEventsGoodEvents {
   readonly where?: string;
 }
 
-function serviceLevelEventsGoodEventsToTerraform(struct?: ServiceLevelEventsGoodEventsOutputReference | ServiceLevelEventsGoodEvents): any {
+export function serviceLevelEventsGoodEventsToTerraform(struct?: ServiceLevelEventsGoodEventsOutputReference | ServiceLevelEventsGoodEvents): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -125,6 +150,31 @@ export class ServiceLevelEventsGoodEventsOutputReference extends cdktf.ComplexOb
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ServiceLevelEventsGoodEvents | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._from) {
+      hasAnyValues = true;
+      internalValueResult.from = this._from;
+    }
+    if (this._where) {
+      hasAnyValues = true;
+      internalValueResult.where = this._where;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceLevelEventsGoodEvents | undefined) {
+    if (value === undefined) {
+      this._from = undefined;
+      this._where = undefined;
+    }
+    else {
+      this._from = value.from;
+      this._where = value.where;
+    }
+  }
+
   // from - computed: false, optional: false, required: true
   private _from?: string; 
   public get from() {
@@ -135,15 +185,15 @@ export class ServiceLevelEventsGoodEventsOutputReference extends cdktf.ComplexOb
   }
   // Temporarily expose input value. Use with caution.
   public get fromInput() {
-    return this._from
+    return this._from;
   }
 
   // where - computed: false, optional: true, required: false
-  private _where?: string | undefined; 
+  private _where?: string; 
   public get where() {
     return this.getStringAttribute('where');
   }
-  public set where(value: string | undefined) {
+  public set where(value: string) {
     this._where = value;
   }
   public resetWhere() {
@@ -151,7 +201,7 @@ export class ServiceLevelEventsGoodEventsOutputReference extends cdktf.ComplexOb
   }
   // Temporarily expose input value. Use with caution.
   public get whereInput() {
-    return this._where
+    return this._where;
   }
 }
 export interface ServiceLevelEventsValidEvents {
@@ -165,7 +215,7 @@ export interface ServiceLevelEventsValidEvents {
   readonly where?: string;
 }
 
-function serviceLevelEventsValidEventsToTerraform(struct?: ServiceLevelEventsValidEventsOutputReference | ServiceLevelEventsValidEvents): any {
+export function serviceLevelEventsValidEventsToTerraform(struct?: ServiceLevelEventsValidEventsOutputReference | ServiceLevelEventsValidEvents): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -186,6 +236,31 @@ export class ServiceLevelEventsValidEventsOutputReference extends cdktf.ComplexO
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ServiceLevelEventsValidEvents | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._from) {
+      hasAnyValues = true;
+      internalValueResult.from = this._from;
+    }
+    if (this._where) {
+      hasAnyValues = true;
+      internalValueResult.where = this._where;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceLevelEventsValidEvents | undefined) {
+    if (value === undefined) {
+      this._from = undefined;
+      this._where = undefined;
+    }
+    else {
+      this._from = value.from;
+      this._where = value.where;
+    }
+  }
+
   // from - computed: false, optional: false, required: true
   private _from?: string; 
   public get from() {
@@ -196,15 +271,15 @@ export class ServiceLevelEventsValidEventsOutputReference extends cdktf.ComplexO
   }
   // Temporarily expose input value. Use with caution.
   public get fromInput() {
-    return this._from
+    return this._from;
   }
 
   // where - computed: false, optional: true, required: false
-  private _where?: string | undefined; 
+  private _where?: string; 
   public get where() {
     return this.getStringAttribute('where');
   }
-  public set where(value: string | undefined) {
+  public set where(value: string) {
     this._where = value;
   }
   public resetWhere() {
@@ -212,7 +287,7 @@ export class ServiceLevelEventsValidEventsOutputReference extends cdktf.ComplexO
   }
   // Temporarily expose input value. Use with caution.
   public get whereInput() {
-    return this._where
+    return this._where;
   }
 }
 export interface ServiceLevelEvents {
@@ -240,7 +315,7 @@ export interface ServiceLevelEvents {
   readonly validEvents: ServiceLevelEventsValidEvents;
 }
 
-function serviceLevelEventsToTerraform(struct?: ServiceLevelEventsOutputReference | ServiceLevelEvents): any {
+export function serviceLevelEventsToTerraform(struct?: ServiceLevelEventsOutputReference | ServiceLevelEvents): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -263,6 +338,43 @@ export class ServiceLevelEventsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ServiceLevelEvents | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._accountId) {
+      hasAnyValues = true;
+      internalValueResult.accountId = this._accountId;
+    }
+    if (this._badEvents) {
+      hasAnyValues = true;
+      internalValueResult.badEvents = this._badEvents?.internalValue;
+    }
+    if (this._goodEvents) {
+      hasAnyValues = true;
+      internalValueResult.goodEvents = this._goodEvents?.internalValue;
+    }
+    if (this._validEvents) {
+      hasAnyValues = true;
+      internalValueResult.validEvents = this._validEvents?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceLevelEvents | undefined) {
+    if (value === undefined) {
+      this._accountId = undefined;
+      this._badEvents.internalValue = undefined;
+      this._goodEvents.internalValue = undefined;
+      this._validEvents.internalValue = undefined;
+    }
+    else {
+      this._accountId = value.accountId;
+      this._badEvents.internalValue = value.badEvents;
+      this._goodEvents.internalValue = value.goodEvents;
+      this._validEvents.internalValue = value.validEvents;
+    }
+  }
+
   // account_id - computed: false, optional: false, required: true
   private _accountId?: number; 
   public get accountId() {
@@ -273,55 +385,52 @@ export class ServiceLevelEventsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
-    return this._accountId
+    return this._accountId;
   }
 
   // bad_events - computed: false, optional: true, required: false
-  private _badEvents?: ServiceLevelEventsBadEvents | undefined; 
-  private __badEventsOutput = new ServiceLevelEventsBadEventsOutputReference(this as any, "bad_events", true);
+  private _badEvents = new ServiceLevelEventsBadEventsOutputReference(this as any, "bad_events", true);
   public get badEvents() {
-    return this.__badEventsOutput;
+    return this._badEvents;
   }
-  public putBadEvents(value: ServiceLevelEventsBadEvents | undefined) {
-    this._badEvents = value;
+  public putBadEvents(value: ServiceLevelEventsBadEvents) {
+    this._badEvents.internalValue = value;
   }
   public resetBadEvents() {
-    this._badEvents = undefined;
+    this._badEvents.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get badEventsInput() {
-    return this._badEvents
+    return this._badEvents.internalValue;
   }
 
   // good_events - computed: false, optional: true, required: false
-  private _goodEvents?: ServiceLevelEventsGoodEvents | undefined; 
-  private __goodEventsOutput = new ServiceLevelEventsGoodEventsOutputReference(this as any, "good_events", true);
+  private _goodEvents = new ServiceLevelEventsGoodEventsOutputReference(this as any, "good_events", true);
   public get goodEvents() {
-    return this.__goodEventsOutput;
+    return this._goodEvents;
   }
-  public putGoodEvents(value: ServiceLevelEventsGoodEvents | undefined) {
-    this._goodEvents = value;
+  public putGoodEvents(value: ServiceLevelEventsGoodEvents) {
+    this._goodEvents.internalValue = value;
   }
   public resetGoodEvents() {
-    this._goodEvents = undefined;
+    this._goodEvents.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get goodEventsInput() {
-    return this._goodEvents
+    return this._goodEvents.internalValue;
   }
 
   // valid_events - computed: false, optional: false, required: true
-  private _validEvents?: ServiceLevelEventsValidEvents; 
-  private __validEventsOutput = new ServiceLevelEventsValidEventsOutputReference(this as any, "valid_events", true);
+  private _validEvents = new ServiceLevelEventsValidEventsOutputReference(this as any, "valid_events", true);
   public get validEvents() {
-    return this.__validEventsOutput;
+    return this._validEvents;
   }
   public putValidEvents(value: ServiceLevelEventsValidEvents) {
-    this._validEvents = value;
+    this._validEvents.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get validEventsInput() {
-    return this._validEvents
+    return this._validEvents.internalValue;
   }
 }
 export interface ServiceLevelObjectiveTimeWindowRolling {
@@ -335,7 +444,7 @@ export interface ServiceLevelObjectiveTimeWindowRolling {
   readonly unit: string;
 }
 
-function serviceLevelObjectiveTimeWindowRollingToTerraform(struct?: ServiceLevelObjectiveTimeWindowRollingOutputReference | ServiceLevelObjectiveTimeWindowRolling): any {
+export function serviceLevelObjectiveTimeWindowRollingToTerraform(struct?: ServiceLevelObjectiveTimeWindowRollingOutputReference | ServiceLevelObjectiveTimeWindowRolling): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -356,6 +465,31 @@ export class ServiceLevelObjectiveTimeWindowRollingOutputReference extends cdktf
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ServiceLevelObjectiveTimeWindowRolling | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._count) {
+      hasAnyValues = true;
+      internalValueResult.count = this._count;
+    }
+    if (this._unit) {
+      hasAnyValues = true;
+      internalValueResult.unit = this._unit;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceLevelObjectiveTimeWindowRolling | undefined) {
+    if (value === undefined) {
+      this._count = undefined;
+      this._unit = undefined;
+    }
+    else {
+      this._count = value.count;
+      this._unit = value.unit;
+    }
+  }
+
   // count - computed: false, optional: false, required: true
   private _count?: number; 
   public get count() {
@@ -366,7 +500,7 @@ export class ServiceLevelObjectiveTimeWindowRollingOutputReference extends cdktf
   }
   // Temporarily expose input value. Use with caution.
   public get countInput() {
-    return this._count
+    return this._count;
   }
 
   // unit - computed: false, optional: false, required: true
@@ -379,7 +513,7 @@ export class ServiceLevelObjectiveTimeWindowRollingOutputReference extends cdktf
   }
   // Temporarily expose input value. Use with caution.
   public get unitInput() {
-    return this._unit
+    return this._unit;
   }
 }
 export interface ServiceLevelObjectiveTimeWindow {
@@ -391,7 +525,7 @@ export interface ServiceLevelObjectiveTimeWindow {
   readonly rolling: ServiceLevelObjectiveTimeWindowRolling;
 }
 
-function serviceLevelObjectiveTimeWindowToTerraform(struct?: ServiceLevelObjectiveTimeWindowOutputReference | ServiceLevelObjectiveTimeWindow): any {
+export function serviceLevelObjectiveTimeWindowToTerraform(struct?: ServiceLevelObjectiveTimeWindowOutputReference | ServiceLevelObjectiveTimeWindow): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -411,18 +545,36 @@ export class ServiceLevelObjectiveTimeWindowOutputReference extends cdktf.Comple
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ServiceLevelObjectiveTimeWindow | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._rolling) {
+      hasAnyValues = true;
+      internalValueResult.rolling = this._rolling?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceLevelObjectiveTimeWindow | undefined) {
+    if (value === undefined) {
+      this._rolling.internalValue = undefined;
+    }
+    else {
+      this._rolling.internalValue = value.rolling;
+    }
+  }
+
   // rolling - computed: false, optional: false, required: true
-  private _rolling?: ServiceLevelObjectiveTimeWindowRolling; 
-  private __rollingOutput = new ServiceLevelObjectiveTimeWindowRollingOutputReference(this as any, "rolling", true);
+  private _rolling = new ServiceLevelObjectiveTimeWindowRollingOutputReference(this as any, "rolling", true);
   public get rolling() {
-    return this.__rollingOutput;
+    return this._rolling;
   }
   public putRolling(value: ServiceLevelObjectiveTimeWindowRolling) {
-    this._rolling = value;
+    this._rolling.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get rollingInput() {
-    return this._rolling
+    return this._rolling.internalValue;
   }
 }
 export interface ServiceLevelObjective {
@@ -446,7 +598,7 @@ export interface ServiceLevelObjective {
   readonly timeWindow: ServiceLevelObjectiveTimeWindow;
 }
 
-function serviceLevelObjectiveToTerraform(struct?: ServiceLevelObjective): any {
+export function serviceLevelObjectiveToTerraform(struct?: ServiceLevelObjective): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -495,7 +647,7 @@ export class ServiceLevel extends cdktf.TerraformResource {
     this._description = config.description;
     this._guid = config.guid;
     this._name = config.name;
-    this._events = config.events;
+    this._events.internalValue = config.events;
     this._objective = config.objective;
   }
 
@@ -504,11 +656,11 @@ export class ServiceLevel extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -516,7 +668,7 @@ export class ServiceLevel extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // guid - computed: false, optional: false, required: true
@@ -529,7 +681,7 @@ export class ServiceLevel extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get guidInput() {
-    return this._guid
+    return this._guid;
   }
 
   // id - computed: true, optional: true, required: false
@@ -547,7 +699,7 @@ export class ServiceLevel extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // sli_id - computed: true, optional: false, required: false
@@ -556,26 +708,25 @@ export class ServiceLevel extends cdktf.TerraformResource {
   }
 
   // events - computed: false, optional: false, required: true
-  private _events?: ServiceLevelEvents; 
-  private __eventsOutput = new ServiceLevelEventsOutputReference(this as any, "events", true);
+  private _events = new ServiceLevelEventsOutputReference(this as any, "events", true);
   public get events() {
-    return this.__eventsOutput;
+    return this._events;
   }
   public putEvents(value: ServiceLevelEvents) {
-    this._events = value;
+    this._events.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get eventsInput() {
-    return this._events
+    return this._events.internalValue;
   }
 
   // objective - computed: false, optional: true, required: false
-  private _objective?: ServiceLevelObjective[] | undefined; 
+  private _objective?: ServiceLevelObjective[]; 
   public get objective() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('objective') as any;
   }
-  public set objective(value: ServiceLevelObjective[] | undefined) {
+  public set objective(value: ServiceLevelObjective[]) {
     this._objective = value;
   }
   public resetObjective() {
@@ -583,7 +734,7 @@ export class ServiceLevel extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get objectiveInput() {
-    return this._objective
+    return this._objective;
   }
 
   // =========
@@ -595,7 +746,7 @@ export class ServiceLevel extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       guid: cdktf.stringToTerraform(this._guid),
       name: cdktf.stringToTerraform(this._name),
-      events: serviceLevelEventsToTerraform(this._events),
+      events: serviceLevelEventsToTerraform(this._events.internalValue),
       objective: cdktf.listMapper(serviceLevelObjectiveToTerraform)(this._objective),
     };
   }

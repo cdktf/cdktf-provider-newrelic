@@ -35,7 +35,7 @@ export interface InsightsEventEventAttribute {
   readonly value: string;
 }
 
-function insightsEventEventAttributeToTerraform(struct?: InsightsEventEventAttribute): any {
+export function insightsEventEventAttributeToTerraform(struct?: InsightsEventEventAttribute): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -68,7 +68,7 @@ export interface InsightsEventEvent {
   readonly attribute: InsightsEventEventAttribute[];
 }
 
-function insightsEventEventToTerraform(struct?: InsightsEventEvent): any {
+export function insightsEventEventToTerraform(struct?: InsightsEventEvent): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -136,7 +136,7 @@ export class InsightsEvent extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get eventInput() {
-    return this._event
+    return this._event;
   }
 
   // =========

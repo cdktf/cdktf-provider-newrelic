@@ -209,7 +209,7 @@ export interface NrqlAlertConditionCritical {
   readonly timeFunction?: string;
 }
 
-function nrqlAlertConditionCriticalToTerraform(struct?: NrqlAlertConditionCriticalOutputReference | NrqlAlertConditionCritical): any {
+export function nrqlAlertConditionCriticalToTerraform(struct?: NrqlAlertConditionCriticalOutputReference | NrqlAlertConditionCritical): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -234,12 +234,61 @@ export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObje
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): NrqlAlertConditionCritical | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._duration) {
+      hasAnyValues = true;
+      internalValueResult.duration = this._duration;
+    }
+    if (this._operator) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._threshold) {
+      hasAnyValues = true;
+      internalValueResult.threshold = this._threshold;
+    }
+    if (this._thresholdDuration) {
+      hasAnyValues = true;
+      internalValueResult.thresholdDuration = this._thresholdDuration;
+    }
+    if (this._thresholdOccurrences) {
+      hasAnyValues = true;
+      internalValueResult.thresholdOccurrences = this._thresholdOccurrences;
+    }
+    if (this._timeFunction) {
+      hasAnyValues = true;
+      internalValueResult.timeFunction = this._timeFunction;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NrqlAlertConditionCritical | undefined) {
+    if (value === undefined) {
+      this._duration = undefined;
+      this._operator = undefined;
+      this._threshold = undefined;
+      this._thresholdDuration = undefined;
+      this._thresholdOccurrences = undefined;
+      this._timeFunction = undefined;
+    }
+    else {
+      this._duration = value.duration;
+      this._operator = value.operator;
+      this._threshold = value.threshold;
+      this._thresholdDuration = value.thresholdDuration;
+      this._thresholdOccurrences = value.thresholdOccurrences;
+      this._timeFunction = value.timeFunction;
+    }
+  }
+
   // duration - computed: false, optional: true, required: false
-  private _duration?: number | undefined; 
+  private _duration?: number; 
   public get duration() {
     return this.getNumberAttribute('duration');
   }
-  public set duration(value: number | undefined) {
+  public set duration(value: number) {
     this._duration = value;
   }
   public resetDuration() {
@@ -247,15 +296,15 @@ export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get durationInput() {
-    return this._duration
+    return this._duration;
   }
 
   // operator - computed: false, optional: true, required: false
-  private _operator?: string | undefined; 
+  private _operator?: string; 
   public get operator() {
     return this.getStringAttribute('operator');
   }
-  public set operator(value: string | undefined) {
+  public set operator(value: string) {
     this._operator = value;
   }
   public resetOperator() {
@@ -263,7 +312,7 @@ export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get operatorInput() {
-    return this._operator
+    return this._operator;
   }
 
   // threshold - computed: false, optional: false, required: true
@@ -276,15 +325,15 @@ export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get thresholdInput() {
-    return this._threshold
+    return this._threshold;
   }
 
   // threshold_duration - computed: false, optional: true, required: false
-  private _thresholdDuration?: number | undefined; 
+  private _thresholdDuration?: number; 
   public get thresholdDuration() {
     return this.getNumberAttribute('threshold_duration');
   }
-  public set thresholdDuration(value: number | undefined) {
+  public set thresholdDuration(value: number) {
     this._thresholdDuration = value;
   }
   public resetThresholdDuration() {
@@ -292,15 +341,15 @@ export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get thresholdDurationInput() {
-    return this._thresholdDuration
+    return this._thresholdDuration;
   }
 
   // threshold_occurrences - computed: false, optional: true, required: false
-  private _thresholdOccurrences?: string | undefined; 
+  private _thresholdOccurrences?: string; 
   public get thresholdOccurrences() {
     return this.getStringAttribute('threshold_occurrences');
   }
-  public set thresholdOccurrences(value: string | undefined) {
+  public set thresholdOccurrences(value: string) {
     this._thresholdOccurrences = value;
   }
   public resetThresholdOccurrences() {
@@ -308,15 +357,15 @@ export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get thresholdOccurrencesInput() {
-    return this._thresholdOccurrences
+    return this._thresholdOccurrences;
   }
 
   // time_function - computed: false, optional: true, required: false
-  private _timeFunction?: string | undefined; 
+  private _timeFunction?: string; 
   public get timeFunction() {
     return this.getStringAttribute('time_function');
   }
-  public set timeFunction(value: string | undefined) {
+  public set timeFunction(value: string) {
     this._timeFunction = value;
   }
   public resetTimeFunction() {
@@ -324,7 +373,7 @@ export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get timeFunctionInput() {
-    return this._timeFunction
+    return this._timeFunction;
   }
 }
 export interface NrqlAlertConditionNrql {
@@ -346,7 +395,7 @@ export interface NrqlAlertConditionNrql {
   readonly sinceValue?: string;
 }
 
-function nrqlAlertConditionNrqlToTerraform(struct?: NrqlAlertConditionNrqlOutputReference | NrqlAlertConditionNrql): any {
+export function nrqlAlertConditionNrqlToTerraform(struct?: NrqlAlertConditionNrqlOutputReference | NrqlAlertConditionNrql): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -368,12 +417,43 @@ export class NrqlAlertConditionNrqlOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): NrqlAlertConditionNrql | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._evaluationOffset) {
+      hasAnyValues = true;
+      internalValueResult.evaluationOffset = this._evaluationOffset;
+    }
+    if (this._query) {
+      hasAnyValues = true;
+      internalValueResult.query = this._query;
+    }
+    if (this._sinceValue) {
+      hasAnyValues = true;
+      internalValueResult.sinceValue = this._sinceValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NrqlAlertConditionNrql | undefined) {
+    if (value === undefined) {
+      this._evaluationOffset = undefined;
+      this._query = undefined;
+      this._sinceValue = undefined;
+    }
+    else {
+      this._evaluationOffset = value.evaluationOffset;
+      this._query = value.query;
+      this._sinceValue = value.sinceValue;
+    }
+  }
+
   // evaluation_offset - computed: false, optional: true, required: false
-  private _evaluationOffset?: number | undefined; 
+  private _evaluationOffset?: number; 
   public get evaluationOffset() {
     return this.getNumberAttribute('evaluation_offset');
   }
-  public set evaluationOffset(value: number | undefined) {
+  public set evaluationOffset(value: number) {
     this._evaluationOffset = value;
   }
   public resetEvaluationOffset() {
@@ -381,7 +461,7 @@ export class NrqlAlertConditionNrqlOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get evaluationOffsetInput() {
-    return this._evaluationOffset
+    return this._evaluationOffset;
   }
 
   // query - computed: false, optional: false, required: true
@@ -394,15 +474,15 @@ export class NrqlAlertConditionNrqlOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get queryInput() {
-    return this._query
+    return this._query;
   }
 
   // since_value - computed: false, optional: true, required: false
-  private _sinceValue?: string | undefined; 
+  private _sinceValue?: string; 
   public get sinceValue() {
     return this.getStringAttribute('since_value');
   }
-  public set sinceValue(value: string | undefined) {
+  public set sinceValue(value: string) {
     this._sinceValue = value;
   }
   public resetSinceValue() {
@@ -410,7 +490,7 @@ export class NrqlAlertConditionNrqlOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get sinceValueInput() {
-    return this._sinceValue
+    return this._sinceValue;
   }
 }
 export interface NrqlAlertConditionTerm {
@@ -458,7 +538,7 @@ export interface NrqlAlertConditionTerm {
   readonly timeFunction?: string;
 }
 
-function nrqlAlertConditionTermToTerraform(struct?: NrqlAlertConditionTerm): any {
+export function nrqlAlertConditionTermToTerraform(struct?: NrqlAlertConditionTerm): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -513,7 +593,7 @@ export interface NrqlAlertConditionWarning {
   readonly timeFunction?: string;
 }
 
-function nrqlAlertConditionWarningToTerraform(struct?: NrqlAlertConditionWarningOutputReference | NrqlAlertConditionWarning): any {
+export function nrqlAlertConditionWarningToTerraform(struct?: NrqlAlertConditionWarningOutputReference | NrqlAlertConditionWarning): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -538,12 +618,61 @@ export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObjec
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): NrqlAlertConditionWarning | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._duration) {
+      hasAnyValues = true;
+      internalValueResult.duration = this._duration;
+    }
+    if (this._operator) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._threshold) {
+      hasAnyValues = true;
+      internalValueResult.threshold = this._threshold;
+    }
+    if (this._thresholdDuration) {
+      hasAnyValues = true;
+      internalValueResult.thresholdDuration = this._thresholdDuration;
+    }
+    if (this._thresholdOccurrences) {
+      hasAnyValues = true;
+      internalValueResult.thresholdOccurrences = this._thresholdOccurrences;
+    }
+    if (this._timeFunction) {
+      hasAnyValues = true;
+      internalValueResult.timeFunction = this._timeFunction;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NrqlAlertConditionWarning | undefined) {
+    if (value === undefined) {
+      this._duration = undefined;
+      this._operator = undefined;
+      this._threshold = undefined;
+      this._thresholdDuration = undefined;
+      this._thresholdOccurrences = undefined;
+      this._timeFunction = undefined;
+    }
+    else {
+      this._duration = value.duration;
+      this._operator = value.operator;
+      this._threshold = value.threshold;
+      this._thresholdDuration = value.thresholdDuration;
+      this._thresholdOccurrences = value.thresholdOccurrences;
+      this._timeFunction = value.timeFunction;
+    }
+  }
+
   // duration - computed: false, optional: true, required: false
-  private _duration?: number | undefined; 
+  private _duration?: number; 
   public get duration() {
     return this.getNumberAttribute('duration');
   }
-  public set duration(value: number | undefined) {
+  public set duration(value: number) {
     this._duration = value;
   }
   public resetDuration() {
@@ -551,15 +680,15 @@ export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get durationInput() {
-    return this._duration
+    return this._duration;
   }
 
   // operator - computed: false, optional: true, required: false
-  private _operator?: string | undefined; 
+  private _operator?: string; 
   public get operator() {
     return this.getStringAttribute('operator');
   }
-  public set operator(value: string | undefined) {
+  public set operator(value: string) {
     this._operator = value;
   }
   public resetOperator() {
@@ -567,7 +696,7 @@ export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get operatorInput() {
-    return this._operator
+    return this._operator;
   }
 
   // threshold - computed: false, optional: false, required: true
@@ -580,15 +709,15 @@ export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get thresholdInput() {
-    return this._threshold
+    return this._threshold;
   }
 
   // threshold_duration - computed: false, optional: true, required: false
-  private _thresholdDuration?: number | undefined; 
+  private _thresholdDuration?: number; 
   public get thresholdDuration() {
     return this.getNumberAttribute('threshold_duration');
   }
-  public set thresholdDuration(value: number | undefined) {
+  public set thresholdDuration(value: number) {
     this._thresholdDuration = value;
   }
   public resetThresholdDuration() {
@@ -596,15 +725,15 @@ export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get thresholdDurationInput() {
-    return this._thresholdDuration
+    return this._thresholdDuration;
   }
 
   // threshold_occurrences - computed: false, optional: true, required: false
-  private _thresholdOccurrences?: string | undefined; 
+  private _thresholdOccurrences?: string; 
   public get thresholdOccurrences() {
     return this.getStringAttribute('threshold_occurrences');
   }
-  public set thresholdOccurrences(value: string | undefined) {
+  public set thresholdOccurrences(value: string) {
     this._thresholdOccurrences = value;
   }
   public resetThresholdOccurrences() {
@@ -612,15 +741,15 @@ export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get thresholdOccurrencesInput() {
-    return this._thresholdOccurrences
+    return this._thresholdOccurrences;
   }
 
   // time_function - computed: false, optional: true, required: false
-  private _timeFunction?: string | undefined; 
+  private _timeFunction?: string; 
   public get timeFunction() {
     return this.getStringAttribute('time_function');
   }
-  public set timeFunction(value: string | undefined) {
+  public set timeFunction(value: string) {
     this._timeFunction = value;
   }
   public resetTimeFunction() {
@@ -628,7 +757,7 @@ export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get timeFunctionInput() {
-    return this._timeFunction
+    return this._timeFunction;
   }
 }
 
@@ -687,10 +816,10 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
     this._valueFunction = config.valueFunction;
     this._violationTimeLimit = config.violationTimeLimit;
     this._violationTimeLimitSeconds = config.violationTimeLimitSeconds;
-    this._critical = config.critical;
-    this._nrql = config.nrql;
+    this._critical.internalValue = config.critical;
+    this._nrql.internalValue = config.nrql;
     this._term = config.term;
-    this._warning = config.warning;
+    this._warning.internalValue = config.warning;
   }
 
   // ==========
@@ -698,11 +827,11 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   // ==========
 
   // account_id - computed: true, optional: true, required: false
-  private _accountId?: number | undefined; 
+  private _accountId?: number; 
   public get accountId() {
     return this.getNumberAttribute('account_id');
   }
-  public set accountId(value: number | undefined) {
+  public set accountId(value: number) {
     this._accountId = value;
   }
   public resetAccountId() {
@@ -710,15 +839,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
-    return this._accountId
+    return this._accountId;
   }
 
   // aggregation_delay - computed: false, optional: true, required: false
-  private _aggregationDelay?: number | undefined; 
+  private _aggregationDelay?: number; 
   public get aggregationDelay() {
     return this.getNumberAttribute('aggregation_delay');
   }
-  public set aggregationDelay(value: number | undefined) {
+  public set aggregationDelay(value: number) {
     this._aggregationDelay = value;
   }
   public resetAggregationDelay() {
@@ -726,15 +855,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get aggregationDelayInput() {
-    return this._aggregationDelay
+    return this._aggregationDelay;
   }
 
   // aggregation_method - computed: false, optional: true, required: false
-  private _aggregationMethod?: string | undefined; 
+  private _aggregationMethod?: string; 
   public get aggregationMethod() {
     return this.getStringAttribute('aggregation_method');
   }
-  public set aggregationMethod(value: string | undefined) {
+  public set aggregationMethod(value: string) {
     this._aggregationMethod = value;
   }
   public resetAggregationMethod() {
@@ -742,15 +871,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get aggregationMethodInput() {
-    return this._aggregationMethod
+    return this._aggregationMethod;
   }
 
   // aggregation_timer - computed: false, optional: true, required: false
-  private _aggregationTimer?: number | undefined; 
+  private _aggregationTimer?: number; 
   public get aggregationTimer() {
     return this.getNumberAttribute('aggregation_timer');
   }
-  public set aggregationTimer(value: number | undefined) {
+  public set aggregationTimer(value: number) {
     this._aggregationTimer = value;
   }
   public resetAggregationTimer() {
@@ -758,15 +887,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get aggregationTimerInput() {
-    return this._aggregationTimer
+    return this._aggregationTimer;
   }
 
   // aggregation_window - computed: true, optional: true, required: false
-  private _aggregationWindow?: number | undefined; 
+  private _aggregationWindow?: number; 
   public get aggregationWindow() {
     return this.getNumberAttribute('aggregation_window');
   }
-  public set aggregationWindow(value: number | undefined) {
+  public set aggregationWindow(value: number) {
     this._aggregationWindow = value;
   }
   public resetAggregationWindow() {
@@ -774,15 +903,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get aggregationWindowInput() {
-    return this._aggregationWindow
+    return this._aggregationWindow;
   }
 
   // baseline_direction - computed: false, optional: true, required: false
-  private _baselineDirection?: string | undefined; 
+  private _baselineDirection?: string; 
   public get baselineDirection() {
     return this.getStringAttribute('baseline_direction');
   }
-  public set baselineDirection(value: string | undefined) {
+  public set baselineDirection(value: string) {
     this._baselineDirection = value;
   }
   public resetBaselineDirection() {
@@ -790,15 +919,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get baselineDirectionInput() {
-    return this._baselineDirection
+    return this._baselineDirection;
   }
 
   // close_violations_on_expiration - computed: false, optional: true, required: false
-  private _closeViolationsOnExpiration?: boolean | cdktf.IResolvable | undefined; 
+  private _closeViolationsOnExpiration?: boolean | cdktf.IResolvable; 
   public get closeViolationsOnExpiration() {
     return this.getBooleanAttribute('close_violations_on_expiration') as any;
   }
-  public set closeViolationsOnExpiration(value: boolean | cdktf.IResolvable | undefined) {
+  public set closeViolationsOnExpiration(value: boolean | cdktf.IResolvable) {
     this._closeViolationsOnExpiration = value;
   }
   public resetCloseViolationsOnExpiration() {
@@ -806,15 +935,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get closeViolationsOnExpirationInput() {
-    return this._closeViolationsOnExpiration
+    return this._closeViolationsOnExpiration;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -822,15 +951,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable | undefined; 
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -838,15 +967,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 
   // expected_groups - computed: false, optional: true, required: false
-  private _expectedGroups?: number | undefined; 
+  private _expectedGroups?: number; 
   public get expectedGroups() {
     return this.getNumberAttribute('expected_groups');
   }
-  public set expectedGroups(value: number | undefined) {
+  public set expectedGroups(value: number) {
     this._expectedGroups = value;
   }
   public resetExpectedGroups() {
@@ -854,15 +983,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get expectedGroupsInput() {
-    return this._expectedGroups
+    return this._expectedGroups;
   }
 
   // expiration_duration - computed: false, optional: true, required: false
-  private _expirationDuration?: number | undefined; 
+  private _expirationDuration?: number; 
   public get expirationDuration() {
     return this.getNumberAttribute('expiration_duration');
   }
-  public set expirationDuration(value: number | undefined) {
+  public set expirationDuration(value: number) {
     this._expirationDuration = value;
   }
   public resetExpirationDuration() {
@@ -870,15 +999,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get expirationDurationInput() {
-    return this._expirationDuration
+    return this._expirationDuration;
   }
 
   // fill_option - computed: false, optional: true, required: false
-  private _fillOption?: string | undefined; 
+  private _fillOption?: string; 
   public get fillOption() {
     return this.getStringAttribute('fill_option');
   }
-  public set fillOption(value: string | undefined) {
+  public set fillOption(value: string) {
     this._fillOption = value;
   }
   public resetFillOption() {
@@ -886,15 +1015,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get fillOptionInput() {
-    return this._fillOption
+    return this._fillOption;
   }
 
   // fill_value - computed: false, optional: true, required: false
-  private _fillValue?: number | undefined; 
+  private _fillValue?: number; 
   public get fillValue() {
     return this.getNumberAttribute('fill_value');
   }
-  public set fillValue(value: number | undefined) {
+  public set fillValue(value: number) {
     this._fillValue = value;
   }
   public resetFillValue() {
@@ -902,7 +1031,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get fillValueInput() {
-    return this._fillValue
+    return this._fillValue;
   }
 
   // id - computed: true, optional: true, required: false
@@ -911,11 +1040,11 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
 
   // ignore_overlap - computed: false, optional: true, required: false
-  private _ignoreOverlap?: boolean | cdktf.IResolvable | undefined; 
+  private _ignoreOverlap?: boolean | cdktf.IResolvable; 
   public get ignoreOverlap() {
     return this.getBooleanAttribute('ignore_overlap') as any;
   }
-  public set ignoreOverlap(value: boolean | cdktf.IResolvable | undefined) {
+  public set ignoreOverlap(value: boolean | cdktf.IResolvable) {
     this._ignoreOverlap = value;
   }
   public resetIgnoreOverlap() {
@@ -923,7 +1052,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ignoreOverlapInput() {
-    return this._ignoreOverlap
+    return this._ignoreOverlap;
   }
 
   // name - computed: false, optional: false, required: true
@@ -936,15 +1065,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // open_violation_on_expiration - computed: false, optional: true, required: false
-  private _openViolationOnExpiration?: boolean | cdktf.IResolvable | undefined; 
+  private _openViolationOnExpiration?: boolean | cdktf.IResolvable; 
   public get openViolationOnExpiration() {
     return this.getBooleanAttribute('open_violation_on_expiration') as any;
   }
-  public set openViolationOnExpiration(value: boolean | cdktf.IResolvable | undefined) {
+  public set openViolationOnExpiration(value: boolean | cdktf.IResolvable) {
     this._openViolationOnExpiration = value;
   }
   public resetOpenViolationOnExpiration() {
@@ -952,15 +1081,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get openViolationOnExpirationInput() {
-    return this._openViolationOnExpiration
+    return this._openViolationOnExpiration;
   }
 
   // open_violation_on_group_overlap - computed: false, optional: true, required: false
-  private _openViolationOnGroupOverlap?: boolean | cdktf.IResolvable | undefined; 
+  private _openViolationOnGroupOverlap?: boolean | cdktf.IResolvable; 
   public get openViolationOnGroupOverlap() {
     return this.getBooleanAttribute('open_violation_on_group_overlap') as any;
   }
-  public set openViolationOnGroupOverlap(value: boolean | cdktf.IResolvable | undefined) {
+  public set openViolationOnGroupOverlap(value: boolean | cdktf.IResolvable) {
     this._openViolationOnGroupOverlap = value;
   }
   public resetOpenViolationOnGroupOverlap() {
@@ -968,7 +1097,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get openViolationOnGroupOverlapInput() {
-    return this._openViolationOnGroupOverlap
+    return this._openViolationOnGroupOverlap;
   }
 
   // policy_id - computed: false, optional: false, required: true
@@ -981,15 +1110,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get policyIdInput() {
-    return this._policyId
+    return this._policyId;
   }
 
   // runbook_url - computed: false, optional: true, required: false
-  private _runbookUrl?: string | undefined; 
+  private _runbookUrl?: string; 
   public get runbookUrl() {
     return this.getStringAttribute('runbook_url');
   }
-  public set runbookUrl(value: string | undefined) {
+  public set runbookUrl(value: string) {
     this._runbookUrl = value;
   }
   public resetRunbookUrl() {
@@ -997,15 +1126,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get runbookUrlInput() {
-    return this._runbookUrl
+    return this._runbookUrl;
   }
 
   // type - computed: false, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -1013,15 +1142,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // value_function - computed: false, optional: true, required: false
-  private _valueFunction?: string | undefined; 
+  private _valueFunction?: string; 
   public get valueFunction() {
     return this.getStringAttribute('value_function');
   }
-  public set valueFunction(value: string | undefined) {
+  public set valueFunction(value: string) {
     this._valueFunction = value;
   }
   public resetValueFunction() {
@@ -1029,15 +1158,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get valueFunctionInput() {
-    return this._valueFunction
+    return this._valueFunction;
   }
 
   // violation_time_limit - computed: true, optional: true, required: false
-  private _violationTimeLimit?: string | undefined; 
+  private _violationTimeLimit?: string; 
   public get violationTimeLimit() {
     return this.getStringAttribute('violation_time_limit');
   }
-  public set violationTimeLimit(value: string | undefined) {
+  public set violationTimeLimit(value: string) {
     this._violationTimeLimit = value;
   }
   public resetViolationTimeLimit() {
@@ -1045,15 +1174,15 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get violationTimeLimitInput() {
-    return this._violationTimeLimit
+    return this._violationTimeLimit;
   }
 
   // violation_time_limit_seconds - computed: false, optional: true, required: false
-  private _violationTimeLimitSeconds?: number | undefined; 
+  private _violationTimeLimitSeconds?: number; 
   public get violationTimeLimitSeconds() {
     return this.getNumberAttribute('violation_time_limit_seconds');
   }
-  public set violationTimeLimitSeconds(value: number | undefined) {
+  public set violationTimeLimitSeconds(value: number) {
     this._violationTimeLimitSeconds = value;
   }
   public resetViolationTimeLimitSeconds() {
@@ -1061,47 +1190,45 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get violationTimeLimitSecondsInput() {
-    return this._violationTimeLimitSeconds
+    return this._violationTimeLimitSeconds;
   }
 
   // critical - computed: false, optional: true, required: false
-  private _critical?: NrqlAlertConditionCritical | undefined; 
-  private __criticalOutput = new NrqlAlertConditionCriticalOutputReference(this as any, "critical", true);
+  private _critical = new NrqlAlertConditionCriticalOutputReference(this as any, "critical", true);
   public get critical() {
-    return this.__criticalOutput;
+    return this._critical;
   }
-  public putCritical(value: NrqlAlertConditionCritical | undefined) {
-    this._critical = value;
+  public putCritical(value: NrqlAlertConditionCritical) {
+    this._critical.internalValue = value;
   }
   public resetCritical() {
-    this._critical = undefined;
+    this._critical.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get criticalInput() {
-    return this._critical
+    return this._critical.internalValue;
   }
 
   // nrql - computed: false, optional: false, required: true
-  private _nrql?: NrqlAlertConditionNrql; 
-  private __nrqlOutput = new NrqlAlertConditionNrqlOutputReference(this as any, "nrql", true);
+  private _nrql = new NrqlAlertConditionNrqlOutputReference(this as any, "nrql", true);
   public get nrql() {
-    return this.__nrqlOutput;
+    return this._nrql;
   }
   public putNrql(value: NrqlAlertConditionNrql) {
-    this._nrql = value;
+    this._nrql.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get nrqlInput() {
-    return this._nrql
+    return this._nrql.internalValue;
   }
 
   // term - computed: false, optional: true, required: false
-  private _term?: NrqlAlertConditionTerm[] | undefined; 
+  private _term?: NrqlAlertConditionTerm[]; 
   public get term() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('term') as any;
   }
-  public set term(value: NrqlAlertConditionTerm[] | undefined) {
+  public set term(value: NrqlAlertConditionTerm[]) {
     this._term = value;
   }
   public resetTerm() {
@@ -1109,24 +1236,23 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get termInput() {
-    return this._term
+    return this._term;
   }
 
   // warning - computed: false, optional: true, required: false
-  private _warning?: NrqlAlertConditionWarning | undefined; 
-  private __warningOutput = new NrqlAlertConditionWarningOutputReference(this as any, "warning", true);
+  private _warning = new NrqlAlertConditionWarningOutputReference(this as any, "warning", true);
   public get warning() {
-    return this.__warningOutput;
+    return this._warning;
   }
-  public putWarning(value: NrqlAlertConditionWarning | undefined) {
-    this._warning = value;
+  public putWarning(value: NrqlAlertConditionWarning) {
+    this._warning.internalValue = value;
   }
   public resetWarning() {
-    this._warning = undefined;
+    this._warning.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get warningInput() {
-    return this._warning
+    return this._warning.internalValue;
   }
 
   // =========
@@ -1158,10 +1284,10 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       value_function: cdktf.stringToTerraform(this._valueFunction),
       violation_time_limit: cdktf.stringToTerraform(this._violationTimeLimit),
       violation_time_limit_seconds: cdktf.numberToTerraform(this._violationTimeLimitSeconds),
-      critical: nrqlAlertConditionCriticalToTerraform(this._critical),
-      nrql: nrqlAlertConditionNrqlToTerraform(this._nrql),
+      critical: nrqlAlertConditionCriticalToTerraform(this._critical.internalValue),
+      nrql: nrqlAlertConditionNrqlToTerraform(this._nrql.internalValue),
       term: cdktf.listMapper(nrqlAlertConditionTermToTerraform)(this._term),
-      warning: nrqlAlertConditionWarningToTerraform(this._warning),
+      warning: nrqlAlertConditionWarningToTerraform(this._warning.internalValue),
     };
   }
 }

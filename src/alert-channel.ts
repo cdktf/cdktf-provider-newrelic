@@ -155,7 +155,7 @@ export interface AlertChannelConfigA {
   readonly userId?: string;
 }
 
-function alertChannelConfigAToTerraform(struct?: AlertChannelConfigAOutputReference | AlertChannelConfigA): any {
+export function alertChannelConfigAToTerraform(struct?: AlertChannelConfigAOutputReference | AlertChannelConfigA): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -195,12 +195,151 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): AlertChannelConfigA | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._apiKey) {
+      hasAnyValues = true;
+      internalValueResult.apiKey = this._apiKey;
+    }
+    if (this._authPassword) {
+      hasAnyValues = true;
+      internalValueResult.authPassword = this._authPassword;
+    }
+    if (this._authType) {
+      hasAnyValues = true;
+      internalValueResult.authType = this._authType;
+    }
+    if (this._authUsername) {
+      hasAnyValues = true;
+      internalValueResult.authUsername = this._authUsername;
+    }
+    if (this._baseUrl) {
+      hasAnyValues = true;
+      internalValueResult.baseUrl = this._baseUrl;
+    }
+    if (this._channel) {
+      hasAnyValues = true;
+      internalValueResult.channel = this._channel;
+    }
+    if (this._headers) {
+      hasAnyValues = true;
+      internalValueResult.headers = this._headers;
+    }
+    if (this._headersString) {
+      hasAnyValues = true;
+      internalValueResult.headersString = this._headersString;
+    }
+    if (this._includeJsonAttachment) {
+      hasAnyValues = true;
+      internalValueResult.includeJsonAttachment = this._includeJsonAttachment;
+    }
+    if (this._key) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._payload) {
+      hasAnyValues = true;
+      internalValueResult.payload = this._payload;
+    }
+    if (this._payloadString) {
+      hasAnyValues = true;
+      internalValueResult.payloadString = this._payloadString;
+    }
+    if (this._payloadType) {
+      hasAnyValues = true;
+      internalValueResult.payloadType = this._payloadType;
+    }
+    if (this._recipients) {
+      hasAnyValues = true;
+      internalValueResult.recipients = this._recipients;
+    }
+    if (this._region) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    if (this._routeKey) {
+      hasAnyValues = true;
+      internalValueResult.routeKey = this._routeKey;
+    }
+    if (this._serviceKey) {
+      hasAnyValues = true;
+      internalValueResult.serviceKey = this._serviceKey;
+    }
+    if (this._tags) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags;
+    }
+    if (this._teams) {
+      hasAnyValues = true;
+      internalValueResult.teams = this._teams;
+    }
+    if (this._url) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
+    }
+    if (this._userId) {
+      hasAnyValues = true;
+      internalValueResult.userId = this._userId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AlertChannelConfigA | undefined) {
+    if (value === undefined) {
+      this._apiKey = undefined;
+      this._authPassword = undefined;
+      this._authType = undefined;
+      this._authUsername = undefined;
+      this._baseUrl = undefined;
+      this._channel = undefined;
+      this._headers = undefined;
+      this._headersString = undefined;
+      this._includeJsonAttachment = undefined;
+      this._key = undefined;
+      this._payload = undefined;
+      this._payloadString = undefined;
+      this._payloadType = undefined;
+      this._recipients = undefined;
+      this._region = undefined;
+      this._routeKey = undefined;
+      this._serviceKey = undefined;
+      this._tags = undefined;
+      this._teams = undefined;
+      this._url = undefined;
+      this._userId = undefined;
+    }
+    else {
+      this._apiKey = value.apiKey;
+      this._authPassword = value.authPassword;
+      this._authType = value.authType;
+      this._authUsername = value.authUsername;
+      this._baseUrl = value.baseUrl;
+      this._channel = value.channel;
+      this._headers = value.headers;
+      this._headersString = value.headersString;
+      this._includeJsonAttachment = value.includeJsonAttachment;
+      this._key = value.key;
+      this._payload = value.payload;
+      this._payloadString = value.payloadString;
+      this._payloadType = value.payloadType;
+      this._recipients = value.recipients;
+      this._region = value.region;
+      this._routeKey = value.routeKey;
+      this._serviceKey = value.serviceKey;
+      this._tags = value.tags;
+      this._teams = value.teams;
+      this._url = value.url;
+      this._userId = value.userId;
+    }
+  }
+
   // api_key - computed: false, optional: true, required: false
-  private _apiKey?: string | undefined; 
+  private _apiKey?: string; 
   public get apiKey() {
     return this.getStringAttribute('api_key');
   }
-  public set apiKey(value: string | undefined) {
+  public set apiKey(value: string) {
     this._apiKey = value;
   }
   public resetApiKey() {
@@ -208,15 +347,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get apiKeyInput() {
-    return this._apiKey
+    return this._apiKey;
   }
 
   // auth_password - computed: false, optional: true, required: false
-  private _authPassword?: string | undefined; 
+  private _authPassword?: string; 
   public get authPassword() {
     return this.getStringAttribute('auth_password');
   }
-  public set authPassword(value: string | undefined) {
+  public set authPassword(value: string) {
     this._authPassword = value;
   }
   public resetAuthPassword() {
@@ -224,15 +363,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get authPasswordInput() {
-    return this._authPassword
+    return this._authPassword;
   }
 
   // auth_type - computed: false, optional: true, required: false
-  private _authType?: string | undefined; 
+  private _authType?: string; 
   public get authType() {
     return this.getStringAttribute('auth_type');
   }
-  public set authType(value: string | undefined) {
+  public set authType(value: string) {
     this._authType = value;
   }
   public resetAuthType() {
@@ -240,15 +379,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get authTypeInput() {
-    return this._authType
+    return this._authType;
   }
 
   // auth_username - computed: false, optional: true, required: false
-  private _authUsername?: string | undefined; 
+  private _authUsername?: string; 
   public get authUsername() {
     return this.getStringAttribute('auth_username');
   }
-  public set authUsername(value: string | undefined) {
+  public set authUsername(value: string) {
     this._authUsername = value;
   }
   public resetAuthUsername() {
@@ -256,15 +395,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get authUsernameInput() {
-    return this._authUsername
+    return this._authUsername;
   }
 
   // base_url - computed: false, optional: true, required: false
-  private _baseUrl?: string | undefined; 
+  private _baseUrl?: string; 
   public get baseUrl() {
     return this.getStringAttribute('base_url');
   }
-  public set baseUrl(value: string | undefined) {
+  public set baseUrl(value: string) {
     this._baseUrl = value;
   }
   public resetBaseUrl() {
@@ -272,15 +411,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get baseUrlInput() {
-    return this._baseUrl
+    return this._baseUrl;
   }
 
   // channel - computed: false, optional: true, required: false
-  private _channel?: string | undefined; 
+  private _channel?: string; 
   public get channel() {
     return this.getStringAttribute('channel');
   }
-  public set channel(value: string | undefined) {
+  public set channel(value: string) {
     this._channel = value;
   }
   public resetChannel() {
@@ -288,16 +427,16 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get channelInput() {
-    return this._channel
+    return this._channel;
   }
 
   // headers - computed: false, optional: true, required: false
-  private _headers?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _headers?: { [key: string]: string } | cdktf.IResolvable; 
   public get headers() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('headers') as any;
   }
-  public set headers(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set headers(value: { [key: string]: string } | cdktf.IResolvable) {
     this._headers = value;
   }
   public resetHeaders() {
@@ -305,15 +444,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get headersInput() {
-    return this._headers
+    return this._headers;
   }
 
   // headers_string - computed: false, optional: true, required: false
-  private _headersString?: string | undefined; 
+  private _headersString?: string; 
   public get headersString() {
     return this.getStringAttribute('headers_string');
   }
-  public set headersString(value: string | undefined) {
+  public set headersString(value: string) {
     this._headersString = value;
   }
   public resetHeadersString() {
@@ -321,15 +460,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get headersStringInput() {
-    return this._headersString
+    return this._headersString;
   }
 
   // include_json_attachment - computed: false, optional: true, required: false
-  private _includeJsonAttachment?: string | undefined; 
+  private _includeJsonAttachment?: string; 
   public get includeJsonAttachment() {
     return this.getStringAttribute('include_json_attachment');
   }
-  public set includeJsonAttachment(value: string | undefined) {
+  public set includeJsonAttachment(value: string) {
     this._includeJsonAttachment = value;
   }
   public resetIncludeJsonAttachment() {
@@ -337,15 +476,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get includeJsonAttachmentInput() {
-    return this._includeJsonAttachment
+    return this._includeJsonAttachment;
   }
 
   // key - computed: false, optional: true, required: false
-  private _key?: string | undefined; 
+  private _key?: string; 
   public get key() {
     return this.getStringAttribute('key');
   }
-  public set key(value: string | undefined) {
+  public set key(value: string) {
     this._key = value;
   }
   public resetKey() {
@@ -353,16 +492,16 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get keyInput() {
-    return this._key
+    return this._key;
   }
 
   // payload - computed: false, optional: true, required: false
-  private _payload?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _payload?: { [key: string]: string } | cdktf.IResolvable; 
   public get payload() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('payload') as any;
   }
-  public set payload(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set payload(value: { [key: string]: string } | cdktf.IResolvable) {
     this._payload = value;
   }
   public resetPayload() {
@@ -370,15 +509,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get payloadInput() {
-    return this._payload
+    return this._payload;
   }
 
   // payload_string - computed: false, optional: true, required: false
-  private _payloadString?: string | undefined; 
+  private _payloadString?: string; 
   public get payloadString() {
     return this.getStringAttribute('payload_string');
   }
-  public set payloadString(value: string | undefined) {
+  public set payloadString(value: string) {
     this._payloadString = value;
   }
   public resetPayloadString() {
@@ -386,15 +525,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get payloadStringInput() {
-    return this._payloadString
+    return this._payloadString;
   }
 
   // payload_type - computed: false, optional: true, required: false
-  private _payloadType?: string | undefined; 
+  private _payloadType?: string; 
   public get payloadType() {
     return this.getStringAttribute('payload_type');
   }
-  public set payloadType(value: string | undefined) {
+  public set payloadType(value: string) {
     this._payloadType = value;
   }
   public resetPayloadType() {
@@ -402,15 +541,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get payloadTypeInput() {
-    return this._payloadType
+    return this._payloadType;
   }
 
   // recipients - computed: false, optional: true, required: false
-  private _recipients?: string | undefined; 
+  private _recipients?: string; 
   public get recipients() {
     return this.getStringAttribute('recipients');
   }
-  public set recipients(value: string | undefined) {
+  public set recipients(value: string) {
     this._recipients = value;
   }
   public resetRecipients() {
@@ -418,15 +557,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get recipientsInput() {
-    return this._recipients
+    return this._recipients;
   }
 
   // region - computed: false, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -434,15 +573,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // route_key - computed: false, optional: true, required: false
-  private _routeKey?: string | undefined; 
+  private _routeKey?: string; 
   public get routeKey() {
     return this.getStringAttribute('route_key');
   }
-  public set routeKey(value: string | undefined) {
+  public set routeKey(value: string) {
     this._routeKey = value;
   }
   public resetRouteKey() {
@@ -450,15 +589,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get routeKeyInput() {
-    return this._routeKey
+    return this._routeKey;
   }
 
   // service_key - computed: false, optional: true, required: false
-  private _serviceKey?: string | undefined; 
+  private _serviceKey?: string; 
   public get serviceKey() {
     return this.getStringAttribute('service_key');
   }
-  public set serviceKey(value: string | undefined) {
+  public set serviceKey(value: string) {
     this._serviceKey = value;
   }
   public resetServiceKey() {
@@ -466,15 +605,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get serviceKeyInput() {
-    return this._serviceKey
+    return this._serviceKey;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: string | undefined; 
+  private _tags?: string; 
   public get tags() {
     return this.getStringAttribute('tags');
   }
-  public set tags(value: string | undefined) {
+  public set tags(value: string) {
     this._tags = value;
   }
   public resetTags() {
@@ -482,15 +621,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // teams - computed: false, optional: true, required: false
-  private _teams?: string | undefined; 
+  private _teams?: string; 
   public get teams() {
     return this.getStringAttribute('teams');
   }
-  public set teams(value: string | undefined) {
+  public set teams(value: string) {
     this._teams = value;
   }
   public resetTeams() {
@@ -498,15 +637,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get teamsInput() {
-    return this._teams
+    return this._teams;
   }
 
   // url - computed: false, optional: true, required: false
-  private _url?: string | undefined; 
+  private _url?: string; 
   public get url() {
     return this.getStringAttribute('url');
   }
-  public set url(value: string | undefined) {
+  public set url(value: string) {
     this._url = value;
   }
   public resetUrl() {
@@ -514,15 +653,15 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get urlInput() {
-    return this._url
+    return this._url;
   }
 
   // user_id - computed: false, optional: true, required: false
-  private _userId?: string | undefined; 
+  private _userId?: string; 
   public get userId() {
     return this.getStringAttribute('user_id');
   }
-  public set userId(value: string | undefined) {
+  public set userId(value: string) {
     this._userId = value;
   }
   public resetUserId() {
@@ -530,7 +669,7 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get userIdInput() {
-    return this._userId
+    return this._userId;
   }
 }
 
@@ -568,7 +707,7 @@ export class AlertChannel extends cdktf.TerraformResource {
     });
     this._name = config.name;
     this._type = config.type;
-    this._config = config.config;
+    this._config.internalValue = config.config;
   }
 
   // ==========
@@ -590,7 +729,7 @@ export class AlertChannel extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // type - computed: false, optional: false, required: true
@@ -603,24 +742,23 @@ export class AlertChannel extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // config - computed: false, optional: true, required: false
-  private _config?: AlertChannelConfigA | undefined; 
-  private __configOutput = new AlertChannelConfigAOutputReference(this as any, "config", true);
+  private _config = new AlertChannelConfigAOutputReference(this as any, "config", true);
   public get config() {
-    return this.__configOutput;
+    return this._config;
   }
-  public putConfig(value: AlertChannelConfigA | undefined) {
-    this._config = value;
+  public putConfig(value: AlertChannelConfigA) {
+    this._config.internalValue = value;
   }
   public resetConfig() {
-    this._config = undefined;
+    this._config.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get configInput() {
-    return this._config
+    return this._config.internalValue;
   }
 
   // =========
@@ -631,7 +769,7 @@ export class AlertChannel extends cdktf.TerraformResource {
     return {
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
-      config: alertChannelConfigAToTerraform(this._config),
+      config: alertChannelConfigAToTerraform(this._config.internalValue),
     };
   }
 }

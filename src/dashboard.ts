@@ -61,7 +61,7 @@ export interface DashboardFilter {
   readonly eventTypes: string[];
 }
 
-function dashboardFilterToTerraform(struct?: DashboardFilterOutputReference | DashboardFilter): any {
+export function dashboardFilterToTerraform(struct?: DashboardFilterOutputReference | DashboardFilter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -82,12 +82,37 @@ export class DashboardFilterOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DashboardFilter | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._attributes) {
+      hasAnyValues = true;
+      internalValueResult.attributes = this._attributes;
+    }
+    if (this._eventTypes) {
+      hasAnyValues = true;
+      internalValueResult.eventTypes = this._eventTypes;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DashboardFilter | undefined) {
+    if (value === undefined) {
+      this._attributes = undefined;
+      this._eventTypes = undefined;
+    }
+    else {
+      this._attributes = value.attributes;
+      this._eventTypes = value.eventTypes;
+    }
+  }
+
   // attributes - computed: false, optional: true, required: false
-  private _attributes?: string[] | undefined; 
+  private _attributes?: string[]; 
   public get attributes() {
     return this.getListAttribute('attributes');
   }
-  public set attributes(value: string[] | undefined) {
+  public set attributes(value: string[]) {
     this._attributes = value;
   }
   public resetAttributes() {
@@ -95,7 +120,7 @@ export class DashboardFilterOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get attributesInput() {
-    return this._attributes
+    return this._attributes;
   }
 
   // event_types - computed: false, optional: false, required: true
@@ -108,7 +133,7 @@ export class DashboardFilterOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get eventTypesInput() {
-    return this._eventTypes
+    return this._eventTypes;
   }
 }
 export interface DashboardWidgetCompareWithPresentation {
@@ -126,7 +151,7 @@ export interface DashboardWidgetCompareWithPresentation {
   readonly name: string;
 }
 
-function dashboardWidgetCompareWithPresentationToTerraform(struct?: DashboardWidgetCompareWithPresentationOutputReference | DashboardWidgetCompareWithPresentation): any {
+export function dashboardWidgetCompareWithPresentationToTerraform(struct?: DashboardWidgetCompareWithPresentationOutputReference | DashboardWidgetCompareWithPresentation): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -147,6 +172,31 @@ export class DashboardWidgetCompareWithPresentationOutputReference extends cdktf
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DashboardWidgetCompareWithPresentation | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._color) {
+      hasAnyValues = true;
+      internalValueResult.color = this._color;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DashboardWidgetCompareWithPresentation | undefined) {
+    if (value === undefined) {
+      this._color = undefined;
+      this._name = undefined;
+    }
+    else {
+      this._color = value.color;
+      this._name = value.name;
+    }
+  }
+
   // color - computed: false, optional: false, required: true
   private _color?: string; 
   public get color() {
@@ -157,7 +207,7 @@ export class DashboardWidgetCompareWithPresentationOutputReference extends cdktf
   }
   // Temporarily expose input value. Use with caution.
   public get colorInput() {
-    return this._color
+    return this._color;
   }
 
   // name - computed: false, optional: false, required: true
@@ -170,7 +220,7 @@ export class DashboardWidgetCompareWithPresentationOutputReference extends cdktf
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 }
 export interface DashboardWidgetCompareWith {
@@ -188,7 +238,7 @@ export interface DashboardWidgetCompareWith {
   readonly presentation: DashboardWidgetCompareWithPresentation;
 }
 
-function dashboardWidgetCompareWithToTerraform(struct?: DashboardWidgetCompareWith): any {
+export function dashboardWidgetCompareWithToTerraform(struct?: DashboardWidgetCompareWith): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -226,7 +276,7 @@ export interface DashboardWidgetMetric {
   readonly values?: string[];
 }
 
-function dashboardWidgetMetricToTerraform(struct?: DashboardWidgetMetric): any {
+export function dashboardWidgetMetricToTerraform(struct?: DashboardWidgetMetric): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -362,7 +412,7 @@ export interface DashboardWidget {
   readonly metric?: DashboardWidgetMetric[];
 }
 
-function dashboardWidgetToTerraform(struct?: DashboardWidget): any {
+export function dashboardWidgetToTerraform(struct?: DashboardWidget): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -430,7 +480,7 @@ export class Dashboard extends cdktf.TerraformResource {
     this._icon = config.icon;
     this._title = config.title;
     this._visibility = config.visibility;
-    this._filter = config.filter;
+    this._filter.internalValue = config.filter;
     this._widget = config.widget;
   }
 
@@ -444,11 +494,11 @@ export class Dashboard extends cdktf.TerraformResource {
   }
 
   // editable - computed: false, optional: true, required: false
-  private _editable?: string | undefined; 
+  private _editable?: string; 
   public get editable() {
     return this.getStringAttribute('editable');
   }
-  public set editable(value: string | undefined) {
+  public set editable(value: string) {
     this._editable = value;
   }
   public resetEditable() {
@@ -456,15 +506,15 @@ export class Dashboard extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get editableInput() {
-    return this._editable
+    return this._editable;
   }
 
   // grid_column_count - computed: false, optional: true, required: false
-  private _gridColumnCount?: number | undefined; 
+  private _gridColumnCount?: number; 
   public get gridColumnCount() {
     return this.getNumberAttribute('grid_column_count');
   }
-  public set gridColumnCount(value: number | undefined) {
+  public set gridColumnCount(value: number) {
     this._gridColumnCount = value;
   }
   public resetGridColumnCount() {
@@ -472,15 +522,15 @@ export class Dashboard extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get gridColumnCountInput() {
-    return this._gridColumnCount
+    return this._gridColumnCount;
   }
 
   // icon - computed: false, optional: true, required: false
-  private _icon?: string | undefined; 
+  private _icon?: string; 
   public get icon() {
     return this.getStringAttribute('icon');
   }
-  public set icon(value: string | undefined) {
+  public set icon(value: string) {
     this._icon = value;
   }
   public resetIcon() {
@@ -488,7 +538,7 @@ export class Dashboard extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get iconInput() {
-    return this._icon
+    return this._icon;
   }
 
   // id - computed: true, optional: true, required: false
@@ -506,15 +556,15 @@ export class Dashboard extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get titleInput() {
-    return this._title
+    return this._title;
   }
 
   // visibility - computed: false, optional: true, required: false
-  private _visibility?: string | undefined; 
+  private _visibility?: string; 
   public get visibility() {
     return this.getStringAttribute('visibility');
   }
-  public set visibility(value: string | undefined) {
+  public set visibility(value: string) {
     this._visibility = value;
   }
   public resetVisibility() {
@@ -522,33 +572,32 @@ export class Dashboard extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get visibilityInput() {
-    return this._visibility
+    return this._visibility;
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DashboardFilter | undefined; 
-  private __filterOutput = new DashboardFilterOutputReference(this as any, "filter", true);
+  private _filter = new DashboardFilterOutputReference(this as any, "filter", true);
   public get filter() {
-    return this.__filterOutput;
+    return this._filter;
   }
-  public putFilter(value: DashboardFilter | undefined) {
-    this._filter = value;
+  public putFilter(value: DashboardFilter) {
+    this._filter.internalValue = value;
   }
   public resetFilter() {
-    this._filter = undefined;
+    this._filter.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get filterInput() {
-    return this._filter
+    return this._filter.internalValue;
   }
 
   // widget - computed: false, optional: true, required: false
-  private _widget?: DashboardWidget[] | undefined; 
+  private _widget?: DashboardWidget[]; 
   public get widget() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('widget') as any;
   }
-  public set widget(value: DashboardWidget[] | undefined) {
+  public set widget(value: DashboardWidget[]) {
     this._widget = value;
   }
   public resetWidget() {
@@ -556,7 +605,7 @@ export class Dashboard extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get widgetInput() {
-    return this._widget
+    return this._widget;
   }
 
   // =========
@@ -570,7 +619,7 @@ export class Dashboard extends cdktf.TerraformResource {
       icon: cdktf.stringToTerraform(this._icon),
       title: cdktf.stringToTerraform(this._title),
       visibility: cdktf.stringToTerraform(this._visibility),
-      filter: dashboardFilterToTerraform(this._filter),
+      filter: dashboardFilterToTerraform(this._filter.internalValue),
       widget: cdktf.listMapper(dashboardWidgetToTerraform)(this._widget),
     };
   }

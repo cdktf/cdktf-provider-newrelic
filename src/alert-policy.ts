@@ -76,11 +76,11 @@ export class AlertPolicy extends cdktf.TerraformResource {
   // ==========
 
   // account_id - computed: true, optional: true, required: false
-  private _accountId?: number | undefined; 
+  private _accountId?: number; 
   public get accountId() {
     return this.getNumberAttribute('account_id');
   }
-  public set accountId(value: number | undefined) {
+  public set accountId(value: number) {
     this._accountId = value;
   }
   public resetAccountId() {
@@ -88,16 +88,16 @@ export class AlertPolicy extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
-    return this._accountId
+    return this._accountId;
   }
 
   // channel_ids - computed: false, optional: true, required: false
-  private _channelIds?: number[] | undefined; 
+  private _channelIds?: number[]; 
   public get channelIds() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('channel_ids') as any;
   }
-  public set channelIds(value: number[] | undefined) {
+  public set channelIds(value: number[]) {
     this._channelIds = value;
   }
   public resetChannelIds() {
@@ -105,7 +105,7 @@ export class AlertPolicy extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get channelIdsInput() {
-    return this._channelIds
+    return this._channelIds;
   }
 
   // id - computed: true, optional: true, required: false
@@ -114,11 +114,11 @@ export class AlertPolicy extends cdktf.TerraformResource {
   }
 
   // incident_preference - computed: false, optional: true, required: false
-  private _incidentPreference?: string | undefined; 
+  private _incidentPreference?: string; 
   public get incidentPreference() {
     return this.getStringAttribute('incident_preference');
   }
-  public set incidentPreference(value: string | undefined) {
+  public set incidentPreference(value: string) {
     this._incidentPreference = value;
   }
   public resetIncidentPreference() {
@@ -126,7 +126,7 @@ export class AlertPolicy extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get incidentPreferenceInput() {
-    return this._incidentPreference
+    return this._incidentPreference;
   }
 
   // name - computed: false, optional: false, required: true
@@ -139,7 +139,7 @@ export class AlertPolicy extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // =========

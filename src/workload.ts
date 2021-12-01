@@ -47,7 +47,7 @@ export interface WorkloadEntitySearchQuery {
   readonly query: string;
 }
 
-function workloadEntitySearchQueryToTerraform(struct?: WorkloadEntitySearchQuery): any {
+export function workloadEntitySearchQueryToTerraform(struct?: WorkloadEntitySearchQuery): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -102,11 +102,11 @@ export class Workload extends cdktf.TerraformResource {
   // ==========
 
   // account_id - computed: true, optional: true, required: false
-  private _accountId?: number | undefined; 
+  private _accountId?: number; 
   public get accountId() {
     return this.getNumberAttribute('account_id');
   }
-  public set accountId(value: number | undefined) {
+  public set accountId(value: number) {
     this._accountId = value;
   }
   public resetAccountId() {
@@ -114,7 +114,7 @@ export class Workload extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
-    return this._accountId
+    return this._accountId;
   }
 
   // composite_entity_search_query - computed: true, optional: false, required: false
@@ -123,11 +123,11 @@ export class Workload extends cdktf.TerraformResource {
   }
 
   // entity_guids - computed: true, optional: true, required: false
-  private _entityGuids?: string[] | undefined; 
+  private _entityGuids?: string[]; 
   public get entityGuids() {
     return this.getListAttribute('entity_guids');
   }
-  public set entityGuids(value: string[] | undefined) {
+  public set entityGuids(value: string[]) {
     this._entityGuids = value;
   }
   public resetEntityGuids() {
@@ -135,7 +135,7 @@ export class Workload extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get entityGuidsInput() {
-    return this._entityGuids
+    return this._entityGuids;
   }
 
   // guid - computed: true, optional: false, required: false
@@ -158,7 +158,7 @@ export class Workload extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // permalink - computed: true, optional: false, required: false
@@ -167,12 +167,12 @@ export class Workload extends cdktf.TerraformResource {
   }
 
   // scope_account_ids - computed: true, optional: true, required: false
-  private _scopeAccountIds?: number[] | undefined; 
+  private _scopeAccountIds?: number[]; 
   public get scopeAccountIds() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('scope_account_ids') as any;
   }
-  public set scopeAccountIds(value: number[] | undefined) {
+  public set scopeAccountIds(value: number[]) {
     this._scopeAccountIds = value;
   }
   public resetScopeAccountIds() {
@@ -180,7 +180,7 @@ export class Workload extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get scopeAccountIdsInput() {
-    return this._scopeAccountIds
+    return this._scopeAccountIds;
   }
 
   // workload_id - computed: true, optional: false, required: false
@@ -189,12 +189,12 @@ export class Workload extends cdktf.TerraformResource {
   }
 
   // entity_search_query - computed: false, optional: true, required: false
-  private _entitySearchQuery?: WorkloadEntitySearchQuery[] | undefined; 
+  private _entitySearchQuery?: WorkloadEntitySearchQuery[]; 
   public get entitySearchQuery() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('entity_search_query') as any;
   }
-  public set entitySearchQuery(value: WorkloadEntitySearchQuery[] | undefined) {
+  public set entitySearchQuery(value: WorkloadEntitySearchQuery[]) {
     this._entitySearchQuery = value;
   }
   public resetEntitySearchQuery() {
@@ -202,7 +202,7 @@ export class Workload extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get entitySearchQueryInput() {
-    return this._entitySearchQuery
+    return this._entitySearchQuery;
   }
 
   // =========
