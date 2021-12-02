@@ -14,7 +14,7 @@ export interface NrqlDropRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly accountId?: number;
   /**
-  * The drop rule action (drop_data or drop_attributes).
+  * The drop rule action (drop_data, drop_attributes, or drop_attributes_from_metric_aggregates).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule.html#action NrqlDropRule#action}
   */
