@@ -104,6 +104,8 @@ export function alertMutingRuleConditionToTerraform(struct?: AlertMutingRuleCond
 }
 
 export class AlertMutingRuleConditionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -114,7 +116,7 @@ export class AlertMutingRuleConditionOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): AlertMutingRuleCondition | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._operator) {
       hasAnyValues = true;
@@ -129,10 +131,12 @@ export class AlertMutingRuleConditionOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: AlertMutingRuleCondition | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._operator = undefined;
       this._conditions = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._operator = value.operator;
       this._conditions = value.conditions;
     }
@@ -227,6 +231,8 @@ export function alertMutingRuleScheduleToTerraform(struct?: AlertMutingRuleSched
 }
 
 export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -237,7 +243,7 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): AlertMutingRuleSchedule | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._endRepeat) {
       hasAnyValues = true;
@@ -272,6 +278,7 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: AlertMutingRuleSchedule | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._endRepeat = undefined;
       this._endTime = undefined;
       this._repeat = undefined;
@@ -281,6 +288,7 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
       this._weeklyRepeatDays = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._endRepeat = value.endRepeat;
       this._endTime = value.endTime;
       this._repeat = value.repeat;

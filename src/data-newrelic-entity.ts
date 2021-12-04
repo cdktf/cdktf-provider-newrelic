@@ -65,6 +65,8 @@ export function dataNewrelicEntityTagToTerraform(struct?: DataNewrelicEntityTagO
 }
 
 export class DataNewrelicEntityTagOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -75,7 +77,7 @@ export class DataNewrelicEntityTagOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): DataNewrelicEntityTag | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._key) {
       hasAnyValues = true;
@@ -90,10 +92,12 @@ export class DataNewrelicEntityTagOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: DataNewrelicEntityTag | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._key = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._key = value.key;
       this._value = value.value;
     }

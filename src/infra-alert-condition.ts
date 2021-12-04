@@ -126,6 +126,8 @@ export function infraAlertConditionCriticalToTerraform(struct?: InfraAlertCondit
 }
 
 export class InfraAlertConditionCriticalOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -136,7 +138,7 @@ export class InfraAlertConditionCriticalOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): InfraAlertConditionCritical | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._duration) {
       hasAnyValues = true;
@@ -155,11 +157,13 @@ export class InfraAlertConditionCriticalOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: InfraAlertConditionCritical | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._duration = undefined;
       this._timeFunction = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._duration = value.duration;
       this._timeFunction = value.timeFunction;
       this._value = value.value;
@@ -239,6 +243,8 @@ export function infraAlertConditionWarningToTerraform(struct?: InfraAlertConditi
 }
 
 export class InfraAlertConditionWarningOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -249,7 +255,7 @@ export class InfraAlertConditionWarningOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): InfraAlertConditionWarning | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._duration) {
       hasAnyValues = true;
@@ -268,11 +274,13 @@ export class InfraAlertConditionWarningOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: InfraAlertConditionWarning | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._duration = undefined;
       this._timeFunction = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._duration = value.duration;
       this._timeFunction = value.timeFunction;
       this._value = value.value;

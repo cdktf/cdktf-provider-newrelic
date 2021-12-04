@@ -76,6 +76,8 @@ export function syntheticsMultilocationAlertConditionCriticalToTerraform(struct?
 }
 
 export class SyntheticsMultilocationAlertConditionCriticalOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -86,7 +88,7 @@ export class SyntheticsMultilocationAlertConditionCriticalOutputReference extend
   }
 
   public get internalValue(): SyntheticsMultilocationAlertConditionCritical | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._threshold) {
       hasAnyValues = true;
@@ -97,9 +99,11 @@ export class SyntheticsMultilocationAlertConditionCriticalOutputReference extend
 
   public set internalValue(value: SyntheticsMultilocationAlertConditionCritical | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._threshold = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._threshold = value.threshold;
     }
   }
@@ -137,6 +141,8 @@ export function syntheticsMultilocationAlertConditionWarningToTerraform(struct?:
 }
 
 export class SyntheticsMultilocationAlertConditionWarningOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -147,7 +153,7 @@ export class SyntheticsMultilocationAlertConditionWarningOutputReference extends
   }
 
   public get internalValue(): SyntheticsMultilocationAlertConditionWarning | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._threshold) {
       hasAnyValues = true;
@@ -158,9 +164,11 @@ export class SyntheticsMultilocationAlertConditionWarningOutputReference extends
 
   public set internalValue(value: SyntheticsMultilocationAlertConditionWarning | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._threshold = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._threshold = value.threshold;
     }
   }

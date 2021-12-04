@@ -55,6 +55,8 @@ export function serviceLevelEventsBadEventsToTerraform(struct?: ServiceLevelEven
 }
 
 export class ServiceLevelEventsBadEventsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -65,7 +67,7 @@ export class ServiceLevelEventsBadEventsOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): ServiceLevelEventsBadEvents | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._from) {
       hasAnyValues = true;
@@ -80,10 +82,12 @@ export class ServiceLevelEventsBadEventsOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: ServiceLevelEventsBadEvents | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._from = undefined;
       this._where = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._from = value.from;
       this._where = value.where;
     }
@@ -141,6 +145,8 @@ export function serviceLevelEventsGoodEventsToTerraform(struct?: ServiceLevelEve
 }
 
 export class ServiceLevelEventsGoodEventsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -151,7 +157,7 @@ export class ServiceLevelEventsGoodEventsOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): ServiceLevelEventsGoodEvents | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._from) {
       hasAnyValues = true;
@@ -166,10 +172,12 @@ export class ServiceLevelEventsGoodEventsOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: ServiceLevelEventsGoodEvents | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._from = undefined;
       this._where = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._from = value.from;
       this._where = value.where;
     }
@@ -227,6 +235,8 @@ export function serviceLevelEventsValidEventsToTerraform(struct?: ServiceLevelEv
 }
 
 export class ServiceLevelEventsValidEventsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -237,7 +247,7 @@ export class ServiceLevelEventsValidEventsOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): ServiceLevelEventsValidEvents | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._from) {
       hasAnyValues = true;
@@ -252,10 +262,12 @@ export class ServiceLevelEventsValidEventsOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: ServiceLevelEventsValidEvents | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._from = undefined;
       this._where = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._from = value.from;
       this._where = value.where;
     }
@@ -329,6 +341,8 @@ export function serviceLevelEventsToTerraform(struct?: ServiceLevelEventsOutputR
 }
 
 export class ServiceLevelEventsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -339,21 +353,21 @@ export class ServiceLevelEventsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): ServiceLevelEvents | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._accountId) {
       hasAnyValues = true;
       internalValueResult.accountId = this._accountId;
     }
-    if (this._badEvents) {
+    if (this._badEvents?.internalValue) {
       hasAnyValues = true;
       internalValueResult.badEvents = this._badEvents?.internalValue;
     }
-    if (this._goodEvents) {
+    if (this._goodEvents?.internalValue) {
       hasAnyValues = true;
       internalValueResult.goodEvents = this._goodEvents?.internalValue;
     }
-    if (this._validEvents) {
+    if (this._validEvents?.internalValue) {
       hasAnyValues = true;
       internalValueResult.validEvents = this._validEvents?.internalValue;
     }
@@ -362,12 +376,14 @@ export class ServiceLevelEventsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: ServiceLevelEvents | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._accountId = undefined;
       this._badEvents.internalValue = undefined;
       this._goodEvents.internalValue = undefined;
       this._validEvents.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._accountId = value.accountId;
       this._badEvents.internalValue = value.badEvents;
       this._goodEvents.internalValue = value.goodEvents;
@@ -456,6 +472,8 @@ export function serviceLevelObjectiveTimeWindowRollingToTerraform(struct?: Servi
 }
 
 export class ServiceLevelObjectiveTimeWindowRollingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -466,7 +484,7 @@ export class ServiceLevelObjectiveTimeWindowRollingOutputReference extends cdktf
   }
 
   public get internalValue(): ServiceLevelObjectiveTimeWindowRolling | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._count) {
       hasAnyValues = true;
@@ -481,10 +499,12 @@ export class ServiceLevelObjectiveTimeWindowRollingOutputReference extends cdktf
 
   public set internalValue(value: ServiceLevelObjectiveTimeWindowRolling | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._count = undefined;
       this._unit = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._count = value.count;
       this._unit = value.unit;
     }
@@ -536,6 +556,8 @@ export function serviceLevelObjectiveTimeWindowToTerraform(struct?: ServiceLevel
 }
 
 export class ServiceLevelObjectiveTimeWindowOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -546,9 +568,9 @@ export class ServiceLevelObjectiveTimeWindowOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): ServiceLevelObjectiveTimeWindow | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._rolling) {
+    if (this._rolling?.internalValue) {
       hasAnyValues = true;
       internalValueResult.rolling = this._rolling?.internalValue;
     }
@@ -557,9 +579,11 @@ export class ServiceLevelObjectiveTimeWindowOutputReference extends cdktf.Comple
 
   public set internalValue(value: ServiceLevelObjectiveTimeWindow | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._rolling.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._rolling.internalValue = value.rolling;
     }
   }
