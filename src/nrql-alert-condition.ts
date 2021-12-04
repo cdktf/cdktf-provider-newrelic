@@ -225,6 +225,8 @@ export function nrqlAlertConditionCriticalToTerraform(struct?: NrqlAlertConditio
 }
 
 export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -235,7 +237,7 @@ export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): NrqlAlertConditionCritical | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._duration) {
       hasAnyValues = true;
@@ -266,6 +268,7 @@ export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: NrqlAlertConditionCritical | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._duration = undefined;
       this._operator = undefined;
       this._threshold = undefined;
@@ -274,6 +277,7 @@ export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObje
       this._timeFunction = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._duration = value.duration;
       this._operator = value.operator;
       this._threshold = value.threshold;
@@ -408,6 +412,8 @@ export function nrqlAlertConditionNrqlToTerraform(struct?: NrqlAlertConditionNrq
 }
 
 export class NrqlAlertConditionNrqlOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -418,7 +424,7 @@ export class NrqlAlertConditionNrqlOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): NrqlAlertConditionNrql | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._evaluationOffset) {
       hasAnyValues = true;
@@ -437,11 +443,13 @@ export class NrqlAlertConditionNrqlOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: NrqlAlertConditionNrql | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._evaluationOffset = undefined;
       this._query = undefined;
       this._sinceValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._evaluationOffset = value.evaluationOffset;
       this._query = value.query;
       this._sinceValue = value.sinceValue;
@@ -609,6 +617,8 @@ export function nrqlAlertConditionWarningToTerraform(struct?: NrqlAlertCondition
 }
 
 export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -619,7 +629,7 @@ export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): NrqlAlertConditionWarning | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._duration) {
       hasAnyValues = true;
@@ -650,6 +660,7 @@ export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: NrqlAlertConditionWarning | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._duration = undefined;
       this._operator = undefined;
       this._threshold = undefined;
@@ -658,6 +669,7 @@ export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObjec
       this._timeFunction = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._duration = value.duration;
       this._operator = value.operator;
       this._threshold = value.threshold;

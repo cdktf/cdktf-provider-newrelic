@@ -73,6 +73,8 @@ export function dashboardFilterToTerraform(struct?: DashboardFilterOutputReferen
 }
 
 export class DashboardFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -83,7 +85,7 @@ export class DashboardFilterOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): DashboardFilter | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._attributes) {
       hasAnyValues = true;
@@ -98,10 +100,12 @@ export class DashboardFilterOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: DashboardFilter | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._attributes = undefined;
       this._eventTypes = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._attributes = value.attributes;
       this._eventTypes = value.eventTypes;
     }
@@ -163,6 +167,8 @@ export function dashboardWidgetCompareWithPresentationToTerraform(struct?: Dashb
 }
 
 export class DashboardWidgetCompareWithPresentationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -173,7 +179,7 @@ export class DashboardWidgetCompareWithPresentationOutputReference extends cdktf
   }
 
   public get internalValue(): DashboardWidgetCompareWithPresentation | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._color) {
       hasAnyValues = true;
@@ -188,10 +194,12 @@ export class DashboardWidgetCompareWithPresentationOutputReference extends cdktf
 
   public set internalValue(value: DashboardWidgetCompareWithPresentation | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._color = undefined;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._color = value.color;
       this._name = value.name;
     }

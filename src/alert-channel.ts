@@ -14,7 +14,7 @@ export interface AlertChannelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
-  * (Required) The type of channel. One of: (user, victorops, webhook, email, opsgenie, pagerduty, slack).
+  * (Required) The type of channel. One of: (victorops, webhook, email, opsgenie, pagerduty, slack, user).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#type AlertChannel#type}
   */
@@ -186,6 +186,8 @@ export function alertChannelConfigAToTerraform(struct?: AlertChannelConfigAOutpu
 }
 
 export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -196,7 +198,7 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): AlertChannelConfigA | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._apiKey) {
       hasAnyValues = true;
@@ -287,6 +289,7 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: AlertChannelConfigA | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._apiKey = undefined;
       this._authPassword = undefined;
       this._authType = undefined;
@@ -310,6 +313,7 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
       this._userId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._apiKey = value.apiKey;
       this._authPassword = value.authPassword;
       this._authType = value.authType;
