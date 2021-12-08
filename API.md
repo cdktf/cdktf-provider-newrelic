@@ -9140,7 +9140,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
-| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric). |
+| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
 | [`gcMetric`](#cdktfprovidernewrelicalertconditionconfigpropertygcmetric) | `string` | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -9269,7 +9269,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
+The type of condition. One of: (apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#type AlertCondition#type}
 
@@ -18108,7 +18108,8 @@ const syntheticsMonitorScriptLocation: SyntheticsMonitorScriptLocation = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`name`](#cdktfprovidernewrelicsyntheticsmonitorscriptlocationpropertyname)<span title="Required">*</span> | `string` | The monitor script location name. |
-| [`hmac`](#cdktfprovidernewrelicsyntheticsmonitorscriptlocationpropertyhmac) | `string` | The monitor script authentication code for the location. |
+| [`hmac`](#cdktfprovidernewrelicsyntheticsmonitorscriptlocationpropertyhmac) | `string` | The HMAC for the monitor script location. Use only one of `hmac` or `vse_password.`. |
+| [`vsePassword`](#cdktfprovidernewrelicsyntheticsmonitorscriptlocationpropertyvsepassword) | `string` | The password for the monitor script location used to calculate HMAC. Use only one of `vse_password` or `hmac.`. |
 
 ---
 
@@ -18134,9 +18135,23 @@ public readonly hmac: string;
 
 - *Type:* `string`
 
-The monitor script authentication code for the location.
+The HMAC for the monitor script location. Use only one of `hmac` or `vse_password.`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html#hmac SyntheticsMonitorScript#hmac}
+
+---
+
+##### `vsePassword`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation.property.vsePassword" id="cdktfprovidernewrelicsyntheticsmonitorscriptlocationpropertyvsepassword"></a>
+
+```typescript
+public readonly vsePassword: string;
+```
+
+- *Type:* `string`
+
+The password for the monitor script location used to calculate HMAC. Use only one of `vse_password` or `hmac.`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html#vse_password SyntheticsMonitorScript#vse_password}
 
 ---
 
