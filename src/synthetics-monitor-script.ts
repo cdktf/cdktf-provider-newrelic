@@ -28,7 +28,7 @@ export interface SyntheticsMonitorScriptConfig extends cdktf.TerraformMetaArgume
 }
 export interface SyntheticsMonitorScriptLocation {
   /**
-  * The monitor script authentication code for the location
+  * The HMAC for the monitor script location. Use only one of `hmac` or `vse_password.`
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html#hmac SyntheticsMonitorScript#hmac}
   */
@@ -39,6 +39,12 @@ export interface SyntheticsMonitorScriptLocation {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html#name SyntheticsMonitorScript#name}
   */
   readonly name: string;
+  /**
+  * The password for the monitor script location used to calculate HMAC. Use only one of `vse_password` or `hmac.`
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html#vse_password SyntheticsMonitorScript#vse_password}
+  */
+  readonly vsePassword?: string;
 }
 
 export function syntheticsMonitorScriptLocationToTerraform(struct?: SyntheticsMonitorScriptLocation): any {
@@ -49,6 +55,7 @@ export function syntheticsMonitorScriptLocationToTerraform(struct?: SyntheticsMo
   return {
     hmac: cdktf.stringToTerraform(struct!.hmac),
     name: cdktf.stringToTerraform(struct!.name),
+    vse_password: cdktf.stringToTerraform(struct!.vsePassword),
   }
 }
 
