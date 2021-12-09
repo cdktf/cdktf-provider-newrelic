@@ -2312,10 +2312,10 @@ jsii-diff@^1.47.0:
     typescript "~3.9.10"
     yargs "^16.2.0"
 
-jsii-docgen@^4.2.8:
-  version "4.2.8"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-4.2.8.tgz#62c3a11b4fd8f481f2334fa5c3b38649749615bb"
-  integrity sha512-aCNRo8KmDwh/PnqksFzkL28uyOGe8y8Tyd9ib7tfESi86QF4A3KXMd1vSN7Zzkv7IIs+k7JsUNImUF0bgcBm9A==
+jsii-docgen@^4.2.9:
+  version "4.2.9"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-4.2.9.tgz#40291252179d4fa6853aa44539be3397b1041e25"
+  integrity sha512-wcGQPzZYalHU17koTiuI2nHMsLeSORp7KW7JSz/VOY0w+AKRlkeBOmPKoZejjGJCoNk1s4bhU7Sn+TW56riYAA==
   dependencies:
     "@jsii/spec" "^1.47.0"
     case "^1.6.3"
@@ -2375,9 +2375,9 @@ jsii-rosetta@^1.39.0, jsii-rosetta@^1.47.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.406:
-  version "0.1.420"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.420.tgz#2ef0d7d7c05ebb655f5f6e3dc6c4b1063660e594"
-  integrity sha512-mUVW8b2ITfKU/GHAqnOijr/lE33/yjS3BHvN+IZEj34T1o9/6s4Ri//d40jMYpWXxTQq+FBqz7vjJ+hGRVVPbA==
+  version "0.1.421"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.421.tgz#5f64f5b561c87d6f6bbf647bce4fcd18f42a5417"
+  integrity sha512-DC7I/eD7KimytBqFrlKvHyNBvgSIZeVMafU/Yte5IiPNkyLHQVG5rz4oxfyV7HZka133/Mnx7oKdKjPb9q2Zow==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.47.0"
