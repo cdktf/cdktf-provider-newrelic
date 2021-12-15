@@ -14,7 +14,7 @@ export interface AlertChannelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
-  * (Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie).
+  * (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#type AlertChannel#type}
   */
@@ -200,87 +200,87 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   public get internalValue(): AlertChannelConfigA | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._apiKey) {
+    if (this._apiKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.apiKey = this._apiKey;
     }
-    if (this._authPassword) {
+    if (this._authPassword !== undefined) {
       hasAnyValues = true;
       internalValueResult.authPassword = this._authPassword;
     }
-    if (this._authType) {
+    if (this._authType !== undefined) {
       hasAnyValues = true;
       internalValueResult.authType = this._authType;
     }
-    if (this._authUsername) {
+    if (this._authUsername !== undefined) {
       hasAnyValues = true;
       internalValueResult.authUsername = this._authUsername;
     }
-    if (this._baseUrl) {
+    if (this._baseUrl !== undefined) {
       hasAnyValues = true;
       internalValueResult.baseUrl = this._baseUrl;
     }
-    if (this._channel) {
+    if (this._channel !== undefined) {
       hasAnyValues = true;
       internalValueResult.channel = this._channel;
     }
-    if (this._headers) {
+    if (this._headers !== undefined) {
       hasAnyValues = true;
       internalValueResult.headers = this._headers;
     }
-    if (this._headersString) {
+    if (this._headersString !== undefined) {
       hasAnyValues = true;
       internalValueResult.headersString = this._headersString;
     }
-    if (this._includeJsonAttachment) {
+    if (this._includeJsonAttachment !== undefined) {
       hasAnyValues = true;
       internalValueResult.includeJsonAttachment = this._includeJsonAttachment;
     }
-    if (this._key) {
+    if (this._key !== undefined) {
       hasAnyValues = true;
       internalValueResult.key = this._key;
     }
-    if (this._payload) {
+    if (this._payload !== undefined) {
       hasAnyValues = true;
       internalValueResult.payload = this._payload;
     }
-    if (this._payloadString) {
+    if (this._payloadString !== undefined) {
       hasAnyValues = true;
       internalValueResult.payloadString = this._payloadString;
     }
-    if (this._payloadType) {
+    if (this._payloadType !== undefined) {
       hasAnyValues = true;
       internalValueResult.payloadType = this._payloadType;
     }
-    if (this._recipients) {
+    if (this._recipients !== undefined) {
       hasAnyValues = true;
       internalValueResult.recipients = this._recipients;
     }
-    if (this._region) {
+    if (this._region !== undefined) {
       hasAnyValues = true;
       internalValueResult.region = this._region;
     }
-    if (this._routeKey) {
+    if (this._routeKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.routeKey = this._routeKey;
     }
-    if (this._serviceKey) {
+    if (this._serviceKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceKey = this._serviceKey;
     }
-    if (this._tags) {
+    if (this._tags !== undefined) {
       hasAnyValues = true;
       internalValueResult.tags = this._tags;
     }
-    if (this._teams) {
+    if (this._teams !== undefined) {
       hasAnyValues = true;
       internalValueResult.teams = this._teams;
     }
-    if (this._url) {
+    if (this._url !== undefined) {
       hasAnyValues = true;
       internalValueResult.url = this._url;
     }
-    if (this._userId) {
+    if (this._userId !== undefined) {
       hasAnyValues = true;
       internalValueResult.userId = this._userId;
     }

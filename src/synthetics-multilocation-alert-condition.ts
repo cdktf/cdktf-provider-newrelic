@@ -90,7 +90,7 @@ export class SyntheticsMultilocationAlertConditionCriticalOutputReference extend
   public get internalValue(): SyntheticsMultilocationAlertConditionCritical | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._threshold) {
+    if (this._threshold !== undefined) {
       hasAnyValues = true;
       internalValueResult.threshold = this._threshold;
     }
@@ -155,7 +155,7 @@ export class SyntheticsMultilocationAlertConditionWarningOutputReference extends
   public get internalValue(): SyntheticsMultilocationAlertConditionWarning | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._threshold) {
+    if (this._threshold !== undefined) {
       hasAnyValues = true;
       internalValueResult.threshold = this._threshold;
     }

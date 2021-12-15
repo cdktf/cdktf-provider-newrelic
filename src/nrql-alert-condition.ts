@@ -239,27 +239,27 @@ export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObje
   public get internalValue(): NrqlAlertConditionCritical | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._duration) {
+    if (this._duration !== undefined) {
       hasAnyValues = true;
       internalValueResult.duration = this._duration;
     }
-    if (this._operator) {
+    if (this._operator !== undefined) {
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
     }
-    if (this._threshold) {
+    if (this._threshold !== undefined) {
       hasAnyValues = true;
       internalValueResult.threshold = this._threshold;
     }
-    if (this._thresholdDuration) {
+    if (this._thresholdDuration !== undefined) {
       hasAnyValues = true;
       internalValueResult.thresholdDuration = this._thresholdDuration;
     }
-    if (this._thresholdOccurrences) {
+    if (this._thresholdOccurrences !== undefined) {
       hasAnyValues = true;
       internalValueResult.thresholdOccurrences = this._thresholdOccurrences;
     }
-    if (this._timeFunction) {
+    if (this._timeFunction !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeFunction = this._timeFunction;
     }
@@ -426,15 +426,15 @@ export class NrqlAlertConditionNrqlOutputReference extends cdktf.ComplexObject {
   public get internalValue(): NrqlAlertConditionNrql | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._evaluationOffset) {
+    if (this._evaluationOffset !== undefined) {
       hasAnyValues = true;
       internalValueResult.evaluationOffset = this._evaluationOffset;
     }
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
-    if (this._sinceValue) {
+    if (this._sinceValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sinceValue = this._sinceValue;
     }
@@ -631,27 +631,27 @@ export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObjec
   public get internalValue(): NrqlAlertConditionWarning | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._duration) {
+    if (this._duration !== undefined) {
       hasAnyValues = true;
       internalValueResult.duration = this._duration;
     }
-    if (this._operator) {
+    if (this._operator !== undefined) {
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
     }
-    if (this._threshold) {
+    if (this._threshold !== undefined) {
       hasAnyValues = true;
       internalValueResult.threshold = this._threshold;
     }
-    if (this._thresholdDuration) {
+    if (this._thresholdDuration !== undefined) {
       hasAnyValues = true;
       internalValueResult.thresholdDuration = this._thresholdDuration;
     }
-    if (this._thresholdOccurrences) {
+    if (this._thresholdOccurrences !== undefined) {
       hasAnyValues = true;
       internalValueResult.thresholdOccurrences = this._thresholdOccurrences;
     }
-    if (this._timeFunction) {
+    if (this._timeFunction !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeFunction = this._timeFunction;
     }
