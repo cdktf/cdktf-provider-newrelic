@@ -118,11 +118,11 @@ export class AlertMutingRuleConditionOutputReference extends cdktf.ComplexObject
   public get internalValue(): AlertMutingRuleCondition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._operator) {
+    if (this._operator !== undefined) {
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
     }
-    if (this._conditions) {
+    if (this._conditions !== undefined) {
       hasAnyValues = true;
       internalValueResult.conditions = this._conditions;
     }
@@ -245,31 +245,31 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
   public get internalValue(): AlertMutingRuleSchedule | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._endRepeat) {
+    if (this._endRepeat !== undefined) {
       hasAnyValues = true;
       internalValueResult.endRepeat = this._endRepeat;
     }
-    if (this._endTime) {
+    if (this._endTime !== undefined) {
       hasAnyValues = true;
       internalValueResult.endTime = this._endTime;
     }
-    if (this._repeat) {
+    if (this._repeat !== undefined) {
       hasAnyValues = true;
       internalValueResult.repeat = this._repeat;
     }
-    if (this._repeatCount) {
+    if (this._repeatCount !== undefined) {
       hasAnyValues = true;
       internalValueResult.repeatCount = this._repeatCount;
     }
-    if (this._startTime) {
+    if (this._startTime !== undefined) {
       hasAnyValues = true;
       internalValueResult.startTime = this._startTime;
     }
-    if (this._timeZone) {
+    if (this._timeZone !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeZone = this._timeZone;
     }
-    if (this._weeklyRepeatDays) {
+    if (this._weeklyRepeatDays !== undefined) {
       hasAnyValues = true;
       internalValueResult.weeklyRepeatDays = this._weeklyRepeatDays;
     }

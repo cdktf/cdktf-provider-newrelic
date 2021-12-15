@@ -79,11 +79,11 @@ export class DataNewrelicEntityTagOutputReference extends cdktf.ComplexObject {
   public get internalValue(): DataNewrelicEntityTag | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._key) {
+    if (this._key !== undefined) {
       hasAnyValues = true;
       internalValueResult.key = this._key;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }

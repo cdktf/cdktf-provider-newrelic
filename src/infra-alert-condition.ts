@@ -140,15 +140,15 @@ export class InfraAlertConditionCriticalOutputReference extends cdktf.ComplexObj
   public get internalValue(): InfraAlertConditionCritical | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._duration) {
+    if (this._duration !== undefined) {
       hasAnyValues = true;
       internalValueResult.duration = this._duration;
     }
-    if (this._timeFunction) {
+    if (this._timeFunction !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeFunction = this._timeFunction;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -257,15 +257,15 @@ export class InfraAlertConditionWarningOutputReference extends cdktf.ComplexObje
   public get internalValue(): InfraAlertConditionWarning | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._duration) {
+    if (this._duration !== undefined) {
       hasAnyValues = true;
       internalValueResult.duration = this._duration;
     }
-    if (this._timeFunction) {
+    if (this._timeFunction !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeFunction = this._timeFunction;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }

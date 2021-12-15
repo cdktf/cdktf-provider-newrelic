@@ -87,11 +87,11 @@ export class DashboardFilterOutputReference extends cdktf.ComplexObject {
   public get internalValue(): DashboardFilter | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._attributes) {
+    if (this._attributes !== undefined) {
       hasAnyValues = true;
       internalValueResult.attributes = this._attributes;
     }
-    if (this._eventTypes) {
+    if (this._eventTypes !== undefined) {
       hasAnyValues = true;
       internalValueResult.eventTypes = this._eventTypes;
     }
@@ -181,11 +181,11 @@ export class DashboardWidgetCompareWithPresentationOutputReference extends cdktf
   public get internalValue(): DashboardWidgetCompareWithPresentation | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._color) {
+    if (this._color !== undefined) {
       hasAnyValues = true;
       internalValueResult.color = this._color;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }

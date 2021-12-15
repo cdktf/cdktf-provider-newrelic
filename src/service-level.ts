@@ -69,11 +69,11 @@ export class ServiceLevelEventsBadEventsOutputReference extends cdktf.ComplexObj
   public get internalValue(): ServiceLevelEventsBadEvents | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._from) {
+    if (this._from !== undefined) {
       hasAnyValues = true;
       internalValueResult.from = this._from;
     }
-    if (this._where) {
+    if (this._where !== undefined) {
       hasAnyValues = true;
       internalValueResult.where = this._where;
     }
@@ -159,11 +159,11 @@ export class ServiceLevelEventsGoodEventsOutputReference extends cdktf.ComplexOb
   public get internalValue(): ServiceLevelEventsGoodEvents | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._from) {
+    if (this._from !== undefined) {
       hasAnyValues = true;
       internalValueResult.from = this._from;
     }
-    if (this._where) {
+    if (this._where !== undefined) {
       hasAnyValues = true;
       internalValueResult.where = this._where;
     }
@@ -249,11 +249,11 @@ export class ServiceLevelEventsValidEventsOutputReference extends cdktf.ComplexO
   public get internalValue(): ServiceLevelEventsValidEvents | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._from) {
+    if (this._from !== undefined) {
       hasAnyValues = true;
       internalValueResult.from = this._from;
     }
-    if (this._where) {
+    if (this._where !== undefined) {
       hasAnyValues = true;
       internalValueResult.where = this._where;
     }
@@ -355,19 +355,19 @@ export class ServiceLevelEventsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): ServiceLevelEvents | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._accountId) {
+    if (this._accountId !== undefined) {
       hasAnyValues = true;
       internalValueResult.accountId = this._accountId;
     }
-    if (this._badEvents?.internalValue) {
+    if (this._badEvents?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.badEvents = this._badEvents?.internalValue;
     }
-    if (this._goodEvents?.internalValue) {
+    if (this._goodEvents?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.goodEvents = this._goodEvents?.internalValue;
     }
-    if (this._validEvents?.internalValue) {
+    if (this._validEvents?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.validEvents = this._validEvents?.internalValue;
     }
@@ -486,11 +486,11 @@ export class ServiceLevelObjectiveTimeWindowRollingOutputReference extends cdktf
   public get internalValue(): ServiceLevelObjectiveTimeWindowRolling | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._count) {
+    if (this._count !== undefined) {
       hasAnyValues = true;
       internalValueResult.count = this._count;
     }
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
@@ -570,7 +570,7 @@ export class ServiceLevelObjectiveTimeWindowOutputReference extends cdktf.Comple
   public get internalValue(): ServiceLevelObjectiveTimeWindow | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._rolling?.internalValue) {
+    if (this._rolling?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.rolling = this._rolling?.internalValue;
     }
