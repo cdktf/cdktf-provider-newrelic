@@ -122,7 +122,7 @@
     chalk "^4.1.2"
     semver "^7.3.5"
 
-"@jsii/spec@1.49.0", "@jsii/spec@^1.47.0", "@jsii/spec@^1.49.0":
+"@jsii/spec@1.49.0", "@jsii/spec@^1.49.0":
   version "1.49.0"
   resolved "https://registry.yarnpkg.com/@jsii/spec/-/spec-1.49.0.tgz#6a5aafe41cb3301a90f642986bcfaa63c753e3b7"
   integrity sha512-uf3wr4c/bCl52VDLQGOGQQynAvyEvwCJ2jcN83nmHhovUkxmhVlqaKt8pumOyjfB5N5SoLW5tiY7ClMQ/q8UoQ==
@@ -283,14 +283,14 @@
     form-data "^3.0.0"
 
 "@types/node@*":
-  version "17.0.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.1.tgz#88d501e84b6185f6489ecee4ba9e8fcec7f29bb2"
-  integrity sha512-NXKvBVUzIbs6ylBwmOwHFkZS2EXCcjnqr8ZCRNaXBkHAf+3mn/rPcJxwrzuc6movh8fxQAsUUfYklJ/EG+hZqQ==
+  version "17.0.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.2.tgz#a4c07d47ff737e8ee7e586fe636ff0e1ddff070a"
+  integrity sha512-JepeIUPFDARgIs0zD/SKPgFsJEAF0X5/qO80llx59gOxFTboS9Amv3S+QfB7lqBId5sFXJ99BN0J6zFRvL9dDA==
 
 "@types/node@^14":
-  version "14.18.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.1.tgz#459886b51f52aa923dc06b9ea81cb8b1d733e9d3"
-  integrity sha512-fTFWOFrgAkj737w1o0HLTIgisgYHnsZfeiqhG1Ltrf/iJjudEbUwetQAsfrtVE49JGwvpEzQR+EbMkIqG4227g==
+  version "14.18.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.2.tgz#00fe4d1686d5f6cf3a2f2e9a0eef42594d06abfc"
+  integrity sha512-fqtSN5xn/bBzDxMT77C1rJg6CsH/R49E7qsGuvdPJa20HtV5zSTuLJPNfnlyVH3wauKnkHdLggTVkOW/xP9oQg==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -872,9 +872,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.12:
-  version "10.0.12"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.12.tgz#64f314d87f7cdf6da127c9eb0bf6a3d990989c4a"
-  integrity sha512-wVQcQgwwK7b//7yI54/3hundmXAw7RBpuy5f6yIBFNceJr8feTK6Cs2I2f3+gp3/ikszzTouLup9AzxioEEXPQ==
+  version "10.0.13"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.13.tgz#81f5badc32365ec7c2f38c1ba49adbacfba6aac7"
+  integrity sha512-DWL96FNvVInYIINNdC11XaVKW9TGoU2i+H+RUuBf+LrJBZr2TZi8r1enloEL3zDoJ258nm9DlczeCl7Id+lDbA==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2162,18 +2162,18 @@ jsii-diff@^1.49.0:
     typescript "~3.9.10"
     yargs "^16.2.0"
 
-jsii-docgen@^4.2.14:
-  version "4.2.14"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-4.2.14.tgz#2f18d4c0c63978d8acd560d3e77358f9a4786dd9"
-  integrity sha512-w3AhK/3qQzdMsLBQ2fykY99a9EKm6K8nTewGyvyN/vXxYo2QFVRIQdVROkEgSVVjXKJtjyFnxxlR8SMN+3NUMA==
+jsii-docgen@^4.2.15:
+  version "4.2.15"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-4.2.15.tgz#f38b7db040479ed3c0c7afe0d2446a81ea3d3cad"
+  integrity sha512-lpSX1P68UKCY5ZV1t0AjiMz735v5D3Rw8o7Fm3kEOyKtWKscoKiDEd2qsNs1fgzYC/GyPWLgMlnyfcfsubHPcw==
   dependencies:
-    "@jsii/spec" "^1.47.0"
+    "@jsii/spec" "^1.49.0"
     case "^1.6.3"
     fs-extra "^10.0.0"
     glob "^7.2.0"
     glob-promise "^3.4.0"
-    jsii-reflect "^1.47.0"
-    jsii-rosetta "^1.47.0"
+    jsii-reflect "^1.49.0"
+    jsii-rosetta "^1.49.0"
     semver "^7.3.5"
     yargs "^16.2.0"
 
@@ -2196,7 +2196,7 @@ jsii-pacmak@^1.46.0, jsii-pacmak@^1.47.0, jsii-pacmak@^1.49.0:
     xmlbuilder "^15.1.1"
     yargs "^16.2.0"
 
-jsii-reflect@^1.47.0, jsii-reflect@^1.49.0:
+jsii-reflect@^1.49.0:
   version "1.49.0"
   resolved "https://registry.yarnpkg.com/jsii-reflect/-/jsii-reflect-1.49.0.tgz#b9d371dc8b94648e649a5892a7e8020a692861b0"
   integrity sha512-aTpvvkSuinx2xtuxEz69LchQAN7eTK79s6M9512c8Ajvg0+brolHR83mzINKp/i3DWrUAZ+fb3su+PuSmqvEuQ==
@@ -2208,7 +2208,7 @@ jsii-reflect@^1.47.0, jsii-reflect@^1.49.0:
     oo-ascii-tree "^1.49.0"
     yargs "^16.2.0"
 
-jsii-rosetta@^1.39.0, jsii-rosetta@^1.47.0, jsii-rosetta@^1.49.0:
+jsii-rosetta@^1.39.0, jsii-rosetta@^1.49.0:
   version "1.49.0"
   resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-1.49.0.tgz#0a00e447775cfbf0601d8675b8bd9a976abb3342"
   integrity sha512-rXj3z0qssulanbqSegJIYhHZmJqwjBed4nJYIsxiUstDCM8vQ5QoewSAO4c7+EZV68EklHh3UCKBkBa5QmQ/hw==
