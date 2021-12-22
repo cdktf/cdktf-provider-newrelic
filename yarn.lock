@@ -2162,10 +2162,10 @@ jsii-diff@^1.49.0:
     typescript "~3.9.10"
     yargs "^16.2.0"
 
-jsii-docgen@^4.2.15:
-  version "4.2.15"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-4.2.15.tgz#f38b7db040479ed3c0c7afe0d2446a81ea3d3cad"
-  integrity sha512-lpSX1P68UKCY5ZV1t0AjiMz735v5D3Rw8o7Fm3kEOyKtWKscoKiDEd2qsNs1fgzYC/GyPWLgMlnyfcfsubHPcw==
+jsii-docgen@^4.2.16:
+  version "4.2.16"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-4.2.16.tgz#0ab34ab8d73de6ee7d9acba33816253956f96009"
+  integrity sha512-ND3cphu+UmHKP19R+9X3aoNgrjM1NyVwv01VxxcEsylQsnGr22sChn7IEa9WkwohQY/IgX4RTVg4X1Osy0pK2g==
   dependencies:
     "@jsii/spec" "^1.49.0"
     case "^1.6.3"
