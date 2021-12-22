@@ -43,7 +43,7 @@
     "dot-prop": "^5.2.0",
     "jsii": "^1.46.0",
     "jsii-diff": "^1.49.0",
-    "jsii-docgen": "^4.2.15",
+    "jsii-docgen": "^4.2.16",
     "jsii-pacmak": "^1.49.0",
     "npm-check-updates": "^12",
     "projen": "^0.45.3",
