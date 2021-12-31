@@ -14,7 +14,7 @@ export interface AlertChannelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
-  * (Required) The type of channel. One of: (victorops, webhook, email, opsgenie, pagerduty, slack, user).
+  * (Required) The type of channel. One of: (opsgenie, pagerduty, slack, user, victorops, webhook, email).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#type AlertChannel#type}
   */
