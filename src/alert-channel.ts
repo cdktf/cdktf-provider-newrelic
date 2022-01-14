@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html
+// https://www.terraform.io/docs/providers/newrelic/r/alert_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface AlertChannelConfig extends cdktf.TerraformMetaArguments {
   /**
   * (Required) The name of the channel.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#name AlertChannel#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#name AlertChannel#name}
   */
   readonly name: string;
   /**
-  * (Required) The type of channel. One of: (slack, user, victorops, webhook, email, opsgenie, pagerduty).
+  * (Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#type AlertChannel#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
   */
   readonly type: string;
   /**
   * config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#config AlertChannel#config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#config AlertChannel#config}
   */
   readonly config?: AlertChannelConfigA;
 }
@@ -30,127 +30,127 @@ export interface AlertChannelConfigA {
   /**
   * The API key for integrating with OpsGenie.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#api_key AlertChannel#api_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#api_key AlertChannel#api_key}
   */
   readonly apiKey?: string;
   /**
   * Specifies an authentication password for use with a channel. Supported by the webhook channel type.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#auth_password AlertChannel#auth_password}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#auth_password AlertChannel#auth_password}
   */
   readonly authPassword?: string;
   /**
   * Specifies an authentication method for use with a channel. Supported by the webhook channel type. Only HTTP basic authentication is currently supported via the value BASIC.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#auth_type AlertChannel#auth_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#auth_type AlertChannel#auth_type}
   */
   readonly authType?: string;
   /**
   * Specifies an authentication username for use with a channel. Supported by the webhook channel type.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#auth_username AlertChannel#auth_username}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#auth_username AlertChannel#auth_username}
   */
   readonly authUsername?: string;
   /**
   * The base URL of the webhook destination.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#base_url AlertChannel#base_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#base_url AlertChannel#base_url}
   */
   readonly baseUrl?: string;
   /**
   * The Slack channel to send notifications to.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#channel AlertChannel#channel}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#channel AlertChannel#channel}
   */
   readonly channel?: string;
   /**
   * A map of key/value pairs that represents extra HTTP headers to be sent along with the webhook payload.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#headers AlertChannel#headers}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#headers AlertChannel#headers}
   */
   readonly headers?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Use instead of headers if the desired payload is more complex than a list of key/value pairs (e.g. a set of headers that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with headers.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#headers_string AlertChannel#headers_string}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#headers_string AlertChannel#headers_string}
   */
   readonly headersString?: string;
   /**
   * true or false. Flag for whether or not to attach a JSON document containing information about the associated alert to the email that is sent to recipients.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#include_json_attachment AlertChannel#include_json_attachment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#include_json_attachment AlertChannel#include_json_attachment}
   */
   readonly includeJsonAttachment?: string;
   /**
   * The key for integrating with VictorOps.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#key AlertChannel#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#key AlertChannel#key}
   */
   readonly key?: string;
   /**
   * A map of key/value pairs that represents the webhook payload. Must provide payload_type if setting this argument.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#payload AlertChannel#payload}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#payload AlertChannel#payload}
   */
   readonly payload?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Use instead of payload if the desired payload is more complex than a list of key/value pairs (e.g. a payload that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with payload.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#payload_string AlertChannel#payload_string}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#payload_string AlertChannel#payload_string}
   */
   readonly payloadString?: string;
   /**
   * Can either be application/json or application/x-www-form-urlencoded. The payload_type argument is required if payload is set.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#payload_type AlertChannel#payload_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#payload_type AlertChannel#payload_type}
   */
   readonly payloadType?: string;
   /**
   * A set of recipients for targeting notifications. Multiple values are comma separated.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#recipients AlertChannel#recipients}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#recipients AlertChannel#recipients}
   */
   readonly recipients?: string;
   /**
   * The data center region to store your data. Valid values are US and EU. Default is US.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#region AlertChannel#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#region AlertChannel#region}
   */
   readonly region?: string;
   /**
   * The route key for integrating with VictorOps.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#route_key AlertChannel#route_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#route_key AlertChannel#route_key}
   */
   readonly routeKey?: string;
   /**
   * Specifies the service key for integrating with Pagerduty.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#service_key AlertChannel#service_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#service_key AlertChannel#service_key}
   */
   readonly serviceKey?: string;
   /**
   * A set of tags for targeting notifications. Multiple values are comma separated.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#tags AlertChannel#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#tags AlertChannel#tags}
   */
   readonly tags?: string;
   /**
   * A set of teams for targeting notifications. Multiple values are comma separated.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#teams AlertChannel#teams}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#teams AlertChannel#teams}
   */
   readonly teams?: string;
   /**
   * Your organization's Slack URL.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#url AlertChannel#url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#url AlertChannel#url}
   */
   readonly url?: string;
   /**
   * The user ID for use with the user channel type.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#user_id AlertChannel#user_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#user_id AlertChannel#user_id}
   */
   readonly userId?: string;
 }
@@ -678,7 +678,7 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html newrelic_alert_channel}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel newrelic_alert_channel}
 */
 export class AlertChannel extends cdktf.TerraformResource {
 
@@ -692,7 +692,7 @@ export class AlertChannel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html newrelic_alert_channel} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel newrelic_alert_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

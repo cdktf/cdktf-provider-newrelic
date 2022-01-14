@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/d/alert_policy.html
+// https://www.terraform.io/docs/providers/newrelic/d/alert_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface DataNewrelicAlertPolicyConfig extends cdktf.TerraformMetaArgume
   /**
   * The New Relic account ID to operate on.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy.html#account_id DataNewrelicAlertPolicy#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy#account_id DataNewrelicAlertPolicy#account_id}
   */
   readonly accountId?: number;
   /**
   * The rollup strategy for the policy. Options include: `PER_POLICY`, `PER_CONDITION`, or `PER_CONDITION_AND_TARGET`. The default is `PER_POLICY`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy.html#incident_preference DataNewrelicAlertPolicy#incident_preference}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy#incident_preference DataNewrelicAlertPolicy#incident_preference}
   */
   readonly incidentPreference?: string;
   /**
   * The name of the alert policy in New Relic.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy.html#name DataNewrelicAlertPolicy#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy#name DataNewrelicAlertPolicy#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy.html newrelic_alert_policy}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy newrelic_alert_policy}
 */
 export class DataNewrelicAlertPolicy extends cdktf.TerraformDataSource {
 
@@ -42,7 +42,7 @@ export class DataNewrelicAlertPolicy extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy.html newrelic_alert_policy} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy newrelic_alert_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

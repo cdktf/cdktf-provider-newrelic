@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/application_settings.html
+// https://www.terraform.io/docs/providers/newrelic/r/application_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface ApplicationSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings.html#app_apdex_threshold ApplicationSettings#app_apdex_threshold}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#app_apdex_threshold ApplicationSettings#app_apdex_threshold}
   */
   readonly appApdexThreshold: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings.html#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}
   */
   readonly enableRealUserMonitoring: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings.html#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}
   */
   readonly endUserApdexThreshold: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings.html#name ApplicationSettings#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#name ApplicationSettings#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings.html newrelic_application_settings}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings newrelic_application_settings}
 */
 export class ApplicationSettings extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings.html newrelic_application_settings} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings newrelic_application_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

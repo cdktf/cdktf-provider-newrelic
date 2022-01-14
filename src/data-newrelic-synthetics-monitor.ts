@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor.html
+// https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataNewrelicSyntheticsMonitorConfig extends cdktf.TerraformMeta
   /**
   * The name of the synthetics monitor in New Relic.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor.html#name DataNewrelicSyntheticsMonitor#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor#name DataNewrelicSyntheticsMonitor#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor.html newrelic_synthetics_monitor}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor newrelic_synthetics_monitor}
 */
 export class DataNewrelicSyntheticsMonitor extends cdktf.TerraformDataSource {
 
@@ -30,7 +30,7 @@ export class DataNewrelicSyntheticsMonitor extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor.html newrelic_synthetics_monitor} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor newrelic_synthetics_monitor} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

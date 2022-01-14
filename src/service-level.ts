@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/service_level.html
+// https://www.terraform.io/docs/providers/newrelic/r/service_level
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,37 +8,37 @@ import * as cdktf from 'cdktf';
 
 export interface ServiceLevelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#description ServiceLevel#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#description ServiceLevel#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#guid ServiceLevel#guid}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#guid ServiceLevel#guid}
   */
   readonly guid: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#name ServiceLevel#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#name ServiceLevel#name}
   */
   readonly name: string;
   /**
   * events block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#events ServiceLevel#events}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#events ServiceLevel#events}
   */
   readonly events: ServiceLevelEvents;
   /**
   * objective block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#objective ServiceLevel#objective}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#objective ServiceLevel#objective}
   */
   readonly objective?: ServiceLevelObjective[];
 }
 export interface ServiceLevelEventsBadEvents {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#from ServiceLevel#from}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#from ServiceLevel#from}
   */
   readonly from: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#where ServiceLevel#where}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#where ServiceLevel#where}
   */
   readonly where?: string;
 }
@@ -124,11 +124,11 @@ export class ServiceLevelEventsBadEventsOutputReference extends cdktf.ComplexObj
 }
 export interface ServiceLevelEventsGoodEvents {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#from ServiceLevel#from}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#from ServiceLevel#from}
   */
   readonly from: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#where ServiceLevel#where}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#where ServiceLevel#where}
   */
   readonly where?: string;
 }
@@ -214,11 +214,11 @@ export class ServiceLevelEventsGoodEventsOutputReference extends cdktf.ComplexOb
 }
 export interface ServiceLevelEventsValidEvents {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#from ServiceLevel#from}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#from ServiceLevel#from}
   */
   readonly from: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#where ServiceLevel#where}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#where ServiceLevel#where}
   */
   readonly where?: string;
 }
@@ -304,25 +304,25 @@ export class ServiceLevelEventsValidEventsOutputReference extends cdktf.ComplexO
 }
 export interface ServiceLevelEvents {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#account_id ServiceLevel#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#account_id ServiceLevel#account_id}
   */
   readonly accountId: number;
   /**
   * bad_events block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#bad_events ServiceLevel#bad_events}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#bad_events ServiceLevel#bad_events}
   */
   readonly badEvents?: ServiceLevelEventsBadEvents;
   /**
   * good_events block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#good_events ServiceLevel#good_events}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#good_events ServiceLevel#good_events}
   */
   readonly goodEvents?: ServiceLevelEventsGoodEvents;
   /**
   * valid_events block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#valid_events ServiceLevel#valid_events}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#valid_events ServiceLevel#valid_events}
   */
   readonly validEvents: ServiceLevelEventsValidEvents;
 }
@@ -451,11 +451,11 @@ export class ServiceLevelEventsOutputReference extends cdktf.ComplexObject {
 }
 export interface ServiceLevelObjectiveTimeWindowRolling {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#count ServiceLevel#count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#count ServiceLevel#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#unit ServiceLevel#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#unit ServiceLevel#unit}
   */
   readonly unit: string;
 }
@@ -540,7 +540,7 @@ export interface ServiceLevelObjectiveTimeWindow {
   /**
   * rolling block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#rolling ServiceLevel#rolling}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#rolling ServiceLevel#rolling}
   */
   readonly rolling: ServiceLevelObjectiveTimeWindowRolling;
 }
@@ -603,21 +603,21 @@ export class ServiceLevelObjectiveTimeWindowOutputReference extends cdktf.Comple
 }
 export interface ServiceLevelObjective {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#description ServiceLevel#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#description ServiceLevel#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#name ServiceLevel#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#name ServiceLevel#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#target ServiceLevel#target}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#target ServiceLevel#target}
   */
   readonly target: number;
   /**
   * time_window block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#time_window ServiceLevel#time_window}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#time_window ServiceLevel#time_window}
   */
   readonly timeWindow: ServiceLevelObjectiveTimeWindow;
 }
@@ -637,7 +637,7 @@ export function serviceLevelObjectiveToTerraform(struct?: ServiceLevelObjective)
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html newrelic_service_level}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/service_level newrelic_service_level}
 */
 export class ServiceLevel extends cdktf.TerraformResource {
 
@@ -651,7 +651,7 @@ export class ServiceLevel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html newrelic_service_level} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/service_level newrelic_service_level} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

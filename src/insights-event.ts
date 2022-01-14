@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/insights_event.html
+// https://www.terraform.io/docs/providers/newrelic/r/insights_event
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface InsightsEventConfig extends cdktf.TerraformMetaArguments {
   /**
   * event block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html#event InsightsEvent#event}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#event InsightsEvent#event}
   */
   readonly event: InsightsEventEvent[];
 }
@@ -18,19 +18,19 @@ export interface InsightsEventEventAttribute {
   /**
   * The name of the attribute.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html#key InsightsEvent#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#key InsightsEvent#key}
   */
   readonly key: string;
   /**
   * Specify the type for the attribute value. This is useful when passing integer or float values to Insights. Allowed values are string, int, or float. Defaults to string.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html#type InsightsEvent#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#type InsightsEvent#type}
   */
   readonly type?: string;
   /**
   * The value of the attribute.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html#value InsightsEvent#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#value InsightsEvent#value}
   */
   readonly value: string;
 }
@@ -51,19 +51,19 @@ export interface InsightsEventEvent {
   /**
   * Must be a Unix epoch timestamp. You can define timestamps either in seconds or in milliseconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html#timestamp InsightsEvent#timestamp}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#timestamp InsightsEvent#timestamp}
   */
   readonly timestamp?: number;
   /**
   * The event's name. Can be a combination of alphanumeric characters, underscores, and colons.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html#type InsightsEvent#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#type InsightsEvent#type}
   */
   readonly type: string;
   /**
   * attribute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html#attribute InsightsEvent#attribute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#attribute InsightsEvent#attribute}
   */
   readonly attribute: InsightsEventEventAttribute[];
 }
@@ -82,7 +82,7 @@ export function insightsEventEventToTerraform(struct?: InsightsEventEvent): any 
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html newrelic_insights_event}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event newrelic_insights_event}
 */
 export class InsightsEvent extends cdktf.TerraformResource {
 
@@ -96,7 +96,7 @@ export class InsightsEvent extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html newrelic_insights_event} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event newrelic_insights_event} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

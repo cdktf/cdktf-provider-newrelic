@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/d/alert_channel.html
+// https://www.terraform.io/docs/providers/newrelic/d/alert_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface DataNewrelicAlertChannelConfig extends cdktf.TerraformMetaArgum
   /**
   * The name of the alert channel in New Relic.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel.html#name DataNewrelicAlertChannel#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel#name DataNewrelicAlertChannel#name}
   */
   readonly name: string;
 }
@@ -115,7 +115,7 @@ export class DataNewrelicAlertChannelConfigA extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel.html newrelic_alert_channel}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel newrelic_alert_channel}
 */
 export class DataNewrelicAlertChannel extends cdktf.TerraformDataSource {
 
@@ -129,7 +129,7 @@ export class DataNewrelicAlertChannel extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel.html newrelic_alert_channel} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel newrelic_alert_channel} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

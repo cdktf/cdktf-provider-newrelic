@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html
+// https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,67 +10,67 @@ export interface PluginsAlertConditionConfig extends cdktf.TerraformMetaArgument
   /**
   * Whether or not this condition is enabled.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#enabled PluginsAlertCondition#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#enabled PluginsAlertCondition#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The plugin component IDs to target.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#entities PluginsAlertCondition#entities}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#entities PluginsAlertCondition#entities}
   */
   readonly entities: number[];
   /**
   * The plugin metric to evaluate.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#metric PluginsAlertCondition#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#metric PluginsAlertCondition#metric}
   */
   readonly metric: string;
   /**
   * The metric description.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#metric_description PluginsAlertCondition#metric_description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#metric_description PluginsAlertCondition#metric_description}
   */
   readonly metricDescription: string;
   /**
   * The title of the condition. Must be between 1 and 64 characters, inclusive.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#name PluginsAlertCondition#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#name PluginsAlertCondition#name}
   */
   readonly name: string;
   /**
   * The GUID of the plugin which produces the metric.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#plugin_guid PluginsAlertCondition#plugin_guid}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#plugin_guid PluginsAlertCondition#plugin_guid}
   */
   readonly pluginGuid: string;
   /**
   * The ID of the installed plugin instance which produces the metric.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#plugin_id PluginsAlertCondition#plugin_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#plugin_id PluginsAlertCondition#plugin_id}
   */
   readonly pluginId: string;
   /**
   * The ID of the policy where this condition should be used.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#policy_id PluginsAlertCondition#policy_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#policy_id PluginsAlertCondition#policy_id}
   */
   readonly policyId: number;
   /**
   * Runbook URL to display in notifications.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#runbook_url PluginsAlertCondition#runbook_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#runbook_url PluginsAlertCondition#runbook_url}
   */
   readonly runbookUrl?: string;
   /**
   * The value function to apply to the metric data.  One of `min`, `max`, `average`, `sample_size`, `total`, or `percent`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#value_function PluginsAlertCondition#value_function}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#value_function PluginsAlertCondition#value_function}
   */
   readonly valueFunction: string;
   /**
   * term block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#term PluginsAlertCondition#term}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#term PluginsAlertCondition#term}
   */
   readonly term: PluginsAlertConditionTerm[];
 }
@@ -78,31 +78,31 @@ export interface PluginsAlertConditionTerm {
   /**
   * In minutes, must be in the range of 5 to 120, inclusive.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#duration PluginsAlertCondition#duration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#duration PluginsAlertCondition#duration}
   */
   readonly duration: number;
   /**
   * One of `above`, `below`, or `equal`. Defaults to equal.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#operator PluginsAlertCondition#operator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#operator PluginsAlertCondition#operator}
   */
   readonly operator?: string;
   /**
   * One of `critical` or `warning`. Defaults to critical.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#priority PluginsAlertCondition#priority}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#priority PluginsAlertCondition#priority}
   */
   readonly priority?: string;
   /**
   * Must be 0 or greater.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#threshold PluginsAlertCondition#threshold}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#threshold PluginsAlertCondition#threshold}
   */
   readonly threshold: number;
   /**
   * One of `all` or `any`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#time_function PluginsAlertCondition#time_function}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#time_function PluginsAlertCondition#time_function}
   */
   readonly timeFunction: string;
 }
@@ -123,7 +123,7 @@ export function pluginsAlertConditionTermToTerraform(struct?: PluginsAlertCondit
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html newrelic_plugins_alert_condition}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition newrelic_plugins_alert_condition}
 */
 export class PluginsAlertCondition extends cdktf.TerraformResource {
 
@@ -137,7 +137,7 @@ export class PluginsAlertCondition extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html newrelic_plugins_alert_condition} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition newrelic_plugins_alert_condition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

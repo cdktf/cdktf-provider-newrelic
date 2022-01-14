@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html
+// https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,49 +10,49 @@ export interface SyntheticsMultilocationAlertConditionConfig extends cdktf.Terra
   /**
   * Set whether to enable the alert condition. Defaults to true.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#enabled SyntheticsMultilocationAlertCondition#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#enabled SyntheticsMultilocationAlertCondition#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The GUIDs of the Synthetics monitors to alert on.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#entities SyntheticsMultilocationAlertCondition#entities}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#entities SyntheticsMultilocationAlertCondition#entities}
   */
   readonly entities: string[];
   /**
   * The title of this condition.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#name SyntheticsMultilocationAlertCondition#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#name SyntheticsMultilocationAlertCondition#name}
   */
   readonly name: string;
   /**
   * The ID of the policy where this condition will be used.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#policy_id SyntheticsMultilocationAlertCondition#policy_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#policy_id SyntheticsMultilocationAlertCondition#policy_id}
   */
   readonly policyId: number;
   /**
   * Runbook URL to display in notifications.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#runbook_url SyntheticsMultilocationAlertCondition#runbook_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#runbook_url SyntheticsMultilocationAlertCondition#runbook_url}
   */
   readonly runbookUrl?: string;
   /**
   * The maximum number of seconds a violation can remain open before being closed by the system.  Must be one of: 0, 3600, 7200, 14400, 28800, 43200, 86400
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#violation_time_limit_seconds SyntheticsMultilocationAlertCondition#violation_time_limit_seconds}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#violation_time_limit_seconds SyntheticsMultilocationAlertCondition#violation_time_limit_seconds}
   */
   readonly violationTimeLimitSeconds: number;
   /**
   * critical block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#critical SyntheticsMultilocationAlertCondition#critical}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#critical SyntheticsMultilocationAlertCondition#critical}
   */
   readonly critical: SyntheticsMultilocationAlertConditionCritical;
   /**
   * warning block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#warning SyntheticsMultilocationAlertCondition#warning}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#warning SyntheticsMultilocationAlertCondition#warning}
   */
   readonly warning?: SyntheticsMultilocationAlertConditionWarning;
 }
@@ -60,7 +60,7 @@ export interface SyntheticsMultilocationAlertConditionCritical {
   /**
   * The minimum number of monitor locations that must be concurrently failing before a violation is opened.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#threshold SyntheticsMultilocationAlertCondition#threshold}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#threshold SyntheticsMultilocationAlertCondition#threshold}
   */
   readonly threshold: number;
 }
@@ -125,7 +125,7 @@ export interface SyntheticsMultilocationAlertConditionWarning {
   /**
   * The minimum number of monitor locations that must be concurrently failing before a violation is opened.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#threshold SyntheticsMultilocationAlertCondition#threshold}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#threshold SyntheticsMultilocationAlertCondition#threshold}
   */
   readonly threshold: number;
 }
@@ -188,7 +188,7 @@ export class SyntheticsMultilocationAlertConditionWarningOutputReference extends
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html newrelic_synthetics_multilocation_alert_condition}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition newrelic_synthetics_multilocation_alert_condition}
 */
 export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResource {
 
@@ -202,7 +202,7 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html newrelic_synthetics_multilocation_alert_condition} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition newrelic_synthetics_multilocation_alert_condition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

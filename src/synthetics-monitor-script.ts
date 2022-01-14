@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html
+// https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface SyntheticsMonitorScriptConfig extends cdktf.TerraformMetaArgume
   /**
   * The ID of the monitor to attach the script to.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html#monitor_id SyntheticsMonitorScript#monitor_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script#monitor_id SyntheticsMonitorScript#monitor_id}
   */
   readonly monitorId: string;
   /**
   * The plaintext representing the monitor script.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html#text SyntheticsMonitorScript#text}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script#text SyntheticsMonitorScript#text}
   */
   readonly text: string;
   /**
   * location block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html#location SyntheticsMonitorScript#location}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script#location SyntheticsMonitorScript#location}
   */
   readonly location?: SyntheticsMonitorScriptLocation[];
 }
@@ -30,19 +30,19 @@ export interface SyntheticsMonitorScriptLocation {
   /**
   * The HMAC for the monitor script location. Use only one of `hmac` or `vse_password.`
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html#hmac SyntheticsMonitorScript#hmac}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script#hmac SyntheticsMonitorScript#hmac}
   */
   readonly hmac?: string;
   /**
   * The monitor script location name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html#name SyntheticsMonitorScript#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script#name SyntheticsMonitorScript#name}
   */
   readonly name: string;
   /**
   * The password for the monitor script location used to calculate HMAC. Use only one of `vse_password` or `hmac.`
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html#vse_password SyntheticsMonitorScript#vse_password}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script#vse_password SyntheticsMonitorScript#vse_password}
   */
   readonly vsePassword?: string;
 }
@@ -61,7 +61,7 @@ export function syntheticsMonitorScriptLocationToTerraform(struct?: SyntheticsMo
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html newrelic_synthetics_monitor_script}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script newrelic_synthetics_monitor_script}
 */
 export class SyntheticsMonitorScript extends cdktf.TerraformResource {
 
@@ -75,7 +75,7 @@ export class SyntheticsMonitorScript extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html newrelic_synthetics_monitor_script} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script newrelic_synthetics_monitor_script} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

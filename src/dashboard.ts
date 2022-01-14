@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/dashboard.html
+// https://www.terraform.io/docs/providers/newrelic/r/dashboard
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,53 +10,53 @@ export interface DashboardConfig extends cdktf.TerraformMetaArguments {
   /**
   * Determines who can edit the dashboard in an account. Valid values are all, editable_by_all, editable_by_owner, or read_only. Defaults to editable_by_all.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#editable Dashboard#editable}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#editable Dashboard#editable}
   */
   readonly editable?: string;
   /**
   * New Relic One supports a 3 column grid or a 12 column grid. New Relic Insights supports a 3 column grid.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#grid_column_count Dashboard#grid_column_count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#grid_column_count Dashboard#grid_column_count}
   */
   readonly gridColumnCount?: number;
   /**
   * The icon for the dashboard.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#icon Dashboard#icon}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#icon Dashboard#icon}
   */
   readonly icon?: string;
   /**
   * The title of the dashboard.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#title Dashboard#title}
   */
   readonly title: string;
   /**
   * Determines who can see the dashboard in an account. Valid values are all or owner. Defaults to all.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#visibility Dashboard#visibility}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#visibility Dashboard#visibility}
   */
   readonly visibility?: string;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#filter Dashboard#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#filter Dashboard#filter}
   */
   readonly filter?: DashboardFilter;
   /**
   * widget block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#widget Dashboard#widget}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#widget Dashboard#widget}
   */
   readonly widget?: DashboardWidget[];
 }
 export interface DashboardFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#attributes Dashboard#attributes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#attributes Dashboard#attributes}
   */
   readonly attributes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#event_types Dashboard#event_types}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#event_types Dashboard#event_types}
   */
   readonly eventTypes: string[];
 }
@@ -144,13 +144,13 @@ export interface DashboardWidgetCompareWithPresentation {
   /**
   * The color for the rendered data.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#color Dashboard#color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#color Dashboard#color}
   */
   readonly color: string;
   /**
   * The name for the rendered data.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
 }
@@ -235,13 +235,13 @@ export interface DashboardWidgetCompareWith {
   /**
   * The offset duration for the COMPARE WITH clause.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#offset_duration Dashboard#offset_duration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#offset_duration Dashboard#offset_duration}
   */
   readonly offsetDuration: string;
   /**
   * presentation block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#presentation Dashboard#presentation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#presentation Dashboard#presentation}
   */
   readonly presentation: DashboardWidgetCompareWithPresentation;
 }
@@ -261,25 +261,25 @@ export interface DashboardWidgetMetric {
   /**
   * The metric name to display.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The metric scope.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#scope Dashboard#scope}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#scope Dashboard#scope}
   */
   readonly scope?: string;
   /**
   * The metric units.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#units Dashboard#units}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#units Dashboard#units}
   */
   readonly units?: string;
   /**
   * The metric values to display.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#values Dashboard#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#values Dashboard#values}
   */
   readonly values?: string[];
 }
@@ -301,121 +301,121 @@ export interface DashboardWidget {
   /**
   * The target account ID to fetch data from, if not the current account.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#account_id Dashboard#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#account_id Dashboard#account_id}
   */
   readonly accountId?: number;
   /**
   * Column position of widget from top left, starting at 1.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#column Dashboard#column}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#column Dashboard#column}
   */
   readonly column: number;
   /**
   * The ID of a dashboard to link to from the widget's facets.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#drilldown_dashboard_id Dashboard#drilldown_dashboard_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#drilldown_dashboard_id Dashboard#drilldown_dashboard_id}
   */
   readonly drilldownDashboardId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#duration Dashboard#duration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#duration Dashboard#duration}
   */
   readonly duration?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#end_time Dashboard#end_time}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#end_time Dashboard#end_time}
   */
   readonly endTime?: number;
   /**
   * A collection of entity ids to display data for. These are typically application IDs.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#entity_ids Dashboard#entity_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#entity_ids Dashboard#entity_ids}
   */
   readonly entityIds?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Height of the widget. Valid values are 1 to 3 inclusive. Defaults to 1.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#height Dashboard#height}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#height Dashboard#height}
   */
   readonly height?: number;
   /**
   * The limit of distinct data series to display.  Requires `order_by` to be set.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * Description of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#notes Dashboard#notes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#notes Dashboard#notes}
   */
   readonly notes?: string;
   /**
   * Valid NRQL query string.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#nrql Dashboard#nrql}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#nrql Dashboard#nrql}
   */
   readonly nrql?: string;
   /**
   * Set the order of result series.  Required when using `limit`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#order_by Dashboard#order_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#order_by Dashboard#order_by}
   */
   readonly orderBy?: string;
   /**
   * Row position of widget from top left, starting at 1.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#row Dashboard#row}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#row Dashboard#row}
   */
   readonly row: number;
   /**
   * The markdown source to be rendered in the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#source Dashboard#source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#source Dashboard#source}
   */
   readonly source?: string;
   /**
   * Threshold above which the displayed value will be styled with a red color.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#threshold_red Dashboard#threshold_red}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#threshold_red Dashboard#threshold_red}
   */
   readonly thresholdRed?: number;
   /**
   * Threshold above which the displayed value will be styled with a yellow color.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#threshold_yellow Dashboard#threshold_yellow}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#threshold_yellow Dashboard#threshold_yellow}
   */
   readonly thresholdYellow?: number;
   /**
   * A title for the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#title Dashboard#title}
   */
   readonly title: string;
   /**
   * How the widget visualizes data.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#visualization Dashboard#visualization}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#visualization Dashboard#visualization}
   */
   readonly visualization: string;
   /**
   * Width of the widget. Valid values are 1 to 3 inclusive. Defaults to 1.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#width Dashboard#width}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#width Dashboard#width}
   */
   readonly width?: number;
   /**
   * compare_with block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#compare_with Dashboard#compare_with}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#compare_with Dashboard#compare_with}
   */
   readonly compareWith?: DashboardWidgetCompareWith[];
   /**
   * metric block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: DashboardWidgetMetric[];
 }
@@ -452,7 +452,7 @@ export function dashboardWidgetToTerraform(struct?: DashboardWidget): any {
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html newrelic_dashboard}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard newrelic_dashboard}
 */
 export class Dashboard extends cdktf.TerraformResource {
 
@@ -466,7 +466,7 @@ export class Dashboard extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html newrelic_dashboard} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard newrelic_dashboard} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

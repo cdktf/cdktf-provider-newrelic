@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/workload.html
+// https://www.terraform.io/docs/providers/newrelic/r/workload
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,31 +10,31 @@ export interface WorkloadConfig extends cdktf.TerraformMetaArguments {
   /**
   * The New Relic account ID where you want to create the workload.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload.html#account_id Workload#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#account_id Workload#account_id}
   */
   readonly accountId?: number;
   /**
   * A list of entity GUIDs manually assigned to this workload.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload.html#entity_guids Workload#entity_guids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#entity_guids Workload#entity_guids}
   */
   readonly entityGuids?: string[];
   /**
   * The workload's name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload.html#name Workload#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#name Workload#name}
   */
   readonly name: string;
   /**
   * A list of account IDs that will be used to get entities from.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload.html#scope_account_ids Workload#scope_account_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#scope_account_ids Workload#scope_account_ids}
   */
   readonly scopeAccountIds?: number[];
   /**
   * entity_search_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload.html#entity_search_query Workload#entity_search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#entity_search_query Workload#entity_search_query}
   */
   readonly entitySearchQuery?: WorkloadEntitySearchQuery[];
 }
@@ -42,7 +42,7 @@ export interface WorkloadEntitySearchQuery {
   /**
   * The query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload.html#query Workload#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#query Workload#query}
   */
   readonly query: string;
 }
@@ -59,7 +59,7 @@ export function workloadEntitySearchQueryToTerraform(struct?: WorkloadEntitySear
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/workload.html newrelic_workload}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/workload newrelic_workload}
 */
 export class Workload extends cdktf.TerraformResource {
 
@@ -73,7 +73,7 @@ export class Workload extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/workload.html newrelic_workload} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/workload newrelic_workload} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

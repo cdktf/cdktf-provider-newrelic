@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential.html
+// https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,37 +10,37 @@ export interface SyntheticsSecureCredentialConfig extends cdktf.TerraformMetaArg
   /**
   * The time the secure credential was created.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential.html#created_at SyntheticsSecureCredential#created_at}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#created_at SyntheticsSecureCredential#created_at}
   */
   readonly createdAt?: string;
   /**
   * The secure credential's description.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential.html#description SyntheticsSecureCredential#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#description SyntheticsSecureCredential#description}
   */
   readonly description?: string;
   /**
   * The secure credential's key name. Regardless of the case used in the configuration, the provider will provide an upcased key to the underlying API.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential.html#key SyntheticsSecureCredential#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#key SyntheticsSecureCredential#key}
   */
   readonly key: string;
   /**
   * The time the secure credential was last updated.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential.html#last_updated SyntheticsSecureCredential#last_updated}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#last_updated SyntheticsSecureCredential#last_updated}
   */
   readonly lastUpdated?: string;
   /**
   * The secure credential's value.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential.html#value SyntheticsSecureCredential#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#value SyntheticsSecureCredential#value}
   */
   readonly value: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential.html newrelic_synthetics_secure_credential}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential newrelic_synthetics_secure_credential}
 */
 export class SyntheticsSecureCredential extends cdktf.TerraformResource {
 
@@ -54,7 +54,7 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential.html newrelic_synthetics_secure_credential} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential newrelic_synthetics_secure_credential} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

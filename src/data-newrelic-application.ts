@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/d/application.html
+// https://www.terraform.io/docs/providers/newrelic/d/application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataNewrelicApplicationConfig extends cdktf.TerraformMetaArgume
   /**
   * The name of the application in New Relic.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/application.html#name DataNewrelicApplication#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/application#name DataNewrelicApplication#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/application.html newrelic_application}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/application newrelic_application}
 */
 export class DataNewrelicApplication extends cdktf.TerraformDataSource {
 
@@ -30,7 +30,7 @@ export class DataNewrelicApplication extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/application.html newrelic_application} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/application newrelic_application} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
