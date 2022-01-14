@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/d/plugin.html
+// https://www.terraform.io/docs/providers/newrelic/d/plugin
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataNewrelicPluginConfig extends cdktf.TerraformMetaArguments {
   /**
   * The GUID of the plugin in New Relic.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/plugin.html#guid DataNewrelicPlugin#guid}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/plugin#guid DataNewrelicPlugin#guid}
   */
   readonly guid: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/plugin.html newrelic_plugin}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/plugin newrelic_plugin}
 */
 export class DataNewrelicPlugin extends cdktf.TerraformDataSource {
 
@@ -30,7 +30,7 @@ export class DataNewrelicPlugin extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/plugin.html newrelic_plugin} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/plugin newrelic_plugin} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html
+// https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,73 +10,73 @@ export interface OneDashboardRawConfig extends cdktf.TerraformMetaArguments {
   /**
   * The New Relic account ID where you want to create the dashboard.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#account_id OneDashboardRaw#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#account_id OneDashboardRaw#account_id}
   */
   readonly accountId?: number;
   /**
   * The dashboard's description.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#description OneDashboardRaw#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#description OneDashboardRaw#description}
   */
   readonly description?: string;
   /**
   * The dashboard's name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#name OneDashboardRaw#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#name OneDashboardRaw#name}
   */
   readonly name: string;
   /**
   * Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#permissions OneDashboardRaw#permissions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#permissions OneDashboardRaw#permissions}
   */
   readonly permissions?: string;
   /**
   * page block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#page OneDashboardRaw#page}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#page OneDashboardRaw#page}
   */
   readonly page: OneDashboardRawPage[];
 }
 export interface OneDashboardRawPageWidget {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#column OneDashboardRaw#column}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#column OneDashboardRaw#column}
   */
   readonly column: number;
   /**
   * The configuration of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#configuration OneDashboardRaw#configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#configuration OneDashboardRaw#configuration}
   */
   readonly configuration: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#height OneDashboardRaw#height}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#height OneDashboardRaw#height}
   */
   readonly height?: number;
   /**
   * (Optional) Related entity GUIDs. Currently only supports Dashboard entity GUIDs.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#linked_entity_guids OneDashboardRaw#linked_entity_guids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#linked_entity_guids OneDashboardRaw#linked_entity_guids}
   */
   readonly linkedEntityGuids?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#row OneDashboardRaw#row}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#row OneDashboardRaw#row}
   */
   readonly row: number;
   /**
   * A title for the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#title OneDashboardRaw#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#title OneDashboardRaw#title}
   */
   readonly title: string;
   /**
   * The visualization ID of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#visualization_id OneDashboardRaw#visualization_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#visualization_id OneDashboardRaw#visualization_id}
   */
   readonly visualizationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#width OneDashboardRaw#width}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#width OneDashboardRaw#width}
   */
   readonly width?: number;
 }
@@ -102,19 +102,19 @@ export interface OneDashboardRawPage {
   /**
   * The dashboard page's description.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#description OneDashboardRaw#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#description OneDashboardRaw#description}
   */
   readonly description?: string;
   /**
   * The dashboard page's name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#name OneDashboardRaw#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#name OneDashboardRaw#name}
   */
   readonly name: string;
   /**
   * widget block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#widget OneDashboardRaw#widget}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#widget OneDashboardRaw#widget}
   */
   readonly widget?: OneDashboardRawPageWidget[];
 }
@@ -133,7 +133,7 @@ export function oneDashboardRawPageToTerraform(struct?: OneDashboardRawPage): an
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html newrelic_one_dashboard_raw}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw newrelic_one_dashboard_raw}
 */
 export class OneDashboardRaw extends cdktf.TerraformResource {
 
@@ -147,7 +147,7 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html newrelic_one_dashboard_raw} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw newrelic_one_dashboard_raw} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

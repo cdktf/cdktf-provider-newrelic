@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition.html
+// https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,37 +10,37 @@ export interface SyntheticsAlertConditionConfig extends cdktf.TerraformMetaArgum
   /**
   * Set whether to enable the alert condition. Defaults to true.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition.html#enabled SyntheticsAlertCondition#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition#enabled SyntheticsAlertCondition#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The ID of the Synthetics monitor to be referenced in the alert condition.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition.html#monitor_id SyntheticsAlertCondition#monitor_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition#monitor_id SyntheticsAlertCondition#monitor_id}
   */
   readonly monitorId: string;
   /**
   * The title of this condition.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition.html#name SyntheticsAlertCondition#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition#name SyntheticsAlertCondition#name}
   */
   readonly name: string;
   /**
   * The ID of the policy where this condition should be used.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition.html#policy_id SyntheticsAlertCondition#policy_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition#policy_id SyntheticsAlertCondition#policy_id}
   */
   readonly policyId: number;
   /**
   * Runbook URL to display in notifications.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition.html#runbook_url SyntheticsAlertCondition#runbook_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition#runbook_url SyntheticsAlertCondition#runbook_url}
   */
   readonly runbookUrl?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition.html newrelic_synthetics_alert_condition}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition newrelic_synthetics_alert_condition}
 */
 export class SyntheticsAlertCondition extends cdktf.TerraformResource {
 
@@ -54,7 +54,7 @@ export class SyntheticsAlertCondition extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition.html newrelic_synthetics_alert_condition} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition newrelic_synthetics_alert_condition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

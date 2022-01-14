@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/d/entity.html
+// https://www.terraform.io/docs/providers/newrelic/d/entity
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,31 +10,31 @@ export interface DataNewrelicEntityConfig extends cdktf.TerraformMetaArguments {
   /**
   * The entity's domain. Valid values are APM, BROWSER, INFRA, MOBILE, SYNTH, and VIZ. If not specified, all domains are searched.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#domain DataNewrelicEntity#domain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#domain DataNewrelicEntity#domain}
   */
   readonly domain?: string;
   /**
   * Ignore case when searching the entity name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#ignore_case DataNewrelicEntity#ignore_case}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#ignore_case DataNewrelicEntity#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktf.IResolvable;
   /**
   * The name of the entity in New Relic One.  The first entity matching this name for the given search parameters will be returned.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#name DataNewrelicEntity#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#name DataNewrelicEntity#name}
   */
   readonly name: string;
   /**
   * The entity's type. Valid values are APPLICATION, DASHBOARD, HOST, MONITOR, and WORKLOAD.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#type DataNewrelicEntity#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#type DataNewrelicEntity#type}
   */
   readonly type?: string;
   /**
   * tag block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#tag DataNewrelicEntity#tag}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#tag DataNewrelicEntity#tag}
   */
   readonly tag?: DataNewrelicEntityTag;
 }
@@ -42,13 +42,13 @@ export interface DataNewrelicEntityTag {
   /**
   * The tag key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#key DataNewrelicEntity#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#key DataNewrelicEntity#key}
   */
   readonly key: string;
   /**
   * The tag value.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#value DataNewrelicEntity#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#value DataNewrelicEntity#value}
   */
   readonly value: string;
 }
@@ -131,7 +131,7 @@ export class DataNewrelicEntityTagOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html newrelic_entity}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/entity newrelic_entity}
 */
 export class DataNewrelicEntity extends cdktf.TerraformDataSource {
 
@@ -145,7 +145,7 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html newrelic_entity} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/entity newrelic_entity} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

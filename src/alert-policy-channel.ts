@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel.html
+// https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface AlertPolicyChannelConfig extends cdktf.TerraformMetaArguments {
   /**
   * Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid drift your Terraform state.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel.html#channel_ids AlertPolicyChannel#channel_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel#channel_ids AlertPolicyChannel#channel_ids}
   */
   readonly channelIds: number[];
   /**
   * The ID of the policy.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel.html#policy_id AlertPolicyChannel#policy_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel#policy_id AlertPolicyChannel#policy_id}
   */
   readonly policyId: number;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel.html newrelic_alert_policy_channel}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel newrelic_alert_policy_channel}
 */
 export class AlertPolicyChannel extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class AlertPolicyChannel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel.html newrelic_alert_policy_channel} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel newrelic_alert_policy_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

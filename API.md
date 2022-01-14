@@ -4,7 +4,7 @@
 
 ### AlertChannel <a name="@cdktf/provider-newrelic.AlertChannel" id="cdktfprovidernewrelicalertchannel"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html newrelic_alert_channel}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel newrelic_alert_channel}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.AlertChannel.Initializer" id="cdktfprovidernewrelicalertchannelinitializer"></a>
 
@@ -174,7 +174,7 @@ public readonly type: string;
 
 ### AlertCondition <a name="@cdktf/provider-newrelic.AlertCondition" id="cdktfprovidernewrelicalertcondition"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html newrelic_alert_condition}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition newrelic_alert_condition}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.AlertCondition.Initializer" id="cdktfprovidernewrelicalertconditioninitializer"></a>
 
@@ -593,7 +593,7 @@ public readonly violationCloseTimer: number;
 
 ### AlertMutingRule <a name="@cdktf/provider-newrelic.AlertMutingRule" id="cdktfprovidernewrelicalertmutingrule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html newrelic_alert_muting_rule}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule newrelic_alert_muting_rule}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.AlertMutingRule.Initializer" id="cdktfprovidernewrelicalertmutingruleinitializer"></a>
 
@@ -856,7 +856,7 @@ public readonly name: string;
 
 ### AlertPolicy <a name="@cdktf/provider-newrelic.AlertPolicy" id="cdktfprovidernewrelicalertpolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy.html newrelic_alert_policy}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy newrelic_alert_policy}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.AlertPolicy.Initializer" id="cdktfprovidernewrelicalertpolicyinitializer"></a>
 
@@ -1049,7 +1049,7 @@ public readonly name: string;
 
 ### AlertPolicyChannel <a name="@cdktf/provider-newrelic.AlertPolicyChannel" id="cdktfprovidernewrelicalertpolicychannel"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel.html newrelic_alert_policy_channel}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel newrelic_alert_policy_channel}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.AlertPolicyChannel.Initializer" id="cdktfprovidernewrelicalertpolicychannelinitializer"></a>
 
@@ -1171,7 +1171,7 @@ public readonly policyId: number;
 
 ### ApiAccessKey <a name="@cdktf/provider-newrelic.ApiAccessKey" id="cdktfprovidernewrelicapiaccesskey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key.html newrelic_api_access_key}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key newrelic_api_access_key}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.ApiAccessKey.Initializer" id="cdktfprovidernewrelicapiaccesskeyinitializer"></a>
 
@@ -1426,7 +1426,7 @@ public readonly userId: number;
 
 ### ApplicationSettings <a name="@cdktf/provider-newrelic.ApplicationSettings" id="cdktfprovidernewrelicapplicationsettings"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings.html newrelic_application_settings}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings newrelic_application_settings}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.ApplicationSettings.Initializer" id="cdktfprovidernewrelicapplicationsettingsinitializer"></a>
 
@@ -1592,7 +1592,7 @@ public readonly name: string;
 
 ### Dashboard <a name="@cdktf/provider-newrelic.Dashboard" id="cdktfprovidernewrelicdashboard"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html newrelic_dashboard}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard newrelic_dashboard}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.Dashboard.Initializer" id="cdktfprovidernewrelicdashboardinitializer"></a>
 
@@ -1896,7 +1896,7 @@ public readonly widget: DashboardWidget[];
 
 ### DataNewrelicAccount <a name="@cdktf/provider-newrelic.DataNewrelicAccount" id="cdktfprovidernewrelicdatanewrelicaccount"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/account.html newrelic_account}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/account newrelic_account}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.DataNewrelicAccount.Initializer" id="cdktfprovidernewrelicdatanewrelicaccountinitializer"></a>
 
@@ -2067,7 +2067,7 @@ public readonly scope: string;
 
 ### DataNewrelicAlertChannel <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannel" id="cdktfprovidernewrelicdatanewrelicalertchannel"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel.html newrelic_alert_channel}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel newrelic_alert_channel}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannel.Initializer" id="cdktfprovidernewrelicdatanewrelicalertchannelinitializer"></a>
 
@@ -2208,7 +2208,7 @@ public readonly name: string;
 
 ### DataNewrelicAlertPolicy <a name="@cdktf/provider-newrelic.DataNewrelicAlertPolicy" id="cdktfprovidernewrelicdatanewrelicalertpolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy.html newrelic_alert_policy}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy newrelic_alert_policy}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.DataNewrelicAlertPolicy.Initializer" id="cdktfprovidernewrelicdatanewrelicalertpolicyinitializer"></a>
 
@@ -2394,7 +2394,7 @@ public readonly name: string;
 
 ### DataNewrelicApplication <a name="@cdktf/provider-newrelic.DataNewrelicApplication" id="cdktfprovidernewrelicdatanewrelicapplication"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/application.html newrelic_application}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/application newrelic_application}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.DataNewrelicApplication.Initializer" id="cdktfprovidernewrelicdatanewrelicapplicationinitializer"></a>
 
@@ -2516,7 +2516,7 @@ public readonly name: string;
 
 ### DataNewrelicEntity <a name="@cdktf/provider-newrelic.DataNewrelicEntity" id="cdktfprovidernewrelicdatanewrelicentity"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html newrelic_entity}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/entity newrelic_entity}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.DataNewrelicEntity.Initializer" id="cdktfprovidernewrelicdatanewrelicentityinitializer"></a>
 
@@ -2795,7 +2795,7 @@ public readonly type: string;
 
 ### DataNewrelicKeyTransaction <a name="@cdktf/provider-newrelic.DataNewrelicKeyTransaction" id="cdktfprovidernewrelicdatanewrelickeytransaction"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/key_transaction.html newrelic_key_transaction}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/key_transaction newrelic_key_transaction}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.DataNewrelicKeyTransaction.Initializer" id="cdktfprovidernewrelicdatanewrelickeytransactioninitializer"></a>
 
@@ -2895,7 +2895,7 @@ public readonly name: string;
 
 ### DataNewrelicPlugin <a name="@cdktf/provider-newrelic.DataNewrelicPlugin" id="cdktfprovidernewrelicdatanewrelicplugin"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/plugin.html newrelic_plugin}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/plugin newrelic_plugin}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.DataNewrelicPlugin.Initializer" id="cdktfprovidernewrelicdatanewrelicplugininitializer"></a>
 
@@ -2995,7 +2995,7 @@ public readonly guid: string;
 
 ### DataNewrelicPluginComponent <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponent" id="cdktfprovidernewrelicdatanewrelicplugincomponent"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component.html newrelic_plugin_component}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component newrelic_plugin_component}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponent.Initializer" id="cdktfprovidernewrelicdatanewrelicplugincomponentinitializer"></a>
 
@@ -3128,7 +3128,7 @@ public readonly pluginId: number;
 
 ### DataNewrelicSyntheticsMonitor <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitor" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitor"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor.html newrelic_synthetics_monitor}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor newrelic_synthetics_monitor}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitor.Initializer" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorinitializer"></a>
 
@@ -3239,7 +3239,7 @@ public readonly name: string;
 
 ### DataNewrelicSyntheticsMonitorLocation <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorLocation" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocation"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor_location.html newrelic_synthetics_monitor_location}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor_location newrelic_synthetics_monitor_location}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorLocation.Initializer" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationinitializer"></a>
 
@@ -3383,7 +3383,7 @@ public readonly label: string;
 
 ### DataNewrelicSyntheticsSecureCredential <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsSecureCredential" id="cdktfprovidernewrelicdatanewrelicsyntheticssecurecredential"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential.html newrelic_synthetics_secure_credential}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential newrelic_synthetics_secure_credential}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsSecureCredential.Initializer" id="cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialinitializer"></a>
 
@@ -3516,7 +3516,7 @@ public readonly key: string;
 
 ### EntityTags <a name="@cdktf/provider-newrelic.EntityTags" id="cdktfprovidernewrelicentitytags"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags.html newrelic_entity_tags}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags newrelic_entity_tags}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.EntityTags.Initializer" id="cdktfprovidernewrelicentitytagsinitializer"></a>
 
@@ -3686,7 +3686,7 @@ public readonly tag: EntityTagsTag[];
 
 ### EventsToMetricsRule <a name="@cdktf/provider-newrelic.EventsToMetricsRule" id="cdktfprovidernewreliceventstometricsrule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/events_to_metrics_rule.html newrelic_events_to_metrics_rule}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/events_to_metrics_rule newrelic_events_to_metrics_rule}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.EventsToMetricsRule.Initializer" id="cdktfprovidernewreliceventstometricsruleinitializer"></a>
 
@@ -3912,7 +3912,7 @@ public readonly nrql: string;
 
 ### InfraAlertCondition <a name="@cdktf/provider-newrelic.InfraAlertCondition" id="cdktfprovidernewrelicinfraalertcondition"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html newrelic_infra_alert_condition}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition newrelic_infra_alert_condition}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.InfraAlertCondition.Initializer" id="cdktfprovidernewrelicinfraalertconditioninitializer"></a>
 
@@ -4458,7 +4458,7 @@ public readonly where: string;
 
 ### InsightsEvent <a name="@cdktf/provider-newrelic.InsightsEvent" id="cdktfprovidernewrelicinsightsevent"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html newrelic_insights_event}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event newrelic_insights_event}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.InsightsEvent.Initializer" id="cdktfprovidernewrelicinsightseventinitializer"></a>
 
@@ -5030,7 +5030,7 @@ public readonly syntheticsApiUrl: string;
 
 ### NrqlAlertCondition <a name="@cdktf/provider-newrelic.NrqlAlertCondition" id="cdktfprovidernewrelicnrqlalertcondition"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html newrelic_nrql_alert_condition}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition newrelic_nrql_alert_condition}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.NrqlAlertCondition.Initializer" id="cdktfprovidernewrelicnrqlalertconditioninitializer"></a>
 
@@ -5915,7 +5915,7 @@ public readonly violationTimeLimitSeconds: number;
 
 ### NrqlDropRule <a name="@cdktf/provider-newrelic.NrqlDropRule" id="cdktfprovidernewrelicnrqldroprule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule.html newrelic_nrql_drop_rule}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule newrelic_nrql_drop_rule}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.NrqlDropRule.Initializer" id="cdktfprovidernewrelicnrqldropruleinitializer"></a>
 
@@ -6112,7 +6112,7 @@ public readonly nrql: string;
 
 ### OneDashboard <a name="@cdktf/provider-newrelic.OneDashboard" id="cdktfprovidernewreliconedashboard"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html newrelic_one_dashboard}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard newrelic_one_dashboard}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.OneDashboard.Initializer" id="cdktfprovidernewreliconedashboardinitializer"></a>
 
@@ -6349,7 +6349,7 @@ public readonly permissions: string;
 
 ### OneDashboardRaw <a name="@cdktf/provider-newrelic.OneDashboardRaw" id="cdktfprovidernewreliconedashboardraw"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html newrelic_one_dashboard_raw}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw newrelic_one_dashboard_raw}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.OneDashboardRaw.Initializer" id="cdktfprovidernewreliconedashboardrawinitializer"></a>
 
@@ -6586,7 +6586,7 @@ public readonly permissions: string;
 
 ### PluginsAlertCondition <a name="@cdktf/provider-newrelic.PluginsAlertCondition" id="cdktfprovidernewrelicpluginsalertcondition"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html newrelic_plugins_alert_condition}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition newrelic_plugins_alert_condition}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.PluginsAlertCondition.Initializer" id="cdktfprovidernewrelicpluginsalertconditioninitializer"></a>
 
@@ -6926,7 +6926,7 @@ public readonly valueFunction: string;
 
 ### ServiceLevel <a name="@cdktf/provider-newrelic.ServiceLevel" id="cdktfprovidernewrelicservicelevel"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html newrelic_service_level}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/service_level newrelic_service_level}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.ServiceLevel.Initializer" id="cdktfprovidernewrelicservicelevelinitializer"></a>
 
@@ -7158,7 +7158,7 @@ public readonly objective: ServiceLevelObjective[];
 
 ### SyntheticsAlertCondition <a name="@cdktf/provider-newrelic.SyntheticsAlertCondition" id="cdktfprovidernewrelicsyntheticsalertcondition"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition.html newrelic_synthetics_alert_condition}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition newrelic_synthetics_alert_condition}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.SyntheticsAlertCondition.Initializer" id="cdktfprovidernewrelicsyntheticsalertconditioninitializer"></a>
 
@@ -7366,7 +7366,7 @@ public readonly runbookUrl: string;
 
 ### SyntheticsMonitor <a name="@cdktf/provider-newrelic.SyntheticsMonitor" id="cdktfprovidernewrelicsyntheticsmonitor"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html newrelic_synthetics_monitor}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor newrelic_synthetics_monitor}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.SyntheticsMonitor.Initializer" id="cdktfprovidernewrelicsyntheticsmonitorinitializer"></a>
 
@@ -7734,7 +7734,7 @@ public readonly verifySsl: boolean | IResolvable;
 
 ### SyntheticsMonitorScript <a name="@cdktf/provider-newrelic.SyntheticsMonitorScript" id="cdktfprovidernewrelicsyntheticsmonitorscript"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html newrelic_synthetics_monitor_script}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script newrelic_synthetics_monitor_script}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.SyntheticsMonitorScript.Initializer" id="cdktfprovidernewrelicsyntheticsmonitorscriptinitializer"></a>
 
@@ -7891,7 +7891,7 @@ public readonly text: string;
 
 ### SyntheticsMultilocationAlertCondition <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertCondition" id="cdktfprovidernewrelicsyntheticsmultilocationalertcondition"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html newrelic_synthetics_multilocation_alert_condition}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition newrelic_synthetics_multilocation_alert_condition}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertCondition.Initializer" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditioninitializer"></a>
 
@@ -8198,7 +8198,7 @@ public readonly violationTimeLimitSeconds: number;
 
 ### SyntheticsSecureCredential <a name="@cdktf/provider-newrelic.SyntheticsSecureCredential" id="cdktfprovidernewrelicsyntheticssecurecredential"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential.html newrelic_synthetics_secure_credential}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential newrelic_synthetics_secure_credential}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.SyntheticsSecureCredential.Initializer" id="cdktfprovidernewrelicsyntheticssecurecredentialinitializer"></a>
 
@@ -8413,7 +8413,7 @@ public readonly value: string;
 
 ### Workload <a name="@cdktf/provider-newrelic.Workload" id="cdktfprovidernewrelicworkload"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/workload.html newrelic_workload}.
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/workload newrelic_workload}.
 
 #### Initializers <a name="@cdktf/provider-newrelic.Workload.Initializer" id="cdktfprovidernewrelicworkloadinitializer"></a>
 
@@ -8698,7 +8698,7 @@ const alertChannelConfig: AlertChannelConfig = { ... }
 | [`lifecycle`](#cdktfprovidernewrelicalertchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertchannelconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the channel. |
-| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (slack, user, victorops, webhook, email, opsgenie, pagerduty). |
+| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie). |
 | [`config`](#cdktfprovidernewrelicalertchannelconfigpropertyconfig) | [`@cdktf/provider-newrelic.AlertChannelConfigA`](#@cdktf/provider-newrelic.AlertChannelConfigA) | config block. |
 
 ---
@@ -8753,7 +8753,7 @@ public readonly name: string;
 
 (Required) The name of the channel.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#name AlertChannel#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#name AlertChannel#name}
 
 ---
 
@@ -8765,9 +8765,9 @@ public readonly type: string;
 
 - *Type:* `string`
 
-(Required) The type of channel. One of: (slack, user, victorops, webhook, email, opsgenie, pagerduty).
+(Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#type AlertChannel#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
 
 ---
 
@@ -8781,7 +8781,7 @@ public readonly config: AlertChannelConfigA;
 
 config block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#config AlertChannel#config}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#config AlertChannel#config}
 
 ---
 
@@ -8833,7 +8833,7 @@ public readonly apiKey: string;
 
 The API key for integrating with OpsGenie.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#api_key AlertChannel#api_key}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#api_key AlertChannel#api_key}
 
 ---
 
@@ -8847,7 +8847,7 @@ public readonly authPassword: string;
 
 Specifies an authentication password for use with a channel. Supported by the webhook channel type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#auth_password AlertChannel#auth_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#auth_password AlertChannel#auth_password}
 
 ---
 
@@ -8861,7 +8861,7 @@ public readonly authType: string;
 
 Specifies an authentication method for use with a channel.
 
-Supported by the webhook channel type. Only HTTP basic authentication is currently supported via the value BASIC.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#auth_type AlertChannel#auth_type}
+Supported by the webhook channel type. Only HTTP basic authentication is currently supported via the value BASIC.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#auth_type AlertChannel#auth_type}
 
 ---
 
@@ -8875,7 +8875,7 @@ public readonly authUsername: string;
 
 Specifies an authentication username for use with a channel. Supported by the webhook channel type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#auth_username AlertChannel#auth_username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#auth_username AlertChannel#auth_username}
 
 ---
 
@@ -8889,7 +8889,7 @@ public readonly baseUrl: string;
 
 The base URL of the webhook destination.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#base_url AlertChannel#base_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#base_url AlertChannel#base_url}
 
 ---
 
@@ -8903,7 +8903,7 @@ public readonly channel: string;
 
 The Slack channel to send notifications to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#channel AlertChannel#channel}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#channel AlertChannel#channel}
 
 ---
 
@@ -8917,7 +8917,7 @@ public readonly headers: IResolvable | {[ key: string ]: string};
 
 A map of key/value pairs that represents extra HTTP headers to be sent along with the webhook payload.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#headers AlertChannel#headers}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#headers AlertChannel#headers}
 
 ---
 
@@ -8931,7 +8931,7 @@ public readonly headersString: string;
 
 Use instead of headers if the desired payload is more complex than a list of key/value pairs (e.g. a set of headers that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with headers.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#headers_string AlertChannel#headers_string}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#headers_string AlertChannel#headers_string}
 
 ---
 
@@ -8945,7 +8945,7 @@ public readonly includeJsonAttachment: string;
 
 true or false.
 
-Flag for whether or not to attach a JSON document containing information about the associated alert to the email that is sent to recipients.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#include_json_attachment AlertChannel#include_json_attachment}
+Flag for whether or not to attach a JSON document containing information about the associated alert to the email that is sent to recipients.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#include_json_attachment AlertChannel#include_json_attachment}
 
 ---
 
@@ -8959,7 +8959,7 @@ public readonly key: string;
 
 The key for integrating with VictorOps.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#key AlertChannel#key}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#key AlertChannel#key}
 
 ---
 
@@ -8973,7 +8973,7 @@ public readonly payload: IResolvable | {[ key: string ]: string};
 
 A map of key/value pairs that represents the webhook payload. Must provide payload_type if setting this argument.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#payload AlertChannel#payload}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#payload AlertChannel#payload}
 
 ---
 
@@ -8987,7 +8987,7 @@ public readonly payloadString: string;
 
 Use instead of payload if the desired payload is more complex than a list of key/value pairs (e.g. a payload that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with payload.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#payload_string AlertChannel#payload_string}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#payload_string AlertChannel#payload_string}
 
 ---
 
@@ -9001,7 +9001,7 @@ public readonly payloadType: string;
 
 Can either be application/json or application/x-www-form-urlencoded. The payload_type argument is required if payload is set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#payload_type AlertChannel#payload_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#payload_type AlertChannel#payload_type}
 
 ---
 
@@ -9015,7 +9015,7 @@ public readonly recipients: string;
 
 A set of recipients for targeting notifications. Multiple values are comma separated.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#recipients AlertChannel#recipients}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#recipients AlertChannel#recipients}
 
 ---
 
@@ -9029,7 +9029,7 @@ public readonly region: string;
 
 The data center region to store your data. Valid values are US and EU. Default is US.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#region AlertChannel#region}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#region AlertChannel#region}
 
 ---
 
@@ -9043,7 +9043,7 @@ public readonly routeKey: string;
 
 The route key for integrating with VictorOps.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#route_key AlertChannel#route_key}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#route_key AlertChannel#route_key}
 
 ---
 
@@ -9057,7 +9057,7 @@ public readonly serviceKey: string;
 
 Specifies the service key for integrating with Pagerduty.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#service_key AlertChannel#service_key}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#service_key AlertChannel#service_key}
 
 ---
 
@@ -9071,7 +9071,7 @@ public readonly tags: string;
 
 A set of tags for targeting notifications. Multiple values are comma separated.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#tags AlertChannel#tags}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#tags AlertChannel#tags}
 
 ---
 
@@ -9085,7 +9085,7 @@ public readonly teams: string;
 
 A set of teams for targeting notifications. Multiple values are comma separated.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#teams AlertChannel#teams}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#teams AlertChannel#teams}
 
 ---
 
@@ -9099,7 +9099,7 @@ public readonly url: string;
 
 Your organization's Slack URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#url AlertChannel#url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#url AlertChannel#url}
 
 ---
 
@@ -9113,7 +9113,7 @@ public readonly userId: string;
 
 The user ID for use with the user channel type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel.html#user_id AlertChannel#user_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#user_id AlertChannel#user_id}
 
 ---
 
@@ -9201,7 +9201,7 @@ public readonly entities: number[];
 
 The instance IDs associated with this condition.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#entities AlertCondition#entities}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#entities AlertCondition#entities}
 
 ---
 
@@ -9215,7 +9215,7 @@ public readonly metric: string;
 
 The metric field accepts parameters based on the type set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#metric AlertCondition#metric}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#metric AlertCondition#metric}
 
 ---
 
@@ -9229,7 +9229,7 @@ public readonly name: string;
 
 The title of the condition. Must be between 1 and 128 characters, inclusive.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#name AlertCondition#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#name AlertCondition#name}
 
 ---
 
@@ -9243,7 +9243,7 @@ public readonly policyId: number;
 
 The ID of the policy where this condition should be used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#policy_id AlertCondition#policy_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#policy_id AlertCondition#policy_id}
 
 ---
 
@@ -9257,7 +9257,7 @@ public readonly term: AlertConditionTerm[];
 
 term block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#term AlertCondition#term}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#term AlertCondition#term}
 
 ---
 
@@ -9271,7 +9271,7 @@ public readonly type: string;
 
 The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#type AlertCondition#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 
 ---
 
@@ -9285,7 +9285,7 @@ public readonly conditionScope: string;
 
 One of (application, instance).
 
-Choose application for most scenarios. If you are using the JVM plugin in New Relic, the instance setting allows your condition to trigger for specific app instances.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#condition_scope AlertCondition#condition_scope}
+Choose application for most scenarios. If you are using the JVM plugin in New Relic, the instance setting allows your condition to trigger for specific app instances.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#condition_scope AlertCondition#condition_scope}
 
 ---
 
@@ -9299,7 +9299,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether the condition is enabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#enabled AlertCondition#enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#enabled AlertCondition#enabled}
 
 ---
 
@@ -9313,7 +9313,7 @@ public readonly gcMetric: string;
 
 A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#gc_metric AlertCondition#gc_metric}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#gc_metric AlertCondition#gc_metric}
 
 ---
 
@@ -9327,7 +9327,7 @@ public readonly runbookUrl: string;
 
 Runbook URL to display in notifications.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#runbook_url AlertCondition#runbook_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#runbook_url AlertCondition#runbook_url}
 
 ---
 
@@ -9341,7 +9341,7 @@ public readonly userDefinedMetric: string;
 
 A custom metric to be evaluated.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#user_defined_metric AlertCondition#user_defined_metric}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#user_defined_metric AlertCondition#user_defined_metric}
 
 ---
 
@@ -9355,7 +9355,7 @@ public readonly userDefinedValueFunction: string;
 
 One of: (average, min, max, total, sample_size).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#user_defined_value_function AlertCondition#user_defined_value_function}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#user_defined_value_function AlertCondition#user_defined_value_function}
 
 ---
 
@@ -9369,7 +9369,7 @@ public readonly violationCloseTimer: number;
 
 Automatically close instance-based violations, including JVM health metric violations, after the number of hours specified.
 
-Must be: 1, 2, 4, 8, 12 or 24.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#violation_close_timer AlertCondition#violation_close_timer}
+Must be: 1, 2, 4, 8, 12 or 24.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#violation_close_timer AlertCondition#violation_close_timer}
 
 ---
 
@@ -9405,7 +9405,7 @@ public readonly duration: number;
 
 In minutes, must be in the range of 5 to 120, inclusive.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#duration AlertCondition#duration}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#duration AlertCondition#duration}
 
 ---
 
@@ -9419,7 +9419,7 @@ public readonly threshold: number;
 
 Must be 0 or greater.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#threshold AlertCondition#threshold}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#threshold AlertCondition#threshold}
 
 ---
 
@@ -9433,7 +9433,7 @@ public readonly timeFunction: string;
 
 One of (all, any).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#time_function AlertCondition#time_function}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#time_function AlertCondition#time_function}
 
 ---
 
@@ -9447,7 +9447,7 @@ public readonly operator: string;
 
 One of (above, below, equal). Defaults to equal.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#operator AlertCondition#operator}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#operator AlertCondition#operator}
 
 ---
 
@@ -9461,7 +9461,7 @@ public readonly priority: string;
 
 One of (critical, warning). Defaults to critical.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition.html#priority AlertCondition#priority}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#priority AlertCondition#priority}
 
 ---
 
@@ -9494,7 +9494,7 @@ public readonly conditions: AlertMutingRuleConditionConditions[];
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#conditions AlertMutingRule#conditions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#conditions AlertMutingRule#conditions}
 
 ---
 
@@ -9508,7 +9508,7 @@ public readonly operator: string;
 
 The operator used to combine all the MutingRuleConditions within the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#operator AlertMutingRule#operator}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#operator AlertMutingRule#operator}
 
 ---
 
@@ -9542,7 +9542,7 @@ public readonly attribute: string;
 
 The attribute on a violation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#attribute AlertMutingRule#attribute}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#attribute AlertMutingRule#attribute}
 
 ---
 
@@ -9556,7 +9556,7 @@ public readonly operator: string;
 
 The operator used to compare the attribute's value with the supplied value(s).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#operator AlertMutingRule#operator}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#operator AlertMutingRule#operator}
 
 ---
 
@@ -9570,7 +9570,7 @@ public readonly values: string[];
 
 The value(s) to compare against the attribute's value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#values AlertMutingRule#values}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#values AlertMutingRule#values}
 
 ---
 
@@ -9651,7 +9651,7 @@ public readonly condition: AlertMutingRuleCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#condition AlertMutingRule#condition}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#condition AlertMutingRule#condition}
 
 ---
 
@@ -9665,7 +9665,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether the MutingRule is enabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#enabled AlertMutingRule#enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#enabled AlertMutingRule#enabled}
 
 ---
 
@@ -9679,7 +9679,7 @@ public readonly name: string;
 
 The name of the MutingRule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#name AlertMutingRule#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#name AlertMutingRule#name}
 
 ---
 
@@ -9693,7 +9693,7 @@ public readonly accountId: number;
 
 The account id of the MutingRule..
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#account_id AlertMutingRule#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#account_id AlertMutingRule#account_id}
 
 ---
 
@@ -9707,7 +9707,7 @@ public readonly description: string;
 
 The description of the MutingRule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#description AlertMutingRule#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#description AlertMutingRule#description}
 
 ---
 
@@ -9721,7 +9721,7 @@ public readonly schedule: AlertMutingRuleSchedule;
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#schedule AlertMutingRule#schedule}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#schedule AlertMutingRule#schedule}
 
 ---
 
@@ -9759,7 +9759,7 @@ public readonly timeZone: string;
 
 The time zone that applies to the MutingRule schedule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#time_zone AlertMutingRule#time_zone}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#time_zone AlertMutingRule#time_zone}
 
 ---
 
@@ -9773,7 +9773,7 @@ public readonly endRepeat: string;
 
 The datetime stamp when the MutingRule schedule should stop repeating.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#end_repeat AlertMutingRule#end_repeat}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#end_repeat AlertMutingRule#end_repeat}
 
 ---
 
@@ -9787,7 +9787,7 @@ public readonly endTime: string;
 
 The datetime stamp representing when the MutingRule should end.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#end_time AlertMutingRule#end_time}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#end_time AlertMutingRule#end_time}
 
 ---
 
@@ -9801,7 +9801,7 @@ public readonly repeat: string;
 
 The frequency the MutingRule schedule repeats. One of [DAILY, WEEKLY, MONTHLY].
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#repeat AlertMutingRule#repeat}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#repeat AlertMutingRule#repeat}
 
 ---
 
@@ -9815,7 +9815,7 @@ public readonly repeatCount: number;
 
 The number of times the MutingRule schedule should repeat.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#repeat_count AlertMutingRule#repeat_count}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#repeat_count AlertMutingRule#repeat_count}
 
 ---
 
@@ -9829,7 +9829,7 @@ public readonly startTime: string;
 
 The datetime stamp representing when the MutingRule should start.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#start_time AlertMutingRule#start_time}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#start_time AlertMutingRule#start_time}
 
 ---
 
@@ -9843,7 +9843,7 @@ public readonly weeklyRepeatDays: string[];
 
 The day(s) of the week that a MutingRule should repeat when the repeat field is set to WEEKLY.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule.html#weekly_repeat_days AlertMutingRule#weekly_repeat_days}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#weekly_repeat_days AlertMutingRule#weekly_repeat_days}
 
 ---
 
@@ -9920,7 +9920,7 @@ public readonly channelIds: number[];
 
 Array of channel IDs to apply to the specified policy.
 
-We recommended sorting channel IDs in ascending order to avoid drift your Terraform state.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel.html#channel_ids AlertPolicyChannel#channel_ids}
+We recommended sorting channel IDs in ascending order to avoid drift your Terraform state.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel#channel_ids AlertPolicyChannel#channel_ids}
 
 ---
 
@@ -9934,7 +9934,7 @@ public readonly policyId: number;
 
 The ID of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel.html#policy_id AlertPolicyChannel#policy_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel#policy_id AlertPolicyChannel#policy_id}
 
 ---
 
@@ -10013,7 +10013,7 @@ public readonly name: string;
 
 The name of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy.html#name AlertPolicy#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy#name AlertPolicy#name}
 
 ---
 
@@ -10027,7 +10027,7 @@ public readonly accountId: number;
 
 The New Relic account ID to operate on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy.html#account_id AlertPolicy#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy#account_id AlertPolicy#account_id}
 
 ---
 
@@ -10041,7 +10041,7 @@ public readonly channelIds: number[];
 
 An array of channel IDs (integers) to assign to the policy.
 
-Adding or removing channel IDs from this array will result in a new alert policy resource being created and the old one being destroyed. Also note that channel IDs cannot be imported via terraform import.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy.html#channel_ids AlertPolicy#channel_ids}
+Adding or removing channel IDs from this array will result in a new alert policy resource being created and the old one being destroyed. Also note that channel IDs cannot be imported via terraform import.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy#channel_ids AlertPolicy#channel_ids}
 
 ---
 
@@ -10055,7 +10055,7 @@ public readonly incidentPreference: string;
 
 The rollup strategy for the policy. Options include: PER_POLICY, PER_CONDITION, or PER_CONDITION_AND_TARGET. The default is PER_POLICY.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy.html#incident_preference AlertPolicy#incident_preference}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy#incident_preference AlertPolicy#incident_preference}
 
 ---
 
@@ -10077,12 +10077,12 @@ const apiAccessKeyConfig: ApiAccessKeyConfig = { ... }
 | [`dependsOn`](#cdktfprovidernewrelicapiaccesskeyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicapiaccesskeyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`accountId`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyaccountid)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key.html#account_id ApiAccessKey#account_id}. |
-| [`keyType`](#cdktfprovidernewrelicapiaccesskeyconfigpropertykeytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key.html#key_type ApiAccessKey#key_type}. |
-| [`ingestType`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyingesttype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key.html#ingest_type ApiAccessKey#ingest_type}. |
-| [`name`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key.html#name ApiAccessKey#name}. |
-| [`notes`](#cdktfprovidernewrelicapiaccesskeyconfigpropertynotes) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key.html#notes ApiAccessKey#notes}. |
-| [`userId`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyuserid) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key.html#user_id ApiAccessKey#user_id}. |
+| [`accountId`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyaccountid)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#account_id ApiAccessKey#account_id}. |
+| [`keyType`](#cdktfprovidernewrelicapiaccesskeyconfigpropertykeytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#key_type ApiAccessKey#key_type}. |
+| [`ingestType`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyingesttype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#ingest_type ApiAccessKey#ingest_type}. |
+| [`name`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#name ApiAccessKey#name}. |
+| [`notes`](#cdktfprovidernewrelicapiaccesskeyconfigpropertynotes) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#notes ApiAccessKey#notes}. |
+| [`userId`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyuserid) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#user_id ApiAccessKey#user_id}. |
 
 ---
 
@@ -10134,7 +10134,7 @@ public readonly accountId: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key.html#account_id ApiAccessKey#account_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#account_id ApiAccessKey#account_id}.
 
 ---
 
@@ -10146,7 +10146,7 @@ public readonly keyType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key.html#key_type ApiAccessKey#key_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#key_type ApiAccessKey#key_type}.
 
 ---
 
@@ -10158,7 +10158,7 @@ public readonly ingestType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key.html#ingest_type ApiAccessKey#ingest_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#ingest_type ApiAccessKey#ingest_type}.
 
 ---
 
@@ -10170,7 +10170,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key.html#name ApiAccessKey#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#name ApiAccessKey#name}.
 
 ---
 
@@ -10182,7 +10182,7 @@ public readonly notes: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key.html#notes ApiAccessKey#notes}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#notes ApiAccessKey#notes}.
 
 ---
 
@@ -10194,7 +10194,7 @@ public readonly userId: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key.html#user_id ApiAccessKey#user_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#user_id ApiAccessKey#user_id}.
 
 ---
 
@@ -10216,10 +10216,10 @@ const applicationSettingsConfig: ApplicationSettingsConfig = { ... }
 | [`dependsOn`](#cdktfprovidernewrelicapplicationsettingsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicapplicationsettingsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`appApdexThreshold`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyappapdexthreshold)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings.html#app_apdex_threshold ApplicationSettings#app_apdex_threshold}. |
-| [`enableRealUserMonitoring`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyenablerealusermonitoring)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings.html#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}. |
-| [`endUserApdexThreshold`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyenduserapdexthreshold)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings.html#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}. |
-| [`name`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings.html#name ApplicationSettings#name}. |
+| [`appApdexThreshold`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyappapdexthreshold)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#app_apdex_threshold ApplicationSettings#app_apdex_threshold}. |
+| [`enableRealUserMonitoring`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyenablerealusermonitoring)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}. |
+| [`endUserApdexThreshold`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyenduserapdexthreshold)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}. |
+| [`name`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#name ApplicationSettings#name}. |
 
 ---
 
@@ -10271,7 +10271,7 @@ public readonly appApdexThreshold: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings.html#app_apdex_threshold ApplicationSettings#app_apdex_threshold}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#app_apdex_threshold ApplicationSettings#app_apdex_threshold}.
 
 ---
 
@@ -10283,7 +10283,7 @@ public readonly enableRealUserMonitoring: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings.html#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}.
 
 ---
 
@@ -10295,7 +10295,7 @@ public readonly endUserApdexThreshold: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings.html#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}.
 
 ---
 
@@ -10307,7 +10307,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings.html#name ApplicationSettings#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#name ApplicationSettings#name}.
 
 ---
 
@@ -10389,7 +10389,7 @@ public readonly title: string;
 
 The title of the dashboard.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#title Dashboard#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#title Dashboard#title}
 
 ---
 
@@ -10403,7 +10403,7 @@ public readonly editable: string;
 
 Determines who can edit the dashboard in an account.
 
-Valid values are all, editable_by_all, editable_by_owner, or read_only. Defaults to editable_by_all.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#editable Dashboard#editable}
+Valid values are all, editable_by_all, editable_by_owner, or read_only. Defaults to editable_by_all.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#editable Dashboard#editable}
 
 ---
 
@@ -10417,7 +10417,7 @@ public readonly filter: DashboardFilter;
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#filter Dashboard#filter}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#filter Dashboard#filter}
 
 ---
 
@@ -10431,7 +10431,7 @@ public readonly gridColumnCount: number;
 
 New Relic One supports a 3 column grid or a 12 column grid.
 
-New Relic Insights supports a 3 column grid.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#grid_column_count Dashboard#grid_column_count}
+New Relic Insights supports a 3 column grid.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#grid_column_count Dashboard#grid_column_count}
 
 ---
 
@@ -10445,7 +10445,7 @@ public readonly icon: string;
 
 The icon for the dashboard.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#icon Dashboard#icon}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#icon Dashboard#icon}
 
 ---
 
@@ -10459,7 +10459,7 @@ public readonly visibility: string;
 
 Determines who can see the dashboard in an account. Valid values are all or owner. Defaults to all.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#visibility Dashboard#visibility}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#visibility Dashboard#visibility}
 
 ---
 
@@ -10473,7 +10473,7 @@ public readonly widget: DashboardWidget[];
 
 widget block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#widget Dashboard#widget}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#widget Dashboard#widget}
 
 ---
 
@@ -10491,8 +10491,8 @@ const dashboardFilter: DashboardFilter = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`eventTypes`](#cdktfprovidernewrelicdashboardfilterpropertyeventtypes)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#event_types Dashboard#event_types}. |
-| [`attributes`](#cdktfprovidernewrelicdashboardfilterpropertyattributes) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#attributes Dashboard#attributes}. |
+| [`eventTypes`](#cdktfprovidernewrelicdashboardfilterpropertyeventtypes)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#event_types Dashboard#event_types}. |
+| [`attributes`](#cdktfprovidernewrelicdashboardfilterpropertyattributes) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#attributes Dashboard#attributes}. |
 
 ---
 
@@ -10504,7 +10504,7 @@ public readonly eventTypes: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#event_types Dashboard#event_types}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#event_types Dashboard#event_types}.
 
 ---
 
@@ -10516,7 +10516,7 @@ public readonly attributes: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#attributes Dashboard#attributes}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#attributes Dashboard#attributes}.
 
 ---
 
@@ -10541,10 +10541,10 @@ const dashboardWidget: DashboardWidget = { ... }
 | [`accountId`](#cdktfprovidernewrelicdashboardwidgetpropertyaccountid) | `number` | The target account ID to fetch data from, if not the current account. |
 | [`compareWith`](#cdktfprovidernewrelicdashboardwidgetpropertycomparewith) | [`@cdktf/provider-newrelic.DashboardWidgetCompareWith`](#@cdktf/provider-newrelic.DashboardWidgetCompareWith)[] | compare_with block. |
 | [`drilldownDashboardId`](#cdktfprovidernewrelicdashboardwidgetpropertydrilldowndashboardid) | `number` | The ID of a dashboard to link to from the widget's facets. |
-| [`duration`](#cdktfprovidernewrelicdashboardwidgetpropertyduration) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#duration Dashboard#duration}. |
-| [`endTime`](#cdktfprovidernewrelicdashboardwidgetpropertyendtime) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#end_time Dashboard#end_time}. |
+| [`duration`](#cdktfprovidernewrelicdashboardwidgetpropertyduration) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#duration Dashboard#duration}. |
+| [`endTime`](#cdktfprovidernewrelicdashboardwidgetpropertyendtime) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#end_time Dashboard#end_time}. |
 | [`entityIds`](#cdktfprovidernewrelicdashboardwidgetpropertyentityids) | `number`[] | A collection of entity ids to display data for. These are typically application IDs. |
-| [`facet`](#cdktfprovidernewrelicdashboardwidgetpropertyfacet) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#facet Dashboard#facet}. |
+| [`facet`](#cdktfprovidernewrelicdashboardwidgetpropertyfacet) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#facet Dashboard#facet}. |
 | [`height`](#cdktfprovidernewrelicdashboardwidgetpropertyheight) | `number` | Height of the widget. Valid values are 1 to 3 inclusive. Defaults to 1. |
 | [`limit`](#cdktfprovidernewrelicdashboardwidgetpropertylimit) | `number` | The limit of distinct data series to display.  Requires `order_by` to be set. |
 | [`metric`](#cdktfprovidernewrelicdashboardwidgetpropertymetric) | [`@cdktf/provider-newrelic.DashboardWidgetMetric`](#@cdktf/provider-newrelic.DashboardWidgetMetric)[] | metric block. |
@@ -10568,7 +10568,7 @@ public readonly column: number;
 
 Column position of widget from top left, starting at 1.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#column Dashboard#column}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#column Dashboard#column}
 
 ---
 
@@ -10582,7 +10582,7 @@ public readonly row: number;
 
 Row position of widget from top left, starting at 1.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#row Dashboard#row}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#row Dashboard#row}
 
 ---
 
@@ -10596,7 +10596,7 @@ public readonly title: string;
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#title Dashboard#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#title Dashboard#title}
 
 ---
 
@@ -10610,7 +10610,7 @@ public readonly visualization: string;
 
 How the widget visualizes data.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#visualization Dashboard#visualization}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#visualization Dashboard#visualization}
 
 ---
 
@@ -10624,7 +10624,7 @@ public readonly accountId: number;
 
 The target account ID to fetch data from, if not the current account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#account_id Dashboard#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#account_id Dashboard#account_id}
 
 ---
 
@@ -10638,7 +10638,7 @@ public readonly compareWith: DashboardWidgetCompareWith[];
 
 compare_with block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#compare_with Dashboard#compare_with}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#compare_with Dashboard#compare_with}
 
 ---
 
@@ -10652,7 +10652,7 @@ public readonly drilldownDashboardId: number;
 
 The ID of a dashboard to link to from the widget's facets.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#drilldown_dashboard_id Dashboard#drilldown_dashboard_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#drilldown_dashboard_id Dashboard#drilldown_dashboard_id}
 
 ---
 
@@ -10664,7 +10664,7 @@ public readonly duration: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#duration Dashboard#duration}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#duration Dashboard#duration}.
 
 ---
 
@@ -10676,7 +10676,7 @@ public readonly endTime: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#end_time Dashboard#end_time}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#end_time Dashboard#end_time}.
 
 ---
 
@@ -10690,7 +10690,7 @@ public readonly entityIds: number[];
 
 A collection of entity ids to display data for. These are typically application IDs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#entity_ids Dashboard#entity_ids}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#entity_ids Dashboard#entity_ids}
 
 ---
 
@@ -10702,7 +10702,7 @@ public readonly facet: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#facet Dashboard#facet}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#facet Dashboard#facet}.
 
 ---
 
@@ -10716,7 +10716,7 @@ public readonly height: number;
 
 Height of the widget. Valid values are 1 to 3 inclusive. Defaults to 1.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#height Dashboard#height}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#height Dashboard#height}
 
 ---
 
@@ -10730,7 +10730,7 @@ public readonly limit: number;
 
 The limit of distinct data series to display.  Requires `order_by` to be set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#limit Dashboard#limit}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#limit Dashboard#limit}
 
 ---
 
@@ -10744,7 +10744,7 @@ public readonly metric: DashboardWidgetMetric[];
 
 metric block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#metric Dashboard#metric}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#metric Dashboard#metric}
 
 ---
 
@@ -10758,7 +10758,7 @@ public readonly notes: string;
 
 Description of the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#notes Dashboard#notes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#notes Dashboard#notes}
 
 ---
 
@@ -10772,7 +10772,7 @@ public readonly nrql: string;
 
 Valid NRQL query string.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#nrql Dashboard#nrql}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#nrql Dashboard#nrql}
 
 ---
 
@@ -10786,7 +10786,7 @@ public readonly orderBy: string;
 
 Set the order of result series.  Required when using `limit`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#order_by Dashboard#order_by}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#order_by Dashboard#order_by}
 
 ---
 
@@ -10800,7 +10800,7 @@ public readonly source: string;
 
 The markdown source to be rendered in the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#source Dashboard#source}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#source Dashboard#source}
 
 ---
 
@@ -10814,7 +10814,7 @@ public readonly thresholdRed: number;
 
 Threshold above which the displayed value will be styled with a red color.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#threshold_red Dashboard#threshold_red}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#threshold_red Dashboard#threshold_red}
 
 ---
 
@@ -10828,7 +10828,7 @@ public readonly thresholdYellow: number;
 
 Threshold above which the displayed value will be styled with a yellow color.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#threshold_yellow Dashboard#threshold_yellow}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#threshold_yellow Dashboard#threshold_yellow}
 
 ---
 
@@ -10842,7 +10842,7 @@ public readonly width: number;
 
 Width of the widget. Valid values are 1 to 3 inclusive. Defaults to 1.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#width Dashboard#width}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#width Dashboard#width}
 
 ---
 
@@ -10875,7 +10875,7 @@ public readonly offsetDuration: string;
 
 The offset duration for the COMPARE WITH clause.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#offset_duration Dashboard#offset_duration}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#offset_duration Dashboard#offset_duration}
 
 ---
 
@@ -10889,7 +10889,7 @@ public readonly presentation: DashboardWidgetCompareWithPresentation;
 
 presentation block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#presentation Dashboard#presentation}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#presentation Dashboard#presentation}
 
 ---
 
@@ -10922,7 +10922,7 @@ public readonly color: string;
 
 The color for the rendered data.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#color Dashboard#color}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#color Dashboard#color}
 
 ---
 
@@ -10936,7 +10936,7 @@ public readonly name: string;
 
 The name for the rendered data.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#name Dashboard#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#name Dashboard#name}
 
 ---
 
@@ -10971,7 +10971,7 @@ public readonly name: string;
 
 The metric name to display.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#name Dashboard#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#name Dashboard#name}
 
 ---
 
@@ -10985,7 +10985,7 @@ public readonly scope: string;
 
 The metric scope.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#scope Dashboard#scope}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#scope Dashboard#scope}
 
 ---
 
@@ -10999,7 +10999,7 @@ public readonly units: string;
 
 The metric units.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#units Dashboard#units}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#units Dashboard#units}
 
 ---
 
@@ -11013,7 +11013,7 @@ public readonly values: string[];
 
 The metric values to display.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard.html#values Dashboard#values}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#values Dashboard#values}
 
 ---
 
@@ -11091,7 +11091,7 @@ public readonly accountId: number;
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/account.html#account_id DataNewrelicAccount#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/account#account_id DataNewrelicAccount#account_id}
 
 ---
 
@@ -11105,7 +11105,7 @@ public readonly name: string;
 
 The name of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/account.html#name DataNewrelicAccount#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/account#name DataNewrelicAccount#name}
 
 ---
 
@@ -11119,7 +11119,7 @@ public readonly scope: string;
 
 The scope of the account in New Relic.  Valid values are "global" and "in_region".  Defaults to "in_region".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/account.html#scope DataNewrelicAccount#scope}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/account#scope DataNewrelicAccount#scope}
 
 ---
 
@@ -11195,7 +11195,7 @@ public readonly name: string;
 
 The name of the alert channel in New Relic.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel.html#name DataNewrelicAlertChannel#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel#name DataNewrelicAlertChannel#name}
 
 ---
 
@@ -11273,7 +11273,7 @@ public readonly name: string;
 
 The name of the alert policy in New Relic.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy.html#name DataNewrelicAlertPolicy#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy#name DataNewrelicAlertPolicy#name}
 
 ---
 
@@ -11287,7 +11287,7 @@ public readonly accountId: number;
 
 The New Relic account ID to operate on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy.html#account_id DataNewrelicAlertPolicy#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy#account_id DataNewrelicAlertPolicy#account_id}
 
 ---
 
@@ -11301,7 +11301,7 @@ public readonly incidentPreference: string;
 
 The rollup strategy for the policy. Options include: `PER_POLICY`, `PER_CONDITION`, or `PER_CONDITION_AND_TARGET`. The default is `PER_POLICY`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy.html#incident_preference DataNewrelicAlertPolicy#incident_preference}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy#incident_preference DataNewrelicAlertPolicy#incident_preference}
 
 ---
 
@@ -11377,7 +11377,7 @@ public readonly name: string;
 
 The name of the application in New Relic.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/application.html#name DataNewrelicApplication#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/application#name DataNewrelicApplication#name}
 
 ---
 
@@ -11457,7 +11457,7 @@ public readonly name: string;
 
 The name of the entity in New Relic One.
 
-The first entity matching this name for the given search parameters will be returned.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#name DataNewrelicEntity#name}
+The first entity matching this name for the given search parameters will be returned.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#name DataNewrelicEntity#name}
 
 ---
 
@@ -11471,7 +11471,7 @@ public readonly domain: string;
 
 The entity's domain.
 
-Valid values are APM, BROWSER, INFRA, MOBILE, SYNTH, and VIZ. If not specified, all domains are searched.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#domain DataNewrelicEntity#domain}
+Valid values are APM, BROWSER, INFRA, MOBILE, SYNTH, and VIZ. If not specified, all domains are searched.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#domain DataNewrelicEntity#domain}
 
 ---
 
@@ -11485,7 +11485,7 @@ public readonly ignoreCase: boolean | IResolvable;
 
 Ignore case when searching the entity name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#ignore_case DataNewrelicEntity#ignore_case}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#ignore_case DataNewrelicEntity#ignore_case}
 
 ---
 
@@ -11499,7 +11499,7 @@ public readonly tag: DataNewrelicEntityTag;
 
 tag block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#tag DataNewrelicEntity#tag}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#tag DataNewrelicEntity#tag}
 
 ---
 
@@ -11513,7 +11513,7 @@ public readonly type: string;
 
 The entity's type. Valid values are APPLICATION, DASHBOARD, HOST, MONITOR, and WORKLOAD.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#type DataNewrelicEntity#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#type DataNewrelicEntity#type}
 
 ---
 
@@ -11546,7 +11546,7 @@ public readonly key: string;
 
 The tag key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#key DataNewrelicEntity#key}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#key DataNewrelicEntity#key}
 
 ---
 
@@ -11560,7 +11560,7 @@ public readonly value: string;
 
 The tag value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity.html#value DataNewrelicEntity#value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#value DataNewrelicEntity#value}
 
 ---
 
@@ -11636,7 +11636,7 @@ public readonly name: string;
 
 The name of the key transaction in New Relic.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/key_transaction.html#name DataNewrelicKeyTransaction#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/key_transaction#name DataNewrelicKeyTransaction#name}
 
 ---
 
@@ -11713,7 +11713,7 @@ public readonly name: string;
 
 The name of the plugin component.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component.html#name DataNewrelicPluginComponent#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component#name DataNewrelicPluginComponent#name}
 
 ---
 
@@ -11727,7 +11727,7 @@ public readonly pluginId: number;
 
 The ID of the plugin instance this component belongs to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component.html#plugin_id DataNewrelicPluginComponent#plugin_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component#plugin_id DataNewrelicPluginComponent#plugin_id}
 
 ---
 
@@ -11803,7 +11803,7 @@ public readonly guid: string;
 
 The GUID of the plugin in New Relic.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/plugin.html#guid DataNewrelicPlugin#guid}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/plugin#guid DataNewrelicPlugin#guid}
 
 ---
 
@@ -11879,7 +11879,7 @@ public readonly name: string;
 
 The name of the synthetics monitor in New Relic.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor.html#name DataNewrelicSyntheticsMonitor#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor#name DataNewrelicSyntheticsMonitor#name}
 
 ---
 
@@ -11955,7 +11955,7 @@ public readonly label: string;
 
 The label of the Synthetics monitor location.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor_location.html#label DataNewrelicSyntheticsMonitorLocation#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor_location#label DataNewrelicSyntheticsMonitorLocation#label}
 
 ---
 
@@ -12031,7 +12031,7 @@ public readonly key: string;
 
 The secure credential's key name.
 
-Regardless of the case used in the configuration, the provider will provide an upcased key to the underlying API.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential.html#key DataNewrelicSyntheticsSecureCredential#key}
+Regardless of the case used in the configuration, the provider will provide an upcased key to the underlying API.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential#key DataNewrelicSyntheticsSecureCredential#key}
 
 ---
 
@@ -12109,7 +12109,7 @@ public readonly guid: string;
 
 The guid of the entity to tag.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags.html#guid EntityTags#guid}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags#guid EntityTags#guid}
 
 ---
 
@@ -12123,7 +12123,7 @@ public readonly tag: EntityTagsTag[];
 
 tag block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags.html#tag EntityTags#tag}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags#tag EntityTags#tag}
 
 ---
 
@@ -12137,7 +12137,7 @@ public readonly timeouts: EntityTagsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags.html#timeouts EntityTags#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags#timeouts EntityTags#timeouts}
 
 ---
 
@@ -12170,7 +12170,7 @@ public readonly key: string;
 
 The tag key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags.html#key EntityTags#key}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags#key EntityTags#key}
 
 ---
 
@@ -12184,7 +12184,7 @@ public readonly values: string[];
 
 The tag values.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags.html#values EntityTags#values}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags#values EntityTags#values}
 
 ---
 
@@ -12202,7 +12202,7 @@ const entityTagsTimeouts: EntityTagsTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`create`](#cdktfprovidernewrelicentitytagstimeoutspropertycreate) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags.html#create EntityTags#create}. |
+| [`create`](#cdktfprovidernewrelicentitytagstimeoutspropertycreate) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags#create EntityTags#create}. |
 
 ---
 
@@ -12214,7 +12214,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags.html#create EntityTags#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags#create EntityTags#create}.
 
 ---
 
@@ -12294,7 +12294,7 @@ public readonly name: string;
 
 The name of the rule. This must be unique within an account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/events_to_metrics_rule.html#name EventsToMetricsRule#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/events_to_metrics_rule#name EventsToMetricsRule#name}
 
 ---
 
@@ -12308,7 +12308,7 @@ public readonly nrql: string;
 
 Explains how to create metrics from events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/events_to_metrics_rule.html#nrql EventsToMetricsRule#nrql}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/events_to_metrics_rule#nrql EventsToMetricsRule#nrql}
 
 ---
 
@@ -12322,7 +12322,7 @@ public readonly accountId: number;
 
 Account with the event and where the metrics will be put.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/events_to_metrics_rule.html#account_id EventsToMetricsRule#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/events_to_metrics_rule#account_id EventsToMetricsRule#account_id}
 
 ---
 
@@ -12336,7 +12336,7 @@ public readonly description: string;
 
 Provides additional information about the rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/events_to_metrics_rule.html#description EventsToMetricsRule#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/events_to_metrics_rule#description EventsToMetricsRule#description}
 
 ---
 
@@ -12350,7 +12350,7 @@ public readonly enabled: boolean | IResolvable;
 
 True means this rule is enabled. False means the rule is currently not creating metrics.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/events_to_metrics_rule.html#enabled EventsToMetricsRule#enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/events_to_metrics_rule#enabled EventsToMetricsRule#enabled}
 
 ---
 
@@ -12440,7 +12440,7 @@ public readonly name: string;
 
 The Infrastructure alert condition's name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#name InfraAlertCondition#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#name InfraAlertCondition#name}
 
 ---
 
@@ -12454,7 +12454,7 @@ public readonly policyId: number;
 
 The ID of the alert policy where this condition should be used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#policy_id InfraAlertCondition#policy_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#policy_id InfraAlertCondition#policy_id}
 
 ---
 
@@ -12468,7 +12468,7 @@ public readonly type: string;
 
 The type of Infrastructure alert condition. Valid values are infra_process_running, infra_metric, and infra_host_not_reporting.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#type InfraAlertCondition#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#type InfraAlertCondition#type}
 
 ---
 
@@ -12482,7 +12482,7 @@ public readonly comparison: string;
 
 The operator used to evaluate the threshold value.
 
-Valid values are above, below, and equal. Supported by the infra_metric and infra_process_running condition types.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#comparison InfraAlertCondition#comparison}
+Valid values are above, below, and equal. Supported by the infra_metric and infra_process_running condition types.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#comparison InfraAlertCondition#comparison}
 
 ---
 
@@ -12496,7 +12496,7 @@ public readonly critical: InfraAlertConditionCritical;
 
 critical block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#critical InfraAlertCondition#critical}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#critical InfraAlertCondition#critical}
 
 ---
 
@@ -12510,7 +12510,7 @@ public readonly description: string;
 
 The description of the Infrastructure alert condition.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#description InfraAlertCondition#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#description InfraAlertCondition#description}
 
 ---
 
@@ -12524,7 +12524,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether the condition is turned on or off. Valid values are true and false. Defaults to true.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#enabled InfraAlertCondition#enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#enabled InfraAlertCondition#enabled}
 
 ---
 
@@ -12538,7 +12538,7 @@ public readonly event: string;
 
 The metric event; for example, SystemSample or StorageSample. Supported by the infra_metric condition type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#event InfraAlertCondition#event}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#event InfraAlertCondition#event}
 
 ---
 
@@ -12552,7 +12552,7 @@ public readonly integrationProvider: string;
 
 For alerts on integrations, use this instead of event. Supported by the infra_metric condition type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#integration_provider InfraAlertCondition#integration_provider}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#integration_provider InfraAlertCondition#integration_provider}
 
 ---
 
@@ -12566,7 +12566,7 @@ public readonly processWhere: string;
 
 Any filters applied to processes; for example: commandName = 'java'. Supported by the infra_process_running condition type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#process_where InfraAlertCondition#process_where}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#process_where InfraAlertCondition#process_where}
 
 ---
 
@@ -12580,7 +12580,7 @@ public readonly runbookUrl: string;
 
 Runbook URL to display in notifications.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#runbook_url InfraAlertCondition#runbook_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#runbook_url InfraAlertCondition#runbook_url}
 
 ---
 
@@ -12594,7 +12594,7 @@ public readonly select: string;
 
 The attribute name to identify the metric being targeted;
 
-for example, cpuPercent, diskFreePercent, or memoryResidentSizeBytes. The underlying API will automatically populate this value for Infrastructure integrations (for example diskFreePercent), so make sure to explicitly include this value to avoid diff issues. Supported by the infra_metric condition type.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#select InfraAlertCondition#select}
+for example, cpuPercent, diskFreePercent, or memoryResidentSizeBytes. The underlying API will automatically populate this value for Infrastructure integrations (for example diskFreePercent), so make sure to explicitly include this value to avoid diff issues. Supported by the infra_metric condition type.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#select InfraAlertCondition#select}
 
 ---
 
@@ -12608,7 +12608,7 @@ public readonly violationCloseTimer: number;
 
 Determines how much time, in hours, will pass before a violation is automatically closed.
 
-Valid values are 1, 2, 4, 8, 12, 24, 48, or 72  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#violation_close_timer InfraAlertCondition#violation_close_timer}
+Valid values are 1, 2, 4, 8, 12, 24, 48, or 72  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#violation_close_timer InfraAlertCondition#violation_close_timer}
 
 ---
 
@@ -12622,7 +12622,7 @@ public readonly warning: InfraAlertConditionWarning;
 
 warning block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#warning InfraAlertCondition#warning}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#warning InfraAlertCondition#warning}
 
 ---
 
@@ -12636,7 +12636,7 @@ public readonly where: string;
 
 If applicable, this identifies any Infrastructure host filters used; for example: hostname LIKE '%cassandra%'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#where InfraAlertCondition#where}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#where InfraAlertCondition#where}
 
 ---
 
@@ -12654,9 +12654,9 @@ const infraAlertConditionCritical: InfraAlertConditionCritical = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`duration`](#cdktfprovidernewrelicinfraalertconditioncriticalpropertyduration)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#duration InfraAlertCondition#duration}. |
-| [`timeFunction`](#cdktfprovidernewrelicinfraalertconditioncriticalpropertytimefunction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#time_function InfraAlertCondition#time_function}. |
-| [`value`](#cdktfprovidernewrelicinfraalertconditioncriticalpropertyvalue) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#value InfraAlertCondition#value}. |
+| [`duration`](#cdktfprovidernewrelicinfraalertconditioncriticalpropertyduration)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#duration InfraAlertCondition#duration}. |
+| [`timeFunction`](#cdktfprovidernewrelicinfraalertconditioncriticalpropertytimefunction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#time_function InfraAlertCondition#time_function}. |
+| [`value`](#cdktfprovidernewrelicinfraalertconditioncriticalpropertyvalue) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#value InfraAlertCondition#value}. |
 
 ---
 
@@ -12668,7 +12668,7 @@ public readonly duration: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#duration InfraAlertCondition#duration}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#duration InfraAlertCondition#duration}.
 
 ---
 
@@ -12680,7 +12680,7 @@ public readonly timeFunction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#time_function InfraAlertCondition#time_function}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#time_function InfraAlertCondition#time_function}.
 
 ---
 
@@ -12692,7 +12692,7 @@ public readonly value: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#value InfraAlertCondition#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#value InfraAlertCondition#value}.
 
 ---
 
@@ -12710,9 +12710,9 @@ const infraAlertConditionWarning: InfraAlertConditionWarning = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`duration`](#cdktfprovidernewrelicinfraalertconditionwarningpropertyduration)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#duration InfraAlertCondition#duration}. |
-| [`timeFunction`](#cdktfprovidernewrelicinfraalertconditionwarningpropertytimefunction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#time_function InfraAlertCondition#time_function}. |
-| [`value`](#cdktfprovidernewrelicinfraalertconditionwarningpropertyvalue) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#value InfraAlertCondition#value}. |
+| [`duration`](#cdktfprovidernewrelicinfraalertconditionwarningpropertyduration)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#duration InfraAlertCondition#duration}. |
+| [`timeFunction`](#cdktfprovidernewrelicinfraalertconditionwarningpropertytimefunction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#time_function InfraAlertCondition#time_function}. |
+| [`value`](#cdktfprovidernewrelicinfraalertconditionwarningpropertyvalue) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#value InfraAlertCondition#value}. |
 
 ---
 
@@ -12724,7 +12724,7 @@ public readonly duration: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#duration InfraAlertCondition#duration}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#duration InfraAlertCondition#duration}.
 
 ---
 
@@ -12736,7 +12736,7 @@ public readonly timeFunction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#time_function InfraAlertCondition#time_function}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#time_function InfraAlertCondition#time_function}.
 
 ---
 
@@ -12748,7 +12748,7 @@ public readonly value: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition.html#value InfraAlertCondition#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#value InfraAlertCondition#value}.
 
 ---
 
@@ -12824,7 +12824,7 @@ public readonly event: InsightsEventEvent[];
 
 event block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html#event InsightsEvent#event}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#event InsightsEvent#event}
 
 ---
 
@@ -12858,7 +12858,7 @@ public readonly attribute: InsightsEventEventAttribute[];
 
 attribute block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html#attribute InsightsEvent#attribute}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#attribute InsightsEvent#attribute}
 
 ---
 
@@ -12872,7 +12872,7 @@ public readonly type: string;
 
 The event's name. Can be a combination of alphanumeric characters, underscores, and colons.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html#type InsightsEvent#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#type InsightsEvent#type}
 
 ---
 
@@ -12886,7 +12886,7 @@ public readonly timestamp: number;
 
 Must be a Unix epoch timestamp. You can define timestamps either in seconds or in milliseconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html#timestamp InsightsEvent#timestamp}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#timestamp InsightsEvent#timestamp}
 
 ---
 
@@ -12920,7 +12920,7 @@ public readonly key: string;
 
 The name of the attribute.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html#key InsightsEvent#key}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#key InsightsEvent#key}
 
 ---
 
@@ -12934,7 +12934,7 @@ public readonly value: string;
 
 The value of the attribute.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html#value InsightsEvent#value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#value InsightsEvent#value}
 
 ---
 
@@ -12948,7 +12948,7 @@ public readonly type: string;
 
 Specify the type for the attribute value.
 
-This is useful when passing integer or float values to Insights. Allowed values are string, int, or float. Defaults to string.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event.html#type InsightsEvent#type}
+This is useful when passing integer or float values to Insights. Allowed values are string, int, or float. Defaults to string.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#type InsightsEvent#type}
 
 ---
 
@@ -13253,7 +13253,7 @@ public readonly name: string;
 
 The title of the condition.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#name NrqlAlertCondition#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#name NrqlAlertCondition#name}
 
 ---
 
@@ -13267,7 +13267,7 @@ public readonly nrql: NrqlAlertConditionNrql;
 
 nrql block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#nrql NrqlAlertCondition#nrql}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#nrql NrqlAlertCondition#nrql}
 
 ---
 
@@ -13281,7 +13281,7 @@ public readonly policyId: number;
 
 The ID of the policy where this condition should be used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#policy_id NrqlAlertCondition#policy_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#policy_id NrqlAlertCondition#policy_id}
 
 ---
 
@@ -13295,7 +13295,7 @@ public readonly accountId: number;
 
 The New Relic account ID for managing your NRQL alert conditions.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#account_id NrqlAlertCondition#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#account_id NrqlAlertCondition#account_id}
 
 ---
 
@@ -13309,7 +13309,7 @@ public readonly aggregationDelay: number;
 
 How long we wait for data that belongs in each aggregation window.
 
-Depending on your data, a longer delay may increase accuracy but delay notifications. Use aggregationDelay with the EVENT_FLOW and CADENCE aggregation methods.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#aggregation_delay NrqlAlertCondition#aggregation_delay}
+Depending on your data, a longer delay may increase accuracy but delay notifications. Use aggregationDelay with the EVENT_FLOW and CADENCE aggregation methods.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#aggregation_delay NrqlAlertCondition#aggregation_delay}
 
 ---
 
@@ -13323,7 +13323,7 @@ public readonly aggregationMethod: string;
 
 The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for violations.
 
-Default is CADENCE.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#aggregation_method NrqlAlertCondition#aggregation_method}
+Default is CADENCE.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#aggregation_method NrqlAlertCondition#aggregation_method}
 
 ---
 
@@ -13337,7 +13337,7 @@ public readonly aggregationTimer: number;
 
 How long we wait after each data point arrives to make sure we've processed the whole batch.
 
-Use aggregationTimer with the EVENT_TIMER aggregation method.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#aggregation_timer NrqlAlertCondition#aggregation_timer}
+Use aggregationTimer with the EVENT_TIMER aggregation method.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#aggregation_timer NrqlAlertCondition#aggregation_timer}
 
 ---
 
@@ -13351,7 +13351,7 @@ public readonly aggregationWindow: number;
 
 The duration of the time window used to evaluate the NRQL query, in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#aggregation_window NrqlAlertCondition#aggregation_window}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#aggregation_window NrqlAlertCondition#aggregation_window}
 
 ---
 
@@ -13365,7 +13365,7 @@ public readonly baselineDirection: string;
 
 The baseline direction of a baseline NRQL alert condition. Valid values are: 'LOWER_ONLY', 'UPPER_AND_LOWER', 'UPPER_ONLY' (case insensitive).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#baseline_direction NrqlAlertCondition#baseline_direction}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#baseline_direction NrqlAlertCondition#baseline_direction}
 
 ---
 
@@ -13379,7 +13379,7 @@ public readonly closeViolationsOnExpiration: boolean | IResolvable;
 
 Whether to close all open violations when the signal expires.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#close_violations_on_expiration NrqlAlertCondition#close_violations_on_expiration}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#close_violations_on_expiration NrqlAlertCondition#close_violations_on_expiration}
 
 ---
 
@@ -13393,7 +13393,7 @@ public readonly critical: NrqlAlertConditionCritical;
 
 critical block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#critical NrqlAlertCondition#critical}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#critical NrqlAlertCondition#critical}
 
 ---
 
@@ -13407,7 +13407,7 @@ public readonly description: string;
 
 The description of the NRQL alert condition.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#description NrqlAlertCondition#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#description NrqlAlertCondition#description}
 
 ---
 
@@ -13421,7 +13421,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether or not to enable the alert condition.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#enabled NrqlAlertCondition#enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#enabled NrqlAlertCondition#enabled}
 
 ---
 
@@ -13435,7 +13435,7 @@ public readonly expectedGroups: number;
 
 Number of expected groups when using outlier detection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#expected_groups NrqlAlertCondition#expected_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#expected_groups NrqlAlertCondition#expected_groups}
 
 ---
 
@@ -13449,7 +13449,7 @@ public readonly expirationDuration: number;
 
 The amount of time (in seconds) to wait before considering the signal expired.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#expiration_duration NrqlAlertCondition#expiration_duration}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#expiration_duration NrqlAlertCondition#expiration_duration}
 
 ---
 
@@ -13463,7 +13463,7 @@ public readonly fillOption: string;
 
 Which strategy to use when filling gaps in the signal.
 
-If static, the 'fill value' will be used for filling gaps in the signal. Valid values are: 'NONE', 'LAST_VALUE', or 'STATIC' (case insensitive).  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#fill_option NrqlAlertCondition#fill_option}
+If static, the 'fill value' will be used for filling gaps in the signal. Valid values are: 'NONE', 'LAST_VALUE', or 'STATIC' (case insensitive).  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#fill_option NrqlAlertCondition#fill_option}
 
 ---
 
@@ -13477,7 +13477,7 @@ public readonly fillValue: number;
 
 If using the 'static' fill option, this value will be used for filling gaps in the signal.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#fill_value NrqlAlertCondition#fill_value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#fill_value NrqlAlertCondition#fill_value}
 
 ---
 
@@ -13491,7 +13491,7 @@ public readonly ignoreOverlap: boolean | IResolvable;
 
 Whether to look for a convergence of groups when using outlier detection.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#ignore_overlap NrqlAlertCondition#ignore_overlap}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#ignore_overlap NrqlAlertCondition#ignore_overlap}
 
 ---
 
@@ -13505,7 +13505,7 @@ public readonly openViolationOnExpiration: boolean | IResolvable;
 
 Whether to create a new violation to capture that the signal expired.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#open_violation_on_expiration NrqlAlertCondition#open_violation_on_expiration}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#open_violation_on_expiration NrqlAlertCondition#open_violation_on_expiration}
 
 ---
 
@@ -13519,7 +13519,7 @@ public readonly openViolationOnGroupOverlap: boolean | IResolvable;
 
 Whether overlapping groups should produce a violation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#open_violation_on_group_overlap NrqlAlertCondition#open_violation_on_group_overlap}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#open_violation_on_group_overlap NrqlAlertCondition#open_violation_on_group_overlap}
 
 ---
 
@@ -13533,7 +13533,7 @@ public readonly runbookUrl: string;
 
 Runbook URL to display in notifications.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#runbook_url NrqlAlertCondition#runbook_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#runbook_url NrqlAlertCondition#runbook_url}
 
 ---
 
@@ -13547,7 +13547,7 @@ public readonly term: NrqlAlertConditionTerm[];
 
 term block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#term NrqlAlertCondition#term}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#term NrqlAlertCondition#term}
 
 ---
 
@@ -13561,7 +13561,7 @@ public readonly type: string;
 
 The type of NRQL alert condition to create. Valid values are: 'static', 'baseline', 'outlier' (deprecated).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#type NrqlAlertCondition#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#type NrqlAlertCondition#type}
 
 ---
 
@@ -13575,7 +13575,7 @@ public readonly valueFunction: string;
 
 Valid values are: 'single_value' or 'sum'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#value_function NrqlAlertCondition#value_function}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#value_function NrqlAlertCondition#value_function}
 
 ---
 
@@ -13589,7 +13589,7 @@ public readonly violationTimeLimit: string;
 
 Sets a time limit, in hours, that will automatically force-close a long-lasting violation after the time limit you select.
 
-Possible values are 'ONE_HOUR', 'TWO_HOURS', 'FOUR_HOURS', 'EIGHT_HOURS', 'TWELVE_HOURS', 'TWENTY_FOUR_HOURS', 'THIRTY_DAYS' (case insensitive).  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#violation_time_limit NrqlAlertCondition#violation_time_limit}
+Possible values are 'ONE_HOUR', 'TWO_HOURS', 'FOUR_HOURS', 'EIGHT_HOURS', 'TWELVE_HOURS', 'TWENTY_FOUR_HOURS', 'THIRTY_DAYS' (case insensitive).  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#violation_time_limit NrqlAlertCondition#violation_time_limit}
 
 ---
 
@@ -13603,7 +13603,7 @@ public readonly violationTimeLimitSeconds: number;
 
 Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you select.
 
-Must be in the range of 300 to 2592000 (inclusive)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#violation_time_limit_seconds NrqlAlertCondition#violation_time_limit_seconds}
+Must be in the range of 300 to 2592000 (inclusive)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#violation_time_limit_seconds NrqlAlertCondition#violation_time_limit_seconds}
 
 ---
 
@@ -13617,7 +13617,7 @@ public readonly warning: NrqlAlertConditionWarning;
 
 warning block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#warning NrqlAlertCondition#warning}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#warning NrqlAlertCondition#warning}
 
 ---
 
@@ -13654,7 +13654,7 @@ public readonly threshold: number;
 
 Must be 0 or greater. For baseline conditions must be in range [1, 1000].
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold NrqlAlertCondition#threshold}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
 
 ---
 
@@ -13668,7 +13668,7 @@ public readonly duration: number;
 
 In minutes, must be in the range of 1 to 120 (inclusive).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#duration NrqlAlertCondition#duration}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#duration NrqlAlertCondition#duration}
 
 ---
 
@@ -13682,7 +13682,7 @@ public readonly operator: string;
 
 One of (above, below, equals). Defaults to 'equals'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#operator NrqlAlertCondition#operator}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#operator NrqlAlertCondition#operator}
 
 ---
 
@@ -13696,7 +13696,7 @@ public readonly thresholdDuration: number;
 
 The duration, in seconds, that the threshold must violate in order to create a violation.
 
-Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline and outlier conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_duration NrqlAlertCondition#threshold_duration}
+Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline and outlier conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
 
 ---
 
@@ -13710,7 +13710,7 @@ public readonly thresholdOccurrences: string;
 
 The criteria for how many data points must be in violation for the specified threshold duration.
 
-Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
+Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
 
 ---
 
@@ -13724,7 +13724,7 @@ public readonly timeFunction: string;
 
 Valid values are: 'all' or 'any'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#time_function NrqlAlertCondition#time_function}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
 
 ---
 
@@ -13742,7 +13742,7 @@ const nrqlAlertConditionNrql: NrqlAlertConditionNrql = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`query`](#cdktfprovidernewrelicnrqlalertconditionnrqlpropertyquery)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#query NrqlAlertCondition#query}. |
+| [`query`](#cdktfprovidernewrelicnrqlalertconditionnrqlpropertyquery)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#query NrqlAlertCondition#query}. |
 | [`evaluationOffset`](#cdktfprovidernewrelicnrqlalertconditionnrqlpropertyevaluationoffset) | `number` | NRQL queries are evaluated in one-minute time windows. |
 | [`sinceValue`](#cdktfprovidernewrelicnrqlalertconditionnrqlpropertysincevalue) | `string` | NRQL queries are evaluated in one-minute time windows. |
 
@@ -13756,7 +13756,7 @@ public readonly query: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#query NrqlAlertCondition#query}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#query NrqlAlertCondition#query}.
 
 ---
 
@@ -13770,7 +13770,7 @@ public readonly evaluationOffset: number;
 
 NRQL queries are evaluated in one-minute time windows.
 
-The start time depends on the value you provide in the NRQL condition's `evaluation_offset`.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#evaluation_offset NrqlAlertCondition#evaluation_offset}
+The start time depends on the value you provide in the NRQL condition's `evaluation_offset`.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#evaluation_offset NrqlAlertCondition#evaluation_offset}
 
 ---
 
@@ -13784,7 +13784,7 @@ public readonly sinceValue: string;
 
 NRQL queries are evaluated in one-minute time windows.
 
-The start time depends on the value you provide in the NRQL condition's `since_value`.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#since_value NrqlAlertCondition#since_value}
+The start time depends on the value you provide in the NRQL condition's `since_value`.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#since_value NrqlAlertCondition#since_value}
 
 ---
 
@@ -13822,7 +13822,7 @@ public readonly threshold: number;
 
 Must be 0 or greater. For baseline conditions must be in range [1, 1000].
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold NrqlAlertCondition#threshold}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
 
 ---
 
@@ -13836,7 +13836,7 @@ public readonly duration: number;
 
 In minutes, must be in the range of 1 to 120 (inclusive).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#duration NrqlAlertCondition#duration}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#duration NrqlAlertCondition#duration}
 
 ---
 
@@ -13850,7 +13850,7 @@ public readonly operator: string;
 
 One of (above, below, equals). Defaults to 'equals'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#operator NrqlAlertCondition#operator}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#operator NrqlAlertCondition#operator}
 
 ---
 
@@ -13864,7 +13864,7 @@ public readonly priority: string;
 
 One of (critical, warning). Defaults to 'critical'. At least one condition term must have priority set to 'critical'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#priority NrqlAlertCondition#priority}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#priority NrqlAlertCondition#priority}
 
 ---
 
@@ -13878,7 +13878,7 @@ public readonly thresholdDuration: number;
 
 The duration, in seconds, that the threshold must violate in order to create a violation.
 
-Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline and outlier conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_duration NrqlAlertCondition#threshold_duration}
+Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline and outlier conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
 
 ---
 
@@ -13892,7 +13892,7 @@ public readonly thresholdOccurrences: string;
 
 The criteria for how many data points must be in violation for the specified threshold duration.
 
-Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
+Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
 
 ---
 
@@ -13906,7 +13906,7 @@ public readonly timeFunction: string;
 
 Valid values are: 'all' or 'any'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#time_function NrqlAlertCondition#time_function}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
 
 ---
 
@@ -13943,7 +13943,7 @@ public readonly threshold: number;
 
 Must be 0 or greater. For baseline conditions must be in range [1, 1000].
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold NrqlAlertCondition#threshold}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
 
 ---
 
@@ -13957,7 +13957,7 @@ public readonly duration: number;
 
 In minutes, must be in the range of 1 to 120 (inclusive).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#duration NrqlAlertCondition#duration}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#duration NrqlAlertCondition#duration}
 
 ---
 
@@ -13971,7 +13971,7 @@ public readonly operator: string;
 
 One of (above, below, equals). Defaults to 'equals'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#operator NrqlAlertCondition#operator}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#operator NrqlAlertCondition#operator}
 
 ---
 
@@ -13985,7 +13985,7 @@ public readonly thresholdDuration: number;
 
 The duration, in seconds, that the threshold must violate in order to create a violation.
 
-Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline and outlier conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_duration NrqlAlertCondition#threshold_duration}
+Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline and outlier conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
 
 ---
 
@@ -13999,7 +13999,7 @@ public readonly thresholdOccurrences: string;
 
 The criteria for how many data points must be in violation for the specified threshold duration.
 
-Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
+Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
 
 ---
 
@@ -14013,7 +14013,7 @@ public readonly timeFunction: string;
 
 Valid values are: 'all' or 'any'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition.html#time_function NrqlAlertCondition#time_function}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
 
 ---
 
@@ -14092,7 +14092,7 @@ public readonly action: string;
 
 The drop rule action (drop_data, drop_attributes, or drop_attributes_from_metric_aggregates).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule.html#action NrqlDropRule#action}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule#action NrqlDropRule#action}
 
 ---
 
@@ -14106,7 +14106,7 @@ public readonly nrql: string;
 
 Explains which data to apply the drop rule to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule.html#nrql NrqlDropRule#nrql}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule#nrql NrqlDropRule#nrql}
 
 ---
 
@@ -14120,7 +14120,7 @@ public readonly accountId: number;
 
 Account with the NRQL drop rule will be put.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule.html#account_id NrqlDropRule#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule#account_id NrqlDropRule#account_id}
 
 ---
 
@@ -14134,7 +14134,7 @@ public readonly description: string;
 
 Provides additional information about the rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule.html#description NrqlDropRule#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule#description NrqlDropRule#description}
 
 ---
 
@@ -14214,7 +14214,7 @@ public readonly name: string;
 
 The dashboard's name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#name OneDashboard#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -14228,7 +14228,7 @@ public readonly page: OneDashboardPage[];
 
 page block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#page OneDashboard#page}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#page OneDashboard#page}
 
 ---
 
@@ -14242,7 +14242,7 @@ public readonly accountId: number;
 
 The New Relic account ID where you want to create the dashboard.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -14256,7 +14256,7 @@ public readonly description: string;
 
 The dashboard's description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#description OneDashboard#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#description OneDashboard#description}
 
 ---
 
@@ -14270,7 +14270,7 @@ public readonly permissions: string;
 
 Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#permissions OneDashboard#permissions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#permissions OneDashboard#permissions}
 
 ---
 
@@ -14316,7 +14316,7 @@ public readonly name: string;
 
 The dashboard page's name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#name OneDashboard#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -14330,7 +14330,7 @@ public readonly description: string;
 
 The dashboard page's description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#description OneDashboard#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#description OneDashboard#description}
 
 ---
 
@@ -14344,7 +14344,7 @@ public readonly widgetArea: OneDashboardPageWidgetArea[];
 
 widget_area block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#widget_area OneDashboard#widget_area}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_area OneDashboard#widget_area}
 
 ---
 
@@ -14358,7 +14358,7 @@ public readonly widgetBar: OneDashboardPageWidgetBar[];
 
 widget_bar block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#widget_bar OneDashboard#widget_bar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_bar OneDashboard#widget_bar}
 
 ---
 
@@ -14372,7 +14372,7 @@ public readonly widgetBillboard: OneDashboardPageWidgetBillboard[];
 
 widget_billboard block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#widget_billboard OneDashboard#widget_billboard}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_billboard OneDashboard#widget_billboard}
 
 ---
 
@@ -14386,7 +14386,7 @@ public readonly widgetBullet: OneDashboardPageWidgetBullet[];
 
 widget_bullet block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#widget_bullet OneDashboard#widget_bullet}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_bullet OneDashboard#widget_bullet}
 
 ---
 
@@ -14400,7 +14400,7 @@ public readonly widgetFunnel: OneDashboardPageWidgetFunnel[];
 
 widget_funnel block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#widget_funnel OneDashboard#widget_funnel}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_funnel OneDashboard#widget_funnel}
 
 ---
 
@@ -14414,7 +14414,7 @@ public readonly widgetHeatmap: OneDashboardPageWidgetHeatmap[];
 
 widget_heatmap block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#widget_heatmap OneDashboard#widget_heatmap}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_heatmap OneDashboard#widget_heatmap}
 
 ---
 
@@ -14428,7 +14428,7 @@ public readonly widgetHistogram: OneDashboardPageWidgetHistogram[];
 
 widget_histogram block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#widget_histogram OneDashboard#widget_histogram}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_histogram OneDashboard#widget_histogram}
 
 ---
 
@@ -14442,7 +14442,7 @@ public readonly widgetJson: OneDashboardPageWidgetJson[];
 
 widget_json block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#widget_json OneDashboard#widget_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_json OneDashboard#widget_json}
 
 ---
 
@@ -14456,7 +14456,7 @@ public readonly widgetLine: OneDashboardPageWidgetLine[];
 
 widget_line block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#widget_line OneDashboard#widget_line}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_line OneDashboard#widget_line}
 
 ---
 
@@ -14470,7 +14470,7 @@ public readonly widgetMarkdown: OneDashboardPageWidgetMarkdown[];
 
 widget_markdown block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#widget_markdown OneDashboard#widget_markdown}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_markdown OneDashboard#widget_markdown}
 
 ---
 
@@ -14484,7 +14484,7 @@ public readonly widgetPie: OneDashboardPageWidgetPie[];
 
 widget_pie block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#widget_pie OneDashboard#widget_pie}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_pie OneDashboard#widget_pie}
 
 ---
 
@@ -14498,7 +14498,7 @@ public readonly widgetStackedBar: OneDashboardPageWidgetStackedBar[];
 
 widget_stacked_bar block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#widget_stacked_bar OneDashboard#widget_stacked_bar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_stacked_bar OneDashboard#widget_stacked_bar}
 
 ---
 
@@ -14512,7 +14512,7 @@ public readonly widgetTable: OneDashboardPageWidgetTable[];
 
 widget_table block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#widget_table OneDashboard#widget_table}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_table OneDashboard#widget_table}
 
 ---
 
@@ -14530,12 +14530,12 @@ const oneDashboardPageWidgetArea: OneDashboardPageWidgetArea = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`column`](#cdktfprovidernewreliconedashboardpagewidgetareapropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}. |
+| [`column`](#cdktfprovidernewreliconedashboardpagewidgetareapropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetareapropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetAreaNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetAreaNrqlQuery)[] | nrql_query block. |
-| [`row`](#cdktfprovidernewreliconedashboardpagewidgetareapropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}. |
+| [`row`](#cdktfprovidernewreliconedashboardpagewidgetareapropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetareapropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
-| [`height`](#cdktfprovidernewreliconedashboardpagewidgetareapropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}. |
-| [`width`](#cdktfprovidernewreliconedashboardpagewidgetareapropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}. |
+| [`height`](#cdktfprovidernewreliconedashboardpagewidgetareapropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`width`](#cdktfprovidernewreliconedashboardpagewidgetareapropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
 
@@ -14547,7 +14547,7 @@ public readonly column: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -14561,7 +14561,7 @@ public readonly nrqlQuery: OneDashboardPageWidgetAreaNrqlQuery[];
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -14573,7 +14573,7 @@ public readonly row: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -14587,7 +14587,7 @@ public readonly title: string;
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -14599,7 +14599,7 @@ public readonly height: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -14611,7 +14611,7 @@ public readonly width: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -14644,7 +14644,7 @@ public readonly query: string;
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -14658,7 +14658,7 @@ public readonly accountId: number;
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -14676,14 +14676,14 @@ const oneDashboardPageWidgetBar: OneDashboardPageWidgetBar = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`column`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}. |
+| [`column`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetBarNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBarNrqlQuery)[] | nrql_query block. |
-| [`row`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}. |
+| [`row`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`filterCurrentDashboard`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertyfiltercurrentdashboard) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Use this item to filter the current dashboard. |
-| [`height`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}. |
+| [`height`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
 | [`linkedEntityGuids`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertylinkedentityguids) | `string`[] | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
-| [`width`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}. |
+| [`width`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
 
@@ -14695,7 +14695,7 @@ public readonly column: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -14709,7 +14709,7 @@ public readonly nrqlQuery: OneDashboardPageWidgetBarNrqlQuery[];
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -14721,7 +14721,7 @@ public readonly row: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -14735,7 +14735,7 @@ public readonly title: string;
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -14749,7 +14749,7 @@ public readonly filterCurrentDashboard: boolean | IResolvable;
 
 Use this item to filter the current dashboard.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#filter_current_dashboard OneDashboard#filter_current_dashboard}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
 
 ---
 
@@ -14761,7 +14761,7 @@ public readonly height: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -14775,7 +14775,7 @@ public readonly linkedEntityGuids: string[];
 
 Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#linked_entity_guids OneDashboard#linked_entity_guids}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
 
 ---
 
@@ -14787,7 +14787,7 @@ public readonly width: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -14820,7 +14820,7 @@ public readonly query: string;
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -14834,7 +14834,7 @@ public readonly accountId: number;
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -14852,14 +14852,14 @@ const oneDashboardPageWidgetBillboard: OneDashboardPageWidgetBillboard = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`column`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}. |
+| [`column`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardNrqlQuery)[] | nrql_query block. |
-| [`row`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}. |
+| [`row`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`critical`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertycritical) | `number` | The critical threshold value. |
-| [`height`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}. |
+| [`height`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
 | [`warning`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertywarning) | `number` | The warning threshold value. |
-| [`width`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}. |
+| [`width`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
 
@@ -14871,7 +14871,7 @@ public readonly column: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -14885,7 +14885,7 @@ public readonly nrqlQuery: OneDashboardPageWidgetBillboardNrqlQuery[];
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -14897,7 +14897,7 @@ public readonly row: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -14911,7 +14911,7 @@ public readonly title: string;
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -14925,7 +14925,7 @@ public readonly critical: number;
 
 The critical threshold value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#critical OneDashboard#critical}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#critical OneDashboard#critical}
 
 ---
 
@@ -14937,7 +14937,7 @@ public readonly height: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -14951,7 +14951,7 @@ public readonly warning: number;
 
 The warning threshold value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#warning OneDashboard#warning}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#warning OneDashboard#warning}
 
 ---
 
@@ -14963,7 +14963,7 @@ public readonly width: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -14996,7 +14996,7 @@ public readonly query: string;
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -15010,7 +15010,7 @@ public readonly accountId: number;
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -15028,13 +15028,13 @@ const oneDashboardPageWidgetBullet: OneDashboardPageWidgetBullet = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`column`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}. |
+| [`column`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetBulletNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBulletNrqlQuery)[] | nrql_query block. |
-| [`row`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}. |
+| [`row`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
-| [`height`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}. |
+| [`height`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
 | [`limit`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertylimit) | `number` | The maximum value for the visualization. |
-| [`width`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}. |
+| [`width`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
 
@@ -15046,7 +15046,7 @@ public readonly column: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -15060,7 +15060,7 @@ public readonly nrqlQuery: OneDashboardPageWidgetBulletNrqlQuery[];
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -15072,7 +15072,7 @@ public readonly row: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -15086,7 +15086,7 @@ public readonly title: string;
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -15098,7 +15098,7 @@ public readonly height: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -15112,7 +15112,7 @@ public readonly limit: number;
 
 The maximum value for the visualization.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#limit OneDashboard#limit}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#limit OneDashboard#limit}
 
 ---
 
@@ -15124,7 +15124,7 @@ public readonly width: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -15157,7 +15157,7 @@ public readonly query: string;
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -15171,7 +15171,7 @@ public readonly accountId: number;
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -15189,12 +15189,12 @@ const oneDashboardPageWidgetFunnel: OneDashboardPageWidgetFunnel = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`column`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}. |
+| [`column`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelNrqlQuery)[] | nrql_query block. |
-| [`row`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}. |
+| [`row`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
-| [`height`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}. |
-| [`width`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}. |
+| [`height`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`width`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
 
@@ -15206,7 +15206,7 @@ public readonly column: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -15220,7 +15220,7 @@ public readonly nrqlQuery: OneDashboardPageWidgetFunnelNrqlQuery[];
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -15232,7 +15232,7 @@ public readonly row: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -15246,7 +15246,7 @@ public readonly title: string;
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -15258,7 +15258,7 @@ public readonly height: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -15270,7 +15270,7 @@ public readonly width: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -15303,7 +15303,7 @@ public readonly query: string;
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -15317,7 +15317,7 @@ public readonly accountId: number;
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -15335,12 +15335,12 @@ const oneDashboardPageWidgetHeatmap: OneDashboardPageWidgetHeatmap = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`column`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}. |
+| [`column`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapNrqlQuery)[] | nrql_query block. |
-| [`row`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}. |
+| [`row`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
-| [`height`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}. |
-| [`width`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}. |
+| [`height`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`width`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
 
@@ -15352,7 +15352,7 @@ public readonly column: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -15366,7 +15366,7 @@ public readonly nrqlQuery: OneDashboardPageWidgetHeatmapNrqlQuery[];
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -15378,7 +15378,7 @@ public readonly row: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -15392,7 +15392,7 @@ public readonly title: string;
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -15404,7 +15404,7 @@ public readonly height: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -15416,7 +15416,7 @@ public readonly width: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -15449,7 +15449,7 @@ public readonly query: string;
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -15463,7 +15463,7 @@ public readonly accountId: number;
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -15481,12 +15481,12 @@ const oneDashboardPageWidgetHistogram: OneDashboardPageWidgetHistogram = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`column`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}. |
+| [`column`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramNrqlQuery)[] | nrql_query block. |
-| [`row`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}. |
+| [`row`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
-| [`height`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}. |
-| [`width`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}. |
+| [`height`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`width`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
 
@@ -15498,7 +15498,7 @@ public readonly column: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -15512,7 +15512,7 @@ public readonly nrqlQuery: OneDashboardPageWidgetHistogramNrqlQuery[];
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -15524,7 +15524,7 @@ public readonly row: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -15538,7 +15538,7 @@ public readonly title: string;
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -15550,7 +15550,7 @@ public readonly height: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -15562,7 +15562,7 @@ public readonly width: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -15595,7 +15595,7 @@ public readonly query: string;
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -15609,7 +15609,7 @@ public readonly accountId: number;
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -15627,12 +15627,12 @@ const oneDashboardPageWidgetJson: OneDashboardPageWidgetJson = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`column`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}. |
+| [`column`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetJsonNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetJsonNrqlQuery)[] | nrql_query block. |
-| [`row`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}. |
+| [`row`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
-| [`height`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}. |
-| [`width`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}. |
+| [`height`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`width`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
 
@@ -15644,7 +15644,7 @@ public readonly column: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -15658,7 +15658,7 @@ public readonly nrqlQuery: OneDashboardPageWidgetJsonNrqlQuery[];
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -15670,7 +15670,7 @@ public readonly row: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -15684,7 +15684,7 @@ public readonly title: string;
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -15696,7 +15696,7 @@ public readonly height: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -15708,7 +15708,7 @@ public readonly width: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -15741,7 +15741,7 @@ public readonly query: string;
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -15755,7 +15755,7 @@ public readonly accountId: number;
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -15773,12 +15773,12 @@ const oneDashboardPageWidgetLine: OneDashboardPageWidgetLine = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`column`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}. |
+| [`column`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLineNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLineNrqlQuery)[] | nrql_query block. |
-| [`row`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}. |
+| [`row`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
-| [`height`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}. |
-| [`width`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}. |
+| [`height`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`width`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
 
@@ -15790,7 +15790,7 @@ public readonly column: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -15804,7 +15804,7 @@ public readonly nrqlQuery: OneDashboardPageWidgetLineNrqlQuery[];
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -15816,7 +15816,7 @@ public readonly row: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -15830,7 +15830,7 @@ public readonly title: string;
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -15842,7 +15842,7 @@ public readonly height: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -15854,7 +15854,7 @@ public readonly width: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -15887,7 +15887,7 @@ public readonly query: string;
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -15901,7 +15901,7 @@ public readonly accountId: number;
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -15919,12 +15919,12 @@ const oneDashboardPageWidgetMarkdown: OneDashboardPageWidgetMarkdown = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`column`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}. |
-| [`row`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}. |
+| [`column`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
+| [`row`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
-| [`height`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}. |
-| [`text`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertytext) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#text OneDashboard#text}. |
-| [`width`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}. |
+| [`height`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`text`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertytext) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#text OneDashboard#text}. |
+| [`width`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
 
@@ -15936,7 +15936,7 @@ public readonly column: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -15948,7 +15948,7 @@ public readonly row: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -15962,7 +15962,7 @@ public readonly title: string;
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -15974,7 +15974,7 @@ public readonly height: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -15986,7 +15986,7 @@ public readonly text: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#text OneDashboard#text}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#text OneDashboard#text}.
 
 ---
 
@@ -15998,7 +15998,7 @@ public readonly width: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -16016,14 +16016,14 @@ const oneDashboardPageWidgetPie: OneDashboardPageWidgetPie = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`column`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}. |
+| [`column`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetPieNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetPieNrqlQuery)[] | nrql_query block. |
-| [`row`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}. |
+| [`row`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`filterCurrentDashboard`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertyfiltercurrentdashboard) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Use this item to filter the current dashboard. |
-| [`height`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}. |
+| [`height`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
 | [`linkedEntityGuids`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertylinkedentityguids) | `string`[] | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
-| [`width`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}. |
+| [`width`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
 
@@ -16035,7 +16035,7 @@ public readonly column: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -16049,7 +16049,7 @@ public readonly nrqlQuery: OneDashboardPageWidgetPieNrqlQuery[];
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -16061,7 +16061,7 @@ public readonly row: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -16075,7 +16075,7 @@ public readonly title: string;
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -16089,7 +16089,7 @@ public readonly filterCurrentDashboard: boolean | IResolvable;
 
 Use this item to filter the current dashboard.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#filter_current_dashboard OneDashboard#filter_current_dashboard}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
 
 ---
 
@@ -16101,7 +16101,7 @@ public readonly height: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -16115,7 +16115,7 @@ public readonly linkedEntityGuids: string[];
 
 Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#linked_entity_guids OneDashboard#linked_entity_guids}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
 
 ---
 
@@ -16127,7 +16127,7 @@ public readonly width: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -16160,7 +16160,7 @@ public readonly query: string;
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -16174,7 +16174,7 @@ public readonly accountId: number;
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -16192,12 +16192,12 @@ const oneDashboardPageWidgetStackedBar: OneDashboardPageWidgetStackedBar = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`column`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}. |
+| [`column`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarNrqlQuery)[] | nrql_query block. |
-| [`row`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}. |
+| [`row`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
-| [`height`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}. |
-| [`width`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}. |
+| [`height`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`width`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
 
@@ -16209,7 +16209,7 @@ public readonly column: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -16223,7 +16223,7 @@ public readonly nrqlQuery: OneDashboardPageWidgetStackedBarNrqlQuery[];
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -16235,7 +16235,7 @@ public readonly row: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -16249,7 +16249,7 @@ public readonly title: string;
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -16261,7 +16261,7 @@ public readonly height: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -16273,7 +16273,7 @@ public readonly width: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -16306,7 +16306,7 @@ public readonly query: string;
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -16320,7 +16320,7 @@ public readonly accountId: number;
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -16338,14 +16338,14 @@ const oneDashboardPageWidgetTable: OneDashboardPageWidgetTable = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`column`](#cdktfprovidernewreliconedashboardpagewidgettablepropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}. |
+| [`column`](#cdktfprovidernewreliconedashboardpagewidgettablepropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgettablepropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetTableNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetTableNrqlQuery)[] | nrql_query block. |
-| [`row`](#cdktfprovidernewreliconedashboardpagewidgettablepropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}. |
+| [`row`](#cdktfprovidernewreliconedashboardpagewidgettablepropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgettablepropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`filterCurrentDashboard`](#cdktfprovidernewreliconedashboardpagewidgettablepropertyfiltercurrentdashboard) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Use this item to filter the current dashboard. |
-| [`height`](#cdktfprovidernewreliconedashboardpagewidgettablepropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}. |
+| [`height`](#cdktfprovidernewreliconedashboardpagewidgettablepropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
 | [`linkedEntityGuids`](#cdktfprovidernewreliconedashboardpagewidgettablepropertylinkedentityguids) | `string`[] | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
-| [`width`](#cdktfprovidernewreliconedashboardpagewidgettablepropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}. |
+| [`width`](#cdktfprovidernewreliconedashboardpagewidgettablepropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
 
@@ -16357,7 +16357,7 @@ public readonly column: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -16371,7 +16371,7 @@ public readonly nrqlQuery: OneDashboardPageWidgetTableNrqlQuery[];
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -16383,7 +16383,7 @@ public readonly row: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -16397,7 +16397,7 @@ public readonly title: string;
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -16411,7 +16411,7 @@ public readonly filterCurrentDashboard: boolean | IResolvable;
 
 Use this item to filter the current dashboard.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#filter_current_dashboard OneDashboard#filter_current_dashboard}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
 
 ---
 
@@ -16423,7 +16423,7 @@ public readonly height: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -16437,7 +16437,7 @@ public readonly linkedEntityGuids: string[];
 
 Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#linked_entity_guids OneDashboard#linked_entity_guids}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
 
 ---
 
@@ -16449,7 +16449,7 @@ public readonly width: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -16482,7 +16482,7 @@ public readonly query: string;
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -16496,7 +16496,7 @@ public readonly accountId: number;
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard.html#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -16576,7 +16576,7 @@ public readonly name: string;
 
 The dashboard's name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#name OneDashboardRaw#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#name OneDashboardRaw#name}
 
 ---
 
@@ -16590,7 +16590,7 @@ public readonly page: OneDashboardRawPage[];
 
 page block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#page OneDashboardRaw#page}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#page OneDashboardRaw#page}
 
 ---
 
@@ -16604,7 +16604,7 @@ public readonly accountId: number;
 
 The New Relic account ID where you want to create the dashboard.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#account_id OneDashboardRaw#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#account_id OneDashboardRaw#account_id}
 
 ---
 
@@ -16618,7 +16618,7 @@ public readonly description: string;
 
 The dashboard's description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#description OneDashboardRaw#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#description OneDashboardRaw#description}
 
 ---
 
@@ -16632,7 +16632,7 @@ public readonly permissions: string;
 
 Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#permissions OneDashboardRaw#permissions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#permissions OneDashboardRaw#permissions}
 
 ---
 
@@ -16666,7 +16666,7 @@ public readonly name: string;
 
 The dashboard page's name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#name OneDashboardRaw#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#name OneDashboardRaw#name}
 
 ---
 
@@ -16680,7 +16680,7 @@ public readonly description: string;
 
 The dashboard page's description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#description OneDashboardRaw#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#description OneDashboardRaw#description}
 
 ---
 
@@ -16694,7 +16694,7 @@ public readonly widget: OneDashboardRawPageWidget[];
 
 widget block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#widget OneDashboardRaw#widget}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#widget OneDashboardRaw#widget}
 
 ---
 
@@ -16712,14 +16712,14 @@ const oneDashboardRawPageWidget: OneDashboardRawPageWidget = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`column`](#cdktfprovidernewreliconedashboardrawpagewidgetpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#column OneDashboardRaw#column}. |
+| [`column`](#cdktfprovidernewreliconedashboardrawpagewidgetpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#column OneDashboardRaw#column}. |
 | [`configuration`](#cdktfprovidernewreliconedashboardrawpagewidgetpropertyconfiguration)<span title="Required">*</span> | `string` | The configuration of the widget. |
-| [`row`](#cdktfprovidernewreliconedashboardrawpagewidgetpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#row OneDashboardRaw#row}. |
+| [`row`](#cdktfprovidernewreliconedashboardrawpagewidgetpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#row OneDashboardRaw#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardrawpagewidgetpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`visualizationId`](#cdktfprovidernewreliconedashboardrawpagewidgetpropertyvisualizationid)<span title="Required">*</span> | `string` | The visualization ID of the widget. |
-| [`height`](#cdktfprovidernewreliconedashboardrawpagewidgetpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#height OneDashboardRaw#height}. |
+| [`height`](#cdktfprovidernewreliconedashboardrawpagewidgetpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#height OneDashboardRaw#height}. |
 | [`linkedEntityGuids`](#cdktfprovidernewreliconedashboardrawpagewidgetpropertylinkedentityguids) | `string`[] | (Optional) Related entity GUIDs. Currently only supports Dashboard entity GUIDs. |
-| [`width`](#cdktfprovidernewreliconedashboardrawpagewidgetpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#width OneDashboardRaw#width}. |
+| [`width`](#cdktfprovidernewreliconedashboardrawpagewidgetpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#width OneDashboardRaw#width}. |
 
 ---
 
@@ -16731,7 +16731,7 @@ public readonly column: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#column OneDashboardRaw#column}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#column OneDashboardRaw#column}.
 
 ---
 
@@ -16745,7 +16745,7 @@ public readonly configuration: string;
 
 The configuration of the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#configuration OneDashboardRaw#configuration}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#configuration OneDashboardRaw#configuration}
 
 ---
 
@@ -16757,7 +16757,7 @@ public readonly row: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#row OneDashboardRaw#row}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#row OneDashboardRaw#row}.
 
 ---
 
@@ -16771,7 +16771,7 @@ public readonly title: string;
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#title OneDashboardRaw#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#title OneDashboardRaw#title}
 
 ---
 
@@ -16785,7 +16785,7 @@ public readonly visualizationId: string;
 
 The visualization ID of the widget.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#visualization_id OneDashboardRaw#visualization_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#visualization_id OneDashboardRaw#visualization_id}
 
 ---
 
@@ -16797,7 +16797,7 @@ public readonly height: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#height OneDashboardRaw#height}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#height OneDashboardRaw#height}.
 
 ---
 
@@ -16811,7 +16811,7 @@ public readonly linkedEntityGuids: string[];
 
 (Optional) Related entity GUIDs. Currently only supports Dashboard entity GUIDs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#linked_entity_guids OneDashboardRaw#linked_entity_guids}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#linked_entity_guids OneDashboardRaw#linked_entity_guids}
 
 ---
 
@@ -16823,7 +16823,7 @@ public readonly width: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw.html#width OneDashboardRaw#width}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#width OneDashboardRaw#width}.
 
 ---
 
@@ -16909,7 +16909,7 @@ public readonly entities: number[];
 
 The plugin component IDs to target.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#entities PluginsAlertCondition#entities}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#entities PluginsAlertCondition#entities}
 
 ---
 
@@ -16923,7 +16923,7 @@ public readonly metric: string;
 
 The plugin metric to evaluate.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#metric PluginsAlertCondition#metric}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#metric PluginsAlertCondition#metric}
 
 ---
 
@@ -16937,7 +16937,7 @@ public readonly metricDescription: string;
 
 The metric description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#metric_description PluginsAlertCondition#metric_description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#metric_description PluginsAlertCondition#metric_description}
 
 ---
 
@@ -16951,7 +16951,7 @@ public readonly name: string;
 
 The title of the condition. Must be between 1 and 64 characters, inclusive.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#name PluginsAlertCondition#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#name PluginsAlertCondition#name}
 
 ---
 
@@ -16965,7 +16965,7 @@ public readonly pluginGuid: string;
 
 The GUID of the plugin which produces the metric.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#plugin_guid PluginsAlertCondition#plugin_guid}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#plugin_guid PluginsAlertCondition#plugin_guid}
 
 ---
 
@@ -16979,7 +16979,7 @@ public readonly pluginId: string;
 
 The ID of the installed plugin instance which produces the metric.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#plugin_id PluginsAlertCondition#plugin_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#plugin_id PluginsAlertCondition#plugin_id}
 
 ---
 
@@ -16993,7 +16993,7 @@ public readonly policyId: number;
 
 The ID of the policy where this condition should be used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#policy_id PluginsAlertCondition#policy_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#policy_id PluginsAlertCondition#policy_id}
 
 ---
 
@@ -17007,7 +17007,7 @@ public readonly term: PluginsAlertConditionTerm[];
 
 term block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#term PluginsAlertCondition#term}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#term PluginsAlertCondition#term}
 
 ---
 
@@ -17021,7 +17021,7 @@ public readonly valueFunction: string;
 
 The value function to apply to the metric data.  One of `min`, `max`, `average`, `sample_size`, `total`, or `percent`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#value_function PluginsAlertCondition#value_function}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#value_function PluginsAlertCondition#value_function}
 
 ---
 
@@ -17035,7 +17035,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether or not this condition is enabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#enabled PluginsAlertCondition#enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#enabled PluginsAlertCondition#enabled}
 
 ---
 
@@ -17049,7 +17049,7 @@ public readonly runbookUrl: string;
 
 Runbook URL to display in notifications.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#runbook_url PluginsAlertCondition#runbook_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#runbook_url PluginsAlertCondition#runbook_url}
 
 ---
 
@@ -17085,7 +17085,7 @@ public readonly duration: number;
 
 In minutes, must be in the range of 5 to 120, inclusive.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#duration PluginsAlertCondition#duration}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#duration PluginsAlertCondition#duration}
 
 ---
 
@@ -17099,7 +17099,7 @@ public readonly threshold: number;
 
 Must be 0 or greater.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#threshold PluginsAlertCondition#threshold}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#threshold PluginsAlertCondition#threshold}
 
 ---
 
@@ -17113,7 +17113,7 @@ public readonly timeFunction: string;
 
 One of `all` or `any`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#time_function PluginsAlertCondition#time_function}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#time_function PluginsAlertCondition#time_function}
 
 ---
 
@@ -17127,7 +17127,7 @@ public readonly operator: string;
 
 One of `above`, `below`, or `equal`. Defaults to equal.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#operator PluginsAlertCondition#operator}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#operator PluginsAlertCondition#operator}
 
 ---
 
@@ -17141,7 +17141,7 @@ public readonly priority: string;
 
 One of `critical` or `warning`. Defaults to critical.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition.html#priority PluginsAlertCondition#priority}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#priority PluginsAlertCondition#priority}
 
 ---
 
@@ -17164,9 +17164,9 @@ const serviceLevelConfig: ServiceLevelConfig = { ... }
 | [`lifecycle`](#cdktfprovidernewrelicservicelevelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicservicelevelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`events`](#cdktfprovidernewrelicservicelevelconfigpropertyevents)<span title="Required">*</span> | [`@cdktf/provider-newrelic.ServiceLevelEvents`](#@cdktf/provider-newrelic.ServiceLevelEvents) | events block. |
-| [`guid`](#cdktfprovidernewrelicservicelevelconfigpropertyguid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#guid ServiceLevel#guid}. |
-| [`name`](#cdktfprovidernewrelicservicelevelconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#name ServiceLevel#name}. |
-| [`description`](#cdktfprovidernewrelicservicelevelconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#description ServiceLevel#description}. |
+| [`guid`](#cdktfprovidernewrelicservicelevelconfigpropertyguid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#guid ServiceLevel#guid}. |
+| [`name`](#cdktfprovidernewrelicservicelevelconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#name ServiceLevel#name}. |
+| [`description`](#cdktfprovidernewrelicservicelevelconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#description ServiceLevel#description}. |
 | [`objective`](#cdktfprovidernewrelicservicelevelconfigpropertyobjective) | [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[] | objective block. |
 
 ---
@@ -17221,7 +17221,7 @@ public readonly events: ServiceLevelEvents;
 
 events block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#events ServiceLevel#events}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#events ServiceLevel#events}
 
 ---
 
@@ -17233,7 +17233,7 @@ public readonly guid: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#guid ServiceLevel#guid}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#guid ServiceLevel#guid}.
 
 ---
 
@@ -17245,7 +17245,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#name ServiceLevel#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#name ServiceLevel#name}.
 
 ---
 
@@ -17257,7 +17257,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#description ServiceLevel#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#description ServiceLevel#description}.
 
 ---
 
@@ -17271,7 +17271,7 @@ public readonly objective: ServiceLevelObjective[];
 
 objective block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#objective ServiceLevel#objective}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#objective ServiceLevel#objective}
 
 ---
 
@@ -17289,7 +17289,7 @@ const serviceLevelEvents: ServiceLevelEvents = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`accountId`](#cdktfprovidernewrelicserviceleveleventspropertyaccountid)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#account_id ServiceLevel#account_id}. |
+| [`accountId`](#cdktfprovidernewrelicserviceleveleventspropertyaccountid)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#account_id ServiceLevel#account_id}. |
 | [`validEvents`](#cdktfprovidernewrelicserviceleveleventspropertyvalidevents)<span title="Required">*</span> | [`@cdktf/provider-newrelic.ServiceLevelEventsValidEvents`](#@cdktf/provider-newrelic.ServiceLevelEventsValidEvents) | valid_events block. |
 | [`badEvents`](#cdktfprovidernewrelicserviceleveleventspropertybadevents) | [`@cdktf/provider-newrelic.ServiceLevelEventsBadEvents`](#@cdktf/provider-newrelic.ServiceLevelEventsBadEvents) | bad_events block. |
 | [`goodEvents`](#cdktfprovidernewrelicserviceleveleventspropertygoodevents) | [`@cdktf/provider-newrelic.ServiceLevelEventsGoodEvents`](#@cdktf/provider-newrelic.ServiceLevelEventsGoodEvents) | good_events block. |
@@ -17304,7 +17304,7 @@ public readonly accountId: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#account_id ServiceLevel#account_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#account_id ServiceLevel#account_id}.
 
 ---
 
@@ -17318,7 +17318,7 @@ public readonly validEvents: ServiceLevelEventsValidEvents;
 
 valid_events block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#valid_events ServiceLevel#valid_events}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#valid_events ServiceLevel#valid_events}
 
 ---
 
@@ -17332,7 +17332,7 @@ public readonly badEvents: ServiceLevelEventsBadEvents;
 
 bad_events block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#bad_events ServiceLevel#bad_events}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#bad_events ServiceLevel#bad_events}
 
 ---
 
@@ -17346,7 +17346,7 @@ public readonly goodEvents: ServiceLevelEventsGoodEvents;
 
 good_events block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#good_events ServiceLevel#good_events}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#good_events ServiceLevel#good_events}
 
 ---
 
@@ -17364,8 +17364,8 @@ const serviceLevelEventsBadEvents: ServiceLevelEventsBadEvents = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`from`](#cdktfprovidernewrelicserviceleveleventsbadeventspropertyfrom)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#from ServiceLevel#from}. |
-| [`where`](#cdktfprovidernewrelicserviceleveleventsbadeventspropertywhere) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#where ServiceLevel#where}. |
+| [`from`](#cdktfprovidernewrelicserviceleveleventsbadeventspropertyfrom)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#from ServiceLevel#from}. |
+| [`where`](#cdktfprovidernewrelicserviceleveleventsbadeventspropertywhere) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#where ServiceLevel#where}. |
 
 ---
 
@@ -17377,7 +17377,7 @@ public readonly from: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#from ServiceLevel#from}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#from ServiceLevel#from}.
 
 ---
 
@@ -17389,7 +17389,7 @@ public readonly where: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#where ServiceLevel#where}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#where ServiceLevel#where}.
 
 ---
 
@@ -17407,8 +17407,8 @@ const serviceLevelEventsGoodEvents: ServiceLevelEventsGoodEvents = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`from`](#cdktfprovidernewrelicserviceleveleventsgoodeventspropertyfrom)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#from ServiceLevel#from}. |
-| [`where`](#cdktfprovidernewrelicserviceleveleventsgoodeventspropertywhere) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#where ServiceLevel#where}. |
+| [`from`](#cdktfprovidernewrelicserviceleveleventsgoodeventspropertyfrom)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#from ServiceLevel#from}. |
+| [`where`](#cdktfprovidernewrelicserviceleveleventsgoodeventspropertywhere) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#where ServiceLevel#where}. |
 
 ---
 
@@ -17420,7 +17420,7 @@ public readonly from: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#from ServiceLevel#from}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#from ServiceLevel#from}.
 
 ---
 
@@ -17432,7 +17432,7 @@ public readonly where: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#where ServiceLevel#where}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#where ServiceLevel#where}.
 
 ---
 
@@ -17450,8 +17450,8 @@ const serviceLevelEventsValidEvents: ServiceLevelEventsValidEvents = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`from`](#cdktfprovidernewrelicserviceleveleventsvalideventspropertyfrom)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#from ServiceLevel#from}. |
-| [`where`](#cdktfprovidernewrelicserviceleveleventsvalideventspropertywhere) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#where ServiceLevel#where}. |
+| [`from`](#cdktfprovidernewrelicserviceleveleventsvalideventspropertyfrom)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#from ServiceLevel#from}. |
+| [`where`](#cdktfprovidernewrelicserviceleveleventsvalideventspropertywhere) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#where ServiceLevel#where}. |
 
 ---
 
@@ -17463,7 +17463,7 @@ public readonly from: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#from ServiceLevel#from}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#from ServiceLevel#from}.
 
 ---
 
@@ -17475,7 +17475,7 @@ public readonly where: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#where ServiceLevel#where}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#where ServiceLevel#where}.
 
 ---
 
@@ -17493,10 +17493,10 @@ const serviceLevelObjective: ServiceLevelObjective = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`target`](#cdktfprovidernewrelicservicelevelobjectivepropertytarget)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#target ServiceLevel#target}. |
+| [`target`](#cdktfprovidernewrelicservicelevelobjectivepropertytarget)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#target ServiceLevel#target}. |
 | [`timeWindow`](#cdktfprovidernewrelicservicelevelobjectivepropertytimewindow)<span title="Required">*</span> | [`@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindow`](#@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindow) | time_window block. |
-| [`description`](#cdktfprovidernewrelicservicelevelobjectivepropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#description ServiceLevel#description}. |
-| [`name`](#cdktfprovidernewrelicservicelevelobjectivepropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#name ServiceLevel#name}. |
+| [`description`](#cdktfprovidernewrelicservicelevelobjectivepropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#description ServiceLevel#description}. |
+| [`name`](#cdktfprovidernewrelicservicelevelobjectivepropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#name ServiceLevel#name}. |
 
 ---
 
@@ -17508,7 +17508,7 @@ public readonly target: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#target ServiceLevel#target}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#target ServiceLevel#target}.
 
 ---
 
@@ -17522,7 +17522,7 @@ public readonly timeWindow: ServiceLevelObjectiveTimeWindow;
 
 time_window block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#time_window ServiceLevel#time_window}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#time_window ServiceLevel#time_window}
 
 ---
 
@@ -17534,7 +17534,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#description ServiceLevel#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#description ServiceLevel#description}.
 
 ---
 
@@ -17546,7 +17546,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#name ServiceLevel#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#name ServiceLevel#name}.
 
 ---
 
@@ -17578,7 +17578,7 @@ public readonly rolling: ServiceLevelObjectiveTimeWindowRolling;
 
 rolling block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#rolling ServiceLevel#rolling}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#rolling ServiceLevel#rolling}
 
 ---
 
@@ -17596,8 +17596,8 @@ const serviceLevelObjectiveTimeWindowRolling: ServiceLevelObjectiveTimeWindowRol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicservicelevelobjectivetimewindowrollingpropertycount)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#count ServiceLevel#count}. |
-| [`unit`](#cdktfprovidernewrelicservicelevelobjectivetimewindowrollingpropertyunit)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#unit ServiceLevel#unit}. |
+| [`count`](#cdktfprovidernewrelicservicelevelobjectivetimewindowrollingpropertycount)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#count ServiceLevel#count}. |
+| [`unit`](#cdktfprovidernewrelicservicelevelobjectivetimewindowrollingpropertyunit)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#unit ServiceLevel#unit}. |
 
 ---
 
@@ -17609,7 +17609,7 @@ public readonly count: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#count ServiceLevel#count}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#count ServiceLevel#count}.
 
 ---
 
@@ -17621,7 +17621,7 @@ public readonly unit: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level.html#unit ServiceLevel#unit}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#unit ServiceLevel#unit}.
 
 ---
 
@@ -17701,7 +17701,7 @@ public readonly monitorId: string;
 
 The ID of the Synthetics monitor to be referenced in the alert condition.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition.html#monitor_id SyntheticsAlertCondition#monitor_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition#monitor_id SyntheticsAlertCondition#monitor_id}
 
 ---
 
@@ -17715,7 +17715,7 @@ public readonly name: string;
 
 The title of this condition.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition.html#name SyntheticsAlertCondition#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition#name SyntheticsAlertCondition#name}
 
 ---
 
@@ -17729,7 +17729,7 @@ public readonly policyId: number;
 
 The ID of the policy where this condition should be used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition.html#policy_id SyntheticsAlertCondition#policy_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition#policy_id SyntheticsAlertCondition#policy_id}
 
 ---
 
@@ -17743,7 +17743,7 @@ public readonly enabled: boolean | IResolvable;
 
 Set whether to enable the alert condition. Defaults to true.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition.html#enabled SyntheticsAlertCondition#enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition#enabled SyntheticsAlertCondition#enabled}
 
 ---
 
@@ -17757,7 +17757,7 @@ public readonly runbookUrl: string;
 
 Runbook URL to display in notifications.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition.html#runbook_url SyntheticsAlertCondition#runbook_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition#runbook_url SyntheticsAlertCondition#runbook_url}
 
 ---
 
@@ -17843,7 +17843,7 @@ public readonly frequency: number;
 
 The interval (in minutes) at which this monitor should run.
 
-Valid values are 1, 5, 10, 15, 30, 60, 360, 720, or 1440.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#frequency SyntheticsMonitor#frequency}
+Valid values are 1, 5, 10, 15, 30, 60, 360, 720, or 1440.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#frequency SyntheticsMonitor#frequency}
 
 ---
 
@@ -17857,7 +17857,7 @@ public readonly locations: string[];
 
 The locations in which this monitor should be run.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#locations SyntheticsMonitor#locations}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#locations SyntheticsMonitor#locations}
 
 ---
 
@@ -17871,7 +17871,7 @@ public readonly name: string;
 
 The title of this monitor.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#name SyntheticsMonitor#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#name SyntheticsMonitor#name}
 
 ---
 
@@ -17885,7 +17885,7 @@ public readonly status: string;
 
 The monitor status (i.e. ENABLED, MUTED, DISABLED).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#status SyntheticsMonitor#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#status SyntheticsMonitor#status}
 
 ---
 
@@ -17899,7 +17899,7 @@ public readonly type: string;
 
 The monitor type. Valid values are SIMPLE, BROWSER, SCRIPT_BROWSER, and SCRIPT_API.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#type SyntheticsMonitor#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#type SyntheticsMonitor#type}
 
 ---
 
@@ -17913,7 +17913,7 @@ public readonly bypassHeadRequest: boolean | IResolvable;
 
 Bypass HEAD request.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#bypass_head_request SyntheticsMonitor#bypass_head_request}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#bypass_head_request SyntheticsMonitor#bypass_head_request}
 
 ---
 
@@ -17927,7 +17927,7 @@ public readonly slaThreshold: number;
 
 The base threshold for the SLA report.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#sla_threshold SyntheticsMonitor#sla_threshold}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#sla_threshold SyntheticsMonitor#sla_threshold}
 
 ---
 
@@ -17941,7 +17941,7 @@ public readonly treatRedirectAsFailure: boolean | IResolvable;
 
 Fail the monitor check if redirected.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#treat_redirect_as_failure SyntheticsMonitor#treat_redirect_as_failure}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#treat_redirect_as_failure SyntheticsMonitor#treat_redirect_as_failure}
 
 ---
 
@@ -17955,7 +17955,7 @@ public readonly uri: string;
 
 The URI for the monitor to hit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#uri SyntheticsMonitor#uri}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#uri SyntheticsMonitor#uri}
 
 ---
 
@@ -17969,7 +17969,7 @@ public readonly validationString: string;
 
 The string to validate against in the response.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#validation_string SyntheticsMonitor#validation_string}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#validation_string SyntheticsMonitor#validation_string}
 
 ---
 
@@ -17983,7 +17983,7 @@ public readonly verifySsl: boolean | IResolvable;
 
 Verify SSL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#verify_ssl SyntheticsMonitor#verify_ssl}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#verify_ssl SyntheticsMonitor#verify_ssl}
 
 ---
 
@@ -18061,7 +18061,7 @@ public readonly monitorId: string;
 
 The ID of the monitor to attach the script to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html#monitor_id SyntheticsMonitorScript#monitor_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script#monitor_id SyntheticsMonitorScript#monitor_id}
 
 ---
 
@@ -18075,7 +18075,7 @@ public readonly text: string;
 
 The plaintext representing the monitor script.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html#text SyntheticsMonitorScript#text}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script#text SyntheticsMonitorScript#text}
 
 ---
 
@@ -18089,7 +18089,7 @@ public readonly location: SyntheticsMonitorScriptLocation[];
 
 location block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html#location SyntheticsMonitorScript#location}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script#location SyntheticsMonitorScript#location}
 
 ---
 
@@ -18123,7 +18123,7 @@ public readonly name: string;
 
 The monitor script location name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html#name SyntheticsMonitorScript#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script#name SyntheticsMonitorScript#name}
 
 ---
 
@@ -18137,7 +18137,7 @@ public readonly hmac: string;
 
 The HMAC for the monitor script location. Use only one of `hmac` or `vse_password.`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html#hmac SyntheticsMonitorScript#hmac}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script#hmac SyntheticsMonitorScript#hmac}
 
 ---
 
@@ -18151,7 +18151,7 @@ public readonly vsePassword: string;
 
 The password for the monitor script location used to calculate HMAC. Use only one of `vse_password` or `hmac.`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script.html#vse_password SyntheticsMonitorScript#vse_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script#vse_password SyntheticsMonitorScript#vse_password}
 
 ---
 
@@ -18234,7 +18234,7 @@ public readonly critical: SyntheticsMultilocationAlertConditionCritical;
 
 critical block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#critical SyntheticsMultilocationAlertCondition#critical}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#critical SyntheticsMultilocationAlertCondition#critical}
 
 ---
 
@@ -18248,7 +18248,7 @@ public readonly entities: string[];
 
 The GUIDs of the Synthetics monitors to alert on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#entities SyntheticsMultilocationAlertCondition#entities}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#entities SyntheticsMultilocationAlertCondition#entities}
 
 ---
 
@@ -18262,7 +18262,7 @@ public readonly name: string;
 
 The title of this condition.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#name SyntheticsMultilocationAlertCondition#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#name SyntheticsMultilocationAlertCondition#name}
 
 ---
 
@@ -18276,7 +18276,7 @@ public readonly policyId: number;
 
 The ID of the policy where this condition will be used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#policy_id SyntheticsMultilocationAlertCondition#policy_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#policy_id SyntheticsMultilocationAlertCondition#policy_id}
 
 ---
 
@@ -18290,7 +18290,7 @@ public readonly violationTimeLimitSeconds: number;
 
 The maximum number of seconds a violation can remain open before being closed by the system.
 
-Must be one of: 0, 3600, 7200, 14400, 28800, 43200, 86400  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#violation_time_limit_seconds SyntheticsMultilocationAlertCondition#violation_time_limit_seconds}
+Must be one of: 0, 3600, 7200, 14400, 28800, 43200, 86400  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#violation_time_limit_seconds SyntheticsMultilocationAlertCondition#violation_time_limit_seconds}
 
 ---
 
@@ -18304,7 +18304,7 @@ public readonly enabled: boolean | IResolvable;
 
 Set whether to enable the alert condition. Defaults to true.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#enabled SyntheticsMultilocationAlertCondition#enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#enabled SyntheticsMultilocationAlertCondition#enabled}
 
 ---
 
@@ -18318,7 +18318,7 @@ public readonly runbookUrl: string;
 
 Runbook URL to display in notifications.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#runbook_url SyntheticsMultilocationAlertCondition#runbook_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#runbook_url SyntheticsMultilocationAlertCondition#runbook_url}
 
 ---
 
@@ -18332,7 +18332,7 @@ public readonly warning: SyntheticsMultilocationAlertConditionWarning;
 
 warning block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#warning SyntheticsMultilocationAlertCondition#warning}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#warning SyntheticsMultilocationAlertCondition#warning}
 
 ---
 
@@ -18364,7 +18364,7 @@ public readonly threshold: number;
 
 The minimum number of monitor locations that must be concurrently failing before a violation is opened.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#threshold SyntheticsMultilocationAlertCondition#threshold}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#threshold SyntheticsMultilocationAlertCondition#threshold}
 
 ---
 
@@ -18396,7 +18396,7 @@ public readonly threshold: number;
 
 The minimum number of monitor locations that must be concurrently failing before a violation is opened.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition.html#threshold SyntheticsMultilocationAlertCondition#threshold}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#threshold SyntheticsMultilocationAlertCondition#threshold}
 
 ---
 
@@ -18476,7 +18476,7 @@ public readonly key: string;
 
 The secure credential's key name.
 
-Regardless of the case used in the configuration, the provider will provide an upcased key to the underlying API.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential.html#key SyntheticsSecureCredential#key}
+Regardless of the case used in the configuration, the provider will provide an upcased key to the underlying API.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#key SyntheticsSecureCredential#key}
 
 ---
 
@@ -18490,7 +18490,7 @@ public readonly value: string;
 
 The secure credential's value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential.html#value SyntheticsSecureCredential#value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#value SyntheticsSecureCredential#value}
 
 ---
 
@@ -18504,7 +18504,7 @@ public readonly createdAt: string;
 
 The time the secure credential was created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential.html#created_at SyntheticsSecureCredential#created_at}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#created_at SyntheticsSecureCredential#created_at}
 
 ---
 
@@ -18518,7 +18518,7 @@ public readonly description: string;
 
 The secure credential's description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential.html#description SyntheticsSecureCredential#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#description SyntheticsSecureCredential#description}
 
 ---
 
@@ -18532,7 +18532,7 @@ public readonly lastUpdated: string;
 
 The time the secure credential was last updated.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential.html#last_updated SyntheticsSecureCredential#last_updated}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#last_updated SyntheticsSecureCredential#last_updated}
 
 ---
 
@@ -18612,7 +18612,7 @@ public readonly name: string;
 
 The workload's name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload.html#name Workload#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#name Workload#name}
 
 ---
 
@@ -18626,7 +18626,7 @@ public readonly accountId: number;
 
 The New Relic account ID where you want to create the workload.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload.html#account_id Workload#account_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#account_id Workload#account_id}
 
 ---
 
@@ -18640,7 +18640,7 @@ public readonly entityGuids: string[];
 
 A list of entity GUIDs manually assigned to this workload.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload.html#entity_guids Workload#entity_guids}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#entity_guids Workload#entity_guids}
 
 ---
 
@@ -18654,7 +18654,7 @@ public readonly entitySearchQuery: WorkloadEntitySearchQuery[];
 
 entity_search_query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload.html#entity_search_query Workload#entity_search_query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#entity_search_query Workload#entity_search_query}
 
 ---
 
@@ -18668,7 +18668,7 @@ public readonly scopeAccountIds: number[];
 
 A list of account IDs that will be used to get entities from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload.html#scope_account_ids Workload#scope_account_ids}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#scope_account_ids Workload#scope_account_ids}
 
 ---
 
@@ -18700,7 +18700,7 @@ public readonly query: string;
 
 The query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload.html#query Workload#query}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#query Workload#query}
 
 ---
 

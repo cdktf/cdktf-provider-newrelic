@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule.html
+// https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,31 +10,31 @@ export interface NrqlDropRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Account with the NRQL drop rule will be put.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule.html#account_id NrqlDropRule#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule#account_id NrqlDropRule#account_id}
   */
   readonly accountId?: number;
   /**
   * The drop rule action (drop_data, drop_attributes, or drop_attributes_from_metric_aggregates).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule.html#action NrqlDropRule#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule#action NrqlDropRule#action}
   */
   readonly action: string;
   /**
   * Provides additional information about the rule.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule.html#description NrqlDropRule#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule#description NrqlDropRule#description}
   */
   readonly description?: string;
   /**
   * Explains which data to apply the drop rule to.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule.html#nrql NrqlDropRule#nrql}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule#nrql NrqlDropRule#nrql}
   */
   readonly nrql: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule.html newrelic_nrql_drop_rule}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule newrelic_nrql_drop_rule}
 */
 export class NrqlDropRule extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class NrqlDropRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule.html newrelic_nrql_drop_rule} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule newrelic_nrql_drop_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

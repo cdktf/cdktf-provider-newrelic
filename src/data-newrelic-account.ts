@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/d/account.html
+// https://www.terraform.io/docs/providers/newrelic/d/account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface DataNewrelicAccountConfig extends cdktf.TerraformMetaArguments 
   /**
   * The ID of the account in New Relic.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/account.html#account_id DataNewrelicAccount#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/account#account_id DataNewrelicAccount#account_id}
   */
   readonly accountId?: number;
   /**
   * The name of the account in New Relic.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/account.html#name DataNewrelicAccount#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/account#name DataNewrelicAccount#name}
   */
   readonly name?: string;
   /**
   * The scope of the account in New Relic.  Valid values are "global" and "in_region".  Defaults to "in_region".
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/account.html#scope DataNewrelicAccount#scope}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/account#scope DataNewrelicAccount#scope}
   */
   readonly scope?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/account.html newrelic_account}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/account newrelic_account}
 */
 export class DataNewrelicAccount extends cdktf.TerraformDataSource {
 
@@ -42,7 +42,7 @@ export class DataNewrelicAccount extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/account.html newrelic_account} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/account newrelic_account} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

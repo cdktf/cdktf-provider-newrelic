@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential.html
+// https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataNewrelicSyntheticsSecureCredentialConfig extends cdktf.Terr
   /**
   * The secure credential's key name. Regardless of the case used in the configuration, the provider will provide an upcased key to the underlying API.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential.html#key DataNewrelicSyntheticsSecureCredential#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential#key DataNewrelicSyntheticsSecureCredential#key}
   */
   readonly key: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential.html newrelic_synthetics_secure_credential}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential newrelic_synthetics_secure_credential}
 */
 export class DataNewrelicSyntheticsSecureCredential extends cdktf.TerraformDataSource {
 
@@ -30,7 +30,7 @@ export class DataNewrelicSyntheticsSecureCredential extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential.html newrelic_synthetics_secure_credential} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential newrelic_synthetics_secure_credential} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

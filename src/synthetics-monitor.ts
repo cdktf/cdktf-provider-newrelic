@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html
+// https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,73 +10,73 @@ export interface SyntheticsMonitorConfig extends cdktf.TerraformMetaArguments {
   /**
   * Bypass HEAD request.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#bypass_head_request SyntheticsMonitor#bypass_head_request}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#bypass_head_request SyntheticsMonitor#bypass_head_request}
   */
   readonly bypassHeadRequest?: boolean | cdktf.IResolvable;
   /**
   * The interval (in minutes) at which this monitor should run. Valid values are 1, 5, 10, 15, 30, 60, 360, 720, or 1440.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#frequency SyntheticsMonitor#frequency}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#frequency SyntheticsMonitor#frequency}
   */
   readonly frequency: number;
   /**
   * The locations in which this monitor should be run.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#locations SyntheticsMonitor#locations}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#locations SyntheticsMonitor#locations}
   */
   readonly locations: string[];
   /**
   * The title of this monitor.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#name SyntheticsMonitor#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#name SyntheticsMonitor#name}
   */
   readonly name: string;
   /**
   * The base threshold for the SLA report.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#sla_threshold SyntheticsMonitor#sla_threshold}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#sla_threshold SyntheticsMonitor#sla_threshold}
   */
   readonly slaThreshold?: number;
   /**
   * The monitor status (i.e. ENABLED, MUTED, DISABLED).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#status SyntheticsMonitor#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#status SyntheticsMonitor#status}
   */
   readonly status: string;
   /**
   * Fail the monitor check if redirected.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#treat_redirect_as_failure SyntheticsMonitor#treat_redirect_as_failure}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#treat_redirect_as_failure SyntheticsMonitor#treat_redirect_as_failure}
   */
   readonly treatRedirectAsFailure?: boolean | cdktf.IResolvable;
   /**
   * The monitor type. Valid values are SIMPLE, BROWSER, SCRIPT_BROWSER, and SCRIPT_API.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#type SyntheticsMonitor#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#type SyntheticsMonitor#type}
   */
   readonly type: string;
   /**
   * The URI for the monitor to hit.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#uri SyntheticsMonitor#uri}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#uri SyntheticsMonitor#uri}
   */
   readonly uri?: string;
   /**
   * The string to validate against in the response.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#validation_string SyntheticsMonitor#validation_string}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#validation_string SyntheticsMonitor#validation_string}
   */
   readonly validationString?: string;
   /**
   * Verify SSL.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html#verify_ssl SyntheticsMonitor#verify_ssl}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#verify_ssl SyntheticsMonitor#verify_ssl}
   */
   readonly verifySsl?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html newrelic_synthetics_monitor}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor newrelic_synthetics_monitor}
 */
 export class SyntheticsMonitor extends cdktf.TerraformResource {
 
@@ -90,7 +90,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor.html newrelic_synthetics_monitor} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor newrelic_synthetics_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

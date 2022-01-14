@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/d/plugin_component.html
+// https://www.terraform.io/docs/providers/newrelic/d/plugin_component
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface DataNewrelicPluginComponentConfig extends cdktf.TerraformMetaAr
   /**
   * The name of the plugin component.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component.html#name DataNewrelicPluginComponent#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component#name DataNewrelicPluginComponent#name}
   */
   readonly name: string;
   /**
   * The ID of the plugin instance this component belongs to.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component.html#plugin_id DataNewrelicPluginComponent#plugin_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component#plugin_id DataNewrelicPluginComponent#plugin_id}
   */
   readonly pluginId: number;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component.html newrelic_plugin_component}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component newrelic_plugin_component}
 */
 export class DataNewrelicPluginComponent extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataNewrelicPluginComponent extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component.html newrelic_plugin_component} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component newrelic_plugin_component} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
