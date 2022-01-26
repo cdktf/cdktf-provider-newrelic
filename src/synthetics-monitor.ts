@@ -127,7 +127,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   // bypass_head_request - computed: false, optional: true, required: false
   private _bypassHeadRequest?: boolean | cdktf.IResolvable; 
   public get bypassHeadRequest() {
-    return this.getBooleanAttribute('bypass_head_request') as any;
+    return this.getBooleanAttribute('bypass_head_request');
   }
   public set bypassHeadRequest(value: boolean | cdktf.IResolvable) {
     this._bypassHeadRequest = value;
@@ -161,7 +161,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   // locations - computed: false, optional: false, required: true
   private _locations?: string[]; 
   public get locations() {
-    return this.getListAttribute('locations');
+    return cdktf.Fn.tolist(this.getListAttribute('locations'));
   }
   public set locations(value: string[]) {
     this._locations = value;
@@ -216,7 +216,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   // treat_redirect_as_failure - computed: false, optional: true, required: false
   private _treatRedirectAsFailure?: boolean | cdktf.IResolvable; 
   public get treatRedirectAsFailure() {
-    return this.getBooleanAttribute('treat_redirect_as_failure') as any;
+    return this.getBooleanAttribute('treat_redirect_as_failure');
   }
   public set treatRedirectAsFailure(value: boolean | cdktf.IResolvable) {
     this._treatRedirectAsFailure = value;
@@ -277,7 +277,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   // verify_ssl - computed: false, optional: true, required: false
   private _verifySsl?: boolean | cdktf.IResolvable; 
   public get verifySsl() {
-    return this.getBooleanAttribute('verify_ssl') as any;
+    return this.getBooleanAttribute('verify_ssl');
   }
   public set verifySsl(value: boolean | cdktf.IResolvable) {
     this._verifySsl = value;

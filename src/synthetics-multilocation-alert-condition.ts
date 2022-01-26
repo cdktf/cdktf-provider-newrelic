@@ -66,7 +66,7 @@ export interface SyntheticsMultilocationAlertConditionCritical {
 }
 
 export function syntheticsMultilocationAlertConditionCriticalToTerraform(struct?: SyntheticsMultilocationAlertConditionCriticalOutputReference | SyntheticsMultilocationAlertConditionCritical): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -83,7 +83,7 @@ export class SyntheticsMultilocationAlertConditionCriticalOutputReference extend
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -131,7 +131,7 @@ export interface SyntheticsMultilocationAlertConditionWarning {
 }
 
 export function syntheticsMultilocationAlertConditionWarningToTerraform(struct?: SyntheticsMultilocationAlertConditionWarningOutputReference | SyntheticsMultilocationAlertConditionWarning): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -148,7 +148,7 @@ export class SyntheticsMultilocationAlertConditionWarningOutputReference extends
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -236,7 +236,7 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -323,7 +323,7 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
   }
 
   // critical - computed: false, optional: false, required: true
-  private _critical = new SyntheticsMultilocationAlertConditionCriticalOutputReference(this as any, "critical", true);
+  private _critical = new SyntheticsMultilocationAlertConditionCriticalOutputReference(this, "critical", true);
   public get critical() {
     return this._critical;
   }
@@ -336,7 +336,7 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
   }
 
   // warning - computed: false, optional: true, required: false
-  private _warning = new SyntheticsMultilocationAlertConditionWarningOutputReference(this as any, "warning", true);
+  private _warning = new SyntheticsMultilocationAlertConditionWarningOutputReference(this, "warning", true);
   public get warning() {
     return this._warning;
   }

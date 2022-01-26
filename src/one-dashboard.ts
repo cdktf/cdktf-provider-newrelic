@@ -36,7 +36,7 @@ export interface OneDashboardConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#page OneDashboard#page}
   */
-  readonly page: OneDashboardPage[];
+  readonly page: OneDashboardPage[] | cdktf.IResolvable;
 }
 export interface OneDashboardPageWidgetAreaNrqlQuery {
   /**
@@ -53,8 +53,8 @@ export interface OneDashboardPageWidgetAreaNrqlQuery {
   readonly query: string;
 }
 
-export function oneDashboardPageWidgetAreaNrqlQueryToTerraform(struct?: OneDashboardPageWidgetAreaNrqlQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetAreaNrqlQueryToTerraform(struct?: OneDashboardPageWidgetAreaNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -92,11 +92,11 @@ export interface OneDashboardPageWidgetArea {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
-  readonly nrqlQuery: OneDashboardPageWidgetAreaNrqlQuery[];
+  readonly nrqlQuery: OneDashboardPageWidgetAreaNrqlQuery[] | cdktf.IResolvable;
 }
 
-export function oneDashboardPageWidgetAreaToTerraform(struct?: OneDashboardPageWidgetArea): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetAreaToTerraform(struct?: OneDashboardPageWidgetArea | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -125,8 +125,8 @@ export interface OneDashboardPageWidgetBarNrqlQuery {
   readonly query: string;
 }
 
-export function oneDashboardPageWidgetBarNrqlQueryToTerraform(struct?: OneDashboardPageWidgetBarNrqlQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetBarNrqlQueryToTerraform(struct?: OneDashboardPageWidgetBarNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -176,11 +176,11 @@ export interface OneDashboardPageWidgetBar {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
-  readonly nrqlQuery: OneDashboardPageWidgetBarNrqlQuery[];
+  readonly nrqlQuery: OneDashboardPageWidgetBarNrqlQuery[] | cdktf.IResolvable;
 }
 
-export function oneDashboardPageWidgetBarToTerraform(struct?: OneDashboardPageWidgetBar): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetBarToTerraform(struct?: OneDashboardPageWidgetBar | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -211,8 +211,8 @@ export interface OneDashboardPageWidgetBillboardNrqlQuery {
   readonly query: string;
 }
 
-export function oneDashboardPageWidgetBillboardNrqlQueryToTerraform(struct?: OneDashboardPageWidgetBillboardNrqlQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetBillboardNrqlQueryToTerraform(struct?: OneDashboardPageWidgetBillboardNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -262,11 +262,11 @@ export interface OneDashboardPageWidgetBillboard {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
-  readonly nrqlQuery: OneDashboardPageWidgetBillboardNrqlQuery[];
+  readonly nrqlQuery: OneDashboardPageWidgetBillboardNrqlQuery[] | cdktf.IResolvable;
 }
 
-export function oneDashboardPageWidgetBillboardToTerraform(struct?: OneDashboardPageWidgetBillboard): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetBillboardToTerraform(struct?: OneDashboardPageWidgetBillboard | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -297,8 +297,8 @@ export interface OneDashboardPageWidgetBulletNrqlQuery {
   readonly query: string;
 }
 
-export function oneDashboardPageWidgetBulletNrqlQueryToTerraform(struct?: OneDashboardPageWidgetBulletNrqlQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetBulletNrqlQueryToTerraform(struct?: OneDashboardPageWidgetBulletNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -342,11 +342,11 @@ export interface OneDashboardPageWidgetBullet {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
-  readonly nrqlQuery: OneDashboardPageWidgetBulletNrqlQuery[];
+  readonly nrqlQuery: OneDashboardPageWidgetBulletNrqlQuery[] | cdktf.IResolvable;
 }
 
-export function oneDashboardPageWidgetBulletToTerraform(struct?: OneDashboardPageWidgetBullet): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetBulletToTerraform(struct?: OneDashboardPageWidgetBullet | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -376,8 +376,8 @@ export interface OneDashboardPageWidgetFunnelNrqlQuery {
   readonly query: string;
 }
 
-export function oneDashboardPageWidgetFunnelNrqlQueryToTerraform(struct?: OneDashboardPageWidgetFunnelNrqlQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetFunnelNrqlQueryToTerraform(struct?: OneDashboardPageWidgetFunnelNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -415,11 +415,11 @@ export interface OneDashboardPageWidgetFunnel {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
-  readonly nrqlQuery: OneDashboardPageWidgetFunnelNrqlQuery[];
+  readonly nrqlQuery: OneDashboardPageWidgetFunnelNrqlQuery[] | cdktf.IResolvable;
 }
 
-export function oneDashboardPageWidgetFunnelToTerraform(struct?: OneDashboardPageWidgetFunnel): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetFunnelToTerraform(struct?: OneDashboardPageWidgetFunnel | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -448,8 +448,8 @@ export interface OneDashboardPageWidgetHeatmapNrqlQuery {
   readonly query: string;
 }
 
-export function oneDashboardPageWidgetHeatmapNrqlQueryToTerraform(struct?: OneDashboardPageWidgetHeatmapNrqlQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetHeatmapNrqlQueryToTerraform(struct?: OneDashboardPageWidgetHeatmapNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -487,11 +487,11 @@ export interface OneDashboardPageWidgetHeatmap {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
-  readonly nrqlQuery: OneDashboardPageWidgetHeatmapNrqlQuery[];
+  readonly nrqlQuery: OneDashboardPageWidgetHeatmapNrqlQuery[] | cdktf.IResolvable;
 }
 
-export function oneDashboardPageWidgetHeatmapToTerraform(struct?: OneDashboardPageWidgetHeatmap): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetHeatmapToTerraform(struct?: OneDashboardPageWidgetHeatmap | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -520,8 +520,8 @@ export interface OneDashboardPageWidgetHistogramNrqlQuery {
   readonly query: string;
 }
 
-export function oneDashboardPageWidgetHistogramNrqlQueryToTerraform(struct?: OneDashboardPageWidgetHistogramNrqlQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetHistogramNrqlQueryToTerraform(struct?: OneDashboardPageWidgetHistogramNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -559,11 +559,11 @@ export interface OneDashboardPageWidgetHistogram {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
-  readonly nrqlQuery: OneDashboardPageWidgetHistogramNrqlQuery[];
+  readonly nrqlQuery: OneDashboardPageWidgetHistogramNrqlQuery[] | cdktf.IResolvable;
 }
 
-export function oneDashboardPageWidgetHistogramToTerraform(struct?: OneDashboardPageWidgetHistogram): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetHistogramToTerraform(struct?: OneDashboardPageWidgetHistogram | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -592,8 +592,8 @@ export interface OneDashboardPageWidgetJsonNrqlQuery {
   readonly query: string;
 }
 
-export function oneDashboardPageWidgetJsonNrqlQueryToTerraform(struct?: OneDashboardPageWidgetJsonNrqlQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetJsonNrqlQueryToTerraform(struct?: OneDashboardPageWidgetJsonNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -631,11 +631,11 @@ export interface OneDashboardPageWidgetJson {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
-  readonly nrqlQuery: OneDashboardPageWidgetJsonNrqlQuery[];
+  readonly nrqlQuery: OneDashboardPageWidgetJsonNrqlQuery[] | cdktf.IResolvable;
 }
 
-export function oneDashboardPageWidgetJsonToTerraform(struct?: OneDashboardPageWidgetJson): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetJsonToTerraform(struct?: OneDashboardPageWidgetJson | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -664,8 +664,8 @@ export interface OneDashboardPageWidgetLineNrqlQuery {
   readonly query: string;
 }
 
-export function oneDashboardPageWidgetLineNrqlQueryToTerraform(struct?: OneDashboardPageWidgetLineNrqlQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetLineNrqlQueryToTerraform(struct?: OneDashboardPageWidgetLineNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -703,11 +703,11 @@ export interface OneDashboardPageWidgetLine {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
-  readonly nrqlQuery: OneDashboardPageWidgetLineNrqlQuery[];
+  readonly nrqlQuery: OneDashboardPageWidgetLineNrqlQuery[] | cdktf.IResolvable;
 }
 
-export function oneDashboardPageWidgetLineToTerraform(struct?: OneDashboardPageWidgetLine): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetLineToTerraform(struct?: OneDashboardPageWidgetLine | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -750,8 +750,8 @@ export interface OneDashboardPageWidgetMarkdown {
   readonly width?: number;
 }
 
-export function oneDashboardPageWidgetMarkdownToTerraform(struct?: OneDashboardPageWidgetMarkdown): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetMarkdownToTerraform(struct?: OneDashboardPageWidgetMarkdown | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -780,8 +780,8 @@ export interface OneDashboardPageWidgetPieNrqlQuery {
   readonly query: string;
 }
 
-export function oneDashboardPageWidgetPieNrqlQueryToTerraform(struct?: OneDashboardPageWidgetPieNrqlQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetPieNrqlQueryToTerraform(struct?: OneDashboardPageWidgetPieNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -831,11 +831,11 @@ export interface OneDashboardPageWidgetPie {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
-  readonly nrqlQuery: OneDashboardPageWidgetPieNrqlQuery[];
+  readonly nrqlQuery: OneDashboardPageWidgetPieNrqlQuery[] | cdktf.IResolvable;
 }
 
-export function oneDashboardPageWidgetPieToTerraform(struct?: OneDashboardPageWidgetPie): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetPieToTerraform(struct?: OneDashboardPageWidgetPie | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -866,8 +866,8 @@ export interface OneDashboardPageWidgetStackedBarNrqlQuery {
   readonly query: string;
 }
 
-export function oneDashboardPageWidgetStackedBarNrqlQueryToTerraform(struct?: OneDashboardPageWidgetStackedBarNrqlQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetStackedBarNrqlQueryToTerraform(struct?: OneDashboardPageWidgetStackedBarNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -905,11 +905,11 @@ export interface OneDashboardPageWidgetStackedBar {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
-  readonly nrqlQuery: OneDashboardPageWidgetStackedBarNrqlQuery[];
+  readonly nrqlQuery: OneDashboardPageWidgetStackedBarNrqlQuery[] | cdktf.IResolvable;
 }
 
-export function oneDashboardPageWidgetStackedBarToTerraform(struct?: OneDashboardPageWidgetStackedBar): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetStackedBarToTerraform(struct?: OneDashboardPageWidgetStackedBar | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -938,8 +938,8 @@ export interface OneDashboardPageWidgetTableNrqlQuery {
   readonly query: string;
 }
 
-export function oneDashboardPageWidgetTableNrqlQueryToTerraform(struct?: OneDashboardPageWidgetTableNrqlQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetTableNrqlQueryToTerraform(struct?: OneDashboardPageWidgetTableNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -989,11 +989,11 @@ export interface OneDashboardPageWidgetTable {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
-  readonly nrqlQuery: OneDashboardPageWidgetTableNrqlQuery[];
+  readonly nrqlQuery: OneDashboardPageWidgetTableNrqlQuery[] | cdktf.IResolvable;
 }
 
-export function oneDashboardPageWidgetTableToTerraform(struct?: OneDashboardPageWidgetTable): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageWidgetTableToTerraform(struct?: OneDashboardPageWidgetTable | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1027,83 +1027,83 @@ export interface OneDashboardPage {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_area OneDashboard#widget_area}
   */
-  readonly widgetArea?: OneDashboardPageWidgetArea[];
+  readonly widgetArea?: OneDashboardPageWidgetArea[] | cdktf.IResolvable;
   /**
   * widget_bar block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_bar OneDashboard#widget_bar}
   */
-  readonly widgetBar?: OneDashboardPageWidgetBar[];
+  readonly widgetBar?: OneDashboardPageWidgetBar[] | cdktf.IResolvable;
   /**
   * widget_billboard block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_billboard OneDashboard#widget_billboard}
   */
-  readonly widgetBillboard?: OneDashboardPageWidgetBillboard[];
+  readonly widgetBillboard?: OneDashboardPageWidgetBillboard[] | cdktf.IResolvable;
   /**
   * widget_bullet block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_bullet OneDashboard#widget_bullet}
   */
-  readonly widgetBullet?: OneDashboardPageWidgetBullet[];
+  readonly widgetBullet?: OneDashboardPageWidgetBullet[] | cdktf.IResolvable;
   /**
   * widget_funnel block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_funnel OneDashboard#widget_funnel}
   */
-  readonly widgetFunnel?: OneDashboardPageWidgetFunnel[];
+  readonly widgetFunnel?: OneDashboardPageWidgetFunnel[] | cdktf.IResolvable;
   /**
   * widget_heatmap block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_heatmap OneDashboard#widget_heatmap}
   */
-  readonly widgetHeatmap?: OneDashboardPageWidgetHeatmap[];
+  readonly widgetHeatmap?: OneDashboardPageWidgetHeatmap[] | cdktf.IResolvable;
   /**
   * widget_histogram block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_histogram OneDashboard#widget_histogram}
   */
-  readonly widgetHistogram?: OneDashboardPageWidgetHistogram[];
+  readonly widgetHistogram?: OneDashboardPageWidgetHistogram[] | cdktf.IResolvable;
   /**
   * widget_json block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_json OneDashboard#widget_json}
   */
-  readonly widgetJson?: OneDashboardPageWidgetJson[];
+  readonly widgetJson?: OneDashboardPageWidgetJson[] | cdktf.IResolvable;
   /**
   * widget_line block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_line OneDashboard#widget_line}
   */
-  readonly widgetLine?: OneDashboardPageWidgetLine[];
+  readonly widgetLine?: OneDashboardPageWidgetLine[] | cdktf.IResolvable;
   /**
   * widget_markdown block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_markdown OneDashboard#widget_markdown}
   */
-  readonly widgetMarkdown?: OneDashboardPageWidgetMarkdown[];
+  readonly widgetMarkdown?: OneDashboardPageWidgetMarkdown[] | cdktf.IResolvable;
   /**
   * widget_pie block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_pie OneDashboard#widget_pie}
   */
-  readonly widgetPie?: OneDashboardPageWidgetPie[];
+  readonly widgetPie?: OneDashboardPageWidgetPie[] | cdktf.IResolvable;
   /**
   * widget_stacked_bar block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_stacked_bar OneDashboard#widget_stacked_bar}
   */
-  readonly widgetStackedBar?: OneDashboardPageWidgetStackedBar[];
+  readonly widgetStackedBar?: OneDashboardPageWidgetStackedBar[] | cdktf.IResolvable;
   /**
   * widget_table block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_table OneDashboard#widget_table}
   */
-  readonly widgetTable?: OneDashboardPageWidgetTable[];
+  readonly widgetTable?: OneDashboardPageWidgetTable[] | cdktf.IResolvable;
 }
 
-export function oneDashboardPageToTerraform(struct?: OneDashboardPage): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardPageToTerraform(struct?: OneDashboardPage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1247,12 +1247,12 @@ export class OneDashboard extends cdktf.TerraformResource {
   }
 
   // page - computed: false, optional: false, required: true
-  private _page?: OneDashboardPage[]; 
+  private _page?: OneDashboardPage[] | cdktf.IResolvable; 
   public get page() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('page') as any;
+    return this.interpolationForAttribute('page');
   }
-  public set page(value: OneDashboardPage[]) {
+  public set page(value: OneDashboardPage[] | cdktf.IResolvable) {
     this._page = value;
   }
   // Temporarily expose input value. Use with caution.

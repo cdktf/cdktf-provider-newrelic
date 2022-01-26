@@ -36,7 +36,7 @@ export interface OneDashboardRawConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#page OneDashboardRaw#page}
   */
-  readonly page: OneDashboardRawPage[];
+  readonly page: OneDashboardRawPage[] | cdktf.IResolvable;
 }
 export interface OneDashboardRawPageWidget {
   /**
@@ -81,8 +81,8 @@ export interface OneDashboardRawPageWidget {
   readonly width?: number;
 }
 
-export function oneDashboardRawPageWidgetToTerraform(struct?: OneDashboardRawPageWidget): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardRawPageWidgetToTerraform(struct?: OneDashboardRawPageWidget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -116,11 +116,11 @@ export interface OneDashboardRawPage {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#widget OneDashboardRaw#widget}
   */
-  readonly widget?: OneDashboardRawPageWidget[];
+  readonly widget?: OneDashboardRawPageWidget[] | cdktf.IResolvable;
 }
 
-export function oneDashboardRawPageToTerraform(struct?: OneDashboardRawPage): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function oneDashboardRawPageToTerraform(struct?: OneDashboardRawPage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -252,12 +252,12 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
   }
 
   // page - computed: false, optional: false, required: true
-  private _page?: OneDashboardRawPage[]; 
+  private _page?: OneDashboardRawPage[] | cdktf.IResolvable; 
   public get page() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('page') as any;
+    return this.interpolationForAttribute('page');
   }
-  public set page(value: OneDashboardRawPage[]) {
+  public set page(value: OneDashboardRawPage[] | cdktf.IResolvable) {
     this._page = value;
   }
   // Temporarily expose input value. Use with caution.

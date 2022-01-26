@@ -162,7 +162,7 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#term NrqlAlertCondition#term}
   */
-  readonly term?: NrqlAlertConditionTerm[];
+  readonly term?: NrqlAlertConditionTerm[] | cdktf.IResolvable;
   /**
   * warning block
   * 
@@ -210,7 +210,7 @@ export interface NrqlAlertConditionCritical {
 }
 
 export function nrqlAlertConditionCriticalToTerraform(struct?: NrqlAlertConditionCriticalOutputReference | NrqlAlertConditionCritical): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -232,7 +232,7 @@ export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -400,7 +400,7 @@ export interface NrqlAlertConditionNrql {
 }
 
 export function nrqlAlertConditionNrqlToTerraform(struct?: NrqlAlertConditionNrqlOutputReference | NrqlAlertConditionNrql): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -419,7 +419,7 @@ export class NrqlAlertConditionNrqlOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -546,8 +546,8 @@ export interface NrqlAlertConditionTerm {
   readonly timeFunction?: string;
 }
 
-export function nrqlAlertConditionTermToTerraform(struct?: NrqlAlertConditionTerm): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function nrqlAlertConditionTermToTerraform(struct?: NrqlAlertConditionTerm | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -602,7 +602,7 @@ export interface NrqlAlertConditionWarning {
 }
 
 export function nrqlAlertConditionWarningToTerraform(struct?: NrqlAlertConditionWarningOutputReference | NrqlAlertConditionWarning): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -624,7 +624,7 @@ export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -937,7 +937,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   // close_violations_on_expiration - computed: false, optional: true, required: false
   private _closeViolationsOnExpiration?: boolean | cdktf.IResolvable; 
   public get closeViolationsOnExpiration() {
-    return this.getBooleanAttribute('close_violations_on_expiration') as any;
+    return this.getBooleanAttribute('close_violations_on_expiration');
   }
   public set closeViolationsOnExpiration(value: boolean | cdktf.IResolvable) {
     this._closeViolationsOnExpiration = value;
@@ -969,7 +969,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -1054,7 +1054,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   // ignore_overlap - computed: false, optional: true, required: false
   private _ignoreOverlap?: boolean | cdktf.IResolvable; 
   public get ignoreOverlap() {
-    return this.getBooleanAttribute('ignore_overlap') as any;
+    return this.getBooleanAttribute('ignore_overlap');
   }
   public set ignoreOverlap(value: boolean | cdktf.IResolvable) {
     this._ignoreOverlap = value;
@@ -1083,7 +1083,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   // open_violation_on_expiration - computed: false, optional: true, required: false
   private _openViolationOnExpiration?: boolean | cdktf.IResolvable; 
   public get openViolationOnExpiration() {
-    return this.getBooleanAttribute('open_violation_on_expiration') as any;
+    return this.getBooleanAttribute('open_violation_on_expiration');
   }
   public set openViolationOnExpiration(value: boolean | cdktf.IResolvable) {
     this._openViolationOnExpiration = value;
@@ -1099,7 +1099,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   // open_violation_on_group_overlap - computed: false, optional: true, required: false
   private _openViolationOnGroupOverlap?: boolean | cdktf.IResolvable; 
   public get openViolationOnGroupOverlap() {
-    return this.getBooleanAttribute('open_violation_on_group_overlap') as any;
+    return this.getBooleanAttribute('open_violation_on_group_overlap');
   }
   public set openViolationOnGroupOverlap(value: boolean | cdktf.IResolvable) {
     this._openViolationOnGroupOverlap = value;
@@ -1206,7 +1206,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
 
   // critical - computed: false, optional: true, required: false
-  private _critical = new NrqlAlertConditionCriticalOutputReference(this as any, "critical", true);
+  private _critical = new NrqlAlertConditionCriticalOutputReference(this, "critical", true);
   public get critical() {
     return this._critical;
   }
@@ -1222,7 +1222,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
 
   // nrql - computed: false, optional: false, required: true
-  private _nrql = new NrqlAlertConditionNrqlOutputReference(this as any, "nrql", true);
+  private _nrql = new NrqlAlertConditionNrqlOutputReference(this, "nrql", true);
   public get nrql() {
     return this._nrql;
   }
@@ -1235,12 +1235,12 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
 
   // term - computed: false, optional: true, required: false
-  private _term?: NrqlAlertConditionTerm[]; 
+  private _term?: NrqlAlertConditionTerm[] | cdktf.IResolvable; 
   public get term() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('term') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('term')));
   }
-  public set term(value: NrqlAlertConditionTerm[]) {
+  public set term(value: NrqlAlertConditionTerm[] | cdktf.IResolvable) {
     this._term = value;
   }
   public resetTerm() {
@@ -1252,7 +1252,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
 
   // warning - computed: false, optional: true, required: false
-  private _warning = new NrqlAlertConditionWarningOutputReference(this as any, "warning", true);
+  private _warning = new NrqlAlertConditionWarningOutputReference(this, "warning", true);
   public get warning() {
     return this._warning;
   }

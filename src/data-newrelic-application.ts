@@ -56,8 +56,7 @@ export class DataNewrelicApplication extends cdktf.TerraformDataSource {
 
   // host_ids - computed: true, optional: false, required: false
   public get hostIds() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('host_ids') as any;
+    return this.getNumberListAttribute('host_ids');
   }
 
   // id - computed: true, optional: true, required: false
@@ -67,8 +66,7 @@ export class DataNewrelicApplication extends cdktf.TerraformDataSource {
 
   // instance_ids - computed: true, optional: false, required: false
   public get instanceIds() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('instance_ids') as any;
+    return this.getNumberListAttribute('instance_ids');
   }
 
   // name - computed: false, optional: false, required: true

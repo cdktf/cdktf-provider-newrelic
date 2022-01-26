@@ -114,7 +114,7 @@ export interface InfraAlertConditionCritical {
 }
 
 export function infraAlertConditionCriticalToTerraform(struct?: InfraAlertConditionCriticalOutputReference | InfraAlertConditionCritical): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -133,7 +133,7 @@ export class InfraAlertConditionCriticalOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -231,7 +231,7 @@ export interface InfraAlertConditionWarning {
 }
 
 export function infraAlertConditionWarningToTerraform(struct?: InfraAlertConditionWarningOutputReference | InfraAlertConditionWarning): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -250,7 +250,7 @@ export class InfraAlertConditionWarningOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -426,7 +426,7 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -601,7 +601,7 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
 
   // critical - computed: false, optional: true, required: false
-  private _critical = new InfraAlertConditionCriticalOutputReference(this as any, "critical", true);
+  private _critical = new InfraAlertConditionCriticalOutputReference(this, "critical", true);
   public get critical() {
     return this._critical;
   }
@@ -617,7 +617,7 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
 
   // warning - computed: false, optional: true, required: false
-  private _warning = new InfraAlertConditionWarningOutputReference(this as any, "warning", true);
+  private _warning = new InfraAlertConditionWarningOutputReference(this, "warning", true);
   public get warning() {
     return this._warning;
   }

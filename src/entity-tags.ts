@@ -18,7 +18,7 @@ export interface EntityTagsConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags#tag EntityTags#tag}
   */
-  readonly tag: EntityTagsTag[];
+  readonly tag: EntityTagsTag[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -41,8 +41,8 @@ export interface EntityTagsTag {
   readonly values: string[];
 }
 
-export function entityTagsTagToTerraform(struct?: EntityTagsTag): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function entityTagsTagToTerraform(struct?: EntityTagsTag | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -59,8 +59,8 @@ export interface EntityTagsTimeouts {
   readonly create?: string;
 }
 
-export function entityTagsTimeoutsToTerraform(struct?: EntityTagsTimeoutsOutputReference | EntityTagsTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function entityTagsTimeoutsToTerraform(struct?: EntityTagsTimeoutsOutputReference | EntityTagsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -77,7 +77,7 @@ export class EntityTagsTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -179,12 +179,12 @@ export class EntityTags extends cdktf.TerraformResource {
   }
 
   // tag - computed: false, optional: false, required: true
-  private _tag?: EntityTagsTag[]; 
+  private _tag?: EntityTagsTag[] | cdktf.IResolvable; 
   public get tag() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tag') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('tag')));
   }
-  public set tag(value: EntityTagsTag[]) {
+  public set tag(value: EntityTagsTag[] | cdktf.IResolvable) {
     this._tag = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -193,7 +193,7 @@ export class EntityTags extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new EntityTagsTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new EntityTagsTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

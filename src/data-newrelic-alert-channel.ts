@@ -48,8 +48,7 @@ export class DataNewrelicAlertChannelConfigA extends cdktf.ComplexComputedList {
 
   // headers - computed: true, optional: false, required: false
   public get headers() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('headers') as any;
+    return this.getStringMapAttribute('headers');
   }
 
   // include_json_attachment - computed: true, optional: false, required: false
@@ -64,8 +63,7 @@ export class DataNewrelicAlertChannelConfigA extends cdktf.ComplexComputedList {
 
   // payload - computed: true, optional: false, required: false
   public get payload() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('payload') as any;
+    return this.getStringMapAttribute('payload');
   }
 
   // payload_type - computed: true, optional: false, required: false
@@ -155,7 +153,7 @@ export class DataNewrelicAlertChannel extends cdktf.TerraformDataSource {
 
   // config - computed: true, optional: false, required: false
   public config(index: string) {
-    return new DataNewrelicAlertChannelConfigA(this, 'config', index);
+    return new DataNewrelicAlertChannelConfigA(this, 'config', index, false);
   }
 
   // id - computed: true, optional: true, required: false
@@ -178,8 +176,7 @@ export class DataNewrelicAlertChannel extends cdktf.TerraformDataSource {
 
   // policy_ids - computed: true, optional: false, required: false
   public get policyIds() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('policy_ids') as any;
+    return this.getNumberListAttribute('policy_ids');
   }
 
   // type - computed: true, optional: false, required: false
