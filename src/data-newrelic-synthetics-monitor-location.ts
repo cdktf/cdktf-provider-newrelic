@@ -61,7 +61,7 @@ export class DataNewrelicSyntheticsMonitorLocation extends cdktf.TerraformDataSo
 
   // high_security_mode - computed: true, optional: false, required: false
   public get highSecurityMode() {
-    return this.getBooleanAttribute('high_security_mode') as any;
+    return this.getBooleanAttribute('high_security_mode');
   }
 
   // id - computed: true, optional: true, required: false
@@ -89,7 +89,7 @@ export class DataNewrelicSyntheticsMonitorLocation extends cdktf.TerraformDataSo
 
   // private - computed: true, optional: false, required: false
   public get private() {
-    return this.getBooleanAttribute('private') as any;
+    return this.getBooleanAttribute('private');
   }
 
   // =========

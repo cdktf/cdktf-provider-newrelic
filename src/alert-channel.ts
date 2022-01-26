@@ -14,7 +14,7 @@ export interface AlertChannelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
-  * (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
+  * (Required) The type of channel. One of: (slack, user, victorops, webhook, email, opsgenie, pagerduty).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
   */
@@ -68,7 +68,7 @@ export interface AlertChannelConfigA {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#headers AlertChannel#headers}
   */
-  readonly headers?: { [key: string]: string } | cdktf.IResolvable;
+  readonly headers?: { [key: string]: string };
   /**
   * Use instead of headers if the desired payload is more complex than a list of key/value pairs (e.g. a set of headers that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with headers.
   * 
@@ -92,7 +92,7 @@ export interface AlertChannelConfigA {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#payload AlertChannel#payload}
   */
-  readonly payload?: { [key: string]: string } | cdktf.IResolvable;
+  readonly payload?: { [key: string]: string };
   /**
   * Use instead of payload if the desired payload is more complex than a list of key/value pairs (e.g. a payload that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with payload.
   * 
@@ -156,7 +156,7 @@ export interface AlertChannelConfigA {
 }
 
 export function alertChannelConfigAToTerraform(struct?: AlertChannelConfigAOutputReference | AlertChannelConfigA): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -167,11 +167,11 @@ export function alertChannelConfigAToTerraform(struct?: AlertChannelConfigAOutpu
     auth_username: cdktf.stringToTerraform(struct!.authUsername),
     base_url: cdktf.stringToTerraform(struct!.baseUrl),
     channel: cdktf.stringToTerraform(struct!.channel),
-    headers: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.headers),
+    headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.headers),
     headers_string: cdktf.stringToTerraform(struct!.headersString),
     include_json_attachment: cdktf.stringToTerraform(struct!.includeJsonAttachment),
     key: cdktf.stringToTerraform(struct!.key),
-    payload: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.payload),
+    payload: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.payload),
     payload_string: cdktf.stringToTerraform(struct!.payloadString),
     payload_type: cdktf.stringToTerraform(struct!.payloadType),
     recipients: cdktf.stringToTerraform(struct!.recipients),
@@ -193,7 +193,7 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -435,12 +435,11 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
 
   // headers - computed: false, optional: true, required: false
-  private _headers?: { [key: string]: string } | cdktf.IResolvable; 
+  private _headers?: { [key: string]: string }; 
   public get headers() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('headers') as any;
+    return this.getStringMapAttribute('headers');
   }
-  public set headers(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set headers(value: { [key: string]: string }) {
     this._headers = value;
   }
   public resetHeaders() {
@@ -500,12 +499,11 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   }
 
   // payload - computed: false, optional: true, required: false
-  private _payload?: { [key: string]: string } | cdktf.IResolvable; 
+  private _payload?: { [key: string]: string }; 
   public get payload() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('payload') as any;
+    return this.getStringMapAttribute('payload');
   }
-  public set payload(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set payload(value: { [key: string]: string }) {
     this._payload = value;
   }
   public resetPayload() {
@@ -750,7 +748,7 @@ export class AlertChannel extends cdktf.TerraformResource {
   }
 
   // config - computed: false, optional: true, required: false
-  private _config = new AlertChannelConfigAOutputReference(this as any, "config", true);
+  private _config = new AlertChannelConfigAOutputReference(this, "config", true);
   public get config() {
     return this._config;
   }

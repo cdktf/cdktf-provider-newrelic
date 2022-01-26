@@ -64,8 +64,7 @@ export class AlertPolicyChannel extends cdktf.TerraformResource {
   // channel_ids - computed: false, optional: false, required: true
   private _channelIds?: number[]; 
   public get channelIds() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('channel_ids') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('channel_ids')));
   }
   public set channelIds(value: number[]) {
     this._channelIds = value;

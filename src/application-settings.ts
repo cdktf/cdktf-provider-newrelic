@@ -83,7 +83,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   // enable_real_user_monitoring - computed: false, optional: false, required: true
   private _enableRealUserMonitoring?: boolean | cdktf.IResolvable; 
   public get enableRealUserMonitoring() {
-    return this.getBooleanAttribute('enable_real_user_monitoring') as any;
+    return this.getBooleanAttribute('enable_real_user_monitoring');
   }
   public set enableRealUserMonitoring(value: boolean | cdktf.IResolvable) {
     this._enableRealUserMonitoring = value;

@@ -12,7 +12,7 @@ export interface InsightsEventConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#event InsightsEvent#event}
   */
-  readonly event: InsightsEventEvent[];
+  readonly event: InsightsEventEvent[] | cdktf.IResolvable;
 }
 export interface InsightsEventEventAttribute {
   /**
@@ -35,8 +35,8 @@ export interface InsightsEventEventAttribute {
   readonly value: string;
 }
 
-export function insightsEventEventAttributeToTerraform(struct?: InsightsEventEventAttribute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function insightsEventEventAttributeToTerraform(struct?: InsightsEventEventAttribute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -65,11 +65,11 @@ export interface InsightsEventEvent {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#attribute InsightsEvent#attribute}
   */
-  readonly attribute: InsightsEventEventAttribute[];
+  readonly attribute: InsightsEventEventAttribute[] | cdktf.IResolvable;
 }
 
-export function insightsEventEventToTerraform(struct?: InsightsEventEvent): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function insightsEventEventToTerraform(struct?: InsightsEventEvent | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -126,12 +126,12 @@ export class InsightsEvent extends cdktf.TerraformResource {
   }
 
   // event - computed: false, optional: false, required: true
-  private _event?: InsightsEventEvent[]; 
+  private _event?: InsightsEventEvent[] | cdktf.IResolvable; 
   public get event() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('event') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('event')));
   }
-  public set event(value: InsightsEventEvent[]) {
+  public set event(value: InsightsEventEvent[] | cdktf.IResolvable) {
     this._event = value;
   }
   // Temporarily expose input value. Use with caution.

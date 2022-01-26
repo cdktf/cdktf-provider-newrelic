@@ -286,7 +286,7 @@ public resetViolationCloseTimer()
 | [`nameInput`](#cdktfprovidernewrelicalertconditionpropertynameinput) | `string` | *No description.* |
 | [`policyIdInput`](#cdktfprovidernewrelicalertconditionpropertypolicyidinput) | `number` | *No description.* |
 | [`runbookUrlInput`](#cdktfprovidernewrelicalertconditionpropertyrunbookurlinput) | `string` | *No description.* |
-| [`termInput`](#cdktfprovidernewrelicalertconditionpropertyterminput) | [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | *No description.* |
+| [`termInput`](#cdktfprovidernewrelicalertconditionpropertyterminput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | *No description.* |
 | [`typeInput`](#cdktfprovidernewrelicalertconditionpropertytypeinput) | `string` | *No description.* |
 | [`userDefinedMetricInput`](#cdktfprovidernewrelicalertconditionpropertyuserdefinedmetricinput) | `string` | *No description.* |
 | [`userDefinedValueFunctionInput`](#cdktfprovidernewrelicalertconditionpropertyuserdefinedvaluefunctioninput) | `string` | *No description.* |
@@ -299,7 +299,7 @@ public resetViolationCloseTimer()
 | [`name`](#cdktfprovidernewrelicalertconditionpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`policyId`](#cdktfprovidernewrelicalertconditionpropertypolicyid)<span title="Required">*</span> | `number` | *No description.* |
 | [`runbookUrl`](#cdktfprovidernewrelicalertconditionpropertyrunbookurl)<span title="Required">*</span> | `string` | *No description.* |
-| [`term`](#cdktfprovidernewrelicalertconditionpropertyterm)<span title="Required">*</span> | [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | *No description.* |
+| [`term`](#cdktfprovidernewrelicalertconditionpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | *No description.* |
 | [`type`](#cdktfprovidernewrelicalertconditionpropertytype)<span title="Required">*</span> | `string` | *No description.* |
 | [`userDefinedMetric`](#cdktfprovidernewrelicalertconditionpropertyuserdefinedmetric)<span title="Required">*</span> | `string` | *No description.* |
 | [`userDefinedValueFunction`](#cdktfprovidernewrelicalertconditionpropertyuserdefinedvaluefunction)<span title="Required">*</span> | `string` | *No description.* |
@@ -400,10 +400,10 @@ public readonly runbookUrlInput: string;
 ##### `termInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.termInput" id="cdktfprovidernewrelicalertconditionpropertyterminput"></a>
 
 ```typescript
-public readonly termInput: AlertConditionTerm[];
+public readonly termInput: IResolvable | AlertConditionTerm[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[]
 
 ---
 
@@ -530,10 +530,10 @@ public readonly runbookUrl: string;
 ##### `term`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertCondition.property.term" id="cdktfprovidernewrelicalertconditionpropertyterm"></a>
 
 ```typescript
-public readonly term: AlertConditionTerm[];
+public readonly term: IResolvable | AlertConditionTerm[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[]
 
 ---
 
@@ -1710,13 +1710,13 @@ public resetWidget()
 | [`iconInput`](#cdktfprovidernewrelicdashboardpropertyiconinput) | `string` | *No description.* |
 | [`titleInput`](#cdktfprovidernewrelicdashboardpropertytitleinput) | `string` | *No description.* |
 | [`visibilityInput`](#cdktfprovidernewrelicdashboardpropertyvisibilityinput) | `string` | *No description.* |
-| [`widgetInput`](#cdktfprovidernewrelicdashboardpropertywidgetinput) | [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[] | *No description.* |
+| [`widgetInput`](#cdktfprovidernewrelicdashboardpropertywidgetinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[] | *No description.* |
 | [`editable`](#cdktfprovidernewrelicdashboardpropertyeditable)<span title="Required">*</span> | `string` | *No description.* |
 | [`gridColumnCount`](#cdktfprovidernewrelicdashboardpropertygridcolumncount)<span title="Required">*</span> | `number` | *No description.* |
 | [`icon`](#cdktfprovidernewrelicdashboardpropertyicon)<span title="Required">*</span> | `string` | *No description.* |
 | [`title`](#cdktfprovidernewrelicdashboardpropertytitle)<span title="Required">*</span> | `string` | *No description.* |
 | [`visibility`](#cdktfprovidernewrelicdashboardpropertyvisibility)<span title="Required">*</span> | `string` | *No description.* |
-| [`widget`](#cdktfprovidernewrelicdashboardpropertywidget)<span title="Required">*</span> | [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[] | *No description.* |
+| [`widget`](#cdktfprovidernewrelicdashboardpropertywidget)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[] | *No description.* |
 
 ---
 
@@ -1813,10 +1813,10 @@ public readonly visibilityInput: string;
 ##### `widgetInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.widgetInput" id="cdktfprovidernewrelicdashboardpropertywidgetinput"></a>
 
 ```typescript
-public readonly widgetInput: DashboardWidget[];
+public readonly widgetInput: IResolvable | DashboardWidget[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[]
 
 ---
 
@@ -1873,10 +1873,10 @@ public readonly visibility: string;
 ##### `widget`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.widget" id="cdktfprovidernewrelicdashboardpropertywidget"></a>
 
 ```typescript
-public readonly widget: DashboardWidget[];
+public readonly widget: IResolvable | DashboardWidget[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[]
 
 ---
 
@@ -2135,7 +2135,7 @@ public config(index: string)
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`id`](#cdktfprovidernewrelicdatanewrelicalertchannelpropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`policyIds`](#cdktfprovidernewrelicdatanewrelicalertchannelpropertypolicyids)<span title="Required">*</span> | `any` | *No description.* |
+| [`policyIds`](#cdktfprovidernewrelicdatanewrelicalertchannelpropertypolicyids)<span title="Required">*</span> | `number`[] | *No description.* |
 | [`type`](#cdktfprovidernewrelicdatanewrelicalertchannelpropertytype)<span title="Required">*</span> | `string` | *No description.* |
 | [`nameInput`](#cdktfprovidernewrelicdatanewrelicalertchannelpropertynameinput) | `string` | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicalertchannelpropertyname)<span title="Required">*</span> | `string` | *No description.* |
@@ -2155,10 +2155,10 @@ public readonly id: string;
 ##### `policyIds`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannel.property.policyIds" id="cdktfprovidernewrelicdatanewrelicalertchannelpropertypolicyids"></a>
 
 ```typescript
-public readonly policyIds: any;
+public readonly policyIds: number[];
 ```
 
-- *Type:* `any`
+- *Type:* `number`[]
 
 ---
 
@@ -2442,9 +2442,9 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`hostIds`](#cdktfprovidernewrelicdatanewrelicapplicationpropertyhostids)<span title="Required">*</span> | `any` | *No description.* |
+| [`hostIds`](#cdktfprovidernewrelicdatanewrelicapplicationpropertyhostids)<span title="Required">*</span> | `number`[] | *No description.* |
 | [`id`](#cdktfprovidernewrelicdatanewrelicapplicationpropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`instanceIds`](#cdktfprovidernewrelicdatanewrelicapplicationpropertyinstanceids)<span title="Required">*</span> | `any` | *No description.* |
+| [`instanceIds`](#cdktfprovidernewrelicdatanewrelicapplicationpropertyinstanceids)<span title="Required">*</span> | `number`[] | *No description.* |
 | [`nameInput`](#cdktfprovidernewrelicdatanewrelicapplicationpropertynameinput) | `string` | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicapplicationpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 
@@ -2453,10 +2453,10 @@ Must be unique amongst siblings in the same scope
 ##### `hostIds`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicApplication.property.hostIds" id="cdktfprovidernewrelicdatanewrelicapplicationpropertyhostids"></a>
 
 ```typescript
-public readonly hostIds: any;
+public readonly hostIds: number[];
 ```
 
-- *Type:* `any`
+- *Type:* `number`[]
 
 ---
 
@@ -2473,10 +2473,10 @@ public readonly id: string;
 ##### `instanceIds`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicApplication.property.instanceIds" id="cdktfprovidernewrelicdatanewrelicapplicationpropertyinstanceids"></a>
 
 ```typescript
-public readonly instanceIds: any;
+public readonly instanceIds: number[];
 ```
 
-- *Type:* `any`
+- *Type:* `number`[]
 
 ---
 
@@ -3288,10 +3288,10 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`description`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationpropertydescription)<span title="Required">*</span> | `string` | *No description.* |
-| [`highSecurityMode`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationpropertyhighsecuritymode)<span title="Required">*</span> | `any` | *No description.* |
+| [`highSecurityMode`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationpropertyhighsecuritymode)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`id`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationpropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationpropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`private`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationpropertyprivate)<span title="Required">*</span> | `any` | *No description.* |
+| [`private`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationpropertyprivate)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`labelInput`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationpropertylabelinput) | `string` | *No description.* |
 | [`label`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationpropertylabel)<span title="Required">*</span> | `string` | *No description.* |
 
@@ -3310,10 +3310,10 @@ public readonly description: string;
 ##### `highSecurityMode`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorLocation.property.highSecurityMode" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationpropertyhighsecuritymode"></a>
 
 ```typescript
-public readonly highSecurityMode: any;
+public readonly highSecurityMode: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -3340,10 +3340,10 @@ public readonly name: string;
 ##### `private`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorLocation.property.private" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationpropertyprivate"></a>
 
 ```typescript
-public readonly private: any;
+public readonly private: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -3593,10 +3593,10 @@ public resetTimeouts()
 | [`id`](#cdktfprovidernewrelicentitytagspropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`timeouts`](#cdktfprovidernewrelicentitytagspropertytimeouts)<span title="Required">*</span> | [`@cdktf/provider-newrelic.EntityTagsTimeoutsOutputReference`](#@cdktf/provider-newrelic.EntityTagsTimeoutsOutputReference) | *No description.* |
 | [`guidInput`](#cdktfprovidernewrelicentitytagspropertyguidinput) | `string` | *No description.* |
-| [`tagInput`](#cdktfprovidernewrelicentitytagspropertytaginput) | [`@cdktf/provider-newrelic.EntityTagsTag`](#@cdktf/provider-newrelic.EntityTagsTag)[] | *No description.* |
+| [`tagInput`](#cdktfprovidernewrelicentitytagspropertytaginput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.EntityTagsTag`](#@cdktf/provider-newrelic.EntityTagsTag)[] | *No description.* |
 | [`timeoutsInput`](#cdktfprovidernewrelicentitytagspropertytimeoutsinput) | [`@cdktf/provider-newrelic.EntityTagsTimeouts`](#@cdktf/provider-newrelic.EntityTagsTimeouts) | *No description.* |
 | [`guid`](#cdktfprovidernewrelicentitytagspropertyguid)<span title="Required">*</span> | `string` | *No description.* |
-| [`tag`](#cdktfprovidernewrelicentitytagspropertytag)<span title="Required">*</span> | [`@cdktf/provider-newrelic.EntityTagsTag`](#@cdktf/provider-newrelic.EntityTagsTag)[] | *No description.* |
+| [`tag`](#cdktfprovidernewrelicentitytagspropertytag)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.EntityTagsTag`](#@cdktf/provider-newrelic.EntityTagsTag)[] | *No description.* |
 
 ---
 
@@ -3633,10 +3633,10 @@ public readonly guidInput: string;
 ##### `tagInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EntityTags.property.tagInput" id="cdktfprovidernewrelicentitytagspropertytaginput"></a>
 
 ```typescript
-public readonly tagInput: EntityTagsTag[];
+public readonly tagInput: IResolvable | EntityTagsTag[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.EntityTagsTag`](#@cdktf/provider-newrelic.EntityTagsTag)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.EntityTagsTag`](#@cdktf/provider-newrelic.EntityTagsTag)[]
 
 ---
 
@@ -3663,10 +3663,10 @@ public readonly guid: string;
 ##### `tag`<sup>Required</sup> <a name="@cdktf/provider-newrelic.EntityTags.property.tag" id="cdktfprovidernewrelicentitytagspropertytag"></a>
 
 ```typescript
-public readonly tag: EntityTagsTag[];
+public readonly tag: IResolvable | EntityTagsTag[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.EntityTagsTag`](#@cdktf/provider-newrelic.EntityTagsTag)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.EntityTagsTag`](#@cdktf/provider-newrelic.EntityTagsTag)[]
 
 ---
 
@@ -4507,8 +4507,8 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`id`](#cdktfprovidernewrelicinsightseventpropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`eventInput`](#cdktfprovidernewrelicinsightseventpropertyeventinput) | [`@cdktf/provider-newrelic.InsightsEventEvent`](#@cdktf/provider-newrelic.InsightsEventEvent)[] | *No description.* |
-| [`event`](#cdktfprovidernewrelicinsightseventpropertyevent)<span title="Required">*</span> | [`@cdktf/provider-newrelic.InsightsEventEvent`](#@cdktf/provider-newrelic.InsightsEventEvent)[] | *No description.* |
+| [`eventInput`](#cdktfprovidernewrelicinsightseventpropertyeventinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.InsightsEventEvent`](#@cdktf/provider-newrelic.InsightsEventEvent)[] | *No description.* |
+| [`event`](#cdktfprovidernewrelicinsightseventpropertyevent)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.InsightsEventEvent`](#@cdktf/provider-newrelic.InsightsEventEvent)[] | *No description.* |
 
 ---
 
@@ -4525,20 +4525,20 @@ public readonly id: string;
 ##### `eventInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InsightsEvent.property.eventInput" id="cdktfprovidernewrelicinsightseventpropertyeventinput"></a>
 
 ```typescript
-public readonly eventInput: InsightsEventEvent[];
+public readonly eventInput: IResolvable | InsightsEventEvent[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.InsightsEventEvent`](#@cdktf/provider-newrelic.InsightsEventEvent)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.InsightsEventEvent`](#@cdktf/provider-newrelic.InsightsEventEvent)[]
 
 ---
 
 ##### `event`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InsightsEvent.property.event" id="cdktfprovidernewrelicinsightseventpropertyevent"></a>
 
 ```typescript
-public readonly event: InsightsEventEvent[];
+public readonly event: IResolvable | InsightsEventEvent[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.InsightsEventEvent`](#@cdktf/provider-newrelic.InsightsEventEvent)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.InsightsEventEvent`](#@cdktf/provider-newrelic.InsightsEventEvent)[]
 
 ---
 
@@ -5316,7 +5316,7 @@ public resetWarning()
 | [`openViolationOnGroupOverlapInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyopenviolationongroupoverlapinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`policyIdInput`](#cdktfprovidernewrelicnrqlalertconditionpropertypolicyidinput) | `number` | *No description.* |
 | [`runbookUrlInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyrunbookurlinput) | `string` | *No description.* |
-| [`termInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyterminput) | [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[] | *No description.* |
+| [`termInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyterminput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[] | *No description.* |
 | [`typeInput`](#cdktfprovidernewrelicnrqlalertconditionpropertytypeinput) | `string` | *No description.* |
 | [`valueFunctionInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyvaluefunctioninput) | `string` | *No description.* |
 | [`violationTimeLimitInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyviolationtimelimitinput) | `string` | *No description.* |
@@ -5341,7 +5341,7 @@ public resetWarning()
 | [`openViolationOnGroupOverlap`](#cdktfprovidernewrelicnrqlalertconditionpropertyopenviolationongroupoverlap)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`policyId`](#cdktfprovidernewrelicnrqlalertconditionpropertypolicyid)<span title="Required">*</span> | `number` | *No description.* |
 | [`runbookUrl`](#cdktfprovidernewrelicnrqlalertconditionpropertyrunbookurl)<span title="Required">*</span> | `string` | *No description.* |
-| [`term`](#cdktfprovidernewrelicnrqlalertconditionpropertyterm)<span title="Required">*</span> | [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[] | *No description.* |
+| [`term`](#cdktfprovidernewrelicnrqlalertconditionpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[] | *No description.* |
 | [`type`](#cdktfprovidernewrelicnrqlalertconditionpropertytype)<span title="Required">*</span> | `string` | *No description.* |
 | [`valueFunction`](#cdktfprovidernewrelicnrqlalertconditionpropertyvaluefunction)<span title="Required">*</span> | `string` | *No description.* |
 | [`violationTimeLimit`](#cdktfprovidernewrelicnrqlalertconditionpropertyviolationtimelimit)<span title="Required">*</span> | `string` | *No description.* |
@@ -5602,10 +5602,10 @@ public readonly runbookUrlInput: string;
 ##### `termInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.termInput" id="cdktfprovidernewrelicnrqlalertconditionpropertyterminput"></a>
 
 ```typescript
-public readonly termInput: NrqlAlertConditionTerm[];
+public readonly termInput: IResolvable | NrqlAlertConditionTerm[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[]
 
 ---
 
@@ -5852,10 +5852,10 @@ public readonly runbookUrl: string;
 ##### `term`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.term" id="cdktfprovidernewrelicnrqlalertconditionpropertyterm"></a>
 
 ```typescript
-public readonly term: NrqlAlertConditionTerm[];
+public readonly term: IResolvable | NrqlAlertConditionTerm[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[]
 
 ---
 
@@ -6193,12 +6193,12 @@ public resetPermissions()
 | [`accountIdInput`](#cdktfprovidernewreliconedashboardpropertyaccountidinput) | `number` | *No description.* |
 | [`descriptionInput`](#cdktfprovidernewreliconedashboardpropertydescriptioninput) | `string` | *No description.* |
 | [`nameInput`](#cdktfprovidernewreliconedashboardpropertynameinput) | `string` | *No description.* |
-| [`pageInput`](#cdktfprovidernewreliconedashboardpropertypageinput) | [`@cdktf/provider-newrelic.OneDashboardPage`](#@cdktf/provider-newrelic.OneDashboardPage)[] | *No description.* |
+| [`pageInput`](#cdktfprovidernewreliconedashboardpropertypageinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPage`](#@cdktf/provider-newrelic.OneDashboardPage)[] | *No description.* |
 | [`permissionsInput`](#cdktfprovidernewreliconedashboardpropertypermissionsinput) | `string` | *No description.* |
 | [`accountId`](#cdktfprovidernewreliconedashboardpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
 | [`description`](#cdktfprovidernewreliconedashboardpropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidernewreliconedashboardpropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`page`](#cdktfprovidernewreliconedashboardpropertypage)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPage`](#@cdktf/provider-newrelic.OneDashboardPage)[] | *No description.* |
+| [`page`](#cdktfprovidernewreliconedashboardpropertypage)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPage`](#@cdktf/provider-newrelic.OneDashboardPage)[] | *No description.* |
 | [`permissions`](#cdktfprovidernewreliconedashboardpropertypermissions)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
@@ -6266,10 +6266,10 @@ public readonly nameInput: string;
 ##### `pageInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboard.property.pageInput" id="cdktfprovidernewreliconedashboardpropertypageinput"></a>
 
 ```typescript
-public readonly pageInput: OneDashboardPage[];
+public readonly pageInput: IResolvable | OneDashboardPage[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPage`](#@cdktf/provider-newrelic.OneDashboardPage)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPage`](#@cdktf/provider-newrelic.OneDashboardPage)[]
 
 ---
 
@@ -6316,10 +6316,10 @@ public readonly name: string;
 ##### `page`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboard.property.page" id="cdktfprovidernewreliconedashboardpropertypage"></a>
 
 ```typescript
-public readonly page: OneDashboardPage[];
+public readonly page: IResolvable | OneDashboardPage[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPage`](#@cdktf/provider-newrelic.OneDashboardPage)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPage`](#@cdktf/provider-newrelic.OneDashboardPage)[]
 
 ---
 
@@ -6430,12 +6430,12 @@ public resetPermissions()
 | [`accountIdInput`](#cdktfprovidernewreliconedashboardrawpropertyaccountidinput) | `number` | *No description.* |
 | [`descriptionInput`](#cdktfprovidernewreliconedashboardrawpropertydescriptioninput) | `string` | *No description.* |
 | [`nameInput`](#cdktfprovidernewreliconedashboardrawpropertynameinput) | `string` | *No description.* |
-| [`pageInput`](#cdktfprovidernewreliconedashboardrawpropertypageinput) | [`@cdktf/provider-newrelic.OneDashboardRawPage`](#@cdktf/provider-newrelic.OneDashboardRawPage)[] | *No description.* |
+| [`pageInput`](#cdktfprovidernewreliconedashboardrawpropertypageinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardRawPage`](#@cdktf/provider-newrelic.OneDashboardRawPage)[] | *No description.* |
 | [`permissionsInput`](#cdktfprovidernewreliconedashboardrawpropertypermissionsinput) | `string` | *No description.* |
 | [`accountId`](#cdktfprovidernewreliconedashboardrawpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
 | [`description`](#cdktfprovidernewreliconedashboardrawpropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidernewreliconedashboardrawpropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`page`](#cdktfprovidernewreliconedashboardrawpropertypage)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardRawPage`](#@cdktf/provider-newrelic.OneDashboardRawPage)[] | *No description.* |
+| [`page`](#cdktfprovidernewreliconedashboardrawpropertypage)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardRawPage`](#@cdktf/provider-newrelic.OneDashboardRawPage)[] | *No description.* |
 | [`permissions`](#cdktfprovidernewreliconedashboardrawpropertypermissions)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
@@ -6503,10 +6503,10 @@ public readonly nameInput: string;
 ##### `pageInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardRaw.property.pageInput" id="cdktfprovidernewreliconedashboardrawpropertypageinput"></a>
 
 ```typescript
-public readonly pageInput: OneDashboardRawPage[];
+public readonly pageInput: IResolvable | OneDashboardRawPage[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardRawPage`](#@cdktf/provider-newrelic.OneDashboardRawPage)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardRawPage`](#@cdktf/provider-newrelic.OneDashboardRawPage)[]
 
 ---
 
@@ -6553,10 +6553,10 @@ public readonly name: string;
 ##### `page`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardRaw.property.page" id="cdktfprovidernewreliconedashboardrawpropertypage"></a>
 
 ```typescript
-public readonly page: OneDashboardRawPage[];
+public readonly page: IResolvable | OneDashboardRawPage[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardRawPage`](#@cdktf/provider-newrelic.OneDashboardRawPage)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardRawPage`](#@cdktf/provider-newrelic.OneDashboardRawPage)[]
 
 ---
 
@@ -6664,7 +6664,7 @@ public resetRunbookUrl()
 | [`pluginIdInput`](#cdktfprovidernewrelicpluginsalertconditionpropertypluginidinput) | `string` | *No description.* |
 | [`policyIdInput`](#cdktfprovidernewrelicpluginsalertconditionpropertypolicyidinput) | `number` | *No description.* |
 | [`runbookUrlInput`](#cdktfprovidernewrelicpluginsalertconditionpropertyrunbookurlinput) | `string` | *No description.* |
-| [`termInput`](#cdktfprovidernewrelicpluginsalertconditionpropertyterminput) | [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[] | *No description.* |
+| [`termInput`](#cdktfprovidernewrelicpluginsalertconditionpropertyterminput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[] | *No description.* |
 | [`valueFunctionInput`](#cdktfprovidernewrelicpluginsalertconditionpropertyvaluefunctioninput) | `string` | *No description.* |
 | [`enabled`](#cdktfprovidernewrelicpluginsalertconditionpropertyenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`entities`](#cdktfprovidernewrelicpluginsalertconditionpropertyentities)<span title="Required">*</span> | `number`[] | *No description.* |
@@ -6675,7 +6675,7 @@ public resetRunbookUrl()
 | [`pluginId`](#cdktfprovidernewrelicpluginsalertconditionpropertypluginid)<span title="Required">*</span> | `string` | *No description.* |
 | [`policyId`](#cdktfprovidernewrelicpluginsalertconditionpropertypolicyid)<span title="Required">*</span> | `number` | *No description.* |
 | [`runbookUrl`](#cdktfprovidernewrelicpluginsalertconditionpropertyrunbookurl)<span title="Required">*</span> | `string` | *No description.* |
-| [`term`](#cdktfprovidernewrelicpluginsalertconditionpropertyterm)<span title="Required">*</span> | [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[] | *No description.* |
+| [`term`](#cdktfprovidernewrelicpluginsalertconditionpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[] | *No description.* |
 | [`valueFunction`](#cdktfprovidernewrelicpluginsalertconditionpropertyvaluefunction)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
@@ -6783,10 +6783,10 @@ public readonly runbookUrlInput: string;
 ##### `termInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.termInput" id="cdktfprovidernewrelicpluginsalertconditionpropertyterminput"></a>
 
 ```typescript
-public readonly termInput: PluginsAlertConditionTerm[];
+public readonly termInput: IResolvable | PluginsAlertConditionTerm[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[]
 
 ---
 
@@ -6893,10 +6893,10 @@ public readonly runbookUrl: string;
 ##### `term`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.term" id="cdktfprovidernewrelicpluginsalertconditionpropertyterm"></a>
 
 ```typescript
-public readonly term: PluginsAlertConditionTerm[];
+public readonly term: IResolvable | PluginsAlertConditionTerm[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[]
 
 ---
 
@@ -7014,11 +7014,11 @@ public resetObjective()
 | [`eventsInput`](#cdktfprovidernewrelicservicelevelpropertyeventsinput) | [`@cdktf/provider-newrelic.ServiceLevelEvents`](#@cdktf/provider-newrelic.ServiceLevelEvents) | *No description.* |
 | [`guidInput`](#cdktfprovidernewrelicservicelevelpropertyguidinput) | `string` | *No description.* |
 | [`nameInput`](#cdktfprovidernewrelicservicelevelpropertynameinput) | `string` | *No description.* |
-| [`objectiveInput`](#cdktfprovidernewrelicservicelevelpropertyobjectiveinput) | [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[] | *No description.* |
+| [`objectiveInput`](#cdktfprovidernewrelicservicelevelpropertyobjectiveinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[] | *No description.* |
 | [`description`](#cdktfprovidernewrelicservicelevelpropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`guid`](#cdktfprovidernewrelicservicelevelpropertyguid)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidernewrelicservicelevelpropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`objective`](#cdktfprovidernewrelicservicelevelpropertyobjective)<span title="Required">*</span> | [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[] | *No description.* |
+| [`objective`](#cdktfprovidernewrelicservicelevelpropertyobjective)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[] | *No description.* |
 
 ---
 
@@ -7095,10 +7095,10 @@ public readonly nameInput: string;
 ##### `objectiveInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevel.property.objectiveInput" id="cdktfprovidernewrelicservicelevelpropertyobjectiveinput"></a>
 
 ```typescript
-public readonly objectiveInput: ServiceLevelObjective[];
+public readonly objectiveInput: IResolvable | ServiceLevelObjective[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[]
 
 ---
 
@@ -7135,10 +7135,10 @@ public readonly name: string;
 ##### `objective`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevel.property.objective" id="cdktfprovidernewrelicservicelevelpropertyobjective"></a>
 
 ```typescript
-public readonly objective: ServiceLevelObjective[];
+public readonly objective: IResolvable | ServiceLevelObjective[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[]
 
 ---
 
@@ -7796,10 +7796,10 @@ public resetLocation()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`id`](#cdktfprovidernewrelicsyntheticsmonitorscriptpropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`locationInput`](#cdktfprovidernewrelicsyntheticsmonitorscriptpropertylocationinput) | [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[] | *No description.* |
+| [`locationInput`](#cdktfprovidernewrelicsyntheticsmonitorscriptpropertylocationinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[] | *No description.* |
 | [`monitorIdInput`](#cdktfprovidernewrelicsyntheticsmonitorscriptpropertymonitoridinput) | `string` | *No description.* |
 | [`textInput`](#cdktfprovidernewrelicsyntheticsmonitorscriptpropertytextinput) | `string` | *No description.* |
-| [`location`](#cdktfprovidernewrelicsyntheticsmonitorscriptpropertylocation)<span title="Required">*</span> | [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[] | *No description.* |
+| [`location`](#cdktfprovidernewrelicsyntheticsmonitorscriptpropertylocation)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[] | *No description.* |
 | [`monitorId`](#cdktfprovidernewrelicsyntheticsmonitorscriptpropertymonitorid)<span title="Required">*</span> | `string` | *No description.* |
 | [`text`](#cdktfprovidernewrelicsyntheticsmonitorscriptpropertytext)<span title="Required">*</span> | `string` | *No description.* |
 
@@ -7818,10 +7818,10 @@ public readonly id: string;
 ##### `locationInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorScript.property.locationInput" id="cdktfprovidernewrelicsyntheticsmonitorscriptpropertylocationinput"></a>
 
 ```typescript
-public readonly locationInput: SyntheticsMonitorScriptLocation[];
+public readonly locationInput: IResolvable | SyntheticsMonitorScriptLocation[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[]
 
 ---
 
@@ -7848,10 +7848,10 @@ public readonly textInput: string;
 ##### `location`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorScript.property.location" id="cdktfprovidernewrelicsyntheticsmonitorscriptpropertylocation"></a>
 
 ```typescript
-public readonly location: SyntheticsMonitorScriptLocation[];
+public readonly location: IResolvable | SyntheticsMonitorScriptLocation[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[]
 
 ---
 
@@ -8502,12 +8502,12 @@ public resetScopeAccountIds()
 | [`workloadId`](#cdktfprovidernewrelicworkloadpropertyworkloadid)<span title="Required">*</span> | `number` | *No description.* |
 | [`accountIdInput`](#cdktfprovidernewrelicworkloadpropertyaccountidinput) | `number` | *No description.* |
 | [`entityGuidsInput`](#cdktfprovidernewrelicworkloadpropertyentityguidsinput) | `string`[] | *No description.* |
-| [`entitySearchQueryInput`](#cdktfprovidernewrelicworkloadpropertyentitysearchqueryinput) | [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[] | *No description.* |
+| [`entitySearchQueryInput`](#cdktfprovidernewrelicworkloadpropertyentitysearchqueryinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[] | *No description.* |
 | [`nameInput`](#cdktfprovidernewrelicworkloadpropertynameinput) | `string` | *No description.* |
 | [`scopeAccountIdsInput`](#cdktfprovidernewrelicworkloadpropertyscopeaccountidsinput) | `number`[] | *No description.* |
 | [`accountId`](#cdktfprovidernewrelicworkloadpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
 | [`entityGuids`](#cdktfprovidernewrelicworkloadpropertyentityguids)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`entitySearchQuery`](#cdktfprovidernewrelicworkloadpropertyentitysearchquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[] | *No description.* |
+| [`entitySearchQuery`](#cdktfprovidernewrelicworkloadpropertyentitysearchquery)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicworkloadpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`scopeAccountIds`](#cdktfprovidernewrelicworkloadpropertyscopeaccountids)<span title="Required">*</span> | `number`[] | *No description.* |
 
@@ -8586,10 +8586,10 @@ public readonly entityGuidsInput: string[];
 ##### `entitySearchQueryInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Workload.property.entitySearchQueryInput" id="cdktfprovidernewrelicworkloadpropertyentitysearchqueryinput"></a>
 
 ```typescript
-public readonly entitySearchQueryInput: WorkloadEntitySearchQuery[];
+public readonly entitySearchQueryInput: IResolvable | WorkloadEntitySearchQuery[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[]
 
 ---
 
@@ -8636,10 +8636,10 @@ public readonly entityGuids: string[];
 ##### `entitySearchQuery`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workload.property.entitySearchQuery" id="cdktfprovidernewrelicworkloadpropertyentitysearchquery"></a>
 
 ```typescript
-public readonly entitySearchQuery: WorkloadEntitySearchQuery[];
+public readonly entitySearchQuery: IResolvable | WorkloadEntitySearchQuery[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[]
 
 ---
 
@@ -8693,12 +8693,12 @@ const alertChannelConfig: AlertChannelConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicalertchannelconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicalertchannelconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicalertchannelconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicalertchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertchannelconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the channel. |
-| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook). |
+| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (slack, user, victorops, webhook, email, opsgenie, pagerduty). |
 | [`config`](#cdktfprovidernewrelicalertchannelconfigpropertyconfig) | [`@cdktf/provider-newrelic.AlertChannelConfigA`](#@cdktf/provider-newrelic.AlertChannelConfigA) | config block. |
 
 ---
@@ -8706,10 +8706,10 @@ const alertChannelConfig: AlertChannelConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfig.property.count" id="cdktfprovidernewrelicalertchannelconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -8765,7 +8765,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-(Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
+(Required) The type of channel. One of: (slack, user, victorops, webhook, email, opsgenie, pagerduty).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
 
@@ -8805,11 +8805,11 @@ const alertChannelConfigA: AlertChannelConfigA = { ... }
 | [`authUsername`](#cdktfprovidernewrelicalertchannelconfigapropertyauthusername) | `string` | Specifies an authentication username for use with a channel. Supported by the webhook channel type. |
 | [`baseUrl`](#cdktfprovidernewrelicalertchannelconfigapropertybaseurl) | `string` | The base URL of the webhook destination. |
 | [`channel`](#cdktfprovidernewrelicalertchannelconfigapropertychannel) | `string` | The Slack channel to send notifications to. |
-| [`headers`](#cdktfprovidernewrelicalertchannelconfigapropertyheaders) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | A map of key/value pairs that represents extra HTTP headers to be sent along with the webhook payload. |
+| [`headers`](#cdktfprovidernewrelicalertchannelconfigapropertyheaders) | {[ key: string ]: `string`} | A map of key/value pairs that represents extra HTTP headers to be sent along with the webhook payload. |
 | [`headersString`](#cdktfprovidernewrelicalertchannelconfigapropertyheadersstring) | `string` | Use instead of headers if the desired payload is more complex than a list of key/value pairs (e.g. a set of headers that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with headers. |
 | [`includeJsonAttachment`](#cdktfprovidernewrelicalertchannelconfigapropertyincludejsonattachment) | `string` | true or false. |
 | [`key`](#cdktfprovidernewrelicalertchannelconfigapropertykey) | `string` | The key for integrating with VictorOps. |
-| [`payload`](#cdktfprovidernewrelicalertchannelconfigapropertypayload) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | A map of key/value pairs that represents the webhook payload. Must provide payload_type if setting this argument. |
+| [`payload`](#cdktfprovidernewrelicalertchannelconfigapropertypayload) | {[ key: string ]: `string`} | A map of key/value pairs that represents the webhook payload. Must provide payload_type if setting this argument. |
 | [`payloadString`](#cdktfprovidernewrelicalertchannelconfigapropertypayloadstring) | `string` | Use instead of payload if the desired payload is more complex than a list of key/value pairs (e.g. a payload that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with payload. |
 | [`payloadType`](#cdktfprovidernewrelicalertchannelconfigapropertypayloadtype) | `string` | Can either be application/json or application/x-www-form-urlencoded. The payload_type argument is required if payload is set. |
 | [`recipients`](#cdktfprovidernewrelicalertchannelconfigapropertyrecipients) | `string` | A set of recipients for targeting notifications. Multiple values are comma separated. |
@@ -8910,10 +8910,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `headers`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigA.property.headers" id="cdktfprovidernewrelicalertchannelconfigapropertyheaders"></a>
 
 ```typescript
-public readonly headers: IResolvable | {[ key: string ]: string};
+public readonly headers: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 A map of key/value pairs that represents extra HTTP headers to be sent along with the webhook payload.
 
@@ -8966,10 +8966,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `payload`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigA.property.payload" id="cdktfprovidernewrelicalertchannelconfigapropertypayload"></a>
 
 ```typescript
-public readonly payload: IResolvable | {[ key: string ]: string};
+public readonly payload: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 A map of key/value pairs that represents the webhook payload. Must provide payload_type if setting this argument.
 
@@ -9131,7 +9131,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicalertconditionconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -9139,7 +9139,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`metric`](#cdktfprovidernewrelicalertconditionconfigpropertymetric)<span title="Required">*</span> | `string` | The metric field accepts parameters based on the type set. |
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
-| [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
+| [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
 | [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
@@ -9154,10 +9154,10 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertConditionConfig.property.count" id="cdktfprovidernewrelicalertconditionconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -9250,10 +9250,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `term`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertConditionConfig.property.term" id="cdktfprovidernewrelicalertconditionconfigpropertyterm"></a>
 
 ```typescript
-public readonly term: AlertConditionTerm[];
+public readonly term: IResolvable | AlertConditionTerm[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[]
 
 term block.
 
@@ -9479,7 +9479,7 @@ const alertMutingRuleCondition: AlertMutingRuleCondition = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`conditions`](#cdktfprovidernewrelicalertmutingruleconditionpropertyconditions)<span title="Required">*</span> | [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] | conditions block. |
+| [`conditions`](#cdktfprovidernewrelicalertmutingruleconditionpropertyconditions)<span title="Required">*</span> | [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] \| [`cdktf.IResolvable`](#cdktf.IResolvable) | conditions block. |
 | [`operator`](#cdktfprovidernewrelicalertmutingruleconditionpropertyoperator)<span title="Required">*</span> | `string` | The operator used to combine all the MutingRuleConditions within the group. |
 
 ---
@@ -9487,10 +9487,10 @@ const alertMutingRuleCondition: AlertMutingRuleCondition = { ... }
 ##### `conditions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleCondition.property.conditions" id="cdktfprovidernewrelicalertmutingruleconditionpropertyconditions"></a>
 
 ```typescript
-public readonly conditions: AlertMutingRuleConditionConditions[];
+public readonly conditions: AlertMutingRuleConditionConditions[] | IResolvable;
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[]
+- *Type:* [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 conditions block.
 
@@ -9588,7 +9588,7 @@ const alertMutingRuleConfig: AlertMutingRuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicalertmutingruleconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicalertmutingruleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicalertmutingruleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicalertmutingruleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertmutingruleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -9604,10 +9604,10 @@ const alertMutingRuleConfig: AlertMutingRuleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleConfig.property.count" id="cdktfprovidernewrelicalertmutingruleconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -9861,7 +9861,7 @@ const alertPolicyChannelConfig: AlertPolicyChannelConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicalertpolicychannelconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicalertpolicychannelconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicalertpolicychannelconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicalertpolicychannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertpolicychannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -9873,10 +9873,10 @@ const alertPolicyChannelConfig: AlertPolicyChannelConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicyChannelConfig.property.count" id="cdktfprovidernewrelicalertpolicychannelconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -9952,7 +9952,7 @@ const alertPolicyConfig: AlertPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicalertpolicyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicalertpolicyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicalertpolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicalertpolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertpolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -9966,10 +9966,10 @@ const alertPolicyConfig: AlertPolicyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicyConfig.property.count" id="cdktfprovidernewrelicalertpolicyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -10073,7 +10073,7 @@ const apiAccessKeyConfig: ApiAccessKeyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicapiaccesskeyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicapiaccesskeyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicapiaccesskeyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicapiaccesskeyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -10089,10 +10089,10 @@ const apiAccessKeyConfig: ApiAccessKeyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApiAccessKeyConfig.property.count" id="cdktfprovidernewrelicapiaccesskeyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -10212,7 +10212,7 @@ const applicationSettingsConfig: ApplicationSettingsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicapplicationsettingsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicapplicationsettingsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicapplicationsettingsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicapplicationsettingsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -10226,10 +10226,10 @@ const applicationSettingsConfig: ApplicationSettingsConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApplicationSettingsConfig.property.count" id="cdktfprovidernewrelicapplicationsettingsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -10325,7 +10325,7 @@ const dashboardConfig: DashboardConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicdashboardconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicdashboardconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdashboardconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdashboardconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdashboardconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -10335,17 +10335,17 @@ const dashboardConfig: DashboardConfig = { ... }
 | [`gridColumnCount`](#cdktfprovidernewrelicdashboardconfigpropertygridcolumncount) | `number` | New Relic One supports a 3 column grid or a 12 column grid. |
 | [`icon`](#cdktfprovidernewrelicdashboardconfigpropertyicon) | `string` | The icon for the dashboard. |
 | [`visibility`](#cdktfprovidernewrelicdashboardconfigpropertyvisibility) | `string` | Determines who can see the dashboard in an account. Valid values are all or owner. Defaults to all. |
-| [`widget`](#cdktfprovidernewrelicdashboardconfigpropertywidget) | [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[] | widget block. |
+| [`widget`](#cdktfprovidernewrelicdashboardconfigpropertywidget) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[] | widget block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.count" id="cdktfprovidernewrelicdashboardconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -10466,10 +10466,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `widget`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.widget" id="cdktfprovidernewrelicdashboardconfigpropertywidget"></a>
 
 ```typescript
-public readonly widget: DashboardWidget[];
+public readonly widget: IResolvable | DashboardWidget[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[]
 
 widget block.
 
@@ -10539,7 +10539,7 @@ const dashboardWidget: DashboardWidget = { ... }
 | [`title`](#cdktfprovidernewrelicdashboardwidgetpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`visualization`](#cdktfprovidernewrelicdashboardwidgetpropertyvisualization)<span title="Required">*</span> | `string` | How the widget visualizes data. |
 | [`accountId`](#cdktfprovidernewrelicdashboardwidgetpropertyaccountid) | `number` | The target account ID to fetch data from, if not the current account. |
-| [`compareWith`](#cdktfprovidernewrelicdashboardwidgetpropertycomparewith) | [`@cdktf/provider-newrelic.DashboardWidgetCompareWith`](#@cdktf/provider-newrelic.DashboardWidgetCompareWith)[] | compare_with block. |
+| [`compareWith`](#cdktfprovidernewrelicdashboardwidgetpropertycomparewith) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidgetCompareWith`](#@cdktf/provider-newrelic.DashboardWidgetCompareWith)[] | compare_with block. |
 | [`drilldownDashboardId`](#cdktfprovidernewrelicdashboardwidgetpropertydrilldowndashboardid) | `number` | The ID of a dashboard to link to from the widget's facets. |
 | [`duration`](#cdktfprovidernewrelicdashboardwidgetpropertyduration) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#duration Dashboard#duration}. |
 | [`endTime`](#cdktfprovidernewrelicdashboardwidgetpropertyendtime) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#end_time Dashboard#end_time}. |
@@ -10547,7 +10547,7 @@ const dashboardWidget: DashboardWidget = { ... }
 | [`facet`](#cdktfprovidernewrelicdashboardwidgetpropertyfacet) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#facet Dashboard#facet}. |
 | [`height`](#cdktfprovidernewrelicdashboardwidgetpropertyheight) | `number` | Height of the widget. Valid values are 1 to 3 inclusive. Defaults to 1. |
 | [`limit`](#cdktfprovidernewrelicdashboardwidgetpropertylimit) | `number` | The limit of distinct data series to display.  Requires `order_by` to be set. |
-| [`metric`](#cdktfprovidernewrelicdashboardwidgetpropertymetric) | [`@cdktf/provider-newrelic.DashboardWidgetMetric`](#@cdktf/provider-newrelic.DashboardWidgetMetric)[] | metric block. |
+| [`metric`](#cdktfprovidernewrelicdashboardwidgetpropertymetric) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidgetMetric`](#@cdktf/provider-newrelic.DashboardWidgetMetric)[] | metric block. |
 | [`notes`](#cdktfprovidernewrelicdashboardwidgetpropertynotes) | `string` | Description of the widget. |
 | [`nrql`](#cdktfprovidernewrelicdashboardwidgetpropertynrql) | `string` | Valid NRQL query string. |
 | [`orderBy`](#cdktfprovidernewrelicdashboardwidgetpropertyorderby) | `string` | Set the order of result series.  Required when using `limit`. |
@@ -10631,10 +10631,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `compareWith`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.compareWith" id="cdktfprovidernewrelicdashboardwidgetpropertycomparewith"></a>
 
 ```typescript
-public readonly compareWith: DashboardWidgetCompareWith[];
+public readonly compareWith: IResolvable | DashboardWidgetCompareWith[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.DashboardWidgetCompareWith`](#@cdktf/provider-newrelic.DashboardWidgetCompareWith)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidgetCompareWith`](#@cdktf/provider-newrelic.DashboardWidgetCompareWith)[]
 
 compare_with block.
 
@@ -10737,10 +10737,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `metric`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.metric" id="cdktfprovidernewrelicdashboardwidgetpropertymetric"></a>
 
 ```typescript
-public readonly metric: DashboardWidgetMetric[];
+public readonly metric: IResolvable | DashboardWidgetMetric[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.DashboardWidgetMetric`](#@cdktf/provider-newrelic.DashboardWidgetMetric)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidgetMetric`](#@cdktf/provider-newrelic.DashboardWidgetMetric)[]
 
 metric block.
 
@@ -11031,7 +11031,7 @@ const dataNewrelicAccountConfig: DataNewrelicAccountConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -11044,10 +11044,10 @@ const dataNewrelicAccountConfig: DataNewrelicAccountConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAccountConfig.property.count" id="cdktfprovidernewrelicdatanewrelicaccountconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -11137,7 +11137,7 @@ const dataNewrelicAlertChannelConfig: DataNewrelicAlertChannelConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -11148,10 +11148,10 @@ const dataNewrelicAlertChannelConfig: DataNewrelicAlertChannelConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfig.property.count" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -11213,7 +11213,7 @@ const dataNewrelicAlertPolicyConfig: DataNewrelicAlertPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -11226,10 +11226,10 @@ const dataNewrelicAlertPolicyConfig: DataNewrelicAlertPolicyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertPolicyConfig.property.count" id="cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -11319,7 +11319,7 @@ const dataNewrelicApplicationConfig: DataNewrelicApplicationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -11330,10 +11330,10 @@ const dataNewrelicApplicationConfig: DataNewrelicApplicationConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicApplicationConfig.property.count" id="cdktfprovidernewrelicdatanewrelicapplicationconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -11395,7 +11395,7 @@ const dataNewrelicEntityConfig: DataNewrelicEntityConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -11410,10 +11410,10 @@ const dataNewrelicEntityConfig: DataNewrelicEntityConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntityConfig.property.count" id="cdktfprovidernewrelicdatanewrelicentityconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -11578,7 +11578,7 @@ const dataNewrelicKeyTransactionConfig: DataNewrelicKeyTransactionConfig = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -11589,10 +11589,10 @@ const dataNewrelicKeyTransactionConfig: DataNewrelicKeyTransactionConfig = { ...
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicKeyTransactionConfig.property.count" id="cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -11654,7 +11654,7 @@ const dataNewrelicPluginComponentConfig: DataNewrelicPluginComponentConfig = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -11666,10 +11666,10 @@ const dataNewrelicPluginComponentConfig: DataNewrelicPluginComponentConfig = { .
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig.property.count" id="cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -11745,7 +11745,7 @@ const dataNewrelicPluginConfig: DataNewrelicPluginConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -11756,10 +11756,10 @@ const dataNewrelicPluginConfig: DataNewrelicPluginConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginConfig.property.count" id="cdktfprovidernewrelicdatanewrelicpluginconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -11821,7 +11821,7 @@ const dataNewrelicSyntheticsMonitorConfig: DataNewrelicSyntheticsMonitorConfig =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -11832,10 +11832,10 @@ const dataNewrelicSyntheticsMonitorConfig: DataNewrelicSyntheticsMonitorConfig =
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorConfig.property.count" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -11897,7 +11897,7 @@ const dataNewrelicSyntheticsMonitorLocationConfig: DataNewrelicSyntheticsMonitor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -11908,10 +11908,10 @@ const dataNewrelicSyntheticsMonitorLocationConfig: DataNewrelicSyntheticsMonitor
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorLocationConfig.property.count" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -11973,7 +11973,7 @@ const dataNewrelicSyntheticsSecureCredentialConfig: DataNewrelicSyntheticsSecure
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -11984,10 +11984,10 @@ const dataNewrelicSyntheticsSecureCredentialConfig: DataNewrelicSyntheticsSecure
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsSecureCredentialConfig.property.count" id="cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -12049,12 +12049,12 @@ const entityTagsConfig: EntityTagsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicentitytagsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicentitytagsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicentitytagsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicentitytagsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicentitytagsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`guid`](#cdktfprovidernewrelicentitytagsconfigpropertyguid)<span title="Required">*</span> | `string` | The guid of the entity to tag. |
-| [`tag`](#cdktfprovidernewrelicentitytagsconfigpropertytag)<span title="Required">*</span> | [`@cdktf/provider-newrelic.EntityTagsTag`](#@cdktf/provider-newrelic.EntityTagsTag)[] | tag block. |
+| [`tag`](#cdktfprovidernewrelicentitytagsconfigpropertytag)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.EntityTagsTag`](#@cdktf/provider-newrelic.EntityTagsTag)[] | tag block. |
 | [`timeouts`](#cdktfprovidernewrelicentitytagsconfigpropertytimeouts) | [`@cdktf/provider-newrelic.EntityTagsTimeouts`](#@cdktf/provider-newrelic.EntityTagsTimeouts) | timeouts block. |
 
 ---
@@ -12062,10 +12062,10 @@ const entityTagsConfig: EntityTagsConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EntityTagsConfig.property.count" id="cdktfprovidernewrelicentitytagsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -12116,10 +12116,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `tag`<sup>Required</sup> <a name="@cdktf/provider-newrelic.EntityTagsConfig.property.tag" id="cdktfprovidernewrelicentitytagsconfigpropertytag"></a>
 
 ```typescript
-public readonly tag: EntityTagsTag[];
+public readonly tag: IResolvable | EntityTagsTag[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.EntityTagsTag`](#@cdktf/provider-newrelic.EntityTagsTag)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.EntityTagsTag`](#@cdktf/provider-newrelic.EntityTagsTag)[]
 
 tag block.
 
@@ -12232,7 +12232,7 @@ const eventsToMetricsRuleConfig: EventsToMetricsRuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewreliceventstometricsruleconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewreliceventstometricsruleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliceventstometricsruleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliceventstometricsruleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliceventstometricsruleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -12247,10 +12247,10 @@ const eventsToMetricsRuleConfig: EventsToMetricsRuleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EventsToMetricsRuleConfig.property.count" id="cdktfprovidernewreliceventstometricsruleconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -12368,7 +12368,7 @@ const infraAlertConditionConfig: InfraAlertConditionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicinfraalertconditionconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicinfraalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicinfraalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicinfraalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicinfraalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -12393,10 +12393,10 @@ const infraAlertConditionConfig: InfraAlertConditionConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionConfig.property.count" id="cdktfprovidernewrelicinfraalertconditionconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -12766,21 +12766,21 @@ const insightsEventConfig: InsightsEventConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicinsightseventconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicinsightseventconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicinsightseventconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicinsightseventconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicinsightseventconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`event`](#cdktfprovidernewrelicinsightseventconfigpropertyevent)<span title="Required">*</span> | [`@cdktf/provider-newrelic.InsightsEventEvent`](#@cdktf/provider-newrelic.InsightsEventEvent)[] | event block. |
+| [`event`](#cdktfprovidernewrelicinsightseventconfigpropertyevent)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.InsightsEventEvent`](#@cdktf/provider-newrelic.InsightsEventEvent)[] | event block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InsightsEventConfig.property.count" id="cdktfprovidernewrelicinsightseventconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -12817,10 +12817,10 @@ public readonly provider: TerraformProvider;
 ##### `event`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InsightsEventConfig.property.event" id="cdktfprovidernewrelicinsightseventconfigpropertyevent"></a>
 
 ```typescript
-public readonly event: InsightsEventEvent[];
+public readonly event: IResolvable | InsightsEventEvent[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.InsightsEventEvent`](#@cdktf/provider-newrelic.InsightsEventEvent)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.InsightsEventEvent`](#@cdktf/provider-newrelic.InsightsEventEvent)[]
 
 event block.
 
@@ -12842,7 +12842,7 @@ const insightsEventEvent: InsightsEventEvent = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`attribute`](#cdktfprovidernewrelicinsightseventeventpropertyattribute)<span title="Required">*</span> | [`@cdktf/provider-newrelic.InsightsEventEventAttribute`](#@cdktf/provider-newrelic.InsightsEventEventAttribute)[] | attribute block. |
+| [`attribute`](#cdktfprovidernewrelicinsightseventeventpropertyattribute)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.InsightsEventEventAttribute`](#@cdktf/provider-newrelic.InsightsEventEventAttribute)[] | attribute block. |
 | [`type`](#cdktfprovidernewrelicinsightseventeventpropertytype)<span title="Required">*</span> | `string` | The event's name. Can be a combination of alphanumeric characters, underscores, and colons. |
 | [`timestamp`](#cdktfprovidernewrelicinsightseventeventpropertytimestamp) | `number` | Must be a Unix epoch timestamp. You can define timestamps either in seconds or in milliseconds. |
 
@@ -12851,10 +12851,10 @@ const insightsEventEvent: InsightsEventEvent = { ... }
 ##### `attribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InsightsEventEvent.property.attribute" id="cdktfprovidernewrelicinsightseventeventpropertyattribute"></a>
 
 ```typescript
-public readonly attribute: InsightsEventEventAttribute[];
+public readonly attribute: IResolvable | InsightsEventEventAttribute[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.InsightsEventEventAttribute`](#@cdktf/provider-newrelic.InsightsEventEventAttribute)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.InsightsEventEventAttribute`](#@cdktf/provider-newrelic.InsightsEventEventAttribute)[]
 
 attribute block.
 
@@ -13169,7 +13169,7 @@ const nrqlAlertConditionConfig: NrqlAlertConditionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -13194,7 +13194,7 @@ const nrqlAlertConditionConfig: NrqlAlertConditionConfig = { ... }
 | [`openViolationOnExpiration`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyopenviolationonexpiration) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether to create a new violation to capture that the signal expired. |
 | [`openViolationOnGroupOverlap`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyopenviolationongroupoverlap) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether overlapping groups should produce a violation. |
 | [`runbookUrl`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyrunbookurl) | `string` | Runbook URL to display in notifications. |
-| [`term`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyterm) | [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[] | term block. |
+| [`term`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyterm) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[] | term block. |
 | [`type`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertytype) | `string` | The type of NRQL alert condition to create. Valid values are: 'static', 'baseline', 'outlier' (deprecated). |
 | [`valueFunction`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyvaluefunction) | `string` | Valid values are: 'single_value' or 'sum'. |
 | [`violationTimeLimit`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyviolationtimelimit) | `string` | Sets a time limit, in hours, that will automatically force-close a long-lasting violation after the time limit you select. |
@@ -13206,10 +13206,10 @@ const nrqlAlertConditionConfig: NrqlAlertConditionConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionConfig.property.count" id="cdktfprovidernewrelicnrqlalertconditionconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -13540,10 +13540,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `term`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionConfig.property.term" id="cdktfprovidernewrelicnrqlalertconditionconfigpropertyterm"></a>
 
 ```typescript
-public readonly term: NrqlAlertConditionTerm[];
+public readonly term: IResolvable | NrqlAlertConditionTerm[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[]
 
 term block.
 
@@ -14031,7 +14031,7 @@ const nrqlDropRuleConfig: NrqlDropRuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicnrqldropruleconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicnrqldropruleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicnrqldropruleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicnrqldropruleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicnrqldropruleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -14045,10 +14045,10 @@ const nrqlDropRuleConfig: NrqlDropRuleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlDropRuleConfig.property.count" id="cdktfprovidernewrelicnrqldropruleconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -14152,12 +14152,12 @@ const oneDashboardConfig: OneDashboardConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewreliconedashboardconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewreliconedashboardconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliconedashboardconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliconedashboardconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliconedashboardconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovidernewreliconedashboardconfigpropertyname)<span title="Required">*</span> | `string` | The dashboard's name. |
-| [`page`](#cdktfprovidernewreliconedashboardconfigpropertypage)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPage`](#@cdktf/provider-newrelic.OneDashboardPage)[] | page block. |
+| [`page`](#cdktfprovidernewreliconedashboardconfigpropertypage)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPage`](#@cdktf/provider-newrelic.OneDashboardPage)[] | page block. |
 | [`accountId`](#cdktfprovidernewreliconedashboardconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create the dashboard. |
 | [`description`](#cdktfprovidernewreliconedashboardconfigpropertydescription) | `string` | The dashboard's description. |
 | [`permissions`](#cdktfprovidernewreliconedashboardconfigpropertypermissions) | `string` | Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only. |
@@ -14167,10 +14167,10 @@ const oneDashboardConfig: OneDashboardConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardConfig.property.count" id="cdktfprovidernewreliconedashboardconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -14221,10 +14221,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `page`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardConfig.property.page" id="cdktfprovidernewreliconedashboardconfigpropertypage"></a>
 
 ```typescript
-public readonly page: OneDashboardPage[];
+public readonly page: IResolvable | OneDashboardPage[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPage`](#@cdktf/provider-newrelic.OneDashboardPage)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPage`](#@cdktf/provider-newrelic.OneDashboardPage)[]
 
 page block.
 
@@ -14290,19 +14290,19 @@ const oneDashboardPage: OneDashboardPage = { ... }
 | --- | --- | --- |
 | [`name`](#cdktfprovidernewreliconedashboardpagepropertyname)<span title="Required">*</span> | `string` | The dashboard page's name. |
 | [`description`](#cdktfprovidernewreliconedashboardpagepropertydescription) | `string` | The dashboard page's description. |
-| [`widgetArea`](#cdktfprovidernewreliconedashboardpagepropertywidgetarea) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetArea`](#@cdktf/provider-newrelic.OneDashboardPageWidgetArea)[] | widget_area block. |
-| [`widgetBar`](#cdktfprovidernewreliconedashboardpagepropertywidgetbar) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetBar`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBar)[] | widget_bar block. |
-| [`widgetBillboard`](#cdktfprovidernewreliconedashboardpagepropertywidgetbillboard) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetBillboard`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBillboard)[] | widget_billboard block. |
-| [`widgetBullet`](#cdktfprovidernewreliconedashboardpagepropertywidgetbullet) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetBullet`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBullet)[] | widget_bullet block. |
-| [`widgetFunnel`](#cdktfprovidernewreliconedashboardpagepropertywidgetfunnel) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetFunnel`](#@cdktf/provider-newrelic.OneDashboardPageWidgetFunnel)[] | widget_funnel block. |
-| [`widgetHeatmap`](#cdktfprovidernewreliconedashboardpagepropertywidgetheatmap) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmap`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmap)[] | widget_heatmap block. |
-| [`widgetHistogram`](#cdktfprovidernewreliconedashboardpagepropertywidgethistogram) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetHistogram`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHistogram)[] | widget_histogram block. |
-| [`widgetJson`](#cdktfprovidernewreliconedashboardpagepropertywidgetjson) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetJson`](#@cdktf/provider-newrelic.OneDashboardPageWidgetJson)[] | widget_json block. |
-| [`widgetLine`](#cdktfprovidernewreliconedashboardpagepropertywidgetline) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLine`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLine)[] | widget_line block. |
-| [`widgetMarkdown`](#cdktfprovidernewreliconedashboardpagepropertywidgetmarkdown) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdown`](#@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdown)[] | widget_markdown block. |
-| [`widgetPie`](#cdktfprovidernewreliconedashboardpagepropertywidgetpie) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetPie`](#@cdktf/provider-newrelic.OneDashboardPageWidgetPie)[] | widget_pie block. |
-| [`widgetStackedBar`](#cdktfprovidernewreliconedashboardpagepropertywidgetstackedbar) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBar`](#@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBar)[] | widget_stacked_bar block. |
-| [`widgetTable`](#cdktfprovidernewreliconedashboardpagepropertywidgettable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetTable`](#@cdktf/provider-newrelic.OneDashboardPageWidgetTable)[] | widget_table block. |
+| [`widgetArea`](#cdktfprovidernewreliconedashboardpagepropertywidgetarea) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetArea`](#@cdktf/provider-newrelic.OneDashboardPageWidgetArea)[] | widget_area block. |
+| [`widgetBar`](#cdktfprovidernewreliconedashboardpagepropertywidgetbar) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetBar`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBar)[] | widget_bar block. |
+| [`widgetBillboard`](#cdktfprovidernewreliconedashboardpagepropertywidgetbillboard) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetBillboard`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBillboard)[] | widget_billboard block. |
+| [`widgetBullet`](#cdktfprovidernewreliconedashboardpagepropertywidgetbullet) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetBullet`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBullet)[] | widget_bullet block. |
+| [`widgetFunnel`](#cdktfprovidernewreliconedashboardpagepropertywidgetfunnel) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetFunnel`](#@cdktf/provider-newrelic.OneDashboardPageWidgetFunnel)[] | widget_funnel block. |
+| [`widgetHeatmap`](#cdktfprovidernewreliconedashboardpagepropertywidgetheatmap) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmap`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmap)[] | widget_heatmap block. |
+| [`widgetHistogram`](#cdktfprovidernewreliconedashboardpagepropertywidgethistogram) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetHistogram`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHistogram)[] | widget_histogram block. |
+| [`widgetJson`](#cdktfprovidernewreliconedashboardpagepropertywidgetjson) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetJson`](#@cdktf/provider-newrelic.OneDashboardPageWidgetJson)[] | widget_json block. |
+| [`widgetLine`](#cdktfprovidernewreliconedashboardpagepropertywidgetline) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetLine`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLine)[] | widget_line block. |
+| [`widgetMarkdown`](#cdktfprovidernewreliconedashboardpagepropertywidgetmarkdown) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdown`](#@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdown)[] | widget_markdown block. |
+| [`widgetPie`](#cdktfprovidernewreliconedashboardpagepropertywidgetpie) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetPie`](#@cdktf/provider-newrelic.OneDashboardPageWidgetPie)[] | widget_pie block. |
+| [`widgetStackedBar`](#cdktfprovidernewreliconedashboardpagepropertywidgetstackedbar) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBar`](#@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBar)[] | widget_stacked_bar block. |
+| [`widgetTable`](#cdktfprovidernewreliconedashboardpagepropertywidgettable) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetTable`](#@cdktf/provider-newrelic.OneDashboardPageWidgetTable)[] | widget_table block. |
 
 ---
 
@@ -14337,10 +14337,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `widgetArea`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPage.property.widgetArea" id="cdktfprovidernewreliconedashboardpagepropertywidgetarea"></a>
 
 ```typescript
-public readonly widgetArea: OneDashboardPageWidgetArea[];
+public readonly widgetArea: IResolvable | OneDashboardPageWidgetArea[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetArea`](#@cdktf/provider-newrelic.OneDashboardPageWidgetArea)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetArea`](#@cdktf/provider-newrelic.OneDashboardPageWidgetArea)[]
 
 widget_area block.
 
@@ -14351,10 +14351,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `widgetBar`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPage.property.widgetBar" id="cdktfprovidernewreliconedashboardpagepropertywidgetbar"></a>
 
 ```typescript
-public readonly widgetBar: OneDashboardPageWidgetBar[];
+public readonly widgetBar: IResolvable | OneDashboardPageWidgetBar[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetBar`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBar)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetBar`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBar)[]
 
 widget_bar block.
 
@@ -14365,10 +14365,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `widgetBillboard`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPage.property.widgetBillboard" id="cdktfprovidernewreliconedashboardpagepropertywidgetbillboard"></a>
 
 ```typescript
-public readonly widgetBillboard: OneDashboardPageWidgetBillboard[];
+public readonly widgetBillboard: IResolvable | OneDashboardPageWidgetBillboard[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetBillboard`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBillboard)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetBillboard`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBillboard)[]
 
 widget_billboard block.
 
@@ -14379,10 +14379,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `widgetBullet`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPage.property.widgetBullet" id="cdktfprovidernewreliconedashboardpagepropertywidgetbullet"></a>
 
 ```typescript
-public readonly widgetBullet: OneDashboardPageWidgetBullet[];
+public readonly widgetBullet: IResolvable | OneDashboardPageWidgetBullet[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetBullet`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBullet)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetBullet`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBullet)[]
 
 widget_bullet block.
 
@@ -14393,10 +14393,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `widgetFunnel`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPage.property.widgetFunnel" id="cdktfprovidernewreliconedashboardpagepropertywidgetfunnel"></a>
 
 ```typescript
-public readonly widgetFunnel: OneDashboardPageWidgetFunnel[];
+public readonly widgetFunnel: IResolvable | OneDashboardPageWidgetFunnel[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetFunnel`](#@cdktf/provider-newrelic.OneDashboardPageWidgetFunnel)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetFunnel`](#@cdktf/provider-newrelic.OneDashboardPageWidgetFunnel)[]
 
 widget_funnel block.
 
@@ -14407,10 +14407,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `widgetHeatmap`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPage.property.widgetHeatmap" id="cdktfprovidernewreliconedashboardpagepropertywidgetheatmap"></a>
 
 ```typescript
-public readonly widgetHeatmap: OneDashboardPageWidgetHeatmap[];
+public readonly widgetHeatmap: IResolvable | OneDashboardPageWidgetHeatmap[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmap`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmap)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmap`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmap)[]
 
 widget_heatmap block.
 
@@ -14421,10 +14421,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `widgetHistogram`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPage.property.widgetHistogram" id="cdktfprovidernewreliconedashboardpagepropertywidgethistogram"></a>
 
 ```typescript
-public readonly widgetHistogram: OneDashboardPageWidgetHistogram[];
+public readonly widgetHistogram: IResolvable | OneDashboardPageWidgetHistogram[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetHistogram`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHistogram)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetHistogram`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHistogram)[]
 
 widget_histogram block.
 
@@ -14435,10 +14435,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `widgetJson`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPage.property.widgetJson" id="cdktfprovidernewreliconedashboardpagepropertywidgetjson"></a>
 
 ```typescript
-public readonly widgetJson: OneDashboardPageWidgetJson[];
+public readonly widgetJson: IResolvable | OneDashboardPageWidgetJson[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetJson`](#@cdktf/provider-newrelic.OneDashboardPageWidgetJson)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetJson`](#@cdktf/provider-newrelic.OneDashboardPageWidgetJson)[]
 
 widget_json block.
 
@@ -14449,10 +14449,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `widgetLine`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPage.property.widgetLine" id="cdktfprovidernewreliconedashboardpagepropertywidgetline"></a>
 
 ```typescript
-public readonly widgetLine: OneDashboardPageWidgetLine[];
+public readonly widgetLine: IResolvable | OneDashboardPageWidgetLine[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetLine`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLine)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLine`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLine)[]
 
 widget_line block.
 
@@ -14463,10 +14463,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `widgetMarkdown`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPage.property.widgetMarkdown" id="cdktfprovidernewreliconedashboardpagepropertywidgetmarkdown"></a>
 
 ```typescript
-public readonly widgetMarkdown: OneDashboardPageWidgetMarkdown[];
+public readonly widgetMarkdown: IResolvable | OneDashboardPageWidgetMarkdown[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdown`](#@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdown)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdown`](#@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdown)[]
 
 widget_markdown block.
 
@@ -14477,10 +14477,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `widgetPie`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPage.property.widgetPie" id="cdktfprovidernewreliconedashboardpagepropertywidgetpie"></a>
 
 ```typescript
-public readonly widgetPie: OneDashboardPageWidgetPie[];
+public readonly widgetPie: IResolvable | OneDashboardPageWidgetPie[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetPie`](#@cdktf/provider-newrelic.OneDashboardPageWidgetPie)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetPie`](#@cdktf/provider-newrelic.OneDashboardPageWidgetPie)[]
 
 widget_pie block.
 
@@ -14491,10 +14491,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `widgetStackedBar`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPage.property.widgetStackedBar" id="cdktfprovidernewreliconedashboardpagepropertywidgetstackedbar"></a>
 
 ```typescript
-public readonly widgetStackedBar: OneDashboardPageWidgetStackedBar[];
+public readonly widgetStackedBar: IResolvable | OneDashboardPageWidgetStackedBar[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBar`](#@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBar)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBar`](#@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBar)[]
 
 widget_stacked_bar block.
 
@@ -14505,10 +14505,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `widgetTable`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPage.property.widgetTable" id="cdktfprovidernewreliconedashboardpagepropertywidgettable"></a>
 
 ```typescript
-public readonly widgetTable: OneDashboardPageWidgetTable[];
+public readonly widgetTable: IResolvable | OneDashboardPageWidgetTable[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetTable`](#@cdktf/provider-newrelic.OneDashboardPageWidgetTable)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetTable`](#@cdktf/provider-newrelic.OneDashboardPageWidgetTable)[]
 
 widget_table block.
 
@@ -14531,7 +14531,7 @@ const oneDashboardPageWidgetArea: OneDashboardPageWidgetArea = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetareapropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
-| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetareapropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetAreaNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetAreaNrqlQuery)[] | nrql_query block. |
+| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetareapropertynrqlquery)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetAreaNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetAreaNrqlQuery)[] | nrql_query block. |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetareapropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetareapropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetareapropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
@@ -14554,10 +14554,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `nrqlQuery`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetArea.property.nrqlQuery" id="cdktfprovidernewreliconedashboardpagewidgetareapropertynrqlquery"></a>
 
 ```typescript
-public readonly nrqlQuery: OneDashboardPageWidgetAreaNrqlQuery[];
+public readonly nrqlQuery: IResolvable | OneDashboardPageWidgetAreaNrqlQuery[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetAreaNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetAreaNrqlQuery)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetAreaNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetAreaNrqlQuery)[]
 
 nrql_query block.
 
@@ -14677,7 +14677,7 @@ const oneDashboardPageWidgetBar: OneDashboardPageWidgetBar = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
-| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetBarNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBarNrqlQuery)[] | nrql_query block. |
+| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertynrqlquery)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetBarNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBarNrqlQuery)[] | nrql_query block. |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`filterCurrentDashboard`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertyfiltercurrentdashboard) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Use this item to filter the current dashboard. |
@@ -14702,10 +14702,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `nrqlQuery`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBar.property.nrqlQuery" id="cdktfprovidernewreliconedashboardpagewidgetbarpropertynrqlquery"></a>
 
 ```typescript
-public readonly nrqlQuery: OneDashboardPageWidgetBarNrqlQuery[];
+public readonly nrqlQuery: IResolvable | OneDashboardPageWidgetBarNrqlQuery[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetBarNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBarNrqlQuery)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetBarNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBarNrqlQuery)[]
 
 nrql_query block.
 
@@ -14853,7 +14853,7 @@ const oneDashboardPageWidgetBillboard: OneDashboardPageWidgetBillboard = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
-| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardNrqlQuery)[] | nrql_query block. |
+| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertynrqlquery)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardNrqlQuery)[] | nrql_query block. |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`critical`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertycritical) | `number` | The critical threshold value. |
@@ -14878,10 +14878,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `nrqlQuery`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBillboard.property.nrqlQuery" id="cdktfprovidernewreliconedashboardpagewidgetbillboardpropertynrqlquery"></a>
 
 ```typescript
-public readonly nrqlQuery: OneDashboardPageWidgetBillboardNrqlQuery[];
+public readonly nrqlQuery: IResolvable | OneDashboardPageWidgetBillboardNrqlQuery[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardNrqlQuery)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardNrqlQuery)[]
 
 nrql_query block.
 
@@ -15029,7 +15029,7 @@ const oneDashboardPageWidgetBullet: OneDashboardPageWidgetBullet = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
-| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetBulletNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBulletNrqlQuery)[] | nrql_query block. |
+| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertynrqlquery)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetBulletNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBulletNrqlQuery)[] | nrql_query block. |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
@@ -15053,10 +15053,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `nrqlQuery`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBullet.property.nrqlQuery" id="cdktfprovidernewreliconedashboardpagewidgetbulletpropertynrqlquery"></a>
 
 ```typescript
-public readonly nrqlQuery: OneDashboardPageWidgetBulletNrqlQuery[];
+public readonly nrqlQuery: IResolvable | OneDashboardPageWidgetBulletNrqlQuery[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetBulletNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBulletNrqlQuery)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetBulletNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBulletNrqlQuery)[]
 
 nrql_query block.
 
@@ -15190,7 +15190,7 @@ const oneDashboardPageWidgetFunnel: OneDashboardPageWidgetFunnel = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
-| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelNrqlQuery)[] | nrql_query block. |
+| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertynrqlquery)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelNrqlQuery)[] | nrql_query block. |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
@@ -15213,10 +15213,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `nrqlQuery`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetFunnel.property.nrqlQuery" id="cdktfprovidernewreliconedashboardpagewidgetfunnelpropertynrqlquery"></a>
 
 ```typescript
-public readonly nrqlQuery: OneDashboardPageWidgetFunnelNrqlQuery[];
+public readonly nrqlQuery: IResolvable | OneDashboardPageWidgetFunnelNrqlQuery[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelNrqlQuery)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelNrqlQuery)[]
 
 nrql_query block.
 
@@ -15336,7 +15336,7 @@ const oneDashboardPageWidgetHeatmap: OneDashboardPageWidgetHeatmap = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
-| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapNrqlQuery)[] | nrql_query block. |
+| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertynrqlquery)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapNrqlQuery)[] | nrql_query block. |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
@@ -15359,10 +15359,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `nrqlQuery`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmap.property.nrqlQuery" id="cdktfprovidernewreliconedashboardpagewidgetheatmappropertynrqlquery"></a>
 
 ```typescript
-public readonly nrqlQuery: OneDashboardPageWidgetHeatmapNrqlQuery[];
+public readonly nrqlQuery: IResolvable | OneDashboardPageWidgetHeatmapNrqlQuery[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapNrqlQuery)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapNrqlQuery)[]
 
 nrql_query block.
 
@@ -15482,7 +15482,7 @@ const oneDashboardPageWidgetHistogram: OneDashboardPageWidgetHistogram = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
-| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramNrqlQuery)[] | nrql_query block. |
+| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertynrqlquery)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramNrqlQuery)[] | nrql_query block. |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
@@ -15505,10 +15505,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `nrqlQuery`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetHistogram.property.nrqlQuery" id="cdktfprovidernewreliconedashboardpagewidgethistogrampropertynrqlquery"></a>
 
 ```typescript
-public readonly nrqlQuery: OneDashboardPageWidgetHistogramNrqlQuery[];
+public readonly nrqlQuery: IResolvable | OneDashboardPageWidgetHistogramNrqlQuery[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramNrqlQuery)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramNrqlQuery)[]
 
 nrql_query block.
 
@@ -15628,7 +15628,7 @@ const oneDashboardPageWidgetJson: OneDashboardPageWidgetJson = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
-| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetJsonNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetJsonNrqlQuery)[] | nrql_query block. |
+| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertynrqlquery)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetJsonNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetJsonNrqlQuery)[] | nrql_query block. |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
@@ -15651,10 +15651,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `nrqlQuery`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetJson.property.nrqlQuery" id="cdktfprovidernewreliconedashboardpagewidgetjsonpropertynrqlquery"></a>
 
 ```typescript
-public readonly nrqlQuery: OneDashboardPageWidgetJsonNrqlQuery[];
+public readonly nrqlQuery: IResolvable | OneDashboardPageWidgetJsonNrqlQuery[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetJsonNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetJsonNrqlQuery)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetJsonNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetJsonNrqlQuery)[]
 
 nrql_query block.
 
@@ -15774,7 +15774,7 @@ const oneDashboardPageWidgetLine: OneDashboardPageWidgetLine = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
-| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLineNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLineNrqlQuery)[] | nrql_query block. |
+| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertynrqlquery)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetLineNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLineNrqlQuery)[] | nrql_query block. |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
@@ -15797,10 +15797,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `nrqlQuery`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLine.property.nrqlQuery" id="cdktfprovidernewreliconedashboardpagewidgetlinepropertynrqlquery"></a>
 
 ```typescript
-public readonly nrqlQuery: OneDashboardPageWidgetLineNrqlQuery[];
+public readonly nrqlQuery: IResolvable | OneDashboardPageWidgetLineNrqlQuery[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetLineNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLineNrqlQuery)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLineNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLineNrqlQuery)[]
 
 nrql_query block.
 
@@ -16017,7 +16017,7 @@ const oneDashboardPageWidgetPie: OneDashboardPageWidgetPie = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
-| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetPieNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetPieNrqlQuery)[] | nrql_query block. |
+| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertynrqlquery)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetPieNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetPieNrqlQuery)[] | nrql_query block. |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`filterCurrentDashboard`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertyfiltercurrentdashboard) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Use this item to filter the current dashboard. |
@@ -16042,10 +16042,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `nrqlQuery`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetPie.property.nrqlQuery" id="cdktfprovidernewreliconedashboardpagewidgetpiepropertynrqlquery"></a>
 
 ```typescript
-public readonly nrqlQuery: OneDashboardPageWidgetPieNrqlQuery[];
+public readonly nrqlQuery: IResolvable | OneDashboardPageWidgetPieNrqlQuery[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetPieNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetPieNrqlQuery)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetPieNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetPieNrqlQuery)[]
 
 nrql_query block.
 
@@ -16193,7 +16193,7 @@ const oneDashboardPageWidgetStackedBar: OneDashboardPageWidgetStackedBar = { ...
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
-| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarNrqlQuery)[] | nrql_query block. |
+| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertynrqlquery)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarNrqlQuery)[] | nrql_query block. |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
@@ -16216,10 +16216,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `nrqlQuery`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBar.property.nrqlQuery" id="cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertynrqlquery"></a>
 
 ```typescript
-public readonly nrqlQuery: OneDashboardPageWidgetStackedBarNrqlQuery[];
+public readonly nrqlQuery: IResolvable | OneDashboardPageWidgetStackedBarNrqlQuery[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarNrqlQuery)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarNrqlQuery)[]
 
 nrql_query block.
 
@@ -16339,7 +16339,7 @@ const oneDashboardPageWidgetTable: OneDashboardPageWidgetTable = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgettablepropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
-| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgettablepropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetTableNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetTableNrqlQuery)[] | nrql_query block. |
+| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgettablepropertynrqlquery)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetTableNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetTableNrqlQuery)[] | nrql_query block. |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgettablepropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgettablepropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`filterCurrentDashboard`](#cdktfprovidernewreliconedashboardpagewidgettablepropertyfiltercurrentdashboard) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Use this item to filter the current dashboard. |
@@ -16364,10 +16364,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `nrqlQuery`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetTable.property.nrqlQuery" id="cdktfprovidernewreliconedashboardpagewidgettablepropertynrqlquery"></a>
 
 ```typescript
-public readonly nrqlQuery: OneDashboardPageWidgetTableNrqlQuery[];
+public readonly nrqlQuery: IResolvable | OneDashboardPageWidgetTableNrqlQuery[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetTableNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetTableNrqlQuery)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetTableNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetTableNrqlQuery)[]
 
 nrql_query block.
 
@@ -16514,12 +16514,12 @@ const oneDashboardRawConfig: OneDashboardRawConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewreliconedashboardrawconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewreliconedashboardrawconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliconedashboardrawconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliconedashboardrawconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliconedashboardrawconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovidernewreliconedashboardrawconfigpropertyname)<span title="Required">*</span> | `string` | The dashboard's name. |
-| [`page`](#cdktfprovidernewreliconedashboardrawconfigpropertypage)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardRawPage`](#@cdktf/provider-newrelic.OneDashboardRawPage)[] | page block. |
+| [`page`](#cdktfprovidernewreliconedashboardrawconfigpropertypage)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardRawPage`](#@cdktf/provider-newrelic.OneDashboardRawPage)[] | page block. |
 | [`accountId`](#cdktfprovidernewreliconedashboardrawconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create the dashboard. |
 | [`description`](#cdktfprovidernewreliconedashboardrawconfigpropertydescription) | `string` | The dashboard's description. |
 | [`permissions`](#cdktfprovidernewreliconedashboardrawconfigpropertypermissions) | `string` | Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only. |
@@ -16529,10 +16529,10 @@ const oneDashboardRawConfig: OneDashboardRawConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardRawConfig.property.count" id="cdktfprovidernewreliconedashboardrawconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -16583,10 +16583,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `page`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardRawConfig.property.page" id="cdktfprovidernewreliconedashboardrawconfigpropertypage"></a>
 
 ```typescript
-public readonly page: OneDashboardRawPage[];
+public readonly page: IResolvable | OneDashboardRawPage[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardRawPage`](#@cdktf/provider-newrelic.OneDashboardRawPage)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardRawPage`](#@cdktf/provider-newrelic.OneDashboardRawPage)[]
 
 page block.
 
@@ -16652,7 +16652,7 @@ const oneDashboardRawPage: OneDashboardRawPage = { ... }
 | --- | --- | --- |
 | [`name`](#cdktfprovidernewreliconedashboardrawpagepropertyname)<span title="Required">*</span> | `string` | The dashboard page's name. |
 | [`description`](#cdktfprovidernewreliconedashboardrawpagepropertydescription) | `string` | The dashboard page's description. |
-| [`widget`](#cdktfprovidernewreliconedashboardrawpagepropertywidget) | [`@cdktf/provider-newrelic.OneDashboardRawPageWidget`](#@cdktf/provider-newrelic.OneDashboardRawPageWidget)[] | widget block. |
+| [`widget`](#cdktfprovidernewreliconedashboardrawpagepropertywidget) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardRawPageWidget`](#@cdktf/provider-newrelic.OneDashboardRawPageWidget)[] | widget block. |
 
 ---
 
@@ -16687,10 +16687,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `widget`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardRawPage.property.widget" id="cdktfprovidernewreliconedashboardrawpagepropertywidget"></a>
 
 ```typescript
-public readonly widget: OneDashboardRawPageWidget[];
+public readonly widget: IResolvable | OneDashboardRawPageWidget[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.OneDashboardRawPageWidget`](#@cdktf/provider-newrelic.OneDashboardRawPageWidget)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardRawPageWidget`](#@cdktf/provider-newrelic.OneDashboardRawPageWidget)[]
 
 widget block.
 
@@ -16841,7 +16841,7 @@ const pluginsAlertConditionConfig: PluginsAlertConditionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -16852,7 +16852,7 @@ const pluginsAlertConditionConfig: PluginsAlertConditionConfig = { ... }
 | [`pluginGuid`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertypluginguid)<span title="Required">*</span> | `string` | The GUID of the plugin which produces the metric. |
 | [`pluginId`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertypluginid)<span title="Required">*</span> | `string` | The ID of the installed plugin instance which produces the metric. |
 | [`policyId`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
-| [`term`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyterm)<span title="Required">*</span> | [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[] | term block. |
+| [`term`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[] | term block. |
 | [`valueFunction`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyvaluefunction)<span title="Required">*</span> | `string` | The value function to apply to the metric data.  One of `min`, `max`, `average`, `sample_size`, `total`, or `percent`. |
 | [`enabled`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether or not this condition is enabled. |
 | [`runbookUrl`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyrunbookurl) | `string` | Runbook URL to display in notifications. |
@@ -16862,10 +16862,10 @@ const pluginsAlertConditionConfig: PluginsAlertConditionConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.count" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -17000,10 +17000,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `term`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.term" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertyterm"></a>
 
 ```typescript
-public readonly term: PluginsAlertConditionTerm[];
+public readonly term: IResolvable | PluginsAlertConditionTerm[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[]
 
 term block.
 
@@ -17159,7 +17159,7 @@ const serviceLevelConfig: ServiceLevelConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicservicelevelconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicservicelevelconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicservicelevelconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicservicelevelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicservicelevelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -17167,17 +17167,17 @@ const serviceLevelConfig: ServiceLevelConfig = { ... }
 | [`guid`](#cdktfprovidernewrelicservicelevelconfigpropertyguid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#guid ServiceLevel#guid}. |
 | [`name`](#cdktfprovidernewrelicservicelevelconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#name ServiceLevel#name}. |
 | [`description`](#cdktfprovidernewrelicservicelevelconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#description ServiceLevel#description}. |
-| [`objective`](#cdktfprovidernewrelicservicelevelconfigpropertyobjective) | [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[] | objective block. |
+| [`objective`](#cdktfprovidernewrelicservicelevelconfigpropertyobjective) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[] | objective block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelConfig.property.count" id="cdktfprovidernewrelicservicelevelconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -17264,10 +17264,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `objective`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelConfig.property.objective" id="cdktfprovidernewrelicservicelevelconfigpropertyobjective"></a>
 
 ```typescript
-public readonly objective: ServiceLevelObjective[];
+public readonly objective: IResolvable | ServiceLevelObjective[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[]
 
 objective block.
 
@@ -17639,7 +17639,7 @@ const syntheticsAlertConditionConfig: SyntheticsAlertConditionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -17654,10 +17654,10 @@ const syntheticsAlertConditionConfig: SyntheticsAlertConditionConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsAlertConditionConfig.property.count" id="cdktfprovidernewrelicsyntheticsalertconditionconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -17775,7 +17775,7 @@ const syntheticsMonitorConfig: SyntheticsMonitorConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -17796,10 +17796,10 @@ const syntheticsMonitorConfig: SyntheticsMonitorConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorConfig.property.count" id="cdktfprovidernewrelicsyntheticsmonitorconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -18001,23 +18001,23 @@ const syntheticsMonitorScriptConfig: SyntheticsMonitorScriptConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`monitorId`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertymonitorid)<span title="Required">*</span> | `string` | The ID of the monitor to attach the script to. |
 | [`text`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertytext)<span title="Required">*</span> | `string` | The plaintext representing the monitor script. |
-| [`location`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertylocation) | [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[] | location block. |
+| [`location`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertylocation) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[] | location block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorScriptConfig.property.count" id="cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -18082,10 +18082,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `location`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorScriptConfig.property.location" id="cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertylocation"></a>
 
 ```typescript
-public readonly location: SyntheticsMonitorScriptLocation[];
+public readonly location: IResolvable | SyntheticsMonitorScriptLocation[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[]
 
 location block.
 
@@ -18169,7 +18169,7 @@ const syntheticsMultilocationAlertConditionConfig: SyntheticsMultilocationAlertC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -18187,10 +18187,10 @@ const syntheticsMultilocationAlertConditionConfig: SyntheticsMultilocationAlertC
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionConfig.property.count" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -18414,7 +18414,7 @@ const syntheticsSecureCredentialConfig: SyntheticsSecureCredentialConfig = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -18429,10 +18429,10 @@ const syntheticsSecureCredentialConfig: SyntheticsSecureCredentialConfig = { ...
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsSecureCredentialConfig.property.count" id="cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -18550,14 +18550,14 @@ const workloadConfig: WorkloadConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovidernewrelicworkloadconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovidernewrelicworkloadconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicworkloadconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicworkloadconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicworkloadconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovidernewrelicworkloadconfigpropertyname)<span title="Required">*</span> | `string` | The workload's name. |
 | [`accountId`](#cdktfprovidernewrelicworkloadconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create the workload. |
 | [`entityGuids`](#cdktfprovidernewrelicworkloadconfigpropertyentityguids) | `string`[] | A list of entity GUIDs manually assigned to this workload. |
-| [`entitySearchQuery`](#cdktfprovidernewrelicworkloadconfigpropertyentitysearchquery) | [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[] | entity_search_query block. |
+| [`entitySearchQuery`](#cdktfprovidernewrelicworkloadconfigpropertyentitysearchquery) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[] | entity_search_query block. |
 | [`scopeAccountIds`](#cdktfprovidernewrelicworkloadconfigpropertyscopeaccountids) | `number`[] | A list of account IDs that will be used to get entities from. |
 
 ---
@@ -18565,10 +18565,10 @@ const workloadConfig: WorkloadConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkloadConfig.property.count" id="cdktfprovidernewrelicworkloadconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -18647,10 +18647,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `entitySearchQuery`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkloadConfig.property.entitySearchQuery" id="cdktfprovidernewrelicworkloadconfigpropertyentitysearchquery"></a>
 
 ```typescript
-public readonly entitySearchQuery: WorkloadEntitySearchQuery[];
+public readonly entitySearchQuery: IResolvable | WorkloadEntitySearchQuery[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[]
 
 entity_search_query block.
 
@@ -18713,12 +18713,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ```typescript
 import { AlertChannelConfigAOutputReference } from '@cdktf/provider-newrelic'
 
-new AlertChannelConfigAOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new AlertChannelConfigAOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicalertchannelconfigaoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicalertchannelconfigaoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicalertchannelconfigaoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicalertchannelconfigaoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -18726,7 +18726,7 @@ new AlertChannelConfigAOutputReference(terraformResource: ITerraformResource, te
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicalertchannelconfigaoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -18913,11 +18913,11 @@ public resetUserId()
 | [`authUsernameInput`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyauthusernameinput) | `string` | *No description.* |
 | [`baseUrlInput`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertybaseurlinput) | `string` | *No description.* |
 | [`channelInput`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertychannelinput) | `string` | *No description.* |
-| [`headersInput`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyheadersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`headersInput`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyheadersinput) | {[ key: string ]: `string`} | *No description.* |
 | [`headersStringInput`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyheadersstringinput) | `string` | *No description.* |
 | [`includeJsonAttachmentInput`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyincludejsonattachmentinput) | `string` | *No description.* |
 | [`keyInput`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertykeyinput) | `string` | *No description.* |
-| [`payloadInput`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayloadinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`payloadInput`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayloadinput) | {[ key: string ]: `string`} | *No description.* |
 | [`payloadStringInput`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayloadstringinput) | `string` | *No description.* |
 | [`payloadTypeInput`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayloadtypeinput) | `string` | *No description.* |
 | [`recipientsInput`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyrecipientsinput) | `string` | *No description.* |
@@ -18934,11 +18934,11 @@ public resetUserId()
 | [`authUsername`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyauthusername)<span title="Required">*</span> | `string` | *No description.* |
 | [`baseUrl`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertybaseurl)<span title="Required">*</span> | `string` | *No description.* |
 | [`channel`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertychannel)<span title="Required">*</span> | `string` | *No description.* |
-| [`headers`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyheaders)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`headers`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyheaders)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`headersString`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyheadersstring)<span title="Required">*</span> | `string` | *No description.* |
 | [`includeJsonAttachment`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyincludejsonattachment)<span title="Required">*</span> | `string` | *No description.* |
 | [`key`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertykey)<span title="Required">*</span> | `string` | *No description.* |
-| [`payload`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayload)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`payload`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayload)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`payloadString`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayloadstring)<span title="Required">*</span> | `string` | *No description.* |
 | [`payloadType`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayloadtype)<span title="Required">*</span> | `string` | *No description.* |
 | [`recipients`](#cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyrecipients)<span title="Required">*</span> | `string` | *No description.* |
@@ -19016,10 +19016,10 @@ public readonly channelInput: string;
 ##### `headersInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.headersInput" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyheadersinput"></a>
 
 ```typescript
-public readonly headersInput: IResolvable | {[ key: string ]: string};
+public readonly headersInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -19056,10 +19056,10 @@ public readonly keyInput: string;
 ##### `payloadInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.payloadInput" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayloadinput"></a>
 
 ```typescript
-public readonly payloadInput: IResolvable | {[ key: string ]: string};
+public readonly payloadInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -19226,10 +19226,10 @@ public readonly channel: string;
 ##### `headers`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.headers" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertyheaders"></a>
 
 ```typescript
-public readonly headers: IResolvable | {[ key: string ]: string};
+public readonly headers: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -19266,10 +19266,10 @@ public readonly key: string;
 ##### `payload`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.property.payload" id="cdktfprovidernewrelicalertchannelconfigaoutputreferencepropertypayload"></a>
 
 ```typescript
-public readonly payload: IResolvable | {[ key: string ]: string};
+public readonly payload: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -19391,12 +19391,12 @@ public readonly internalValue: AlertChannelConfigA;
 ```typescript
 import { AlertMutingRuleConditionOutputReference } from '@cdktf/provider-newrelic'
 
-new AlertMutingRuleConditionOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new AlertMutingRuleConditionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -19404,7 +19404,7 @@ new AlertMutingRuleConditionOutputReference(terraformResource: ITerraformResourc
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleConditionOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicalertmutingruleconditionoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -19432,9 +19432,9 @@ True if this is a block, false if it's a list.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`conditionsInput`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyconditionsinput) | [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] | *No description.* |
+| [`conditionsInput`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyconditionsinput) | [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`operatorInput`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyoperatorinput) | `string` | *No description.* |
-| [`conditions`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyconditions)<span title="Required">*</span> | [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] | *No description.* |
+| [`conditions`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyconditions)<span title="Required">*</span> | [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`operator`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyoperator)<span title="Required">*</span> | `string` | *No description.* |
 | [`internalValue`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.AlertMutingRuleCondition`](#@cdktf/provider-newrelic.AlertMutingRuleCondition) | *No description.* |
 
@@ -19443,10 +19443,10 @@ True if this is a block, false if it's a list.
 ##### `conditionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleConditionOutputReference.property.conditionsInput" id="cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyconditionsinput"></a>
 
 ```typescript
-public readonly conditionsInput: AlertMutingRuleConditionConditions[];
+public readonly conditionsInput: AlertMutingRuleConditionConditions[] | IResolvable;
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[]
+- *Type:* [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -19463,10 +19463,10 @@ public readonly operatorInput: string;
 ##### `conditions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleConditionOutputReference.property.conditions" id="cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyconditions"></a>
 
 ```typescript
-public readonly conditions: AlertMutingRuleConditionConditions[];
+public readonly conditions: AlertMutingRuleConditionConditions[] | IResolvable;
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[]
+- *Type:* [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -19498,12 +19498,12 @@ public readonly internalValue: AlertMutingRuleCondition;
 ```typescript
 import { AlertMutingRuleScheduleOutputReference } from '@cdktf/provider-newrelic'
 
-new AlertMutingRuleScheduleOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new AlertMutingRuleScheduleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -19511,7 +19511,7 @@ new AlertMutingRuleScheduleOutputReference(terraformResource: ITerraformResource
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleScheduleOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicalertmutingrulescheduleoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -19763,12 +19763,12 @@ public readonly internalValue: AlertMutingRuleSchedule;
 ```typescript
 import { DashboardFilterOutputReference } from '@cdktf/provider-newrelic'
 
-new DashboardFilterOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DashboardFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicdashboardfilteroutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicdashboardfilteroutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicdashboardfilteroutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicdashboardfilteroutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -19776,7 +19776,7 @@ new DashboardFilterOutputReference(terraformResource: ITerraformResource, terraf
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardFilterOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicdashboardfilteroutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -19883,12 +19883,12 @@ public readonly internalValue: DashboardFilter;
 ```typescript
 import { DashboardWidgetCompareWithPresentationOutputReference } from '@cdktf/provider-newrelic'
 
-new DashboardWidgetCompareWithPresentationOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetCompareWithPresentationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -19896,7 +19896,7 @@ new DashboardWidgetCompareWithPresentationOutputReference(terraformResource: ITe
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentationOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -19990,20 +19990,21 @@ public readonly internalValue: DashboardWidgetCompareWithPresentation;
 ```typescript
 import { DataNewrelicAlertChannelConfigA } from '@cdktf/provider-newrelic'
 
-new DataNewrelicAlertChannelConfigA(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataNewrelicAlertChannelConfigA(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | *No description.* |
+| [`terraformResource`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
 | [`terraformAttribute`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
 | [`complexComputedListIndex`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
+| [`wrapsSet`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaparameterwrapsset) | `boolean` | *No description.* |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.parameter.terraformResource" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -20019,6 +20020,12 @@ new DataNewrelicAlertChannelConfigA(terraformResource: ITerraformResource, terra
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.parameter.wrapsSet" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties" id="properties"></a>
@@ -20031,10 +20038,10 @@ new DataNewrelicAlertChannelConfigA(terraformResource: ITerraformResource, terra
 | [`authUsername`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyauthusername)<span title="Required">*</span> | `string` | *No description.* |
 | [`baseUrl`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertybaseurl)<span title="Required">*</span> | `string` | *No description.* |
 | [`channel`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertychannel)<span title="Required">*</span> | `string` | *No description.* |
-| [`headers`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyheaders)<span title="Required">*</span> | `any` | *No description.* |
+| [`headers`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyheaders)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`includeJsonAttachment`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyincludejsonattachment)<span title="Required">*</span> | `string` | *No description.* |
 | [`key`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertykey)<span title="Required">*</span> | `string` | *No description.* |
-| [`payload`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertypayload)<span title="Required">*</span> | `any` | *No description.* |
+| [`payload`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertypayload)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`payloadType`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertypayloadtype)<span title="Required">*</span> | `string` | *No description.* |
 | [`recipients`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyrecipients)<span title="Required">*</span> | `string` | *No description.* |
 | [`region`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyregion)<span title="Required">*</span> | `string` | *No description.* |
@@ -20110,10 +20117,10 @@ public readonly channel: string;
 ##### `headers`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.headers" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyheaders"></a>
 
 ```typescript
-public readonly headers: any;
+public readonly headers: {[ key: string ]: string};
 ```
 
-- *Type:* `any`
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -20140,10 +20147,10 @@ public readonly key: string;
 ##### `payload`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.payload" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertypayload"></a>
 
 ```typescript
-public readonly payload: any;
+public readonly payload: {[ key: string ]: string};
 ```
 
-- *Type:* `any`
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -20245,12 +20252,12 @@ public readonly userId: string;
 ```typescript
 import { DataNewrelicEntityTagOutputReference } from '@cdktf/provider-newrelic'
 
-new DataNewrelicEntityTagOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DataNewrelicEntityTagOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicdatanewrelicentitytagoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicdatanewrelicentitytagoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicdatanewrelicentitytagoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicdatanewrelicentitytagoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -20258,7 +20265,7 @@ new DataNewrelicEntityTagOutputReference(terraformResource: ITerraformResource, 
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntityTagOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicdatanewrelicentitytagoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -20352,12 +20359,12 @@ public readonly internalValue: DataNewrelicEntityTag;
 ```typescript
 import { EntityTagsTimeoutsOutputReference } from '@cdktf/provider-newrelic'
 
-new EntityTagsTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new EntityTagsTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicentitytagstimeoutsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicentitytagstimeoutsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicentitytagstimeoutsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicentitytagstimeoutsoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -20365,7 +20372,7 @@ new EntityTagsTimeoutsOutputReference(terraformResource: ITerraformResource, ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.EntityTagsTimeoutsOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicentitytagstimeoutsoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -20450,12 +20457,12 @@ public readonly internalValue: EntityTagsTimeouts;
 ```typescript
 import { InfraAlertConditionCriticalOutputReference } from '@cdktf/provider-newrelic'
 
-new InfraAlertConditionCriticalOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new InfraAlertConditionCriticalOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicinfraalertconditioncriticaloutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicinfraalertconditioncriticaloutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicinfraalertconditioncriticaloutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicinfraalertconditioncriticaloutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -20463,7 +20470,7 @@ new InfraAlertConditionCriticalOutputReference(terraformResource: ITerraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionCriticalOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicinfraalertconditioncriticaloutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -20599,12 +20606,12 @@ public readonly internalValue: InfraAlertConditionCritical;
 ```typescript
 import { InfraAlertConditionWarningOutputReference } from '@cdktf/provider-newrelic'
 
-new InfraAlertConditionWarningOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new InfraAlertConditionWarningOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicinfraalertconditionwarningoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicinfraalertconditionwarningoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicinfraalertconditionwarningoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicinfraalertconditionwarningoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -20612,7 +20619,7 @@ new InfraAlertConditionWarningOutputReference(terraformResource: ITerraformResou
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionWarningOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicinfraalertconditionwarningoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -20748,12 +20755,12 @@ public readonly internalValue: InfraAlertConditionWarning;
 ```typescript
 import { NrqlAlertConditionCriticalOutputReference } from '@cdktf/provider-newrelic'
 
-new NrqlAlertConditionCriticalOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new NrqlAlertConditionCriticalOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -20761,7 +20768,7 @@ new NrqlAlertConditionCriticalOutputReference(terraformResource: ITerraformResou
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionCriticalOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -20984,12 +20991,12 @@ public readonly internalValue: NrqlAlertConditionCritical;
 ```typescript
 import { NrqlAlertConditionNrqlOutputReference } from '@cdktf/provider-newrelic'
 
-new NrqlAlertConditionNrqlOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new NrqlAlertConditionNrqlOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicnrqlalertconditionnrqloutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicnrqlalertconditionnrqloutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicnrqlalertconditionnrqloutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicnrqlalertconditionnrqloutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -20997,7 +21004,7 @@ new NrqlAlertConditionNrqlOutputReference(terraformResource: ITerraformResource,
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionNrqlOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicnrqlalertconditionnrqloutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -21133,12 +21140,12 @@ public readonly internalValue: NrqlAlertConditionNrql;
 ```typescript
 import { NrqlAlertConditionWarningOutputReference } from '@cdktf/provider-newrelic'
 
-new NrqlAlertConditionWarningOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new NrqlAlertConditionWarningOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -21146,7 +21153,7 @@ new NrqlAlertConditionWarningOutputReference(terraformResource: ITerraformResour
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionWarningOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicnrqlalertconditionwarningoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -21369,12 +21376,12 @@ public readonly internalValue: NrqlAlertConditionWarning;
 ```typescript
 import { ServiceLevelEventsBadEventsOutputReference } from '@cdktf/provider-newrelic'
 
-new ServiceLevelEventsBadEventsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServiceLevelEventsBadEventsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -21382,7 +21389,7 @@ new ServiceLevelEventsBadEventsOutputReference(terraformResource: ITerraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsBadEventsOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -21489,12 +21496,12 @@ public readonly internalValue: ServiceLevelEventsBadEvents;
 ```typescript
 import { ServiceLevelEventsGoodEventsOutputReference } from '@cdktf/provider-newrelic'
 
-new ServiceLevelEventsGoodEventsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServiceLevelEventsGoodEventsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -21502,7 +21509,7 @@ new ServiceLevelEventsGoodEventsOutputReference(terraformResource: ITerraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsGoodEventsOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -21609,12 +21616,12 @@ public readonly internalValue: ServiceLevelEventsGoodEvents;
 ```typescript
 import { ServiceLevelEventsOutputReference } from '@cdktf/provider-newrelic'
 
-new ServiceLevelEventsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServiceLevelEventsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicserviceleveleventsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicserviceleveleventsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicserviceleveleventsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicserviceleveleventsoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -21622,7 +21629,7 @@ new ServiceLevelEventsOutputReference(terraformResource: ITerraformResource, ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicserviceleveleventsoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -21819,12 +21826,12 @@ public readonly internalValue: ServiceLevelEvents;
 ```typescript
 import { ServiceLevelEventsValidEventsOutputReference } from '@cdktf/provider-newrelic'
 
-new ServiceLevelEventsValidEventsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServiceLevelEventsValidEventsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -21832,7 +21839,7 @@ new ServiceLevelEventsValidEventsOutputReference(terraformResource: ITerraformRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsValidEventsOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -21939,12 +21946,12 @@ public readonly internalValue: ServiceLevelEventsValidEvents;
 ```typescript
 import { ServiceLevelObjectiveTimeWindowOutputReference } from '@cdktf/provider-newrelic'
 
-new ServiceLevelObjectiveTimeWindowOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServiceLevelObjectiveTimeWindowOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicservicelevelobjectivetimewindowoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicservicelevelobjectivetimewindowoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicservicelevelobjectivetimewindowoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicservicelevelobjectivetimewindowoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -21952,7 +21959,7 @@ new ServiceLevelObjectiveTimeWindowOutputReference(terraformResource: ITerraform
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicservicelevelobjectivetimewindowoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -22043,12 +22050,12 @@ public readonly internalValue: ServiceLevelObjectiveTimeWindow;
 ```typescript
 import { ServiceLevelObjectiveTimeWindowRollingOutputReference } from '@cdktf/provider-newrelic'
 
-new ServiceLevelObjectiveTimeWindowRollingOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServiceLevelObjectiveTimeWindowRollingOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicservicelevelobjectivetimewindowrollingoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicservicelevelobjectivetimewindowrollingoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicservicelevelobjectivetimewindowrollingoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicservicelevelobjectivetimewindowrollingoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -22056,7 +22063,7 @@ new ServiceLevelObjectiveTimeWindowRollingOutputReference(terraformResource: ITe
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowRollingOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicservicelevelobjectivetimewindowrollingoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -22150,12 +22157,12 @@ public readonly internalValue: ServiceLevelObjectiveTimeWindowRolling;
 ```typescript
 import { SyntheticsMultilocationAlertConditionCriticalOutputReference } from '@cdktf/provider-newrelic'
 
-new SyntheticsMultilocationAlertConditionCriticalOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsMultilocationAlertConditionCriticalOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditioncriticaloutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditioncriticaloutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditioncriticaloutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditioncriticaloutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -22163,7 +22170,7 @@ new SyntheticsMultilocationAlertConditionCriticalOutputReference(terraformResour
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionCriticalOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditioncriticaloutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -22235,12 +22242,12 @@ public readonly internalValue: SyntheticsMultilocationAlertConditionCritical;
 ```typescript
 import { SyntheticsMultilocationAlertConditionWarningOutputReference } from '@cdktf/provider-newrelic'
 
-new SyntheticsMultilocationAlertConditionWarningOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsMultilocationAlertConditionWarningOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionwarningoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionwarningoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionwarningoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionwarningoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -22248,7 +22255,7 @@ new SyntheticsMultilocationAlertConditionWarningOutputReference(terraformResourc
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionWarningOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionwarningoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 

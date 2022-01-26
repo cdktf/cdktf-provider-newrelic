@@ -72,7 +72,7 @@ export interface PluginsAlertConditionConfig extends cdktf.TerraformMetaArgument
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#term PluginsAlertCondition#term}
   */
-  readonly term: PluginsAlertConditionTerm[];
+  readonly term: PluginsAlertConditionTerm[] | cdktf.IResolvable;
 }
 export interface PluginsAlertConditionTerm {
   /**
@@ -107,8 +107,8 @@ export interface PluginsAlertConditionTerm {
   readonly timeFunction: string;
 }
 
-export function pluginsAlertConditionTermToTerraform(struct?: PluginsAlertConditionTerm): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function pluginsAlertConditionTermToTerraform(struct?: PluginsAlertConditionTerm | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -174,7 +174,7 @@ export class PluginsAlertCondition extends cdktf.TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -190,8 +190,7 @@ export class PluginsAlertCondition extends cdktf.TerraformResource {
   // entities - computed: false, optional: false, required: true
   private _entities?: number[]; 
   public get entities() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('entities') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('entities')));
   }
   public set entities(value: number[]) {
     this._entities = value;
@@ -314,12 +313,12 @@ export class PluginsAlertCondition extends cdktf.TerraformResource {
   }
 
   // term - computed: false, optional: false, required: true
-  private _term?: PluginsAlertConditionTerm[]; 
+  private _term?: PluginsAlertConditionTerm[] | cdktf.IResolvable; 
   public get term() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('term') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('term')));
   }
-  public set term(value: PluginsAlertConditionTerm[]) {
+  public set term(value: PluginsAlertConditionTerm[] | cdktf.IResolvable) {
     this._term = value;
   }
   // Temporarily expose input value. Use with caution.

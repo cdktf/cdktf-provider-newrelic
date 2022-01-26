@@ -65,8 +65,8 @@ export interface AlertMutingRuleConditionConditions {
   readonly values: string[];
 }
 
-export function alertMutingRuleConditionConditionsToTerraform(struct?: AlertMutingRuleConditionConditions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function alertMutingRuleConditionConditionsToTerraform(struct?: AlertMutingRuleConditionConditions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -89,11 +89,11 @@ export interface AlertMutingRuleCondition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#conditions AlertMutingRule#conditions}
   */
-  readonly conditions: AlertMutingRuleConditionConditions[];
+  readonly conditions: AlertMutingRuleConditionConditions[] | cdktf.IResolvable;
 }
 
 export function alertMutingRuleConditionToTerraform(struct?: AlertMutingRuleConditionOutputReference | AlertMutingRuleCondition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -111,7 +111,7 @@ export class AlertMutingRuleConditionOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -156,12 +156,12 @@ export class AlertMutingRuleConditionOutputReference extends cdktf.ComplexObject
   }
 
   // conditions - computed: false, optional: false, required: true
-  private _conditions?: AlertMutingRuleConditionConditions[]; 
+  private _conditions?: AlertMutingRuleConditionConditions[] | cdktf.IResolvable; 
   public get conditions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('conditions') as any;
+    return this.interpolationForAttribute('conditions');
   }
-  public set conditions(value: AlertMutingRuleConditionConditions[]) {
+  public set conditions(value: AlertMutingRuleConditionConditions[] | cdktf.IResolvable) {
     this._conditions = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -215,7 +215,7 @@ export interface AlertMutingRuleSchedule {
 }
 
 export function alertMutingRuleScheduleToTerraform(struct?: AlertMutingRuleScheduleOutputReference | AlertMutingRuleSchedule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -238,7 +238,7 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -395,7 +395,7 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
   // weekly_repeat_days - computed: false, optional: true, required: false
   private _weeklyRepeatDays?: string[]; 
   public get weeklyRepeatDays() {
-    return this.getListAttribute('weekly_repeat_days');
+    return cdktf.Fn.tolist(this.getListAttribute('weekly_repeat_days'));
   }
   public set weeklyRepeatDays(value: string[]) {
     this._weeklyRepeatDays = value;
@@ -488,7 +488,7 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   // enabled - computed: false, optional: false, required: true
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -517,7 +517,7 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   }
 
   // condition - computed: false, optional: false, required: true
-  private _condition = new AlertMutingRuleConditionOutputReference(this as any, "condition", true);
+  private _condition = new AlertMutingRuleConditionOutputReference(this, "condition", true);
   public get condition() {
     return this._condition;
   }
@@ -530,7 +530,7 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   }
 
   // schedule - computed: false, optional: true, required: false
-  private _schedule = new AlertMutingRuleScheduleOutputReference(this as any, "schedule", true);
+  private _schedule = new AlertMutingRuleScheduleOutputReference(this, "schedule", true);
   public get schedule() {
     return this._schedule;
   }

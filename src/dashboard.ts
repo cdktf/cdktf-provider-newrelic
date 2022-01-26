@@ -48,7 +48,7 @@ export interface DashboardConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#widget Dashboard#widget}
   */
-  readonly widget?: DashboardWidget[];
+  readonly widget?: DashboardWidget[] | cdktf.IResolvable;
 }
 export interface DashboardFilter {
   /**
@@ -62,7 +62,7 @@ export interface DashboardFilter {
 }
 
 export function dashboardFilterToTerraform(struct?: DashboardFilterOutputReference | DashboardFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -80,7 +80,7 @@ export class DashboardFilterOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -114,7 +114,7 @@ export class DashboardFilterOutputReference extends cdktf.ComplexObject {
   // attributes - computed: false, optional: true, required: false
   private _attributes?: string[]; 
   public get attributes() {
-    return this.getListAttribute('attributes');
+    return cdktf.Fn.tolist(this.getListAttribute('attributes'));
   }
   public set attributes(value: string[]) {
     this._attributes = value;
@@ -130,7 +130,7 @@ export class DashboardFilterOutputReference extends cdktf.ComplexObject {
   // event_types - computed: false, optional: false, required: true
   private _eventTypes?: string[]; 
   public get eventTypes() {
-    return this.getListAttribute('event_types');
+    return cdktf.Fn.tolist(this.getListAttribute('event_types'));
   }
   public set eventTypes(value: string[]) {
     this._eventTypes = value;
@@ -156,7 +156,7 @@ export interface DashboardWidgetCompareWithPresentation {
 }
 
 export function dashboardWidgetCompareWithPresentationToTerraform(struct?: DashboardWidgetCompareWithPresentationOutputReference | DashboardWidgetCompareWithPresentation): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -174,7 +174,7 @@ export class DashboardWidgetCompareWithPresentationOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -246,8 +246,8 @@ export interface DashboardWidgetCompareWith {
   readonly presentation: DashboardWidgetCompareWithPresentation;
 }
 
-export function dashboardWidgetCompareWithToTerraform(struct?: DashboardWidgetCompareWith): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetCompareWithToTerraform(struct?: DashboardWidgetCompareWith | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -284,8 +284,8 @@ export interface DashboardWidgetMetric {
   readonly values?: string[];
 }
 
-export function dashboardWidgetMetricToTerraform(struct?: DashboardWidgetMetric): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetMetricToTerraform(struct?: DashboardWidgetMetric | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -411,17 +411,17 @@ export interface DashboardWidget {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#compare_with Dashboard#compare_with}
   */
-  readonly compareWith?: DashboardWidgetCompareWith[];
+  readonly compareWith?: DashboardWidgetCompareWith[] | cdktf.IResolvable;
   /**
   * metric block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#metric Dashboard#metric}
   */
-  readonly metric?: DashboardWidgetMetric[];
+  readonly metric?: DashboardWidgetMetric[] | cdktf.IResolvable;
 }
 
-export function dashboardWidgetToTerraform(struct?: DashboardWidget): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetToTerraform(struct?: DashboardWidget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -584,7 +584,7 @@ export class Dashboard extends cdktf.TerraformResource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter = new DashboardFilterOutputReference(this as any, "filter", true);
+  private _filter = new DashboardFilterOutputReference(this, "filter", true);
   public get filter() {
     return this._filter;
   }
@@ -600,12 +600,12 @@ export class Dashboard extends cdktf.TerraformResource {
   }
 
   // widget - computed: false, optional: true, required: false
-  private _widget?: DashboardWidget[]; 
+  private _widget?: DashboardWidget[] | cdktf.IResolvable; 
   public get widget() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('widget') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('widget')));
   }
-  public set widget(value: DashboardWidget[]) {
+  public set widget(value: DashboardWidget[] | cdktf.IResolvable) {
     this._widget = value;
   }
   public resetWidget() {

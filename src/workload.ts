@@ -36,7 +36,7 @@ export interface WorkloadConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#entity_search_query Workload#entity_search_query}
   */
-  readonly entitySearchQuery?: WorkloadEntitySearchQuery[];
+  readonly entitySearchQuery?: WorkloadEntitySearchQuery[] | cdktf.IResolvable;
 }
 export interface WorkloadEntitySearchQuery {
   /**
@@ -47,8 +47,8 @@ export interface WorkloadEntitySearchQuery {
   readonly query: string;
 }
 
-export function workloadEntitySearchQueryToTerraform(struct?: WorkloadEntitySearchQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function workloadEntitySearchQueryToTerraform(struct?: WorkloadEntitySearchQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -125,7 +125,7 @@ export class Workload extends cdktf.TerraformResource {
   // entity_guids - computed: true, optional: true, required: false
   private _entityGuids?: string[]; 
   public get entityGuids() {
-    return this.getListAttribute('entity_guids');
+    return cdktf.Fn.tolist(this.getListAttribute('entity_guids'));
   }
   public set entityGuids(value: string[]) {
     this._entityGuids = value;
@@ -169,8 +169,7 @@ export class Workload extends cdktf.TerraformResource {
   // scope_account_ids - computed: true, optional: true, required: false
   private _scopeAccountIds?: number[]; 
   public get scopeAccountIds() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('scope_account_ids') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('scope_account_ids')));
   }
   public set scopeAccountIds(value: number[]) {
     this._scopeAccountIds = value;
@@ -189,12 +188,12 @@ export class Workload extends cdktf.TerraformResource {
   }
 
   // entity_search_query - computed: false, optional: true, required: false
-  private _entitySearchQuery?: WorkloadEntitySearchQuery[]; 
+  private _entitySearchQuery?: WorkloadEntitySearchQuery[] | cdktf.IResolvable; 
   public get entitySearchQuery() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('entity_search_query') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('entity_search_query')));
   }
-  public set entitySearchQuery(value: WorkloadEntitySearchQuery[]) {
+  public set entitySearchQuery(value: WorkloadEntitySearchQuery[] | cdktf.IResolvable) {
     this._entitySearchQuery = value;
   }
   public resetEntitySearchQuery() {

@@ -24,7 +24,7 @@ export interface SyntheticsMonitorScriptConfig extends cdktf.TerraformMetaArgume
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script#location SyntheticsMonitorScript#location}
   */
-  readonly location?: SyntheticsMonitorScriptLocation[];
+  readonly location?: SyntheticsMonitorScriptLocation[] | cdktf.IResolvable;
 }
 export interface SyntheticsMonitorScriptLocation {
   /**
@@ -47,8 +47,8 @@ export interface SyntheticsMonitorScriptLocation {
   readonly vsePassword?: string;
 }
 
-export function syntheticsMonitorScriptLocationToTerraform(struct?: SyntheticsMonitorScriptLocation): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function syntheticsMonitorScriptLocationToTerraform(struct?: SyntheticsMonitorScriptLocation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -133,12 +133,12 @@ export class SyntheticsMonitorScript extends cdktf.TerraformResource {
   }
 
   // location - computed: false, optional: true, required: false
-  private _location?: SyntheticsMonitorScriptLocation[]; 
+  private _location?: SyntheticsMonitorScriptLocation[] | cdktf.IResolvable; 
   public get location() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('location') as any;
+    return this.interpolationForAttribute('location');
   }
-  public set location(value: SyntheticsMonitorScriptLocation[]) {
+  public set location(value: SyntheticsMonitorScriptLocation[] | cdktf.IResolvable) {
     this._location = value;
   }
   public resetLocation() {
