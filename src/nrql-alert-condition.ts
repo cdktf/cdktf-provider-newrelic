@@ -122,6 +122,12 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly runbookUrl?: string;
   /**
+  * The duration of overlapping timewindows used to smooth the chart line, in seconds. Must be a factor of `aggregation_window` and less than the aggregation window. It should be greater or equal to 30 seconds if `aggregation_window` is less than or equal to 3600 seconds, or greater or eqaul to `aggregation_window / 120` if `aggregation_window` is greater than 3600 seconds.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#slide_by NrqlAlertCondition#slide_by}
+  */
+  readonly slideBy?: number;
+  /**
   * The type of NRQL alert condition to create. Valid values are: 'static', 'baseline', 'outlier' (deprecated).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#type NrqlAlertCondition#type}
@@ -824,6 +830,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
     this._openViolationOnGroupOverlap = config.openViolationOnGroupOverlap;
     this._policyId = config.policyId;
     this._runbookUrl = config.runbookUrl;
+    this._slideBy = config.slideBy;
     this._type = config.type;
     this._valueFunction = config.valueFunction;
     this._violationTimeLimit = config.violationTimeLimit;
@@ -1141,6 +1148,22 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
     return this._runbookUrl;
   }
 
+  // slide_by - computed: true, optional: true, required: false
+  private _slideBy?: number; 
+  public get slideBy() {
+    return this.getNumberAttribute('slide_by');
+  }
+  public set slideBy(value: number) {
+    this._slideBy = value;
+  }
+  public resetSlideBy() {
+    this._slideBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get slideByInput() {
+    return this._slideBy;
+  }
+
   // type - computed: false, optional: true, required: false
   private _type?: string; 
   public get type() {
@@ -1292,6 +1315,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       open_violation_on_group_overlap: cdktf.booleanToTerraform(this._openViolationOnGroupOverlap),
       policy_id: cdktf.numberToTerraform(this._policyId),
       runbook_url: cdktf.stringToTerraform(this._runbookUrl),
+      slide_by: cdktf.numberToTerraform(this._slideBy),
       type: cdktf.stringToTerraform(this._type),
       value_function: cdktf.stringToTerraform(this._valueFunction),
       violation_time_limit: cdktf.stringToTerraform(this._violationTimeLimit),

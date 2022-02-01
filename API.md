@@ -5097,6 +5097,7 @@ Must be unique amongst siblings in the same scope
 | [`resetOpenViolationOnExpiration`](#cdktfprovidernewrelicnrqlalertconditionresetopenviolationonexpiration) | *No description.* |
 | [`resetOpenViolationOnGroupOverlap`](#cdktfprovidernewrelicnrqlalertconditionresetopenviolationongroupoverlap) | *No description.* |
 | [`resetRunbookUrl`](#cdktfprovidernewrelicnrqlalertconditionresetrunbookurl) | *No description.* |
+| [`resetSlideBy`](#cdktfprovidernewrelicnrqlalertconditionresetslideby) | *No description.* |
 | [`resetTerm`](#cdktfprovidernewrelicnrqlalertconditionresetterm) | *No description.* |
 | [`resetType`](#cdktfprovidernewrelicnrqlalertconditionresettype) | *No description.* |
 | [`resetValueFunction`](#cdktfprovidernewrelicnrqlalertconditionresetvaluefunction) | *No description.* |
@@ -5250,6 +5251,12 @@ public resetOpenViolationOnGroupOverlap()
 public resetRunbookUrl()
 ```
 
+##### `resetSlideBy` <a name="@cdktf/provider-newrelic.NrqlAlertCondition.resetSlideBy" id="cdktfprovidernewrelicnrqlalertconditionresetslideby"></a>
+
+```typescript
+public resetSlideBy()
+```
+
 ##### `resetTerm` <a name="@cdktf/provider-newrelic.NrqlAlertCondition.resetTerm" id="cdktfprovidernewrelicnrqlalertconditionresetterm"></a>
 
 ```typescript
@@ -5316,6 +5323,7 @@ public resetWarning()
 | [`openViolationOnGroupOverlapInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyopenviolationongroupoverlapinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`policyIdInput`](#cdktfprovidernewrelicnrqlalertconditionpropertypolicyidinput) | `number` | *No description.* |
 | [`runbookUrlInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyrunbookurlinput) | `string` | *No description.* |
+| [`slideByInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyslidebyinput) | `number` | *No description.* |
 | [`termInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyterminput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[] | *No description.* |
 | [`typeInput`](#cdktfprovidernewrelicnrqlalertconditionpropertytypeinput) | `string` | *No description.* |
 | [`valueFunctionInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyvaluefunctioninput) | `string` | *No description.* |
@@ -5341,6 +5349,7 @@ public resetWarning()
 | [`openViolationOnGroupOverlap`](#cdktfprovidernewrelicnrqlalertconditionpropertyopenviolationongroupoverlap)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`policyId`](#cdktfprovidernewrelicnrqlalertconditionpropertypolicyid)<span title="Required">*</span> | `number` | *No description.* |
 | [`runbookUrl`](#cdktfprovidernewrelicnrqlalertconditionpropertyrunbookurl)<span title="Required">*</span> | `string` | *No description.* |
+| [`slideBy`](#cdktfprovidernewrelicnrqlalertconditionpropertyslideby)<span title="Required">*</span> | `number` | *No description.* |
 | [`term`](#cdktfprovidernewrelicnrqlalertconditionpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[] | *No description.* |
 | [`type`](#cdktfprovidernewrelicnrqlalertconditionpropertytype)<span title="Required">*</span> | `string` | *No description.* |
 | [`valueFunction`](#cdktfprovidernewrelicnrqlalertconditionpropertyvaluefunction)<span title="Required">*</span> | `string` | *No description.* |
@@ -5599,6 +5608,16 @@ public readonly runbookUrlInput: string;
 
 ---
 
+##### `slideByInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.slideByInput" id="cdktfprovidernewrelicnrqlalertconditionpropertyslidebyinput"></a>
+
+```typescript
+public readonly slideByInput: number;
+```
+
+- *Type:* `number`
+
+---
+
 ##### `termInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.termInput" id="cdktfprovidernewrelicnrqlalertconditionpropertyterminput"></a>
 
 ```typescript
@@ -5846,6 +5865,16 @@ public readonly runbookUrl: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `slideBy`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.slideBy" id="cdktfprovidernewrelicnrqlalertconditionpropertyslideby"></a>
+
+```typescript
+public readonly slideBy: number;
+```
+
+- *Type:* `number`
 
 ---
 
@@ -8698,7 +8727,7 @@ const alertChannelConfig: AlertChannelConfig = { ... }
 | [`lifecycle`](#cdktfprovidernewrelicalertchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertchannelconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the channel. |
-| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (slack, user, victorops, webhook, email, opsgenie, pagerduty). |
+| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (victorops, webhook, email, opsgenie, pagerduty, slack, user). |
 | [`config`](#cdktfprovidernewrelicalertchannelconfigpropertyconfig) | [`@cdktf/provider-newrelic.AlertChannelConfigA`](#@cdktf/provider-newrelic.AlertChannelConfigA) | config block. |
 
 ---
@@ -8765,7 +8794,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-(Required) The type of channel. One of: (slack, user, victorops, webhook, email, opsgenie, pagerduty).
+(Required) The type of channel. One of: (victorops, webhook, email, opsgenie, pagerduty, slack, user).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
 
@@ -9140,7 +9169,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
-| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric). |
+| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
 | [`gcMetric`](#cdktfprovidernewrelicalertconditionconfigpropertygcmetric) | `string` | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -9269,7 +9298,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric).
+The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 
@@ -13194,6 +13223,7 @@ const nrqlAlertConditionConfig: NrqlAlertConditionConfig = { ... }
 | [`openViolationOnExpiration`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyopenviolationonexpiration) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether to create a new violation to capture that the signal expired. |
 | [`openViolationOnGroupOverlap`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyopenviolationongroupoverlap) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether overlapping groups should produce a violation. |
 | [`runbookUrl`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyrunbookurl) | `string` | Runbook URL to display in notifications. |
+| [`slideBy`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyslideby) | `number` | The duration of overlapping timewindows used to smooth the chart line, in seconds. |
 | [`term`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyterm) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[] | term block. |
 | [`type`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertytype) | `string` | The type of NRQL alert condition to create. Valid values are: 'static', 'baseline', 'outlier' (deprecated). |
 | [`valueFunction`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyvaluefunction) | `string` | Valid values are: 'single_value' or 'sum'. |
@@ -13534,6 +13564,20 @@ public readonly runbookUrl: string;
 Runbook URL to display in notifications.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#runbook_url NrqlAlertCondition#runbook_url}
+
+---
+
+##### `slideBy`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionConfig.property.slideBy" id="cdktfprovidernewrelicnrqlalertconditionconfigpropertyslideby"></a>
+
+```typescript
+public readonly slideBy: number;
+```
+
+- *Type:* `number`
+
+The duration of overlapping timewindows used to smooth the chart line, in seconds.
+
+Must be a factor of `aggregation_window` and less than the aggregation window. It should be greater or equal to 30 seconds if `aggregation_window` is less than or equal to 3600 seconds, or greater or eqaul to `aggregation_window / 120` if `aggregation_window` is greater than 3600 seconds.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#slide_by NrqlAlertCondition#slide_by}
 
 ---
 
