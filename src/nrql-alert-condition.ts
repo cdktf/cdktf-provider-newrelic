@@ -1148,7 +1148,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
     return this._runbookUrl;
   }
 
-  // slide_by - computed: true, optional: true, required: false
+  // slide_by - computed: false, optional: true, required: false
   private _slideBy?: number; 
   public get slideBy() {
     return this.getNumberAttribute('slide_by');
