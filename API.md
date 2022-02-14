@@ -9169,7 +9169,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
-| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric). |
+| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
 | [`gcMetric`](#cdktfprovidernewrelicalertconditionconfigpropertygcmetric) | `string` | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -9298,7 +9298,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric).
+The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 
@@ -13479,7 +13479,7 @@ public readonly expirationDuration: number;
 
 The amount of time (in seconds) to wait before considering the signal expired.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#expiration_duration NrqlAlertCondition#expiration_duration}
+Must be in the range of 30 to 172800 (inclusive)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#expiration_duration NrqlAlertCondition#expiration_duration}
 
 ---
 
@@ -17829,7 +17829,7 @@ const syntheticsMonitorConfig: SyntheticsMonitorConfig = { ... }
 | [`status`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertystatus)<span title="Required">*</span> | `string` | The monitor status (i.e. ENABLED, MUTED, DISABLED). |
 | [`type`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertytype)<span title="Required">*</span> | `string` | The monitor type. Valid values are SIMPLE, BROWSER, SCRIPT_BROWSER, and SCRIPT_API. |
 | [`bypassHeadRequest`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertybypassheadrequest) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Bypass HEAD request. |
-| [`slaThreshold`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyslathreshold) | `number` | The base threshold for the SLA report. |
+| [`slaThreshold`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyslathreshold) | `number` | The base threshold (in seconds) to calculate the apdex score for use in the SLA report. (Default 7 seconds). |
 | [`treatRedirectAsFailure`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertytreatredirectasfailure) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Fail the monitor check if redirected. |
 | [`uri`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyuri) | `string` | The URI for the monitor to hit. |
 | [`validationString`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyvalidationstring) | `string` | The string to validate against in the response. |
@@ -17969,7 +17969,7 @@ public readonly slaThreshold: number;
 
 - *Type:* `number`
 
-The base threshold for the SLA report.
+The base threshold (in seconds) to calculate the apdex score for use in the SLA report. (Default 7 seconds).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#sla_threshold SyntheticsMonitor#sla_threshold}
 

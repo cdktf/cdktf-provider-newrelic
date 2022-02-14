@@ -32,7 +32,7 @@ export interface SyntheticsMonitorConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
-  * The base threshold for the SLA report.
+  * The base threshold (in seconds) to calculate the apdex score for use in the SLA report. (Default 7 seconds)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#sla_threshold SyntheticsMonitor#sla_threshold}
   */
