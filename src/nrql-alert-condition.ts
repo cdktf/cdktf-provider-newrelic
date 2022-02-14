@@ -68,7 +68,7 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly expectedGroups?: number;
   /**
-  * The amount of time (in seconds) to wait before considering the signal expired.
+  * The amount of time (in seconds) to wait before considering the signal expired.  Must be in the range of 30 to 172800 (inclusive)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#expiration_duration NrqlAlertCondition#expiration_duration}
   */
