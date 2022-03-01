@@ -27,6 +27,7 @@ export * from './data-newrelic-account';
 export * from './data-newrelic-alert-channel';
 export * from './data-newrelic-alert-policy';
 export * from './data-newrelic-application';
+export * from './data-newrelic-cloud-account';
 export * from './data-newrelic-entity';
 export * from './data-newrelic-key-transaction';
 export * from './data-newrelic-plugin';
