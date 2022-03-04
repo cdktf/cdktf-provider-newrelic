@@ -7159,8 +7159,8 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Description** |
 | --- | --- |
 | [`putEvents`](#cdktfprovidernewrelicservicelevelputevents) | *No description.* |
+| [`putObjective`](#cdktfprovidernewrelicservicelevelputobjective) | *No description.* |
 | [`resetDescription`](#cdktfprovidernewrelicservicelevelresetdescription) | *No description.* |
-| [`resetObjective`](#cdktfprovidernewrelicservicelevelresetobjective) | *No description.* |
 
 ---
 
@@ -7176,16 +7176,22 @@ public putEvents(value: ServiceLevelEvents)
 
 ---
 
+##### `putObjective` <a name="@cdktf/provider-newrelic.ServiceLevel.putObjective" id="cdktfprovidernewrelicservicelevelputobjective"></a>
+
+```typescript
+public putObjective(value: ServiceLevelObjective)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevel.parameter.value" id="cdktfprovidernewrelicservicelevelparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)
+
+---
+
 ##### `resetDescription` <a name="@cdktf/provider-newrelic.ServiceLevel.resetDescription" id="cdktfprovidernewrelicservicelevelresetdescription"></a>
 
 ```typescript
 public resetDescription()
-```
-
-##### `resetObjective` <a name="@cdktf/provider-newrelic.ServiceLevel.resetObjective" id="cdktfprovidernewrelicservicelevelresetobjective"></a>
-
-```typescript
-public resetObjective()
 ```
 
 
@@ -7195,16 +7201,16 @@ public resetObjective()
 | --- | --- | --- |
 | [`events`](#cdktfprovidernewrelicservicelevelpropertyevents)<span title="Required">*</span> | [`@cdktf/provider-newrelic.ServiceLevelEventsOutputReference`](#@cdktf/provider-newrelic.ServiceLevelEventsOutputReference) | *No description.* |
 | [`id`](#cdktfprovidernewrelicservicelevelpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`objective`](#cdktfprovidernewrelicservicelevelpropertyobjective)<span title="Required">*</span> | [`@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference`](#@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference) | *No description.* |
 | [`sliId`](#cdktfprovidernewrelicservicelevelpropertysliid)<span title="Required">*</span> | `string` | *No description.* |
 | [`descriptionInput`](#cdktfprovidernewrelicservicelevelpropertydescriptioninput) | `string` | *No description.* |
 | [`eventsInput`](#cdktfprovidernewrelicservicelevelpropertyeventsinput) | [`@cdktf/provider-newrelic.ServiceLevelEvents`](#@cdktf/provider-newrelic.ServiceLevelEvents) | *No description.* |
 | [`guidInput`](#cdktfprovidernewrelicservicelevelpropertyguidinput) | `string` | *No description.* |
 | [`nameInput`](#cdktfprovidernewrelicservicelevelpropertynameinput) | `string` | *No description.* |
-| [`objectiveInput`](#cdktfprovidernewrelicservicelevelpropertyobjectiveinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[] | *No description.* |
+| [`objectiveInput`](#cdktfprovidernewrelicservicelevelpropertyobjectiveinput) | [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective) | *No description.* |
 | [`description`](#cdktfprovidernewrelicservicelevelpropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`guid`](#cdktfprovidernewrelicservicelevelpropertyguid)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidernewrelicservicelevelpropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`objective`](#cdktfprovidernewrelicservicelevelpropertyobjective)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[] | *No description.* |
 
 ---
 
@@ -7225,6 +7231,16 @@ public readonly id: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `objective`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevel.property.objective" id="cdktfprovidernewrelicservicelevelpropertyobjective"></a>
+
+```typescript
+public readonly objective: ServiceLevelObjectiveOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference`](#@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference)
 
 ---
 
@@ -7281,10 +7297,10 @@ public readonly nameInput: string;
 ##### `objectiveInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevel.property.objectiveInput" id="cdktfprovidernewrelicservicelevelpropertyobjectiveinput"></a>
 
 ```typescript
-public readonly objectiveInput: IResolvable | ServiceLevelObjective[];
+public readonly objectiveInput: ServiceLevelObjective;
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[]
+- *Type:* [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)
 
 ---
 
@@ -7315,16 +7331,6 @@ public readonly name: string;
 ```
 
 - *Type:* `string`
-
----
-
-##### `objective`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevel.property.objective" id="cdktfprovidernewrelicservicelevelpropertyobjective"></a>
-
-```typescript
-public readonly objective: IResolvable | ServiceLevelObjective[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[]
 
 ---
 
@@ -8884,7 +8890,7 @@ const alertChannelConfig: AlertChannelConfig = { ... }
 | [`lifecycle`](#cdktfprovidernewrelicalertchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertchannelconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the channel. |
-| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (slack, user, victorops, webhook, email, opsgenie, pagerduty). |
+| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (webhook, email, opsgenie, pagerduty, slack, user, victorops). |
 | [`config`](#cdktfprovidernewrelicalertchannelconfigpropertyconfig) | [`@cdktf/provider-newrelic.AlertChannelConfigA`](#@cdktf/provider-newrelic.AlertChannelConfigA) | config block. |
 
 ---
@@ -8951,7 +8957,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-(Required) The type of channel. One of: (slack, user, victorops, webhook, email, opsgenie, pagerduty).
+(Required) The type of channel. One of: (webhook, email, opsgenie, pagerduty, slack, user, victorops).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
 
@@ -9326,7 +9332,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
-| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric). |
+| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
 | [`gcMetric`](#cdktfprovidernewrelicalertconditionconfigpropertygcmetric) | `string` | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -9455,7 +9461,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
+The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 
@@ -13489,7 +13495,7 @@ const nrqlAlertConditionConfig: NrqlAlertConditionConfig = { ... }
 | [`slideBy`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyslideby) | `number` | The duration of overlapping timewindows used to smooth the chart line, in seconds. |
 | [`term`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyterm) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NrqlAlertConditionTerm`](#@cdktf/provider-newrelic.NrqlAlertConditionTerm)[] | term block. |
 | [`type`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertytype) | `string` | The type of NRQL alert condition to create. Valid values are: 'static', 'baseline', 'outlier' (deprecated). |
-| [`valueFunction`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyvaluefunction) | `string` | Valid values are: 'single_value' or 'sum'. |
+| [`valueFunction`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyvaluefunction) | `string` | Values are: 'single_value' (deprecated) or 'sum' (deprecated). |
 | [`violationTimeLimit`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyviolationtimelimit) | `string` | Sets a time limit, in hours, that will automatically force-close a long-lasting violation after the time limit you select. |
 | [`violationTimeLimitSeconds`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyviolationtimelimitseconds) | `number` | Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you select. |
 | [`warning`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertywarning) | [`@cdktf/provider-newrelic.NrqlAlertConditionWarning`](#@cdktf/provider-newrelic.NrqlAlertConditionWarning) | warning block. |
@@ -13880,7 +13886,7 @@ public readonly valueFunction: string;
 
 - *Type:* `string`
 
-Valid values are: 'single_value' or 'sum'.
+Values are: 'single_value' (deprecated) or 'sum' (deprecated).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#value_function NrqlAlertCondition#value_function}
 
@@ -17473,8 +17479,8 @@ const serviceLevelConfig: ServiceLevelConfig = { ... }
 | [`events`](#cdktfprovidernewrelicservicelevelconfigpropertyevents)<span title="Required">*</span> | [`@cdktf/provider-newrelic.ServiceLevelEvents`](#@cdktf/provider-newrelic.ServiceLevelEvents) | events block. |
 | [`guid`](#cdktfprovidernewrelicservicelevelconfigpropertyguid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#guid ServiceLevel#guid}. |
 | [`name`](#cdktfprovidernewrelicservicelevelconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#name ServiceLevel#name}. |
+| [`objective`](#cdktfprovidernewrelicservicelevelconfigpropertyobjective)<span title="Required">*</span> | [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective) | objective block. |
 | [`description`](#cdktfprovidernewrelicservicelevelconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#description ServiceLevel#description}. |
-| [`objective`](#cdktfprovidernewrelicservicelevelconfigpropertyobjective) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[] | objective block. |
 
 ---
 
@@ -17556,6 +17562,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 ---
 
+##### `objective`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelConfig.property.objective" id="cdktfprovidernewrelicservicelevelconfigpropertyobjective"></a>
+
+```typescript
+public readonly objective: ServiceLevelObjective;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)
+
+objective block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#objective ServiceLevel#objective}
+
+---
+
 ##### `description`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelConfig.property.description" id="cdktfprovidernewrelicservicelevelconfigpropertydescription"></a>
 
 ```typescript
@@ -17565,20 +17585,6 @@ public readonly description: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#description ServiceLevel#description}.
-
----
-
-##### `objective`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelConfig.property.objective" id="cdktfprovidernewrelicservicelevelconfigpropertyobjective"></a>
-
-```typescript
-public readonly objective: IResolvable | ServiceLevelObjective[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)[]
-
-objective block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#objective ServiceLevel#objective}
 
 ---
 
@@ -22242,6 +22248,190 @@ public readonly internalValue: ServiceLevelEventsValidEvents;
 ```
 
 - *Type:* [`@cdktf/provider-newrelic.ServiceLevelEventsValidEvents`](#@cdktf/provider-newrelic.ServiceLevelEventsValidEvents)
+
+---
+
+
+### ServiceLevelObjectiveOutputReference <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference" id="cdktfprovidernewrelicservicelevelobjectiveoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.Initializer" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferenceinitializer"></a>
+
+```typescript
+import { ServiceLevelObjectiveOutputReference } from '@cdktf/provider-newrelic'
+
+new ServiceLevelObjectiveOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`isSingleItem`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferenceparameterissingleitem"></a>
+
+- *Type:* `boolean`
+
+True if this is a block, false if it's a list.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`putTimeWindow`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferenceputtimewindow) | *No description.* |
+| [`resetDescription`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferenceresetdescription) | *No description.* |
+| [`resetName`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferenceresetname) | *No description.* |
+
+---
+
+##### `putTimeWindow` <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.putTimeWindow" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferenceputtimewindow"></a>
+
+```typescript
+public putTimeWindow(value: ServiceLevelObjectiveTimeWindow)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.parameter.value" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferenceparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindow`](#@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindow)
+
+---
+
+##### `resetDescription` <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.resetDescription" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferenceresetdescription"></a>
+
+```typescript
+public resetDescription()
+```
+
+##### `resetName` <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.resetName" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferenceresetname"></a>
+
+```typescript
+public resetName()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`timeWindow`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertytimewindow)<span title="Required">*</span> | [`@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowOutputReference`](#@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowOutputReference) | *No description.* |
+| [`descriptionInput`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertydescriptioninput) | `string` | *No description.* |
+| [`nameInput`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertynameinput) | `string` | *No description.* |
+| [`targetInput`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertytargetinput) | `number` | *No description.* |
+| [`timeWindowInput`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertytimewindowinput) | [`@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindow`](#@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindow) | *No description.* |
+| [`description`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertydescription)<span title="Required">*</span> | `string` | *No description.* |
+| [`name`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`target`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertytarget)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective) | *No description.* |
+
+---
+
+##### `timeWindow`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.property.timeWindow" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertytimewindow"></a>
+
+```typescript
+public readonly timeWindow: ServiceLevelObjectiveTimeWindowOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowOutputReference`](#@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowOutputReference)
+
+---
+
+##### `descriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.property.descriptionInput" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertydescriptioninput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.property.nameInput" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertynameinput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `targetInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.property.targetInput" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertytargetinput"></a>
+
+```typescript
+public readonly targetInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `timeWindowInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.property.timeWindowInput" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertytimewindowinput"></a>
+
+```typescript
+public readonly timeWindowInput: ServiceLevelObjectiveTimeWindow;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindow`](#@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindow)
+
+---
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.property.description" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertydescription"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.property.name" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `target`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.property.target" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertytarget"></a>
+
+```typescript
+public readonly target: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.property.internalValue" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: ServiceLevelObjective;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective)
 
 ---
 
