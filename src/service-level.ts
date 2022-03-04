@@ -30,7 +30,7 @@ export interface ServiceLevelConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#objective ServiceLevel#objective}
   */
-  readonly objective?: ServiceLevelObjective[] | cdktf.IResolvable;
+  readonly objective: ServiceLevelObjective;
 }
 export interface ServiceLevelEventsBadEvents {
   /**
@@ -622,7 +622,7 @@ export interface ServiceLevelObjective {
   readonly timeWindow: ServiceLevelObjectiveTimeWindow;
 }
 
-export function serviceLevelObjectiveToTerraform(struct?: ServiceLevelObjective | cdktf.IResolvable): any {
+export function serviceLevelObjectiveToTerraform(struct?: ServiceLevelObjectiveOutputReference | ServiceLevelObjective | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -635,6 +635,115 @@ export function serviceLevelObjectiveToTerraform(struct?: ServiceLevelObjective 
   }
 }
 
+export class ServiceLevelObjectiveOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): ServiceLevelObjective | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._target !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    if (this._timeWindow?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeWindow = this._timeWindow?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceLevelObjective | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._description = undefined;
+      this._name = undefined;
+      this._target = undefined;
+      this._timeWindow.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._description = value.description;
+      this._name = value.name;
+      this._target = value.target;
+      this._timeWindow.internalValue = value.timeWindow;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // target - computed: false, optional: false, required: true
+  private _target?: number; 
+  public get target() {
+    return this.getNumberAttribute('target');
+  }
+  public set target(value: number) {
+    this._target = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetInput() {
+    return this._target;
+  }
+
+  // time_window - computed: false, optional: false, required: true
+  private _timeWindow = new ServiceLevelObjectiveTimeWindowOutputReference(this, "time_window", true);
+  public get timeWindow() {
+    return this._timeWindow;
+  }
+  public putTimeWindow(value: ServiceLevelObjectiveTimeWindow) {
+    this._timeWindow.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeWindowInput() {
+    return this._timeWindow.internalValue;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/service_level newrelic_service_level}
@@ -672,7 +781,7 @@ export class ServiceLevel extends cdktf.TerraformResource {
     this._guid = config.guid;
     this._name = config.name;
     this._events.internalValue = config.events;
-    this._objective = config.objective;
+    this._objective.internalValue = config.objective;
   }
 
   // ==========
@@ -744,21 +853,17 @@ export class ServiceLevel extends cdktf.TerraformResource {
     return this._events.internalValue;
   }
 
-  // objective - computed: false, optional: true, required: false
-  private _objective?: ServiceLevelObjective[] | cdktf.IResolvable; 
+  // objective - computed: false, optional: false, required: true
+  private _objective = new ServiceLevelObjectiveOutputReference(this, "objective", true);
   public get objective() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('objective')));
+    return this._objective;
   }
-  public set objective(value: ServiceLevelObjective[] | cdktf.IResolvable) {
-    this._objective = value;
-  }
-  public resetObjective() {
-    this._objective = undefined;
+  public putObjective(value: ServiceLevelObjective) {
+    this._objective.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get objectiveInput() {
-    return this._objective;
+    return this._objective.internalValue;
   }
 
   // =========
@@ -771,7 +876,7 @@ export class ServiceLevel extends cdktf.TerraformResource {
       guid: cdktf.stringToTerraform(this._guid),
       name: cdktf.stringToTerraform(this._name),
       events: serviceLevelEventsToTerraform(this._events.internalValue),
-      objective: cdktf.listMapper(serviceLevelObjectiveToTerraform)(this._objective),
+      objective: serviceLevelObjectiveToTerraform(this._objective.internalValue),
     };
   }
 }

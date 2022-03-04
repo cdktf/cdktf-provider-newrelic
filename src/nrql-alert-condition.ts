@@ -134,7 +134,7 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly type?: string;
   /**
-  * Valid values are: 'single_value' or 'sum'
+  * Values are: 'single_value' (deprecated) or 'sum' (deprecated)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#value_function NrqlAlertCondition#value_function}
   */
