@@ -51,6 +51,7 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Description** |
 | --- | --- |
 | [`putConfig`](#cdktfprovidernewrelicalertchannelputconfig) | *No description.* |
+| [`resetAccountId`](#cdktfprovidernewrelicalertchannelresetaccountid) | *No description.* |
 | [`resetConfig`](#cdktfprovidernewrelicalertchannelresetconfig) | *No description.* |
 
 ---
@@ -67,6 +68,12 @@ public putConfig(value: AlertChannelConfigA)
 
 ---
 
+##### `resetAccountId` <a name="@cdktf/provider-newrelic.AlertChannel.resetAccountId" id="cdktfprovidernewrelicalertchannelresetaccountid"></a>
+
+```typescript
+public resetAccountId()
+```
+
 ##### `resetConfig` <a name="@cdktf/provider-newrelic.AlertChannel.resetConfig" id="cdktfprovidernewrelicalertchannelresetconfig"></a>
 
 ```typescript
@@ -80,9 +87,11 @@ public resetConfig()
 | --- | --- | --- |
 | [`config`](#cdktfprovidernewrelicalertchannelpropertyconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.AlertChannelConfigAOutputReference`](#@cdktf/provider-newrelic.AlertChannelConfigAOutputReference) | *No description.* |
 | [`id`](#cdktfprovidernewrelicalertchannelpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`accountIdInput`](#cdktfprovidernewrelicalertchannelpropertyaccountidinput) | `number` | *No description.* |
 | [`configInput`](#cdktfprovidernewrelicalertchannelpropertyconfiginput) | [`@cdktf/provider-newrelic.AlertChannelConfigA`](#@cdktf/provider-newrelic.AlertChannelConfigA) | *No description.* |
 | [`nameInput`](#cdktfprovidernewrelicalertchannelpropertynameinput) | `string` | *No description.* |
 | [`typeInput`](#cdktfprovidernewrelicalertchannelpropertytypeinput) | `string` | *No description.* |
+| [`accountId`](#cdktfprovidernewrelicalertchannelpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertchannelpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`type`](#cdktfprovidernewrelicalertchannelpropertytype)<span title="Required">*</span> | `string` | *No description.* |
 
@@ -105,6 +114,16 @@ public readonly id: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannel.property.accountIdInput" id="cdktfprovidernewrelicalertchannelpropertyaccountidinput"></a>
+
+```typescript
+public readonly accountIdInput: number;
+```
+
+- *Type:* `number`
 
 ---
 
@@ -135,6 +154,16 @@ public readonly typeInput: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannel.property.accountId" id="cdktfprovidernewrelicalertchannelpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
 
 ---
 
@@ -1091,6 +1120,19 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAccountId`](#cdktfprovidernewrelicalertpolicychannelresetaccountid) | *No description.* |
+
+---
+
+##### `resetAccountId` <a name="@cdktf/provider-newrelic.AlertPolicyChannel.resetAccountId" id="cdktfprovidernewrelicalertpolicychannelresetaccountid"></a>
+
+```typescript
+public resetAccountId()
+```
 
 
 #### Properties <a name="Properties" id="properties"></a>
@@ -1098,8 +1140,10 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`id`](#cdktfprovidernewrelicalertpolicychannelpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`accountIdInput`](#cdktfprovidernewrelicalertpolicychannelpropertyaccountidinput) | `number` | *No description.* |
 | [`channelIdsInput`](#cdktfprovidernewrelicalertpolicychannelpropertychannelidsinput) | `number`[] | *No description.* |
 | [`policyIdInput`](#cdktfprovidernewrelicalertpolicychannelpropertypolicyidinput) | `number` | *No description.* |
+| [`accountId`](#cdktfprovidernewrelicalertpolicychannelpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
 | [`channelIds`](#cdktfprovidernewrelicalertpolicychannelpropertychannelids)<span title="Required">*</span> | `number`[] | *No description.* |
 | [`policyId`](#cdktfprovidernewrelicalertpolicychannelpropertypolicyid)<span title="Required">*</span> | `number` | *No description.* |
 
@@ -1112,6 +1156,16 @@ public readonly id: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicyChannel.property.accountIdInput" id="cdktfprovidernewrelicalertpolicychannelpropertyaccountidinput"></a>
+
+```typescript
+public readonly accountIdInput: number;
+```
+
+- *Type:* `number`
 
 ---
 
@@ -1129,6 +1183,16 @@ public readonly channelIdsInput: number[];
 
 ```typescript
 public readonly policyIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertPolicyChannel.property.accountId" id="cdktfprovidernewrelicalertpolicychannelpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
 ```
 
 - *Type:* `number`
@@ -8890,7 +8954,8 @@ const alertChannelConfig: AlertChannelConfig = { ... }
 | [`lifecycle`](#cdktfprovidernewrelicalertchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertchannelconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the channel. |
-| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook). |
+| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie). |
+| [`accountId`](#cdktfprovidernewrelicalertchannelconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create alert channels. |
 | [`config`](#cdktfprovidernewrelicalertchannelconfigpropertyconfig) | [`@cdktf/provider-newrelic.AlertChannelConfigA`](#@cdktf/provider-newrelic.AlertChannelConfigA) | config block. |
 
 ---
@@ -8957,9 +9022,23 @@ public readonly type: string;
 
 - *Type:* `string`
 
-(Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
+(Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfig.property.accountId" id="cdktfprovidernewrelicalertchannelconfigpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+The New Relic account ID where you want to create alert channels.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#account_id AlertChannel#account_id}
 
 ---
 
@@ -9332,7 +9411,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
-| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric). |
+| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
 | [`gcMetric`](#cdktfprovidernewrelicalertconditionconfigpropertygcmetric) | `string` | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -9461,7 +9540,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric).
+The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 
@@ -10059,6 +10138,7 @@ const alertPolicyChannelConfig: AlertPolicyChannelConfig = { ... }
 | [`provider`](#cdktfprovidernewrelicalertpolicychannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`channelIds`](#cdktfprovidernewrelicalertpolicychannelconfigpropertychannelids)<span title="Required">*</span> | `number`[] | Array of channel IDs to apply to the specified policy. |
 | [`policyId`](#cdktfprovidernewrelicalertpolicychannelconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy. |
+| [`accountId`](#cdktfprovidernewrelicalertpolicychannelconfigpropertyaccountid) | `number` | The New Relic account ID where you want to link the channel to. |
 
 ---
 
@@ -10127,6 +10207,20 @@ public readonly policyId: number;
 The ID of the policy.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel#policy_id AlertPolicyChannel#policy_id}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicyChannelConfig.property.accountId" id="cdktfprovidernewrelicalertpolicychannelconfigpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+The New Relic account ID where you want to link the channel to.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel#account_id AlertPolicyChannel#account_id}
 
 ---
 
