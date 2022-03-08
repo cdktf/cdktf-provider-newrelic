@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface AlertPolicyChannelConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The New Relic account ID where you want to link the channel to.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel#account_id AlertPolicyChannel#account_id}
+  */
+  readonly accountId?: number;
+  /**
   * Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid drift your Terraform state.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel#channel_ids AlertPolicyChannel#channel_ids}
@@ -53,6 +59,7 @@ export class AlertPolicyChannel extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._accountId = config.accountId;
     this._channelIds = config.channelIds;
     this._policyId = config.policyId;
   }
@@ -60,6 +67,22 @@ export class AlertPolicyChannel extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // account_id - computed: true, optional: true, required: false
+  private _accountId?: number; 
+  public get accountId() {
+    return this.getNumberAttribute('account_id');
+  }
+  public set accountId(value: number) {
+    this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
+  }
 
   // channel_ids - computed: false, optional: false, required: true
   private _channelIds?: number[]; 
@@ -98,6 +121,7 @@ export class AlertPolicyChannel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      account_id: cdktf.numberToTerraform(this._accountId),
       channel_ids: cdktf.listMapper(cdktf.numberToTerraform)(this._channelIds),
       policy_id: cdktf.numberToTerraform(this._policyId),
     };
