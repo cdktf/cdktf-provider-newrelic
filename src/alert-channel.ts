@@ -8,13 +8,19 @@ import * as cdktf from 'cdktf';
 
 export interface AlertChannelConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The New Relic account ID where you want to create alert channels.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#account_id AlertChannel#account_id}
+  */
+  readonly accountId?: number;
+  /**
   * (Required) The name of the channel.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#name AlertChannel#name}
   */
   readonly name: string;
   /**
-  * (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
+  * (Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
   */
@@ -707,6 +713,7 @@ export class AlertChannel extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._accountId = config.accountId;
     this._name = config.name;
     this._type = config.type;
     this._config.internalValue = config.config;
@@ -715,6 +722,22 @@ export class AlertChannel extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // account_id - computed: true, optional: true, required: false
+  private _accountId?: number; 
+  public get accountId() {
+    return this.getNumberAttribute('account_id');
+  }
+  public set accountId(value: number) {
+    this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
+  }
 
   // id - computed: true, optional: true, required: false
   public get id() {
@@ -769,6 +792,7 @@ export class AlertChannel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      account_id: cdktf.numberToTerraform(this._accountId),
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
       config: alertChannelConfigAToTerraform(this._config.internalValue),
