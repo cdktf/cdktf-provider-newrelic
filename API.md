@@ -1654,6 +1654,601 @@ public readonly name: string;
 
 ---
 
+### CloudAwsLinkAccount <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount" id="cdktfprovidernewreliccloudawslinkaccount"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account newrelic_cloud_aws_link_account}.
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.Initializer" id="cdktfprovidernewreliccloudawslinkaccountinitializer"></a>
+
+```typescript
+import { CloudAwsLinkAccount } from '@cdktf/provider-newrelic'
+
+new CloudAwsLinkAccount(scope: Construct, id: string, config: CloudAwsLinkAccountConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#cdktfprovidernewreliccloudawslinkaccountparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
+| [`id`](#cdktfprovidernewreliccloudawslinkaccountparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
+| [`config`](#cdktfprovidernewreliccloudawslinkaccountparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsLinkAccountConfig`](#@cdktf/provider-newrelic.CloudAwsLinkAccountConfig) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.parameter.scope" id="cdktfprovidernewreliccloudawslinkaccountparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.parameter.id" id="cdktfprovidernewreliccloudawslinkaccountparameterid"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.parameter.config" id="cdktfprovidernewreliccloudawslinkaccountparameterconfig"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsLinkAccountConfig`](#@cdktf/provider-newrelic.CloudAwsLinkAccountConfig)
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`putTimeouts`](#cdktfprovidernewreliccloudawslinkaccountputtimeouts) | *No description.* |
+| [`resetAccountId`](#cdktfprovidernewreliccloudawslinkaccountresetaccountid) | *No description.* |
+| [`resetMetricCollectionMode`](#cdktfprovidernewreliccloudawslinkaccountresetmetriccollectionmode) | *No description.* |
+| [`resetTimeouts`](#cdktfprovidernewreliccloudawslinkaccountresettimeouts) | *No description.* |
+
+---
+
+##### `putTimeouts` <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.putTimeouts" id="cdktfprovidernewreliccloudawslinkaccountputtimeouts"></a>
+
+```typescript
+public putTimeouts(value: CloudAwsLinkAccountTimeouts)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.parameter.value" id="cdktfprovidernewreliccloudawslinkaccountparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts`](#@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts)
+
+---
+
+##### `resetAccountId` <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.resetAccountId" id="cdktfprovidernewreliccloudawslinkaccountresetaccountid"></a>
+
+```typescript
+public resetAccountId()
+```
+
+##### `resetMetricCollectionMode` <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.resetMetricCollectionMode" id="cdktfprovidernewreliccloudawslinkaccountresetmetriccollectionmode"></a>
+
+```typescript
+public resetMetricCollectionMode()
+```
+
+##### `resetTimeouts` <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.resetTimeouts" id="cdktfprovidernewreliccloudawslinkaccountresettimeouts"></a>
+
+```typescript
+public resetTimeouts()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`id`](#cdktfprovidernewreliccloudawslinkaccountpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`timeouts`](#cdktfprovidernewreliccloudawslinkaccountpropertytimeouts)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsLinkAccountTimeoutsOutputReference`](#@cdktf/provider-newrelic.CloudAwsLinkAccountTimeoutsOutputReference) | *No description.* |
+| [`accountIdInput`](#cdktfprovidernewreliccloudawslinkaccountpropertyaccountidinput) | `number` | *No description.* |
+| [`arnInput`](#cdktfprovidernewreliccloudawslinkaccountpropertyarninput) | `string` | *No description.* |
+| [`metricCollectionModeInput`](#cdktfprovidernewreliccloudawslinkaccountpropertymetriccollectionmodeinput) | `string` | *No description.* |
+| [`nameInput`](#cdktfprovidernewreliccloudawslinkaccountpropertynameinput) | `string` | *No description.* |
+| [`timeoutsInput`](#cdktfprovidernewreliccloudawslinkaccountpropertytimeoutsinput) | [`@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts`](#@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts) | *No description.* |
+| [`accountId`](#cdktfprovidernewreliccloudawslinkaccountpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`arn`](#cdktfprovidernewreliccloudawslinkaccountpropertyarn)<span title="Required">*</span> | `string` | *No description.* |
+| [`metricCollectionMode`](#cdktfprovidernewreliccloudawslinkaccountpropertymetriccollectionmode)<span title="Required">*</span> | `string` | *No description.* |
+| [`name`](#cdktfprovidernewreliccloudawslinkaccountpropertyname)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.property.id" id="cdktfprovidernewreliccloudawslinkaccountpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.property.timeouts" id="cdktfprovidernewreliccloudawslinkaccountpropertytimeouts"></a>
+
+```typescript
+public readonly timeouts: CloudAwsLinkAccountTimeoutsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsLinkAccountTimeoutsOutputReference`](#@cdktf/provider-newrelic.CloudAwsLinkAccountTimeoutsOutputReference)
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.property.accountIdInput" id="cdktfprovidernewreliccloudawslinkaccountpropertyaccountidinput"></a>
+
+```typescript
+public readonly accountIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `arnInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.property.arnInput" id="cdktfprovidernewreliccloudawslinkaccountpropertyarninput"></a>
+
+```typescript
+public readonly arnInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `metricCollectionModeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.property.metricCollectionModeInput" id="cdktfprovidernewreliccloudawslinkaccountpropertymetriccollectionmodeinput"></a>
+
+```typescript
+public readonly metricCollectionModeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.property.nameInput" id="cdktfprovidernewreliccloudawslinkaccountpropertynameinput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.property.timeoutsInput" id="cdktfprovidernewreliccloudawslinkaccountpropertytimeoutsinput"></a>
+
+```typescript
+public readonly timeoutsInput: CloudAwsLinkAccountTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts`](#@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts)
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.property.accountId" id="cdktfprovidernewreliccloudawslinkaccountpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `arn`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.property.arn" id="cdktfprovidernewreliccloudawslinkaccountpropertyarn"></a>
+
+```typescript
+public readonly arn: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `metricCollectionMode`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.property.metricCollectionMode" id="cdktfprovidernewreliccloudawslinkaccountpropertymetriccollectionmode"></a>
+
+```typescript
+public readonly metricCollectionMode: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.property.name" id="cdktfprovidernewreliccloudawslinkaccountpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants" id="constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`tfResourceType`](#cdktfprovidernewreliccloudawslinkaccountpropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `tfResourceType` <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount.property.tfResourceType" id="cdktfprovidernewreliccloudawslinkaccountpropertytfresourcetype"></a>
+
+- *Type:* `string`
+
+---
+
+### CloudAzureLinkAccount <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount" id="cdktfprovidernewreliccloudazurelinkaccount"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account newrelic_cloud_azure_link_account}.
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.Initializer" id="cdktfprovidernewreliccloudazurelinkaccountinitializer"></a>
+
+```typescript
+import { CloudAzureLinkAccount } from '@cdktf/provider-newrelic'
+
+new CloudAzureLinkAccount(scope: Construct, id: string, config: CloudAzureLinkAccountConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#cdktfprovidernewreliccloudazurelinkaccountparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
+| [`id`](#cdktfprovidernewreliccloudazurelinkaccountparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
+| [`config`](#cdktfprovidernewreliccloudazurelinkaccountparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureLinkAccountConfig`](#@cdktf/provider-newrelic.CloudAzureLinkAccountConfig) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.parameter.scope" id="cdktfprovidernewreliccloudazurelinkaccountparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.parameter.id" id="cdktfprovidernewreliccloudazurelinkaccountparameterid"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.parameter.config" id="cdktfprovidernewreliccloudazurelinkaccountparameterconfig"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureLinkAccountConfig`](#@cdktf/provider-newrelic.CloudAzureLinkAccountConfig)
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAccountId`](#cdktfprovidernewreliccloudazurelinkaccountresetaccountid) | *No description.* |
+
+---
+
+##### `resetAccountId` <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.resetAccountId" id="cdktfprovidernewreliccloudazurelinkaccountresetaccountid"></a>
+
+```typescript
+public resetAccountId()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`id`](#cdktfprovidernewreliccloudazurelinkaccountpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`accountIdInput`](#cdktfprovidernewreliccloudazurelinkaccountpropertyaccountidinput) | `number` | *No description.* |
+| [`applicationIdInput`](#cdktfprovidernewreliccloudazurelinkaccountpropertyapplicationidinput) | `string` | *No description.* |
+| [`clientSecretIdInput`](#cdktfprovidernewreliccloudazurelinkaccountpropertyclientsecretidinput) | `string` | *No description.* |
+| [`nameInput`](#cdktfprovidernewreliccloudazurelinkaccountpropertynameinput) | `string` | *No description.* |
+| [`subscriptionIdInput`](#cdktfprovidernewreliccloudazurelinkaccountpropertysubscriptionidinput) | `string` | *No description.* |
+| [`tenantIdInput`](#cdktfprovidernewreliccloudazurelinkaccountpropertytenantidinput) | `string` | *No description.* |
+| [`accountId`](#cdktfprovidernewreliccloudazurelinkaccountpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`applicationId`](#cdktfprovidernewreliccloudazurelinkaccountpropertyapplicationid)<span title="Required">*</span> | `string` | *No description.* |
+| [`clientSecretId`](#cdktfprovidernewreliccloudazurelinkaccountpropertyclientsecretid)<span title="Required">*</span> | `string` | *No description.* |
+| [`name`](#cdktfprovidernewreliccloudazurelinkaccountpropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`subscriptionId`](#cdktfprovidernewreliccloudazurelinkaccountpropertysubscriptionid)<span title="Required">*</span> | `string` | *No description.* |
+| [`tenantId`](#cdktfprovidernewreliccloudazurelinkaccountpropertytenantid)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.id" id="cdktfprovidernewreliccloudazurelinkaccountpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.accountIdInput" id="cdktfprovidernewreliccloudazurelinkaccountpropertyaccountidinput"></a>
+
+```typescript
+public readonly accountIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `applicationIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.applicationIdInput" id="cdktfprovidernewreliccloudazurelinkaccountpropertyapplicationidinput"></a>
+
+```typescript
+public readonly applicationIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `clientSecretIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.clientSecretIdInput" id="cdktfprovidernewreliccloudazurelinkaccountpropertyclientsecretidinput"></a>
+
+```typescript
+public readonly clientSecretIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.nameInput" id="cdktfprovidernewreliccloudazurelinkaccountpropertynameinput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `subscriptionIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.subscriptionIdInput" id="cdktfprovidernewreliccloudazurelinkaccountpropertysubscriptionidinput"></a>
+
+```typescript
+public readonly subscriptionIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tenantIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.tenantIdInput" id="cdktfprovidernewreliccloudazurelinkaccountpropertytenantidinput"></a>
+
+```typescript
+public readonly tenantIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.accountId" id="cdktfprovidernewreliccloudazurelinkaccountpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `applicationId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.applicationId" id="cdktfprovidernewreliccloudazurelinkaccountpropertyapplicationid"></a>
+
+```typescript
+public readonly applicationId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `clientSecretId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.clientSecretId" id="cdktfprovidernewreliccloudazurelinkaccountpropertyclientsecretid"></a>
+
+```typescript
+public readonly clientSecretId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.name" id="cdktfprovidernewreliccloudazurelinkaccountpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `subscriptionId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.subscriptionId" id="cdktfprovidernewreliccloudazurelinkaccountpropertysubscriptionid"></a>
+
+```typescript
+public readonly subscriptionId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tenantId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.tenantId" id="cdktfprovidernewreliccloudazurelinkaccountpropertytenantid"></a>
+
+```typescript
+public readonly tenantId: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants" id="constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`tfResourceType`](#cdktfprovidernewreliccloudazurelinkaccountpropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `tfResourceType` <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.tfResourceType" id="cdktfprovidernewreliccloudazurelinkaccountpropertytfresourcetype"></a>
+
+- *Type:* `string`
+
+---
+
+### CloudGcpLinkAccount <a name="@cdktf/provider-newrelic.CloudGcpLinkAccount" id="cdktfprovidernewreliccloudgcplinkaccount"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_link_account newrelic_cloud_gcp_link_account}.
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpLinkAccount.Initializer" id="cdktfprovidernewreliccloudgcplinkaccountinitializer"></a>
+
+```typescript
+import { CloudGcpLinkAccount } from '@cdktf/provider-newrelic'
+
+new CloudGcpLinkAccount(scope: Construct, id: string, config: CloudGcpLinkAccountConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#cdktfprovidernewreliccloudgcplinkaccountparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
+| [`id`](#cdktfprovidernewreliccloudgcplinkaccountparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
+| [`config`](#cdktfprovidernewreliccloudgcplinkaccountparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpLinkAccountConfig`](#@cdktf/provider-newrelic.CloudGcpLinkAccountConfig) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccount.parameter.scope" id="cdktfprovidernewreliccloudgcplinkaccountparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccount.parameter.id" id="cdktfprovidernewreliccloudgcplinkaccountparameterid"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccount.parameter.config" id="cdktfprovidernewreliccloudgcplinkaccountparameterconfig"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpLinkAccountConfig`](#@cdktf/provider-newrelic.CloudGcpLinkAccountConfig)
+
+---
+
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`id`](#cdktfprovidernewreliccloudgcplinkaccountpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`accountIdInput`](#cdktfprovidernewreliccloudgcplinkaccountpropertyaccountidinput) | `number` | *No description.* |
+| [`nameInput`](#cdktfprovidernewreliccloudgcplinkaccountpropertynameinput) | `string` | *No description.* |
+| [`projectIdInput`](#cdktfprovidernewreliccloudgcplinkaccountpropertyprojectidinput) | `string` | *No description.* |
+| [`accountId`](#cdktfprovidernewreliccloudgcplinkaccountpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`name`](#cdktfprovidernewreliccloudgcplinkaccountpropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`projectId`](#cdktfprovidernewreliccloudgcplinkaccountpropertyprojectid)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccount.property.id" id="cdktfprovidernewreliccloudgcplinkaccountpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccount.property.accountIdInput" id="cdktfprovidernewreliccloudgcplinkaccountpropertyaccountidinput"></a>
+
+```typescript
+public readonly accountIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccount.property.nameInput" id="cdktfprovidernewreliccloudgcplinkaccountpropertynameinput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `projectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccount.property.projectIdInput" id="cdktfprovidernewreliccloudgcplinkaccountpropertyprojectidinput"></a>
+
+```typescript
+public readonly projectIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccount.property.accountId" id="cdktfprovidernewreliccloudgcplinkaccountpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccount.property.name" id="cdktfprovidernewreliccloudgcplinkaccountpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `projectId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccount.property.projectId" id="cdktfprovidernewreliccloudgcplinkaccountpropertyprojectid"></a>
+
+```typescript
+public readonly projectId: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants" id="constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`tfResourceType`](#cdktfprovidernewreliccloudgcplinkaccountpropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `tfResourceType` <a name="@cdktf/provider-newrelic.CloudGcpLinkAccount.property.tfResourceType" id="cdktfprovidernewreliccloudgcplinkaccountpropertytfresourcetype"></a>
+
+- *Type:* `string`
+
+---
+
 ### Dashboard <a name="@cdktf/provider-newrelic.Dashboard" id="cdktfprovidernewrelicdashboard"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard newrelic_dashboard}.
@@ -7266,6 +7861,7 @@ public resetDescription()
 | [`events`](#cdktfprovidernewrelicservicelevelpropertyevents)<span title="Required">*</span> | [`@cdktf/provider-newrelic.ServiceLevelEventsOutputReference`](#@cdktf/provider-newrelic.ServiceLevelEventsOutputReference) | *No description.* |
 | [`id`](#cdktfprovidernewrelicservicelevelpropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`objective`](#cdktfprovidernewrelicservicelevelpropertyobjective)<span title="Required">*</span> | [`@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference`](#@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference) | *No description.* |
+| [`sliGuid`](#cdktfprovidernewrelicservicelevelpropertysliguid)<span title="Required">*</span> | `string` | *No description.* |
 | [`sliId`](#cdktfprovidernewrelicservicelevelpropertysliid)<span title="Required">*</span> | `string` | *No description.* |
 | [`descriptionInput`](#cdktfprovidernewrelicservicelevelpropertydescriptioninput) | `string` | *No description.* |
 | [`eventsInput`](#cdktfprovidernewrelicservicelevelpropertyeventsinput) | [`@cdktf/provider-newrelic.ServiceLevelEvents`](#@cdktf/provider-newrelic.ServiceLevelEvents) | *No description.* |
@@ -7305,6 +7901,16 @@ public readonly objective: ServiceLevelObjectiveOutputReference;
 ```
 
 - *Type:* [`@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference`](#@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference)
+
+---
+
+##### `sliGuid`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevel.property.sliGuid" id="cdktfprovidernewrelicservicelevelpropertysliguid"></a>
+
+```typescript
+public readonly sliGuid: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -9411,7 +10017,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
-| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric). |
+| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
 | [`gcMetric`](#cdktfprovidernewrelicalertconditionconfigpropertygcmetric) | `string` | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -9540,7 +10146,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric).
+The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 
@@ -10594,6 +11200,429 @@ public readonly name: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#name ApplicationSettings#name}.
+
+---
+
+### CloudAwsLinkAccountConfig <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountConfig" id="cdktfprovidernewreliccloudawslinkaccountconfig"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsLinkAccountConfig } from '@cdktf/provider-newrelic'
+
+const cloudAwsLinkAccountConfig: CloudAwsLinkAccountConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`count`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertycount) | `number` | *No description.* |
+| [`dependsOn`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`lifecycle`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
+| [`provider`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`arn`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyarn)<span title="Required">*</span> | `string` | The AWS role ARN. |
+| [`name`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyname)<span title="Required">*</span> | `string` | The name of the linked account. |
+| [`accountId`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyaccountid) | `number` | The New Relic account ID where you want to link the AWS account. |
+| [`metricCollectionMode`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertymetriccollectionmode) | `string` | How metrics will be collected. Defaults to `PULL` if empty. |
+| [`timeouts`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertytimeouts) | [`@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts`](#@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts) | timeouts block. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountConfig.property.count" id="cdktfprovidernewreliccloudawslinkaccountconfigpropertycount"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountConfig.property.dependsOn" id="cdktfprovidernewreliccloudawslinkaccountconfigpropertydependson"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountConfig.property.lifecycle" id="cdktfprovidernewreliccloudawslinkaccountconfigpropertylifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountConfig.property.provider" id="cdktfprovidernewreliccloudawslinkaccountconfigpropertyprovider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `arn`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountConfig.property.arn" id="cdktfprovidernewreliccloudawslinkaccountconfigpropertyarn"></a>
+
+```typescript
+public readonly arn: string;
+```
+
+- *Type:* `string`
+
+The AWS role ARN.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account#arn CloudAwsLinkAccount#arn}
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountConfig.property.name" id="cdktfprovidernewreliccloudawslinkaccountconfigpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+The name of the linked account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account#name CloudAwsLinkAccount#name}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountConfig.property.accountId" id="cdktfprovidernewreliccloudawslinkaccountconfigpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+The New Relic account ID where you want to link the AWS account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account#account_id CloudAwsLinkAccount#account_id}
+
+---
+
+##### `metricCollectionMode`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountConfig.property.metricCollectionMode" id="cdktfprovidernewreliccloudawslinkaccountconfigpropertymetriccollectionmode"></a>
+
+```typescript
+public readonly metricCollectionMode: string;
+```
+
+- *Type:* `string`
+
+How metrics will be collected. Defaults to `PULL` if empty.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account#metric_collection_mode CloudAwsLinkAccount#metric_collection_mode}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountConfig.property.timeouts" id="cdktfprovidernewreliccloudawslinkaccountconfigpropertytimeouts"></a>
+
+```typescript
+public readonly timeouts: CloudAwsLinkAccountTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts`](#@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts)
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account#timeouts CloudAwsLinkAccount#timeouts}
+
+---
+
+### CloudAwsLinkAccountTimeouts <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts" id="cdktfprovidernewreliccloudawslinkaccounttimeouts"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsLinkAccountTimeouts } from '@cdktf/provider-newrelic'
+
+const cloudAwsLinkAccountTimeouts: CloudAwsLinkAccountTimeouts = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`create`](#cdktfprovidernewreliccloudawslinkaccounttimeoutspropertycreate) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account#create CloudAwsLinkAccount#create}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts.property.create" id="cdktfprovidernewreliccloudawslinkaccounttimeoutspropertycreate"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account#create CloudAwsLinkAccount#create}.
+
+---
+
+### CloudAzureLinkAccountConfig <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig" id="cdktfprovidernewreliccloudazurelinkaccountconfig"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureLinkAccountConfig } from '@cdktf/provider-newrelic'
+
+const cloudAzureLinkAccountConfig: CloudAzureLinkAccountConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`count`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertycount) | `number` | *No description.* |
+| [`dependsOn`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`lifecycle`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
+| [`provider`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`applicationId`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyapplicationid)<span title="Required">*</span> | `string` | application id for Azure account. |
+| [`clientSecretId`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyclientsecretid)<span title="Required">*</span> | `string` | Value of the client secret from Azure. |
+| [`name`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyname)<span title="Required">*</span> | `string` | name of the linked account. |
+| [`subscriptionId`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertysubscriptionid)<span title="Required">*</span> | `string` | subscription id for the Azure account. |
+| [`tenantId`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertytenantid)<span title="Required">*</span> | `string` | tenant id for the Azure account. |
+| [`accountId`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyaccountid) | `number` | The New Relic account ID where you want to link the Azure account. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.count" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertycount"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.dependsOn" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertydependson"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.lifecycle" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertylifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.provider" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertyprovider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `applicationId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.applicationId" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertyapplicationid"></a>
+
+```typescript
+public readonly applicationId: string;
+```
+
+- *Type:* `string`
+
+application id for Azure account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#application_id CloudAzureLinkAccount#application_id}
+
+---
+
+##### `clientSecretId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.clientSecretId" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertyclientsecretid"></a>
+
+```typescript
+public readonly clientSecretId: string;
+```
+
+- *Type:* `string`
+
+Value of the client secret from Azure.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#client_secret_id CloudAzureLinkAccount#client_secret_id}
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.name" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+name of the linked account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#name CloudAzureLinkAccount#name}
+
+---
+
+##### `subscriptionId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.subscriptionId" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertysubscriptionid"></a>
+
+```typescript
+public readonly subscriptionId: string;
+```
+
+- *Type:* `string`
+
+subscription id for the Azure account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#subscription_id CloudAzureLinkAccount#subscription_id}
+
+---
+
+##### `tenantId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.tenantId" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertytenantid"></a>
+
+```typescript
+public readonly tenantId: string;
+```
+
+- *Type:* `string`
+
+tenant id for the Azure account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#tenant_id CloudAzureLinkAccount#tenant_id}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.accountId" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+The New Relic account ID where you want to link the Azure account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#account_id CloudAzureLinkAccount#account_id}
+
+---
+
+### CloudGcpLinkAccountConfig <a name="@cdktf/provider-newrelic.CloudGcpLinkAccountConfig" id="cdktfprovidernewreliccloudgcplinkaccountconfig"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpLinkAccountConfig } from '@cdktf/provider-newrelic'
+
+const cloudGcpLinkAccountConfig: CloudGcpLinkAccountConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`count`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertycount) | `number` | *No description.* |
+| [`dependsOn`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`lifecycle`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
+| [`provider`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`accountId`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyaccountid)<span title="Required">*</span> | `number` | accountID of newrelic account. |
+| [`name`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyname)<span title="Required">*</span> | `string` | name of the linked account. |
+| [`projectId`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyprojectid)<span title="Required">*</span> | `string` | project id of the Gcp account. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccountConfig.property.count" id="cdktfprovidernewreliccloudgcplinkaccountconfigpropertycount"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccountConfig.property.dependsOn" id="cdktfprovidernewreliccloudgcplinkaccountconfigpropertydependson"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccountConfig.property.lifecycle" id="cdktfprovidernewreliccloudgcplinkaccountconfigpropertylifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccountConfig.property.provider" id="cdktfprovidernewreliccloudgcplinkaccountconfigpropertyprovider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccountConfig.property.accountId" id="cdktfprovidernewreliccloudgcplinkaccountconfigpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+accountID of newrelic account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccountConfig.property.name" id="cdktfprovidernewreliccloudgcplinkaccountconfigpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+name of the linked account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_link_account#name CloudGcpLinkAccount#name}
+
+---
+
+##### `projectId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccountConfig.property.projectId" id="cdktfprovidernewreliccloudgcplinkaccountconfigpropertyprojectid"></a>
+
+```typescript
+public readonly projectId: string;
+```
+
+- *Type:* `string`
+
+project id of the Gcp account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_link_account#project_id CloudGcpLinkAccount#project_id}
 
 ---
 
@@ -20159,6 +21188,104 @@ public readonly internalValue: AlertMutingRuleSchedule;
 ```
 
 - *Type:* [`@cdktf/provider-newrelic.AlertMutingRuleSchedule`](#@cdktf/provider-newrelic.AlertMutingRuleSchedule)
+
+---
+
+
+### CloudAwsLinkAccountTimeoutsOutputReference <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountTimeoutsOutputReference" id="cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountTimeoutsOutputReference.Initializer" id="cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsLinkAccountTimeoutsOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsLinkAccountTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`isSingleItem`](#cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountTimeoutsOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountTimeoutsOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountTimeoutsOutputReference.parameter.isSingleItem" id="cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferenceparameterissingleitem"></a>
+
+- *Type:* `boolean`
+
+True if this is a block, false if it's a list.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetCreate`](#cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferenceresetcreate) | *No description.* |
+
+---
+
+##### `resetCreate` <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountTimeoutsOutputReference.resetCreate" id="cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferenceresetcreate"></a>
+
+```typescript
+public resetCreate()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`createInput`](#cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferencepropertycreateinput) | `string` | *No description.* |
+| [`create`](#cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferencepropertycreate)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts`](#@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts) | *No description.* |
+
+---
+
+##### `createInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountTimeoutsOutputReference.property.createInput" id="cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferencepropertycreateinput"></a>
+
+```typescript
+public readonly createInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountTimeoutsOutputReference.property.create" id="cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferencepropertycreate"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountTimeoutsOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsLinkAccountTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts`](#@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts)
 
 ---
 
