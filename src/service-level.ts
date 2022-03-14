@@ -835,6 +835,11 @@ export class ServiceLevel extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // sli_guid - computed: true, optional: false, required: false
+  public get sliGuid() {
+    return this.getStringAttribute('sli_guid');
+  }
+
   // sli_id - computed: true, optional: false, required: false
   public get sliId() {
     return this.getStringAttribute('sli_id');
