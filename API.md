@@ -1654,6 +1654,236 @@ public readonly name: string;
 
 ---
 
+### CloudAwsGovcloudLinkAccount <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount" id="cdktfprovidernewreliccloudawsgovcloudlinkaccount"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_link_account newrelic_cloud_aws_govcloud_link_account}.
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.Initializer" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudLinkAccount } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudLinkAccount(scope: Construct, id: string, config: CloudAwsGovcloudLinkAccountConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
+| [`id`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
+| [`config`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig`](#@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.parameter.scope" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.parameter.id" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountparameterid"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.parameter.config" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountparameterconfig"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig`](#@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig)
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAccountId`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountresetaccountid) | *No description.* |
+| [`resetMetricCollectionMode`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountresetmetriccollectionmode) | *No description.* |
+
+---
+
+##### `resetAccountId` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.resetAccountId" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountresetaccountid"></a>
+
+```typescript
+public resetAccountId()
+```
+
+##### `resetMetricCollectionMode` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.resetMetricCollectionMode" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountresetmetriccollectionmode"></a>
+
+```typescript
+public resetMetricCollectionMode()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`id`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`accessKeyIdInput`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertyaccesskeyidinput) | `string` | *No description.* |
+| [`accountIdInput`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertyaccountidinput) | `number` | *No description.* |
+| [`awsAccountIdInput`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertyawsaccountidinput) | `string` | *No description.* |
+| [`metricCollectionModeInput`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertymetriccollectionmodeinput) | `string` | *No description.* |
+| [`nameInput`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertynameinput) | `string` | *No description.* |
+| [`secretAccessKeyInput`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertysecretaccesskeyinput) | `string` | *No description.* |
+| [`accessKeyId`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertyaccesskeyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`accountId`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`awsAccountId`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertyawsaccountid)<span title="Required">*</span> | `string` | *No description.* |
+| [`metricCollectionMode`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertymetriccollectionmode)<span title="Required">*</span> | `string` | *No description.* |
+| [`name`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`secretAccessKey`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertysecretaccesskey)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.property.id" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `accessKeyIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.property.accessKeyIdInput" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertyaccesskeyidinput"></a>
+
+```typescript
+public readonly accessKeyIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.property.accountIdInput" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertyaccountidinput"></a>
+
+```typescript
+public readonly accountIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `awsAccountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.property.awsAccountIdInput" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertyawsaccountidinput"></a>
+
+```typescript
+public readonly awsAccountIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `metricCollectionModeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.property.metricCollectionModeInput" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertymetriccollectionmodeinput"></a>
+
+```typescript
+public readonly metricCollectionModeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.property.nameInput" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertynameinput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `secretAccessKeyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.property.secretAccessKeyInput" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertysecretaccesskeyinput"></a>
+
+```typescript
+public readonly secretAccessKeyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `accessKeyId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.property.accessKeyId" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertyaccesskeyid"></a>
+
+```typescript
+public readonly accessKeyId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.property.accountId" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `awsAccountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.property.awsAccountId" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertyawsaccountid"></a>
+
+```typescript
+public readonly awsAccountId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `metricCollectionMode`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.property.metricCollectionMode" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertymetriccollectionmode"></a>
+
+```typescript
+public readonly metricCollectionMode: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.property.name" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `secretAccessKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.property.secretAccessKey" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertysecretaccesskey"></a>
+
+```typescript
+public readonly secretAccessKey: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants" id="constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`tfResourceType`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `tfResourceType` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount.property.tfResourceType" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountpropertytfresourcetype"></a>
+
+- *Type:* `string`
+
+---
+
 ### CloudAwsLinkAccount <a name="@cdktf/provider-newrelic.CloudAwsLinkAccount" id="cdktfprovidernewreliccloudawslinkaccount"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account newrelic_cloud_aws_link_account}.
@@ -2149,6 +2379,19 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAccountId`](#cdktfprovidernewreliccloudgcplinkaccountresetaccountid) | *No description.* |
+
+---
+
+##### `resetAccountId` <a name="@cdktf/provider-newrelic.CloudGcpLinkAccount.resetAccountId" id="cdktfprovidernewreliccloudgcplinkaccountresetaccountid"></a>
+
+```typescript
+public resetAccountId()
+```
 
 
 #### Properties <a name="Properties" id="properties"></a>
@@ -9560,7 +9803,7 @@ const alertChannelConfig: AlertChannelConfig = { ... }
 | [`lifecycle`](#cdktfprovidernewrelicalertchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertchannelconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the channel. |
-| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook). |
+| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (webhook, email, opsgenie, pagerduty, slack, user, victorops). |
 | [`accountId`](#cdktfprovidernewrelicalertchannelconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create alert channels. |
 | [`config`](#cdktfprovidernewrelicalertchannelconfigpropertyconfig) | [`@cdktf/provider-newrelic.AlertChannelConfigA`](#@cdktf/provider-newrelic.AlertChannelConfigA) | config block. |
 
@@ -9628,7 +9871,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-(Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
+(Required) The type of channel. One of: (webhook, email, opsgenie, pagerduty, slack, user, victorops).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
 
@@ -10017,7 +10260,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
-| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric). |
+| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
 | [`gcMetric`](#cdktfprovidernewrelicalertconditionconfigpropertygcmetric) | `string` | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -10146,7 +10389,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric).
+The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 
@@ -11203,6 +11446,157 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 ---
 
+### CloudAwsGovcloudLinkAccountConfig <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfig"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudLinkAccountConfig } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudLinkAccountConfig: CloudAwsGovcloudLinkAccountConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`count`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertycount) | `number` | *No description.* |
+| [`dependsOn`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`lifecycle`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
+| [`provider`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`accessKeyId`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyaccesskeyid)<span title="Required">*</span> | `string` | access-key-id of awsGovcloud account. |
+| [`awsAccountId`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyawsaccountid)<span title="Required">*</span> | `string` | awsGovcloud account id. |
+| [`name`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyname)<span title="Required">*</span> | `string` | name of the account. |
+| [`secretAccessKey`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertysecretaccesskey)<span title="Required">*</span> | `string` | secret access key of the awsGovcloud account. |
+| [`accountId`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyaccountid) | `number` | The ID of the account in New Relic. |
+| [`metricCollectionMode`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertymetriccollectionmode) | `string` | push or pull. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig.property.count" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertycount"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig.property.dependsOn" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertydependson"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig.property.lifecycle" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertylifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig.property.provider" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyprovider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `accessKeyId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig.property.accessKeyId" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyaccesskeyid"></a>
+
+```typescript
+public readonly accessKeyId: string;
+```
+
+- *Type:* `string`
+
+access-key-id of awsGovcloud account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_link_account#access_key_id CloudAwsGovcloudLinkAccount#access_key_id}
+
+---
+
+##### `awsAccountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig.property.awsAccountId" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyawsaccountid"></a>
+
+```typescript
+public readonly awsAccountId: string;
+```
+
+- *Type:* `string`
+
+awsGovcloud account id.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_link_account#aws_account_id CloudAwsGovcloudLinkAccount#aws_account_id}
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig.property.name" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+name of the account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_link_account#name CloudAwsGovcloudLinkAccount#name}
+
+---
+
+##### `secretAccessKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig.property.secretAccessKey" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertysecretaccesskey"></a>
+
+```typescript
+public readonly secretAccessKey: string;
+```
+
+- *Type:* `string`
+
+secret access key of the awsGovcloud account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_link_account#secret_access_key CloudAwsGovcloudLinkAccount#secret_access_key}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig.property.accountId" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+The ID of the account in New Relic.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_link_account#account_id CloudAwsGovcloudLinkAccount#account_id}
+
+---
+
+##### `metricCollectionMode`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig.property.metricCollectionMode" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertymetriccollectionmode"></a>
+
+```typescript
+public readonly metricCollectionMode: string;
+```
+
+- *Type:* `string`
+
+push or pull.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_link_account#metric_collection_mode CloudAwsGovcloudLinkAccount#metric_collection_mode}
+
+---
+
 ### CloudAwsLinkAccountConfig <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountConfig" id="cdktfprovidernewreliccloudawslinkaccountconfig"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
@@ -11538,9 +11932,9 @@ const cloudGcpLinkAccountConfig: CloudGcpLinkAccountConfig = { ... }
 | [`dependsOn`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`accountId`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyaccountid)<span title="Required">*</span> | `number` | accountID of newrelic account. |
 | [`name`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyname)<span title="Required">*</span> | `string` | name of the linked account. |
 | [`projectId`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyprojectid)<span title="Required">*</span> | `string` | project id of the Gcp account. |
+| [`accountId`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyaccountid) | `number` | accountID of newrelic account. |
 
 ---
 
@@ -11584,20 +11978,6 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccountConfig.property.accountId" id="cdktfprovidernewreliccloudgcplinkaccountconfigpropertyaccountid"></a>
-
-```typescript
-public readonly accountId: number;
-```
-
-- *Type:* `number`
-
-accountID of newrelic account.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
-
----
-
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccountConfig.property.name" id="cdktfprovidernewreliccloudgcplinkaccountconfigpropertyname"></a>
 
 ```typescript
@@ -11623,6 +12003,20 @@ public readonly projectId: string;
 project id of the Gcp account.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_link_account#project_id CloudGcpLinkAccount#project_id}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccountConfig.property.accountId" id="cdktfprovidernewreliccloudgcplinkaccountconfigpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+accountID of newrelic account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
 
 ---
 
@@ -16292,9 +16686,9 @@ const oneDashboardPageWidgetBillboard: OneDashboardPageWidgetBillboard = { ... }
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertynrqlquery)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardNrqlQuery)[] | nrql_query block. |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
-| [`critical`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertycritical) | `number` | The critical threshold value. |
+| [`critical`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertycritical) | `string` | The critical threshold value. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
-| [`warning`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertywarning) | `number` | The warning threshold value. |
+| [`warning`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertywarning) | `string` | The warning threshold value. |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
@@ -16354,10 +16748,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `critical`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBillboard.property.critical" id="cdktfprovidernewreliconedashboardpagewidgetbillboardpropertycritical"></a>
 
 ```typescript
-public readonly critical: number;
+public readonly critical: string;
 ```
 
-- *Type:* `number`
+- *Type:* `string`
 
 The critical threshold value.
 
@@ -16380,10 +16774,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `warning`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBillboard.property.warning" id="cdktfprovidernewreliconedashboardpagewidgetbillboardpropertywarning"></a>
 
 ```typescript
-public readonly warning: number;
+public readonly warning: string;
 ```
 
-- *Type:* `number`
+- *Type:* `string`
 
 The warning threshold value.
 

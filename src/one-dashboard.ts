@@ -232,7 +232,7 @@ export interface OneDashboardPageWidgetBillboard {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#critical OneDashboard#critical}
   */
-  readonly critical?: number;
+  readonly critical?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}
   */
@@ -252,7 +252,7 @@ export interface OneDashboardPageWidgetBillboard {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#warning OneDashboard#warning}
   */
-  readonly warning?: number;
+  readonly warning?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}
   */
@@ -272,11 +272,11 @@ export function oneDashboardPageWidgetBillboardToTerraform(struct?: OneDashboard
   }
   return {
     column: cdktf.numberToTerraform(struct!.column),
-    critical: cdktf.numberToTerraform(struct!.critical),
+    critical: cdktf.stringToTerraform(struct!.critical),
     height: cdktf.numberToTerraform(struct!.height),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
-    warning: cdktf.numberToTerraform(struct!.warning),
+    warning: cdktf.stringToTerraform(struct!.warning),
     width: cdktf.numberToTerraform(struct!.width),
     nrql_query: cdktf.listMapper(oneDashboardPageWidgetBillboardNrqlQueryToTerraform)(struct!.nrqlQuery),
   }
