@@ -12,7 +12,7 @@ export interface CloudGcpLinkAccountConfig extends cdktf.TerraformMetaArguments 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
   */
-  readonly accountId: number;
+  readonly accountId?: number;
   /**
   * name of the linked account
   * 
@@ -68,13 +68,16 @@ export class CloudGcpLinkAccount extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: false, required: true
+  // account_id - computed: true, optional: true, required: false
   private _accountId?: number; 
   public get accountId() {
     return this.getNumberAttribute('account_id');
   }
   public set accountId(value: number) {
     this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
