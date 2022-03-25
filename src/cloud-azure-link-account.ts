@@ -14,7 +14,7 @@ export interface CloudAzureLinkAccountConfig extends cdktf.TerraformMetaArgument
   */
   readonly accountId?: number;
   /**
-  * application id for Azure account
+  * Application ID for Azure account
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#application_id CloudAzureLinkAccount#application_id}
   */
@@ -22,23 +22,23 @@ export interface CloudAzureLinkAccountConfig extends cdktf.TerraformMetaArgument
   /**
   * Value of the client secret from Azure
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#client_secret_id CloudAzureLinkAccount#client_secret_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#client_secret CloudAzureLinkAccount#client_secret}
   */
-  readonly clientSecretId: string;
+  readonly clientSecret: string;
   /**
-  * name of the linked account
+  * Name of the linked account
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#name CloudAzureLinkAccount#name}
   */
   readonly name: string;
   /**
-  * subscription id for the Azure account
+  * Subscription ID for the Azure account
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#subscription_id CloudAzureLinkAccount#subscription_id}
   */
   readonly subscriptionId: string;
   /**
-  * tenant id for the Azure account
+  * Tenant ID for the Azure account
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#tenant_id CloudAzureLinkAccount#tenant_id}
   */
@@ -79,7 +79,7 @@ export class CloudAzureLinkAccount extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._applicationId = config.applicationId;
-    this._clientSecretId = config.clientSecretId;
+    this._clientSecret = config.clientSecret;
     this._name = config.name;
     this._subscriptionId = config.subscriptionId;
     this._tenantId = config.tenantId;
@@ -118,17 +118,17 @@ export class CloudAzureLinkAccount extends cdktf.TerraformResource {
     return this._applicationId;
   }
 
-  // client_secret_id - computed: false, optional: false, required: true
-  private _clientSecretId?: string; 
-  public get clientSecretId() {
-    return this.getStringAttribute('client_secret_id');
+  // client_secret - computed: false, optional: false, required: true
+  private _clientSecret?: string; 
+  public get clientSecret() {
+    return this.getStringAttribute('client_secret');
   }
-  public set clientSecretId(value: string) {
-    this._clientSecretId = value;
+  public set clientSecret(value: string) {
+    this._clientSecret = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get clientSecretIdInput() {
-    return this._clientSecretId;
+  public get clientSecretInput() {
+    return this._clientSecret;
   }
 
   // id - computed: true, optional: true, required: false
@@ -183,7 +183,7 @@ export class CloudAzureLinkAccount extends cdktf.TerraformResource {
     return {
       account_id: cdktf.numberToTerraform(this._accountId),
       application_id: cdktf.stringToTerraform(this._applicationId),
-      client_secret_id: cdktf.stringToTerraform(this._clientSecretId),
+      client_secret: cdktf.stringToTerraform(this._clientSecret),
       name: cdktf.stringToTerraform(this._name),
       subscription_id: cdktf.stringToTerraform(this._subscriptionId),
       tenant_id: cdktf.stringToTerraform(this._tenantId),

@@ -18,7 +18,7 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#aggregation_delay NrqlAlertCondition#aggregation_delay}
   */
-  readonly aggregationDelay?: number;
+  readonly aggregationDelay?: string;
   /**
   * The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for violations. Default is CADENCE.
   * 
@@ -30,7 +30,7 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#aggregation_timer NrqlAlertCondition#aggregation_timer}
   */
-  readonly aggregationTimer?: number;
+  readonly aggregationTimer?: string;
   /**
   * The duration of the time window used to evaluate the NRQL query, in seconds.
   * 
@@ -862,11 +862,11 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
 
   // aggregation_delay - computed: false, optional: true, required: false
-  private _aggregationDelay?: number; 
+  private _aggregationDelay?: string; 
   public get aggregationDelay() {
-    return this.getNumberAttribute('aggregation_delay');
+    return this.getStringAttribute('aggregation_delay');
   }
-  public set aggregationDelay(value: number) {
+  public set aggregationDelay(value: string) {
     this._aggregationDelay = value;
   }
   public resetAggregationDelay() {
@@ -894,11 +894,11 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
 
   // aggregation_timer - computed: false, optional: true, required: false
-  private _aggregationTimer?: number; 
+  private _aggregationTimer?: string; 
   public get aggregationTimer() {
-    return this.getNumberAttribute('aggregation_timer');
+    return this.getStringAttribute('aggregation_timer');
   }
-  public set aggregationTimer(value: number) {
+  public set aggregationTimer(value: string) {
     this._aggregationTimer = value;
   }
   public resetAggregationTimer() {
@@ -1297,9 +1297,9 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.numberToTerraform(this._accountId),
-      aggregation_delay: cdktf.numberToTerraform(this._aggregationDelay),
+      aggregation_delay: cdktf.stringToTerraform(this._aggregationDelay),
       aggregation_method: cdktf.stringToTerraform(this._aggregationMethod),
-      aggregation_timer: cdktf.numberToTerraform(this._aggregationTimer),
+      aggregation_timer: cdktf.stringToTerraform(this._aggregationTimer),
       aggregation_window: cdktf.numberToTerraform(this._aggregationWindow),
       baseline_direction: cdktf.stringToTerraform(this._baselineDirection),
       close_violations_on_expiration: cdktf.booleanToTerraform(this._closeViolationsOnExpiration),
