@@ -2178,13 +2178,13 @@ public resetAccountId()
 | [`id`](#cdktfprovidernewreliccloudazurelinkaccountpropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`accountIdInput`](#cdktfprovidernewreliccloudazurelinkaccountpropertyaccountidinput) | `number` | *No description.* |
 | [`applicationIdInput`](#cdktfprovidernewreliccloudazurelinkaccountpropertyapplicationidinput) | `string` | *No description.* |
-| [`clientSecretIdInput`](#cdktfprovidernewreliccloudazurelinkaccountpropertyclientsecretidinput) | `string` | *No description.* |
+| [`clientSecretInput`](#cdktfprovidernewreliccloudazurelinkaccountpropertyclientsecretinput) | `string` | *No description.* |
 | [`nameInput`](#cdktfprovidernewreliccloudazurelinkaccountpropertynameinput) | `string` | *No description.* |
 | [`subscriptionIdInput`](#cdktfprovidernewreliccloudazurelinkaccountpropertysubscriptionidinput) | `string` | *No description.* |
 | [`tenantIdInput`](#cdktfprovidernewreliccloudazurelinkaccountpropertytenantidinput) | `string` | *No description.* |
 | [`accountId`](#cdktfprovidernewreliccloudazurelinkaccountpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
 | [`applicationId`](#cdktfprovidernewreliccloudazurelinkaccountpropertyapplicationid)<span title="Required">*</span> | `string` | *No description.* |
-| [`clientSecretId`](#cdktfprovidernewreliccloudazurelinkaccountpropertyclientsecretid)<span title="Required">*</span> | `string` | *No description.* |
+| [`clientSecret`](#cdktfprovidernewreliccloudazurelinkaccountpropertyclientsecret)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidernewreliccloudazurelinkaccountpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`subscriptionId`](#cdktfprovidernewreliccloudazurelinkaccountpropertysubscriptionid)<span title="Required">*</span> | `string` | *No description.* |
 | [`tenantId`](#cdktfprovidernewreliccloudazurelinkaccountpropertytenantid)<span title="Required">*</span> | `string` | *No description.* |
@@ -2221,10 +2221,10 @@ public readonly applicationIdInput: string;
 
 ---
 
-##### `clientSecretIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.clientSecretIdInput" id="cdktfprovidernewreliccloudazurelinkaccountpropertyclientsecretidinput"></a>
+##### `clientSecretInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.clientSecretInput" id="cdktfprovidernewreliccloudazurelinkaccountpropertyclientsecretinput"></a>
 
 ```typescript
-public readonly clientSecretIdInput: string;
+public readonly clientSecretInput: string;
 ```
 
 - *Type:* `string`
@@ -2281,10 +2281,10 @@ public readonly applicationId: string;
 
 ---
 
-##### `clientSecretId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.clientSecretId" id="cdktfprovidernewreliccloudazurelinkaccountpropertyclientsecretid"></a>
+##### `clientSecret`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.clientSecret" id="cdktfprovidernewreliccloudazurelinkaccountpropertyclientsecret"></a>
 
 ```typescript
-public readonly clientSecretId: string;
+public readonly clientSecret: string;
 ```
 
 - *Type:* `string`
@@ -6362,9 +6362,9 @@ public resetWarning()
 | [`nrql`](#cdktfprovidernewrelicnrqlalertconditionpropertynrql)<span title="Required">*</span> | [`@cdktf/provider-newrelic.NrqlAlertConditionNrqlOutputReference`](#@cdktf/provider-newrelic.NrqlAlertConditionNrqlOutputReference) | *No description.* |
 | [`warning`](#cdktfprovidernewrelicnrqlalertconditionpropertywarning)<span title="Required">*</span> | [`@cdktf/provider-newrelic.NrqlAlertConditionWarningOutputReference`](#@cdktf/provider-newrelic.NrqlAlertConditionWarningOutputReference) | *No description.* |
 | [`accountIdInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyaccountidinput) | `number` | *No description.* |
-| [`aggregationDelayInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationdelayinput) | `number` | *No description.* |
+| [`aggregationDelayInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationdelayinput) | `string` | *No description.* |
 | [`aggregationMethodInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationmethodinput) | `string` | *No description.* |
-| [`aggregationTimerInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationtimerinput) | `number` | *No description.* |
+| [`aggregationTimerInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationtimerinput) | `string` | *No description.* |
 | [`aggregationWindowInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationwindowinput) | `number` | *No description.* |
 | [`baselineDirectionInput`](#cdktfprovidernewrelicnrqlalertconditionpropertybaselinedirectioninput) | `string` | *No description.* |
 | [`closeViolationsOnExpirationInput`](#cdktfprovidernewrelicnrqlalertconditionpropertycloseviolationsonexpirationinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -6390,9 +6390,9 @@ public resetWarning()
 | [`violationTimeLimitSecondsInput`](#cdktfprovidernewrelicnrqlalertconditionpropertyviolationtimelimitsecondsinput) | `number` | *No description.* |
 | [`warningInput`](#cdktfprovidernewrelicnrqlalertconditionpropertywarninginput) | [`@cdktf/provider-newrelic.NrqlAlertConditionWarning`](#@cdktf/provider-newrelic.NrqlAlertConditionWarning) | *No description.* |
 | [`accountId`](#cdktfprovidernewrelicnrqlalertconditionpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
-| [`aggregationDelay`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationdelay)<span title="Required">*</span> | `number` | *No description.* |
+| [`aggregationDelay`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationdelay)<span title="Required">*</span> | `string` | *No description.* |
 | [`aggregationMethod`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationmethod)<span title="Required">*</span> | `string` | *No description.* |
-| [`aggregationTimer`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationtimer)<span title="Required">*</span> | `number` | *No description.* |
+| [`aggregationTimer`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationtimer)<span title="Required">*</span> | `string` | *No description.* |
 | [`aggregationWindow`](#cdktfprovidernewrelicnrqlalertconditionpropertyaggregationwindow)<span title="Required">*</span> | `number` | *No description.* |
 | [`baselineDirection`](#cdktfprovidernewrelicnrqlalertconditionpropertybaselinedirection)<span title="Required">*</span> | `string` | *No description.* |
 | [`closeViolationsOnExpiration`](#cdktfprovidernewrelicnrqlalertconditionpropertycloseviolationsonexpiration)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -6470,10 +6470,10 @@ public readonly accountIdInput: number;
 ##### `aggregationDelayInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.aggregationDelayInput" id="cdktfprovidernewrelicnrqlalertconditionpropertyaggregationdelayinput"></a>
 
 ```typescript
-public readonly aggregationDelayInput: number;
+public readonly aggregationDelayInput: string;
 ```
 
-- *Type:* `number`
+- *Type:* `string`
 
 ---
 
@@ -6490,10 +6490,10 @@ public readonly aggregationMethodInput: string;
 ##### `aggregationTimerInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.aggregationTimerInput" id="cdktfprovidernewrelicnrqlalertconditionpropertyaggregationtimerinput"></a>
 
 ```typescript
-public readonly aggregationTimerInput: number;
+public readonly aggregationTimerInput: string;
 ```
 
-- *Type:* `number`
+- *Type:* `string`
 
 ---
 
@@ -6750,10 +6750,10 @@ public readonly accountId: number;
 ##### `aggregationDelay`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.aggregationDelay" id="cdktfprovidernewrelicnrqlalertconditionpropertyaggregationdelay"></a>
 
 ```typescript
-public readonly aggregationDelay: number;
+public readonly aggregationDelay: string;
 ```
 
-- *Type:* `number`
+- *Type:* `string`
 
 ---
 
@@ -6770,10 +6770,10 @@ public readonly aggregationMethod: string;
 ##### `aggregationTimer`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertCondition.property.aggregationTimer" id="cdktfprovidernewrelicnrqlalertconditionpropertyaggregationtimer"></a>
 
 ```typescript
-public readonly aggregationTimer: number;
+public readonly aggregationTimer: string;
 ```
 
-- *Type:* `number`
+- *Type:* `string`
 
 ---
 
@@ -10260,7 +10260,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
-| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric). |
+| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
 | [`gcMetric`](#cdktfprovidernewrelicalertconditionconfigpropertygcmetric) | `string` | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -10389,7 +10389,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric).
+The type of condition. One of: (mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 
@@ -11781,11 +11781,11 @@ const cloudAzureLinkAccountConfig: CloudAzureLinkAccountConfig = { ... }
 | [`dependsOn`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`applicationId`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyapplicationid)<span title="Required">*</span> | `string` | application id for Azure account. |
-| [`clientSecretId`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyclientsecretid)<span title="Required">*</span> | `string` | Value of the client secret from Azure. |
-| [`name`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyname)<span title="Required">*</span> | `string` | name of the linked account. |
-| [`subscriptionId`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertysubscriptionid)<span title="Required">*</span> | `string` | subscription id for the Azure account. |
-| [`tenantId`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertytenantid)<span title="Required">*</span> | `string` | tenant id for the Azure account. |
+| [`applicationId`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyapplicationid)<span title="Required">*</span> | `string` | Application ID for Azure account. |
+| [`clientSecret`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyclientsecret)<span title="Required">*</span> | `string` | Value of the client secret from Azure. |
+| [`name`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyname)<span title="Required">*</span> | `string` | Name of the linked account. |
+| [`subscriptionId`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertysubscriptionid)<span title="Required">*</span> | `string` | Subscription ID for the Azure account. |
+| [`tenantId`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertytenantid)<span title="Required">*</span> | `string` | Tenant ID for the Azure account. |
 | [`accountId`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyaccountid) | `number` | The New Relic account ID where you want to link the Azure account. |
 
 ---
@@ -11838,23 +11838,23 @@ public readonly applicationId: string;
 
 - *Type:* `string`
 
-application id for Azure account.
+Application ID for Azure account.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#application_id CloudAzureLinkAccount#application_id}
 
 ---
 
-##### `clientSecretId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.clientSecretId" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertyclientsecretid"></a>
+##### `clientSecret`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.clientSecret" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertyclientsecret"></a>
 
 ```typescript
-public readonly clientSecretId: string;
+public readonly clientSecret: string;
 ```
 
 - *Type:* `string`
 
 Value of the client secret from Azure.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#client_secret_id CloudAzureLinkAccount#client_secret_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#client_secret CloudAzureLinkAccount#client_secret}
 
 ---
 
@@ -11866,7 +11866,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-name of the linked account.
+Name of the linked account.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#name CloudAzureLinkAccount#name}
 
@@ -11880,7 +11880,7 @@ public readonly subscriptionId: string;
 
 - *Type:* `string`
 
-subscription id for the Azure account.
+Subscription ID for the Azure account.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#subscription_id CloudAzureLinkAccount#subscription_id}
 
@@ -11894,7 +11894,7 @@ public readonly tenantId: string;
 
 - *Type:* `string`
 
-tenant id for the Azure account.
+Tenant ID for the Azure account.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#tenant_id CloudAzureLinkAccount#tenant_id}
 
@@ -14992,9 +14992,9 @@ const nrqlAlertConditionConfig: NrqlAlertConditionConfig = { ... }
 | [`nrql`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertynrql)<span title="Required">*</span> | [`@cdktf/provider-newrelic.NrqlAlertConditionNrql`](#@cdktf/provider-newrelic.NrqlAlertConditionNrql) | nrql block. |
 | [`policyId`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`accountId`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyaccountid) | `number` | The New Relic account ID for managing your NRQL alert conditions. |
-| [`aggregationDelay`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyaggregationdelay) | `number` | How long we wait for data that belongs in each aggregation window. |
+| [`aggregationDelay`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyaggregationdelay) | `string` | How long we wait for data that belongs in each aggregation window. |
 | [`aggregationMethod`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyaggregationmethod) | `string` | The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for violations. |
-| [`aggregationTimer`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyaggregationtimer) | `number` | How long we wait after each data point arrives to make sure we've processed the whole batch. |
+| [`aggregationTimer`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyaggregationtimer) | `string` | How long we wait after each data point arrives to make sure we've processed the whole batch. |
 | [`aggregationWindow`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyaggregationwindow) | `number` | The duration of the time window used to evaluate the NRQL query, in seconds. |
 | [`baselineDirection`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertybaselinedirection) | `string` | The baseline direction of a baseline NRQL alert condition. Valid values are: 'LOWER_ONLY', 'UPPER_AND_LOWER', 'UPPER_ONLY' (case insensitive). |
 | [`closeViolationsOnExpiration`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertycloseviolationsonexpiration) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether to close all open violations when the signal expires. |
@@ -15118,10 +15118,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ##### `aggregationDelay`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionConfig.property.aggregationDelay" id="cdktfprovidernewrelicnrqlalertconditionconfigpropertyaggregationdelay"></a>
 
 ```typescript
-public readonly aggregationDelay: number;
+public readonly aggregationDelay: string;
 ```
 
-- *Type:* `number`
+- *Type:* `string`
 
 How long we wait for data that belongs in each aggregation window.
 
@@ -15146,10 +15146,10 @@ Default is CADENCE.  Docs at Terraform Registry: {@link https://www.terraform.io
 ##### `aggregationTimer`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionConfig.property.aggregationTimer" id="cdktfprovidernewrelicnrqlalertconditionconfigpropertyaggregationtimer"></a>
 
 ```typescript
-public readonly aggregationTimer: number;
+public readonly aggregationTimer: string;
 ```
 
-- *Type:* `number`
+- *Type:* `string`
 
 How long we wait after each data point arrives to make sure we've processed the whole batch.
 
