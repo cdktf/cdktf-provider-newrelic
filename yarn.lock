@@ -876,9 +876,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.0.95"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.95.tgz#e504028f4c017f0a439c5d65dfb5ff961846f7d2"
-  integrity sha512-mMay8dY4qOAumJLFacG6eFC1gXx96yPn+uFPPtGMtwZOKyjZ+k6nJ0hZZwm/gKfhUgeoHEOKpk4t2MxbiLsooA==
+  version "10.0.97"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.97.tgz#9dd71e6909a9bc8040a31955b80968ddf28447f3"
+  integrity sha512-2193Y3iDLY9sYCd89eb4TfjeDN+oD5ocl5d1LRnbGwlmvMe2fWqd9i84ET6K8K/PXBPSTyRQghnpw+Smn8b9vA==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -1626,7 +1626,7 @@ glob-promise@^3.4.0:
 
 glob@7.2.0, glob@^7, glob@^7.0.0, glob@^7.1.3, glob@^7.1.4, glob@^7.2.0:
   version "7.2.0"
-  resolved "https://registry.npmjs.org/glob/-/glob-7.2.0.tgz"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-7.2.0.tgz#d15535af7732e02e948f4c41628bd910293f6023"
   integrity sha512-lmLf6gtyrPq8tTjSmrO94wBeQbFR3HbLHbuyD69wuyQkImp2hWqMGB47OX65FBkPffO641IP9jWa1z4ivqG26Q==
   dependencies:
     fs.realpath "^1.0.0"
@@ -2230,9 +2230,9 @@ jsii-rosetta@^1.52.1, jsii-rosetta@^1.54.0, jsii-rosetta@^1.55.1:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.482:
-  version "0.1.509"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.509.tgz#c94ea1ff4564103baa8d7699260002b1996c961d"
-  integrity sha512-zfnDff/7Smw8b2JK2gvrR9ctZ6oG1Fao41Cd71P+tU9qhUSdviAcWRBrbL/HgU8r2czEv0KQ5Aajdx45/Lua+w==
+  version "0.1.511"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.511.tgz#fffc749ad8da3aa0b56307cdf2acc89beaabea43"
+  integrity sha512-THXQxtZhnYGIIFx5PFsmJRJiGJh3GLKuh4c+8dU+k3mJsuqJhOq4Eg/FMj7ZN9wlwf3LGFXcR58qyvPXe4plKQ==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.55.1"
@@ -3162,9 +3162,9 @@ prepend-http@^2.0.0:
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
 
 prettier@^2.5.1:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.0.tgz#12f8f504c4d8ddb76475f441337542fa799207d4"
-  integrity sha512-m2FgJibYrBGGgQXNzfd0PuDGShJgRavjUoRCw1mZERIWVSXF0iLzLm+aOqTAbLnC3n6JzUhAA8uZnFVghHJ86A==
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.1.tgz#d472797e0d7461605c1609808e27b80c0f9cfe17"
+  integrity sha512-8UVbTBYGwN37Bs9LERmxCPjdvPxlEowx2urIL6urHzdb3SDq4B/Z6xLFCblrSnE4iKWcS6ziJ3aOYrc1kz/E2A==
 
 printj@~1.3.1:
   version "1.3.1"
