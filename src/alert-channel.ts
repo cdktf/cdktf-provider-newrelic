@@ -20,7 +20,7 @@ export interface AlertChannelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
-  * (Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie).
+  * (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
   */
@@ -197,10 +197,9 @@ export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AlertChannelConfigA | undefined {
@@ -689,7 +688,7 @@ export class AlertChannel extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "newrelic_alert_channel";
+  public static readonly tfResourceType = "newrelic_alert_channel";
 
   // ===========
   // INITIALIZER
@@ -706,7 +705,9 @@ export class AlertChannel extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'newrelic_alert_channel',
       terraformGeneratorMetadata: {
-        providerName: 'newrelic'
+        providerName: 'newrelic',
+        providerVersion: '2.41.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -771,7 +772,7 @@ export class AlertChannel extends cdktf.TerraformResource {
   }
 
   // config - computed: false, optional: true, required: false
-  private _config = new AlertChannelConfigAOutputReference(this, "config", true);
+  private _config = new AlertChannelConfigAOutputReference(this, "config");
   public get config() {
     return this._config;
   }

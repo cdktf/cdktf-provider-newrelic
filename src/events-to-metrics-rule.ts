@@ -47,7 +47,7 @@ export class EventsToMetricsRule extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "newrelic_events_to_metrics_rule";
+  public static readonly tfResourceType = "newrelic_events_to_metrics_rule";
 
   // ===========
   // INITIALIZER
@@ -64,7 +64,9 @@ export class EventsToMetricsRule extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'newrelic_events_to_metrics_rule',
       terraformGeneratorMetadata: {
-        providerName: 'newrelic'
+        providerName: 'newrelic',
+        providerVersion: '2.41.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

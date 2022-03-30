@@ -78,10 +78,9 @@ export class DashboardFilterOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardFilter | undefined {
@@ -172,10 +171,9 @@ export class DashboardWidgetCompareWithPresentationOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetCompareWithPresentation | undefined {
@@ -459,7 +457,7 @@ export class Dashboard extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "newrelic_dashboard";
+  public static readonly tfResourceType = "newrelic_dashboard";
 
   // ===========
   // INITIALIZER
@@ -476,7 +474,9 @@ export class Dashboard extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'newrelic_dashboard',
       terraformGeneratorMetadata: {
-        providerName: 'newrelic'
+        providerName: 'newrelic',
+        providerVersion: '2.41.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -584,7 +584,7 @@ export class Dashboard extends cdktf.TerraformResource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter = new DashboardFilterOutputReference(this, "filter", true);
+  private _filter = new DashboardFilterOutputReference(this, "filter");
   public get filter() {
     return this._filter;
   }

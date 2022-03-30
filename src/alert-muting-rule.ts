@@ -109,10 +109,9 @@ export class AlertMutingRuleConditionOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AlertMutingRuleCondition | undefined {
@@ -236,10 +235,9 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AlertMutingRuleSchedule | undefined {
@@ -417,7 +415,7 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "newrelic_alert_muting_rule";
+  public static readonly tfResourceType = "newrelic_alert_muting_rule";
 
   // ===========
   // INITIALIZER
@@ -434,7 +432,9 @@ export class AlertMutingRule extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'newrelic_alert_muting_rule',
       terraformGeneratorMetadata: {
-        providerName: 'newrelic'
+        providerName: 'newrelic',
+        providerVersion: '2.41.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -517,7 +517,7 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   }
 
   // condition - computed: false, optional: false, required: true
-  private _condition = new AlertMutingRuleConditionOutputReference(this, "condition", true);
+  private _condition = new AlertMutingRuleConditionOutputReference(this, "condition");
   public get condition() {
     return this._condition;
   }
@@ -530,7 +530,7 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   }
 
   // schedule - computed: false, optional: true, required: false
-  private _schedule = new AlertMutingRuleScheduleOutputReference(this, "schedule", true);
+  private _schedule = new AlertMutingRuleScheduleOutputReference(this, "schedule");
   public get schedule() {
     return this._schedule;
   }

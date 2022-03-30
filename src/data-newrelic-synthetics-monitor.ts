@@ -23,7 +23,7 @@ export class DataNewrelicSyntheticsMonitor extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "newrelic_synthetics_monitor";
+  public static readonly tfResourceType = "newrelic_synthetics_monitor";
 
   // ===========
   // INITIALIZER
@@ -40,7 +40,9 @@ export class DataNewrelicSyntheticsMonitor extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'newrelic_synthetics_monitor',
       terraformGeneratorMetadata: {
-        providerName: 'newrelic'
+        providerName: 'newrelic',
+        providerVersion: '2.41.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

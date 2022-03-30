@@ -236,10 +236,9 @@ export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): NrqlAlertConditionCritical | undefined {
@@ -423,10 +422,9 @@ export class NrqlAlertConditionNrqlOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): NrqlAlertConditionNrql | undefined {
@@ -628,10 +626,9 @@ export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): NrqlAlertConditionWarning | undefined {
@@ -787,7 +784,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "newrelic_nrql_alert_condition";
+  public static readonly tfResourceType = "newrelic_nrql_alert_condition";
 
   // ===========
   // INITIALIZER
@@ -804,7 +801,9 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'newrelic_nrql_alert_condition',
       terraformGeneratorMetadata: {
-        providerName: 'newrelic'
+        providerName: 'newrelic',
+        providerVersion: '2.41.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1229,7 +1228,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
 
   // critical - computed: false, optional: true, required: false
-  private _critical = new NrqlAlertConditionCriticalOutputReference(this, "critical", true);
+  private _critical = new NrqlAlertConditionCriticalOutputReference(this, "critical");
   public get critical() {
     return this._critical;
   }
@@ -1245,7 +1244,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
 
   // nrql - computed: false, optional: false, required: true
-  private _nrql = new NrqlAlertConditionNrqlOutputReference(this, "nrql", true);
+  private _nrql = new NrqlAlertConditionNrqlOutputReference(this, "nrql");
   public get nrql() {
     return this._nrql;
   }
@@ -1275,7 +1274,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
 
   // warning - computed: false, optional: true, required: false
-  private _warning = new NrqlAlertConditionWarningOutputReference(this, "warning", true);
+  private _warning = new NrqlAlertConditionWarningOutputReference(this, "warning");
   public get warning() {
     return this._warning;
   }
