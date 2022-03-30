@@ -29,7 +29,7 @@ export class DataNewrelicPluginComponent extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "newrelic_plugin_component";
+  public static readonly tfResourceType = "newrelic_plugin_component";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class DataNewrelicPluginComponent extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'newrelic_plugin_component',
       terraformGeneratorMetadata: {
-        providerName: 'newrelic'
+        providerName: 'newrelic',
+        providerVersion: '2.41.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

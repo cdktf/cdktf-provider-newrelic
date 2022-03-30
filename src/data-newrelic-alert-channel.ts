@@ -14,7 +14,45 @@ export interface DataNewrelicAlertChannelConfig extends cdktf.TerraformMetaArgum
   */
   readonly name: string;
 }
-export class DataNewrelicAlertChannelConfigA extends cdktf.ComplexComputedList {
+export interface DataNewrelicAlertChannelConfigA {
+}
+
+export function dataNewrelicAlertChannelConfigAToTerraform(struct?: DataNewrelicAlertChannelConfigA): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataNewrelicAlertChannelConfigAOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataNewrelicAlertChannelConfigA | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataNewrelicAlertChannelConfigA | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // api_key - computed: true, optional: false, required: false
   public get apiKey() {
@@ -47,8 +85,8 @@ export class DataNewrelicAlertChannelConfigA extends cdktf.ComplexComputedList {
   }
 
   // headers - computed: true, optional: false, required: false
-  public get headers() {
-    return this.getStringMapAttribute('headers');
+  public headers(key: string): string | cdktf.IResolvable {
+    return new cdktf.StringMap(this, 'headers').lookup(key);
   }
 
   // include_json_attachment - computed: true, optional: false, required: false
@@ -62,8 +100,8 @@ export class DataNewrelicAlertChannelConfigA extends cdktf.ComplexComputedList {
   }
 
   // payload - computed: true, optional: false, required: false
-  public get payload() {
-    return this.getStringMapAttribute('payload');
+  public payload(key: string): string | cdktf.IResolvable {
+    return new cdktf.StringMap(this, 'payload').lookup(key);
   }
 
   // payload_type - computed: true, optional: false, required: false
@@ -112,6 +150,25 @@ export class DataNewrelicAlertChannelConfigA extends cdktf.ComplexComputedList {
   }
 }
 
+export class DataNewrelicAlertChannelConfigAList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataNewrelicAlertChannelConfigAOutputReference {
+    return new DataNewrelicAlertChannelConfigAOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel newrelic_alert_channel}
 */
@@ -120,7 +177,7 @@ export class DataNewrelicAlertChannel extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "newrelic_alert_channel";
+  public static readonly tfResourceType = "newrelic_alert_channel";
 
   // ===========
   // INITIALIZER
@@ -137,7 +194,9 @@ export class DataNewrelicAlertChannel extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'newrelic_alert_channel',
       terraformGeneratorMetadata: {
-        providerName: 'newrelic'
+        providerName: 'newrelic',
+        providerVersion: '2.41.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -152,8 +211,9 @@ export class DataNewrelicAlertChannel extends cdktf.TerraformDataSource {
   // ==========
 
   // config - computed: true, optional: false, required: false
-  public config(index: string) {
-    return new DataNewrelicAlertChannelConfigA(this, 'config', index, false);
+  private _config = new DataNewrelicAlertChannelConfigAList(this, "config", false);
+  public get config() {
+    return this._config;
   }
 
   // id - computed: true, optional: true, required: false

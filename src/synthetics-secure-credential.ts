@@ -47,7 +47,7 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "newrelic_synthetics_secure_credential";
+  public static readonly tfResourceType = "newrelic_synthetics_secure_credential";
 
   // ===========
   // INITIALIZER
@@ -64,7 +64,9 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'newrelic_synthetics_secure_credential',
       terraformGeneratorMetadata: {
-        providerName: 'newrelic'
+        providerName: 'newrelic',
+        providerVersion: '2.41.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -60,10 +60,9 @@ export class ServiceLevelEventsBadEventsOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceLevelEventsBadEvents | undefined {
@@ -150,10 +149,9 @@ export class ServiceLevelEventsGoodEventsOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceLevelEventsGoodEvents | undefined {
@@ -240,10 +238,9 @@ export class ServiceLevelEventsValidEventsOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceLevelEventsValidEvents | undefined {
@@ -346,10 +343,9 @@ export class ServiceLevelEventsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceLevelEvents | undefined {
@@ -405,7 +401,7 @@ export class ServiceLevelEventsOutputReference extends cdktf.ComplexObject {
   }
 
   // bad_events - computed: false, optional: true, required: false
-  private _badEvents = new ServiceLevelEventsBadEventsOutputReference(this, "bad_events", true);
+  private _badEvents = new ServiceLevelEventsBadEventsOutputReference(this, "bad_events");
   public get badEvents() {
     return this._badEvents;
   }
@@ -421,7 +417,7 @@ export class ServiceLevelEventsOutputReference extends cdktf.ComplexObject {
   }
 
   // good_events - computed: false, optional: true, required: false
-  private _goodEvents = new ServiceLevelEventsGoodEventsOutputReference(this, "good_events", true);
+  private _goodEvents = new ServiceLevelEventsGoodEventsOutputReference(this, "good_events");
   public get goodEvents() {
     return this._goodEvents;
   }
@@ -437,7 +433,7 @@ export class ServiceLevelEventsOutputReference extends cdktf.ComplexObject {
   }
 
   // valid_events - computed: false, optional: false, required: true
-  private _validEvents = new ServiceLevelEventsValidEventsOutputReference(this, "valid_events", true);
+  private _validEvents = new ServiceLevelEventsValidEventsOutputReference(this, "valid_events");
   public get validEvents() {
     return this._validEvents;
   }
@@ -477,10 +473,9 @@ export class ServiceLevelObjectiveTimeWindowRollingOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceLevelObjectiveTimeWindowRolling | undefined {
@@ -561,10 +556,9 @@ export class ServiceLevelObjectiveTimeWindowOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceLevelObjectiveTimeWindow | undefined {
@@ -589,7 +583,7 @@ export class ServiceLevelObjectiveTimeWindowOutputReference extends cdktf.Comple
   }
 
   // rolling - computed: false, optional: false, required: true
-  private _rolling = new ServiceLevelObjectiveTimeWindowRollingOutputReference(this, "rolling", true);
+  private _rolling = new ServiceLevelObjectiveTimeWindowRollingOutputReference(this, "rolling");
   public get rolling() {
     return this._rolling;
   }
@@ -622,7 +616,7 @@ export interface ServiceLevelObjective {
   readonly timeWindow: ServiceLevelObjectiveTimeWindow;
 }
 
-export function serviceLevelObjectiveToTerraform(struct?: ServiceLevelObjectiveOutputReference | ServiceLevelObjective | cdktf.IResolvable): any {
+export function serviceLevelObjectiveToTerraform(struct?: ServiceLevelObjectiveOutputReference | ServiceLevelObjective): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -641,10 +635,9 @@ export class ServiceLevelObjectiveOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceLevelObjective | undefined {
@@ -732,7 +725,7 @@ export class ServiceLevelObjectiveOutputReference extends cdktf.ComplexObject {
   }
 
   // time_window - computed: false, optional: false, required: true
-  private _timeWindow = new ServiceLevelObjectiveTimeWindowOutputReference(this, "time_window", true);
+  private _timeWindow = new ServiceLevelObjectiveTimeWindowOutputReference(this, "time_window");
   public get timeWindow() {
     return this._timeWindow;
   }
@@ -753,7 +746,7 @@ export class ServiceLevel extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "newrelic_service_level";
+  public static readonly tfResourceType = "newrelic_service_level";
 
   // ===========
   // INITIALIZER
@@ -770,7 +763,9 @@ export class ServiceLevel extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'newrelic_service_level',
       terraformGeneratorMetadata: {
-        providerName: 'newrelic'
+        providerName: 'newrelic',
+        providerVersion: '2.41.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -846,7 +841,7 @@ export class ServiceLevel extends cdktf.TerraformResource {
   }
 
   // events - computed: false, optional: false, required: true
-  private _events = new ServiceLevelEventsOutputReference(this, "events", true);
+  private _events = new ServiceLevelEventsOutputReference(this, "events");
   public get events() {
     return this._events;
   }
@@ -859,7 +854,7 @@ export class ServiceLevel extends cdktf.TerraformResource {
   }
 
   // objective - computed: false, optional: false, required: true
-  private _objective = new ServiceLevelObjectiveOutputReference(this, "objective", true);
+  private _objective = new ServiceLevelObjectiveOutputReference(this, "objective");
   public get objective() {
     return this._objective;
   }

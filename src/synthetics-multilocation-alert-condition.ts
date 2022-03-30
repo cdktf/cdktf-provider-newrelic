@@ -81,10 +81,9 @@ export class SyntheticsMultilocationAlertConditionCriticalOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsMultilocationAlertConditionCritical | undefined {
@@ -146,10 +145,9 @@ export class SyntheticsMultilocationAlertConditionWarningOutputReference extends
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsMultilocationAlertConditionWarning | undefined {
@@ -195,7 +193,7 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "newrelic_synthetics_multilocation_alert_condition";
+  public static readonly tfResourceType = "newrelic_synthetics_multilocation_alert_condition";
 
   // ===========
   // INITIALIZER
@@ -212,7 +210,9 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
     super(scope, id, {
       terraformResourceType: 'newrelic_synthetics_multilocation_alert_condition',
       terraformGeneratorMetadata: {
-        providerName: 'newrelic'
+        providerName: 'newrelic',
+        providerVersion: '2.41.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -323,7 +323,7 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
   }
 
   // critical - computed: false, optional: false, required: true
-  private _critical = new SyntheticsMultilocationAlertConditionCriticalOutputReference(this, "critical", true);
+  private _critical = new SyntheticsMultilocationAlertConditionCriticalOutputReference(this, "critical");
   public get critical() {
     return this._critical;
   }
@@ -336,7 +336,7 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
   }
 
   // warning - computed: false, optional: true, required: false
-  private _warning = new SyntheticsMultilocationAlertConditionWarningOutputReference(this, "warning", true);
+  private _warning = new SyntheticsMultilocationAlertConditionWarningOutputReference(this, "warning");
   public get warning() {
     return this._warning;
   }

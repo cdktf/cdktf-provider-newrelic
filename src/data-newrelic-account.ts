@@ -35,7 +35,7 @@ export class DataNewrelicAccount extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "newrelic_account";
+  public static readonly tfResourceType = "newrelic_account";
 
   // ===========
   // INITIALIZER
@@ -52,7 +52,9 @@ export class DataNewrelicAccount extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'newrelic_account',
       terraformGeneratorMetadata: {
-        providerName: 'newrelic'
+        providerName: 'newrelic',
+        providerVersion: '2.41.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

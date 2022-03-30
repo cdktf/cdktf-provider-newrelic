@@ -75,10 +75,9 @@ export class EntityTagsTimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EntityTagsTimeouts | undefined {
@@ -127,7 +126,7 @@ export class EntityTags extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "newrelic_entity_tags";
+  public static readonly tfResourceType = "newrelic_entity_tags";
 
   // ===========
   // INITIALIZER
@@ -144,7 +143,9 @@ export class EntityTags extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'newrelic_entity_tags',
       terraformGeneratorMetadata: {
-        providerName: 'newrelic'
+        providerName: 'newrelic',
+        providerVersion: '2.41.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -193,7 +194,7 @@ export class EntityTags extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new EntityTagsTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new EntityTagsTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
