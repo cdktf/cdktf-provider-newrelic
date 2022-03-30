@@ -66,7 +66,7 @@ export class Workload extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "newrelic_workload";
+  public static readonly tfResourceType = "newrelic_workload";
 
   // ===========
   // INITIALIZER
@@ -83,7 +83,9 @@ export class Workload extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'newrelic_workload',
       terraformGeneratorMetadata: {
-        providerName: 'newrelic'
+        providerName: 'newrelic',
+        providerVersion: '2.41.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

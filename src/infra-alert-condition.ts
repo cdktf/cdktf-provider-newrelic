@@ -131,10 +131,9 @@ export class InfraAlertConditionCriticalOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): InfraAlertConditionCritical | undefined {
@@ -248,10 +247,9 @@ export class InfraAlertConditionWarningOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): InfraAlertConditionWarning | undefined {
@@ -341,7 +339,7 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "newrelic_infra_alert_condition";
+  public static readonly tfResourceType = "newrelic_infra_alert_condition";
 
   // ===========
   // INITIALIZER
@@ -358,7 +356,9 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'newrelic_infra_alert_condition',
       terraformGeneratorMetadata: {
-        providerName: 'newrelic'
+        providerName: 'newrelic',
+        providerVersion: '2.41.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -601,7 +601,7 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
 
   // critical - computed: false, optional: true, required: false
-  private _critical = new InfraAlertConditionCriticalOutputReference(this, "critical", true);
+  private _critical = new InfraAlertConditionCriticalOutputReference(this, "critical");
   public get critical() {
     return this._critical;
   }
@@ -617,7 +617,7 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   }
 
   // warning - computed: false, optional: true, required: false
-  private _warning = new InfraAlertConditionWarningOutputReference(this, "warning", true);
+  private _warning = new InfraAlertConditionWarningOutputReference(this, "warning");
   public get warning() {
     return this._warning;
   }

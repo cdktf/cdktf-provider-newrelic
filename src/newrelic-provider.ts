@@ -77,7 +77,7 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "newrelic";
+  public static readonly tfResourceType = "newrelic";
 
   // ===========
   // INITIALIZER
@@ -95,6 +95,7 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'newrelic',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
+        providerVersion: '2.41.2',
         providerVersionConstraint: '~> 2.32'
       },
       terraformProviderSource: 'newrelic/newrelic'

@@ -140,7 +140,7 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "newrelic_one_dashboard_raw";
+  public static readonly tfResourceType = "newrelic_one_dashboard_raw";
 
   // ===========
   // INITIALIZER
@@ -157,7 +157,9 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'newrelic_one_dashboard_raw',
       terraformGeneratorMetadata: {
-        providerName: 'newrelic'
+        providerName: 'newrelic',
+        providerVersion: '2.41.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

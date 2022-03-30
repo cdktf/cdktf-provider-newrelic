@@ -3011,36 +3011,28 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`config`](#cdktfprovidernewrelicdatanewrelicalertchannelconfig) | *No description.* |
-
----
-
-##### `config` <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannel.config" id="cdktfprovidernewrelicdatanewrelicalertchannelconfig"></a>
-
-```typescript
-public config(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannel.parameter.index" id="cdktfprovidernewrelicdatanewrelicalertchannelparameterindex"></a>
-
-- *Type:* `string`
-
----
 
 
 #### Properties <a name="Properties" id="properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`config`](#cdktfprovidernewrelicdatanewrelicalertchannelpropertyconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAList`](#@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAList) | *No description.* |
 | [`id`](#cdktfprovidernewrelicdatanewrelicalertchannelpropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`policyIds`](#cdktfprovidernewrelicdatanewrelicalertchannelpropertypolicyids)<span title="Required">*</span> | `number`[] | *No description.* |
 | [`type`](#cdktfprovidernewrelicdatanewrelicalertchannelpropertytype)<span title="Required">*</span> | `string` | *No description.* |
 | [`nameInput`](#cdktfprovidernewrelicdatanewrelicalertchannelpropertynameinput) | `string` | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicalertchannelpropertyname)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannel.property.config" id="cdktfprovidernewrelicdatanewrelicalertchannelpropertyconfig"></a>
+
+```typescript
+public readonly config: DataNewrelicAlertChannelConfigAList;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAList`](#@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAList)
 
 ---
 
@@ -10260,7 +10252,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
-| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric). |
+| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
 | [`gcMetric`](#cdktfprovidernewrelicalertconditionconfigpropertygcmetric) | `string` | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -10389,7 +10381,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric).
+The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 
@@ -12907,6 +12899,17 @@ The name of the alert channel in New Relic.
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel#name DataNewrelicAlertChannel#name}
 
 ---
+
+### DataNewrelicAlertChannelConfigA <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA" id="cdktfprovidernewrelicdatanewrelicalertchannelconfiga"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { DataNewrelicAlertChannelConfigA } from '@cdktf/provider-newrelic'
+
+const dataNewrelicAlertChannelConfigA: DataNewrelicAlertChannelConfigA = { ... }
+```
+
 
 ### DataNewrelicAlertPolicyConfig <a name="@cdktf/provider-newrelic.DataNewrelicAlertPolicyConfig" id="cdktfprovidernewrelicdatanewrelicalertpolicyconfig"></a>
 
@@ -20543,14 +20546,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ```typescript
 import { AlertChannelConfigAOutputReference } from '@cdktf/provider-newrelic'
 
-new AlertChannelConfigAOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new AlertChannelConfigAOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicalertchannelconfigaoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicalertchannelconfigaoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicalertchannelconfigaoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -20567,14 +20569,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfigAOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicalertchannelconfigaoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -21221,14 +21215,13 @@ public readonly internalValue: AlertChannelConfigA;
 ```typescript
 import { AlertMutingRuleConditionOutputReference } from '@cdktf/provider-newrelic'
 
-new AlertMutingRuleConditionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new AlertMutingRuleConditionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -21245,14 +21238,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleConditionOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicalertmutingruleconditionoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -21328,14 +21313,13 @@ public readonly internalValue: AlertMutingRuleCondition;
 ```typescript
 import { AlertMutingRuleScheduleOutputReference } from '@cdktf/provider-newrelic'
 
-new AlertMutingRuleScheduleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new AlertMutingRuleScheduleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicalertmutingrulescheduleoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -21352,14 +21336,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleScheduleOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicalertmutingrulescheduleoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -21593,14 +21569,13 @@ public readonly internalValue: AlertMutingRuleSchedule;
 ```typescript
 import { CloudAwsLinkAccountTimeoutsOutputReference } from '@cdktf/provider-newrelic'
 
-new CloudAwsLinkAccountTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CloudAwsLinkAccountTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -21617,14 +21592,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountTimeoutsOutputReference.parameter.isSingleItem" id="cdktfprovidernewreliccloudawslinkaccounttimeoutsoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -21691,14 +21658,13 @@ public readonly internalValue: CloudAwsLinkAccountTimeouts;
 ```typescript
 import { DashboardFilterOutputReference } from '@cdktf/provider-newrelic'
 
-new DashboardFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicdashboardfilteroutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicdashboardfilteroutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicdashboardfilteroutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -21715,14 +21681,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardFilterOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicdashboardfilteroutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -21811,14 +21769,13 @@ public readonly internalValue: DashboardFilter;
 ```typescript
 import { DashboardWidgetCompareWithPresentationOutputReference } from '@cdktf/provider-newrelic'
 
-new DashboardWidgetCompareWithPresentationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetCompareWithPresentationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -21835,14 +21792,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentationOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -21911,78 +21860,184 @@ public readonly internalValue: DashboardWidgetCompareWithPresentation;
 ---
 
 
-### DataNewrelicAlertChannelConfigA <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA" id="cdktfprovidernewrelicdatanewrelicalertchannelconfiga"></a>
+### DataNewrelicAlertChannelConfigAList <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAList" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigalist"></a>
 
-#### Initializers <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.Initializer" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigainitializer"></a>
+#### Initializers <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAList.Initializer" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigalistinitializer"></a>
 
 ```typescript
-import { DataNewrelicAlertChannelConfigA } from '@cdktf/provider-newrelic'
+import { DataNewrelicAlertChannelConfigAList } from '@cdktf/provider-newrelic'
 
-new DataNewrelicAlertChannelConfigA(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataNewrelicAlertChannelConfigAList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
-| [`terraformAttribute`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
-| [`complexComputedListIndex`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
-| [`wrapsSet`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaparameterwrapsset) | `boolean` | *No description.* |
+| [`terraformResource`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigalistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigalistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigalistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.parameter.terraformResource" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaparameterterraformresource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAList.parameter.terraformResource" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigalistparameterterraformresource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.parameter.terraformAttribute" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaparameterterraformattribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAList.parameter.terraformAttribute" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigalistparameterterraformattribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.parameter.complexComputedListIndex" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaparametercomplexcomputedlistindex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.parameter.wrapsSet" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaparameterwrapsset"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAList.parameter.wrapsSet" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigalistparameterwrapsset"></a>
 
 - *Type:* `boolean`
 
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
 ---
 
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigalistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAList.get" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigalistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAList.parameter.index" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigalistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataNewrelicAlertChannelConfigAOutputReference <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.Initializer" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferenceinitializer"></a>
+
+```typescript
+import { DataNewrelicAlertChannelConfigAOutputReference } from '@cdktf/provider-newrelic'
+
+new DataNewrelicAlertChannelConfigAOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`headers`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferenceheaders) | *No description.* |
+| [`payload`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepayload) | *No description.* |
+
+---
+
+##### `headers` <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.headers" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferenceheaders"></a>
+
+```typescript
+public headers(key: string)
+```
+
+###### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.parameter.key" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferenceparameterkey"></a>
+
+- *Type:* `string`
+
+---
+
+##### `payload` <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.payload" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepayload"></a>
+
+```typescript
+public payload(key: string)
+```
+
+###### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.parameter.key" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferenceparameterkey"></a>
+
+- *Type:* `string`
+
+---
 
 
 #### Properties <a name="Properties" id="properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`apiKey`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyapikey)<span title="Required">*</span> | `string` | *No description.* |
-| [`authPassword`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyauthpassword)<span title="Required">*</span> | `string` | *No description.* |
-| [`authType`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyauthtype)<span title="Required">*</span> | `string` | *No description.* |
-| [`authUsername`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyauthusername)<span title="Required">*</span> | `string` | *No description.* |
-| [`baseUrl`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertybaseurl)<span title="Required">*</span> | `string` | *No description.* |
-| [`channel`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertychannel)<span title="Required">*</span> | `string` | *No description.* |
-| [`headers`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyheaders)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
-| [`includeJsonAttachment`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyincludejsonattachment)<span title="Required">*</span> | `string` | *No description.* |
-| [`key`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertykey)<span title="Required">*</span> | `string` | *No description.* |
-| [`payload`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertypayload)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
-| [`payloadType`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertypayloadtype)<span title="Required">*</span> | `string` | *No description.* |
-| [`recipients`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyrecipients)<span title="Required">*</span> | `string` | *No description.* |
-| [`region`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyregion)<span title="Required">*</span> | `string` | *No description.* |
-| [`routeKey`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyroutekey)<span title="Required">*</span> | `string` | *No description.* |
-| [`serviceKey`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyservicekey)<span title="Required">*</span> | `string` | *No description.* |
-| [`tags`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertytags)<span title="Required">*</span> | `string` | *No description.* |
-| [`teams`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyteams)<span title="Required">*</span> | `string` | *No description.* |
-| [`url`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyurl)<span title="Required">*</span> | `string` | *No description.* |
-| [`userId`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyuserid)<span title="Required">*</span> | `string` | *No description.* |
+| [`apiKey`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyapikey)<span title="Required">*</span> | `string` | *No description.* |
+| [`authPassword`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyauthpassword)<span title="Required">*</span> | `string` | *No description.* |
+| [`authType`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyauthtype)<span title="Required">*</span> | `string` | *No description.* |
+| [`authUsername`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyauthusername)<span title="Required">*</span> | `string` | *No description.* |
+| [`baseUrl`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertybaseurl)<span title="Required">*</span> | `string` | *No description.* |
+| [`channel`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertychannel)<span title="Required">*</span> | `string` | *No description.* |
+| [`includeJsonAttachment`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyincludejsonattachment)<span title="Required">*</span> | `string` | *No description.* |
+| [`key`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertykey)<span title="Required">*</span> | `string` | *No description.* |
+| [`payloadType`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertypayloadtype)<span title="Required">*</span> | `string` | *No description.* |
+| [`recipients`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyrecipients)<span title="Required">*</span> | `string` | *No description.* |
+| [`region`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyregion)<span title="Required">*</span> | `string` | *No description.* |
+| [`routeKey`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyroutekey)<span title="Required">*</span> | `string` | *No description.* |
+| [`serviceKey`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyservicekey)<span title="Required">*</span> | `string` | *No description.* |
+| [`tags`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertytags)<span title="Required">*</span> | `string` | *No description.* |
+| [`teams`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyteams)<span title="Required">*</span> | `string` | *No description.* |
+| [`url`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyurl)<span title="Required">*</span> | `string` | *No description.* |
+| [`userId`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyuserid)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA`](#@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA) | *No description.* |
 
 ---
 
-##### `apiKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.apiKey" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyapikey"></a>
+##### `apiKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.apiKey" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyapikey"></a>
 
 ```typescript
 public readonly apiKey: string;
@@ -21992,7 +22047,7 @@ public readonly apiKey: string;
 
 ---
 
-##### `authPassword`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.authPassword" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyauthpassword"></a>
+##### `authPassword`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.authPassword" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyauthpassword"></a>
 
 ```typescript
 public readonly authPassword: string;
@@ -22002,7 +22057,7 @@ public readonly authPassword: string;
 
 ---
 
-##### `authType`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.authType" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyauthtype"></a>
+##### `authType`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.authType" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyauthtype"></a>
 
 ```typescript
 public readonly authType: string;
@@ -22012,7 +22067,7 @@ public readonly authType: string;
 
 ---
 
-##### `authUsername`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.authUsername" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyauthusername"></a>
+##### `authUsername`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.authUsername" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyauthusername"></a>
 
 ```typescript
 public readonly authUsername: string;
@@ -22022,7 +22077,7 @@ public readonly authUsername: string;
 
 ---
 
-##### `baseUrl`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.baseUrl" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertybaseurl"></a>
+##### `baseUrl`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.baseUrl" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertybaseurl"></a>
 
 ```typescript
 public readonly baseUrl: string;
@@ -22032,7 +22087,7 @@ public readonly baseUrl: string;
 
 ---
 
-##### `channel`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.channel" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertychannel"></a>
+##### `channel`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.channel" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertychannel"></a>
 
 ```typescript
 public readonly channel: string;
@@ -22042,17 +22097,7 @@ public readonly channel: string;
 
 ---
 
-##### `headers`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.headers" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyheaders"></a>
-
-```typescript
-public readonly headers: {[ key: string ]: string};
-```
-
-- *Type:* {[ key: string ]: `string`}
-
----
-
-##### `includeJsonAttachment`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.includeJsonAttachment" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyincludejsonattachment"></a>
+##### `includeJsonAttachment`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.includeJsonAttachment" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyincludejsonattachment"></a>
 
 ```typescript
 public readonly includeJsonAttachment: string;
@@ -22062,7 +22107,7 @@ public readonly includeJsonAttachment: string;
 
 ---
 
-##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.key" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertykey"></a>
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.key" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertykey"></a>
 
 ```typescript
 public readonly key: string;
@@ -22072,17 +22117,7 @@ public readonly key: string;
 
 ---
 
-##### `payload`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.payload" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertypayload"></a>
-
-```typescript
-public readonly payload: {[ key: string ]: string};
-```
-
-- *Type:* {[ key: string ]: `string`}
-
----
-
-##### `payloadType`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.payloadType" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertypayloadtype"></a>
+##### `payloadType`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.payloadType" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertypayloadtype"></a>
 
 ```typescript
 public readonly payloadType: string;
@@ -22092,7 +22127,7 @@ public readonly payloadType: string;
 
 ---
 
-##### `recipients`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.recipients" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyrecipients"></a>
+##### `recipients`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.recipients" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyrecipients"></a>
 
 ```typescript
 public readonly recipients: string;
@@ -22102,7 +22137,7 @@ public readonly recipients: string;
 
 ---
 
-##### `region`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.region" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyregion"></a>
+##### `region`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.region" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyregion"></a>
 
 ```typescript
 public readonly region: string;
@@ -22112,7 +22147,7 @@ public readonly region: string;
 
 ---
 
-##### `routeKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.routeKey" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyroutekey"></a>
+##### `routeKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.routeKey" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyroutekey"></a>
 
 ```typescript
 public readonly routeKey: string;
@@ -22122,7 +22157,7 @@ public readonly routeKey: string;
 
 ---
 
-##### `serviceKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.serviceKey" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyservicekey"></a>
+##### `serviceKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.serviceKey" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyservicekey"></a>
 
 ```typescript
 public readonly serviceKey: string;
@@ -22132,7 +22167,7 @@ public readonly serviceKey: string;
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.tags" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertytags"></a>
+##### `tags`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.tags" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertytags"></a>
 
 ```typescript
 public readonly tags: string;
@@ -22142,7 +22177,7 @@ public readonly tags: string;
 
 ---
 
-##### `teams`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.teams" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyteams"></a>
+##### `teams`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.teams" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyteams"></a>
 
 ```typescript
 public readonly teams: string;
@@ -22152,7 +22187,7 @@ public readonly teams: string;
 
 ---
 
-##### `url`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.url" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyurl"></a>
+##### `url`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.url" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyurl"></a>
 
 ```typescript
 public readonly url: string;
@@ -22162,13 +22197,23 @@ public readonly url: string;
 
 ---
 
-##### `userId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA.property.userId" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigapropertyuserid"></a>
+##### `userId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.userId" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyuserid"></a>
 
 ```typescript
 public readonly userId: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.internalValue" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: DataNewrelicAlertChannelConfigA;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA`](#@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigA)
 
 ---
 
@@ -22180,14 +22225,13 @@ public readonly userId: string;
 ```typescript
 import { DataNewrelicEntityTagOutputReference } from '@cdktf/provider-newrelic'
 
-new DataNewrelicEntityTagOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DataNewrelicEntityTagOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicdatanewrelicentitytagoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicdatanewrelicentitytagoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicdatanewrelicentitytagoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -22204,14 +22248,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntityTagOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicdatanewrelicentitytagoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -22287,14 +22323,13 @@ public readonly internalValue: DataNewrelicEntityTag;
 ```typescript
 import { EntityTagsTimeoutsOutputReference } from '@cdktf/provider-newrelic'
 
-new EntityTagsTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new EntityTagsTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicentitytagstimeoutsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicentitytagstimeoutsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicentitytagstimeoutsoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -22311,14 +22346,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.EntityTagsTimeoutsOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicentitytagstimeoutsoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -22385,14 +22412,13 @@ public readonly internalValue: EntityTagsTimeouts;
 ```typescript
 import { InfraAlertConditionCriticalOutputReference } from '@cdktf/provider-newrelic'
 
-new InfraAlertConditionCriticalOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new InfraAlertConditionCriticalOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicinfraalertconditioncriticaloutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicinfraalertconditioncriticaloutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicinfraalertconditioncriticaloutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -22409,14 +22435,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionCriticalOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicinfraalertconditioncriticaloutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -22534,14 +22552,13 @@ public readonly internalValue: InfraAlertConditionCritical;
 ```typescript
 import { InfraAlertConditionWarningOutputReference } from '@cdktf/provider-newrelic'
 
-new InfraAlertConditionWarningOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new InfraAlertConditionWarningOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicinfraalertconditionwarningoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicinfraalertconditionwarningoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicinfraalertconditionwarningoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -22558,14 +22575,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionWarningOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicinfraalertconditionwarningoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -22683,14 +22692,13 @@ public readonly internalValue: InfraAlertConditionWarning;
 ```typescript
 import { NrqlAlertConditionCriticalOutputReference } from '@cdktf/provider-newrelic'
 
-new NrqlAlertConditionCriticalOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new NrqlAlertConditionCriticalOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -22707,14 +22715,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionCriticalOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicnrqlalertconditioncriticaloutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -22919,14 +22919,13 @@ public readonly internalValue: NrqlAlertConditionCritical;
 ```typescript
 import { NrqlAlertConditionNrqlOutputReference } from '@cdktf/provider-newrelic'
 
-new NrqlAlertConditionNrqlOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new NrqlAlertConditionNrqlOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicnrqlalertconditionnrqloutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicnrqlalertconditionnrqloutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicnrqlalertconditionnrqloutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -22943,14 +22942,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionNrqlOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicnrqlalertconditionnrqloutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -23068,14 +23059,13 @@ public readonly internalValue: NrqlAlertConditionNrql;
 ```typescript
 import { NrqlAlertConditionWarningOutputReference } from '@cdktf/provider-newrelic'
 
-new NrqlAlertConditionWarningOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new NrqlAlertConditionWarningOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicnrqlalertconditionwarningoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -23092,14 +23082,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionWarningOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicnrqlalertconditionwarningoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -23304,14 +23286,13 @@ public readonly internalValue: NrqlAlertConditionWarning;
 ```typescript
 import { ServiceLevelEventsBadEventsOutputReference } from '@cdktf/provider-newrelic'
 
-new ServiceLevelEventsBadEventsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServiceLevelEventsBadEventsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -23328,14 +23309,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsBadEventsOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -23424,14 +23397,13 @@ public readonly internalValue: ServiceLevelEventsBadEvents;
 ```typescript
 import { ServiceLevelEventsGoodEventsOutputReference } from '@cdktf/provider-newrelic'
 
-new ServiceLevelEventsGoodEventsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServiceLevelEventsGoodEventsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -23448,14 +23420,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsGoodEventsOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicserviceleveleventsgoodeventsoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -23544,14 +23508,13 @@ public readonly internalValue: ServiceLevelEventsGoodEvents;
 ```typescript
 import { ServiceLevelEventsOutputReference } from '@cdktf/provider-newrelic'
 
-new ServiceLevelEventsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServiceLevelEventsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicserviceleveleventsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicserviceleveleventsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicserviceleveleventsoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -23568,14 +23531,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicserviceleveleventsoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -23754,14 +23709,13 @@ public readonly internalValue: ServiceLevelEvents;
 ```typescript
 import { ServiceLevelEventsValidEventsOutputReference } from '@cdktf/provider-newrelic'
 
-new ServiceLevelEventsValidEventsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServiceLevelEventsValidEventsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -23778,14 +23732,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelEventsValidEventsOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicserviceleveleventsvalideventsoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -23874,14 +23820,13 @@ public readonly internalValue: ServiceLevelEventsValidEvents;
 ```typescript
 import { ServiceLevelObjectiveOutputReference } from '@cdktf/provider-newrelic'
 
-new ServiceLevelObjectiveOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServiceLevelObjectiveOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicservicelevelobjectiveoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -23898,14 +23843,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicservicelevelobjectiveoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -24058,14 +23995,13 @@ public readonly internalValue: ServiceLevelObjective;
 ```typescript
 import { ServiceLevelObjectiveTimeWindowOutputReference } from '@cdktf/provider-newrelic'
 
-new ServiceLevelObjectiveTimeWindowOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServiceLevelObjectiveTimeWindowOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicservicelevelobjectivetimewindowoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicservicelevelobjectivetimewindowoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicservicelevelobjectivetimewindowoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -24082,14 +24018,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicservicelevelobjectivetimewindowoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -24162,14 +24090,13 @@ public readonly internalValue: ServiceLevelObjectiveTimeWindow;
 ```typescript
 import { ServiceLevelObjectiveTimeWindowRollingOutputReference } from '@cdktf/provider-newrelic'
 
-new ServiceLevelObjectiveTimeWindowRollingOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServiceLevelObjectiveTimeWindowRollingOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicservicelevelobjectivetimewindowrollingoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicservicelevelobjectivetimewindowrollingoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicservicelevelobjectivetimewindowrollingoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -24186,14 +24113,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.ServiceLevelObjectiveTimeWindowRollingOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicservicelevelobjectivetimewindowrollingoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -24269,14 +24188,13 @@ public readonly internalValue: ServiceLevelObjectiveTimeWindowRolling;
 ```typescript
 import { SyntheticsMultilocationAlertConditionCriticalOutputReference } from '@cdktf/provider-newrelic'
 
-new SyntheticsMultilocationAlertConditionCriticalOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsMultilocationAlertConditionCriticalOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditioncriticaloutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditioncriticaloutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditioncriticaloutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -24293,14 +24211,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionCriticalOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditioncriticaloutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -24354,14 +24264,13 @@ public readonly internalValue: SyntheticsMultilocationAlertConditionCritical;
 ```typescript
 import { SyntheticsMultilocationAlertConditionWarningOutputReference } from '@cdktf/provider-newrelic'
 
-new SyntheticsMultilocationAlertConditionWarningOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsMultilocationAlertConditionWarningOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionwarningoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionwarningoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionwarningoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -24378,14 +24287,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionWarningOutputReference.parameter.isSingleItem" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionwarningoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
