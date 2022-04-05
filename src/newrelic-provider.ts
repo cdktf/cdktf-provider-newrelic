@@ -95,7 +95,7 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'newrelic',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.41.2',
+        providerVersion: '2.41.3',
         providerVersionConstraint: '~> 2.32'
       },
       terraformProviderSource: 'newrelic/newrelic'
