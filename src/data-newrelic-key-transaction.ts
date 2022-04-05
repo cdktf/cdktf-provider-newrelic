@@ -41,7 +41,7 @@ export class DataNewrelicKeyTransaction extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_key_transaction',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.41.2',
+        providerVersion: '2.41.3',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
