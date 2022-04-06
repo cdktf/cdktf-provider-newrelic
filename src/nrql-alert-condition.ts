@@ -122,7 +122,7 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly runbookUrl?: string;
   /**
-  * The duration of overlapping timewindows used to smooth the chart line, in seconds. Must be a factor of `aggregation_window` and less than the aggregation window. It should be greater or equal to 30 seconds if `aggregation_window` is less than or equal to 3600 seconds, or greater or eqaul to `aggregation_window / 120` if `aggregation_window` is greater than 3600 seconds.
+  * The duration of overlapping timewindows used to smooth the chart line, in seconds. Must be a factor of `aggregation_window` and less than the aggregation window. It should be greater or equal to 30 seconds if `aggregation_window` is less than or equal to 3600 seconds, or greater or equal to `aggregation_window / 120` if `aggregation_window` is greater than 3600 seconds.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#slide_by NrqlAlertCondition#slide_by}
   */
@@ -802,7 +802,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_nrql_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.41.3',
+        providerVersion: '2.41.4',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
