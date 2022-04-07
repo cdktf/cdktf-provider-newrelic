@@ -7,6 +7,7 @@ export * from './alert-policy-channel';
 export * from './api-access-key';
 export * from './application-settings';
 export * from './cloud-aws-govcloud-link-account';
+export * from './cloud-aws-integrations';
 export * from './cloud-aws-link-account';
 export * from './cloud-azure-link-account';
 export * from './cloud-gcp-link-account';

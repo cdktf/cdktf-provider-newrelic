@@ -764,7 +764,7 @@ export class ServiceLevel extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_service_level',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.41.4',
+        providerVersion: '2.42.0',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
