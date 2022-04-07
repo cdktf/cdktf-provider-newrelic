@@ -71,7 +71,7 @@ export class CloudAzureLinkAccount extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_azure_link_account',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.41.4',
+        providerVersion: '2.42.0',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
