@@ -10978,7 +10978,7 @@ const alertMutingRuleCondition: AlertMutingRuleCondition = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`conditions`](#cdktfprovidernewrelicalertmutingruleconditionpropertyconditions)<span title="Required">*</span> | [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] \| [`cdktf.IResolvable`](#cdktf.IResolvable) | conditions block. |
+| [`conditions`](#cdktfprovidernewrelicalertmutingruleconditionpropertyconditions)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] | conditions block. |
 | [`operator`](#cdktfprovidernewrelicalertmutingruleconditionpropertyoperator)<span title="Required">*</span> | `string` | The operator used to combine all the MutingRuleConditions within the group. |
 
 ---
@@ -10986,10 +10986,10 @@ const alertMutingRuleCondition: AlertMutingRuleCondition = { ... }
 ##### `conditions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleCondition.property.conditions" id="cdktfprovidernewrelicalertmutingruleconditionpropertyconditions"></a>
 
 ```typescript
-public readonly conditions: AlertMutingRuleConditionConditions[] | IResolvable;
+public readonly conditions: IResolvable | AlertMutingRuleConditionConditions[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[]
 
 conditions block.
 
@@ -22112,9 +22112,9 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`conditionsInput`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyconditionsinput) | [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`conditionsInput`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyconditionsinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] | *No description.* |
 | [`operatorInput`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyoperatorinput) | `string` | *No description.* |
-| [`conditions`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyconditions)<span title="Required">*</span> | [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`conditions`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyconditions)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] | *No description.* |
 | [`operator`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyoperator)<span title="Required">*</span> | `string` | *No description.* |
 | [`internalValue`](#cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.AlertMutingRuleCondition`](#@cdktf/provider-newrelic.AlertMutingRuleCondition) | *No description.* |
 
@@ -22123,10 +22123,10 @@ The attribute on the parent resource this class is referencing.
 ##### `conditionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleConditionOutputReference.property.conditionsInput" id="cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyconditionsinput"></a>
 
 ```typescript
-public readonly conditionsInput: AlertMutingRuleConditionConditions[] | IResolvable;
+public readonly conditionsInput: IResolvable | AlertMutingRuleConditionConditions[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[]
 
 ---
 
@@ -22143,10 +22143,10 @@ public readonly operatorInput: string;
 ##### `conditions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleConditionOutputReference.property.conditions" id="cdktfprovidernewrelicalertmutingruleconditionoutputreferencepropertyconditions"></a>
 
 ```typescript
-public readonly conditions: AlertMutingRuleConditionConditions[] | IResolvable;
+public readonly conditions: IResolvable | AlertMutingRuleConditionConditions[];
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[] | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.AlertMutingRuleConditionConditions`](#@cdktf/provider-newrelic.AlertMutingRuleConditionConditions)[]
 
 ---
 
