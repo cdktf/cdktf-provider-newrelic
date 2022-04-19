@@ -2499,6 +2499,1401 @@ public readonly name: string;
 
 ---
 
+### CloudAzureIntegrations <a name="@cdktf/provider-newrelic.CloudAzureIntegrations" id="cdktfprovidernewreliccloudazureintegrations"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations newrelic_cloud_azure_integrations}.
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.Initializer" id="cdktfprovidernewreliccloudazureintegrationsinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrations } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrations(scope: Construct, id: string, config: CloudAzureIntegrationsConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#cdktfprovidernewreliccloudazureintegrationsparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
+| [`id`](#cdktfprovidernewreliccloudazureintegrationsparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
+| [`config`](#cdktfprovidernewreliccloudazureintegrationsparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsConfig`](#@cdktf/provider-newrelic.CloudAzureIntegrationsConfig) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.scope" id="cdktfprovidernewreliccloudazureintegrationsparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.id" id="cdktfprovidernewreliccloudazureintegrationsparameterid"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.config" id="cdktfprovidernewreliccloudazureintegrationsparameterconfig"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsConfig`](#@cdktf/provider-newrelic.CloudAzureIntegrationsConfig)
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`putApiManagement`](#cdktfprovidernewreliccloudazureintegrationsputapimanagement) | *No description.* |
+| [`putAppGateway`](#cdktfprovidernewreliccloudazureintegrationsputappgateway) | *No description.* |
+| [`putAppService`](#cdktfprovidernewreliccloudazureintegrationsputappservice) | *No description.* |
+| [`putContainers`](#cdktfprovidernewreliccloudazureintegrationsputcontainers) | *No description.* |
+| [`putCosmosDb`](#cdktfprovidernewreliccloudazureintegrationsputcosmosdb) | *No description.* |
+| [`putCostManagement`](#cdktfprovidernewreliccloudazureintegrationsputcostmanagement) | *No description.* |
+| [`putDataFactory`](#cdktfprovidernewreliccloudazureintegrationsputdatafactory) | *No description.* |
+| [`putEventHub`](#cdktfprovidernewreliccloudazureintegrationsputeventhub) | *No description.* |
+| [`putExpressRoute`](#cdktfprovidernewreliccloudazureintegrationsputexpressroute) | *No description.* |
+| [`putFirewalls`](#cdktfprovidernewreliccloudazureintegrationsputfirewalls) | *No description.* |
+| [`putFrontDoor`](#cdktfprovidernewreliccloudazureintegrationsputfrontdoor) | *No description.* |
+| [`putFunctions`](#cdktfprovidernewreliccloudazureintegrationsputfunctions) | *No description.* |
+| [`putKeyVault`](#cdktfprovidernewreliccloudazureintegrationsputkeyvault) | *No description.* |
+| [`putLoadBalancer`](#cdktfprovidernewreliccloudazureintegrationsputloadbalancer) | *No description.* |
+| [`putLogicApps`](#cdktfprovidernewreliccloudazureintegrationsputlogicapps) | *No description.* |
+| [`putMachineLearning`](#cdktfprovidernewreliccloudazureintegrationsputmachinelearning) | *No description.* |
+| [`putMariaDb`](#cdktfprovidernewreliccloudazureintegrationsputmariadb) | *No description.* |
+| [`putMysql`](#cdktfprovidernewreliccloudazureintegrationsputmysql) | *No description.* |
+| [`putPostgresql`](#cdktfprovidernewreliccloudazureintegrationsputpostgresql) | *No description.* |
+| [`putPowerBiDedicated`](#cdktfprovidernewreliccloudazureintegrationsputpowerbidedicated) | *No description.* |
+| [`putRedisCache`](#cdktfprovidernewreliccloudazureintegrationsputrediscache) | *No description.* |
+| [`putServiceBus`](#cdktfprovidernewreliccloudazureintegrationsputservicebus) | *No description.* |
+| [`putServiceFabric`](#cdktfprovidernewreliccloudazureintegrationsputservicefabric) | *No description.* |
+| [`putSql`](#cdktfprovidernewreliccloudazureintegrationsputsql) | *No description.* |
+| [`putSqlManaged`](#cdktfprovidernewreliccloudazureintegrationsputsqlmanaged) | *No description.* |
+| [`putStorage`](#cdktfprovidernewreliccloudazureintegrationsputstorage) | *No description.* |
+| [`putVirtualMachine`](#cdktfprovidernewreliccloudazureintegrationsputvirtualmachine) | *No description.* |
+| [`putVirtualNetworks`](#cdktfprovidernewreliccloudazureintegrationsputvirtualnetworks) | *No description.* |
+| [`putVms`](#cdktfprovidernewreliccloudazureintegrationsputvms) | *No description.* |
+| [`putVpnGateway`](#cdktfprovidernewreliccloudazureintegrationsputvpngateway) | *No description.* |
+| [`resetAccountId`](#cdktfprovidernewreliccloudazureintegrationsresetaccountid) | *No description.* |
+| [`resetApiManagement`](#cdktfprovidernewreliccloudazureintegrationsresetapimanagement) | *No description.* |
+| [`resetAppGateway`](#cdktfprovidernewreliccloudazureintegrationsresetappgateway) | *No description.* |
+| [`resetAppService`](#cdktfprovidernewreliccloudazureintegrationsresetappservice) | *No description.* |
+| [`resetContainers`](#cdktfprovidernewreliccloudazureintegrationsresetcontainers) | *No description.* |
+| [`resetCosmosDb`](#cdktfprovidernewreliccloudazureintegrationsresetcosmosdb) | *No description.* |
+| [`resetCostManagement`](#cdktfprovidernewreliccloudazureintegrationsresetcostmanagement) | *No description.* |
+| [`resetDataFactory`](#cdktfprovidernewreliccloudazureintegrationsresetdatafactory) | *No description.* |
+| [`resetEventHub`](#cdktfprovidernewreliccloudazureintegrationsreseteventhub) | *No description.* |
+| [`resetExpressRoute`](#cdktfprovidernewreliccloudazureintegrationsresetexpressroute) | *No description.* |
+| [`resetFirewalls`](#cdktfprovidernewreliccloudazureintegrationsresetfirewalls) | *No description.* |
+| [`resetFrontDoor`](#cdktfprovidernewreliccloudazureintegrationsresetfrontdoor) | *No description.* |
+| [`resetFunctions`](#cdktfprovidernewreliccloudazureintegrationsresetfunctions) | *No description.* |
+| [`resetKeyVault`](#cdktfprovidernewreliccloudazureintegrationsresetkeyvault) | *No description.* |
+| [`resetLoadBalancer`](#cdktfprovidernewreliccloudazureintegrationsresetloadbalancer) | *No description.* |
+| [`resetLogicApps`](#cdktfprovidernewreliccloudazureintegrationsresetlogicapps) | *No description.* |
+| [`resetMachineLearning`](#cdktfprovidernewreliccloudazureintegrationsresetmachinelearning) | *No description.* |
+| [`resetMariaDb`](#cdktfprovidernewreliccloudazureintegrationsresetmariadb) | *No description.* |
+| [`resetMysql`](#cdktfprovidernewreliccloudazureintegrationsresetmysql) | *No description.* |
+| [`resetPostgresql`](#cdktfprovidernewreliccloudazureintegrationsresetpostgresql) | *No description.* |
+| [`resetPowerBiDedicated`](#cdktfprovidernewreliccloudazureintegrationsresetpowerbidedicated) | *No description.* |
+| [`resetRedisCache`](#cdktfprovidernewreliccloudazureintegrationsresetrediscache) | *No description.* |
+| [`resetServiceBus`](#cdktfprovidernewreliccloudazureintegrationsresetservicebus) | *No description.* |
+| [`resetServiceFabric`](#cdktfprovidernewreliccloudazureintegrationsresetservicefabric) | *No description.* |
+| [`resetSql`](#cdktfprovidernewreliccloudazureintegrationsresetsql) | *No description.* |
+| [`resetSqlManaged`](#cdktfprovidernewreliccloudazureintegrationsresetsqlmanaged) | *No description.* |
+| [`resetStorage`](#cdktfprovidernewreliccloudazureintegrationsresetstorage) | *No description.* |
+| [`resetVirtualMachine`](#cdktfprovidernewreliccloudazureintegrationsresetvirtualmachine) | *No description.* |
+| [`resetVirtualNetworks`](#cdktfprovidernewreliccloudazureintegrationsresetvirtualnetworks) | *No description.* |
+| [`resetVms`](#cdktfprovidernewreliccloudazureintegrationsresetvms) | *No description.* |
+| [`resetVpnGateway`](#cdktfprovidernewreliccloudazureintegrationsresetvpngateway) | *No description.* |
+
+---
+
+##### `putApiManagement` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putApiManagement" id="cdktfprovidernewreliccloudazureintegrationsputapimanagement"></a>
+
+```typescript
+public putApiManagement(value: CloudAzureIntegrationsApiManagement)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement`](#@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement)
+
+---
+
+##### `putAppGateway` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putAppGateway" id="cdktfprovidernewreliccloudazureintegrationsputappgateway"></a>
+
+```typescript
+public putAppGateway(value: CloudAzureIntegrationsAppGateway)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppGateway`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppGateway)
+
+---
+
+##### `putAppService` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putAppService" id="cdktfprovidernewreliccloudazureintegrationsputappservice"></a>
+
+```typescript
+public putAppService(value: CloudAzureIntegrationsAppService)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppService`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppService)
+
+---
+
+##### `putContainers` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putContainers" id="cdktfprovidernewreliccloudazureintegrationsputcontainers"></a>
+
+```typescript
+public putContainers(value: CloudAzureIntegrationsContainers)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsContainers`](#@cdktf/provider-newrelic.CloudAzureIntegrationsContainers)
+
+---
+
+##### `putCosmosDb` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putCosmosDb" id="cdktfprovidernewreliccloudazureintegrationsputcosmosdb"></a>
+
+```typescript
+public putCosmosDb(value: CloudAzureIntegrationsCosmosDb)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDb`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDb)
+
+---
+
+##### `putCostManagement` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putCostManagement" id="cdktfprovidernewreliccloudazureintegrationsputcostmanagement"></a>
+
+```typescript
+public putCostManagement(value: CloudAzureIntegrationsCostManagement)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagement`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagement)
+
+---
+
+##### `putDataFactory` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putDataFactory" id="cdktfprovidernewreliccloudazureintegrationsputdatafactory"></a>
+
+```typescript
+public putDataFactory(value: CloudAzureIntegrationsDataFactory)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactory`](#@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactory)
+
+---
+
+##### `putEventHub` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putEventHub" id="cdktfprovidernewreliccloudazureintegrationsputeventhub"></a>
+
+```typescript
+public putEventHub(value: CloudAzureIntegrationsEventHub)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsEventHub`](#@cdktf/provider-newrelic.CloudAzureIntegrationsEventHub)
+
+---
+
+##### `putExpressRoute` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putExpressRoute" id="cdktfprovidernewreliccloudazureintegrationsputexpressroute"></a>
+
+```typescript
+public putExpressRoute(value: CloudAzureIntegrationsExpressRoute)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRoute`](#@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRoute)
+
+---
+
+##### `putFirewalls` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putFirewalls" id="cdktfprovidernewreliccloudazureintegrationsputfirewalls"></a>
+
+```typescript
+public putFirewalls(value: CloudAzureIntegrationsFirewalls)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsFirewalls`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFirewalls)
+
+---
+
+##### `putFrontDoor` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putFrontDoor" id="cdktfprovidernewreliccloudazureintegrationsputfrontdoor"></a>
+
+```typescript
+public putFrontDoor(value: CloudAzureIntegrationsFrontDoor)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoor`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoor)
+
+---
+
+##### `putFunctions` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putFunctions" id="cdktfprovidernewreliccloudazureintegrationsputfunctions"></a>
+
+```typescript
+public putFunctions(value: CloudAzureIntegrationsFunctions)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsFunctions`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFunctions)
+
+---
+
+##### `putKeyVault` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putKeyVault" id="cdktfprovidernewreliccloudazureintegrationsputkeyvault"></a>
+
+```typescript
+public putKeyVault(value: CloudAzureIntegrationsKeyVault)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVault`](#@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVault)
+
+---
+
+##### `putLoadBalancer` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putLoadBalancer" id="cdktfprovidernewreliccloudazureintegrationsputloadbalancer"></a>
+
+```typescript
+public putLoadBalancer(value: CloudAzureIntegrationsLoadBalancer)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancer`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancer)
+
+---
+
+##### `putLogicApps` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putLogicApps" id="cdktfprovidernewreliccloudazureintegrationsputlogicapps"></a>
+
+```typescript
+public putLogicApps(value: CloudAzureIntegrationsLogicApps)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsLogicApps`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLogicApps)
+
+---
+
+##### `putMachineLearning` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putMachineLearning" id="cdktfprovidernewreliccloudazureintegrationsputmachinelearning"></a>
+
+```typescript
+public putMachineLearning(value: CloudAzureIntegrationsMachineLearning)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearning`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearning)
+
+---
+
+##### `putMariaDb` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putMariaDb" id="cdktfprovidernewreliccloudazureintegrationsputmariadb"></a>
+
+```typescript
+public putMariaDb(value: CloudAzureIntegrationsMariaDb)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDb`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDb)
+
+---
+
+##### `putMysql` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putMysql" id="cdktfprovidernewreliccloudazureintegrationsputmysql"></a>
+
+```typescript
+public putMysql(value: CloudAzureIntegrationsMysql)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsMysql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMysql)
+
+---
+
+##### `putPostgresql` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putPostgresql" id="cdktfprovidernewreliccloudazureintegrationsputpostgresql"></a>
+
+```typescript
+public putPostgresql(value: CloudAzureIntegrationsPostgresql)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresql)
+
+---
+
+##### `putPowerBiDedicated` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putPowerBiDedicated" id="cdktfprovidernewreliccloudazureintegrationsputpowerbidedicated"></a>
+
+```typescript
+public putPowerBiDedicated(value: CloudAzureIntegrationsPowerBiDedicated)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated)
+
+---
+
+##### `putRedisCache` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putRedisCache" id="cdktfprovidernewreliccloudazureintegrationsputrediscache"></a>
+
+```typescript
+public putRedisCache(value: CloudAzureIntegrationsRedisCache)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache`](#@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache)
+
+---
+
+##### `putServiceBus` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putServiceBus" id="cdktfprovidernewreliccloudazureintegrationsputservicebus"></a>
+
+```typescript
+public putServiceBus(value: CloudAzureIntegrationsServiceBus)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus)
+
+---
+
+##### `putServiceFabric` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putServiceFabric" id="cdktfprovidernewreliccloudazureintegrationsputservicefabric"></a>
+
+```typescript
+public putServiceFabric(value: CloudAzureIntegrationsServiceFabric)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric)
+
+---
+
+##### `putSql` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putSql" id="cdktfprovidernewreliccloudazureintegrationsputsql"></a>
+
+```typescript
+public putSql(value: CloudAzureIntegrationsSql)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsSql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSql)
+
+---
+
+##### `putSqlManaged` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putSqlManaged" id="cdktfprovidernewreliccloudazureintegrationsputsqlmanaged"></a>
+
+```typescript
+public putSqlManaged(value: CloudAzureIntegrationsSqlManaged)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged)
+
+---
+
+##### `putStorage` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putStorage" id="cdktfprovidernewreliccloudazureintegrationsputstorage"></a>
+
+```typescript
+public putStorage(value: CloudAzureIntegrationsStorage)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsStorage`](#@cdktf/provider-newrelic.CloudAzureIntegrationsStorage)
+
+---
+
+##### `putVirtualMachine` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putVirtualMachine" id="cdktfprovidernewreliccloudazureintegrationsputvirtualmachine"></a>
+
+```typescript
+public putVirtualMachine(value: CloudAzureIntegrationsVirtualMachine)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachine`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachine)
+
+---
+
+##### `putVirtualNetworks` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putVirtualNetworks" id="cdktfprovidernewreliccloudazureintegrationsputvirtualnetworks"></a>
+
+```typescript
+public putVirtualNetworks(value: CloudAzureIntegrationsVirtualNetworks)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworks`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworks)
+
+---
+
+##### `putVms` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putVms" id="cdktfprovidernewreliccloudazureintegrationsputvms"></a>
+
+```typescript
+public putVms(value: CloudAzureIntegrationsVms)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVms`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVms)
+
+---
+
+##### `putVpnGateway` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putVpnGateway" id="cdktfprovidernewreliccloudazureintegrationsputvpngateway"></a>
+
+```typescript
+public putVpnGateway(value: CloudAzureIntegrationsVpnGateway)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGateway`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGateway)
+
+---
+
+##### `resetAccountId` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetAccountId" id="cdktfprovidernewreliccloudazureintegrationsresetaccountid"></a>
+
+```typescript
+public resetAccountId()
+```
+
+##### `resetApiManagement` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetApiManagement" id="cdktfprovidernewreliccloudazureintegrationsresetapimanagement"></a>
+
+```typescript
+public resetApiManagement()
+```
+
+##### `resetAppGateway` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetAppGateway" id="cdktfprovidernewreliccloudazureintegrationsresetappgateway"></a>
+
+```typescript
+public resetAppGateway()
+```
+
+##### `resetAppService` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetAppService" id="cdktfprovidernewreliccloudazureintegrationsresetappservice"></a>
+
+```typescript
+public resetAppService()
+```
+
+##### `resetContainers` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetContainers" id="cdktfprovidernewreliccloudazureintegrationsresetcontainers"></a>
+
+```typescript
+public resetContainers()
+```
+
+##### `resetCosmosDb` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetCosmosDb" id="cdktfprovidernewreliccloudazureintegrationsresetcosmosdb"></a>
+
+```typescript
+public resetCosmosDb()
+```
+
+##### `resetCostManagement` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetCostManagement" id="cdktfprovidernewreliccloudazureintegrationsresetcostmanagement"></a>
+
+```typescript
+public resetCostManagement()
+```
+
+##### `resetDataFactory` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetDataFactory" id="cdktfprovidernewreliccloudazureintegrationsresetdatafactory"></a>
+
+```typescript
+public resetDataFactory()
+```
+
+##### `resetEventHub` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetEventHub" id="cdktfprovidernewreliccloudazureintegrationsreseteventhub"></a>
+
+```typescript
+public resetEventHub()
+```
+
+##### `resetExpressRoute` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetExpressRoute" id="cdktfprovidernewreliccloudazureintegrationsresetexpressroute"></a>
+
+```typescript
+public resetExpressRoute()
+```
+
+##### `resetFirewalls` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetFirewalls" id="cdktfprovidernewreliccloudazureintegrationsresetfirewalls"></a>
+
+```typescript
+public resetFirewalls()
+```
+
+##### `resetFrontDoor` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetFrontDoor" id="cdktfprovidernewreliccloudazureintegrationsresetfrontdoor"></a>
+
+```typescript
+public resetFrontDoor()
+```
+
+##### `resetFunctions` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetFunctions" id="cdktfprovidernewreliccloudazureintegrationsresetfunctions"></a>
+
+```typescript
+public resetFunctions()
+```
+
+##### `resetKeyVault` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetKeyVault" id="cdktfprovidernewreliccloudazureintegrationsresetkeyvault"></a>
+
+```typescript
+public resetKeyVault()
+```
+
+##### `resetLoadBalancer` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetLoadBalancer" id="cdktfprovidernewreliccloudazureintegrationsresetloadbalancer"></a>
+
+```typescript
+public resetLoadBalancer()
+```
+
+##### `resetLogicApps` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetLogicApps" id="cdktfprovidernewreliccloudazureintegrationsresetlogicapps"></a>
+
+```typescript
+public resetLogicApps()
+```
+
+##### `resetMachineLearning` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetMachineLearning" id="cdktfprovidernewreliccloudazureintegrationsresetmachinelearning"></a>
+
+```typescript
+public resetMachineLearning()
+```
+
+##### `resetMariaDb` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetMariaDb" id="cdktfprovidernewreliccloudazureintegrationsresetmariadb"></a>
+
+```typescript
+public resetMariaDb()
+```
+
+##### `resetMysql` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetMysql" id="cdktfprovidernewreliccloudazureintegrationsresetmysql"></a>
+
+```typescript
+public resetMysql()
+```
+
+##### `resetPostgresql` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetPostgresql" id="cdktfprovidernewreliccloudazureintegrationsresetpostgresql"></a>
+
+```typescript
+public resetPostgresql()
+```
+
+##### `resetPowerBiDedicated` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetPowerBiDedicated" id="cdktfprovidernewreliccloudazureintegrationsresetpowerbidedicated"></a>
+
+```typescript
+public resetPowerBiDedicated()
+```
+
+##### `resetRedisCache` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetRedisCache" id="cdktfprovidernewreliccloudazureintegrationsresetrediscache"></a>
+
+```typescript
+public resetRedisCache()
+```
+
+##### `resetServiceBus` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetServiceBus" id="cdktfprovidernewreliccloudazureintegrationsresetservicebus"></a>
+
+```typescript
+public resetServiceBus()
+```
+
+##### `resetServiceFabric` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetServiceFabric" id="cdktfprovidernewreliccloudazureintegrationsresetservicefabric"></a>
+
+```typescript
+public resetServiceFabric()
+```
+
+##### `resetSql` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetSql" id="cdktfprovidernewreliccloudazureintegrationsresetsql"></a>
+
+```typescript
+public resetSql()
+```
+
+##### `resetSqlManaged` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetSqlManaged" id="cdktfprovidernewreliccloudazureintegrationsresetsqlmanaged"></a>
+
+```typescript
+public resetSqlManaged()
+```
+
+##### `resetStorage` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetStorage" id="cdktfprovidernewreliccloudazureintegrationsresetstorage"></a>
+
+```typescript
+public resetStorage()
+```
+
+##### `resetVirtualMachine` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetVirtualMachine" id="cdktfprovidernewreliccloudazureintegrationsresetvirtualmachine"></a>
+
+```typescript
+public resetVirtualMachine()
+```
+
+##### `resetVirtualNetworks` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetVirtualNetworks" id="cdktfprovidernewreliccloudazureintegrationsresetvirtualnetworks"></a>
+
+```typescript
+public resetVirtualNetworks()
+```
+
+##### `resetVms` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetVms" id="cdktfprovidernewreliccloudazureintegrationsresetvms"></a>
+
+```typescript
+public resetVms()
+```
+
+##### `resetVpnGateway` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetVpnGateway" id="cdktfprovidernewreliccloudazureintegrationsresetvpngateway"></a>
+
+```typescript
+public resetVpnGateway()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`apiManagement`](#cdktfprovidernewreliccloudazureintegrationspropertyapimanagement)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagementOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagementOutputReference) | *No description.* |
+| [`appGateway`](#cdktfprovidernewreliccloudazureintegrationspropertyappgateway)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppGatewayOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppGatewayOutputReference) | *No description.* |
+| [`appService`](#cdktfprovidernewreliccloudazureintegrationspropertyappservice)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppServiceOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppServiceOutputReference) | *No description.* |
+| [`containers`](#cdktfprovidernewreliccloudazureintegrationspropertycontainers)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsContainersOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsContainersOutputReference) | *No description.* |
+| [`cosmosDb`](#cdktfprovidernewreliccloudazureintegrationspropertycosmosdb)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDbOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDbOutputReference) | *No description.* |
+| [`costManagement`](#cdktfprovidernewreliccloudazureintegrationspropertycostmanagement)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagementOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagementOutputReference) | *No description.* |
+| [`dataFactory`](#cdktfprovidernewreliccloudazureintegrationspropertydatafactory)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactoryOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactoryOutputReference) | *No description.* |
+| [`eventHub`](#cdktfprovidernewreliccloudazureintegrationspropertyeventhub)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsEventHubOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsEventHubOutputReference) | *No description.* |
+| [`expressRoute`](#cdktfprovidernewreliccloudazureintegrationspropertyexpressroute)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRouteOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRouteOutputReference) | *No description.* |
+| [`firewalls`](#cdktfprovidernewreliccloudazureintegrationspropertyfirewalls)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsFirewallsOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFirewallsOutputReference) | *No description.* |
+| [`frontDoor`](#cdktfprovidernewreliccloudazureintegrationspropertyfrontdoor)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoorOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoorOutputReference) | *No description.* |
+| [`functions`](#cdktfprovidernewreliccloudazureintegrationspropertyfunctions)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsFunctionsOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFunctionsOutputReference) | *No description.* |
+| [`id`](#cdktfprovidernewreliccloudazureintegrationspropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`keyVault`](#cdktfprovidernewreliccloudazureintegrationspropertykeyvault)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVaultOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVaultOutputReference) | *No description.* |
+| [`loadBalancer`](#cdktfprovidernewreliccloudazureintegrationspropertyloadbalancer)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancerOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancerOutputReference) | *No description.* |
+| [`logicApps`](#cdktfprovidernewreliccloudazureintegrationspropertylogicapps)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsLogicAppsOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLogicAppsOutputReference) | *No description.* |
+| [`machineLearning`](#cdktfprovidernewreliccloudazureintegrationspropertymachinelearning)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearningOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearningOutputReference) | *No description.* |
+| [`mariaDb`](#cdktfprovidernewreliccloudazureintegrationspropertymariadb)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDbOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDbOutputReference) | *No description.* |
+| [`mysql`](#cdktfprovidernewreliccloudazureintegrationspropertymysql)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsMysqlOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMysqlOutputReference) | *No description.* |
+| [`postgresql`](#cdktfprovidernewreliccloudazureintegrationspropertypostgresql)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresqlOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresqlOutputReference) | *No description.* |
+| [`powerBiDedicated`](#cdktfprovidernewreliccloudazureintegrationspropertypowerbidedicated)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicatedOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicatedOutputReference) | *No description.* |
+| [`redisCache`](#cdktfprovidernewreliccloudazureintegrationspropertyrediscache)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCacheOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCacheOutputReference) | *No description.* |
+| [`serviceBus`](#cdktfprovidernewreliccloudazureintegrationspropertyservicebus)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference) | *No description.* |
+| [`serviceFabric`](#cdktfprovidernewreliccloudazureintegrationspropertyservicefabric)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference) | *No description.* |
+| [`sql`](#cdktfprovidernewreliccloudazureintegrationspropertysql)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsSqlOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSqlOutputReference) | *No description.* |
+| [`sqlManaged`](#cdktfprovidernewreliccloudazureintegrationspropertysqlmanaged)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManagedOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManagedOutputReference) | *No description.* |
+| [`storage`](#cdktfprovidernewreliccloudazureintegrationspropertystorage)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsStorageOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsStorageOutputReference) | *No description.* |
+| [`virtualMachine`](#cdktfprovidernewreliccloudazureintegrationspropertyvirtualmachine)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachineOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachineOutputReference) | *No description.* |
+| [`virtualNetworks`](#cdktfprovidernewreliccloudazureintegrationspropertyvirtualnetworks)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworksOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworksOutputReference) | *No description.* |
+| [`vms`](#cdktfprovidernewreliccloudazureintegrationspropertyvms)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsVmsOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVmsOutputReference) | *No description.* |
+| [`vpnGateway`](#cdktfprovidernewreliccloudazureintegrationspropertyvpngateway)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGatewayOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGatewayOutputReference) | *No description.* |
+| [`accountIdInput`](#cdktfprovidernewreliccloudazureintegrationspropertyaccountidinput) | `number` | *No description.* |
+| [`apiManagementInput`](#cdktfprovidernewreliccloudazureintegrationspropertyapimanagementinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement`](#@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement) | *No description.* |
+| [`appGatewayInput`](#cdktfprovidernewreliccloudazureintegrationspropertyappgatewayinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppGateway`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppGateway) | *No description.* |
+| [`appServiceInput`](#cdktfprovidernewreliccloudazureintegrationspropertyappserviceinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppService`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppService) | *No description.* |
+| [`containersInput`](#cdktfprovidernewreliccloudazureintegrationspropertycontainersinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsContainers`](#@cdktf/provider-newrelic.CloudAzureIntegrationsContainers) | *No description.* |
+| [`cosmosDbInput`](#cdktfprovidernewreliccloudazureintegrationspropertycosmosdbinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDb`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDb) | *No description.* |
+| [`costManagementInput`](#cdktfprovidernewreliccloudazureintegrationspropertycostmanagementinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagement`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagement) | *No description.* |
+| [`dataFactoryInput`](#cdktfprovidernewreliccloudazureintegrationspropertydatafactoryinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactory`](#@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactory) | *No description.* |
+| [`eventHubInput`](#cdktfprovidernewreliccloudazureintegrationspropertyeventhubinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsEventHub`](#@cdktf/provider-newrelic.CloudAzureIntegrationsEventHub) | *No description.* |
+| [`expressRouteInput`](#cdktfprovidernewreliccloudazureintegrationspropertyexpressrouteinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRoute`](#@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRoute) | *No description.* |
+| [`firewallsInput`](#cdktfprovidernewreliccloudazureintegrationspropertyfirewallsinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsFirewalls`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFirewalls) | *No description.* |
+| [`frontDoorInput`](#cdktfprovidernewreliccloudazureintegrationspropertyfrontdoorinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoor`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoor) | *No description.* |
+| [`functionsInput`](#cdktfprovidernewreliccloudazureintegrationspropertyfunctionsinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsFunctions`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFunctions) | *No description.* |
+| [`keyVaultInput`](#cdktfprovidernewreliccloudazureintegrationspropertykeyvaultinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVault`](#@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVault) | *No description.* |
+| [`linkedAccountIdInput`](#cdktfprovidernewreliccloudazureintegrationspropertylinkedaccountidinput) | `number` | *No description.* |
+| [`loadBalancerInput`](#cdktfprovidernewreliccloudazureintegrationspropertyloadbalancerinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancer`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancer) | *No description.* |
+| [`logicAppsInput`](#cdktfprovidernewreliccloudazureintegrationspropertylogicappsinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsLogicApps`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLogicApps) | *No description.* |
+| [`machineLearningInput`](#cdktfprovidernewreliccloudazureintegrationspropertymachinelearninginput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearning`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearning) | *No description.* |
+| [`mariaDbInput`](#cdktfprovidernewreliccloudazureintegrationspropertymariadbinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDb`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDb) | *No description.* |
+| [`mysqlInput`](#cdktfprovidernewreliccloudazureintegrationspropertymysqlinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsMysql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMysql) | *No description.* |
+| [`postgresqlInput`](#cdktfprovidernewreliccloudazureintegrationspropertypostgresqlinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresql) | *No description.* |
+| [`powerBiDedicatedInput`](#cdktfprovidernewreliccloudazureintegrationspropertypowerbidedicatedinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated) | *No description.* |
+| [`redisCacheInput`](#cdktfprovidernewreliccloudazureintegrationspropertyrediscacheinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache`](#@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache) | *No description.* |
+| [`serviceBusInput`](#cdktfprovidernewreliccloudazureintegrationspropertyservicebusinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus) | *No description.* |
+| [`serviceFabricInput`](#cdktfprovidernewreliccloudazureintegrationspropertyservicefabricinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric) | *No description.* |
+| [`sqlInput`](#cdktfprovidernewreliccloudazureintegrationspropertysqlinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsSql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSql) | *No description.* |
+| [`sqlManagedInput`](#cdktfprovidernewreliccloudazureintegrationspropertysqlmanagedinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged) | *No description.* |
+| [`storageInput`](#cdktfprovidernewreliccloudazureintegrationspropertystorageinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsStorage`](#@cdktf/provider-newrelic.CloudAzureIntegrationsStorage) | *No description.* |
+| [`virtualMachineInput`](#cdktfprovidernewreliccloudazureintegrationspropertyvirtualmachineinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachine`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachine) | *No description.* |
+| [`virtualNetworksInput`](#cdktfprovidernewreliccloudazureintegrationspropertyvirtualnetworksinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworks`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworks) | *No description.* |
+| [`vmsInput`](#cdktfprovidernewreliccloudazureintegrationspropertyvmsinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsVms`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVms) | *No description.* |
+| [`vpnGatewayInput`](#cdktfprovidernewreliccloudazureintegrationspropertyvpngatewayinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGateway`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGateway) | *No description.* |
+| [`accountId`](#cdktfprovidernewreliccloudazureintegrationspropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`linkedAccountId`](#cdktfprovidernewreliccloudazureintegrationspropertylinkedaccountid)<span title="Required">*</span> | `number` | *No description.* |
+
+---
+
+##### `apiManagement`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.apiManagement" id="cdktfprovidernewreliccloudazureintegrationspropertyapimanagement"></a>
+
+```typescript
+public readonly apiManagement: CloudAzureIntegrationsApiManagementOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagementOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagementOutputReference)
+
+---
+
+##### `appGateway`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.appGateway" id="cdktfprovidernewreliccloudazureintegrationspropertyappgateway"></a>
+
+```typescript
+public readonly appGateway: CloudAzureIntegrationsAppGatewayOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppGatewayOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppGatewayOutputReference)
+
+---
+
+##### `appService`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.appService" id="cdktfprovidernewreliccloudazureintegrationspropertyappservice"></a>
+
+```typescript
+public readonly appService: CloudAzureIntegrationsAppServiceOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppServiceOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppServiceOutputReference)
+
+---
+
+##### `containers`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.containers" id="cdktfprovidernewreliccloudazureintegrationspropertycontainers"></a>
+
+```typescript
+public readonly containers: CloudAzureIntegrationsContainersOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsContainersOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsContainersOutputReference)
+
+---
+
+##### `cosmosDb`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.cosmosDb" id="cdktfprovidernewreliccloudazureintegrationspropertycosmosdb"></a>
+
+```typescript
+public readonly cosmosDb: CloudAzureIntegrationsCosmosDbOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDbOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDbOutputReference)
+
+---
+
+##### `costManagement`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.costManagement" id="cdktfprovidernewreliccloudazureintegrationspropertycostmanagement"></a>
+
+```typescript
+public readonly costManagement: CloudAzureIntegrationsCostManagementOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagementOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagementOutputReference)
+
+---
+
+##### `dataFactory`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.dataFactory" id="cdktfprovidernewreliccloudazureintegrationspropertydatafactory"></a>
+
+```typescript
+public readonly dataFactory: CloudAzureIntegrationsDataFactoryOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactoryOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactoryOutputReference)
+
+---
+
+##### `eventHub`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.eventHub" id="cdktfprovidernewreliccloudazureintegrationspropertyeventhub"></a>
+
+```typescript
+public readonly eventHub: CloudAzureIntegrationsEventHubOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsEventHubOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsEventHubOutputReference)
+
+---
+
+##### `expressRoute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.expressRoute" id="cdktfprovidernewreliccloudazureintegrationspropertyexpressroute"></a>
+
+```typescript
+public readonly expressRoute: CloudAzureIntegrationsExpressRouteOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRouteOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRouteOutputReference)
+
+---
+
+##### `firewalls`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.firewalls" id="cdktfprovidernewreliccloudazureintegrationspropertyfirewalls"></a>
+
+```typescript
+public readonly firewalls: CloudAzureIntegrationsFirewallsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsFirewallsOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFirewallsOutputReference)
+
+---
+
+##### `frontDoor`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.frontDoor" id="cdktfprovidernewreliccloudazureintegrationspropertyfrontdoor"></a>
+
+```typescript
+public readonly frontDoor: CloudAzureIntegrationsFrontDoorOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoorOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoorOutputReference)
+
+---
+
+##### `functions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.functions" id="cdktfprovidernewreliccloudazureintegrationspropertyfunctions"></a>
+
+```typescript
+public readonly functions: CloudAzureIntegrationsFunctionsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsFunctionsOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFunctionsOutputReference)
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.id" id="cdktfprovidernewreliccloudazureintegrationspropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `keyVault`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.keyVault" id="cdktfprovidernewreliccloudazureintegrationspropertykeyvault"></a>
+
+```typescript
+public readonly keyVault: CloudAzureIntegrationsKeyVaultOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVaultOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVaultOutputReference)
+
+---
+
+##### `loadBalancer`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.loadBalancer" id="cdktfprovidernewreliccloudazureintegrationspropertyloadbalancer"></a>
+
+```typescript
+public readonly loadBalancer: CloudAzureIntegrationsLoadBalancerOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancerOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancerOutputReference)
+
+---
+
+##### `logicApps`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.logicApps" id="cdktfprovidernewreliccloudazureintegrationspropertylogicapps"></a>
+
+```typescript
+public readonly logicApps: CloudAzureIntegrationsLogicAppsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsLogicAppsOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLogicAppsOutputReference)
+
+---
+
+##### `machineLearning`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.machineLearning" id="cdktfprovidernewreliccloudazureintegrationspropertymachinelearning"></a>
+
+```typescript
+public readonly machineLearning: CloudAzureIntegrationsMachineLearningOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearningOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearningOutputReference)
+
+---
+
+##### `mariaDb`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.mariaDb" id="cdktfprovidernewreliccloudazureintegrationspropertymariadb"></a>
+
+```typescript
+public readonly mariaDb: CloudAzureIntegrationsMariaDbOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDbOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDbOutputReference)
+
+---
+
+##### `mysql`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.mysql" id="cdktfprovidernewreliccloudazureintegrationspropertymysql"></a>
+
+```typescript
+public readonly mysql: CloudAzureIntegrationsMysqlOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsMysqlOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMysqlOutputReference)
+
+---
+
+##### `postgresql`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.postgresql" id="cdktfprovidernewreliccloudazureintegrationspropertypostgresql"></a>
+
+```typescript
+public readonly postgresql: CloudAzureIntegrationsPostgresqlOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresqlOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresqlOutputReference)
+
+---
+
+##### `powerBiDedicated`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.powerBiDedicated" id="cdktfprovidernewreliccloudazureintegrationspropertypowerbidedicated"></a>
+
+```typescript
+public readonly powerBiDedicated: CloudAzureIntegrationsPowerBiDedicatedOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicatedOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicatedOutputReference)
+
+---
+
+##### `redisCache`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.redisCache" id="cdktfprovidernewreliccloudazureintegrationspropertyrediscache"></a>
+
+```typescript
+public readonly redisCache: CloudAzureIntegrationsRedisCacheOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCacheOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCacheOutputReference)
+
+---
+
+##### `serviceBus`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.serviceBus" id="cdktfprovidernewreliccloudazureintegrationspropertyservicebus"></a>
+
+```typescript
+public readonly serviceBus: CloudAzureIntegrationsServiceBusOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference)
+
+---
+
+##### `serviceFabric`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.serviceFabric" id="cdktfprovidernewreliccloudazureintegrationspropertyservicefabric"></a>
+
+```typescript
+public readonly serviceFabric: CloudAzureIntegrationsServiceFabricOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference)
+
+---
+
+##### `sql`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.sql" id="cdktfprovidernewreliccloudazureintegrationspropertysql"></a>
+
+```typescript
+public readonly sql: CloudAzureIntegrationsSqlOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsSqlOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSqlOutputReference)
+
+---
+
+##### `sqlManaged`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.sqlManaged" id="cdktfprovidernewreliccloudazureintegrationspropertysqlmanaged"></a>
+
+```typescript
+public readonly sqlManaged: CloudAzureIntegrationsSqlManagedOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManagedOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManagedOutputReference)
+
+---
+
+##### `storage`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.storage" id="cdktfprovidernewreliccloudazureintegrationspropertystorage"></a>
+
+```typescript
+public readonly storage: CloudAzureIntegrationsStorageOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsStorageOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsStorageOutputReference)
+
+---
+
+##### `virtualMachine`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.virtualMachine" id="cdktfprovidernewreliccloudazureintegrationspropertyvirtualmachine"></a>
+
+```typescript
+public readonly virtualMachine: CloudAzureIntegrationsVirtualMachineOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachineOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachineOutputReference)
+
+---
+
+##### `virtualNetworks`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.virtualNetworks" id="cdktfprovidernewreliccloudazureintegrationspropertyvirtualnetworks"></a>
+
+```typescript
+public readonly virtualNetworks: CloudAzureIntegrationsVirtualNetworksOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworksOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworksOutputReference)
+
+---
+
+##### `vms`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.vms" id="cdktfprovidernewreliccloudazureintegrationspropertyvms"></a>
+
+```typescript
+public readonly vms: CloudAzureIntegrationsVmsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVmsOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVmsOutputReference)
+
+---
+
+##### `vpnGateway`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.vpnGateway" id="cdktfprovidernewreliccloudazureintegrationspropertyvpngateway"></a>
+
+```typescript
+public readonly vpnGateway: CloudAzureIntegrationsVpnGatewayOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGatewayOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGatewayOutputReference)
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.accountIdInput" id="cdktfprovidernewreliccloudazureintegrationspropertyaccountidinput"></a>
+
+```typescript
+public readonly accountIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `apiManagementInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.apiManagementInput" id="cdktfprovidernewreliccloudazureintegrationspropertyapimanagementinput"></a>
+
+```typescript
+public readonly apiManagementInput: CloudAzureIntegrationsApiManagement;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement`](#@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement)
+
+---
+
+##### `appGatewayInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.appGatewayInput" id="cdktfprovidernewreliccloudazureintegrationspropertyappgatewayinput"></a>
+
+```typescript
+public readonly appGatewayInput: CloudAzureIntegrationsAppGateway;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppGateway`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppGateway)
+
+---
+
+##### `appServiceInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.appServiceInput" id="cdktfprovidernewreliccloudazureintegrationspropertyappserviceinput"></a>
+
+```typescript
+public readonly appServiceInput: CloudAzureIntegrationsAppService;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppService`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppService)
+
+---
+
+##### `containersInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.containersInput" id="cdktfprovidernewreliccloudazureintegrationspropertycontainersinput"></a>
+
+```typescript
+public readonly containersInput: CloudAzureIntegrationsContainers;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsContainers`](#@cdktf/provider-newrelic.CloudAzureIntegrationsContainers)
+
+---
+
+##### `cosmosDbInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.cosmosDbInput" id="cdktfprovidernewreliccloudazureintegrationspropertycosmosdbinput"></a>
+
+```typescript
+public readonly cosmosDbInput: CloudAzureIntegrationsCosmosDb;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDb`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDb)
+
+---
+
+##### `costManagementInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.costManagementInput" id="cdktfprovidernewreliccloudazureintegrationspropertycostmanagementinput"></a>
+
+```typescript
+public readonly costManagementInput: CloudAzureIntegrationsCostManagement;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagement`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagement)
+
+---
+
+##### `dataFactoryInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.dataFactoryInput" id="cdktfprovidernewreliccloudazureintegrationspropertydatafactoryinput"></a>
+
+```typescript
+public readonly dataFactoryInput: CloudAzureIntegrationsDataFactory;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactory`](#@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactory)
+
+---
+
+##### `eventHubInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.eventHubInput" id="cdktfprovidernewreliccloudazureintegrationspropertyeventhubinput"></a>
+
+```typescript
+public readonly eventHubInput: CloudAzureIntegrationsEventHub;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsEventHub`](#@cdktf/provider-newrelic.CloudAzureIntegrationsEventHub)
+
+---
+
+##### `expressRouteInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.expressRouteInput" id="cdktfprovidernewreliccloudazureintegrationspropertyexpressrouteinput"></a>
+
+```typescript
+public readonly expressRouteInput: CloudAzureIntegrationsExpressRoute;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRoute`](#@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRoute)
+
+---
+
+##### `firewallsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.firewallsInput" id="cdktfprovidernewreliccloudazureintegrationspropertyfirewallsinput"></a>
+
+```typescript
+public readonly firewallsInput: CloudAzureIntegrationsFirewalls;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsFirewalls`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFirewalls)
+
+---
+
+##### `frontDoorInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.frontDoorInput" id="cdktfprovidernewreliccloudazureintegrationspropertyfrontdoorinput"></a>
+
+```typescript
+public readonly frontDoorInput: CloudAzureIntegrationsFrontDoor;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoor`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoor)
+
+---
+
+##### `functionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.functionsInput" id="cdktfprovidernewreliccloudazureintegrationspropertyfunctionsinput"></a>
+
+```typescript
+public readonly functionsInput: CloudAzureIntegrationsFunctions;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsFunctions`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFunctions)
+
+---
+
+##### `keyVaultInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.keyVaultInput" id="cdktfprovidernewreliccloudazureintegrationspropertykeyvaultinput"></a>
+
+```typescript
+public readonly keyVaultInput: CloudAzureIntegrationsKeyVault;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVault`](#@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVault)
+
+---
+
+##### `linkedAccountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.linkedAccountIdInput" id="cdktfprovidernewreliccloudazureintegrationspropertylinkedaccountidinput"></a>
+
+```typescript
+public readonly linkedAccountIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `loadBalancerInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.loadBalancerInput" id="cdktfprovidernewreliccloudazureintegrationspropertyloadbalancerinput"></a>
+
+```typescript
+public readonly loadBalancerInput: CloudAzureIntegrationsLoadBalancer;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancer`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancer)
+
+---
+
+##### `logicAppsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.logicAppsInput" id="cdktfprovidernewreliccloudazureintegrationspropertylogicappsinput"></a>
+
+```typescript
+public readonly logicAppsInput: CloudAzureIntegrationsLogicApps;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsLogicApps`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLogicApps)
+
+---
+
+##### `machineLearningInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.machineLearningInput" id="cdktfprovidernewreliccloudazureintegrationspropertymachinelearninginput"></a>
+
+```typescript
+public readonly machineLearningInput: CloudAzureIntegrationsMachineLearning;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearning`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearning)
+
+---
+
+##### `mariaDbInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.mariaDbInput" id="cdktfprovidernewreliccloudazureintegrationspropertymariadbinput"></a>
+
+```typescript
+public readonly mariaDbInput: CloudAzureIntegrationsMariaDb;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDb`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDb)
+
+---
+
+##### `mysqlInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.mysqlInput" id="cdktfprovidernewreliccloudazureintegrationspropertymysqlinput"></a>
+
+```typescript
+public readonly mysqlInput: CloudAzureIntegrationsMysql;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsMysql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMysql)
+
+---
+
+##### `postgresqlInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.postgresqlInput" id="cdktfprovidernewreliccloudazureintegrationspropertypostgresqlinput"></a>
+
+```typescript
+public readonly postgresqlInput: CloudAzureIntegrationsPostgresql;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresql)
+
+---
+
+##### `powerBiDedicatedInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.powerBiDedicatedInput" id="cdktfprovidernewreliccloudazureintegrationspropertypowerbidedicatedinput"></a>
+
+```typescript
+public readonly powerBiDedicatedInput: CloudAzureIntegrationsPowerBiDedicated;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated)
+
+---
+
+##### `redisCacheInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.redisCacheInput" id="cdktfprovidernewreliccloudazureintegrationspropertyrediscacheinput"></a>
+
+```typescript
+public readonly redisCacheInput: CloudAzureIntegrationsRedisCache;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache`](#@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache)
+
+---
+
+##### `serviceBusInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.serviceBusInput" id="cdktfprovidernewreliccloudazureintegrationspropertyservicebusinput"></a>
+
+```typescript
+public readonly serviceBusInput: CloudAzureIntegrationsServiceBus;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus)
+
+---
+
+##### `serviceFabricInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.serviceFabricInput" id="cdktfprovidernewreliccloudazureintegrationspropertyservicefabricinput"></a>
+
+```typescript
+public readonly serviceFabricInput: CloudAzureIntegrationsServiceFabric;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric)
+
+---
+
+##### `sqlInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.sqlInput" id="cdktfprovidernewreliccloudazureintegrationspropertysqlinput"></a>
+
+```typescript
+public readonly sqlInput: CloudAzureIntegrationsSql;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsSql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSql)
+
+---
+
+##### `sqlManagedInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.sqlManagedInput" id="cdktfprovidernewreliccloudazureintegrationspropertysqlmanagedinput"></a>
+
+```typescript
+public readonly sqlManagedInput: CloudAzureIntegrationsSqlManaged;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged)
+
+---
+
+##### `storageInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.storageInput" id="cdktfprovidernewreliccloudazureintegrationspropertystorageinput"></a>
+
+```typescript
+public readonly storageInput: CloudAzureIntegrationsStorage;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsStorage`](#@cdktf/provider-newrelic.CloudAzureIntegrationsStorage)
+
+---
+
+##### `virtualMachineInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.virtualMachineInput" id="cdktfprovidernewreliccloudazureintegrationspropertyvirtualmachineinput"></a>
+
+```typescript
+public readonly virtualMachineInput: CloudAzureIntegrationsVirtualMachine;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachine`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachine)
+
+---
+
+##### `virtualNetworksInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.virtualNetworksInput" id="cdktfprovidernewreliccloudazureintegrationspropertyvirtualnetworksinput"></a>
+
+```typescript
+public readonly virtualNetworksInput: CloudAzureIntegrationsVirtualNetworks;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworks`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworks)
+
+---
+
+##### `vmsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.vmsInput" id="cdktfprovidernewreliccloudazureintegrationspropertyvmsinput"></a>
+
+```typescript
+public readonly vmsInput: CloudAzureIntegrationsVms;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVms`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVms)
+
+---
+
+##### `vpnGatewayInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.vpnGatewayInput" id="cdktfprovidernewreliccloudazureintegrationspropertyvpngatewayinput"></a>
+
+```typescript
+public readonly vpnGatewayInput: CloudAzureIntegrationsVpnGateway;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGateway`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGateway)
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.accountId" id="cdktfprovidernewreliccloudazureintegrationspropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `linkedAccountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.linkedAccountId" id="cdktfprovidernewreliccloudazureintegrationspropertylinkedaccountid"></a>
+
+```typescript
+public readonly linkedAccountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+#### Constants <a name="Constants" id="constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`tfResourceType`](#cdktfprovidernewreliccloudazureintegrationspropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `tfResourceType` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.tfResourceType" id="cdktfprovidernewreliccloudazureintegrationspropertytfresourcetype"></a>
+
+- *Type:* `string`
+
+---
+
 ### CloudAzureLinkAccount <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount" id="cdktfprovidernewreliccloudazurelinkaccount"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account newrelic_cloud_azure_link_account}.
@@ -2717,6 +4112,1191 @@ public readonly tenantId: string;
 ---
 
 ##### `tfResourceType` <a name="@cdktf/provider-newrelic.CloudAzureLinkAccount.property.tfResourceType" id="cdktfprovidernewreliccloudazurelinkaccountpropertytfresourcetype"></a>
+
+- *Type:* `string`
+
+---
+
+### CloudGcpIntegrations <a name="@cdktf/provider-newrelic.CloudGcpIntegrations" id="cdktfprovidernewreliccloudgcpintegrations"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations newrelic_cloud_gcp_integrations}.
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrations } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrations(scope: Construct, id: string, config: CloudGcpIntegrationsConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#cdktfprovidernewreliccloudgcpintegrationsparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
+| [`id`](#cdktfprovidernewreliccloudgcpintegrationsparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
+| [`config`](#cdktfprovidernewreliccloudgcpintegrationsparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsConfig`](#@cdktf/provider-newrelic.CloudGcpIntegrationsConfig) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.scope" id="cdktfprovidernewreliccloudgcpintegrationsparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.id" id="cdktfprovidernewreliccloudgcpintegrationsparameterid"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.config" id="cdktfprovidernewreliccloudgcpintegrationsparameterconfig"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsConfig`](#@cdktf/provider-newrelic.CloudGcpIntegrationsConfig)
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`putAppEngine`](#cdktfprovidernewreliccloudgcpintegrationsputappengine) | *No description.* |
+| [`putBigQuery`](#cdktfprovidernewreliccloudgcpintegrationsputbigquery) | *No description.* |
+| [`putBigTable`](#cdktfprovidernewreliccloudgcpintegrationsputbigtable) | *No description.* |
+| [`putComposer`](#cdktfprovidernewreliccloudgcpintegrationsputcomposer) | *No description.* |
+| [`putDataFlow`](#cdktfprovidernewreliccloudgcpintegrationsputdataflow) | *No description.* |
+| [`putDataProc`](#cdktfprovidernewreliccloudgcpintegrationsputdataproc) | *No description.* |
+| [`putDataStore`](#cdktfprovidernewreliccloudgcpintegrationsputdatastore) | *No description.* |
+| [`putFireBaseDatabase`](#cdktfprovidernewreliccloudgcpintegrationsputfirebasedatabase) | *No description.* |
+| [`putFireBaseHosting`](#cdktfprovidernewreliccloudgcpintegrationsputfirebasehosting) | *No description.* |
+| [`putFireBaseStorage`](#cdktfprovidernewreliccloudgcpintegrationsputfirebasestorage) | *No description.* |
+| [`putFireStore`](#cdktfprovidernewreliccloudgcpintegrationsputfirestore) | *No description.* |
+| [`putFunctions`](#cdktfprovidernewreliccloudgcpintegrationsputfunctions) | *No description.* |
+| [`putInterconnect`](#cdktfprovidernewreliccloudgcpintegrationsputinterconnect) | *No description.* |
+| [`putKubernetes`](#cdktfprovidernewreliccloudgcpintegrationsputkubernetes) | *No description.* |
+| [`putLoadBalancing`](#cdktfprovidernewreliccloudgcpintegrationsputloadbalancing) | *No description.* |
+| [`putMemCache`](#cdktfprovidernewreliccloudgcpintegrationsputmemcache) | *No description.* |
+| [`putPubSub`](#cdktfprovidernewreliccloudgcpintegrationsputpubsub) | *No description.* |
+| [`putRedis`](#cdktfprovidernewreliccloudgcpintegrationsputredis) | *No description.* |
+| [`putRouter`](#cdktfprovidernewreliccloudgcpintegrationsputrouter) | *No description.* |
+| [`putRun`](#cdktfprovidernewreliccloudgcpintegrationsputrun) | *No description.* |
+| [`putSpanner`](#cdktfprovidernewreliccloudgcpintegrationsputspanner) | *No description.* |
+| [`putSql`](#cdktfprovidernewreliccloudgcpintegrationsputsql) | *No description.* |
+| [`putStorage`](#cdktfprovidernewreliccloudgcpintegrationsputstorage) | *No description.* |
+| [`putVirtualMachines`](#cdktfprovidernewreliccloudgcpintegrationsputvirtualmachines) | *No description.* |
+| [`putVpcAccess`](#cdktfprovidernewreliccloudgcpintegrationsputvpcaccess) | *No description.* |
+| [`resetAccountId`](#cdktfprovidernewreliccloudgcpintegrationsresetaccountid) | *No description.* |
+| [`resetAppEngine`](#cdktfprovidernewreliccloudgcpintegrationsresetappengine) | *No description.* |
+| [`resetBigQuery`](#cdktfprovidernewreliccloudgcpintegrationsresetbigquery) | *No description.* |
+| [`resetBigTable`](#cdktfprovidernewreliccloudgcpintegrationsresetbigtable) | *No description.* |
+| [`resetComposer`](#cdktfprovidernewreliccloudgcpintegrationsresetcomposer) | *No description.* |
+| [`resetDataFlow`](#cdktfprovidernewreliccloudgcpintegrationsresetdataflow) | *No description.* |
+| [`resetDataProc`](#cdktfprovidernewreliccloudgcpintegrationsresetdataproc) | *No description.* |
+| [`resetDataStore`](#cdktfprovidernewreliccloudgcpintegrationsresetdatastore) | *No description.* |
+| [`resetFireBaseDatabase`](#cdktfprovidernewreliccloudgcpintegrationsresetfirebasedatabase) | *No description.* |
+| [`resetFireBaseHosting`](#cdktfprovidernewreliccloudgcpintegrationsresetfirebasehosting) | *No description.* |
+| [`resetFireBaseStorage`](#cdktfprovidernewreliccloudgcpintegrationsresetfirebasestorage) | *No description.* |
+| [`resetFireStore`](#cdktfprovidernewreliccloudgcpintegrationsresetfirestore) | *No description.* |
+| [`resetFunctions`](#cdktfprovidernewreliccloudgcpintegrationsresetfunctions) | *No description.* |
+| [`resetInterconnect`](#cdktfprovidernewreliccloudgcpintegrationsresetinterconnect) | *No description.* |
+| [`resetKubernetes`](#cdktfprovidernewreliccloudgcpintegrationsresetkubernetes) | *No description.* |
+| [`resetLoadBalancing`](#cdktfprovidernewreliccloudgcpintegrationsresetloadbalancing) | *No description.* |
+| [`resetMemCache`](#cdktfprovidernewreliccloudgcpintegrationsresetmemcache) | *No description.* |
+| [`resetPubSub`](#cdktfprovidernewreliccloudgcpintegrationsresetpubsub) | *No description.* |
+| [`resetRedis`](#cdktfprovidernewreliccloudgcpintegrationsresetredis) | *No description.* |
+| [`resetRouter`](#cdktfprovidernewreliccloudgcpintegrationsresetrouter) | *No description.* |
+| [`resetRun`](#cdktfprovidernewreliccloudgcpintegrationsresetrun) | *No description.* |
+| [`resetSpanner`](#cdktfprovidernewreliccloudgcpintegrationsresetspanner) | *No description.* |
+| [`resetSql`](#cdktfprovidernewreliccloudgcpintegrationsresetsql) | *No description.* |
+| [`resetStorage`](#cdktfprovidernewreliccloudgcpintegrationsresetstorage) | *No description.* |
+| [`resetVirtualMachines`](#cdktfprovidernewreliccloudgcpintegrationsresetvirtualmachines) | *No description.* |
+| [`resetVpcAccess`](#cdktfprovidernewreliccloudgcpintegrationsresetvpcaccess) | *No description.* |
+
+---
+
+##### `putAppEngine` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putAppEngine" id="cdktfprovidernewreliccloudgcpintegrationsputappengine"></a>
+
+```typescript
+public putAppEngine(value: CloudGcpIntegrationsAppEngine)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine`](#@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine)
+
+---
+
+##### `putBigQuery` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putBigQuery" id="cdktfprovidernewreliccloudgcpintegrationsputbigquery"></a>
+
+```typescript
+public putBigQuery(value: CloudGcpIntegrationsBigQuery)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigQuery`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigQuery)
+
+---
+
+##### `putBigTable` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putBigTable" id="cdktfprovidernewreliccloudgcpintegrationsputbigtable"></a>
+
+```typescript
+public putBigTable(value: CloudGcpIntegrationsBigTable)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigTable`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigTable)
+
+---
+
+##### `putComposer` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putComposer" id="cdktfprovidernewreliccloudgcpintegrationsputcomposer"></a>
+
+```typescript
+public putComposer(value: CloudGcpIntegrationsComposer)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsComposer`](#@cdktf/provider-newrelic.CloudGcpIntegrationsComposer)
+
+---
+
+##### `putDataFlow` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putDataFlow" id="cdktfprovidernewreliccloudgcpintegrationsputdataflow"></a>
+
+```typescript
+public putDataFlow(value: CloudGcpIntegrationsDataFlow)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlow`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlow)
+
+---
+
+##### `putDataProc` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putDataProc" id="cdktfprovidernewreliccloudgcpintegrationsputdataproc"></a>
+
+```typescript
+public putDataProc(value: CloudGcpIntegrationsDataProc)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataProc`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataProc)
+
+---
+
+##### `putDataStore` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putDataStore" id="cdktfprovidernewreliccloudgcpintegrationsputdatastore"></a>
+
+```typescript
+public putDataStore(value: CloudGcpIntegrationsDataStore)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataStore`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataStore)
+
+---
+
+##### `putFireBaseDatabase` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putFireBaseDatabase" id="cdktfprovidernewreliccloudgcpintegrationsputfirebasedatabase"></a>
+
+```typescript
+public putFireBaseDatabase(value: CloudGcpIntegrationsFireBaseDatabase)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabase`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabase)
+
+---
+
+##### `putFireBaseHosting` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putFireBaseHosting" id="cdktfprovidernewreliccloudgcpintegrationsputfirebasehosting"></a>
+
+```typescript
+public putFireBaseHosting(value: CloudGcpIntegrationsFireBaseHosting)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHosting`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHosting)
+
+---
+
+##### `putFireBaseStorage` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putFireBaseStorage" id="cdktfprovidernewreliccloudgcpintegrationsputfirebasestorage"></a>
+
+```typescript
+public putFireBaseStorage(value: CloudGcpIntegrationsFireBaseStorage)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorage`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorage)
+
+---
+
+##### `putFireStore` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putFireStore" id="cdktfprovidernewreliccloudgcpintegrationsputfirestore"></a>
+
+```typescript
+public putFireStore(value: CloudGcpIntegrationsFireStore)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireStore`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireStore)
+
+---
+
+##### `putFunctions` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putFunctions" id="cdktfprovidernewreliccloudgcpintegrationsputfunctions"></a>
+
+```typescript
+public putFunctions(value: CloudGcpIntegrationsFunctions)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFunctions`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFunctions)
+
+---
+
+##### `putInterconnect` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putInterconnect" id="cdktfprovidernewreliccloudgcpintegrationsputinterconnect"></a>
+
+```typescript
+public putInterconnect(value: CloudGcpIntegrationsInterconnect)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnect`](#@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnect)
+
+---
+
+##### `putKubernetes` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putKubernetes" id="cdktfprovidernewreliccloudgcpintegrationsputkubernetes"></a>
+
+```typescript
+public putKubernetes(value: CloudGcpIntegrationsKubernetes)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetes`](#@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetes)
+
+---
+
+##### `putLoadBalancing` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putLoadBalancing" id="cdktfprovidernewreliccloudgcpintegrationsputloadbalancing"></a>
+
+```typescript
+public putLoadBalancing(value: CloudGcpIntegrationsLoadBalancing)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancing`](#@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancing)
+
+---
+
+##### `putMemCache` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putMemCache" id="cdktfprovidernewreliccloudgcpintegrationsputmemcache"></a>
+
+```typescript
+public putMemCache(value: CloudGcpIntegrationsMemCache)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsMemCache`](#@cdktf/provider-newrelic.CloudGcpIntegrationsMemCache)
+
+---
+
+##### `putPubSub` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putPubSub" id="cdktfprovidernewreliccloudgcpintegrationsputpubsub"></a>
+
+```typescript
+public putPubSub(value: CloudGcpIntegrationsPubSub)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsPubSub`](#@cdktf/provider-newrelic.CloudGcpIntegrationsPubSub)
+
+---
+
+##### `putRedis` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putRedis" id="cdktfprovidernewreliccloudgcpintegrationsputredis"></a>
+
+```typescript
+public putRedis(value: CloudGcpIntegrationsRedis)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsRedis`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRedis)
+
+---
+
+##### `putRouter` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putRouter" id="cdktfprovidernewreliccloudgcpintegrationsputrouter"></a>
+
+```typescript
+public putRouter(value: CloudGcpIntegrationsRouter)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsRouter`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRouter)
+
+---
+
+##### `putRun` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putRun" id="cdktfprovidernewreliccloudgcpintegrationsputrun"></a>
+
+```typescript
+public putRun(value: CloudGcpIntegrationsRun)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsRun`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRun)
+
+---
+
+##### `putSpanner` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putSpanner" id="cdktfprovidernewreliccloudgcpintegrationsputspanner"></a>
+
+```typescript
+public putSpanner(value: CloudGcpIntegrationsSpanner)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsSpanner`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSpanner)
+
+---
+
+##### `putSql` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putSql" id="cdktfprovidernewreliccloudgcpintegrationsputsql"></a>
+
+```typescript
+public putSql(value: CloudGcpIntegrationsSql)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsSql`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSql)
+
+---
+
+##### `putStorage` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putStorage" id="cdktfprovidernewreliccloudgcpintegrationsputstorage"></a>
+
+```typescript
+public putStorage(value: CloudGcpIntegrationsStorage)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsStorage`](#@cdktf/provider-newrelic.CloudGcpIntegrationsStorage)
+
+---
+
+##### `putVirtualMachines` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putVirtualMachines" id="cdktfprovidernewreliccloudgcpintegrationsputvirtualmachines"></a>
+
+```typescript
+public putVirtualMachines(value: CloudGcpIntegrationsVirtualMachines)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachines`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachines)
+
+---
+
+##### `putVpcAccess` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.putVpcAccess" id="cdktfprovidernewreliccloudgcpintegrationsputvpcaccess"></a>
+
+```typescript
+public putVpcAccess(value: CloudGcpIntegrationsVpcAccess)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.parameter.value" id="cdktfprovidernewreliccloudgcpintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccess`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccess)
+
+---
+
+##### `resetAccountId` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetAccountId" id="cdktfprovidernewreliccloudgcpintegrationsresetaccountid"></a>
+
+```typescript
+public resetAccountId()
+```
+
+##### `resetAppEngine` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetAppEngine" id="cdktfprovidernewreliccloudgcpintegrationsresetappengine"></a>
+
+```typescript
+public resetAppEngine()
+```
+
+##### `resetBigQuery` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetBigQuery" id="cdktfprovidernewreliccloudgcpintegrationsresetbigquery"></a>
+
+```typescript
+public resetBigQuery()
+```
+
+##### `resetBigTable` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetBigTable" id="cdktfprovidernewreliccloudgcpintegrationsresetbigtable"></a>
+
+```typescript
+public resetBigTable()
+```
+
+##### `resetComposer` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetComposer" id="cdktfprovidernewreliccloudgcpintegrationsresetcomposer"></a>
+
+```typescript
+public resetComposer()
+```
+
+##### `resetDataFlow` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetDataFlow" id="cdktfprovidernewreliccloudgcpintegrationsresetdataflow"></a>
+
+```typescript
+public resetDataFlow()
+```
+
+##### `resetDataProc` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetDataProc" id="cdktfprovidernewreliccloudgcpintegrationsresetdataproc"></a>
+
+```typescript
+public resetDataProc()
+```
+
+##### `resetDataStore` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetDataStore" id="cdktfprovidernewreliccloudgcpintegrationsresetdatastore"></a>
+
+```typescript
+public resetDataStore()
+```
+
+##### `resetFireBaseDatabase` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetFireBaseDatabase" id="cdktfprovidernewreliccloudgcpintegrationsresetfirebasedatabase"></a>
+
+```typescript
+public resetFireBaseDatabase()
+```
+
+##### `resetFireBaseHosting` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetFireBaseHosting" id="cdktfprovidernewreliccloudgcpintegrationsresetfirebasehosting"></a>
+
+```typescript
+public resetFireBaseHosting()
+```
+
+##### `resetFireBaseStorage` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetFireBaseStorage" id="cdktfprovidernewreliccloudgcpintegrationsresetfirebasestorage"></a>
+
+```typescript
+public resetFireBaseStorage()
+```
+
+##### `resetFireStore` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetFireStore" id="cdktfprovidernewreliccloudgcpintegrationsresetfirestore"></a>
+
+```typescript
+public resetFireStore()
+```
+
+##### `resetFunctions` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetFunctions" id="cdktfprovidernewreliccloudgcpintegrationsresetfunctions"></a>
+
+```typescript
+public resetFunctions()
+```
+
+##### `resetInterconnect` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetInterconnect" id="cdktfprovidernewreliccloudgcpintegrationsresetinterconnect"></a>
+
+```typescript
+public resetInterconnect()
+```
+
+##### `resetKubernetes` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetKubernetes" id="cdktfprovidernewreliccloudgcpintegrationsresetkubernetes"></a>
+
+```typescript
+public resetKubernetes()
+```
+
+##### `resetLoadBalancing` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetLoadBalancing" id="cdktfprovidernewreliccloudgcpintegrationsresetloadbalancing"></a>
+
+```typescript
+public resetLoadBalancing()
+```
+
+##### `resetMemCache` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetMemCache" id="cdktfprovidernewreliccloudgcpintegrationsresetmemcache"></a>
+
+```typescript
+public resetMemCache()
+```
+
+##### `resetPubSub` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetPubSub" id="cdktfprovidernewreliccloudgcpintegrationsresetpubsub"></a>
+
+```typescript
+public resetPubSub()
+```
+
+##### `resetRedis` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetRedis" id="cdktfprovidernewreliccloudgcpintegrationsresetredis"></a>
+
+```typescript
+public resetRedis()
+```
+
+##### `resetRouter` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetRouter" id="cdktfprovidernewreliccloudgcpintegrationsresetrouter"></a>
+
+```typescript
+public resetRouter()
+```
+
+##### `resetRun` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetRun" id="cdktfprovidernewreliccloudgcpintegrationsresetrun"></a>
+
+```typescript
+public resetRun()
+```
+
+##### `resetSpanner` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetSpanner" id="cdktfprovidernewreliccloudgcpintegrationsresetspanner"></a>
+
+```typescript
+public resetSpanner()
+```
+
+##### `resetSql` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetSql" id="cdktfprovidernewreliccloudgcpintegrationsresetsql"></a>
+
+```typescript
+public resetSql()
+```
+
+##### `resetStorage` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetStorage" id="cdktfprovidernewreliccloudgcpintegrationsresetstorage"></a>
+
+```typescript
+public resetStorage()
+```
+
+##### `resetVirtualMachines` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetVirtualMachines" id="cdktfprovidernewreliccloudgcpintegrationsresetvirtualmachines"></a>
+
+```typescript
+public resetVirtualMachines()
+```
+
+##### `resetVpcAccess` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.resetVpcAccess" id="cdktfprovidernewreliccloudgcpintegrationsresetvpcaccess"></a>
+
+```typescript
+public resetVpcAccess()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`appEngine`](#cdktfprovidernewreliccloudgcpintegrationspropertyappengine)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngineOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngineOutputReference) | *No description.* |
+| [`bigQuery`](#cdktfprovidernewreliccloudgcpintegrationspropertybigquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigQueryOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigQueryOutputReference) | *No description.* |
+| [`bigTable`](#cdktfprovidernewreliccloudgcpintegrationspropertybigtable)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigTableOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigTableOutputReference) | *No description.* |
+| [`composer`](#cdktfprovidernewreliccloudgcpintegrationspropertycomposer)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsComposerOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsComposerOutputReference) | *No description.* |
+| [`dataFlow`](#cdktfprovidernewreliccloudgcpintegrationspropertydataflow)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlowOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlowOutputReference) | *No description.* |
+| [`dataProc`](#cdktfprovidernewreliccloudgcpintegrationspropertydataproc)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataProcOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataProcOutputReference) | *No description.* |
+| [`dataStore`](#cdktfprovidernewreliccloudgcpintegrationspropertydatastore)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataStoreOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataStoreOutputReference) | *No description.* |
+| [`fireBaseDatabase`](#cdktfprovidernewreliccloudgcpintegrationspropertyfirebasedatabase)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabaseOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabaseOutputReference) | *No description.* |
+| [`fireBaseHosting`](#cdktfprovidernewreliccloudgcpintegrationspropertyfirebasehosting)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHostingOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHostingOutputReference) | *No description.* |
+| [`fireBaseStorage`](#cdktfprovidernewreliccloudgcpintegrationspropertyfirebasestorage)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorageOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorageOutputReference) | *No description.* |
+| [`fireStore`](#cdktfprovidernewreliccloudgcpintegrationspropertyfirestore)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireStoreOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireStoreOutputReference) | *No description.* |
+| [`functions`](#cdktfprovidernewreliccloudgcpintegrationspropertyfunctions)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFunctionsOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFunctionsOutputReference) | *No description.* |
+| [`id`](#cdktfprovidernewreliccloudgcpintegrationspropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`interconnect`](#cdktfprovidernewreliccloudgcpintegrationspropertyinterconnect)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnectOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnectOutputReference) | *No description.* |
+| [`kubernetes`](#cdktfprovidernewreliccloudgcpintegrationspropertykubernetes)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetesOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetesOutputReference) | *No description.* |
+| [`loadBalancing`](#cdktfprovidernewreliccloudgcpintegrationspropertyloadbalancing)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancingOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancingOutputReference) | *No description.* |
+| [`memCache`](#cdktfprovidernewreliccloudgcpintegrationspropertymemcache)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsMemCacheOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsMemCacheOutputReference) | *No description.* |
+| [`pubSub`](#cdktfprovidernewreliccloudgcpintegrationspropertypubsub)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsPubSubOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsPubSubOutputReference) | *No description.* |
+| [`redis`](#cdktfprovidernewreliccloudgcpintegrationspropertyredis)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsRedisOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRedisOutputReference) | *No description.* |
+| [`router`](#cdktfprovidernewreliccloudgcpintegrationspropertyrouter)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsRouterOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRouterOutputReference) | *No description.* |
+| [`run`](#cdktfprovidernewreliccloudgcpintegrationspropertyrun)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsRunOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRunOutputReference) | *No description.* |
+| [`spanner`](#cdktfprovidernewreliccloudgcpintegrationspropertyspanner)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsSpannerOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSpannerOutputReference) | *No description.* |
+| [`sql`](#cdktfprovidernewreliccloudgcpintegrationspropertysql)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsSqlOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSqlOutputReference) | *No description.* |
+| [`storage`](#cdktfprovidernewreliccloudgcpintegrationspropertystorage)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsStorageOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsStorageOutputReference) | *No description.* |
+| [`virtualMachines`](#cdktfprovidernewreliccloudgcpintegrationspropertyvirtualmachines)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachinesOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachinesOutputReference) | *No description.* |
+| [`vpcAccess`](#cdktfprovidernewreliccloudgcpintegrationspropertyvpcaccess)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccessOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccessOutputReference) | *No description.* |
+| [`accountIdInput`](#cdktfprovidernewreliccloudgcpintegrationspropertyaccountidinput) | `number` | *No description.* |
+| [`appEngineInput`](#cdktfprovidernewreliccloudgcpintegrationspropertyappengineinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine`](#@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine) | *No description.* |
+| [`bigQueryInput`](#cdktfprovidernewreliccloudgcpintegrationspropertybigqueryinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigQuery`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigQuery) | *No description.* |
+| [`bigTableInput`](#cdktfprovidernewreliccloudgcpintegrationspropertybigtableinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigTable`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigTable) | *No description.* |
+| [`composerInput`](#cdktfprovidernewreliccloudgcpintegrationspropertycomposerinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsComposer`](#@cdktf/provider-newrelic.CloudGcpIntegrationsComposer) | *No description.* |
+| [`dataFlowInput`](#cdktfprovidernewreliccloudgcpintegrationspropertydataflowinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlow`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlow) | *No description.* |
+| [`dataProcInput`](#cdktfprovidernewreliccloudgcpintegrationspropertydataprocinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataProc`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataProc) | *No description.* |
+| [`dataStoreInput`](#cdktfprovidernewreliccloudgcpintegrationspropertydatastoreinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataStore`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataStore) | *No description.* |
+| [`fireBaseDatabaseInput`](#cdktfprovidernewreliccloudgcpintegrationspropertyfirebasedatabaseinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabase`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabase) | *No description.* |
+| [`fireBaseHostingInput`](#cdktfprovidernewreliccloudgcpintegrationspropertyfirebasehostinginput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHosting`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHosting) | *No description.* |
+| [`fireBaseStorageInput`](#cdktfprovidernewreliccloudgcpintegrationspropertyfirebasestorageinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorage`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorage) | *No description.* |
+| [`fireStoreInput`](#cdktfprovidernewreliccloudgcpintegrationspropertyfirestoreinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireStore`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireStore) | *No description.* |
+| [`functionsInput`](#cdktfprovidernewreliccloudgcpintegrationspropertyfunctionsinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFunctions`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFunctions) | *No description.* |
+| [`interconnectInput`](#cdktfprovidernewreliccloudgcpintegrationspropertyinterconnectinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnect`](#@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnect) | *No description.* |
+| [`kubernetesInput`](#cdktfprovidernewreliccloudgcpintegrationspropertykubernetesinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetes`](#@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetes) | *No description.* |
+| [`linkedAccountIdInput`](#cdktfprovidernewreliccloudgcpintegrationspropertylinkedaccountidinput) | `number` | *No description.* |
+| [`loadBalancingInput`](#cdktfprovidernewreliccloudgcpintegrationspropertyloadbalancinginput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancing`](#@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancing) | *No description.* |
+| [`memCacheInput`](#cdktfprovidernewreliccloudgcpintegrationspropertymemcacheinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsMemCache`](#@cdktf/provider-newrelic.CloudGcpIntegrationsMemCache) | *No description.* |
+| [`pubSubInput`](#cdktfprovidernewreliccloudgcpintegrationspropertypubsubinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsPubSub`](#@cdktf/provider-newrelic.CloudGcpIntegrationsPubSub) | *No description.* |
+| [`redisInput`](#cdktfprovidernewreliccloudgcpintegrationspropertyredisinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsRedis`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRedis) | *No description.* |
+| [`routerInput`](#cdktfprovidernewreliccloudgcpintegrationspropertyrouterinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsRouter`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRouter) | *No description.* |
+| [`runInput`](#cdktfprovidernewreliccloudgcpintegrationspropertyruninput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsRun`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRun) | *No description.* |
+| [`spannerInput`](#cdktfprovidernewreliccloudgcpintegrationspropertyspannerinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsSpanner`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSpanner) | *No description.* |
+| [`sqlInput`](#cdktfprovidernewreliccloudgcpintegrationspropertysqlinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsSql`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSql) | *No description.* |
+| [`storageInput`](#cdktfprovidernewreliccloudgcpintegrationspropertystorageinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsStorage`](#@cdktf/provider-newrelic.CloudGcpIntegrationsStorage) | *No description.* |
+| [`virtualMachinesInput`](#cdktfprovidernewreliccloudgcpintegrationspropertyvirtualmachinesinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachines`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachines) | *No description.* |
+| [`vpcAccessInput`](#cdktfprovidernewreliccloudgcpintegrationspropertyvpcaccessinput) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccess`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccess) | *No description.* |
+| [`accountId`](#cdktfprovidernewreliccloudgcpintegrationspropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`linkedAccountId`](#cdktfprovidernewreliccloudgcpintegrationspropertylinkedaccountid)<span title="Required">*</span> | `number` | *No description.* |
+
+---
+
+##### `appEngine`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.appEngine" id="cdktfprovidernewreliccloudgcpintegrationspropertyappengine"></a>
+
+```typescript
+public readonly appEngine: CloudGcpIntegrationsAppEngineOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngineOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngineOutputReference)
+
+---
+
+##### `bigQuery`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.bigQuery" id="cdktfprovidernewreliccloudgcpintegrationspropertybigquery"></a>
+
+```typescript
+public readonly bigQuery: CloudGcpIntegrationsBigQueryOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigQueryOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigQueryOutputReference)
+
+---
+
+##### `bigTable`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.bigTable" id="cdktfprovidernewreliccloudgcpintegrationspropertybigtable"></a>
+
+```typescript
+public readonly bigTable: CloudGcpIntegrationsBigTableOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigTableOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigTableOutputReference)
+
+---
+
+##### `composer`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.composer" id="cdktfprovidernewreliccloudgcpintegrationspropertycomposer"></a>
+
+```typescript
+public readonly composer: CloudGcpIntegrationsComposerOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsComposerOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsComposerOutputReference)
+
+---
+
+##### `dataFlow`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.dataFlow" id="cdktfprovidernewreliccloudgcpintegrationspropertydataflow"></a>
+
+```typescript
+public readonly dataFlow: CloudGcpIntegrationsDataFlowOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlowOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlowOutputReference)
+
+---
+
+##### `dataProc`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.dataProc" id="cdktfprovidernewreliccloudgcpintegrationspropertydataproc"></a>
+
+```typescript
+public readonly dataProc: CloudGcpIntegrationsDataProcOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataProcOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataProcOutputReference)
+
+---
+
+##### `dataStore`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.dataStore" id="cdktfprovidernewreliccloudgcpintegrationspropertydatastore"></a>
+
+```typescript
+public readonly dataStore: CloudGcpIntegrationsDataStoreOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataStoreOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataStoreOutputReference)
+
+---
+
+##### `fireBaseDatabase`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.fireBaseDatabase" id="cdktfprovidernewreliccloudgcpintegrationspropertyfirebasedatabase"></a>
+
+```typescript
+public readonly fireBaseDatabase: CloudGcpIntegrationsFireBaseDatabaseOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabaseOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabaseOutputReference)
+
+---
+
+##### `fireBaseHosting`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.fireBaseHosting" id="cdktfprovidernewreliccloudgcpintegrationspropertyfirebasehosting"></a>
+
+```typescript
+public readonly fireBaseHosting: CloudGcpIntegrationsFireBaseHostingOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHostingOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHostingOutputReference)
+
+---
+
+##### `fireBaseStorage`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.fireBaseStorage" id="cdktfprovidernewreliccloudgcpintegrationspropertyfirebasestorage"></a>
+
+```typescript
+public readonly fireBaseStorage: CloudGcpIntegrationsFireBaseStorageOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorageOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorageOutputReference)
+
+---
+
+##### `fireStore`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.fireStore" id="cdktfprovidernewreliccloudgcpintegrationspropertyfirestore"></a>
+
+```typescript
+public readonly fireStore: CloudGcpIntegrationsFireStoreOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireStoreOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireStoreOutputReference)
+
+---
+
+##### `functions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.functions" id="cdktfprovidernewreliccloudgcpintegrationspropertyfunctions"></a>
+
+```typescript
+public readonly functions: CloudGcpIntegrationsFunctionsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFunctionsOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFunctionsOutputReference)
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.id" id="cdktfprovidernewreliccloudgcpintegrationspropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `interconnect`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.interconnect" id="cdktfprovidernewreliccloudgcpintegrationspropertyinterconnect"></a>
+
+```typescript
+public readonly interconnect: CloudGcpIntegrationsInterconnectOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnectOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnectOutputReference)
+
+---
+
+##### `kubernetes`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.kubernetes" id="cdktfprovidernewreliccloudgcpintegrationspropertykubernetes"></a>
+
+```typescript
+public readonly kubernetes: CloudGcpIntegrationsKubernetesOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetesOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetesOutputReference)
+
+---
+
+##### `loadBalancing`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.loadBalancing" id="cdktfprovidernewreliccloudgcpintegrationspropertyloadbalancing"></a>
+
+```typescript
+public readonly loadBalancing: CloudGcpIntegrationsLoadBalancingOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancingOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancingOutputReference)
+
+---
+
+##### `memCache`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.memCache" id="cdktfprovidernewreliccloudgcpintegrationspropertymemcache"></a>
+
+```typescript
+public readonly memCache: CloudGcpIntegrationsMemCacheOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsMemCacheOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsMemCacheOutputReference)
+
+---
+
+##### `pubSub`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.pubSub" id="cdktfprovidernewreliccloudgcpintegrationspropertypubsub"></a>
+
+```typescript
+public readonly pubSub: CloudGcpIntegrationsPubSubOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsPubSubOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsPubSubOutputReference)
+
+---
+
+##### `redis`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.redis" id="cdktfprovidernewreliccloudgcpintegrationspropertyredis"></a>
+
+```typescript
+public readonly redis: CloudGcpIntegrationsRedisOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsRedisOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRedisOutputReference)
+
+---
+
+##### `router`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.router" id="cdktfprovidernewreliccloudgcpintegrationspropertyrouter"></a>
+
+```typescript
+public readonly router: CloudGcpIntegrationsRouterOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsRouterOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRouterOutputReference)
+
+---
+
+##### `run`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.run" id="cdktfprovidernewreliccloudgcpintegrationspropertyrun"></a>
+
+```typescript
+public readonly run: CloudGcpIntegrationsRunOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsRunOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRunOutputReference)
+
+---
+
+##### `spanner`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.spanner" id="cdktfprovidernewreliccloudgcpintegrationspropertyspanner"></a>
+
+```typescript
+public readonly spanner: CloudGcpIntegrationsSpannerOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsSpannerOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSpannerOutputReference)
+
+---
+
+##### `sql`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.sql" id="cdktfprovidernewreliccloudgcpintegrationspropertysql"></a>
+
+```typescript
+public readonly sql: CloudGcpIntegrationsSqlOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsSqlOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSqlOutputReference)
+
+---
+
+##### `storage`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.storage" id="cdktfprovidernewreliccloudgcpintegrationspropertystorage"></a>
+
+```typescript
+public readonly storage: CloudGcpIntegrationsStorageOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsStorageOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsStorageOutputReference)
+
+---
+
+##### `virtualMachines`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.virtualMachines" id="cdktfprovidernewreliccloudgcpintegrationspropertyvirtualmachines"></a>
+
+```typescript
+public readonly virtualMachines: CloudGcpIntegrationsVirtualMachinesOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachinesOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachinesOutputReference)
+
+---
+
+##### `vpcAccess`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.vpcAccess" id="cdktfprovidernewreliccloudgcpintegrationspropertyvpcaccess"></a>
+
+```typescript
+public readonly vpcAccess: CloudGcpIntegrationsVpcAccessOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccessOutputReference`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccessOutputReference)
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.accountIdInput" id="cdktfprovidernewreliccloudgcpintegrationspropertyaccountidinput"></a>
+
+```typescript
+public readonly accountIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `appEngineInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.appEngineInput" id="cdktfprovidernewreliccloudgcpintegrationspropertyappengineinput"></a>
+
+```typescript
+public readonly appEngineInput: CloudGcpIntegrationsAppEngine;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine`](#@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine)
+
+---
+
+##### `bigQueryInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.bigQueryInput" id="cdktfprovidernewreliccloudgcpintegrationspropertybigqueryinput"></a>
+
+```typescript
+public readonly bigQueryInput: CloudGcpIntegrationsBigQuery;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigQuery`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigQuery)
+
+---
+
+##### `bigTableInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.bigTableInput" id="cdktfprovidernewreliccloudgcpintegrationspropertybigtableinput"></a>
+
+```typescript
+public readonly bigTableInput: CloudGcpIntegrationsBigTable;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigTable`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigTable)
+
+---
+
+##### `composerInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.composerInput" id="cdktfprovidernewreliccloudgcpintegrationspropertycomposerinput"></a>
+
+```typescript
+public readonly composerInput: CloudGcpIntegrationsComposer;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsComposer`](#@cdktf/provider-newrelic.CloudGcpIntegrationsComposer)
+
+---
+
+##### `dataFlowInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.dataFlowInput" id="cdktfprovidernewreliccloudgcpintegrationspropertydataflowinput"></a>
+
+```typescript
+public readonly dataFlowInput: CloudGcpIntegrationsDataFlow;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlow`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlow)
+
+---
+
+##### `dataProcInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.dataProcInput" id="cdktfprovidernewreliccloudgcpintegrationspropertydataprocinput"></a>
+
+```typescript
+public readonly dataProcInput: CloudGcpIntegrationsDataProc;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataProc`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataProc)
+
+---
+
+##### `dataStoreInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.dataStoreInput" id="cdktfprovidernewreliccloudgcpintegrationspropertydatastoreinput"></a>
+
+```typescript
+public readonly dataStoreInput: CloudGcpIntegrationsDataStore;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataStore`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataStore)
+
+---
+
+##### `fireBaseDatabaseInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.fireBaseDatabaseInput" id="cdktfprovidernewreliccloudgcpintegrationspropertyfirebasedatabaseinput"></a>
+
+```typescript
+public readonly fireBaseDatabaseInput: CloudGcpIntegrationsFireBaseDatabase;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabase`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabase)
+
+---
+
+##### `fireBaseHostingInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.fireBaseHostingInput" id="cdktfprovidernewreliccloudgcpintegrationspropertyfirebasehostinginput"></a>
+
+```typescript
+public readonly fireBaseHostingInput: CloudGcpIntegrationsFireBaseHosting;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHosting`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHosting)
+
+---
+
+##### `fireBaseStorageInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.fireBaseStorageInput" id="cdktfprovidernewreliccloudgcpintegrationspropertyfirebasestorageinput"></a>
+
+```typescript
+public readonly fireBaseStorageInput: CloudGcpIntegrationsFireBaseStorage;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorage`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorage)
+
+---
+
+##### `fireStoreInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.fireStoreInput" id="cdktfprovidernewreliccloudgcpintegrationspropertyfirestoreinput"></a>
+
+```typescript
+public readonly fireStoreInput: CloudGcpIntegrationsFireStore;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireStore`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireStore)
+
+---
+
+##### `functionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.functionsInput" id="cdktfprovidernewreliccloudgcpintegrationspropertyfunctionsinput"></a>
+
+```typescript
+public readonly functionsInput: CloudGcpIntegrationsFunctions;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFunctions`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFunctions)
+
+---
+
+##### `interconnectInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.interconnectInput" id="cdktfprovidernewreliccloudgcpintegrationspropertyinterconnectinput"></a>
+
+```typescript
+public readonly interconnectInput: CloudGcpIntegrationsInterconnect;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnect`](#@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnect)
+
+---
+
+##### `kubernetesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.kubernetesInput" id="cdktfprovidernewreliccloudgcpintegrationspropertykubernetesinput"></a>
+
+```typescript
+public readonly kubernetesInput: CloudGcpIntegrationsKubernetes;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetes`](#@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetes)
+
+---
+
+##### `linkedAccountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.linkedAccountIdInput" id="cdktfprovidernewreliccloudgcpintegrationspropertylinkedaccountidinput"></a>
+
+```typescript
+public readonly linkedAccountIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `loadBalancingInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.loadBalancingInput" id="cdktfprovidernewreliccloudgcpintegrationspropertyloadbalancinginput"></a>
+
+```typescript
+public readonly loadBalancingInput: CloudGcpIntegrationsLoadBalancing;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancing`](#@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancing)
+
+---
+
+##### `memCacheInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.memCacheInput" id="cdktfprovidernewreliccloudgcpintegrationspropertymemcacheinput"></a>
+
+```typescript
+public readonly memCacheInput: CloudGcpIntegrationsMemCache;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsMemCache`](#@cdktf/provider-newrelic.CloudGcpIntegrationsMemCache)
+
+---
+
+##### `pubSubInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.pubSubInput" id="cdktfprovidernewreliccloudgcpintegrationspropertypubsubinput"></a>
+
+```typescript
+public readonly pubSubInput: CloudGcpIntegrationsPubSub;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsPubSub`](#@cdktf/provider-newrelic.CloudGcpIntegrationsPubSub)
+
+---
+
+##### `redisInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.redisInput" id="cdktfprovidernewreliccloudgcpintegrationspropertyredisinput"></a>
+
+```typescript
+public readonly redisInput: CloudGcpIntegrationsRedis;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsRedis`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRedis)
+
+---
+
+##### `routerInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.routerInput" id="cdktfprovidernewreliccloudgcpintegrationspropertyrouterinput"></a>
+
+```typescript
+public readonly routerInput: CloudGcpIntegrationsRouter;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsRouter`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRouter)
+
+---
+
+##### `runInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.runInput" id="cdktfprovidernewreliccloudgcpintegrationspropertyruninput"></a>
+
+```typescript
+public readonly runInput: CloudGcpIntegrationsRun;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsRun`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRun)
+
+---
+
+##### `spannerInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.spannerInput" id="cdktfprovidernewreliccloudgcpintegrationspropertyspannerinput"></a>
+
+```typescript
+public readonly spannerInput: CloudGcpIntegrationsSpanner;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsSpanner`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSpanner)
+
+---
+
+##### `sqlInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.sqlInput" id="cdktfprovidernewreliccloudgcpintegrationspropertysqlinput"></a>
+
+```typescript
+public readonly sqlInput: CloudGcpIntegrationsSql;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsSql`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSql)
+
+---
+
+##### `storageInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.storageInput" id="cdktfprovidernewreliccloudgcpintegrationspropertystorageinput"></a>
+
+```typescript
+public readonly storageInput: CloudGcpIntegrationsStorage;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsStorage`](#@cdktf/provider-newrelic.CloudGcpIntegrationsStorage)
+
+---
+
+##### `virtualMachinesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.virtualMachinesInput" id="cdktfprovidernewreliccloudgcpintegrationspropertyvirtualmachinesinput"></a>
+
+```typescript
+public readonly virtualMachinesInput: CloudGcpIntegrationsVirtualMachines;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachines`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachines)
+
+---
+
+##### `vpcAccessInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.vpcAccessInput" id="cdktfprovidernewreliccloudgcpintegrationspropertyvpcaccessinput"></a>
+
+```typescript
+public readonly vpcAccessInput: CloudGcpIntegrationsVpcAccess;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccess`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccess)
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.accountId" id="cdktfprovidernewreliccloudgcpintegrationspropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `linkedAccountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.linkedAccountId" id="cdktfprovidernewreliccloudgcpintegrationspropertylinkedaccountid"></a>
+
+```typescript
+public readonly linkedAccountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+#### Constants <a name="Constants" id="constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`tfResourceType`](#cdktfprovidernewreliccloudgcpintegrationspropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `tfResourceType` <a name="@cdktf/provider-newrelic.CloudGcpIntegrations.property.tfResourceType" id="cdktfprovidernewreliccloudgcpintegrationspropertytfresourcetype"></a>
 
 - *Type:* `string`
 
@@ -10639,7 +13219,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
-| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric). |
+| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
 | [`gcMetric`](#cdktfprovidernewrelicalertconditionconfigpropertygcmetric) | `string` | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -10768,7 +13348,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric).
+The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 
@@ -12620,6 +15200,1957 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 ---
 
+### CloudAzureIntegrationsApiManagement <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement" id="cdktfprovidernewreliccloudazureintegrationsapimanagement"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsApiManagement } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsApiManagement: CloudAzureIntegrationsApiManagement = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsapimanagementpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsapimanagementpropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsapimanagementpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsapimanagementpropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsAppGateway <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppGateway" id="cdktfprovidernewreliccloudazureintegrationsappgateway"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsAppGateway } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsAppGateway: CloudAzureIntegrationsAppGateway = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsappgatewaypropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsappgatewaypropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppGateway.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsappgatewaypropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppGateway.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsappgatewaypropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsAppService <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppService" id="cdktfprovidernewreliccloudazureintegrationsappservice"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsAppService } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsAppService: CloudAzureIntegrationsAppService = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsappservicepropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsappservicepropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppService.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsappservicepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppService.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsappservicepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsConfig <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig" id="cdktfprovidernewreliccloudazureintegrationsconfig"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsConfig } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsConfig: CloudAzureIntegrationsConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`count`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertycount) | `number` | *No description.* |
+| [`dependsOn`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`lifecycle`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
+| [`provider`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`linkedAccountId`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertylinkedaccountid)<span title="Required">*</span> | `number` | The ID of the linked Azure account in New Relic. |
+| [`accountId`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyaccountid) | `number` | The ID of the account in New Relic. |
+| [`apiManagement`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyapimanagement) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement`](#@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement) | api_management block. |
+| [`appGateway`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyappgateway) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppGateway`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppGateway) | app_gateway block. |
+| [`appService`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyappservice) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppService`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppService) | app_service block. |
+| [`containers`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertycontainers) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsContainers`](#@cdktf/provider-newrelic.CloudAzureIntegrationsContainers) | containers block. |
+| [`cosmosDb`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertycosmosdb) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDb`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDb) | cosmos_db block. |
+| [`costManagement`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertycostmanagement) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagement`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagement) | cost_management block. |
+| [`dataFactory`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertydatafactory) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactory`](#@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactory) | data_factory block. |
+| [`eventHub`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyeventhub) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsEventHub`](#@cdktf/provider-newrelic.CloudAzureIntegrationsEventHub) | event_hub block. |
+| [`expressRoute`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyexpressroute) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRoute`](#@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRoute) | express_route block. |
+| [`firewalls`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyfirewalls) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsFirewalls`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFirewalls) | firewalls block. |
+| [`frontDoor`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyfrontdoor) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoor`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoor) | front_door block. |
+| [`functions`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyfunctions) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsFunctions`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFunctions) | functions block. |
+| [`keyVault`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertykeyvault) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVault`](#@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVault) | key_vault block. |
+| [`loadBalancer`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyloadbalancer) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancer`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancer) | load_balancer block. |
+| [`logicApps`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertylogicapps) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsLogicApps`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLogicApps) | logic_apps block. |
+| [`machineLearning`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertymachinelearning) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearning`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearning) | machine_learning block. |
+| [`mariaDb`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertymariadb) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDb`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDb) | maria_db block. |
+| [`mysql`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertymysql) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsMysql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMysql) | mysql block. |
+| [`postgresql`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertypostgresql) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresql) | postgresql block. |
+| [`powerBiDedicated`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertypowerbidedicated) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated) | power_bi_dedicated block. |
+| [`redisCache`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyrediscache) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache`](#@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache) | redis_cache block. |
+| [`serviceBus`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyservicebus) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus) | service_bus block. |
+| [`serviceFabric`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyservicefabric) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric) | service_fabric block. |
+| [`sql`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertysql) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsSql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSql) | sql block. |
+| [`sqlManaged`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertysqlmanaged) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged) | sql_managed block. |
+| [`storage`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertystorage) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsStorage`](#@cdktf/provider-newrelic.CloudAzureIntegrationsStorage) | storage block. |
+| [`virtualMachine`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyvirtualmachine) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachine`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachine) | virtual_machine block. |
+| [`virtualNetworks`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyvirtualnetworks) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworks`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworks) | virtual_networks block. |
+| [`vms`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyvms) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsVms`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVms) | vms block. |
+| [`vpnGateway`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyvpngateway) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGateway`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGateway) | vpn_gateway block. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.count" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertycount"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.dependsOn" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertydependson"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.lifecycle" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertylifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.provider" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyprovider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `linkedAccountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.linkedAccountId" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertylinkedaccountid"></a>
+
+```typescript
+public readonly linkedAccountId: number;
+```
+
+- *Type:* `number`
+
+The ID of the linked Azure account in New Relic.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#linked_account_id CloudAzureIntegrations#linked_account_id}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.accountId" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+The ID of the account in New Relic.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#account_id CloudAzureIntegrations#account_id}
+
+---
+
+##### `apiManagement`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.apiManagement" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyapimanagement"></a>
+
+```typescript
+public readonly apiManagement: CloudAzureIntegrationsApiManagement;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement`](#@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement)
+
+api_management block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#api_management CloudAzureIntegrations#api_management}
+
+---
+
+##### `appGateway`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.appGateway" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyappgateway"></a>
+
+```typescript
+public readonly appGateway: CloudAzureIntegrationsAppGateway;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppGateway`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppGateway)
+
+app_gateway block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#app_gateway CloudAzureIntegrations#app_gateway}
+
+---
+
+##### `appService`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.appService" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyappservice"></a>
+
+```typescript
+public readonly appService: CloudAzureIntegrationsAppService;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppService`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppService)
+
+app_service block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#app_service CloudAzureIntegrations#app_service}
+
+---
+
+##### `containers`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.containers" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertycontainers"></a>
+
+```typescript
+public readonly containers: CloudAzureIntegrationsContainers;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsContainers`](#@cdktf/provider-newrelic.CloudAzureIntegrationsContainers)
+
+containers block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#containers CloudAzureIntegrations#containers}
+
+---
+
+##### `cosmosDb`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.cosmosDb" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertycosmosdb"></a>
+
+```typescript
+public readonly cosmosDb: CloudAzureIntegrationsCosmosDb;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDb`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDb)
+
+cosmos_db block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#cosmos_db CloudAzureIntegrations#cosmos_db}
+
+---
+
+##### `costManagement`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.costManagement" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertycostmanagement"></a>
+
+```typescript
+public readonly costManagement: CloudAzureIntegrationsCostManagement;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagement`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagement)
+
+cost_management block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#cost_management CloudAzureIntegrations#cost_management}
+
+---
+
+##### `dataFactory`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.dataFactory" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertydatafactory"></a>
+
+```typescript
+public readonly dataFactory: CloudAzureIntegrationsDataFactory;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactory`](#@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactory)
+
+data_factory block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#data_factory CloudAzureIntegrations#data_factory}
+
+---
+
+##### `eventHub`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.eventHub" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyeventhub"></a>
+
+```typescript
+public readonly eventHub: CloudAzureIntegrationsEventHub;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsEventHub`](#@cdktf/provider-newrelic.CloudAzureIntegrationsEventHub)
+
+event_hub block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#event_hub CloudAzureIntegrations#event_hub}
+
+---
+
+##### `expressRoute`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.expressRoute" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyexpressroute"></a>
+
+```typescript
+public readonly expressRoute: CloudAzureIntegrationsExpressRoute;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRoute`](#@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRoute)
+
+express_route block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#express_route CloudAzureIntegrations#express_route}
+
+---
+
+##### `firewalls`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.firewalls" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyfirewalls"></a>
+
+```typescript
+public readonly firewalls: CloudAzureIntegrationsFirewalls;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsFirewalls`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFirewalls)
+
+firewalls block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#firewalls CloudAzureIntegrations#firewalls}
+
+---
+
+##### `frontDoor`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.frontDoor" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyfrontdoor"></a>
+
+```typescript
+public readonly frontDoor: CloudAzureIntegrationsFrontDoor;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoor`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoor)
+
+front_door block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#front_door CloudAzureIntegrations#front_door}
+
+---
+
+##### `functions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.functions" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyfunctions"></a>
+
+```typescript
+public readonly functions: CloudAzureIntegrationsFunctions;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsFunctions`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFunctions)
+
+functions block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#functions CloudAzureIntegrations#functions}
+
+---
+
+##### `keyVault`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.keyVault" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertykeyvault"></a>
+
+```typescript
+public readonly keyVault: CloudAzureIntegrationsKeyVault;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVault`](#@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVault)
+
+key_vault block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#key_vault CloudAzureIntegrations#key_vault}
+
+---
+
+##### `loadBalancer`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.loadBalancer" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyloadbalancer"></a>
+
+```typescript
+public readonly loadBalancer: CloudAzureIntegrationsLoadBalancer;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancer`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancer)
+
+load_balancer block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#load_balancer CloudAzureIntegrations#load_balancer}
+
+---
+
+##### `logicApps`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.logicApps" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertylogicapps"></a>
+
+```typescript
+public readonly logicApps: CloudAzureIntegrationsLogicApps;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsLogicApps`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLogicApps)
+
+logic_apps block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#logic_apps CloudAzureIntegrations#logic_apps}
+
+---
+
+##### `machineLearning`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.machineLearning" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertymachinelearning"></a>
+
+```typescript
+public readonly machineLearning: CloudAzureIntegrationsMachineLearning;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearning`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearning)
+
+machine_learning block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#machine_learning CloudAzureIntegrations#machine_learning}
+
+---
+
+##### `mariaDb`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.mariaDb" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertymariadb"></a>
+
+```typescript
+public readonly mariaDb: CloudAzureIntegrationsMariaDb;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDb`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDb)
+
+maria_db block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#maria_db CloudAzureIntegrations#maria_db}
+
+---
+
+##### `mysql`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.mysql" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertymysql"></a>
+
+```typescript
+public readonly mysql: CloudAzureIntegrationsMysql;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsMysql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMysql)
+
+mysql block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#mysql CloudAzureIntegrations#mysql}
+
+---
+
+##### `postgresql`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.postgresql" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertypostgresql"></a>
+
+```typescript
+public readonly postgresql: CloudAzureIntegrationsPostgresql;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresql)
+
+postgresql block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#postgresql CloudAzureIntegrations#postgresql}
+
+---
+
+##### `powerBiDedicated`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.powerBiDedicated" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertypowerbidedicated"></a>
+
+```typescript
+public readonly powerBiDedicated: CloudAzureIntegrationsPowerBiDedicated;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated)
+
+power_bi_dedicated block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#power_bi_dedicated CloudAzureIntegrations#power_bi_dedicated}
+
+---
+
+##### `redisCache`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.redisCache" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyrediscache"></a>
+
+```typescript
+public readonly redisCache: CloudAzureIntegrationsRedisCache;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache`](#@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache)
+
+redis_cache block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#redis_cache CloudAzureIntegrations#redis_cache}
+
+---
+
+##### `serviceBus`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.serviceBus" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyservicebus"></a>
+
+```typescript
+public readonly serviceBus: CloudAzureIntegrationsServiceBus;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus)
+
+service_bus block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#service_bus CloudAzureIntegrations#service_bus}
+
+---
+
+##### `serviceFabric`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.serviceFabric" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyservicefabric"></a>
+
+```typescript
+public readonly serviceFabric: CloudAzureIntegrationsServiceFabric;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric)
+
+service_fabric block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#service_fabric CloudAzureIntegrations#service_fabric}
+
+---
+
+##### `sql`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.sql" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertysql"></a>
+
+```typescript
+public readonly sql: CloudAzureIntegrationsSql;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsSql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSql)
+
+sql block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#sql CloudAzureIntegrations#sql}
+
+---
+
+##### `sqlManaged`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.sqlManaged" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertysqlmanaged"></a>
+
+```typescript
+public readonly sqlManaged: CloudAzureIntegrationsSqlManaged;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged)
+
+sql_managed block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#sql_managed CloudAzureIntegrations#sql_managed}
+
+---
+
+##### `storage`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.storage" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertystorage"></a>
+
+```typescript
+public readonly storage: CloudAzureIntegrationsStorage;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsStorage`](#@cdktf/provider-newrelic.CloudAzureIntegrationsStorage)
+
+storage block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#storage CloudAzureIntegrations#storage}
+
+---
+
+##### `virtualMachine`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.virtualMachine" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyvirtualmachine"></a>
+
+```typescript
+public readonly virtualMachine: CloudAzureIntegrationsVirtualMachine;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachine`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachine)
+
+virtual_machine block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#virtual_machine CloudAzureIntegrations#virtual_machine}
+
+---
+
+##### `virtualNetworks`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.virtualNetworks" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyvirtualnetworks"></a>
+
+```typescript
+public readonly virtualNetworks: CloudAzureIntegrationsVirtualNetworks;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworks`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworks)
+
+virtual_networks block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#virtual_networks CloudAzureIntegrations#virtual_networks}
+
+---
+
+##### `vms`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.vms" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyvms"></a>
+
+```typescript
+public readonly vms: CloudAzureIntegrationsVms;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVms`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVms)
+
+vms block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#vms CloudAzureIntegrations#vms}
+
+---
+
+##### `vpnGateway`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.vpnGateway" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyvpngateway"></a>
+
+```typescript
+public readonly vpnGateway: CloudAzureIntegrationsVpnGateway;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGateway`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGateway)
+
+vpn_gateway block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#vpn_gateway CloudAzureIntegrations#vpn_gateway}
+
+---
+
+### CloudAzureIntegrationsContainers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsContainers" id="cdktfprovidernewreliccloudazureintegrationscontainers"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsContainers } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsContainers: CloudAzureIntegrationsContainers = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationscontainerspropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationscontainerspropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsContainers.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationscontainerspropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsContainers.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationscontainerspropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsCosmosDb <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDb" id="cdktfprovidernewreliccloudazureintegrationscosmosdb"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsCosmosDb } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsCosmosDb: CloudAzureIntegrationsCosmosDb = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationscosmosdbpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationscosmosdbpropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDb.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationscosmosdbpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDb.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationscosmosdbpropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsCostManagement <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagement" id="cdktfprovidernewreliccloudazureintegrationscostmanagement"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsCostManagement } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsCostManagement: CloudAzureIntegrationsCostManagement = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationscostmanagementpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`tagKeys`](#cdktfprovidernewreliccloudazureintegrationscostmanagementpropertytagkeys) | `string`[] | Specify if additional cost data per tag should be collected. This field is case sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagement.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationscostmanagementpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `tagKeys`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagement.property.tagKeys" id="cdktfprovidernewreliccloudazureintegrationscostmanagementpropertytagkeys"></a>
+
+```typescript
+public readonly tagKeys: string[];
+```
+
+- *Type:* `string`[]
+
+Specify if additional cost data per tag should be collected. This field is case sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#tag_keys CloudAzureIntegrations#tag_keys}
+
+---
+
+### CloudAzureIntegrationsDataFactory <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactory" id="cdktfprovidernewreliccloudazureintegrationsdatafactory"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsDataFactory } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsDataFactory: CloudAzureIntegrationsDataFactory = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsdatafactorypropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsdatafactorypropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactory.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsdatafactorypropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactory.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsdatafactorypropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsEventHub <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsEventHub" id="cdktfprovidernewreliccloudazureintegrationseventhub"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsEventHub } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsEventHub: CloudAzureIntegrationsEventHub = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationseventhubpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationseventhubpropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsEventHub.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationseventhubpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsEventHub.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationseventhubpropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsExpressRoute <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRoute" id="cdktfprovidernewreliccloudazureintegrationsexpressroute"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsExpressRoute } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsExpressRoute: CloudAzureIntegrationsExpressRoute = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsexpressroutepropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsexpressroutepropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRoute.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsexpressroutepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRoute.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsexpressroutepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsFirewalls <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFirewalls" id="cdktfprovidernewreliccloudazureintegrationsfirewalls"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsFirewalls } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsFirewalls: CloudAzureIntegrationsFirewalls = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsfirewallspropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsfirewallspropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFirewalls.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsfirewallspropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFirewalls.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsfirewallspropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsFrontDoor <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoor" id="cdktfprovidernewreliccloudazureintegrationsfrontdoor"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsFrontDoor } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsFrontDoor: CloudAzureIntegrationsFrontDoor = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsfrontdoorpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsfrontdoorpropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoor.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsfrontdoorpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoor.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsfrontdoorpropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsFunctions <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFunctions" id="cdktfprovidernewreliccloudazureintegrationsfunctions"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsFunctions } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsFunctions: CloudAzureIntegrationsFunctions = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsfunctionspropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsfunctionspropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFunctions.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsfunctionspropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFunctions.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsfunctionspropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsKeyVault <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVault" id="cdktfprovidernewreliccloudazureintegrationskeyvault"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsKeyVault } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsKeyVault: CloudAzureIntegrationsKeyVault = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationskeyvaultpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationskeyvaultpropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVault.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationskeyvaultpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVault.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationskeyvaultpropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsLoadBalancer <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancer" id="cdktfprovidernewreliccloudazureintegrationsloadbalancer"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsLoadBalancer } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsLoadBalancer: CloudAzureIntegrationsLoadBalancer = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsloadbalancerpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsloadbalancerpropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancer.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsloadbalancerpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancer.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsloadbalancerpropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsLogicApps <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLogicApps" id="cdktfprovidernewreliccloudazureintegrationslogicapps"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsLogicApps } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsLogicApps: CloudAzureIntegrationsLogicApps = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationslogicappspropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationslogicappspropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLogicApps.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationslogicappspropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLogicApps.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationslogicappspropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsMachineLearning <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearning" id="cdktfprovidernewreliccloudazureintegrationsmachinelearning"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsMachineLearning } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsMachineLearning: CloudAzureIntegrationsMachineLearning = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsmachinelearningpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsmachinelearningpropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearning.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsmachinelearningpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearning.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsmachinelearningpropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsMariaDb <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDb" id="cdktfprovidernewreliccloudazureintegrationsmariadb"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsMariaDb } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsMariaDb: CloudAzureIntegrationsMariaDb = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsmariadbpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsmariadbpropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDb.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsmariadbpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDb.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsmariadbpropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsMysql <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMysql" id="cdktfprovidernewreliccloudazureintegrationsmysql"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsMysql } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsMysql: CloudAzureIntegrationsMysql = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsmysqlpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsmysqlpropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMysql.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsmysqlpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMysql.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsmysqlpropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsPostgresql <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresql" id="cdktfprovidernewreliccloudazureintegrationspostgresql"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsPostgresql } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsPostgresql: CloudAzureIntegrationsPostgresql = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationspostgresqlpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationspostgresqlpropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresql.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationspostgresqlpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresql.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationspostgresqlpropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsPowerBiDedicated <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated" id="cdktfprovidernewreliccloudazureintegrationspowerbidedicated"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsPowerBiDedicated } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsPowerBiDedicated: CloudAzureIntegrationsPowerBiDedicated = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationspowerbidedicatedpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationspowerbidedicatedpropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationspowerbidedicatedpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationspowerbidedicatedpropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsRedisCache <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache" id="cdktfprovidernewreliccloudazureintegrationsrediscache"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsRedisCache } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsRedisCache: CloudAzureIntegrationsRedisCache = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsrediscachepropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsrediscachepropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsrediscachepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsrediscachepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsServiceBus <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus" id="cdktfprovidernewreliccloudazureintegrationsservicebus"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsServiceBus } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsServiceBus: CloudAzureIntegrationsServiceBus = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsservicebuspropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsservicebuspropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsservicebuspropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsservicebuspropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsServiceFabric <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric" id="cdktfprovidernewreliccloudazureintegrationsservicefabric"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsServiceFabric } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsServiceFabric: CloudAzureIntegrationsServiceFabric = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsservicefabricpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsservicefabricpropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsservicefabricpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsservicefabricpropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsSql <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSql" id="cdktfprovidernewreliccloudazureintegrationssql"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsSql } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsSql: CloudAzureIntegrationsSql = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationssqlpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationssqlpropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSql.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationssqlpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSql.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationssqlpropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsSqlManaged <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged" id="cdktfprovidernewreliccloudazureintegrationssqlmanaged"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsSqlManaged } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsSqlManaged: CloudAzureIntegrationsSqlManaged = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationssqlmanagedpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationssqlmanagedpropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationssqlmanagedpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationssqlmanagedpropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsStorage <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsStorage" id="cdktfprovidernewreliccloudazureintegrationsstorage"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsStorage } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsStorage: CloudAzureIntegrationsStorage = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsstoragepropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsstoragepropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsStorage.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsstoragepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsStorage.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsstoragepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsVirtualMachine <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachine" id="cdktfprovidernewreliccloudazureintegrationsvirtualmachine"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsVirtualMachine } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsVirtualMachine: CloudAzureIntegrationsVirtualMachine = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsvirtualmachinepropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsvirtualmachinepropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachine.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsvirtualmachinepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachine.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsvirtualmachinepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsVirtualNetworks <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworks" id="cdktfprovidernewreliccloudazureintegrationsvirtualnetworks"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsVirtualNetworks } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsVirtualNetworks: CloudAzureIntegrationsVirtualNetworks = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsvirtualnetworkspropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsvirtualnetworkspropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworks.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsvirtualnetworkspropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworks.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsvirtualnetworkspropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsVms <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVms" id="cdktfprovidernewreliccloudazureintegrationsvms"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsVms } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsVms: CloudAzureIntegrationsVms = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsvmspropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsvmspropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVms.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsvmspropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVms.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsvmspropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
+### CloudAzureIntegrationsVpnGateway <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGateway" id="cdktfprovidernewreliccloudazureintegrationsvpngateway"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsVpnGateway } from '@cdktf/provider-newrelic'
+
+const cloudAzureIntegrationsVpnGateway: CloudAzureIntegrationsVpnGateway = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsvpngatewaypropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsvpngatewaypropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGateway.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsvpngatewaypropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+
+---
+
+##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGateway.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsvpngatewaypropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+
+---
+
 ### CloudAzureLinkAccountConfig <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig" id="cdktfprovidernewreliccloudazurelinkaccountconfig"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
@@ -12768,6 +17299,1332 @@ public readonly accountId: number;
 The New Relic account ID where you want to link the Azure account.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#account_id CloudAzureLinkAccount#account_id}
+
+---
+
+### CloudGcpIntegrationsAppEngine <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine" id="cdktfprovidernewreliccloudgcpintegrationsappengine"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsAppEngine } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsAppEngine: CloudGcpIntegrationsAppEngine = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsappenginepropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsappenginepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsBigQuery <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigQuery" id="cdktfprovidernewreliccloudgcpintegrationsbigquery"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsBigQuery } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsBigQuery: CloudGcpIntegrationsBigQuery = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`fetchTags`](#cdktfprovidernewreliccloudgcpintegrationsbigquerypropertyfetchtags) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | to fetch tags of the resource. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsbigquerypropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `fetchTags`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigQuery.property.fetchTags" id="cdktfprovidernewreliccloudgcpintegrationsbigquerypropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+to fetch tags of the resource.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigQuery.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsbigquerypropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsBigTable <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigTable" id="cdktfprovidernewreliccloudgcpintegrationsbigtable"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsBigTable } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsBigTable: CloudGcpIntegrationsBigTable = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsbigtablepropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigTable.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsbigtablepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsComposer <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsComposer" id="cdktfprovidernewreliccloudgcpintegrationscomposer"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsComposer } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsComposer: CloudGcpIntegrationsComposer = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationscomposerpropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsComposer.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationscomposerpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsConfig <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig" id="cdktfprovidernewreliccloudgcpintegrationsconfig"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsConfig } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsConfig: CloudGcpIntegrationsConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`count`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertycount) | `number` | *No description.* |
+| [`dependsOn`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`lifecycle`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
+| [`provider`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`linkedAccountId`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertylinkedaccountid)<span title="Required">*</span> | `number` | Id of the linked gcp account in New Relic. |
+| [`accountId`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyaccountid) | `number` | ID of the newrelic account. |
+| [`appEngine`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyappengine) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine`](#@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine) | app_engine block. |
+| [`bigQuery`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertybigquery) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigQuery`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigQuery) | big_query block. |
+| [`bigTable`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertybigtable) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigTable`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigTable) | big_table block. |
+| [`composer`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertycomposer) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsComposer`](#@cdktf/provider-newrelic.CloudGcpIntegrationsComposer) | composer block. |
+| [`dataFlow`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertydataflow) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlow`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlow) | data_flow block. |
+| [`dataProc`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertydataproc) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataProc`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataProc) | data_proc block. |
+| [`dataStore`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertydatastore) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataStore`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataStore) | data_store block. |
+| [`fireBaseDatabase`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyfirebasedatabase) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabase`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabase) | fire_base_database block. |
+| [`fireBaseHosting`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyfirebasehosting) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHosting`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHosting) | fire_base_hosting block. |
+| [`fireBaseStorage`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyfirebasestorage) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorage`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorage) | fire_base_storage block. |
+| [`fireStore`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyfirestore) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireStore`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireStore) | fire_store block. |
+| [`functions`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyfunctions) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFunctions`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFunctions) | functions block. |
+| [`interconnect`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyinterconnect) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnect`](#@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnect) | interconnect block. |
+| [`kubernetes`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertykubernetes) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetes`](#@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetes) | kubernetes block. |
+| [`loadBalancing`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyloadbalancing) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancing`](#@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancing) | load_balancing block. |
+| [`memCache`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertymemcache) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsMemCache`](#@cdktf/provider-newrelic.CloudGcpIntegrationsMemCache) | mem_cache block. |
+| [`pubSub`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertypubsub) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsPubSub`](#@cdktf/provider-newrelic.CloudGcpIntegrationsPubSub) | pub_sub block. |
+| [`redis`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyredis) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsRedis`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRedis) | redis block. |
+| [`router`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyrouter) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsRouter`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRouter) | router block. |
+| [`run`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyrun) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsRun`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRun) | run block. |
+| [`spanner`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyspanner) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsSpanner`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSpanner) | spanner block. |
+| [`sql`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertysql) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsSql`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSql) | sql block. |
+| [`storage`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertystorage) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsStorage`](#@cdktf/provider-newrelic.CloudGcpIntegrationsStorage) | storage block. |
+| [`virtualMachines`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyvirtualmachines) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachines`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachines) | virtual_machines block. |
+| [`vpcAccess`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyvpcaccess) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccess`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccess) | vpc_access block. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.count" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertycount"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.dependsOn" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertydependson"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.lifecycle" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertylifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.provider" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyprovider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `linkedAccountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.linkedAccountId" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertylinkedaccountid"></a>
+
+```typescript
+public readonly linkedAccountId: number;
+```
+
+- *Type:* `number`
+
+Id of the linked gcp account in New Relic.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#linked_account_id CloudGcpIntegrations#linked_account_id}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.accountId" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+ID of the newrelic account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#account_id CloudGcpIntegrations#account_id}
+
+---
+
+##### `appEngine`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.appEngine" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyappengine"></a>
+
+```typescript
+public readonly appEngine: CloudGcpIntegrationsAppEngine;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine`](#@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine)
+
+app_engine block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#app_engine CloudGcpIntegrations#app_engine}
+
+---
+
+##### `bigQuery`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.bigQuery" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertybigquery"></a>
+
+```typescript
+public readonly bigQuery: CloudGcpIntegrationsBigQuery;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigQuery`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigQuery)
+
+big_query block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#big_query CloudGcpIntegrations#big_query}
+
+---
+
+##### `bigTable`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.bigTable" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertybigtable"></a>
+
+```typescript
+public readonly bigTable: CloudGcpIntegrationsBigTable;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigTable`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigTable)
+
+big_table block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#big_table CloudGcpIntegrations#big_table}
+
+---
+
+##### `composer`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.composer" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertycomposer"></a>
+
+```typescript
+public readonly composer: CloudGcpIntegrationsComposer;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsComposer`](#@cdktf/provider-newrelic.CloudGcpIntegrationsComposer)
+
+composer block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#composer CloudGcpIntegrations#composer}
+
+---
+
+##### `dataFlow`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.dataFlow" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertydataflow"></a>
+
+```typescript
+public readonly dataFlow: CloudGcpIntegrationsDataFlow;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlow`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlow)
+
+data_flow block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#data_flow CloudGcpIntegrations#data_flow}
+
+---
+
+##### `dataProc`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.dataProc" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertydataproc"></a>
+
+```typescript
+public readonly dataProc: CloudGcpIntegrationsDataProc;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataProc`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataProc)
+
+data_proc block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#data_proc CloudGcpIntegrations#data_proc}
+
+---
+
+##### `dataStore`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.dataStore" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertydatastore"></a>
+
+```typescript
+public readonly dataStore: CloudGcpIntegrationsDataStore;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataStore`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataStore)
+
+data_store block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#data_store CloudGcpIntegrations#data_store}
+
+---
+
+##### `fireBaseDatabase`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.fireBaseDatabase" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyfirebasedatabase"></a>
+
+```typescript
+public readonly fireBaseDatabase: CloudGcpIntegrationsFireBaseDatabase;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabase`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabase)
+
+fire_base_database block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#fire_base_database CloudGcpIntegrations#fire_base_database}
+
+---
+
+##### `fireBaseHosting`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.fireBaseHosting" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyfirebasehosting"></a>
+
+```typescript
+public readonly fireBaseHosting: CloudGcpIntegrationsFireBaseHosting;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHosting`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHosting)
+
+fire_base_hosting block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#fire_base_hosting CloudGcpIntegrations#fire_base_hosting}
+
+---
+
+##### `fireBaseStorage`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.fireBaseStorage" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyfirebasestorage"></a>
+
+```typescript
+public readonly fireBaseStorage: CloudGcpIntegrationsFireBaseStorage;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorage`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorage)
+
+fire_base_storage block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#fire_base_storage CloudGcpIntegrations#fire_base_storage}
+
+---
+
+##### `fireStore`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.fireStore" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyfirestore"></a>
+
+```typescript
+public readonly fireStore: CloudGcpIntegrationsFireStore;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireStore`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireStore)
+
+fire_store block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#fire_store CloudGcpIntegrations#fire_store}
+
+---
+
+##### `functions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.functions" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyfunctions"></a>
+
+```typescript
+public readonly functions: CloudGcpIntegrationsFunctions;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFunctions`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFunctions)
+
+functions block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#functions CloudGcpIntegrations#functions}
+
+---
+
+##### `interconnect`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.interconnect" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyinterconnect"></a>
+
+```typescript
+public readonly interconnect: CloudGcpIntegrationsInterconnect;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnect`](#@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnect)
+
+interconnect block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#interconnect CloudGcpIntegrations#interconnect}
+
+---
+
+##### `kubernetes`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.kubernetes" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertykubernetes"></a>
+
+```typescript
+public readonly kubernetes: CloudGcpIntegrationsKubernetes;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetes`](#@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetes)
+
+kubernetes block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#kubernetes CloudGcpIntegrations#kubernetes}
+
+---
+
+##### `loadBalancing`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.loadBalancing" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyloadbalancing"></a>
+
+```typescript
+public readonly loadBalancing: CloudGcpIntegrationsLoadBalancing;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancing`](#@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancing)
+
+load_balancing block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#load_balancing CloudGcpIntegrations#load_balancing}
+
+---
+
+##### `memCache`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.memCache" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertymemcache"></a>
+
+```typescript
+public readonly memCache: CloudGcpIntegrationsMemCache;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsMemCache`](#@cdktf/provider-newrelic.CloudGcpIntegrationsMemCache)
+
+mem_cache block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#mem_cache CloudGcpIntegrations#mem_cache}
+
+---
+
+##### `pubSub`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.pubSub" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertypubsub"></a>
+
+```typescript
+public readonly pubSub: CloudGcpIntegrationsPubSub;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsPubSub`](#@cdktf/provider-newrelic.CloudGcpIntegrationsPubSub)
+
+pub_sub block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#pub_sub CloudGcpIntegrations#pub_sub}
+
+---
+
+##### `redis`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.redis" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyredis"></a>
+
+```typescript
+public readonly redis: CloudGcpIntegrationsRedis;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsRedis`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRedis)
+
+redis block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#redis CloudGcpIntegrations#redis}
+
+---
+
+##### `router`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.router" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyrouter"></a>
+
+```typescript
+public readonly router: CloudGcpIntegrationsRouter;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsRouter`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRouter)
+
+router block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#router CloudGcpIntegrations#router}
+
+---
+
+##### `run`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.run" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyrun"></a>
+
+```typescript
+public readonly run: CloudGcpIntegrationsRun;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsRun`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRun)
+
+run block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#run CloudGcpIntegrations#run}
+
+---
+
+##### `spanner`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.spanner" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyspanner"></a>
+
+```typescript
+public readonly spanner: CloudGcpIntegrationsSpanner;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsSpanner`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSpanner)
+
+spanner block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#spanner CloudGcpIntegrations#spanner}
+
+---
+
+##### `sql`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.sql" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertysql"></a>
+
+```typescript
+public readonly sql: CloudGcpIntegrationsSql;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsSql`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSql)
+
+sql block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#sql CloudGcpIntegrations#sql}
+
+---
+
+##### `storage`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.storage" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertystorage"></a>
+
+```typescript
+public readonly storage: CloudGcpIntegrationsStorage;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsStorage`](#@cdktf/provider-newrelic.CloudGcpIntegrationsStorage)
+
+storage block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#storage CloudGcpIntegrations#storage}
+
+---
+
+##### `virtualMachines`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.virtualMachines" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyvirtualmachines"></a>
+
+```typescript
+public readonly virtualMachines: CloudGcpIntegrationsVirtualMachines;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachines`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachines)
+
+virtual_machines block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#virtual_machines CloudGcpIntegrations#virtual_machines}
+
+---
+
+##### `vpcAccess`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.vpcAccess" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyvpcaccess"></a>
+
+```typescript
+public readonly vpcAccess: CloudGcpIntegrationsVpcAccess;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccess`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccess)
+
+vpc_access block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#vpc_access CloudGcpIntegrations#vpc_access}
+
+---
+
+### CloudGcpIntegrationsDataFlow <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlow" id="cdktfprovidernewreliccloudgcpintegrationsdataflow"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsDataFlow } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsDataFlow: CloudGcpIntegrationsDataFlow = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsdataflowpropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlow.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsdataflowpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsDataProc <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataProc" id="cdktfprovidernewreliccloudgcpintegrationsdataproc"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsDataProc } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsDataProc: CloudGcpIntegrationsDataProc = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsdataprocpropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataProc.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsdataprocpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsDataStore <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataStore" id="cdktfprovidernewreliccloudgcpintegrationsdatastore"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsDataStore } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsDataStore: CloudGcpIntegrationsDataStore = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsdatastorepropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataStore.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsdatastorepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsFireBaseDatabase <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabase" id="cdktfprovidernewreliccloudgcpintegrationsfirebasedatabase"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsFireBaseDatabase } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsFireBaseDatabase: CloudGcpIntegrationsFireBaseDatabase = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsfirebasedatabasepropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabase.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsfirebasedatabasepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsFireBaseHosting <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHosting" id="cdktfprovidernewreliccloudgcpintegrationsfirebasehosting"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsFireBaseHosting } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsFireBaseHosting: CloudGcpIntegrationsFireBaseHosting = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsfirebasehostingpropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHosting.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsfirebasehostingpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsFireBaseStorage <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorage" id="cdktfprovidernewreliccloudgcpintegrationsfirebasestorage"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsFireBaseStorage } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsFireBaseStorage: CloudGcpIntegrationsFireBaseStorage = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsfirebasestoragepropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorage.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsfirebasestoragepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsFireStore <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireStore" id="cdktfprovidernewreliccloudgcpintegrationsfirestore"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsFireStore } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsFireStore: CloudGcpIntegrationsFireStore = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsfirestorepropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireStore.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsfirestorepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsFunctions <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFunctions" id="cdktfprovidernewreliccloudgcpintegrationsfunctions"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsFunctions } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsFunctions: CloudGcpIntegrationsFunctions = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsfunctionspropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFunctions.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsfunctionspropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsInterconnect <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnect" id="cdktfprovidernewreliccloudgcpintegrationsinterconnect"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsInterconnect } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsInterconnect: CloudGcpIntegrationsInterconnect = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsinterconnectpropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnect.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsinterconnectpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsKubernetes <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetes" id="cdktfprovidernewreliccloudgcpintegrationskubernetes"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsKubernetes } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsKubernetes: CloudGcpIntegrationsKubernetes = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationskubernetespropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetes.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationskubernetespropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsLoadBalancing <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancing" id="cdktfprovidernewreliccloudgcpintegrationsloadbalancing"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsLoadBalancing } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsLoadBalancing: CloudGcpIntegrationsLoadBalancing = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsloadbalancingpropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancing.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsloadbalancingpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsMemCache <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsMemCache" id="cdktfprovidernewreliccloudgcpintegrationsmemcache"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsMemCache } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsMemCache: CloudGcpIntegrationsMemCache = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsmemcachepropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsMemCache.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsmemcachepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsPubSub <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsPubSub" id="cdktfprovidernewreliccloudgcpintegrationspubsub"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsPubSub } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsPubSub: CloudGcpIntegrationsPubSub = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`fetchTags`](#cdktfprovidernewreliccloudgcpintegrationspubsubpropertyfetchtags) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | to fetch tags of the resource. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationspubsubpropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `fetchTags`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsPubSub.property.fetchTags" id="cdktfprovidernewreliccloudgcpintegrationspubsubpropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+to fetch tags of the resource.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsPubSub.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationspubsubpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsRedis <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRedis" id="cdktfprovidernewreliccloudgcpintegrationsredis"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsRedis } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsRedis: CloudGcpIntegrationsRedis = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsredispropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRedis.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsredispropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsRouter <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRouter" id="cdktfprovidernewreliccloudgcpintegrationsrouter"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsRouter } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsRouter: CloudGcpIntegrationsRouter = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsrouterpropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRouter.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsrouterpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsRun <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRun" id="cdktfprovidernewreliccloudgcpintegrationsrun"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsRun } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsRun: CloudGcpIntegrationsRun = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsrunpropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRun.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsrunpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsSpanner <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSpanner" id="cdktfprovidernewreliccloudgcpintegrationsspanner"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsSpanner } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsSpanner: CloudGcpIntegrationsSpanner = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`fetchTags`](#cdktfprovidernewreliccloudgcpintegrationsspannerpropertyfetchtags) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | to fetch tags of the resource. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsspannerpropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `fetchTags`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSpanner.property.fetchTags" id="cdktfprovidernewreliccloudgcpintegrationsspannerpropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+to fetch tags of the resource.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSpanner.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsspannerpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsSql <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSql" id="cdktfprovidernewreliccloudgcpintegrationssql"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsSql } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsSql: CloudGcpIntegrationsSql = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationssqlpropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSql.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationssqlpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsStorage <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsStorage" id="cdktfprovidernewreliccloudgcpintegrationsstorage"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsStorage } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsStorage: CloudGcpIntegrationsStorage = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`fetchTags`](#cdktfprovidernewreliccloudgcpintegrationsstoragepropertyfetchtags) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | to fetch tags of the resource. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsstoragepropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `fetchTags`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsStorage.property.fetchTags" id="cdktfprovidernewreliccloudgcpintegrationsstoragepropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+to fetch tags of the resource.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsStorage.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsstoragepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsVirtualMachines <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachines" id="cdktfprovidernewreliccloudgcpintegrationsvirtualmachines"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsVirtualMachines } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsVirtualMachines: CloudGcpIntegrationsVirtualMachines = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsvirtualmachinespropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachines.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsvirtualmachinespropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+
+---
+
+### CloudGcpIntegrationsVpcAccess <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccess" id="cdktfprovidernewreliccloudgcpintegrationsvpcaccess"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsVpcAccess } from '@cdktf/provider-newrelic'
+
+const cloudGcpIntegrationsVpcAccess: CloudGcpIntegrationsVpcAccess = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsvpcaccesspropertymetricspollinginterval) | `number` | the data polling interval in seconds. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccess.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsvpcaccesspropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+the data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -23249,6 +29106,5887 @@ public readonly internalValue: CloudAwsLinkAccountTimeouts;
 ```
 
 - *Type:* [`@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts`](#@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts)
+
+---
+
+
+### CloudAzureIntegrationsApiManagementOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagementOutputReference" id="cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagementOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsApiManagementOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsApiManagementOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagementOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagementOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagementOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagementOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement`](#@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagementOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagementOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagementOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagementOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagementOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsapimanagementoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsApiManagement;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement`](#@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement)
+
+---
+
+
+### CloudAzureIntegrationsAppGatewayOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppGatewayOutputReference" id="cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppGatewayOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsAppGatewayOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsAppGatewayOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppGatewayOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppGatewayOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppGatewayOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppGatewayOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppGateway`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppGateway) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppGatewayOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppGatewayOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppGatewayOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppGatewayOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppGatewayOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsappgatewayoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsAppGateway;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppGateway`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppGateway)
+
+---
+
+
+### CloudAzureIntegrationsAppServiceOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppServiceOutputReference" id="cdktfprovidernewreliccloudazureintegrationsappserviceoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppServiceOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsAppServiceOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsAppServiceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppServiceOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppServiceOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppServiceOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppServiceOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppService`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppService) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppServiceOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppServiceOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppServiceOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppServiceOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsAppServiceOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsappserviceoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsAppService;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsAppService`](#@cdktf/provider-newrelic.CloudAzureIntegrationsAppService)
+
+---
+
+
+### CloudAzureIntegrationsContainersOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsContainersOutputReference" id="cdktfprovidernewreliccloudazureintegrationscontainersoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsContainersOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationscontainersoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsContainersOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsContainersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationscontainersoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationscontainersoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsContainersOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationscontainersoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsContainersOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationscontainersoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationscontainersoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationscontainersoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsContainersOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationscontainersoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsContainersOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationscontainersoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationscontainersoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationscontainersoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationscontainersoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationscontainersoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationscontainersoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsContainers`](#@cdktf/provider-newrelic.CloudAzureIntegrationsContainers) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsContainersOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationscontainersoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsContainersOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationscontainersoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsContainersOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationscontainersoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsContainersOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationscontainersoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsContainersOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationscontainersoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsContainers;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsContainers`](#@cdktf/provider-newrelic.CloudAzureIntegrationsContainers)
+
+---
+
+
+### CloudAzureIntegrationsCosmosDbOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDbOutputReference" id="cdktfprovidernewreliccloudazureintegrationscosmosdboutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDbOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsCosmosDbOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsCosmosDbOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDbOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDbOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDbOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDbOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDb`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDb) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDbOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDbOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDbOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDbOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDbOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationscosmosdboutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsCosmosDb;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDb`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCosmosDb)
+
+---
+
+
+### CloudAzureIntegrationsCostManagementOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagementOutputReference" id="cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagementOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsCostManagementOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsCostManagementOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagementOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagementOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetTagKeys`](#cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferenceresettagkeys) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagementOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetTagKeys` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagementOutputReference.resetTagKeys" id="cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferenceresettagkeys"></a>
+
+```typescript
+public resetTagKeys()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`tagKeysInput`](#cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferencepropertytagkeysinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`tagKeys`](#cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferencepropertytagkeys)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagement`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagement) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagementOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKeysInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagementOutputReference.property.tagKeysInput" id="cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferencepropertytagkeysinput"></a>
+
+```typescript
+public readonly tagKeysInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagementOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKeys`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagementOutputReference.property.tagKeys" id="cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferencepropertytagkeys"></a>
+
+```typescript
+public readonly tagKeys: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagementOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationscostmanagementoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsCostManagement;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagement`](#@cdktf/provider-newrelic.CloudAzureIntegrationsCostManagement)
+
+---
+
+
+### CloudAzureIntegrationsDataFactoryOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactoryOutputReference" id="cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactoryOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsDataFactoryOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsDataFactoryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactoryOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactoryOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactoryOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactoryOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactory`](#@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactory) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactoryOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactoryOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactoryOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactoryOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactoryOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsdatafactoryoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsDataFactory;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactory`](#@cdktf/provider-newrelic.CloudAzureIntegrationsDataFactory)
+
+---
+
+
+### CloudAzureIntegrationsEventHubOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsEventHubOutputReference" id="cdktfprovidernewreliccloudazureintegrationseventhuboutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsEventHubOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationseventhuboutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsEventHubOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsEventHubOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationseventhuboutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationseventhuboutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsEventHubOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationseventhuboutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsEventHubOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationseventhuboutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationseventhuboutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationseventhuboutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsEventHubOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationseventhuboutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsEventHubOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationseventhuboutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationseventhuboutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationseventhuboutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationseventhuboutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationseventhuboutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationseventhuboutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsEventHub`](#@cdktf/provider-newrelic.CloudAzureIntegrationsEventHub) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsEventHubOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationseventhuboutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsEventHubOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationseventhuboutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsEventHubOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationseventhuboutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsEventHubOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationseventhuboutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsEventHubOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationseventhuboutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsEventHub;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsEventHub`](#@cdktf/provider-newrelic.CloudAzureIntegrationsEventHub)
+
+---
+
+
+### CloudAzureIntegrationsExpressRouteOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRouteOutputReference" id="cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRouteOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsExpressRouteOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsExpressRouteOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRouteOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRouteOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRouteOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRouteOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRoute`](#@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRoute) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRouteOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRouteOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRouteOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRouteOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRouteOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsexpressrouteoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsExpressRoute;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRoute`](#@cdktf/provider-newrelic.CloudAzureIntegrationsExpressRoute)
+
+---
+
+
+### CloudAzureIntegrationsFirewallsOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFirewallsOutputReference" id="cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFirewallsOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsFirewallsOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsFirewallsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFirewallsOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFirewallsOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFirewallsOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFirewallsOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsFirewalls`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFirewalls) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFirewallsOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFirewallsOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFirewallsOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFirewallsOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFirewallsOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsfirewallsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsFirewalls;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsFirewalls`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFirewalls)
+
+---
+
+
+### CloudAzureIntegrationsFrontDoorOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoorOutputReference" id="cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoorOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsFrontDoorOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsFrontDoorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoorOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoorOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoorOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoorOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoor`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoor) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoorOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoorOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoorOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoorOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoorOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsfrontdooroutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsFrontDoor;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoor`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFrontDoor)
+
+---
+
+
+### CloudAzureIntegrationsFunctionsOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFunctionsOutputReference" id="cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFunctionsOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsFunctionsOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsFunctionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFunctionsOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFunctionsOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFunctionsOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFunctionsOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsFunctions`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFunctions) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFunctionsOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFunctionsOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFunctionsOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFunctionsOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsFunctionsOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsfunctionsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsFunctions;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsFunctions`](#@cdktf/provider-newrelic.CloudAzureIntegrationsFunctions)
+
+---
+
+
+### CloudAzureIntegrationsKeyVaultOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVaultOutputReference" id="cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVaultOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsKeyVaultOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsKeyVaultOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVaultOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVaultOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVaultOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVaultOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVault`](#@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVault) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVaultOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVaultOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVaultOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVaultOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVaultOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationskeyvaultoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsKeyVault;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVault`](#@cdktf/provider-newrelic.CloudAzureIntegrationsKeyVault)
+
+---
+
+
+### CloudAzureIntegrationsLoadBalancerOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancerOutputReference" id="cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancerOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsLoadBalancerOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsLoadBalancerOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancerOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancerOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancerOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancerOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancer`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancer) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancerOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancerOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancerOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancerOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancerOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsloadbalanceroutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsLoadBalancer;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancer`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLoadBalancer)
+
+---
+
+
+### CloudAzureIntegrationsLogicAppsOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLogicAppsOutputReference" id="cdktfprovidernewreliccloudazureintegrationslogicappsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLogicAppsOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsLogicAppsOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsLogicAppsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLogicAppsOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLogicAppsOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLogicAppsOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLogicAppsOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsLogicApps`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLogicApps) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLogicAppsOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLogicAppsOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLogicAppsOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLogicAppsOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsLogicAppsOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationslogicappsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsLogicApps;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsLogicApps`](#@cdktf/provider-newrelic.CloudAzureIntegrationsLogicApps)
+
+---
+
+
+### CloudAzureIntegrationsMachineLearningOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearningOutputReference" id="cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearningOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsMachineLearningOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsMachineLearningOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearningOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearningOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearningOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearningOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearning`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearning) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearningOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearningOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearningOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearningOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearningOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsmachinelearningoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsMachineLearning;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearning`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMachineLearning)
+
+---
+
+
+### CloudAzureIntegrationsMariaDbOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDbOutputReference" id="cdktfprovidernewreliccloudazureintegrationsmariadboutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDbOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsmariadboutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsMariaDbOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsMariaDbOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsmariadboutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsmariadboutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDbOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsmariadboutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDbOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsmariadboutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsmariadboutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsmariadboutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDbOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsmariadboutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDbOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsmariadboutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsmariadboutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsmariadboutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsmariadboutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsmariadboutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsmariadboutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDb`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDb) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDbOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsmariadboutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDbOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsmariadboutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDbOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsmariadboutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDbOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsmariadboutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDbOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsmariadboutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsMariaDb;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDb`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMariaDb)
+
+---
+
+
+### CloudAzureIntegrationsMysqlOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMysqlOutputReference" id="cdktfprovidernewreliccloudazureintegrationsmysqloutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMysqlOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsmysqloutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsMysqlOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsMysqlOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsmysqloutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsmysqloutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMysqlOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsmysqloutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMysqlOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsmysqloutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsmysqloutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsmysqloutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMysqlOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsmysqloutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMysqlOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsmysqloutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsmysqloutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsmysqloutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsmysqloutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsmysqloutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsmysqloutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsMysql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMysql) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMysqlOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsmysqloutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMysqlOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsmysqloutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMysqlOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsmysqloutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMysqlOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsmysqloutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsMysqlOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsmysqloutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsMysql;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsMysql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsMysql)
+
+---
+
+
+### CloudAzureIntegrationsPostgresqlOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresqlOutputReference" id="cdktfprovidernewreliccloudazureintegrationspostgresqloutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresqlOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsPostgresqlOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsPostgresqlOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresqlOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresqlOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresqlOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresqlOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresql) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresqlOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresqlOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresqlOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresqlOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresqlOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationspostgresqloutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsPostgresql;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPostgresql)
+
+---
+
+
+### CloudAzureIntegrationsPowerBiDedicatedOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicatedOutputReference" id="cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicatedOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsPowerBiDedicatedOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsPowerBiDedicatedOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicatedOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicatedOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicatedOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicatedOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicatedOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicatedOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicatedOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicatedOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicatedOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationspowerbidedicatedoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsPowerBiDedicated;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated)
+
+---
+
+
+### CloudAzureIntegrationsRedisCacheOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCacheOutputReference" id="cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCacheOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsRedisCacheOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsRedisCacheOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCacheOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCacheOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCacheOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCacheOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache`](#@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCacheOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCacheOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCacheOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCacheOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCacheOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsrediscacheoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsRedisCache;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache`](#@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache)
+
+---
+
+
+### CloudAzureIntegrationsServiceBusOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference" id="cdktfprovidernewreliccloudazureintegrationsservicebusoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsServiceBusOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsServiceBusOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsservicebusoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsServiceBus;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus)
+
+---
+
+
+### CloudAzureIntegrationsServiceFabricOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsServiceFabricOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsServiceFabricOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsServiceFabric;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric)
+
+---
+
+
+### CloudAzureIntegrationsSqlManagedOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManagedOutputReference" id="cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManagedOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsSqlManagedOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsSqlManagedOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManagedOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManagedOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManagedOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManagedOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManagedOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManagedOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManagedOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManagedOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManagedOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationssqlmanagedoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsSqlManaged;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged)
+
+---
+
+
+### CloudAzureIntegrationsSqlOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlOutputReference" id="cdktfprovidernewreliccloudazureintegrationssqloutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationssqloutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsSqlOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsSqlOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationssqloutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationssqloutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationssqloutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationssqloutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationssqloutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationssqloutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationssqloutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationssqloutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationssqloutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationssqloutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationssqloutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationssqloutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationssqloutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsSql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSql) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationssqloutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationssqloutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationssqloutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationssqloutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsSqlOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationssqloutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsSql;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsSql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSql)
+
+---
+
+
+### CloudAzureIntegrationsStorageOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsStorageOutputReference" id="cdktfprovidernewreliccloudazureintegrationsstorageoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsStorageOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsstorageoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsStorageOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsStorageOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsstorageoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsstorageoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsStorageOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsstorageoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsStorageOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsstorageoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsstorageoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsstorageoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsStorageOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsstorageoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsStorageOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsstorageoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsstorageoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsstorageoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsstorageoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsstorageoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsstorageoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsStorage`](#@cdktf/provider-newrelic.CloudAzureIntegrationsStorage) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsStorageOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsstorageoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsStorageOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsstorageoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsStorageOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsstorageoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsStorageOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsstorageoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsStorageOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsstorageoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsStorage;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsStorage`](#@cdktf/provider-newrelic.CloudAzureIntegrationsStorage)
+
+---
+
+
+### CloudAzureIntegrationsVirtualMachineOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachineOutputReference" id="cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachineOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsVirtualMachineOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsVirtualMachineOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachineOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachineOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachineOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachineOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachine`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachine) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachineOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachineOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachineOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachineOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachineOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsvirtualmachineoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsVirtualMachine;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachine`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualMachine)
+
+---
+
+
+### CloudAzureIntegrationsVirtualNetworksOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworksOutputReference" id="cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworksOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsVirtualNetworksOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsVirtualNetworksOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworksOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworksOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworksOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworksOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworks`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworks) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworksOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworksOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworksOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworksOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworksOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsvirtualnetworksoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsVirtualNetworks;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworks`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVirtualNetworks)
+
+---
+
+
+### CloudAzureIntegrationsVmsOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVmsOutputReference" id="cdktfprovidernewreliccloudazureintegrationsvmsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVmsOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsvmsoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsVmsOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsVmsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsvmsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsvmsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVmsOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsvmsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVmsOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsvmsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsvmsoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsvmsoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVmsOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsvmsoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVmsOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsvmsoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsvmsoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsvmsoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsvmsoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsvmsoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsvmsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsVms`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVms) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVmsOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsvmsoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVmsOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsvmsoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVmsOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsvmsoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVmsOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsvmsoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVmsOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsvmsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsVms;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVms`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVms)
+
+---
+
+
+### CloudAzureIntegrationsVpnGatewayOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGatewayOutputReference" id="cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGatewayOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAzureIntegrationsVpnGatewayOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAzureIntegrationsVpnGatewayOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGatewayOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGatewayOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferenceresetresourcegroups) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGatewayOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGatewayOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferenceresetresourcegroups"></a>
+
+```typescript
+public resetResourceGroups()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGateway`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGateway) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGatewayOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGatewayOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferencepropertyresourcegroupsinput"></a>
+
+```typescript
+public readonly resourceGroupsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGatewayOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGatewayOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferencepropertyresourcegroups"></a>
+
+```typescript
+public readonly resourceGroups: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGatewayOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsvpngatewayoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAzureIntegrationsVpnGateway;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGateway`](#@cdktf/provider-newrelic.CloudAzureIntegrationsVpnGateway)
+
+---
+
+
+### CloudGcpIntegrationsAppEngineOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngineOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsappengineoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngineOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsappengineoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsAppEngineOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsAppEngineOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsappengineoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsappengineoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngineOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsappengineoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngineOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsappengineoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsappengineoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngineOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsappengineoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsappengineoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsappengineoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsappengineoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine`](#@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngineOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsappengineoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngineOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsappengineoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngineOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsappengineoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsAppEngine;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine`](#@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine)
+
+---
+
+
+### CloudGcpIntegrationsBigQueryOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigQueryOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigQueryOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsBigQueryOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsBigQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigQueryOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigQueryOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetFetchTags`](#cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferenceresetfetchtags) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetFetchTags` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigQueryOutputReference.resetFetchTags" id="cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferenceresetfetchtags"></a>
+
+```typescript
+public resetFetchTags()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigQueryOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`fetchTagsInput`](#cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferencepropertyfetchtagsinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`fetchTags`](#cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferencepropertyfetchtags)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigQuery`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigQuery) | *No description.* |
+
+---
+
+##### `fetchTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigQueryOutputReference.property.fetchTagsInput" id="cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferencepropertyfetchtagsinput"></a>
+
+```typescript
+public readonly fetchTagsInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigQueryOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `fetchTags`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigQueryOutputReference.property.fetchTags" id="cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferencepropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigQueryOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigQueryOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsbigqueryoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsBigQuery;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigQuery`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigQuery)
+
+---
+
+
+### CloudGcpIntegrationsBigTableOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigTableOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsbigtableoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigTableOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsbigtableoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsBigTableOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsBigTableOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsbigtableoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsbigtableoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigTableOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsbigtableoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigTableOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsbigtableoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsbigtableoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigTableOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsbigtableoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsbigtableoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsbigtableoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsbigtableoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigTable`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigTable) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigTableOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsbigtableoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigTableOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsbigtableoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsBigTableOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsbigtableoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsBigTable;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsBigTable`](#@cdktf/provider-newrelic.CloudGcpIntegrationsBigTable)
+
+---
+
+
+### CloudGcpIntegrationsComposerOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsComposerOutputReference" id="cdktfprovidernewreliccloudgcpintegrationscomposeroutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsComposerOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationscomposeroutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsComposerOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsComposerOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationscomposeroutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationscomposeroutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsComposerOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationscomposeroutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsComposerOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationscomposeroutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationscomposeroutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsComposerOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationscomposeroutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationscomposeroutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationscomposeroutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationscomposeroutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsComposer`](#@cdktf/provider-newrelic.CloudGcpIntegrationsComposer) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsComposerOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationscomposeroutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsComposerOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationscomposeroutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsComposerOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationscomposeroutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsComposer;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsComposer`](#@cdktf/provider-newrelic.CloudGcpIntegrationsComposer)
+
+---
+
+
+### CloudGcpIntegrationsDataFlowOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlowOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsdataflowoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlowOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsdataflowoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsDataFlowOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsDataFlowOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsdataflowoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsdataflowoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlowOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsdataflowoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlowOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsdataflowoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsdataflowoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlowOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsdataflowoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsdataflowoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsdataflowoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsdataflowoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlow`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlow) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlowOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsdataflowoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlowOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsdataflowoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlowOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsdataflowoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsDataFlow;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlow`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataFlow)
+
+---
+
+
+### CloudGcpIntegrationsDataProcOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataProcOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsdataprocoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataProcOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsdataprocoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsDataProcOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsDataProcOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsdataprocoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsdataprocoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataProcOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsdataprocoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataProcOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsdataprocoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsdataprocoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataProcOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsdataprocoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsdataprocoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsdataprocoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsdataprocoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataProc`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataProc) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataProcOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsdataprocoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataProcOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsdataprocoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataProcOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsdataprocoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsDataProc;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataProc`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataProc)
+
+---
+
+
+### CloudGcpIntegrationsDataStoreOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataStoreOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsdatastoreoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataStoreOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsdatastoreoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsDataStoreOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsDataStoreOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsdatastoreoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsdatastoreoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataStoreOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsdatastoreoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataStoreOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsdatastoreoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsdatastoreoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataStoreOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsdatastoreoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsdatastoreoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsdatastoreoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsdatastoreoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataStore`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataStore) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataStoreOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsdatastoreoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataStoreOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsdatastoreoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsDataStoreOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsdatastoreoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsDataStore;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsDataStore`](#@cdktf/provider-newrelic.CloudGcpIntegrationsDataStore)
+
+---
+
+
+### CloudGcpIntegrationsFireBaseDatabaseOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabaseOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsfirebasedatabaseoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabaseOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsfirebasedatabaseoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsFireBaseDatabaseOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsFireBaseDatabaseOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsfirebasedatabaseoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsfirebasedatabaseoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabaseOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsfirebasedatabaseoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabaseOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsfirebasedatabaseoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsfirebasedatabaseoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabaseOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsfirebasedatabaseoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsfirebasedatabaseoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsfirebasedatabaseoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsfirebasedatabaseoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabase`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabase) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabaseOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsfirebasedatabaseoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabaseOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsfirebasedatabaseoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabaseOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsfirebasedatabaseoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsFireBaseDatabase;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabase`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseDatabase)
+
+---
+
+
+### CloudGcpIntegrationsFireBaseHostingOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHostingOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsfirebasehostingoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHostingOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsfirebasehostingoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsFireBaseHostingOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsFireBaseHostingOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsfirebasehostingoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsfirebasehostingoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHostingOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsfirebasehostingoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHostingOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsfirebasehostingoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsfirebasehostingoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHostingOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsfirebasehostingoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsfirebasehostingoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsfirebasehostingoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsfirebasehostingoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHosting`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHosting) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHostingOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsfirebasehostingoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHostingOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsfirebasehostingoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHostingOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsfirebasehostingoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsFireBaseHosting;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHosting`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseHosting)
+
+---
+
+
+### CloudGcpIntegrationsFireBaseStorageOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorageOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsfirebasestorageoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorageOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsfirebasestorageoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsFireBaseStorageOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsFireBaseStorageOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsfirebasestorageoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsfirebasestorageoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorageOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsfirebasestorageoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorageOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsfirebasestorageoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsfirebasestorageoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorageOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsfirebasestorageoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsfirebasestorageoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsfirebasestorageoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsfirebasestorageoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorage`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorage) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorageOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsfirebasestorageoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorageOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsfirebasestorageoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorageOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsfirebasestorageoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsFireBaseStorage;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorage`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireBaseStorage)
+
+---
+
+
+### CloudGcpIntegrationsFireStoreOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireStoreOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsfirestoreoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireStoreOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsfirestoreoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsFireStoreOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsFireStoreOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsfirestoreoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsfirestoreoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireStoreOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsfirestoreoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireStoreOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsfirestoreoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsfirestoreoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireStoreOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsfirestoreoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsfirestoreoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsfirestoreoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsfirestoreoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireStore`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireStore) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireStoreOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsfirestoreoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireStoreOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsfirestoreoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFireStoreOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsfirestoreoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsFireStore;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFireStore`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFireStore)
+
+---
+
+
+### CloudGcpIntegrationsFunctionsOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFunctionsOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsfunctionsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFunctionsOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsfunctionsoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsFunctionsOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsFunctionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsfunctionsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsfunctionsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFunctionsOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsfunctionsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFunctionsOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsfunctionsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsfunctionsoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFunctionsOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsfunctionsoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsfunctionsoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsfunctionsoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsfunctionsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsFunctions`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFunctions) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFunctionsOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsfunctionsoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFunctionsOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsfunctionsoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsFunctionsOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsfunctionsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsFunctions;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsFunctions`](#@cdktf/provider-newrelic.CloudGcpIntegrationsFunctions)
+
+---
+
+
+### CloudGcpIntegrationsInterconnectOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnectOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsinterconnectoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnectOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsinterconnectoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsInterconnectOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsInterconnectOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsinterconnectoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsinterconnectoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnectOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsinterconnectoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnectOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsinterconnectoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsinterconnectoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnectOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsinterconnectoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsinterconnectoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsinterconnectoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsinterconnectoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnect`](#@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnect) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnectOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsinterconnectoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnectOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsinterconnectoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnectOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsinterconnectoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsInterconnect;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnect`](#@cdktf/provider-newrelic.CloudGcpIntegrationsInterconnect)
+
+---
+
+
+### CloudGcpIntegrationsKubernetesOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetesOutputReference" id="cdktfprovidernewreliccloudgcpintegrationskubernetesoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetesOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationskubernetesoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsKubernetesOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsKubernetesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationskubernetesoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationskubernetesoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetesOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationskubernetesoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetesOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationskubernetesoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationskubernetesoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetesOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationskubernetesoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationskubernetesoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationskubernetesoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationskubernetesoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetes`](#@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetes) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetesOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationskubernetesoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetesOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationskubernetesoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetesOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationskubernetesoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsKubernetes;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetes`](#@cdktf/provider-newrelic.CloudGcpIntegrationsKubernetes)
+
+---
+
+
+### CloudGcpIntegrationsLoadBalancingOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancingOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsloadbalancingoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancingOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsloadbalancingoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsLoadBalancingOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsLoadBalancingOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsloadbalancingoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsloadbalancingoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancingOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsloadbalancingoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancingOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsloadbalancingoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsloadbalancingoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancingOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsloadbalancingoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsloadbalancingoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsloadbalancingoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsloadbalancingoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancing`](#@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancing) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancingOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsloadbalancingoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancingOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsloadbalancingoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancingOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsloadbalancingoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsLoadBalancing;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancing`](#@cdktf/provider-newrelic.CloudGcpIntegrationsLoadBalancing)
+
+---
+
+
+### CloudGcpIntegrationsMemCacheOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsMemCacheOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsmemcacheoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsMemCacheOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsmemcacheoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsMemCacheOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsMemCacheOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsmemcacheoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsmemcacheoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsMemCacheOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsmemcacheoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsMemCacheOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsmemcacheoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsmemcacheoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsMemCacheOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsmemcacheoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsmemcacheoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsmemcacheoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsmemcacheoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsMemCache`](#@cdktf/provider-newrelic.CloudGcpIntegrationsMemCache) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsMemCacheOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsmemcacheoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsMemCacheOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsmemcacheoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsMemCacheOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsmemcacheoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsMemCache;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsMemCache`](#@cdktf/provider-newrelic.CloudGcpIntegrationsMemCache)
+
+---
+
+
+### CloudGcpIntegrationsPubSubOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsPubSubOutputReference" id="cdktfprovidernewreliccloudgcpintegrationspubsuboutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsPubSubOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsPubSubOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsPubSubOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsPubSubOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsPubSubOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetFetchTags`](#cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferenceresetfetchtags) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetFetchTags` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsPubSubOutputReference.resetFetchTags" id="cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferenceresetfetchtags"></a>
+
+```typescript
+public resetFetchTags()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsPubSubOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`fetchTagsInput`](#cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferencepropertyfetchtagsinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`fetchTags`](#cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferencepropertyfetchtags)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsPubSub`](#@cdktf/provider-newrelic.CloudGcpIntegrationsPubSub) | *No description.* |
+
+---
+
+##### `fetchTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsPubSubOutputReference.property.fetchTagsInput" id="cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferencepropertyfetchtagsinput"></a>
+
+```typescript
+public readonly fetchTagsInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsPubSubOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `fetchTags`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsPubSubOutputReference.property.fetchTags" id="cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferencepropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsPubSubOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsPubSubOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationspubsuboutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsPubSub;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsPubSub`](#@cdktf/provider-newrelic.CloudGcpIntegrationsPubSub)
+
+---
+
+
+### CloudGcpIntegrationsRedisOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRedisOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsredisoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRedisOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsredisoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsRedisOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsRedisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsredisoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsredisoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRedisOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsredisoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRedisOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsredisoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsredisoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRedisOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsredisoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsredisoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsredisoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsredisoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsRedis`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRedis) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRedisOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsredisoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRedisOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsredisoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRedisOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsredisoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsRedis;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsRedis`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRedis)
+
+---
+
+
+### CloudGcpIntegrationsRouterOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRouterOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsrouteroutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRouterOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsrouteroutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsRouterOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsRouterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsrouteroutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsrouteroutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRouterOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsrouteroutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRouterOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsrouteroutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsrouteroutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRouterOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsrouteroutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsrouteroutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsrouteroutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsrouteroutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsRouter`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRouter) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRouterOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsrouteroutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRouterOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsrouteroutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRouterOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsrouteroutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsRouter;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsRouter`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRouter)
+
+---
+
+
+### CloudGcpIntegrationsRunOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRunOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsrunoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRunOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsrunoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsRunOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsRunOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsrunoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsrunoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRunOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsrunoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRunOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsrunoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsrunoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRunOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsrunoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsrunoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsrunoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsrunoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsRun`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRun) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRunOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsrunoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRunOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsrunoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsRunOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsrunoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsRun;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsRun`](#@cdktf/provider-newrelic.CloudGcpIntegrationsRun)
+
+---
+
+
+### CloudGcpIntegrationsSpannerOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSpannerOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsspanneroutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSpannerOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsSpannerOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsSpannerOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSpannerOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSpannerOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetFetchTags`](#cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferenceresetfetchtags) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetFetchTags` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSpannerOutputReference.resetFetchTags" id="cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferenceresetfetchtags"></a>
+
+```typescript
+public resetFetchTags()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSpannerOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`fetchTagsInput`](#cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferencepropertyfetchtagsinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`fetchTags`](#cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferencepropertyfetchtags)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsSpanner`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSpanner) | *No description.* |
+
+---
+
+##### `fetchTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSpannerOutputReference.property.fetchTagsInput" id="cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferencepropertyfetchtagsinput"></a>
+
+```typescript
+public readonly fetchTagsInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSpannerOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `fetchTags`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSpannerOutputReference.property.fetchTags" id="cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferencepropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSpannerOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSpannerOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsspanneroutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsSpanner;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsSpanner`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSpanner)
+
+---
+
+
+### CloudGcpIntegrationsSqlOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSqlOutputReference" id="cdktfprovidernewreliccloudgcpintegrationssqloutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSqlOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationssqloutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsSqlOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsSqlOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationssqloutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationssqloutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSqlOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationssqloutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSqlOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationssqloutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationssqloutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSqlOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationssqloutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationssqloutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationssqloutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationssqloutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsSql`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSql) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSqlOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationssqloutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSqlOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationssqloutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsSqlOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationssqloutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsSql;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsSql`](#@cdktf/provider-newrelic.CloudGcpIntegrationsSql)
+
+---
+
+
+### CloudGcpIntegrationsStorageOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsStorageOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsstorageoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsStorageOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsStorageOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsStorageOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsStorageOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsStorageOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetFetchTags`](#cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferenceresetfetchtags) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetFetchTags` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsStorageOutputReference.resetFetchTags" id="cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferenceresetfetchtags"></a>
+
+```typescript
+public resetFetchTags()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsStorageOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`fetchTagsInput`](#cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferencepropertyfetchtagsinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`fetchTags`](#cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferencepropertyfetchtags)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsStorage`](#@cdktf/provider-newrelic.CloudGcpIntegrationsStorage) | *No description.* |
+
+---
+
+##### `fetchTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsStorageOutputReference.property.fetchTagsInput" id="cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferencepropertyfetchtagsinput"></a>
+
+```typescript
+public readonly fetchTagsInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsStorageOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `fetchTags`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsStorageOutputReference.property.fetchTags" id="cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferencepropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsStorageOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsStorageOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsstorageoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsStorage;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsStorage`](#@cdktf/provider-newrelic.CloudGcpIntegrationsStorage)
+
+---
+
+
+### CloudGcpIntegrationsVirtualMachinesOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachinesOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsvirtualmachinesoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachinesOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsvirtualmachinesoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsVirtualMachinesOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsVirtualMachinesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsvirtualmachinesoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsvirtualmachinesoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachinesOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsvirtualmachinesoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachinesOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsvirtualmachinesoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsvirtualmachinesoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachinesOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsvirtualmachinesoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsvirtualmachinesoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsvirtualmachinesoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsvirtualmachinesoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachines`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachines) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachinesOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsvirtualmachinesoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachinesOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsvirtualmachinesoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachinesOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsvirtualmachinesoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsVirtualMachines;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachines`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVirtualMachines)
+
+---
+
+
+### CloudGcpIntegrationsVpcAccessOutputReference <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccessOutputReference" id="cdktfprovidernewreliccloudgcpintegrationsvpcaccessoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccessOutputReference.Initializer" id="cdktfprovidernewreliccloudgcpintegrationsvpcaccessoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudGcpIntegrationsVpcAccessOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudGcpIntegrationsVpcAccessOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudgcpintegrationsvpcaccessoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudgcpintegrationsvpcaccessoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccessOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudgcpintegrationsvpcaccessoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccessOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudgcpintegrationsvpcaccessoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsvpcaccessoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccessOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsvpcaccessoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudgcpintegrationsvpcaccessoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudgcpintegrationsvpcaccessoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudgcpintegrationsvpcaccessoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccess`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccess) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccessOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudgcpintegrationsvpcaccessoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccessOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudgcpintegrationsvpcaccessoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccessOutputReference.property.internalValue" id="cdktfprovidernewreliccloudgcpintegrationsvpcaccessoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudGcpIntegrationsVpcAccess;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccess`](#@cdktf/provider-newrelic.CloudGcpIntegrationsVpcAccess)
 
 ---
 
