@@ -107,7 +107,7 @@ export class InsightsEvent extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_insights_event',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.43.0',
+        providerVersion: '2.43.1',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
