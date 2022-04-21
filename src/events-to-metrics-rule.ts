@@ -65,7 +65,7 @@ export class EventsToMetricsRule extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_events_to_metrics_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.43.1',
+        providerVersion: '2.43.2',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,

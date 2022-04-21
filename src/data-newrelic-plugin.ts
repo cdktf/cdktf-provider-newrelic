@@ -41,7 +41,7 @@ export class DataNewrelicPlugin extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_plugin',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.43.1',
+        providerVersion: '2.43.2',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,

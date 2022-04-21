@@ -1988,7 +1988,7 @@ export class CloudGcpIntegrations extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_gcp_integrations',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.43.1',
+        providerVersion: '2.43.2',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
