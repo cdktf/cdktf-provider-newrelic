@@ -152,12 +152,6 @@ export interface CloudAzureIntegrationsConfig extends cdktf.TerraformMetaArgumen
   */
   readonly serviceBus?: CloudAzureIntegrationsServiceBus;
   /**
-  * service_fabric block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#service_fabric CloudAzureIntegrations#service_fabric}
-  */
-  readonly serviceFabric?: CloudAzureIntegrationsServiceFabric;
-  /**
   * sql block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#sql CloudAzureIntegrations#sql}
@@ -2314,102 +2308,6 @@ export class CloudAzureIntegrationsServiceBusOutputReference extends cdktf.Compl
     return this._resourceGroups;
   }
 }
-export interface CloudAzureIntegrationsServiceFabric {
-  /**
-  * The data polling interval in seconds
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
-  */
-  readonly metricsPollingInterval?: number;
-  /**
-  * Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
-  */
-  readonly resourceGroups?: string[];
-}
-
-export function cloudAzureIntegrationsServiceFabricToTerraform(struct?: CloudAzureIntegrationsServiceFabricOutputReference | CloudAzureIntegrationsServiceFabric): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
-  }
-}
-
-export class CloudAzureIntegrationsServiceFabricOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CloudAzureIntegrationsServiceFabric | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._metricsPollingInterval !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.metricsPollingInterval = this._metricsPollingInterval;
-    }
-    if (this._resourceGroups !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.resourceGroups = this._resourceGroups;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CloudAzureIntegrationsServiceFabric | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._metricsPollingInterval = undefined;
-      this._resourceGroups = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._metricsPollingInterval = value.metricsPollingInterval;
-      this._resourceGroups = value.resourceGroups;
-    }
-  }
-
-  // metrics_polling_interval - computed: false, optional: true, required: false
-  private _metricsPollingInterval?: number; 
-  public get metricsPollingInterval() {
-    return this.getNumberAttribute('metrics_polling_interval');
-  }
-  public set metricsPollingInterval(value: number) {
-    this._metricsPollingInterval = value;
-  }
-  public resetMetricsPollingInterval() {
-    this._metricsPollingInterval = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get metricsPollingIntervalInput() {
-    return this._metricsPollingInterval;
-  }
-
-  // resource_groups - computed: false, optional: true, required: false
-  private _resourceGroups?: string[]; 
-  public get resourceGroups() {
-    return this.getListAttribute('resource_groups');
-  }
-  public set resourceGroups(value: string[]) {
-    this._resourceGroups = value;
-  }
-  public resetResourceGroups() {
-    this._resourceGroups = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourceGroupsInput() {
-    return this._resourceGroups;
-  }
-}
 export interface CloudAzureIntegrationsSql {
   /**
   * The data polling interval in seconds
@@ -3109,7 +3007,7 @@ export class CloudAzureIntegrations extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_azure_integrations',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.43.1',
+        providerVersion: '2.43.2',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
@@ -3141,7 +3039,6 @@ export class CloudAzureIntegrations extends cdktf.TerraformResource {
     this._powerBiDedicated.internalValue = config.powerBiDedicated;
     this._redisCache.internalValue = config.redisCache;
     this._serviceBus.internalValue = config.serviceBus;
-    this._serviceFabric.internalValue = config.serviceFabric;
     this._sql.internalValue = config.sql;
     this._sqlManaged.internalValue = config.sqlManaged;
     this._storage.internalValue = config.storage;
@@ -3541,22 +3438,6 @@ export class CloudAzureIntegrations extends cdktf.TerraformResource {
     return this._serviceBus.internalValue;
   }
 
-  // service_fabric - computed: false, optional: true, required: false
-  private _serviceFabric = new CloudAzureIntegrationsServiceFabricOutputReference(this, "service_fabric");
-  public get serviceFabric() {
-    return this._serviceFabric;
-  }
-  public putServiceFabric(value: CloudAzureIntegrationsServiceFabric) {
-    this._serviceFabric.internalValue = value;
-  }
-  public resetServiceFabric() {
-    this._serviceFabric.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serviceFabricInput() {
-    return this._serviceFabric.internalValue;
-  }
-
   // sql - computed: false, optional: true, required: false
   private _sql = new CloudAzureIntegrationsSqlOutputReference(this, "sql");
   public get sql() {
@@ -3699,7 +3580,6 @@ export class CloudAzureIntegrations extends cdktf.TerraformResource {
       power_bi_dedicated: cloudAzureIntegrationsPowerBiDedicatedToTerraform(this._powerBiDedicated.internalValue),
       redis_cache: cloudAzureIntegrationsRedisCacheToTerraform(this._redisCache.internalValue),
       service_bus: cloudAzureIntegrationsServiceBusToTerraform(this._serviceBus.internalValue),
-      service_fabric: cloudAzureIntegrationsServiceFabricToTerraform(this._serviceFabric.internalValue),
       sql: cloudAzureIntegrationsSqlToTerraform(this._sql.internalValue),
       sql_managed: cloudAzureIntegrationsSqlManagedToTerraform(this._sqlManaged.internalValue),
       storage: cloudAzureIntegrationsStorageToTerraform(this._storage.internalValue),

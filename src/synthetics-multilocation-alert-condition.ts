@@ -211,7 +211,7 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
       terraformResourceType: 'newrelic_synthetics_multilocation_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.43.1',
+        providerVersion: '2.43.2',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,

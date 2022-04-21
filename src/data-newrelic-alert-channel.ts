@@ -104,6 +104,11 @@ export class DataNewrelicAlertChannelConfigAOutputReference extends cdktf.Comple
     return new cdktf.StringMap(this, 'payload').lookup(key);
   }
 
+  // payload_string - computed: true, optional: false, required: false
+  public get payloadString() {
+    return this.getStringAttribute('payload_string');
+  }
+
   // payload_type - computed: true, optional: false, required: false
   public get payloadType() {
     return this.getStringAttribute('payload_type');
@@ -195,7 +200,7 @@ export class DataNewrelicAlertChannel extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_alert_channel',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.43.1',
+        providerVersion: '2.43.2',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,

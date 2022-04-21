@@ -1654,6 +1654,981 @@ public readonly name: string;
 
 ---
 
+### CloudAwsGovcloudIntegrations <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations" id="cdktfprovidernewreliccloudawsgovcloudintegrations"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations newrelic_cloud_aws_govcloud_integrations}.
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationsinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrations } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrations(scope: Construct, id: string, config: CloudAwsGovcloudIntegrationsConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#cdktfprovidernewreliccloudawsgovcloudintegrationsparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
+| [`id`](#cdktfprovidernewreliccloudawsgovcloudintegrationsparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
+| [`config`](#cdktfprovidernewreliccloudawsgovcloudintegrationsparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.scope" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.id" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparameterid"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.config" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparameterconfig"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig)
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`putAlb`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputalb) | *No description.* |
+| [`putApiGateway`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputapigateway) | *No description.* |
+| [`putAutoScaling`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputautoscaling) | *No description.* |
+| [`putAwsDirectConnect`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputawsdirectconnect) | *No description.* |
+| [`putAwsStates`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputawsstates) | *No description.* |
+| [`putCloudtrail`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputcloudtrail) | *No description.* |
+| [`putDynamoDb`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputdynamodb) | *No description.* |
+| [`putEbs`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputebs) | *No description.* |
+| [`putEc2`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputec2) | *No description.* |
+| [`putElasticSearch`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputelasticsearch) | *No description.* |
+| [`putElb`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputelb) | *No description.* |
+| [`putEmr`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputemr) | *No description.* |
+| [`putIam`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputiam) | *No description.* |
+| [`putLambda`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputlambda) | *No description.* |
+| [`putRds`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputrds) | *No description.* |
+| [`putRedShift`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputredshift) | *No description.* |
+| [`putRoute53`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputroute53) | *No description.* |
+| [`putS3`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputs3) | *No description.* |
+| [`putSns`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputsns) | *No description.* |
+| [`putSqs`](#cdktfprovidernewreliccloudawsgovcloudintegrationsputsqs) | *No description.* |
+| [`resetAccountId`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetaccountid) | *No description.* |
+| [`resetAlb`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetalb) | *No description.* |
+| [`resetApiGateway`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetapigateway) | *No description.* |
+| [`resetAutoScaling`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetautoscaling) | *No description.* |
+| [`resetAwsDirectConnect`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetawsdirectconnect) | *No description.* |
+| [`resetAwsStates`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetawsstates) | *No description.* |
+| [`resetCloudtrail`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetcloudtrail) | *No description.* |
+| [`resetDynamoDb`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetdynamodb) | *No description.* |
+| [`resetEbs`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetebs) | *No description.* |
+| [`resetEc2`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetec2) | *No description.* |
+| [`resetElasticSearch`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetelasticsearch) | *No description.* |
+| [`resetElb`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetelb) | *No description.* |
+| [`resetEmr`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetemr) | *No description.* |
+| [`resetIam`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetiam) | *No description.* |
+| [`resetLambda`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetlambda) | *No description.* |
+| [`resetRds`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetrds) | *No description.* |
+| [`resetRedShift`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetredshift) | *No description.* |
+| [`resetRoute53`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetroute53) | *No description.* |
+| [`resetS3`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresets3) | *No description.* |
+| [`resetSns`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetsns) | *No description.* |
+| [`resetSqs`](#cdktfprovidernewreliccloudawsgovcloudintegrationsresetsqs) | *No description.* |
+
+---
+
+##### `putAlb` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putAlb" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputalb"></a>
+
+```typescript
+public putAlb(value: CloudAwsGovcloudIntegrationsAlb)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb)
+
+---
+
+##### `putApiGateway` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putApiGateway" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputapigateway"></a>
+
+```typescript
+public putApiGateway(value: CloudAwsGovcloudIntegrationsApiGateway)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway)
+
+---
+
+##### `putAutoScaling` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putAutoScaling" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputautoscaling"></a>
+
+```typescript
+public putAutoScaling(value: CloudAwsGovcloudIntegrationsAutoScaling)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScaling`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScaling)
+
+---
+
+##### `putAwsDirectConnect` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putAwsDirectConnect" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputawsdirectconnect"></a>
+
+```typescript
+public putAwsDirectConnect(value: CloudAwsGovcloudIntegrationsAwsDirectConnect)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnect`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnect)
+
+---
+
+##### `putAwsStates` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putAwsStates" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputawsstates"></a>
+
+```typescript
+public putAwsStates(value: CloudAwsGovcloudIntegrationsAwsStates)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStates`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStates)
+
+---
+
+##### `putCloudtrail` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putCloudtrail" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputcloudtrail"></a>
+
+```typescript
+public putCloudtrail(value: CloudAwsGovcloudIntegrationsCloudtrail)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrail`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrail)
+
+---
+
+##### `putDynamoDb` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putDynamoDb" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputdynamodb"></a>
+
+```typescript
+public putDynamoDb(value: CloudAwsGovcloudIntegrationsDynamoDb)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb)
+
+---
+
+##### `putEbs` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putEbs" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputebs"></a>
+
+```typescript
+public putEbs(value: CloudAwsGovcloudIntegrationsEbs)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs)
+
+---
+
+##### `putEc2` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putEc2" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputec2"></a>
+
+```typescript
+public putEc2(value: CloudAwsGovcloudIntegrationsEc2)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2)
+
+---
+
+##### `putElasticSearch` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putElasticSearch" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputelasticsearch"></a>
+
+```typescript
+public putElasticSearch(value: CloudAwsGovcloudIntegrationsElasticSearch)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch)
+
+---
+
+##### `putElb` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putElb" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputelb"></a>
+
+```typescript
+public putElb(value: CloudAwsGovcloudIntegrationsElb)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb)
+
+---
+
+##### `putEmr` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putEmr" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputemr"></a>
+
+```typescript
+public putEmr(value: CloudAwsGovcloudIntegrationsEmr)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr)
+
+---
+
+##### `putIam` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putIam" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputiam"></a>
+
+```typescript
+public putIam(value: CloudAwsGovcloudIntegrationsIam)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam)
+
+---
+
+##### `putLambda` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putLambda" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputlambda"></a>
+
+```typescript
+public putLambda(value: CloudAwsGovcloudIntegrationsLambda)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda)
+
+---
+
+##### `putRds` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putRds" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputrds"></a>
+
+```typescript
+public putRds(value: CloudAwsGovcloudIntegrationsRds)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds)
+
+---
+
+##### `putRedShift` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putRedShift" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputredshift"></a>
+
+```typescript
+public putRedShift(value: CloudAwsGovcloudIntegrationsRedShift)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift)
+
+---
+
+##### `putRoute53` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putRoute53" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputroute53"></a>
+
+```typescript
+public putRoute53(value: CloudAwsGovcloudIntegrationsRoute53)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53)
+
+---
+
+##### `putS3` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putS3" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputs3"></a>
+
+```typescript
+public putS3(value: CloudAwsGovcloudIntegrationsS3)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3)
+
+---
+
+##### `putSns` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putSns" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputsns"></a>
+
+```typescript
+public putSns(value: CloudAwsGovcloudIntegrationsSns)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns)
+
+---
+
+##### `putSqs` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.putSqs" id="cdktfprovidernewreliccloudawsgovcloudintegrationsputsqs"></a>
+
+```typescript
+public putSqs(value: CloudAwsGovcloudIntegrationsSqs)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.parameter.value" id="cdktfprovidernewreliccloudawsgovcloudintegrationsparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs)
+
+---
+
+##### `resetAccountId` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetAccountId" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetaccountid"></a>
+
+```typescript
+public resetAccountId()
+```
+
+##### `resetAlb` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetAlb" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetalb"></a>
+
+```typescript
+public resetAlb()
+```
+
+##### `resetApiGateway` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetApiGateway" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetapigateway"></a>
+
+```typescript
+public resetApiGateway()
+```
+
+##### `resetAutoScaling` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetAutoScaling" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetautoscaling"></a>
+
+```typescript
+public resetAutoScaling()
+```
+
+##### `resetAwsDirectConnect` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetAwsDirectConnect" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetawsdirectconnect"></a>
+
+```typescript
+public resetAwsDirectConnect()
+```
+
+##### `resetAwsStates` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetAwsStates" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetawsstates"></a>
+
+```typescript
+public resetAwsStates()
+```
+
+##### `resetCloudtrail` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetCloudtrail" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetcloudtrail"></a>
+
+```typescript
+public resetCloudtrail()
+```
+
+##### `resetDynamoDb` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetDynamoDb" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetdynamodb"></a>
+
+```typescript
+public resetDynamoDb()
+```
+
+##### `resetEbs` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetEbs" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetebs"></a>
+
+```typescript
+public resetEbs()
+```
+
+##### `resetEc2` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetEc2" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetec2"></a>
+
+```typescript
+public resetEc2()
+```
+
+##### `resetElasticSearch` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetElasticSearch" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetelasticsearch"></a>
+
+```typescript
+public resetElasticSearch()
+```
+
+##### `resetElb` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetElb" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetelb"></a>
+
+```typescript
+public resetElb()
+```
+
+##### `resetEmr` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetEmr" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetemr"></a>
+
+```typescript
+public resetEmr()
+```
+
+##### `resetIam` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetIam" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetiam"></a>
+
+```typescript
+public resetIam()
+```
+
+##### `resetLambda` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetLambda" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetlambda"></a>
+
+```typescript
+public resetLambda()
+```
+
+##### `resetRds` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetRds" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetrds"></a>
+
+```typescript
+public resetRds()
+```
+
+##### `resetRedShift` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetRedShift" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetredshift"></a>
+
+```typescript
+public resetRedShift()
+```
+
+##### `resetRoute53` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetRoute53" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetroute53"></a>
+
+```typescript
+public resetRoute53()
+```
+
+##### `resetS3` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetS3" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresets3"></a>
+
+```typescript
+public resetS3()
+```
+
+##### `resetSns` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetSns" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetsns"></a>
+
+```typescript
+public resetSns()
+```
+
+##### `resetSqs` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.resetSqs" id="cdktfprovidernewreliccloudawsgovcloudintegrationsresetsqs"></a>
+
+```typescript
+public resetSqs()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`alb`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyalb)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference) | *No description.* |
+| [`apiGateway`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyapigateway)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference) | *No description.* |
+| [`autoScaling`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyautoscaling)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScalingOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScalingOutputReference) | *No description.* |
+| [`awsDirectConnect`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyawsdirectconnect)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference) | *No description.* |
+| [`awsStates`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyawsstates)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStatesOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStatesOutputReference) | *No description.* |
+| [`cloudtrail`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertycloudtrail)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrailOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrailOutputReference) | *No description.* |
+| [`dynamoDb`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertydynamodb)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference) | *No description.* |
+| [`ebs`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyebs)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference) | *No description.* |
+| [`ec2`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyec2)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference) | *No description.* |
+| [`elasticSearch`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyelasticsearch)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference) | *No description.* |
+| [`elb`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyelb)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference) | *No description.* |
+| [`emr`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyemr)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference) | *No description.* |
+| [`iam`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyiam)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference) | *No description.* |
+| [`id`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`lambda`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertylambda)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference) | *No description.* |
+| [`rds`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyrds)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference) | *No description.* |
+| [`redShift`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyredshift)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference) | *No description.* |
+| [`route53`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyroute53)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53OutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53OutputReference) | *No description.* |
+| [`s3`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertys3)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference) | *No description.* |
+| [`sns`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertysns)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference) | *No description.* |
+| [`sqs`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertysqs)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference) | *No description.* |
+| [`accountIdInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyaccountidinput) | `number` | *No description.* |
+| [`albInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyalbinput) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb) | *No description.* |
+| [`apiGatewayInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyapigatewayinput) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway) | *No description.* |
+| [`autoScalingInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyautoscalinginput) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScaling`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScaling) | *No description.* |
+| [`awsDirectConnectInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyawsdirectconnectinput) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnect`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnect) | *No description.* |
+| [`awsStatesInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyawsstatesinput) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStates`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStates) | *No description.* |
+| [`cloudtrailInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertycloudtrailinput) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrail`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrail) | *No description.* |
+| [`dynamoDbInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertydynamodbinput) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb) | *No description.* |
+| [`ebsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyebsinput) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs) | *No description.* |
+| [`ec2Input`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyec2input) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2) | *No description.* |
+| [`elasticSearchInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyelasticsearchinput) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch) | *No description.* |
+| [`elbInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyelbinput) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb) | *No description.* |
+| [`emrInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyemrinput) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr) | *No description.* |
+| [`iamInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyiaminput) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam) | *No description.* |
+| [`lambdaInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertylambdainput) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda) | *No description.* |
+| [`linkedAccountIdInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertylinkedaccountidinput) | `number` | *No description.* |
+| [`rdsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyrdsinput) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds) | *No description.* |
+| [`redShiftInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyredshiftinput) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift) | *No description.* |
+| [`route53Input`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyroute53input) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53) | *No description.* |
+| [`s3Input`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertys3input) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3) | *No description.* |
+| [`snsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertysnsinput) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns) | *No description.* |
+| [`sqsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertysqsinput) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs) | *No description.* |
+| [`accountId`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`linkedAccountId`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertylinkedaccountid)<span title="Required">*</span> | `number` | *No description.* |
+
+---
+
+##### `alb`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.alb" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyalb"></a>
+
+```typescript
+public readonly alb: CloudAwsGovcloudIntegrationsAlbOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference)
+
+---
+
+##### `apiGateway`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.apiGateway" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyapigateway"></a>
+
+```typescript
+public readonly apiGateway: CloudAwsGovcloudIntegrationsApiGatewayOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference)
+
+---
+
+##### `autoScaling`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.autoScaling" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyautoscaling"></a>
+
+```typescript
+public readonly autoScaling: CloudAwsGovcloudIntegrationsAutoScalingOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScalingOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScalingOutputReference)
+
+---
+
+##### `awsDirectConnect`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.awsDirectConnect" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyawsdirectconnect"></a>
+
+```typescript
+public readonly awsDirectConnect: CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference)
+
+---
+
+##### `awsStates`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.awsStates" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyawsstates"></a>
+
+```typescript
+public readonly awsStates: CloudAwsGovcloudIntegrationsAwsStatesOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStatesOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStatesOutputReference)
+
+---
+
+##### `cloudtrail`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.cloudtrail" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertycloudtrail"></a>
+
+```typescript
+public readonly cloudtrail: CloudAwsGovcloudIntegrationsCloudtrailOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrailOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrailOutputReference)
+
+---
+
+##### `dynamoDb`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.dynamoDb" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertydynamodb"></a>
+
+```typescript
+public readonly dynamoDb: CloudAwsGovcloudIntegrationsDynamoDbOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference)
+
+---
+
+##### `ebs`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.ebs" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyebs"></a>
+
+```typescript
+public readonly ebs: CloudAwsGovcloudIntegrationsEbsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference)
+
+---
+
+##### `ec2`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.ec2" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyec2"></a>
+
+```typescript
+public readonly ec2: CloudAwsGovcloudIntegrationsEc2OutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference)
+
+---
+
+##### `elasticSearch`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.elasticSearch" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyelasticsearch"></a>
+
+```typescript
+public readonly elasticSearch: CloudAwsGovcloudIntegrationsElasticSearchOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference)
+
+---
+
+##### `elb`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.elb" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyelb"></a>
+
+```typescript
+public readonly elb: CloudAwsGovcloudIntegrationsElbOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference)
+
+---
+
+##### `emr`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.emr" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyemr"></a>
+
+```typescript
+public readonly emr: CloudAwsGovcloudIntegrationsEmrOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference)
+
+---
+
+##### `iam`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.iam" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyiam"></a>
+
+```typescript
+public readonly iam: CloudAwsGovcloudIntegrationsIamOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference)
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.id" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `lambda`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.lambda" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertylambda"></a>
+
+```typescript
+public readonly lambda: CloudAwsGovcloudIntegrationsLambdaOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference)
+
+---
+
+##### `rds`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.rds" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyrds"></a>
+
+```typescript
+public readonly rds: CloudAwsGovcloudIntegrationsRdsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference)
+
+---
+
+##### `redShift`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.redShift" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyredshift"></a>
+
+```typescript
+public readonly redShift: CloudAwsGovcloudIntegrationsRedShiftOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference)
+
+---
+
+##### `route53`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.route53" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyroute53"></a>
+
+```typescript
+public readonly route53: CloudAwsGovcloudIntegrationsRoute53OutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53OutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53OutputReference)
+
+---
+
+##### `s3`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.s3" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertys3"></a>
+
+```typescript
+public readonly s3: CloudAwsGovcloudIntegrationsS3OutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference)
+
+---
+
+##### `sns`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.sns" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertysns"></a>
+
+```typescript
+public readonly sns: CloudAwsGovcloudIntegrationsSnsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference)
+
+---
+
+##### `sqs`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.sqs" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertysqs"></a>
+
+```typescript
+public readonly sqs: CloudAwsGovcloudIntegrationsSqsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference)
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.accountIdInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyaccountidinput"></a>
+
+```typescript
+public readonly accountIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `albInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.albInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyalbinput"></a>
+
+```typescript
+public readonly albInput: CloudAwsGovcloudIntegrationsAlb;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb)
+
+---
+
+##### `apiGatewayInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.apiGatewayInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyapigatewayinput"></a>
+
+```typescript
+public readonly apiGatewayInput: CloudAwsGovcloudIntegrationsApiGateway;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway)
+
+---
+
+##### `autoScalingInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.autoScalingInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyautoscalinginput"></a>
+
+```typescript
+public readonly autoScalingInput: CloudAwsGovcloudIntegrationsAutoScaling;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScaling`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScaling)
+
+---
+
+##### `awsDirectConnectInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.awsDirectConnectInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyawsdirectconnectinput"></a>
+
+```typescript
+public readonly awsDirectConnectInput: CloudAwsGovcloudIntegrationsAwsDirectConnect;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnect`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnect)
+
+---
+
+##### `awsStatesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.awsStatesInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyawsstatesinput"></a>
+
+```typescript
+public readonly awsStatesInput: CloudAwsGovcloudIntegrationsAwsStates;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStates`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStates)
+
+---
+
+##### `cloudtrailInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.cloudtrailInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertycloudtrailinput"></a>
+
+```typescript
+public readonly cloudtrailInput: CloudAwsGovcloudIntegrationsCloudtrail;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrail`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrail)
+
+---
+
+##### `dynamoDbInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.dynamoDbInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertydynamodbinput"></a>
+
+```typescript
+public readonly dynamoDbInput: CloudAwsGovcloudIntegrationsDynamoDb;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb)
+
+---
+
+##### `ebsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.ebsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyebsinput"></a>
+
+```typescript
+public readonly ebsInput: CloudAwsGovcloudIntegrationsEbs;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs)
+
+---
+
+##### `ec2Input`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.ec2Input" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyec2input"></a>
+
+```typescript
+public readonly ec2Input: CloudAwsGovcloudIntegrationsEc2;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2)
+
+---
+
+##### `elasticSearchInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.elasticSearchInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyelasticsearchinput"></a>
+
+```typescript
+public readonly elasticSearchInput: CloudAwsGovcloudIntegrationsElasticSearch;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch)
+
+---
+
+##### `elbInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.elbInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyelbinput"></a>
+
+```typescript
+public readonly elbInput: CloudAwsGovcloudIntegrationsElb;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb)
+
+---
+
+##### `emrInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.emrInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyemrinput"></a>
+
+```typescript
+public readonly emrInput: CloudAwsGovcloudIntegrationsEmr;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr)
+
+---
+
+##### `iamInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.iamInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyiaminput"></a>
+
+```typescript
+public readonly iamInput: CloudAwsGovcloudIntegrationsIam;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam)
+
+---
+
+##### `lambdaInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.lambdaInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertylambdainput"></a>
+
+```typescript
+public readonly lambdaInput: CloudAwsGovcloudIntegrationsLambda;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda)
+
+---
+
+##### `linkedAccountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.linkedAccountIdInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertylinkedaccountidinput"></a>
+
+```typescript
+public readonly linkedAccountIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `rdsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.rdsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyrdsinput"></a>
+
+```typescript
+public readonly rdsInput: CloudAwsGovcloudIntegrationsRds;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds)
+
+---
+
+##### `redShiftInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.redShiftInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyredshiftinput"></a>
+
+```typescript
+public readonly redShiftInput: CloudAwsGovcloudIntegrationsRedShift;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift)
+
+---
+
+##### `route53Input`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.route53Input" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyroute53input"></a>
+
+```typescript
+public readonly route53Input: CloudAwsGovcloudIntegrationsRoute53;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53)
+
+---
+
+##### `s3Input`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.s3Input" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertys3input"></a>
+
+```typescript
+public readonly s3Input: CloudAwsGovcloudIntegrationsS3;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3)
+
+---
+
+##### `snsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.snsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertysnsinput"></a>
+
+```typescript
+public readonly snsInput: CloudAwsGovcloudIntegrationsSns;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns)
+
+---
+
+##### `sqsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.sqsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertysqsinput"></a>
+
+```typescript
+public readonly sqsInput: CloudAwsGovcloudIntegrationsSqs;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs)
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.accountId" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `linkedAccountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.linkedAccountId" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertylinkedaccountid"></a>
+
+```typescript
+public readonly linkedAccountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+#### Constants <a name="Constants" id="constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`tfResourceType`](#cdktfprovidernewreliccloudawsgovcloudintegrationspropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `tfResourceType` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrations.property.tfResourceType" id="cdktfprovidernewreliccloudawsgovcloudintegrationspropertytfresourcetype"></a>
+
+- *Type:* `string`
+
+---
+
 ### CloudAwsGovcloudLinkAccount <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccount" id="cdktfprovidernewreliccloudawsgovcloudlinkaccount"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_link_account newrelic_cloud_aws_govcloud_link_account}.
@@ -2569,7 +3544,6 @@ Must be unique amongst siblings in the same scope
 | [`putPowerBiDedicated`](#cdktfprovidernewreliccloudazureintegrationsputpowerbidedicated) | *No description.* |
 | [`putRedisCache`](#cdktfprovidernewreliccloudazureintegrationsputrediscache) | *No description.* |
 | [`putServiceBus`](#cdktfprovidernewreliccloudazureintegrationsputservicebus) | *No description.* |
-| [`putServiceFabric`](#cdktfprovidernewreliccloudazureintegrationsputservicefabric) | *No description.* |
 | [`putSql`](#cdktfprovidernewreliccloudazureintegrationsputsql) | *No description.* |
 | [`putSqlManaged`](#cdktfprovidernewreliccloudazureintegrationsputsqlmanaged) | *No description.* |
 | [`putStorage`](#cdktfprovidernewreliccloudazureintegrationsputstorage) | *No description.* |
@@ -2600,7 +3574,6 @@ Must be unique amongst siblings in the same scope
 | [`resetPowerBiDedicated`](#cdktfprovidernewreliccloudazureintegrationsresetpowerbidedicated) | *No description.* |
 | [`resetRedisCache`](#cdktfprovidernewreliccloudazureintegrationsresetrediscache) | *No description.* |
 | [`resetServiceBus`](#cdktfprovidernewreliccloudazureintegrationsresetservicebus) | *No description.* |
-| [`resetServiceFabric`](#cdktfprovidernewreliccloudazureintegrationsresetservicefabric) | *No description.* |
 | [`resetSql`](#cdktfprovidernewreliccloudazureintegrationsresetsql) | *No description.* |
 | [`resetSqlManaged`](#cdktfprovidernewreliccloudazureintegrationsresetsqlmanaged) | *No description.* |
 | [`resetStorage`](#cdktfprovidernewreliccloudazureintegrationsresetstorage) | *No description.* |
@@ -2875,18 +3848,6 @@ public putServiceBus(value: CloudAzureIntegrationsServiceBus)
 
 ---
 
-##### `putServiceFabric` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putServiceFabric" id="cdktfprovidernewreliccloudazureintegrationsputservicefabric"></a>
-
-```typescript
-public putServiceFabric(value: CloudAzureIntegrationsServiceFabric)
-```
-
-###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.parameter.value" id="cdktfprovidernewreliccloudazureintegrationsparametervalue"></a>
-
-- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric)
-
----
-
 ##### `putSql` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.putSql" id="cdktfprovidernewreliccloudazureintegrationsputsql"></a>
 
 ```typescript
@@ -3109,12 +4070,6 @@ public resetRedisCache()
 public resetServiceBus()
 ```
 
-##### `resetServiceFabric` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetServiceFabric" id="cdktfprovidernewreliccloudazureintegrationsresetservicefabric"></a>
-
-```typescript
-public resetServiceFabric()
-```
-
 ##### `resetSql` <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.resetSql" id="cdktfprovidernewreliccloudazureintegrationsresetsql"></a>
 
 ```typescript
@@ -3185,7 +4140,6 @@ public resetVpnGateway()
 | [`powerBiDedicated`](#cdktfprovidernewreliccloudazureintegrationspropertypowerbidedicated)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicatedOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicatedOutputReference) | *No description.* |
 | [`redisCache`](#cdktfprovidernewreliccloudazureintegrationspropertyrediscache)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCacheOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCacheOutputReference) | *No description.* |
 | [`serviceBus`](#cdktfprovidernewreliccloudazureintegrationspropertyservicebus)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference) | *No description.* |
-| [`serviceFabric`](#cdktfprovidernewreliccloudazureintegrationspropertyservicefabric)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference) | *No description.* |
 | [`sql`](#cdktfprovidernewreliccloudazureintegrationspropertysql)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsSqlOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSqlOutputReference) | *No description.* |
 | [`sqlManaged`](#cdktfprovidernewreliccloudazureintegrationspropertysqlmanaged)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManagedOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManagedOutputReference) | *No description.* |
 | [`storage`](#cdktfprovidernewreliccloudazureintegrationspropertystorage)<span title="Required">*</span> | [`@cdktf/provider-newrelic.CloudAzureIntegrationsStorageOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsStorageOutputReference) | *No description.* |
@@ -3217,7 +4171,6 @@ public resetVpnGateway()
 | [`powerBiDedicatedInput`](#cdktfprovidernewreliccloudazureintegrationspropertypowerbidedicatedinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated) | *No description.* |
 | [`redisCacheInput`](#cdktfprovidernewreliccloudazureintegrationspropertyrediscacheinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache`](#@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache) | *No description.* |
 | [`serviceBusInput`](#cdktfprovidernewreliccloudazureintegrationspropertyservicebusinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus) | *No description.* |
-| [`serviceFabricInput`](#cdktfprovidernewreliccloudazureintegrationspropertyservicefabricinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric) | *No description.* |
 | [`sqlInput`](#cdktfprovidernewreliccloudazureintegrationspropertysqlinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsSql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSql) | *No description.* |
 | [`sqlManagedInput`](#cdktfprovidernewreliccloudazureintegrationspropertysqlmanagedinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged) | *No description.* |
 | [`storageInput`](#cdktfprovidernewreliccloudazureintegrationspropertystorageinput) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsStorage`](#@cdktf/provider-newrelic.CloudAzureIntegrationsStorage) | *No description.* |
@@ -3457,16 +4410,6 @@ public readonly serviceBus: CloudAzureIntegrationsServiceBusOutputReference;
 ```
 
 - *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBusOutputReference)
-
----
-
-##### `serviceFabric`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.serviceFabric" id="cdktfprovidernewreliccloudazureintegrationspropertyservicefabric"></a>
-
-```typescript
-public readonly serviceFabric: CloudAzureIntegrationsServiceFabricOutputReference;
-```
-
-- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference)
 
 ---
 
@@ -3777,16 +4720,6 @@ public readonly serviceBusInput: CloudAzureIntegrationsServiceBus;
 ```
 
 - *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus)
-
----
-
-##### `serviceFabricInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrations.property.serviceFabricInput" id="cdktfprovidernewreliccloudazureintegrationspropertyservicefabricinput"></a>
-
-```typescript
-public readonly serviceFabricInput: CloudAzureIntegrationsServiceFabric;
-```
-
-- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric)
 
 ---
 
@@ -12762,7 +13695,7 @@ const alertChannelConfig: AlertChannelConfig = { ... }
 | [`lifecycle`](#cdktfprovidernewrelicalertchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertchannelconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the channel. |
-| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (slack, user, victorops, webhook, email, opsgenie, pagerduty). |
+| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie). |
 | [`accountId`](#cdktfprovidernewrelicalertchannelconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create alert channels. |
 | [`config`](#cdktfprovidernewrelicalertchannelconfigpropertyconfig) | [`@cdktf/provider-newrelic.AlertChannelConfigA`](#@cdktf/provider-newrelic.AlertChannelConfigA) | config block. |
 
@@ -12830,7 +13763,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-(Required) The type of channel. One of: (slack, user, victorops, webhook, email, opsgenie, pagerduty).
+(Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
 
@@ -13219,7 +14152,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
-| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric). |
+| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
 | [`gcMetric`](#cdktfprovidernewrelicalertconditionconfigpropertygcmetric) | `string` | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -13348,7 +14281,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric).
+The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 
@@ -14405,6 +15338,1997 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 ---
 
+### CloudAwsGovcloudIntegrationsAlb <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalb"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsAlb } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsAlb: CloudAwsGovcloudIntegrationsAlb = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalbpropertyawsregions) | `string`[] | Specify each AWS region that includes the resources that you want to monitor. |
+| [`fetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalbpropertyfetchextendedinventory) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Determine if extra inventory data be collected or not. |
+| [`fetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalbpropertyfetchtags) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Specify if tags should be collected. |
+| [`loadBalancerPrefixes`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalbpropertyloadbalancerprefixes) | `string`[] | Specify each name or prefix for the LBs that you want to monitor. Filter values are case-sensitive. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalbpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalbpropertytagkey) | `string` | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalbpropertytagvalue) | `string` | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `awsRegions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalbpropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+
+---
+
+##### `fetchExtendedInventory`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb.property.fetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalbpropertyfetchextendedinventory"></a>
+
+```typescript
+public readonly fetchExtendedInventory: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Determine if extra inventory data be collected or not.
+
+May affect total data collection time and contribute to the Cloud provider API rate limit.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+
+---
+
+##### `fetchTags`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb.property.fetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalbpropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Specify if tags should be collected.
+
+May affect total data collection time and contribute to the Cloud provider API rate limit.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+
+---
+
+##### `loadBalancerPrefixes`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb.property.loadBalancerPrefixes" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalbpropertyloadbalancerprefixes"></a>
+
+```typescript
+public readonly loadBalancerPrefixes: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each name or prefix for the LBs that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#load_balancer_prefixes CloudAwsGovcloudIntegrations#load_balancer_prefixes}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalbpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+##### `tagKey`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalbpropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+
+---
+
+##### `tagValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalbpropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+
+---
+
+### CloudAwsGovcloudIntegrationsApiGateway <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigateway"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsApiGateway } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsApiGateway: CloudAwsGovcloudIntegrationsApiGateway = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewaypropertyawsregions) | `string`[] | Specify each AWS region that includes the resources that you want to monitor. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewaypropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`stagePrefixes`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewaypropertystageprefixes) | `string`[] | Determine if extra inventory data be collected or not. |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewaypropertytagkey) | `string` | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewaypropertytagvalue) | `string` | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `awsRegions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewaypropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewaypropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+##### `stagePrefixes`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway.property.stagePrefixes" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewaypropertystageprefixes"></a>
+
+```typescript
+public readonly stagePrefixes: string[];
+```
+
+- *Type:* `string`[]
+
+Determine if extra inventory data be collected or not.
+
+May affect total data collection time and contribute to the Cloud provider API rate limit.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#stage_prefixes CloudAwsGovcloudIntegrations#stage_prefixes}
+
+---
+
+##### `tagKey`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewaypropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+
+---
+
+##### `tagValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewaypropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+
+---
+
+### CloudAwsGovcloudIntegrationsAutoScaling <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScaling" id="cdktfprovidernewreliccloudawsgovcloudintegrationsautoscaling"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsAutoScaling } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsAutoScaling: CloudAwsGovcloudIntegrationsAutoScaling = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingpropertyawsregions) | `string`[] | Specify each AWS region that includes the resources that you want to monitor. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+
+---
+
+##### `awsRegions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScaling.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingpropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScaling.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+### CloudAwsGovcloudIntegrationsAwsDirectConnect <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnect" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnect"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsAwsDirectConnect } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsAwsDirectConnect: CloudAwsGovcloudIntegrationsAwsDirectConnect = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectpropertyawsregions) | `string`[] | Specify each AWS region that includes the resources that you want to monitor. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+
+---
+
+##### `awsRegions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnect.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectpropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnect.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+### CloudAwsGovcloudIntegrationsAwsStates <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStates" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsstates"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsAwsStates } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsAwsStates: CloudAwsGovcloudIntegrationsAwsStates = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatespropertyawsregions) | `string`[] | Specify each AWS region that includes the resources that you want to monitor. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatespropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+
+---
+
+##### `awsRegions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStates.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatespropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStates.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatespropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+### CloudAwsGovcloudIntegrationsCloudtrail <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrail" id="cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrail"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsCloudtrail } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsCloudtrail: CloudAwsGovcloudIntegrationsCloudtrail = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailpropertyawsregions) | `string`[] | Specify each AWS region that includes the resources that you want to monitor. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+
+---
+
+##### `awsRegions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrail.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailpropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrail.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+### CloudAwsGovcloudIntegrationsConfig <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfig"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsConfig } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsConfig: CloudAwsGovcloudIntegrationsConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`count`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertycount) | `number` | *No description.* |
+| [`dependsOn`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`lifecycle`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
+| [`provider`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`linkedAccountId`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertylinkedaccountid)<span title="Required">*</span> | `number` | The ID of the linked AwsGovCloud account in New Relic. |
+| [`accountId`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyaccountid) | `number` | The ID of the account in New Relic. |
+| [`alb`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyalb) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb) | alb block. |
+| [`apiGateway`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyapigateway) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway) | api_gateway block. |
+| [`autoScaling`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyautoscaling) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScaling`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScaling) | auto_scaling block. |
+| [`awsDirectConnect`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyawsdirectconnect) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnect`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnect) | aws_direct_connect block. |
+| [`awsStates`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyawsstates) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStates`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStates) | aws_states block. |
+| [`cloudtrail`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertycloudtrail) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrail`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrail) | cloudtrail block. |
+| [`dynamoDb`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertydynamodb) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb) | dynamo_db block. |
+| [`ebs`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyebs) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs) | ebs block. |
+| [`ec2`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyec2) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2) | ec2 block. |
+| [`elasticSearch`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyelasticsearch) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch) | elastic_search block. |
+| [`elb`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyelb) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb) | elb block. |
+| [`emr`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyemr) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr) | emr block. |
+| [`iam`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyiam) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam) | iam block. |
+| [`lambda`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertylambda) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda) | lambda block. |
+| [`rds`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyrds) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds) | rds block. |
+| [`redShift`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyredshift) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift) | red_shift block. |
+| [`route53`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyroute53) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53) | route53 block. |
+| [`s3`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertys3) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3) | s3 block. |
+| [`sns`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertysns) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns) | sns block. |
+| [`sqs`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertysqs) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs) | sqs block. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.count" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertycount"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.dependsOn" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertydependson"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.lifecycle" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertylifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.provider" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyprovider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `linkedAccountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.linkedAccountId" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertylinkedaccountid"></a>
+
+```typescript
+public readonly linkedAccountId: number;
+```
+
+- *Type:* `number`
+
+The ID of the linked AwsGovCloud account in New Relic.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#linked_account_id CloudAwsGovcloudIntegrations#linked_account_id}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.accountId" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+The ID of the account in New Relic.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#account_id CloudAwsGovcloudIntegrations#account_id}
+
+---
+
+##### `alb`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.alb" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyalb"></a>
+
+```typescript
+public readonly alb: CloudAwsGovcloudIntegrationsAlb;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb)
+
+alb block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#alb CloudAwsGovcloudIntegrations#alb}
+
+---
+
+##### `apiGateway`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.apiGateway" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyapigateway"></a>
+
+```typescript
+public readonly apiGateway: CloudAwsGovcloudIntegrationsApiGateway;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway)
+
+api_gateway block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#api_gateway CloudAwsGovcloudIntegrations#api_gateway}
+
+---
+
+##### `autoScaling`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.autoScaling" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyautoscaling"></a>
+
+```typescript
+public readonly autoScaling: CloudAwsGovcloudIntegrationsAutoScaling;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScaling`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScaling)
+
+auto_scaling block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#auto_scaling CloudAwsGovcloudIntegrations#auto_scaling}
+
+---
+
+##### `awsDirectConnect`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.awsDirectConnect" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyawsdirectconnect"></a>
+
+```typescript
+public readonly awsDirectConnect: CloudAwsGovcloudIntegrationsAwsDirectConnect;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnect`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnect)
+
+aws_direct_connect block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_direct_connect CloudAwsGovcloudIntegrations#aws_direct_connect}
+
+---
+
+##### `awsStates`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.awsStates" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyawsstates"></a>
+
+```typescript
+public readonly awsStates: CloudAwsGovcloudIntegrationsAwsStates;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStates`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStates)
+
+aws_states block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_states CloudAwsGovcloudIntegrations#aws_states}
+
+---
+
+##### `cloudtrail`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.cloudtrail" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertycloudtrail"></a>
+
+```typescript
+public readonly cloudtrail: CloudAwsGovcloudIntegrationsCloudtrail;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrail`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrail)
+
+cloudtrail block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#cloudtrail CloudAwsGovcloudIntegrations#cloudtrail}
+
+---
+
+##### `dynamoDb`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.dynamoDb" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertydynamodb"></a>
+
+```typescript
+public readonly dynamoDb: CloudAwsGovcloudIntegrationsDynamoDb;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb)
+
+dynamo_db block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#dynamo_db CloudAwsGovcloudIntegrations#dynamo_db}
+
+---
+
+##### `ebs`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.ebs" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyebs"></a>
+
+```typescript
+public readonly ebs: CloudAwsGovcloudIntegrationsEbs;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs)
+
+ebs block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#ebs CloudAwsGovcloudIntegrations#ebs}
+
+---
+
+##### `ec2`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.ec2" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyec2"></a>
+
+```typescript
+public readonly ec2: CloudAwsGovcloudIntegrationsEc2;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2)
+
+ec2 block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#ec2 CloudAwsGovcloudIntegrations#ec2}
+
+---
+
+##### `elasticSearch`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.elasticSearch" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyelasticsearch"></a>
+
+```typescript
+public readonly elasticSearch: CloudAwsGovcloudIntegrationsElasticSearch;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch)
+
+elastic_search block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#elastic_search CloudAwsGovcloudIntegrations#elastic_search}
+
+---
+
+##### `elb`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.elb" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyelb"></a>
+
+```typescript
+public readonly elb: CloudAwsGovcloudIntegrationsElb;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb)
+
+elb block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#elb CloudAwsGovcloudIntegrations#elb}
+
+---
+
+##### `emr`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.emr" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyemr"></a>
+
+```typescript
+public readonly emr: CloudAwsGovcloudIntegrationsEmr;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr)
+
+emr block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#emr CloudAwsGovcloudIntegrations#emr}
+
+---
+
+##### `iam`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.iam" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyiam"></a>
+
+```typescript
+public readonly iam: CloudAwsGovcloudIntegrationsIam;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam)
+
+iam block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#iam CloudAwsGovcloudIntegrations#iam}
+
+---
+
+##### `lambda`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.lambda" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertylambda"></a>
+
+```typescript
+public readonly lambda: CloudAwsGovcloudIntegrationsLambda;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda)
+
+lambda block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#lambda CloudAwsGovcloudIntegrations#lambda}
+
+---
+
+##### `rds`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.rds" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyrds"></a>
+
+```typescript
+public readonly rds: CloudAwsGovcloudIntegrationsRds;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds)
+
+rds block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#rds CloudAwsGovcloudIntegrations#rds}
+
+---
+
+##### `redShift`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.redShift" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyredshift"></a>
+
+```typescript
+public readonly redShift: CloudAwsGovcloudIntegrationsRedShift;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift)
+
+red_shift block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#red_shift CloudAwsGovcloudIntegrations#red_shift}
+
+---
+
+##### `route53`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.route53" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyroute53"></a>
+
+```typescript
+public readonly route53: CloudAwsGovcloudIntegrationsRoute53;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53)
+
+route53 block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#route53 CloudAwsGovcloudIntegrations#route53}
+
+---
+
+##### `s3`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.s3" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertys3"></a>
+
+```typescript
+public readonly s3: CloudAwsGovcloudIntegrationsS3;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3)
+
+s3 block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#s3 CloudAwsGovcloudIntegrations#s3}
+
+---
+
+##### `sns`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.sns" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertysns"></a>
+
+```typescript
+public readonly sns: CloudAwsGovcloudIntegrationsSns;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns)
+
+sns block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#sns CloudAwsGovcloudIntegrations#sns}
+
+---
+
+##### `sqs`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.sqs" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertysqs"></a>
+
+```typescript
+public readonly sqs: CloudAwsGovcloudIntegrationsSqs;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs)
+
+sqs block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#sqs CloudAwsGovcloudIntegrations#sqs}
+
+---
+
+### CloudAwsGovcloudIntegrationsDynamoDb <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodb"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsDynamoDb } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsDynamoDb: CloudAwsGovcloudIntegrationsDynamoDb = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodbpropertyawsregions) | `string`[] | Specify each AWS region that includes the resources that you want to monitor. |
+| [`fetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodbpropertyfetchextendedinventory) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Determine if extra inventory data be collected or not. |
+| [`fetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodbpropertyfetchtags) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Specify if tags should be collected. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodbpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodbpropertytagkey) | `string` | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodbpropertytagvalue) | `string` | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `awsRegions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodbpropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+
+---
+
+##### `fetchExtendedInventory`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb.property.fetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodbpropertyfetchextendedinventory"></a>
+
+```typescript
+public readonly fetchExtendedInventory: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Determine if extra inventory data be collected or not.
+
+May affect total data collection time and contribute to the Cloud provider API rate limit.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+
+---
+
+##### `fetchTags`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb.property.fetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodbpropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Specify if tags should be collected.
+
+May affect total data collection time and contribute to the Cloud provider API rate limit.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodbpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+##### `tagKey`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodbpropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+
+---
+
+##### `tagValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodbpropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+
+---
+
+### CloudAwsGovcloudIntegrationsEbs <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebs"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsEbs } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsEbs: CloudAwsGovcloudIntegrationsEbs = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebspropertyawsregions) | `string`[] | Specify each AWS region that includes the resources that you want to monitor. |
+| [`fetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebspropertyfetchextendedinventory) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Determine if extra inventory data be collected or not. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebspropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebspropertytagkey) | `string` | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebspropertytagvalue) | `string` | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `awsRegions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebspropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+
+---
+
+##### `fetchExtendedInventory`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs.property.fetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebspropertyfetchextendedinventory"></a>
+
+```typescript
+public readonly fetchExtendedInventory: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Determine if extra inventory data be collected or not.
+
+May affect total data collection time and contribute to the Cloud provider API rate limit.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebspropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+##### `tagKey`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebspropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+
+---
+
+##### `tagValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebspropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+
+---
+
+### CloudAwsGovcloudIntegrationsEc2 <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsEc2 } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsEc2: CloudAwsGovcloudIntegrationsEc2 = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2propertyawsregions) | `string`[] | Specify each AWS region that includes the resources that you want to monitor. |
+| [`fetchIpAddresses`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2propertyfetchipaddresses) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Specify if IP addresses of ec2 instance should be collected. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2propertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2propertytagkey) | `string` | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2propertytagvalue) | `string` | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `awsRegions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2propertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+
+---
+
+##### `fetchIpAddresses`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2.property.fetchIpAddresses" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2propertyfetchipaddresses"></a>
+
+```typescript
+public readonly fetchIpAddresses: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Specify if IP addresses of ec2 instance should be collected.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_ip_addresses CloudAwsGovcloudIntegrations#fetch_ip_addresses}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2propertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+##### `tagKey`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2propertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+
+---
+
+##### `tagValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2propertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+
+---
+
+### CloudAwsGovcloudIntegrationsElasticSearch <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearch"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsElasticSearch } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsElasticSearch: CloudAwsGovcloudIntegrationsElasticSearch = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchpropertyawsregions) | `string`[] | Specify each AWS region that includes the resources that you want to monitor. |
+| [`fetchNodes`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchpropertyfetchnodes) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Specify if IP addresses of ec2 instance should be collected. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchpropertytagkey) | `string` | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchpropertytagvalue) | `string` | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `awsRegions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchpropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+
+---
+
+##### `fetchNodes`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch.property.fetchNodes" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchpropertyfetchnodes"></a>
+
+```typescript
+public readonly fetchNodes: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Specify if IP addresses of ec2 instance should be collected.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_nodes CloudAwsGovcloudIntegrations#fetch_nodes}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+##### `tagKey`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchpropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+
+---
+
+##### `tagValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchpropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+
+---
+
+### CloudAwsGovcloudIntegrationsElb <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb" id="cdktfprovidernewreliccloudawsgovcloudintegrationselb"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsElb } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsElb: CloudAwsGovcloudIntegrationsElb = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationselbpropertyawsregions) | `string`[] | Specify each AWS region that includes the resources that you want to monitor. |
+| [`fetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationselbpropertyfetchextendedinventory) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Determine if extra inventory data be collected or not. |
+| [`fetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationselbpropertyfetchtags) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Specify if tags should be collected. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationselbpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+
+---
+
+##### `awsRegions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationselbpropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+
+---
+
+##### `fetchExtendedInventory`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb.property.fetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationselbpropertyfetchextendedinventory"></a>
+
+```typescript
+public readonly fetchExtendedInventory: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Determine if extra inventory data be collected or not.
+
+May affect total data collection time and contribute to the Cloud provider API rate limit.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+
+---
+
+##### `fetchTags`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb.property.fetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationselbpropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Specify if tags should be collected.
+
+May affect total data collection time and contribute to the Cloud provider API rate limit.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationselbpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+### CloudAwsGovcloudIntegrationsEmr <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemr"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsEmr } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsEmr: CloudAwsGovcloudIntegrationsEmr = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemrpropertyawsregions) | `string` | Specify each AWS region that includes the resources that you want to monitor. |
+| [`fetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemrpropertyfetchtags) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Specify if tags should be collected. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemrpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemrpropertytagkey) | `string` | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemrpropertytagvalue) | `string` | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `awsRegions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemrpropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string;
+```
+
+- *Type:* `string`
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+
+---
+
+##### `fetchTags`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr.property.fetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemrpropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Specify if tags should be collected.
+
+May affect total data collection time and contribute to the Cloud provider API rate limit.    Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemrpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+##### `tagKey`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemrpropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+
+---
+
+##### `tagValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemrpropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+
+---
+
+### CloudAwsGovcloudIntegrationsIam <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiam"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsIam } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsIam: CloudAwsGovcloudIntegrationsIam = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsiampropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsiampropertytagkey) | `string` | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsiampropertytagvalue) | `string` | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiampropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+##### `tagKey`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiampropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+
+---
+
+##### `tagValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiampropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+
+---
+
+### CloudAwsGovcloudIntegrationsLambda <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambda"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsLambda } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsLambda: CloudAwsGovcloudIntegrationsLambda = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdapropertyawsregions) | `string`[] | Specify each AWS region that includes the resources that you want to monitor. |
+| [`fetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdapropertyfetchtags) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Specify if tags should be collected. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdapropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdapropertytagkey) | `string` | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdapropertytagvalue) | `string` | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `awsRegions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdapropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+
+---
+
+##### `fetchTags`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda.property.fetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdapropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Specify if tags should be collected.
+
+May affect total data collection time and contribute to the Cloud provider API rate limit.    Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdapropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+##### `tagKey`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdapropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+
+---
+
+##### `tagValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdapropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+
+---
+
+### CloudAwsGovcloudIntegrationsRds <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrds"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsRds } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsRds: CloudAwsGovcloudIntegrationsRds = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdspropertyawsregions) | `string`[] | Specify each AWS region that includes the resources that you want to monitor. |
+| [`fetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdspropertyfetchtags) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Specify if tags should be collected. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdspropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdspropertytagkey) | `string` | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdspropertytagvalue) | `string` | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `awsRegions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdspropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+
+---
+
+##### `fetchTags`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds.property.fetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdspropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Specify if tags should be collected.
+
+May affect total data collection time and contribute to the Cloud provider API rate limit.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdspropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+##### `tagKey`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdspropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+
+---
+
+##### `tagValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdspropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+
+---
+
+### CloudAwsGovcloudIntegrationsRedShift <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshift"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsRedShift } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsRedShift: CloudAwsGovcloudIntegrationsRedShift = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftpropertyawsregions) | `string`[] | Specify each AWS region that includes the resources that you want to monitor. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftpropertytagkey) | `string` | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftpropertytagvalue) | `string` | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `awsRegions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftpropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftpropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+##### `tagKey`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftpropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+
+---
+
+##### `tagValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftpropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+
+---
+
+### CloudAwsGovcloudIntegrationsRoute53 <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53" id="cdktfprovidernewreliccloudawsgovcloudintegrationsroute53"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsRoute53 } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsRoute53: CloudAwsGovcloudIntegrationsRoute53 = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`fetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationsroute53propertyfetchextendedinventory) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Determine if extra inventory data be collected or not. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsroute53propertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+
+---
+
+##### `fetchExtendedInventory`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53.property.fetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationsroute53propertyfetchextendedinventory"></a>
+
+```typescript
+public readonly fetchExtendedInventory: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Determine if extra inventory data be collected or not.
+
+May affect total data collection time and contribute to the Cloud provider API rate limit.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsroute53propertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+### CloudAwsGovcloudIntegrationsS3 <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsS3 } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsS3: CloudAwsGovcloudIntegrationsS3 = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`fetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3propertyfetchextendedinventory) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Determine if extra inventory data be collected or not. |
+| [`fetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3propertyfetchtags) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Specify if tags should be collected. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3propertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3propertytagkey) | `string` | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3propertytagvalue) | `string` | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `fetchExtendedInventory`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3.property.fetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3propertyfetchextendedinventory"></a>
+
+```typescript
+public readonly fetchExtendedInventory: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Determine if extra inventory data be collected or not.
+
+May affect total data collection time and contribute to the Cloud provider API rate limit.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+
+---
+
+##### `fetchTags`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3.property.fetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3propertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Specify if tags should be collected.
+
+May affect total data collection time and contribute to the Cloud provider API rate limit.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3propertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+##### `tagKey`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3propertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+
+---
+
+##### `tagValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3propertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+
+---
+
+### CloudAwsGovcloudIntegrationsSns <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns" id="cdktfprovidernewreliccloudawsgovcloudintegrationssns"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsSns } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsSns: CloudAwsGovcloudIntegrationsSns = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationssnspropertyawsregions) | `string`[] | Specify each AWS region that includes the resources that you want to monitor. |
+| [`fetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationssnspropertyfetchextendedinventory) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Determine if extra inventory data be collected or not. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationssnspropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+
+---
+
+##### `awsRegions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationssnspropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+
+---
+
+##### `fetchExtendedInventory`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns.property.fetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationssnspropertyfetchextendedinventory"></a>
+
+```typescript
+public readonly fetchExtendedInventory: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Determine if extra inventory data be collected or not.
+
+May affect total data collection time and contribute to the Cloud provider API rate limit.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationssnspropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+### CloudAwsGovcloudIntegrationsSqs <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqs"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsSqs } from '@cdktf/provider-newrelic'
+
+const cloudAwsGovcloudIntegrationsSqs: CloudAwsGovcloudIntegrationsSqs = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqspropertyawsregions) | `string`[] | Specify each AWS region that includes the resources that you want to monitor. |
+| [`fetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqspropertyfetchextendedinventory) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Determine if extra inventory data be collected or not. |
+| [`fetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqspropertyfetchtags) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Specify if tags should be collected. |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqspropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
+| [`queuePrefixes`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqspropertyqueueprefixes) | `string`[] | Specify each name or prefix for the Queues that you want to monitor. Filter values are case-sensitive. |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqspropertytagkey) | `string` | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqspropertytagvalue) | `string` | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
+
+---
+
+##### `awsRegions`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqspropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+
+---
+
+##### `fetchExtendedInventory`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs.property.fetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqspropertyfetchextendedinventory"></a>
+
+```typescript
+public readonly fetchExtendedInventory: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Determine if extra inventory data be collected or not.
+
+May affect total data collection time and contribute to the Cloud provider API rate limit.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+
+---
+
+##### `fetchTags`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs.property.fetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqspropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Specify if tags should be collected.
+
+May affect total data collection time and contribute to the Cloud provider API rate limit.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+
+---
+
+##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqspropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+
+---
+
+##### `queuePrefixes`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs.property.queuePrefixes" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqspropertyqueueprefixes"></a>
+
+```typescript
+public readonly queuePrefixes: string[];
+```
+
+- *Type:* `string`[]
+
+Specify each name or prefix for the Queues that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#queue_prefixes CloudAwsGovcloudIntegrations#queue_prefixes}
+
+---
+
+##### `tagKey`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqspropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+
+---
+
+##### `tagValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqspropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+
+---
+
 ### CloudAwsGovcloudLinkAccountConfig <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfig"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
@@ -15383,7 +18307,6 @@ const cloudAzureIntegrationsConfig: CloudAzureIntegrationsConfig = { ... }
 | [`powerBiDedicated`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertypowerbidedicated) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated`](#@cdktf/provider-newrelic.CloudAzureIntegrationsPowerBiDedicated) | power_bi_dedicated block. |
 | [`redisCache`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyrediscache) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache`](#@cdktf/provider-newrelic.CloudAzureIntegrationsRedisCache) | redis_cache block. |
 | [`serviceBus`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyservicebus) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus) | service_bus block. |
-| [`serviceFabric`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyservicefabric) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric) | service_fabric block. |
 | [`sql`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertysql) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsSql`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSql) | sql block. |
 | [`sqlManaged`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertysqlmanaged) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged`](#@cdktf/provider-newrelic.CloudAzureIntegrationsSqlManaged) | sql_managed block. |
 | [`storage`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertystorage) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsStorage`](#@cdktf/provider-newrelic.CloudAzureIntegrationsStorage) | storage block. |
@@ -15767,20 +18690,6 @@ public readonly serviceBus: CloudAzureIntegrationsServiceBus;
 service_bus block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#service_bus CloudAzureIntegrations#service_bus}
-
----
-
-##### `serviceFabric`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.serviceFabric" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyservicefabric"></a>
-
-```typescript
-public readonly serviceFabric: CloudAzureIntegrationsServiceFabric;
-```
-
-- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric)
-
-service_fabric block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#service_fabric CloudAzureIntegrations#service_fabric}
 
 ---
 
@@ -16762,53 +19671,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ---
 
 ##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsservicebuspropertyresourcegroups"></a>
-
-```typescript
-public readonly resourceGroups: string[];
-```
-
-- *Type:* `string`[]
-
-Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
-
----
-
-### CloudAzureIntegrationsServiceFabric <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric" id="cdktfprovidernewreliccloudazureintegrationsservicefabric"></a>
-
-#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
-
-```typescript
-import { CloudAzureIntegrationsServiceFabric } from '@cdktf/provider-newrelic'
-
-const cloudAzureIntegrationsServiceFabric: CloudAzureIntegrationsServiceFabric = { ... }
-```
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsservicefabricpropertymetricspollinginterval) | `number` | The data polling interval in seconds. |
-| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsservicefabricpropertyresourcegroups) | `string`[] | Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive. |
-
----
-
-##### `metricsPollingInterval`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsservicefabricpropertymetricspollinginterval"></a>
-
-```typescript
-public readonly metricsPollingInterval: number;
-```
-
-- *Type:* `number`
-
-The data polling interval in seconds.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
-
----
-
-##### `resourceGroups`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsservicefabricpropertyresourcegroups"></a>
 
 ```typescript
 public readonly resourceGroups: string[];
@@ -28284,6 +31146,3642 @@ public readonly internalValue: AlertMutingRuleSchedule;
 ---
 
 
+### CloudAwsGovcloudIntegrationsAlbOutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsAlbOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsAlbOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAwsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceresetawsregions) | *No description.* |
+| [`resetFetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceresetfetchextendedinventory) | *No description.* |
+| [`resetFetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceresetfetchtags) | *No description.* |
+| [`resetLoadBalancerPrefixes`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceresetloadbalancerprefixes) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetTagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceresettagkey) | *No description.* |
+| [`resetTagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceresettagvalue) | *No description.* |
+
+---
+
+##### `resetAwsRegions` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.resetAwsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceresetawsregions"></a>
+
+```typescript
+public resetAwsRegions()
+```
+
+##### `resetFetchExtendedInventory` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.resetFetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceresetfetchextendedinventory"></a>
+
+```typescript
+public resetFetchExtendedInventory()
+```
+
+##### `resetFetchTags` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.resetFetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceresetfetchtags"></a>
+
+```typescript
+public resetFetchTags()
+```
+
+##### `resetLoadBalancerPrefixes` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.resetLoadBalancerPrefixes" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceresetloadbalancerprefixes"></a>
+
+```typescript
+public resetLoadBalancerPrefixes()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetTagKey` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.resetTagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceresettagkey"></a>
+
+```typescript
+public resetTagKey()
+```
+
+##### `resetTagValue` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.resetTagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferenceresettagvalue"></a>
+
+```typescript
+public resetTagValue()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegionsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyawsregionsinput) | `string`[] | *No description.* |
+| [`fetchExtendedInventoryInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyfetchextendedinventoryinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`fetchTagsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyfetchtagsinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`loadBalancerPrefixesInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyloadbalancerprefixesinput) | `string`[] | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`tagKeyInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertytagkeyinput) | `string` | *No description.* |
+| [`tagValueInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertytagvalueinput) | `string` | *No description.* |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyawsregions)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`fetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyfetchextendedinventory)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`fetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyfetchtags)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`loadBalancerPrefixes`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyloadbalancerprefixes)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertytagkey)<span title="Required">*</span> | `string` | *No description.* |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertytagvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb) | *No description.* |
+
+---
+
+##### `awsRegionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.property.awsRegionsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyawsregionsinput"></a>
+
+```typescript
+public readonly awsRegionsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchExtendedInventoryInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.property.fetchExtendedInventoryInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyfetchextendedinventoryinput"></a>
+
+```typescript
+public readonly fetchExtendedInventoryInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `fetchTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.property.fetchTagsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyfetchtagsinput"></a>
+
+```typescript
+public readonly fetchTagsInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `loadBalancerPrefixesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.property.loadBalancerPrefixesInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyloadbalancerprefixesinput"></a>
+
+```typescript
+public readonly loadBalancerPrefixesInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKeyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.property.tagKeyInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertytagkeyinput"></a>
+
+```typescript
+public readonly tagKeyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.property.tagValueInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertytagvalueinput"></a>
+
+```typescript
+public readonly tagValueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `awsRegions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchExtendedInventory`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.property.fetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyfetchextendedinventory"></a>
+
+```typescript
+public readonly fetchExtendedInventory: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `fetchTags`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.property.fetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `loadBalancerPrefixes`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.property.loadBalancerPrefixes" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyloadbalancerprefixes"></a>
+
+```typescript
+public readonly loadBalancerPrefixes: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlbOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsalboutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsAlb;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsApiGatewayOutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsApiGatewayOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsApiGatewayOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAwsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferenceresetawsregions) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetStagePrefixes`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferenceresetstageprefixes) | *No description.* |
+| [`resetTagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferenceresettagkey) | *No description.* |
+| [`resetTagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferenceresettagvalue) | *No description.* |
+
+---
+
+##### `resetAwsRegions` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.resetAwsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferenceresetawsregions"></a>
+
+```typescript
+public resetAwsRegions()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetStagePrefixes` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.resetStagePrefixes" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferenceresetstageprefixes"></a>
+
+```typescript
+public resetStagePrefixes()
+```
+
+##### `resetTagKey` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.resetTagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferenceresettagkey"></a>
+
+```typescript
+public resetTagKey()
+```
+
+##### `resetTagValue` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.resetTagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferenceresettagvalue"></a>
+
+```typescript
+public resetTagValue()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegionsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertyawsregionsinput) | `string`[] | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`stagePrefixesInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertystageprefixesinput) | `string`[] | *No description.* |
+| [`tagKeyInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertytagkeyinput) | `string` | *No description.* |
+| [`tagValueInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertytagvalueinput) | `string` | *No description.* |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertyawsregions)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`stagePrefixes`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertystageprefixes)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertytagkey)<span title="Required">*</span> | `string` | *No description.* |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertytagvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway) | *No description.* |
+
+---
+
+##### `awsRegionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.property.awsRegionsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertyawsregionsinput"></a>
+
+```typescript
+public readonly awsRegionsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `stagePrefixesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.property.stagePrefixesInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertystageprefixesinput"></a>
+
+```typescript
+public readonly stagePrefixesInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `tagKeyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.property.tagKeyInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertytagkeyinput"></a>
+
+```typescript
+public readonly tagKeyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.property.tagValueInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertytagvalueinput"></a>
+
+```typescript
+public readonly tagValueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `awsRegions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `stagePrefixes`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.property.stagePrefixes" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertystageprefixes"></a>
+
+```typescript
+public readonly stagePrefixes: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `tagKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsapigatewayoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsApiGateway;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsApiGateway)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsAutoScalingOutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScalingOutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScalingOutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsAutoScalingOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsAutoScalingOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScalingOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScalingOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAwsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferenceresetawsregions) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetAwsRegions` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScalingOutputReference.resetAwsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferenceresetawsregions"></a>
+
+```typescript
+public resetAwsRegions()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScalingOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegionsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferencepropertyawsregionsinput) | `string`[] | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferencepropertyawsregions)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScaling`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScaling) | *No description.* |
+
+---
+
+##### `awsRegionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScalingOutputReference.property.awsRegionsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferencepropertyawsregionsinput"></a>
+
+```typescript
+public readonly awsRegionsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScalingOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `awsRegions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScalingOutputReference.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferencepropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScalingOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScalingOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsautoscalingoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsAutoScaling;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScaling`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAutoScaling)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAwsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferenceresetawsregions) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetAwsRegions` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference.resetAwsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferenceresetawsregions"></a>
+
+```typescript
+public resetAwsRegions()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegionsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferencepropertyawsregionsinput) | `string`[] | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferencepropertyawsregions)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnect`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnect) | *No description.* |
+
+---
+
+##### `awsRegionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference.property.awsRegionsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferencepropertyawsregionsinput"></a>
+
+```typescript
+public readonly awsRegionsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `awsRegions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferencepropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsdirectconnectoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsAwsDirectConnect;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnect`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsDirectConnect)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsAwsStatesOutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStatesOutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStatesOutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsAwsStatesOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsAwsStatesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStatesOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStatesOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAwsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferenceresetawsregions) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetAwsRegions` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStatesOutputReference.resetAwsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferenceresetawsregions"></a>
+
+```typescript
+public resetAwsRegions()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStatesOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegionsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferencepropertyawsregionsinput) | `string`[] | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferencepropertyawsregions)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStates`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStates) | *No description.* |
+
+---
+
+##### `awsRegionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStatesOutputReference.property.awsRegionsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferencepropertyawsregionsinput"></a>
+
+```typescript
+public readonly awsRegionsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStatesOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `awsRegions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStatesOutputReference.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferencepropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStatesOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStatesOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsawsstatesoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsAwsStates;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStates`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAwsStates)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsCloudtrailOutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrailOutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrailOutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsCloudtrailOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsCloudtrailOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrailOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrailOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAwsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferenceresetawsregions) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetAwsRegions` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrailOutputReference.resetAwsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferenceresetawsregions"></a>
+
+```typescript
+public resetAwsRegions()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrailOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegionsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferencepropertyawsregionsinput) | `string`[] | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferencepropertyawsregions)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrail`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrail) | *No description.* |
+
+---
+
+##### `awsRegionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrailOutputReference.property.awsRegionsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferencepropertyawsregionsinput"></a>
+
+```typescript
+public readonly awsRegionsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrailOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `awsRegions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrailOutputReference.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferencepropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrailOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrailOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationscloudtrailoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsCloudtrail;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrail`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsCloudtrail)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsDynamoDbOutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsDynamoDbOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsDynamoDbOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAwsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferenceresetawsregions) | *No description.* |
+| [`resetFetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferenceresetfetchextendedinventory) | *No description.* |
+| [`resetFetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferenceresetfetchtags) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetTagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferenceresettagkey) | *No description.* |
+| [`resetTagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferenceresettagvalue) | *No description.* |
+
+---
+
+##### `resetAwsRegions` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.resetAwsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferenceresetawsregions"></a>
+
+```typescript
+public resetAwsRegions()
+```
+
+##### `resetFetchExtendedInventory` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.resetFetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferenceresetfetchextendedinventory"></a>
+
+```typescript
+public resetFetchExtendedInventory()
+```
+
+##### `resetFetchTags` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.resetFetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferenceresetfetchtags"></a>
+
+```typescript
+public resetFetchTags()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetTagKey` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.resetTagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferenceresettagkey"></a>
+
+```typescript
+public resetTagKey()
+```
+
+##### `resetTagValue` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.resetTagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferenceresettagvalue"></a>
+
+```typescript
+public resetTagValue()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegionsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertyawsregionsinput) | `string`[] | *No description.* |
+| [`fetchExtendedInventoryInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertyfetchextendedinventoryinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`fetchTagsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertyfetchtagsinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`tagKeyInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertytagkeyinput) | `string` | *No description.* |
+| [`tagValueInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertytagvalueinput) | `string` | *No description.* |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertyawsregions)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`fetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertyfetchextendedinventory)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`fetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertyfetchtags)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertytagkey)<span title="Required">*</span> | `string` | *No description.* |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertytagvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb) | *No description.* |
+
+---
+
+##### `awsRegionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.property.awsRegionsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertyawsregionsinput"></a>
+
+```typescript
+public readonly awsRegionsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchExtendedInventoryInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.property.fetchExtendedInventoryInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertyfetchextendedinventoryinput"></a>
+
+```typescript
+public readonly fetchExtendedInventoryInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `fetchTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.property.fetchTagsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertyfetchtagsinput"></a>
+
+```typescript
+public readonly fetchTagsInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKeyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.property.tagKeyInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertytagkeyinput"></a>
+
+```typescript
+public readonly tagKeyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.property.tagValueInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertytagvalueinput"></a>
+
+```typescript
+public readonly tagValueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `awsRegions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchExtendedInventory`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.property.fetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertyfetchextendedinventory"></a>
+
+```typescript
+public readonly fetchExtendedInventory: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `fetchTags`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.property.fetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsdynamodboutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsDynamoDb;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsDynamoDb)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsEbsOutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsEbsOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsEbsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAwsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferenceresetawsregions) | *No description.* |
+| [`resetFetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferenceresetfetchextendedinventory) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetTagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferenceresettagkey) | *No description.* |
+| [`resetTagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferenceresettagvalue) | *No description.* |
+
+---
+
+##### `resetAwsRegions` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.resetAwsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferenceresetawsregions"></a>
+
+```typescript
+public resetAwsRegions()
+```
+
+##### `resetFetchExtendedInventory` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.resetFetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferenceresetfetchextendedinventory"></a>
+
+```typescript
+public resetFetchExtendedInventory()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetTagKey` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.resetTagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferenceresettagkey"></a>
+
+```typescript
+public resetTagKey()
+```
+
+##### `resetTagValue` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.resetTagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferenceresettagvalue"></a>
+
+```typescript
+public resetTagValue()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegionsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertyawsregionsinput) | `string`[] | *No description.* |
+| [`fetchExtendedInventoryInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertyfetchextendedinventoryinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`tagKeyInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertytagkeyinput) | `string` | *No description.* |
+| [`tagValueInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertytagvalueinput) | `string` | *No description.* |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertyawsregions)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`fetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertyfetchextendedinventory)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertytagkey)<span title="Required">*</span> | `string` | *No description.* |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertytagvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs) | *No description.* |
+
+---
+
+##### `awsRegionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.property.awsRegionsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertyawsregionsinput"></a>
+
+```typescript
+public readonly awsRegionsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchExtendedInventoryInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.property.fetchExtendedInventoryInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertyfetchextendedinventoryinput"></a>
+
+```typescript
+public readonly fetchExtendedInventoryInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKeyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.property.tagKeyInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertytagkeyinput"></a>
+
+```typescript
+public readonly tagKeyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.property.tagValueInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertytagvalueinput"></a>
+
+```typescript
+public readonly tagValueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `awsRegions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchExtendedInventory`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.property.fetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertyfetchextendedinventory"></a>
+
+```typescript
+public readonly fetchExtendedInventory: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbsOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsebsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsEbs;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEbs)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsEc2OutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsEc2OutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsEc2OutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAwsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferenceresetawsregions) | *No description.* |
+| [`resetFetchIpAddresses`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferenceresetfetchipaddresses) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetTagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferenceresettagkey) | *No description.* |
+| [`resetTagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferenceresettagvalue) | *No description.* |
+
+---
+
+##### `resetAwsRegions` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.resetAwsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferenceresetawsregions"></a>
+
+```typescript
+public resetAwsRegions()
+```
+
+##### `resetFetchIpAddresses` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.resetFetchIpAddresses" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferenceresetfetchipaddresses"></a>
+
+```typescript
+public resetFetchIpAddresses()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetTagKey` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.resetTagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferenceresettagkey"></a>
+
+```typescript
+public resetTagKey()
+```
+
+##### `resetTagValue` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.resetTagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferenceresettagvalue"></a>
+
+```typescript
+public resetTagValue()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegionsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertyawsregionsinput) | `string`[] | *No description.* |
+| [`fetchIpAddressesInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertyfetchipaddressesinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`tagKeyInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertytagkeyinput) | `string` | *No description.* |
+| [`tagValueInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertytagvalueinput) | `string` | *No description.* |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertyawsregions)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`fetchIpAddresses`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertyfetchipaddresses)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertytagkey)<span title="Required">*</span> | `string` | *No description.* |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertytagvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2) | *No description.* |
+
+---
+
+##### `awsRegionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.property.awsRegionsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertyawsregionsinput"></a>
+
+```typescript
+public readonly awsRegionsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchIpAddressesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.property.fetchIpAddressesInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertyfetchipaddressesinput"></a>
+
+```typescript
+public readonly fetchIpAddressesInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKeyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.property.tagKeyInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertytagkeyinput"></a>
+
+```typescript
+public readonly tagKeyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.property.tagValueInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertytagvalueinput"></a>
+
+```typescript
+public readonly tagValueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `awsRegions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchIpAddresses`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.property.fetchIpAddresses" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertyfetchipaddresses"></a>
+
+```typescript
+public readonly fetchIpAddresses: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2OutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsec2outputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsEc2;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEc2)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsElasticSearchOutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsElasticSearchOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsElasticSearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAwsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferenceresetawsregions) | *No description.* |
+| [`resetFetchNodes`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferenceresetfetchnodes) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetTagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferenceresettagkey) | *No description.* |
+| [`resetTagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferenceresettagvalue) | *No description.* |
+
+---
+
+##### `resetAwsRegions` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.resetAwsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferenceresetawsregions"></a>
+
+```typescript
+public resetAwsRegions()
+```
+
+##### `resetFetchNodes` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.resetFetchNodes" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferenceresetfetchnodes"></a>
+
+```typescript
+public resetFetchNodes()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetTagKey` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.resetTagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferenceresettagkey"></a>
+
+```typescript
+public resetTagKey()
+```
+
+##### `resetTagValue` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.resetTagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferenceresettagvalue"></a>
+
+```typescript
+public resetTagValue()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegionsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertyawsregionsinput) | `string`[] | *No description.* |
+| [`fetchNodesInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertyfetchnodesinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`tagKeyInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertytagkeyinput) | `string` | *No description.* |
+| [`tagValueInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertytagvalueinput) | `string` | *No description.* |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertyawsregions)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`fetchNodes`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertyfetchnodes)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertytagkey)<span title="Required">*</span> | `string` | *No description.* |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertytagvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch) | *No description.* |
+
+---
+
+##### `awsRegionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.property.awsRegionsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertyawsregionsinput"></a>
+
+```typescript
+public readonly awsRegionsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchNodesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.property.fetchNodesInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertyfetchnodesinput"></a>
+
+```typescript
+public readonly fetchNodesInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKeyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.property.tagKeyInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertytagkeyinput"></a>
+
+```typescript
+public readonly tagKeyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.property.tagValueInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertytagvalueinput"></a>
+
+```typescript
+public readonly tagValueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `awsRegions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchNodes`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.property.fetchNodes" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertyfetchnodes"></a>
+
+```typescript
+public readonly fetchNodes: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationselasticsearchoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsElasticSearch;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElasticSearch)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsElbOutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsElbOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsElbOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAwsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferenceresetawsregions) | *No description.* |
+| [`resetFetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferenceresetfetchextendedinventory) | *No description.* |
+| [`resetFetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferenceresetfetchtags) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetAwsRegions` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference.resetAwsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferenceresetawsregions"></a>
+
+```typescript
+public resetAwsRegions()
+```
+
+##### `resetFetchExtendedInventory` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference.resetFetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferenceresetfetchextendedinventory"></a>
+
+```typescript
+public resetFetchExtendedInventory()
+```
+
+##### `resetFetchTags` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference.resetFetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferenceresetfetchtags"></a>
+
+```typescript
+public resetFetchTags()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegionsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertyawsregionsinput) | `string`[] | *No description.* |
+| [`fetchExtendedInventoryInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertyfetchextendedinventoryinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`fetchTagsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertyfetchtagsinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertyawsregions)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`fetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertyfetchextendedinventory)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`fetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertyfetchtags)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb) | *No description.* |
+
+---
+
+##### `awsRegionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference.property.awsRegionsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertyawsregionsinput"></a>
+
+```typescript
+public readonly awsRegionsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchExtendedInventoryInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference.property.fetchExtendedInventoryInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertyfetchextendedinventoryinput"></a>
+
+```typescript
+public readonly fetchExtendedInventoryInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `fetchTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference.property.fetchTagsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertyfetchtagsinput"></a>
+
+```typescript
+public readonly fetchTagsInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `awsRegions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchExtendedInventory`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference.property.fetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertyfetchextendedinventory"></a>
+
+```typescript
+public readonly fetchExtendedInventory: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `fetchTags`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference.property.fetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElbOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationselboutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsElb;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsElb)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsEmrOutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsEmrOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsEmrOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAwsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferenceresetawsregions) | *No description.* |
+| [`resetFetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferenceresetfetchtags) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetTagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferenceresettagkey) | *No description.* |
+| [`resetTagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferenceresettagvalue) | *No description.* |
+
+---
+
+##### `resetAwsRegions` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.resetAwsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferenceresetawsregions"></a>
+
+```typescript
+public resetAwsRegions()
+```
+
+##### `resetFetchTags` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.resetFetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferenceresetfetchtags"></a>
+
+```typescript
+public resetFetchTags()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetTagKey` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.resetTagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferenceresettagkey"></a>
+
+```typescript
+public resetTagKey()
+```
+
+##### `resetTagValue` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.resetTagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferenceresettagvalue"></a>
+
+```typescript
+public resetTagValue()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegionsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertyawsregionsinput) | `string` | *No description.* |
+| [`fetchTagsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertyfetchtagsinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`tagKeyInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertytagkeyinput) | `string` | *No description.* |
+| [`tagValueInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertytagvalueinput) | `string` | *No description.* |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertyawsregions)<span title="Required">*</span> | `string` | *No description.* |
+| [`fetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertyfetchtags)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertytagkey)<span title="Required">*</span> | `string` | *No description.* |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertytagvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr) | *No description.* |
+
+---
+
+##### `awsRegionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.property.awsRegionsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertyawsregionsinput"></a>
+
+```typescript
+public readonly awsRegionsInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `fetchTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.property.fetchTagsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertyfetchtagsinput"></a>
+
+```typescript
+public readonly fetchTagsInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKeyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.property.tagKeyInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertytagkeyinput"></a>
+
+```typescript
+public readonly tagKeyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.property.tagValueInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertytagvalueinput"></a>
+
+```typescript
+public readonly tagValueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `awsRegions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `fetchTags`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.property.fetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmrOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsemroutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsEmr;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsEmr)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsIamOutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsIamOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsIamOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetTagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferenceresettagkey) | *No description.* |
+| [`resetTagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferenceresettagvalue) | *No description.* |
+
+---
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetTagKey` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference.resetTagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferenceresettagkey"></a>
+
+```typescript
+public resetTagKey()
+```
+
+##### `resetTagValue` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference.resetTagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferenceresettagvalue"></a>
+
+```typescript
+public resetTagValue()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`tagKeyInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferencepropertytagkeyinput) | `string` | *No description.* |
+| [`tagValueInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferencepropertytagvalueinput) | `string` | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferencepropertytagkey)<span title="Required">*</span> | `string` | *No description.* |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferencepropertytagvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam) | *No description.* |
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKeyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference.property.tagKeyInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferencepropertytagkeyinput"></a>
+
+```typescript
+public readonly tagKeyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference.property.tagValueInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferencepropertytagvalueinput"></a>
+
+```typescript
+public readonly tagValueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferencepropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferencepropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIamOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsiamoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsIam;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsIam)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsLambdaOutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsLambdaOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsLambdaOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAwsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferenceresetawsregions) | *No description.* |
+| [`resetFetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferenceresetfetchtags) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetTagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferenceresettagkey) | *No description.* |
+| [`resetTagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferenceresettagvalue) | *No description.* |
+
+---
+
+##### `resetAwsRegions` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.resetAwsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferenceresetawsregions"></a>
+
+```typescript
+public resetAwsRegions()
+```
+
+##### `resetFetchTags` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.resetFetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferenceresetfetchtags"></a>
+
+```typescript
+public resetFetchTags()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetTagKey` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.resetTagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferenceresettagkey"></a>
+
+```typescript
+public resetTagKey()
+```
+
+##### `resetTagValue` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.resetTagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferenceresettagvalue"></a>
+
+```typescript
+public resetTagValue()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegionsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertyawsregionsinput) | `string`[] | *No description.* |
+| [`fetchTagsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertyfetchtagsinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`tagKeyInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertytagkeyinput) | `string` | *No description.* |
+| [`tagValueInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertytagvalueinput) | `string` | *No description.* |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertyawsregions)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`fetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertyfetchtags)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertytagkey)<span title="Required">*</span> | `string` | *No description.* |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertytagvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda) | *No description.* |
+
+---
+
+##### `awsRegionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.property.awsRegionsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertyawsregionsinput"></a>
+
+```typescript
+public readonly awsRegionsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.property.fetchTagsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertyfetchtagsinput"></a>
+
+```typescript
+public readonly fetchTagsInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKeyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.property.tagKeyInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertytagkeyinput"></a>
+
+```typescript
+public readonly tagKeyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.property.tagValueInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertytagvalueinput"></a>
+
+```typescript
+public readonly tagValueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `awsRegions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchTags`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.property.fetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambdaOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationslambdaoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsLambda;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsLambda)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsRdsOutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsRdsOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsRdsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAwsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferenceresetawsregions) | *No description.* |
+| [`resetFetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferenceresetfetchtags) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetTagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferenceresettagkey) | *No description.* |
+| [`resetTagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferenceresettagvalue) | *No description.* |
+
+---
+
+##### `resetAwsRegions` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.resetAwsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferenceresetawsregions"></a>
+
+```typescript
+public resetAwsRegions()
+```
+
+##### `resetFetchTags` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.resetFetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferenceresetfetchtags"></a>
+
+```typescript
+public resetFetchTags()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetTagKey` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.resetTagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferenceresettagkey"></a>
+
+```typescript
+public resetTagKey()
+```
+
+##### `resetTagValue` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.resetTagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferenceresettagvalue"></a>
+
+```typescript
+public resetTagValue()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegionsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertyawsregionsinput) | `string`[] | *No description.* |
+| [`fetchTagsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertyfetchtagsinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`tagKeyInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertytagkeyinput) | `string` | *No description.* |
+| [`tagValueInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertytagvalueinput) | `string` | *No description.* |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertyawsregions)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`fetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertyfetchtags)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertytagkey)<span title="Required">*</span> | `string` | *No description.* |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertytagvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds) | *No description.* |
+
+---
+
+##### `awsRegionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.property.awsRegionsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertyawsregionsinput"></a>
+
+```typescript
+public readonly awsRegionsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.property.fetchTagsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertyfetchtagsinput"></a>
+
+```typescript
+public readonly fetchTagsInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKeyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.property.tagKeyInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertytagkeyinput"></a>
+
+```typescript
+public readonly tagKeyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.property.tagValueInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertytagvalueinput"></a>
+
+```typescript
+public readonly tagValueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `awsRegions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchTags`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.property.fetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRdsOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsrdsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsRds;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRds)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsRedShiftOutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsRedShiftOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsRedShiftOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAwsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferenceresetawsregions) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetTagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferenceresettagkey) | *No description.* |
+| [`resetTagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferenceresettagvalue) | *No description.* |
+
+---
+
+##### `resetAwsRegions` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference.resetAwsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferenceresetawsregions"></a>
+
+```typescript
+public resetAwsRegions()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetTagKey` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference.resetTagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferenceresettagkey"></a>
+
+```typescript
+public resetTagKey()
+```
+
+##### `resetTagValue` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference.resetTagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferenceresettagvalue"></a>
+
+```typescript
+public resetTagValue()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegionsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertyawsregionsinput) | `string`[] | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`tagKeyInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertytagkeyinput) | `string` | *No description.* |
+| [`tagValueInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertytagvalueinput) | `string` | *No description.* |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertyawsregions)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertytagkey)<span title="Required">*</span> | `string` | *No description.* |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertytagvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift) | *No description.* |
+
+---
+
+##### `awsRegionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference.property.awsRegionsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertyawsregionsinput"></a>
+
+```typescript
+public readonly awsRegionsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKeyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference.property.tagKeyInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertytagkeyinput"></a>
+
+```typescript
+public readonly tagKeyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference.property.tagValueInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertytagvalueinput"></a>
+
+```typescript
+public readonly tagValueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `awsRegions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShiftOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsredshiftoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsRedShift;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRedShift)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsRoute53OutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53OutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53OutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsRoute53OutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsRoute53OutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53OutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53OutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetFetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferenceresetfetchextendedinventory) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetFetchExtendedInventory` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53OutputReference.resetFetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferenceresetfetchextendedinventory"></a>
+
+```typescript
+public resetFetchExtendedInventory()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53OutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`fetchExtendedInventoryInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferencepropertyfetchextendedinventoryinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`fetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferencepropertyfetchextendedinventory)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53) | *No description.* |
+
+---
+
+##### `fetchExtendedInventoryInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53OutputReference.property.fetchExtendedInventoryInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferencepropertyfetchextendedinventoryinput"></a>
+
+```typescript
+public readonly fetchExtendedInventoryInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53OutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `fetchExtendedInventory`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53OutputReference.property.fetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferencepropertyfetchextendedinventory"></a>
+
+```typescript
+public readonly fetchExtendedInventory: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53OutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53OutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationsroute53outputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsRoute53;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsRoute53)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsS3OutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsS3OutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsS3OutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetFetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferenceresetfetchextendedinventory) | *No description.* |
+| [`resetFetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferenceresetfetchtags) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetTagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferenceresettagkey) | *No description.* |
+| [`resetTagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferenceresettagvalue) | *No description.* |
+
+---
+
+##### `resetFetchExtendedInventory` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.resetFetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferenceresetfetchextendedinventory"></a>
+
+```typescript
+public resetFetchExtendedInventory()
+```
+
+##### `resetFetchTags` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.resetFetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferenceresetfetchtags"></a>
+
+```typescript
+public resetFetchTags()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetTagKey` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.resetTagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferenceresettagkey"></a>
+
+```typescript
+public resetTagKey()
+```
+
+##### `resetTagValue` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.resetTagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferenceresettagvalue"></a>
+
+```typescript
+public resetTagValue()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`fetchExtendedInventoryInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertyfetchextendedinventoryinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`fetchTagsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertyfetchtagsinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`tagKeyInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertytagkeyinput) | `string` | *No description.* |
+| [`tagValueInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertytagvalueinput) | `string` | *No description.* |
+| [`fetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertyfetchextendedinventory)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`fetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertyfetchtags)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertytagkey)<span title="Required">*</span> | `string` | *No description.* |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertytagvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3) | *No description.* |
+
+---
+
+##### `fetchExtendedInventoryInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.property.fetchExtendedInventoryInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertyfetchextendedinventoryinput"></a>
+
+```typescript
+public readonly fetchExtendedInventoryInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `fetchTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.property.fetchTagsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertyfetchtagsinput"></a>
+
+```typescript
+public readonly fetchTagsInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKeyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.property.tagKeyInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertytagkeyinput"></a>
+
+```typescript
+public readonly tagKeyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.property.tagValueInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertytagvalueinput"></a>
+
+```typescript
+public readonly tagValueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `fetchExtendedInventory`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.property.fetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertyfetchextendedinventory"></a>
+
+```typescript
+public readonly fetchExtendedInventory: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `fetchTags`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.property.fetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tagKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3OutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationss3outputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsS3;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsS3)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsSnsOutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsSnsOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsSnsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAwsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferenceresetawsregions) | *No description.* |
+| [`resetFetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferenceresetfetchextendedinventory) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferenceresetmetricspollinginterval) | *No description.* |
+
+---
+
+##### `resetAwsRegions` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference.resetAwsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferenceresetawsregions"></a>
+
+```typescript
+public resetAwsRegions()
+```
+
+##### `resetFetchExtendedInventory` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference.resetFetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferenceresetfetchextendedinventory"></a>
+
+```typescript
+public resetFetchExtendedInventory()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegionsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferencepropertyawsregionsinput) | `string`[] | *No description.* |
+| [`fetchExtendedInventoryInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferencepropertyfetchextendedinventoryinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferencepropertyawsregions)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`fetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferencepropertyfetchextendedinventory)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns) | *No description.* |
+
+---
+
+##### `awsRegionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference.property.awsRegionsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferencepropertyawsregionsinput"></a>
+
+```typescript
+public readonly awsRegionsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchExtendedInventoryInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference.property.fetchExtendedInventoryInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferencepropertyfetchextendedinventoryinput"></a>
+
+```typescript
+public readonly fetchExtendedInventoryInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `awsRegions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferencepropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchExtendedInventory`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference.property.fetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferencepropertyfetchextendedinventory"></a>
+
+```typescript
+public readonly fetchExtendedInventory: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSnsOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationssnsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsSns;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSns)
+
+---
+
+
+### CloudAwsGovcloudIntegrationsSqsOutputReference <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.Initializer" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceinitializer"></a>
+
+```typescript
+import { CloudAwsGovcloudIntegrationsSqsOutputReference } from '@cdktf/provider-newrelic'
+
+new CloudAwsGovcloudIntegrationsSqsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAwsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceresetawsregions) | *No description.* |
+| [`resetFetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceresetfetchextendedinventory) | *No description.* |
+| [`resetFetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceresetfetchtags) | *No description.* |
+| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceresetmetricspollinginterval) | *No description.* |
+| [`resetQueuePrefixes`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceresetqueueprefixes) | *No description.* |
+| [`resetTagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceresettagkey) | *No description.* |
+| [`resetTagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceresettagvalue) | *No description.* |
+
+---
+
+##### `resetAwsRegions` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.resetAwsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceresetawsregions"></a>
+
+```typescript
+public resetAwsRegions()
+```
+
+##### `resetFetchExtendedInventory` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.resetFetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceresetfetchextendedinventory"></a>
+
+```typescript
+public resetFetchExtendedInventory()
+```
+
+##### `resetFetchTags` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.resetFetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceresetfetchtags"></a>
+
+```typescript
+public resetFetchTags()
+```
+
+##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceresetmetricspollinginterval"></a>
+
+```typescript
+public resetMetricsPollingInterval()
+```
+
+##### `resetQueuePrefixes` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.resetQueuePrefixes" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceresetqueueprefixes"></a>
+
+```typescript
+public resetQueuePrefixes()
+```
+
+##### `resetTagKey` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.resetTagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceresettagkey"></a>
+
+```typescript
+public resetTagKey()
+```
+
+##### `resetTagValue` <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.resetTagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferenceresettagvalue"></a>
+
+```typescript
+public resetTagValue()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`awsRegionsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyawsregionsinput) | `string`[] | *No description.* |
+| [`fetchExtendedInventoryInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyfetchextendedinventoryinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`fetchTagsInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyfetchtagsinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
+| [`queuePrefixesInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyqueueprefixesinput) | `string`[] | *No description.* |
+| [`tagKeyInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertytagkeyinput) | `string` | *No description.* |
+| [`tagValueInput`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertytagvalueinput) | `string` | *No description.* |
+| [`awsRegions`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyawsregions)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`fetchExtendedInventory`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyfetchextendedinventory)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`fetchTags`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyfetchtags)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`metricsPollingInterval`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
+| [`queuePrefixes`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyqueueprefixes)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`tagKey`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertytagkey)<span title="Required">*</span> | `string` | *No description.* |
+| [`tagValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertytagvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs) | *No description.* |
+
+---
+
+##### `awsRegionsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.property.awsRegionsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyawsregionsinput"></a>
+
+```typescript
+public readonly awsRegionsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchExtendedInventoryInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.property.fetchExtendedInventoryInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyfetchextendedinventoryinput"></a>
+
+```typescript
+public readonly fetchExtendedInventoryInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `fetchTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.property.fetchTagsInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyfetchtagsinput"></a>
+
+```typescript
+public readonly fetchTagsInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertymetricspollingintervalinput"></a>
+
+```typescript
+public readonly metricsPollingIntervalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `queuePrefixesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.property.queuePrefixesInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyqueueprefixesinput"></a>
+
+```typescript
+public readonly queuePrefixesInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `tagKeyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.property.tagKeyInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertytagkeyinput"></a>
+
+```typescript
+public readonly tagKeyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.property.tagValueInput" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertytagvalueinput"></a>
+
+```typescript
+public readonly tagValueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `awsRegions`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.property.awsRegions" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyawsregions"></a>
+
+```typescript
+public readonly awsRegions: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `fetchExtendedInventory`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.property.fetchExtendedInventory" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyfetchextendedinventory"></a>
+
+```typescript
+public readonly fetchExtendedInventory: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `fetchTags`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.property.fetchTags" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyfetchtags"></a>
+
+```typescript
+public readonly fetchTags: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertymetricspollinginterval"></a>
+
+```typescript
+public readonly metricsPollingInterval: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `queuePrefixes`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.property.queuePrefixes" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyqueueprefixes"></a>
+
+```typescript
+public readonly queuePrefixes: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `tagKey`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.property.tagKey" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertytagkey"></a>
+
+```typescript
+public readonly tagKey: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.property.tagValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertytagvalue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqsOutputReference.property.internalValue" id="cdktfprovidernewreliccloudawsgovcloudintegrationssqsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: CloudAwsGovcloudIntegrationsSqs;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsSqs)
+
+---
+
+
 ### CloudAwsIntegrationsBillingOutputReference <a name="@cdktf/provider-newrelic.CloudAwsIntegrationsBillingOutputReference" id="cdktfprovidernewreliccloudawsintegrationsbillingoutputreference"></a>
 
 #### Initializers <a name="@cdktf/provider-newrelic.CloudAwsIntegrationsBillingOutputReference.Initializer" id="cdktfprovidernewreliccloudawsintegrationsbillingoutputreferenceinitializer"></a>
@@ -31702,124 +38200,6 @@ public readonly internalValue: CloudAzureIntegrationsServiceBus;
 ```
 
 - *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceBus)
-
----
-
-
-### CloudAzureIntegrationsServiceFabricOutputReference <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreference"></a>
-
-#### Initializers <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.Initializer" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceinitializer"></a>
-
-```typescript
-import { CloudAzureIntegrationsServiceFabricOutputReference } from '@cdktf/provider-newrelic'
-
-new CloudAzureIntegrationsServiceFabricOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
-| [`terraformAttribute`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.parameter.terraformResource" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceparameterterraformresource"></a>
-
-- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceparameterterraformattribute"></a>
-
-- *Type:* `string`
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`resetMetricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceresetmetricspollinginterval) | *No description.* |
-| [`resetResourceGroups`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceresetresourcegroups) | *No description.* |
-
----
-
-##### `resetMetricsPollingInterval` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.resetMetricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceresetmetricspollinginterval"></a>
-
-```typescript
-public resetMetricsPollingInterval()
-```
-
-##### `resetResourceGroups` <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.resetResourceGroups" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferenceresetresourcegroups"></a>
-
-```typescript
-public resetResourceGroups()
-```
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`metricsPollingIntervalInput`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertymetricspollingintervalinput) | `number` | *No description.* |
-| [`resourceGroupsInput`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertyresourcegroupsinput) | `string`[] | *No description.* |
-| [`metricsPollingInterval`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertymetricspollinginterval)<span title="Required">*</span> | `number` | *No description.* |
-| [`resourceGroups`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertyresourcegroups)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`internalValue`](#cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric) | *No description.* |
-
----
-
-##### `metricsPollingIntervalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.property.metricsPollingIntervalInput" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertymetricspollingintervalinput"></a>
-
-```typescript
-public readonly metricsPollingIntervalInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `resourceGroupsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.property.resourceGroupsInput" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertyresourcegroupsinput"></a>
-
-```typescript
-public readonly resourceGroupsInput: string[];
-```
-
-- *Type:* `string`[]
-
----
-
-##### `metricsPollingInterval`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.property.metricsPollingInterval" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertymetricspollinginterval"></a>
-
-```typescript
-public readonly metricsPollingInterval: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `resourceGroups`<sup>Required</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.property.resourceGroups" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertyresourcegroups"></a>
-
-```typescript
-public readonly resourceGroups: string[];
-```
-
-- *Type:* `string`[]
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabricOutputReference.property.internalValue" id="cdktfprovidernewreliccloudazureintegrationsservicefabricoutputreferencepropertyinternalvalue"></a>
-
-```typescript
-public readonly internalValue: CloudAzureIntegrationsServiceFabric;
-```
-
-- *Type:* [`@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric`](#@cdktf/provider-newrelic.CloudAzureIntegrationsServiceFabric)
 
 ---
 
@@ -35364,6 +41744,7 @@ public payload(key: string)
 | [`channel`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertychannel)<span title="Required">*</span> | `string` | *No description.* |
 | [`includeJsonAttachment`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyincludejsonattachment)<span title="Required">*</span> | `string` | *No description.* |
 | [`key`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertykey)<span title="Required">*</span> | `string` | *No description.* |
+| [`payloadString`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertypayloadstring)<span title="Required">*</span> | `string` | *No description.* |
 | [`payloadType`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertypayloadtype)<span title="Required">*</span> | `string` | *No description.* |
 | [`recipients`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyrecipients)<span title="Required">*</span> | `string` | *No description.* |
 | [`region`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertyregion)<span title="Required">*</span> | `string` | *No description.* |
@@ -35451,6 +41832,16 @@ public readonly includeJsonAttachment: string;
 
 ```typescript
 public readonly key: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `payloadString`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAOutputReference.property.payloadString" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigaoutputreferencepropertypayloadstring"></a>
+
+```typescript
+public readonly payloadString: string;
 ```
 
 - *Type:* `string`
