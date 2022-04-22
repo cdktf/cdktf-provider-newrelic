@@ -41,7 +41,7 @@ export class DataNewrelicSyntheticsMonitor extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_synthetics_monitor',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.43.2',
+        providerVersion: '2.43.3',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,

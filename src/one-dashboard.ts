@@ -322,7 +322,7 @@ export interface OneDashboardPageWidgetBullet {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#limit OneDashboard#limit}
   */
-  readonly limit?: number;
+  readonly limit: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}
   */
@@ -1153,7 +1153,7 @@ export class OneDashboard extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_one_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.43.2',
+        providerVersion: '2.43.3',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
