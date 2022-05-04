@@ -65,7 +65,7 @@ export class SyntheticsAlertCondition extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_synthetics_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.43.4',
+        providerVersion: '2.44.0',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,

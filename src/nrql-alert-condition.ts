@@ -802,7 +802,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_nrql_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.43.4',
+        providerVersion: '2.44.0',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
@@ -986,6 +986,11 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
     return this._enabled;
+  }
+
+  // entity_guid - computed: true, optional: false, required: false
+  public get entityGuid() {
+    return this.getStringAttribute('entity_guid');
   }
 
   // expected_groups - computed: false, optional: true, required: false
