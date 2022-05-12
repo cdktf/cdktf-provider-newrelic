@@ -184,13 +184,13 @@ export interface NrqlAlertConditionCritical {
   */
   readonly duration?: number;
   /**
-  * One of (above, below, equals). Defaults to 'equals'.
+  * One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#operator NrqlAlertCondition#operator}
   */
   readonly operator?: string;
   /**
-  * Must be 0 or greater. For baseline conditions must be in range [1, 1000].
+  * For baseline conditions must be in range [1, 1000].
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
   */
@@ -513,7 +513,7 @@ export interface NrqlAlertConditionTerm {
   */
   readonly duration?: number;
   /**
-  * One of (above, below, equals). Defaults to 'equals'.
+  * One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#operator NrqlAlertCondition#operator}
   */
@@ -525,7 +525,7 @@ export interface NrqlAlertConditionTerm {
   */
   readonly priority?: string;
   /**
-  * Must be 0 or greater. For baseline conditions must be in range [1, 1000].
+  * For baseline conditions must be in range [1, 1000].
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
   */
@@ -574,13 +574,13 @@ export interface NrqlAlertConditionWarning {
   */
   readonly duration?: number;
   /**
-  * One of (above, below, equals). Defaults to 'equals'.
+  * One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#operator NrqlAlertCondition#operator}
   */
   readonly operator?: string;
   /**
-  * Must be 0 or greater. For baseline conditions must be in range [1, 1000].
+  * For baseline conditions must be in range [1, 1000].
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
   */
@@ -802,7 +802,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_nrql_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.44.0',
+        providerVersion: '2.45.0',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
