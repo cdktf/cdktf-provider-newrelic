@@ -14163,7 +14163,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
-| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric). |
+| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
 | [`gcMetric`](#cdktfprovidernewrelicalertconditionconfigpropertygcmetric) | `string` | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -14292,7 +14292,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric).
+The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 
@@ -25063,9 +25063,9 @@ const nrqlAlertConditionCritical: NrqlAlertConditionCritical = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`threshold`](#cdktfprovidernewrelicnrqlalertconditioncriticalpropertythreshold)<span title="Required">*</span> | `number` | Must be 0 or greater. For baseline conditions must be in range [1, 1000]. |
+| [`threshold`](#cdktfprovidernewrelicnrqlalertconditioncriticalpropertythreshold)<span title="Required">*</span> | `number` | For baseline conditions must be in range [1, 1000]. |
 | [`duration`](#cdktfprovidernewrelicnrqlalertconditioncriticalpropertyduration) | `number` | In minutes, must be in the range of 1 to 120 (inclusive). |
-| [`operator`](#cdktfprovidernewrelicnrqlalertconditioncriticalpropertyoperator) | `string` | One of (above, below, equals). Defaults to 'equals'. |
+| [`operator`](#cdktfprovidernewrelicnrqlalertconditioncriticalpropertyoperator) | `string` | One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'. |
 | [`thresholdDuration`](#cdktfprovidernewrelicnrqlalertconditioncriticalpropertythresholdduration) | `number` | The duration, in seconds, that the threshold must violate in order to create a violation. |
 | [`thresholdOccurrences`](#cdktfprovidernewrelicnrqlalertconditioncriticalpropertythresholdoccurrences) | `string` | The criteria for how many data points must be in violation for the specified threshold duration. |
 | [`timeFunction`](#cdktfprovidernewrelicnrqlalertconditioncriticalpropertytimefunction) | `string` | Valid values are: 'all' or 'any'. |
@@ -25080,7 +25080,7 @@ public readonly threshold: number;
 
 - *Type:* `number`
 
-Must be 0 or greater. For baseline conditions must be in range [1, 1000].
+For baseline conditions must be in range [1, 1000].
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
 
@@ -25108,7 +25108,7 @@ public readonly operator: string;
 
 - *Type:* `string`
 
-One of (above, below, equals). Defaults to 'equals'.
+One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#operator NrqlAlertCondition#operator}
 
@@ -25230,9 +25230,9 @@ const nrqlAlertConditionTerm: NrqlAlertConditionTerm = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`threshold`](#cdktfprovidernewrelicnrqlalertconditiontermpropertythreshold)<span title="Required">*</span> | `number` | Must be 0 or greater. For baseline conditions must be in range [1, 1000]. |
+| [`threshold`](#cdktfprovidernewrelicnrqlalertconditiontermpropertythreshold)<span title="Required">*</span> | `number` | For baseline conditions must be in range [1, 1000]. |
 | [`duration`](#cdktfprovidernewrelicnrqlalertconditiontermpropertyduration) | `number` | In minutes, must be in the range of 1 to 120 (inclusive). |
-| [`operator`](#cdktfprovidernewrelicnrqlalertconditiontermpropertyoperator) | `string` | One of (above, below, equals). Defaults to 'equals'. |
+| [`operator`](#cdktfprovidernewrelicnrqlalertconditiontermpropertyoperator) | `string` | One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'. |
 | [`priority`](#cdktfprovidernewrelicnrqlalertconditiontermpropertypriority) | `string` | One of (critical, warning). Defaults to 'critical'. At least one condition term must have priority set to 'critical'. |
 | [`thresholdDuration`](#cdktfprovidernewrelicnrqlalertconditiontermpropertythresholdduration) | `number` | The duration, in seconds, that the threshold must violate in order to create a violation. |
 | [`thresholdOccurrences`](#cdktfprovidernewrelicnrqlalertconditiontermpropertythresholdoccurrences) | `string` | The criteria for how many data points must be in violation for the specified threshold duration. |
@@ -25248,7 +25248,7 @@ public readonly threshold: number;
 
 - *Type:* `number`
 
-Must be 0 or greater. For baseline conditions must be in range [1, 1000].
+For baseline conditions must be in range [1, 1000].
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
 
@@ -25276,7 +25276,7 @@ public readonly operator: string;
 
 - *Type:* `string`
 
-One of (above, below, equals). Defaults to 'equals'.
+One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#operator NrqlAlertCondition#operator}
 
@@ -25352,9 +25352,9 @@ const nrqlAlertConditionWarning: NrqlAlertConditionWarning = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`threshold`](#cdktfprovidernewrelicnrqlalertconditionwarningpropertythreshold)<span title="Required">*</span> | `number` | Must be 0 or greater. For baseline conditions must be in range [1, 1000]. |
+| [`threshold`](#cdktfprovidernewrelicnrqlalertconditionwarningpropertythreshold)<span title="Required">*</span> | `number` | For baseline conditions must be in range [1, 1000]. |
 | [`duration`](#cdktfprovidernewrelicnrqlalertconditionwarningpropertyduration) | `number` | In minutes, must be in the range of 1 to 120 (inclusive). |
-| [`operator`](#cdktfprovidernewrelicnrqlalertconditionwarningpropertyoperator) | `string` | One of (above, below, equals). Defaults to 'equals'. |
+| [`operator`](#cdktfprovidernewrelicnrqlalertconditionwarningpropertyoperator) | `string` | One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'. |
 | [`thresholdDuration`](#cdktfprovidernewrelicnrqlalertconditionwarningpropertythresholdduration) | `number` | The duration, in seconds, that the threshold must violate in order to create a violation. |
 | [`thresholdOccurrences`](#cdktfprovidernewrelicnrqlalertconditionwarningpropertythresholdoccurrences) | `string` | The criteria for how many data points must be in violation for the specified threshold duration. |
 | [`timeFunction`](#cdktfprovidernewrelicnrqlalertconditionwarningpropertytimefunction) | `string` | Valid values are: 'all' or 'any'. |
@@ -25369,7 +25369,7 @@ public readonly threshold: number;
 
 - *Type:* `number`
 
-Must be 0 or greater. For baseline conditions must be in range [1, 1000].
+For baseline conditions must be in range [1, 1000].
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
 
@@ -25397,7 +25397,7 @@ public readonly operator: string;
 
 - *Type:* `string`
 
-One of (above, below, equals). Defaults to 'equals'.
+One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#operator NrqlAlertCondition#operator}
 
