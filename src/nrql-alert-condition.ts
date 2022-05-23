@@ -62,12 +62,6 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Number of expected groups when using outlier detection.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#expected_groups NrqlAlertCondition#expected_groups}
-  */
-  readonly expectedGroups?: number;
-  /**
   * The amount of time (in seconds) to wait before considering the signal expired.  Must be in the range of 30 to 172800 (inclusive)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#expiration_duration NrqlAlertCondition#expiration_duration}
@@ -86,12 +80,6 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly fillValue?: number;
   /**
-  * Whether to look for a convergence of groups when using outlier detection.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#ignore_overlap NrqlAlertCondition#ignore_overlap}
-  */
-  readonly ignoreOverlap?: boolean | cdktf.IResolvable;
-  /**
   * The title of the condition.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#name NrqlAlertCondition#name}
@@ -103,12 +91,6 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#open_violation_on_expiration NrqlAlertCondition#open_violation_on_expiration}
   */
   readonly openViolationOnExpiration?: boolean | cdktf.IResolvable;
-  /**
-  * Whether overlapping groups should produce a violation.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#open_violation_on_group_overlap NrqlAlertCondition#open_violation_on_group_overlap}
-  */
-  readonly openViolationOnGroupOverlap?: boolean | cdktf.IResolvable;
   /**
   * The ID of the policy where this condition should be used.
   * 
@@ -128,7 +110,7 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly slideBy?: number;
   /**
-  * The type of NRQL alert condition to create. Valid values are: 'static', 'baseline', 'outlier' (deprecated).
+  * The type of NRQL alert condition to create. Valid values are: 'static', 'baseline'.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#type NrqlAlertCondition#type}
   */
@@ -196,7 +178,7 @@ export interface NrqlAlertConditionCritical {
   */
   readonly threshold: number;
   /**
-  * The duration, in seconds, that the threshold must violate in order to create a violation. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline and outlier conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.
+  * The duration, in seconds, that the threshold must violate in order to create a violation. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
   */
@@ -531,7 +513,7 @@ export interface NrqlAlertConditionTerm {
   */
   readonly threshold: number;
   /**
-  * The duration, in seconds, that the threshold must violate in order to create a violation. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline and outlier conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.
+  * The duration, in seconds, that the threshold must violate in order to create a violation. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
   */
@@ -586,7 +568,7 @@ export interface NrqlAlertConditionWarning {
   */
   readonly threshold: number;
   /**
-  * The duration, in seconds, that the threshold must violate in order to create a violation. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline and outlier conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.
+  * The duration, in seconds, that the threshold must violate in order to create a violation. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
   */
@@ -802,7 +784,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_nrql_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.45.1',
+        providerVersion: '2.46.0',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
@@ -819,14 +801,11 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
     this._closeViolationsOnExpiration = config.closeViolationsOnExpiration;
     this._description = config.description;
     this._enabled = config.enabled;
-    this._expectedGroups = config.expectedGroups;
     this._expirationDuration = config.expirationDuration;
     this._fillOption = config.fillOption;
     this._fillValue = config.fillValue;
-    this._ignoreOverlap = config.ignoreOverlap;
     this._name = config.name;
     this._openViolationOnExpiration = config.openViolationOnExpiration;
-    this._openViolationOnGroupOverlap = config.openViolationOnGroupOverlap;
     this._policyId = config.policyId;
     this._runbookUrl = config.runbookUrl;
     this._slideBy = config.slideBy;
@@ -993,22 +972,6 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
     return this.getStringAttribute('entity_guid');
   }
 
-  // expected_groups - computed: false, optional: true, required: false
-  private _expectedGroups?: number; 
-  public get expectedGroups() {
-    return this.getNumberAttribute('expected_groups');
-  }
-  public set expectedGroups(value: number) {
-    this._expectedGroups = value;
-  }
-  public resetExpectedGroups() {
-    this._expectedGroups = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get expectedGroupsInput() {
-    return this._expectedGroups;
-  }
-
   // expiration_duration - computed: false, optional: true, required: false
   private _expirationDuration?: number; 
   public get expirationDuration() {
@@ -1062,22 +1025,6 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // ignore_overlap - computed: false, optional: true, required: false
-  private _ignoreOverlap?: boolean | cdktf.IResolvable; 
-  public get ignoreOverlap() {
-    return this.getBooleanAttribute('ignore_overlap');
-  }
-  public set ignoreOverlap(value: boolean | cdktf.IResolvable) {
-    this._ignoreOverlap = value;
-  }
-  public resetIgnoreOverlap() {
-    this._ignoreOverlap = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ignoreOverlapInput() {
-    return this._ignoreOverlap;
-  }
-
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -1105,22 +1052,6 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get openViolationOnExpirationInput() {
     return this._openViolationOnExpiration;
-  }
-
-  // open_violation_on_group_overlap - computed: false, optional: true, required: false
-  private _openViolationOnGroupOverlap?: boolean | cdktf.IResolvable; 
-  public get openViolationOnGroupOverlap() {
-    return this.getBooleanAttribute('open_violation_on_group_overlap');
-  }
-  public set openViolationOnGroupOverlap(value: boolean | cdktf.IResolvable) {
-    this._openViolationOnGroupOverlap = value;
-  }
-  public resetOpenViolationOnGroupOverlap() {
-    this._openViolationOnGroupOverlap = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get openViolationOnGroupOverlapInput() {
-    return this._openViolationOnGroupOverlap;
   }
 
   // policy_id - computed: false, optional: false, required: true
@@ -1309,14 +1240,11 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       close_violations_on_expiration: cdktf.booleanToTerraform(this._closeViolationsOnExpiration),
       description: cdktf.stringToTerraform(this._description),
       enabled: cdktf.booleanToTerraform(this._enabled),
-      expected_groups: cdktf.numberToTerraform(this._expectedGroups),
       expiration_duration: cdktf.numberToTerraform(this._expirationDuration),
       fill_option: cdktf.stringToTerraform(this._fillOption),
       fill_value: cdktf.numberToTerraform(this._fillValue),
-      ignore_overlap: cdktf.booleanToTerraform(this._ignoreOverlap),
       name: cdktf.stringToTerraform(this._name),
       open_violation_on_expiration: cdktf.booleanToTerraform(this._openViolationOnExpiration),
-      open_violation_on_group_overlap: cdktf.booleanToTerraform(this._openViolationOnGroupOverlap),
       policy_id: cdktf.numberToTerraform(this._policyId),
       runbook_url: cdktf.stringToTerraform(this._runbookUrl),
       slide_by: cdktf.numberToTerraform(this._slideBy),

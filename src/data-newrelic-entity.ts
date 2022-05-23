@@ -155,7 +155,7 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_entity',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.45.1',
+        providerVersion: '2.46.0',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
