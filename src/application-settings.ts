@@ -51,7 +51,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_application_settings',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.45.1',
+        providerVersion: '2.46.0',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
