@@ -13619,7 +13619,7 @@ const alertChannelConfig: AlertChannelConfig = { ... }
 | [`lifecycle`](#cdktfprovidernewrelicalertchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertchannelconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the channel. |
-| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (opsgenie, pagerduty, slack, user, victorops, webhook, email). |
+| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (webhook, email, opsgenie, pagerduty, slack, user, victorops). |
 | [`accountId`](#cdktfprovidernewrelicalertchannelconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create alert channels. |
 | [`config`](#cdktfprovidernewrelicalertchannelconfigpropertyconfig) | [`@cdktf/provider-newrelic.AlertChannelConfigA`](#@cdktf/provider-newrelic.AlertChannelConfigA) | config block. |
 
@@ -13687,7 +13687,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-(Required) The type of channel. One of: (opsgenie, pagerduty, slack, user, victorops, webhook, email).
+(Required) The type of channel. One of: (webhook, email, opsgenie, pagerduty, slack, user, victorops).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
 
