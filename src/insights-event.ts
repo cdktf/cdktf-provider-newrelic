@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface InsightsEventConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#id InsightsEvent#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * event block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#event InsightsEvent#event}
@@ -47,6 +54,124 @@ export function insightsEventEventAttributeToTerraform(struct?: InsightsEventEve
   }
 }
 
+export class InsightsEventEventAttributeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): InsightsEventEventAttribute | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: InsightsEventEventAttribute | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._type = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._type = value.type;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class InsightsEventEventAttributeList extends cdktf.ComplexList {
+  public internalValue? : InsightsEventEventAttribute[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): InsightsEventEventAttributeOutputReference {
+    return new InsightsEventEventAttributeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface InsightsEventEvent {
   /**
   * Must be a Unix epoch timestamp. You can define timestamps either in seconds or in milliseconds.
@@ -80,6 +205,124 @@ export function insightsEventEventToTerraform(struct?: InsightsEventEvent | cdkt
   }
 }
 
+export class InsightsEventEventOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): InsightsEventEvent | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._timestamp !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timestamp = this._timestamp;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._attribute?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attribute = this._attribute?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: InsightsEventEvent | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._timestamp = undefined;
+      this._type = undefined;
+      this._attribute.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._timestamp = value.timestamp;
+      this._type = value.type;
+      this._attribute.internalValue = value.attribute;
+    }
+  }
+
+  // timestamp - computed: false, optional: true, required: false
+  private _timestamp?: number; 
+  public get timestamp() {
+    return this.getNumberAttribute('timestamp');
+  }
+  public set timestamp(value: number) {
+    this._timestamp = value;
+  }
+  public resetTimestamp() {
+    this._timestamp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timestampInput() {
+    return this._timestamp;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // attribute - computed: false, optional: false, required: true
+  private _attribute = new InsightsEventEventAttributeList(this, "attribute", true);
+  public get attribute() {
+    return this._attribute;
+  }
+  public putAttribute(value: InsightsEventEventAttribute[] | cdktf.IResolvable) {
+    this._attribute.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeInput() {
+    return this._attribute.internalValue;
+  }
+}
+
+export class InsightsEventEventList extends cdktf.ComplexList {
+  public internalValue? : InsightsEventEvent[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): InsightsEventEventOutputReference {
+    return new InsightsEventEventOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event newrelic_insights_event}
@@ -115,7 +358,8 @@ export class InsightsEvent extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
-    this._event = config.event;
+    this._id = config.id;
+    this._event.internalValue = config.event;
   }
 
   // ==========
@@ -123,22 +367,32 @@ export class InsightsEvent extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
 
   // event - computed: false, optional: false, required: true
-  private _event?: InsightsEventEvent[] | cdktf.IResolvable; 
+  private _event = new InsightsEventEventList(this, "event", true);
   public get event() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('event')));
+    return this._event;
   }
-  public set event(value: InsightsEventEvent[] | cdktf.IResolvable) {
-    this._event = value;
+  public putEvent(value: InsightsEventEvent[] | cdktf.IResolvable) {
+    this._event.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get eventInput() {
-    return this._event;
+    return this._event.internalValue;
   }
 
   // =========
@@ -147,7 +401,8 @@ export class InsightsEvent extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      event: cdktf.listMapper(insightsEventEventToTerraform)(this._event),
+      id: cdktf.stringToTerraform(this._id),
+      event: cdktf.listMapper(insightsEventEventToTerraform)(this._event.internalValue),
     };
   }
 }

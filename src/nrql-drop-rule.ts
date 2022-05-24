@@ -26,6 +26,13 @@ export interface NrqlDropRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule#id NrqlDropRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Explains which data to apply the drop rule to.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule#nrql NrqlDropRule#nrql}
@@ -70,6 +77,7 @@ export class NrqlDropRule extends cdktf.TerraformResource {
     this._accountId = config.accountId;
     this._action = config.action;
     this._description = config.description;
+    this._id = config.id;
     this._nrql = config.nrql;
   }
 
@@ -123,8 +131,19 @@ export class NrqlDropRule extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // nrql - computed: false, optional: false, required: true
@@ -154,6 +173,7 @@ export class NrqlDropRule extends cdktf.TerraformResource {
       account_id: cdktf.numberToTerraform(this._accountId),
       action: cdktf.stringToTerraform(this._action),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       nrql: cdktf.stringToTerraform(this._nrql),
     };
   }

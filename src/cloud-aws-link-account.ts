@@ -20,6 +20,13 @@ export interface CloudAwsLinkAccountConfig extends cdktf.TerraformMetaArguments 
   */
   readonly arn: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account#id CloudAwsLinkAccount#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * How metrics will be collected. Defaults to `PULL` if empty.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account#metric_collection_mode CloudAwsLinkAccount#metric_collection_mode}
@@ -57,6 +64,7 @@ export function cloudAwsLinkAccountTimeoutsToTerraform(struct?: CloudAwsLinkAcco
 
 export class CloudAwsLinkAccountTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -66,7 +74,10 @@ export class CloudAwsLinkAccountTimeoutsOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): CloudAwsLinkAccountTimeouts | undefined {
+  public get internalValue(): CloudAwsLinkAccountTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -76,13 +87,19 @@ export class CloudAwsLinkAccountTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudAwsLinkAccountTimeouts | undefined) {
+  public set internalValue(value: CloudAwsLinkAccountTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
     }
   }
@@ -140,6 +157,7 @@ export class CloudAwsLinkAccount extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._arn = config.arn;
+    this._id = config.id;
     this._metricCollectionMode = config.metricCollectionMode;
     this._name = config.name;
     this._timeouts.internalValue = config.timeouts;
@@ -179,8 +197,19 @@ export class CloudAwsLinkAccount extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // metric_collection_mode - computed: false, optional: true, required: false
@@ -236,6 +265,7 @@ export class CloudAwsLinkAccount extends cdktf.TerraformResource {
     return {
       account_id: cdktf.numberToTerraform(this._accountId),
       arn: cdktf.stringToTerraform(this._arn),
+      id: cdktf.stringToTerraform(this._id),
       metric_collection_mode: cdktf.stringToTerraform(this._metricCollectionMode),
       name: cdktf.stringToTerraform(this._name),
       timeouts: cloudAwsLinkAccountTimeoutsToTerraform(this._timeouts.internalValue),
