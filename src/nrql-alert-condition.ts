@@ -80,6 +80,13 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly fillValue?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#id NrqlAlertCondition#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The title of the condition.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#name NrqlAlertCondition#name}
@@ -548,6 +555,215 @@ export function nrqlAlertConditionTermToTerraform(struct?: NrqlAlertConditionTer
   }
 }
 
+export class NrqlAlertConditionTermOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NrqlAlertConditionTerm | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._duration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.duration = this._duration;
+    }
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._priority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priority = this._priority;
+    }
+    if (this._threshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.threshold = this._threshold;
+    }
+    if (this._thresholdDuration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.thresholdDuration = this._thresholdDuration;
+    }
+    if (this._thresholdOccurrences !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.thresholdOccurrences = this._thresholdOccurrences;
+    }
+    if (this._timeFunction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeFunction = this._timeFunction;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NrqlAlertConditionTerm | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._duration = undefined;
+      this._operator = undefined;
+      this._priority = undefined;
+      this._threshold = undefined;
+      this._thresholdDuration = undefined;
+      this._thresholdOccurrences = undefined;
+      this._timeFunction = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._duration = value.duration;
+      this._operator = value.operator;
+      this._priority = value.priority;
+      this._threshold = value.threshold;
+      this._thresholdDuration = value.thresholdDuration;
+      this._thresholdOccurrences = value.thresholdOccurrences;
+      this._timeFunction = value.timeFunction;
+    }
+  }
+
+  // duration - computed: false, optional: true, required: false
+  private _duration?: number; 
+  public get duration() {
+    return this.getNumberAttribute('duration');
+  }
+  public set duration(value: number) {
+    this._duration = value;
+  }
+  public resetDuration() {
+    this._duration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get durationInput() {
+    return this._duration;
+  }
+
+  // operator - computed: false, optional: true, required: false
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  public resetOperator() {
+    this._operator = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // priority - computed: false, optional: true, required: false
+  private _priority?: string; 
+  public get priority() {
+    return this.getStringAttribute('priority');
+  }
+  public set priority(value: string) {
+    this._priority = value;
+  }
+  public resetPriority() {
+    this._priority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority;
+  }
+
+  // threshold - computed: false, optional: false, required: true
+  private _threshold?: number; 
+  public get threshold() {
+    return this.getNumberAttribute('threshold');
+  }
+  public set threshold(value: number) {
+    this._threshold = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thresholdInput() {
+    return this._threshold;
+  }
+
+  // threshold_duration - computed: false, optional: true, required: false
+  private _thresholdDuration?: number; 
+  public get thresholdDuration() {
+    return this.getNumberAttribute('threshold_duration');
+  }
+  public set thresholdDuration(value: number) {
+    this._thresholdDuration = value;
+  }
+  public resetThresholdDuration() {
+    this._thresholdDuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thresholdDurationInput() {
+    return this._thresholdDuration;
+  }
+
+  // threshold_occurrences - computed: false, optional: true, required: false
+  private _thresholdOccurrences?: string; 
+  public get thresholdOccurrences() {
+    return this.getStringAttribute('threshold_occurrences');
+  }
+  public set thresholdOccurrences(value: string) {
+    this._thresholdOccurrences = value;
+  }
+  public resetThresholdOccurrences() {
+    this._thresholdOccurrences = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thresholdOccurrencesInput() {
+    return this._thresholdOccurrences;
+  }
+
+  // time_function - computed: false, optional: true, required: false
+  private _timeFunction?: string; 
+  public get timeFunction() {
+    return this.getStringAttribute('time_function');
+  }
+  public set timeFunction(value: string) {
+    this._timeFunction = value;
+  }
+  public resetTimeFunction() {
+    this._timeFunction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeFunctionInput() {
+    return this._timeFunction;
+  }
+}
+
+export class NrqlAlertConditionTermList extends cdktf.ComplexList {
+  public internalValue? : NrqlAlertConditionTerm[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NrqlAlertConditionTermOutputReference {
+    return new NrqlAlertConditionTermOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface NrqlAlertConditionWarning {
   /**
   * In minutes, must be in the range of 1 to 120 (inclusive).
@@ -804,6 +1020,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
     this._expirationDuration = config.expirationDuration;
     this._fillOption = config.fillOption;
     this._fillValue = config.fillValue;
+    this._id = config.id;
     this._name = config.name;
     this._openViolationOnExpiration = config.openViolationOnExpiration;
     this._policyId = config.policyId;
@@ -815,7 +1032,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
     this._violationTimeLimitSeconds = config.violationTimeLimitSeconds;
     this._critical.internalValue = config.critical;
     this._nrql.internalValue = config.nrql;
-    this._term = config.term;
+    this._term.internalValue = config.term;
     this._warning.internalValue = config.warning;
   }
 
@@ -1021,8 +1238,19 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -1193,20 +1421,19 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   }
 
   // term - computed: false, optional: true, required: false
-  private _term?: NrqlAlertConditionTerm[] | cdktf.IResolvable; 
+  private _term = new NrqlAlertConditionTermList(this, "term", true);
   public get term() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('term')));
+    return this._term;
   }
-  public set term(value: NrqlAlertConditionTerm[] | cdktf.IResolvable) {
-    this._term = value;
+  public putTerm(value: NrqlAlertConditionTerm[] | cdktf.IResolvable) {
+    this._term.internalValue = value;
   }
   public resetTerm() {
-    this._term = undefined;
+    this._term.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get termInput() {
-    return this._term;
+    return this._term.internalValue;
   }
 
   // warning - computed: false, optional: true, required: false
@@ -1243,6 +1470,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       expiration_duration: cdktf.numberToTerraform(this._expirationDuration),
       fill_option: cdktf.stringToTerraform(this._fillOption),
       fill_value: cdktf.numberToTerraform(this._fillValue),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       open_violation_on_expiration: cdktf.booleanToTerraform(this._openViolationOnExpiration),
       policy_id: cdktf.numberToTerraform(this._policyId),
@@ -1254,7 +1482,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       violation_time_limit_seconds: cdktf.numberToTerraform(this._violationTimeLimitSeconds),
       critical: nrqlAlertConditionCriticalToTerraform(this._critical.internalValue),
       nrql: nrqlAlertConditionNrqlToTerraform(this._nrql.internalValue),
-      term: cdktf.listMapper(nrqlAlertConditionTermToTerraform)(this._term),
+      term: cdktf.listMapper(nrqlAlertConditionTermToTerraform)(this._term.internalValue),
       warning: nrqlAlertConditionWarningToTerraform(this._warning.internalValue),
     };
   }

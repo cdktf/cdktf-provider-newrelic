@@ -20,6 +20,13 @@ export interface AlertPolicyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly channelIds?: number[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy#id AlertPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The rollup strategy for the policy. Options include: PER_POLICY, PER_CONDITION, or PER_CONDITION_AND_TARGET. The default is PER_POLICY.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy#incident_preference AlertPolicy#incident_preference}
@@ -69,6 +76,7 @@ export class AlertPolicy extends cdktf.TerraformResource {
     });
     this._accountId = config.accountId;
     this._channelIds = config.channelIds;
+    this._id = config.id;
     this._incidentPreference = config.incidentPreference;
     this._name = config.name;
   }
@@ -110,8 +118,19 @@ export class AlertPolicy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // incident_preference - computed: false, optional: true, required: false
@@ -151,6 +170,7 @@ export class AlertPolicy extends cdktf.TerraformResource {
     return {
       account_id: cdktf.numberToTerraform(this._accountId),
       channel_ids: cdktf.listMapper(cdktf.numberToTerraform)(this._channelIds),
+      id: cdktf.stringToTerraform(this._id),
       incident_preference: cdktf.stringToTerraform(this._incidentPreference),
       name: cdktf.stringToTerraform(this._name),
     };

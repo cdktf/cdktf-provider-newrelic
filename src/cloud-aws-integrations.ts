@@ -14,6 +14,13 @@ export interface CloudAwsIntegrationsConfig extends cdktf.TerraformMetaArguments
   */
   readonly accountId?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_integrations#id CloudAwsIntegrations#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The ID of the linked AWS account in New Relic
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_integrations#linked_account_id CloudAwsIntegrations#linked_account_id}
@@ -697,6 +704,7 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._accountId = config.accountId;
+    this._id = config.id;
     this._linkedAccountId = config.linkedAccountId;
     this._billing.internalValue = config.billing;
     this._cloudtrail.internalValue = config.cloudtrail;
@@ -727,8 +735,19 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // linked_account_id - computed: false, optional: false, required: true
@@ -847,6 +866,7 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.numberToTerraform(this._accountId),
+      id: cdktf.stringToTerraform(this._id),
       linked_account_id: cdktf.numberToTerraform(this._linkedAccountId),
       billing: cloudAwsIntegrationsBillingToTerraform(this._billing.internalValue),
       cloudtrail: cloudAwsIntegrationsCloudtrailToTerraform(this._cloudtrail.internalValue),

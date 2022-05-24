@@ -14,6 +14,13 @@ export interface CloudAwsGovcloudIntegrationsConfig extends cdktf.TerraformMetaA
   */
   readonly accountId?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#id CloudAwsGovcloudIntegrations#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The ID of the linked AwsGovCloud account in New Relic
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations#linked_account_id CloudAwsGovcloudIntegrations#linked_account_id}
@@ -3402,6 +3409,7 @@ export class CloudAwsGovcloudIntegrations extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._accountId = config.accountId;
+    this._id = config.id;
     this._linkedAccountId = config.linkedAccountId;
     this._alb.internalValue = config.alb;
     this._apiGateway.internalValue = config.apiGateway;
@@ -3446,8 +3454,19 @@ export class CloudAwsGovcloudIntegrations extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // linked_account_id - computed: false, optional: false, required: true
@@ -3790,6 +3809,7 @@ export class CloudAwsGovcloudIntegrations extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.numberToTerraform(this._accountId),
+      id: cdktf.stringToTerraform(this._id),
       linked_account_id: cdktf.numberToTerraform(this._linkedAccountId),
       alb: cloudAwsGovcloudIntegrationsAlbToTerraform(this._alb.internalValue),
       api_gateway: cloudAwsGovcloudIntegrationsApiGatewayToTerraform(this._apiGateway.internalValue),

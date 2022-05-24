@@ -32,6 +32,13 @@ export interface AlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly gcMetric?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#id AlertCondition#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The metric field accepts parameters based on the type set.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#metric AlertCondition#metric}
@@ -56,7 +63,7 @@ export interface AlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly runbookUrl?: string;
   /**
-  * The type of condition. One of: (mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric).
+  * The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
   */
@@ -133,6 +140,165 @@ export function alertConditionTermToTerraform(struct?: AlertConditionTerm | cdkt
   }
 }
 
+export class AlertConditionTermOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AlertConditionTerm | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._duration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.duration = this._duration;
+    }
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._priority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priority = this._priority;
+    }
+    if (this._threshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.threshold = this._threshold;
+    }
+    if (this._timeFunction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeFunction = this._timeFunction;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AlertConditionTerm | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._duration = undefined;
+      this._operator = undefined;
+      this._priority = undefined;
+      this._threshold = undefined;
+      this._timeFunction = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._duration = value.duration;
+      this._operator = value.operator;
+      this._priority = value.priority;
+      this._threshold = value.threshold;
+      this._timeFunction = value.timeFunction;
+    }
+  }
+
+  // duration - computed: false, optional: false, required: true
+  private _duration?: number; 
+  public get duration() {
+    return this.getNumberAttribute('duration');
+  }
+  public set duration(value: number) {
+    this._duration = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get durationInput() {
+    return this._duration;
+  }
+
+  // operator - computed: false, optional: true, required: false
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  public resetOperator() {
+    this._operator = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // priority - computed: false, optional: true, required: false
+  private _priority?: string; 
+  public get priority() {
+    return this.getStringAttribute('priority');
+  }
+  public set priority(value: string) {
+    this._priority = value;
+  }
+  public resetPriority() {
+    this._priority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority;
+  }
+
+  // threshold - computed: false, optional: false, required: true
+  private _threshold?: number; 
+  public get threshold() {
+    return this.getNumberAttribute('threshold');
+  }
+  public set threshold(value: number) {
+    this._threshold = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thresholdInput() {
+    return this._threshold;
+  }
+
+  // time_function - computed: false, optional: false, required: true
+  private _timeFunction?: string; 
+  public get timeFunction() {
+    return this.getStringAttribute('time_function');
+  }
+  public set timeFunction(value: string) {
+    this._timeFunction = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeFunctionInput() {
+    return this._timeFunction;
+  }
+}
+
+export class AlertConditionTermList extends cdktf.ComplexList {
+  public internalValue? : AlertConditionTerm[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AlertConditionTermOutputReference {
+    return new AlertConditionTermOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition newrelic_alert_condition}
@@ -172,6 +338,7 @@ export class AlertCondition extends cdktf.TerraformResource {
     this._enabled = config.enabled;
     this._entities = config.entities;
     this._gcMetric = config.gcMetric;
+    this._id = config.id;
     this._metric = config.metric;
     this._name = config.name;
     this._policyId = config.policyId;
@@ -180,7 +347,7 @@ export class AlertCondition extends cdktf.TerraformResource {
     this._userDefinedMetric = config.userDefinedMetric;
     this._userDefinedValueFunction = config.userDefinedValueFunction;
     this._violationCloseTimer = config.violationCloseTimer;
-    this._term = config.term;
+    this._term.internalValue = config.term;
   }
 
   // ==========
@@ -249,8 +416,19 @@ export class AlertCondition extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // metric - computed: false, optional: false, required: true
@@ -370,17 +548,16 @@ export class AlertCondition extends cdktf.TerraformResource {
   }
 
   // term - computed: false, optional: false, required: true
-  private _term?: AlertConditionTerm[] | cdktf.IResolvable; 
+  private _term = new AlertConditionTermList(this, "term", true);
   public get term() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('term')));
+    return this._term;
   }
-  public set term(value: AlertConditionTerm[] | cdktf.IResolvable) {
-    this._term = value;
+  public putTerm(value: AlertConditionTerm[] | cdktf.IResolvable) {
+    this._term.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get termInput() {
-    return this._term;
+    return this._term.internalValue;
   }
 
   // =========
@@ -393,6 +570,7 @@ export class AlertCondition extends cdktf.TerraformResource {
       enabled: cdktf.booleanToTerraform(this._enabled),
       entities: cdktf.listMapper(cdktf.numberToTerraform)(this._entities),
       gc_metric: cdktf.stringToTerraform(this._gcMetric),
+      id: cdktf.stringToTerraform(this._id),
       metric: cdktf.stringToTerraform(this._metric),
       name: cdktf.stringToTerraform(this._name),
       policy_id: cdktf.numberToTerraform(this._policyId),
@@ -401,7 +579,7 @@ export class AlertCondition extends cdktf.TerraformResource {
       user_defined_metric: cdktf.stringToTerraform(this._userDefinedMetric),
       user_defined_value_function: cdktf.stringToTerraform(this._userDefinedValueFunction),
       violation_close_timer: cdktf.numberToTerraform(this._violationCloseTimer),
-      term: cdktf.listMapper(alertConditionTermToTerraform)(this._term),
+      term: cdktf.listMapper(alertConditionTermToTerraform)(this._term.internalValue),
     };
   }
 }
