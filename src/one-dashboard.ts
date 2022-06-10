@@ -180,6 +180,10 @@ export interface OneDashboardPageWidgetArea {
   */
   readonly height?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  */
+  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}
   */
   readonly row: number;
@@ -209,6 +213,7 @@ export function oneDashboardPageWidgetAreaToTerraform(struct?: OneDashboardPageW
   return {
     column: cdktf.numberToTerraform(struct!.column),
     height: cdktf.numberToTerraform(struct!.height),
+    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
@@ -244,6 +249,10 @@ export class OneDashboardPageWidgetAreaOutputReference extends cdktf.ComplexObje
       hasAnyValues = true;
       internalValueResult.height = this._height;
     }
+    if (this._ignoreTimeRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreTimeRange = this._ignoreTimeRange;
+    }
     if (this._row !== undefined) {
       hasAnyValues = true;
       internalValueResult.row = this._row;
@@ -269,6 +278,7 @@ export class OneDashboardPageWidgetAreaOutputReference extends cdktf.ComplexObje
       this.resolvableValue = undefined;
       this._column = undefined;
       this._height = undefined;
+      this._ignoreTimeRange = undefined;
       this._row = undefined;
       this._title = undefined;
       this._width = undefined;
@@ -283,6 +293,7 @@ export class OneDashboardPageWidgetAreaOutputReference extends cdktf.ComplexObje
       this.resolvableValue = undefined;
       this._column = value.column;
       this._height = value.height;
+      this._ignoreTimeRange = value.ignoreTimeRange;
       this._row = value.row;
       this._title = value.title;
       this._width = value.width;
@@ -322,6 +333,22 @@ export class OneDashboardPageWidgetAreaOutputReference extends cdktf.ComplexObje
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ignore_time_range - computed: false, optional: true, required: false
+  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  public get ignoreTimeRange() {
+    return this.getBooleanAttribute('ignore_time_range');
+  }
+  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+    this._ignoreTimeRange = value;
+  }
+  public resetIgnoreTimeRange() {
+    this._ignoreTimeRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreTimeRangeInput() {
+    return this._ignoreTimeRange;
   }
 
   // row - computed: false, optional: false, required: true
@@ -540,6 +567,10 @@ export interface OneDashboardPageWidgetBar {
   */
   readonly height?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  */
+  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  /**
   * Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
@@ -576,6 +607,7 @@ export function oneDashboardPageWidgetBarToTerraform(struct?: OneDashboardPageWi
     column: cdktf.numberToTerraform(struct!.column),
     filter_current_dashboard: cdktf.booleanToTerraform(struct!.filterCurrentDashboard),
     height: cdktf.numberToTerraform(struct!.height),
+    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
     linked_entity_guids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.linkedEntityGuids),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
@@ -616,6 +648,10 @@ export class OneDashboardPageWidgetBarOutputReference extends cdktf.ComplexObjec
       hasAnyValues = true;
       internalValueResult.height = this._height;
     }
+    if (this._ignoreTimeRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreTimeRange = this._ignoreTimeRange;
+    }
     if (this._linkedEntityGuids !== undefined) {
       hasAnyValues = true;
       internalValueResult.linkedEntityGuids = this._linkedEntityGuids;
@@ -646,6 +682,7 @@ export class OneDashboardPageWidgetBarOutputReference extends cdktf.ComplexObjec
       this._column = undefined;
       this._filterCurrentDashboard = undefined;
       this._height = undefined;
+      this._ignoreTimeRange = undefined;
       this._linkedEntityGuids = undefined;
       this._row = undefined;
       this._title = undefined;
@@ -662,6 +699,7 @@ export class OneDashboardPageWidgetBarOutputReference extends cdktf.ComplexObjec
       this._column = value.column;
       this._filterCurrentDashboard = value.filterCurrentDashboard;
       this._height = value.height;
+      this._ignoreTimeRange = value.ignoreTimeRange;
       this._linkedEntityGuids = value.linkedEntityGuids;
       this._row = value.row;
       this._title = value.title;
@@ -718,6 +756,22 @@ export class OneDashboardPageWidgetBarOutputReference extends cdktf.ComplexObjec
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ignore_time_range - computed: false, optional: true, required: false
+  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  public get ignoreTimeRange() {
+    return this.getBooleanAttribute('ignore_time_range');
+  }
+  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+    this._ignoreTimeRange = value;
+  }
+  public resetIgnoreTimeRange() {
+    this._ignoreTimeRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreTimeRangeInput() {
+    return this._ignoreTimeRange;
   }
 
   // linked_entity_guids - computed: true, optional: true, required: false
@@ -952,6 +1006,10 @@ export interface OneDashboardPageWidgetBillboard {
   */
   readonly height?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  */
+  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}
   */
   readonly row: number;
@@ -988,6 +1046,7 @@ export function oneDashboardPageWidgetBillboardToTerraform(struct?: OneDashboard
     column: cdktf.numberToTerraform(struct!.column),
     critical: cdktf.stringToTerraform(struct!.critical),
     height: cdktf.numberToTerraform(struct!.height),
+    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     warning: cdktf.stringToTerraform(struct!.warning),
@@ -1028,6 +1087,10 @@ export class OneDashboardPageWidgetBillboardOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.height = this._height;
     }
+    if (this._ignoreTimeRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreTimeRange = this._ignoreTimeRange;
+    }
     if (this._row !== undefined) {
       hasAnyValues = true;
       internalValueResult.row = this._row;
@@ -1058,6 +1121,7 @@ export class OneDashboardPageWidgetBillboardOutputReference extends cdktf.Comple
       this._column = undefined;
       this._critical = undefined;
       this._height = undefined;
+      this._ignoreTimeRange = undefined;
       this._row = undefined;
       this._title = undefined;
       this._warning = undefined;
@@ -1074,6 +1138,7 @@ export class OneDashboardPageWidgetBillboardOutputReference extends cdktf.Comple
       this._column = value.column;
       this._critical = value.critical;
       this._height = value.height;
+      this._ignoreTimeRange = value.ignoreTimeRange;
       this._row = value.row;
       this._title = value.title;
       this._warning = value.warning;
@@ -1130,6 +1195,22 @@ export class OneDashboardPageWidgetBillboardOutputReference extends cdktf.Comple
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ignore_time_range - computed: false, optional: true, required: false
+  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  public get ignoreTimeRange() {
+    return this.getBooleanAttribute('ignore_time_range');
+  }
+  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+    this._ignoreTimeRange = value;
+  }
+  public resetIgnoreTimeRange() {
+    this._ignoreTimeRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreTimeRangeInput() {
+    return this._ignoreTimeRange;
   }
 
   // row - computed: false, optional: false, required: true
@@ -1358,6 +1439,10 @@ export interface OneDashboardPageWidgetBullet {
   */
   readonly height?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  */
+  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  /**
   * The maximum value for the visualization
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#limit OneDashboard#limit}
@@ -1393,6 +1478,7 @@ export function oneDashboardPageWidgetBulletToTerraform(struct?: OneDashboardPag
   return {
     column: cdktf.numberToTerraform(struct!.column),
     height: cdktf.numberToTerraform(struct!.height),
+    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
     limit: cdktf.numberToTerraform(struct!.limit),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
@@ -1429,6 +1515,10 @@ export class OneDashboardPageWidgetBulletOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.height = this._height;
     }
+    if (this._ignoreTimeRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreTimeRange = this._ignoreTimeRange;
+    }
     if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
@@ -1458,6 +1548,7 @@ export class OneDashboardPageWidgetBulletOutputReference extends cdktf.ComplexOb
       this.resolvableValue = undefined;
       this._column = undefined;
       this._height = undefined;
+      this._ignoreTimeRange = undefined;
       this._limit = undefined;
       this._row = undefined;
       this._title = undefined;
@@ -1473,6 +1564,7 @@ export class OneDashboardPageWidgetBulletOutputReference extends cdktf.ComplexOb
       this.resolvableValue = undefined;
       this._column = value.column;
       this._height = value.height;
+      this._ignoreTimeRange = value.ignoreTimeRange;
       this._limit = value.limit;
       this._row = value.row;
       this._title = value.title;
@@ -1513,6 +1605,22 @@ export class OneDashboardPageWidgetBulletOutputReference extends cdktf.ComplexOb
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ignore_time_range - computed: false, optional: true, required: false
+  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  public get ignoreTimeRange() {
+    return this.getBooleanAttribute('ignore_time_range');
+  }
+  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+    this._ignoreTimeRange = value;
+  }
+  public resetIgnoreTimeRange() {
+    this._ignoreTimeRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreTimeRangeInput() {
+    return this._ignoreTimeRange;
   }
 
   // limit - computed: false, optional: false, required: true
@@ -1738,6 +1846,10 @@ export interface OneDashboardPageWidgetFunnel {
   */
   readonly height?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  */
+  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}
   */
   readonly row: number;
@@ -1767,6 +1879,7 @@ export function oneDashboardPageWidgetFunnelToTerraform(struct?: OneDashboardPag
   return {
     column: cdktf.numberToTerraform(struct!.column),
     height: cdktf.numberToTerraform(struct!.height),
+    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
@@ -1802,6 +1915,10 @@ export class OneDashboardPageWidgetFunnelOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.height = this._height;
     }
+    if (this._ignoreTimeRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreTimeRange = this._ignoreTimeRange;
+    }
     if (this._row !== undefined) {
       hasAnyValues = true;
       internalValueResult.row = this._row;
@@ -1827,6 +1944,7 @@ export class OneDashboardPageWidgetFunnelOutputReference extends cdktf.ComplexOb
       this.resolvableValue = undefined;
       this._column = undefined;
       this._height = undefined;
+      this._ignoreTimeRange = undefined;
       this._row = undefined;
       this._title = undefined;
       this._width = undefined;
@@ -1841,6 +1959,7 @@ export class OneDashboardPageWidgetFunnelOutputReference extends cdktf.ComplexOb
       this.resolvableValue = undefined;
       this._column = value.column;
       this._height = value.height;
+      this._ignoreTimeRange = value.ignoreTimeRange;
       this._row = value.row;
       this._title = value.title;
       this._width = value.width;
@@ -1880,6 +1999,22 @@ export class OneDashboardPageWidgetFunnelOutputReference extends cdktf.ComplexOb
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ignore_time_range - computed: false, optional: true, required: false
+  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  public get ignoreTimeRange() {
+    return this.getBooleanAttribute('ignore_time_range');
+  }
+  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+    this._ignoreTimeRange = value;
+  }
+  public resetIgnoreTimeRange() {
+    this._ignoreTimeRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreTimeRangeInput() {
+    return this._ignoreTimeRange;
   }
 
   // row - computed: false, optional: false, required: true
@@ -2092,6 +2227,10 @@ export interface OneDashboardPageWidgetHeatmap {
   */
   readonly height?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  */
+  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}
   */
   readonly row: number;
@@ -2121,6 +2260,7 @@ export function oneDashboardPageWidgetHeatmapToTerraform(struct?: OneDashboardPa
   return {
     column: cdktf.numberToTerraform(struct!.column),
     height: cdktf.numberToTerraform(struct!.height),
+    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
@@ -2156,6 +2296,10 @@ export class OneDashboardPageWidgetHeatmapOutputReference extends cdktf.ComplexO
       hasAnyValues = true;
       internalValueResult.height = this._height;
     }
+    if (this._ignoreTimeRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreTimeRange = this._ignoreTimeRange;
+    }
     if (this._row !== undefined) {
       hasAnyValues = true;
       internalValueResult.row = this._row;
@@ -2181,6 +2325,7 @@ export class OneDashboardPageWidgetHeatmapOutputReference extends cdktf.ComplexO
       this.resolvableValue = undefined;
       this._column = undefined;
       this._height = undefined;
+      this._ignoreTimeRange = undefined;
       this._row = undefined;
       this._title = undefined;
       this._width = undefined;
@@ -2195,6 +2340,7 @@ export class OneDashboardPageWidgetHeatmapOutputReference extends cdktf.ComplexO
       this.resolvableValue = undefined;
       this._column = value.column;
       this._height = value.height;
+      this._ignoreTimeRange = value.ignoreTimeRange;
       this._row = value.row;
       this._title = value.title;
       this._width = value.width;
@@ -2234,6 +2380,22 @@ export class OneDashboardPageWidgetHeatmapOutputReference extends cdktf.ComplexO
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ignore_time_range - computed: false, optional: true, required: false
+  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  public get ignoreTimeRange() {
+    return this.getBooleanAttribute('ignore_time_range');
+  }
+  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+    this._ignoreTimeRange = value;
+  }
+  public resetIgnoreTimeRange() {
+    this._ignoreTimeRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreTimeRangeInput() {
+    return this._ignoreTimeRange;
   }
 
   // row - computed: false, optional: false, required: true
@@ -2446,6 +2608,10 @@ export interface OneDashboardPageWidgetHistogram {
   */
   readonly height?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  */
+  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}
   */
   readonly row: number;
@@ -2475,6 +2641,7 @@ export function oneDashboardPageWidgetHistogramToTerraform(struct?: OneDashboard
   return {
     column: cdktf.numberToTerraform(struct!.column),
     height: cdktf.numberToTerraform(struct!.height),
+    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
@@ -2510,6 +2677,10 @@ export class OneDashboardPageWidgetHistogramOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.height = this._height;
     }
+    if (this._ignoreTimeRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreTimeRange = this._ignoreTimeRange;
+    }
     if (this._row !== undefined) {
       hasAnyValues = true;
       internalValueResult.row = this._row;
@@ -2535,6 +2706,7 @@ export class OneDashboardPageWidgetHistogramOutputReference extends cdktf.Comple
       this.resolvableValue = undefined;
       this._column = undefined;
       this._height = undefined;
+      this._ignoreTimeRange = undefined;
       this._row = undefined;
       this._title = undefined;
       this._width = undefined;
@@ -2549,6 +2721,7 @@ export class OneDashboardPageWidgetHistogramOutputReference extends cdktf.Comple
       this.resolvableValue = undefined;
       this._column = value.column;
       this._height = value.height;
+      this._ignoreTimeRange = value.ignoreTimeRange;
       this._row = value.row;
       this._title = value.title;
       this._width = value.width;
@@ -2588,6 +2761,22 @@ export class OneDashboardPageWidgetHistogramOutputReference extends cdktf.Comple
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ignore_time_range - computed: false, optional: true, required: false
+  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  public get ignoreTimeRange() {
+    return this.getBooleanAttribute('ignore_time_range');
+  }
+  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+    this._ignoreTimeRange = value;
+  }
+  public resetIgnoreTimeRange() {
+    this._ignoreTimeRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreTimeRangeInput() {
+    return this._ignoreTimeRange;
   }
 
   // row - computed: false, optional: false, required: true
@@ -2800,6 +2989,10 @@ export interface OneDashboardPageWidgetJson {
   */
   readonly height?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  */
+  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}
   */
   readonly row: number;
@@ -2829,6 +3022,7 @@ export function oneDashboardPageWidgetJsonToTerraform(struct?: OneDashboardPageW
   return {
     column: cdktf.numberToTerraform(struct!.column),
     height: cdktf.numberToTerraform(struct!.height),
+    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
@@ -2864,6 +3058,10 @@ export class OneDashboardPageWidgetJsonOutputReference extends cdktf.ComplexObje
       hasAnyValues = true;
       internalValueResult.height = this._height;
     }
+    if (this._ignoreTimeRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreTimeRange = this._ignoreTimeRange;
+    }
     if (this._row !== undefined) {
       hasAnyValues = true;
       internalValueResult.row = this._row;
@@ -2889,6 +3087,7 @@ export class OneDashboardPageWidgetJsonOutputReference extends cdktf.ComplexObje
       this.resolvableValue = undefined;
       this._column = undefined;
       this._height = undefined;
+      this._ignoreTimeRange = undefined;
       this._row = undefined;
       this._title = undefined;
       this._width = undefined;
@@ -2903,6 +3102,7 @@ export class OneDashboardPageWidgetJsonOutputReference extends cdktf.ComplexObje
       this.resolvableValue = undefined;
       this._column = value.column;
       this._height = value.height;
+      this._ignoreTimeRange = value.ignoreTimeRange;
       this._row = value.row;
       this._title = value.title;
       this._width = value.width;
@@ -2942,6 +3142,22 @@ export class OneDashboardPageWidgetJsonOutputReference extends cdktf.ComplexObje
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ignore_time_range - computed: false, optional: true, required: false
+  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  public get ignoreTimeRange() {
+    return this.getBooleanAttribute('ignore_time_range');
+  }
+  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+    this._ignoreTimeRange = value;
+  }
+  public resetIgnoreTimeRange() {
+    this._ignoreTimeRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreTimeRangeInput() {
+    return this._ignoreTimeRange;
   }
 
   // row - computed: false, optional: false, required: true
@@ -3154,6 +3370,10 @@ export interface OneDashboardPageWidgetLine {
   */
   readonly height?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  */
+  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}
   */
   readonly row: number;
@@ -3183,6 +3403,7 @@ export function oneDashboardPageWidgetLineToTerraform(struct?: OneDashboardPageW
   return {
     column: cdktf.numberToTerraform(struct!.column),
     height: cdktf.numberToTerraform(struct!.height),
+    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
@@ -3218,6 +3439,10 @@ export class OneDashboardPageWidgetLineOutputReference extends cdktf.ComplexObje
       hasAnyValues = true;
       internalValueResult.height = this._height;
     }
+    if (this._ignoreTimeRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreTimeRange = this._ignoreTimeRange;
+    }
     if (this._row !== undefined) {
       hasAnyValues = true;
       internalValueResult.row = this._row;
@@ -3243,6 +3468,7 @@ export class OneDashboardPageWidgetLineOutputReference extends cdktf.ComplexObje
       this.resolvableValue = undefined;
       this._column = undefined;
       this._height = undefined;
+      this._ignoreTimeRange = undefined;
       this._row = undefined;
       this._title = undefined;
       this._width = undefined;
@@ -3257,6 +3483,7 @@ export class OneDashboardPageWidgetLineOutputReference extends cdktf.ComplexObje
       this.resolvableValue = undefined;
       this._column = value.column;
       this._height = value.height;
+      this._ignoreTimeRange = value.ignoreTimeRange;
       this._row = value.row;
       this._title = value.title;
       this._width = value.width;
@@ -3296,6 +3523,22 @@ export class OneDashboardPageWidgetLineOutputReference extends cdktf.ComplexObje
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ignore_time_range - computed: false, optional: true, required: false
+  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  public get ignoreTimeRange() {
+    return this.getBooleanAttribute('ignore_time_range');
+  }
+  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+    this._ignoreTimeRange = value;
+  }
+  public resetIgnoreTimeRange() {
+    this._ignoreTimeRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreTimeRangeInput() {
+    return this._ignoreTimeRange;
   }
 
   // row - computed: false, optional: false, required: true
@@ -3383,6 +3626,10 @@ export interface OneDashboardPageWidgetMarkdown {
   */
   readonly height?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  */
+  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}
   */
   readonly row: number;
@@ -3410,6 +3657,7 @@ export function oneDashboardPageWidgetMarkdownToTerraform(struct?: OneDashboardP
   return {
     column: cdktf.numberToTerraform(struct!.column),
     height: cdktf.numberToTerraform(struct!.height),
+    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
     row: cdktf.numberToTerraform(struct!.row),
     text: cdktf.stringToTerraform(struct!.text),
     title: cdktf.stringToTerraform(struct!.title),
@@ -3445,6 +3693,10 @@ export class OneDashboardPageWidgetMarkdownOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.height = this._height;
     }
+    if (this._ignoreTimeRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreTimeRange = this._ignoreTimeRange;
+    }
     if (this._row !== undefined) {
       hasAnyValues = true;
       internalValueResult.row = this._row;
@@ -3470,6 +3722,7 @@ export class OneDashboardPageWidgetMarkdownOutputReference extends cdktf.Complex
       this.resolvableValue = undefined;
       this._column = undefined;
       this._height = undefined;
+      this._ignoreTimeRange = undefined;
       this._row = undefined;
       this._text = undefined;
       this._title = undefined;
@@ -3484,6 +3737,7 @@ export class OneDashboardPageWidgetMarkdownOutputReference extends cdktf.Complex
       this.resolvableValue = undefined;
       this._column = value.column;
       this._height = value.height;
+      this._ignoreTimeRange = value.ignoreTimeRange;
       this._row = value.row;
       this._text = value.text;
       this._title = value.title;
@@ -3523,6 +3777,22 @@ export class OneDashboardPageWidgetMarkdownOutputReference extends cdktf.Complex
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ignore_time_range - computed: false, optional: true, required: false
+  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  public get ignoreTimeRange() {
+    return this.getBooleanAttribute('ignore_time_range');
+  }
+  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+    this._ignoreTimeRange = value;
+  }
+  public resetIgnoreTimeRange() {
+    this._ignoreTimeRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreTimeRangeInput() {
+    return this._ignoreTimeRange;
   }
 
   // row - computed: false, optional: false, required: true
@@ -3744,6 +4014,10 @@ export interface OneDashboardPageWidgetPie {
   */
   readonly height?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  */
+  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  /**
   * Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
@@ -3780,6 +4054,7 @@ export function oneDashboardPageWidgetPieToTerraform(struct?: OneDashboardPageWi
     column: cdktf.numberToTerraform(struct!.column),
     filter_current_dashboard: cdktf.booleanToTerraform(struct!.filterCurrentDashboard),
     height: cdktf.numberToTerraform(struct!.height),
+    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
     linked_entity_guids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.linkedEntityGuids),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
@@ -3820,6 +4095,10 @@ export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObjec
       hasAnyValues = true;
       internalValueResult.height = this._height;
     }
+    if (this._ignoreTimeRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreTimeRange = this._ignoreTimeRange;
+    }
     if (this._linkedEntityGuids !== undefined) {
       hasAnyValues = true;
       internalValueResult.linkedEntityGuids = this._linkedEntityGuids;
@@ -3850,6 +4129,7 @@ export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObjec
       this._column = undefined;
       this._filterCurrentDashboard = undefined;
       this._height = undefined;
+      this._ignoreTimeRange = undefined;
       this._linkedEntityGuids = undefined;
       this._row = undefined;
       this._title = undefined;
@@ -3866,6 +4146,7 @@ export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObjec
       this._column = value.column;
       this._filterCurrentDashboard = value.filterCurrentDashboard;
       this._height = value.height;
+      this._ignoreTimeRange = value.ignoreTimeRange;
       this._linkedEntityGuids = value.linkedEntityGuids;
       this._row = value.row;
       this._title = value.title;
@@ -3922,6 +4203,22 @@ export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObjec
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ignore_time_range - computed: false, optional: true, required: false
+  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  public get ignoreTimeRange() {
+    return this.getBooleanAttribute('ignore_time_range');
+  }
+  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+    this._ignoreTimeRange = value;
+  }
+  public resetIgnoreTimeRange() {
+    this._ignoreTimeRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreTimeRangeInput() {
+    return this._ignoreTimeRange;
   }
 
   // linked_entity_guids - computed: true, optional: true, required: false
@@ -4150,6 +4447,10 @@ export interface OneDashboardPageWidgetStackedBar {
   */
   readonly height?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  */
+  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}
   */
   readonly row: number;
@@ -4179,6 +4480,7 @@ export function oneDashboardPageWidgetStackedBarToTerraform(struct?: OneDashboar
   return {
     column: cdktf.numberToTerraform(struct!.column),
     height: cdktf.numberToTerraform(struct!.height),
+    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
@@ -4214,6 +4516,10 @@ export class OneDashboardPageWidgetStackedBarOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.height = this._height;
     }
+    if (this._ignoreTimeRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreTimeRange = this._ignoreTimeRange;
+    }
     if (this._row !== undefined) {
       hasAnyValues = true;
       internalValueResult.row = this._row;
@@ -4239,6 +4545,7 @@ export class OneDashboardPageWidgetStackedBarOutputReference extends cdktf.Compl
       this.resolvableValue = undefined;
       this._column = undefined;
       this._height = undefined;
+      this._ignoreTimeRange = undefined;
       this._row = undefined;
       this._title = undefined;
       this._width = undefined;
@@ -4253,6 +4560,7 @@ export class OneDashboardPageWidgetStackedBarOutputReference extends cdktf.Compl
       this.resolvableValue = undefined;
       this._column = value.column;
       this._height = value.height;
+      this._ignoreTimeRange = value.ignoreTimeRange;
       this._row = value.row;
       this._title = value.title;
       this._width = value.width;
@@ -4292,6 +4600,22 @@ export class OneDashboardPageWidgetStackedBarOutputReference extends cdktf.Compl
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ignore_time_range - computed: false, optional: true, required: false
+  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  public get ignoreTimeRange() {
+    return this.getBooleanAttribute('ignore_time_range');
+  }
+  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+    this._ignoreTimeRange = value;
+  }
+  public resetIgnoreTimeRange() {
+    this._ignoreTimeRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreTimeRangeInput() {
+    return this._ignoreTimeRange;
   }
 
   // row - computed: false, optional: false, required: true
@@ -4510,6 +4834,10 @@ export interface OneDashboardPageWidgetTable {
   */
   readonly height?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  */
+  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  /**
   * Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
@@ -4546,6 +4874,7 @@ export function oneDashboardPageWidgetTableToTerraform(struct?: OneDashboardPage
     column: cdktf.numberToTerraform(struct!.column),
     filter_current_dashboard: cdktf.booleanToTerraform(struct!.filterCurrentDashboard),
     height: cdktf.numberToTerraform(struct!.height),
+    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
     linked_entity_guids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.linkedEntityGuids),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
@@ -4586,6 +4915,10 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.height = this._height;
     }
+    if (this._ignoreTimeRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreTimeRange = this._ignoreTimeRange;
+    }
     if (this._linkedEntityGuids !== undefined) {
       hasAnyValues = true;
       internalValueResult.linkedEntityGuids = this._linkedEntityGuids;
@@ -4616,6 +4949,7 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
       this._column = undefined;
       this._filterCurrentDashboard = undefined;
       this._height = undefined;
+      this._ignoreTimeRange = undefined;
       this._linkedEntityGuids = undefined;
       this._row = undefined;
       this._title = undefined;
@@ -4632,6 +4966,7 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
       this._column = value.column;
       this._filterCurrentDashboard = value.filterCurrentDashboard;
       this._height = value.height;
+      this._ignoreTimeRange = value.ignoreTimeRange;
       this._linkedEntityGuids = value.linkedEntityGuids;
       this._row = value.row;
       this._title = value.title;
@@ -4688,6 +5023,22 @@ export class OneDashboardPageWidgetTableOutputReference extends cdktf.ComplexObj
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ignore_time_range - computed: false, optional: true, required: false
+  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  public get ignoreTimeRange() {
+    return this.getBooleanAttribute('ignore_time_range');
+  }
+  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+    this._ignoreTimeRange = value;
+  }
+  public resetIgnoreTimeRange() {
+    this._ignoreTimeRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreTimeRangeInput() {
+    return this._ignoreTimeRange;
   }
 
   // linked_entity_guids - computed: true, optional: true, required: false
@@ -5315,7 +5666,7 @@ export class OneDashboard extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_one_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.46.2',
+        providerVersion: '2.47.0',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,

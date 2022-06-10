@@ -15025,7 +15025,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
-| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric). |
+| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
 | [`gcMetric`](#cdktfprovidernewrelicalertconditionconfigpropertygcmetric) | `string` | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -15155,7 +15155,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric).
+The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 
@@ -27260,6 +27260,7 @@ const oneDashboardPageWidgetArea: OneDashboardPageWidgetArea = { ... }
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetareapropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetareapropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetareapropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetareapropertyignoretimerange) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetareapropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
@@ -27325,6 +27326,18 @@ public readonly height: number;
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
+
+---
+
+##### `ignoreTimeRange`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetArea.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetareapropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -27407,6 +27420,7 @@ const oneDashboardPageWidgetBar: OneDashboardPageWidgetBar = { ... }
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`filterCurrentDashboard`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertyfiltercurrentdashboard) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Use this item to filter the current dashboard. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertyignoretimerange) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
 | [`linkedEntityGuids`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertylinkedentityguids) | `string`[] | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetbarpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
@@ -27487,6 +27501,18 @@ public readonly height: number;
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
+
+---
+
+##### `ignoreTimeRange`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBar.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetbarpropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -27583,6 +27609,7 @@ const oneDashboardPageWidgetBillboard: OneDashboardPageWidgetBillboard = { ... }
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`critical`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertycritical) | `string` | The critical threshold value. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertyignoretimerange) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
 | [`warning`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertywarning) | `string` | The warning threshold value. |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetbillboardpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
@@ -27663,6 +27690,18 @@ public readonly height: number;
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
+
+---
+
+##### `ignoreTimeRange`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBillboard.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetbillboardpropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -27759,6 +27798,7 @@ const oneDashboardPageWidgetBullet: OneDashboardPageWidgetBullet = { ... }
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertyignoretimerange) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetbulletpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
@@ -27841,6 +27881,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 ---
 
+##### `ignoreTimeRange`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBullet.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetbulletpropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
 ##### `width`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBullet.property.width" id="cdktfprovidernewreliconedashboardpagewidgetbulletpropertywidth"></a>
 
 ```typescript
@@ -27919,6 +27971,7 @@ const oneDashboardPageWidgetFunnel: OneDashboardPageWidgetFunnel = { ... }
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertyignoretimerange) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetfunnelpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
@@ -27984,6 +28037,18 @@ public readonly height: number;
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
+
+---
+
+##### `ignoreTimeRange`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetFunnel.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetfunnelpropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -28065,6 +28130,7 @@ const oneDashboardPageWidgetHeatmap: OneDashboardPageWidgetHeatmap = { ... }
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertyignoretimerange) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetheatmappropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
@@ -28130,6 +28196,18 @@ public readonly height: number;
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
+
+---
+
+##### `ignoreTimeRange`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmap.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetheatmappropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -28211,6 +28289,7 @@ const oneDashboardPageWidgetHistogram: OneDashboardPageWidgetHistogram = { ... }
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertyignoretimerange) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgethistogrampropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
@@ -28276,6 +28355,18 @@ public readonly height: number;
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
+
+---
+
+##### `ignoreTimeRange`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetHistogram.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgethistogrampropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -28357,6 +28448,7 @@ const oneDashboardPageWidgetJson: OneDashboardPageWidgetJson = { ... }
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertyignoretimerange) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetjsonpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
@@ -28422,6 +28514,18 @@ public readonly height: number;
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
+
+---
+
+##### `ignoreTimeRange`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetJson.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetjsonpropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -28503,6 +28607,7 @@ const oneDashboardPageWidgetLine: OneDashboardPageWidgetLine = { ... }
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertyignoretimerange) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetlinepropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
@@ -28568,6 +28673,18 @@ public readonly height: number;
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
+
+---
+
+##### `ignoreTimeRange`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLine.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetlinepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -28648,6 +28765,7 @@ const oneDashboardPageWidgetMarkdown: OneDashboardPageWidgetMarkdown = { ... }
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertyignoretimerange) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
 | [`text`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertytext) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#text OneDashboard#text}. |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
@@ -28703,6 +28821,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 ---
 
+##### `ignoreTimeRange`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdown.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
 ##### `text`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdown.property.text" id="cdktfprovidernewreliconedashboardpagewidgetmarkdownpropertytext"></a>
 
 ```typescript
@@ -28747,6 +28877,7 @@ const oneDashboardPageWidgetPie: OneDashboardPageWidgetPie = { ... }
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`filterCurrentDashboard`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertyfiltercurrentdashboard) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Use this item to filter the current dashboard. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertyignoretimerange) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
 | [`linkedEntityGuids`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertylinkedentityguids) | `string`[] | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetpiepropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
@@ -28827,6 +28958,18 @@ public readonly height: number;
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
+
+---
+
+##### `ignoreTimeRange`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetPie.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetpiepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -28922,6 +29065,7 @@ const oneDashboardPageWidgetStackedBar: OneDashboardPageWidgetStackedBar = { ...
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertyignoretimerange) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
 ---
@@ -28987,6 +29131,18 @@ public readonly height: number;
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
+
+---
+
+##### `ignoreTimeRange`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBar.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetstackedbarpropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -29069,6 +29225,7 @@ const oneDashboardPageWidgetTable: OneDashboardPageWidgetTable = { ... }
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgettablepropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
 | [`filterCurrentDashboard`](#cdktfprovidernewreliconedashboardpagewidgettablepropertyfiltercurrentdashboard) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Use this item to filter the current dashboard. |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgettablepropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgettablepropertyignoretimerange) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
 | [`linkedEntityGuids`](#cdktfprovidernewreliconedashboardpagewidgettablepropertylinkedentityguids) | `string`[] | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgettablepropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
 
@@ -29149,6 +29306,18 @@ public readonly height: number;
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
+
+---
+
+##### `ignoreTimeRange`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetTable.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgettablepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -48416,6 +48585,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | --- | --- |
 | [`putNrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferenceputnrqlquery) | *No description.* |
 | [`resetHeight`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferenceresetheight) | *No description.* |
+| [`resetIgnoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferenceresetignoretimerange) | *No description.* |
 | [`resetWidth`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferenceresetwidth) | *No description.* |
 
 ---
@@ -48438,6 +48608,12 @@ public putNrqlQuery(value: IResolvable | OneDashboardPageWidgetAreaNrqlQuery[])
 public resetHeight()
 ```
 
+##### `resetIgnoreTimeRange` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetAreaOutputReference.resetIgnoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetareaoutputreferenceresetignoretimerange"></a>
+
+```typescript
+public resetIgnoreTimeRange()
+```
+
 ##### `resetWidth` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetAreaOutputReference.resetWidth" id="cdktfprovidernewreliconedashboardpagewidgetareaoutputreferenceresetwidth"></a>
 
 ```typescript
@@ -48453,12 +48629,14 @@ public resetWidth()
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferencepropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetAreaNrqlQueryList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetAreaNrqlQueryList) | *No description.* |
 | [`columnInput`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferencepropertycolumninput) | `number` | *No description.* |
 | [`heightInput`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferencepropertyheightinput) | `number` | *No description.* |
+| [`ignoreTimeRangeInput`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferencepropertyignoretimerangeinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`nrqlQueryInput`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferencepropertynrqlqueryinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetAreaNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetAreaNrqlQuery)[] | *No description.* |
 | [`rowInput`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferencepropertyrowinput) | `number` | *No description.* |
 | [`titleInput`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferencepropertytitleinput) | `string` | *No description.* |
 | [`widthInput`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferencepropertywidthinput) | `number` | *No description.* |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferencepropertycolumn)<span title="Required">*</span> | `number` | *No description.* |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferencepropertyheight)<span title="Required">*</span> | `number` | *No description.* |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferencepropertyignoretimerange)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferencepropertyrow)<span title="Required">*</span> | `number` | *No description.* |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferencepropertytitle)<span title="Required">*</span> | `string` | *No description.* |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetareaoutputreferencepropertywidth)<span title="Required">*</span> | `number` | *No description.* |
@@ -48503,6 +48681,16 @@ public readonly heightInput: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRangeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetAreaOutputReference.property.ignoreTimeRangeInput" id="cdktfprovidernewreliconedashboardpagewidgetareaoutputreferencepropertyignoretimerangeinput"></a>
+
+```typescript
+public readonly ignoreTimeRangeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -48563,6 +48751,16 @@ public readonly height: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRange`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetAreaOutputReference.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetareaoutputreferencepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -48962,6 +49160,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | [`putNrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferenceputnrqlquery) | *No description.* |
 | [`resetFilterCurrentDashboard`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferenceresetfiltercurrentdashboard) | *No description.* |
 | [`resetHeight`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferenceresetheight) | *No description.* |
+| [`resetIgnoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferenceresetignoretimerange) | *No description.* |
 | [`resetLinkedEntityGuids`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferenceresetlinkedentityguids) | *No description.* |
 | [`resetWidth`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferenceresetwidth) | *No description.* |
 
@@ -48991,6 +49190,12 @@ public resetFilterCurrentDashboard()
 public resetHeight()
 ```
 
+##### `resetIgnoreTimeRange` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBarOutputReference.resetIgnoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetbaroutputreferenceresetignoretimerange"></a>
+
+```typescript
+public resetIgnoreTimeRange()
+```
+
 ##### `resetLinkedEntityGuids` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBarOutputReference.resetLinkedEntityGuids" id="cdktfprovidernewreliconedashboardpagewidgetbaroutputreferenceresetlinkedentityguids"></a>
 
 ```typescript
@@ -49013,6 +49218,7 @@ public resetWidth()
 | [`columnInput`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferencepropertycolumninput) | `number` | *No description.* |
 | [`filterCurrentDashboardInput`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferencepropertyfiltercurrentdashboardinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`heightInput`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferencepropertyheightinput) | `number` | *No description.* |
+| [`ignoreTimeRangeInput`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferencepropertyignoretimerangeinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`linkedEntityGuidsInput`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferencepropertylinkedentityguidsinput) | `string`[] | *No description.* |
 | [`nrqlQueryInput`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferencepropertynrqlqueryinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetBarNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBarNrqlQuery)[] | *No description.* |
 | [`rowInput`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferencepropertyrowinput) | `number` | *No description.* |
@@ -49021,6 +49227,7 @@ public resetWidth()
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferencepropertycolumn)<span title="Required">*</span> | `number` | *No description.* |
 | [`filterCurrentDashboard`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferencepropertyfiltercurrentdashboard)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferencepropertyheight)<span title="Required">*</span> | `number` | *No description.* |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferencepropertyignoretimerange)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`linkedEntityGuids`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferencepropertylinkedentityguids)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferencepropertyrow)<span title="Required">*</span> | `number` | *No description.* |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetbaroutputreferencepropertytitle)<span title="Required">*</span> | `string` | *No description.* |
@@ -49076,6 +49283,16 @@ public readonly heightInput: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRangeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBarOutputReference.property.ignoreTimeRangeInput" id="cdktfprovidernewreliconedashboardpagewidgetbaroutputreferencepropertyignoretimerangeinput"></a>
+
+```typescript
+public readonly ignoreTimeRangeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -49156,6 +49373,16 @@ public readonly height: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRange`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBarOutputReference.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetbaroutputreferencepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -49565,6 +49792,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | [`putNrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferenceputnrqlquery) | *No description.* |
 | [`resetCritical`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferenceresetcritical) | *No description.* |
 | [`resetHeight`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferenceresetheight) | *No description.* |
+| [`resetIgnoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferenceresetignoretimerange) | *No description.* |
 | [`resetWarning`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferenceresetwarning) | *No description.* |
 | [`resetWidth`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferenceresetwidth) | *No description.* |
 
@@ -49594,6 +49822,12 @@ public resetCritical()
 public resetHeight()
 ```
 
+##### `resetIgnoreTimeRange` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardOutputReference.resetIgnoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferenceresetignoretimerange"></a>
+
+```typescript
+public resetIgnoreTimeRange()
+```
+
 ##### `resetWarning` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardOutputReference.resetWarning" id="cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferenceresetwarning"></a>
 
 ```typescript
@@ -49616,6 +49850,7 @@ public resetWidth()
 | [`columnInput`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferencepropertycolumninput) | `number` | *No description.* |
 | [`criticalInput`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferencepropertycriticalinput) | `string` | *No description.* |
 | [`heightInput`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferencepropertyheightinput) | `number` | *No description.* |
+| [`ignoreTimeRangeInput`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferencepropertyignoretimerangeinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`nrqlQueryInput`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferencepropertynrqlqueryinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardNrqlQuery)[] | *No description.* |
 | [`rowInput`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferencepropertyrowinput) | `number` | *No description.* |
 | [`titleInput`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferencepropertytitleinput) | `string` | *No description.* |
@@ -49624,6 +49859,7 @@ public resetWidth()
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferencepropertycolumn)<span title="Required">*</span> | `number` | *No description.* |
 | [`critical`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferencepropertycritical)<span title="Required">*</span> | `string` | *No description.* |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferencepropertyheight)<span title="Required">*</span> | `number` | *No description.* |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferencepropertyignoretimerange)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferencepropertyrow)<span title="Required">*</span> | `number` | *No description.* |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferencepropertytitle)<span title="Required">*</span> | `string` | *No description.* |
 | [`warning`](#cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferencepropertywarning)<span title="Required">*</span> | `string` | *No description.* |
@@ -49679,6 +49915,16 @@ public readonly heightInput: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRangeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardOutputReference.property.ignoreTimeRangeInput" id="cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferencepropertyignoretimerangeinput"></a>
+
+```typescript
+public readonly ignoreTimeRangeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -49759,6 +50005,16 @@ public readonly height: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRange`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBillboardOutputReference.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetbillboardoutputreferencepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -50167,6 +50423,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | --- | --- |
 | [`putNrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferenceputnrqlquery) | *No description.* |
 | [`resetHeight`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferenceresetheight) | *No description.* |
+| [`resetIgnoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferenceresetignoretimerange) | *No description.* |
 | [`resetWidth`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferenceresetwidth) | *No description.* |
 
 ---
@@ -50189,6 +50446,12 @@ public putNrqlQuery(value: IResolvable | OneDashboardPageWidgetBulletNrqlQuery[]
 public resetHeight()
 ```
 
+##### `resetIgnoreTimeRange` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBulletOutputReference.resetIgnoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferenceresetignoretimerange"></a>
+
+```typescript
+public resetIgnoreTimeRange()
+```
+
 ##### `resetWidth` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBulletOutputReference.resetWidth" id="cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferenceresetwidth"></a>
 
 ```typescript
@@ -50204,6 +50467,7 @@ public resetWidth()
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferencepropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetBulletNrqlQueryList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBulletNrqlQueryList) | *No description.* |
 | [`columnInput`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferencepropertycolumninput) | `number` | *No description.* |
 | [`heightInput`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferencepropertyheightinput) | `number` | *No description.* |
+| [`ignoreTimeRangeInput`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferencepropertyignoretimerangeinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`limitInput`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferencepropertylimitinput) | `number` | *No description.* |
 | [`nrqlQueryInput`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferencepropertynrqlqueryinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetBulletNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetBulletNrqlQuery)[] | *No description.* |
 | [`rowInput`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferencepropertyrowinput) | `number` | *No description.* |
@@ -50211,6 +50475,7 @@ public resetWidth()
 | [`widthInput`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferencepropertywidthinput) | `number` | *No description.* |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferencepropertycolumn)<span title="Required">*</span> | `number` | *No description.* |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferencepropertyheight)<span title="Required">*</span> | `number` | *No description.* |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferencepropertyignoretimerange)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`limit`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferencepropertylimit)<span title="Required">*</span> | `number` | *No description.* |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferencepropertyrow)<span title="Required">*</span> | `number` | *No description.* |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferencepropertytitle)<span title="Required">*</span> | `string` | *No description.* |
@@ -50256,6 +50521,16 @@ public readonly heightInput: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRangeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBulletOutputReference.property.ignoreTimeRangeInput" id="cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferencepropertyignoretimerangeinput"></a>
+
+```typescript
+public readonly ignoreTimeRangeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -50326,6 +50601,16 @@ public readonly height: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRange`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetBulletOutputReference.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetbulletoutputreferencepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -50734,6 +51019,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | --- | --- |
 | [`putNrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferenceputnrqlquery) | *No description.* |
 | [`resetHeight`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferenceresetheight) | *No description.* |
+| [`resetIgnoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferenceresetignoretimerange) | *No description.* |
 | [`resetWidth`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferenceresetwidth) | *No description.* |
 
 ---
@@ -50756,6 +51042,12 @@ public putNrqlQuery(value: IResolvable | OneDashboardPageWidgetFunnelNrqlQuery[]
 public resetHeight()
 ```
 
+##### `resetIgnoreTimeRange` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelOutputReference.resetIgnoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferenceresetignoretimerange"></a>
+
+```typescript
+public resetIgnoreTimeRange()
+```
+
 ##### `resetWidth` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelOutputReference.resetWidth" id="cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferenceresetwidth"></a>
 
 ```typescript
@@ -50771,12 +51063,14 @@ public resetWidth()
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferencepropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelNrqlQueryList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelNrqlQueryList) | *No description.* |
 | [`columnInput`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferencepropertycolumninput) | `number` | *No description.* |
 | [`heightInput`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferencepropertyheightinput) | `number` | *No description.* |
+| [`ignoreTimeRangeInput`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferencepropertyignoretimerangeinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`nrqlQueryInput`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferencepropertynrqlqueryinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelNrqlQuery)[] | *No description.* |
 | [`rowInput`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferencepropertyrowinput) | `number` | *No description.* |
 | [`titleInput`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferencepropertytitleinput) | `string` | *No description.* |
 | [`widthInput`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferencepropertywidthinput) | `number` | *No description.* |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferencepropertycolumn)<span title="Required">*</span> | `number` | *No description.* |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferencepropertyheight)<span title="Required">*</span> | `number` | *No description.* |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferencepropertyignoretimerange)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferencepropertyrow)<span title="Required">*</span> | `number` | *No description.* |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferencepropertytitle)<span title="Required">*</span> | `string` | *No description.* |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferencepropertywidth)<span title="Required">*</span> | `number` | *No description.* |
@@ -50821,6 +51115,16 @@ public readonly heightInput: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRangeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelOutputReference.property.ignoreTimeRangeInput" id="cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferencepropertyignoretimerangeinput"></a>
+
+```typescript
+public readonly ignoreTimeRangeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -50881,6 +51185,16 @@ public readonly height: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRange`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetFunnelOutputReference.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetfunneloutputreferencepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -51279,6 +51593,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | --- | --- |
 | [`putNrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferenceputnrqlquery) | *No description.* |
 | [`resetHeight`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferenceresetheight) | *No description.* |
+| [`resetIgnoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferenceresetignoretimerange) | *No description.* |
 | [`resetWidth`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferenceresetwidth) | *No description.* |
 
 ---
@@ -51301,6 +51616,12 @@ public putNrqlQuery(value: IResolvable | OneDashboardPageWidgetHeatmapNrqlQuery[
 public resetHeight()
 ```
 
+##### `resetIgnoreTimeRange` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapOutputReference.resetIgnoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferenceresetignoretimerange"></a>
+
+```typescript
+public resetIgnoreTimeRange()
+```
+
 ##### `resetWidth` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapOutputReference.resetWidth" id="cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferenceresetwidth"></a>
 
 ```typescript
@@ -51316,12 +51637,14 @@ public resetWidth()
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferencepropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapNrqlQueryList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapNrqlQueryList) | *No description.* |
 | [`columnInput`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferencepropertycolumninput) | `number` | *No description.* |
 | [`heightInput`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferencepropertyheightinput) | `number` | *No description.* |
+| [`ignoreTimeRangeInput`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferencepropertyignoretimerangeinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`nrqlQueryInput`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferencepropertynrqlqueryinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapNrqlQuery)[] | *No description.* |
 | [`rowInput`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferencepropertyrowinput) | `number` | *No description.* |
 | [`titleInput`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferencepropertytitleinput) | `string` | *No description.* |
 | [`widthInput`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferencepropertywidthinput) | `number` | *No description.* |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferencepropertycolumn)<span title="Required">*</span> | `number` | *No description.* |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferencepropertyheight)<span title="Required">*</span> | `number` | *No description.* |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferencepropertyignoretimerange)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferencepropertyrow)<span title="Required">*</span> | `number` | *No description.* |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferencepropertytitle)<span title="Required">*</span> | `string` | *No description.* |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferencepropertywidth)<span title="Required">*</span> | `number` | *No description.* |
@@ -51366,6 +51689,16 @@ public readonly heightInput: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRangeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapOutputReference.property.ignoreTimeRangeInput" id="cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferencepropertyignoretimerangeinput"></a>
+
+```typescript
+public readonly ignoreTimeRangeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -51426,6 +51759,16 @@ public readonly height: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRange`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetHeatmapOutputReference.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetheatmapoutputreferencepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -51824,6 +52167,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | --- | --- |
 | [`putNrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferenceputnrqlquery) | *No description.* |
 | [`resetHeight`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferenceresetheight) | *No description.* |
+| [`resetIgnoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferenceresetignoretimerange) | *No description.* |
 | [`resetWidth`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferenceresetwidth) | *No description.* |
 
 ---
@@ -51846,6 +52190,12 @@ public putNrqlQuery(value: IResolvable | OneDashboardPageWidgetHistogramNrqlQuer
 public resetHeight()
 ```
 
+##### `resetIgnoreTimeRange` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramOutputReference.resetIgnoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferenceresetignoretimerange"></a>
+
+```typescript
+public resetIgnoreTimeRange()
+```
+
 ##### `resetWidth` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramOutputReference.resetWidth" id="cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferenceresetwidth"></a>
 
 ```typescript
@@ -51861,12 +52211,14 @@ public resetWidth()
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferencepropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramNrqlQueryList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramNrqlQueryList) | *No description.* |
 | [`columnInput`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferencepropertycolumninput) | `number` | *No description.* |
 | [`heightInput`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferencepropertyheightinput) | `number` | *No description.* |
+| [`ignoreTimeRangeInput`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferencepropertyignoretimerangeinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`nrqlQueryInput`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferencepropertynrqlqueryinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramNrqlQuery)[] | *No description.* |
 | [`rowInput`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferencepropertyrowinput) | `number` | *No description.* |
 | [`titleInput`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferencepropertytitleinput) | `string` | *No description.* |
 | [`widthInput`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferencepropertywidthinput) | `number` | *No description.* |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferencepropertycolumn)<span title="Required">*</span> | `number` | *No description.* |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferencepropertyheight)<span title="Required">*</span> | `number` | *No description.* |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferencepropertyignoretimerange)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferencepropertyrow)<span title="Required">*</span> | `number` | *No description.* |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferencepropertytitle)<span title="Required">*</span> | `string` | *No description.* |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferencepropertywidth)<span title="Required">*</span> | `number` | *No description.* |
@@ -51911,6 +52263,16 @@ public readonly heightInput: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRangeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramOutputReference.property.ignoreTimeRangeInput" id="cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferencepropertyignoretimerangeinput"></a>
+
+```typescript
+public readonly ignoreTimeRangeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -51971,6 +52333,16 @@ public readonly height: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRange`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramOutputReference.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgethistogramoutputreferencepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -52369,6 +52741,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | --- | --- |
 | [`putNrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferenceputnrqlquery) | *No description.* |
 | [`resetHeight`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferenceresetheight) | *No description.* |
+| [`resetIgnoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferenceresetignoretimerange) | *No description.* |
 | [`resetWidth`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferenceresetwidth) | *No description.* |
 
 ---
@@ -52391,6 +52764,12 @@ public putNrqlQuery(value: IResolvable | OneDashboardPageWidgetJsonNrqlQuery[])
 public resetHeight()
 ```
 
+##### `resetIgnoreTimeRange` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetJsonOutputReference.resetIgnoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferenceresetignoretimerange"></a>
+
+```typescript
+public resetIgnoreTimeRange()
+```
+
 ##### `resetWidth` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetJsonOutputReference.resetWidth" id="cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferenceresetwidth"></a>
 
 ```typescript
@@ -52406,12 +52785,14 @@ public resetWidth()
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferencepropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetJsonNrqlQueryList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetJsonNrqlQueryList) | *No description.* |
 | [`columnInput`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferencepropertycolumninput) | `number` | *No description.* |
 | [`heightInput`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferencepropertyheightinput) | `number` | *No description.* |
+| [`ignoreTimeRangeInput`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferencepropertyignoretimerangeinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`nrqlQueryInput`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferencepropertynrqlqueryinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetJsonNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetJsonNrqlQuery)[] | *No description.* |
 | [`rowInput`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferencepropertyrowinput) | `number` | *No description.* |
 | [`titleInput`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferencepropertytitleinput) | `string` | *No description.* |
 | [`widthInput`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferencepropertywidthinput) | `number` | *No description.* |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferencepropertycolumn)<span title="Required">*</span> | `number` | *No description.* |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferencepropertyheight)<span title="Required">*</span> | `number` | *No description.* |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferencepropertyignoretimerange)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferencepropertyrow)<span title="Required">*</span> | `number` | *No description.* |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferencepropertytitle)<span title="Required">*</span> | `string` | *No description.* |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferencepropertywidth)<span title="Required">*</span> | `number` | *No description.* |
@@ -52456,6 +52837,16 @@ public readonly heightInput: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRangeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetJsonOutputReference.property.ignoreTimeRangeInput" id="cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferencepropertyignoretimerangeinput"></a>
+
+```typescript
+public readonly ignoreTimeRangeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -52516,6 +52907,16 @@ public readonly height: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRange`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetJsonOutputReference.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetjsonoutputreferencepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -52914,6 +53315,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | --- | --- |
 | [`putNrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferenceputnrqlquery) | *No description.* |
 | [`resetHeight`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferenceresetheight) | *No description.* |
+| [`resetIgnoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferenceresetignoretimerange) | *No description.* |
 | [`resetWidth`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferenceresetwidth) | *No description.* |
 
 ---
@@ -52936,6 +53338,12 @@ public putNrqlQuery(value: IResolvable | OneDashboardPageWidgetLineNrqlQuery[])
 public resetHeight()
 ```
 
+##### `resetIgnoreTimeRange` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLineOutputReference.resetIgnoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetlineoutputreferenceresetignoretimerange"></a>
+
+```typescript
+public resetIgnoreTimeRange()
+```
+
 ##### `resetWidth` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLineOutputReference.resetWidth" id="cdktfprovidernewreliconedashboardpagewidgetlineoutputreferenceresetwidth"></a>
 
 ```typescript
@@ -52951,12 +53359,14 @@ public resetWidth()
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferencepropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLineNrqlQueryList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLineNrqlQueryList) | *No description.* |
 | [`columnInput`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferencepropertycolumninput) | `number` | *No description.* |
 | [`heightInput`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferencepropertyheightinput) | `number` | *No description.* |
+| [`ignoreTimeRangeInput`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferencepropertyignoretimerangeinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`nrqlQueryInput`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferencepropertynrqlqueryinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetLineNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLineNrqlQuery)[] | *No description.* |
 | [`rowInput`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferencepropertyrowinput) | `number` | *No description.* |
 | [`titleInput`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferencepropertytitleinput) | `string` | *No description.* |
 | [`widthInput`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferencepropertywidthinput) | `number` | *No description.* |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferencepropertycolumn)<span title="Required">*</span> | `number` | *No description.* |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferencepropertyheight)<span title="Required">*</span> | `number` | *No description.* |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferencepropertyignoretimerange)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferencepropertyrow)<span title="Required">*</span> | `number` | *No description.* |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferencepropertytitle)<span title="Required">*</span> | `string` | *No description.* |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetlineoutputreferencepropertywidth)<span title="Required">*</span> | `number` | *No description.* |
@@ -53001,6 +53411,16 @@ public readonly heightInput: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRangeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLineOutputReference.property.ignoreTimeRangeInput" id="cdktfprovidernewreliconedashboardpagewidgetlineoutputreferencepropertyignoretimerangeinput"></a>
+
+```typescript
+public readonly ignoreTimeRangeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -53061,6 +53481,16 @@ public readonly height: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRange`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLineOutputReference.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetlineoutputreferencepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -53245,6 +53675,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | **Name** | **Description** |
 | --- | --- |
 | [`resetHeight`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferenceresetheight) | *No description.* |
+| [`resetIgnoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferenceresetignoretimerange) | *No description.* |
 | [`resetText`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferenceresettext) | *No description.* |
 | [`resetWidth`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferenceresetwidth) | *No description.* |
 
@@ -53254,6 +53685,12 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 ```typescript
 public resetHeight()
+```
+
+##### `resetIgnoreTimeRange` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdownOutputReference.resetIgnoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferenceresetignoretimerange"></a>
+
+```typescript
+public resetIgnoreTimeRange()
 ```
 
 ##### `resetText` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdownOutputReference.resetText" id="cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferenceresettext"></a>
@@ -53276,12 +53713,14 @@ public resetWidth()
 | [`id`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferencepropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`columnInput`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferencepropertycolumninput) | `number` | *No description.* |
 | [`heightInput`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferencepropertyheightinput) | `number` | *No description.* |
+| [`ignoreTimeRangeInput`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferencepropertyignoretimerangeinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`rowInput`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferencepropertyrowinput) | `number` | *No description.* |
 | [`textInput`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferencepropertytextinput) | `string` | *No description.* |
 | [`titleInput`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferencepropertytitleinput) | `string` | *No description.* |
 | [`widthInput`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferencepropertywidthinput) | `number` | *No description.* |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferencepropertycolumn)<span title="Required">*</span> | `number` | *No description.* |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferencepropertyheight)<span title="Required">*</span> | `number` | *No description.* |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferencepropertyignoretimerange)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferencepropertyrow)<span title="Required">*</span> | `number` | *No description.* |
 | [`text`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferencepropertytext)<span title="Required">*</span> | `string` | *No description.* |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferencepropertytitle)<span title="Required">*</span> | `string` | *No description.* |
@@ -53317,6 +53756,16 @@ public readonly heightInput: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRangeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdownOutputReference.property.ignoreTimeRangeInput" id="cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferencepropertyignoretimerangeinput"></a>
+
+```typescript
+public readonly ignoreTimeRangeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -53377,6 +53826,16 @@ public readonly height: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRange`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdownOutputReference.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetmarkdownoutputreferencepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -53786,6 +54245,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | [`putNrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferenceputnrqlquery) | *No description.* |
 | [`resetFilterCurrentDashboard`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferenceresetfiltercurrentdashboard) | *No description.* |
 | [`resetHeight`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferenceresetheight) | *No description.* |
+| [`resetIgnoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferenceresetignoretimerange) | *No description.* |
 | [`resetLinkedEntityGuids`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferenceresetlinkedentityguids) | *No description.* |
 | [`resetWidth`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferenceresetwidth) | *No description.* |
 
@@ -53815,6 +54275,12 @@ public resetFilterCurrentDashboard()
 public resetHeight()
 ```
 
+##### `resetIgnoreTimeRange` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetPieOutputReference.resetIgnoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetpieoutputreferenceresetignoretimerange"></a>
+
+```typescript
+public resetIgnoreTimeRange()
+```
+
 ##### `resetLinkedEntityGuids` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetPieOutputReference.resetLinkedEntityGuids" id="cdktfprovidernewreliconedashboardpagewidgetpieoutputreferenceresetlinkedentityguids"></a>
 
 ```typescript
@@ -53837,6 +54303,7 @@ public resetWidth()
 | [`columnInput`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferencepropertycolumninput) | `number` | *No description.* |
 | [`filterCurrentDashboardInput`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferencepropertyfiltercurrentdashboardinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`heightInput`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferencepropertyheightinput) | `number` | *No description.* |
+| [`ignoreTimeRangeInput`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferencepropertyignoretimerangeinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`linkedEntityGuidsInput`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferencepropertylinkedentityguidsinput) | `string`[] | *No description.* |
 | [`nrqlQueryInput`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferencepropertynrqlqueryinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetPieNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetPieNrqlQuery)[] | *No description.* |
 | [`rowInput`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferencepropertyrowinput) | `number` | *No description.* |
@@ -53845,6 +54312,7 @@ public resetWidth()
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferencepropertycolumn)<span title="Required">*</span> | `number` | *No description.* |
 | [`filterCurrentDashboard`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferencepropertyfiltercurrentdashboard)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferencepropertyheight)<span title="Required">*</span> | `number` | *No description.* |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferencepropertyignoretimerange)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`linkedEntityGuids`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferencepropertylinkedentityguids)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferencepropertyrow)<span title="Required">*</span> | `number` | *No description.* |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetpieoutputreferencepropertytitle)<span title="Required">*</span> | `string` | *No description.* |
@@ -53900,6 +54368,16 @@ public readonly heightInput: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRangeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetPieOutputReference.property.ignoreTimeRangeInput" id="cdktfprovidernewreliconedashboardpagewidgetpieoutputreferencepropertyignoretimerangeinput"></a>
+
+```typescript
+public readonly ignoreTimeRangeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -53980,6 +54458,16 @@ public readonly height: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRange`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetPieOutputReference.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetpieoutputreferencepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -54388,6 +54876,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | --- | --- |
 | [`putNrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferenceputnrqlquery) | *No description.* |
 | [`resetHeight`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferenceresetheight) | *No description.* |
+| [`resetIgnoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferenceresetignoretimerange) | *No description.* |
 | [`resetWidth`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferenceresetwidth) | *No description.* |
 
 ---
@@ -54410,6 +54899,12 @@ public putNrqlQuery(value: IResolvable | OneDashboardPageWidgetStackedBarNrqlQue
 public resetHeight()
 ```
 
+##### `resetIgnoreTimeRange` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarOutputReference.resetIgnoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferenceresetignoretimerange"></a>
+
+```typescript
+public resetIgnoreTimeRange()
+```
+
 ##### `resetWidth` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarOutputReference.resetWidth" id="cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferenceresetwidth"></a>
 
 ```typescript
@@ -54425,12 +54920,14 @@ public resetWidth()
 | [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferencepropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarNrqlQueryList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarNrqlQueryList) | *No description.* |
 | [`columnInput`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferencepropertycolumninput) | `number` | *No description.* |
 | [`heightInput`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferencepropertyheightinput) | `number` | *No description.* |
+| [`ignoreTimeRangeInput`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferencepropertyignoretimerangeinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`nrqlQueryInput`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferencepropertynrqlqueryinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarNrqlQuery)[] | *No description.* |
 | [`rowInput`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferencepropertyrowinput) | `number` | *No description.* |
 | [`titleInput`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferencepropertytitleinput) | `string` | *No description.* |
 | [`widthInput`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferencepropertywidthinput) | `number` | *No description.* |
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferencepropertycolumn)<span title="Required">*</span> | `number` | *No description.* |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferencepropertyheight)<span title="Required">*</span> | `number` | *No description.* |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferencepropertyignoretimerange)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferencepropertyrow)<span title="Required">*</span> | `number` | *No description.* |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferencepropertytitle)<span title="Required">*</span> | `string` | *No description.* |
 | [`width`](#cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferencepropertywidth)<span title="Required">*</span> | `number` | *No description.* |
@@ -54475,6 +54972,16 @@ public readonly heightInput: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRangeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarOutputReference.property.ignoreTimeRangeInput" id="cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferencepropertyignoretimerangeinput"></a>
+
+```typescript
+public readonly ignoreTimeRangeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -54535,6 +55042,16 @@ public readonly height: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRange`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarOutputReference.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetstackedbaroutputreferencepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -54934,6 +55451,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | [`putNrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferenceputnrqlquery) | *No description.* |
 | [`resetFilterCurrentDashboard`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferenceresetfiltercurrentdashboard) | *No description.* |
 | [`resetHeight`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferenceresetheight) | *No description.* |
+| [`resetIgnoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferenceresetignoretimerange) | *No description.* |
 | [`resetLinkedEntityGuids`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferenceresetlinkedentityguids) | *No description.* |
 | [`resetWidth`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferenceresetwidth) | *No description.* |
 
@@ -54963,6 +55481,12 @@ public resetFilterCurrentDashboard()
 public resetHeight()
 ```
 
+##### `resetIgnoreTimeRange` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetTableOutputReference.resetIgnoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgettableoutputreferenceresetignoretimerange"></a>
+
+```typescript
+public resetIgnoreTimeRange()
+```
+
 ##### `resetLinkedEntityGuids` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetTableOutputReference.resetLinkedEntityGuids" id="cdktfprovidernewreliconedashboardpagewidgettableoutputreferenceresetlinkedentityguids"></a>
 
 ```typescript
@@ -54985,6 +55509,7 @@ public resetWidth()
 | [`columnInput`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferencepropertycolumninput) | `number` | *No description.* |
 | [`filterCurrentDashboardInput`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferencepropertyfiltercurrentdashboardinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`heightInput`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferencepropertyheightinput) | `number` | *No description.* |
+| [`ignoreTimeRangeInput`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferencepropertyignoretimerangeinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`linkedEntityGuidsInput`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferencepropertylinkedentityguidsinput) | `string`[] | *No description.* |
 | [`nrqlQueryInput`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferencepropertynrqlqueryinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetTableNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetTableNrqlQuery)[] | *No description.* |
 | [`rowInput`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferencepropertyrowinput) | `number` | *No description.* |
@@ -54993,6 +55518,7 @@ public resetWidth()
 | [`column`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferencepropertycolumn)<span title="Required">*</span> | `number` | *No description.* |
 | [`filterCurrentDashboard`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferencepropertyfiltercurrentdashboard)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`height`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferencepropertyheight)<span title="Required">*</span> | `number` | *No description.* |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferencepropertyignoretimerange)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`linkedEntityGuids`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferencepropertylinkedentityguids)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`row`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferencepropertyrow)<span title="Required">*</span> | `number` | *No description.* |
 | [`title`](#cdktfprovidernewreliconedashboardpagewidgettableoutputreferencepropertytitle)<span title="Required">*</span> | `string` | *No description.* |
@@ -55048,6 +55574,16 @@ public readonly heightInput: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRangeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetTableOutputReference.property.ignoreTimeRangeInput" id="cdktfprovidernewreliconedashboardpagewidgettableoutputreferencepropertyignoretimerangeinput"></a>
+
+```typescript
+public readonly ignoreTimeRangeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -55128,6 +55664,16 @@ public readonly height: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `ignoreTimeRange`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetTableOutputReference.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgettableoutputreferencepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
