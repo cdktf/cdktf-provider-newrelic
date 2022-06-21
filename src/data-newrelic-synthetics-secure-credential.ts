@@ -48,7 +48,7 @@ export class DataNewrelicSyntheticsSecureCredential extends cdktf.TerraformDataS
       terraformResourceType: 'newrelic_synthetics_secure_credential',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.47.1',
+        providerVersion: '2.48.0',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,

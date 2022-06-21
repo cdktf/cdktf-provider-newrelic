@@ -14553,7 +14553,7 @@ const alertChannelConfig: AlertChannelConfig = { ... }
 | [`lifecycle`](#cdktfprovidernewrelicalertchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertchannelconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the channel. |
-| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (user, victorops, webhook, email, opsgenie, pagerduty, slack). |
+| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook). |
 | [`accountId`](#cdktfprovidernewrelicalertchannelconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create alert channels. |
 | [`config`](#cdktfprovidernewrelicalertchannelconfigpropertyconfig) | [`@cdktf/provider-newrelic.AlertChannelConfigA`](#@cdktf/provider-newrelic.AlertChannelConfigA) | config block. |
 | [`id`](#cdktfprovidernewrelicalertchannelconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#id AlertChannel#id}. |
@@ -14622,7 +14622,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-(Required) The type of channel. One of: (user, victorops, webhook, email, opsgenie, pagerduty, slack).
+(Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
 
@@ -15025,7 +15025,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
-| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric). |
+| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
 | [`gcMetric`](#cdktfprovidernewrelicalertconditionconfigpropertygcmetric) | `string` | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -15155,7 +15155,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric).
+The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 
@@ -27024,6 +27024,7 @@ const oneDashboardPage: OneDashboardPage = { ... }
 | [`widgetHistogram`](#cdktfprovidernewreliconedashboardpagepropertywidgethistogram) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetHistogram`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHistogram)[] | widget_histogram block. |
 | [`widgetJson`](#cdktfprovidernewreliconedashboardpagepropertywidgetjson) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetJson`](#@cdktf/provider-newrelic.OneDashboardPageWidgetJson)[] | widget_json block. |
 | [`widgetLine`](#cdktfprovidernewreliconedashboardpagepropertywidgetline) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetLine`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLine)[] | widget_line block. |
+| [`widgetLogTable`](#cdktfprovidernewreliconedashboardpagepropertywidgetlogtable) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable)[] | widget_log_table block. |
 | [`widgetMarkdown`](#cdktfprovidernewreliconedashboardpagepropertywidgetmarkdown) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdown`](#@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdown)[] | widget_markdown block. |
 | [`widgetPie`](#cdktfprovidernewreliconedashboardpagepropertywidgetpie) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetPie`](#@cdktf/provider-newrelic.OneDashboardPageWidgetPie)[] | widget_pie block. |
 | [`widgetStackedBar`](#cdktfprovidernewreliconedashboardpagepropertywidgetstackedbar) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBar`](#@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBar)[] | widget_stacked_bar block. |
@@ -27182,6 +27183,20 @@ public readonly widgetLine: IResolvable | OneDashboardPageWidgetLine[];
 widget_line block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_line OneDashboard#widget_line}
+
+---
+
+##### `widgetLogTable`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPage.property.widgetLogTable" id="cdktfprovidernewreliconedashboardpagepropertywidgetlogtable"></a>
+
+```typescript
+public readonly widgetLogTable: IResolvable | OneDashboardPageWidgetLogTable[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable)[]
+
+widget_log_table block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_log_table OneDashboard#widget_log_table}
 
 ---
 
@@ -28734,6 +28749,165 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 ---
 
 ##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLineNrqlQuery.property.accountId" id="cdktfprovidernewreliconedashboardpagewidgetlinenrqlquerypropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+The account id used for the NRQL query.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#account_id OneDashboard#account_id}
+
+---
+
+### OneDashboardPageWidgetLogTable <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable" id="cdktfprovidernewreliconedashboardpagewidgetlogtable"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { OneDashboardPageWidgetLogTable } from '@cdktf/provider-newrelic'
+
+const oneDashboardPageWidgetLogTable: OneDashboardPageWidgetLogTable = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`column`](#cdktfprovidernewreliconedashboardpagewidgetlogtablepropertycolumn)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}. |
+| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetlogtablepropertynrqlquery)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery)[] | nrql_query block. |
+| [`row`](#cdktfprovidernewreliconedashboardpagewidgetlogtablepropertyrow)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}. |
+| [`title`](#cdktfprovidernewreliconedashboardpagewidgetlogtablepropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
+| [`height`](#cdktfprovidernewreliconedashboardpagewidgetlogtablepropertyheight) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}. |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetlogtablepropertyignoretimerange) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| [`width`](#cdktfprovidernewreliconedashboardpagewidgetlogtablepropertywidth) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}. |
+
+---
+
+##### `column`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable.property.column" id="cdktfprovidernewreliconedashboardpagewidgetlogtablepropertycolumn"></a>
+
+```typescript
+public readonly column: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}.
+
+---
+
+##### `nrqlQuery`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable.property.nrqlQuery" id="cdktfprovidernewreliconedashboardpagewidgetlogtablepropertynrqlquery"></a>
+
+```typescript
+public readonly nrqlQuery: IResolvable | OneDashboardPageWidgetLogTableNrqlQuery[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery)[]
+
+nrql_query block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
+
+---
+
+##### `row`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable.property.row" id="cdktfprovidernewreliconedashboardpagewidgetlogtablepropertyrow"></a>
+
+```typescript
+public readonly row: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}.
+
+---
+
+##### `title`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable.property.title" id="cdktfprovidernewreliconedashboardpagewidgetlogtablepropertytitle"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* `string`
+
+A title for the widget.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#title OneDashboard#title}
+
+---
+
+##### `height`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable.property.height" id="cdktfprovidernewreliconedashboardpagewidgetlogtablepropertyheight"></a>
+
+```typescript
+public readonly height: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}.
+
+---
+
+##### `ignoreTimeRange`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetlogtablepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
+##### `width`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable.property.width" id="cdktfprovidernewreliconedashboardpagewidgetlogtablepropertywidth"></a>
+
+```typescript
+public readonly width: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}.
+
+---
+
+### OneDashboardPageWidgetLogTableNrqlQuery <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquery"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { OneDashboardPageWidgetLogTableNrqlQuery } from '@cdktf/provider-newrelic'
+
+const oneDashboardPageWidgetLogTableNrqlQuery: OneDashboardPageWidgetLogTableNrqlQuery = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`query`](#cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquerypropertyquery)<span title="Required">*</span> | `string` | The NRQL query. |
+| [`accountId`](#cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquerypropertyaccountid) | `number` | The account id used for the NRQL query. |
+
+---
+
+##### `query`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery.property.query" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquerypropertyquery"></a>
+
+```typescript
+public readonly query: string;
+```
+
+- *Type:* `string`
+
+The NRQL query.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#query OneDashboard#query}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery.property.accountId" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquerypropertyaccountid"></a>
 
 ```typescript
 public readonly accountId: number;
@@ -47609,6 +47783,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | [`putWidgetHistogram`](#cdktfprovidernewreliconedashboardpageoutputreferenceputwidgethistogram) | *No description.* |
 | [`putWidgetJson`](#cdktfprovidernewreliconedashboardpageoutputreferenceputwidgetjson) | *No description.* |
 | [`putWidgetLine`](#cdktfprovidernewreliconedashboardpageoutputreferenceputwidgetline) | *No description.* |
+| [`putWidgetLogTable`](#cdktfprovidernewreliconedashboardpageoutputreferenceputwidgetlogtable) | *No description.* |
 | [`putWidgetMarkdown`](#cdktfprovidernewreliconedashboardpageoutputreferenceputwidgetmarkdown) | *No description.* |
 | [`putWidgetPie`](#cdktfprovidernewreliconedashboardpageoutputreferenceputwidgetpie) | *No description.* |
 | [`putWidgetStackedBar`](#cdktfprovidernewreliconedashboardpageoutputreferenceputwidgetstackedbar) | *No description.* |
@@ -47623,6 +47798,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | [`resetWidgetHistogram`](#cdktfprovidernewreliconedashboardpageoutputreferenceresetwidgethistogram) | *No description.* |
 | [`resetWidgetJson`](#cdktfprovidernewreliconedashboardpageoutputreferenceresetwidgetjson) | *No description.* |
 | [`resetWidgetLine`](#cdktfprovidernewreliconedashboardpageoutputreferenceresetwidgetline) | *No description.* |
+| [`resetWidgetLogTable`](#cdktfprovidernewreliconedashboardpageoutputreferenceresetwidgetlogtable) | *No description.* |
 | [`resetWidgetMarkdown`](#cdktfprovidernewreliconedashboardpageoutputreferenceresetwidgetmarkdown) | *No description.* |
 | [`resetWidgetPie`](#cdktfprovidernewreliconedashboardpageoutputreferenceresetwidgetpie) | *No description.* |
 | [`resetWidgetStackedBar`](#cdktfprovidernewreliconedashboardpageoutputreferenceresetwidgetstackedbar) | *No description.* |
@@ -47738,6 +47914,18 @@ public putWidgetLine(value: IResolvable | OneDashboardPageWidgetLine[])
 
 ---
 
+##### `putWidgetLogTable` <a name="@cdktf/provider-newrelic.OneDashboardPageOutputReference.putWidgetLogTable" id="cdktfprovidernewreliconedashboardpageoutputreferenceputwidgetlogtable"></a>
+
+```typescript
+public putWidgetLogTable(value: IResolvable | OneDashboardPageWidgetLogTable[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageOutputReference.parameter.value" id="cdktfprovidernewreliconedashboardpageoutputreferenceparametervalue"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable)[]
+
+---
+
 ##### `putWidgetMarkdown` <a name="@cdktf/provider-newrelic.OneDashboardPageOutputReference.putWidgetMarkdown" id="cdktfprovidernewreliconedashboardpageoutputreferenceputwidgetmarkdown"></a>
 
 ```typescript
@@ -47846,6 +48034,12 @@ public resetWidgetJson()
 public resetWidgetLine()
 ```
 
+##### `resetWidgetLogTable` <a name="@cdktf/provider-newrelic.OneDashboardPageOutputReference.resetWidgetLogTable" id="cdktfprovidernewreliconedashboardpageoutputreferenceresetwidgetlogtable"></a>
+
+```typescript
+public resetWidgetLogTable()
+```
+
 ##### `resetWidgetMarkdown` <a name="@cdktf/provider-newrelic.OneDashboardPageOutputReference.resetWidgetMarkdown" id="cdktfprovidernewreliconedashboardpageoutputreferenceresetwidgetmarkdown"></a>
 
 ```typescript
@@ -47885,6 +48079,7 @@ public resetWidgetTable()
 | [`widgetHistogram`](#cdktfprovidernewreliconedashboardpageoutputreferencepropertywidgethistogram)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHistogramList) | *No description.* |
 | [`widgetJson`](#cdktfprovidernewreliconedashboardpageoutputreferencepropertywidgetjson)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetJsonList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetJsonList) | *No description.* |
 | [`widgetLine`](#cdktfprovidernewreliconedashboardpageoutputreferencepropertywidgetline)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLineList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLineList) | *No description.* |
+| [`widgetLogTable`](#cdktfprovidernewreliconedashboardpageoutputreferencepropertywidgetlogtable)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableList) | *No description.* |
 | [`widgetMarkdown`](#cdktfprovidernewreliconedashboardpageoutputreferencepropertywidgetmarkdown)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdownList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdownList) | *No description.* |
 | [`widgetPie`](#cdktfprovidernewreliconedashboardpageoutputreferencepropertywidgetpie)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetPieList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetPieList) | *No description.* |
 | [`widgetStackedBar`](#cdktfprovidernewreliconedashboardpageoutputreferencepropertywidgetstackedbar)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBarList) | *No description.* |
@@ -47900,6 +48095,7 @@ public resetWidgetTable()
 | [`widgetHistogramInput`](#cdktfprovidernewreliconedashboardpageoutputreferencepropertywidgethistograminput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetHistogram`](#@cdktf/provider-newrelic.OneDashboardPageWidgetHistogram)[] | *No description.* |
 | [`widgetJsonInput`](#cdktfprovidernewreliconedashboardpageoutputreferencepropertywidgetjsoninput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetJson`](#@cdktf/provider-newrelic.OneDashboardPageWidgetJson)[] | *No description.* |
 | [`widgetLineInput`](#cdktfprovidernewreliconedashboardpageoutputreferencepropertywidgetlineinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetLine`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLine)[] | *No description.* |
+| [`widgetLogTableInput`](#cdktfprovidernewreliconedashboardpageoutputreferencepropertywidgetlogtableinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable)[] | *No description.* |
 | [`widgetMarkdownInput`](#cdktfprovidernewreliconedashboardpageoutputreferencepropertywidgetmarkdowninput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdown`](#@cdktf/provider-newrelic.OneDashboardPageWidgetMarkdown)[] | *No description.* |
 | [`widgetPieInput`](#cdktfprovidernewreliconedashboardpageoutputreferencepropertywidgetpieinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetPie`](#@cdktf/provider-newrelic.OneDashboardPageWidgetPie)[] | *No description.* |
 | [`widgetStackedBarInput`](#cdktfprovidernewreliconedashboardpageoutputreferencepropertywidgetstackedbarinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBar`](#@cdktf/provider-newrelic.OneDashboardPageWidgetStackedBar)[] | *No description.* |
@@ -48007,6 +48203,16 @@ public readonly widgetLine: OneDashboardPageWidgetLineList;
 ```
 
 - *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetLineList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLineList)
+
+---
+
+##### `widgetLogTable`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageOutputReference.property.widgetLogTable" id="cdktfprovidernewreliconedashboardpageoutputreferencepropertywidgetlogtable"></a>
+
+```typescript
+public readonly widgetLogTable: OneDashboardPageWidgetLogTableList;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableList)
 
 ---
 
@@ -48157,6 +48363,16 @@ public readonly widgetLineInput: IResolvable | OneDashboardPageWidgetLine[];
 ```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLine`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLine)[]
+
+---
+
+##### `widgetLogTableInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageOutputReference.property.widgetLogTableInput" id="cdktfprovidernewreliconedashboardpageoutputreferencepropertywidgetlogtableinput"></a>
+
+```typescript
+public readonly widgetLogTableInput: IResolvable | OneDashboardPageWidgetLogTable[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable)[]
 
 ---
 
@@ -53531,6 +53747,580 @@ public readonly internalValue: IResolvable | OneDashboardPageWidgetLine;
 ```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLine`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLine)
+
+---
+
+
+### OneDashboardPageWidgetLogTableList <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableList" id="cdktfprovidernewreliconedashboardpagewidgetlogtablelist"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableList.Initializer" id="cdktfprovidernewreliconedashboardpagewidgetlogtablelistinitializer"></a>
+
+```typescript
+import { OneDashboardPageWidgetLogTableList } from '@cdktf/provider-newrelic'
+
+new OneDashboardPageWidgetLogTableList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliconedashboardpagewidgetlogtablelistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliconedashboardpagewidgetlogtablelistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidernewreliconedashboardpagewidgetlogtablelistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableList.parameter.terraformResource" id="cdktfprovidernewreliconedashboardpagewidgetlogtablelistparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableList.parameter.terraformAttribute" id="cdktfprovidernewreliconedashboardpagewidgetlogtablelistparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableList.parameter.wrapsSet" id="cdktfprovidernewreliconedashboardpagewidgetlogtablelistparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovidernewreliconedashboardpagewidgetlogtablelistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableList.get" id="cdktfprovidernewreliconedashboardpagewidgetlogtablelistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableList.parameter.index" id="cdktfprovidernewreliconedashboardpagewidgetlogtablelistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`internalValue`](#cdktfprovidernewreliconedashboardpagewidgetlogtablelistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable)[] | *No description.* |
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableList.property.internalValue" id="cdktfprovidernewreliconedashboardpagewidgetlogtablelistpropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | OneDashboardPageWidgetLogTable[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable)[]
+
+---
+
+
+### OneDashboardPageWidgetLogTableNrqlQueryList <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryList" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquerylist"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryList.Initializer" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquerylistinitializer"></a>
+
+```typescript
+import { OneDashboardPageWidgetLogTableNrqlQueryList } from '@cdktf/provider-newrelic'
+
+new OneDashboardPageWidgetLogTableNrqlQueryList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquerylistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquerylistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquerylistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryList.parameter.terraformResource" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquerylistparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryList.parameter.terraformAttribute" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquerylistparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryList.parameter.wrapsSet" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquerylistparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquerylistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryList.get" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquerylistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryList.parameter.index" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquerylistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`internalValue`](#cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquerylistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery)[] | *No description.* |
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryList.property.internalValue" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlquerylistpropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | OneDashboardPageWidgetLogTableNrqlQuery[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery)[]
+
+---
+
+
+### OneDashboardPageWidgetLogTableNrqlQueryOutputReference <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryOutputReference" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.Initializer" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferenceinitializer"></a>
+
+```typescript
+import { OneDashboardPageWidgetLogTableNrqlQueryOutputReference } from '@cdktf/provider-newrelic'
+
+new OneDashboardPageWidgetLogTableNrqlQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.parameter.terraformResource" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetAccountId`](#cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferenceresetaccountid) | *No description.* |
+
+---
+
+##### `resetAccountId` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.resetAccountId" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferenceresetaccountid"></a>
+
+```typescript
+public resetAccountId()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`accountIdInput`](#cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferencepropertyaccountidinput) | `number` | *No description.* |
+| [`queryInput`](#cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferencepropertyqueryinput) | `string` | *No description.* |
+| [`accountId`](#cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferencepropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`query`](#cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferencepropertyquery)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery) | *No description.* |
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.property.accountIdInput" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferencepropertyaccountidinput"></a>
+
+```typescript
+public readonly accountIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `queryInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.property.queryInput" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferencepropertyqueryinput"></a>
+
+```typescript
+public readonly queryInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.property.accountId" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferencepropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `query`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.property.query" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferencepropertyquery"></a>
+
+```typescript
+public readonly query: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.property.internalValue" id="cdktfprovidernewreliconedashboardpagewidgetlogtablenrqlqueryoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | OneDashboardPageWidgetLogTableNrqlQuery;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery)
+
+---
+
+
+### OneDashboardPageWidgetLogTableOutputReference <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.Initializer" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceinitializer"></a>
+
+```typescript
+import { OneDashboardPageWidgetLogTableOutputReference } from '@cdktf/provider-newrelic'
+
+new OneDashboardPageWidgetLogTableOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.parameter.terraformResource" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.parameter.terraformAttribute" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`putNrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceputnrqlquery) | *No description.* |
+| [`resetHeight`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceresetheight) | *No description.* |
+| [`resetIgnoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceresetignoretimerange) | *No description.* |
+| [`resetWidth`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceresetwidth) | *No description.* |
+
+---
+
+##### `putNrqlQuery` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.putNrqlQuery" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceputnrqlquery"></a>
+
+```typescript
+public putNrqlQuery(value: IResolvable | OneDashboardPageWidgetLogTableNrqlQuery[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.parameter.value" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceparametervalue"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery)[]
+
+---
+
+##### `resetHeight` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.resetHeight" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceresetheight"></a>
+
+```typescript
+public resetHeight()
+```
+
+##### `resetIgnoreTimeRange` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.resetIgnoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceresetignoretimerange"></a>
+
+```typescript
+public resetIgnoreTimeRange()
+```
+
+##### `resetWidth` <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.resetWidth" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferenceresetwidth"></a>
+
+```typescript
+public resetWidth()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`id`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`nrqlQuery`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertynrqlquery)<span title="Required">*</span> | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryList) | *No description.* |
+| [`columnInput`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertycolumninput) | `number` | *No description.* |
+| [`heightInput`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertyheightinput) | `number` | *No description.* |
+| [`ignoreTimeRangeInput`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertyignoretimerangeinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`nrqlQueryInput`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertynrqlqueryinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery)[] | *No description.* |
+| [`rowInput`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertyrowinput) | `number` | *No description.* |
+| [`titleInput`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertytitleinput) | `string` | *No description.* |
+| [`widthInput`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertywidthinput) | `number` | *No description.* |
+| [`column`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertycolumn)<span title="Required">*</span> | `number` | *No description.* |
+| [`height`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertyheight)<span title="Required">*</span> | `number` | *No description.* |
+| [`ignoreTimeRange`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertyignoretimerange)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`row`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertyrow)<span title="Required">*</span> | `number` | *No description.* |
+| [`title`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertytitle)<span title="Required">*</span> | `string` | *No description.* |
+| [`width`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertywidth)<span title="Required">*</span> | `number` | *No description.* |
+| [`internalValue`](#cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable) | *No description.* |
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.property.id" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `nrqlQuery`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.property.nrqlQuery" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertynrqlquery"></a>
+
+```typescript
+public readonly nrqlQuery: OneDashboardPageWidgetLogTableNrqlQueryList;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryList`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQueryList)
+
+---
+
+##### `columnInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.property.columnInput" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertycolumninput"></a>
+
+```typescript
+public readonly columnInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `heightInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.property.heightInput" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertyheightinput"></a>
+
+```typescript
+public readonly heightInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `ignoreTimeRangeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.property.ignoreTimeRangeInput" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertyignoretimerangeinput"></a>
+
+```typescript
+public readonly ignoreTimeRangeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `nrqlQueryInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.property.nrqlQueryInput" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertynrqlqueryinput"></a>
+
+```typescript
+public readonly nrqlQueryInput: IResolvable | OneDashboardPageWidgetLogTableNrqlQuery[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableNrqlQuery)[]
+
+---
+
+##### `rowInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.property.rowInput" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertyrowinput"></a>
+
+```typescript
+public readonly rowInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `titleInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.property.titleInput" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertytitleinput"></a>
+
+```typescript
+public readonly titleInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `widthInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.property.widthInput" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertywidthinput"></a>
+
+```typescript
+public readonly widthInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `column`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.property.column" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertycolumn"></a>
+
+```typescript
+public readonly column: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `height`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.property.height" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertyheight"></a>
+
+```typescript
+public readonly height: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `ignoreTimeRange`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.property.ignoreTimeRange" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertyignoretimerange"></a>
+
+```typescript
+public readonly ignoreTimeRange: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `row`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.property.row" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertyrow"></a>
+
+```typescript
+public readonly row: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `title`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.property.title" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertytitle"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `width`<sup>Required</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.property.width" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertywidth"></a>
+
+```typescript
+public readonly width: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardPageWidgetLogTableOutputReference.property.internalValue" id="cdktfprovidernewreliconedashboardpagewidgetlogtableoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | OneDashboardPageWidgetLogTable;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable`](#@cdktf/provider-newrelic.OneDashboardPageWidgetLogTable)
 
 ---
 
