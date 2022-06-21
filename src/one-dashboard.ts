@@ -3616,6 +3616,387 @@ export class OneDashboardPageWidgetLineList extends cdktf.ComplexList {
     return new OneDashboardPageWidgetLineOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface OneDashboardPageWidgetLogTableNrqlQuery {
+  /**
+  * The account id used for the NRQL query.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#account_id OneDashboard#account_id}
+  */
+  readonly accountId?: number;
+  /**
+  * The NRQL query.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#query OneDashboard#query}
+  */
+  readonly query: string;
+}
+
+export function oneDashboardPageWidgetLogTableNrqlQueryToTerraform(struct?: OneDashboardPageWidgetLogTableNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    account_id: cdktf.numberToTerraform(struct!.accountId),
+    query: cdktf.stringToTerraform(struct!.query),
+  }
+}
+
+export class OneDashboardPageWidgetLogTableNrqlQueryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): OneDashboardPageWidgetLogTableNrqlQuery | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accountId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accountId = this._accountId;
+    }
+    if (this._query !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.query = this._query;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OneDashboardPageWidgetLogTableNrqlQuery | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._accountId = undefined;
+      this._query = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._accountId = value.accountId;
+      this._query = value.query;
+    }
+  }
+
+  // account_id - computed: true, optional: true, required: false
+  private _accountId?: number; 
+  public get accountId() {
+    return this.getNumberAttribute('account_id');
+  }
+  public set accountId(value: number) {
+    this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
+  }
+
+  // query - computed: false, optional: false, required: true
+  private _query?: string; 
+  public get query() {
+    return this.getStringAttribute('query');
+  }
+  public set query(value: string) {
+    this._query = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryInput() {
+    return this._query;
+  }
+}
+
+export class OneDashboardPageWidgetLogTableNrqlQueryList extends cdktf.ComplexList {
+  public internalValue? : OneDashboardPageWidgetLogTableNrqlQuery[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): OneDashboardPageWidgetLogTableNrqlQueryOutputReference {
+    return new OneDashboardPageWidgetLogTableNrqlQueryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface OneDashboardPageWidgetLogTable {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}
+  */
+  readonly column: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}
+  */
+  readonly height?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  */
+  readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}
+  */
+  readonly row: number;
+  /**
+  * A title for the widget.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#title OneDashboard#title}
+  */
+  readonly title: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#width OneDashboard#width}
+  */
+  readonly width?: number;
+  /**
+  * nrql_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
+  */
+  readonly nrqlQuery: OneDashboardPageWidgetLogTableNrqlQuery[] | cdktf.IResolvable;
+}
+
+export function oneDashboardPageWidgetLogTableToTerraform(struct?: OneDashboardPageWidgetLogTable | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    column: cdktf.numberToTerraform(struct!.column),
+    height: cdktf.numberToTerraform(struct!.height),
+    ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
+    row: cdktf.numberToTerraform(struct!.row),
+    title: cdktf.stringToTerraform(struct!.title),
+    width: cdktf.numberToTerraform(struct!.width),
+    nrql_query: cdktf.listMapper(oneDashboardPageWidgetLogTableNrqlQueryToTerraform)(struct!.nrqlQuery),
+  }
+}
+
+export class OneDashboardPageWidgetLogTableOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): OneDashboardPageWidgetLogTable | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._column !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.column = this._column;
+    }
+    if (this._height !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.height = this._height;
+    }
+    if (this._ignoreTimeRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreTimeRange = this._ignoreTimeRange;
+    }
+    if (this._row !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.row = this._row;
+    }
+    if (this._title !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.title = this._title;
+    }
+    if (this._width !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.width = this._width;
+    }
+    if (this._nrqlQuery?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nrqlQuery = this._nrqlQuery?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OneDashboardPageWidgetLogTable | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._column = undefined;
+      this._height = undefined;
+      this._ignoreTimeRange = undefined;
+      this._row = undefined;
+      this._title = undefined;
+      this._width = undefined;
+      this._nrqlQuery.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._column = value.column;
+      this._height = value.height;
+      this._ignoreTimeRange = value.ignoreTimeRange;
+      this._row = value.row;
+      this._title = value.title;
+      this._width = value.width;
+      this._nrqlQuery.internalValue = value.nrqlQuery;
+    }
+  }
+
+  // column - computed: false, optional: false, required: true
+  private _column?: number; 
+  public get column() {
+    return this.getNumberAttribute('column');
+  }
+  public set column(value: number) {
+    this._column = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnInput() {
+    return this._column;
+  }
+
+  // height - computed: false, optional: true, required: false
+  private _height?: number; 
+  public get height() {
+    return this.getNumberAttribute('height');
+  }
+  public set height(value: number) {
+    this._height = value;
+  }
+  public resetHeight() {
+    this._height = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get heightInput() {
+    return this._height;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // ignore_time_range - computed: false, optional: true, required: false
+  private _ignoreTimeRange?: boolean | cdktf.IResolvable; 
+  public get ignoreTimeRange() {
+    return this.getBooleanAttribute('ignore_time_range');
+  }
+  public set ignoreTimeRange(value: boolean | cdktf.IResolvable) {
+    this._ignoreTimeRange = value;
+  }
+  public resetIgnoreTimeRange() {
+    this._ignoreTimeRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreTimeRangeInput() {
+    return this._ignoreTimeRange;
+  }
+
+  // row - computed: false, optional: false, required: true
+  private _row?: number; 
+  public get row() {
+    return this.getNumberAttribute('row');
+  }
+  public set row(value: number) {
+    this._row = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rowInput() {
+    return this._row;
+  }
+
+  // title - computed: false, optional: false, required: true
+  private _title?: string; 
+  public get title() {
+    return this.getStringAttribute('title');
+  }
+  public set title(value: string) {
+    this._title = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get titleInput() {
+    return this._title;
+  }
+
+  // width - computed: false, optional: true, required: false
+  private _width?: number; 
+  public get width() {
+    return this.getNumberAttribute('width');
+  }
+  public set width(value: number) {
+    this._width = value;
+  }
+  public resetWidth() {
+    this._width = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get widthInput() {
+    return this._width;
+  }
+
+  // nrql_query - computed: false, optional: false, required: true
+  private _nrqlQuery = new OneDashboardPageWidgetLogTableNrqlQueryList(this, "nrql_query", false);
+  public get nrqlQuery() {
+    return this._nrqlQuery;
+  }
+  public putNrqlQuery(value: OneDashboardPageWidgetLogTableNrqlQuery[] | cdktf.IResolvable) {
+    this._nrqlQuery.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nrqlQueryInput() {
+    return this._nrqlQuery.internalValue;
+  }
+}
+
+export class OneDashboardPageWidgetLogTableList extends cdktf.ComplexList {
+  public internalValue? : OneDashboardPageWidgetLogTable[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): OneDashboardPageWidgetLogTableOutputReference {
+    return new OneDashboardPageWidgetLogTableOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface OneDashboardPageWidgetMarkdown {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#column OneDashboard#column}
@@ -5200,6 +5581,12 @@ export interface OneDashboardPage {
   */
   readonly widgetLine?: OneDashboardPageWidgetLine[] | cdktf.IResolvable;
   /**
+  * widget_log_table block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_log_table OneDashboard#widget_log_table}
+  */
+  readonly widgetLogTable?: OneDashboardPageWidgetLogTable[] | cdktf.IResolvable;
+  /**
   * widget_markdown block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#widget_markdown OneDashboard#widget_markdown}
@@ -5242,6 +5629,7 @@ export function oneDashboardPageToTerraform(struct?: OneDashboardPage | cdktf.IR
     widget_histogram: cdktf.listMapper(oneDashboardPageWidgetHistogramToTerraform)(struct!.widgetHistogram),
     widget_json: cdktf.listMapper(oneDashboardPageWidgetJsonToTerraform)(struct!.widgetJson),
     widget_line: cdktf.listMapper(oneDashboardPageWidgetLineToTerraform)(struct!.widgetLine),
+    widget_log_table: cdktf.listMapper(oneDashboardPageWidgetLogTableToTerraform)(struct!.widgetLogTable),
     widget_markdown: cdktf.listMapper(oneDashboardPageWidgetMarkdownToTerraform)(struct!.widgetMarkdown),
     widget_pie: cdktf.listMapper(oneDashboardPageWidgetPieToTerraform)(struct!.widgetPie),
     widget_stacked_bar: cdktf.listMapper(oneDashboardPageWidgetStackedBarToTerraform)(struct!.widgetStackedBar),
@@ -5313,6 +5701,10 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.widgetLine = this._widgetLine?.internalValue;
     }
+    if (this._widgetLogTable?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.widgetLogTable = this._widgetLogTable?.internalValue;
+    }
     if (this._widgetMarkdown?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.widgetMarkdown = this._widgetMarkdown?.internalValue;
@@ -5347,6 +5739,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
       this._widgetHistogram.internalValue = undefined;
       this._widgetJson.internalValue = undefined;
       this._widgetLine.internalValue = undefined;
+      this._widgetLogTable.internalValue = undefined;
       this._widgetMarkdown.internalValue = undefined;
       this._widgetPie.internalValue = undefined;
       this._widgetStackedBar.internalValue = undefined;
@@ -5370,6 +5763,7 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
       this._widgetHistogram.internalValue = value.widgetHistogram;
       this._widgetJson.internalValue = value.widgetJson;
       this._widgetLine.internalValue = value.widgetLine;
+      this._widgetLogTable.internalValue = value.widgetLogTable;
       this._widgetMarkdown.internalValue = value.widgetMarkdown;
       this._widgetPie.internalValue = value.widgetPie;
       this._widgetStackedBar.internalValue = value.widgetStackedBar;
@@ -5555,6 +5949,22 @@ export class OneDashboardPageOutputReference extends cdktf.ComplexObject {
     return this._widgetLine.internalValue;
   }
 
+  // widget_log_table - computed: false, optional: true, required: false
+  private _widgetLogTable = new OneDashboardPageWidgetLogTableList(this, "widget_log_table", false);
+  public get widgetLogTable() {
+    return this._widgetLogTable;
+  }
+  public putWidgetLogTable(value: OneDashboardPageWidgetLogTable[] | cdktf.IResolvable) {
+    this._widgetLogTable.internalValue = value;
+  }
+  public resetWidgetLogTable() {
+    this._widgetLogTable.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get widgetLogTableInput() {
+    return this._widgetLogTable.internalValue;
+  }
+
   // widget_markdown - computed: false, optional: true, required: false
   private _widgetMarkdown = new OneDashboardPageWidgetMarkdownList(this, "widget_markdown", false);
   public get widgetMarkdown() {
@@ -5666,7 +6076,7 @@ export class OneDashboard extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_one_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.47.1',
+        providerVersion: '2.48.0',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
