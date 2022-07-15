@@ -66,7 +66,7 @@ export class NrqlDropRule extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_nrql_drop_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.48.1',
+        providerVersion: '2.48.2',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,

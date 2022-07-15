@@ -554,7 +554,7 @@ export class AlertMutingRule extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_alert_muting_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.48.1',
+        providerVersion: '2.48.2',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,

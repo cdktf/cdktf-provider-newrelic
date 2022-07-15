@@ -60,7 +60,7 @@ export class AlertPolicyChannel extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_alert_policy_channel',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.48.1',
+        providerVersion: '2.48.2',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
