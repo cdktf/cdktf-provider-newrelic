@@ -110,7 +110,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/newrelic/newrelic",
-      "version": "2.48.2"
+      "version": "2.49.0"
     }
   },
   "resolutions": {

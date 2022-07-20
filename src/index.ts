@@ -19,6 +19,8 @@ export * from './entity-tags';
 export * from './events-to-metrics-rule';
 export * from './infra-alert-condition';
 export * from './insights-event';
+export * from './notification-channel';
+export * from './notification-destination';
 export * from './nrql-alert-condition';
 export * from './nrql-drop-rule';
 export * from './one-dashboard';
