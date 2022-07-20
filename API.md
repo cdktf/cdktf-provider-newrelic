@@ -10619,6 +10619,455 @@ public readonly syntheticsApiUrl: string;
 
 ---
 
+### NotificationChannel <a name="@cdktf/provider-newrelic.NotificationChannel" id="cdktfprovidernewrelicnotificationchannel"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel newrelic_notification_channel}.
+
+#### Initializers <a name="@cdktf/provider-newrelic.NotificationChannel.Initializer" id="cdktfprovidernewrelicnotificationchannelinitializer"></a>
+
+```typescript
+import { NotificationChannel } from '@cdktf/provider-newrelic'
+
+new NotificationChannel(scope: Construct, id: string, config: NotificationChannelConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#cdktfprovidernewrelicnotificationchannelparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
+| [`id`](#cdktfprovidernewrelicnotificationchannelparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
+| [`config`](#cdktfprovidernewrelicnotificationchannelparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.NotificationChannelConfig`](#@cdktf/provider-newrelic.NotificationChannelConfig) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.parameter.scope" id="cdktfprovidernewrelicnotificationchannelparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.parameter.id" id="cdktfprovidernewrelicnotificationchannelparameterid"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.parameter.config" id="cdktfprovidernewrelicnotificationchannelparameterconfig"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.NotificationChannelConfig`](#@cdktf/provider-newrelic.NotificationChannelConfig)
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`putProperties`](#cdktfprovidernewrelicnotificationchannelputproperties) | *No description.* |
+| [`resetId`](#cdktfprovidernewrelicnotificationchannelresetid) | *No description.* |
+| [`resetProperties`](#cdktfprovidernewrelicnotificationchannelresetproperties) | *No description.* |
+
+---
+
+##### `putProperties` <a name="@cdktf/provider-newrelic.NotificationChannel.putProperties" id="cdktfprovidernewrelicnotificationchannelputproperties"></a>
+
+```typescript
+public putProperties(value: IResolvable | NotificationChannelProperties[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.parameter.value" id="cdktfprovidernewrelicnotificationchannelparametervalue"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties)[]
+
+---
+
+##### `resetId` <a name="@cdktf/provider-newrelic.NotificationChannel.resetId" id="cdktfprovidernewrelicnotificationchannelresetid"></a>
+
+```typescript
+public resetId()
+```
+
+##### `resetProperties` <a name="@cdktf/provider-newrelic.NotificationChannel.resetProperties" id="cdktfprovidernewrelicnotificationchannelresetproperties"></a>
+
+```typescript
+public resetProperties()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`properties`](#cdktfprovidernewrelicnotificationchannelpropertyproperties)<span title="Required">*</span> | [`@cdktf/provider-newrelic.NotificationChannelPropertiesList`](#@cdktf/provider-newrelic.NotificationChannelPropertiesList) | *No description.* |
+| [`destinationIdInput`](#cdktfprovidernewrelicnotificationchannelpropertydestinationidinput) | `string` | *No description.* |
+| [`idInput`](#cdktfprovidernewrelicnotificationchannelpropertyidinput) | `string` | *No description.* |
+| [`nameInput`](#cdktfprovidernewrelicnotificationchannelpropertynameinput) | `string` | *No description.* |
+| [`productInput`](#cdktfprovidernewrelicnotificationchannelpropertyproductinput) | `string` | *No description.* |
+| [`propertiesInput`](#cdktfprovidernewrelicnotificationchannelpropertypropertiesinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties)[] | *No description.* |
+| [`typeInput`](#cdktfprovidernewrelicnotificationchannelpropertytypeinput) | `string` | *No description.* |
+| [`destinationId`](#cdktfprovidernewrelicnotificationchannelpropertydestinationid)<span title="Required">*</span> | `string` | *No description.* |
+| [`id`](#cdktfprovidernewrelicnotificationchannelpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`name`](#cdktfprovidernewrelicnotificationchannelpropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`product`](#cdktfprovidernewrelicnotificationchannelpropertyproduct)<span title="Required">*</span> | `string` | *No description.* |
+| [`type`](#cdktfprovidernewrelicnotificationchannelpropertytype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `properties`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.properties" id="cdktfprovidernewrelicnotificationchannelpropertyproperties"></a>
+
+```typescript
+public readonly properties: NotificationChannelPropertiesList;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.NotificationChannelPropertiesList`](#@cdktf/provider-newrelic.NotificationChannelPropertiesList)
+
+---
+
+##### `destinationIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.destinationIdInput" id="cdktfprovidernewrelicnotificationchannelpropertydestinationidinput"></a>
+
+```typescript
+public readonly destinationIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.idInput" id="cdktfprovidernewrelicnotificationchannelpropertyidinput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.nameInput" id="cdktfprovidernewrelicnotificationchannelpropertynameinput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `productInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.productInput" id="cdktfprovidernewrelicnotificationchannelpropertyproductinput"></a>
+
+```typescript
+public readonly productInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `propertiesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.propertiesInput" id="cdktfprovidernewrelicnotificationchannelpropertypropertiesinput"></a>
+
+```typescript
+public readonly propertiesInput: IResolvable | NotificationChannelProperties[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties)[]
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.typeInput" id="cdktfprovidernewrelicnotificationchannelpropertytypeinput"></a>
+
+```typescript
+public readonly typeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `destinationId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.destinationId" id="cdktfprovidernewrelicnotificationchannelpropertydestinationid"></a>
+
+```typescript
+public readonly destinationId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.id" id="cdktfprovidernewrelicnotificationchannelpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.name" id="cdktfprovidernewrelicnotificationchannelpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `product`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.product" id="cdktfprovidernewrelicnotificationchannelpropertyproduct"></a>
+
+```typescript
+public readonly product: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.type" id="cdktfprovidernewrelicnotificationchannelpropertytype"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants" id="constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`tfResourceType`](#cdktfprovidernewrelicnotificationchannelpropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `tfResourceType` <a name="@cdktf/provider-newrelic.NotificationChannel.property.tfResourceType" id="cdktfprovidernewrelicnotificationchannelpropertytfresourcetype"></a>
+
+- *Type:* `string`
+
+---
+
+### NotificationDestination <a name="@cdktf/provider-newrelic.NotificationDestination" id="cdktfprovidernewrelicnotificationdestination"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination newrelic_notification_destination}.
+
+#### Initializers <a name="@cdktf/provider-newrelic.NotificationDestination.Initializer" id="cdktfprovidernewrelicnotificationdestinationinitializer"></a>
+
+```typescript
+import { NotificationDestination } from '@cdktf/provider-newrelic'
+
+new NotificationDestination(scope: Construct, id: string, config: NotificationDestinationConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#cdktfprovidernewrelicnotificationdestinationparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
+| [`id`](#cdktfprovidernewrelicnotificationdestinationparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
+| [`config`](#cdktfprovidernewrelicnotificationdestinationparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.NotificationDestinationConfig`](#@cdktf/provider-newrelic.NotificationDestinationConfig) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.parameter.scope" id="cdktfprovidernewrelicnotificationdestinationparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.parameter.id" id="cdktfprovidernewrelicnotificationdestinationparameterid"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.parameter.config" id="cdktfprovidernewrelicnotificationdestinationparameterconfig"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.NotificationDestinationConfig`](#@cdktf/provider-newrelic.NotificationDestinationConfig)
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`putProperties`](#cdktfprovidernewrelicnotificationdestinationputproperties) | *No description.* |
+| [`resetAuth`](#cdktfprovidernewrelicnotificationdestinationresetauth) | *No description.* |
+| [`resetId`](#cdktfprovidernewrelicnotificationdestinationresetid) | *No description.* |
+| [`resetProperties`](#cdktfprovidernewrelicnotificationdestinationresetproperties) | *No description.* |
+
+---
+
+##### `putProperties` <a name="@cdktf/provider-newrelic.NotificationDestination.putProperties" id="cdktfprovidernewrelicnotificationdestinationputproperties"></a>
+
+```typescript
+public putProperties(value: IResolvable | NotificationDestinationProperties[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.parameter.value" id="cdktfprovidernewrelicnotificationdestinationparametervalue"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties)[]
+
+---
+
+##### `resetAuth` <a name="@cdktf/provider-newrelic.NotificationDestination.resetAuth" id="cdktfprovidernewrelicnotificationdestinationresetauth"></a>
+
+```typescript
+public resetAuth()
+```
+
+##### `resetId` <a name="@cdktf/provider-newrelic.NotificationDestination.resetId" id="cdktfprovidernewrelicnotificationdestinationresetid"></a>
+
+```typescript
+public resetId()
+```
+
+##### `resetProperties` <a name="@cdktf/provider-newrelic.NotificationDestination.resetProperties" id="cdktfprovidernewrelicnotificationdestinationresetproperties"></a>
+
+```typescript
+public resetProperties()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`properties`](#cdktfprovidernewrelicnotificationdestinationpropertyproperties)<span title="Required">*</span> | [`@cdktf/provider-newrelic.NotificationDestinationPropertiesList`](#@cdktf/provider-newrelic.NotificationDestinationPropertiesList) | *No description.* |
+| [`authInput`](#cdktfprovidernewrelicnotificationdestinationpropertyauthinput) | {[ key: string ]: `string`} | *No description.* |
+| [`idInput`](#cdktfprovidernewrelicnotificationdestinationpropertyidinput) | `string` | *No description.* |
+| [`nameInput`](#cdktfprovidernewrelicnotificationdestinationpropertynameinput) | `string` | *No description.* |
+| [`propertiesInput`](#cdktfprovidernewrelicnotificationdestinationpropertypropertiesinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties)[] | *No description.* |
+| [`typeInput`](#cdktfprovidernewrelicnotificationdestinationpropertytypeinput) | `string` | *No description.* |
+| [`auth`](#cdktfprovidernewrelicnotificationdestinationpropertyauth)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`id`](#cdktfprovidernewrelicnotificationdestinationpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`name`](#cdktfprovidernewrelicnotificationdestinationpropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`type`](#cdktfprovidernewrelicnotificationdestinationpropertytype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `properties`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.properties" id="cdktfprovidernewrelicnotificationdestinationpropertyproperties"></a>
+
+```typescript
+public readonly properties: NotificationDestinationPropertiesList;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.NotificationDestinationPropertiesList`](#@cdktf/provider-newrelic.NotificationDestinationPropertiesList)
+
+---
+
+##### `authInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.authInput" id="cdktfprovidernewrelicnotificationdestinationpropertyauthinput"></a>
+
+```typescript
+public readonly authInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.idInput" id="cdktfprovidernewrelicnotificationdestinationpropertyidinput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.nameInput" id="cdktfprovidernewrelicnotificationdestinationpropertynameinput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `propertiesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.propertiesInput" id="cdktfprovidernewrelicnotificationdestinationpropertypropertiesinput"></a>
+
+```typescript
+public readonly propertiesInput: IResolvable | NotificationDestinationProperties[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties)[]
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.typeInput" id="cdktfprovidernewrelicnotificationdestinationpropertytypeinput"></a>
+
+```typescript
+public readonly typeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `auth`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.auth" id="cdktfprovidernewrelicnotificationdestinationpropertyauth"></a>
+
+```typescript
+public readonly auth: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.id" id="cdktfprovidernewrelicnotificationdestinationpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.name" id="cdktfprovidernewrelicnotificationdestinationpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.type" id="cdktfprovidernewrelicnotificationdestinationpropertytype"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants" id="constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`tfResourceType`](#cdktfprovidernewrelicnotificationdestinationpropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `tfResourceType` <a name="@cdktf/provider-newrelic.NotificationDestination.property.tfResourceType" id="cdktfprovidernewrelicnotificationdestinationpropertytfresourcetype"></a>
+
+- *Type:* `string`
+
+---
+
 ### NrqlAlertCondition <a name="@cdktf/provider-newrelic.NrqlAlertCondition" id="cdktfprovidernewrelicnrqlalertcondition"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition newrelic_nrql_alert_condition}.
@@ -14553,7 +15002,7 @@ const alertChannelConfig: AlertChannelConfig = { ... }
 | [`lifecycle`](#cdktfprovidernewrelicalertchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertchannelconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the channel. |
-| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook). |
+| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (user, victorops, webhook, email, opsgenie, pagerduty, slack). |
 | [`accountId`](#cdktfprovidernewrelicalertchannelconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create alert channels. |
 | [`config`](#cdktfprovidernewrelicalertchannelconfigpropertyconfig) | [`@cdktf/provider-newrelic.AlertChannelConfigA`](#@cdktf/provider-newrelic.AlertChannelConfigA) | config block. |
 | [`id`](#cdktfprovidernewrelicalertchannelconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#id AlertChannel#id}. |
@@ -14622,7 +15071,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-(Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
+(Required) The type of channel. One of: (user, victorops, webhook, email, opsgenie, pagerduty, slack).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
 
@@ -15025,7 +15474,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
-| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric). |
+| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
 | [`gcMetric`](#cdktfprovidernewrelicalertconditionconfigpropertygcmetric) | `string` | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -15155,7 +15604,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric).
+The type of condition. One of: (browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 
@@ -25862,6 +26311,447 @@ public readonly syntheticsApiUrl: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic#synthetics_api_url NewrelicProvider#synthetics_api_url}.
+
+---
+
+### NotificationChannelConfig <a name="@cdktf/provider-newrelic.NotificationChannelConfig" id="cdktfprovidernewrelicnotificationchannelconfig"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { NotificationChannelConfig } from '@cdktf/provider-newrelic'
+
+const notificationChannelConfig: NotificationChannelConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`count`](#cdktfprovidernewrelicnotificationchannelconfigpropertycount) | `number` | *No description.* |
+| [`dependsOn`](#cdktfprovidernewrelicnotificationchannelconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`lifecycle`](#cdktfprovidernewrelicnotificationchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
+| [`provider`](#cdktfprovidernewrelicnotificationchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`destinationId`](#cdktfprovidernewrelicnotificationchannelconfigpropertydestinationid)<span title="Required">*</span> | `string` | (Required) The id of the destination. |
+| [`name`](#cdktfprovidernewrelicnotificationchannelconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the channel. |
+| [`product`](#cdktfprovidernewrelicnotificationchannelconfigpropertyproduct)<span title="Required">*</span> | `string` | (Required) The type of the channel product. One of: (ALERTS, DISCUSSIONS, ERROR_TRACKING, NTFC, SHARING, PD, IINT). |
+| [`type`](#cdktfprovidernewrelicnotificationchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of the channel. One of: (WEBHOOK, EMAIL, SERVICENOW_INCIDENTS, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION). |
+| [`id`](#cdktfprovidernewrelicnotificationchannelconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#id NotificationChannel#id}. |
+| [`properties`](#cdktfprovidernewrelicnotificationchannelconfigpropertyproperties) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties)[] | properties block. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.count" id="cdktfprovidernewrelicnotificationchannelconfigpropertycount"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.dependsOn" id="cdktfprovidernewrelicnotificationchannelconfigpropertydependson"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.lifecycle" id="cdktfprovidernewrelicnotificationchannelconfigpropertylifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.provider" id="cdktfprovidernewrelicnotificationchannelconfigpropertyprovider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `destinationId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.destinationId" id="cdktfprovidernewrelicnotificationchannelconfigpropertydestinationid"></a>
+
+```typescript
+public readonly destinationId: string;
+```
+
+- *Type:* `string`
+
+(Required) The id of the destination.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#destination_id NotificationChannel#destination_id}
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.name" id="cdktfprovidernewrelicnotificationchannelconfigpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+(Required) The name of the channel.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#name NotificationChannel#name}
+
+---
+
+##### `product`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.product" id="cdktfprovidernewrelicnotificationchannelconfigpropertyproduct"></a>
+
+```typescript
+public readonly product: string;
+```
+
+- *Type:* `string`
+
+(Required) The type of the channel product. One of: (ALERTS, DISCUSSIONS, ERROR_TRACKING, NTFC, SHARING, PD, IINT).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#product NotificationChannel#product}
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.type" id="cdktfprovidernewrelicnotificationchannelconfigpropertytype"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+(Required) The type of the channel. One of: (WEBHOOK, EMAIL, SERVICENOW_INCIDENTS, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#type NotificationChannel#type}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.id" id="cdktfprovidernewrelicnotificationchannelconfigpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#id NotificationChannel#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `properties`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.properties" id="cdktfprovidernewrelicnotificationchannelconfigpropertyproperties"></a>
+
+```typescript
+public readonly properties: IResolvable | NotificationChannelProperties[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties)[]
+
+properties block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#properties NotificationChannel#properties}
+
+---
+
+### NotificationChannelProperties <a name="@cdktf/provider-newrelic.NotificationChannelProperties" id="cdktfprovidernewrelicnotificationchannelproperties"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { NotificationChannelProperties } from '@cdktf/provider-newrelic'
+
+const notificationChannelProperties: NotificationChannelProperties = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`key`](#cdktfprovidernewrelicnotificationchannelpropertiespropertykey)<span title="Required">*</span> | `string` | Notification channel property key. |
+| [`value`](#cdktfprovidernewrelicnotificationchannelpropertiespropertyvalue)<span title="Required">*</span> | `string` | Notification channel property value. |
+| [`displayValue`](#cdktfprovidernewrelicnotificationchannelpropertiespropertydisplayvalue) | `string` | Notification channel property display key. |
+| [`label`](#cdktfprovidernewrelicnotificationchannelpropertiespropertylabel) | `string` | Notification channel property label. |
+
+---
+
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelProperties.property.key" id="cdktfprovidernewrelicnotificationchannelpropertiespropertykey"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* `string`
+
+Notification channel property key.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#key NotificationChannel#key}
+
+---
+
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelProperties.property.value" id="cdktfprovidernewrelicnotificationchannelpropertiespropertyvalue"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* `string`
+
+Notification channel property value.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#value NotificationChannel#value}
+
+---
+
+##### `displayValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelProperties.property.displayValue" id="cdktfprovidernewrelicnotificationchannelpropertiespropertydisplayvalue"></a>
+
+```typescript
+public readonly displayValue: string;
+```
+
+- *Type:* `string`
+
+Notification channel property display key.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#display_value NotificationChannel#display_value}
+
+---
+
+##### `label`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelProperties.property.label" id="cdktfprovidernewrelicnotificationchannelpropertiespropertylabel"></a>
+
+```typescript
+public readonly label: string;
+```
+
+- *Type:* `string`
+
+Notification channel property label.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#label NotificationChannel#label}
+
+---
+
+### NotificationDestinationConfig <a name="@cdktf/provider-newrelic.NotificationDestinationConfig" id="cdktfprovidernewrelicnotificationdestinationconfig"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { NotificationDestinationConfig } from '@cdktf/provider-newrelic'
+
+const notificationDestinationConfig: NotificationDestinationConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`count`](#cdktfprovidernewrelicnotificationdestinationconfigpropertycount) | `number` | *No description.* |
+| [`dependsOn`](#cdktfprovidernewrelicnotificationdestinationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`lifecycle`](#cdktfprovidernewrelicnotificationdestinationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
+| [`provider`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`name`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the destination. |
+| [`type`](#cdktfprovidernewrelicnotificationdestinationconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of the destination. One of: (WEBHOOK, EMAIL, SERVICE_NOW, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION). |
+| [`auth`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyauth) | {[ key: string ]: `string`} | A set of key-value pairs to represent a Notification destination auth. |
+| [`id`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#id NotificationDestination#id}. |
+| [`properties`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyproperties) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties)[] | properties block. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.count" id="cdktfprovidernewrelicnotificationdestinationconfigpropertycount"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.dependsOn" id="cdktfprovidernewrelicnotificationdestinationconfigpropertydependson"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.lifecycle" id="cdktfprovidernewrelicnotificationdestinationconfigpropertylifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.provider" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyprovider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.name" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+(Required) The name of the destination.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#name NotificationDestination#name}
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.type" id="cdktfprovidernewrelicnotificationdestinationconfigpropertytype"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+(Required) The type of the destination. One of: (WEBHOOK, EMAIL, SERVICE_NOW, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#type NotificationDestination#type}
+
+---
+
+##### `auth`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.auth" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyauth"></a>
+
+```typescript
+public readonly auth: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+A set of key-value pairs to represent a Notification destination auth.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#auth NotificationDestination#auth}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.id" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#id NotificationDestination#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `properties`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.properties" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyproperties"></a>
+
+```typescript
+public readonly properties: IResolvable | NotificationDestinationProperties[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties)[]
+
+properties block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#properties NotificationDestination#properties}
+
+---
+
+### NotificationDestinationProperties <a name="@cdktf/provider-newrelic.NotificationDestinationProperties" id="cdktfprovidernewrelicnotificationdestinationproperties"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { NotificationDestinationProperties } from '@cdktf/provider-newrelic'
+
+const notificationDestinationProperties: NotificationDestinationProperties = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`key`](#cdktfprovidernewrelicnotificationdestinationpropertiespropertykey)<span title="Required">*</span> | `string` | Notification destination property key. |
+| [`value`](#cdktfprovidernewrelicnotificationdestinationpropertiespropertyvalue)<span title="Required">*</span> | `string` | Notification destination property value. |
+| [`displayValue`](#cdktfprovidernewrelicnotificationdestinationpropertiespropertydisplayvalue) | `string` | Notification destination property display key. |
+| [`label`](#cdktfprovidernewrelicnotificationdestinationpropertiespropertylabel) | `string` | Notification destination property label. |
+
+---
+
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationProperties.property.key" id="cdktfprovidernewrelicnotificationdestinationpropertiespropertykey"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* `string`
+
+Notification destination property key.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#key NotificationDestination#key}
+
+---
+
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationProperties.property.value" id="cdktfprovidernewrelicnotificationdestinationpropertiespropertyvalue"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* `string`
+
+Notification destination property value.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#value NotificationDestination#value}
+
+---
+
+##### `displayValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationProperties.property.displayValue" id="cdktfprovidernewrelicnotificationdestinationpropertiespropertydisplayvalue"></a>
+
+```typescript
+public readonly displayValue: string;
+```
+
+- *Type:* `string`
+
+Notification destination property display key.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#display_value NotificationDestination#display_value}
+
+---
+
+##### `label`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationProperties.property.label" id="cdktfprovidernewrelicnotificationdestinationpropertiespropertylabel"></a>
+
+```typescript
+public readonly label: string;
+```
+
+- *Type:* `string`
+
+Notification destination property label.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#label NotificationDestination#label}
 
 ---
 
@@ -46679,6 +47569,534 @@ public readonly internalValue: IResolvable | InsightsEventEvent;
 ```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.InsightsEventEvent`](#@cdktf/provider-newrelic.InsightsEventEvent)
+
+---
+
+
+### NotificationChannelPropertiesList <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesList" id="cdktfprovidernewrelicnotificationchannelpropertieslist"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesList.Initializer" id="cdktfprovidernewrelicnotificationchannelpropertieslistinitializer"></a>
+
+```typescript
+import { NotificationChannelPropertiesList } from '@cdktf/provider-newrelic'
+
+new NotificationChannelPropertiesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicnotificationchannelpropertieslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicnotificationchannelpropertieslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidernewrelicnotificationchannelpropertieslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesList.parameter.terraformResource" id="cdktfprovidernewrelicnotificationchannelpropertieslistparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesList.parameter.terraformAttribute" id="cdktfprovidernewrelicnotificationchannelpropertieslistparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesList.parameter.wrapsSet" id="cdktfprovidernewrelicnotificationchannelpropertieslistparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovidernewrelicnotificationchannelpropertieslistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesList.get" id="cdktfprovidernewrelicnotificationchannelpropertieslistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesList.parameter.index" id="cdktfprovidernewrelicnotificationchannelpropertieslistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`internalValue`](#cdktfprovidernewrelicnotificationchannelpropertieslistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties)[] | *No description.* |
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesList.property.internalValue" id="cdktfprovidernewrelicnotificationchannelpropertieslistpropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | NotificationChannelProperties[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties)[]
+
+---
+
+
+### NotificationChannelPropertiesOutputReference <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.Initializer" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceinitializer"></a>
+
+```typescript
+import { NotificationChannelPropertiesOutputReference } from '@cdktf/provider-newrelic'
+
+new NotificationChannelPropertiesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetDisplayValue`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceresetdisplayvalue) | *No description.* |
+| [`resetLabel`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceresetlabel) | *No description.* |
+
+---
+
+##### `resetDisplayValue` <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.resetDisplayValue" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceresetdisplayvalue"></a>
+
+```typescript
+public resetDisplayValue()
+```
+
+##### `resetLabel` <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.resetLabel" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceresetlabel"></a>
+
+```typescript
+public resetLabel()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`displayValueInput`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertydisplayvalueinput) | `string` | *No description.* |
+| [`keyInput`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertykeyinput) | `string` | *No description.* |
+| [`labelInput`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertylabelinput) | `string` | *No description.* |
+| [`valueInput`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertyvalueinput) | `string` | *No description.* |
+| [`displayValue`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertydisplayvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`key`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertykey)<span title="Required">*</span> | `string` | *No description.* |
+| [`label`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertylabel)<span title="Required">*</span> | `string` | *No description.* |
+| [`value`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertyvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties) | *No description.* |
+
+---
+
+##### `displayValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.displayValueInput" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertydisplayvalueinput"></a>
+
+```typescript
+public readonly displayValueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `keyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.keyInput" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertykeyinput"></a>
+
+```typescript
+public readonly keyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `labelInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.labelInput" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertylabelinput"></a>
+
+```typescript
+public readonly labelInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `valueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.valueInput" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertyvalueinput"></a>
+
+```typescript
+public readonly valueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `displayValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.displayValue" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertydisplayvalue"></a>
+
+```typescript
+public readonly displayValue: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.key" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertykey"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `label`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.label" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertylabel"></a>
+
+```typescript
+public readonly label: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.value" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertyvalue"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.internalValue" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | NotificationChannelProperties;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties)
+
+---
+
+
+### NotificationDestinationPropertiesList <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesList" id="cdktfprovidernewrelicnotificationdestinationpropertieslist"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesList.Initializer" id="cdktfprovidernewrelicnotificationdestinationpropertieslistinitializer"></a>
+
+```typescript
+import { NotificationDestinationPropertiesList } from '@cdktf/provider-newrelic'
+
+new NotificationDestinationPropertiesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicnotificationdestinationpropertieslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicnotificationdestinationpropertieslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidernewrelicnotificationdestinationpropertieslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesList.parameter.terraformResource" id="cdktfprovidernewrelicnotificationdestinationpropertieslistparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesList.parameter.terraformAttribute" id="cdktfprovidernewrelicnotificationdestinationpropertieslistparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesList.parameter.wrapsSet" id="cdktfprovidernewrelicnotificationdestinationpropertieslistparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovidernewrelicnotificationdestinationpropertieslistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesList.get" id="cdktfprovidernewrelicnotificationdestinationpropertieslistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesList.parameter.index" id="cdktfprovidernewrelicnotificationdestinationpropertieslistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`internalValue`](#cdktfprovidernewrelicnotificationdestinationpropertieslistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties)[] | *No description.* |
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesList.property.internalValue" id="cdktfprovidernewrelicnotificationdestinationpropertieslistpropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | NotificationDestinationProperties[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties)[]
+
+---
+
+
+### NotificationDestinationPropertiesOutputReference <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.Initializer" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceinitializer"></a>
+
+```typescript
+import { NotificationDestinationPropertiesOutputReference } from '@cdktf/provider-newrelic'
+
+new NotificationDestinationPropertiesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetDisplayValue`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceresetdisplayvalue) | *No description.* |
+| [`resetLabel`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceresetlabel) | *No description.* |
+
+---
+
+##### `resetDisplayValue` <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.resetDisplayValue" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceresetdisplayvalue"></a>
+
+```typescript
+public resetDisplayValue()
+```
+
+##### `resetLabel` <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.resetLabel" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceresetlabel"></a>
+
+```typescript
+public resetLabel()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`displayValueInput`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertydisplayvalueinput) | `string` | *No description.* |
+| [`keyInput`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertykeyinput) | `string` | *No description.* |
+| [`labelInput`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertylabelinput) | `string` | *No description.* |
+| [`valueInput`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertyvalueinput) | `string` | *No description.* |
+| [`displayValue`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertydisplayvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`key`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertykey)<span title="Required">*</span> | `string` | *No description.* |
+| [`label`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertylabel)<span title="Required">*</span> | `string` | *No description.* |
+| [`value`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertyvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties) | *No description.* |
+
+---
+
+##### `displayValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.displayValueInput" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertydisplayvalueinput"></a>
+
+```typescript
+public readonly displayValueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `keyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.keyInput" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertykeyinput"></a>
+
+```typescript
+public readonly keyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `labelInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.labelInput" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertylabelinput"></a>
+
+```typescript
+public readonly labelInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `valueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.valueInput" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertyvalueinput"></a>
+
+```typescript
+public readonly valueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `displayValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.displayValue" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertydisplayvalue"></a>
+
+```typescript
+public readonly displayValue: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.key" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertykey"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `label`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.label" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertylabel"></a>
+
+```typescript
+public readonly label: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.value" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertyvalue"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.internalValue" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | NotificationDestinationProperties;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties)
 
 ---
 
