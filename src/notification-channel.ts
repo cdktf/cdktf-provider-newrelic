@@ -252,7 +252,7 @@ export class NotificationChannel extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_notification_channel',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.49.0',
+        providerVersion: '2.49.1',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,

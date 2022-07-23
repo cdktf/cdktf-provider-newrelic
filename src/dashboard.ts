@@ -1239,7 +1239,7 @@ export class Dashboard extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.49.0',
+        providerVersion: '2.49.1',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
