@@ -201,7 +201,7 @@ export function insightsEventEventToTerraform(struct?: InsightsEventEvent | cdkt
   return {
     timestamp: cdktf.numberToTerraform(struct!.timestamp),
     type: cdktf.stringToTerraform(struct!.type),
-    attribute: cdktf.listMapper(insightsEventEventAttributeToTerraform)(struct!.attribute),
+    attribute: cdktf.listMapper(insightsEventEventAttributeToTerraform, true)(struct!.attribute),
   }
 }
 
@@ -356,7 +356,10 @@ export class InsightsEvent extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._event.internalValue = config.event;
@@ -402,7 +405,7 @@ export class InsightsEvent extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      event: cdktf.listMapper(insightsEventEventToTerraform)(this._event.internalValue),
+      event: cdktf.listMapper(insightsEventEventToTerraform, true)(this._event.internalValue),
     };
   }
 }

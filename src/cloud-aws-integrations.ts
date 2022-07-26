@@ -151,7 +151,7 @@ export function cloudAwsIntegrationsCloudtrailToTerraform(struct?: CloudAwsInteg
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
@@ -405,7 +405,7 @@ export function cloudAwsIntegrationsVpcToTerraform(struct?: CloudAwsIntegrations
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     fetch_nat_gateway: cdktf.booleanToTerraform(struct!.fetchNatGateway),
     fetch_vpn: cdktf.booleanToTerraform(struct!.fetchVpn),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
@@ -593,7 +593,7 @@ export function cloudAwsIntegrationsXRayToTerraform(struct?: CloudAwsIntegration
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
@@ -701,7 +701,10 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._id = config.id;

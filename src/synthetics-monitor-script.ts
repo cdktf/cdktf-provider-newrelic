@@ -220,7 +220,10 @@ export class SyntheticsMonitorScript extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._monitorId = config.monitorId;
@@ -299,7 +302,7 @@ export class SyntheticsMonitorScript extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       monitor_id: cdktf.stringToTerraform(this._monitorId),
       text: cdktf.stringToTerraform(this._text),
-      location: cdktf.listMapper(syntheticsMonitorScriptLocationToTerraform)(this._location.internalValue),
+      location: cdktf.listMapper(syntheticsMonitorScriptLocationToTerraform, true)(this._location.internalValue),
     };
   }
 }

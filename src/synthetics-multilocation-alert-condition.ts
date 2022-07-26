@@ -224,7 +224,10 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._enabled = config.enabled;
     this._entities = config.entities;
@@ -377,7 +380,7 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       enabled: cdktf.booleanToTerraform(this._enabled),
-      entities: cdktf.listMapper(cdktf.stringToTerraform)(this._entities),
+      entities: cdktf.listMapper(cdktf.stringToTerraform, false)(this._entities),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       policy_id: cdktf.numberToTerraform(this._policyId),

@@ -200,10 +200,10 @@ export function cloudAwsGovcloudIntegrationsAlbToTerraform(struct?: CloudAwsGovc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
     fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
-    load_balancer_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.loadBalancerPrefixes),
+    load_balancer_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loadBalancerPrefixes),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
     tag_value: cdktf.stringToTerraform(struct!.tagValue),
@@ -431,9 +431,9 @@ export function cloudAwsGovcloudIntegrationsApiGatewayToTerraform(struct?: Cloud
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    stage_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.stagePrefixes),
+    stage_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.stagePrefixes),
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
     tag_value: cdktf.stringToTerraform(struct!.tagValue),
   }
@@ -596,7 +596,7 @@ export function cloudAwsGovcloudIntegrationsAutoScalingToTerraform(struct?: Clou
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
@@ -692,7 +692,7 @@ export function cloudAwsGovcloudIntegrationsAwsDirectConnectToTerraform(struct?:
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
@@ -788,7 +788,7 @@ export function cloudAwsGovcloudIntegrationsAwsStatesToTerraform(struct?: CloudA
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
@@ -884,7 +884,7 @@ export function cloudAwsGovcloudIntegrationsCloudtrailToTerraform(struct?: Cloud
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
   }
 }
@@ -1006,7 +1006,7 @@ export function cloudAwsGovcloudIntegrationsDynamoDbToTerraform(struct?: CloudAw
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
     fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
@@ -1214,7 +1214,7 @@ export function cloudAwsGovcloudIntegrationsEbsToTerraform(struct?: CloudAwsGovc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
@@ -1399,7 +1399,7 @@ export function cloudAwsGovcloudIntegrationsEc2ToTerraform(struct?: CloudAwsGovc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     fetch_ip_addresses: cdktf.booleanToTerraform(struct!.fetchIpAddresses),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
@@ -1584,7 +1584,7 @@ export function cloudAwsGovcloudIntegrationsElasticSearchToTerraform(struct?: Cl
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     fetch_nodes: cdktf.booleanToTerraform(struct!.fetchNodes),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
@@ -1761,7 +1761,7 @@ export function cloudAwsGovcloudIntegrationsElbToTerraform(struct?: CloudAwsGovc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
     fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
@@ -2239,7 +2239,7 @@ export function cloudAwsGovcloudIntegrationsLambdaToTerraform(struct?: CloudAwsG
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
@@ -2424,7 +2424,7 @@ export function cloudAwsGovcloudIntegrationsRdsToTerraform(struct?: CloudAwsGovc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
@@ -2603,7 +2603,7 @@ export function cloudAwsGovcloudIntegrationsRedShiftToTerraform(struct?: CloudAw
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
     tag_value: cdktf.stringToTerraform(struct!.tagValue),
@@ -3032,7 +3032,7 @@ export function cloudAwsGovcloudIntegrationsSnsToTerraform(struct?: CloudAwsGovc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
   }
@@ -3183,11 +3183,11 @@ export function cloudAwsGovcloudIntegrationsSqsToTerraform(struct?: CloudAwsGovc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.awsRegions),
+    aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     fetch_extended_inventory: cdktf.booleanToTerraform(struct!.fetchExtendedInventory),
     fetch_tags: cdktf.booleanToTerraform(struct!.fetchTags),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    queue_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.queuePrefixes),
+    queue_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.queuePrefixes),
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
     tag_value: cdktf.stringToTerraform(struct!.tagValue),
   }
@@ -3406,7 +3406,10 @@ export class CloudAwsGovcloudIntegrations extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._id = config.id;

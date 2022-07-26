@@ -174,7 +174,10 @@ export class Workload extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._entityGuids = config.entityGuids;
@@ -308,11 +311,11 @@ export class Workload extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.numberToTerraform(this._accountId),
-      entity_guids: cdktf.listMapper(cdktf.stringToTerraform)(this._entityGuids),
+      entity_guids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._entityGuids),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      scope_account_ids: cdktf.listMapper(cdktf.numberToTerraform)(this._scopeAccountIds),
-      entity_search_query: cdktf.listMapper(workloadEntitySearchQueryToTerraform)(this._entitySearchQuery.internalValue),
+      scope_account_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._scopeAccountIds),
+      entity_search_query: cdktf.listMapper(workloadEntitySearchQueryToTerraform, true)(this._entitySearchQuery.internalValue),
     };
   }
 }

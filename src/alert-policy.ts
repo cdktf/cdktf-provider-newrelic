@@ -72,7 +72,10 @@ export class AlertPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._channelIds = config.channelIds;
@@ -169,7 +172,7 @@ export class AlertPolicy extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.numberToTerraform(this._accountId),
-      channel_ids: cdktf.listMapper(cdktf.numberToTerraform)(this._channelIds),
+      channel_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._channelIds),
       id: cdktf.stringToTerraform(this._id),
       incident_preference: cdktf.stringToTerraform(this._incidentPreference),
       name: cdktf.stringToTerraform(this._name),

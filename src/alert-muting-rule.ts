@@ -80,7 +80,7 @@ export function alertMutingRuleConditionConditionsToTerraform(struct?: AlertMuti
   return {
     attribute: cdktf.stringToTerraform(struct!.attribute),
     operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -221,7 +221,7 @@ export function alertMutingRuleConditionToTerraform(struct?: AlertMutingRuleCond
   }
   return {
     operator: cdktf.stringToTerraform(struct!.operator),
-    conditions: cdktf.listMapper(alertMutingRuleConditionConditionsToTerraform)(struct!.conditions),
+    conditions: cdktf.listMapper(alertMutingRuleConditionConditionsToTerraform, true)(struct!.conditions),
   }
 }
 
@@ -346,7 +346,7 @@ export function alertMutingRuleScheduleToTerraform(struct?: AlertMutingRuleSched
     repeat_count: cdktf.numberToTerraform(struct!.repeatCount),
     start_time: cdktf.stringToTerraform(struct!.startTime),
     time_zone: cdktf.stringToTerraform(struct!.timeZone),
-    weekly_repeat_days: cdktf.listMapper(cdktf.stringToTerraform)(struct!.weeklyRepeatDays),
+    weekly_repeat_days: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.weeklyRepeatDays),
   }
 }
 
@@ -560,7 +560,10 @@ export class AlertMutingRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._description = config.description;
