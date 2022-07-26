@@ -252,7 +252,10 @@ export class NotificationDestination extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._auth = config.auth;
     this._id = config.id;
@@ -349,7 +352,7 @@ export class NotificationDestination extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
-      properties: cdktf.listMapper(notificationDestinationPropertiesToTerraform)(this._properties.internalValue),
+      properties: cdktf.listMapper(notificationDestinationPropertiesToTerraform, true)(this._properties.internalValue),
     };
   }
 }

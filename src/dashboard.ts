@@ -74,8 +74,8 @@ export function dashboardFilterToTerraform(struct?: DashboardFilterOutputReferen
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attributes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.attributes),
-    event_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.eventTypes),
+    attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.attributes),
+    event_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.eventTypes),
   }
 }
 
@@ -394,7 +394,7 @@ export function dashboardWidgetMetricToTerraform(struct?: DashboardWidgetMetric 
     name: cdktf.stringToTerraform(struct!.name),
     scope: cdktf.stringToTerraform(struct!.scope),
     units: cdktf.stringToTerraform(struct!.units),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -675,7 +675,7 @@ export function dashboardWidgetToTerraform(struct?: DashboardWidget | cdktf.IRes
     drilldown_dashboard_id: cdktf.numberToTerraform(struct!.drilldownDashboardId),
     duration: cdktf.numberToTerraform(struct!.duration),
     end_time: cdktf.numberToTerraform(struct!.endTime),
-    entity_ids: cdktf.listMapper(cdktf.numberToTerraform)(struct!.entityIds),
+    entity_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.entityIds),
     facet: cdktf.stringToTerraform(struct!.facet),
     height: cdktf.numberToTerraform(struct!.height),
     limit: cdktf.numberToTerraform(struct!.limit),
@@ -689,8 +689,8 @@ export function dashboardWidgetToTerraform(struct?: DashboardWidget | cdktf.IRes
     title: cdktf.stringToTerraform(struct!.title),
     visualization: cdktf.stringToTerraform(struct!.visualization),
     width: cdktf.numberToTerraform(struct!.width),
-    compare_with: cdktf.listMapper(dashboardWidgetCompareWithToTerraform)(struct!.compareWith),
-    metric: cdktf.listMapper(dashboardWidgetMetricToTerraform)(struct!.metric),
+    compare_with: cdktf.listMapper(dashboardWidgetCompareWithToTerraform, true)(struct!.compareWith),
+    metric: cdktf.listMapper(dashboardWidgetMetricToTerraform, true)(struct!.metric),
   }
 }
 
@@ -1245,7 +1245,10 @@ export class Dashboard extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._editable = config.editable;
     this._gridColumnCount = config.gridColumnCount;
@@ -1404,7 +1407,7 @@ export class Dashboard extends cdktf.TerraformResource {
       title: cdktf.stringToTerraform(this._title),
       visibility: cdktf.stringToTerraform(this._visibility),
       filter: dashboardFilterToTerraform(this._filter.internalValue),
-      widget: cdktf.listMapper(dashboardWidgetToTerraform)(this._widget.internalValue),
+      widget: cdktf.listMapper(dashboardWidgetToTerraform, true)(this._widget.internalValue),
     };
   }
 }

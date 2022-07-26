@@ -223,7 +223,7 @@ export function cloudAzureIntegrationsApiManagementToTerraform(struct?: CloudAzu
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -319,7 +319,7 @@ export function cloudAzureIntegrationsAppGatewayToTerraform(struct?: CloudAzureI
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -415,7 +415,7 @@ export function cloudAzureIntegrationsAppServiceToTerraform(struct?: CloudAzureI
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -511,7 +511,7 @@ export function cloudAzureIntegrationsContainersToTerraform(struct?: CloudAzureI
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -607,7 +607,7 @@ export function cloudAzureIntegrationsCosmosDbToTerraform(struct?: CloudAzureInt
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -705,7 +705,7 @@ export function cloudAzureIntegrationsCostManagementToTerraform(struct?: CloudAz
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    tag_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tagKeys),
+    tag_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagKeys),
   }
 }
 
@@ -801,7 +801,7 @@ export function cloudAzureIntegrationsDataFactoryToTerraform(struct?: CloudAzure
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -897,7 +897,7 @@ export function cloudAzureIntegrationsEventHubToTerraform(struct?: CloudAzureInt
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -993,7 +993,7 @@ export function cloudAzureIntegrationsExpressRouteToTerraform(struct?: CloudAzur
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -1089,7 +1089,7 @@ export function cloudAzureIntegrationsFirewallsToTerraform(struct?: CloudAzureIn
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -1185,7 +1185,7 @@ export function cloudAzureIntegrationsFrontDoorToTerraform(struct?: CloudAzureIn
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -1281,7 +1281,7 @@ export function cloudAzureIntegrationsFunctionsToTerraform(struct?: CloudAzureIn
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -1377,7 +1377,7 @@ export function cloudAzureIntegrationsKeyVaultToTerraform(struct?: CloudAzureInt
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -1473,7 +1473,7 @@ export function cloudAzureIntegrationsLoadBalancerToTerraform(struct?: CloudAzur
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -1569,7 +1569,7 @@ export function cloudAzureIntegrationsLogicAppsToTerraform(struct?: CloudAzureIn
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -1665,7 +1665,7 @@ export function cloudAzureIntegrationsMachineLearningToTerraform(struct?: CloudA
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -1761,7 +1761,7 @@ export function cloudAzureIntegrationsMariaDbToTerraform(struct?: CloudAzureInte
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -1857,7 +1857,7 @@ export function cloudAzureIntegrationsMysqlToTerraform(struct?: CloudAzureIntegr
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -1953,7 +1953,7 @@ export function cloudAzureIntegrationsPostgresqlToTerraform(struct?: CloudAzureI
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -2049,7 +2049,7 @@ export function cloudAzureIntegrationsPowerBiDedicatedToTerraform(struct?: Cloud
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -2145,7 +2145,7 @@ export function cloudAzureIntegrationsRedisCacheToTerraform(struct?: CloudAzureI
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -2241,7 +2241,7 @@ export function cloudAzureIntegrationsServiceBusToTerraform(struct?: CloudAzureI
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -2337,7 +2337,7 @@ export function cloudAzureIntegrationsSqlToTerraform(struct?: CloudAzureIntegrat
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -2433,7 +2433,7 @@ export function cloudAzureIntegrationsSqlManagedToTerraform(struct?: CloudAzureI
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -2529,7 +2529,7 @@ export function cloudAzureIntegrationsStorageToTerraform(struct?: CloudAzureInte
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -2625,7 +2625,7 @@ export function cloudAzureIntegrationsVirtualMachineToTerraform(struct?: CloudAz
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -2721,7 +2721,7 @@ export function cloudAzureIntegrationsVirtualNetworksToTerraform(struct?: CloudA
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -2817,7 +2817,7 @@ export function cloudAzureIntegrationsVmsToTerraform(struct?: CloudAzureIntegrat
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -2913,7 +2913,7 @@ export function cloudAzureIntegrationsVpnGatewayToTerraform(struct?: CloudAzureI
   }
   return {
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceGroups),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
   }
 }
 
@@ -3020,7 +3020,10 @@ export class CloudAzureIntegrations extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._id = config.id;

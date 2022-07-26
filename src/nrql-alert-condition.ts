@@ -1006,7 +1006,10 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._aggregationDelay = config.aggregationDelay;
@@ -1482,7 +1485,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       violation_time_limit_seconds: cdktf.numberToTerraform(this._violationTimeLimitSeconds),
       critical: nrqlAlertConditionCriticalToTerraform(this._critical.internalValue),
       nrql: nrqlAlertConditionNrqlToTerraform(this._nrql.internalValue),
-      term: cdktf.listMapper(nrqlAlertConditionTermToTerraform)(this._term.internalValue),
+      term: cdktf.listMapper(nrqlAlertConditionTermToTerraform, true)(this._term.internalValue),
       warning: nrqlAlertConditionWarningToTerraform(this._warning.internalValue),
     };
   }

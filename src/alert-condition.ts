@@ -332,7 +332,10 @@ export class AlertCondition extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._conditionScope = config.conditionScope;
     this._enabled = config.enabled;
@@ -568,7 +571,7 @@ export class AlertCondition extends cdktf.TerraformResource {
     return {
       condition_scope: cdktf.stringToTerraform(this._conditionScope),
       enabled: cdktf.booleanToTerraform(this._enabled),
-      entities: cdktf.listMapper(cdktf.numberToTerraform)(this._entities),
+      entities: cdktf.listMapper(cdktf.numberToTerraform, false)(this._entities),
       gc_metric: cdktf.stringToTerraform(this._gcMetric),
       id: cdktf.stringToTerraform(this._id),
       metric: cdktf.stringToTerraform(this._metric),
@@ -579,7 +582,7 @@ export class AlertCondition extends cdktf.TerraformResource {
       user_defined_metric: cdktf.stringToTerraform(this._userDefinedMetric),
       user_defined_value_function: cdktf.stringToTerraform(this._userDefinedValueFunction),
       violation_close_timer: cdktf.numberToTerraform(this._violationCloseTimer),
-      term: cdktf.listMapper(alertConditionTermToTerraform)(this._term.internalValue),
+      term: cdktf.listMapper(alertConditionTermToTerraform, true)(this._term.internalValue),
     };
   }
 }

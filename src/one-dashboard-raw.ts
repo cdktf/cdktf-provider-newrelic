@@ -97,7 +97,7 @@ export function oneDashboardRawPageWidgetToTerraform(struct?: OneDashboardRawPag
     column: cdktf.numberToTerraform(struct!.column),
     configuration: cdktf.stringToTerraform(struct!.configuration),
     height: cdktf.numberToTerraform(struct!.height),
-    linked_entity_guids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.linkedEntityGuids),
+    linked_entity_guids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.linkedEntityGuids),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     visualization_id: cdktf.stringToTerraform(struct!.visualizationId),
@@ -358,7 +358,7 @@ export function oneDashboardRawPageToTerraform(struct?: OneDashboardRawPage | cd
   return {
     description: cdktf.stringToTerraform(struct!.description),
     name: cdktf.stringToTerraform(struct!.name),
-    widget: cdktf.listMapper(oneDashboardRawPageWidgetToTerraform)(struct!.widget),
+    widget: cdktf.listMapper(oneDashboardRawPageWidgetToTerraform, true)(struct!.widget),
   }
 }
 
@@ -521,7 +521,10 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._description = config.description;
@@ -646,7 +649,7 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       permissions: cdktf.stringToTerraform(this._permissions),
-      page: cdktf.listMapper(oneDashboardRawPageToTerraform)(this._page.internalValue),
+      page: cdktf.listMapper(oneDashboardRawPageToTerraform, true)(this._page.internalValue),
     };
   }
 }

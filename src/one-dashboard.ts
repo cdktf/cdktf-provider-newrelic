@@ -217,7 +217,7 @@ export function oneDashboardPageWidgetAreaToTerraform(struct?: OneDashboardPageW
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
-    nrql_query: cdktf.listMapper(oneDashboardPageWidgetAreaNrqlQueryToTerraform)(struct!.nrqlQuery),
+    nrql_query: cdktf.listMapper(oneDashboardPageWidgetAreaNrqlQueryToTerraform, true)(struct!.nrqlQuery),
   }
 }
 
@@ -608,11 +608,11 @@ export function oneDashboardPageWidgetBarToTerraform(struct?: OneDashboardPageWi
     filter_current_dashboard: cdktf.booleanToTerraform(struct!.filterCurrentDashboard),
     height: cdktf.numberToTerraform(struct!.height),
     ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
-    linked_entity_guids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.linkedEntityGuids),
+    linked_entity_guids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.linkedEntityGuids),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
-    nrql_query: cdktf.listMapper(oneDashboardPageWidgetBarNrqlQueryToTerraform)(struct!.nrqlQuery),
+    nrql_query: cdktf.listMapper(oneDashboardPageWidgetBarNrqlQueryToTerraform, true)(struct!.nrqlQuery),
   }
 }
 
@@ -1051,7 +1051,7 @@ export function oneDashboardPageWidgetBillboardToTerraform(struct?: OneDashboard
     title: cdktf.stringToTerraform(struct!.title),
     warning: cdktf.stringToTerraform(struct!.warning),
     width: cdktf.numberToTerraform(struct!.width),
-    nrql_query: cdktf.listMapper(oneDashboardPageWidgetBillboardNrqlQueryToTerraform)(struct!.nrqlQuery),
+    nrql_query: cdktf.listMapper(oneDashboardPageWidgetBillboardNrqlQueryToTerraform, true)(struct!.nrqlQuery),
   }
 }
 
@@ -1483,7 +1483,7 @@ export function oneDashboardPageWidgetBulletToTerraform(struct?: OneDashboardPag
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
-    nrql_query: cdktf.listMapper(oneDashboardPageWidgetBulletNrqlQueryToTerraform)(struct!.nrqlQuery),
+    nrql_query: cdktf.listMapper(oneDashboardPageWidgetBulletNrqlQueryToTerraform, true)(struct!.nrqlQuery),
   }
 }
 
@@ -1883,7 +1883,7 @@ export function oneDashboardPageWidgetFunnelToTerraform(struct?: OneDashboardPag
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
-    nrql_query: cdktf.listMapper(oneDashboardPageWidgetFunnelNrqlQueryToTerraform)(struct!.nrqlQuery),
+    nrql_query: cdktf.listMapper(oneDashboardPageWidgetFunnelNrqlQueryToTerraform, true)(struct!.nrqlQuery),
   }
 }
 
@@ -2264,7 +2264,7 @@ export function oneDashboardPageWidgetHeatmapToTerraform(struct?: OneDashboardPa
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
-    nrql_query: cdktf.listMapper(oneDashboardPageWidgetHeatmapNrqlQueryToTerraform)(struct!.nrqlQuery),
+    nrql_query: cdktf.listMapper(oneDashboardPageWidgetHeatmapNrqlQueryToTerraform, true)(struct!.nrqlQuery),
   }
 }
 
@@ -2645,7 +2645,7 @@ export function oneDashboardPageWidgetHistogramToTerraform(struct?: OneDashboard
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
-    nrql_query: cdktf.listMapper(oneDashboardPageWidgetHistogramNrqlQueryToTerraform)(struct!.nrqlQuery),
+    nrql_query: cdktf.listMapper(oneDashboardPageWidgetHistogramNrqlQueryToTerraform, true)(struct!.nrqlQuery),
   }
 }
 
@@ -3026,7 +3026,7 @@ export function oneDashboardPageWidgetJsonToTerraform(struct?: OneDashboardPageW
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
-    nrql_query: cdktf.listMapper(oneDashboardPageWidgetJsonNrqlQueryToTerraform)(struct!.nrqlQuery),
+    nrql_query: cdktf.listMapper(oneDashboardPageWidgetJsonNrqlQueryToTerraform, true)(struct!.nrqlQuery),
   }
 }
 
@@ -3407,7 +3407,7 @@ export function oneDashboardPageWidgetLineToTerraform(struct?: OneDashboardPageW
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
-    nrql_query: cdktf.listMapper(oneDashboardPageWidgetLineNrqlQueryToTerraform)(struct!.nrqlQuery),
+    nrql_query: cdktf.listMapper(oneDashboardPageWidgetLineNrqlQueryToTerraform, true)(struct!.nrqlQuery),
   }
 }
 
@@ -3788,7 +3788,7 @@ export function oneDashboardPageWidgetLogTableToTerraform(struct?: OneDashboardP
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
-    nrql_query: cdktf.listMapper(oneDashboardPageWidgetLogTableNrqlQueryToTerraform)(struct!.nrqlQuery),
+    nrql_query: cdktf.listMapper(oneDashboardPageWidgetLogTableNrqlQueryToTerraform, true)(struct!.nrqlQuery),
   }
 }
 
@@ -4436,11 +4436,11 @@ export function oneDashboardPageWidgetPieToTerraform(struct?: OneDashboardPageWi
     filter_current_dashboard: cdktf.booleanToTerraform(struct!.filterCurrentDashboard),
     height: cdktf.numberToTerraform(struct!.height),
     ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
-    linked_entity_guids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.linkedEntityGuids),
+    linked_entity_guids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.linkedEntityGuids),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
-    nrql_query: cdktf.listMapper(oneDashboardPageWidgetPieNrqlQueryToTerraform)(struct!.nrqlQuery),
+    nrql_query: cdktf.listMapper(oneDashboardPageWidgetPieNrqlQueryToTerraform, true)(struct!.nrqlQuery),
   }
 }
 
@@ -4865,7 +4865,7 @@ export function oneDashboardPageWidgetStackedBarToTerraform(struct?: OneDashboar
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
-    nrql_query: cdktf.listMapper(oneDashboardPageWidgetStackedBarNrqlQueryToTerraform)(struct!.nrqlQuery),
+    nrql_query: cdktf.listMapper(oneDashboardPageWidgetStackedBarNrqlQueryToTerraform, true)(struct!.nrqlQuery),
   }
 }
 
@@ -5256,11 +5256,11 @@ export function oneDashboardPageWidgetTableToTerraform(struct?: OneDashboardPage
     filter_current_dashboard: cdktf.booleanToTerraform(struct!.filterCurrentDashboard),
     height: cdktf.numberToTerraform(struct!.height),
     ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
-    linked_entity_guids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.linkedEntityGuids),
+    linked_entity_guids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.linkedEntityGuids),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
-    nrql_query: cdktf.listMapper(oneDashboardPageWidgetTableNrqlQueryToTerraform)(struct!.nrqlQuery),
+    nrql_query: cdktf.listMapper(oneDashboardPageWidgetTableNrqlQueryToTerraform, true)(struct!.nrqlQuery),
   }
 }
 
@@ -5620,20 +5620,20 @@ export function oneDashboardPageToTerraform(struct?: OneDashboardPage | cdktf.IR
   return {
     description: cdktf.stringToTerraform(struct!.description),
     name: cdktf.stringToTerraform(struct!.name),
-    widget_area: cdktf.listMapper(oneDashboardPageWidgetAreaToTerraform)(struct!.widgetArea),
-    widget_bar: cdktf.listMapper(oneDashboardPageWidgetBarToTerraform)(struct!.widgetBar),
-    widget_billboard: cdktf.listMapper(oneDashboardPageWidgetBillboardToTerraform)(struct!.widgetBillboard),
-    widget_bullet: cdktf.listMapper(oneDashboardPageWidgetBulletToTerraform)(struct!.widgetBullet),
-    widget_funnel: cdktf.listMapper(oneDashboardPageWidgetFunnelToTerraform)(struct!.widgetFunnel),
-    widget_heatmap: cdktf.listMapper(oneDashboardPageWidgetHeatmapToTerraform)(struct!.widgetHeatmap),
-    widget_histogram: cdktf.listMapper(oneDashboardPageWidgetHistogramToTerraform)(struct!.widgetHistogram),
-    widget_json: cdktf.listMapper(oneDashboardPageWidgetJsonToTerraform)(struct!.widgetJson),
-    widget_line: cdktf.listMapper(oneDashboardPageWidgetLineToTerraform)(struct!.widgetLine),
-    widget_log_table: cdktf.listMapper(oneDashboardPageWidgetLogTableToTerraform)(struct!.widgetLogTable),
-    widget_markdown: cdktf.listMapper(oneDashboardPageWidgetMarkdownToTerraform)(struct!.widgetMarkdown),
-    widget_pie: cdktf.listMapper(oneDashboardPageWidgetPieToTerraform)(struct!.widgetPie),
-    widget_stacked_bar: cdktf.listMapper(oneDashboardPageWidgetStackedBarToTerraform)(struct!.widgetStackedBar),
-    widget_table: cdktf.listMapper(oneDashboardPageWidgetTableToTerraform)(struct!.widgetTable),
+    widget_area: cdktf.listMapper(oneDashboardPageWidgetAreaToTerraform, true)(struct!.widgetArea),
+    widget_bar: cdktf.listMapper(oneDashboardPageWidgetBarToTerraform, true)(struct!.widgetBar),
+    widget_billboard: cdktf.listMapper(oneDashboardPageWidgetBillboardToTerraform, true)(struct!.widgetBillboard),
+    widget_bullet: cdktf.listMapper(oneDashboardPageWidgetBulletToTerraform, true)(struct!.widgetBullet),
+    widget_funnel: cdktf.listMapper(oneDashboardPageWidgetFunnelToTerraform, true)(struct!.widgetFunnel),
+    widget_heatmap: cdktf.listMapper(oneDashboardPageWidgetHeatmapToTerraform, true)(struct!.widgetHeatmap),
+    widget_histogram: cdktf.listMapper(oneDashboardPageWidgetHistogramToTerraform, true)(struct!.widgetHistogram),
+    widget_json: cdktf.listMapper(oneDashboardPageWidgetJsonToTerraform, true)(struct!.widgetJson),
+    widget_line: cdktf.listMapper(oneDashboardPageWidgetLineToTerraform, true)(struct!.widgetLine),
+    widget_log_table: cdktf.listMapper(oneDashboardPageWidgetLogTableToTerraform, true)(struct!.widgetLogTable),
+    widget_markdown: cdktf.listMapper(oneDashboardPageWidgetMarkdownToTerraform, true)(struct!.widgetMarkdown),
+    widget_pie: cdktf.listMapper(oneDashboardPageWidgetPieToTerraform, true)(struct!.widgetPie),
+    widget_stacked_bar: cdktf.listMapper(oneDashboardPageWidgetStackedBarToTerraform, true)(struct!.widgetStackedBar),
+    widget_table: cdktf.listMapper(oneDashboardPageWidgetTableToTerraform, true)(struct!.widgetTable),
   }
 }
 
@@ -6082,7 +6082,10 @@ export class OneDashboard extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._description = config.description;
@@ -6207,7 +6210,7 @@ export class OneDashboard extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       permissions: cdktf.stringToTerraform(this._permissions),
-      page: cdktf.listMapper(oneDashboardPageToTerraform)(this._page.internalValue),
+      page: cdktf.listMapper(oneDashboardPageToTerraform, true)(this._page.internalValue),
     };
   }
 }

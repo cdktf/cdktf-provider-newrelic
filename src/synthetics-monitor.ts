@@ -114,7 +114,10 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._bypassHeadRequest = config.bypassHeadRequest;
     this._frequency = config.frequency;
@@ -320,7 +323,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
       bypass_head_request: cdktf.booleanToTerraform(this._bypassHeadRequest),
       frequency: cdktf.numberToTerraform(this._frequency),
       id: cdktf.stringToTerraform(this._id),
-      locations: cdktf.listMapper(cdktf.stringToTerraform)(this._locations),
+      locations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._locations),
       name: cdktf.stringToTerraform(this._name),
       sla_threshold: cdktf.numberToTerraform(this._slaThreshold),
       status: cdktf.stringToTerraform(this._status),

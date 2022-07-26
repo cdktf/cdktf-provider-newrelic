@@ -55,7 +55,7 @@ export function entityTagsTagToTerraform(struct?: EntityTagsTag | cdktf.IResolva
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -263,7 +263,10 @@ export class EntityTags extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._guid = config.guid;
     this._id = config.id;
@@ -341,7 +344,7 @@ export class EntityTags extends cdktf.TerraformResource {
     return {
       guid: cdktf.stringToTerraform(this._guid),
       id: cdktf.stringToTerraform(this._id),
-      tag: cdktf.listMapper(entityTagsTagToTerraform)(this._tag.internalValue),
+      tag: cdktf.listMapper(entityTagsTagToTerraform, true)(this._tag.internalValue),
       timeouts: entityTagsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

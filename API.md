@@ -14997,15 +14997,28 @@ const alertChannelConfig: AlertChannelConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicalertchannelconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicalertchannelconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicalertchannelconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicalertchannelconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicalertchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicalertchannelconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertchannelconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the channel. |
-| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie). |
+| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook). |
 | [`accountId`](#cdktfprovidernewrelicalertchannelconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create alert channels. |
 | [`config`](#cdktfprovidernewrelicalertchannelconfigpropertyconfig) | [`@cdktf/provider-newrelic.AlertChannelConfigA`](#@cdktf/provider-newrelic.AlertChannelConfigA) | config block. |
 | [`id`](#cdktfprovidernewrelicalertchannelconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#id AlertChannel#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfig.property.connection" id="cdktfprovidernewrelicalertchannelconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -15029,6 +15042,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfig.property.forEach" id="cdktfprovidernewrelicalertchannelconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfig.property.lifecycle" id="cdktfprovidernewrelicalertchannelconfigpropertylifecycle"></a>
 
 ```typescript
@@ -15046,6 +15069,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfig.property.provisioners" id="cdktfprovidernewrelicalertchannelconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -15071,7 +15104,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-(Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie).
+(Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
 
@@ -15465,10 +15498,13 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicalertconditionconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicalertconditionconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicalertconditionconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`entities`](#cdktfprovidernewrelicalertconditionconfigpropertyentities)<span title="Required">*</span> | `number`[] | The instance IDs associated with this condition. |
 | [`metric`](#cdktfprovidernewrelicalertconditionconfigpropertymetric)<span title="Required">*</span> | `string` | The metric field accepts parameters based on the type set. |
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
@@ -15483,6 +15519,16 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`userDefinedMetric`](#cdktfprovidernewrelicalertconditionconfigpropertyuserdefinedmetric) | `string` | A custom metric to be evaluated. |
 | [`userDefinedValueFunction`](#cdktfprovidernewrelicalertconditionconfigpropertyuserdefinedvaluefunction) | `string` | One of: (average, min, max, total, sample_size). |
 | [`violationCloseTimer`](#cdktfprovidernewrelicalertconditionconfigpropertyviolationclosetimer) | `number` | Automatically close instance-based violations, including JVM health metric violations, after the number of hours specified. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertConditionConfig.property.connection" id="cdktfprovidernewrelicalertconditionconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -15506,6 +15552,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertConditionConfig.property.forEach" id="cdktfprovidernewrelicalertconditionconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertConditionConfig.property.lifecycle" id="cdktfprovidernewrelicalertconditionconfigpropertylifecycle"></a>
 
 ```typescript
@@ -15523,6 +15579,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertConditionConfig.property.provisioners" id="cdktfprovidernewrelicalertconditionconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -15937,10 +16003,13 @@ const alertMutingRuleConfig: AlertMutingRuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicalertmutingruleconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicalertmutingruleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicalertmutingruleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicalertmutingruleconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicalertmutingruleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertmutingruleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicalertmutingruleconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`condition`](#cdktfprovidernewrelicalertmutingruleconfigpropertycondition)<span title="Required">*</span> | [`@cdktf/provider-newrelic.AlertMutingRuleCondition`](#@cdktf/provider-newrelic.AlertMutingRuleCondition) | condition block. |
 | [`enabled`](#cdktfprovidernewrelicalertmutingruleconfigpropertyenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the MutingRule is enabled. |
 | [`name`](#cdktfprovidernewrelicalertmutingruleconfigpropertyname)<span title="Required">*</span> | `string` | The name of the MutingRule. |
@@ -15948,6 +16017,16 @@ const alertMutingRuleConfig: AlertMutingRuleConfig = { ... }
 | [`description`](#cdktfprovidernewrelicalertmutingruleconfigpropertydescription) | `string` | The description of the MutingRule. |
 | [`id`](#cdktfprovidernewrelicalertmutingruleconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#id AlertMutingRule#id}. |
 | [`schedule`](#cdktfprovidernewrelicalertmutingruleconfigpropertyschedule) | [`@cdktf/provider-newrelic.AlertMutingRuleSchedule`](#@cdktf/provider-newrelic.AlertMutingRuleSchedule) | schedule block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleConfig.property.connection" id="cdktfprovidernewrelicalertmutingruleconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -15971,6 +16050,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleConfig.property.forEach" id="cdktfprovidernewrelicalertmutingruleconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleConfig.property.lifecycle" id="cdktfprovidernewrelicalertmutingruleconfigpropertylifecycle"></a>
 
 ```typescript
@@ -15988,6 +16077,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleConfig.property.provisioners" id="cdktfprovidernewrelicalertmutingruleconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -16225,14 +16324,27 @@ const alertPolicyChannelConfig: AlertPolicyChannelConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicalertpolicychannelconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicalertpolicychannelconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicalertpolicychannelconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicalertpolicychannelconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicalertpolicychannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertpolicychannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicalertpolicychannelconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`channelIds`](#cdktfprovidernewrelicalertpolicychannelconfigpropertychannelids)<span title="Required">*</span> | `number`[] | Array of channel IDs to apply to the specified policy. |
 | [`policyId`](#cdktfprovidernewrelicalertpolicychannelconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy. |
 | [`accountId`](#cdktfprovidernewrelicalertpolicychannelconfigpropertyaccountid) | `number` | The New Relic account ID where you want to link the channel to. |
 | [`id`](#cdktfprovidernewrelicalertpolicychannelconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel#id AlertPolicyChannel#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicyChannelConfig.property.connection" id="cdktfprovidernewrelicalertpolicychannelconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -16256,6 +16368,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicyChannelConfig.property.forEach" id="cdktfprovidernewrelicalertpolicychannelconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicyChannelConfig.property.lifecycle" id="cdktfprovidernewrelicalertpolicychannelconfigpropertylifecycle"></a>
 
 ```typescript
@@ -16273,6 +16395,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicyChannelConfig.property.provisioners" id="cdktfprovidernewrelicalertpolicychannelconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -16346,15 +16478,28 @@ const alertPolicyConfig: AlertPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicalertpolicyconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicalertpolicyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicalertpolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicalertpolicyconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicalertpolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertpolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicalertpolicyconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertpolicyconfigpropertyname)<span title="Required">*</span> | `string` | The name of the policy. |
 | [`accountId`](#cdktfprovidernewrelicalertpolicyconfigpropertyaccountid) | `number` | The New Relic account ID to operate on. |
 | [`channelIds`](#cdktfprovidernewrelicalertpolicyconfigpropertychannelids) | `number`[] | An array of channel IDs (integers) to assign to the policy. |
 | [`id`](#cdktfprovidernewrelicalertpolicyconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy#id AlertPolicy#id}. |
 | [`incidentPreference`](#cdktfprovidernewrelicalertpolicyconfigpropertyincidentpreference) | `string` | The rollup strategy for the policy. Options include: PER_POLICY, PER_CONDITION, or PER_CONDITION_AND_TARGET. The default is PER_POLICY. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicyConfig.property.connection" id="cdktfprovidernewrelicalertpolicyconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -16378,6 +16523,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicyConfig.property.forEach" id="cdktfprovidernewrelicalertpolicyconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicyConfig.property.lifecycle" id="cdktfprovidernewrelicalertpolicyconfigpropertylifecycle"></a>
 
 ```typescript
@@ -16395,6 +16550,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicyConfig.property.provisioners" id="cdktfprovidernewrelicalertpolicyconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -16482,10 +16647,13 @@ const apiAccessKeyConfig: ApiAccessKeyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicapiaccesskeyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicapiaccesskeyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicapiaccesskeyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`accountId`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyaccountid)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#account_id ApiAccessKey#account_id}. |
 | [`keyType`](#cdktfprovidernewrelicapiaccesskeyconfigpropertykeytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#key_type ApiAccessKey#key_type}. |
 | [`id`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#id ApiAccessKey#id}. |
@@ -16493,6 +16661,16 @@ const apiAccessKeyConfig: ApiAccessKeyConfig = { ... }
 | [`name`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#name ApiAccessKey#name}. |
 | [`notes`](#cdktfprovidernewrelicapiaccesskeyconfigpropertynotes) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#notes ApiAccessKey#notes}. |
 | [`userId`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyuserid) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#user_id ApiAccessKey#user_id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApiAccessKeyConfig.property.connection" id="cdktfprovidernewrelicapiaccesskeyconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -16516,6 +16694,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApiAccessKeyConfig.property.forEach" id="cdktfprovidernewrelicapiaccesskeyconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApiAccessKeyConfig.property.lifecycle" id="cdktfprovidernewrelicapiaccesskeyconfigpropertylifecycle"></a>
 
 ```typescript
@@ -16533,6 +16721,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApiAccessKeyConfig.property.provisioners" id="cdktfprovidernewrelicapiaccesskeyconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -16636,15 +16834,28 @@ const applicationSettingsConfig: ApplicationSettingsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicapplicationsettingsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicapplicationsettingsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicapplicationsettingsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`appApdexThreshold`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyappapdexthreshold)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#app_apdex_threshold ApplicationSettings#app_apdex_threshold}. |
 | [`enableRealUserMonitoring`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyenablerealusermonitoring)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}. |
 | [`endUserApdexThreshold`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyenduserapdexthreshold)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}. |
 | [`name`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#name ApplicationSettings#name}. |
 | [`id`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#id ApplicationSettings#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApplicationSettingsConfig.property.connection" id="cdktfprovidernewrelicapplicationsettingsconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -16668,6 +16879,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApplicationSettingsConfig.property.forEach" id="cdktfprovidernewrelicapplicationsettingsconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApplicationSettingsConfig.property.lifecycle" id="cdktfprovidernewrelicapplicationsettingsconfigpropertylifecycle"></a>
 
 ```typescript
@@ -16685,6 +16906,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApplicationSettingsConfig.property.provisioners" id="cdktfprovidernewrelicapplicationsettingsconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -17166,10 +17397,13 @@ const cloudAwsGovcloudIntegrationsConfig: CloudAwsGovcloudIntegrationsConfig = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`linkedAccountId`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertylinkedaccountid)<span title="Required">*</span> | `number` | The ID of the linked AwsGovCloud account in New Relic. |
 | [`accountId`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyaccountid) | `number` | The ID of the account in New Relic. |
 | [`alb`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyalb) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb) | alb block. |
@@ -17196,6 +17430,16 @@ const cloudAwsGovcloudIntegrationsConfig: CloudAwsGovcloudIntegrationsConfig = {
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.connection" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.count" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertycount"></a>
 
 ```typescript
@@ -17216,6 +17460,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.forEach" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.lifecycle" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertylifecycle"></a>
 
 ```typescript
@@ -17233,6 +17487,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.provisioners" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -18770,10 +19034,13 @@ const cloudAwsGovcloudLinkAccountConfig: CloudAwsGovcloudLinkAccountConfig = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`accessKeyId`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyaccesskeyid)<span title="Required">*</span> | `string` | access-key-id of awsGovcloud account. |
 | [`awsAccountId`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyawsaccountid)<span title="Required">*</span> | `string` | awsGovcloud account id. |
 | [`name`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyname)<span title="Required">*</span> | `string` | name of the account. |
@@ -18781,6 +19048,16 @@ const cloudAwsGovcloudLinkAccountConfig: CloudAwsGovcloudLinkAccountConfig = { .
 | [`accountId`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyaccountid) | `number` | The ID of the account in New Relic. |
 | [`id`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_link_account#id CloudAwsGovcloudLinkAccount#id}. |
 | [`metricCollectionMode`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertymetriccollectionmode) | `string` | push or pull. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig.property.connection" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -18804,6 +19081,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig.property.forEach" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig.property.lifecycle" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertylifecycle"></a>
 
 ```typescript
@@ -18821,6 +19108,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig.property.provisioners" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -19015,10 +19312,13 @@ const cloudAwsIntegrationsConfig: CloudAwsIntegrationsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`linkedAccountId`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertylinkedaccountid)<span title="Required">*</span> | `number` | The ID of the linked AWS account in New Relic. |
 | [`accountId`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertyaccountid) | `number` | The ID of the account in New Relic. |
 | [`billing`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertybilling) | [`@cdktf/provider-newrelic.CloudAwsIntegrationsBilling`](#@cdktf/provider-newrelic.CloudAwsIntegrationsBilling) | billing block. |
@@ -19028,6 +19328,16 @@ const cloudAwsIntegrationsConfig: CloudAwsIntegrationsConfig = { ... }
 | [`trustedAdvisor`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertytrustedadvisor) | [`@cdktf/provider-newrelic.CloudAwsIntegrationsTrustedAdvisor`](#@cdktf/provider-newrelic.CloudAwsIntegrationsTrustedAdvisor) | trusted_advisor block. |
 | [`vpc`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertyvpc) | [`@cdktf/provider-newrelic.CloudAwsIntegrationsVpc`](#@cdktf/provider-newrelic.CloudAwsIntegrationsVpc) | vpc block. |
 | [`xRay`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertyxray) | [`@cdktf/provider-newrelic.CloudAwsIntegrationsXRay`](#@cdktf/provider-newrelic.CloudAwsIntegrationsXRay) | x_ray block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsIntegrationsConfig.property.connection" id="cdktfprovidernewreliccloudawsintegrationsconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -19051,6 +19361,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsIntegrationsConfig.property.forEach" id="cdktfprovidernewreliccloudawsintegrationsconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsIntegrationsConfig.property.lifecycle" id="cdktfprovidernewreliccloudawsintegrationsconfigpropertylifecycle"></a>
 
 ```typescript
@@ -19068,6 +19388,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsIntegrationsConfig.property.provisioners" id="cdktfprovidernewreliccloudawsintegrationsconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -19429,16 +19759,29 @@ const cloudAwsLinkAccountConfig: CloudAwsLinkAccountConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`arn`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyarn)<span title="Required">*</span> | `string` | The AWS role ARN. |
 | [`name`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyname)<span title="Required">*</span> | `string` | The name of the linked account. |
 | [`accountId`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyaccountid) | `number` | The New Relic account ID where you want to link the AWS account. |
 | [`id`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account#id CloudAwsLinkAccount#id}. |
 | [`metricCollectionMode`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertymetriccollectionmode) | `string` | How metrics will be collected. Defaults to `PULL` if empty. |
 | [`timeouts`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertytimeouts) | [`@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts`](#@cdktf/provider-newrelic.CloudAwsLinkAccountTimeouts) | timeouts block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountConfig.property.connection" id="cdktfprovidernewreliccloudawslinkaccountconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -19462,6 +19805,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountConfig.property.forEach" id="cdktfprovidernewreliccloudawslinkaccountconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountConfig.property.lifecycle" id="cdktfprovidernewreliccloudawslinkaccountconfigpropertylifecycle"></a>
 
 ```typescript
@@ -19479,6 +19832,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountConfig.property.provisioners" id="cdktfprovidernewreliccloudawslinkaccountconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -19751,10 +20114,13 @@ const cloudAzureIntegrationsConfig: CloudAzureIntegrationsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`linkedAccountId`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertylinkedaccountid)<span title="Required">*</span> | `number` | The ID of the linked Azure account in New Relic. |
 | [`accountId`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyaccountid) | `number` | The ID of the account in New Relic. |
 | [`apiManagement`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyapimanagement) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement`](#@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement) | api_management block. |
@@ -19790,6 +20156,16 @@ const cloudAzureIntegrationsConfig: CloudAzureIntegrationsConfig = { ... }
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.connection" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.count" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertycount"></a>
 
 ```typescript
@@ -19810,6 +20186,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.forEach" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.lifecycle" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertylifecycle"></a>
 
 ```typescript
@@ -19827,6 +20213,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.provisioners" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -21514,10 +21910,13 @@ const cloudAzureLinkAccountConfig: CloudAzureLinkAccountConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`applicationId`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyapplicationid)<span title="Required">*</span> | `string` | Application ID for Azure account. |
 | [`clientSecret`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyclientsecret)<span title="Required">*</span> | `string` | Value of the client secret from Azure. |
 | [`name`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyname)<span title="Required">*</span> | `string` | Name of the linked account. |
@@ -21525,6 +21924,16 @@ const cloudAzureLinkAccountConfig: CloudAzureLinkAccountConfig = { ... }
 | [`tenantId`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertytenantid)<span title="Required">*</span> | `string` | Tenant ID for the Azure account. |
 | [`accountId`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyaccountid) | `number` | The New Relic account ID where you want to link the Azure account. |
 | [`id`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account#id CloudAzureLinkAccount#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.connection" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -21548,6 +21957,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.forEach" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.lifecycle" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertylifecycle"></a>
 
 ```typescript
@@ -21565,6 +21984,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.provisioners" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -21823,10 +22252,13 @@ const cloudGcpIntegrationsConfig: CloudGcpIntegrationsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`linkedAccountId`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertylinkedaccountid)<span title="Required">*</span> | `number` | Id of the linked gcp account in New Relic. |
 | [`accountId`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyaccountid) | `number` | ID of the newrelic account. |
 | [`appEngine`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyappengine) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine`](#@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine) | app_engine block. |
@@ -21858,6 +22290,16 @@ const cloudGcpIntegrationsConfig: CloudGcpIntegrationsConfig = { ... }
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.connection" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.count" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertycount"></a>
 
 ```typescript
@@ -21878,6 +22320,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.forEach" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.lifecycle" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertylifecycle"></a>
 
 ```typescript
@@ -21895,6 +22347,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.provisioners" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -23021,14 +23483,27 @@ const cloudGcpLinkAccountConfig: CloudGcpLinkAccountConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyname)<span title="Required">*</span> | `string` | name of the linked account. |
 | [`projectId`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyprojectid)<span title="Required">*</span> | `string` | project id of the Gcp account. |
 | [`accountId`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyaccountid) | `number` | accountID of newrelic account. |
 | [`id`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_link_account#id CloudGcpLinkAccount#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccountConfig.property.connection" id="cdktfprovidernewreliccloudgcplinkaccountconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -23052,6 +23527,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccountConfig.property.forEach" id="cdktfprovidernewreliccloudgcplinkaccountconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccountConfig.property.lifecycle" id="cdktfprovidernewreliccloudgcplinkaccountconfigpropertylifecycle"></a>
 
 ```typescript
@@ -23069,6 +23554,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccountConfig.property.provisioners" id="cdktfprovidernewreliccloudgcplinkaccountconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -23142,10 +23637,13 @@ const dashboardConfig: DashboardConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicdashboardconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdashboardconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdashboardconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicdashboardconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdashboardconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdashboardconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdashboardconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`title`](#cdktfprovidernewrelicdashboardconfigpropertytitle)<span title="Required">*</span> | `string` | The title of the dashboard. |
 | [`editable`](#cdktfprovidernewrelicdashboardconfigpropertyeditable) | `string` | Determines who can edit the dashboard in an account. |
 | [`filter`](#cdktfprovidernewrelicdashboardconfigpropertyfilter) | [`@cdktf/provider-newrelic.DashboardFilter`](#@cdktf/provider-newrelic.DashboardFilter) | filter block. |
@@ -23154,6 +23652,16 @@ const dashboardConfig: DashboardConfig = { ... }
 | [`id`](#cdktfprovidernewrelicdashboardconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#id Dashboard#id}. |
 | [`visibility`](#cdktfprovidernewrelicdashboardconfigpropertyvisibility) | `string` | Determines who can see the dashboard in an account. Valid values are all or owner. Defaults to all. |
 | [`widget`](#cdktfprovidernewrelicdashboardconfigpropertywidget) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[] | widget block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.connection" id="cdktfprovidernewrelicdashboardconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -23177,6 +23685,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.forEach" id="cdktfprovidernewrelicdashboardconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.lifecycle" id="cdktfprovidernewrelicdashboardconfigpropertylifecycle"></a>
 
 ```typescript
@@ -23194,6 +23712,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.provisioners" id="cdktfprovidernewrelicdashboardconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -23863,14 +24391,27 @@ const dataNewrelicAccountConfig: DataNewrelicAccountConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`accountId`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyaccountid) | `number` | The ID of the account in New Relic. |
 | [`id`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/account#id DataNewrelicAccount#id}. |
 | [`name`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyname) | `string` | The name of the account in New Relic. |
 | [`scope`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyscope) | `string` | The scope of the account in New Relic.  Valid values are "global" and "in_region".  Defaults to "in_region". |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAccountConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicaccountconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -23894,6 +24435,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAccountConfig.property.forEach" id="cdktfprovidernewrelicdatanewrelicaccountconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAccountConfig.property.lifecycle" id="cdktfprovidernewrelicdatanewrelicaccountconfigpropertylifecycle"></a>
 
 ```typescript
@@ -23911,6 +24462,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAccountConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicaccountconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -23984,12 +24545,25 @@ const dataNewrelicAlertChannelConfig: DataNewrelicAlertChannelConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyname)<span title="Required">*</span> | `string` | The name of the alert channel in New Relic. |
 | [`id`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel#id DataNewrelicAlertChannel#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -24013,6 +24587,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfig.property.forEach" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfig.property.lifecycle" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertylifecycle"></a>
 
 ```typescript
@@ -24030,6 +24614,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -24086,14 +24680,27 @@ const dataNewrelicAlertPolicyConfig: DataNewrelicAlertPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyname)<span title="Required">*</span> | `string` | The name of the alert policy in New Relic. |
 | [`accountId`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyaccountid) | `number` | The New Relic account ID to operate on. |
 | [`id`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy#id DataNewrelicAlertPolicy#id}. |
 | [`incidentPreference`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyincidentpreference) | `string` | The rollup strategy for the policy. Options include: `PER_POLICY`, `PER_CONDITION`, or `PER_CONDITION_AND_TARGET`. The default is `PER_POLICY`. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertPolicyConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -24117,6 +24724,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertPolicyConfig.property.forEach" id="cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertPolicyConfig.property.lifecycle" id="cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertylifecycle"></a>
 
 ```typescript
@@ -24134,6 +24751,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertPolicyConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -24207,12 +24834,25 @@ const dataNewrelicApplicationConfig: DataNewrelicApplicationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyname)<span title="Required">*</span> | `string` | The name of the application in New Relic. |
 | [`id`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/application#id DataNewrelicApplication#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicApplicationConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -24236,6 +24876,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicApplicationConfig.property.forEach" id="cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicApplicationConfig.property.lifecycle" id="cdktfprovidernewrelicdatanewrelicapplicationconfigpropertylifecycle"></a>
 
 ```typescript
@@ -24253,6 +24903,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicApplicationConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -24298,14 +24958,27 @@ const dataNewrelicCloudAccountConfig: DataNewrelicCloudAccountConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`cloudProvider`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertycloudprovider)<span title="Required">*</span> | `string` | The cloud provider of the account, e.g. aws, gcp, azure. |
 | [`name`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyname)<span title="Required">*</span> | `string` | The name of the cloud account. |
 | [`accountId`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyaccountid) | `number` | The ID of the New Relic account. |
 | [`id`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/cloud_account#id DataNewrelicCloudAccount#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicCloudAccountConfig.property.connection" id="cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -24329,6 +25002,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicCloudAccountConfig.property.forEach" id="cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicCloudAccountConfig.property.lifecycle" id="cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertylifecycle"></a>
 
 ```typescript
@@ -24346,6 +25029,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicCloudAccountConfig.property.provisioners" id="cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -24419,16 +25112,29 @@ const dataNewrelicEntityConfig: DataNewrelicEntityConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertyname)<span title="Required">*</span> | `string` | The name of the entity in New Relic One. |
 | [`domain`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertydomain) | `string` | The entity's domain. |
 | [`id`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#id DataNewrelicEntity#id}. |
 | [`ignoreCase`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertyignorecase) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore case when searching the entity name. |
 | [`tag`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertytag) | [`@cdktf/provider-newrelic.DataNewrelicEntityTag`](#@cdktf/provider-newrelic.DataNewrelicEntityTag) | tag block. |
 | [`type`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertytype) | `string` | The entity's type. Valid values are APPLICATION, DASHBOARD, HOST, MONITOR, and WORKLOAD. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntityConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicentityconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -24452,6 +25158,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntityConfig.property.forEach" id="cdktfprovidernewrelicdatanewrelicentityconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntityConfig.property.lifecycle" id="cdktfprovidernewrelicdatanewrelicentityconfigpropertylifecycle"></a>
 
 ```typescript
@@ -24469,6 +25185,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntityConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicentityconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -24617,12 +25343,25 @@ const dataNewrelicKeyTransactionConfig: DataNewrelicKeyTransactionConfig = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyname)<span title="Required">*</span> | `string` | The name of the key transaction in New Relic. |
 | [`id`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/key_transaction#id DataNewrelicKeyTransaction#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicKeyTransactionConfig.property.connection" id="cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -24646,6 +25385,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicKeyTransactionConfig.property.forEach" id="cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicKeyTransactionConfig.property.lifecycle" id="cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertylifecycle"></a>
 
 ```typescript
@@ -24663,6 +25412,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicKeyTransactionConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -24708,12 +25467,25 @@ const dataNewrelicPluginComponentConfig: DataNewrelicPluginComponentConfig = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyname)<span title="Required">*</span> | `string` | The name of the plugin component. |
 | [`pluginId`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertypluginid)<span title="Required">*</span> | `number` | The ID of the plugin instance this component belongs to. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -24737,6 +25509,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig.property.forEach" id="cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig.property.lifecycle" id="cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertylifecycle"></a>
 
 ```typescript
@@ -24754,6 +25536,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -24799,11 +25591,24 @@ const dataNewrelicPluginConfig: DataNewrelicPluginConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`guid`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyguid)<span title="Required">*</span> | `string` | The GUID of the plugin in New Relic. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicpluginconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -24827,6 +25632,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginConfig.property.forEach" id="cdktfprovidernewrelicdatanewrelicpluginconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginConfig.property.lifecycle" id="cdktfprovidernewrelicdatanewrelicpluginconfigpropertylifecycle"></a>
 
 ```typescript
@@ -24844,6 +25659,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicpluginconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -24875,12 +25700,25 @@ const dataNewrelicSyntheticsMonitorConfig: DataNewrelicSyntheticsMonitorConfig =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyname)<span title="Required">*</span> | `string` | The name of the synthetics monitor in New Relic. |
 | [`id`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor#id DataNewrelicSyntheticsMonitor#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -24904,6 +25742,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorConfig.property.forEach" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorConfig.property.lifecycle" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertylifecycle"></a>
 
 ```typescript
@@ -24921,6 +25769,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -24966,12 +25824,25 @@ const dataNewrelicSyntheticsMonitorLocationConfig: DataNewrelicSyntheticsMonitor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`label`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertylabel)<span title="Required">*</span> | `string` | The label of the Synthetics monitor location. |
 | [`id`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor_location#id DataNewrelicSyntheticsMonitorLocation#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorLocationConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -24995,6 +25866,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorLocationConfig.property.forEach" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorLocationConfig.property.lifecycle" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertylifecycle"></a>
 
 ```typescript
@@ -25012,6 +25893,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorLocationConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -25057,12 +25948,25 @@ const dataNewrelicSyntheticsSecureCredentialConfig: DataNewrelicSyntheticsSecure
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`key`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertykey)<span title="Required">*</span> | `string` | The secure credential's key name. |
 | [`id`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential#id DataNewrelicSyntheticsSecureCredential#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsSecureCredentialConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -25086,6 +25990,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsSecureCredentialConfig.property.forEach" id="cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsSecureCredentialConfig.property.lifecycle" id="cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertylifecycle"></a>
 
 ```typescript
@@ -25103,6 +26017,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsSecureCredentialConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -25148,14 +26072,27 @@ const entityTagsConfig: EntityTagsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicentitytagsconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicentitytagsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicentitytagsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicentitytagsconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicentitytagsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicentitytagsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicentitytagsconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`guid`](#cdktfprovidernewrelicentitytagsconfigpropertyguid)<span title="Required">*</span> | `string` | The guid of the entity to tag. |
 | [`tag`](#cdktfprovidernewrelicentitytagsconfigpropertytag)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.EntityTagsTag`](#@cdktf/provider-newrelic.EntityTagsTag)[] | tag block. |
 | [`id`](#cdktfprovidernewrelicentitytagsconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags#id EntityTags#id}. |
 | [`timeouts`](#cdktfprovidernewrelicentitytagsconfigpropertytimeouts) | [`@cdktf/provider-newrelic.EntityTagsTimeouts`](#@cdktf/provider-newrelic.EntityTagsTimeouts) | timeouts block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EntityTagsConfig.property.connection" id="cdktfprovidernewrelicentitytagsconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -25179,6 +26116,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EntityTagsConfig.property.forEach" id="cdktfprovidernewrelicentitytagsconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EntityTagsConfig.property.lifecycle" id="cdktfprovidernewrelicentitytagsconfigpropertylifecycle"></a>
 
 ```typescript
@@ -25196,6 +26143,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EntityTagsConfig.property.provisioners" id="cdktfprovidernewrelicentitytagsconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -25346,16 +26303,29 @@ const eventsToMetricsRuleConfig: EventsToMetricsRuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewreliceventstometricsruleconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliceventstometricsruleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliceventstometricsruleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewreliceventstometricsruleconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliceventstometricsruleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliceventstometricsruleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliceventstometricsruleconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewreliceventstometricsruleconfigpropertyname)<span title="Required">*</span> | `string` | The name of the rule. This must be unique within an account. |
 | [`nrql`](#cdktfprovidernewreliceventstometricsruleconfigpropertynrql)<span title="Required">*</span> | `string` | Explains how to create metrics from events. |
 | [`accountId`](#cdktfprovidernewreliceventstometricsruleconfigpropertyaccountid) | `number` | Account with the event and where the metrics will be put. |
 | [`description`](#cdktfprovidernewreliceventstometricsruleconfigpropertydescription) | `string` | Provides additional information about the rule. |
 | [`enabled`](#cdktfprovidernewreliceventstometricsruleconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | True means this rule is enabled. False means the rule is currently not creating metrics. |
 | [`id`](#cdktfprovidernewreliceventstometricsruleconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/events_to_metrics_rule#id EventsToMetricsRule#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EventsToMetricsRuleConfig.property.connection" id="cdktfprovidernewreliceventstometricsruleconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -25379,6 +26349,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EventsToMetricsRuleConfig.property.forEach" id="cdktfprovidernewreliceventstometricsruleconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EventsToMetricsRuleConfig.property.lifecycle" id="cdktfprovidernewreliceventstometricsruleconfigpropertylifecycle"></a>
 
 ```typescript
@@ -25396,6 +26376,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EventsToMetricsRuleConfig.property.provisioners" id="cdktfprovidernewreliceventstometricsruleconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -25497,10 +26487,13 @@ const infraAlertConditionConfig: InfraAlertConditionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicinfraalertconditionconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicinfraalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicinfraalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicinfraalertconditionconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicinfraalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicinfraalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicinfraalertconditionconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicinfraalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The Infrastructure alert condition's name. |
 | [`policyId`](#cdktfprovidernewrelicinfraalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the alert policy where this condition should be used. |
 | [`type`](#cdktfprovidernewrelicinfraalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of Infrastructure alert condition. Valid values are infra_process_running, infra_metric, and infra_host_not_reporting. |
@@ -25517,6 +26510,16 @@ const infraAlertConditionConfig: InfraAlertConditionConfig = { ... }
 | [`violationCloseTimer`](#cdktfprovidernewrelicinfraalertconditionconfigpropertyviolationclosetimer) | `number` | Determines how much time, in hours, will pass before a violation is automatically closed. |
 | [`warning`](#cdktfprovidernewrelicinfraalertconditionconfigpropertywarning) | [`@cdktf/provider-newrelic.InfraAlertConditionWarning`](#@cdktf/provider-newrelic.InfraAlertConditionWarning) | warning block. |
 | [`where`](#cdktfprovidernewrelicinfraalertconditionconfigpropertywhere) | `string` | If applicable, this identifies any Infrastructure host filters used; for example: hostname LIKE '%cassandra%'. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionConfig.property.connection" id="cdktfprovidernewrelicinfraalertconditionconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -25540,6 +26543,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionConfig.property.forEach" id="cdktfprovidernewrelicinfraalertconditionconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionConfig.property.lifecycle" id="cdktfprovidernewrelicinfraalertconditionconfigpropertylifecycle"></a>
 
 ```typescript
@@ -25557,6 +26570,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionConfig.property.provisioners" id="cdktfprovidernewrelicinfraalertconditionconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -25910,12 +26933,25 @@ const insightsEventConfig: InsightsEventConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicinsightseventconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicinsightseventconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicinsightseventconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicinsightseventconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicinsightseventconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicinsightseventconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicinsightseventconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`event`](#cdktfprovidernewrelicinsightseventconfigpropertyevent)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.InsightsEventEvent`](#@cdktf/provider-newrelic.InsightsEventEvent)[] | event block. |
 | [`id`](#cdktfprovidernewrelicinsightseventconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#id InsightsEvent#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InsightsEventConfig.property.connection" id="cdktfprovidernewrelicinsightseventconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -25939,6 +26975,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InsightsEventConfig.property.forEach" id="cdktfprovidernewrelicinsightseventconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InsightsEventConfig.property.lifecycle" id="cdktfprovidernewrelicinsightseventconfigpropertylifecycle"></a>
 
 ```typescript
@@ -25956,6 +27002,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InsightsEventConfig.property.provisioners" id="cdktfprovidernewrelicinsightseventconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -26328,16 +27384,29 @@ const notificationChannelConfig: NotificationChannelConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicnotificationchannelconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicnotificationchannelconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicnotificationchannelconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicnotificationchannelconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicnotificationchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicnotificationchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicnotificationchannelconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`destinationId`](#cdktfprovidernewrelicnotificationchannelconfigpropertydestinationid)<span title="Required">*</span> | `string` | (Required) The id of the destination. |
 | [`name`](#cdktfprovidernewrelicnotificationchannelconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the channel. |
 | [`product`](#cdktfprovidernewrelicnotificationchannelconfigpropertyproduct)<span title="Required">*</span> | `string` | (Required) The type of the channel product. One of: (ALERTS, DISCUSSIONS, ERROR_TRACKING, NTFC, SHARING, PD, IINT). |
 | [`type`](#cdktfprovidernewrelicnotificationchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of the channel. One of: (WEBHOOK, EMAIL, SERVICENOW_INCIDENTS, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION). |
 | [`id`](#cdktfprovidernewrelicnotificationchannelconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#id NotificationChannel#id}. |
 | [`properties`](#cdktfprovidernewrelicnotificationchannelconfigpropertyproperties) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties)[] | properties block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.connection" id="cdktfprovidernewrelicnotificationchannelconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -26361,6 +27430,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.forEach" id="cdktfprovidernewrelicnotificationchannelconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.lifecycle" id="cdktfprovidernewrelicnotificationchannelconfigpropertylifecycle"></a>
 
 ```typescript
@@ -26378,6 +27457,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.provisioners" id="cdktfprovidernewrelicnotificationchannelconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -26556,15 +27645,28 @@ const notificationDestinationConfig: NotificationDestinationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicnotificationdestinationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicnotificationdestinationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicnotificationdestinationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the destination. |
 | [`type`](#cdktfprovidernewrelicnotificationdestinationconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of the destination. One of: (WEBHOOK, EMAIL, SERVICE_NOW, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION). |
 | [`auth`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyauth) | {[ key: string ]: `string`} | A set of key-value pairs to represent a Notification destination auth. |
 | [`id`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#id NotificationDestination#id}. |
 | [`properties`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyproperties) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties)[] | properties block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.connection" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -26588,6 +27690,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.forEach" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.lifecycle" id="cdktfprovidernewrelicnotificationdestinationconfigpropertylifecycle"></a>
 
 ```typescript
@@ -26605,6 +27717,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.provisioners" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -26769,10 +27891,13 @@ const nrqlAlertConditionConfig: NrqlAlertConditionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. |
 | [`nrql`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertynrql)<span title="Required">*</span> | [`@cdktf/provider-newrelic.NrqlAlertConditionNrql`](#@cdktf/provider-newrelic.NrqlAlertConditionNrql) | nrql block. |
 | [`policyId`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
@@ -26802,6 +27927,16 @@ const nrqlAlertConditionConfig: NrqlAlertConditionConfig = { ... }
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionConfig.property.connection" id="cdktfprovidernewrelicnrqlalertconditionconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionConfig.property.count" id="cdktfprovidernewrelicnrqlalertconditionconfigpropertycount"></a>
 
 ```typescript
@@ -26822,6 +27957,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionConfig.property.forEach" id="cdktfprovidernewrelicnrqlalertconditionconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionConfig.property.lifecycle" id="cdktfprovidernewrelicnrqlalertconditionconfigpropertylifecycle"></a>
 
 ```typescript
@@ -26839,6 +27984,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionConfig.property.provisioners" id="cdktfprovidernewrelicnrqlalertconditionconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -27616,15 +28771,28 @@ const nrqlDropRuleConfig: NrqlDropRuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicnrqldropruleconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicnrqldropruleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicnrqldropruleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicnrqldropruleconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicnrqldropruleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicnrqldropruleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicnrqldropruleconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`action`](#cdktfprovidernewrelicnrqldropruleconfigpropertyaction)<span title="Required">*</span> | `string` | The drop rule action (drop_data, drop_attributes, or drop_attributes_from_metric_aggregates). |
 | [`nrql`](#cdktfprovidernewrelicnrqldropruleconfigpropertynrql)<span title="Required">*</span> | `string` | Explains which data to apply the drop rule to. |
 | [`accountId`](#cdktfprovidernewrelicnrqldropruleconfigpropertyaccountid) | `number` | Account with the NRQL drop rule will be put. |
 | [`description`](#cdktfprovidernewrelicnrqldropruleconfigpropertydescription) | `string` | Provides additional information about the rule. |
 | [`id`](#cdktfprovidernewrelicnrqldropruleconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_drop_rule#id NrqlDropRule#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlDropRuleConfig.property.connection" id="cdktfprovidernewrelicnrqldropruleconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -27648,6 +28816,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlDropRuleConfig.property.forEach" id="cdktfprovidernewrelicnrqldropruleconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlDropRuleConfig.property.lifecycle" id="cdktfprovidernewrelicnrqldropruleconfigpropertylifecycle"></a>
 
 ```typescript
@@ -27665,6 +28843,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlDropRuleConfig.property.provisioners" id="cdktfprovidernewrelicnrqldropruleconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -27752,16 +28940,29 @@ const oneDashboardConfig: OneDashboardConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewreliconedashboardconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliconedashboardconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliconedashboardconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewreliconedashboardconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliconedashboardconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliconedashboardconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliconedashboardconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewreliconedashboardconfigpropertyname)<span title="Required">*</span> | `string` | The dashboard's name. |
 | [`page`](#cdktfprovidernewreliconedashboardconfigpropertypage)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPage`](#@cdktf/provider-newrelic.OneDashboardPage)[] | page block. |
 | [`accountId`](#cdktfprovidernewreliconedashboardconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create the dashboard. |
 | [`description`](#cdktfprovidernewreliconedashboardconfigpropertydescription) | `string` | The dashboard's description. |
 | [`id`](#cdktfprovidernewreliconedashboardconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#id OneDashboard#id}. |
 | [`permissions`](#cdktfprovidernewreliconedashboardconfigpropertypermissions) | `string` | Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardConfig.property.connection" id="cdktfprovidernewreliconedashboardconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -27785,6 +28986,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardConfig.property.forEach" id="cdktfprovidernewreliconedashboardconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardConfig.property.lifecycle" id="cdktfprovidernewreliconedashboardconfigpropertylifecycle"></a>
 
 ```typescript
@@ -27802,6 +29013,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardConfig.property.provisioners" id="cdktfprovidernewreliconedashboardconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -30472,16 +31693,29 @@ const oneDashboardRawConfig: OneDashboardRawConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewreliconedashboardrawconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliconedashboardrawconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliconedashboardrawconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewreliconedashboardrawconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliconedashboardrawconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliconedashboardrawconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliconedashboardrawconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewreliconedashboardrawconfigpropertyname)<span title="Required">*</span> | `string` | The dashboard's name. |
 | [`page`](#cdktfprovidernewreliconedashboardrawconfigpropertypage)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardRawPage`](#@cdktf/provider-newrelic.OneDashboardRawPage)[] | page block. |
 | [`accountId`](#cdktfprovidernewreliconedashboardrawconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create the dashboard. |
 | [`description`](#cdktfprovidernewreliconedashboardrawconfigpropertydescription) | `string` | The dashboard's description. |
 | [`id`](#cdktfprovidernewreliconedashboardrawconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_raw#id OneDashboardRaw#id}. |
 | [`permissions`](#cdktfprovidernewreliconedashboardrawconfigpropertypermissions) | `string` | Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardRawConfig.property.connection" id="cdktfprovidernewreliconedashboardrawconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -30505,6 +31739,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardRawConfig.property.forEach" id="cdktfprovidernewreliconedashboardrawconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardRawConfig.property.lifecycle" id="cdktfprovidernewreliconedashboardrawconfigpropertylifecycle"></a>
 
 ```typescript
@@ -30522,6 +31766,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardRawConfig.property.provisioners" id="cdktfprovidernewreliconedashboardrawconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -30814,10 +32068,13 @@ const pluginsAlertConditionConfig: PluginsAlertConditionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`entities`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyentities)<span title="Required">*</span> | `number`[] | The plugin component IDs to target. |
 | [`metric`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertymetric)<span title="Required">*</span> | `string` | The plugin metric to evaluate. |
 | [`metricDescription`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertymetricdescription)<span title="Required">*</span> | `string` | The metric description. |
@@ -30830,6 +32087,16 @@ const pluginsAlertConditionConfig: PluginsAlertConditionConfig = { ... }
 | [`enabled`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether or not this condition is enabled. |
 | [`id`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#id PluginsAlertCondition#id}. |
 | [`runbookUrl`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyrunbookurl) | `string` | Runbook URL to display in notifications. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.connection" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -30853,6 +32120,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.forEach" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.lifecycle" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertylifecycle"></a>
 
 ```typescript
@@ -30870,6 +32147,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.provisioners" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -31147,16 +32434,29 @@ const serviceLevelConfig: ServiceLevelConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicservicelevelconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicservicelevelconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicservicelevelconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicservicelevelconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicservicelevelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicservicelevelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicservicelevelconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`events`](#cdktfprovidernewrelicservicelevelconfigpropertyevents)<span title="Required">*</span> | [`@cdktf/provider-newrelic.ServiceLevelEvents`](#@cdktf/provider-newrelic.ServiceLevelEvents) | events block. |
 | [`guid`](#cdktfprovidernewrelicservicelevelconfigpropertyguid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#guid ServiceLevel#guid}. |
 | [`name`](#cdktfprovidernewrelicservicelevelconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#name ServiceLevel#name}. |
 | [`objective`](#cdktfprovidernewrelicservicelevelconfigpropertyobjective)<span title="Required">*</span> | [`@cdktf/provider-newrelic.ServiceLevelObjective`](#@cdktf/provider-newrelic.ServiceLevelObjective) | objective block. |
 | [`description`](#cdktfprovidernewrelicservicelevelconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#description ServiceLevel#description}. |
 | [`id`](#cdktfprovidernewrelicservicelevelconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#id ServiceLevel#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelConfig.property.connection" id="cdktfprovidernewrelicservicelevelconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -31180,6 +32480,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelConfig.property.forEach" id="cdktfprovidernewrelicservicelevelconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelConfig.property.lifecycle" id="cdktfprovidernewrelicservicelevelconfigpropertylifecycle"></a>
 
 ```typescript
@@ -31197,6 +32507,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelConfig.property.provisioners" id="cdktfprovidernewrelicservicelevelconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -31642,16 +32962,29 @@ const syntheticsAlertConditionConfig: SyntheticsAlertConditionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`monitorId`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertymonitorid)<span title="Required">*</span> | `string` | The ID of the Synthetics monitor to be referenced in the alert condition. |
 | [`name`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of this condition. |
 | [`policyId`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`enabled`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Set whether to enable the alert condition. Defaults to true. |
 | [`id`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition#id SyntheticsAlertCondition#id}. |
 | [`runbookUrl`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyrunbookurl) | `string` | Runbook URL to display in notifications. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsAlertConditionConfig.property.connection" id="cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -31675,6 +33008,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsAlertConditionConfig.property.forEach" id="cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsAlertConditionConfig.property.lifecycle" id="cdktfprovidernewrelicsyntheticsalertconditionconfigpropertylifecycle"></a>
 
 ```typescript
@@ -31692,6 +33035,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsAlertConditionConfig.property.provisioners" id="cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -31793,10 +33146,13 @@ const syntheticsMonitorConfig: SyntheticsMonitorConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`frequency`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyfrequency)<span title="Required">*</span> | `number` | The interval (in minutes) at which this monitor should run. |
 | [`locations`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertylocations)<span title="Required">*</span> | `string`[] | The locations in which this monitor should be run. |
 | [`name`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyname)<span title="Required">*</span> | `string` | The title of this monitor. |
@@ -31809,6 +33165,16 @@ const syntheticsMonitorConfig: SyntheticsMonitorConfig = { ... }
 | [`uri`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyuri) | `string` | The URI for the monitor to hit. |
 | [`validationString`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyvalidationstring) | `string` | The string to validate against in the response. |
 | [`verifySsl`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyverifyssl) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Verify SSL. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorConfig.property.connection" id="cdktfprovidernewrelicsyntheticsmonitorconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -31832,6 +33198,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorConfig.property.forEach" id="cdktfprovidernewrelicsyntheticsmonitorconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorConfig.property.lifecycle" id="cdktfprovidernewrelicsyntheticsmonitorconfigpropertylifecycle"></a>
 
 ```typescript
@@ -31849,6 +33225,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorConfig.property.provisioners" id="cdktfprovidernewrelicsyntheticsmonitorconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -32034,14 +33420,27 @@ const syntheticsMonitorScriptConfig: SyntheticsMonitorScriptConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`monitorId`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertymonitorid)<span title="Required">*</span> | `string` | The ID of the monitor to attach the script to. |
 | [`text`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertytext)<span title="Required">*</span> | `string` | The plaintext representing the monitor script. |
 | [`id`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script#id SyntheticsMonitorScript#id}. |
 | [`location`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertylocation) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation`](#@cdktf/provider-newrelic.SyntheticsMonitorScriptLocation)[] | location block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorScriptConfig.property.connection" id="cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -32065,6 +33464,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorScriptConfig.property.forEach" id="cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorScriptConfig.property.lifecycle" id="cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertylifecycle"></a>
 
 ```typescript
@@ -32082,6 +33491,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorScriptConfig.property.provisioners" id="cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -32217,10 +33636,13 @@ const syntheticsMultilocationAlertConditionConfig: SyntheticsMultilocationAlertC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`critical`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertycritical)<span title="Required">*</span> | [`@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionCritical`](#@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionCritical) | critical block. |
 | [`entities`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyentities)<span title="Required">*</span> | `string`[] | The GUIDs of the Synthetics monitors to alert on. |
 | [`name`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of this condition. |
@@ -32230,6 +33652,16 @@ const syntheticsMultilocationAlertConditionConfig: SyntheticsMultilocationAlertC
 | [`id`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#id SyntheticsMultilocationAlertCondition#id}. |
 | [`runbookUrl`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyrunbookurl) | `string` | Runbook URL to display in notifications. |
 | [`warning`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertywarning) | [`@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionWarning`](#@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionWarning) | warning block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionConfig.property.connection" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -32253,6 +33685,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionConfig.property.forEach" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionConfig.property.lifecycle" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertylifecycle"></a>
 
 ```typescript
@@ -32270,6 +33712,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionConfig.property.provisioners" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -32477,16 +33929,29 @@ const syntheticsSecureCredentialConfig: SyntheticsSecureCredentialConfig = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`key`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertykey)<span title="Required">*</span> | `string` | The secure credential's key name. |
 | [`value`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyvalue)<span title="Required">*</span> | `string` | The secure credential's value. |
 | [`createdAt`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertycreatedat) | `string` | The time the secure credential was created. |
 | [`description`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertydescription) | `string` | The secure credential's description. |
 | [`id`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#id SyntheticsSecureCredential#id}. |
 | [`lastUpdated`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertylastupdated) | `string` | The time the secure credential was last updated. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsSecureCredentialConfig.property.connection" id="cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -32510,6 +33975,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsSecureCredentialConfig.property.forEach" id="cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsSecureCredentialConfig.property.lifecycle" id="cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertylifecycle"></a>
 
 ```typescript
@@ -32527,6 +34002,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsSecureCredentialConfig.property.provisioners" id="cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -32628,16 +34113,29 @@ const workloadConfig: WorkloadConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicworkloadconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicworkloadconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicworkloadconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicworkloadconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicworkloadconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicworkloadconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicworkloadconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicworkloadconfigpropertyname)<span title="Required">*</span> | `string` | The workload's name. |
 | [`accountId`](#cdktfprovidernewrelicworkloadconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create the workload. |
 | [`entityGuids`](#cdktfprovidernewrelicworkloadconfigpropertyentityguids) | `string`[] | A list of entity GUIDs manually assigned to this workload. |
 | [`entitySearchQuery`](#cdktfprovidernewrelicworkloadconfigpropertyentitysearchquery) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkloadEntitySearchQuery`](#@cdktf/provider-newrelic.WorkloadEntitySearchQuery)[] | entity_search_query block. |
 | [`id`](#cdktfprovidernewrelicworkloadconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#id Workload#id}. |
 | [`scopeAccountIds`](#cdktfprovidernewrelicworkloadconfigpropertyscopeaccountids) | `number`[] | A list of account IDs that will be used to get entities from. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkloadConfig.property.connection" id="cdktfprovidernewrelicworkloadconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
 
 ---
 
@@ -32661,6 +34159,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkloadConfig.property.forEach" id="cdktfprovidernewrelicworkloadconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkloadConfig.property.lifecycle" id="cdktfprovidernewrelicworkloadconfigpropertylifecycle"></a>
 
 ```typescript
@@ -32678,6 +34186,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkloadConfig.property.provisioners" id="cdktfprovidernewrelicworkloadconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
