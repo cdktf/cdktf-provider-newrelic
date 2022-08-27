@@ -6681,341 +6681,6 @@ public readonly projectId: string;
 
 ---
 
-### Dashboard <a name="@cdktf/provider-newrelic.Dashboard" id="cdktfprovidernewrelicdashboard"></a>
-
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard newrelic_dashboard}.
-
-#### Initializers <a name="@cdktf/provider-newrelic.Dashboard.Initializer" id="cdktfprovidernewrelicdashboardinitializer"></a>
-
-```typescript
-import { Dashboard } from '@cdktf/provider-newrelic'
-
-new Dashboard(scope: Construct, id: string, config: DashboardConfig)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`scope`](#cdktfprovidernewrelicdashboardparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
-| [`id`](#cdktfprovidernewrelicdashboardparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
-| [`config`](#cdktfprovidernewrelicdashboardparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.DashboardConfig`](#@cdktf/provider-newrelic.DashboardConfig) | *No description.* |
-
----
-
-##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.parameter.scope" id="cdktfprovidernewrelicdashboardparameterscope"></a>
-
-- *Type:* [`constructs.Construct`](#constructs.Construct)
-
-The scope in which to define this construct.
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.parameter.id" id="cdktfprovidernewrelicdashboardparameterid"></a>
-
-- *Type:* `string`
-
-The scoped construct ID.
-
-Must be unique amongst siblings in the same scope
-
----
-
-##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.parameter.config" id="cdktfprovidernewrelicdashboardparameterconfig"></a>
-
-- *Type:* [`@cdktf/provider-newrelic.DashboardConfig`](#@cdktf/provider-newrelic.DashboardConfig)
-
----
-
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`putFilter`](#cdktfprovidernewrelicdashboardputfilter) | *No description.* |
-| [`putWidget`](#cdktfprovidernewrelicdashboardputwidget) | *No description.* |
-| [`resetEditable`](#cdktfprovidernewrelicdashboardreseteditable) | *No description.* |
-| [`resetFilter`](#cdktfprovidernewrelicdashboardresetfilter) | *No description.* |
-| [`resetGridColumnCount`](#cdktfprovidernewrelicdashboardresetgridcolumncount) | *No description.* |
-| [`resetIcon`](#cdktfprovidernewrelicdashboardreseticon) | *No description.* |
-| [`resetId`](#cdktfprovidernewrelicdashboardresetid) | *No description.* |
-| [`resetVisibility`](#cdktfprovidernewrelicdashboardresetvisibility) | *No description.* |
-| [`resetWidget`](#cdktfprovidernewrelicdashboardresetwidget) | *No description.* |
-
----
-
-##### `putFilter` <a name="@cdktf/provider-newrelic.Dashboard.putFilter" id="cdktfprovidernewrelicdashboardputfilter"></a>
-
-```typescript
-public putFilter(value: DashboardFilter)
-```
-
-###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.parameter.value" id="cdktfprovidernewrelicdashboardparametervalue"></a>
-
-- *Type:* [`@cdktf/provider-newrelic.DashboardFilter`](#@cdktf/provider-newrelic.DashboardFilter)
-
----
-
-##### `putWidget` <a name="@cdktf/provider-newrelic.Dashboard.putWidget" id="cdktfprovidernewrelicdashboardputwidget"></a>
-
-```typescript
-public putWidget(value: IResolvable | DashboardWidget[])
-```
-
-###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.parameter.value" id="cdktfprovidernewrelicdashboardparametervalue"></a>
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[]
-
----
-
-##### `resetEditable` <a name="@cdktf/provider-newrelic.Dashboard.resetEditable" id="cdktfprovidernewrelicdashboardreseteditable"></a>
-
-```typescript
-public resetEditable()
-```
-
-##### `resetFilter` <a name="@cdktf/provider-newrelic.Dashboard.resetFilter" id="cdktfprovidernewrelicdashboardresetfilter"></a>
-
-```typescript
-public resetFilter()
-```
-
-##### `resetGridColumnCount` <a name="@cdktf/provider-newrelic.Dashboard.resetGridColumnCount" id="cdktfprovidernewrelicdashboardresetgridcolumncount"></a>
-
-```typescript
-public resetGridColumnCount()
-```
-
-##### `resetIcon` <a name="@cdktf/provider-newrelic.Dashboard.resetIcon" id="cdktfprovidernewrelicdashboardreseticon"></a>
-
-```typescript
-public resetIcon()
-```
-
-##### `resetId` <a name="@cdktf/provider-newrelic.Dashboard.resetId" id="cdktfprovidernewrelicdashboardresetid"></a>
-
-```typescript
-public resetId()
-```
-
-##### `resetVisibility` <a name="@cdktf/provider-newrelic.Dashboard.resetVisibility" id="cdktfprovidernewrelicdashboardresetvisibility"></a>
-
-```typescript
-public resetVisibility()
-```
-
-##### `resetWidget` <a name="@cdktf/provider-newrelic.Dashboard.resetWidget" id="cdktfprovidernewrelicdashboardresetwidget"></a>
-
-```typescript
-public resetWidget()
-```
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`dashboardUrl`](#cdktfprovidernewrelicdashboardpropertydashboardurl)<span title="Required">*</span> | `string` | *No description.* |
-| [`filter`](#cdktfprovidernewrelicdashboardpropertyfilter)<span title="Required">*</span> | [`@cdktf/provider-newrelic.DashboardFilterOutputReference`](#@cdktf/provider-newrelic.DashboardFilterOutputReference) | *No description.* |
-| [`widget`](#cdktfprovidernewrelicdashboardpropertywidget)<span title="Required">*</span> | [`@cdktf/provider-newrelic.DashboardWidgetList`](#@cdktf/provider-newrelic.DashboardWidgetList) | *No description.* |
-| [`editableInput`](#cdktfprovidernewrelicdashboardpropertyeditableinput) | `string` | *No description.* |
-| [`filterInput`](#cdktfprovidernewrelicdashboardpropertyfilterinput) | [`@cdktf/provider-newrelic.DashboardFilter`](#@cdktf/provider-newrelic.DashboardFilter) | *No description.* |
-| [`gridColumnCountInput`](#cdktfprovidernewrelicdashboardpropertygridcolumncountinput) | `number` | *No description.* |
-| [`iconInput`](#cdktfprovidernewrelicdashboardpropertyiconinput) | `string` | *No description.* |
-| [`idInput`](#cdktfprovidernewrelicdashboardpropertyidinput) | `string` | *No description.* |
-| [`titleInput`](#cdktfprovidernewrelicdashboardpropertytitleinput) | `string` | *No description.* |
-| [`visibilityInput`](#cdktfprovidernewrelicdashboardpropertyvisibilityinput) | `string` | *No description.* |
-| [`widgetInput`](#cdktfprovidernewrelicdashboardpropertywidgetinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[] | *No description.* |
-| [`editable`](#cdktfprovidernewrelicdashboardpropertyeditable)<span title="Required">*</span> | `string` | *No description.* |
-| [`gridColumnCount`](#cdktfprovidernewrelicdashboardpropertygridcolumncount)<span title="Required">*</span> | `number` | *No description.* |
-| [`icon`](#cdktfprovidernewrelicdashboardpropertyicon)<span title="Required">*</span> | `string` | *No description.* |
-| [`id`](#cdktfprovidernewrelicdashboardpropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`title`](#cdktfprovidernewrelicdashboardpropertytitle)<span title="Required">*</span> | `string` | *No description.* |
-| [`visibility`](#cdktfprovidernewrelicdashboardpropertyvisibility)<span title="Required">*</span> | `string` | *No description.* |
-
----
-
-##### `dashboardUrl`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.dashboardUrl" id="cdktfprovidernewrelicdashboardpropertydashboardurl"></a>
-
-```typescript
-public readonly dashboardUrl: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `filter`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.filter" id="cdktfprovidernewrelicdashboardpropertyfilter"></a>
-
-```typescript
-public readonly filter: DashboardFilterOutputReference;
-```
-
-- *Type:* [`@cdktf/provider-newrelic.DashboardFilterOutputReference`](#@cdktf/provider-newrelic.DashboardFilterOutputReference)
-
----
-
-##### `widget`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.widget" id="cdktfprovidernewrelicdashboardpropertywidget"></a>
-
-```typescript
-public readonly widget: DashboardWidgetList;
-```
-
-- *Type:* [`@cdktf/provider-newrelic.DashboardWidgetList`](#@cdktf/provider-newrelic.DashboardWidgetList)
-
----
-
-##### `editableInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.editableInput" id="cdktfprovidernewrelicdashboardpropertyeditableinput"></a>
-
-```typescript
-public readonly editableInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `filterInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.filterInput" id="cdktfprovidernewrelicdashboardpropertyfilterinput"></a>
-
-```typescript
-public readonly filterInput: DashboardFilter;
-```
-
-- *Type:* [`@cdktf/provider-newrelic.DashboardFilter`](#@cdktf/provider-newrelic.DashboardFilter)
-
----
-
-##### `gridColumnCountInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.gridColumnCountInput" id="cdktfprovidernewrelicdashboardpropertygridcolumncountinput"></a>
-
-```typescript
-public readonly gridColumnCountInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `iconInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.iconInput" id="cdktfprovidernewrelicdashboardpropertyiconinput"></a>
-
-```typescript
-public readonly iconInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.idInput" id="cdktfprovidernewrelicdashboardpropertyidinput"></a>
-
-```typescript
-public readonly idInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `titleInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.titleInput" id="cdktfprovidernewrelicdashboardpropertytitleinput"></a>
-
-```typescript
-public readonly titleInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `visibilityInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.visibilityInput" id="cdktfprovidernewrelicdashboardpropertyvisibilityinput"></a>
-
-```typescript
-public readonly visibilityInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `widgetInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.widgetInput" id="cdktfprovidernewrelicdashboardpropertywidgetinput"></a>
-
-```typescript
-public readonly widgetInput: IResolvable | DashboardWidget[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[]
-
----
-
-##### `editable`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.editable" id="cdktfprovidernewrelicdashboardpropertyeditable"></a>
-
-```typescript
-public readonly editable: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `gridColumnCount`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.gridColumnCount" id="cdktfprovidernewrelicdashboardpropertygridcolumncount"></a>
-
-```typescript
-public readonly gridColumnCount: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `icon`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.icon" id="cdktfprovidernewrelicdashboardpropertyicon"></a>
-
-```typescript
-public readonly icon: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.id" id="cdktfprovidernewrelicdashboardpropertyid"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `title`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.title" id="cdktfprovidernewrelicdashboardpropertytitle"></a>
-
-```typescript
-public readonly title: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `visibility`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Dashboard.property.visibility" id="cdktfprovidernewrelicdashboardpropertyvisibility"></a>
-
-```typescript
-public readonly visibility: string;
-```
-
-- *Type:* `string`
-
----
-
-#### Constants <a name="Constants" id="constants"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`tfResourceType`](#cdktfprovidernewrelicdashboardpropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
-
----
-
-##### `tfResourceType` <a name="@cdktf/provider-newrelic.Dashboard.property.tfResourceType" id="cdktfprovidernewrelicdashboardpropertytfresourcetype"></a>
-
-- *Type:* `string`
-
----
-
 ### DataNewrelicAccount <a name="@cdktf/provider-newrelic.DataNewrelicAccount" id="cdktfprovidernewrelicdatanewrelicaccount"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/account newrelic_account}.
@@ -8303,239 +7968,6 @@ public readonly name: string;
 ---
 
 ##### `tfResourceType` <a name="@cdktf/provider-newrelic.DataNewrelicKeyTransaction.property.tfResourceType" id="cdktfprovidernewrelicdatanewrelickeytransactionpropertytfresourcetype"></a>
-
-- *Type:* `string`
-
----
-
-### DataNewrelicPlugin <a name="@cdktf/provider-newrelic.DataNewrelicPlugin" id="cdktfprovidernewrelicdatanewrelicplugin"></a>
-
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/plugin newrelic_plugin}.
-
-#### Initializers <a name="@cdktf/provider-newrelic.DataNewrelicPlugin.Initializer" id="cdktfprovidernewrelicdatanewrelicplugininitializer"></a>
-
-```typescript
-import { DataNewrelicPlugin } from '@cdktf/provider-newrelic'
-
-new DataNewrelicPlugin(scope: Construct, id: string, config: DataNewrelicPluginConfig)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`scope`](#cdktfprovidernewrelicdatanewrelicpluginparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
-| [`id`](#cdktfprovidernewrelicdatanewrelicpluginparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
-| [`config`](#cdktfprovidernewrelicdatanewrelicpluginparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.DataNewrelicPluginConfig`](#@cdktf/provider-newrelic.DataNewrelicPluginConfig) | *No description.* |
-
----
-
-##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPlugin.parameter.scope" id="cdktfprovidernewrelicdatanewrelicpluginparameterscope"></a>
-
-- *Type:* [`constructs.Construct`](#constructs.Construct)
-
-The scope in which to define this construct.
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPlugin.parameter.id" id="cdktfprovidernewrelicdatanewrelicpluginparameterid"></a>
-
-- *Type:* `string`
-
-The scoped construct ID.
-
-Must be unique amongst siblings in the same scope
-
----
-
-##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPlugin.parameter.config" id="cdktfprovidernewrelicdatanewrelicpluginparameterconfig"></a>
-
-- *Type:* [`@cdktf/provider-newrelic.DataNewrelicPluginConfig`](#@cdktf/provider-newrelic.DataNewrelicPluginConfig)
-
----
-
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`id`](#cdktfprovidernewrelicdatanewrelicpluginpropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`guidInput`](#cdktfprovidernewrelicdatanewrelicpluginpropertyguidinput) | `string` | *No description.* |
-| [`guid`](#cdktfprovidernewrelicdatanewrelicpluginpropertyguid)<span title="Required">*</span> | `string` | *No description.* |
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPlugin.property.id" id="cdktfprovidernewrelicdatanewrelicpluginpropertyid"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `guidInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPlugin.property.guidInput" id="cdktfprovidernewrelicdatanewrelicpluginpropertyguidinput"></a>
-
-```typescript
-public readonly guidInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `guid`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPlugin.property.guid" id="cdktfprovidernewrelicdatanewrelicpluginpropertyguid"></a>
-
-```typescript
-public readonly guid: string;
-```
-
-- *Type:* `string`
-
----
-
-#### Constants <a name="Constants" id="constants"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`tfResourceType`](#cdktfprovidernewrelicdatanewrelicpluginpropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
-
----
-
-##### `tfResourceType` <a name="@cdktf/provider-newrelic.DataNewrelicPlugin.property.tfResourceType" id="cdktfprovidernewrelicdatanewrelicpluginpropertytfresourcetype"></a>
-
-- *Type:* `string`
-
----
-
-### DataNewrelicPluginComponent <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponent" id="cdktfprovidernewrelicdatanewrelicplugincomponent"></a>
-
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component newrelic_plugin_component}.
-
-#### Initializers <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponent.Initializer" id="cdktfprovidernewrelicdatanewrelicplugincomponentinitializer"></a>
-
-```typescript
-import { DataNewrelicPluginComponent } from '@cdktf/provider-newrelic'
-
-new DataNewrelicPluginComponent(scope: Construct, id: string, config: DataNewrelicPluginComponentConfig)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`scope`](#cdktfprovidernewrelicdatanewrelicplugincomponentparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
-| [`id`](#cdktfprovidernewrelicdatanewrelicplugincomponentparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
-| [`config`](#cdktfprovidernewrelicdatanewrelicplugincomponentparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig`](#@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig) | *No description.* |
-
----
-
-##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponent.parameter.scope" id="cdktfprovidernewrelicdatanewrelicplugincomponentparameterscope"></a>
-
-- *Type:* [`constructs.Construct`](#constructs.Construct)
-
-The scope in which to define this construct.
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponent.parameter.id" id="cdktfprovidernewrelicdatanewrelicplugincomponentparameterid"></a>
-
-- *Type:* `string`
-
-The scoped construct ID.
-
-Must be unique amongst siblings in the same scope
-
----
-
-##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponent.parameter.config" id="cdktfprovidernewrelicdatanewrelicplugincomponentparameterconfig"></a>
-
-- *Type:* [`@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig`](#@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig)
-
----
-
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`healthStatus`](#cdktfprovidernewrelicdatanewrelicplugincomponentpropertyhealthstatus)<span title="Required">*</span> | `string` | *No description.* |
-| [`id`](#cdktfprovidernewrelicdatanewrelicplugincomponentpropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`nameInput`](#cdktfprovidernewrelicdatanewrelicplugincomponentpropertynameinput) | `string` | *No description.* |
-| [`pluginIdInput`](#cdktfprovidernewrelicdatanewrelicplugincomponentpropertypluginidinput) | `number` | *No description.* |
-| [`name`](#cdktfprovidernewrelicdatanewrelicplugincomponentpropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`pluginId`](#cdktfprovidernewrelicdatanewrelicplugincomponentpropertypluginid)<span title="Required">*</span> | `number` | *No description.* |
-
----
-
-##### `healthStatus`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponent.property.healthStatus" id="cdktfprovidernewrelicdatanewrelicplugincomponentpropertyhealthstatus"></a>
-
-```typescript
-public readonly healthStatus: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponent.property.id" id="cdktfprovidernewrelicdatanewrelicplugincomponentpropertyid"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponent.property.nameInput" id="cdktfprovidernewrelicdatanewrelicplugincomponentpropertynameinput"></a>
-
-```typescript
-public readonly nameInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `pluginIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponent.property.pluginIdInput" id="cdktfprovidernewrelicdatanewrelicplugincomponentpropertypluginidinput"></a>
-
-```typescript
-public readonly pluginIdInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponent.property.name" id="cdktfprovidernewrelicdatanewrelicplugincomponentpropertyname"></a>
-
-```typescript
-public readonly name: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `pluginId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponent.property.pluginId" id="cdktfprovidernewrelicdatanewrelicplugincomponentpropertypluginid"></a>
-
-```typescript
-public readonly pluginId: number;
-```
-
-- *Type:* `number`
-
----
-
-#### Constants <a name="Constants" id="constants"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`tfResourceType`](#cdktfprovidernewrelicdatanewrelicplugincomponentpropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
-
----
-
-##### `tfResourceType` <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponent.property.tfResourceType" id="cdktfprovidernewrelicdatanewrelicplugincomponentpropertytfresourcetype"></a>
 
 - *Type:* `string`
 
@@ -10667,23 +10099,29 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| [`putProperties`](#cdktfprovidernewrelicnotificationchannelputproperties) | *No description.* |
+| [`putProperty`](#cdktfprovidernewrelicnotificationchannelputproperty) | *No description.* |
+| [`resetActive`](#cdktfprovidernewrelicnotificationchannelresetactive) | *No description.* |
 | [`resetId`](#cdktfprovidernewrelicnotificationchannelresetid) | *No description.* |
-| [`resetProperties`](#cdktfprovidernewrelicnotificationchannelresetproperties) | *No description.* |
 
 ---
 
-##### `putProperties` <a name="@cdktf/provider-newrelic.NotificationChannel.putProperties" id="cdktfprovidernewrelicnotificationchannelputproperties"></a>
+##### `putProperty` <a name="@cdktf/provider-newrelic.NotificationChannel.putProperty" id="cdktfprovidernewrelicnotificationchannelputproperty"></a>
 
 ```typescript
-public putProperties(value: IResolvable | NotificationChannelProperties[])
+public putProperty(value: IResolvable | NotificationChannelProperty[])
 ```
 
 ###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.parameter.value" id="cdktfprovidernewrelicnotificationchannelparametervalue"></a>
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationChannelProperty`](#@cdktf/provider-newrelic.NotificationChannelProperty)[]
 
 ---
+
+##### `resetActive` <a name="@cdktf/provider-newrelic.NotificationChannel.resetActive" id="cdktfprovidernewrelicnotificationchannelresetactive"></a>
+
+```typescript
+public resetActive()
+```
 
 ##### `resetId` <a name="@cdktf/provider-newrelic.NotificationChannel.resetId" id="cdktfprovidernewrelicnotificationchannelresetid"></a>
 
@@ -10691,24 +10129,23 @@ public putProperties(value: IResolvable | NotificationChannelProperties[])
 public resetId()
 ```
 
-##### `resetProperties` <a name="@cdktf/provider-newrelic.NotificationChannel.resetProperties" id="cdktfprovidernewrelicnotificationchannelresetproperties"></a>
-
-```typescript
-public resetProperties()
-```
-
 
 #### Properties <a name="Properties" id="properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`properties`](#cdktfprovidernewrelicnotificationchannelpropertyproperties)<span title="Required">*</span> | [`@cdktf/provider-newrelic.NotificationChannelPropertiesList`](#@cdktf/provider-newrelic.NotificationChannelPropertiesList) | *No description.* |
+| [`property`](#cdktfprovidernewrelicnotificationchannelpropertyproperty)<span title="Required">*</span> | [`@cdktf/provider-newrelic.NotificationChannelPropertyList`](#@cdktf/provider-newrelic.NotificationChannelPropertyList) | *No description.* |
+| [`status`](#cdktfprovidernewrelicnotificationchannelpropertystatus)<span title="Required">*</span> | `string` | *No description.* |
+| [`accountIdInput`](#cdktfprovidernewrelicnotificationchannelpropertyaccountidinput) | `number` | *No description.* |
+| [`activeInput`](#cdktfprovidernewrelicnotificationchannelpropertyactiveinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`destinationIdInput`](#cdktfprovidernewrelicnotificationchannelpropertydestinationidinput) | `string` | *No description.* |
 | [`idInput`](#cdktfprovidernewrelicnotificationchannelpropertyidinput) | `string` | *No description.* |
 | [`nameInput`](#cdktfprovidernewrelicnotificationchannelpropertynameinput) | `string` | *No description.* |
 | [`productInput`](#cdktfprovidernewrelicnotificationchannelpropertyproductinput) | `string` | *No description.* |
-| [`propertiesInput`](#cdktfprovidernewrelicnotificationchannelpropertypropertiesinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties)[] | *No description.* |
+| [`propertyInput`](#cdktfprovidernewrelicnotificationchannelpropertypropertyinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationChannelProperty`](#@cdktf/provider-newrelic.NotificationChannelProperty)[] | *No description.* |
 | [`typeInput`](#cdktfprovidernewrelicnotificationchannelpropertytypeinput) | `string` | *No description.* |
+| [`accountId`](#cdktfprovidernewrelicnotificationchannelpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`active`](#cdktfprovidernewrelicnotificationchannelpropertyactive)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`destinationId`](#cdktfprovidernewrelicnotificationchannelpropertydestinationid)<span title="Required">*</span> | `string` | *No description.* |
 | [`id`](#cdktfprovidernewrelicnotificationchannelpropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidernewrelicnotificationchannelpropertyname)<span title="Required">*</span> | `string` | *No description.* |
@@ -10717,13 +10154,43 @@ public resetProperties()
 
 ---
 
-##### `properties`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.properties" id="cdktfprovidernewrelicnotificationchannelpropertyproperties"></a>
+##### `property`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.property" id="cdktfprovidernewrelicnotificationchannelpropertyproperty"></a>
 
 ```typescript
-public readonly properties: NotificationChannelPropertiesList;
+public readonly property: NotificationChannelPropertyList;
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.NotificationChannelPropertiesList`](#@cdktf/provider-newrelic.NotificationChannelPropertiesList)
+- *Type:* [`@cdktf/provider-newrelic.NotificationChannelPropertyList`](#@cdktf/provider-newrelic.NotificationChannelPropertyList)
+
+---
+
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.status" id="cdktfprovidernewrelicnotificationchannelpropertystatus"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.accountIdInput" id="cdktfprovidernewrelicnotificationchannelpropertyaccountidinput"></a>
+
+```typescript
+public readonly accountIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `activeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.activeInput" id="cdktfprovidernewrelicnotificationchannelpropertyactiveinput"></a>
+
+```typescript
+public readonly activeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -10767,13 +10234,13 @@ public readonly productInput: string;
 
 ---
 
-##### `propertiesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.propertiesInput" id="cdktfprovidernewrelicnotificationchannelpropertypropertiesinput"></a>
+##### `propertyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.propertyInput" id="cdktfprovidernewrelicnotificationchannelpropertypropertyinput"></a>
 
 ```typescript
-public readonly propertiesInput: IResolvable | NotificationChannelProperties[];
+public readonly propertyInput: IResolvable | NotificationChannelProperty[];
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationChannelProperty`](#@cdktf/provider-newrelic.NotificationChannelProperty)[]
 
 ---
 
@@ -10784,6 +10251,26 @@ public readonly typeInput: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.accountId" id="cdktfprovidernewrelicnotificationchannelpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `active`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannel.property.active" id="cdktfprovidernewrelicnotificationchannelpropertyactive"></a>
+
+```typescript
+public readonly active: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -10899,29 +10386,68 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| [`putProperties`](#cdktfprovidernewrelicnotificationdestinationputproperties) | *No description.* |
-| [`resetAuth`](#cdktfprovidernewrelicnotificationdestinationresetauth) | *No description.* |
+| [`putAuthBasic`](#cdktfprovidernewrelicnotificationdestinationputauthbasic) | *No description.* |
+| [`putAuthToken`](#cdktfprovidernewrelicnotificationdestinationputauthtoken) | *No description.* |
+| [`putProperty`](#cdktfprovidernewrelicnotificationdestinationputproperty) | *No description.* |
+| [`resetActive`](#cdktfprovidernewrelicnotificationdestinationresetactive) | *No description.* |
+| [`resetAuthBasic`](#cdktfprovidernewrelicnotificationdestinationresetauthbasic) | *No description.* |
+| [`resetAuthToken`](#cdktfprovidernewrelicnotificationdestinationresetauthtoken) | *No description.* |
 | [`resetId`](#cdktfprovidernewrelicnotificationdestinationresetid) | *No description.* |
-| [`resetProperties`](#cdktfprovidernewrelicnotificationdestinationresetproperties) | *No description.* |
 
 ---
 
-##### `putProperties` <a name="@cdktf/provider-newrelic.NotificationDestination.putProperties" id="cdktfprovidernewrelicnotificationdestinationputproperties"></a>
+##### `putAuthBasic` <a name="@cdktf/provider-newrelic.NotificationDestination.putAuthBasic" id="cdktfprovidernewrelicnotificationdestinationputauthbasic"></a>
 
 ```typescript
-public putProperties(value: IResolvable | NotificationDestinationProperties[])
+public putAuthBasic(value: NotificationDestinationAuthBasic)
 ```
 
 ###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.parameter.value" id="cdktfprovidernewrelicnotificationdestinationparametervalue"></a>
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties)[]
+- *Type:* [`@cdktf/provider-newrelic.NotificationDestinationAuthBasic`](#@cdktf/provider-newrelic.NotificationDestinationAuthBasic)
 
 ---
 
-##### `resetAuth` <a name="@cdktf/provider-newrelic.NotificationDestination.resetAuth" id="cdktfprovidernewrelicnotificationdestinationresetauth"></a>
+##### `putAuthToken` <a name="@cdktf/provider-newrelic.NotificationDestination.putAuthToken" id="cdktfprovidernewrelicnotificationdestinationputauthtoken"></a>
 
 ```typescript
-public resetAuth()
+public putAuthToken(value: NotificationDestinationAuthToken)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.parameter.value" id="cdktfprovidernewrelicnotificationdestinationparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.NotificationDestinationAuthToken`](#@cdktf/provider-newrelic.NotificationDestinationAuthToken)
+
+---
+
+##### `putProperty` <a name="@cdktf/provider-newrelic.NotificationDestination.putProperty" id="cdktfprovidernewrelicnotificationdestinationputproperty"></a>
+
+```typescript
+public putProperty(value: IResolvable | NotificationDestinationProperty[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.parameter.value" id="cdktfprovidernewrelicnotificationdestinationparametervalue"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationDestinationProperty`](#@cdktf/provider-newrelic.NotificationDestinationProperty)[]
+
+---
+
+##### `resetActive` <a name="@cdktf/provider-newrelic.NotificationDestination.resetActive" id="cdktfprovidernewrelicnotificationdestinationresetactive"></a>
+
+```typescript
+public resetActive()
+```
+
+##### `resetAuthBasic` <a name="@cdktf/provider-newrelic.NotificationDestination.resetAuthBasic" id="cdktfprovidernewrelicnotificationdestinationresetauthbasic"></a>
+
+```typescript
+public resetAuthBasic()
+```
+
+##### `resetAuthToken` <a name="@cdktf/provider-newrelic.NotificationDestination.resetAuthToken" id="cdktfprovidernewrelicnotificationdestinationresetauthtoken"></a>
+
+```typescript
+public resetAuthToken()
 ```
 
 ##### `resetId` <a name="@cdktf/provider-newrelic.NotificationDestination.resetId" id="cdktfprovidernewrelicnotificationdestinationresetid"></a>
@@ -10930,47 +10456,130 @@ public resetAuth()
 public resetId()
 ```
 
-##### `resetProperties` <a name="@cdktf/provider-newrelic.NotificationDestination.resetProperties" id="cdktfprovidernewrelicnotificationdestinationresetproperties"></a>
-
-```typescript
-public resetProperties()
-```
-
 
 #### Properties <a name="Properties" id="properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`properties`](#cdktfprovidernewrelicnotificationdestinationpropertyproperties)<span title="Required">*</span> | [`@cdktf/provider-newrelic.NotificationDestinationPropertiesList`](#@cdktf/provider-newrelic.NotificationDestinationPropertiesList) | *No description.* |
-| [`authInput`](#cdktfprovidernewrelicnotificationdestinationpropertyauthinput) | {[ key: string ]: `string`} | *No description.* |
+| [`authBasic`](#cdktfprovidernewrelicnotificationdestinationpropertyauthbasic)<span title="Required">*</span> | [`@cdktf/provider-newrelic.NotificationDestinationAuthBasicOutputReference`](#@cdktf/provider-newrelic.NotificationDestinationAuthBasicOutputReference) | *No description.* |
+| [`authToken`](#cdktfprovidernewrelicnotificationdestinationpropertyauthtoken)<span title="Required">*</span> | [`@cdktf/provider-newrelic.NotificationDestinationAuthTokenOutputReference`](#@cdktf/provider-newrelic.NotificationDestinationAuthTokenOutputReference) | *No description.* |
+| [`isUserAuthenticated`](#cdktfprovidernewrelicnotificationdestinationpropertyisuserauthenticated)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`lastSent`](#cdktfprovidernewrelicnotificationdestinationpropertylastsent)<span title="Required">*</span> | `string` | *No description.* |
+| [`property`](#cdktfprovidernewrelicnotificationdestinationpropertyproperty)<span title="Required">*</span> | [`@cdktf/provider-newrelic.NotificationDestinationPropertyList`](#@cdktf/provider-newrelic.NotificationDestinationPropertyList) | *No description.* |
+| [`status`](#cdktfprovidernewrelicnotificationdestinationpropertystatus)<span title="Required">*</span> | `string` | *No description.* |
+| [`accountIdInput`](#cdktfprovidernewrelicnotificationdestinationpropertyaccountidinput) | `number` | *No description.* |
+| [`activeInput`](#cdktfprovidernewrelicnotificationdestinationpropertyactiveinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`authBasicInput`](#cdktfprovidernewrelicnotificationdestinationpropertyauthbasicinput) | [`@cdktf/provider-newrelic.NotificationDestinationAuthBasic`](#@cdktf/provider-newrelic.NotificationDestinationAuthBasic) | *No description.* |
+| [`authTokenInput`](#cdktfprovidernewrelicnotificationdestinationpropertyauthtokeninput) | [`@cdktf/provider-newrelic.NotificationDestinationAuthToken`](#@cdktf/provider-newrelic.NotificationDestinationAuthToken) | *No description.* |
 | [`idInput`](#cdktfprovidernewrelicnotificationdestinationpropertyidinput) | `string` | *No description.* |
 | [`nameInput`](#cdktfprovidernewrelicnotificationdestinationpropertynameinput) | `string` | *No description.* |
-| [`propertiesInput`](#cdktfprovidernewrelicnotificationdestinationpropertypropertiesinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties)[] | *No description.* |
+| [`propertyInput`](#cdktfprovidernewrelicnotificationdestinationpropertypropertyinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationDestinationProperty`](#@cdktf/provider-newrelic.NotificationDestinationProperty)[] | *No description.* |
 | [`typeInput`](#cdktfprovidernewrelicnotificationdestinationpropertytypeinput) | `string` | *No description.* |
-| [`auth`](#cdktfprovidernewrelicnotificationdestinationpropertyauth)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`accountId`](#cdktfprovidernewrelicnotificationdestinationpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`active`](#cdktfprovidernewrelicnotificationdestinationpropertyactive)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`id`](#cdktfprovidernewrelicnotificationdestinationpropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovidernewrelicnotificationdestinationpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`type`](#cdktfprovidernewrelicnotificationdestinationpropertytype)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
 
-##### `properties`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.properties" id="cdktfprovidernewrelicnotificationdestinationpropertyproperties"></a>
+##### `authBasic`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.authBasic" id="cdktfprovidernewrelicnotificationdestinationpropertyauthbasic"></a>
 
 ```typescript
-public readonly properties: NotificationDestinationPropertiesList;
+public readonly authBasic: NotificationDestinationAuthBasicOutputReference;
 ```
 
-- *Type:* [`@cdktf/provider-newrelic.NotificationDestinationPropertiesList`](#@cdktf/provider-newrelic.NotificationDestinationPropertiesList)
+- *Type:* [`@cdktf/provider-newrelic.NotificationDestinationAuthBasicOutputReference`](#@cdktf/provider-newrelic.NotificationDestinationAuthBasicOutputReference)
 
 ---
 
-##### `authInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.authInput" id="cdktfprovidernewrelicnotificationdestinationpropertyauthinput"></a>
+##### `authToken`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.authToken" id="cdktfprovidernewrelicnotificationdestinationpropertyauthtoken"></a>
 
 ```typescript
-public readonly authInput: {[ key: string ]: string};
+public readonly authToken: NotificationDestinationAuthTokenOutputReference;
 ```
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`@cdktf/provider-newrelic.NotificationDestinationAuthTokenOutputReference`](#@cdktf/provider-newrelic.NotificationDestinationAuthTokenOutputReference)
+
+---
+
+##### `isUserAuthenticated`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.isUserAuthenticated" id="cdktfprovidernewrelicnotificationdestinationpropertyisuserauthenticated"></a>
+
+```typescript
+public readonly isUserAuthenticated: IResolvable;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `lastSent`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.lastSent" id="cdktfprovidernewrelicnotificationdestinationpropertylastsent"></a>
+
+```typescript
+public readonly lastSent: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `property`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.property" id="cdktfprovidernewrelicnotificationdestinationpropertyproperty"></a>
+
+```typescript
+public readonly property: NotificationDestinationPropertyList;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.NotificationDestinationPropertyList`](#@cdktf/provider-newrelic.NotificationDestinationPropertyList)
+
+---
+
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.status" id="cdktfprovidernewrelicnotificationdestinationpropertystatus"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.accountIdInput" id="cdktfprovidernewrelicnotificationdestinationpropertyaccountidinput"></a>
+
+```typescript
+public readonly accountIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `activeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.activeInput" id="cdktfprovidernewrelicnotificationdestinationpropertyactiveinput"></a>
+
+```typescript
+public readonly activeInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `authBasicInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.authBasicInput" id="cdktfprovidernewrelicnotificationdestinationpropertyauthbasicinput"></a>
+
+```typescript
+public readonly authBasicInput: NotificationDestinationAuthBasic;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.NotificationDestinationAuthBasic`](#@cdktf/provider-newrelic.NotificationDestinationAuthBasic)
+
+---
+
+##### `authTokenInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.authTokenInput" id="cdktfprovidernewrelicnotificationdestinationpropertyauthtokeninput"></a>
+
+```typescript
+public readonly authTokenInput: NotificationDestinationAuthToken;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.NotificationDestinationAuthToken`](#@cdktf/provider-newrelic.NotificationDestinationAuthToken)
 
 ---
 
@@ -10994,13 +10603,13 @@ public readonly nameInput: string;
 
 ---
 
-##### `propertiesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.propertiesInput" id="cdktfprovidernewrelicnotificationdestinationpropertypropertiesinput"></a>
+##### `propertyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.propertyInput" id="cdktfprovidernewrelicnotificationdestinationpropertypropertyinput"></a>
 
 ```typescript
-public readonly propertiesInput: IResolvable | NotificationDestinationProperties[];
+public readonly propertyInput: IResolvable | NotificationDestinationProperty[];
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationDestinationProperty`](#@cdktf/provider-newrelic.NotificationDestinationProperty)[]
 
 ---
 
@@ -11014,13 +10623,23 @@ public readonly typeInput: string;
 
 ---
 
-##### `auth`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.auth" id="cdktfprovidernewrelicnotificationdestinationpropertyauth"></a>
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.accountId" id="cdktfprovidernewrelicnotificationdestinationpropertyaccountid"></a>
 
 ```typescript
-public readonly auth: {[ key: string ]: string};
+public readonly accountId: number;
 ```
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* `number`
+
+---
+
+##### `active`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestination.property.active" id="cdktfprovidernewrelicnotificationdestinationpropertyactive"></a>
+
+```typescript
+public readonly active: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -12688,377 +12307,6 @@ public readonly permissions: string;
 
 ---
 
-### PluginsAlertCondition <a name="@cdktf/provider-newrelic.PluginsAlertCondition" id="cdktfprovidernewrelicpluginsalertcondition"></a>
-
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition newrelic_plugins_alert_condition}.
-
-#### Initializers <a name="@cdktf/provider-newrelic.PluginsAlertCondition.Initializer" id="cdktfprovidernewrelicpluginsalertconditioninitializer"></a>
-
-```typescript
-import { PluginsAlertCondition } from '@cdktf/provider-newrelic'
-
-new PluginsAlertCondition(scope: Construct, id: string, config: PluginsAlertConditionConfig)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`scope`](#cdktfprovidernewrelicpluginsalertconditionparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
-| [`id`](#cdktfprovidernewrelicpluginsalertconditionparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
-| [`config`](#cdktfprovidernewrelicpluginsalertconditionparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.PluginsAlertConditionConfig`](#@cdktf/provider-newrelic.PluginsAlertConditionConfig) | *No description.* |
-
----
-
-##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.parameter.scope" id="cdktfprovidernewrelicpluginsalertconditionparameterscope"></a>
-
-- *Type:* [`constructs.Construct`](#constructs.Construct)
-
-The scope in which to define this construct.
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.parameter.id" id="cdktfprovidernewrelicpluginsalertconditionparameterid"></a>
-
-- *Type:* `string`
-
-The scoped construct ID.
-
-Must be unique amongst siblings in the same scope
-
----
-
-##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.parameter.config" id="cdktfprovidernewrelicpluginsalertconditionparameterconfig"></a>
-
-- *Type:* [`@cdktf/provider-newrelic.PluginsAlertConditionConfig`](#@cdktf/provider-newrelic.PluginsAlertConditionConfig)
-
----
-
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`putTerm`](#cdktfprovidernewrelicpluginsalertconditionputterm) | *No description.* |
-| [`resetEnabled`](#cdktfprovidernewrelicpluginsalertconditionresetenabled) | *No description.* |
-| [`resetId`](#cdktfprovidernewrelicpluginsalertconditionresetid) | *No description.* |
-| [`resetRunbookUrl`](#cdktfprovidernewrelicpluginsalertconditionresetrunbookurl) | *No description.* |
-
----
-
-##### `putTerm` <a name="@cdktf/provider-newrelic.PluginsAlertCondition.putTerm" id="cdktfprovidernewrelicpluginsalertconditionputterm"></a>
-
-```typescript
-public putTerm(value: IResolvable | PluginsAlertConditionTerm[])
-```
-
-###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.parameter.value" id="cdktfprovidernewrelicpluginsalertconditionparametervalue"></a>
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[]
-
----
-
-##### `resetEnabled` <a name="@cdktf/provider-newrelic.PluginsAlertCondition.resetEnabled" id="cdktfprovidernewrelicpluginsalertconditionresetenabled"></a>
-
-```typescript
-public resetEnabled()
-```
-
-##### `resetId` <a name="@cdktf/provider-newrelic.PluginsAlertCondition.resetId" id="cdktfprovidernewrelicpluginsalertconditionresetid"></a>
-
-```typescript
-public resetId()
-```
-
-##### `resetRunbookUrl` <a name="@cdktf/provider-newrelic.PluginsAlertCondition.resetRunbookUrl" id="cdktfprovidernewrelicpluginsalertconditionresetrunbookurl"></a>
-
-```typescript
-public resetRunbookUrl()
-```
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`term`](#cdktfprovidernewrelicpluginsalertconditionpropertyterm)<span title="Required">*</span> | [`@cdktf/provider-newrelic.PluginsAlertConditionTermList`](#@cdktf/provider-newrelic.PluginsAlertConditionTermList) | *No description.* |
-| [`enabledInput`](#cdktfprovidernewrelicpluginsalertconditionpropertyenabledinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`entitiesInput`](#cdktfprovidernewrelicpluginsalertconditionpropertyentitiesinput) | `number`[] | *No description.* |
-| [`idInput`](#cdktfprovidernewrelicpluginsalertconditionpropertyidinput) | `string` | *No description.* |
-| [`metricDescriptionInput`](#cdktfprovidernewrelicpluginsalertconditionpropertymetricdescriptioninput) | `string` | *No description.* |
-| [`metricInput`](#cdktfprovidernewrelicpluginsalertconditionpropertymetricinput) | `string` | *No description.* |
-| [`nameInput`](#cdktfprovidernewrelicpluginsalertconditionpropertynameinput) | `string` | *No description.* |
-| [`pluginGuidInput`](#cdktfprovidernewrelicpluginsalertconditionpropertypluginguidinput) | `string` | *No description.* |
-| [`pluginIdInput`](#cdktfprovidernewrelicpluginsalertconditionpropertypluginidinput) | `string` | *No description.* |
-| [`policyIdInput`](#cdktfprovidernewrelicpluginsalertconditionpropertypolicyidinput) | `number` | *No description.* |
-| [`runbookUrlInput`](#cdktfprovidernewrelicpluginsalertconditionpropertyrunbookurlinput) | `string` | *No description.* |
-| [`termInput`](#cdktfprovidernewrelicpluginsalertconditionpropertyterminput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[] | *No description.* |
-| [`valueFunctionInput`](#cdktfprovidernewrelicpluginsalertconditionpropertyvaluefunctioninput) | `string` | *No description.* |
-| [`enabled`](#cdktfprovidernewrelicpluginsalertconditionpropertyenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`entities`](#cdktfprovidernewrelicpluginsalertconditionpropertyentities)<span title="Required">*</span> | `number`[] | *No description.* |
-| [`id`](#cdktfprovidernewrelicpluginsalertconditionpropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`metric`](#cdktfprovidernewrelicpluginsalertconditionpropertymetric)<span title="Required">*</span> | `string` | *No description.* |
-| [`metricDescription`](#cdktfprovidernewrelicpluginsalertconditionpropertymetricdescription)<span title="Required">*</span> | `string` | *No description.* |
-| [`name`](#cdktfprovidernewrelicpluginsalertconditionpropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`pluginGuid`](#cdktfprovidernewrelicpluginsalertconditionpropertypluginguid)<span title="Required">*</span> | `string` | *No description.* |
-| [`pluginId`](#cdktfprovidernewrelicpluginsalertconditionpropertypluginid)<span title="Required">*</span> | `string` | *No description.* |
-| [`policyId`](#cdktfprovidernewrelicpluginsalertconditionpropertypolicyid)<span title="Required">*</span> | `number` | *No description.* |
-| [`runbookUrl`](#cdktfprovidernewrelicpluginsalertconditionpropertyrunbookurl)<span title="Required">*</span> | `string` | *No description.* |
-| [`valueFunction`](#cdktfprovidernewrelicpluginsalertconditionpropertyvaluefunction)<span title="Required">*</span> | `string` | *No description.* |
-
----
-
-##### `term`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.term" id="cdktfprovidernewrelicpluginsalertconditionpropertyterm"></a>
-
-```typescript
-public readonly term: PluginsAlertConditionTermList;
-```
-
-- *Type:* [`@cdktf/provider-newrelic.PluginsAlertConditionTermList`](#@cdktf/provider-newrelic.PluginsAlertConditionTermList)
-
----
-
-##### `enabledInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.enabledInput" id="cdktfprovidernewrelicpluginsalertconditionpropertyenabledinput"></a>
-
-```typescript
-public readonly enabledInput: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `entitiesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.entitiesInput" id="cdktfprovidernewrelicpluginsalertconditionpropertyentitiesinput"></a>
-
-```typescript
-public readonly entitiesInput: number[];
-```
-
-- *Type:* `number`[]
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.idInput" id="cdktfprovidernewrelicpluginsalertconditionpropertyidinput"></a>
-
-```typescript
-public readonly idInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `metricDescriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.metricDescriptionInput" id="cdktfprovidernewrelicpluginsalertconditionpropertymetricdescriptioninput"></a>
-
-```typescript
-public readonly metricDescriptionInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `metricInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.metricInput" id="cdktfprovidernewrelicpluginsalertconditionpropertymetricinput"></a>
-
-```typescript
-public readonly metricInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.nameInput" id="cdktfprovidernewrelicpluginsalertconditionpropertynameinput"></a>
-
-```typescript
-public readonly nameInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `pluginGuidInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.pluginGuidInput" id="cdktfprovidernewrelicpluginsalertconditionpropertypluginguidinput"></a>
-
-```typescript
-public readonly pluginGuidInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `pluginIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.pluginIdInput" id="cdktfprovidernewrelicpluginsalertconditionpropertypluginidinput"></a>
-
-```typescript
-public readonly pluginIdInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `policyIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.policyIdInput" id="cdktfprovidernewrelicpluginsalertconditionpropertypolicyidinput"></a>
-
-```typescript
-public readonly policyIdInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `runbookUrlInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.runbookUrlInput" id="cdktfprovidernewrelicpluginsalertconditionpropertyrunbookurlinput"></a>
-
-```typescript
-public readonly runbookUrlInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `termInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.termInput" id="cdktfprovidernewrelicpluginsalertconditionpropertyterminput"></a>
-
-```typescript
-public readonly termInput: IResolvable | PluginsAlertConditionTerm[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[]
-
----
-
-##### `valueFunctionInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.valueFunctionInput" id="cdktfprovidernewrelicpluginsalertconditionpropertyvaluefunctioninput"></a>
-
-```typescript
-public readonly valueFunctionInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.enabled" id="cdktfprovidernewrelicpluginsalertconditionpropertyenabled"></a>
-
-```typescript
-public readonly enabled: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `entities`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.entities" id="cdktfprovidernewrelicpluginsalertconditionpropertyentities"></a>
-
-```typescript
-public readonly entities: number[];
-```
-
-- *Type:* `number`[]
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.id" id="cdktfprovidernewrelicpluginsalertconditionpropertyid"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `metric`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.metric" id="cdktfprovidernewrelicpluginsalertconditionpropertymetric"></a>
-
-```typescript
-public readonly metric: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `metricDescription`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.metricDescription" id="cdktfprovidernewrelicpluginsalertconditionpropertymetricdescription"></a>
-
-```typescript
-public readonly metricDescription: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.name" id="cdktfprovidernewrelicpluginsalertconditionpropertyname"></a>
-
-```typescript
-public readonly name: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `pluginGuid`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.pluginGuid" id="cdktfprovidernewrelicpluginsalertconditionpropertypluginguid"></a>
-
-```typescript
-public readonly pluginGuid: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `pluginId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.pluginId" id="cdktfprovidernewrelicpluginsalertconditionpropertypluginid"></a>
-
-```typescript
-public readonly pluginId: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `policyId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.policyId" id="cdktfprovidernewrelicpluginsalertconditionpropertypolicyid"></a>
-
-```typescript
-public readonly policyId: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `runbookUrl`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.runbookUrl" id="cdktfprovidernewrelicpluginsalertconditionpropertyrunbookurl"></a>
-
-```typescript
-public readonly runbookUrl: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `valueFunction`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.valueFunction" id="cdktfprovidernewrelicpluginsalertconditionpropertyvaluefunction"></a>
-
-```typescript
-public readonly valueFunction: string;
-```
-
-- *Type:* `string`
-
----
-
-#### Constants <a name="Constants" id="constants"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`tfResourceType`](#cdktfprovidernewrelicpluginsalertconditionpropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
-
----
-
-##### `tfResourceType` <a name="@cdktf/provider-newrelic.PluginsAlertCondition.property.tfResourceType" id="cdktfprovidernewrelicpluginsalertconditionpropertytfresourcetype"></a>
-
-- *Type:* `string`
-
----
-
 ### ServiceLevel <a name="@cdktf/provider-newrelic.ServiceLevel" id="cdktfprovidernewrelicservicelevel"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/service_level newrelic_service_level}.
@@ -13547,6 +12795,677 @@ public readonly runbookUrl: string;
 ---
 
 ##### `tfResourceType` <a name="@cdktf/provider-newrelic.SyntheticsAlertCondition.property.tfResourceType" id="cdktfprovidernewrelicsyntheticsalertconditionpropertytfresourcetype"></a>
+
+- *Type:* `string`
+
+---
+
+### SyntheticsBrokenLinksMonitor <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitor"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor}.
+
+#### Initializers <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.Initializer" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorinitializer"></a>
+
+```typescript
+import { SyntheticsBrokenLinksMonitor } from '@cdktf/provider-newrelic'
+
+new SyntheticsBrokenLinksMonitor(scope: Construct, id: string, config: SyntheticsBrokenLinksMonitorConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
+| [`id`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
+| [`config`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig`](#@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.parameter.scope" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.parameter.id" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorparameterid"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.parameter.config" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorparameterconfig"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig`](#@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig)
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`putTag`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorputtag) | *No description.* |
+| [`resetAccountId`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorresetaccountid) | *No description.* |
+| [`resetId`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorresetid) | *No description.* |
+| [`resetLocationsPrivate`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorresetlocationsprivate) | *No description.* |
+| [`resetLocationsPublic`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorresetlocationspublic) | *No description.* |
+| [`resetTag`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorresettag) | *No description.* |
+
+---
+
+##### `putTag` <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.putTag" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorputtag"></a>
+
+```typescript
+public putTag(value: IResolvable | SyntheticsBrokenLinksMonitorTag[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.parameter.value" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorparametervalue"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag`](#@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag)[]
+
+---
+
+##### `resetAccountId` <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.resetAccountId" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorresetaccountid"></a>
+
+```typescript
+public resetAccountId()
+```
+
+##### `resetId` <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.resetId" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorresetid"></a>
+
+```typescript
+public resetId()
+```
+
+##### `resetLocationsPrivate` <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.resetLocationsPrivate" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorresetlocationsprivate"></a>
+
+```typescript
+public resetLocationsPrivate()
+```
+
+##### `resetLocationsPublic` <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.resetLocationsPublic" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorresetlocationspublic"></a>
+
+```typescript
+public resetLocationsPublic()
+```
+
+##### `resetTag` <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.resetTag" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorresettag"></a>
+
+```typescript
+public resetTag()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`guid`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyguid)<span title="Required">*</span> | `string` | *No description.* |
+| [`tag`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertytag)<span title="Required">*</span> | [`@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagList`](#@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagList) | *No description.* |
+| [`accountIdInput`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyaccountidinput) | `number` | *No description.* |
+| [`idInput`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyidinput) | `string` | *No description.* |
+| [`locationsPrivateInput`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertylocationsprivateinput) | `string`[] | *No description.* |
+| [`locationsPublicInput`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertylocationspublicinput) | `string`[] | *No description.* |
+| [`nameInput`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertynameinput) | `string` | *No description.* |
+| [`periodInput`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyperiodinput) | `string` | *No description.* |
+| [`statusInput`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertystatusinput) | `string` | *No description.* |
+| [`tagInput`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertytaginput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag`](#@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag)[] | *No description.* |
+| [`uriInput`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyuriinput) | `string` | *No description.* |
+| [`accountId`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`id`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`locationsPrivate`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertylocationsprivate)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`locationsPublic`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertylocationspublic)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`name`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`period`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyperiod)<span title="Required">*</span> | `string` | *No description.* |
+| [`status`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertystatus)<span title="Required">*</span> | `string` | *No description.* |
+| [`uri`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyuri)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `guid`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.guid" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyguid"></a>
+
+```typescript
+public readonly guid: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tag`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.tag" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertytag"></a>
+
+```typescript
+public readonly tag: SyntheticsBrokenLinksMonitorTagList;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagList`](#@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagList)
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.accountIdInput" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyaccountidinput"></a>
+
+```typescript
+public readonly accountIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.idInput" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyidinput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `locationsPrivateInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.locationsPrivateInput" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertylocationsprivateinput"></a>
+
+```typescript
+public readonly locationsPrivateInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `locationsPublicInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.locationsPublicInput" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertylocationspublicinput"></a>
+
+```typescript
+public readonly locationsPublicInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.nameInput" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertynameinput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `periodInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.periodInput" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyperiodinput"></a>
+
+```typescript
+public readonly periodInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `statusInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.statusInput" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertystatusinput"></a>
+
+```typescript
+public readonly statusInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.tagInput" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertytaginput"></a>
+
+```typescript
+public readonly tagInput: IResolvable | SyntheticsBrokenLinksMonitorTag[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag`](#@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag)[]
+
+---
+
+##### `uriInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.uriInput" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyuriinput"></a>
+
+```typescript
+public readonly uriInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.accountId" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.id" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `locationsPrivate`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.locationsPrivate" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertylocationsprivate"></a>
+
+```typescript
+public readonly locationsPrivate: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `locationsPublic`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.locationsPublic" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertylocationspublic"></a>
+
+```typescript
+public readonly locationsPublic: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.name" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `period`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.period" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyperiod"></a>
+
+```typescript
+public readonly period: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.status" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertystatus"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `uri`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.uri" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertyuri"></a>
+
+```typescript
+public readonly uri: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants" id="constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`tfResourceType`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `tfResourceType` <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor.property.tfResourceType" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorpropertytfresourcetype"></a>
+
+- *Type:* `string`
+
+---
+
+### SyntheticsCertCheckMonitor <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor" id="cdktfprovidernewrelicsyntheticscertcheckmonitor"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor}.
+
+#### Initializers <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.Initializer" id="cdktfprovidernewrelicsyntheticscertcheckmonitorinitializer"></a>
+
+```typescript
+import { SyntheticsCertCheckMonitor } from '@cdktf/provider-newrelic'
+
+new SyntheticsCertCheckMonitor(scope: Construct, id: string, config: SyntheticsCertCheckMonitorConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#cdktfprovidernewrelicsyntheticscertcheckmonitorparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
+| [`id`](#cdktfprovidernewrelicsyntheticscertcheckmonitorparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
+| [`config`](#cdktfprovidernewrelicsyntheticscertcheckmonitorparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig`](#@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.parameter.scope" id="cdktfprovidernewrelicsyntheticscertcheckmonitorparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.parameter.id" id="cdktfprovidernewrelicsyntheticscertcheckmonitorparameterid"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.parameter.config" id="cdktfprovidernewrelicsyntheticscertcheckmonitorparameterconfig"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig`](#@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig)
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`putTag`](#cdktfprovidernewrelicsyntheticscertcheckmonitorputtag) | *No description.* |
+| [`resetAccountId`](#cdktfprovidernewrelicsyntheticscertcheckmonitorresetaccountid) | *No description.* |
+| [`resetId`](#cdktfprovidernewrelicsyntheticscertcheckmonitorresetid) | *No description.* |
+| [`resetLocationsPrivate`](#cdktfprovidernewrelicsyntheticscertcheckmonitorresetlocationsprivate) | *No description.* |
+| [`resetLocationsPublic`](#cdktfprovidernewrelicsyntheticscertcheckmonitorresetlocationspublic) | *No description.* |
+| [`resetTag`](#cdktfprovidernewrelicsyntheticscertcheckmonitorresettag) | *No description.* |
+
+---
+
+##### `putTag` <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.putTag" id="cdktfprovidernewrelicsyntheticscertcheckmonitorputtag"></a>
+
+```typescript
+public putTag(value: IResolvable | SyntheticsCertCheckMonitorTag[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.parameter.value" id="cdktfprovidernewrelicsyntheticscertcheckmonitorparametervalue"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag`](#@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag)[]
+
+---
+
+##### `resetAccountId` <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.resetAccountId" id="cdktfprovidernewrelicsyntheticscertcheckmonitorresetaccountid"></a>
+
+```typescript
+public resetAccountId()
+```
+
+##### `resetId` <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.resetId" id="cdktfprovidernewrelicsyntheticscertcheckmonitorresetid"></a>
+
+```typescript
+public resetId()
+```
+
+##### `resetLocationsPrivate` <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.resetLocationsPrivate" id="cdktfprovidernewrelicsyntheticscertcheckmonitorresetlocationsprivate"></a>
+
+```typescript
+public resetLocationsPrivate()
+```
+
+##### `resetLocationsPublic` <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.resetLocationsPublic" id="cdktfprovidernewrelicsyntheticscertcheckmonitorresetlocationspublic"></a>
+
+```typescript
+public resetLocationsPublic()
+```
+
+##### `resetTag` <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.resetTag" id="cdktfprovidernewrelicsyntheticscertcheckmonitorresettag"></a>
+
+```typescript
+public resetTag()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`tag`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertytag)<span title="Required">*</span> | [`@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagList`](#@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagList) | *No description.* |
+| [`accountIdInput`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertyaccountidinput) | `number` | *No description.* |
+| [`certificateExpirationInput`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertycertificateexpirationinput) | `number` | *No description.* |
+| [`domainInput`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertydomaininput) | `string` | *No description.* |
+| [`idInput`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertyidinput) | `string` | *No description.* |
+| [`locationsPrivateInput`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertylocationsprivateinput) | `string`[] | *No description.* |
+| [`locationsPublicInput`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertylocationspublicinput) | `string`[] | *No description.* |
+| [`nameInput`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertynameinput) | `string` | *No description.* |
+| [`periodInput`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertyperiodinput) | `string` | *No description.* |
+| [`statusInput`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertystatusinput) | `string` | *No description.* |
+| [`tagInput`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertytaginput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag`](#@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag)[] | *No description.* |
+| [`accountId`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`certificateExpiration`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertycertificateexpiration)<span title="Required">*</span> | `number` | *No description.* |
+| [`domain`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertydomain)<span title="Required">*</span> | `string` | *No description.* |
+| [`id`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`locationsPrivate`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertylocationsprivate)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`locationsPublic`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertylocationspublic)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`name`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`period`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertyperiod)<span title="Required">*</span> | `string` | *No description.* |
+| [`status`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertystatus)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `tag`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.tag" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertytag"></a>
+
+```typescript
+public readonly tag: SyntheticsCertCheckMonitorTagList;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagList`](#@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagList)
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.accountIdInput" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertyaccountidinput"></a>
+
+```typescript
+public readonly accountIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `certificateExpirationInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.certificateExpirationInput" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertycertificateexpirationinput"></a>
+
+```typescript
+public readonly certificateExpirationInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `domainInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.domainInput" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertydomaininput"></a>
+
+```typescript
+public readonly domainInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.idInput" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertyidinput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `locationsPrivateInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.locationsPrivateInput" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertylocationsprivateinput"></a>
+
+```typescript
+public readonly locationsPrivateInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `locationsPublicInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.locationsPublicInput" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertylocationspublicinput"></a>
+
+```typescript
+public readonly locationsPublicInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.nameInput" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertynameinput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `periodInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.periodInput" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertyperiodinput"></a>
+
+```typescript
+public readonly periodInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `statusInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.statusInput" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertystatusinput"></a>
+
+```typescript
+public readonly statusInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tagInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.tagInput" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertytaginput"></a>
+
+```typescript
+public readonly tagInput: IResolvable | SyntheticsCertCheckMonitorTag[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag`](#@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag)[]
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.accountId" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `certificateExpiration`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.certificateExpiration" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertycertificateexpiration"></a>
+
+```typescript
+public readonly certificateExpiration: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `domain`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.domain" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertydomain"></a>
+
+```typescript
+public readonly domain: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.id" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `locationsPrivate`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.locationsPrivate" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertylocationsprivate"></a>
+
+```typescript
+public readonly locationsPrivate: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `locationsPublic`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.locationsPublic" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertylocationspublic"></a>
+
+```typescript
+public readonly locationsPublic: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.name" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `period`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.period" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertyperiod"></a>
+
+```typescript
+public readonly period: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.status" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertystatus"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants" id="constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`tfResourceType`](#cdktfprovidernewrelicsyntheticscertcheckmonitorpropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `tfResourceType` <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitor.property.tfResourceType" id="cdktfprovidernewrelicsyntheticscertcheckmonitorpropertytfresourcetype"></a>
 
 - *Type:* `string`
 
@@ -14684,6 +14603,787 @@ public readonly value: string;
 
 ---
 
+### SyntheticsStepMonitor <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor" id="cdktfprovidernewrelicsyntheticsstepmonitor"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor newrelic_synthetics_step_monitor}.
+
+#### Initializers <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.Initializer" id="cdktfprovidernewrelicsyntheticsstepmonitorinitializer"></a>
+
+```typescript
+import { SyntheticsStepMonitor } from '@cdktf/provider-newrelic'
+
+new SyntheticsStepMonitor(scope: Construct, id: string, config: SyntheticsStepMonitorConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#cdktfprovidernewrelicsyntheticsstepmonitorparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
+| [`id`](#cdktfprovidernewrelicsyntheticsstepmonitorparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
+| [`config`](#cdktfprovidernewrelicsyntheticsstepmonitorparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.SyntheticsStepMonitorConfig`](#@cdktf/provider-newrelic.SyntheticsStepMonitorConfig) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.parameter.scope" id="cdktfprovidernewrelicsyntheticsstepmonitorparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.parameter.id" id="cdktfprovidernewrelicsyntheticsstepmonitorparameterid"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.parameter.config" id="cdktfprovidernewrelicsyntheticsstepmonitorparameterconfig"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.SyntheticsStepMonitorConfig`](#@cdktf/provider-newrelic.SyntheticsStepMonitorConfig)
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`putLocationsPrivate`](#cdktfprovidernewrelicsyntheticsstepmonitorputlocationsprivate) | *No description.* |
+| [`putSteps`](#cdktfprovidernewrelicsyntheticsstepmonitorputsteps) | *No description.* |
+| [`putTag`](#cdktfprovidernewrelicsyntheticsstepmonitorputtag) | *No description.* |
+| [`resetAccountId`](#cdktfprovidernewrelicsyntheticsstepmonitorresetaccountid) | *No description.* |
+| [`resetEnableScreenshotOnFailureAndScript`](#cdktfprovidernewrelicsyntheticsstepmonitorresetenablescreenshotonfailureandscript) | *No description.* |
+| [`resetId`](#cdktfprovidernewrelicsyntheticsstepmonitorresetid) | *No description.* |
+| [`resetLocationsPrivate`](#cdktfprovidernewrelicsyntheticsstepmonitorresetlocationsprivate) | *No description.* |
+| [`resetLocationsPublic`](#cdktfprovidernewrelicsyntheticsstepmonitorresetlocationspublic) | *No description.* |
+| [`resetTag`](#cdktfprovidernewrelicsyntheticsstepmonitorresettag) | *No description.* |
+
+---
+
+##### `putLocationsPrivate` <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.putLocationsPrivate" id="cdktfprovidernewrelicsyntheticsstepmonitorputlocationsprivate"></a>
+
+```typescript
+public putLocationsPrivate(value: IResolvable | SyntheticsStepMonitorLocationsPrivate[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.parameter.value" id="cdktfprovidernewrelicsyntheticsstepmonitorparametervalue"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate`](#@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate)[]
+
+---
+
+##### `putSteps` <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.putSteps" id="cdktfprovidernewrelicsyntheticsstepmonitorputsteps"></a>
+
+```typescript
+public putSteps(value: IResolvable | SyntheticsStepMonitorSteps[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.parameter.value" id="cdktfprovidernewrelicsyntheticsstepmonitorparametervalue"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsStepMonitorSteps`](#@cdktf/provider-newrelic.SyntheticsStepMonitorSteps)[]
+
+---
+
+##### `putTag` <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.putTag" id="cdktfprovidernewrelicsyntheticsstepmonitorputtag"></a>
+
+```typescript
+public putTag(value: IResolvable | SyntheticsStepMonitorTag[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.parameter.value" id="cdktfprovidernewrelicsyntheticsstepmonitorparametervalue"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsStepMonitorTag`](#@cdktf/provider-newrelic.SyntheticsStepMonitorTag)[]
+
+---
+
+##### `resetAccountId` <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.resetAccountId" id="cdktfprovidernewrelicsyntheticsstepmonitorresetaccountid"></a>
+
+```typescript
+public resetAccountId()
+```
+
+##### `resetEnableScreenshotOnFailureAndScript` <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.resetEnableScreenshotOnFailureAndScript" id="cdktfprovidernewrelicsyntheticsstepmonitorresetenablescreenshotonfailureandscript"></a>
+
+```typescript
+public resetEnableScreenshotOnFailureAndScript()
+```
+
+##### `resetId` <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.resetId" id="cdktfprovidernewrelicsyntheticsstepmonitorresetid"></a>
+
+```typescript
+public resetId()
+```
+
+##### `resetLocationsPrivate` <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.resetLocationsPrivate" id="cdktfprovidernewrelicsyntheticsstepmonitorresetlocationsprivate"></a>
+
+```typescript
+public resetLocationsPrivate()
+```
+
+##### `resetLocationsPublic` <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.resetLocationsPublic" id="cdktfprovidernewrelicsyntheticsstepmonitorresetlocationspublic"></a>
+
+```typescript
+public resetLocationsPublic()
+```
+
+##### `resetTag` <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.resetTag" id="cdktfprovidernewrelicsyntheticsstepmonitorresettag"></a>
+
+```typescript
+public resetTag()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`guid`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertyguid)<span title="Required">*</span> | `string` | *No description.* |
+| [`locationsPrivate`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertylocationsprivate)<span title="Required">*</span> | [`@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateList`](#@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateList) | *No description.* |
+| [`steps`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertysteps)<span title="Required">*</span> | [`@cdktf/provider-newrelic.SyntheticsStepMonitorStepsList`](#@cdktf/provider-newrelic.SyntheticsStepMonitorStepsList) | *No description.* |
+| [`tag`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertytag)<span title="Required">*</span> | [`@cdktf/provider-newrelic.SyntheticsStepMonitorTagList`](#@cdktf/provider-newrelic.SyntheticsStepMonitorTagList) | *No description.* |
+| [`accountIdInput`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertyaccountidinput) | `number` | *No description.* |
+| [`enableScreenshotOnFailureAndScriptInput`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertyenablescreenshotonfailureandscriptinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`idInput`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertyidinput) | `string` | *No description.* |
+| [`locationsPrivateInput`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertylocationsprivateinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate`](#@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate)[] | *No description.* |
+| [`locationsPublicInput`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertylocationspublicinput) | `string`[] | *No description.* |
+| [`nameInput`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertynameinput) | `string` | *No description.* |
+| [`periodInput`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertyperiodinput) | `string` | *No description.* |
+| [`statusInput`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertystatusinput) | `string` | *No description.* |
+| [`stepsInput`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertystepsinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsStepMonitorSteps`](#@cdktf/provider-newrelic.SyntheticsStepMonitorSteps)[] | *No description.* |
+| [`tagInput`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertytaginput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsStepMonitorTag`](#@cdktf/provider-newrelic.SyntheticsStepMonitorTag)[] | *No description.* |
+| [`accountId`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`enableScreenshotOnFailureAndScript`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertyenablescreenshotonfailureandscript)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`id`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`locationsPublic`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertylocationspublic)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`name`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`period`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertyperiod)<span title="Required">*</span> | `string` | *No description.* |
+| [`status`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertystatus)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `guid`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.guid" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertyguid"></a>
+
+```typescript
+public readonly guid: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `locationsPrivate`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.locationsPrivate" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertylocationsprivate"></a>
+
+```typescript
+public readonly locationsPrivate: SyntheticsStepMonitorLocationsPrivateList;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateList`](#@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateList)
+
+---
+
+##### `steps`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.steps" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertysteps"></a>
+
+```typescript
+public readonly steps: SyntheticsStepMonitorStepsList;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.SyntheticsStepMonitorStepsList`](#@cdktf/provider-newrelic.SyntheticsStepMonitorStepsList)
+
+---
+
+##### `tag`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.tag" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertytag"></a>
+
+```typescript
+public readonly tag: SyntheticsStepMonitorTagList;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.SyntheticsStepMonitorTagList`](#@cdktf/provider-newrelic.SyntheticsStepMonitorTagList)
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.accountIdInput" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertyaccountidinput"></a>
+
+```typescript
+public readonly accountIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `enableScreenshotOnFailureAndScriptInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.enableScreenshotOnFailureAndScriptInput" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertyenablescreenshotonfailureandscriptinput"></a>
+
+```typescript
+public readonly enableScreenshotOnFailureAndScriptInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.idInput" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertyidinput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `locationsPrivateInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.locationsPrivateInput" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertylocationsprivateinput"></a>
+
+```typescript
+public readonly locationsPrivateInput: IResolvable | SyntheticsStepMonitorLocationsPrivate[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate`](#@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate)[]
+
+---
+
+##### `locationsPublicInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.locationsPublicInput" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertylocationspublicinput"></a>
+
+```typescript
+public readonly locationsPublicInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.nameInput" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertynameinput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `periodInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.periodInput" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertyperiodinput"></a>
+
+```typescript
+public readonly periodInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `statusInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.statusInput" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertystatusinput"></a>
+
+```typescript
+public readonly statusInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `stepsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.stepsInput" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertystepsinput"></a>
+
+```typescript
+public readonly stepsInput: IResolvable | SyntheticsStepMonitorSteps[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsStepMonitorSteps`](#@cdktf/provider-newrelic.SyntheticsStepMonitorSteps)[]
+
+---
+
+##### `tagInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.tagInput" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertytaginput"></a>
+
+```typescript
+public readonly tagInput: IResolvable | SyntheticsStepMonitorTag[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsStepMonitorTag`](#@cdktf/provider-newrelic.SyntheticsStepMonitorTag)[]
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.accountId" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `enableScreenshotOnFailureAndScript`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.enableScreenshotOnFailureAndScript" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertyenablescreenshotonfailureandscript"></a>
+
+```typescript
+public readonly enableScreenshotOnFailureAndScript: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.id" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `locationsPublic`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.locationsPublic" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertylocationspublic"></a>
+
+```typescript
+public readonly locationsPublic: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.name" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `period`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.period" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertyperiod"></a>
+
+```typescript
+public readonly period: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.status" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertystatus"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants" id="constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`tfResourceType`](#cdktfprovidernewrelicsyntheticsstepmonitorpropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `tfResourceType` <a name="@cdktf/provider-newrelic.SyntheticsStepMonitor.property.tfResourceType" id="cdktfprovidernewrelicsyntheticsstepmonitorpropertytfresourcetype"></a>
+
+- *Type:* `string`
+
+---
+
+### Workflow <a name="@cdktf/provider-newrelic.Workflow" id="cdktfprovidernewrelicworkflow"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/workflow newrelic_workflow}.
+
+#### Initializers <a name="@cdktf/provider-newrelic.Workflow.Initializer" id="cdktfprovidernewrelicworkflowinitializer"></a>
+
+```typescript
+import { Workflow } from '@cdktf/provider-newrelic'
+
+new Workflow(scope: Construct, id: string, config: WorkflowConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#cdktfprovidernewrelicworkflowparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | The scope in which to define this construct. |
+| [`id`](#cdktfprovidernewrelicworkflowparameterid)<span title="Required">*</span> | `string` | The scoped construct ID. |
+| [`config`](#cdktfprovidernewrelicworkflowparameterconfig)<span title="Required">*</span> | [`@cdktf/provider-newrelic.WorkflowConfig`](#@cdktf/provider-newrelic.WorkflowConfig) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.parameter.scope" id="cdktfprovidernewrelicworkflowparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.parameter.id" id="cdktfprovidernewrelicworkflowparameterid"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.parameter.config" id="cdktfprovidernewrelicworkflowparameterconfig"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.WorkflowConfig`](#@cdktf/provider-newrelic.WorkflowConfig)
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`putDestinationConfiguration`](#cdktfprovidernewrelicworkflowputdestinationconfiguration) | *No description.* |
+| [`putEnrichments`](#cdktfprovidernewrelicworkflowputenrichments) | *No description.* |
+| [`putIssuesFilter`](#cdktfprovidernewrelicworkflowputissuesfilter) | *No description.* |
+| [`resetAccountId`](#cdktfprovidernewrelicworkflowresetaccountid) | *No description.* |
+| [`resetDestinationsEnabled`](#cdktfprovidernewrelicworkflowresetdestinationsenabled) | *No description.* |
+| [`resetEnrichments`](#cdktfprovidernewrelicworkflowresetenrichments) | *No description.* |
+| [`resetEnrichmentsEnabled`](#cdktfprovidernewrelicworkflowresetenrichmentsenabled) | *No description.* |
+| [`resetId`](#cdktfprovidernewrelicworkflowresetid) | *No description.* |
+| [`resetWorkflowEnabled`](#cdktfprovidernewrelicworkflowresetworkflowenabled) | *No description.* |
+
+---
+
+##### `putDestinationConfiguration` <a name="@cdktf/provider-newrelic.Workflow.putDestinationConfiguration" id="cdktfprovidernewrelicworkflowputdestinationconfiguration"></a>
+
+```typescript
+public putDestinationConfiguration(value: IResolvable | WorkflowDestinationConfiguration[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.parameter.value" id="cdktfprovidernewrelicworkflowparametervalue"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowDestinationConfiguration`](#@cdktf/provider-newrelic.WorkflowDestinationConfiguration)[]
+
+---
+
+##### `putEnrichments` <a name="@cdktf/provider-newrelic.Workflow.putEnrichments" id="cdktfprovidernewrelicworkflowputenrichments"></a>
+
+```typescript
+public putEnrichments(value: WorkflowEnrichments)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.parameter.value" id="cdktfprovidernewrelicworkflowparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.WorkflowEnrichments`](#@cdktf/provider-newrelic.WorkflowEnrichments)
+
+---
+
+##### `putIssuesFilter` <a name="@cdktf/provider-newrelic.Workflow.putIssuesFilter" id="cdktfprovidernewrelicworkflowputissuesfilter"></a>
+
+```typescript
+public putIssuesFilter(value: WorkflowIssuesFilter)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.parameter.value" id="cdktfprovidernewrelicworkflowparametervalue"></a>
+
+- *Type:* [`@cdktf/provider-newrelic.WorkflowIssuesFilter`](#@cdktf/provider-newrelic.WorkflowIssuesFilter)
+
+---
+
+##### `resetAccountId` <a name="@cdktf/provider-newrelic.Workflow.resetAccountId" id="cdktfprovidernewrelicworkflowresetaccountid"></a>
+
+```typescript
+public resetAccountId()
+```
+
+##### `resetDestinationsEnabled` <a name="@cdktf/provider-newrelic.Workflow.resetDestinationsEnabled" id="cdktfprovidernewrelicworkflowresetdestinationsenabled"></a>
+
+```typescript
+public resetDestinationsEnabled()
+```
+
+##### `resetEnrichments` <a name="@cdktf/provider-newrelic.Workflow.resetEnrichments" id="cdktfprovidernewrelicworkflowresetenrichments"></a>
+
+```typescript
+public resetEnrichments()
+```
+
+##### `resetEnrichmentsEnabled` <a name="@cdktf/provider-newrelic.Workflow.resetEnrichmentsEnabled" id="cdktfprovidernewrelicworkflowresetenrichmentsenabled"></a>
+
+```typescript
+public resetEnrichmentsEnabled()
+```
+
+##### `resetId` <a name="@cdktf/provider-newrelic.Workflow.resetId" id="cdktfprovidernewrelicworkflowresetid"></a>
+
+```typescript
+public resetId()
+```
+
+##### `resetWorkflowEnabled` <a name="@cdktf/provider-newrelic.Workflow.resetWorkflowEnabled" id="cdktfprovidernewrelicworkflowresetworkflowenabled"></a>
+
+```typescript
+public resetWorkflowEnabled()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`destinationConfiguration`](#cdktfprovidernewrelicworkflowpropertydestinationconfiguration)<span title="Required">*</span> | [`@cdktf/provider-newrelic.WorkflowDestinationConfigurationList`](#@cdktf/provider-newrelic.WorkflowDestinationConfigurationList) | *No description.* |
+| [`enrichments`](#cdktfprovidernewrelicworkflowpropertyenrichments)<span title="Required">*</span> | [`@cdktf/provider-newrelic.WorkflowEnrichmentsOutputReference`](#@cdktf/provider-newrelic.WorkflowEnrichmentsOutputReference) | *No description.* |
+| [`issuesFilter`](#cdktfprovidernewrelicworkflowpropertyissuesfilter)<span title="Required">*</span> | [`@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference`](#@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference) | *No description.* |
+| [`lastRun`](#cdktfprovidernewrelicworkflowpropertylastrun)<span title="Required">*</span> | `string` | *No description.* |
+| [`workflowId`](#cdktfprovidernewrelicworkflowpropertyworkflowid)<span title="Required">*</span> | `string` | *No description.* |
+| [`accountIdInput`](#cdktfprovidernewrelicworkflowpropertyaccountidinput) | `number` | *No description.* |
+| [`destinationConfigurationInput`](#cdktfprovidernewrelicworkflowpropertydestinationconfigurationinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkflowDestinationConfiguration`](#@cdktf/provider-newrelic.WorkflowDestinationConfiguration)[] | *No description.* |
+| [`destinationsEnabledInput`](#cdktfprovidernewrelicworkflowpropertydestinationsenabledinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`enrichmentsEnabledInput`](#cdktfprovidernewrelicworkflowpropertyenrichmentsenabledinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`enrichmentsInput`](#cdktfprovidernewrelicworkflowpropertyenrichmentsinput) | [`@cdktf/provider-newrelic.WorkflowEnrichments`](#@cdktf/provider-newrelic.WorkflowEnrichments) | *No description.* |
+| [`idInput`](#cdktfprovidernewrelicworkflowpropertyidinput) | `string` | *No description.* |
+| [`issuesFilterInput`](#cdktfprovidernewrelicworkflowpropertyissuesfilterinput) | [`@cdktf/provider-newrelic.WorkflowIssuesFilter`](#@cdktf/provider-newrelic.WorkflowIssuesFilter) | *No description.* |
+| [`mutingRulesHandlingInput`](#cdktfprovidernewrelicworkflowpropertymutingruleshandlinginput) | `string` | *No description.* |
+| [`nameInput`](#cdktfprovidernewrelicworkflowpropertynameinput) | `string` | *No description.* |
+| [`workflowEnabledInput`](#cdktfprovidernewrelicworkflowpropertyworkflowenabledinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`accountId`](#cdktfprovidernewrelicworkflowpropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`destinationsEnabled`](#cdktfprovidernewrelicworkflowpropertydestinationsenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`enrichmentsEnabled`](#cdktfprovidernewrelicworkflowpropertyenrichmentsenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`id`](#cdktfprovidernewrelicworkflowpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`mutingRulesHandling`](#cdktfprovidernewrelicworkflowpropertymutingruleshandling)<span title="Required">*</span> | `string` | *No description.* |
+| [`name`](#cdktfprovidernewrelicworkflowpropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`workflowEnabled`](#cdktfprovidernewrelicworkflowpropertyworkflowenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+
+---
+
+##### `destinationConfiguration`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.property.destinationConfiguration" id="cdktfprovidernewrelicworkflowpropertydestinationconfiguration"></a>
+
+```typescript
+public readonly destinationConfiguration: WorkflowDestinationConfigurationList;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.WorkflowDestinationConfigurationList`](#@cdktf/provider-newrelic.WorkflowDestinationConfigurationList)
+
+---
+
+##### `enrichments`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.property.enrichments" id="cdktfprovidernewrelicworkflowpropertyenrichments"></a>
+
+```typescript
+public readonly enrichments: WorkflowEnrichmentsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.WorkflowEnrichmentsOutputReference`](#@cdktf/provider-newrelic.WorkflowEnrichmentsOutputReference)
+
+---
+
+##### `issuesFilter`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.property.issuesFilter" id="cdktfprovidernewrelicworkflowpropertyissuesfilter"></a>
+
+```typescript
+public readonly issuesFilter: WorkflowIssuesFilterOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference`](#@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference)
+
+---
+
+##### `lastRun`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.property.lastRun" id="cdktfprovidernewrelicworkflowpropertylastrun"></a>
+
+```typescript
+public readonly lastRun: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `workflowId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.property.workflowId" id="cdktfprovidernewrelicworkflowpropertyworkflowid"></a>
+
+```typescript
+public readonly workflowId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Workflow.property.accountIdInput" id="cdktfprovidernewrelicworkflowpropertyaccountidinput"></a>
+
+```typescript
+public readonly accountIdInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `destinationConfigurationInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Workflow.property.destinationConfigurationInput" id="cdktfprovidernewrelicworkflowpropertydestinationconfigurationinput"></a>
+
+```typescript
+public readonly destinationConfigurationInput: IResolvable | WorkflowDestinationConfiguration[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowDestinationConfiguration`](#@cdktf/provider-newrelic.WorkflowDestinationConfiguration)[]
+
+---
+
+##### `destinationsEnabledInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Workflow.property.destinationsEnabledInput" id="cdktfprovidernewrelicworkflowpropertydestinationsenabledinput"></a>
+
+```typescript
+public readonly destinationsEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `enrichmentsEnabledInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Workflow.property.enrichmentsEnabledInput" id="cdktfprovidernewrelicworkflowpropertyenrichmentsenabledinput"></a>
+
+```typescript
+public readonly enrichmentsEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `enrichmentsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Workflow.property.enrichmentsInput" id="cdktfprovidernewrelicworkflowpropertyenrichmentsinput"></a>
+
+```typescript
+public readonly enrichmentsInput: WorkflowEnrichments;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.WorkflowEnrichments`](#@cdktf/provider-newrelic.WorkflowEnrichments)
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Workflow.property.idInput" id="cdktfprovidernewrelicworkflowpropertyidinput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `issuesFilterInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Workflow.property.issuesFilterInput" id="cdktfprovidernewrelicworkflowpropertyissuesfilterinput"></a>
+
+```typescript
+public readonly issuesFilterInput: WorkflowIssuesFilter;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.WorkflowIssuesFilter`](#@cdktf/provider-newrelic.WorkflowIssuesFilter)
+
+---
+
+##### `mutingRulesHandlingInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Workflow.property.mutingRulesHandlingInput" id="cdktfprovidernewrelicworkflowpropertymutingruleshandlinginput"></a>
+
+```typescript
+public readonly mutingRulesHandlingInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Workflow.property.nameInput" id="cdktfprovidernewrelicworkflowpropertynameinput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `workflowEnabledInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.Workflow.property.workflowEnabledInput" id="cdktfprovidernewrelicworkflowpropertyworkflowenabledinput"></a>
+
+```typescript
+public readonly workflowEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.property.accountId" id="cdktfprovidernewrelicworkflowpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `destinationsEnabled`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.property.destinationsEnabled" id="cdktfprovidernewrelicworkflowpropertydestinationsenabled"></a>
+
+```typescript
+public readonly destinationsEnabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `enrichmentsEnabled`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.property.enrichmentsEnabled" id="cdktfprovidernewrelicworkflowpropertyenrichmentsenabled"></a>
+
+```typescript
+public readonly enrichmentsEnabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.property.id" id="cdktfprovidernewrelicworkflowpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `mutingRulesHandling`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.property.mutingRulesHandling" id="cdktfprovidernewrelicworkflowpropertymutingruleshandling"></a>
+
+```typescript
+public readonly mutingRulesHandling: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.property.name" id="cdktfprovidernewrelicworkflowpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `workflowEnabled`<sup>Required</sup> <a name="@cdktf/provider-newrelic.Workflow.property.workflowEnabled" id="cdktfprovidernewrelicworkflowpropertyworkflowenabled"></a>
+
+```typescript
+public readonly workflowEnabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+#### Constants <a name="Constants" id="constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`tfResourceType`](#cdktfprovidernewrelicworkflowpropertytfresourcetype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `tfResourceType` <a name="@cdktf/provider-newrelic.Workflow.property.tfResourceType" id="cdktfprovidernewrelicworkflowpropertytfresourcetype"></a>
+
+- *Type:* `string`
+
+---
+
 ### Workload <a name="@cdktf/provider-newrelic.Workload" id="cdktfprovidernewrelicworkload"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/workload newrelic_workload}.
@@ -15005,7 +15705,7 @@ const alertChannelConfig: AlertChannelConfig = { ... }
 | [`provider`](#cdktfprovidernewrelicalertchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`provisioners`](#cdktfprovidernewrelicalertchannelconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertchannelconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the channel. |
-| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (opsgenie, pagerduty, slack, user, victorops, webhook, email). |
+| [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie). |
 | [`accountId`](#cdktfprovidernewrelicalertchannelconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create alert channels. |
 | [`config`](#cdktfprovidernewrelicalertchannelconfigpropertyconfig) | [`@cdktf/provider-newrelic.AlertChannelConfigA`](#@cdktf/provider-newrelic.AlertChannelConfigA) | config block. |
 | [`id`](#cdktfprovidernewrelicalertchannelconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#id AlertChannel#id}. |
@@ -15104,7 +15804,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-(Required) The type of channel. One of: (opsgenie, pagerduty, slack, user, victorops, webhook, email).
+(Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
 
@@ -15510,7 +16210,7 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | [`policyId`](#cdktfprovidernewrelicalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
 | [`term`](#cdktfprovidernewrelicalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.AlertConditionTerm`](#@cdktf/provider-newrelic.AlertConditionTerm)[] | term block. |
-| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric). |
+| [`type`](#cdktfprovidernewrelicalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of condition. One of: (mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric). |
 | [`conditionScope`](#cdktfprovidernewrelicalertconditionconfigpropertyconditionscope) | `string` | One of (application, instance). |
 | [`enabled`](#cdktfprovidernewrelicalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the condition is enabled. |
 | [`gcMetric`](#cdktfprovidernewrelicalertconditionconfigpropertygcmetric) | `string` | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -15670,7 +16370,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-The type of condition. One of: (apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric).
+The type of condition. One of: (mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 
@@ -23623,760 +24323,6 @@ Please be aware that the id field is automatically added to all resources in Ter
 
 ---
 
-### DashboardConfig <a name="@cdktf/provider-newrelic.DashboardConfig" id="cdktfprovidernewrelicdashboardconfig"></a>
-
-#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
-
-```typescript
-import { DashboardConfig } from '@cdktf/provider-newrelic'
-
-const dashboardConfig: DashboardConfig = { ... }
-```
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicdashboardconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
-| [`count`](#cdktfprovidernewrelicdashboardconfigpropertycount) | `number` | *No description.* |
-| [`dependsOn`](#cdktfprovidernewrelicdashboardconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
-| [`forEach`](#cdktfprovidernewrelicdashboardconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
-| [`lifecycle`](#cdktfprovidernewrelicdashboardconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
-| [`provider`](#cdktfprovidernewrelicdashboardconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicdashboardconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
-| [`title`](#cdktfprovidernewrelicdashboardconfigpropertytitle)<span title="Required">*</span> | `string` | The title of the dashboard. |
-| [`editable`](#cdktfprovidernewrelicdashboardconfigpropertyeditable) | `string` | Determines who can edit the dashboard in an account. |
-| [`filter`](#cdktfprovidernewrelicdashboardconfigpropertyfilter) | [`@cdktf/provider-newrelic.DashboardFilter`](#@cdktf/provider-newrelic.DashboardFilter) | filter block. |
-| [`gridColumnCount`](#cdktfprovidernewrelicdashboardconfigpropertygridcolumncount) | `number` | New Relic One supports a 3 column grid or a 12 column grid. |
-| [`icon`](#cdktfprovidernewrelicdashboardconfigpropertyicon) | `string` | The icon for the dashboard. |
-| [`id`](#cdktfprovidernewrelicdashboardconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#id Dashboard#id}. |
-| [`visibility`](#cdktfprovidernewrelicdashboardconfigpropertyvisibility) | `string` | Determines who can see the dashboard in an account. Valid values are all or owner. Defaults to all. |
-| [`widget`](#cdktfprovidernewrelicdashboardconfigpropertywidget) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[] | widget block. |
-
----
-
-##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.connection" id="cdktfprovidernewrelicdashboardconfigpropertyconnection"></a>
-
-```typescript
-public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
-```
-
-- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
-
----
-
-##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.count" id="cdktfprovidernewrelicdashboardconfigpropertycount"></a>
-
-```typescript
-public readonly count: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.dependsOn" id="cdktfprovidernewrelicdashboardconfigpropertydependson"></a>
-
-```typescript
-public readonly dependsOn: ITerraformDependable[];
-```
-
-- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
-
----
-
-##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.forEach" id="cdktfprovidernewrelicdashboardconfigpropertyforeach"></a>
-
-```typescript
-public readonly forEach: ITerraformIterator;
-```
-
-- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
-
----
-
-##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.lifecycle" id="cdktfprovidernewrelicdashboardconfigpropertylifecycle"></a>
-
-```typescript
-public readonly lifecycle: TerraformResourceLifecycle;
-```
-
-- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
-
----
-
-##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.provider" id="cdktfprovidernewrelicdashboardconfigpropertyprovider"></a>
-
-```typescript
-public readonly provider: TerraformProvider;
-```
-
-- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
-
----
-
-##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.provisioners" id="cdktfprovidernewrelicdashboardconfigpropertyprovisioners"></a>
-
-```typescript
-public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
-```
-
-- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
-
----
-
-##### `title`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.title" id="cdktfprovidernewrelicdashboardconfigpropertytitle"></a>
-
-```typescript
-public readonly title: string;
-```
-
-- *Type:* `string`
-
-The title of the dashboard.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#title Dashboard#title}
-
----
-
-##### `editable`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.editable" id="cdktfprovidernewrelicdashboardconfigpropertyeditable"></a>
-
-```typescript
-public readonly editable: string;
-```
-
-- *Type:* `string`
-
-Determines who can edit the dashboard in an account.
-
-Valid values are all, editable_by_all, editable_by_owner, or read_only. Defaults to editable_by_all.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#editable Dashboard#editable}
-
----
-
-##### `filter`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.filter" id="cdktfprovidernewrelicdashboardconfigpropertyfilter"></a>
-
-```typescript
-public readonly filter: DashboardFilter;
-```
-
-- *Type:* [`@cdktf/provider-newrelic.DashboardFilter`](#@cdktf/provider-newrelic.DashboardFilter)
-
-filter block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#filter Dashboard#filter}
-
----
-
-##### `gridColumnCount`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.gridColumnCount" id="cdktfprovidernewrelicdashboardconfigpropertygridcolumncount"></a>
-
-```typescript
-public readonly gridColumnCount: number;
-```
-
-- *Type:* `number`
-
-New Relic One supports a 3 column grid or a 12 column grid.
-
-New Relic Insights supports a 3 column grid.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#grid_column_count Dashboard#grid_column_count}
-
----
-
-##### `icon`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.icon" id="cdktfprovidernewrelicdashboardconfigpropertyicon"></a>
-
-```typescript
-public readonly icon: string;
-```
-
-- *Type:* `string`
-
-The icon for the dashboard.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#icon Dashboard#icon}
-
----
-
-##### `id`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.id" id="cdktfprovidernewrelicdashboardconfigpropertyid"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#id Dashboard#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `visibility`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.visibility" id="cdktfprovidernewrelicdashboardconfigpropertyvisibility"></a>
-
-```typescript
-public readonly visibility: string;
-```
-
-- *Type:* `string`
-
-Determines who can see the dashboard in an account. Valid values are all or owner. Defaults to all.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#visibility Dashboard#visibility}
-
----
-
-##### `widget`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.widget" id="cdktfprovidernewrelicdashboardconfigpropertywidget"></a>
-
-```typescript
-public readonly widget: IResolvable | DashboardWidget[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[]
-
-widget block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#widget Dashboard#widget}
-
----
-
-### DashboardFilter <a name="@cdktf/provider-newrelic.DashboardFilter" id="cdktfprovidernewrelicdashboardfilter"></a>
-
-#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
-
-```typescript
-import { DashboardFilter } from '@cdktf/provider-newrelic'
-
-const dashboardFilter: DashboardFilter = { ... }
-```
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`eventTypes`](#cdktfprovidernewrelicdashboardfilterpropertyeventtypes)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#event_types Dashboard#event_types}. |
-| [`attributes`](#cdktfprovidernewrelicdashboardfilterpropertyattributes) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#attributes Dashboard#attributes}. |
-
----
-
-##### `eventTypes`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardFilter.property.eventTypes" id="cdktfprovidernewrelicdashboardfilterpropertyeventtypes"></a>
-
-```typescript
-public readonly eventTypes: string[];
-```
-
-- *Type:* `string`[]
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#event_types Dashboard#event_types}.
-
----
-
-##### `attributes`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardFilter.property.attributes" id="cdktfprovidernewrelicdashboardfilterpropertyattributes"></a>
-
-```typescript
-public readonly attributes: string[];
-```
-
-- *Type:* `string`[]
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#attributes Dashboard#attributes}.
-
----
-
-### DashboardWidget <a name="@cdktf/provider-newrelic.DashboardWidget" id="cdktfprovidernewrelicdashboardwidget"></a>
-
-#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
-
-```typescript
-import { DashboardWidget } from '@cdktf/provider-newrelic'
-
-const dashboardWidget: DashboardWidget = { ... }
-```
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`column`](#cdktfprovidernewrelicdashboardwidgetpropertycolumn)<span title="Required">*</span> | `number` | Column position of widget from top left, starting at 1. |
-| [`row`](#cdktfprovidernewrelicdashboardwidgetpropertyrow)<span title="Required">*</span> | `number` | Row position of widget from top left, starting at 1. |
-| [`title`](#cdktfprovidernewrelicdashboardwidgetpropertytitle)<span title="Required">*</span> | `string` | A title for the widget. |
-| [`visualization`](#cdktfprovidernewrelicdashboardwidgetpropertyvisualization)<span title="Required">*</span> | `string` | How the widget visualizes data. |
-| [`accountId`](#cdktfprovidernewrelicdashboardwidgetpropertyaccountid) | `number` | The target account ID to fetch data from, if not the current account. |
-| [`compareWith`](#cdktfprovidernewrelicdashboardwidgetpropertycomparewith) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidgetCompareWith`](#@cdktf/provider-newrelic.DashboardWidgetCompareWith)[] | compare_with block. |
-| [`drilldownDashboardId`](#cdktfprovidernewrelicdashboardwidgetpropertydrilldowndashboardid) | `number` | The ID of a dashboard to link to from the widget's facets. |
-| [`duration`](#cdktfprovidernewrelicdashboardwidgetpropertyduration) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#duration Dashboard#duration}. |
-| [`endTime`](#cdktfprovidernewrelicdashboardwidgetpropertyendtime) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#end_time Dashboard#end_time}. |
-| [`entityIds`](#cdktfprovidernewrelicdashboardwidgetpropertyentityids) | `number`[] | A collection of entity ids to display data for. These are typically application IDs. |
-| [`facet`](#cdktfprovidernewrelicdashboardwidgetpropertyfacet) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#facet Dashboard#facet}. |
-| [`height`](#cdktfprovidernewrelicdashboardwidgetpropertyheight) | `number` | Height of the widget. Valid values are 1 to 3 inclusive. Defaults to 1. |
-| [`limit`](#cdktfprovidernewrelicdashboardwidgetpropertylimit) | `number` | The limit of distinct data series to display.  Requires `order_by` to be set. |
-| [`metric`](#cdktfprovidernewrelicdashboardwidgetpropertymetric) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidgetMetric`](#@cdktf/provider-newrelic.DashboardWidgetMetric)[] | metric block. |
-| [`notes`](#cdktfprovidernewrelicdashboardwidgetpropertynotes) | `string` | Description of the widget. |
-| [`nrql`](#cdktfprovidernewrelicdashboardwidgetpropertynrql) | `string` | Valid NRQL query string. |
-| [`orderBy`](#cdktfprovidernewrelicdashboardwidgetpropertyorderby) | `string` | Set the order of result series.  Required when using `limit`. |
-| [`source`](#cdktfprovidernewrelicdashboardwidgetpropertysource) | `string` | The markdown source to be rendered in the widget. |
-| [`thresholdRed`](#cdktfprovidernewrelicdashboardwidgetpropertythresholdred) | `number` | Threshold above which the displayed value will be styled with a red color. |
-| [`thresholdYellow`](#cdktfprovidernewrelicdashboardwidgetpropertythresholdyellow) | `number` | Threshold above which the displayed value will be styled with a yellow color. |
-| [`width`](#cdktfprovidernewrelicdashboardwidgetpropertywidth) | `number` | Width of the widget. Valid values are 1 to 3 inclusive. Defaults to 1. |
-
----
-
-##### `column`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.column" id="cdktfprovidernewrelicdashboardwidgetpropertycolumn"></a>
-
-```typescript
-public readonly column: number;
-```
-
-- *Type:* `number`
-
-Column position of widget from top left, starting at 1.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#column Dashboard#column}
-
----
-
-##### `row`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.row" id="cdktfprovidernewrelicdashboardwidgetpropertyrow"></a>
-
-```typescript
-public readonly row: number;
-```
-
-- *Type:* `number`
-
-Row position of widget from top left, starting at 1.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#row Dashboard#row}
-
----
-
-##### `title`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.title" id="cdktfprovidernewrelicdashboardwidgetpropertytitle"></a>
-
-```typescript
-public readonly title: string;
-```
-
-- *Type:* `string`
-
-A title for the widget.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#title Dashboard#title}
-
----
-
-##### `visualization`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.visualization" id="cdktfprovidernewrelicdashboardwidgetpropertyvisualization"></a>
-
-```typescript
-public readonly visualization: string;
-```
-
-- *Type:* `string`
-
-How the widget visualizes data.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#visualization Dashboard#visualization}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.accountId" id="cdktfprovidernewrelicdashboardwidgetpropertyaccountid"></a>
-
-```typescript
-public readonly accountId: number;
-```
-
-- *Type:* `number`
-
-The target account ID to fetch data from, if not the current account.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#account_id Dashboard#account_id}
-
----
-
-##### `compareWith`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.compareWith" id="cdktfprovidernewrelicdashboardwidgetpropertycomparewith"></a>
-
-```typescript
-public readonly compareWith: IResolvable | DashboardWidgetCompareWith[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidgetCompareWith`](#@cdktf/provider-newrelic.DashboardWidgetCompareWith)[]
-
-compare_with block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#compare_with Dashboard#compare_with}
-
----
-
-##### `drilldownDashboardId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.drilldownDashboardId" id="cdktfprovidernewrelicdashboardwidgetpropertydrilldowndashboardid"></a>
-
-```typescript
-public readonly drilldownDashboardId: number;
-```
-
-- *Type:* `number`
-
-The ID of a dashboard to link to from the widget's facets.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#drilldown_dashboard_id Dashboard#drilldown_dashboard_id}
-
----
-
-##### `duration`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.duration" id="cdktfprovidernewrelicdashboardwidgetpropertyduration"></a>
-
-```typescript
-public readonly duration: number;
-```
-
-- *Type:* `number`
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#duration Dashboard#duration}.
-
----
-
-##### `endTime`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.endTime" id="cdktfprovidernewrelicdashboardwidgetpropertyendtime"></a>
-
-```typescript
-public readonly endTime: number;
-```
-
-- *Type:* `number`
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#end_time Dashboard#end_time}.
-
----
-
-##### `entityIds`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.entityIds" id="cdktfprovidernewrelicdashboardwidgetpropertyentityids"></a>
-
-```typescript
-public readonly entityIds: number[];
-```
-
-- *Type:* `number`[]
-
-A collection of entity ids to display data for. These are typically application IDs.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#entity_ids Dashboard#entity_ids}
-
----
-
-##### `facet`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.facet" id="cdktfprovidernewrelicdashboardwidgetpropertyfacet"></a>
-
-```typescript
-public readonly facet: string;
-```
-
-- *Type:* `string`
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#facet Dashboard#facet}.
-
----
-
-##### `height`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.height" id="cdktfprovidernewrelicdashboardwidgetpropertyheight"></a>
-
-```typescript
-public readonly height: number;
-```
-
-- *Type:* `number`
-
-Height of the widget. Valid values are 1 to 3 inclusive. Defaults to 1.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#height Dashboard#height}
-
----
-
-##### `limit`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.limit" id="cdktfprovidernewrelicdashboardwidgetpropertylimit"></a>
-
-```typescript
-public readonly limit: number;
-```
-
-- *Type:* `number`
-
-The limit of distinct data series to display.  Requires `order_by` to be set.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#limit Dashboard#limit}
-
----
-
-##### `metric`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.metric" id="cdktfprovidernewrelicdashboardwidgetpropertymetric"></a>
-
-```typescript
-public readonly metric: IResolvable | DashboardWidgetMetric[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidgetMetric`](#@cdktf/provider-newrelic.DashboardWidgetMetric)[]
-
-metric block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#metric Dashboard#metric}
-
----
-
-##### `notes`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.notes" id="cdktfprovidernewrelicdashboardwidgetpropertynotes"></a>
-
-```typescript
-public readonly notes: string;
-```
-
-- *Type:* `string`
-
-Description of the widget.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#notes Dashboard#notes}
-
----
-
-##### `nrql`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.nrql" id="cdktfprovidernewrelicdashboardwidgetpropertynrql"></a>
-
-```typescript
-public readonly nrql: string;
-```
-
-- *Type:* `string`
-
-Valid NRQL query string.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#nrql Dashboard#nrql}
-
----
-
-##### `orderBy`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.orderBy" id="cdktfprovidernewrelicdashboardwidgetpropertyorderby"></a>
-
-```typescript
-public readonly orderBy: string;
-```
-
-- *Type:* `string`
-
-Set the order of result series.  Required when using `limit`.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#order_by Dashboard#order_by}
-
----
-
-##### `source`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.source" id="cdktfprovidernewrelicdashboardwidgetpropertysource"></a>
-
-```typescript
-public readonly source: string;
-```
-
-- *Type:* `string`
-
-The markdown source to be rendered in the widget.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#source Dashboard#source}
-
----
-
-##### `thresholdRed`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.thresholdRed" id="cdktfprovidernewrelicdashboardwidgetpropertythresholdred"></a>
-
-```typescript
-public readonly thresholdRed: number;
-```
-
-- *Type:* `number`
-
-Threshold above which the displayed value will be styled with a red color.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#threshold_red Dashboard#threshold_red}
-
----
-
-##### `thresholdYellow`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.thresholdYellow" id="cdktfprovidernewrelicdashboardwidgetpropertythresholdyellow"></a>
-
-```typescript
-public readonly thresholdYellow: number;
-```
-
-- *Type:* `number`
-
-Threshold above which the displayed value will be styled with a yellow color.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#threshold_yellow Dashboard#threshold_yellow}
-
----
-
-##### `width`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidget.property.width" id="cdktfprovidernewrelicdashboardwidgetpropertywidth"></a>
-
-```typescript
-public readonly width: number;
-```
-
-- *Type:* `number`
-
-Width of the widget. Valid values are 1 to 3 inclusive. Defaults to 1.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#width Dashboard#width}
-
----
-
-### DashboardWidgetCompareWith <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWith" id="cdktfprovidernewrelicdashboardwidgetcomparewith"></a>
-
-#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
-
-```typescript
-import { DashboardWidgetCompareWith } from '@cdktf/provider-newrelic'
-
-const dashboardWidgetCompareWith: DashboardWidgetCompareWith = { ... }
-```
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`offsetDuration`](#cdktfprovidernewrelicdashboardwidgetcomparewithpropertyoffsetduration)<span title="Required">*</span> | `string` | The offset duration for the COMPARE WITH clause. |
-| [`presentation`](#cdktfprovidernewrelicdashboardwidgetcomparewithpropertypresentation)<span title="Required">*</span> | [`@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation`](#@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation) | presentation block. |
-
----
-
-##### `offsetDuration`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWith.property.offsetDuration" id="cdktfprovidernewrelicdashboardwidgetcomparewithpropertyoffsetduration"></a>
-
-```typescript
-public readonly offsetDuration: string;
-```
-
-- *Type:* `string`
-
-The offset duration for the COMPARE WITH clause.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#offset_duration Dashboard#offset_duration}
-
----
-
-##### `presentation`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWith.property.presentation" id="cdktfprovidernewrelicdashboardwidgetcomparewithpropertypresentation"></a>
-
-```typescript
-public readonly presentation: DashboardWidgetCompareWithPresentation;
-```
-
-- *Type:* [`@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation`](#@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation)
-
-presentation block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#presentation Dashboard#presentation}
-
----
-
-### DashboardWidgetCompareWithPresentation <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation" id="cdktfprovidernewrelicdashboardwidgetcomparewithpresentation"></a>
-
-#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
-
-```typescript
-import { DashboardWidgetCompareWithPresentation } from '@cdktf/provider-newrelic'
-
-const dashboardWidgetCompareWithPresentation: DashboardWidgetCompareWithPresentation = { ... }
-```
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`color`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationpropertycolor)<span title="Required">*</span> | `string` | The color for the rendered data. |
-| [`name`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationpropertyname)<span title="Required">*</span> | `string` | The name for the rendered data. |
-
----
-
-##### `color`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation.property.color" id="cdktfprovidernewrelicdashboardwidgetcomparewithpresentationpropertycolor"></a>
-
-```typescript
-public readonly color: string;
-```
-
-- *Type:* `string`
-
-The color for the rendered data.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#color Dashboard#color}
-
----
-
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation.property.name" id="cdktfprovidernewrelicdashboardwidgetcomparewithpresentationpropertyname"></a>
-
-```typescript
-public readonly name: string;
-```
-
-- *Type:* `string`
-
-The name for the rendered data.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#name Dashboard#name}
-
----
-
-### DashboardWidgetMetric <a name="@cdktf/provider-newrelic.DashboardWidgetMetric" id="cdktfprovidernewrelicdashboardwidgetmetric"></a>
-
-#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
-
-```typescript
-import { DashboardWidgetMetric } from '@cdktf/provider-newrelic'
-
-const dashboardWidgetMetric: DashboardWidgetMetric = { ... }
-```
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`name`](#cdktfprovidernewrelicdashboardwidgetmetricpropertyname)<span title="Required">*</span> | `string` | The metric name to display. |
-| [`scope`](#cdktfprovidernewrelicdashboardwidgetmetricpropertyscope) | `string` | The metric scope. |
-| [`units`](#cdktfprovidernewrelicdashboardwidgetmetricpropertyunits) | `string` | The metric units. |
-| [`values`](#cdktfprovidernewrelicdashboardwidgetmetricpropertyvalues) | `string`[] | The metric values to display. |
-
----
-
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetric.property.name" id="cdktfprovidernewrelicdashboardwidgetmetricpropertyname"></a>
-
-```typescript
-public readonly name: string;
-```
-
-- *Type:* `string`
-
-The metric name to display.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#name Dashboard#name}
-
----
-
-##### `scope`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetric.property.scope" id="cdktfprovidernewrelicdashboardwidgetmetricpropertyscope"></a>
-
-```typescript
-public readonly scope: string;
-```
-
-- *Type:* `string`
-
-The metric scope.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#scope Dashboard#scope}
-
----
-
-##### `units`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetric.property.units" id="cdktfprovidernewrelicdashboardwidgetmetricpropertyunits"></a>
-
-```typescript
-public readonly units: string;
-```
-
-- *Type:* `string`
-
-The metric units.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#units Dashboard#units}
-
----
-
-##### `values`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetric.property.values" id="cdktfprovidernewrelicdashboardwidgetmetricpropertyvalues"></a>
-
-```typescript
-public readonly values: string[];
-```
-
-- *Type:* `string`[]
-
-The metric values to display.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard#values Dashboard#values}
-
----
-
 ### DataNewrelicAccountConfig <a name="@cdktf/provider-newrelic.DataNewrelicAccountConfig" id="cdktfprovidernewrelicdatanewrelicaccountconfig"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
@@ -25450,239 +25396,6 @@ public readonly id: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/key_transaction#id DataNewrelicKeyTransaction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-### DataNewrelicPluginComponentConfig <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig" id="cdktfprovidernewrelicdatanewrelicplugincomponentconfig"></a>
-
-#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
-
-```typescript
-import { DataNewrelicPluginComponentConfig } from '@cdktf/provider-newrelic'
-
-const dataNewrelicPluginComponentConfig: DataNewrelicPluginComponentConfig = { ... }
-```
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
-| [`count`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertycount) | `number` | *No description.* |
-| [`dependsOn`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
-| [`forEach`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
-| [`lifecycle`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
-| [`provider`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
-| [`name`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyname)<span title="Required">*</span> | `string` | The name of the plugin component. |
-| [`pluginId`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertypluginid)<span title="Required">*</span> | `number` | The ID of the plugin instance this component belongs to. |
-
----
-
-##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyconnection"></a>
-
-```typescript
-public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
-```
-
-- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
-
----
-
-##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig.property.count" id="cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertycount"></a>
-
-```typescript
-public readonly count: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig.property.dependsOn" id="cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertydependson"></a>
-
-```typescript
-public readonly dependsOn: ITerraformDependable[];
-```
-
-- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
-
----
-
-##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig.property.forEach" id="cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyforeach"></a>
-
-```typescript
-public readonly forEach: ITerraformIterator;
-```
-
-- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
-
----
-
-##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig.property.lifecycle" id="cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertylifecycle"></a>
-
-```typescript
-public readonly lifecycle: TerraformResourceLifecycle;
-```
-
-- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
-
----
-
-##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig.property.provider" id="cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyprovider"></a>
-
-```typescript
-public readonly provider: TerraformProvider;
-```
-
-- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
-
----
-
-##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyprovisioners"></a>
-
-```typescript
-public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
-```
-
-- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
-
----
-
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig.property.name" id="cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyname"></a>
-
-```typescript
-public readonly name: string;
-```
-
-- *Type:* `string`
-
-The name of the plugin component.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component#name DataNewrelicPluginComponent#name}
-
----
-
-##### `pluginId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig.property.pluginId" id="cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertypluginid"></a>
-
-```typescript
-public readonly pluginId: number;
-```
-
-- *Type:* `number`
-
-The ID of the plugin instance this component belongs to.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component#plugin_id DataNewrelicPluginComponent#plugin_id}
-
----
-
-### DataNewrelicPluginConfig <a name="@cdktf/provider-newrelic.DataNewrelicPluginConfig" id="cdktfprovidernewrelicdatanewrelicpluginconfig"></a>
-
-#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
-
-```typescript
-import { DataNewrelicPluginConfig } from '@cdktf/provider-newrelic'
-
-const dataNewrelicPluginConfig: DataNewrelicPluginConfig = { ... }
-```
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
-| [`count`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertycount) | `number` | *No description.* |
-| [`dependsOn`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
-| [`forEach`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
-| [`lifecycle`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
-| [`provider`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
-| [`guid`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyguid)<span title="Required">*</span> | `string` | The GUID of the plugin in New Relic. |
-
----
-
-##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicpluginconfigpropertyconnection"></a>
-
-```typescript
-public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
-```
-
-- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
-
----
-
-##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginConfig.property.count" id="cdktfprovidernewrelicdatanewrelicpluginconfigpropertycount"></a>
-
-```typescript
-public readonly count: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginConfig.property.dependsOn" id="cdktfprovidernewrelicdatanewrelicpluginconfigpropertydependson"></a>
-
-```typescript
-public readonly dependsOn: ITerraformDependable[];
-```
-
-- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
-
----
-
-##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginConfig.property.forEach" id="cdktfprovidernewrelicdatanewrelicpluginconfigpropertyforeach"></a>
-
-```typescript
-public readonly forEach: ITerraformIterator;
-```
-
-- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
-
----
-
-##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginConfig.property.lifecycle" id="cdktfprovidernewrelicdatanewrelicpluginconfigpropertylifecycle"></a>
-
-```typescript
-public readonly lifecycle: TerraformResourceLifecycle;
-```
-
-- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
-
----
-
-##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginConfig.property.provider" id="cdktfprovidernewrelicdatanewrelicpluginconfigpropertyprovider"></a>
-
-```typescript
-public readonly provider: TerraformProvider;
-```
-
-- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
-
----
-
-##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicpluginconfigpropertyprovisioners"></a>
-
-```typescript
-public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
-```
-
-- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
-
----
-
-##### `guid`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginConfig.property.guid" id="cdktfprovidernewrelicdatanewrelicpluginconfigpropertyguid"></a>
-
-```typescript
-public readonly guid: string;
-```
-
-- *Type:* `string`
-
-The GUID of the plugin in New Relic.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/plugin#guid DataNewrelicPlugin#guid}
 
 ---
 
@@ -27391,12 +27104,14 @@ const notificationChannelConfig: NotificationChannelConfig = { ... }
 | [`lifecycle`](#cdktfprovidernewrelicnotificationchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicnotificationchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`provisioners`](#cdktfprovidernewrelicnotificationchannelconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
+| [`accountId`](#cdktfprovidernewrelicnotificationchannelconfigpropertyaccountid)<span title="Required">*</span> | `number` | The account id of the channel. |
 | [`destinationId`](#cdktfprovidernewrelicnotificationchannelconfigpropertydestinationid)<span title="Required">*</span> | `string` | (Required) The id of the destination. |
 | [`name`](#cdktfprovidernewrelicnotificationchannelconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the channel. |
-| [`product`](#cdktfprovidernewrelicnotificationchannelconfigpropertyproduct)<span title="Required">*</span> | `string` | (Required) The type of the channel product. One of: (ALERTS, DISCUSSIONS, ERROR_TRACKING, NTFC, SHARING, PD, IINT). |
-| [`type`](#cdktfprovidernewrelicnotificationchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of the channel. One of: (WEBHOOK, EMAIL, SERVICENOW_INCIDENTS, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION). |
+| [`product`](#cdktfprovidernewrelicnotificationchannelconfigpropertyproduct)<span title="Required">*</span> | `string` | (Required) The type of the channel product. One of: (DISCUSSIONS, ERROR_TRACKING, IINT). |
+| [`property`](#cdktfprovidernewrelicnotificationchannelconfigpropertyproperty)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationChannelProperty`](#@cdktf/provider-newrelic.NotificationChannelProperty)[] | property block. |
+| [`type`](#cdktfprovidernewrelicnotificationchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of the channel. One of: (WEBHOOK, EMAIL, SERVICENOW_INCIDENTS, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION, JIRA_NEXTGEN, JIRA_CLASSIC). |
+| [`active`](#cdktfprovidernewrelicnotificationchannelconfigpropertyactive) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Indicates whether the channel is active. |
 | [`id`](#cdktfprovidernewrelicnotificationchannelconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#id NotificationChannel#id}. |
-| [`properties`](#cdktfprovidernewrelicnotificationchannelconfigpropertyproperties) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties)[] | properties block. |
 
 ---
 
@@ -27470,6 +27185,20 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.accountId" id="cdktfprovidernewrelicnotificationchannelconfigpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+The account id of the channel.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#account_id NotificationChannel#account_id}
+
+---
+
 ##### `destinationId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.destinationId" id="cdktfprovidernewrelicnotificationchannelconfigpropertydestinationid"></a>
 
 ```typescript
@@ -27506,9 +27235,23 @@ public readonly product: string;
 
 - *Type:* `string`
 
-(Required) The type of the channel product. One of: (ALERTS, DISCUSSIONS, ERROR_TRACKING, NTFC, SHARING, PD, IINT).
+(Required) The type of the channel product. One of: (DISCUSSIONS, ERROR_TRACKING, IINT).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#product NotificationChannel#product}
+
+---
+
+##### `property`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.property" id="cdktfprovidernewrelicnotificationchannelconfigpropertyproperty"></a>
+
+```typescript
+public readonly property: IResolvable | NotificationChannelProperty[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationChannelProperty`](#@cdktf/provider-newrelic.NotificationChannelProperty)[]
+
+property block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#property NotificationChannel#property}
 
 ---
 
@@ -27520,9 +27263,23 @@ public readonly type: string;
 
 - *Type:* `string`
 
-(Required) The type of the channel. One of: (WEBHOOK, EMAIL, SERVICENOW_INCIDENTS, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION).
+(Required) The type of the channel. One of: (WEBHOOK, EMAIL, SERVICENOW_INCIDENTS, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION, JIRA_NEXTGEN, JIRA_CLASSIC).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#type NotificationChannel#type}
+
+---
+
+##### `active`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.active" id="cdktfprovidernewrelicnotificationchannelconfigpropertyactive"></a>
+
+```typescript
+public readonly active: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Indicates whether the channel is active.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#active NotificationChannel#active}
 
 ---
 
@@ -27540,42 +27297,28 @@ Please be aware that the id field is automatically added to all resources in Ter
 
 ---
 
-##### `properties`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.properties" id="cdktfprovidernewrelicnotificationchannelconfigpropertyproperties"></a>
-
-```typescript
-public readonly properties: IResolvable | NotificationChannelProperties[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties)[]
-
-properties block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#properties NotificationChannel#properties}
-
----
-
-### NotificationChannelProperties <a name="@cdktf/provider-newrelic.NotificationChannelProperties" id="cdktfprovidernewrelicnotificationchannelproperties"></a>
+### NotificationChannelProperty <a name="@cdktf/provider-newrelic.NotificationChannelProperty" id="cdktfprovidernewrelicnotificationchannelproperty"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
 
 ```typescript
-import { NotificationChannelProperties } from '@cdktf/provider-newrelic'
+import { NotificationChannelProperty } from '@cdktf/provider-newrelic'
 
-const notificationChannelProperties: NotificationChannelProperties = { ... }
+const notificationChannelProperty: NotificationChannelProperty = { ... }
 ```
 
 #### Properties <a name="Properties" id="properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`key`](#cdktfprovidernewrelicnotificationchannelpropertiespropertykey)<span title="Required">*</span> | `string` | Notification channel property key. |
-| [`value`](#cdktfprovidernewrelicnotificationchannelpropertiespropertyvalue)<span title="Required">*</span> | `string` | Notification channel property value. |
-| [`displayValue`](#cdktfprovidernewrelicnotificationchannelpropertiespropertydisplayvalue) | `string` | Notification channel property display key. |
-| [`label`](#cdktfprovidernewrelicnotificationchannelpropertiespropertylabel) | `string` | Notification channel property label. |
+| [`key`](#cdktfprovidernewrelicnotificationchannelpropertypropertykey)<span title="Required">*</span> | `string` | Notification property key. |
+| [`value`](#cdktfprovidernewrelicnotificationchannelpropertypropertyvalue)<span title="Required">*</span> | `string` | Notification property value. |
+| [`displayValue`](#cdktfprovidernewrelicnotificationchannelpropertypropertydisplayvalue) | `string` | Notification property display key. |
+| [`label`](#cdktfprovidernewrelicnotificationchannelpropertypropertylabel) | `string` | Notification property label. |
 
 ---
 
-##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelProperties.property.key" id="cdktfprovidernewrelicnotificationchannelpropertiespropertykey"></a>
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelProperty.property.key" id="cdktfprovidernewrelicnotificationchannelpropertypropertykey"></a>
 
 ```typescript
 public readonly key: string;
@@ -27583,13 +27326,13 @@ public readonly key: string;
 
 - *Type:* `string`
 
-Notification channel property key.
+Notification property key.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#key NotificationChannel#key}
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelProperties.property.value" id="cdktfprovidernewrelicnotificationchannelpropertiespropertyvalue"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelProperty.property.value" id="cdktfprovidernewrelicnotificationchannelpropertypropertyvalue"></a>
 
 ```typescript
 public readonly value: string;
@@ -27597,13 +27340,13 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Notification channel property value.
+Notification property value.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#value NotificationChannel#value}
 
 ---
 
-##### `displayValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelProperties.property.displayValue" id="cdktfprovidernewrelicnotificationchannelpropertiespropertydisplayvalue"></a>
+##### `displayValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelProperty.property.displayValue" id="cdktfprovidernewrelicnotificationchannelpropertypropertydisplayvalue"></a>
 
 ```typescript
 public readonly displayValue: string;
@@ -27611,13 +27354,13 @@ public readonly displayValue: string;
 
 - *Type:* `string`
 
-Notification channel property display key.
+Notification property display key.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#display_value NotificationChannel#display_value}
 
 ---
 
-##### `label`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelProperties.property.label" id="cdktfprovidernewrelicnotificationchannelpropertiespropertylabel"></a>
+##### `label`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelProperty.property.label" id="cdktfprovidernewrelicnotificationchannelpropertypropertylabel"></a>
 
 ```typescript
 public readonly label: string;
@@ -27625,9 +27368,95 @@ public readonly label: string;
 
 - *Type:* `string`
 
-Notification channel property label.
+Notification property label.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#label NotificationChannel#label}
+
+---
+
+### NotificationDestinationAuthBasic <a name="@cdktf/provider-newrelic.NotificationDestinationAuthBasic" id="cdktfprovidernewrelicnotificationdestinationauthbasic"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { NotificationDestinationAuthBasic } from '@cdktf/provider-newrelic'
+
+const notificationDestinationAuthBasic: NotificationDestinationAuthBasic = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`password`](#cdktfprovidernewrelicnotificationdestinationauthbasicpropertypassword)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#password NotificationDestination#password}. |
+| [`user`](#cdktfprovidernewrelicnotificationdestinationauthbasicpropertyuser)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#user NotificationDestination#user}. |
+
+---
+
+##### `password`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthBasic.property.password" id="cdktfprovidernewrelicnotificationdestinationauthbasicpropertypassword"></a>
+
+```typescript
+public readonly password: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#password NotificationDestination#password}.
+
+---
+
+##### `user`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthBasic.property.user" id="cdktfprovidernewrelicnotificationdestinationauthbasicpropertyuser"></a>
+
+```typescript
+public readonly user: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#user NotificationDestination#user}.
+
+---
+
+### NotificationDestinationAuthToken <a name="@cdktf/provider-newrelic.NotificationDestinationAuthToken" id="cdktfprovidernewrelicnotificationdestinationauthtoken"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { NotificationDestinationAuthToken } from '@cdktf/provider-newrelic'
+
+const notificationDestinationAuthToken: NotificationDestinationAuthToken = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`token`](#cdktfprovidernewrelicnotificationdestinationauthtokenpropertytoken)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#token NotificationDestination#token}. |
+| [`prefix`](#cdktfprovidernewrelicnotificationdestinationauthtokenpropertyprefix) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#prefix NotificationDestination#prefix}. |
+
+---
+
+##### `token`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthToken.property.token" id="cdktfprovidernewrelicnotificationdestinationauthtokenpropertytoken"></a>
+
+```typescript
+public readonly token: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#token NotificationDestination#token}.
+
+---
+
+##### `prefix`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthToken.property.prefix" id="cdktfprovidernewrelicnotificationdestinationauthtokenpropertyprefix"></a>
+
+```typescript
+public readonly prefix: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#prefix NotificationDestination#prefix}.
 
 ---
 
@@ -27652,11 +27481,14 @@ const notificationDestinationConfig: NotificationDestinationConfig = { ... }
 | [`lifecycle`](#cdktfprovidernewrelicnotificationdestinationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`provisioners`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
+| [`accountId`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyaccountid)<span title="Required">*</span> | `number` | The account ID under which to put the destination. |
 | [`name`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the destination. |
-| [`type`](#cdktfprovidernewrelicnotificationdestinationconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of the destination. One of: (WEBHOOK, EMAIL, SERVICE_NOW, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION). |
-| [`auth`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyauth) | {[ key: string ]: `string`} | A set of key-value pairs to represent a Notification destination auth. |
+| [`property`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyproperty)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationDestinationProperty`](#@cdktf/provider-newrelic.NotificationDestinationProperty)[] | property block. |
+| [`type`](#cdktfprovidernewrelicnotificationdestinationconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of the destination. One of: (WEBHOOK, EMAIL, SERVICE_NOW, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION, JIRA). |
+| [`active`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyactive) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Indicates whether the destination is active. |
+| [`authBasic`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyauthbasic) | [`@cdktf/provider-newrelic.NotificationDestinationAuthBasic`](#@cdktf/provider-newrelic.NotificationDestinationAuthBasic) | auth_basic block. |
+| [`authToken`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyauthtoken) | [`@cdktf/provider-newrelic.NotificationDestinationAuthToken`](#@cdktf/provider-newrelic.NotificationDestinationAuthToken) | auth_token block. |
 | [`id`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#id NotificationDestination#id}. |
-| [`properties`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyproperties) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties)[] | properties block. |
 
 ---
 
@@ -27730,6 +27562,20 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.accountId" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+The account ID under which to put the destination.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#account_id NotificationDestination#account_id}
+
+---
+
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.name" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyname"></a>
 
 ```typescript
@@ -27744,6 +27590,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 ---
 
+##### `property`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.property" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyproperty"></a>
+
+```typescript
+public readonly property: IResolvable | NotificationDestinationProperty[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationDestinationProperty`](#@cdktf/provider-newrelic.NotificationDestinationProperty)[]
+
+property block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#property NotificationDestination#property}
+
+---
+
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.type" id="cdktfprovidernewrelicnotificationdestinationconfigpropertytype"></a>
 
 ```typescript
@@ -27752,23 +27612,51 @@ public readonly type: string;
 
 - *Type:* `string`
 
-(Required) The type of the destination. One of: (WEBHOOK, EMAIL, SERVICE_NOW, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION).
+(Required) The type of the destination. One of: (WEBHOOK, EMAIL, SERVICE_NOW, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION, JIRA).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#type NotificationDestination#type}
 
 ---
 
-##### `auth`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.auth" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyauth"></a>
+##### `active`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.active" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyactive"></a>
 
 ```typescript
-public readonly auth: {[ key: string ]: string};
+public readonly active: boolean | IResolvable;
 ```
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-A set of key-value pairs to represent a Notification destination auth.
+Indicates whether the destination is active.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#auth NotificationDestination#auth}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#active NotificationDestination#active}
+
+---
+
+##### `authBasic`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.authBasic" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyauthbasic"></a>
+
+```typescript
+public readonly authBasic: NotificationDestinationAuthBasic;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.NotificationDestinationAuthBasic`](#@cdktf/provider-newrelic.NotificationDestinationAuthBasic)
+
+auth_basic block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#auth_basic NotificationDestination#auth_basic}
+
+---
+
+##### `authToken`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.authToken" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyauthtoken"></a>
+
+```typescript
+public readonly authToken: NotificationDestinationAuthToken;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.NotificationDestinationAuthToken`](#@cdktf/provider-newrelic.NotificationDestinationAuthToken)
+
+auth_token block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#auth_token NotificationDestination#auth_token}
 
 ---
 
@@ -27786,42 +27674,28 @@ Please be aware that the id field is automatically added to all resources in Ter
 
 ---
 
-##### `properties`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.properties" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyproperties"></a>
-
-```typescript
-public readonly properties: IResolvable | NotificationDestinationProperties[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties)[]
-
-properties block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#properties NotificationDestination#properties}
-
----
-
-### NotificationDestinationProperties <a name="@cdktf/provider-newrelic.NotificationDestinationProperties" id="cdktfprovidernewrelicnotificationdestinationproperties"></a>
+### NotificationDestinationProperty <a name="@cdktf/provider-newrelic.NotificationDestinationProperty" id="cdktfprovidernewrelicnotificationdestinationproperty"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
 
 ```typescript
-import { NotificationDestinationProperties } from '@cdktf/provider-newrelic'
+import { NotificationDestinationProperty } from '@cdktf/provider-newrelic'
 
-const notificationDestinationProperties: NotificationDestinationProperties = { ... }
+const notificationDestinationProperty: NotificationDestinationProperty = { ... }
 ```
 
 #### Properties <a name="Properties" id="properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`key`](#cdktfprovidernewrelicnotificationdestinationpropertiespropertykey)<span title="Required">*</span> | `string` | Notification destination property key. |
-| [`value`](#cdktfprovidernewrelicnotificationdestinationpropertiespropertyvalue)<span title="Required">*</span> | `string` | Notification destination property value. |
-| [`displayValue`](#cdktfprovidernewrelicnotificationdestinationpropertiespropertydisplayvalue) | `string` | Notification destination property display key. |
-| [`label`](#cdktfprovidernewrelicnotificationdestinationpropertiespropertylabel) | `string` | Notification destination property label. |
+| [`key`](#cdktfprovidernewrelicnotificationdestinationpropertypropertykey)<span title="Required">*</span> | `string` | Notification property key. |
+| [`value`](#cdktfprovidernewrelicnotificationdestinationpropertypropertyvalue)<span title="Required">*</span> | `string` | Notification property value. |
+| [`displayValue`](#cdktfprovidernewrelicnotificationdestinationpropertypropertydisplayvalue) | `string` | Notification property display key. |
+| [`label`](#cdktfprovidernewrelicnotificationdestinationpropertypropertylabel) | `string` | Notification property label. |
 
 ---
 
-##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationProperties.property.key" id="cdktfprovidernewrelicnotificationdestinationpropertiespropertykey"></a>
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationProperty.property.key" id="cdktfprovidernewrelicnotificationdestinationpropertypropertykey"></a>
 
 ```typescript
 public readonly key: string;
@@ -27829,13 +27703,13 @@ public readonly key: string;
 
 - *Type:* `string`
 
-Notification destination property key.
+Notification property key.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#key NotificationDestination#key}
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationProperties.property.value" id="cdktfprovidernewrelicnotificationdestinationpropertiespropertyvalue"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationProperty.property.value" id="cdktfprovidernewrelicnotificationdestinationpropertypropertyvalue"></a>
 
 ```typescript
 public readonly value: string;
@@ -27843,13 +27717,13 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Notification destination property value.
+Notification property value.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#value NotificationDestination#value}
 
 ---
 
-##### `displayValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationProperties.property.displayValue" id="cdktfprovidernewrelicnotificationdestinationpropertiespropertydisplayvalue"></a>
+##### `displayValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationProperty.property.displayValue" id="cdktfprovidernewrelicnotificationdestinationpropertypropertydisplayvalue"></a>
 
 ```typescript
 public readonly displayValue: string;
@@ -27857,13 +27731,13 @@ public readonly displayValue: string;
 
 - *Type:* `string`
 
-Notification destination property display key.
+Notification property display key.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#display_value NotificationDestination#display_value}
 
 ---
 
-##### `label`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationProperties.property.label" id="cdktfprovidernewrelicnotificationdestinationpropertiespropertylabel"></a>
+##### `label`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationProperty.property.label" id="cdktfprovidernewrelicnotificationdestinationpropertypropertylabel"></a>
 
 ```typescript
 public readonly label: string;
@@ -27871,7 +27745,7 @@ public readonly label: string;
 
 - *Type:* `string`
 
-Notification destination property label.
+Notification property label.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#label NotificationDestination#label}
 
@@ -28077,7 +27951,7 @@ public readonly aggregationMethod: string;
 
 The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for violations.
 
-Default is CADENCE.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#aggregation_method NrqlAlertCondition#aggregation_method}
+Default is EVENT_FLOW.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#aggregation_method NrqlAlertCondition#aggregation_method}
 
 ---
 
@@ -32054,372 +31928,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 ---
 
-### PluginsAlertConditionConfig <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig" id="cdktfprovidernewrelicpluginsalertconditionconfig"></a>
-
-#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
-
-```typescript
-import { PluginsAlertConditionConfig } from '@cdktf/provider-newrelic'
-
-const pluginsAlertConditionConfig: PluginsAlertConditionConfig = { ... }
-```
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
-| [`count`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertycount) | `number` | *No description.* |
-| [`dependsOn`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
-| [`forEach`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
-| [`lifecycle`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
-| [`provider`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
-| [`entities`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyentities)<span title="Required">*</span> | `number`[] | The plugin component IDs to target. |
-| [`metric`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertymetric)<span title="Required">*</span> | `string` | The plugin metric to evaluate. |
-| [`metricDescription`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertymetricdescription)<span title="Required">*</span> | `string` | The metric description. |
-| [`name`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 64 characters, inclusive. |
-| [`pluginGuid`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertypluginguid)<span title="Required">*</span> | `string` | The GUID of the plugin which produces the metric. |
-| [`pluginId`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertypluginid)<span title="Required">*</span> | `string` | The ID of the installed plugin instance which produces the metric. |
-| [`policyId`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
-| [`term`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyterm)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[] | term block. |
-| [`valueFunction`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyvaluefunction)<span title="Required">*</span> | `string` | The value function to apply to the metric data.  One of `min`, `max`, `average`, `sample_size`, `total`, or `percent`. |
-| [`enabled`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether or not this condition is enabled. |
-| [`id`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#id PluginsAlertCondition#id}. |
-| [`runbookUrl`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyrunbookurl) | `string` | Runbook URL to display in notifications. |
-
----
-
-##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.connection" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertyconnection"></a>
-
-```typescript
-public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
-```
-
-- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
-
----
-
-##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.count" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertycount"></a>
-
-```typescript
-public readonly count: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.dependsOn" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertydependson"></a>
-
-```typescript
-public readonly dependsOn: ITerraformDependable[];
-```
-
-- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
-
----
-
-##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.forEach" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertyforeach"></a>
-
-```typescript
-public readonly forEach: ITerraformIterator;
-```
-
-- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
-
----
-
-##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.lifecycle" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertylifecycle"></a>
-
-```typescript
-public readonly lifecycle: TerraformResourceLifecycle;
-```
-
-- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
-
----
-
-##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.provider" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertyprovider"></a>
-
-```typescript
-public readonly provider: TerraformProvider;
-```
-
-- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
-
----
-
-##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.provisioners" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertyprovisioners"></a>
-
-```typescript
-public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
-```
-
-- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
-
----
-
-##### `entities`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.entities" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertyentities"></a>
-
-```typescript
-public readonly entities: number[];
-```
-
-- *Type:* `number`[]
-
-The plugin component IDs to target.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#entities PluginsAlertCondition#entities}
-
----
-
-##### `metric`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.metric" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertymetric"></a>
-
-```typescript
-public readonly metric: string;
-```
-
-- *Type:* `string`
-
-The plugin metric to evaluate.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#metric PluginsAlertCondition#metric}
-
----
-
-##### `metricDescription`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.metricDescription" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertymetricdescription"></a>
-
-```typescript
-public readonly metricDescription: string;
-```
-
-- *Type:* `string`
-
-The metric description.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#metric_description PluginsAlertCondition#metric_description}
-
----
-
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.name" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertyname"></a>
-
-```typescript
-public readonly name: string;
-```
-
-- *Type:* `string`
-
-The title of the condition. Must be between 1 and 64 characters, inclusive.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#name PluginsAlertCondition#name}
-
----
-
-##### `pluginGuid`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.pluginGuid" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertypluginguid"></a>
-
-```typescript
-public readonly pluginGuid: string;
-```
-
-- *Type:* `string`
-
-The GUID of the plugin which produces the metric.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#plugin_guid PluginsAlertCondition#plugin_guid}
-
----
-
-##### `pluginId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.pluginId" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertypluginid"></a>
-
-```typescript
-public readonly pluginId: string;
-```
-
-- *Type:* `string`
-
-The ID of the installed plugin instance which produces the metric.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#plugin_id PluginsAlertCondition#plugin_id}
-
----
-
-##### `policyId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.policyId" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertypolicyid"></a>
-
-```typescript
-public readonly policyId: number;
-```
-
-- *Type:* `number`
-
-The ID of the policy where this condition should be used.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#policy_id PluginsAlertCondition#policy_id}
-
----
-
-##### `term`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.term" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertyterm"></a>
-
-```typescript
-public readonly term: IResolvable | PluginsAlertConditionTerm[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[]
-
-term block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#term PluginsAlertCondition#term}
-
----
-
-##### `valueFunction`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.valueFunction" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertyvaluefunction"></a>
-
-```typescript
-public readonly valueFunction: string;
-```
-
-- *Type:* `string`
-
-The value function to apply to the metric data.  One of `min`, `max`, `average`, `sample_size`, `total`, or `percent`.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#value_function PluginsAlertCondition#value_function}
-
----
-
-##### `enabled`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.enabled" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertyenabled"></a>
-
-```typescript
-public readonly enabled: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
-Whether or not this condition is enabled.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#enabled PluginsAlertCondition#enabled}
-
----
-
-##### `id`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.id" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertyid"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#id PluginsAlertCondition#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `runbookUrl`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.runbookUrl" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertyrunbookurl"></a>
-
-```typescript
-public readonly runbookUrl: string;
-```
-
-- *Type:* `string`
-
-Runbook URL to display in notifications.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#runbook_url PluginsAlertCondition#runbook_url}
-
----
-
-### PluginsAlertConditionTerm <a name="@cdktf/provider-newrelic.PluginsAlertConditionTerm" id="cdktfprovidernewrelicpluginsalertconditionterm"></a>
-
-#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
-
-```typescript
-import { PluginsAlertConditionTerm } from '@cdktf/provider-newrelic'
-
-const pluginsAlertConditionTerm: PluginsAlertConditionTerm = { ... }
-```
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`duration`](#cdktfprovidernewrelicpluginsalertconditiontermpropertyduration)<span title="Required">*</span> | `number` | In minutes, must be in the range of 5 to 120, inclusive. |
-| [`threshold`](#cdktfprovidernewrelicpluginsalertconditiontermpropertythreshold)<span title="Required">*</span> | `number` | Must be 0 or greater. |
-| [`timeFunction`](#cdktfprovidernewrelicpluginsalertconditiontermpropertytimefunction)<span title="Required">*</span> | `string` | One of `all` or `any`. |
-| [`operator`](#cdktfprovidernewrelicpluginsalertconditiontermpropertyoperator) | `string` | One of `above`, `below`, or `equal`. Defaults to equal. |
-| [`priority`](#cdktfprovidernewrelicpluginsalertconditiontermpropertypriority) | `string` | One of `critical` or `warning`. Defaults to critical. |
-
----
-
-##### `duration`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTerm.property.duration" id="cdktfprovidernewrelicpluginsalertconditiontermpropertyduration"></a>
-
-```typescript
-public readonly duration: number;
-```
-
-- *Type:* `number`
-
-In minutes, must be in the range of 5 to 120, inclusive.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#duration PluginsAlertCondition#duration}
-
----
-
-##### `threshold`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTerm.property.threshold" id="cdktfprovidernewrelicpluginsalertconditiontermpropertythreshold"></a>
-
-```typescript
-public readonly threshold: number;
-```
-
-- *Type:* `number`
-
-Must be 0 or greater.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#threshold PluginsAlertCondition#threshold}
-
----
-
-##### `timeFunction`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTerm.property.timeFunction" id="cdktfprovidernewrelicpluginsalertconditiontermpropertytimefunction"></a>
-
-```typescript
-public readonly timeFunction: string;
-```
-
-- *Type:* `string`
-
-One of `all` or `any`.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#time_function PluginsAlertCondition#time_function}
-
----
-
-##### `operator`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTerm.property.operator" id="cdktfprovidernewrelicpluginsalertconditiontermpropertyoperator"></a>
-
-```typescript
-public readonly operator: string;
-```
-
-- *Type:* `string`
-
-One of `above`, `below`, or `equal`. Defaults to equal.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#operator PluginsAlertCondition#operator}
-
----
-
-##### `priority`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTerm.property.priority" id="cdktfprovidernewrelicpluginsalertconditiontermpropertypriority"></a>
-
-```typescript
-public readonly priority: string;
-```
-
-- *Type:* `string`
-
-One of `critical` or `warning`. Defaults to critical.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#priority PluginsAlertCondition#priority}
-
----
-
 ### ServiceLevelConfig <a name="@cdktf/provider-newrelic.ServiceLevelConfig" id="cdktfprovidernewrelicservicelevelconfig"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
@@ -33129,6 +32637,569 @@ public readonly runbookUrl: string;
 Runbook URL to display in notifications.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_alert_condition#runbook_url SyntheticsAlertCondition#runbook_url}
+
+---
+
+### SyntheticsBrokenLinksMonitorConfig <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfig"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { SyntheticsBrokenLinksMonitorConfig } from '@cdktf/provider-newrelic'
+
+const syntheticsBrokenLinksMonitorConfig: SyntheticsBrokenLinksMonitorConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
+| [`count`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertycount) | `number` | *No description.* |
+| [`dependsOn`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
+| [`lifecycle`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
+| [`provider`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
+| [`name`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyname)<span title="Required">*</span> | `string` | The title of this monitor. |
+| [`period`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyperiod)<span title="Required">*</span> | `string` | The interval at which this monitor should run. |
+| [`status`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertystatus)<span title="Required">*</span> | `string` | The monitor status (i.e. ENABLED, MUTED, DISABLED). |
+| [`uri`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyuri)<span title="Required">*</span> | `string` | The URI the monitor runs against. |
+| [`accountId`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyaccountid) | `number` | ID of the newrelic account. |
+| [`id`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_broken_links_monitor#id SyntheticsBrokenLinksMonitor#id}. |
+| [`locationsPrivate`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertylocationsprivate) | `string`[] | List private location GUIDs for which the monitor will run. |
+| [`locationsPublic`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertylocationspublic) | `string`[] | Publicly available location names in which the monitor will run. |
+| [`tag`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertytag) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag`](#@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag)[] | tag block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig.property.connection" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig.property.count" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertycount"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig.property.dependsOn" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertydependson"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig.property.forEach" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig.property.lifecycle" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertylifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig.property.provider" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyprovider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig.property.provisioners" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig.property.name" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+The title of this monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_broken_links_monitor#name SyntheticsBrokenLinksMonitor#name}
+
+---
+
+##### `period`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig.property.period" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyperiod"></a>
+
+```typescript
+public readonly period: string;
+```
+
+- *Type:* `string`
+
+The interval at which this monitor should run.
+
+Valid values are EVERY_MINUTE, EVERY_5_MINUTES, EVERY_10_MINUTES, EVERY_15_MINUTES, EVERY_30_MINUTES, EVERY_HOUR, EVERY_6_HOURS, EVERY_12_HOURS, or EVERY_DAY.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_broken_links_monitor#period SyntheticsBrokenLinksMonitor#period}
+
+---
+
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig.property.status" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertystatus"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* `string`
+
+The monitor status (i.e. ENABLED, MUTED, DISABLED).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_broken_links_monitor#status SyntheticsBrokenLinksMonitor#status}
+
+---
+
+##### `uri`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig.property.uri" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyuri"></a>
+
+```typescript
+public readonly uri: string;
+```
+
+- *Type:* `string`
+
+The URI the monitor runs against.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_broken_links_monitor#uri SyntheticsBrokenLinksMonitor#uri}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig.property.accountId" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+ID of the newrelic account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_broken_links_monitor#account_id SyntheticsBrokenLinksMonitor#account_id}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig.property.id" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_broken_links_monitor#id SyntheticsBrokenLinksMonitor#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `locationsPrivate`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig.property.locationsPrivate" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertylocationsprivate"></a>
+
+```typescript
+public readonly locationsPrivate: string[];
+```
+
+- *Type:* `string`[]
+
+List private location GUIDs for which the monitor will run.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_broken_links_monitor#locations_private SyntheticsBrokenLinksMonitor#locations_private}
+
+---
+
+##### `locationsPublic`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig.property.locationsPublic" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertylocationspublic"></a>
+
+```typescript
+public readonly locationsPublic: string[];
+```
+
+- *Type:* `string`[]
+
+Publicly available location names in which the monitor will run.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_broken_links_monitor#locations_public SyntheticsBrokenLinksMonitor#locations_public}
+
+---
+
+##### `tag`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorConfig.property.tag" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitorconfigpropertytag"></a>
+
+```typescript
+public readonly tag: IResolvable | SyntheticsBrokenLinksMonitorTag[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag`](#@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag)[]
+
+tag block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_broken_links_monitor#tag SyntheticsBrokenLinksMonitor#tag}
+
+---
+
+### SyntheticsBrokenLinksMonitorTag <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortag"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { SyntheticsBrokenLinksMonitorTag } from '@cdktf/provider-newrelic'
+
+const syntheticsBrokenLinksMonitorTag: SyntheticsBrokenLinksMonitorTag = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`key`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagpropertykey)<span title="Required">*</span> | `string` | Name of the tag key. |
+| [`values`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagpropertyvalues)<span title="Required">*</span> | `string`[] | Values associated with the tag key. |
+
+---
+
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag.property.key" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagpropertykey"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* `string`
+
+Name of the tag key.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_broken_links_monitor#key SyntheticsBrokenLinksMonitor#key}
+
+---
+
+##### `values`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag.property.values" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagpropertyvalues"></a>
+
+```typescript
+public readonly values: string[];
+```
+
+- *Type:* `string`[]
+
+Values associated with the tag key.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_broken_links_monitor#values SyntheticsBrokenLinksMonitor#values}
+
+---
+
+### SyntheticsCertCheckMonitorConfig <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfig"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { SyntheticsCertCheckMonitorConfig } from '@cdktf/provider-newrelic'
+
+const syntheticsCertCheckMonitorConfig: SyntheticsCertCheckMonitorConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
+| [`count`](#cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertycount) | `number` | *No description.* |
+| [`dependsOn`](#cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
+| [`lifecycle`](#cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
+| [`provider`](#cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
+| [`certificateExpiration`](#cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertycertificateexpiration)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor#certificate_expiration SyntheticsCertCheckMonitor#certificate_expiration}. |
+| [`domain`](#cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertydomain)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor#domain SyntheticsCertCheckMonitor#domain}. |
+| [`name`](#cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertyname)<span title="Required">*</span> | `string` | name of the cert check monitor. |
+| [`period`](#cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertyperiod)<span title="Required">*</span> | `string` | The interval at which this monitor should run. |
+| [`status`](#cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertystatus)<span title="Required">*</span> | `string` | The monitor status (i.e. ENABLED, MUTED, DISABLED). |
+| [`accountId`](#cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertyaccountid) | `number` | ID of the newrelic account. |
+| [`id`](#cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor#id SyntheticsCertCheckMonitor#id}. |
+| [`locationsPrivate`](#cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertylocationsprivate) | `string`[] | The locations in which this monitor should be run. |
+| [`locationsPublic`](#cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertylocationspublic) | `string`[] | The locations in which this monitor should be run. |
+| [`tag`](#cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertytag) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag`](#@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag)[] | tag block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig.property.connection" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig.property.count" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertycount"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig.property.dependsOn" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertydependson"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig.property.forEach" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig.property.lifecycle" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertylifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig.property.provider" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertyprovider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig.property.provisioners" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
+
+---
+
+##### `certificateExpiration`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig.property.certificateExpiration" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertycertificateexpiration"></a>
+
+```typescript
+public readonly certificateExpiration: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor#certificate_expiration SyntheticsCertCheckMonitor#certificate_expiration}.
+
+---
+
+##### `domain`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig.property.domain" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertydomain"></a>
+
+```typescript
+public readonly domain: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor#domain SyntheticsCertCheckMonitor#domain}.
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig.property.name" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+name of the cert check monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor#name SyntheticsCertCheckMonitor#name}
+
+---
+
+##### `period`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig.property.period" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertyperiod"></a>
+
+```typescript
+public readonly period: string;
+```
+
+- *Type:* `string`
+
+The interval at which this monitor should run.
+
+Valid values are EVERY_MINUTE, EVERY_5_MINUTES, EVERY_10_MINUTES, EVERY_15_MINUTES, EVERY_30_MINUTES, EVERY_HOUR, EVERY_6_HOURS, EVERY_12_HOURS, or EVERY_DAY.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor#period SyntheticsCertCheckMonitor#period}
+
+---
+
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig.property.status" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertystatus"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* `string`
+
+The monitor status (i.e. ENABLED, MUTED, DISABLED).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor#status SyntheticsCertCheckMonitor#status}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig.property.accountId" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+ID of the newrelic account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor#account_id SyntheticsCertCheckMonitor#account_id}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig.property.id" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor#id SyntheticsCertCheckMonitor#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `locationsPrivate`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig.property.locationsPrivate" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertylocationsprivate"></a>
+
+```typescript
+public readonly locationsPrivate: string[];
+```
+
+- *Type:* `string`[]
+
+The locations in which this monitor should be run.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor#locations_private SyntheticsCertCheckMonitor#locations_private}
+
+---
+
+##### `locationsPublic`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig.property.locationsPublic" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertylocationspublic"></a>
+
+```typescript
+public readonly locationsPublic: string[];
+```
+
+- *Type:* `string`[]
+
+The locations in which this monitor should be run.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor#locations_public SyntheticsCertCheckMonitor#locations_public}
+
+---
+
+##### `tag`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorConfig.property.tag" id="cdktfprovidernewrelicsyntheticscertcheckmonitorconfigpropertytag"></a>
+
+```typescript
+public readonly tag: IResolvable | SyntheticsCertCheckMonitorTag[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag`](#@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag)[]
+
+tag block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor#tag SyntheticsCertCheckMonitor#tag}
+
+---
+
+### SyntheticsCertCheckMonitorTag <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag" id="cdktfprovidernewrelicsyntheticscertcheckmonitortag"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { SyntheticsCertCheckMonitorTag } from '@cdktf/provider-newrelic'
+
+const syntheticsCertCheckMonitorTag: SyntheticsCertCheckMonitorTag = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`key`](#cdktfprovidernewrelicsyntheticscertcheckmonitortagpropertykey)<span title="Required">*</span> | `string` | Name of the tag key. |
+| [`values`](#cdktfprovidernewrelicsyntheticscertcheckmonitortagpropertyvalues)<span title="Required">*</span> | `string`[] | Values associated with the tag key. |
+
+---
+
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag.property.key" id="cdktfprovidernewrelicsyntheticscertcheckmonitortagpropertykey"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* `string`
+
+Name of the tag key.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor#key SyntheticsCertCheckMonitor#key}
+
+---
+
+##### `values`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag.property.values" id="cdktfprovidernewrelicsyntheticscertcheckmonitortagpropertyvalues"></a>
+
+```typescript
+public readonly values: string[];
+```
+
+- *Type:* `string`[]
+
+Values associated with the tag key.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor#values SyntheticsCertCheckMonitor#values}
 
 ---
 
@@ -34096,6 +34167,917 @@ public readonly lastUpdated: string;
 The time the secure credential was last updated.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#last_updated SyntheticsSecureCredential#last_updated}
+
+---
+
+### SyntheticsStepMonitorConfig <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig" id="cdktfprovidernewrelicsyntheticsstepmonitorconfig"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { SyntheticsStepMonitorConfig } from '@cdktf/provider-newrelic'
+
+const syntheticsStepMonitorConfig: SyntheticsStepMonitorConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
+| [`count`](#cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertycount) | `number` | *No description.* |
+| [`dependsOn`](#cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
+| [`lifecycle`](#cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
+| [`provider`](#cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
+| [`name`](#cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyname)<span title="Required">*</span> | `string` | The title of this monitor. |
+| [`period`](#cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyperiod)<span title="Required">*</span> | `string` | The interval at which this monitor should run. |
+| [`status`](#cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertystatus)<span title="Required">*</span> | `string` | The monitor status (i.e. ENABLED, MUTED, DISABLED). |
+| [`steps`](#cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertysteps)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsStepMonitorSteps`](#@cdktf/provider-newrelic.SyntheticsStepMonitorSteps)[] | steps block. |
+| [`accountId`](#cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyaccountid) | `number` | ID of the newrelic account. |
+| [`enableScreenshotOnFailureAndScript`](#cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyenablescreenshotonfailureandscript) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Capture a screenshot during job execution. |
+| [`id`](#cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#id SyntheticsStepMonitor#id}. |
+| [`locationsPrivate`](#cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertylocationsprivate) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate`](#@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate)[] | locations_private block. |
+| [`locationsPublic`](#cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertylocationspublic) | `string`[] | The public location(s) that the monitor will run jobs from. |
+| [`tag`](#cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertytag) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsStepMonitorTag`](#@cdktf/provider-newrelic.SyntheticsStepMonitorTag)[] | tag block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig.property.connection" id="cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig.property.count" id="cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertycount"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig.property.dependsOn" id="cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertydependson"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig.property.forEach" id="cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig.property.lifecycle" id="cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertylifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig.property.provider" id="cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyprovider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig.property.provisioners" id="cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig.property.name" id="cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+The title of this monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#name SyntheticsStepMonitor#name}
+
+---
+
+##### `period`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig.property.period" id="cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyperiod"></a>
+
+```typescript
+public readonly period: string;
+```
+
+- *Type:* `string`
+
+The interval at which this monitor should run.
+
+Valid values are EVERY_MINUTE, EVERY_5_MINUTES, EVERY_10_MINUTES, EVERY_15_MINUTES, EVERY_30_MINUTES, EVERY_HOUR, EVERY_6_HOURS, EVERY_12_HOURS, or EVERY_DAY.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#period SyntheticsStepMonitor#period}
+
+---
+
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig.property.status" id="cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertystatus"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* `string`
+
+The monitor status (i.e. ENABLED, MUTED, DISABLED).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#status SyntheticsStepMonitor#status}
+
+---
+
+##### `steps`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig.property.steps" id="cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertysteps"></a>
+
+```typescript
+public readonly steps: IResolvable | SyntheticsStepMonitorSteps[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsStepMonitorSteps`](#@cdktf/provider-newrelic.SyntheticsStepMonitorSteps)[]
+
+steps block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#steps SyntheticsStepMonitor#steps}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig.property.accountId" id="cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+ID of the newrelic account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#account_id SyntheticsStepMonitor#account_id}
+
+---
+
+##### `enableScreenshotOnFailureAndScript`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig.property.enableScreenshotOnFailureAndScript" id="cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyenablescreenshotonfailureandscript"></a>
+
+```typescript
+public readonly enableScreenshotOnFailureAndScript: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Capture a screenshot during job execution.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#enable_screenshot_on_failure_and_script SyntheticsStepMonitor#enable_screenshot_on_failure_and_script}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig.property.id" id="cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#id SyntheticsStepMonitor#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `locationsPrivate`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig.property.locationsPrivate" id="cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertylocationsprivate"></a>
+
+```typescript
+public readonly locationsPrivate: IResolvable | SyntheticsStepMonitorLocationsPrivate[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate`](#@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate)[]
+
+locations_private block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#locations_private SyntheticsStepMonitor#locations_private}
+
+---
+
+##### `locationsPublic`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig.property.locationsPublic" id="cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertylocationspublic"></a>
+
+```typescript
+public readonly locationsPublic: string[];
+```
+
+- *Type:* `string`[]
+
+The public location(s) that the monitor will run jobs from.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#locations_public SyntheticsStepMonitor#locations_public}
+
+---
+
+##### `tag`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorConfig.property.tag" id="cdktfprovidernewrelicsyntheticsstepmonitorconfigpropertytag"></a>
+
+```typescript
+public readonly tag: IResolvable | SyntheticsStepMonitorTag[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsStepMonitorTag`](#@cdktf/provider-newrelic.SyntheticsStepMonitorTag)[]
+
+tag block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#tag SyntheticsStepMonitor#tag}
+
+---
+
+### SyntheticsStepMonitorLocationsPrivate <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivate"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { SyntheticsStepMonitorLocationsPrivate } from '@cdktf/provider-newrelic'
+
+const syntheticsStepMonitorLocationsPrivate: SyntheticsStepMonitorLocationsPrivate = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`guid`](#cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivatepropertyguid)<span title="Required">*</span> | `string` | The unique identifier for the Synthetics private location in New Relic. |
+| [`vsePassword`](#cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivatepropertyvsepassword) | `string` | The location's Verified Script Execution password (Only necessary if Verified Script Execution is enabled for the location). |
+
+---
+
+##### `guid`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate.property.guid" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivatepropertyguid"></a>
+
+```typescript
+public readonly guid: string;
+```
+
+- *Type:* `string`
+
+The unique identifier for the Synthetics private location in New Relic.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#guid SyntheticsStepMonitor#guid}
+
+---
+
+##### `vsePassword`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate.property.vsePassword" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivatepropertyvsepassword"></a>
+
+```typescript
+public readonly vsePassword: string;
+```
+
+- *Type:* `string`
+
+The location's Verified Script Execution password (Only necessary if Verified Script Execution is enabled for the location).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#vse_password SyntheticsStepMonitor#vse_password}
+
+---
+
+### SyntheticsStepMonitorSteps <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorSteps" id="cdktfprovidernewrelicsyntheticsstepmonitorsteps"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { SyntheticsStepMonitorSteps } from '@cdktf/provider-newrelic'
+
+const syntheticsStepMonitorSteps: SyntheticsStepMonitorSteps = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`ordinal`](#cdktfprovidernewrelicsyntheticsstepmonitorstepspropertyordinal)<span title="Required">*</span> | `number` | The position of the step within the script ranging from 0-100. |
+| [`type`](#cdktfprovidernewrelicsyntheticsstepmonitorstepspropertytype)<span title="Required">*</span> | `string` | The type of step to be added to the script. |
+| [`values`](#cdktfprovidernewrelicsyntheticsstepmonitorstepspropertyvalues) | `string`[] | The metadata values related to the check the step performs. |
+
+---
+
+##### `ordinal`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorSteps.property.ordinal" id="cdktfprovidernewrelicsyntheticsstepmonitorstepspropertyordinal"></a>
+
+```typescript
+public readonly ordinal: number;
+```
+
+- *Type:* `number`
+
+The position of the step within the script ranging from 0-100.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#ordinal SyntheticsStepMonitor#ordinal}
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorSteps.property.type" id="cdktfprovidernewrelicsyntheticsstepmonitorstepspropertytype"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+The type of step to be added to the script.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#type SyntheticsStepMonitor#type}
+
+---
+
+##### `values`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorSteps.property.values" id="cdktfprovidernewrelicsyntheticsstepmonitorstepspropertyvalues"></a>
+
+```typescript
+public readonly values: string[];
+```
+
+- *Type:* `string`[]
+
+The metadata values related to the check the step performs.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#values SyntheticsStepMonitor#values}
+
+---
+
+### SyntheticsStepMonitorTag <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTag" id="cdktfprovidernewrelicsyntheticsstepmonitortag"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { SyntheticsStepMonitorTag } from '@cdktf/provider-newrelic'
+
+const syntheticsStepMonitorTag: SyntheticsStepMonitorTag = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`key`](#cdktfprovidernewrelicsyntheticsstepmonitortagpropertykey)<span title="Required">*</span> | `string` | Name of the tag key. |
+| [`values`](#cdktfprovidernewrelicsyntheticsstepmonitortagpropertyvalues)<span title="Required">*</span> | `string`[] | Values associated with the tag key. |
+
+---
+
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTag.property.key" id="cdktfprovidernewrelicsyntheticsstepmonitortagpropertykey"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* `string`
+
+Name of the tag key.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#key SyntheticsStepMonitor#key}
+
+---
+
+##### `values`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTag.property.values" id="cdktfprovidernewrelicsyntheticsstepmonitortagpropertyvalues"></a>
+
+```typescript
+public readonly values: string[];
+```
+
+- *Type:* `string`[]
+
+Values associated with the tag key.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_step_monitor#values SyntheticsStepMonitor#values}
+
+---
+
+### WorkflowConfig <a name="@cdktf/provider-newrelic.WorkflowConfig" id="cdktfprovidernewrelicworkflowconfig"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { WorkflowConfig } from '@cdktf/provider-newrelic'
+
+const workflowConfig: WorkflowConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`connection`](#cdktfprovidernewrelicworkflowconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
+| [`count`](#cdktfprovidernewrelicworkflowconfigpropertycount) | `number` | *No description.* |
+| [`dependsOn`](#cdktfprovidernewrelicworkflowconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
+| [`forEach`](#cdktfprovidernewrelicworkflowconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
+| [`lifecycle`](#cdktfprovidernewrelicworkflowconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
+| [`provider`](#cdktfprovidernewrelicworkflowconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicworkflowconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
+| [`destinationConfiguration`](#cdktfprovidernewrelicworkflowconfigpropertydestinationconfiguration)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkflowDestinationConfiguration`](#@cdktf/provider-newrelic.WorkflowDestinationConfiguration)[] | destination_configuration block. |
+| [`issuesFilter`](#cdktfprovidernewrelicworkflowconfigpropertyissuesfilter)<span title="Required">*</span> | [`@cdktf/provider-newrelic.WorkflowIssuesFilter`](#@cdktf/provider-newrelic.WorkflowIssuesFilter) | issues_filter block. |
+| [`mutingRulesHandling`](#cdktfprovidernewrelicworkflowconfigpropertymutingruleshandling)<span title="Required">*</span> | `string` | The type of the muting rule handling. One of: (NOTIFY_ALL_ISSUES, DONT_NOTIFY_FULLY_MUTED_ISSUES, DONT_NOTIFY_FULLY_OR_PARTIALLY_MUTED_ISSUES). |
+| [`name`](#cdktfprovidernewrelicworkflowconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the workflow. |
+| [`accountId`](#cdktfprovidernewrelicworkflowconfigpropertyaccountid) | `number` | The account id of the workflow. |
+| [`destinationsEnabled`](#cdktfprovidernewrelicworkflowconfigpropertydestinationsenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Indicates whether the destinations are enabled. |
+| [`enrichments`](#cdktfprovidernewrelicworkflowconfigpropertyenrichments) | [`@cdktf/provider-newrelic.WorkflowEnrichments`](#@cdktf/provider-newrelic.WorkflowEnrichments) | enrichments block. |
+| [`enrichmentsEnabled`](#cdktfprovidernewrelicworkflowconfigpropertyenrichmentsenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Indicates whether the enrichments are enabled. |
+| [`id`](#cdktfprovidernewrelicworkflowconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#id Workflow#id}. |
+| [`workflowEnabled`](#cdktfprovidernewrelicworkflowconfigpropertyworkflowenabled) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Indicates whether the workflow is enabled. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowConfig.property.connection" id="cdktfprovidernewrelicworkflowconfigpropertyconnection"></a>
+
+```typescript
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowConfig.property.count" id="cdktfprovidernewrelicworkflowconfigpropertycount"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowConfig.property.dependsOn" id="cdktfprovidernewrelicworkflowconfigpropertydependson"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowConfig.property.forEach" id="cdktfprovidernewrelicworkflowconfigpropertyforeach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowConfig.property.lifecycle" id="cdktfprovidernewrelicworkflowconfigpropertylifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowConfig.property.provider" id="cdktfprovidernewrelicworkflowconfigpropertyprovider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowConfig.property.provisioners" id="cdktfprovidernewrelicworkflowconfigpropertyprovisioners"></a>
+
+```typescript
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
+
+---
+
+##### `destinationConfiguration`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowConfig.property.destinationConfiguration" id="cdktfprovidernewrelicworkflowconfigpropertydestinationconfiguration"></a>
+
+```typescript
+public readonly destinationConfiguration: IResolvable | WorkflowDestinationConfiguration[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowDestinationConfiguration`](#@cdktf/provider-newrelic.WorkflowDestinationConfiguration)[]
+
+destination_configuration block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#destination_configuration Workflow#destination_configuration}
+
+---
+
+##### `issuesFilter`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowConfig.property.issuesFilter" id="cdktfprovidernewrelicworkflowconfigpropertyissuesfilter"></a>
+
+```typescript
+public readonly issuesFilter: WorkflowIssuesFilter;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.WorkflowIssuesFilter`](#@cdktf/provider-newrelic.WorkflowIssuesFilter)
+
+issues_filter block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#issues_filter Workflow#issues_filter}
+
+---
+
+##### `mutingRulesHandling`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowConfig.property.mutingRulesHandling" id="cdktfprovidernewrelicworkflowconfigpropertymutingruleshandling"></a>
+
+```typescript
+public readonly mutingRulesHandling: string;
+```
+
+- *Type:* `string`
+
+The type of the muting rule handling. One of: (NOTIFY_ALL_ISSUES, DONT_NOTIFY_FULLY_MUTED_ISSUES, DONT_NOTIFY_FULLY_OR_PARTIALLY_MUTED_ISSUES).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#muting_rules_handling Workflow#muting_rules_handling}
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowConfig.property.name" id="cdktfprovidernewrelicworkflowconfigpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+(Required) The name of the workflow.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#name Workflow#name}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowConfig.property.accountId" id="cdktfprovidernewrelicworkflowconfigpropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+The account id of the workflow.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#account_id Workflow#account_id}
+
+---
+
+##### `destinationsEnabled`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowConfig.property.destinationsEnabled" id="cdktfprovidernewrelicworkflowconfigpropertydestinationsenabled"></a>
+
+```typescript
+public readonly destinationsEnabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Indicates whether the destinations are enabled.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#destinations_enabled Workflow#destinations_enabled}
+
+---
+
+##### `enrichments`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowConfig.property.enrichments" id="cdktfprovidernewrelicworkflowconfigpropertyenrichments"></a>
+
+```typescript
+public readonly enrichments: WorkflowEnrichments;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.WorkflowEnrichments`](#@cdktf/provider-newrelic.WorkflowEnrichments)
+
+enrichments block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#enrichments Workflow#enrichments}
+
+---
+
+##### `enrichmentsEnabled`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowConfig.property.enrichmentsEnabled" id="cdktfprovidernewrelicworkflowconfigpropertyenrichmentsenabled"></a>
+
+```typescript
+public readonly enrichmentsEnabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Indicates whether the enrichments are enabled.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#enrichments_enabled Workflow#enrichments_enabled}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowConfig.property.id" id="cdktfprovidernewrelicworkflowconfigpropertyid"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#id Workflow#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2. If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `workflowEnabled`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowConfig.property.workflowEnabled" id="cdktfprovidernewrelicworkflowconfigpropertyworkflowenabled"></a>
+
+```typescript
+public readonly workflowEnabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Indicates whether the workflow is enabled.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#workflow_enabled Workflow#workflow_enabled}
+
+---
+
+### WorkflowDestinationConfiguration <a name="@cdktf/provider-newrelic.WorkflowDestinationConfiguration" id="cdktfprovidernewrelicworkflowdestinationconfiguration"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { WorkflowDestinationConfiguration } from '@cdktf/provider-newrelic'
+
+const workflowDestinationConfiguration: WorkflowDestinationConfiguration = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`channelId`](#cdktfprovidernewrelicworkflowdestinationconfigurationpropertychannelid)<span title="Required">*</span> | `string` | (Required) Destination's channel id. |
+
+---
+
+##### `channelId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowDestinationConfiguration.property.channelId" id="cdktfprovidernewrelicworkflowdestinationconfigurationpropertychannelid"></a>
+
+```typescript
+public readonly channelId: string;
+```
+
+- *Type:* `string`
+
+(Required) Destination's channel id.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#channel_id Workflow#channel_id}
+
+---
+
+### WorkflowEnrichments <a name="@cdktf/provider-newrelic.WorkflowEnrichments" id="cdktfprovidernewrelicworkflowenrichments"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { WorkflowEnrichments } from '@cdktf/provider-newrelic'
+
+const workflowEnrichments: WorkflowEnrichments = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`nrql`](#cdktfprovidernewrelicworkflowenrichmentspropertynrql)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrql`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrql)[] | nrql block. |
+
+---
+
+##### `nrql`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichments.property.nrql" id="cdktfprovidernewrelicworkflowenrichmentspropertynrql"></a>
+
+```typescript
+public readonly nrql: IResolvable | WorkflowEnrichmentsNrql[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrql`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrql)[]
+
+nrql block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#nrql Workflow#nrql}
+
+---
+
+### WorkflowEnrichmentsNrql <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrql" id="cdktfprovidernewrelicworkflowenrichmentsnrql"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { WorkflowEnrichmentsNrql } from '@cdktf/provider-newrelic'
+
+const workflowEnrichmentsNrql: WorkflowEnrichmentsNrql = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`configurations`](#cdktfprovidernewrelicworkflowenrichmentsnrqlpropertyconfigurations)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations)[] | configurations block. |
+| [`name`](#cdktfprovidernewrelicworkflowenrichmentsnrqlpropertyname)<span title="Required">*</span> | `string` | (Required) Enrichment's name. |
+
+---
+
+##### `configurations`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrql.property.configurations" id="cdktfprovidernewrelicworkflowenrichmentsnrqlpropertyconfigurations"></a>
+
+```typescript
+public readonly configurations: IResolvable | WorkflowEnrichmentsNrqlConfigurations[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations)[]
+
+configurations block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#configurations Workflow#configurations}
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrql.property.name" id="cdktfprovidernewrelicworkflowenrichmentsnrqlpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+(Required) Enrichment's name.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#name Workflow#name}
+
+---
+
+### WorkflowEnrichmentsNrqlConfigurations <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurations"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { WorkflowEnrichmentsNrqlConfigurations } from '@cdktf/provider-newrelic'
+
+const workflowEnrichmentsNrqlConfigurations: WorkflowEnrichmentsNrqlConfigurations = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`query`](#cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationspropertyquery)<span title="Required">*</span> | `string` | enrichment's NRQL query. |
+
+---
+
+##### `query`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations.property.query" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationspropertyquery"></a>
+
+```typescript
+public readonly query: string;
+```
+
+- *Type:* `string`
+
+enrichment's NRQL query.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#query Workflow#query}
+
+---
+
+### WorkflowIssuesFilter <a name="@cdktf/provider-newrelic.WorkflowIssuesFilter" id="cdktfprovidernewrelicworkflowissuesfilter"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { WorkflowIssuesFilter } from '@cdktf/provider-newrelic'
+
+const workflowIssuesFilter: WorkflowIssuesFilter = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`name`](#cdktfprovidernewrelicworkflowissuesfilterpropertyname)<span title="Required">*</span> | `string` | (Required) Filter's name. |
+| [`type`](#cdktfprovidernewrelicworkflowissuesfilterpropertytype)<span title="Required">*</span> | `string` | (Required) The type of the filter. One of: (FILTER, VIEW). |
+| [`predicates`](#cdktfprovidernewrelicworkflowissuesfilterpropertypredicates) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates`](#@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates)[] | predicates block. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilter.property.name" id="cdktfprovidernewrelicworkflowissuesfilterpropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+(Required) Filter's name.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#name Workflow#name}
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilter.property.type" id="cdktfprovidernewrelicworkflowissuesfilterpropertytype"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+(Required) The type of the filter. One of: (FILTER, VIEW).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#type Workflow#type}
+
+---
+
+##### `predicates`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilter.property.predicates" id="cdktfprovidernewrelicworkflowissuesfilterpropertypredicates"></a>
+
+```typescript
+public readonly predicates: IResolvable | WorkflowIssuesFilterPredicates[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates`](#@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates)[]
+
+predicates block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#predicates Workflow#predicates}
+
+---
+
+### WorkflowIssuesFilterPredicates <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates" id="cdktfprovidernewrelicworkflowissuesfilterpredicates"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { WorkflowIssuesFilterPredicates } from '@cdktf/provider-newrelic'
+
+const workflowIssuesFilterPredicates: WorkflowIssuesFilterPredicates = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`attribute`](#cdktfprovidernewrelicworkflowissuesfilterpredicatespropertyattribute)<span title="Required">*</span> | `string` | (Required) predicate's attribute. |
+| [`operator`](#cdktfprovidernewrelicworkflowissuesfilterpredicatespropertyoperator)<span title="Required">*</span> | `string` | The type of the operator. |
+| [`values`](#cdktfprovidernewrelicworkflowissuesfilterpredicatespropertyvalues)<span title="Required">*</span> | `string`[] | List of predicate values. |
+
+---
+
+##### `attribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates.property.attribute" id="cdktfprovidernewrelicworkflowissuesfilterpredicatespropertyattribute"></a>
+
+```typescript
+public readonly attribute: string;
+```
+
+- *Type:* `string`
+
+(Required) predicate's attribute.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#attribute Workflow#attribute}
+
+---
+
+##### `operator`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates.property.operator" id="cdktfprovidernewrelicworkflowissuesfilterpredicatespropertyoperator"></a>
+
+```typescript
+public readonly operator: string;
+```
+
+- *Type:* `string`
+
+The type of the operator.
+
+One of: (CONTAINS, DOES_NOT_CONTAIN, DOES_NOT_EQUAL, DOES_NOT_EXACTLY_MATCH, ENDS_WITH, EQUAL, EXACTLY_MATCHES, GREATER_OR_EQUAL, GREATER_THAN, IS, IS_NOT, LESS_OR_EQUAL, LESS_THAN, STARTS_WITH).  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#operator Workflow#operator}
+
+---
+
+##### `values`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates.property.values" id="cdktfprovidernewrelicworkflowissuesfilterpredicatespropertyvalues"></a>
+
+```typescript
+public readonly values: string[];
+```
+
+- *Type:* `string`[]
+
+List of predicate values.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#values Workflow#values}
 
 ---
 
@@ -46092,1496 +47074,6 @@ public readonly internalValue: CloudGcpIntegrationsVpcAccess;
 ---
 
 
-### DashboardFilterOutputReference <a name="@cdktf/provider-newrelic.DashboardFilterOutputReference" id="cdktfprovidernewrelicdashboardfilteroutputreference"></a>
-
-#### Initializers <a name="@cdktf/provider-newrelic.DashboardFilterOutputReference.Initializer" id="cdktfprovidernewrelicdashboardfilteroutputreferenceinitializer"></a>
-
-```typescript
-import { DashboardFilterOutputReference } from '@cdktf/provider-newrelic'
-
-new DashboardFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicdashboardfilteroutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
-| [`terraformAttribute`](#cdktfprovidernewrelicdashboardfilteroutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardFilterOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicdashboardfilteroutputreferenceparameterterraformresource"></a>
-
-- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardFilterOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicdashboardfilteroutputreferenceparameterterraformattribute"></a>
-
-- *Type:* `string`
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`resetAttributes`](#cdktfprovidernewrelicdashboardfilteroutputreferenceresetattributes) | *No description.* |
-
----
-
-##### `resetAttributes` <a name="@cdktf/provider-newrelic.DashboardFilterOutputReference.resetAttributes" id="cdktfprovidernewrelicdashboardfilteroutputreferenceresetattributes"></a>
-
-```typescript
-public resetAttributes()
-```
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`attributesInput`](#cdktfprovidernewrelicdashboardfilteroutputreferencepropertyattributesinput) | `string`[] | *No description.* |
-| [`eventTypesInput`](#cdktfprovidernewrelicdashboardfilteroutputreferencepropertyeventtypesinput) | `string`[] | *No description.* |
-| [`attributes`](#cdktfprovidernewrelicdashboardfilteroutputreferencepropertyattributes)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`eventTypes`](#cdktfprovidernewrelicdashboardfilteroutputreferencepropertyeventtypes)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`internalValue`](#cdktfprovidernewrelicdashboardfilteroutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.DashboardFilter`](#@cdktf/provider-newrelic.DashboardFilter) | *No description.* |
-
----
-
-##### `attributesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardFilterOutputReference.property.attributesInput" id="cdktfprovidernewrelicdashboardfilteroutputreferencepropertyattributesinput"></a>
-
-```typescript
-public readonly attributesInput: string[];
-```
-
-- *Type:* `string`[]
-
----
-
-##### `eventTypesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardFilterOutputReference.property.eventTypesInput" id="cdktfprovidernewrelicdashboardfilteroutputreferencepropertyeventtypesinput"></a>
-
-```typescript
-public readonly eventTypesInput: string[];
-```
-
-- *Type:* `string`[]
-
----
-
-##### `attributes`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardFilterOutputReference.property.attributes" id="cdktfprovidernewrelicdashboardfilteroutputreferencepropertyattributes"></a>
-
-```typescript
-public readonly attributes: string[];
-```
-
-- *Type:* `string`[]
-
----
-
-##### `eventTypes`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardFilterOutputReference.property.eventTypes" id="cdktfprovidernewrelicdashboardfilteroutputreferencepropertyeventtypes"></a>
-
-```typescript
-public readonly eventTypes: string[];
-```
-
-- *Type:* `string`[]
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardFilterOutputReference.property.internalValue" id="cdktfprovidernewrelicdashboardfilteroutputreferencepropertyinternalvalue"></a>
-
-```typescript
-public readonly internalValue: DashboardFilter;
-```
-
-- *Type:* [`@cdktf/provider-newrelic.DashboardFilter`](#@cdktf/provider-newrelic.DashboardFilter)
-
----
-
-
-### DashboardWidgetCompareWithList <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithList" id="cdktfprovidernewrelicdashboardwidgetcomparewithlist"></a>
-
-#### Initializers <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithList.Initializer" id="cdktfprovidernewrelicdashboardwidgetcomparewithlistinitializer"></a>
-
-```typescript
-import { DashboardWidgetCompareWithList } from '@cdktf/provider-newrelic'
-
-new DashboardWidgetCompareWithList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicdashboardwidgetcomparewithlistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
-| [`terraformAttribute`](#cdktfprovidernewrelicdashboardwidgetcomparewithlistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`wrapsSet`](#cdktfprovidernewrelicdashboardwidgetcomparewithlistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithList.parameter.terraformResource" id="cdktfprovidernewrelicdashboardwidgetcomparewithlistparameterterraformresource"></a>
-
-- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithList.parameter.terraformAttribute" id="cdktfprovidernewrelicdashboardwidgetcomparewithlistparameterterraformattribute"></a>
-
-- *Type:* `string`
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithList.parameter.wrapsSet" id="cdktfprovidernewrelicdashboardwidgetcomparewithlistparameterwrapsset"></a>
-
-- *Type:* `boolean`
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`get`](#cdktfprovidernewrelicdashboardwidgetcomparewithlistget) | *No description.* |
-
----
-
-##### `get` <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithList.get" id="cdktfprovidernewrelicdashboardwidgetcomparewithlistget"></a>
-
-```typescript
-public get(index: number)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithList.parameter.index" id="cdktfprovidernewrelicdashboardwidgetcomparewithlistparameterindex"></a>
-
-- *Type:* `number`
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`internalValue`](#cdktfprovidernewrelicdashboardwidgetcomparewithlistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidgetCompareWith`](#@cdktf/provider-newrelic.DashboardWidgetCompareWith)[] | *No description.* |
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithList.property.internalValue" id="cdktfprovidernewrelicdashboardwidgetcomparewithlistpropertyinternalvalue"></a>
-
-```typescript
-public readonly internalValue: IResolvable | DashboardWidgetCompareWith[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidgetCompareWith`](#@cdktf/provider-newrelic.DashboardWidgetCompareWith)[]
-
----
-
-
-### DashboardWidgetCompareWithOutputReference <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithOutputReference" id="cdktfprovidernewrelicdashboardwidgetcomparewithoutputreference"></a>
-
-#### Initializers <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithOutputReference.Initializer" id="cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferenceinitializer"></a>
-
-```typescript
-import { DashboardWidgetCompareWithOutputReference } from '@cdktf/provider-newrelic'
-
-new DashboardWidgetCompareWithOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
-| [`terraformAttribute`](#cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`complexObjectIndex`](#cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
-| [`complexObjectIsFromSet`](#cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferenceparameterterraformresource"></a>
-
-- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferenceparameterterraformattribute"></a>
-
-- *Type:* `string`
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferenceparametercomplexobjectindex"></a>
-
-- *Type:* `number`
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferenceparametercomplexobjectisfromset"></a>
-
-- *Type:* `boolean`
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`putPresentation`](#cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferenceputpresentation) | *No description.* |
-
----
-
-##### `putPresentation` <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithOutputReference.putPresentation" id="cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferenceputpresentation"></a>
-
-```typescript
-public putPresentation(value: DashboardWidgetCompareWithPresentation)
-```
-
-###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithOutputReference.parameter.value" id="cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferenceparametervalue"></a>
-
-- *Type:* [`@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation`](#@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation)
-
----
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`presentation`](#cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferencepropertypresentation)<span title="Required">*</span> | [`@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentationOutputReference`](#@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentationOutputReference) | *No description.* |
-| [`offsetDurationInput`](#cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferencepropertyoffsetdurationinput) | `string` | *No description.* |
-| [`presentationInput`](#cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferencepropertypresentationinput) | [`@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation`](#@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation) | *No description.* |
-| [`offsetDuration`](#cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferencepropertyoffsetduration)<span title="Required">*</span> | `string` | *No description.* |
-| [`internalValue`](#cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidgetCompareWith`](#@cdktf/provider-newrelic.DashboardWidgetCompareWith) | *No description.* |
-
----
-
-##### `presentation`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithOutputReference.property.presentation" id="cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferencepropertypresentation"></a>
-
-```typescript
-public readonly presentation: DashboardWidgetCompareWithPresentationOutputReference;
-```
-
-- *Type:* [`@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentationOutputReference`](#@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentationOutputReference)
-
----
-
-##### `offsetDurationInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithOutputReference.property.offsetDurationInput" id="cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferencepropertyoffsetdurationinput"></a>
-
-```typescript
-public readonly offsetDurationInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `presentationInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithOutputReference.property.presentationInput" id="cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferencepropertypresentationinput"></a>
-
-```typescript
-public readonly presentationInput: DashboardWidgetCompareWithPresentation;
-```
-
-- *Type:* [`@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation`](#@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation)
-
----
-
-##### `offsetDuration`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithOutputReference.property.offsetDuration" id="cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferencepropertyoffsetduration"></a>
-
-```typescript
-public readonly offsetDuration: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithOutputReference.property.internalValue" id="cdktfprovidernewrelicdashboardwidgetcomparewithoutputreferencepropertyinternalvalue"></a>
-
-```typescript
-public readonly internalValue: IResolvable | DashboardWidgetCompareWith;
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidgetCompareWith`](#@cdktf/provider-newrelic.DashboardWidgetCompareWith)
-
----
-
-
-### DashboardWidgetCompareWithPresentationOutputReference <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentationOutputReference" id="cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreference"></a>
-
-#### Initializers <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentationOutputReference.Initializer" id="cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferenceinitializer"></a>
-
-```typescript
-import { DashboardWidgetCompareWithPresentationOutputReference } from '@cdktf/provider-newrelic'
-
-new DashboardWidgetCompareWithPresentationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
-| [`terraformAttribute`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentationOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferenceparameterterraformresource"></a>
-
-- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentationOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferenceparameterterraformattribute"></a>
-
-- *Type:* `string`
-
-The attribute on the parent resource this class is referencing.
-
----
-
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`colorInput`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferencepropertycolorinput) | `string` | *No description.* |
-| [`nameInput`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferencepropertynameinput) | `string` | *No description.* |
-| [`color`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferencepropertycolor)<span title="Required">*</span> | `string` | *No description.* |
-| [`name`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferencepropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`internalValue`](#cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation`](#@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation) | *No description.* |
-
----
-
-##### `colorInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentationOutputReference.property.colorInput" id="cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferencepropertycolorinput"></a>
-
-```typescript
-public readonly colorInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentationOutputReference.property.nameInput" id="cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferencepropertynameinput"></a>
-
-```typescript
-public readonly nameInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `color`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentationOutputReference.property.color" id="cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferencepropertycolor"></a>
-
-```typescript
-public readonly color: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentationOutputReference.property.name" id="cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferencepropertyname"></a>
-
-```typescript
-public readonly name: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentationOutputReference.property.internalValue" id="cdktfprovidernewrelicdashboardwidgetcomparewithpresentationoutputreferencepropertyinternalvalue"></a>
-
-```typescript
-public readonly internalValue: DashboardWidgetCompareWithPresentation;
-```
-
-- *Type:* [`@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation`](#@cdktf/provider-newrelic.DashboardWidgetCompareWithPresentation)
-
----
-
-
-### DashboardWidgetList <a name="@cdktf/provider-newrelic.DashboardWidgetList" id="cdktfprovidernewrelicdashboardwidgetlist"></a>
-
-#### Initializers <a name="@cdktf/provider-newrelic.DashboardWidgetList.Initializer" id="cdktfprovidernewrelicdashboardwidgetlistinitializer"></a>
-
-```typescript
-import { DashboardWidgetList } from '@cdktf/provider-newrelic'
-
-new DashboardWidgetList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicdashboardwidgetlistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
-| [`terraformAttribute`](#cdktfprovidernewrelicdashboardwidgetlistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`wrapsSet`](#cdktfprovidernewrelicdashboardwidgetlistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetList.parameter.terraformResource" id="cdktfprovidernewrelicdashboardwidgetlistparameterterraformresource"></a>
-
-- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetList.parameter.terraformAttribute" id="cdktfprovidernewrelicdashboardwidgetlistparameterterraformattribute"></a>
-
-- *Type:* `string`
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetList.parameter.wrapsSet" id="cdktfprovidernewrelicdashboardwidgetlistparameterwrapsset"></a>
-
-- *Type:* `boolean`
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`get`](#cdktfprovidernewrelicdashboardwidgetlistget) | *No description.* |
-
----
-
-##### `get` <a name="@cdktf/provider-newrelic.DashboardWidgetList.get" id="cdktfprovidernewrelicdashboardwidgetlistget"></a>
-
-```typescript
-public get(index: number)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetList.parameter.index" id="cdktfprovidernewrelicdashboardwidgetlistparameterindex"></a>
-
-- *Type:* `number`
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`internalValue`](#cdktfprovidernewrelicdashboardwidgetlistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[] | *No description.* |
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetList.property.internalValue" id="cdktfprovidernewrelicdashboardwidgetlistpropertyinternalvalue"></a>
-
-```typescript
-public readonly internalValue: IResolvable | DashboardWidget[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)[]
-
----
-
-
-### DashboardWidgetMetricList <a name="@cdktf/provider-newrelic.DashboardWidgetMetricList" id="cdktfprovidernewrelicdashboardwidgetmetriclist"></a>
-
-#### Initializers <a name="@cdktf/provider-newrelic.DashboardWidgetMetricList.Initializer" id="cdktfprovidernewrelicdashboardwidgetmetriclistinitializer"></a>
-
-```typescript
-import { DashboardWidgetMetricList } from '@cdktf/provider-newrelic'
-
-new DashboardWidgetMetricList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicdashboardwidgetmetriclistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
-| [`terraformAttribute`](#cdktfprovidernewrelicdashboardwidgetmetriclistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`wrapsSet`](#cdktfprovidernewrelicdashboardwidgetmetriclistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricList.parameter.terraformResource" id="cdktfprovidernewrelicdashboardwidgetmetriclistparameterterraformresource"></a>
-
-- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricList.parameter.terraformAttribute" id="cdktfprovidernewrelicdashboardwidgetmetriclistparameterterraformattribute"></a>
-
-- *Type:* `string`
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricList.parameter.wrapsSet" id="cdktfprovidernewrelicdashboardwidgetmetriclistparameterwrapsset"></a>
-
-- *Type:* `boolean`
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`get`](#cdktfprovidernewrelicdashboardwidgetmetriclistget) | *No description.* |
-
----
-
-##### `get` <a name="@cdktf/provider-newrelic.DashboardWidgetMetricList.get" id="cdktfprovidernewrelicdashboardwidgetmetriclistget"></a>
-
-```typescript
-public get(index: number)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricList.parameter.index" id="cdktfprovidernewrelicdashboardwidgetmetriclistparameterindex"></a>
-
-- *Type:* `number`
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`internalValue`](#cdktfprovidernewrelicdashboardwidgetmetriclistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidgetMetric`](#@cdktf/provider-newrelic.DashboardWidgetMetric)[] | *No description.* |
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricList.property.internalValue" id="cdktfprovidernewrelicdashboardwidgetmetriclistpropertyinternalvalue"></a>
-
-```typescript
-public readonly internalValue: IResolvable | DashboardWidgetMetric[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidgetMetric`](#@cdktf/provider-newrelic.DashboardWidgetMetric)[]
-
----
-
-
-### DashboardWidgetMetricOutputReference <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreference"></a>
-
-#### Initializers <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference.Initializer" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreferenceinitializer"></a>
-
-```typescript
-import { DashboardWidgetMetricOutputReference } from '@cdktf/provider-newrelic'
-
-new DashboardWidgetMetricOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicdashboardwidgetmetricoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
-| [`terraformAttribute`](#cdktfprovidernewrelicdashboardwidgetmetricoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`complexObjectIndex`](#cdktfprovidernewrelicdashboardwidgetmetricoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
-| [`complexObjectIsFromSet`](#cdktfprovidernewrelicdashboardwidgetmetricoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreferenceparameterterraformresource"></a>
-
-- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreferenceparameterterraformattribute"></a>
-
-- *Type:* `string`
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreferenceparametercomplexobjectindex"></a>
-
-- *Type:* `number`
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreferenceparametercomplexobjectisfromset"></a>
-
-- *Type:* `boolean`
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`resetScope`](#cdktfprovidernewrelicdashboardwidgetmetricoutputreferenceresetscope) | *No description.* |
-| [`resetUnits`](#cdktfprovidernewrelicdashboardwidgetmetricoutputreferenceresetunits) | *No description.* |
-| [`resetValues`](#cdktfprovidernewrelicdashboardwidgetmetricoutputreferenceresetvalues) | *No description.* |
-
----
-
-##### `resetScope` <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference.resetScope" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreferenceresetscope"></a>
-
-```typescript
-public resetScope()
-```
-
-##### `resetUnits` <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference.resetUnits" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreferenceresetunits"></a>
-
-```typescript
-public resetUnits()
-```
-
-##### `resetValues` <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference.resetValues" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreferenceresetvalues"></a>
-
-```typescript
-public resetValues()
-```
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`nameInput`](#cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertynameinput) | `string` | *No description.* |
-| [`scopeInput`](#cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertyscopeinput) | `string` | *No description.* |
-| [`unitsInput`](#cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertyunitsinput) | `string` | *No description.* |
-| [`valuesInput`](#cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertyvaluesinput) | `string`[] | *No description.* |
-| [`name`](#cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`scope`](#cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertyscope)<span title="Required">*</span> | `string` | *No description.* |
-| [`units`](#cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertyunits)<span title="Required">*</span> | `string` | *No description.* |
-| [`values`](#cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertyvalues)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`internalValue`](#cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidgetMetric`](#@cdktf/provider-newrelic.DashboardWidgetMetric) | *No description.* |
-
----
-
-##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference.property.nameInput" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertynameinput"></a>
-
-```typescript
-public readonly nameInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `scopeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference.property.scopeInput" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertyscopeinput"></a>
-
-```typescript
-public readonly scopeInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `unitsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference.property.unitsInput" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertyunitsinput"></a>
-
-```typescript
-public readonly unitsInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `valuesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference.property.valuesInput" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertyvaluesinput"></a>
-
-```typescript
-public readonly valuesInput: string[];
-```
-
-- *Type:* `string`[]
-
----
-
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference.property.name" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertyname"></a>
-
-```typescript
-public readonly name: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `scope`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference.property.scope" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertyscope"></a>
-
-```typescript
-public readonly scope: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `units`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference.property.units" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertyunits"></a>
-
-```typescript
-public readonly units: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `values`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference.property.values" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertyvalues"></a>
-
-```typescript
-public readonly values: string[];
-```
-
-- *Type:* `string`[]
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetMetricOutputReference.property.internalValue" id="cdktfprovidernewrelicdashboardwidgetmetricoutputreferencepropertyinternalvalue"></a>
-
-```typescript
-public readonly internalValue: IResolvable | DashboardWidgetMetric;
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidgetMetric`](#@cdktf/provider-newrelic.DashboardWidgetMetric)
-
----
-
-
-### DashboardWidgetOutputReference <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference" id="cdktfprovidernewrelicdashboardwidgetoutputreference"></a>
-
-#### Initializers <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.Initializer" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceinitializer"></a>
-
-```typescript
-import { DashboardWidgetOutputReference } from '@cdktf/provider-newrelic'
-
-new DashboardWidgetOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
-| [`terraformAttribute`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`complexObjectIndex`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
-| [`complexObjectIsFromSet`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceparameterterraformresource"></a>
-
-- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceparameterterraformattribute"></a>
-
-- *Type:* `string`
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceparametercomplexobjectindex"></a>
-
-- *Type:* `number`
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceparametercomplexobjectisfromset"></a>
-
-- *Type:* `boolean`
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`putCompareWith`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceputcomparewith) | *No description.* |
-| [`putMetric`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceputmetric) | *No description.* |
-| [`resetAccountId`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceresetaccountid) | *No description.* |
-| [`resetCompareWith`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceresetcomparewith) | *No description.* |
-| [`resetDrilldownDashboardId`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceresetdrilldowndashboardid) | *No description.* |
-| [`resetDuration`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceresetduration) | *No description.* |
-| [`resetEndTime`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceresetendtime) | *No description.* |
-| [`resetEntityIds`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceresetentityids) | *No description.* |
-| [`resetFacet`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceresetfacet) | *No description.* |
-| [`resetHeight`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceresetheight) | *No description.* |
-| [`resetLimit`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceresetlimit) | *No description.* |
-| [`resetMetric`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceresetmetric) | *No description.* |
-| [`resetNotes`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceresetnotes) | *No description.* |
-| [`resetNrql`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceresetnrql) | *No description.* |
-| [`resetOrderBy`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceresetorderby) | *No description.* |
-| [`resetSource`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceresetsource) | *No description.* |
-| [`resetThresholdRed`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceresetthresholdred) | *No description.* |
-| [`resetThresholdYellow`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceresetthresholdyellow) | *No description.* |
-| [`resetWidth`](#cdktfprovidernewrelicdashboardwidgetoutputreferenceresetwidth) | *No description.* |
-
----
-
-##### `putCompareWith` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.putCompareWith" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceputcomparewith"></a>
-
-```typescript
-public putCompareWith(value: IResolvable | DashboardWidgetCompareWith[])
-```
-
-###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.parameter.value" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceparametervalue"></a>
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidgetCompareWith`](#@cdktf/provider-newrelic.DashboardWidgetCompareWith)[]
-
----
-
-##### `putMetric` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.putMetric" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceputmetric"></a>
-
-```typescript
-public putMetric(value: IResolvable | DashboardWidgetMetric[])
-```
-
-###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.parameter.value" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceparametervalue"></a>
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidgetMetric`](#@cdktf/provider-newrelic.DashboardWidgetMetric)[]
-
----
-
-##### `resetAccountId` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.resetAccountId" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceresetaccountid"></a>
-
-```typescript
-public resetAccountId()
-```
-
-##### `resetCompareWith` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.resetCompareWith" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceresetcomparewith"></a>
-
-```typescript
-public resetCompareWith()
-```
-
-##### `resetDrilldownDashboardId` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.resetDrilldownDashboardId" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceresetdrilldowndashboardid"></a>
-
-```typescript
-public resetDrilldownDashboardId()
-```
-
-##### `resetDuration` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.resetDuration" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceresetduration"></a>
-
-```typescript
-public resetDuration()
-```
-
-##### `resetEndTime` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.resetEndTime" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceresetendtime"></a>
-
-```typescript
-public resetEndTime()
-```
-
-##### `resetEntityIds` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.resetEntityIds" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceresetentityids"></a>
-
-```typescript
-public resetEntityIds()
-```
-
-##### `resetFacet` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.resetFacet" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceresetfacet"></a>
-
-```typescript
-public resetFacet()
-```
-
-##### `resetHeight` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.resetHeight" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceresetheight"></a>
-
-```typescript
-public resetHeight()
-```
-
-##### `resetLimit` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.resetLimit" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceresetlimit"></a>
-
-```typescript
-public resetLimit()
-```
-
-##### `resetMetric` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.resetMetric" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceresetmetric"></a>
-
-```typescript
-public resetMetric()
-```
-
-##### `resetNotes` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.resetNotes" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceresetnotes"></a>
-
-```typescript
-public resetNotes()
-```
-
-##### `resetNrql` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.resetNrql" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceresetnrql"></a>
-
-```typescript
-public resetNrql()
-```
-
-##### `resetOrderBy` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.resetOrderBy" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceresetorderby"></a>
-
-```typescript
-public resetOrderBy()
-```
-
-##### `resetSource` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.resetSource" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceresetsource"></a>
-
-```typescript
-public resetSource()
-```
-
-##### `resetThresholdRed` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.resetThresholdRed" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceresetthresholdred"></a>
-
-```typescript
-public resetThresholdRed()
-```
-
-##### `resetThresholdYellow` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.resetThresholdYellow" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceresetthresholdyellow"></a>
-
-```typescript
-public resetThresholdYellow()
-```
-
-##### `resetWidth` <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.resetWidth" id="cdktfprovidernewrelicdashboardwidgetoutputreferenceresetwidth"></a>
-
-```typescript
-public resetWidth()
-```
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`compareWith`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertycomparewith)<span title="Required">*</span> | [`@cdktf/provider-newrelic.DashboardWidgetCompareWithList`](#@cdktf/provider-newrelic.DashboardWidgetCompareWithList) | *No description.* |
-| [`metric`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertymetric)<span title="Required">*</span> | [`@cdktf/provider-newrelic.DashboardWidgetMetricList`](#@cdktf/provider-newrelic.DashboardWidgetMetricList) | *No description.* |
-| [`rawMetricName`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyrawmetricname)<span title="Required">*</span> | `string` | *No description.* |
-| [`widgetId`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertywidgetid)<span title="Required">*</span> | `number` | *No description.* |
-| [`accountIdInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyaccountidinput) | `number` | *No description.* |
-| [`columnInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertycolumninput) | `number` | *No description.* |
-| [`compareWithInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertycomparewithinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidgetCompareWith`](#@cdktf/provider-newrelic.DashboardWidgetCompareWith)[] | *No description.* |
-| [`drilldownDashboardIdInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertydrilldowndashboardidinput) | `number` | *No description.* |
-| [`durationInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertydurationinput) | `number` | *No description.* |
-| [`endTimeInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyendtimeinput) | `number` | *No description.* |
-| [`entityIdsInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyentityidsinput) | `number`[] | *No description.* |
-| [`facetInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyfacetinput) | `string` | *No description.* |
-| [`heightInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyheightinput) | `number` | *No description.* |
-| [`limitInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertylimitinput) | `number` | *No description.* |
-| [`metricInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertymetricinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidgetMetric`](#@cdktf/provider-newrelic.DashboardWidgetMetric)[] | *No description.* |
-| [`notesInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertynotesinput) | `string` | *No description.* |
-| [`nrqlInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertynrqlinput) | `string` | *No description.* |
-| [`orderByInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyorderbyinput) | `string` | *No description.* |
-| [`rowInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyrowinput) | `number` | *No description.* |
-| [`sourceInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertysourceinput) | `string` | *No description.* |
-| [`thresholdRedInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertythresholdredinput) | `number` | *No description.* |
-| [`thresholdYellowInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertythresholdyellowinput) | `number` | *No description.* |
-| [`titleInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertytitleinput) | `string` | *No description.* |
-| [`visualizationInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyvisualizationinput) | `string` | *No description.* |
-| [`widthInput`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertywidthinput) | `number` | *No description.* |
-| [`accountId`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
-| [`column`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertycolumn)<span title="Required">*</span> | `number` | *No description.* |
-| [`drilldownDashboardId`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertydrilldowndashboardid)<span title="Required">*</span> | `number` | *No description.* |
-| [`duration`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyduration)<span title="Required">*</span> | `number` | *No description.* |
-| [`endTime`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyendtime)<span title="Required">*</span> | `number` | *No description.* |
-| [`entityIds`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyentityids)<span title="Required">*</span> | `number`[] | *No description.* |
-| [`facet`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyfacet)<span title="Required">*</span> | `string` | *No description.* |
-| [`height`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyheight)<span title="Required">*</span> | `number` | *No description.* |
-| [`limit`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertylimit)<span title="Required">*</span> | `number` | *No description.* |
-| [`notes`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertynotes)<span title="Required">*</span> | `string` | *No description.* |
-| [`nrql`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertynrql)<span title="Required">*</span> | `string` | *No description.* |
-| [`orderBy`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyorderby)<span title="Required">*</span> | `string` | *No description.* |
-| [`row`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyrow)<span title="Required">*</span> | `number` | *No description.* |
-| [`source`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertysource)<span title="Required">*</span> | `string` | *No description.* |
-| [`thresholdRed`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertythresholdred)<span title="Required">*</span> | `number` | *No description.* |
-| [`thresholdYellow`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertythresholdyellow)<span title="Required">*</span> | `number` | *No description.* |
-| [`title`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertytitle)<span title="Required">*</span> | `string` | *No description.* |
-| [`visualization`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyvisualization)<span title="Required">*</span> | `string` | *No description.* |
-| [`width`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertywidth)<span title="Required">*</span> | `number` | *No description.* |
-| [`internalValue`](#cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget) | *No description.* |
-
----
-
-##### `compareWith`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.compareWith" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertycomparewith"></a>
-
-```typescript
-public readonly compareWith: DashboardWidgetCompareWithList;
-```
-
-- *Type:* [`@cdktf/provider-newrelic.DashboardWidgetCompareWithList`](#@cdktf/provider-newrelic.DashboardWidgetCompareWithList)
-
----
-
-##### `metric`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.metric" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertymetric"></a>
-
-```typescript
-public readonly metric: DashboardWidgetMetricList;
-```
-
-- *Type:* [`@cdktf/provider-newrelic.DashboardWidgetMetricList`](#@cdktf/provider-newrelic.DashboardWidgetMetricList)
-
----
-
-##### `rawMetricName`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.rawMetricName" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyrawmetricname"></a>
-
-```typescript
-public readonly rawMetricName: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `widgetId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.widgetId" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertywidgetid"></a>
-
-```typescript
-public readonly widgetId: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `accountIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.accountIdInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyaccountidinput"></a>
-
-```typescript
-public readonly accountIdInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `columnInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.columnInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertycolumninput"></a>
-
-```typescript
-public readonly columnInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `compareWithInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.compareWithInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertycomparewithinput"></a>
-
-```typescript
-public readonly compareWithInput: IResolvable | DashboardWidgetCompareWith[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidgetCompareWith`](#@cdktf/provider-newrelic.DashboardWidgetCompareWith)[]
-
----
-
-##### `drilldownDashboardIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.drilldownDashboardIdInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertydrilldowndashboardidinput"></a>
-
-```typescript
-public readonly drilldownDashboardIdInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `durationInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.durationInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertydurationinput"></a>
-
-```typescript
-public readonly durationInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `endTimeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.endTimeInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyendtimeinput"></a>
-
-```typescript
-public readonly endTimeInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `entityIdsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.entityIdsInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyentityidsinput"></a>
-
-```typescript
-public readonly entityIdsInput: number[];
-```
-
-- *Type:* `number`[]
-
----
-
-##### `facetInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.facetInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyfacetinput"></a>
-
-```typescript
-public readonly facetInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `heightInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.heightInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyheightinput"></a>
-
-```typescript
-public readonly heightInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `limitInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.limitInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertylimitinput"></a>
-
-```typescript
-public readonly limitInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `metricInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.metricInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertymetricinput"></a>
-
-```typescript
-public readonly metricInput: IResolvable | DashboardWidgetMetric[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidgetMetric`](#@cdktf/provider-newrelic.DashboardWidgetMetric)[]
-
----
-
-##### `notesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.notesInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertynotesinput"></a>
-
-```typescript
-public readonly notesInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `nrqlInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.nrqlInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertynrqlinput"></a>
-
-```typescript
-public readonly nrqlInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `orderByInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.orderByInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyorderbyinput"></a>
-
-```typescript
-public readonly orderByInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `rowInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.rowInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyrowinput"></a>
-
-```typescript
-public readonly rowInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `sourceInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.sourceInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertysourceinput"></a>
-
-```typescript
-public readonly sourceInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `thresholdRedInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.thresholdRedInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertythresholdredinput"></a>
-
-```typescript
-public readonly thresholdRedInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `thresholdYellowInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.thresholdYellowInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertythresholdyellowinput"></a>
-
-```typescript
-public readonly thresholdYellowInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `titleInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.titleInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertytitleinput"></a>
-
-```typescript
-public readonly titleInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `visualizationInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.visualizationInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyvisualizationinput"></a>
-
-```typescript
-public readonly visualizationInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `widthInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.widthInput" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertywidthinput"></a>
-
-```typescript
-public readonly widthInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.accountId" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyaccountid"></a>
-
-```typescript
-public readonly accountId: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `column`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.column" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertycolumn"></a>
-
-```typescript
-public readonly column: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `drilldownDashboardId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.drilldownDashboardId" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertydrilldowndashboardid"></a>
-
-```typescript
-public readonly drilldownDashboardId: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `duration`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.duration" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyduration"></a>
-
-```typescript
-public readonly duration: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `endTime`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.endTime" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyendtime"></a>
-
-```typescript
-public readonly endTime: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `entityIds`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.entityIds" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyentityids"></a>
-
-```typescript
-public readonly entityIds: number[];
-```
-
-- *Type:* `number`[]
-
----
-
-##### `facet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.facet" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyfacet"></a>
-
-```typescript
-public readonly facet: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `height`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.height" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyheight"></a>
-
-```typescript
-public readonly height: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `limit`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.limit" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertylimit"></a>
-
-```typescript
-public readonly limit: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `notes`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.notes" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertynotes"></a>
-
-```typescript
-public readonly notes: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `nrql`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.nrql" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertynrql"></a>
-
-```typescript
-public readonly nrql: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `orderBy`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.orderBy" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyorderby"></a>
-
-```typescript
-public readonly orderBy: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `row`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.row" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyrow"></a>
-
-```typescript
-public readonly row: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `source`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.source" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertysource"></a>
-
-```typescript
-public readonly source: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `thresholdRed`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.thresholdRed" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertythresholdred"></a>
-
-```typescript
-public readonly thresholdRed: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `thresholdYellow`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.thresholdYellow" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertythresholdyellow"></a>
-
-```typescript
-public readonly thresholdYellow: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `title`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.title" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertytitle"></a>
-
-```typescript
-public readonly title: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `visualization`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.visualization" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyvisualization"></a>
-
-```typescript
-public readonly visualization: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `width`<sup>Required</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.width" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertywidth"></a>
-
-```typescript
-public readonly width: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardWidgetOutputReference.property.internalValue" id="cdktfprovidernewrelicdashboardwidgetoutputreferencepropertyinternalvalue"></a>
-
-```typescript
-public readonly internalValue: IResolvable | DashboardWidget;
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.DashboardWidget`](#@cdktf/provider-newrelic.DashboardWidget)
-
----
-
-
 ### DataNewrelicAlertChannelConfigAList <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAList" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigalist"></a>
 
 #### Initializers <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfigAList.Initializer" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigalistinitializer"></a>
@@ -49091,25 +48583,25 @@ public readonly internalValue: IResolvable | InsightsEventEvent;
 ---
 
 
-### NotificationChannelPropertiesList <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesList" id="cdktfprovidernewrelicnotificationchannelpropertieslist"></a>
+### NotificationChannelPropertyList <a name="@cdktf/provider-newrelic.NotificationChannelPropertyList" id="cdktfprovidernewrelicnotificationchannelpropertylist"></a>
 
-#### Initializers <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesList.Initializer" id="cdktfprovidernewrelicnotificationchannelpropertieslistinitializer"></a>
+#### Initializers <a name="@cdktf/provider-newrelic.NotificationChannelPropertyList.Initializer" id="cdktfprovidernewrelicnotificationchannelpropertylistinitializer"></a>
 
 ```typescript
-import { NotificationChannelPropertiesList } from '@cdktf/provider-newrelic'
+import { NotificationChannelPropertyList } from '@cdktf/provider-newrelic'
 
-new NotificationChannelPropertiesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+new NotificationChannelPropertyList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicnotificationchannelpropertieslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
-| [`terraformAttribute`](#cdktfprovidernewrelicnotificationchannelpropertieslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`wrapsSet`](#cdktfprovidernewrelicnotificationchannelpropertieslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| [`terraformResource`](#cdktfprovidernewrelicnotificationchannelpropertylistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicnotificationchannelpropertylistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidernewrelicnotificationchannelpropertylistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesList.parameter.terraformResource" id="cdktfprovidernewrelicnotificationchannelpropertieslistparameterterraformresource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyList.parameter.terraformResource" id="cdktfprovidernewrelicnotificationchannelpropertylistparameterterraformresource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
@@ -49117,7 +48609,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesList.parameter.terraformAttribute" id="cdktfprovidernewrelicnotificationchannelpropertieslistparameterterraformattribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyList.parameter.terraformAttribute" id="cdktfprovidernewrelicnotificationchannelpropertylistparameterterraformattribute"></a>
 
 - *Type:* `string`
 
@@ -49125,7 +48617,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesList.parameter.wrapsSet" id="cdktfprovidernewrelicnotificationchannelpropertieslistparameterwrapsset"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyList.parameter.wrapsSet" id="cdktfprovidernewrelicnotificationchannelpropertylistparameterwrapsset"></a>
 
 - *Type:* `boolean`
 
@@ -49137,17 +48629,17 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| [`get`](#cdktfprovidernewrelicnotificationchannelpropertieslistget) | *No description.* |
+| [`get`](#cdktfprovidernewrelicnotificationchannelpropertylistget) | *No description.* |
 
 ---
 
-##### `get` <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesList.get" id="cdktfprovidernewrelicnotificationchannelpropertieslistget"></a>
+##### `get` <a name="@cdktf/provider-newrelic.NotificationChannelPropertyList.get" id="cdktfprovidernewrelicnotificationchannelpropertylistget"></a>
 
 ```typescript
 public get(index: number)
 ```
 
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesList.parameter.index" id="cdktfprovidernewrelicnotificationchannelpropertieslistparameterindex"></a>
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyList.parameter.index" id="cdktfprovidernewrelicnotificationchannelpropertylistparameterindex"></a>
 
 - *Type:* `number`
 
@@ -49160,41 +48652,41 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`internalValue`](#cdktfprovidernewrelicnotificationchannelpropertieslistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties)[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicnotificationchannelpropertylistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationChannelProperty`](#@cdktf/provider-newrelic.NotificationChannelProperty)[] | *No description.* |
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesList.property.internalValue" id="cdktfprovidernewrelicnotificationchannelpropertieslistpropertyinternalvalue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyList.property.internalValue" id="cdktfprovidernewrelicnotificationchannelpropertylistpropertyinternalvalue"></a>
 
 ```typescript
-public readonly internalValue: IResolvable | NotificationChannelProperties[];
+public readonly internalValue: IResolvable | NotificationChannelProperty[];
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationChannelProperty`](#@cdktf/provider-newrelic.NotificationChannelProperty)[]
 
 ---
 
 
-### NotificationChannelPropertiesOutputReference <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreference"></a>
+### NotificationChannelPropertyOutputReference <a name="@cdktf/provider-newrelic.NotificationChannelPropertyOutputReference" id="cdktfprovidernewrelicnotificationchannelpropertyoutputreference"></a>
 
-#### Initializers <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.Initializer" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceinitializer"></a>
+#### Initializers <a name="@cdktf/provider-newrelic.NotificationChannelPropertyOutputReference.Initializer" id="cdktfprovidernewrelicnotificationchannelpropertyoutputreferenceinitializer"></a>
 
 ```typescript
-import { NotificationChannelPropertiesOutputReference } from '@cdktf/provider-newrelic'
+import { NotificationChannelPropertyOutputReference } from '@cdktf/provider-newrelic'
 
-new NotificationChannelPropertiesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+new NotificationChannelPropertyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
-| [`terraformAttribute`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`complexObjectIndex`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
-| [`complexObjectIsFromSet`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| [`terraformResource`](#cdktfprovidernewrelicnotificationchannelpropertyoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicnotificationchannelpropertyoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidernewrelicnotificationchannelpropertyoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidernewrelicnotificationchannelpropertyoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceparameterterraformresource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicnotificationchannelpropertyoutputreferenceparameterterraformresource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
@@ -49202,7 +48694,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceparameterterraformattribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicnotificationchannelpropertyoutputreferenceparameterterraformattribute"></a>
 
 - *Type:* `string`
 
@@ -49210,7 +48702,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceparametercomplexobjectindex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicnotificationchannelpropertyoutputreferenceparametercomplexobjectindex"></a>
 
 - *Type:* `number`
 
@@ -49218,7 +48710,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceparametercomplexobjectisfromset"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicnotificationchannelpropertyoutputreferenceparametercomplexobjectisfromset"></a>
 
 - *Type:* `boolean`
 
@@ -49230,18 +48722,18 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| [`resetDisplayValue`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceresetdisplayvalue) | *No description.* |
-| [`resetLabel`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceresetlabel) | *No description.* |
+| [`resetDisplayValue`](#cdktfprovidernewrelicnotificationchannelpropertyoutputreferenceresetdisplayvalue) | *No description.* |
+| [`resetLabel`](#cdktfprovidernewrelicnotificationchannelpropertyoutputreferenceresetlabel) | *No description.* |
 
 ---
 
-##### `resetDisplayValue` <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.resetDisplayValue" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceresetdisplayvalue"></a>
+##### `resetDisplayValue` <a name="@cdktf/provider-newrelic.NotificationChannelPropertyOutputReference.resetDisplayValue" id="cdktfprovidernewrelicnotificationchannelpropertyoutputreferenceresetdisplayvalue"></a>
 
 ```typescript
 public resetDisplayValue()
 ```
 
-##### `resetLabel` <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.resetLabel" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferenceresetlabel"></a>
+##### `resetLabel` <a name="@cdktf/provider-newrelic.NotificationChannelPropertyOutputReference.resetLabel" id="cdktfprovidernewrelicnotificationchannelpropertyoutputreferenceresetlabel"></a>
 
 ```typescript
 public resetLabel()
@@ -49252,19 +48744,19 @@ public resetLabel()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`displayValueInput`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertydisplayvalueinput) | `string` | *No description.* |
-| [`keyInput`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertykeyinput) | `string` | *No description.* |
-| [`labelInput`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertylabelinput) | `string` | *No description.* |
-| [`valueInput`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertyvalueinput) | `string` | *No description.* |
-| [`displayValue`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertydisplayvalue)<span title="Required">*</span> | `string` | *No description.* |
-| [`key`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertykey)<span title="Required">*</span> | `string` | *No description.* |
-| [`label`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertylabel)<span title="Required">*</span> | `string` | *No description.* |
-| [`value`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertyvalue)<span title="Required">*</span> | `string` | *No description.* |
-| [`internalValue`](#cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties) | *No description.* |
+| [`displayValueInput`](#cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertydisplayvalueinput) | `string` | *No description.* |
+| [`keyInput`](#cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertykeyinput) | `string` | *No description.* |
+| [`labelInput`](#cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertylabelinput) | `string` | *No description.* |
+| [`valueInput`](#cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertyvalueinput) | `string` | *No description.* |
+| [`displayValue`](#cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertydisplayvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`key`](#cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertykey)<span title="Required">*</span> | `string` | *No description.* |
+| [`label`](#cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertylabel)<span title="Required">*</span> | `string` | *No description.* |
+| [`value`](#cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertyvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationChannelProperty`](#@cdktf/provider-newrelic.NotificationChannelProperty) | *No description.* |
 
 ---
 
-##### `displayValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.displayValueInput" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertydisplayvalueinput"></a>
+##### `displayValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyOutputReference.property.displayValueInput" id="cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertydisplayvalueinput"></a>
 
 ```typescript
 public readonly displayValueInput: string;
@@ -49274,7 +48766,7 @@ public readonly displayValueInput: string;
 
 ---
 
-##### `keyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.keyInput" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertykeyinput"></a>
+##### `keyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyOutputReference.property.keyInput" id="cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertykeyinput"></a>
 
 ```typescript
 public readonly keyInput: string;
@@ -49284,7 +48776,7 @@ public readonly keyInput: string;
 
 ---
 
-##### `labelInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.labelInput" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertylabelinput"></a>
+##### `labelInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyOutputReference.property.labelInput" id="cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertylabelinput"></a>
 
 ```typescript
 public readonly labelInput: string;
@@ -49294,7 +48786,7 @@ public readonly labelInput: string;
 
 ---
 
-##### `valueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.valueInput" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertyvalueinput"></a>
+##### `valueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyOutputReference.property.valueInput" id="cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertyvalueinput"></a>
 
 ```typescript
 public readonly valueInput: string;
@@ -49304,7 +48796,7 @@ public readonly valueInput: string;
 
 ---
 
-##### `displayValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.displayValue" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertydisplayvalue"></a>
+##### `displayValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyOutputReference.property.displayValue" id="cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertydisplayvalue"></a>
 
 ```typescript
 public readonly displayValue: string;
@@ -49314,7 +48806,7 @@ public readonly displayValue: string;
 
 ---
 
-##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.key" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertykey"></a>
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyOutputReference.property.key" id="cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertykey"></a>
 
 ```typescript
 public readonly key: string;
@@ -49324,7 +48816,7 @@ public readonly key: string;
 
 ---
 
-##### `label`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.label" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertylabel"></a>
+##### `label`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyOutputReference.property.label" id="cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertylabel"></a>
 
 ```typescript
 public readonly label: string;
@@ -49334,7 +48826,7 @@ public readonly label: string;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.value" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertyvalue"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyOutputReference.property.value" id="cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertyvalue"></a>
 
 ```typescript
 public readonly value: string;
@@ -49344,36 +48836,35 @@ public readonly value: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference.property.internalValue" id="cdktfprovidernewrelicnotificationchannelpropertiesoutputreferencepropertyinternalvalue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelPropertyOutputReference.property.internalValue" id="cdktfprovidernewrelicnotificationchannelpropertyoutputreferencepropertyinternalvalue"></a>
 
 ```typescript
-public readonly internalValue: IResolvable | NotificationChannelProperties;
+public readonly internalValue: IResolvable | NotificationChannelProperty;
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationChannelProperties`](#@cdktf/provider-newrelic.NotificationChannelProperties)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationChannelProperty`](#@cdktf/provider-newrelic.NotificationChannelProperty)
 
 ---
 
 
-### NotificationDestinationPropertiesList <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesList" id="cdktfprovidernewrelicnotificationdestinationpropertieslist"></a>
+### NotificationDestinationAuthBasicOutputReference <a name="@cdktf/provider-newrelic.NotificationDestinationAuthBasicOutputReference" id="cdktfprovidernewrelicnotificationdestinationauthbasicoutputreference"></a>
 
-#### Initializers <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesList.Initializer" id="cdktfprovidernewrelicnotificationdestinationpropertieslistinitializer"></a>
+#### Initializers <a name="@cdktf/provider-newrelic.NotificationDestinationAuthBasicOutputReference.Initializer" id="cdktfprovidernewrelicnotificationdestinationauthbasicoutputreferenceinitializer"></a>
 
 ```typescript
-import { NotificationDestinationPropertiesList } from '@cdktf/provider-newrelic'
+import { NotificationDestinationAuthBasicOutputReference } from '@cdktf/provider-newrelic'
 
-new NotificationDestinationPropertiesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+new NotificationDestinationAuthBasicOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicnotificationdestinationpropertieslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
-| [`terraformAttribute`](#cdktfprovidernewrelicnotificationdestinationpropertieslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`wrapsSet`](#cdktfprovidernewrelicnotificationdestinationpropertieslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| [`terraformResource`](#cdktfprovidernewrelicnotificationdestinationauthbasicoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicnotificationdestinationauthbasicoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesList.parameter.terraformResource" id="cdktfprovidernewrelicnotificationdestinationpropertieslistparameterterraformresource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthBasicOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicnotificationdestinationauthbasicoutputreferenceparameterterraformresource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
@@ -49381,7 +48872,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesList.parameter.terraformAttribute" id="cdktfprovidernewrelicnotificationdestinationpropertieslistparameterterraformattribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthBasicOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicnotificationdestinationauthbasicoutputreferenceparameterterraformattribute"></a>
 
 - *Type:* `string`
 
@@ -49389,7 +48880,217 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesList.parameter.wrapsSet" id="cdktfprovidernewrelicnotificationdestinationpropertieslistparameterwrapsset"></a>
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`passwordInput`](#cdktfprovidernewrelicnotificationdestinationauthbasicoutputreferencepropertypasswordinput) | `string` | *No description.* |
+| [`userInput`](#cdktfprovidernewrelicnotificationdestinationauthbasicoutputreferencepropertyuserinput) | `string` | *No description.* |
+| [`password`](#cdktfprovidernewrelicnotificationdestinationauthbasicoutputreferencepropertypassword)<span title="Required">*</span> | `string` | *No description.* |
+| [`user`](#cdktfprovidernewrelicnotificationdestinationauthbasicoutputreferencepropertyuser)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicnotificationdestinationauthbasicoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.NotificationDestinationAuthBasic`](#@cdktf/provider-newrelic.NotificationDestinationAuthBasic) | *No description.* |
+
+---
+
+##### `passwordInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthBasicOutputReference.property.passwordInput" id="cdktfprovidernewrelicnotificationdestinationauthbasicoutputreferencepropertypasswordinput"></a>
+
+```typescript
+public readonly passwordInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `userInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthBasicOutputReference.property.userInput" id="cdktfprovidernewrelicnotificationdestinationauthbasicoutputreferencepropertyuserinput"></a>
+
+```typescript
+public readonly userInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `password`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthBasicOutputReference.property.password" id="cdktfprovidernewrelicnotificationdestinationauthbasicoutputreferencepropertypassword"></a>
+
+```typescript
+public readonly password: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `user`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthBasicOutputReference.property.user" id="cdktfprovidernewrelicnotificationdestinationauthbasicoutputreferencepropertyuser"></a>
+
+```typescript
+public readonly user: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthBasicOutputReference.property.internalValue" id="cdktfprovidernewrelicnotificationdestinationauthbasicoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: NotificationDestinationAuthBasic;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.NotificationDestinationAuthBasic`](#@cdktf/provider-newrelic.NotificationDestinationAuthBasic)
+
+---
+
+
+### NotificationDestinationAuthTokenOutputReference <a name="@cdktf/provider-newrelic.NotificationDestinationAuthTokenOutputReference" id="cdktfprovidernewrelicnotificationdestinationauthtokenoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.NotificationDestinationAuthTokenOutputReference.Initializer" id="cdktfprovidernewrelicnotificationdestinationauthtokenoutputreferenceinitializer"></a>
+
+```typescript
+import { NotificationDestinationAuthTokenOutputReference } from '@cdktf/provider-newrelic'
+
+new NotificationDestinationAuthTokenOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicnotificationdestinationauthtokenoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicnotificationdestinationauthtokenoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthTokenOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicnotificationdestinationauthtokenoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthTokenOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicnotificationdestinationauthtokenoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetPrefix`](#cdktfprovidernewrelicnotificationdestinationauthtokenoutputreferenceresetprefix) | *No description.* |
+
+---
+
+##### `resetPrefix` <a name="@cdktf/provider-newrelic.NotificationDestinationAuthTokenOutputReference.resetPrefix" id="cdktfprovidernewrelicnotificationdestinationauthtokenoutputreferenceresetprefix"></a>
+
+```typescript
+public resetPrefix()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`prefixInput`](#cdktfprovidernewrelicnotificationdestinationauthtokenoutputreferencepropertyprefixinput) | `string` | *No description.* |
+| [`tokenInput`](#cdktfprovidernewrelicnotificationdestinationauthtokenoutputreferencepropertytokeninput) | `string` | *No description.* |
+| [`prefix`](#cdktfprovidernewrelicnotificationdestinationauthtokenoutputreferencepropertyprefix)<span title="Required">*</span> | `string` | *No description.* |
+| [`token`](#cdktfprovidernewrelicnotificationdestinationauthtokenoutputreferencepropertytoken)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicnotificationdestinationauthtokenoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.NotificationDestinationAuthToken`](#@cdktf/provider-newrelic.NotificationDestinationAuthToken) | *No description.* |
+
+---
+
+##### `prefixInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthTokenOutputReference.property.prefixInput" id="cdktfprovidernewrelicnotificationdestinationauthtokenoutputreferencepropertyprefixinput"></a>
+
+```typescript
+public readonly prefixInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `tokenInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthTokenOutputReference.property.tokenInput" id="cdktfprovidernewrelicnotificationdestinationauthtokenoutputreferencepropertytokeninput"></a>
+
+```typescript
+public readonly tokenInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `prefix`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthTokenOutputReference.property.prefix" id="cdktfprovidernewrelicnotificationdestinationauthtokenoutputreferencepropertyprefix"></a>
+
+```typescript
+public readonly prefix: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `token`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthTokenOutputReference.property.token" id="cdktfprovidernewrelicnotificationdestinationauthtokenoutputreferencepropertytoken"></a>
+
+```typescript
+public readonly token: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationAuthTokenOutputReference.property.internalValue" id="cdktfprovidernewrelicnotificationdestinationauthtokenoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: NotificationDestinationAuthToken;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.NotificationDestinationAuthToken`](#@cdktf/provider-newrelic.NotificationDestinationAuthToken)
+
+---
+
+
+### NotificationDestinationPropertyList <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyList" id="cdktfprovidernewrelicnotificationdestinationpropertylist"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyList.Initializer" id="cdktfprovidernewrelicnotificationdestinationpropertylistinitializer"></a>
+
+```typescript
+import { NotificationDestinationPropertyList } from '@cdktf/provider-newrelic'
+
+new NotificationDestinationPropertyList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicnotificationdestinationpropertylistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicnotificationdestinationpropertylistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidernewrelicnotificationdestinationpropertylistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyList.parameter.terraformResource" id="cdktfprovidernewrelicnotificationdestinationpropertylistparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyList.parameter.terraformAttribute" id="cdktfprovidernewrelicnotificationdestinationpropertylistparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyList.parameter.wrapsSet" id="cdktfprovidernewrelicnotificationdestinationpropertylistparameterwrapsset"></a>
 
 - *Type:* `boolean`
 
@@ -49401,17 +49102,17 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| [`get`](#cdktfprovidernewrelicnotificationdestinationpropertieslistget) | *No description.* |
+| [`get`](#cdktfprovidernewrelicnotificationdestinationpropertylistget) | *No description.* |
 
 ---
 
-##### `get` <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesList.get" id="cdktfprovidernewrelicnotificationdestinationpropertieslistget"></a>
+##### `get` <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyList.get" id="cdktfprovidernewrelicnotificationdestinationpropertylistget"></a>
 
 ```typescript
 public get(index: number)
 ```
 
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesList.parameter.index" id="cdktfprovidernewrelicnotificationdestinationpropertieslistparameterindex"></a>
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyList.parameter.index" id="cdktfprovidernewrelicnotificationdestinationpropertylistparameterindex"></a>
 
 - *Type:* `number`
 
@@ -49424,41 +49125,41 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`internalValue`](#cdktfprovidernewrelicnotificationdestinationpropertieslistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties)[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicnotificationdestinationpropertylistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationDestinationProperty`](#@cdktf/provider-newrelic.NotificationDestinationProperty)[] | *No description.* |
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesList.property.internalValue" id="cdktfprovidernewrelicnotificationdestinationpropertieslistpropertyinternalvalue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyList.property.internalValue" id="cdktfprovidernewrelicnotificationdestinationpropertylistpropertyinternalvalue"></a>
 
 ```typescript
-public readonly internalValue: IResolvable | NotificationDestinationProperties[];
+public readonly internalValue: IResolvable | NotificationDestinationProperty[];
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationDestinationProperty`](#@cdktf/provider-newrelic.NotificationDestinationProperty)[]
 
 ---
 
 
-### NotificationDestinationPropertiesOutputReference <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreference"></a>
+### NotificationDestinationPropertyOutputReference <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyOutputReference" id="cdktfprovidernewrelicnotificationdestinationpropertyoutputreference"></a>
 
-#### Initializers <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.Initializer" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceinitializer"></a>
+#### Initializers <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyOutputReference.Initializer" id="cdktfprovidernewrelicnotificationdestinationpropertyoutputreferenceinitializer"></a>
 
 ```typescript
-import { NotificationDestinationPropertiesOutputReference } from '@cdktf/provider-newrelic'
+import { NotificationDestinationPropertyOutputReference } from '@cdktf/provider-newrelic'
 
-new NotificationDestinationPropertiesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+new NotificationDestinationPropertyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
-| [`terraformAttribute`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`complexObjectIndex`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
-| [`complexObjectIsFromSet`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| [`terraformResource`](#cdktfprovidernewrelicnotificationdestinationpropertyoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicnotificationdestinationpropertyoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidernewrelicnotificationdestinationpropertyoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidernewrelicnotificationdestinationpropertyoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceparameterterraformresource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicnotificationdestinationpropertyoutputreferenceparameterterraformresource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
@@ -49466,7 +49167,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceparameterterraformattribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicnotificationdestinationpropertyoutputreferenceparameterterraformattribute"></a>
 
 - *Type:* `string`
 
@@ -49474,7 +49175,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceparametercomplexobjectindex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicnotificationdestinationpropertyoutputreferenceparametercomplexobjectindex"></a>
 
 - *Type:* `number`
 
@@ -49482,7 +49183,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceparametercomplexobjectisfromset"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicnotificationdestinationpropertyoutputreferenceparametercomplexobjectisfromset"></a>
 
 - *Type:* `boolean`
 
@@ -49494,18 +49195,18 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| [`resetDisplayValue`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceresetdisplayvalue) | *No description.* |
-| [`resetLabel`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceresetlabel) | *No description.* |
+| [`resetDisplayValue`](#cdktfprovidernewrelicnotificationdestinationpropertyoutputreferenceresetdisplayvalue) | *No description.* |
+| [`resetLabel`](#cdktfprovidernewrelicnotificationdestinationpropertyoutputreferenceresetlabel) | *No description.* |
 
 ---
 
-##### `resetDisplayValue` <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.resetDisplayValue" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceresetdisplayvalue"></a>
+##### `resetDisplayValue` <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyOutputReference.resetDisplayValue" id="cdktfprovidernewrelicnotificationdestinationpropertyoutputreferenceresetdisplayvalue"></a>
 
 ```typescript
 public resetDisplayValue()
 ```
 
-##### `resetLabel` <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.resetLabel" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferenceresetlabel"></a>
+##### `resetLabel` <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyOutputReference.resetLabel" id="cdktfprovidernewrelicnotificationdestinationpropertyoutputreferenceresetlabel"></a>
 
 ```typescript
 public resetLabel()
@@ -49516,19 +49217,19 @@ public resetLabel()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`displayValueInput`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertydisplayvalueinput) | `string` | *No description.* |
-| [`keyInput`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertykeyinput) | `string` | *No description.* |
-| [`labelInput`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertylabelinput) | `string` | *No description.* |
-| [`valueInput`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertyvalueinput) | `string` | *No description.* |
-| [`displayValue`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertydisplayvalue)<span title="Required">*</span> | `string` | *No description.* |
-| [`key`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertykey)<span title="Required">*</span> | `string` | *No description.* |
-| [`label`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertylabel)<span title="Required">*</span> | `string` | *No description.* |
-| [`value`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertyvalue)<span title="Required">*</span> | `string` | *No description.* |
-| [`internalValue`](#cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties) | *No description.* |
+| [`displayValueInput`](#cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertydisplayvalueinput) | `string` | *No description.* |
+| [`keyInput`](#cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertykeyinput) | `string` | *No description.* |
+| [`labelInput`](#cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertylabelinput) | `string` | *No description.* |
+| [`valueInput`](#cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertyvalueinput) | `string` | *No description.* |
+| [`displayValue`](#cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertydisplayvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`key`](#cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertykey)<span title="Required">*</span> | `string` | *No description.* |
+| [`label`](#cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertylabel)<span title="Required">*</span> | `string` | *No description.* |
+| [`value`](#cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertyvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.NotificationDestinationProperty`](#@cdktf/provider-newrelic.NotificationDestinationProperty) | *No description.* |
 
 ---
 
-##### `displayValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.displayValueInput" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertydisplayvalueinput"></a>
+##### `displayValueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyOutputReference.property.displayValueInput" id="cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertydisplayvalueinput"></a>
 
 ```typescript
 public readonly displayValueInput: string;
@@ -49538,7 +49239,7 @@ public readonly displayValueInput: string;
 
 ---
 
-##### `keyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.keyInput" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertykeyinput"></a>
+##### `keyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyOutputReference.property.keyInput" id="cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertykeyinput"></a>
 
 ```typescript
 public readonly keyInput: string;
@@ -49548,7 +49249,7 @@ public readonly keyInput: string;
 
 ---
 
-##### `labelInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.labelInput" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertylabelinput"></a>
+##### `labelInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyOutputReference.property.labelInput" id="cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertylabelinput"></a>
 
 ```typescript
 public readonly labelInput: string;
@@ -49558,7 +49259,7 @@ public readonly labelInput: string;
 
 ---
 
-##### `valueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.valueInput" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertyvalueinput"></a>
+##### `valueInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyOutputReference.property.valueInput" id="cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertyvalueinput"></a>
 
 ```typescript
 public readonly valueInput: string;
@@ -49568,7 +49269,7 @@ public readonly valueInput: string;
 
 ---
 
-##### `displayValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.displayValue" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertydisplayvalue"></a>
+##### `displayValue`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyOutputReference.property.displayValue" id="cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertydisplayvalue"></a>
 
 ```typescript
 public readonly displayValue: string;
@@ -49578,7 +49279,7 @@ public readonly displayValue: string;
 
 ---
 
-##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.key" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertykey"></a>
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyOutputReference.property.key" id="cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertykey"></a>
 
 ```typescript
 public readonly key: string;
@@ -49588,7 +49289,7 @@ public readonly key: string;
 
 ---
 
-##### `label`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.label" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertylabel"></a>
+##### `label`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyOutputReference.property.label" id="cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertylabel"></a>
 
 ```typescript
 public readonly label: string;
@@ -49598,7 +49299,7 @@ public readonly label: string;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.value" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertyvalue"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyOutputReference.property.value" id="cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertyvalue"></a>
 
 ```typescript
 public readonly value: string;
@@ -49608,13 +49309,13 @@ public readonly value: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference.property.internalValue" id="cdktfprovidernewrelicnotificationdestinationpropertiesoutputreferencepropertyinternalvalue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationPropertyOutputReference.property.internalValue" id="cdktfprovidernewrelicnotificationdestinationpropertyoutputreferencepropertyinternalvalue"></a>
 
 ```typescript
-public readonly internalValue: IResolvable | NotificationDestinationProperties;
+public readonly internalValue: IResolvable | NotificationDestinationProperty;
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationDestinationProperties`](#@cdktf/provider-newrelic.NotificationDestinationProperties)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.NotificationDestinationProperty`](#@cdktf/provider-newrelic.NotificationDestinationProperty)
 
 ---
 
@@ -60090,292 +59791,6 @@ public readonly internalValue: IResolvable | OneDashboardRawPageWidget;
 ---
 
 
-### PluginsAlertConditionTermList <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermList" id="cdktfprovidernewrelicpluginsalertconditiontermlist"></a>
-
-#### Initializers <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermList.Initializer" id="cdktfprovidernewrelicpluginsalertconditiontermlistinitializer"></a>
-
-```typescript
-import { PluginsAlertConditionTermList } from '@cdktf/provider-newrelic'
-
-new PluginsAlertConditionTermList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicpluginsalertconditiontermlistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
-| [`terraformAttribute`](#cdktfprovidernewrelicpluginsalertconditiontermlistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`wrapsSet`](#cdktfprovidernewrelicpluginsalertconditiontermlistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermList.parameter.terraformResource" id="cdktfprovidernewrelicpluginsalertconditiontermlistparameterterraformresource"></a>
-
-- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermList.parameter.terraformAttribute" id="cdktfprovidernewrelicpluginsalertconditiontermlistparameterterraformattribute"></a>
-
-- *Type:* `string`
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermList.parameter.wrapsSet" id="cdktfprovidernewrelicpluginsalertconditiontermlistparameterwrapsset"></a>
-
-- *Type:* `boolean`
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`get`](#cdktfprovidernewrelicpluginsalertconditiontermlistget) | *No description.* |
-
----
-
-##### `get` <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermList.get" id="cdktfprovidernewrelicpluginsalertconditiontermlistget"></a>
-
-```typescript
-public get(index: number)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermList.parameter.index" id="cdktfprovidernewrelicpluginsalertconditiontermlistparameterindex"></a>
-
-- *Type:* `number`
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`internalValue`](#cdktfprovidernewrelicpluginsalertconditiontermlistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[] | *No description.* |
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermList.property.internalValue" id="cdktfprovidernewrelicpluginsalertconditiontermlistpropertyinternalvalue"></a>
-
-```typescript
-public readonly internalValue: IResolvable | PluginsAlertConditionTerm[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)[]
-
----
-
-
-### PluginsAlertConditionTermOutputReference <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreference"></a>
-
-#### Initializers <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.Initializer" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferenceinitializer"></a>
-
-```typescript
-import { PluginsAlertConditionTermOutputReference } from '@cdktf/provider-newrelic'
-
-new PluginsAlertConditionTermOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`terraformResource`](#cdktfprovidernewrelicpluginsalertconditiontermoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
-| [`terraformAttribute`](#cdktfprovidernewrelicpluginsalertconditiontermoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`complexObjectIndex`](#cdktfprovidernewrelicpluginsalertconditiontermoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
-| [`complexObjectIsFromSet`](#cdktfprovidernewrelicpluginsalertconditiontermoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferenceparameterterraformresource"></a>
-
-- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferenceparameterterraformattribute"></a>
-
-- *Type:* `string`
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferenceparametercomplexobjectindex"></a>
-
-- *Type:* `number`
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferenceparametercomplexobjectisfromset"></a>
-
-- *Type:* `boolean`
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`resetOperator`](#cdktfprovidernewrelicpluginsalertconditiontermoutputreferenceresetoperator) | *No description.* |
-| [`resetPriority`](#cdktfprovidernewrelicpluginsalertconditiontermoutputreferenceresetpriority) | *No description.* |
-
----
-
-##### `resetOperator` <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.resetOperator" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferenceresetoperator"></a>
-
-```typescript
-public resetOperator()
-```
-
-##### `resetPriority` <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.resetPriority" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferenceresetpriority"></a>
-
-```typescript
-public resetPriority()
-```
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`durationInput`](#cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertydurationinput) | `number` | *No description.* |
-| [`operatorInput`](#cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertyoperatorinput) | `string` | *No description.* |
-| [`priorityInput`](#cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertypriorityinput) | `string` | *No description.* |
-| [`thresholdInput`](#cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertythresholdinput) | `number` | *No description.* |
-| [`timeFunctionInput`](#cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertytimefunctioninput) | `string` | *No description.* |
-| [`duration`](#cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertyduration)<span title="Required">*</span> | `number` | *No description.* |
-| [`operator`](#cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertyoperator)<span title="Required">*</span> | `string` | *No description.* |
-| [`priority`](#cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertypriority)<span title="Required">*</span> | `string` | *No description.* |
-| [`threshold`](#cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertythreshold)<span title="Required">*</span> | `number` | *No description.* |
-| [`timeFunction`](#cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertytimefunction)<span title="Required">*</span> | `string` | *No description.* |
-| [`internalValue`](#cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm) | *No description.* |
-
----
-
-##### `durationInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.property.durationInput" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertydurationinput"></a>
-
-```typescript
-public readonly durationInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `operatorInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.property.operatorInput" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertyoperatorinput"></a>
-
-```typescript
-public readonly operatorInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `priorityInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.property.priorityInput" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertypriorityinput"></a>
-
-```typescript
-public readonly priorityInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `thresholdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.property.thresholdInput" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertythresholdinput"></a>
-
-```typescript
-public readonly thresholdInput: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `timeFunctionInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.property.timeFunctionInput" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertytimefunctioninput"></a>
-
-```typescript
-public readonly timeFunctionInput: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `duration`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.property.duration" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertyduration"></a>
-
-```typescript
-public readonly duration: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `operator`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.property.operator" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertyoperator"></a>
-
-```typescript
-public readonly operator: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `priority`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.property.priority" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertypriority"></a>
-
-```typescript
-public readonly priority: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `threshold`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.property.threshold" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertythreshold"></a>
-
-```typescript
-public readonly threshold: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `timeFunction`<sup>Required</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.property.timeFunction" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertytimefunction"></a>
-
-```typescript
-public readonly timeFunction: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionTermOutputReference.property.internalValue" id="cdktfprovidernewrelicpluginsalertconditiontermoutputreferencepropertyinternalvalue"></a>
-
-```typescript
-public readonly internalValue: IResolvable | PluginsAlertConditionTerm;
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.PluginsAlertConditionTerm`](#@cdktf/provider-newrelic.PluginsAlertConditionTerm)
-
----
-
-
 ### ServiceLevelEventsBadEventsOutputReference <a name="@cdktf/provider-newrelic.ServiceLevelEventsBadEventsOutputReference" id="cdktfprovidernewrelicserviceleveleventsbadeventsoutputreference"></a>
 
 #### Initializers <a name="@cdktf/provider-newrelic.ServiceLevelEventsBadEventsOutputReference.Initializer" id="cdktfprovidernewrelicserviceleveleventsbadeventsoutputreferenceinitializer"></a>
@@ -61278,6 +60693,406 @@ public readonly internalValue: ServiceLevelObjectiveTimeWindowRolling;
 ---
 
 
+### SyntheticsBrokenLinksMonitorTagList <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagList" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortaglist"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagList.Initializer" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortaglistinitializer"></a>
+
+```typescript
+import { SyntheticsBrokenLinksMonitorTagList } from '@cdktf/provider-newrelic'
+
+new SyntheticsBrokenLinksMonitorTagList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitortaglistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitortaglistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitortaglistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagList.parameter.terraformResource" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortaglistparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagList.parameter.terraformAttribute" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortaglistparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagList.parameter.wrapsSet" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortaglistparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitortaglistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagList.get" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortaglistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagList.parameter.index" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortaglistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`internalValue`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitortaglistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag`](#@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag)[] | *No description.* |
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagList.property.internalValue" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortaglistpropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | SyntheticsBrokenLinksMonitorTag[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag`](#@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag)[]
+
+---
+
+
+### SyntheticsBrokenLinksMonitorTagOutputReference <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagOutputReference" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagOutputReference.Initializer" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferenceinitializer"></a>
+
+```typescript
+import { SyntheticsBrokenLinksMonitorTagOutputReference } from '@cdktf/provider-newrelic'
+
+new SyntheticsBrokenLinksMonitorTagOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`keyInput`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferencepropertykeyinput) | `string` | *No description.* |
+| [`valuesInput`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferencepropertyvaluesinput) | `string`[] | *No description.* |
+| [`key`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferencepropertykey)<span title="Required">*</span> | `string` | *No description.* |
+| [`values`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferencepropertyvalues)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag`](#@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag) | *No description.* |
+
+---
+
+##### `keyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagOutputReference.property.keyInput" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferencepropertykeyinput"></a>
+
+```typescript
+public readonly keyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `valuesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagOutputReference.property.valuesInput" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferencepropertyvaluesinput"></a>
+
+```typescript
+public readonly valuesInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagOutputReference.property.key" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferencepropertykey"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `values`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagOutputReference.property.values" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferencepropertyvalues"></a>
+
+```typescript
+public readonly values: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTagOutputReference.property.internalValue" id="cdktfprovidernewrelicsyntheticsbrokenlinksmonitortagoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | SyntheticsBrokenLinksMonitorTag;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag`](#@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitorTag)
+
+---
+
+
+### SyntheticsCertCheckMonitorTagList <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagList" id="cdktfprovidernewrelicsyntheticscertcheckmonitortaglist"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagList.Initializer" id="cdktfprovidernewrelicsyntheticscertcheckmonitortaglistinitializer"></a>
+
+```typescript
+import { SyntheticsCertCheckMonitorTagList } from '@cdktf/provider-newrelic'
+
+new SyntheticsCertCheckMonitorTagList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicsyntheticscertcheckmonitortaglistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicsyntheticscertcheckmonitortaglistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidernewrelicsyntheticscertcheckmonitortaglistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagList.parameter.terraformResource" id="cdktfprovidernewrelicsyntheticscertcheckmonitortaglistparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagList.parameter.terraformAttribute" id="cdktfprovidernewrelicsyntheticscertcheckmonitortaglistparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagList.parameter.wrapsSet" id="cdktfprovidernewrelicsyntheticscertcheckmonitortaglistparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovidernewrelicsyntheticscertcheckmonitortaglistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagList.get" id="cdktfprovidernewrelicsyntheticscertcheckmonitortaglistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagList.parameter.index" id="cdktfprovidernewrelicsyntheticscertcheckmonitortaglistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`internalValue`](#cdktfprovidernewrelicsyntheticscertcheckmonitortaglistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag`](#@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag)[] | *No description.* |
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagList.property.internalValue" id="cdktfprovidernewrelicsyntheticscertcheckmonitortaglistpropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | SyntheticsCertCheckMonitorTag[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag`](#@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag)[]
+
+---
+
+
+### SyntheticsCertCheckMonitorTagOutputReference <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagOutputReference" id="cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagOutputReference.Initializer" id="cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferenceinitializer"></a>
+
+```typescript
+import { SyntheticsCertCheckMonitorTagOutputReference } from '@cdktf/provider-newrelic'
+
+new SyntheticsCertCheckMonitorTagOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`keyInput`](#cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferencepropertykeyinput) | `string` | *No description.* |
+| [`valuesInput`](#cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferencepropertyvaluesinput) | `string`[] | *No description.* |
+| [`key`](#cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferencepropertykey)<span title="Required">*</span> | `string` | *No description.* |
+| [`values`](#cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferencepropertyvalues)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag`](#@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag) | *No description.* |
+
+---
+
+##### `keyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagOutputReference.property.keyInput" id="cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferencepropertykeyinput"></a>
+
+```typescript
+public readonly keyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `valuesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagOutputReference.property.valuesInput" id="cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferencepropertyvaluesinput"></a>
+
+```typescript
+public readonly valuesInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagOutputReference.property.key" id="cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferencepropertykey"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `values`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagOutputReference.property.values" id="cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferencepropertyvalues"></a>
+
+```typescript
+public readonly values: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTagOutputReference.property.internalValue" id="cdktfprovidernewrelicsyntheticscertcheckmonitortagoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | SyntheticsCertCheckMonitorTag;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag`](#@cdktf/provider-newrelic.SyntheticsCertCheckMonitorTag)
+
+---
+
+
 ### SyntheticsMonitorScriptLocationList <a name="@cdktf/provider-newrelic.SyntheticsMonitorScriptLocationList" id="cdktfprovidernewrelicsyntheticsmonitorscriptlocationlist"></a>
 
 #### Initializers <a name="@cdktf/provider-newrelic.SyntheticsMonitorScriptLocationList.Initializer" id="cdktfprovidernewrelicsyntheticsmonitorscriptlocationlistinitializer"></a>
@@ -61668,6 +61483,1758 @@ public readonly internalValue: SyntheticsMultilocationAlertConditionWarning;
 ```
 
 - *Type:* [`@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionWarning`](#@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionWarning)
+
+---
+
+
+### SyntheticsStepMonitorLocationsPrivateList <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateList" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivatelist"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateList.Initializer" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivatelistinitializer"></a>
+
+```typescript
+import { SyntheticsStepMonitorLocationsPrivateList } from '@cdktf/provider-newrelic'
+
+new SyntheticsStepMonitorLocationsPrivateList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivatelistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivatelistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivatelistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateList.parameter.terraformResource" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivatelistparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateList.parameter.terraformAttribute" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivatelistparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateList.parameter.wrapsSet" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivatelistparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivatelistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateList.get" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivatelistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateList.parameter.index" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivatelistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`internalValue`](#cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivatelistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate`](#@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate)[] | *No description.* |
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateList.property.internalValue" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivatelistpropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | SyntheticsStepMonitorLocationsPrivate[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate`](#@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate)[]
+
+---
+
+
+### SyntheticsStepMonitorLocationsPrivateOutputReference <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateOutputReference" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateOutputReference.Initializer" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferenceinitializer"></a>
+
+```typescript
+import { SyntheticsStepMonitorLocationsPrivateOutputReference } from '@cdktf/provider-newrelic'
+
+new SyntheticsStepMonitorLocationsPrivateOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetVsePassword`](#cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferenceresetvsepassword) | *No description.* |
+
+---
+
+##### `resetVsePassword` <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateOutputReference.resetVsePassword" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferenceresetvsepassword"></a>
+
+```typescript
+public resetVsePassword()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`guidInput`](#cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferencepropertyguidinput) | `string` | *No description.* |
+| [`vsePasswordInput`](#cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferencepropertyvsepasswordinput) | `string` | *No description.* |
+| [`guid`](#cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferencepropertyguid)<span title="Required">*</span> | `string` | *No description.* |
+| [`vsePassword`](#cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferencepropertyvsepassword)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate`](#@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate) | *No description.* |
+
+---
+
+##### `guidInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateOutputReference.property.guidInput" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferencepropertyguidinput"></a>
+
+```typescript
+public readonly guidInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `vsePasswordInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateOutputReference.property.vsePasswordInput" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferencepropertyvsepasswordinput"></a>
+
+```typescript
+public readonly vsePasswordInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `guid`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateOutputReference.property.guid" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferencepropertyguid"></a>
+
+```typescript
+public readonly guid: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `vsePassword`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateOutputReference.property.vsePassword" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferencepropertyvsepassword"></a>
+
+```typescript
+public readonly vsePassword: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivateOutputReference.property.internalValue" id="cdktfprovidernewrelicsyntheticsstepmonitorlocationsprivateoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | SyntheticsStepMonitorLocationsPrivate;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate`](#@cdktf/provider-newrelic.SyntheticsStepMonitorLocationsPrivate)
+
+---
+
+
+### SyntheticsStepMonitorStepsList <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsList" id="cdktfprovidernewrelicsyntheticsstepmonitorstepslist"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsList.Initializer" id="cdktfprovidernewrelicsyntheticsstepmonitorstepslistinitializer"></a>
+
+```typescript
+import { SyntheticsStepMonitorStepsList } from '@cdktf/provider-newrelic'
+
+new SyntheticsStepMonitorStepsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicsyntheticsstepmonitorstepslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicsyntheticsstepmonitorstepslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidernewrelicsyntheticsstepmonitorstepslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsList.parameter.terraformResource" id="cdktfprovidernewrelicsyntheticsstepmonitorstepslistparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsList.parameter.terraformAttribute" id="cdktfprovidernewrelicsyntheticsstepmonitorstepslistparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsList.parameter.wrapsSet" id="cdktfprovidernewrelicsyntheticsstepmonitorstepslistparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovidernewrelicsyntheticsstepmonitorstepslistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsList.get" id="cdktfprovidernewrelicsyntheticsstepmonitorstepslistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsList.parameter.index" id="cdktfprovidernewrelicsyntheticsstepmonitorstepslistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`internalValue`](#cdktfprovidernewrelicsyntheticsstepmonitorstepslistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsStepMonitorSteps`](#@cdktf/provider-newrelic.SyntheticsStepMonitorSteps)[] | *No description.* |
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsList.property.internalValue" id="cdktfprovidernewrelicsyntheticsstepmonitorstepslistpropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | SyntheticsStepMonitorSteps[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsStepMonitorSteps`](#@cdktf/provider-newrelic.SyntheticsStepMonitorSteps)[]
+
+---
+
+
+### SyntheticsStepMonitorStepsOutputReference <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsOutputReference" id="cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsOutputReference.Initializer" id="cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferenceinitializer"></a>
+
+```typescript
+import { SyntheticsStepMonitorStepsOutputReference } from '@cdktf/provider-newrelic'
+
+new SyntheticsStepMonitorStepsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`resetValues`](#cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferenceresetvalues) | *No description.* |
+
+---
+
+##### `resetValues` <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsOutputReference.resetValues" id="cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferenceresetvalues"></a>
+
+```typescript
+public resetValues()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`ordinalInput`](#cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferencepropertyordinalinput) | `number` | *No description.* |
+| [`typeInput`](#cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferencepropertytypeinput) | `string` | *No description.* |
+| [`valuesInput`](#cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferencepropertyvaluesinput) | `string`[] | *No description.* |
+| [`ordinal`](#cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferencepropertyordinal)<span title="Required">*</span> | `number` | *No description.* |
+| [`type`](#cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferencepropertytype)<span title="Required">*</span> | `string` | *No description.* |
+| [`values`](#cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferencepropertyvalues)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsStepMonitorSteps`](#@cdktf/provider-newrelic.SyntheticsStepMonitorSteps) | *No description.* |
+
+---
+
+##### `ordinalInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsOutputReference.property.ordinalInput" id="cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferencepropertyordinalinput"></a>
+
+```typescript
+public readonly ordinalInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsOutputReference.property.typeInput" id="cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferencepropertytypeinput"></a>
+
+```typescript
+public readonly typeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `valuesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsOutputReference.property.valuesInput" id="cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferencepropertyvaluesinput"></a>
+
+```typescript
+public readonly valuesInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `ordinal`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsOutputReference.property.ordinal" id="cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferencepropertyordinal"></a>
+
+```typescript
+public readonly ordinal: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsOutputReference.property.type" id="cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferencepropertytype"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `values`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsOutputReference.property.values" id="cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferencepropertyvalues"></a>
+
+```typescript
+public readonly values: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorStepsOutputReference.property.internalValue" id="cdktfprovidernewrelicsyntheticsstepmonitorstepsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | SyntheticsStepMonitorSteps;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsStepMonitorSteps`](#@cdktf/provider-newrelic.SyntheticsStepMonitorSteps)
+
+---
+
+
+### SyntheticsStepMonitorTagList <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagList" id="cdktfprovidernewrelicsyntheticsstepmonitortaglist"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagList.Initializer" id="cdktfprovidernewrelicsyntheticsstepmonitortaglistinitializer"></a>
+
+```typescript
+import { SyntheticsStepMonitorTagList } from '@cdktf/provider-newrelic'
+
+new SyntheticsStepMonitorTagList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicsyntheticsstepmonitortaglistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicsyntheticsstepmonitortaglistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidernewrelicsyntheticsstepmonitortaglistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagList.parameter.terraformResource" id="cdktfprovidernewrelicsyntheticsstepmonitortaglistparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagList.parameter.terraformAttribute" id="cdktfprovidernewrelicsyntheticsstepmonitortaglistparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagList.parameter.wrapsSet" id="cdktfprovidernewrelicsyntheticsstepmonitortaglistparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovidernewrelicsyntheticsstepmonitortaglistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagList.get" id="cdktfprovidernewrelicsyntheticsstepmonitortaglistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagList.parameter.index" id="cdktfprovidernewrelicsyntheticsstepmonitortaglistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`internalValue`](#cdktfprovidernewrelicsyntheticsstepmonitortaglistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsStepMonitorTag`](#@cdktf/provider-newrelic.SyntheticsStepMonitorTag)[] | *No description.* |
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagList.property.internalValue" id="cdktfprovidernewrelicsyntheticsstepmonitortaglistpropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | SyntheticsStepMonitorTag[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsStepMonitorTag`](#@cdktf/provider-newrelic.SyntheticsStepMonitorTag)[]
+
+---
+
+
+### SyntheticsStepMonitorTagOutputReference <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagOutputReference" id="cdktfprovidernewrelicsyntheticsstepmonitortagoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagOutputReference.Initializer" id="cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferenceinitializer"></a>
+
+```typescript
+import { SyntheticsStepMonitorTagOutputReference } from '@cdktf/provider-newrelic'
+
+new SyntheticsStepMonitorTagOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`keyInput`](#cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferencepropertykeyinput) | `string` | *No description.* |
+| [`valuesInput`](#cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferencepropertyvaluesinput) | `string`[] | *No description.* |
+| [`key`](#cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferencepropertykey)<span title="Required">*</span> | `string` | *No description.* |
+| [`values`](#cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferencepropertyvalues)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.SyntheticsStepMonitorTag`](#@cdktf/provider-newrelic.SyntheticsStepMonitorTag) | *No description.* |
+
+---
+
+##### `keyInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagOutputReference.property.keyInput" id="cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferencepropertykeyinput"></a>
+
+```typescript
+public readonly keyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `valuesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagOutputReference.property.valuesInput" id="cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferencepropertyvaluesinput"></a>
+
+```typescript
+public readonly valuesInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagOutputReference.property.key" id="cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferencepropertykey"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `values`<sup>Required</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagOutputReference.property.values" id="cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferencepropertyvalues"></a>
+
+```typescript
+public readonly values: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsStepMonitorTagOutputReference.property.internalValue" id="cdktfprovidernewrelicsyntheticsstepmonitortagoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | SyntheticsStepMonitorTag;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.SyntheticsStepMonitorTag`](#@cdktf/provider-newrelic.SyntheticsStepMonitorTag)
+
+---
+
+
+### WorkflowDestinationConfigurationList <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationList" id="cdktfprovidernewrelicworkflowdestinationconfigurationlist"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationList.Initializer" id="cdktfprovidernewrelicworkflowdestinationconfigurationlistinitializer"></a>
+
+```typescript
+import { WorkflowDestinationConfigurationList } from '@cdktf/provider-newrelic'
+
+new WorkflowDestinationConfigurationList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicworkflowdestinationconfigurationlistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicworkflowdestinationconfigurationlistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidernewrelicworkflowdestinationconfigurationlistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationList.parameter.terraformResource" id="cdktfprovidernewrelicworkflowdestinationconfigurationlistparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationList.parameter.terraformAttribute" id="cdktfprovidernewrelicworkflowdestinationconfigurationlistparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationList.parameter.wrapsSet" id="cdktfprovidernewrelicworkflowdestinationconfigurationlistparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovidernewrelicworkflowdestinationconfigurationlistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationList.get" id="cdktfprovidernewrelicworkflowdestinationconfigurationlistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationList.parameter.index" id="cdktfprovidernewrelicworkflowdestinationconfigurationlistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`internalValue`](#cdktfprovidernewrelicworkflowdestinationconfigurationlistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkflowDestinationConfiguration`](#@cdktf/provider-newrelic.WorkflowDestinationConfiguration)[] | *No description.* |
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationList.property.internalValue" id="cdktfprovidernewrelicworkflowdestinationconfigurationlistpropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | WorkflowDestinationConfiguration[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowDestinationConfiguration`](#@cdktf/provider-newrelic.WorkflowDestinationConfiguration)[]
+
+---
+
+
+### WorkflowDestinationConfigurationOutputReference <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationOutputReference" id="cdktfprovidernewrelicworkflowdestinationconfigurationoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationOutputReference.Initializer" id="cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferenceinitializer"></a>
+
+```typescript
+import { WorkflowDestinationConfigurationOutputReference } from '@cdktf/provider-newrelic'
+
+new WorkflowDestinationConfigurationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`name`](#cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferencepropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`type`](#cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferencepropertytype)<span title="Required">*</span> | `string` | *No description.* |
+| [`channelIdInput`](#cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferencepropertychannelidinput) | `string` | *No description.* |
+| [`channelId`](#cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferencepropertychannelid)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkflowDestinationConfiguration`](#@cdktf/provider-newrelic.WorkflowDestinationConfiguration) | *No description.* |
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationOutputReference.property.name" id="cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferencepropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationOutputReference.property.type" id="cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferencepropertytype"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `channelIdInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationOutputReference.property.channelIdInput" id="cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferencepropertychannelidinput"></a>
+
+```typescript
+public readonly channelIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `channelId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationOutputReference.property.channelId" id="cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferencepropertychannelid"></a>
+
+```typescript
+public readonly channelId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowDestinationConfigurationOutputReference.property.internalValue" id="cdktfprovidernewrelicworkflowdestinationconfigurationoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | WorkflowDestinationConfiguration;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowDestinationConfiguration`](#@cdktf/provider-newrelic.WorkflowDestinationConfiguration)
+
+---
+
+
+### WorkflowEnrichmentsNrqlConfigurationsList <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsList" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationslist"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsList.Initializer" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationslistinitializer"></a>
+
+```typescript
+import { WorkflowEnrichmentsNrqlConfigurationsList } from '@cdktf/provider-newrelic'
+
+new WorkflowEnrichmentsNrqlConfigurationsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsList.parameter.terraformResource" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationslistparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsList.parameter.terraformAttribute" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationslistparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsList.parameter.wrapsSet" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationslistparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationslistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsList.get" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationslistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsList.parameter.index" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationslistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`internalValue`](#cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationslistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations)[] | *No description.* |
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsList.property.internalValue" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationslistpropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | WorkflowEnrichmentsNrqlConfigurations[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations)[]
+
+---
+
+
+### WorkflowEnrichmentsNrqlConfigurationsOutputReference <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsOutputReference" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsOutputReference.Initializer" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationsoutputreferenceinitializer"></a>
+
+```typescript
+import { WorkflowEnrichmentsNrqlConfigurationsOutputReference } from '@cdktf/provider-newrelic'
+
+new WorkflowEnrichmentsNrqlConfigurationsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationsoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationsoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationsoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationsoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`queryInput`](#cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationsoutputreferencepropertyqueryinput) | `string` | *No description.* |
+| [`query`](#cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationsoutputreferencepropertyquery)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationsoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations) | *No description.* |
+
+---
+
+##### `queryInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsOutputReference.property.queryInput" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationsoutputreferencepropertyqueryinput"></a>
+
+```typescript
+public readonly queryInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `query`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsOutputReference.property.query" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationsoutputreferencepropertyquery"></a>
+
+```typescript
+public readonly query: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsOutputReference.property.internalValue" id="cdktfprovidernewrelicworkflowenrichmentsnrqlconfigurationsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | WorkflowEnrichmentsNrqlConfigurations;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations)
+
+---
+
+
+### WorkflowEnrichmentsNrqlList <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlList" id="cdktfprovidernewrelicworkflowenrichmentsnrqllist"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlList.Initializer" id="cdktfprovidernewrelicworkflowenrichmentsnrqllistinitializer"></a>
+
+```typescript
+import { WorkflowEnrichmentsNrqlList } from '@cdktf/provider-newrelic'
+
+new WorkflowEnrichmentsNrqlList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicworkflowenrichmentsnrqllistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicworkflowenrichmentsnrqllistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidernewrelicworkflowenrichmentsnrqllistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlList.parameter.terraformResource" id="cdktfprovidernewrelicworkflowenrichmentsnrqllistparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlList.parameter.terraformAttribute" id="cdktfprovidernewrelicworkflowenrichmentsnrqllistparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlList.parameter.wrapsSet" id="cdktfprovidernewrelicworkflowenrichmentsnrqllistparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovidernewrelicworkflowenrichmentsnrqllistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlList.get" id="cdktfprovidernewrelicworkflowenrichmentsnrqllistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlList.parameter.index" id="cdktfprovidernewrelicworkflowenrichmentsnrqllistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`internalValue`](#cdktfprovidernewrelicworkflowenrichmentsnrqllistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrql`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrql)[] | *No description.* |
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlList.property.internalValue" id="cdktfprovidernewrelicworkflowenrichmentsnrqllistpropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | WorkflowEnrichmentsNrql[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrql`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrql)[]
+
+---
+
+
+### WorkflowEnrichmentsNrqlOutputReference <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlOutputReference" id="cdktfprovidernewrelicworkflowenrichmentsnrqloutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlOutputReference.Initializer" id="cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferenceinitializer"></a>
+
+```typescript
+import { WorkflowEnrichmentsNrqlOutputReference } from '@cdktf/provider-newrelic'
+
+new WorkflowEnrichmentsNrqlOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`putConfigurations`](#cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferenceputconfigurations) | *No description.* |
+
+---
+
+##### `putConfigurations` <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlOutputReference.putConfigurations" id="cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferenceputconfigurations"></a>
+
+```typescript
+public putConfigurations(value: IResolvable | WorkflowEnrichmentsNrqlConfigurations[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlOutputReference.parameter.value" id="cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferenceparametervalue"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations)[]
+
+---
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`accountId`](#cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferencepropertyaccountid)<span title="Required">*</span> | `number` | *No description.* |
+| [`configurations`](#cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferencepropertyconfigurations)<span title="Required">*</span> | [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsList`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsList) | *No description.* |
+| [`enrichmentId`](#cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferencepropertyenrichmentid)<span title="Required">*</span> | `string` | *No description.* |
+| [`type`](#cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferencepropertytype)<span title="Required">*</span> | `string` | *No description.* |
+| [`configurationsInput`](#cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferencepropertyconfigurationsinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations)[] | *No description.* |
+| [`nameInput`](#cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferencepropertynameinput) | `string` | *No description.* |
+| [`name`](#cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferencepropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrql`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrql) | *No description.* |
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlOutputReference.property.accountId" id="cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferencepropertyaccountid"></a>
+
+```typescript
+public readonly accountId: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `configurations`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlOutputReference.property.configurations" id="cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferencepropertyconfigurations"></a>
+
+```typescript
+public readonly configurations: WorkflowEnrichmentsNrqlConfigurationsList;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsList`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurationsList)
+
+---
+
+##### `enrichmentId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlOutputReference.property.enrichmentId" id="cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferencepropertyenrichmentid"></a>
+
+```typescript
+public readonly enrichmentId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlOutputReference.property.type" id="cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferencepropertytype"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `configurationsInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlOutputReference.property.configurationsInput" id="cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferencepropertyconfigurationsinput"></a>
+
+```typescript
+public readonly configurationsInput: IResolvable | WorkflowEnrichmentsNrqlConfigurations[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlConfigurations)[]
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlOutputReference.property.nameInput" id="cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferencepropertynameinput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlOutputReference.property.name" id="cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferencepropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlOutputReference.property.internalValue" id="cdktfprovidernewrelicworkflowenrichmentsnrqloutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | WorkflowEnrichmentsNrql;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrql`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrql)
+
+---
+
+
+### WorkflowEnrichmentsOutputReference <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsOutputReference" id="cdktfprovidernewrelicworkflowenrichmentsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsOutputReference.Initializer" id="cdktfprovidernewrelicworkflowenrichmentsoutputreferenceinitializer"></a>
+
+```typescript
+import { WorkflowEnrichmentsOutputReference } from '@cdktf/provider-newrelic'
+
+new WorkflowEnrichmentsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicworkflowenrichmentsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicworkflowenrichmentsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicworkflowenrichmentsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicworkflowenrichmentsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`putNrql`](#cdktfprovidernewrelicworkflowenrichmentsoutputreferenceputnrql) | *No description.* |
+
+---
+
+##### `putNrql` <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsOutputReference.putNrql" id="cdktfprovidernewrelicworkflowenrichmentsoutputreferenceputnrql"></a>
+
+```typescript
+public putNrql(value: IResolvable | WorkflowEnrichmentsNrql[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsOutputReference.parameter.value" id="cdktfprovidernewrelicworkflowenrichmentsoutputreferenceparametervalue"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrql`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrql)[]
+
+---
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`nrql`](#cdktfprovidernewrelicworkflowenrichmentsoutputreferencepropertynrql)<span title="Required">*</span> | [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlList`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlList) | *No description.* |
+| [`nrqlInput`](#cdktfprovidernewrelicworkflowenrichmentsoutputreferencepropertynrqlinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrql`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrql)[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicworkflowenrichmentsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.WorkflowEnrichments`](#@cdktf/provider-newrelic.WorkflowEnrichments) | *No description.* |
+
+---
+
+##### `nrql`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsOutputReference.property.nrql" id="cdktfprovidernewrelicworkflowenrichmentsoutputreferencepropertynrql"></a>
+
+```typescript
+public readonly nrql: WorkflowEnrichmentsNrqlList;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlList`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrqlList)
+
+---
+
+##### `nrqlInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsOutputReference.property.nrqlInput" id="cdktfprovidernewrelicworkflowenrichmentsoutputreferencepropertynrqlinput"></a>
+
+```typescript
+public readonly nrqlInput: IResolvable | WorkflowEnrichmentsNrql[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowEnrichmentsNrql`](#@cdktf/provider-newrelic.WorkflowEnrichmentsNrql)[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowEnrichmentsOutputReference.property.internalValue" id="cdktfprovidernewrelicworkflowenrichmentsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: WorkflowEnrichments;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.WorkflowEnrichments`](#@cdktf/provider-newrelic.WorkflowEnrichments)
+
+---
+
+
+### WorkflowIssuesFilterOutputReference <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference" id="cdktfprovidernewrelicworkflowissuesfilteroutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference.Initializer" id="cdktfprovidernewrelicworkflowissuesfilteroutputreferenceinitializer"></a>
+
+```typescript
+import { WorkflowIssuesFilterOutputReference } from '@cdktf/provider-newrelic'
+
+new WorkflowIssuesFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicworkflowissuesfilteroutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicworkflowissuesfilteroutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicworkflowissuesfilteroutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicworkflowissuesfilteroutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`putPredicates`](#cdktfprovidernewrelicworkflowissuesfilteroutputreferenceputpredicates) | *No description.* |
+| [`resetPredicates`](#cdktfprovidernewrelicworkflowissuesfilteroutputreferenceresetpredicates) | *No description.* |
+
+---
+
+##### `putPredicates` <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference.putPredicates" id="cdktfprovidernewrelicworkflowissuesfilteroutputreferenceputpredicates"></a>
+
+```typescript
+public putPredicates(value: IResolvable | WorkflowIssuesFilterPredicates[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference.parameter.value" id="cdktfprovidernewrelicworkflowissuesfilteroutputreferenceparametervalue"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates`](#@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates)[]
+
+---
+
+##### `resetPredicates` <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference.resetPredicates" id="cdktfprovidernewrelicworkflowissuesfilteroutputreferenceresetpredicates"></a>
+
+```typescript
+public resetPredicates()
+```
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`filterId`](#cdktfprovidernewrelicworkflowissuesfilteroutputreferencepropertyfilterid)<span title="Required">*</span> | `string` | *No description.* |
+| [`predicates`](#cdktfprovidernewrelicworkflowissuesfilteroutputreferencepropertypredicates)<span title="Required">*</span> | [`@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesList`](#@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesList) | *No description.* |
+| [`nameInput`](#cdktfprovidernewrelicworkflowissuesfilteroutputreferencepropertynameinput) | `string` | *No description.* |
+| [`predicatesInput`](#cdktfprovidernewrelicworkflowissuesfilteroutputreferencepropertypredicatesinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates`](#@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates)[] | *No description.* |
+| [`typeInput`](#cdktfprovidernewrelicworkflowissuesfilteroutputreferencepropertytypeinput) | `string` | *No description.* |
+| [`name`](#cdktfprovidernewrelicworkflowissuesfilteroutputreferencepropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`type`](#cdktfprovidernewrelicworkflowissuesfilteroutputreferencepropertytype)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicworkflowissuesfilteroutputreferencepropertyinternalvalue) | [`@cdktf/provider-newrelic.WorkflowIssuesFilter`](#@cdktf/provider-newrelic.WorkflowIssuesFilter) | *No description.* |
+
+---
+
+##### `filterId`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference.property.filterId" id="cdktfprovidernewrelicworkflowissuesfilteroutputreferencepropertyfilterid"></a>
+
+```typescript
+public readonly filterId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `predicates`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference.property.predicates" id="cdktfprovidernewrelicworkflowissuesfilteroutputreferencepropertypredicates"></a>
+
+```typescript
+public readonly predicates: WorkflowIssuesFilterPredicatesList;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesList`](#@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesList)
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference.property.nameInput" id="cdktfprovidernewrelicworkflowissuesfilteroutputreferencepropertynameinput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `predicatesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference.property.predicatesInput" id="cdktfprovidernewrelicworkflowissuesfilteroutputreferencepropertypredicatesinput"></a>
+
+```typescript
+public readonly predicatesInput: IResolvable | WorkflowIssuesFilterPredicates[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates`](#@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates)[]
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference.property.typeInput" id="cdktfprovidernewrelicworkflowissuesfilteroutputreferencepropertytypeinput"></a>
+
+```typescript
+public readonly typeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference.property.name" id="cdktfprovidernewrelicworkflowissuesfilteroutputreferencepropertyname"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference.property.type" id="cdktfprovidernewrelicworkflowissuesfilteroutputreferencepropertytype"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterOutputReference.property.internalValue" id="cdktfprovidernewrelicworkflowissuesfilteroutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: WorkflowIssuesFilter;
+```
+
+- *Type:* [`@cdktf/provider-newrelic.WorkflowIssuesFilter`](#@cdktf/provider-newrelic.WorkflowIssuesFilter)
+
+---
+
+
+### WorkflowIssuesFilterPredicatesList <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesList" id="cdktfprovidernewrelicworkflowissuesfilterpredicateslist"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesList.Initializer" id="cdktfprovidernewrelicworkflowissuesfilterpredicateslistinitializer"></a>
+
+```typescript
+import { WorkflowIssuesFilterPredicatesList } from '@cdktf/provider-newrelic'
+
+new WorkflowIssuesFilterPredicatesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicworkflowissuesfilterpredicateslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicworkflowissuesfilterpredicateslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovidernewrelicworkflowissuesfilterpredicateslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesList.parameter.terraformResource" id="cdktfprovidernewrelicworkflowissuesfilterpredicateslistparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesList.parameter.terraformAttribute" id="cdktfprovidernewrelicworkflowissuesfilterpredicateslistparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesList.parameter.wrapsSet" id="cdktfprovidernewrelicworkflowissuesfilterpredicateslistparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovidernewrelicworkflowissuesfilterpredicateslistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesList.get" id="cdktfprovidernewrelicworkflowissuesfilterpredicateslistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesList.parameter.index" id="cdktfprovidernewrelicworkflowissuesfilterpredicateslistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`internalValue`](#cdktfprovidernewrelicworkflowissuesfilterpredicateslistpropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates`](#@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates)[] | *No description.* |
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesList.property.internalValue" id="cdktfprovidernewrelicworkflowissuesfilterpredicateslistpropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | WorkflowIssuesFilterPredicates[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates`](#@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates)[]
+
+---
+
+
+### WorkflowIssuesFilterPredicatesOutputReference <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesOutputReference" id="cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesOutputReference.Initializer" id="cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferenceinitializer"></a>
+
+```typescript
+import { WorkflowIssuesFilterPredicatesOutputReference } from '@cdktf/provider-newrelic'
+
+new WorkflowIssuesFilterPredicatesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesOutputReference.parameter.terraformResource" id="cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesOutputReference.parameter.terraformAttribute" id="cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesOutputReference.parameter.complexObjectIndex" id="cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`attributeInput`](#cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferencepropertyattributeinput) | `string` | *No description.* |
+| [`operatorInput`](#cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferencepropertyoperatorinput) | `string` | *No description.* |
+| [`valuesInput`](#cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferencepropertyvaluesinput) | `string`[] | *No description.* |
+| [`attribute`](#cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferencepropertyattribute)<span title="Required">*</span> | `string` | *No description.* |
+| [`operator`](#cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferencepropertyoperator)<span title="Required">*</span> | `string` | *No description.* |
+| [`values`](#cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferencepropertyvalues)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferencepropertyinternalvalue) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates`](#@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates) | *No description.* |
+
+---
+
+##### `attributeInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesOutputReference.property.attributeInput" id="cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferencepropertyattributeinput"></a>
+
+```typescript
+public readonly attributeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `operatorInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesOutputReference.property.operatorInput" id="cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferencepropertyoperatorinput"></a>
+
+```typescript
+public readonly operatorInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `valuesInput`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesOutputReference.property.valuesInput" id="cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferencepropertyvaluesinput"></a>
+
+```typescript
+public readonly valuesInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `attribute`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesOutputReference.property.attribute" id="cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferencepropertyattribute"></a>
+
+```typescript
+public readonly attribute: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `operator`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesOutputReference.property.operator" id="cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferencepropertyoperator"></a>
+
+```typescript
+public readonly operator: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `values`<sup>Required</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesOutputReference.property.values" id="cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferencepropertyvalues"></a>
+
+```typescript
+public readonly values: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkflowIssuesFilterPredicatesOutputReference.property.internalValue" id="cdktfprovidernewrelicworkflowissuesfilterpredicatesoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | WorkflowIssuesFilterPredicates;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates`](#@cdktf/provider-newrelic.WorkflowIssuesFilterPredicates)
 
 ---
 

@@ -8,6 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface NotificationChannelConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The account id of the channel.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#account_id NotificationChannel#account_id}
+  */
+  readonly accountId: number;
+  /**
+  * Indicates whether the channel is active.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#active NotificationChannel#active}
+  */
+  readonly active?: boolean | cdktf.IResolvable;
+  /**
   * (Required) The id of the destination.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#destination_id NotificationChannel#destination_id}
@@ -27,52 +39,52 @@ export interface NotificationChannelConfig extends cdktf.TerraformMetaArguments 
   */
   readonly name: string;
   /**
-  * (Required) The type of the channel product. One of: (ALERTS, DISCUSSIONS, ERROR_TRACKING, NTFC, SHARING, PD, IINT).
+  * (Required) The type of the channel product. One of: (DISCUSSIONS, ERROR_TRACKING, IINT).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#product NotificationChannel#product}
   */
   readonly product: string;
   /**
-  * (Required) The type of the channel. One of: (WEBHOOK, EMAIL, SERVICENOW_INCIDENTS, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION).
+  * (Required) The type of the channel. One of: (WEBHOOK, EMAIL, SERVICENOW_INCIDENTS, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION, JIRA_NEXTGEN, JIRA_CLASSIC).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#type NotificationChannel#type}
   */
   readonly type: string;
   /**
-  * properties block
+  * property block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#properties NotificationChannel#properties}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#property NotificationChannel#property}
   */
-  readonly properties?: NotificationChannelProperties[] | cdktf.IResolvable;
+  readonly property: NotificationChannelProperty[] | cdktf.IResolvable;
 }
-export interface NotificationChannelProperties {
+export interface NotificationChannelProperty {
   /**
-  * Notification channel property display key.
+  * Notification property display key.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#display_value NotificationChannel#display_value}
   */
   readonly displayValue?: string;
   /**
-  * Notification channel property key.
+  * Notification property key.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#key NotificationChannel#key}
   */
   readonly key: string;
   /**
-  * Notification channel property label.
+  * Notification property label.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#label NotificationChannel#label}
   */
   readonly label?: string;
   /**
-  * Notification channel property value.
+  * Notification property value.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#value NotificationChannel#value}
   */
   readonly value: string;
 }
 
-export function notificationChannelPropertiesToTerraform(struct?: NotificationChannelProperties | cdktf.IResolvable): any {
+export function notificationChannelPropertyToTerraform(struct?: NotificationChannelProperty | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -85,7 +97,7 @@ export function notificationChannelPropertiesToTerraform(struct?: NotificationCh
   }
 }
 
-export class NotificationChannelPropertiesOutputReference extends cdktf.ComplexObject {
+export class NotificationChannelPropertyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -99,7 +111,7 @@ export class NotificationChannelPropertiesOutputReference extends cdktf.ComplexO
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NotificationChannelProperties | cdktf.IResolvable | undefined {
+  public get internalValue(): NotificationChannelProperty | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -124,7 +136,7 @@ export class NotificationChannelPropertiesOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NotificationChannelProperties | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NotificationChannelProperty | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -206,8 +218,8 @@ export class NotificationChannelPropertiesOutputReference extends cdktf.ComplexO
   }
 }
 
-export class NotificationChannelPropertiesList extends cdktf.ComplexList {
-  public internalValue? : NotificationChannelProperties[] | cdktf.IResolvable
+export class NotificationChannelPropertyList extends cdktf.ComplexList {
+  public internalValue? : NotificationChannelProperty[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -221,8 +233,8 @@ export class NotificationChannelPropertiesList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): NotificationChannelPropertiesOutputReference {
-    return new NotificationChannelPropertiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): NotificationChannelPropertyOutputReference {
+    return new NotificationChannelPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -252,7 +264,7 @@ export class NotificationChannel extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_notification_channel',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.49.1',
+        providerVersion: '2.50.0',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
@@ -263,17 +275,48 @@ export class NotificationChannel extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._accountId = config.accountId;
+    this._active = config.active;
     this._destinationId = config.destinationId;
     this._id = config.id;
     this._name = config.name;
     this._product = config.product;
     this._type = config.type;
-    this._properties.internalValue = config.properties;
+    this._property.internalValue = config.property;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // account_id - computed: false, optional: false, required: true
+  private _accountId?: number; 
+  public get accountId() {
+    return this.getNumberAttribute('account_id');
+  }
+  public set accountId(value: number) {
+    this._accountId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
+  }
+
+  // active - computed: false, optional: true, required: false
+  private _active?: boolean | cdktf.IResolvable; 
+  public get active() {
+    return this.getBooleanAttribute('active');
+  }
+  public set active(value: boolean | cdktf.IResolvable) {
+    this._active = value;
+  }
+  public resetActive() {
+    this._active = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get activeInput() {
+    return this._active;
+  }
 
   // destination_id - computed: false, optional: false, required: true
   private _destinationId?: string; 
@@ -330,6 +373,11 @@ export class NotificationChannel extends cdktf.TerraformResource {
     return this._product;
   }
 
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+
   // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
@@ -343,20 +391,17 @@ export class NotificationChannel extends cdktf.TerraformResource {
     return this._type;
   }
 
-  // properties - computed: false, optional: true, required: false
-  private _properties = new NotificationChannelPropertiesList(this, "properties", false);
-  public get properties() {
-    return this._properties;
+  // property - computed: false, optional: false, required: true
+  private _property = new NotificationChannelPropertyList(this, "property", true);
+  public get property() {
+    return this._property;
   }
-  public putProperties(value: NotificationChannelProperties[] | cdktf.IResolvable) {
-    this._properties.internalValue = value;
-  }
-  public resetProperties() {
-    this._properties.internalValue = undefined;
+  public putProperty(value: NotificationChannelProperty[] | cdktf.IResolvable) {
+    this._property.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get propertiesInput() {
-    return this._properties.internalValue;
+  public get propertyInput() {
+    return this._property.internalValue;
   }
 
   // =========
@@ -365,12 +410,14 @@ export class NotificationChannel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      account_id: cdktf.numberToTerraform(this._accountId),
+      active: cdktf.booleanToTerraform(this._active),
       destination_id: cdktf.stringToTerraform(this._destinationId),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       product: cdktf.stringToTerraform(this._product),
       type: cdktf.stringToTerraform(this._type),
-      properties: cdktf.listMapper(notificationChannelPropertiesToTerraform, true)(this._properties.internalValue),
+      property: cdktf.listMapper(notificationChannelPropertyToTerraform, true)(this._property.internalValue),
     };
   }
 }
