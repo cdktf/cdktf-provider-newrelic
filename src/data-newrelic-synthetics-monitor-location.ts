@@ -48,7 +48,7 @@ export class DataNewrelicSyntheticsMonitorLocation extends cdktf.TerraformDataSo
       terraformResourceType: 'newrelic_synthetics_monitor_location',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.49.1',
+        providerVersion: '2.50.0',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
