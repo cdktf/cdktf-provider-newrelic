@@ -14997,13 +14997,13 @@ const alertChannelConfig: AlertChannelConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicalertchannelconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicalertchannelconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicalertchannelconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicalertchannelconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicalertchannelconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicalertchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicalertchannelconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicalertchannelconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertchannelconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the channel. |
 | [`type`](#cdktfprovidernewrelicalertchannelconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of channel. One of: (opsgenie, pagerduty, slack, user, victorops, webhook, email). |
 | [`accountId`](#cdktfprovidernewrelicalertchannelconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create alert channels. |
@@ -15015,10 +15015,10 @@ const alertChannelConfig: AlertChannelConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfig.property.connection" id="cdktfprovidernewrelicalertchannelconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -15075,10 +15075,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertChannelConfig.property.provisioners" id="cdktfprovidernewrelicalertchannelconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -15498,13 +15498,13 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicalertconditionconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicalertconditionconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicalertconditionconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicalertconditionconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicalertconditionconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`entities`](#cdktfprovidernewrelicalertconditionconfigpropertyentities)<span title="Required">*</span> | `number`[] | The instance IDs associated with this condition. |
 | [`metric`](#cdktfprovidernewrelicalertconditionconfigpropertymetric)<span title="Required">*</span> | `string` | The metric field accepts parameters based on the type set. |
 | [`name`](#cdktfprovidernewrelicalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. Must be between 1 and 128 characters, inclusive. |
@@ -15525,10 +15525,10 @@ const alertConditionConfig: AlertConditionConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertConditionConfig.property.connection" id="cdktfprovidernewrelicalertconditionconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -15585,10 +15585,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertConditionConfig.property.provisioners" id="cdktfprovidernewrelicalertconditionconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -16003,13 +16003,13 @@ const alertMutingRuleConfig: AlertMutingRuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicalertmutingruleconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicalertmutingruleconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicalertmutingruleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicalertmutingruleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicalertmutingruleconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicalertmutingruleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertmutingruleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicalertmutingruleconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicalertmutingruleconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`condition`](#cdktfprovidernewrelicalertmutingruleconfigpropertycondition)<span title="Required">*</span> | [`@cdktf/provider-newrelic.AlertMutingRuleCondition`](#@cdktf/provider-newrelic.AlertMutingRuleCondition) | condition block. |
 | [`enabled`](#cdktfprovidernewrelicalertmutingruleconfigpropertyenabled)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the MutingRule is enabled. |
 | [`name`](#cdktfprovidernewrelicalertmutingruleconfigpropertyname)<span title="Required">*</span> | `string` | The name of the MutingRule. |
@@ -16023,10 +16023,10 @@ const alertMutingRuleConfig: AlertMutingRuleConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleConfig.property.connection" id="cdktfprovidernewrelicalertmutingruleconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -16083,10 +16083,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertMutingRuleConfig.property.provisioners" id="cdktfprovidernewrelicalertmutingruleconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -16324,13 +16324,13 @@ const alertPolicyChannelConfig: AlertPolicyChannelConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicalertpolicychannelconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicalertpolicychannelconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicalertpolicychannelconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicalertpolicychannelconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicalertpolicychannelconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicalertpolicychannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertpolicychannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicalertpolicychannelconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicalertpolicychannelconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`channelIds`](#cdktfprovidernewrelicalertpolicychannelconfigpropertychannelids)<span title="Required">*</span> | `number`[] | Array of channel IDs to apply to the specified policy. |
 | [`policyId`](#cdktfprovidernewrelicalertpolicychannelconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy. |
 | [`accountId`](#cdktfprovidernewrelicalertpolicychannelconfigpropertyaccountid) | `number` | The New Relic account ID where you want to link the channel to. |
@@ -16341,10 +16341,10 @@ const alertPolicyChannelConfig: AlertPolicyChannelConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicyChannelConfig.property.connection" id="cdktfprovidernewrelicalertpolicychannelconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -16401,10 +16401,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicyChannelConfig.property.provisioners" id="cdktfprovidernewrelicalertpolicychannelconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -16478,13 +16478,13 @@ const alertPolicyConfig: AlertPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicalertpolicyconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicalertpolicyconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicalertpolicyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicalertpolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicalertpolicyconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicalertpolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicalertpolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicalertpolicyconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicalertpolicyconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicalertpolicyconfigpropertyname)<span title="Required">*</span> | `string` | The name of the policy. |
 | [`accountId`](#cdktfprovidernewrelicalertpolicyconfigpropertyaccountid) | `number` | The New Relic account ID to operate on. |
 | [`channelIds`](#cdktfprovidernewrelicalertpolicyconfigpropertychannelids) | `number`[] | An array of channel IDs (integers) to assign to the policy. |
@@ -16496,10 +16496,10 @@ const alertPolicyConfig: AlertPolicyConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicyConfig.property.connection" id="cdktfprovidernewrelicalertpolicyconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -16556,10 +16556,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.AlertPolicyConfig.property.provisioners" id="cdktfprovidernewrelicalertpolicyconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -16647,13 +16647,13 @@ const apiAccessKeyConfig: ApiAccessKeyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicapiaccesskeyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicapiaccesskeyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicapiaccesskeyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`accountId`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyaccountid)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#account_id ApiAccessKey#account_id}. |
 | [`keyType`](#cdktfprovidernewrelicapiaccesskeyconfigpropertykeytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#key_type ApiAccessKey#key_type}. |
 | [`id`](#cdktfprovidernewrelicapiaccesskeyconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/api_access_key#id ApiAccessKey#id}. |
@@ -16667,10 +16667,10 @@ const apiAccessKeyConfig: ApiAccessKeyConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApiAccessKeyConfig.property.connection" id="cdktfprovidernewrelicapiaccesskeyconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -16727,10 +16727,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApiAccessKeyConfig.property.provisioners" id="cdktfprovidernewrelicapiaccesskeyconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -16834,13 +16834,13 @@ const applicationSettingsConfig: ApplicationSettingsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicapplicationsettingsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicapplicationsettingsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicapplicationsettingsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`appApdexThreshold`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyappapdexthreshold)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#app_apdex_threshold ApplicationSettings#app_apdex_threshold}. |
 | [`enableRealUserMonitoring`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyenablerealusermonitoring)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}. |
 | [`endUserApdexThreshold`](#cdktfprovidernewrelicapplicationsettingsconfigpropertyenduserapdexthreshold)<span title="Required">*</span> | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/application_settings#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}. |
@@ -16852,10 +16852,10 @@ const applicationSettingsConfig: ApplicationSettingsConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApplicationSettingsConfig.property.connection" id="cdktfprovidernewrelicapplicationsettingsconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -16912,10 +16912,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ApplicationSettingsConfig.property.provisioners" id="cdktfprovidernewrelicapplicationsettingsconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -17397,13 +17397,13 @@ const cloudAwsGovcloudIntegrationsConfig: CloudAwsGovcloudIntegrationsConfig = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`linkedAccountId`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertylinkedaccountid)<span title="Required">*</span> | `number` | The ID of the linked AwsGovCloud account in New Relic. |
 | [`accountId`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyaccountid) | `number` | The ID of the account in New Relic. |
 | [`alb`](#cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyalb) | [`@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb`](#@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsAlb) | alb block. |
@@ -17433,10 +17433,10 @@ const cloudAwsGovcloudIntegrationsConfig: CloudAwsGovcloudIntegrationsConfig = {
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.connection" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -17493,10 +17493,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudIntegrationsConfig.property.provisioners" id="cdktfprovidernewreliccloudawsgovcloudintegrationsconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -19034,13 +19034,13 @@ const cloudAwsGovcloudLinkAccountConfig: CloudAwsGovcloudLinkAccountConfig = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`accessKeyId`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyaccesskeyid)<span title="Required">*</span> | `string` | access-key-id of awsGovcloud account. |
 | [`awsAccountId`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyawsaccountid)<span title="Required">*</span> | `string` | awsGovcloud account id. |
 | [`name`](#cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyname)<span title="Required">*</span> | `string` | name of the account. |
@@ -19054,10 +19054,10 @@ const cloudAwsGovcloudLinkAccountConfig: CloudAwsGovcloudLinkAccountConfig = { .
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig.property.connection" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -19114,10 +19114,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsGovcloudLinkAccountConfig.property.provisioners" id="cdktfprovidernewreliccloudawsgovcloudlinkaccountconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -19312,13 +19312,13 @@ const cloudAwsIntegrationsConfig: CloudAwsIntegrationsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`linkedAccountId`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertylinkedaccountid)<span title="Required">*</span> | `number` | The ID of the linked AWS account in New Relic. |
 | [`accountId`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertyaccountid) | `number` | The ID of the account in New Relic. |
 | [`billing`](#cdktfprovidernewreliccloudawsintegrationsconfigpropertybilling) | [`@cdktf/provider-newrelic.CloudAwsIntegrationsBilling`](#@cdktf/provider-newrelic.CloudAwsIntegrationsBilling) | billing block. |
@@ -19334,10 +19334,10 @@ const cloudAwsIntegrationsConfig: CloudAwsIntegrationsConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsIntegrationsConfig.property.connection" id="cdktfprovidernewreliccloudawsintegrationsconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -19394,10 +19394,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsIntegrationsConfig.property.provisioners" id="cdktfprovidernewreliccloudawsintegrationsconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -19759,13 +19759,13 @@ const cloudAwsLinkAccountConfig: CloudAwsLinkAccountConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`arn`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyarn)<span title="Required">*</span> | `string` | The AWS role ARN. |
 | [`name`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyname)<span title="Required">*</span> | `string` | The name of the linked account. |
 | [`accountId`](#cdktfprovidernewreliccloudawslinkaccountconfigpropertyaccountid) | `number` | The New Relic account ID where you want to link the AWS account. |
@@ -19778,10 +19778,10 @@ const cloudAwsLinkAccountConfig: CloudAwsLinkAccountConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountConfig.property.connection" id="cdktfprovidernewreliccloudawslinkaccountconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -19838,10 +19838,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAwsLinkAccountConfig.property.provisioners" id="cdktfprovidernewreliccloudawslinkaccountconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -20114,13 +20114,13 @@ const cloudAzureIntegrationsConfig: CloudAzureIntegrationsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`linkedAccountId`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertylinkedaccountid)<span title="Required">*</span> | `number` | The ID of the linked Azure account in New Relic. |
 | [`accountId`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyaccountid) | `number` | The ID of the account in New Relic. |
 | [`apiManagement`](#cdktfprovidernewreliccloudazureintegrationsconfigpropertyapimanagement) | [`@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement`](#@cdktf/provider-newrelic.CloudAzureIntegrationsApiManagement) | api_management block. |
@@ -20159,10 +20159,10 @@ const cloudAzureIntegrationsConfig: CloudAzureIntegrationsConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.connection" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -20219,10 +20219,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureIntegrationsConfig.property.provisioners" id="cdktfprovidernewreliccloudazureintegrationsconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -21910,13 +21910,13 @@ const cloudAzureLinkAccountConfig: CloudAzureLinkAccountConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`applicationId`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyapplicationid)<span title="Required">*</span> | `string` | Application ID for Azure account. |
 | [`clientSecret`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyclientsecret)<span title="Required">*</span> | `string` | Value of the client secret from Azure. |
 | [`name`](#cdktfprovidernewreliccloudazurelinkaccountconfigpropertyname)<span title="Required">*</span> | `string` | Name of the linked account. |
@@ -21930,10 +21930,10 @@ const cloudAzureLinkAccountConfig: CloudAzureLinkAccountConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.connection" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -21990,10 +21990,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudAzureLinkAccountConfig.property.provisioners" id="cdktfprovidernewreliccloudazurelinkaccountconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -22252,13 +22252,13 @@ const cloudGcpIntegrationsConfig: CloudGcpIntegrationsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`linkedAccountId`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertylinkedaccountid)<span title="Required">*</span> | `number` | Id of the linked gcp account in New Relic. |
 | [`accountId`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyaccountid) | `number` | ID of the newrelic account. |
 | [`appEngine`](#cdktfprovidernewreliccloudgcpintegrationsconfigpropertyappengine) | [`@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine`](#@cdktf/provider-newrelic.CloudGcpIntegrationsAppEngine) | app_engine block. |
@@ -22293,10 +22293,10 @@ const cloudGcpIntegrationsConfig: CloudGcpIntegrationsConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.connection" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -22353,10 +22353,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpIntegrationsConfig.property.provisioners" id="cdktfprovidernewreliccloudgcpintegrationsconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -23483,13 +23483,13 @@ const cloudGcpLinkAccountConfig: CloudGcpLinkAccountConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyname)<span title="Required">*</span> | `string` | name of the linked account. |
 | [`projectId`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyprojectid)<span title="Required">*</span> | `string` | project id of the Gcp account. |
 | [`accountId`](#cdktfprovidernewreliccloudgcplinkaccountconfigpropertyaccountid) | `number` | accountID of newrelic account. |
@@ -23500,10 +23500,10 @@ const cloudGcpLinkAccountConfig: CloudGcpLinkAccountConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccountConfig.property.connection" id="cdktfprovidernewreliccloudgcplinkaccountconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -23560,10 +23560,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.CloudGcpLinkAccountConfig.property.provisioners" id="cdktfprovidernewreliccloudgcplinkaccountconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -23637,13 +23637,13 @@ const dashboardConfig: DashboardConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicdashboardconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicdashboardconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdashboardconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdashboardconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicdashboardconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdashboardconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdashboardconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicdashboardconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdashboardconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`title`](#cdktfprovidernewrelicdashboardconfigpropertytitle)<span title="Required">*</span> | `string` | The title of the dashboard. |
 | [`editable`](#cdktfprovidernewrelicdashboardconfigpropertyeditable) | `string` | Determines who can edit the dashboard in an account. |
 | [`filter`](#cdktfprovidernewrelicdashboardconfigpropertyfilter) | [`@cdktf/provider-newrelic.DashboardFilter`](#@cdktf/provider-newrelic.DashboardFilter) | filter block. |
@@ -23658,10 +23658,10 @@ const dashboardConfig: DashboardConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.connection" id="cdktfprovidernewrelicdashboardconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -23718,10 +23718,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DashboardConfig.property.provisioners" id="cdktfprovidernewrelicdashboardconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -24391,13 +24391,13 @@ const dataNewrelicAccountConfig: DataNewrelicAccountConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`accountId`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyaccountid) | `number` | The ID of the account in New Relic. |
 | [`id`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/account#id DataNewrelicAccount#id}. |
 | [`name`](#cdktfprovidernewrelicdatanewrelicaccountconfigpropertyname) | `string` | The name of the account in New Relic. |
@@ -24408,10 +24408,10 @@ const dataNewrelicAccountConfig: DataNewrelicAccountConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAccountConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicaccountconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -24468,10 +24468,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAccountConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicaccountconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -24545,13 +24545,13 @@ const dataNewrelicAlertChannelConfig: DataNewrelicAlertChannelConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyname)<span title="Required">*</span> | `string` | The name of the alert channel in New Relic. |
 | [`id`](#cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel#id DataNewrelicAlertChannel#id}. |
 
@@ -24560,10 +24560,10 @@ const dataNewrelicAlertChannelConfig: DataNewrelicAlertChannelConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -24620,10 +24620,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertChannelConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicalertchannelconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -24680,13 +24680,13 @@ const dataNewrelicAlertPolicyConfig: DataNewrelicAlertPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyname)<span title="Required">*</span> | `string` | The name of the alert policy in New Relic. |
 | [`accountId`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyaccountid) | `number` | The New Relic account ID to operate on. |
 | [`id`](#cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_policy#id DataNewrelicAlertPolicy#id}. |
@@ -24697,10 +24697,10 @@ const dataNewrelicAlertPolicyConfig: DataNewrelicAlertPolicyConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertPolicyConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -24757,10 +24757,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicAlertPolicyConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicalertpolicyconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -24834,13 +24834,13 @@ const dataNewrelicApplicationConfig: DataNewrelicApplicationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyname)<span title="Required">*</span> | `string` | The name of the application in New Relic. |
 | [`id`](#cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/application#id DataNewrelicApplication#id}. |
 
@@ -24849,10 +24849,10 @@ const dataNewrelicApplicationConfig: DataNewrelicApplicationConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicApplicationConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -24909,10 +24909,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicApplicationConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicapplicationconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -24958,13 +24958,13 @@ const dataNewrelicCloudAccountConfig: DataNewrelicCloudAccountConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`cloudProvider`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertycloudprovider)<span title="Required">*</span> | `string` | The cloud provider of the account, e.g. aws, gcp, azure. |
 | [`name`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyname)<span title="Required">*</span> | `string` | The name of the cloud account. |
 | [`accountId`](#cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyaccountid) | `number` | The ID of the New Relic account. |
@@ -24975,10 +24975,10 @@ const dataNewrelicCloudAccountConfig: DataNewrelicCloudAccountConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicCloudAccountConfig.property.connection" id="cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -25035,10 +25035,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicCloudAccountConfig.property.provisioners" id="cdktfprovidernewrelicdatanewreliccloudaccountconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -25112,13 +25112,13 @@ const dataNewrelicEntityConfig: DataNewrelicEntityConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertyname)<span title="Required">*</span> | `string` | The name of the entity in New Relic One. |
 | [`domain`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertydomain) | `string` | The entity's domain. |
 | [`id`](#cdktfprovidernewrelicdatanewrelicentityconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#id DataNewrelicEntity#id}. |
@@ -25131,10 +25131,10 @@ const dataNewrelicEntityConfig: DataNewrelicEntityConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntityConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicentityconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -25191,10 +25191,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicEntityConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicentityconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -25343,13 +25343,13 @@ const dataNewrelicKeyTransactionConfig: DataNewrelicKeyTransactionConfig = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyname)<span title="Required">*</span> | `string` | The name of the key transaction in New Relic. |
 | [`id`](#cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/key_transaction#id DataNewrelicKeyTransaction#id}. |
 
@@ -25358,10 +25358,10 @@ const dataNewrelicKeyTransactionConfig: DataNewrelicKeyTransactionConfig = { ...
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicKeyTransactionConfig.property.connection" id="cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -25418,10 +25418,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicKeyTransactionConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelickeytransactionconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -25467,13 +25467,13 @@ const dataNewrelicPluginComponentConfig: DataNewrelicPluginComponentConfig = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyname)<span title="Required">*</span> | `string` | The name of the plugin component. |
 | [`pluginId`](#cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertypluginid)<span title="Required">*</span> | `number` | The ID of the plugin instance this component belongs to. |
 
@@ -25482,10 +25482,10 @@ const dataNewrelicPluginComponentConfig: DataNewrelicPluginComponentConfig = { .
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -25542,10 +25542,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginComponentConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicplugincomponentconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -25591,13 +25591,13 @@ const dataNewrelicPluginConfig: DataNewrelicPluginConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`guid`](#cdktfprovidernewrelicdatanewrelicpluginconfigpropertyguid)<span title="Required">*</span> | `string` | The GUID of the plugin in New Relic. |
 
 ---
@@ -25605,10 +25605,10 @@ const dataNewrelicPluginConfig: DataNewrelicPluginConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicpluginconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -25665,10 +25665,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicPluginConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicpluginconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -25700,13 +25700,13 @@ const dataNewrelicSyntheticsMonitorConfig: DataNewrelicSyntheticsMonitorConfig =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyname)<span title="Required">*</span> | `string` | The name of the synthetics monitor in New Relic. |
 | [`id`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor#id DataNewrelicSyntheticsMonitor#id}. |
 
@@ -25715,10 +25715,10 @@ const dataNewrelicSyntheticsMonitorConfig: DataNewrelicSyntheticsMonitorConfig =
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -25775,10 +25775,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -25824,13 +25824,13 @@ const dataNewrelicSyntheticsMonitorLocationConfig: DataNewrelicSyntheticsMonitor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`label`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertylabel)<span title="Required">*</span> | `string` | The label of the Synthetics monitor location. |
 | [`id`](#cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_monitor_location#id DataNewrelicSyntheticsMonitorLocation#id}. |
 
@@ -25839,10 +25839,10 @@ const dataNewrelicSyntheticsMonitorLocationConfig: DataNewrelicSyntheticsMonitor
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorLocationConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -25899,10 +25899,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsMonitorLocationConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicsyntheticsmonitorlocationconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -25948,13 +25948,13 @@ const dataNewrelicSyntheticsSecureCredentialConfig: DataNewrelicSyntheticsSecure
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`key`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertykey)<span title="Required">*</span> | `string` | The secure credential's key name. |
 | [`id`](#cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential#id DataNewrelicSyntheticsSecureCredential#id}. |
 
@@ -25963,10 +25963,10 @@ const dataNewrelicSyntheticsSecureCredentialConfig: DataNewrelicSyntheticsSecure
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsSecureCredentialConfig.property.connection" id="cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -26023,10 +26023,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.DataNewrelicSyntheticsSecureCredentialConfig.property.provisioners" id="cdktfprovidernewrelicdatanewrelicsyntheticssecurecredentialconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -26072,13 +26072,13 @@ const entityTagsConfig: EntityTagsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicentitytagsconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicentitytagsconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicentitytagsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicentitytagsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicentitytagsconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicentitytagsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicentitytagsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicentitytagsconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicentitytagsconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`guid`](#cdktfprovidernewrelicentitytagsconfigpropertyguid)<span title="Required">*</span> | `string` | The guid of the entity to tag. |
 | [`tag`](#cdktfprovidernewrelicentitytagsconfigpropertytag)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.EntityTagsTag`](#@cdktf/provider-newrelic.EntityTagsTag)[] | tag block. |
 | [`id`](#cdktfprovidernewrelicentitytagsconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags#id EntityTags#id}. |
@@ -26089,10 +26089,10 @@ const entityTagsConfig: EntityTagsConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EntityTagsConfig.property.connection" id="cdktfprovidernewrelicentitytagsconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -26149,10 +26149,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EntityTagsConfig.property.provisioners" id="cdktfprovidernewrelicentitytagsconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -26303,13 +26303,13 @@ const eventsToMetricsRuleConfig: EventsToMetricsRuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewreliceventstometricsruleconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewreliceventstometricsruleconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliceventstometricsruleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliceventstometricsruleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewreliceventstometricsruleconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliceventstometricsruleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliceventstometricsruleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewreliceventstometricsruleconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliceventstometricsruleconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewreliceventstometricsruleconfigpropertyname)<span title="Required">*</span> | `string` | The name of the rule. This must be unique within an account. |
 | [`nrql`](#cdktfprovidernewreliceventstometricsruleconfigpropertynrql)<span title="Required">*</span> | `string` | Explains how to create metrics from events. |
 | [`accountId`](#cdktfprovidernewreliceventstometricsruleconfigpropertyaccountid) | `number` | Account with the event and where the metrics will be put. |
@@ -26322,10 +26322,10 @@ const eventsToMetricsRuleConfig: EventsToMetricsRuleConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EventsToMetricsRuleConfig.property.connection" id="cdktfprovidernewreliceventstometricsruleconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -26382,10 +26382,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.EventsToMetricsRuleConfig.property.provisioners" id="cdktfprovidernewreliceventstometricsruleconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -26487,13 +26487,13 @@ const infraAlertConditionConfig: InfraAlertConditionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicinfraalertconditionconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicinfraalertconditionconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicinfraalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicinfraalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicinfraalertconditionconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicinfraalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicinfraalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicinfraalertconditionconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicinfraalertconditionconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicinfraalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The Infrastructure alert condition's name. |
 | [`policyId`](#cdktfprovidernewrelicinfraalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the alert policy where this condition should be used. |
 | [`type`](#cdktfprovidernewrelicinfraalertconditionconfigpropertytype)<span title="Required">*</span> | `string` | The type of Infrastructure alert condition. Valid values are infra_process_running, infra_metric, and infra_host_not_reporting. |
@@ -26516,10 +26516,10 @@ const infraAlertConditionConfig: InfraAlertConditionConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionConfig.property.connection" id="cdktfprovidernewrelicinfraalertconditionconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -26576,10 +26576,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InfraAlertConditionConfig.property.provisioners" id="cdktfprovidernewrelicinfraalertconditionconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -26933,13 +26933,13 @@ const insightsEventConfig: InsightsEventConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicinsightseventconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicinsightseventconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicinsightseventconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicinsightseventconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicinsightseventconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicinsightseventconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicinsightseventconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicinsightseventconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicinsightseventconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`event`](#cdktfprovidernewrelicinsightseventconfigpropertyevent)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.InsightsEventEvent`](#@cdktf/provider-newrelic.InsightsEventEvent)[] | event block. |
 | [`id`](#cdktfprovidernewrelicinsightseventconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event#id InsightsEvent#id}. |
 
@@ -26948,10 +26948,10 @@ const insightsEventConfig: InsightsEventConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InsightsEventConfig.property.connection" id="cdktfprovidernewrelicinsightseventconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -27008,10 +27008,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.InsightsEventConfig.property.provisioners" id="cdktfprovidernewrelicinsightseventconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -27384,13 +27384,13 @@ const notificationChannelConfig: NotificationChannelConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicnotificationchannelconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicnotificationchannelconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicnotificationchannelconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicnotificationchannelconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicnotificationchannelconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicnotificationchannelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicnotificationchannelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicnotificationchannelconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicnotificationchannelconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`destinationId`](#cdktfprovidernewrelicnotificationchannelconfigpropertydestinationid)<span title="Required">*</span> | `string` | (Required) The id of the destination. |
 | [`name`](#cdktfprovidernewrelicnotificationchannelconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the channel. |
 | [`product`](#cdktfprovidernewrelicnotificationchannelconfigpropertyproduct)<span title="Required">*</span> | `string` | (Required) The type of the channel product. One of: (ALERTS, DISCUSSIONS, ERROR_TRACKING, NTFC, SHARING, PD, IINT). |
@@ -27403,10 +27403,10 @@ const notificationChannelConfig: NotificationChannelConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.connection" id="cdktfprovidernewrelicnotificationchannelconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -27463,10 +27463,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationChannelConfig.property.provisioners" id="cdktfprovidernewrelicnotificationchannelconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -27645,13 +27645,13 @@ const notificationDestinationConfig: NotificationDestinationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicnotificationdestinationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicnotificationdestinationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicnotificationdestinationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyname)<span title="Required">*</span> | `string` | (Required) The name of the destination. |
 | [`type`](#cdktfprovidernewrelicnotificationdestinationconfigpropertytype)<span title="Required">*</span> | `string` | (Required) The type of the destination. One of: (WEBHOOK, EMAIL, SERVICE_NOW, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION). |
 | [`auth`](#cdktfprovidernewrelicnotificationdestinationconfigpropertyauth) | {[ key: string ]: `string`} | A set of key-value pairs to represent a Notification destination auth. |
@@ -27663,10 +27663,10 @@ const notificationDestinationConfig: NotificationDestinationConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.connection" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -27723,10 +27723,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NotificationDestinationConfig.property.provisioners" id="cdktfprovidernewrelicnotificationdestinationconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -27891,13 +27891,13 @@ const nrqlAlertConditionConfig: NrqlAlertConditionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of the condition. |
 | [`nrql`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertynrql)<span title="Required">*</span> | [`@cdktf/provider-newrelic.NrqlAlertConditionNrql`](#@cdktf/provider-newrelic.NrqlAlertConditionNrql) | nrql block. |
 | [`policyId`](#cdktfprovidernewrelicnrqlalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
@@ -27930,10 +27930,10 @@ const nrqlAlertConditionConfig: NrqlAlertConditionConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionConfig.property.connection" id="cdktfprovidernewrelicnrqlalertconditionconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -27990,10 +27990,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlAlertConditionConfig.property.provisioners" id="cdktfprovidernewrelicnrqlalertconditionconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -28771,13 +28771,13 @@ const nrqlDropRuleConfig: NrqlDropRuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicnrqldropruleconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicnrqldropruleconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicnrqldropruleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicnrqldropruleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicnrqldropruleconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicnrqldropruleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicnrqldropruleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicnrqldropruleconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicnrqldropruleconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`action`](#cdktfprovidernewrelicnrqldropruleconfigpropertyaction)<span title="Required">*</span> | `string` | The drop rule action (drop_data, drop_attributes, or drop_attributes_from_metric_aggregates). |
 | [`nrql`](#cdktfprovidernewrelicnrqldropruleconfigpropertynrql)<span title="Required">*</span> | `string` | Explains which data to apply the drop rule to. |
 | [`accountId`](#cdktfprovidernewrelicnrqldropruleconfigpropertyaccountid) | `number` | Account with the NRQL drop rule will be put. |
@@ -28789,10 +28789,10 @@ const nrqlDropRuleConfig: NrqlDropRuleConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlDropRuleConfig.property.connection" id="cdktfprovidernewrelicnrqldropruleconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -28849,10 +28849,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.NrqlDropRuleConfig.property.provisioners" id="cdktfprovidernewrelicnrqldropruleconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -28940,13 +28940,13 @@ const oneDashboardConfig: OneDashboardConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewreliconedashboardconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewreliconedashboardconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliconedashboardconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliconedashboardconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewreliconedashboardconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliconedashboardconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliconedashboardconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewreliconedashboardconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliconedashboardconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewreliconedashboardconfigpropertyname)<span title="Required">*</span> | `string` | The dashboard's name. |
 | [`page`](#cdktfprovidernewreliconedashboardconfigpropertypage)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardPage`](#@cdktf/provider-newrelic.OneDashboardPage)[] | page block. |
 | [`accountId`](#cdktfprovidernewreliconedashboardconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create the dashboard. |
@@ -28959,10 +28959,10 @@ const oneDashboardConfig: OneDashboardConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardConfig.property.connection" id="cdktfprovidernewreliconedashboardconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -29019,10 +29019,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardConfig.property.provisioners" id="cdktfprovidernewreliconedashboardconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -31693,13 +31693,13 @@ const oneDashboardRawConfig: OneDashboardRawConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewreliconedashboardrawconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewreliconedashboardrawconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewreliconedashboardrawconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewreliconedashboardrawconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewreliconedashboardrawconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewreliconedashboardrawconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewreliconedashboardrawconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewreliconedashboardrawconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewreliconedashboardrawconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewreliconedashboardrawconfigpropertyname)<span title="Required">*</span> | `string` | The dashboard's name. |
 | [`page`](#cdktfprovidernewreliconedashboardrawconfigpropertypage)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-newrelic.OneDashboardRawPage`](#@cdktf/provider-newrelic.OneDashboardRawPage)[] | page block. |
 | [`accountId`](#cdktfprovidernewreliconedashboardrawconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create the dashboard. |
@@ -31712,10 +31712,10 @@ const oneDashboardRawConfig: OneDashboardRawConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardRawConfig.property.connection" id="cdktfprovidernewreliconedashboardrawconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -31772,10 +31772,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.OneDashboardRawConfig.property.provisioners" id="cdktfprovidernewreliconedashboardrawconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -32068,13 +32068,13 @@ const pluginsAlertConditionConfig: PluginsAlertConditionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`entities`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertyentities)<span title="Required">*</span> | `number`[] | The plugin component IDs to target. |
 | [`metric`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertymetric)<span title="Required">*</span> | `string` | The plugin metric to evaluate. |
 | [`metricDescription`](#cdktfprovidernewrelicpluginsalertconditionconfigpropertymetricdescription)<span title="Required">*</span> | `string` | The metric description. |
@@ -32093,10 +32093,10 @@ const pluginsAlertConditionConfig: PluginsAlertConditionConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.connection" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -32153,10 +32153,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.PluginsAlertConditionConfig.property.provisioners" id="cdktfprovidernewrelicpluginsalertconditionconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -32434,13 +32434,13 @@ const serviceLevelConfig: ServiceLevelConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicservicelevelconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicservicelevelconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicservicelevelconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicservicelevelconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicservicelevelconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicservicelevelconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicservicelevelconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicservicelevelconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicservicelevelconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`events`](#cdktfprovidernewrelicservicelevelconfigpropertyevents)<span title="Required">*</span> | [`@cdktf/provider-newrelic.ServiceLevelEvents`](#@cdktf/provider-newrelic.ServiceLevelEvents) | events block. |
 | [`guid`](#cdktfprovidernewrelicservicelevelconfigpropertyguid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#guid ServiceLevel#guid}. |
 | [`name`](#cdktfprovidernewrelicservicelevelconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#name ServiceLevel#name}. |
@@ -32453,10 +32453,10 @@ const serviceLevelConfig: ServiceLevelConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelConfig.property.connection" id="cdktfprovidernewrelicservicelevelconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -32513,10 +32513,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.ServiceLevelConfig.property.provisioners" id="cdktfprovidernewrelicservicelevelconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -32962,13 +32962,13 @@ const syntheticsAlertConditionConfig: SyntheticsAlertConditionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`monitorId`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertymonitorid)<span title="Required">*</span> | `string` | The ID of the Synthetics monitor to be referenced in the alert condition. |
 | [`name`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of this condition. |
 | [`policyId`](#cdktfprovidernewrelicsyntheticsalertconditionconfigpropertypolicyid)<span title="Required">*</span> | `number` | The ID of the policy where this condition should be used. |
@@ -32981,10 +32981,10 @@ const syntheticsAlertConditionConfig: SyntheticsAlertConditionConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsAlertConditionConfig.property.connection" id="cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -33041,10 +33041,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsAlertConditionConfig.property.provisioners" id="cdktfprovidernewrelicsyntheticsalertconditionconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -33146,13 +33146,13 @@ const syntheticsMonitorConfig: SyntheticsMonitorConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`frequency`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyfrequency)<span title="Required">*</span> | `number` | The interval (in minutes) at which this monitor should run. |
 | [`locations`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertylocations)<span title="Required">*</span> | `string`[] | The locations in which this monitor should be run. |
 | [`name`](#cdktfprovidernewrelicsyntheticsmonitorconfigpropertyname)<span title="Required">*</span> | `string` | The title of this monitor. |
@@ -33171,10 +33171,10 @@ const syntheticsMonitorConfig: SyntheticsMonitorConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorConfig.property.connection" id="cdktfprovidernewrelicsyntheticsmonitorconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -33231,10 +33231,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorConfig.property.provisioners" id="cdktfprovidernewrelicsyntheticsmonitorconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -33420,13 +33420,13 @@ const syntheticsMonitorScriptConfig: SyntheticsMonitorScriptConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`monitorId`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertymonitorid)<span title="Required">*</span> | `string` | The ID of the monitor to attach the script to. |
 | [`text`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertytext)<span title="Required">*</span> | `string` | The plaintext representing the monitor script. |
 | [`id`](#cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor_script#id SyntheticsMonitorScript#id}. |
@@ -33437,10 +33437,10 @@ const syntheticsMonitorScriptConfig: SyntheticsMonitorScriptConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorScriptConfig.property.connection" id="cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -33497,10 +33497,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMonitorScriptConfig.property.provisioners" id="cdktfprovidernewrelicsyntheticsmonitorscriptconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -33636,13 +33636,13 @@ const syntheticsMultilocationAlertConditionConfig: SyntheticsMultilocationAlertC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`critical`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertycritical)<span title="Required">*</span> | [`@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionCritical`](#@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionCritical) | critical block. |
 | [`entities`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyentities)<span title="Required">*</span> | `string`[] | The GUIDs of the Synthetics monitors to alert on. |
 | [`name`](#cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyname)<span title="Required">*</span> | `string` | The title of this condition. |
@@ -33658,10 +33658,10 @@ const syntheticsMultilocationAlertConditionConfig: SyntheticsMultilocationAlertC
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionConfig.property.connection" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -33718,10 +33718,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsMultilocationAlertConditionConfig.property.provisioners" id="cdktfprovidernewrelicsyntheticsmultilocationalertconditionconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -33929,13 +33929,13 @@ const syntheticsSecureCredentialConfig: SyntheticsSecureCredentialConfig = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`key`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertykey)<span title="Required">*</span> | `string` | The secure credential's key name. |
 | [`value`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyvalue)<span title="Required">*</span> | `string` | The secure credential's value. |
 | [`createdAt`](#cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertycreatedat) | `string` | The time the secure credential was created. |
@@ -33948,10 +33948,10 @@ const syntheticsSecureCredentialConfig: SyntheticsSecureCredentialConfig = { ...
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsSecureCredentialConfig.property.connection" id="cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -34008,10 +34008,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.SyntheticsSecureCredentialConfig.property.provisioners" id="cdktfprovidernewrelicsyntheticssecurecredentialconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -34113,13 +34113,13 @@ const workloadConfig: WorkloadConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`connection`](#cdktfprovidernewrelicworkloadconfigpropertyconnection) | [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) \| [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection) | *No description.* |
+| [`connection`](#cdktfprovidernewrelicworkloadconfigpropertyconnection) | [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) \| [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection) | *No description.* |
 | [`count`](#cdktfprovidernewrelicworkloadconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovidernewrelicworkloadconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`forEach`](#cdktfprovidernewrelicworkloadconfigpropertyforeach) | [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator) | *No description.* |
 | [`lifecycle`](#cdktfprovidernewrelicworkloadconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovidernewrelicworkloadconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`provisioners`](#cdktfprovidernewrelicworkloadconfigpropertyprovisioners) | [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) \| [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) \| [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[] | *No description.* |
+| [`provisioners`](#cdktfprovidernewrelicworkloadconfigpropertyprovisioners) | [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) \| [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) \| [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[] | *No description.* |
 | [`name`](#cdktfprovidernewrelicworkloadconfigpropertyname)<span title="Required">*</span> | `string` | The workload's name. |
 | [`accountId`](#cdktfprovidernewrelicworkloadconfigpropertyaccountid) | `number` | The New Relic account ID where you want to create the workload. |
 | [`entityGuids`](#cdktfprovidernewrelicworkloadconfigpropertyentityguids) | `string`[] | A list of entity GUIDs manually assigned to this workload. |
@@ -34132,10 +34132,10 @@ const workloadConfig: WorkloadConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkloadConfig.property.connection" id="cdktfprovidernewrelicworkloadconfigpropertyconnection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -34192,10 +34192,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-newrelic.WorkloadConfig.property.provisioners" id="cdktfprovidernewrelicworkloadconfigpropertyprovisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
