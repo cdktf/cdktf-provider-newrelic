@@ -20,7 +20,7 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly aggregationDelay?: string;
   /**
-  * The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for violations. Default is EVENT_FLOW.
+  * The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for violations. Default is CADENCE.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#aggregation_method NrqlAlertCondition#aggregation_method}
   */
@@ -1000,7 +1000,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_nrql_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.50.0',
+        providerVersion: '2.50.2',
         providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
