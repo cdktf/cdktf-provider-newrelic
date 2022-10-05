@@ -38,9 +38,9 @@ The Maven package is available at [https://mvnrepository.com/artifact/com.hashic
 
 ### Go
 
-The go package is generated into the [`github.com/hashicorp/cdktf-provider-newrelic-go`](https://github.com/hashicorp/cdktf-provider-newrelic-go) package.
+The go package is generated into the [`github.com/cdktf/cdktf-provider-newrelic-go`](https://github.com/cdktf/cdktf-provider-newrelic-go) package.
 
-`go get github.com/hashicorp/cdktf-provider-newrelic-go/newrelic`
+`go get github.com/cdktf/cdktf-provider-newrelic-go/newrelic`
 
 ## Docs
 
