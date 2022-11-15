@@ -39,11 +39,23 @@ export interface CloudAwsIntegrationsConfig extends cdktf.TerraformMetaArguments
   */
   readonly cloudtrail?: CloudAwsIntegrationsCloudtrail;
   /**
+  * doc_db block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_integrations#doc_db CloudAwsIntegrations#doc_db}
+  */
+  readonly docDb?: CloudAwsIntegrationsDocDb;
+  /**
   * health block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_integrations#health CloudAwsIntegrations#health}
   */
   readonly health?: CloudAwsIntegrationsHealth;
+  /**
+  * s3 block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_integrations#s3 CloudAwsIntegrations#s3}
+  */
+  readonly s3?: CloudAwsIntegrationsS3;
   /**
   * trusted_advisor block
   * 
@@ -226,6 +238,73 @@ export class CloudAwsIntegrationsCloudtrailOutputReference extends cdktf.Complex
     return this._metricsPollingInterval;
   }
 }
+export interface CloudAwsIntegrationsDocDb {
+  /**
+  * The data polling interval in seconds.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  */
+  readonly metricsPollingInterval?: number;
+}
+
+export function cloudAwsIntegrationsDocDbToTerraform(struct?: CloudAwsIntegrationsDocDbOutputReference | CloudAwsIntegrationsDocDb): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+  }
+}
+
+export class CloudAwsIntegrationsDocDbOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudAwsIntegrationsDocDb | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._metricsPollingInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricsPollingInterval = this._metricsPollingInterval;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudAwsIntegrationsDocDb | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._metricsPollingInterval = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._metricsPollingInterval = value.metricsPollingInterval;
+    }
+  }
+
+  // metrics_polling_interval - computed: false, optional: true, required: false
+  private _metricsPollingInterval?: number; 
+  public get metricsPollingInterval() {
+    return this.getNumberAttribute('metrics_polling_interval');
+  }
+  public set metricsPollingInterval(value: number) {
+    this._metricsPollingInterval = value;
+  }
+  public resetMetricsPollingInterval() {
+    this._metricsPollingInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricsPollingIntervalInput() {
+    return this._metricsPollingInterval;
+  }
+}
 export interface CloudAwsIntegrationsHealth {
   /**
   * The data polling interval in seconds.
@@ -267,6 +346,73 @@ export class CloudAwsIntegrationsHealthOutputReference extends cdktf.ComplexObje
   }
 
   public set internalValue(value: CloudAwsIntegrationsHealth | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._metricsPollingInterval = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._metricsPollingInterval = value.metricsPollingInterval;
+    }
+  }
+
+  // metrics_polling_interval - computed: false, optional: true, required: false
+  private _metricsPollingInterval?: number; 
+  public get metricsPollingInterval() {
+    return this.getNumberAttribute('metrics_polling_interval');
+  }
+  public set metricsPollingInterval(value: number) {
+    this._metricsPollingInterval = value;
+  }
+  public resetMetricsPollingInterval() {
+    this._metricsPollingInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricsPollingIntervalInput() {
+    return this._metricsPollingInterval;
+  }
+}
+export interface CloudAwsIntegrationsS3 {
+  /**
+  * The data polling interval in seconds.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+  */
+  readonly metricsPollingInterval?: number;
+}
+
+export function cloudAwsIntegrationsS3ToTerraform(struct?: CloudAwsIntegrationsS3OutputReference | CloudAwsIntegrationsS3): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+  }
+}
+
+export class CloudAwsIntegrationsS3OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudAwsIntegrationsS3 | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._metricsPollingInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricsPollingInterval = this._metricsPollingInterval;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudAwsIntegrationsS3 | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._metricsPollingInterval = undefined;
@@ -695,8 +841,8 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_aws_integrations',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.50.2',
-        providerVersionConstraint: '~> 2.32'
+        providerVersion: '3.7.0',
+        providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -711,7 +857,9 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
     this._linkedAccountId = config.linkedAccountId;
     this._billing.internalValue = config.billing;
     this._cloudtrail.internalValue = config.cloudtrail;
+    this._docDb.internalValue = config.docDb;
     this._health.internalValue = config.health;
+    this._s3.internalValue = config.s3;
     this._trustedAdvisor.internalValue = config.trustedAdvisor;
     this._vpc.internalValue = config.vpc;
     this._xRay.internalValue = config.xRay;
@@ -798,6 +946,22 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
     return this._cloudtrail.internalValue;
   }
 
+  // doc_db - computed: false, optional: true, required: false
+  private _docDb = new CloudAwsIntegrationsDocDbOutputReference(this, "doc_db");
+  public get docDb() {
+    return this._docDb;
+  }
+  public putDocDb(value: CloudAwsIntegrationsDocDb) {
+    this._docDb.internalValue = value;
+  }
+  public resetDocDb() {
+    this._docDb.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get docDbInput() {
+    return this._docDb.internalValue;
+  }
+
   // health - computed: false, optional: true, required: false
   private _health = new CloudAwsIntegrationsHealthOutputReference(this, "health");
   public get health() {
@@ -812,6 +976,22 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get healthInput() {
     return this._health.internalValue;
+  }
+
+  // s3 - computed: false, optional: true, required: false
+  private _s3 = new CloudAwsIntegrationsS3OutputReference(this, "s3");
+  public get s3() {
+    return this._s3;
+  }
+  public putS3(value: CloudAwsIntegrationsS3) {
+    this._s3.internalValue = value;
+  }
+  public resetS3() {
+    this._s3.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3Input() {
+    return this._s3.internalValue;
   }
 
   // trusted_advisor - computed: false, optional: true, required: false
@@ -873,7 +1053,9 @@ export class CloudAwsIntegrations extends cdktf.TerraformResource {
       linked_account_id: cdktf.numberToTerraform(this._linkedAccountId),
       billing: cloudAwsIntegrationsBillingToTerraform(this._billing.internalValue),
       cloudtrail: cloudAwsIntegrationsCloudtrailToTerraform(this._cloudtrail.internalValue),
+      doc_db: cloudAwsIntegrationsDocDbToTerraform(this._docDb.internalValue),
       health: cloudAwsIntegrationsHealthToTerraform(this._health.internalValue),
+      s3: cloudAwsIntegrationsS3ToTerraform(this._s3.internalValue),
       trusted_advisor: cloudAwsIntegrationsTrustedAdvisorToTerraform(this._trustedAdvisor.internalValue),
       vpc: cloudAwsIntegrationsVpcToTerraform(this._vpc.internalValue),
       x_ray: cloudAwsIntegrationsXRayToTerraform(this._xRay.internalValue),

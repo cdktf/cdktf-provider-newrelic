@@ -8,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface SyntheticsSecureCredentialConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The time the secure credential was created.
+  * The New Relic account ID where you want to create the secure credential.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#created_at SyntheticsSecureCredential#created_at}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#account_id SyntheticsSecureCredential#account_id}
   */
-  readonly createdAt?: string;
+  readonly accountId?: number;
   /**
   * The secure credential's description.
   * 
@@ -72,8 +72,8 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_synthetics_secure_credential',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.50.2',
-        providerVersionConstraint: '~> 2.32'
+        providerVersion: '3.7.0',
+        providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -83,7 +83,7 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._createdAt = config.createdAt;
+    this._accountId = config.accountId;
     this._description = config.description;
     this._id = config.id;
     this._key = config.key;
@@ -95,20 +95,20 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // created_at - computed: true, optional: true, required: false
-  private _createdAt?: string; 
-  public get createdAt() {
-    return this.getStringAttribute('created_at');
+  // account_id - computed: true, optional: true, required: false
+  private _accountId?: number; 
+  public get accountId() {
+    return this.getNumberAttribute('account_id');
   }
-  public set createdAt(value: string) {
-    this._createdAt = value;
+  public set accountId(value: number) {
+    this._accountId = value;
   }
-  public resetCreatedAt() {
-    this._createdAt = undefined;
+  public resetAccountId() {
+    this._accountId = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get createdAtInput() {
-    return this._createdAt;
+  public get accountIdInput() {
+    return this._accountId;
   }
 
   // description - computed: false, optional: true, required: false
@@ -191,7 +191,7 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      created_at: cdktf.stringToTerraform(this._createdAt),
+      account_id: cdktf.numberToTerraform(this._accountId),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),

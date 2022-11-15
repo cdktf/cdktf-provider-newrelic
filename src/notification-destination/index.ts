@@ -8,11 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface NotificationDestinationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * A set of key-value pairs to represent a Notification destination auth.
+  * The account ID under which to put the destination.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#auth NotificationDestination#auth}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#account_id NotificationDestination#account_id}
   */
-  readonly auth?: { [key: string]: string };
+  readonly accountId?: number;
+  /**
+  * Indicates whether the destination is active.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#active NotificationDestination#active}
+  */
+  readonly active?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#id NotificationDestination#id}
   *
@@ -27,46 +33,233 @@ export interface NotificationDestinationConfig extends cdktf.TerraformMetaArgume
   */
   readonly name: string;
   /**
-  * (Required) The type of the destination. One of: (WEBHOOK, EMAIL, SERVICE_NOW, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION).
+  * (Required) The type of the destination. One of: (WEBHOOK, EMAIL, SERVICE_NOW, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION, JIRA, SLACK, SLACK_COLLABORATION, SLACK_LEGACY, MOBILE_PUSH, EVENT_BRIDGE).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#type NotificationDestination#type}
   */
   readonly type: string;
   /**
-  * properties block
+  * auth_basic block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#properties NotificationDestination#properties}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#auth_basic NotificationDestination#auth_basic}
   */
-  readonly properties?: NotificationDestinationProperties[] | cdktf.IResolvable;
-}
-export interface NotificationDestinationProperties {
+  readonly authBasic?: NotificationDestinationAuthBasic;
   /**
-  * Notification destination property display key.
+  * auth_token block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#auth_token NotificationDestination#auth_token}
+  */
+  readonly authToken?: NotificationDestinationAuthToken;
+  /**
+  * property block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#property NotificationDestination#property}
+  */
+  readonly property: NotificationDestinationProperty[] | cdktf.IResolvable;
+}
+export interface NotificationDestinationAuthBasic {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#password NotificationDestination#password}
+  */
+  readonly password: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#user NotificationDestination#user}
+  */
+  readonly user: string;
+}
+
+export function notificationDestinationAuthBasicToTerraform(struct?: NotificationDestinationAuthBasicOutputReference | NotificationDestinationAuthBasic): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    password: cdktf.stringToTerraform(struct!.password),
+    user: cdktf.stringToTerraform(struct!.user),
+  }
+}
+
+export class NotificationDestinationAuthBasicOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NotificationDestinationAuthBasic | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._password !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.password = this._password;
+    }
+    if (this._user !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.user = this._user;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NotificationDestinationAuthBasic | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._password = undefined;
+      this._user = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._password = value.password;
+      this._user = value.user;
+    }
+  }
+
+  // password - computed: false, optional: false, required: true
+  private _password?: string; 
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+  public set password(value: string) {
+    this._password = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordInput() {
+    return this._password;
+  }
+
+  // user - computed: false, optional: false, required: true
+  private _user?: string; 
+  public get user() {
+    return this.getStringAttribute('user');
+  }
+  public set user(value: string) {
+    this._user = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userInput() {
+    return this._user;
+  }
+}
+export interface NotificationDestinationAuthToken {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#prefix NotificationDestination#prefix}
+  */
+  readonly prefix?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#token NotificationDestination#token}
+  */
+  readonly token: string;
+}
+
+export function notificationDestinationAuthTokenToTerraform(struct?: NotificationDestinationAuthTokenOutputReference | NotificationDestinationAuthToken): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+    token: cdktf.stringToTerraform(struct!.token),
+  }
+}
+
+export class NotificationDestinationAuthTokenOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NotificationDestinationAuthToken | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._prefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefix = this._prefix;
+    }
+    if (this._token !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.token = this._token;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NotificationDestinationAuthToken | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._prefix = undefined;
+      this._token = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._prefix = value.prefix;
+      this._token = value.token;
+    }
+  }
+
+  // prefix - computed: false, optional: true, required: false
+  private _prefix?: string; 
+  public get prefix() {
+    return this.getStringAttribute('prefix');
+  }
+  public set prefix(value: string) {
+    this._prefix = value;
+  }
+  public resetPrefix() {
+    this._prefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix;
+  }
+
+  // token - computed: false, optional: false, required: true
+  private _token?: string; 
+  public get token() {
+    return this.getStringAttribute('token');
+  }
+  public set token(value: string) {
+    this._token = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenInput() {
+    return this._token;
+  }
+}
+export interface NotificationDestinationProperty {
+  /**
+  * Notification property display key.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#display_value NotificationDestination#display_value}
   */
   readonly displayValue?: string;
   /**
-  * Notification destination property key.
+  * Notification property key.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#key NotificationDestination#key}
   */
   readonly key: string;
   /**
-  * Notification destination property label.
+  * Notification property label.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#label NotificationDestination#label}
   */
   readonly label?: string;
   /**
-  * Notification destination property value.
+  * Notification property value.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#value NotificationDestination#value}
   */
   readonly value: string;
 }
 
-export function notificationDestinationPropertiesToTerraform(struct?: NotificationDestinationProperties | cdktf.IResolvable): any {
+export function notificationDestinationPropertyToTerraform(struct?: NotificationDestinationProperty | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -79,7 +272,7 @@ export function notificationDestinationPropertiesToTerraform(struct?: Notificati
   }
 }
 
-export class NotificationDestinationPropertiesOutputReference extends cdktf.ComplexObject {
+export class NotificationDestinationPropertyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -93,7 +286,7 @@ export class NotificationDestinationPropertiesOutputReference extends cdktf.Comp
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NotificationDestinationProperties | cdktf.IResolvable | undefined {
+  public get internalValue(): NotificationDestinationProperty | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -118,7 +311,7 @@ export class NotificationDestinationPropertiesOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NotificationDestinationProperties | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NotificationDestinationProperty | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -200,8 +393,8 @@ export class NotificationDestinationPropertiesOutputReference extends cdktf.Comp
   }
 }
 
-export class NotificationDestinationPropertiesList extends cdktf.ComplexList {
-  public internalValue? : NotificationDestinationProperties[] | cdktf.IResolvable
+export class NotificationDestinationPropertyList extends cdktf.ComplexList {
+  public internalValue? : NotificationDestinationProperty[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -215,8 +408,8 @@ export class NotificationDestinationPropertiesList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): NotificationDestinationPropertiesOutputReference {
-    return new NotificationDestinationPropertiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): NotificationDestinationPropertyOutputReference {
+    return new NotificationDestinationPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -246,8 +439,8 @@ export class NotificationDestination extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_notification_destination',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.50.2',
-        providerVersionConstraint: '~> 2.32'
+        providerVersion: '3.7.0',
+        providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -257,31 +450,50 @@ export class NotificationDestination extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._auth = config.auth;
+    this._accountId = config.accountId;
+    this._active = config.active;
     this._id = config.id;
     this._name = config.name;
     this._type = config.type;
-    this._properties.internalValue = config.properties;
+    this._authBasic.internalValue = config.authBasic;
+    this._authToken.internalValue = config.authToken;
+    this._property.internalValue = config.property;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // auth - computed: false, optional: true, required: false
-  private _auth?: { [key: string]: string }; 
-  public get auth() {
-    return this.getStringMapAttribute('auth');
+  // account_id - computed: true, optional: true, required: false
+  private _accountId?: number; 
+  public get accountId() {
+    return this.getNumberAttribute('account_id');
   }
-  public set auth(value: { [key: string]: string }) {
-    this._auth = value;
+  public set accountId(value: number) {
+    this._accountId = value;
   }
-  public resetAuth() {
-    this._auth = undefined;
+  public resetAccountId() {
+    this._accountId = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get authInput() {
-    return this._auth;
+  public get accountIdInput() {
+    return this._accountId;
+  }
+
+  // active - computed: false, optional: true, required: false
+  private _active?: boolean | cdktf.IResolvable; 
+  public get active() {
+    return this.getBooleanAttribute('active');
+  }
+  public set active(value: boolean | cdktf.IResolvable) {
+    this._active = value;
+  }
+  public resetActive() {
+    this._active = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get activeInput() {
+    return this._active;
   }
 
   // id - computed: true, optional: true, required: false
@@ -300,6 +512,11 @@ export class NotificationDestination extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // last_sent - computed: true, optional: false, required: false
+  public get lastSent() {
+    return this.getStringAttribute('last_sent');
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -311,6 +528,11 @@ export class NotificationDestination extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
   }
 
   // type - computed: false, optional: false, required: true
@@ -326,20 +548,49 @@ export class NotificationDestination extends cdktf.TerraformResource {
     return this._type;
   }
 
-  // properties - computed: false, optional: true, required: false
-  private _properties = new NotificationDestinationPropertiesList(this, "properties", false);
-  public get properties() {
-    return this._properties;
+  // auth_basic - computed: false, optional: true, required: false
+  private _authBasic = new NotificationDestinationAuthBasicOutputReference(this, "auth_basic");
+  public get authBasic() {
+    return this._authBasic;
   }
-  public putProperties(value: NotificationDestinationProperties[] | cdktf.IResolvable) {
-    this._properties.internalValue = value;
+  public putAuthBasic(value: NotificationDestinationAuthBasic) {
+    this._authBasic.internalValue = value;
   }
-  public resetProperties() {
-    this._properties.internalValue = undefined;
+  public resetAuthBasic() {
+    this._authBasic.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get propertiesInput() {
-    return this._properties.internalValue;
+  public get authBasicInput() {
+    return this._authBasic.internalValue;
+  }
+
+  // auth_token - computed: false, optional: true, required: false
+  private _authToken = new NotificationDestinationAuthTokenOutputReference(this, "auth_token");
+  public get authToken() {
+    return this._authToken;
+  }
+  public putAuthToken(value: NotificationDestinationAuthToken) {
+    this._authToken.internalValue = value;
+  }
+  public resetAuthToken() {
+    this._authToken.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authTokenInput() {
+    return this._authToken.internalValue;
+  }
+
+  // property - computed: false, optional: false, required: true
+  private _property = new NotificationDestinationPropertyList(this, "property", true);
+  public get property() {
+    return this._property;
+  }
+  public putProperty(value: NotificationDestinationProperty[] | cdktf.IResolvable) {
+    this._property.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propertyInput() {
+    return this._property.internalValue;
   }
 
   // =========
@@ -348,11 +599,14 @@ export class NotificationDestination extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auth: cdktf.hashMapper(cdktf.stringToTerraform)(this._auth),
+      account_id: cdktf.numberToTerraform(this._accountId),
+      active: cdktf.booleanToTerraform(this._active),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
-      properties: cdktf.listMapper(notificationDestinationPropertiesToTerraform, true)(this._properties.internalValue),
+      auth_basic: notificationDestinationAuthBasicToTerraform(this._authBasic.internalValue),
+      auth_token: notificationDestinationAuthTokenToTerraform(this._authToken.internalValue),
+      property: cdktf.listMapper(notificationDestinationPropertyToTerraform, true)(this._property.internalValue),
     };
   }
 }
