@@ -2223,12 +2223,6 @@ export interface OneDashboardPageWidgetHeatmap {
   */
   readonly column: number;
   /**
-  * Use this item to filter the current dashboard
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
-  */
-  readonly filterCurrentDashboard?: boolean | cdktf.IResolvable;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#height OneDashboard#height}
   */
   readonly height?: number;
@@ -2236,12 +2230,6 @@ export interface OneDashboardPageWidgetHeatmap {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
   */
   readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
-  /**
-  * Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
-  */
-  readonly linkedEntityGuids?: string[];
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#row OneDashboard#row}
   */
@@ -2271,10 +2259,8 @@ export function oneDashboardPageWidgetHeatmapToTerraform(struct?: OneDashboardPa
   }
   return {
     column: cdktf.numberToTerraform(struct!.column),
-    filter_current_dashboard: cdktf.booleanToTerraform(struct!.filterCurrentDashboard),
     height: cdktf.numberToTerraform(struct!.height),
     ignore_time_range: cdktf.booleanToTerraform(struct!.ignoreTimeRange),
-    linked_entity_guids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.linkedEntityGuids),
     row: cdktf.numberToTerraform(struct!.row),
     title: cdktf.stringToTerraform(struct!.title),
     width: cdktf.numberToTerraform(struct!.width),
@@ -2306,10 +2292,6 @@ export class OneDashboardPageWidgetHeatmapOutputReference extends cdktf.ComplexO
       hasAnyValues = true;
       internalValueResult.column = this._column;
     }
-    if (this._filterCurrentDashboard !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.filterCurrentDashboard = this._filterCurrentDashboard;
-    }
     if (this._height !== undefined) {
       hasAnyValues = true;
       internalValueResult.height = this._height;
@@ -2317,10 +2299,6 @@ export class OneDashboardPageWidgetHeatmapOutputReference extends cdktf.ComplexO
     if (this._ignoreTimeRange !== undefined) {
       hasAnyValues = true;
       internalValueResult.ignoreTimeRange = this._ignoreTimeRange;
-    }
-    if (this._linkedEntityGuids !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.linkedEntityGuids = this._linkedEntityGuids;
     }
     if (this._row !== undefined) {
       hasAnyValues = true;
@@ -2346,10 +2324,8 @@ export class OneDashboardPageWidgetHeatmapOutputReference extends cdktf.ComplexO
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._column = undefined;
-      this._filterCurrentDashboard = undefined;
       this._height = undefined;
       this._ignoreTimeRange = undefined;
-      this._linkedEntityGuids = undefined;
       this._row = undefined;
       this._title = undefined;
       this._width = undefined;
@@ -2363,10 +2339,8 @@ export class OneDashboardPageWidgetHeatmapOutputReference extends cdktf.ComplexO
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._column = value.column;
-      this._filterCurrentDashboard = value.filterCurrentDashboard;
       this._height = value.height;
       this._ignoreTimeRange = value.ignoreTimeRange;
-      this._linkedEntityGuids = value.linkedEntityGuids;
       this._row = value.row;
       this._title = value.title;
       this._width = value.width;
@@ -2385,22 +2359,6 @@ export class OneDashboardPageWidgetHeatmapOutputReference extends cdktf.ComplexO
   // Temporarily expose input value. Use with caution.
   public get columnInput() {
     return this._column;
-  }
-
-  // filter_current_dashboard - computed: false, optional: true, required: false
-  private _filterCurrentDashboard?: boolean | cdktf.IResolvable; 
-  public get filterCurrentDashboard() {
-    return this.getBooleanAttribute('filter_current_dashboard');
-  }
-  public set filterCurrentDashboard(value: boolean | cdktf.IResolvable) {
-    this._filterCurrentDashboard = value;
-  }
-  public resetFilterCurrentDashboard() {
-    this._filterCurrentDashboard = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterCurrentDashboardInput() {
-    return this._filterCurrentDashboard;
   }
 
   // height - computed: false, optional: true, required: false
@@ -2438,22 +2396,6 @@ export class OneDashboardPageWidgetHeatmapOutputReference extends cdktf.ComplexO
   // Temporarily expose input value. Use with caution.
   public get ignoreTimeRangeInput() {
     return this._ignoreTimeRange;
-  }
-
-  // linked_entity_guids - computed: true, optional: true, required: false
-  private _linkedEntityGuids?: string[]; 
-  public get linkedEntityGuids() {
-    return this.getListAttribute('linked_entity_guids');
-  }
-  public set linkedEntityGuids(value: string[]) {
-    this._linkedEntityGuids = value;
-  }
-  public resetLinkedEntityGuids() {
-    this._linkedEntityGuids = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get linkedEntityGuidsInput() {
-    return this._linkedEntityGuids;
   }
 
   // row - computed: false, optional: false, required: true
@@ -6134,8 +6076,8 @@ export class OneDashboard extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_one_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.7.0',
-        providerVersionConstraint: '~> 3.7'
+        providerVersion: '2.50.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

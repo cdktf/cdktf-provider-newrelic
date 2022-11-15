@@ -32,87 +32,6 @@ export interface AlertPolicyChannelConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel#policy_id AlertPolicyChannel#policy_id}
   */
   readonly policyId: number;
-  /**
-  * timeouts block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel#timeouts AlertPolicyChannel#timeouts}
-  */
-  readonly timeouts?: AlertPolicyChannelTimeouts;
-}
-export interface AlertPolicyChannelTimeouts {
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_policy_channel#create AlertPolicyChannel#create}
-  */
-  readonly create?: string;
-}
-
-export function alertPolicyChannelTimeoutsToTerraform(struct?: AlertPolicyChannelTimeoutsOutputReference | AlertPolicyChannelTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-  }
-}
-
-export class AlertPolicyChannelTimeoutsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): AlertPolicyChannelTimeouts | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._create !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.create = this._create;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: AlertPolicyChannelTimeouts | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._create = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._create = value.create;
-    }
-  }
-
-  // create - computed: false, optional: true, required: false
-  private _create?: string; 
-  public get create() {
-    return this.getStringAttribute('create');
-  }
-  public set create(value: string) {
-    this._create = value;
-  }
-  public resetCreate() {
-    this._create = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get createInput() {
-    return this._create;
-  }
 }
 
 /**
@@ -141,8 +60,8 @@ export class AlertPolicyChannel extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_alert_policy_channel',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.7.0',
-        providerVersionConstraint: '~> 3.7'
+        providerVersion: '2.50.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -156,7 +75,6 @@ export class AlertPolicyChannel extends cdktf.TerraformResource {
     this._channelIds = config.channelIds;
     this._id = config.id;
     this._policyId = config.policyId;
-    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -221,22 +139,6 @@ export class AlertPolicyChannel extends cdktf.TerraformResource {
     return this._policyId;
   }
 
-  // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new AlertPolicyChannelTimeoutsOutputReference(this, "timeouts");
-  public get timeouts() {
-    return this._timeouts;
-  }
-  public putTimeouts(value: AlertPolicyChannelTimeouts) {
-    this._timeouts.internalValue = value;
-  }
-  public resetTimeouts() {
-    this._timeouts.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -247,7 +149,6 @@ export class AlertPolicyChannel extends cdktf.TerraformResource {
       channel_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._channelIds),
       id: cdktf.stringToTerraform(this._id),
       policy_id: cdktf.numberToTerraform(this._policyId),
-      timeouts: alertPolicyChannelTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }
