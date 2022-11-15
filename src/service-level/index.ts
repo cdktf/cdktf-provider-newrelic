@@ -39,95 +39,6 @@ export interface ServiceLevelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly objective: ServiceLevelObjective;
 }
-export interface ServiceLevelEventsBadEventsSelect {
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}
-  */
-  readonly attribute?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#function ServiceLevel#function}
-  */
-  readonly function: string;
-}
-
-export function serviceLevelEventsBadEventsSelectToTerraform(struct?: ServiceLevelEventsBadEventsSelectOutputReference | ServiceLevelEventsBadEventsSelect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    attribute: cdktf.stringToTerraform(struct!.attribute),
-    function: cdktf.stringToTerraform(struct!.function),
-  }
-}
-
-export class ServiceLevelEventsBadEventsSelectOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): ServiceLevelEventsBadEventsSelect | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._attribute !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.attribute = this._attribute;
-    }
-    if (this._function !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.function = this._function;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ServiceLevelEventsBadEventsSelect | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._attribute = undefined;
-      this._function = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._attribute = value.attribute;
-      this._function = value.function;
-    }
-  }
-
-  // attribute - computed: false, optional: true, required: false
-  private _attribute?: string; 
-  public get attribute() {
-    return this.getStringAttribute('attribute');
-  }
-  public set attribute(value: string) {
-    this._attribute = value;
-  }
-  public resetAttribute() {
-    this._attribute = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get attributeInput() {
-    return this._attribute;
-  }
-
-  // function - computed: false, optional: false, required: true
-  private _function?: string; 
-  public get function() {
-    return this.getStringAttribute('function');
-  }
-  public set function(value: string) {
-    this._function = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get functionInput() {
-    return this._function;
-  }
-}
 export interface ServiceLevelEventsBadEvents {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#from ServiceLevel#from}
@@ -137,12 +48,6 @@ export interface ServiceLevelEventsBadEvents {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#where ServiceLevel#where}
   */
   readonly where?: string;
-  /**
-  * select block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#select ServiceLevel#select}
-  */
-  readonly select?: ServiceLevelEventsBadEventsSelect;
 }
 
 export function serviceLevelEventsBadEventsToTerraform(struct?: ServiceLevelEventsBadEventsOutputReference | ServiceLevelEventsBadEvents): any {
@@ -153,7 +58,6 @@ export function serviceLevelEventsBadEventsToTerraform(struct?: ServiceLevelEven
   return {
     from: cdktf.stringToTerraform(struct!.from),
     where: cdktf.stringToTerraform(struct!.where),
-    select: serviceLevelEventsBadEventsSelectToTerraform(struct!.select),
   }
 }
 
@@ -179,10 +83,6 @@ export class ServiceLevelEventsBadEventsOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.where = this._where;
     }
-    if (this._select?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.select = this._select?.internalValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -191,13 +91,11 @@ export class ServiceLevelEventsBadEventsOutputReference extends cdktf.ComplexObj
       this.isEmptyObject = false;
       this._from = undefined;
       this._where = undefined;
-      this._select.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._from = value.from;
       this._where = value.where;
-      this._select.internalValue = value.select;
     }
   }
 
@@ -229,111 +127,6 @@ export class ServiceLevelEventsBadEventsOutputReference extends cdktf.ComplexObj
   public get whereInput() {
     return this._where;
   }
-
-  // select - computed: false, optional: true, required: false
-  private _select = new ServiceLevelEventsBadEventsSelectOutputReference(this, "select");
-  public get select() {
-    return this._select;
-  }
-  public putSelect(value: ServiceLevelEventsBadEventsSelect) {
-    this._select.internalValue = value;
-  }
-  public resetSelect() {
-    this._select.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get selectInput() {
-    return this._select.internalValue;
-  }
-}
-export interface ServiceLevelEventsGoodEventsSelect {
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}
-  */
-  readonly attribute?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#function ServiceLevel#function}
-  */
-  readonly function: string;
-}
-
-export function serviceLevelEventsGoodEventsSelectToTerraform(struct?: ServiceLevelEventsGoodEventsSelectOutputReference | ServiceLevelEventsGoodEventsSelect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    attribute: cdktf.stringToTerraform(struct!.attribute),
-    function: cdktf.stringToTerraform(struct!.function),
-  }
-}
-
-export class ServiceLevelEventsGoodEventsSelectOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): ServiceLevelEventsGoodEventsSelect | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._attribute !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.attribute = this._attribute;
-    }
-    if (this._function !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.function = this._function;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ServiceLevelEventsGoodEventsSelect | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._attribute = undefined;
-      this._function = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._attribute = value.attribute;
-      this._function = value.function;
-    }
-  }
-
-  // attribute - computed: false, optional: true, required: false
-  private _attribute?: string; 
-  public get attribute() {
-    return this.getStringAttribute('attribute');
-  }
-  public set attribute(value: string) {
-    this._attribute = value;
-  }
-  public resetAttribute() {
-    this._attribute = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get attributeInput() {
-    return this._attribute;
-  }
-
-  // function - computed: false, optional: false, required: true
-  private _function?: string; 
-  public get function() {
-    return this.getStringAttribute('function');
-  }
-  public set function(value: string) {
-    this._function = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get functionInput() {
-    return this._function;
-  }
 }
 export interface ServiceLevelEventsGoodEvents {
   /**
@@ -344,12 +137,6 @@ export interface ServiceLevelEventsGoodEvents {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#where ServiceLevel#where}
   */
   readonly where?: string;
-  /**
-  * select block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#select ServiceLevel#select}
-  */
-  readonly select?: ServiceLevelEventsGoodEventsSelect;
 }
 
 export function serviceLevelEventsGoodEventsToTerraform(struct?: ServiceLevelEventsGoodEventsOutputReference | ServiceLevelEventsGoodEvents): any {
@@ -360,7 +147,6 @@ export function serviceLevelEventsGoodEventsToTerraform(struct?: ServiceLevelEve
   return {
     from: cdktf.stringToTerraform(struct!.from),
     where: cdktf.stringToTerraform(struct!.where),
-    select: serviceLevelEventsGoodEventsSelectToTerraform(struct!.select),
   }
 }
 
@@ -386,10 +172,6 @@ export class ServiceLevelEventsGoodEventsOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.where = this._where;
     }
-    if (this._select?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.select = this._select?.internalValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -398,13 +180,11 @@ export class ServiceLevelEventsGoodEventsOutputReference extends cdktf.ComplexOb
       this.isEmptyObject = false;
       this._from = undefined;
       this._where = undefined;
-      this._select.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._from = value.from;
       this._where = value.where;
-      this._select.internalValue = value.select;
     }
   }
 
@@ -436,111 +216,6 @@ export class ServiceLevelEventsGoodEventsOutputReference extends cdktf.ComplexOb
   public get whereInput() {
     return this._where;
   }
-
-  // select - computed: false, optional: true, required: false
-  private _select = new ServiceLevelEventsGoodEventsSelectOutputReference(this, "select");
-  public get select() {
-    return this._select;
-  }
-  public putSelect(value: ServiceLevelEventsGoodEventsSelect) {
-    this._select.internalValue = value;
-  }
-  public resetSelect() {
-    this._select.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get selectInput() {
-    return this._select.internalValue;
-  }
-}
-export interface ServiceLevelEventsValidEventsSelect {
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}
-  */
-  readonly attribute?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#function ServiceLevel#function}
-  */
-  readonly function: string;
-}
-
-export function serviceLevelEventsValidEventsSelectToTerraform(struct?: ServiceLevelEventsValidEventsSelectOutputReference | ServiceLevelEventsValidEventsSelect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    attribute: cdktf.stringToTerraform(struct!.attribute),
-    function: cdktf.stringToTerraform(struct!.function),
-  }
-}
-
-export class ServiceLevelEventsValidEventsSelectOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): ServiceLevelEventsValidEventsSelect | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._attribute !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.attribute = this._attribute;
-    }
-    if (this._function !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.function = this._function;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ServiceLevelEventsValidEventsSelect | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._attribute = undefined;
-      this._function = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._attribute = value.attribute;
-      this._function = value.function;
-    }
-  }
-
-  // attribute - computed: false, optional: true, required: false
-  private _attribute?: string; 
-  public get attribute() {
-    return this.getStringAttribute('attribute');
-  }
-  public set attribute(value: string) {
-    this._attribute = value;
-  }
-  public resetAttribute() {
-    this._attribute = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get attributeInput() {
-    return this._attribute;
-  }
-
-  // function - computed: false, optional: false, required: true
-  private _function?: string; 
-  public get function() {
-    return this.getStringAttribute('function');
-  }
-  public set function(value: string) {
-    this._function = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get functionInput() {
-    return this._function;
-  }
 }
 export interface ServiceLevelEventsValidEvents {
   /**
@@ -551,12 +226,6 @@ export interface ServiceLevelEventsValidEvents {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#where ServiceLevel#where}
   */
   readonly where?: string;
-  /**
-  * select block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#select ServiceLevel#select}
-  */
-  readonly select?: ServiceLevelEventsValidEventsSelect;
 }
 
 export function serviceLevelEventsValidEventsToTerraform(struct?: ServiceLevelEventsValidEventsOutputReference | ServiceLevelEventsValidEvents): any {
@@ -567,7 +236,6 @@ export function serviceLevelEventsValidEventsToTerraform(struct?: ServiceLevelEv
   return {
     from: cdktf.stringToTerraform(struct!.from),
     where: cdktf.stringToTerraform(struct!.where),
-    select: serviceLevelEventsValidEventsSelectToTerraform(struct!.select),
   }
 }
 
@@ -593,10 +261,6 @@ export class ServiceLevelEventsValidEventsOutputReference extends cdktf.ComplexO
       hasAnyValues = true;
       internalValueResult.where = this._where;
     }
-    if (this._select?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.select = this._select?.internalValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -605,13 +269,11 @@ export class ServiceLevelEventsValidEventsOutputReference extends cdktf.ComplexO
       this.isEmptyObject = false;
       this._from = undefined;
       this._where = undefined;
-      this._select.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._from = value.from;
       this._where = value.where;
-      this._select.internalValue = value.select;
     }
   }
 
@@ -642,22 +304,6 @@ export class ServiceLevelEventsValidEventsOutputReference extends cdktf.ComplexO
   // Temporarily expose input value. Use with caution.
   public get whereInput() {
     return this._where;
-  }
-
-  // select - computed: false, optional: true, required: false
-  private _select = new ServiceLevelEventsValidEventsSelectOutputReference(this, "select");
-  public get select() {
-    return this._select;
-  }
-  public putSelect(value: ServiceLevelEventsValidEventsSelect) {
-    this._select.internalValue = value;
-  }
-  public resetSelect() {
-    this._select.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get selectInput() {
-    return this._select.internalValue;
   }
 }
 export interface ServiceLevelEvents {
@@ -1125,8 +771,8 @@ export class ServiceLevel extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_service_level',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.7.0',
-        providerVersionConstraint: '~> 3.7'
+        providerVersion: '2.50.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

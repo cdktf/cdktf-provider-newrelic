@@ -48,8 +48,8 @@ export class DataNewrelicSyntheticsSecureCredential extends cdktf.TerraformDataS
       terraformResourceType: 'newrelic_synthetics_secure_credential',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.7.0',
-        providerVersionConstraint: '~> 3.7'
+        providerVersion: '2.50.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -67,9 +67,9 @@ export class DataNewrelicSyntheticsSecureCredential extends cdktf.TerraformDataS
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: true, optional: false, required: false
-  public get accountId() {
-    return this.getNumberAttribute('account_id');
+  // created_at - computed: true, optional: false, required: false
+  public get createdAt() {
+    return this.getStringAttribute('created_at');
   }
 
   // description - computed: true, optional: false, required: false

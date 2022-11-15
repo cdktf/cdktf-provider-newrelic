@@ -60,8 +60,8 @@ export class DataNewrelicAlertPolicy extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_alert_policy',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.7.0',
-        providerVersionConstraint: '~> 3.7'
+        providerVersion: '2.50.2',
+        providerVersionConstraint: '~> 2.32'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

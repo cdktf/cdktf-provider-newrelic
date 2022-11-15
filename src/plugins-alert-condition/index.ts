@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/alert_condition
+// https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,127 +6,115 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AlertConditionConfig extends cdktf.TerraformMetaArguments {
+export interface PluginsAlertConditionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * One of (application, instance). Choose application for most scenarios. If you are using the JVM plugin in New Relic, the instance setting allows your condition to trigger for specific app instances.
+  * Whether or not this condition is enabled.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#condition_scope AlertCondition#condition_scope}
-  */
-  readonly conditionScope?: string;
-  /**
-  * Whether the condition is enabled.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#enabled AlertCondition#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#enabled PluginsAlertCondition#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * The instance IDs associated with this condition.
+  * The plugin component IDs to target.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#entities AlertCondition#entities}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#entities PluginsAlertCondition#entities}
   */
   readonly entities: number[];
   /**
-  * A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#gc_metric AlertCondition#gc_metric}
-  */
-  readonly gcMetric?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#id AlertCondition#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#id PluginsAlertCondition#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The metric field accepts parameters based on the type set.
+  * The plugin metric to evaluate.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#metric AlertCondition#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#metric PluginsAlertCondition#metric}
   */
   readonly metric: string;
   /**
-  * The title of the condition. Must be between 1 and 128 characters, inclusive.
+  * The metric description.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#name AlertCondition#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#metric_description PluginsAlertCondition#metric_description}
+  */
+  readonly metricDescription: string;
+  /**
+  * The title of the condition. Must be between 1 and 64 characters, inclusive.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#name PluginsAlertCondition#name}
   */
   readonly name: string;
   /**
+  * The GUID of the plugin which produces the metric.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#plugin_guid PluginsAlertCondition#plugin_guid}
+  */
+  readonly pluginGuid: string;
+  /**
+  * The ID of the installed plugin instance which produces the metric.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#plugin_id PluginsAlertCondition#plugin_id}
+  */
+  readonly pluginId: string;
+  /**
   * The ID of the policy where this condition should be used.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#policy_id AlertCondition#policy_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#policy_id PluginsAlertCondition#policy_id}
   */
   readonly policyId: number;
   /**
   * Runbook URL to display in notifications.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#runbook_url AlertCondition#runbook_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#runbook_url PluginsAlertCondition#runbook_url}
   */
   readonly runbookUrl?: string;
   /**
-  * The type of condition. One of: (apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric).
+  * The value function to apply to the metric data.  One of `min`, `max`, `average`, `sample_size`, `total`, or `percent`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#value_function PluginsAlertCondition#value_function}
   */
-  readonly type: string;
-  /**
-  * A custom metric to be evaluated.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#user_defined_metric AlertCondition#user_defined_metric}
-  */
-  readonly userDefinedMetric?: string;
-  /**
-  * One of: (average, min, max, total, sample_size).
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#user_defined_value_function AlertCondition#user_defined_value_function}
-  */
-  readonly userDefinedValueFunction?: string;
-  /**
-  * Automatically close instance-based violations, including JVM health metric violations, after the number of hours specified. Must be: 1, 2, 4, 8, 12 or 24.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#violation_close_timer AlertCondition#violation_close_timer}
-  */
-  readonly violationCloseTimer?: number;
+  readonly valueFunction: string;
   /**
   * term block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#term AlertCondition#term}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#term PluginsAlertCondition#term}
   */
-  readonly term: AlertConditionTerm[] | cdktf.IResolvable;
+  readonly term: PluginsAlertConditionTerm[] | cdktf.IResolvable;
 }
-export interface AlertConditionTerm {
+export interface PluginsAlertConditionTerm {
   /**
   * In minutes, must be in the range of 5 to 120, inclusive.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#duration AlertCondition#duration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#duration PluginsAlertCondition#duration}
   */
   readonly duration: number;
   /**
-  * One of (above, below, equal). Defaults to equal.
+  * One of `above`, `below`, or `equal`. Defaults to equal.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#operator AlertCondition#operator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#operator PluginsAlertCondition#operator}
   */
   readonly operator?: string;
   /**
-  * One of (critical, warning). Defaults to critical.
+  * One of `critical` or `warning`. Defaults to critical.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#priority AlertCondition#priority}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#priority PluginsAlertCondition#priority}
   */
   readonly priority?: string;
   /**
   * Must be 0 or greater.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#threshold AlertCondition#threshold}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#threshold PluginsAlertCondition#threshold}
   */
   readonly threshold: number;
   /**
-  * One of (all, any).
+  * One of `all` or `any`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#time_function AlertCondition#time_function}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition#time_function PluginsAlertCondition#time_function}
   */
   readonly timeFunction: string;
 }
 
-export function alertConditionTermToTerraform(struct?: AlertConditionTerm | cdktf.IResolvable): any {
+export function pluginsAlertConditionTermToTerraform(struct?: PluginsAlertConditionTerm | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -140,7 +128,7 @@ export function alertConditionTermToTerraform(struct?: AlertConditionTerm | cdkt
   }
 }
 
-export class AlertConditionTermOutputReference extends cdktf.ComplexObject {
+export class PluginsAlertConditionTermOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -154,7 +142,7 @@ export class AlertConditionTermOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AlertConditionTerm | cdktf.IResolvable | undefined {
+  public get internalValue(): PluginsAlertConditionTerm | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -183,7 +171,7 @@ export class AlertConditionTermOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlertConditionTerm | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PluginsAlertConditionTerm | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -280,8 +268,8 @@ export class AlertConditionTermOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class AlertConditionTermList extends cdktf.ComplexList {
-  public internalValue? : AlertConditionTerm[] | cdktf.IResolvable
+export class PluginsAlertConditionTermList extends cdktf.ComplexList {
+  public internalValue? : PluginsAlertConditionTerm[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -295,35 +283,35 @@ export class AlertConditionTermList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): AlertConditionTermOutputReference {
-    return new AlertConditionTermOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): PluginsAlertConditionTermOutputReference {
+    return new PluginsAlertConditionTermOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition newrelic_alert_condition}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition newrelic_plugins_alert_condition}
 */
-export class AlertCondition extends cdktf.TerraformResource {
+export class PluginsAlertCondition extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "newrelic_alert_condition";
+  public static readonly tfResourceType = "newrelic_plugins_alert_condition";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition newrelic_alert_condition} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/plugins_alert_condition newrelic_plugins_alert_condition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options AlertConditionConfig
+  * @param options PluginsAlertConditionConfig
   */
-  public constructor(scope: Construct, id: string, config: AlertConditionConfig) {
+  public constructor(scope: Construct, id: string, config: PluginsAlertConditionConfig) {
     super(scope, id, {
-      terraformResourceType: 'newrelic_alert_condition',
+      terraformResourceType: 'newrelic_plugins_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
         providerVersion: '2.50.2',
@@ -337,41 +325,23 @@ export class AlertCondition extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._conditionScope = config.conditionScope;
     this._enabled = config.enabled;
     this._entities = config.entities;
-    this._gcMetric = config.gcMetric;
     this._id = config.id;
     this._metric = config.metric;
+    this._metricDescription = config.metricDescription;
     this._name = config.name;
+    this._pluginGuid = config.pluginGuid;
+    this._pluginId = config.pluginId;
     this._policyId = config.policyId;
     this._runbookUrl = config.runbookUrl;
-    this._type = config.type;
-    this._userDefinedMetric = config.userDefinedMetric;
-    this._userDefinedValueFunction = config.userDefinedValueFunction;
-    this._violationCloseTimer = config.violationCloseTimer;
+    this._valueFunction = config.valueFunction;
     this._term.internalValue = config.term;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // condition_scope - computed: false, optional: true, required: false
-  private _conditionScope?: string; 
-  public get conditionScope() {
-    return this.getStringAttribute('condition_scope');
-  }
-  public set conditionScope(value: string) {
-    this._conditionScope = value;
-  }
-  public resetConditionScope() {
-    this._conditionScope = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get conditionScopeInput() {
-    return this._conditionScope;
-  }
 
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
@@ -400,22 +370,6 @@ export class AlertCondition extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get entitiesInput() {
     return this._entities;
-  }
-
-  // gc_metric - computed: false, optional: true, required: false
-  private _gcMetric?: string; 
-  public get gcMetric() {
-    return this.getStringAttribute('gc_metric');
-  }
-  public set gcMetric(value: string) {
-    this._gcMetric = value;
-  }
-  public resetGcMetric() {
-    this._gcMetric = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get gcMetricInput() {
-    return this._gcMetric;
   }
 
   // id - computed: true, optional: true, required: false
@@ -447,6 +401,19 @@ export class AlertCondition extends cdktf.TerraformResource {
     return this._metric;
   }
 
+  // metric_description - computed: false, optional: false, required: true
+  private _metricDescription?: string; 
+  public get metricDescription() {
+    return this.getStringAttribute('metric_description');
+  }
+  public set metricDescription(value: string) {
+    this._metricDescription = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricDescriptionInput() {
+    return this._metricDescription;
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -458,6 +425,32 @@ export class AlertCondition extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // plugin_guid - computed: false, optional: false, required: true
+  private _pluginGuid?: string; 
+  public get pluginGuid() {
+    return this.getStringAttribute('plugin_guid');
+  }
+  public set pluginGuid(value: string) {
+    this._pluginGuid = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginGuidInput() {
+    return this._pluginGuid;
+  }
+
+  // plugin_id - computed: false, optional: false, required: true
+  private _pluginId?: string; 
+  public get pluginId() {
+    return this.getStringAttribute('plugin_id');
+  }
+  public set pluginId(value: string) {
+    this._pluginId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginIdInput() {
+    return this._pluginId;
   }
 
   // policy_id - computed: false, optional: false, required: true
@@ -489,73 +482,25 @@ export class AlertCondition extends cdktf.TerraformResource {
     return this._runbookUrl;
   }
 
-  // type - computed: false, optional: false, required: true
-  private _type?: string; 
-  public get type() {
-    return this.getStringAttribute('type');
+  // value_function - computed: false, optional: false, required: true
+  private _valueFunction?: string; 
+  public get valueFunction() {
+    return this.getStringAttribute('value_function');
   }
-  public set type(value: string) {
-    this._type = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get typeInput() {
-    return this._type;
-  }
-
-  // user_defined_metric - computed: false, optional: true, required: false
-  private _userDefinedMetric?: string; 
-  public get userDefinedMetric() {
-    return this.getStringAttribute('user_defined_metric');
-  }
-  public set userDefinedMetric(value: string) {
-    this._userDefinedMetric = value;
-  }
-  public resetUserDefinedMetric() {
-    this._userDefinedMetric = undefined;
+  public set valueFunction(value: string) {
+    this._valueFunction = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get userDefinedMetricInput() {
-    return this._userDefinedMetric;
-  }
-
-  // user_defined_value_function - computed: false, optional: true, required: false
-  private _userDefinedValueFunction?: string; 
-  public get userDefinedValueFunction() {
-    return this.getStringAttribute('user_defined_value_function');
-  }
-  public set userDefinedValueFunction(value: string) {
-    this._userDefinedValueFunction = value;
-  }
-  public resetUserDefinedValueFunction() {
-    this._userDefinedValueFunction = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get userDefinedValueFunctionInput() {
-    return this._userDefinedValueFunction;
-  }
-
-  // violation_close_timer - computed: false, optional: true, required: false
-  private _violationCloseTimer?: number; 
-  public get violationCloseTimer() {
-    return this.getNumberAttribute('violation_close_timer');
-  }
-  public set violationCloseTimer(value: number) {
-    this._violationCloseTimer = value;
-  }
-  public resetViolationCloseTimer() {
-    this._violationCloseTimer = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get violationCloseTimerInput() {
-    return this._violationCloseTimer;
+  public get valueFunctionInput() {
+    return this._valueFunction;
   }
 
   // term - computed: false, optional: false, required: true
-  private _term = new AlertConditionTermList(this, "term", true);
+  private _term = new PluginsAlertConditionTermList(this, "term", true);
   public get term() {
     return this._term;
   }
-  public putTerm(value: AlertConditionTerm[] | cdktf.IResolvable) {
+  public putTerm(value: PluginsAlertConditionTerm[] | cdktf.IResolvable) {
     this._term.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -569,20 +514,18 @@ export class AlertCondition extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      condition_scope: cdktf.stringToTerraform(this._conditionScope),
       enabled: cdktf.booleanToTerraform(this._enabled),
       entities: cdktf.listMapper(cdktf.numberToTerraform, false)(this._entities),
-      gc_metric: cdktf.stringToTerraform(this._gcMetric),
       id: cdktf.stringToTerraform(this._id),
       metric: cdktf.stringToTerraform(this._metric),
+      metric_description: cdktf.stringToTerraform(this._metricDescription),
       name: cdktf.stringToTerraform(this._name),
+      plugin_guid: cdktf.stringToTerraform(this._pluginGuid),
+      plugin_id: cdktf.stringToTerraform(this._pluginId),
       policy_id: cdktf.numberToTerraform(this._policyId),
       runbook_url: cdktf.stringToTerraform(this._runbookUrl),
-      type: cdktf.stringToTerraform(this._type),
-      user_defined_metric: cdktf.stringToTerraform(this._userDefinedMetric),
-      user_defined_value_function: cdktf.stringToTerraform(this._userDefinedValueFunction),
-      violation_close_timer: cdktf.numberToTerraform(this._violationCloseTimer),
-      term: cdktf.listMapper(alertConditionTermToTerraform, true)(this._term.internalValue),
+      value_function: cdktf.stringToTerraform(this._valueFunction),
+      term: cdktf.listMapper(pluginsAlertConditionTermToTerraform, true)(this._term.internalValue),
     };
   }
 }

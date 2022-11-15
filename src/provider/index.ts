@@ -18,7 +18,7 @@ export interface NewrelicProviderConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic#api_key NewrelicProvider#api_key}
   */
-  readonly apiKey: string;
+  readonly apiKey?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic#api_url NewrelicProvider#api_url}
   */
@@ -95,8 +95,8 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'newrelic',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.7.0',
-        providerVersionConstraint: '~> 3.7'
+        providerVersion: '2.50.2',
+        providerVersionConstraint: '~> 2.32'
       },
       terraformProviderSource: 'newrelic/newrelic'
     });
@@ -149,13 +149,16 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
     return this._adminApiKey;
   }
 
-  // api_key - computed: false, optional: false, required: true
+  // api_key - computed: false, optional: true, required: false
   private _apiKey?: string; 
   public get apiKey() {
     return this._apiKey;
   }
   public set apiKey(value: string | undefined) {
     this._apiKey = value;
+  }
+  public resetApiKey() {
+    this._apiKey = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get apiKeyInput() {
