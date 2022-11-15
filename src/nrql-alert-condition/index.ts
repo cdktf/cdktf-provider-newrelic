@@ -20,7 +20,7 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly aggregationDelay?: string;
   /**
-  * The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for violations. Default is CADENCE.
+  * The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for violations. Default is EVENT_FLOW.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#aggregation_method NrqlAlertCondition#aggregation_method}
   */
@@ -158,6 +158,12 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#term NrqlAlertCondition#term}
   */
   readonly term?: NrqlAlertConditionTerm[] | cdktf.IResolvable;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#timeouts NrqlAlertCondition#timeouts}
+  */
+  readonly timeouts?: NrqlAlertConditionTimeouts;
   /**
   * warning block
   * 
@@ -764,6 +770,81 @@ export class NrqlAlertConditionTermList extends cdktf.ComplexList {
     return new NrqlAlertConditionTermOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface NrqlAlertConditionTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#create NrqlAlertCondition#create}
+  */
+  readonly create?: string;
+}
+
+export function nrqlAlertConditionTimeoutsToTerraform(struct?: NrqlAlertConditionTimeoutsOutputReference | NrqlAlertConditionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+  }
+}
+
+export class NrqlAlertConditionTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NrqlAlertConditionTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NrqlAlertConditionTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+}
 export interface NrqlAlertConditionWarning {
   /**
   * In minutes, must be in the range of 1 to 120 (inclusive).
@@ -1000,8 +1081,8 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_nrql_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.50.2',
-        providerVersionConstraint: '~> 2.32'
+        providerVersion: '3.7.0',
+        providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1036,6 +1117,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
     this._critical.internalValue = config.critical;
     this._nrql.internalValue = config.nrql;
     this._term.internalValue = config.term;
+    this._timeouts.internalValue = config.timeouts;
     this._warning.internalValue = config.warning;
   }
 
@@ -1439,6 +1521,22 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
     return this._term.internalValue;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new NrqlAlertConditionTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: NrqlAlertConditionTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // warning - computed: false, optional: true, required: false
   private _warning = new NrqlAlertConditionWarningOutputReference(this, "warning");
   public get warning() {
@@ -1486,6 +1584,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       critical: nrqlAlertConditionCriticalToTerraform(this._critical.internalValue),
       nrql: nrqlAlertConditionNrqlToTerraform(this._nrql.internalValue),
       term: cdktf.listMapper(nrqlAlertConditionTermToTerraform, true)(this._term.internalValue),
+      timeouts: nrqlAlertConditionTimeoutsToTerraform(this._timeouts.internalValue),
       warning: nrqlAlertConditionWarningToTerraform(this._warning.internalValue),
     };
   }
