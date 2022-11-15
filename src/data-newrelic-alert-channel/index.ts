@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface DataNewrelicAlertChannelConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The New Relic account ID where you want to retrieve the alert channel.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel#account_id DataNewrelicAlertChannel#account_id}
+  */
+  readonly accountId?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel#id DataNewrelicAlertChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -209,8 +215,8 @@ export class DataNewrelicAlertChannel extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_alert_channel',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '2.50.2',
-        providerVersionConstraint: '~> 2.32'
+        providerVersion: '3.7.0',
+        providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -220,6 +226,7 @@ export class DataNewrelicAlertChannel extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._accountId = config.accountId;
     this._id = config.id;
     this._name = config.name;
   }
@@ -227,6 +234,22 @@ export class DataNewrelicAlertChannel extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // account_id - computed: true, optional: true, required: false
+  private _accountId?: number; 
+  public get accountId() {
+    return this.getNumberAttribute('account_id');
+  }
+  public set accountId(value: number) {
+    this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
+  }
 
   // config - computed: true, optional: false, required: false
   private _config = new DataNewrelicAlertChannelConfigAList(this, "config", false);
@@ -279,6 +302,7 @@ export class DataNewrelicAlertChannel extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      account_id: cdktf.numberToTerraform(this._accountId),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };
