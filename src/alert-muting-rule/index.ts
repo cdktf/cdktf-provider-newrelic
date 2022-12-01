@@ -53,7 +53,7 @@ export interface AlertMutingRuleConfig extends cdktf.TerraformMetaArguments {
 }
 export interface AlertMutingRuleConditionConditions {
   /**
-  * The attribute on a violation.
+  * The attribute on an incident.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#attribute AlertMutingRule#attribute}
   */
@@ -554,7 +554,7 @@ export class AlertMutingRule extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_alert_muting_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.7.1',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

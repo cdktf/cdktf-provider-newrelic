@@ -45,7 +45,7 @@ export interface SyntheticsMultilocationAlertConditionConfig extends cdktf.Terra
   */
   readonly runbookUrl?: string;
   /**
-  * The maximum number of seconds a violation can remain open before being closed by the system.  Must be one of: 0, 3600, 7200, 14400, 28800, 43200, 86400
+  * The maximum number of seconds an incident can remain open before being closed by the system.  Must be one of: 0, 3600, 7200, 14400, 28800, 43200, 86400
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#violation_time_limit_seconds SyntheticsMultilocationAlertCondition#violation_time_limit_seconds}
   */
@@ -65,7 +65,7 @@ export interface SyntheticsMultilocationAlertConditionConfig extends cdktf.Terra
 }
 export interface SyntheticsMultilocationAlertConditionCritical {
   /**
-  * The minimum number of monitor locations that must be concurrently failing before a violation is opened.
+  * The minimum number of monitor locations that must be concurrently failing before an incident is opened.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#threshold SyntheticsMultilocationAlertCondition#threshold}
   */
@@ -129,7 +129,7 @@ export class SyntheticsMultilocationAlertConditionCriticalOutputReference extend
 }
 export interface SyntheticsMultilocationAlertConditionWarning {
   /**
-  * The minimum number of monitor locations that must be concurrently failing before a violation is opened.
+  * The minimum number of monitor locations that must be concurrently failing before an incident is opened.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#threshold SyntheticsMultilocationAlertCondition#threshold}
   */
@@ -218,7 +218,7 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
       terraformResourceType: 'newrelic_synthetics_multilocation_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.7.1',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

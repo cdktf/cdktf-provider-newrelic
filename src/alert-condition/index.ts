@@ -81,7 +81,7 @@ export interface AlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly userDefinedValueFunction?: string;
   /**
-  * Automatically close instance-based violations, including JVM health metric violations, after the number of hours specified. Must be: 1, 2, 4, 8, 12 or 24.
+  * Automatically close instance-based incidents, including JVM health metric incidents, after the number of hours specified. Must be: 1, 2, 4, 8, 12 or 24.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#violation_close_timer AlertCondition#violation_close_timer}
   */
@@ -326,7 +326,7 @@ export class AlertCondition extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.7.1',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
