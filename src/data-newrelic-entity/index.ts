@@ -43,7 +43,7 @@ export interface DataNewrelicEntityConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#tag DataNewrelicEntity#tag}
   */
-  readonly tag?: DataNewrelicEntityTag;
+  readonly tag?: DataNewrelicEntityTag[] | cdktf.IResolvable;
 }
 export interface DataNewrelicEntityTag {
   /**
@@ -60,7 +60,7 @@ export interface DataNewrelicEntityTag {
   readonly value: string;
 }
 
-export function dataNewrelicEntityTagToTerraform(struct?: DataNewrelicEntityTagOutputReference | DataNewrelicEntityTag): any {
+export function dataNewrelicEntityTagToTerraform(struct?: DataNewrelicEntityTag | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -73,16 +73,22 @@ export function dataNewrelicEntityTagToTerraform(struct?: DataNewrelicEntityTagO
 
 export class DataNewrelicEntityTagOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataNewrelicEntityTag | undefined {
+  public get internalValue(): DataNewrelicEntityTag | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._key !== undefined) {
@@ -96,14 +102,20 @@ export class DataNewrelicEntityTagOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataNewrelicEntityTag | undefined) {
+  public set internalValue(value: DataNewrelicEntityTag | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._key = value.key;
       this._value = value.value;
     }
@@ -136,6 +148,26 @@ export class DataNewrelicEntityTagOutputReference extends cdktf.ComplexObject {
   }
 }
 
+export class DataNewrelicEntityTagList extends cdktf.ComplexList {
+  public internalValue? : DataNewrelicEntityTag[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataNewrelicEntityTagOutputReference {
+    return new DataNewrelicEntityTagOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/entity newrelic_entity}
 */
@@ -162,7 +194,7 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_entity',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.7.1',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -283,11 +315,11 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
   }
 
   // tag - computed: false, optional: true, required: false
-  private _tag = new DataNewrelicEntityTagOutputReference(this, "tag");
+  private _tag = new DataNewrelicEntityTagList(this, "tag", false);
   public get tag() {
     return this._tag;
   }
-  public putTag(value: DataNewrelicEntityTag) {
+  public putTag(value: DataNewrelicEntityTag[] | cdktf.IResolvable) {
     this._tag.internalValue = value;
   }
   public resetTag() {
@@ -309,7 +341,7 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
       ignore_case: cdktf.booleanToTerraform(this._ignoreCase),
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
-      tag: dataNewrelicEntityTagToTerraform(this._tag.internalValue),
+      tag: cdktf.listMapper(dataNewrelicEntityTagToTerraform, true)(this._tag.internalValue),
     };
   }
 }

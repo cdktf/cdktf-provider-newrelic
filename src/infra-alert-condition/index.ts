@@ -81,7 +81,7 @@ export interface InfraAlertConditionConfig extends cdktf.TerraformMetaArguments 
   */
   readonly type: string;
   /**
-  * Determines how much time, in hours, will pass before a violation is automatically closed. Valid values are 1, 2, 4, 8, 12, 24, 48, or 72
+  * Determines how much time, in hours, will pass before an incident is automatically closed. Valid values are 1, 2, 4, 8, 12, 24, 48, or 72
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#violation_close_timer InfraAlertCondition#violation_close_timer}
   */
@@ -364,7 +364,7 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_infra_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.7.1',
+        providerVersion: '3.8.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

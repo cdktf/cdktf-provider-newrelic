@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/d/cloud_account
+// https://www.terraform.io/docs/providers/newrelic/d/obfuscation_expression
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,58 +6,52 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataNewrelicCloudAccountConfig extends cdktf.TerraformMetaArguments {
+export interface DataNewrelicObfuscationExpressionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The ID of the New Relic account.
+  * The account id associated with the obfuscation expression.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/cloud_account#account_id DataNewrelicCloudAccount#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/obfuscation_expression#account_id DataNewrelicObfuscationExpression#account_id}
   */
   readonly accountId?: number;
   /**
-  * The cloud provider of the account, e.g. aws, gcp, azure
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/cloud_account#cloud_provider DataNewrelicCloudAccount#cloud_provider}
-  */
-  readonly cloudProvider: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/cloud_account#id DataNewrelicCloudAccount#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/obfuscation_expression#id DataNewrelicObfuscationExpression#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The name of the cloud account.
+  * Name of expression.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/cloud_account#name DataNewrelicCloudAccount#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/obfuscation_expression#name DataNewrelicObfuscationExpression#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/cloud_account newrelic_cloud_account}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/obfuscation_expression newrelic_obfuscation_expression}
 */
-export class DataNewrelicCloudAccount extends cdktf.TerraformDataSource {
+export class DataNewrelicObfuscationExpression extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "newrelic_cloud_account";
+  public static readonly tfResourceType = "newrelic_obfuscation_expression";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/cloud_account newrelic_cloud_account} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/obfuscation_expression newrelic_obfuscation_expression} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataNewrelicCloudAccountConfig
+  * @param options DataNewrelicObfuscationExpressionConfig
   */
-  public constructor(scope: Construct, id: string, config: DataNewrelicCloudAccountConfig) {
+  public constructor(scope: Construct, id: string, config: DataNewrelicObfuscationExpressionConfig) {
     super(scope, id, {
-      terraformResourceType: 'newrelic_cloud_account',
+      terraformResourceType: 'newrelic_obfuscation_expression',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
         providerVersion: '3.8.0',
@@ -72,7 +66,6 @@ export class DataNewrelicCloudAccount extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
-    this._cloudProvider = config.cloudProvider;
     this._id = config.id;
     this._name = config.name;
   }
@@ -95,19 +88,6 @@ export class DataNewrelicCloudAccount extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
     return this._accountId;
-  }
-
-  // cloud_provider - computed: false, optional: false, required: true
-  private _cloudProvider?: string; 
-  public get cloudProvider() {
-    return this.getStringAttribute('cloud_provider');
-  }
-  public set cloudProvider(value: string) {
-    this._cloudProvider = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get cloudProviderInput() {
-    return this._cloudProvider;
   }
 
   // id - computed: true, optional: true, required: false
@@ -146,7 +126,6 @@ export class DataNewrelicCloudAccount extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.numberToTerraform(this._accountId),
-      cloud_provider: cdktf.stringToTerraform(this._cloudProvider),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };
