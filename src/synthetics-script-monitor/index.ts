@@ -367,7 +367,7 @@ export class SyntheticsScriptMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_synthetics_script_monitor',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.8.0',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

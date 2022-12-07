@@ -44,6 +44,12 @@ export interface OneDashboardConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#page OneDashboard#page}
   */
   readonly page: OneDashboardPage[] | cdktf.IResolvable;
+  /**
+  * variable block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#variable OneDashboard#variable}
+  */
+  readonly variable?: OneDashboardVariable[] | cdktf.IResolvable;
 }
 export interface OneDashboardPageWidgetAreaNrqlQuery {
   /**
@@ -6107,6 +6113,514 @@ export class OneDashboardPageList extends cdktf.ComplexList {
     return new OneDashboardPageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface OneDashboardVariableItem {
+  /**
+  * A human-friendly display string for this value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#title OneDashboard#title}
+  */
+  readonly title?: string;
+  /**
+  * A possible variable value
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#value OneDashboard#value}
+  */
+  readonly value: string;
+}
+
+export function oneDashboardVariableItemToTerraform(struct?: OneDashboardVariableItem | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    title: cdktf.stringToTerraform(struct!.title),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export class OneDashboardVariableItemOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): OneDashboardVariableItem | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._title !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.title = this._title;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OneDashboardVariableItem | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._title = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._title = value.title;
+      this._value = value.value;
+    }
+  }
+
+  // title - computed: false, optional: true, required: false
+  private _title?: string; 
+  public get title() {
+    return this.getStringAttribute('title');
+  }
+  public set title(value: string) {
+    this._title = value;
+  }
+  public resetTitle() {
+    this._title = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get titleInput() {
+    return this._title;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class OneDashboardVariableItemList extends cdktf.ComplexList {
+  public internalValue? : OneDashboardVariableItem[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): OneDashboardVariableItemOutputReference {
+    return new OneDashboardVariableItemOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface OneDashboardVariableNrqlQuery {
+  /**
+  * New Relic account ID(s) to issue the query against.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#account_ids OneDashboard#account_ids}
+  */
+  readonly accountIds?: number[];
+  /**
+  * NRQL formatted query.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#query OneDashboard#query}
+  */
+  readonly query: string;
+}
+
+export function oneDashboardVariableNrqlQueryToTerraform(struct?: OneDashboardVariableNrqlQueryOutputReference | OneDashboardVariableNrqlQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    account_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.accountIds),
+    query: cdktf.stringToTerraform(struct!.query),
+  }
+}
+
+export class OneDashboardVariableNrqlQueryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): OneDashboardVariableNrqlQuery | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accountIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accountIds = this._accountIds;
+    }
+    if (this._query !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.query = this._query;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OneDashboardVariableNrqlQuery | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._accountIds = undefined;
+      this._query = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._accountIds = value.accountIds;
+      this._query = value.query;
+    }
+  }
+
+  // account_ids - computed: false, optional: true, required: false
+  private _accountIds?: number[]; 
+  public get accountIds() {
+    return this.getNumberListAttribute('account_ids');
+  }
+  public set accountIds(value: number[]) {
+    this._accountIds = value;
+  }
+  public resetAccountIds() {
+    this._accountIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdsInput() {
+    return this._accountIds;
+  }
+
+  // query - computed: false, optional: false, required: true
+  private _query?: string; 
+  public get query() {
+    return this.getStringAttribute('query');
+  }
+  public set query(value: string) {
+    this._query = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryInput() {
+    return this._query;
+  }
+}
+export interface OneDashboardVariable {
+  /**
+  * Default values for this variable.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#default_values OneDashboard#default_values}
+  */
+  readonly defaultValues?: string[];
+  /**
+  * Indicates whether this variable supports multiple selection or not. Only applies to variables of type NRQL or ENUM.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#is_multi_selection OneDashboard#is_multi_selection}
+  */
+  readonly isMultiSelection?: boolean | cdktf.IResolvable;
+  /**
+  * The variable identifier.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#name OneDashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Indicates the strategy to apply when replacing a variable in a NRQL query.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#replacement_strategy OneDashboard#replacement_strategy}
+  */
+  readonly replacementStrategy: string;
+  /**
+  * Human-friendly display string for this variable.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#title OneDashboard#title}
+  */
+  readonly title: string;
+  /**
+  * Specifies the data type of the variable and where its possible values may come from.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#type OneDashboard#type}
+  */
+  readonly type: string;
+  /**
+  * item block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#item OneDashboard#item}
+  */
+  readonly item?: OneDashboardVariableItem[] | cdktf.IResolvable;
+  /**
+  * nrql_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#nrql_query OneDashboard#nrql_query}
+  */
+  readonly nrqlQuery?: OneDashboardVariableNrqlQuery;
+}
+
+export function oneDashboardVariableToTerraform(struct?: OneDashboardVariable | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    default_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.defaultValues),
+    is_multi_selection: cdktf.booleanToTerraform(struct!.isMultiSelection),
+    name: cdktf.stringToTerraform(struct!.name),
+    replacement_strategy: cdktf.stringToTerraform(struct!.replacementStrategy),
+    title: cdktf.stringToTerraform(struct!.title),
+    type: cdktf.stringToTerraform(struct!.type),
+    item: cdktf.listMapper(oneDashboardVariableItemToTerraform, true)(struct!.item),
+    nrql_query: oneDashboardVariableNrqlQueryToTerraform(struct!.nrqlQuery),
+  }
+}
+
+export class OneDashboardVariableOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): OneDashboardVariable | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._defaultValues !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultValues = this._defaultValues;
+    }
+    if (this._isMultiSelection !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isMultiSelection = this._isMultiSelection;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._replacementStrategy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replacementStrategy = this._replacementStrategy;
+    }
+    if (this._title !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.title = this._title;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._item?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.item = this._item?.internalValue;
+    }
+    if (this._nrqlQuery?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nrqlQuery = this._nrqlQuery?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OneDashboardVariable | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._defaultValues = undefined;
+      this._isMultiSelection = undefined;
+      this._name = undefined;
+      this._replacementStrategy = undefined;
+      this._title = undefined;
+      this._type = undefined;
+      this._item.internalValue = undefined;
+      this._nrqlQuery.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._defaultValues = value.defaultValues;
+      this._isMultiSelection = value.isMultiSelection;
+      this._name = value.name;
+      this._replacementStrategy = value.replacementStrategy;
+      this._title = value.title;
+      this._type = value.type;
+      this._item.internalValue = value.item;
+      this._nrqlQuery.internalValue = value.nrqlQuery;
+    }
+  }
+
+  // default_values - computed: false, optional: true, required: false
+  private _defaultValues?: string[]; 
+  public get defaultValues() {
+    return this.getListAttribute('default_values');
+  }
+  public set defaultValues(value: string[]) {
+    this._defaultValues = value;
+  }
+  public resetDefaultValues() {
+    this._defaultValues = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultValuesInput() {
+    return this._defaultValues;
+  }
+
+  // is_multi_selection - computed: false, optional: true, required: false
+  private _isMultiSelection?: boolean | cdktf.IResolvable; 
+  public get isMultiSelection() {
+    return this.getBooleanAttribute('is_multi_selection');
+  }
+  public set isMultiSelection(value: boolean | cdktf.IResolvable) {
+    this._isMultiSelection = value;
+  }
+  public resetIsMultiSelection() {
+    this._isMultiSelection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isMultiSelectionInput() {
+    return this._isMultiSelection;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // replacement_strategy - computed: false, optional: false, required: true
+  private _replacementStrategy?: string; 
+  public get replacementStrategy() {
+    return this.getStringAttribute('replacement_strategy');
+  }
+  public set replacementStrategy(value: string) {
+    this._replacementStrategy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replacementStrategyInput() {
+    return this._replacementStrategy;
+  }
+
+  // title - computed: false, optional: false, required: true
+  private _title?: string; 
+  public get title() {
+    return this.getStringAttribute('title');
+  }
+  public set title(value: string) {
+    this._title = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get titleInput() {
+    return this._title;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // item - computed: false, optional: true, required: false
+  private _item = new OneDashboardVariableItemList(this, "item", false);
+  public get item() {
+    return this._item;
+  }
+  public putItem(value: OneDashboardVariableItem[] | cdktf.IResolvable) {
+    this._item.internalValue = value;
+  }
+  public resetItem() {
+    this._item.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get itemInput() {
+    return this._item.internalValue;
+  }
+
+  // nrql_query - computed: false, optional: true, required: false
+  private _nrqlQuery = new OneDashboardVariableNrqlQueryOutputReference(this, "nrql_query");
+  public get nrqlQuery() {
+    return this._nrqlQuery;
+  }
+  public putNrqlQuery(value: OneDashboardVariableNrqlQuery) {
+    this._nrqlQuery.internalValue = value;
+  }
+  public resetNrqlQuery() {
+    this._nrqlQuery.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nrqlQueryInput() {
+    return this._nrqlQuery.internalValue;
+  }
+}
+
+export class OneDashboardVariableList extends cdktf.ComplexList {
+  public internalValue? : OneDashboardVariable[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): OneDashboardVariableOutputReference {
+    return new OneDashboardVariableOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard newrelic_one_dashboard}
@@ -6134,7 +6648,7 @@ export class OneDashboard extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_one_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.8.0',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -6151,6 +6665,7 @@ export class OneDashboard extends cdktf.TerraformResource {
     this._name = config.name;
     this._permissions = config.permissions;
     this._page.internalValue = config.page;
+    this._variable.internalValue = config.variable;
   }
 
   // ==========
@@ -6257,6 +6772,22 @@ export class OneDashboard extends cdktf.TerraformResource {
     return this._page.internalValue;
   }
 
+  // variable - computed: false, optional: true, required: false
+  private _variable = new OneDashboardVariableList(this, "variable", false);
+  public get variable() {
+    return this._variable;
+  }
+  public putVariable(value: OneDashboardVariable[] | cdktf.IResolvable) {
+    this._variable.internalValue = value;
+  }
+  public resetVariable() {
+    this._variable.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get variableInput() {
+    return this._variable.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -6269,6 +6800,7 @@ export class OneDashboard extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       permissions: cdktf.stringToTerraform(this._permissions),
       page: cdktf.listMapper(oneDashboardPageToTerraform, true)(this._page.internalValue),
+      variable: cdktf.listMapper(oneDashboardVariableToTerraform, true)(this._variable.internalValue),
     };
   }
 }

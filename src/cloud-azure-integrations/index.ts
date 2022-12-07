@@ -135,11 +135,23 @@ export interface CloudAzureIntegrationsConfig extends cdktf.TerraformMetaArgumen
   */
   readonly mysql?: CloudAzureIntegrationsMysql;
   /**
+  * mysql_flexible block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#mysql_flexible CloudAzureIntegrations#mysql_flexible}
+  */
+  readonly mysqlFlexible?: CloudAzureIntegrationsMysqlFlexible;
+  /**
   * postgresql block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#postgresql CloudAzureIntegrations#postgresql}
   */
   readonly postgresql?: CloudAzureIntegrationsPostgresql;
+  /**
+  * postgresql_flexible block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#postgresql_flexible CloudAzureIntegrations#postgresql_flexible}
+  */
+  readonly postgresqlFlexible?: CloudAzureIntegrationsPostgresqlFlexible;
   /**
   * power_bi_dedicated block
   * 
@@ -1931,6 +1943,102 @@ export class CloudAzureIntegrationsMysqlOutputReference extends cdktf.ComplexObj
     return this._resourceGroups;
   }
 }
+export interface CloudAzureIntegrationsMysqlFlexible {
+  /**
+  * The data polling interval in seconds
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+  */
+  readonly metricsPollingInterval?: number;
+  /**
+  * Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+  */
+  readonly resourceGroups?: string[];
+}
+
+export function cloudAzureIntegrationsMysqlFlexibleToTerraform(struct?: CloudAzureIntegrationsMysqlFlexibleOutputReference | CloudAzureIntegrationsMysqlFlexible): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
+  }
+}
+
+export class CloudAzureIntegrationsMysqlFlexibleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudAzureIntegrationsMysqlFlexible | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._metricsPollingInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricsPollingInterval = this._metricsPollingInterval;
+    }
+    if (this._resourceGroups !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceGroups = this._resourceGroups;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudAzureIntegrationsMysqlFlexible | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._metricsPollingInterval = undefined;
+      this._resourceGroups = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._metricsPollingInterval = value.metricsPollingInterval;
+      this._resourceGroups = value.resourceGroups;
+    }
+  }
+
+  // metrics_polling_interval - computed: false, optional: true, required: false
+  private _metricsPollingInterval?: number; 
+  public get metricsPollingInterval() {
+    return this.getNumberAttribute('metrics_polling_interval');
+  }
+  public set metricsPollingInterval(value: number) {
+    this._metricsPollingInterval = value;
+  }
+  public resetMetricsPollingInterval() {
+    this._metricsPollingInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricsPollingIntervalInput() {
+    return this._metricsPollingInterval;
+  }
+
+  // resource_groups - computed: false, optional: true, required: false
+  private _resourceGroups?: string[]; 
+  public get resourceGroups() {
+    return this.getListAttribute('resource_groups');
+  }
+  public set resourceGroups(value: string[]) {
+    this._resourceGroups = value;
+  }
+  public resetResourceGroups() {
+    this._resourceGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceGroupsInput() {
+    return this._resourceGroups;
+  }
+}
 export interface CloudAzureIntegrationsPostgresql {
   /**
   * The data polling interval in seconds
@@ -1983,6 +2091,102 @@ export class CloudAzureIntegrationsPostgresqlOutputReference extends cdktf.Compl
   }
 
   public set internalValue(value: CloudAzureIntegrationsPostgresql | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._metricsPollingInterval = undefined;
+      this._resourceGroups = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._metricsPollingInterval = value.metricsPollingInterval;
+      this._resourceGroups = value.resourceGroups;
+    }
+  }
+
+  // metrics_polling_interval - computed: false, optional: true, required: false
+  private _metricsPollingInterval?: number; 
+  public get metricsPollingInterval() {
+    return this.getNumberAttribute('metrics_polling_interval');
+  }
+  public set metricsPollingInterval(value: number) {
+    this._metricsPollingInterval = value;
+  }
+  public resetMetricsPollingInterval() {
+    this._metricsPollingInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricsPollingIntervalInput() {
+    return this._metricsPollingInterval;
+  }
+
+  // resource_groups - computed: false, optional: true, required: false
+  private _resourceGroups?: string[]; 
+  public get resourceGroups() {
+    return this.getListAttribute('resource_groups');
+  }
+  public set resourceGroups(value: string[]) {
+    this._resourceGroups = value;
+  }
+  public resetResourceGroups() {
+    this._resourceGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceGroupsInput() {
+    return this._resourceGroups;
+  }
+}
+export interface CloudAzureIntegrationsPostgresqlFlexible {
+  /**
+  * The data polling interval in seconds
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+  */
+  readonly metricsPollingInterval?: number;
+  /**
+  * Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+  */
+  readonly resourceGroups?: string[];
+}
+
+export function cloudAzureIntegrationsPostgresqlFlexibleToTerraform(struct?: CloudAzureIntegrationsPostgresqlFlexibleOutputReference | CloudAzureIntegrationsPostgresqlFlexible): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
+  }
+}
+
+export class CloudAzureIntegrationsPostgresqlFlexibleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudAzureIntegrationsPostgresqlFlexible | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._metricsPollingInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricsPollingInterval = this._metricsPollingInterval;
+    }
+    if (this._resourceGroups !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceGroups = this._resourceGroups;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudAzureIntegrationsPostgresqlFlexible | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._metricsPollingInterval = undefined;
@@ -3014,7 +3218,7 @@ export class CloudAzureIntegrations extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_azure_integrations',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.8.0',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -3046,7 +3250,9 @@ export class CloudAzureIntegrations extends cdktf.TerraformResource {
     this._machineLearning.internalValue = config.machineLearning;
     this._mariaDb.internalValue = config.mariaDb;
     this._mysql.internalValue = config.mysql;
+    this._mysqlFlexible.internalValue = config.mysqlFlexible;
     this._postgresql.internalValue = config.postgresql;
+    this._postgresqlFlexible.internalValue = config.postgresqlFlexible;
     this._powerBiDedicated.internalValue = config.powerBiDedicated;
     this._redisCache.internalValue = config.redisCache;
     this._serviceBus.internalValue = config.serviceBus;
@@ -3396,6 +3602,22 @@ export class CloudAzureIntegrations extends cdktf.TerraformResource {
     return this._mysql.internalValue;
   }
 
+  // mysql_flexible - computed: false, optional: true, required: false
+  private _mysqlFlexible = new CloudAzureIntegrationsMysqlFlexibleOutputReference(this, "mysql_flexible");
+  public get mysqlFlexible() {
+    return this._mysqlFlexible;
+  }
+  public putMysqlFlexible(value: CloudAzureIntegrationsMysqlFlexible) {
+    this._mysqlFlexible.internalValue = value;
+  }
+  public resetMysqlFlexible() {
+    this._mysqlFlexible.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mysqlFlexibleInput() {
+    return this._mysqlFlexible.internalValue;
+  }
+
   // postgresql - computed: false, optional: true, required: false
   private _postgresql = new CloudAzureIntegrationsPostgresqlOutputReference(this, "postgresql");
   public get postgresql() {
@@ -3410,6 +3632,22 @@ export class CloudAzureIntegrations extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get postgresqlInput() {
     return this._postgresql.internalValue;
+  }
+
+  // postgresql_flexible - computed: false, optional: true, required: false
+  private _postgresqlFlexible = new CloudAzureIntegrationsPostgresqlFlexibleOutputReference(this, "postgresql_flexible");
+  public get postgresqlFlexible() {
+    return this._postgresqlFlexible;
+  }
+  public putPostgresqlFlexible(value: CloudAzureIntegrationsPostgresqlFlexible) {
+    this._postgresqlFlexible.internalValue = value;
+  }
+  public resetPostgresqlFlexible() {
+    this._postgresqlFlexible.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get postgresqlFlexibleInput() {
+    return this._postgresqlFlexible.internalValue;
   }
 
   // power_bi_dedicated - computed: false, optional: true, required: false
@@ -3599,7 +3837,9 @@ export class CloudAzureIntegrations extends cdktf.TerraformResource {
       machine_learning: cloudAzureIntegrationsMachineLearningToTerraform(this._machineLearning.internalValue),
       maria_db: cloudAzureIntegrationsMariaDbToTerraform(this._mariaDb.internalValue),
       mysql: cloudAzureIntegrationsMysqlToTerraform(this._mysql.internalValue),
+      mysql_flexible: cloudAzureIntegrationsMysqlFlexibleToTerraform(this._mysqlFlexible.internalValue),
       postgresql: cloudAzureIntegrationsPostgresqlToTerraform(this._postgresql.internalValue),
+      postgresql_flexible: cloudAzureIntegrationsPostgresqlFlexibleToTerraform(this._postgresqlFlexible.internalValue),
       power_bi_dedicated: cloudAzureIntegrationsPowerBiDedicatedToTerraform(this._powerBiDedicated.internalValue),
       redis_cache: cloudAzureIntegrationsRedisCacheToTerraform(this._redisCache.internalValue),
       service_bus: cloudAzureIntegrationsServiceBusToTerraform(this._serviceBus.internalValue),

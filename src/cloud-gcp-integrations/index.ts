@@ -27,6 +27,12 @@ export interface CloudGcpIntegrationsConfig extends cdktf.TerraformMetaArguments
   */
   readonly linkedAccountId: number;
   /**
+  * alloy_db block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#alloy_db CloudGcpIntegrations#alloy_db}
+  */
+  readonly alloyDb?: CloudGcpIntegrationsAlloyDb;
+  /**
   * app_engine block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#app_engine CloudGcpIntegrations#app_engine}
@@ -176,6 +182,73 @@ export interface CloudGcpIntegrationsConfig extends cdktf.TerraformMetaArguments
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#vpc_access CloudGcpIntegrations#vpc_access}
   */
   readonly vpcAccess?: CloudGcpIntegrationsVpcAccess;
+}
+export interface CloudGcpIntegrationsAlloyDb {
+  /**
+  * the data polling interval in seconds
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+  */
+  readonly metricsPollingInterval?: number;
+}
+
+export function cloudGcpIntegrationsAlloyDbToTerraform(struct?: CloudGcpIntegrationsAlloyDbOutputReference | CloudGcpIntegrationsAlloyDb): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
+  }
+}
+
+export class CloudGcpIntegrationsAlloyDbOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudGcpIntegrationsAlloyDb | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._metricsPollingInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricsPollingInterval = this._metricsPollingInterval;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudGcpIntegrationsAlloyDb | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._metricsPollingInterval = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._metricsPollingInterval = value.metricsPollingInterval;
+    }
+  }
+
+  // metrics_polling_interval - computed: false, optional: true, required: false
+  private _metricsPollingInterval?: number; 
+  public get metricsPollingInterval() {
+    return this.getNumberAttribute('metrics_polling_interval');
+  }
+  public set metricsPollingInterval(value: number) {
+    this._metricsPollingInterval = value;
+  }
+  public resetMetricsPollingInterval() {
+    this._metricsPollingInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricsPollingIntervalInput() {
+    return this._metricsPollingInterval;
+  }
 }
 export interface CloudGcpIntegrationsAppEngine {
   /**
@@ -1995,7 +2068,7 @@ export class CloudGcpIntegrations extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_gcp_integrations',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.8.0',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -2009,6 +2082,7 @@ export class CloudGcpIntegrations extends cdktf.TerraformResource {
     this._accountId = config.accountId;
     this._id = config.id;
     this._linkedAccountId = config.linkedAccountId;
+    this._alloyDb.internalValue = config.alloyDb;
     this._appEngine.internalValue = config.appEngine;
     this._bigQuery.internalValue = config.bigQuery;
     this._bigTable.internalValue = config.bigTable;
@@ -2083,6 +2157,22 @@ export class CloudGcpIntegrations extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get linkedAccountIdInput() {
     return this._linkedAccountId;
+  }
+
+  // alloy_db - computed: false, optional: true, required: false
+  private _alloyDb = new CloudGcpIntegrationsAlloyDbOutputReference(this, "alloy_db");
+  public get alloyDb() {
+    return this._alloyDb;
+  }
+  public putAlloyDb(value: CloudGcpIntegrationsAlloyDb) {
+    this._alloyDb.internalValue = value;
+  }
+  public resetAlloyDb() {
+    this._alloyDb.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alloyDbInput() {
+    return this._alloyDb.internalValue;
   }
 
   // app_engine - computed: false, optional: true, required: false
@@ -2494,6 +2584,7 @@ export class CloudGcpIntegrations extends cdktf.TerraformResource {
       account_id: cdktf.numberToTerraform(this._accountId),
       id: cdktf.stringToTerraform(this._id),
       linked_account_id: cdktf.numberToTerraform(this._linkedAccountId),
+      alloy_db: cloudGcpIntegrationsAlloyDbToTerraform(this._alloyDb.internalValue),
       app_engine: cloudGcpIntegrationsAppEngineToTerraform(this._appEngine.internalValue),
       big_query: cloudGcpIntegrationsBigQueryToTerraform(this._bigQuery.internalValue),
       big_table: cloudGcpIntegrationsBigTableToTerraform(this._bigTable.internalValue),
