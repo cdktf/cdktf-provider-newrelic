@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface DataNewrelicSyntheticsSecureCredentialConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The New Relic account ID associated with this secure credential.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential#account_id DataNewrelicSyntheticsSecureCredential#account_id}
+  */
+  readonly accountId?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential#id DataNewrelicSyntheticsSecureCredential#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -48,7 +54,7 @@ export class DataNewrelicSyntheticsSecureCredential extends cdktf.TerraformDataS
       terraformResourceType: 'newrelic_synthetics_secure_credential',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.9.0',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -59,6 +65,7 @@ export class DataNewrelicSyntheticsSecureCredential extends cdktf.TerraformDataS
       connection: config.connection,
       forEach: config.forEach
     });
+    this._accountId = config.accountId;
     this._id = config.id;
     this._key = config.key;
   }
@@ -67,9 +74,20 @@ export class DataNewrelicSyntheticsSecureCredential extends cdktf.TerraformDataS
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: true, optional: false, required: false
+  // account_id - computed: true, optional: true, required: false
+  private _accountId?: number; 
   public get accountId() {
     return this.getNumberAttribute('account_id');
+  }
+  public set accountId(value: number) {
+    this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
   }
 
   // description - computed: true, optional: false, required: false
@@ -117,6 +135,7 @@ export class DataNewrelicSyntheticsSecureCredential extends cdktf.TerraformDataS
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      account_id: cdktf.numberToTerraform(this._accountId),
       id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),
     };

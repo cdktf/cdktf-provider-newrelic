@@ -123,12 +123,6 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly type?: string;
   /**
-  * Values are: 'single_value' (deprecated) or 'sum' (deprecated)
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#value_function NrqlAlertCondition#value_function}
-  */
-  readonly valueFunction?: string;
-  /**
   * Sets a time limit, in hours, that will automatically force-close a long-lasting incident after the time limit you select. Possible values are 'ONE_HOUR', 'TWO_HOURS', 'FOUR_HOURS', 'EIGHT_HOURS', 'TWELVE_HOURS', 'TWENTY_FOUR_HOURS', 'THIRTY_DAYS' (case insensitive).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#violation_time_limit NrqlAlertCondition#violation_time_limit}
@@ -191,7 +185,7 @@ export interface NrqlAlertConditionCritical {
   */
   readonly threshold: number;
   /**
-  * The duration, in seconds, that the threshold must violate in order to create an incident. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline conditions, and within 60-7200 seconds for static conditions with the single_value value function.
+  * The duration, in seconds, that the threshold must violate in order to create an incident. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline conditions, and within 60-7200 seconds for static conditions
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
   */
@@ -526,7 +520,7 @@ export interface NrqlAlertConditionTerm {
   */
   readonly threshold: number;
   /**
-  * The duration, in seconds, that the threshold must violate in order to create an incident. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline conditions, and within 60-7200 seconds for static conditions with the single_value value function.
+  * The duration, in seconds, that the threshold must violate in order to create an incident. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline conditions, and within 60-7200 seconds for static conditions
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
   */
@@ -865,7 +859,7 @@ export interface NrqlAlertConditionWarning {
   */
   readonly threshold: number;
   /**
-  * The duration, in seconds, that the threshold must violate in order to create an incident. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline conditions, and within 60-7200 seconds for static conditions with the single_value value function.
+  * The duration, in seconds, that the threshold must violate in order to create an incident. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline conditions, and within 60-7200 seconds for static conditions
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
   */
@@ -1081,7 +1075,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_nrql_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.9.0',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -1111,7 +1105,6 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
     this._runbookUrl = config.runbookUrl;
     this._slideBy = config.slideBy;
     this._type = config.type;
-    this._valueFunction = config.valueFunction;
     this._violationTimeLimit = config.violationTimeLimit;
     this._violationTimeLimitSeconds = config.violationTimeLimitSeconds;
     this._critical.internalValue = config.critical;
@@ -1428,22 +1421,6 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
     return this._type;
   }
 
-  // value_function - computed: false, optional: true, required: false
-  private _valueFunction?: string; 
-  public get valueFunction() {
-    return this.getStringAttribute('value_function');
-  }
-  public set valueFunction(value: string) {
-    this._valueFunction = value;
-  }
-  public resetValueFunction() {
-    this._valueFunction = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get valueFunctionInput() {
-    return this._valueFunction;
-  }
-
   // violation_time_limit - computed: true, optional: true, required: false
   private _violationTimeLimit?: string; 
   public get violationTimeLimit() {
@@ -1578,7 +1555,6 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       runbook_url: cdktf.stringToTerraform(this._runbookUrl),
       slide_by: cdktf.numberToTerraform(this._slideBy),
       type: cdktf.stringToTerraform(this._type),
-      value_function: cdktf.stringToTerraform(this._valueFunction),
       violation_time_limit: cdktf.stringToTerraform(this._violationTimeLimit),
       violation_time_limit_seconds: cdktf.numberToTerraform(this._violationTimeLimitSeconds),
       critical: nrqlAlertConditionCriticalToTerraform(this._critical.internalValue),

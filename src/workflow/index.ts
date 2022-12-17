@@ -76,6 +76,12 @@ export interface WorkflowDestination {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#channel_id Workflow#channel_id}
   */
   readonly channelId: string;
+  /**
+  * List of triggers to notify about in this destination configuration.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workflow#notification_triggers Workflow#notification_triggers}
+  */
+  readonly notificationTriggers?: string[];
 }
 
 export function workflowDestinationToTerraform(struct?: WorkflowDestination | cdktf.IResolvable): any {
@@ -85,6 +91,7 @@ export function workflowDestinationToTerraform(struct?: WorkflowDestination | cd
   }
   return {
     channel_id: cdktf.stringToTerraform(struct!.channelId),
+    notification_triggers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notificationTriggers),
   }
 }
 
@@ -112,6 +119,10 @@ export class WorkflowDestinationOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.channelId = this._channelId;
     }
+    if (this._notificationTriggers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notificationTriggers = this._notificationTriggers;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -120,6 +131,7 @@ export class WorkflowDestinationOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._channelId = undefined;
+      this._notificationTriggers = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -129,6 +141,7 @@ export class WorkflowDestinationOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._channelId = value.channelId;
+      this._notificationTriggers = value.notificationTriggers;
     }
   }
 
@@ -148,6 +161,22 @@ export class WorkflowDestinationOutputReference extends cdktf.ComplexObject {
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
+  }
+
+  // notification_triggers - computed: true, optional: true, required: false
+  private _notificationTriggers?: string[]; 
+  public get notificationTriggers() {
+    return this.getListAttribute('notification_triggers');
+  }
+  public set notificationTriggers(value: string[]) {
+    this._notificationTriggers = value;
+  }
+  public resetNotificationTriggers() {
+    this._notificationTriggers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationTriggersInput() {
+    return this._notificationTriggers;
   }
 
   // type - computed: true, optional: false, required: false
@@ -771,7 +800,7 @@ export class Workflow extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_workflow',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.9.0',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
