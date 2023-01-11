@@ -18,6 +18,7 @@ export * as entityTags from './entity-tags';
 export * as eventsToMetricsRule from './events-to-metrics-rule';
 export * as infraAlertCondition from './infra-alert-condition';
 export * as insightsEvent from './insights-event';
+export * as logParsingRule from './log-parsing-rule';
 export * as notificationChannel from './notification-channel';
 export * as notificationDestination from './notification-destination';
 export * as nrqlAlertCondition from './nrql-alert-condition';
@@ -49,5 +50,6 @@ export * as dataNewrelicKeyTransaction from './data-newrelic-key-transaction';
 export * as dataNewrelicObfuscationExpression from './data-newrelic-obfuscation-expression';
 export * as dataNewrelicSyntheticsPrivateLocation from './data-newrelic-synthetics-private-location';
 export * as dataNewrelicSyntheticsSecureCredential from './data-newrelic-synthetics-secure-credential';
+export * as dataNewrelicTestGrokPattern from './data-newrelic-test-grok-pattern';
 export * as provider from './provider';
 

@@ -153,7 +153,7 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_synthetics_secure_credential',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.11.0',
+        providerVersion: '3.12.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
