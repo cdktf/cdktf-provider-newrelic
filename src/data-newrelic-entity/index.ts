@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataNewrelicEntityConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The entity's domain. Valid values are APM, BROWSER, INFRA, MOBILE, SYNTH, and VIZ. If not specified, all domains are searched.
+  * The entity's domain. Valid values are APM, BROWSER, INFRA, MOBILE, SYNTH, and EXT. If not specified, all domains are searched.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#domain DataNewrelicEntity#domain}
   */
@@ -33,7 +33,7 @@ export interface DataNewrelicEntityConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
-  * The entity's type. Valid values are APPLICATION, DASHBOARD, HOST, MONITOR, and WORKLOAD.
+  * The entity's type. Valid values are APPLICATION, DASHBOARD, HOST, MONITOR, SERVICE and WORKLOAD.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#type DataNewrelicEntity#type}
   */
@@ -194,7 +194,7 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_entity',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.13.0',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
