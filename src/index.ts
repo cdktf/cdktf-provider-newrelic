@@ -47,6 +47,7 @@ export * as dataNewrelicApplication from './data-newrelic-application';
 export * as dataNewrelicCloudAccount from './data-newrelic-cloud-account';
 export * as dataNewrelicEntity from './data-newrelic-entity';
 export * as dataNewrelicKeyTransaction from './data-newrelic-key-transaction';
+export * as dataNewrelicNotificationDestination from './data-newrelic-notification-destination';
 export * as dataNewrelicObfuscationExpression from './data-newrelic-obfuscation-expression';
 export * as dataNewrelicSyntheticsPrivateLocation from './data-newrelic-synthetics-private-location';
 export * as dataNewrelicSyntheticsSecureCredential from './data-newrelic-synthetics-secure-credential';

@@ -1040,7 +1040,7 @@ export class Workload extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_workload',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.13.0',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

@@ -62,6 +62,12 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
+  * How long we wait until the signal starts evaluating. The maximum delay is 7200 seconds (120 minutes)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#evaluation_delay NrqlAlertCondition#evaluation_delay}
+  */
+  readonly evaluationDelay?: number;
+  /**
   * The amount of time (in seconds) to wait before considering the signal expired.  Must be in the range of 30 to 172800 (inclusive)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#expiration_duration NrqlAlertCondition#expiration_duration}
@@ -185,7 +191,7 @@ export interface NrqlAlertConditionCritical {
   */
   readonly threshold: number;
   /**
-  * The duration, in seconds, that the threshold must violate in order to create an incident. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline conditions, and within 60-7200 seconds for static conditions
+  * The duration, in seconds, that the threshold must violate in order to create an incident. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-86400 seconds for baseline conditions, and within 60-86400 seconds for static conditions
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
   */
@@ -520,7 +526,7 @@ export interface NrqlAlertConditionTerm {
   */
   readonly threshold: number;
   /**
-  * The duration, in seconds, that the threshold must violate in order to create an incident. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline conditions, and within 60-7200 seconds for static conditions
+  * The duration, in seconds, that the threshold must violate in order to create an incident. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-86400 seconds for baseline conditions, and within 60-86400 seconds for static conditions
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
   */
@@ -859,7 +865,7 @@ export interface NrqlAlertConditionWarning {
   */
   readonly threshold: number;
   /**
-  * The duration, in seconds, that the threshold must violate in order to create an incident. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline conditions, and within 60-7200 seconds for static conditions
+  * The duration, in seconds, that the threshold must violate in order to create an incident. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-86400 seconds for baseline conditions, and within 60-86400 seconds for static conditions
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
   */
@@ -1075,7 +1081,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_nrql_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.13.0',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -1095,6 +1101,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
     this._closeViolationsOnExpiration = config.closeViolationsOnExpiration;
     this._description = config.description;
     this._enabled = config.enabled;
+    this._evaluationDelay = config.evaluationDelay;
     this._expirationDuration = config.expirationDuration;
     this._fillOption = config.fillOption;
     this._fillValue = config.fillValue;
@@ -1265,6 +1272,22 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   // entity_guid - computed: true, optional: false, required: false
   public get entityGuid() {
     return this.getStringAttribute('entity_guid');
+  }
+
+  // evaluation_delay - computed: false, optional: true, required: false
+  private _evaluationDelay?: number; 
+  public get evaluationDelay() {
+    return this.getNumberAttribute('evaluation_delay');
+  }
+  public set evaluationDelay(value: number) {
+    this._evaluationDelay = value;
+  }
+  public resetEvaluationDelay() {
+    this._evaluationDelay = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get evaluationDelayInput() {
+    return this._evaluationDelay;
   }
 
   // expiration_duration - computed: false, optional: true, required: false
@@ -1545,6 +1568,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       close_violations_on_expiration: cdktf.booleanToTerraform(this._closeViolationsOnExpiration),
       description: cdktf.stringToTerraform(this._description),
       enabled: cdktf.booleanToTerraform(this._enabled),
+      evaluation_delay: cdktf.numberToTerraform(this._evaluationDelay),
       expiration_duration: cdktf.numberToTerraform(this._expirationDuration),
       fill_option: cdktf.stringToTerraform(this._fillOption),
       fill_value: cdktf.numberToTerraform(this._fillValue),

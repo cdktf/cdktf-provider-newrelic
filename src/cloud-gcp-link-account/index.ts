@@ -60,7 +60,7 @@ export class CloudGcpLinkAccount extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_gcp_link_account',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.13.0',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

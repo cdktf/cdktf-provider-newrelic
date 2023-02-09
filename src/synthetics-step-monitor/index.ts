@@ -494,7 +494,7 @@ export class SyntheticsStepMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_synthetics_step_monitor',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.13.0',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
