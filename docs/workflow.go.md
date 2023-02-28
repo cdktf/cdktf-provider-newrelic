@@ -424,6 +424,7 @@ workflow.Workflow_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.destination">Destination</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationList">WorkflowDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enrichments">Enrichments</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference">WorkflowEnrichmentsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.guid">Guid</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.issuesFilter">IssuesFilter</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference">WorkflowIssuesFilterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.lastRun">LastRun</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.workflowId">WorkflowId</a></code> | <code>*string</code> | *No description.* |
@@ -606,6 +607,16 @@ func Enrichments() WorkflowEnrichmentsOutputReference
 ```
 
 - *Type:* <a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference">WorkflowEnrichmentsOutputReference</a>
+
+---
+
+##### `Guid`<sup>Required</sup> <a name="Guid" id="@cdktf/provider-newrelic.workflow.Workflow.property.guid"></a>
+
+```go
+func Guid() *string
+```
+
+- *Type:* *string
 
 ---
 
