@@ -664,6 +664,7 @@ workflow.Workflow.is_terraform_resource(
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.destination">destination</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationList">WorkflowDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enrichments">enrichments</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference">WorkflowEnrichmentsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.guid">guid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.issuesFilter">issues_filter</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference">WorkflowIssuesFilterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.lastRun">last_run</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.workflowId">workflow_id</a></code> | <code>str</code> | *No description.* |
@@ -846,6 +847,16 @@ enrichments: WorkflowEnrichmentsOutputReference
 ```
 
 - *Type:* <a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference">WorkflowEnrichmentsOutputReference</a>
+
+---
+
+##### `guid`<sup>Required</sup> <a name="guid" id="@cdktf/provider-newrelic.workflow.Workflow.property.guid"></a>
+
+```python
+guid: str
+```
+
+- *Type:* str
 
 ---
 

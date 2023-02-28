@@ -800,7 +800,7 @@ export class Workflow extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_workflow',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.14.0',
+        providerVersion: '3.15.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -889,6 +889,11 @@ export class Workflow extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get enrichmentsEnabledInput() {
     return this._enrichmentsEnabled;
+  }
+
+  // guid - computed: true, optional: false, required: false
+  public get guid() {
+    return this.getStringAttribute('guid');
   }
 
   // id - computed: true, optional: true, required: false
