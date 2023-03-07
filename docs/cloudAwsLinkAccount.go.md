@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/cloudawslinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawslinkaccount"
 
 cloudawslinkaccount.NewCloudAwsLinkAccount(scope Construct, id *string, config CloudAwsLinkAccountConfig) CloudAwsLinkAccount
 ```
@@ -307,7 +307,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/cloudawslinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawslinkaccount"
 
 cloudawslinkaccount.CloudAwsLinkAccount_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/cloudawslinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawslinkaccount"
 
 cloudawslinkaccount.CloudAwsLinkAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ cloudawslinkaccount.CloudAwsLinkAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/cloudawslinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawslinkaccount"
 
 cloudawslinkaccount.CloudAwsLinkAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -684,7 +684,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/cloudawslinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawslinkaccount"
 
 &cloudawslinkaccount.CloudAwsLinkAccountConfig {
 	Connection: interface{},
@@ -699,7 +699,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/cloudawslinkacco
 	AccountId: *f64,
 	Id: *string,
 	MetricCollectionMode: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6.cloudAwsLinkAccount.CloudAwsLinkAccountTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsLinkAccount.CloudAwsLinkAccountTimeouts,
 }
 ```
 
@@ -883,7 +883,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/cloudawslinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawslinkaccount"
 
 &cloudawslinkaccount.CloudAwsLinkAccountTimeouts {
 	Create: *string,
@@ -917,7 +917,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/cloudawslinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawslinkaccount"
 
 cloudawslinkaccount.NewCloudAwsLinkAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsLinkAccountTimeoutsOutputReference
 ```
