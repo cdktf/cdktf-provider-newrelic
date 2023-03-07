@@ -685,7 +685,7 @@ new AlertChannelConfig {
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.name">Name</a></code> | <code>string</code> | (Required) The name of the channel. |
-| <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.type">Type</a></code> | <code>string</code> | (Required) The type of channel. One of: (webhook, email, opsgenie, pagerduty, slack, user, victorops). |
+| <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.type">Type</a></code> | <code>string</code> | (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook). |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.accountId">AccountId</a></code> | <code>double</code> | The New Relic account ID where you want to create alert channels. |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.config">Config</a></code> | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfigA">AlertChannelConfigA</a></code> | config block. |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#id AlertChannel#id}. |
@@ -784,7 +784,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-(Required) The type of channel. One of: (webhook, email, opsgenie, pagerduty, slack, user, victorops).
+(Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
 
