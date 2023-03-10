@@ -48,7 +48,7 @@ export class DataNewrelicApplication extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_application',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.15.0',
+        providerVersion: '3.16.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
