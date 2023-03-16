@@ -204,7 +204,7 @@ export class DataNewrelicTestGrokPattern extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_test_grok_pattern',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.16.0',
+        providerVersion: '3.16.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
