@@ -3218,7 +3218,7 @@ export class CloudAzureIntegrations extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_azure_integrations',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.16.0',
+        providerVersion: '3.16.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

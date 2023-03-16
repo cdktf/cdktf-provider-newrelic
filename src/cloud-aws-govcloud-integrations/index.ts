@@ -3400,7 +3400,7 @@ export class CloudAwsGovcloudIntegrations extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_aws_govcloud_integrations',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.16.0',
+        providerVersion: '3.16.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

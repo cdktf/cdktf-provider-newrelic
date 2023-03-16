@@ -159,7 +159,7 @@ export class DataPartitionRule extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_data_partition_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.16.0',
+        providerVersion: '3.16.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
