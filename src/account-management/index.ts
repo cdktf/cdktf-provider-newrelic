@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account
+// https://www.terraform.io/docs/providers/newrelic/r/account_management
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,53 +6,41 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudAwsLinkAccountConfig extends cdktf.TerraformMetaArguments {
+export interface AccountManagementConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The New Relic account ID where you want to link the AWS account.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account#account_id CloudAwsLinkAccount#account_id}
-  */
-  readonly accountId?: number;
-  /**
-  * The AWS role ARN.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account#arn CloudAwsLinkAccount#arn}
-  */
-  readonly arn: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account#id CloudAwsLinkAccount#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/account_management#id AccountManagement#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * How metrics will be collected. Defaults to `PULL` if empty.
+  * Name of the account to be created
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account#metric_collection_mode CloudAwsLinkAccount#metric_collection_mode}
-  */
-  readonly metricCollectionMode?: string;
-  /**
-  * The name of the linked account.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account#name CloudAwsLinkAccount#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/account_management#name AccountManagement#name}
   */
   readonly name: string;
   /**
+  * A description of what this parsing rule represents.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/account_management#region AccountManagement#region}
+  */
+  readonly region: string;
+  /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account#timeouts CloudAwsLinkAccount#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/account_management#timeouts AccountManagement#timeouts}
   */
-  readonly timeouts?: CloudAwsLinkAccountTimeouts;
+  readonly timeouts?: AccountManagementTimeouts;
 }
-export interface CloudAwsLinkAccountTimeouts {
+export interface AccountManagementTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account#create CloudAwsLinkAccount#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/account_management#create AccountManagement#create}
   */
   readonly create?: string;
 }
 
-export function cloudAwsLinkAccountTimeoutsToTerraform(struct?: CloudAwsLinkAccountTimeoutsOutputReference | CloudAwsLinkAccountTimeouts | cdktf.IResolvable): any {
+export function accountManagementTimeoutsToTerraform(struct?: AccountManagementTimeoutsOutputReference | AccountManagementTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -62,7 +50,7 @@ export function cloudAwsLinkAccountTimeoutsToTerraform(struct?: CloudAwsLinkAcco
   }
 }
 
-export class CloudAwsLinkAccountTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AccountManagementTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -74,7 +62,7 @@ export class CloudAwsLinkAccountTimeoutsOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): CloudAwsLinkAccountTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AccountManagementTimeouts | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -87,7 +75,7 @@ export class CloudAwsLinkAccountTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudAwsLinkAccountTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccountManagementTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -122,29 +110,29 @@ export class CloudAwsLinkAccountTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account newrelic_cloud_aws_link_account}
+* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/account_management newrelic_account_management}
 */
-export class CloudAwsLinkAccount extends cdktf.TerraformResource {
+export class AccountManagement extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "newrelic_cloud_aws_link_account";
+  public static readonly tfResourceType = "newrelic_account_management";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_link_account newrelic_cloud_aws_link_account} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/account_management newrelic_account_management} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options CloudAwsLinkAccountConfig
+  * @param options AccountManagementConfig
   */
-  public constructor(scope: Construct, id: string, config: CloudAwsLinkAccountConfig) {
+  public constructor(scope: Construct, id: string, config: AccountManagementConfig) {
     super(scope, id, {
-      terraformResourceType: 'newrelic_cloud_aws_link_account',
+      terraformResourceType: 'newrelic_account_management',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
         providerVersion: '3.17.0',
@@ -158,46 +146,15 @@ export class CloudAwsLinkAccount extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._accountId = config.accountId;
-    this._arn = config.arn;
     this._id = config.id;
-    this._metricCollectionMode = config.metricCollectionMode;
     this._name = config.name;
+    this._region = config.region;
     this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // account_id - computed: true, optional: true, required: false
-  private _accountId?: number; 
-  public get accountId() {
-    return this.getNumberAttribute('account_id');
-  }
-  public set accountId(value: number) {
-    this._accountId = value;
-  }
-  public resetAccountId() {
-    this._accountId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get accountIdInput() {
-    return this._accountId;
-  }
-
-  // arn - computed: false, optional: false, required: true
-  private _arn?: string; 
-  public get arn() {
-    return this.getStringAttribute('arn');
-  }
-  public set arn(value: string) {
-    this._arn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get arnInput() {
-    return this._arn;
-  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -215,22 +172,6 @@ export class CloudAwsLinkAccount extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // metric_collection_mode - computed: false, optional: true, required: false
-  private _metricCollectionMode?: string; 
-  public get metricCollectionMode() {
-    return this.getStringAttribute('metric_collection_mode');
-  }
-  public set metricCollectionMode(value: string) {
-    this._metricCollectionMode = value;
-  }
-  public resetMetricCollectionMode() {
-    this._metricCollectionMode = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get metricCollectionModeInput() {
-    return this._metricCollectionMode;
-  }
-
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -244,12 +185,25 @@ export class CloudAwsLinkAccount extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // region - computed: false, optional: false, required: true
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CloudAwsLinkAccountTimeoutsOutputReference(this, "timeouts");
+  private _timeouts = new AccountManagementTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
-  public putTimeouts(value: CloudAwsLinkAccountTimeouts) {
+  public putTimeouts(value: AccountManagementTimeouts) {
     this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
@@ -266,12 +220,10 @@ export class CloudAwsLinkAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.numberToTerraform(this._accountId),
-      arn: cdktf.stringToTerraform(this._arn),
       id: cdktf.stringToTerraform(this._id),
-      metric_collection_mode: cdktf.stringToTerraform(this._metricCollectionMode),
       name: cdktf.stringToTerraform(this._name),
-      timeouts: cloudAwsLinkAccountTimeoutsToTerraform(this._timeouts.internalValue),
+      region: cdktf.stringToTerraform(this._region),
+      timeouts: accountManagementTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

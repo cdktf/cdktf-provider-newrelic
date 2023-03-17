@@ -1,6 +1,7 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [accountManagement](./accountManagement.typescript.md)
 - [alertChannel](./alertChannel.typescript.md)
 - [alertCondition](./alertCondition.typescript.md)
 - [alertMutingRule](./alertMutingRule.typescript.md)

@@ -1,6 +1,7 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [accountManagement](./accountManagement.csharp.md)
 - [alertChannel](./alertChannel.csharp.md)
 - [alertCondition](./alertCondition.csharp.md)
 - [alertMutingRule](./alertMutingRule.csharp.md)

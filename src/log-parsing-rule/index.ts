@@ -90,7 +90,7 @@ export class LogParsingRule extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_log_parsing_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.16.1',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
