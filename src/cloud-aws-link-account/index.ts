@@ -147,7 +147,7 @@ export class CloudAwsLinkAccount extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_aws_link_account',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.16.1',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

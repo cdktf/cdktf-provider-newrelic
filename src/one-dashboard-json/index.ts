@@ -162,7 +162,7 @@ export class OneDashboardJson extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_one_dashboard_json',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.16.1',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

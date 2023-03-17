@@ -212,7 +212,7 @@ export class SyntheticsBrokenLinksMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_synthetics_broken_links_monitor',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.16.1',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

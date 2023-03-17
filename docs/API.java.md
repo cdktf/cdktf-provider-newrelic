@@ -1,6 +1,7 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [accountManagement](./accountManagement.java.md)
 - [alertChannel](./alertChannel.java.md)
 - [alertCondition](./alertCondition.java.md)
 - [alertMutingRule](./alertMutingRule.java.md)

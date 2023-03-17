@@ -1,6 +1,7 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [accountManagement](./accountManagement.python.md)
 - [alertChannel](./alertChannel.python.md)
 - [alertCondition](./alertCondition.python.md)
 - [alertMutingRule](./alertMutingRule.python.md)
