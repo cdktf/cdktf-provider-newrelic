@@ -66,7 +66,7 @@ export class ApiAccessKey extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_api_access_key',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.17.0',
+        providerVersion: '3.17.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
