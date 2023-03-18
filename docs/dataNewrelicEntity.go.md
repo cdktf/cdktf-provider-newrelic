@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/entity ne
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelicentity"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicentity"
 
 datanewrelicentity.NewDataNewrelicEntity(scope Construct, id *string, config DataNewrelicEntityConfig) DataNewrelicEntity
 ```
@@ -314,7 +314,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelicentity"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicentity"
 
 datanewrelicentity.DataNewrelicEntity_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelicentity"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicentity"
 
 datanewrelicentity.DataNewrelicEntity_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ datanewrelicentity.DataNewrelicEntity_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelicentity"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicentity"
 
 datanewrelicentity.DataNewrelicEntity_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -713,7 +713,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelicentity"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicentity"
 
 &datanewrelicentity.DataNewrelicEntityConfig {
 	Connection: interface{},
@@ -916,7 +916,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntityTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelicentity"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicentity"
 
 &datanewrelicentity.DataNewrelicEntityTag {
 	Key: *string,
@@ -968,7 +968,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntityTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelicentity"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicentity"
 
 datanewrelicentity.NewDataNewrelicEntityTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNewrelicEntityTagList
 ```
@@ -1111,7 +1111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntityTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelicentity"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicentity"
 
 datanewrelicentity.NewDataNewrelicEntityTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNewrelicEntityTagOutputReference
 ```
