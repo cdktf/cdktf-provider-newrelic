@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/service_l
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 servicelevel.NewServiceLevel(scope Construct, id *string, config ServiceLevelConfig) ServiceLevel
 ```
@@ -306,7 +306,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 servicelevel.ServiceLevel_IsConstruct(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 servicelevel.ServiceLevel_IsTerraformElement(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ servicelevel.ServiceLevel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 servicelevel.ServiceLevel_IsTerraformResource(x interface{}) *bool
 ```
@@ -705,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 &servicelevel.ServiceLevelConfig {
 	Connection: interface{},
@@ -715,10 +715,10 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Events: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6.serviceLevel.ServiceLevelEvents,
+	Events: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelEvents,
 	Guid: *string,
 	Name: *string,
-	Objective: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6.serviceLevel.ServiceLevelObjective,
+	Objective: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelObjective,
 	Description: *string,
 	Id: *string,
 }
@@ -898,13 +898,13 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 &servicelevel.ServiceLevelEvents {
 	AccountId: *f64,
-	ValidEvents: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6.serviceLevel.ServiceLevelEventsValidEvents,
-	BadEvents: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6.serviceLevel.ServiceLevelEventsBadEvents,
-	GoodEvents: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6.serviceLevel.ServiceLevelEventsGoodEvents,
+	ValidEvents: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelEventsValidEvents,
+	BadEvents: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelEventsBadEvents,
+	GoodEvents: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelEventsGoodEvents,
 }
 ```
 
@@ -978,11 +978,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 &servicelevel.ServiceLevelEventsBadEvents {
 	From: *string,
-	Select: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6.serviceLevel.ServiceLevelEventsBadEventsSelect,
+	Select: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect,
 	Where: *string,
 }
 ```
@@ -1040,11 +1040,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 &servicelevel.ServiceLevelEventsBadEventsSelect {
 	Function: *string,
 	Attribute: *string,
+	Threshold: *f64,
 }
 ```
 
@@ -1054,6 +1055,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.property.function">Function</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#function ServiceLevel#function}. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}. |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.property.threshold">Threshold</a></code> | <code>*f64</code> | The event threshold to use in the SELECT clause. |
 
 ---
 
@@ -1081,16 +1083,30 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 ---
 
+##### `Threshold`<sup>Optional</sup> <a name="Threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.property.threshold"></a>
+
+```go
+Threshold *f64
+```
+
+- *Type:* *f64
+
+The event threshold to use in the SELECT clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#threshold ServiceLevel#threshold}
+
+---
+
 ### ServiceLevelEventsGoodEvents <a name="ServiceLevelEventsGoodEvents" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEvents"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 &servicelevel.ServiceLevelEventsGoodEvents {
 	From: *string,
-	Select: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6.serviceLevel.ServiceLevelEventsGoodEventsSelect,
+	Select: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect,
 	Where: *string,
 }
 ```
@@ -1148,11 +1164,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 &servicelevel.ServiceLevelEventsGoodEventsSelect {
 	Function: *string,
 	Attribute: *string,
+	Threshold: *f64,
 }
 ```
 
@@ -1162,6 +1179,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.property.function">Function</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#function ServiceLevel#function}. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}. |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.property.threshold">Threshold</a></code> | <code>*f64</code> | The event threshold to use in the SELECT clause. |
 
 ---
 
@@ -1189,16 +1207,30 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 ---
 
+##### `Threshold`<sup>Optional</sup> <a name="Threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.property.threshold"></a>
+
+```go
+Threshold *f64
+```
+
+- *Type:* *f64
+
+The event threshold to use in the SELECT clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#threshold ServiceLevel#threshold}
+
+---
+
 ### ServiceLevelEventsValidEvents <a name="ServiceLevelEventsValidEvents" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEvents"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 &servicelevel.ServiceLevelEventsValidEvents {
 	From: *string,
-	Select: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6.serviceLevel.ServiceLevelEventsValidEventsSelect,
+	Select: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect,
 	Where: *string,
 }
 ```
@@ -1256,11 +1288,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 &servicelevel.ServiceLevelEventsValidEventsSelect {
 	Function: *string,
 	Attribute: *string,
+	Threshold: *f64,
 }
 ```
 
@@ -1270,6 +1303,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.property.function">Function</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#function ServiceLevel#function}. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}. |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.property.threshold">Threshold</a></code> | <code>*f64</code> | The event threshold to use in the SELECT clause. |
 
 ---
 
@@ -1297,16 +1331,30 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 ---
 
+##### `Threshold`<sup>Optional</sup> <a name="Threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.property.threshold"></a>
+
+```go
+Threshold *f64
+```
+
+- *Type:* *f64
+
+The event threshold to use in the SELECT clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#threshold ServiceLevel#threshold}
+
+---
+
 ### ServiceLevelObjective <a name="ServiceLevelObjective" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelObjective"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelObjective.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 &servicelevel.ServiceLevelObjective {
 	Target: *f64,
-	TimeWindow: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6.serviceLevel.ServiceLevelObjectiveTimeWindow,
+	TimeWindow: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelObjectiveTimeWindow,
 	Description: *string,
 	Name: *string,
 }
@@ -1378,10 +1426,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelObjectiveTimeWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 &servicelevel.ServiceLevelObjectiveTimeWindow {
-	Rolling: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6.serviceLevel.ServiceLevelObjectiveTimeWindowRolling,
+	Rolling: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelObjectiveTimeWindowRolling,
 }
 ```
 
@@ -1412,7 +1460,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelObjectiveTimeWindowRolling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 &servicelevel.ServiceLevelObjectiveTimeWindowRolling {
 	Count: *f64,
@@ -1460,7 +1508,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 servicelevel.NewServiceLevelEventsBadEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelEventsBadEventsOutputReference
 ```
@@ -1802,7 +1850,7 @@ func InternalValue() ServiceLevelEventsBadEvents
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 servicelevel.NewServiceLevelEventsBadEventsSelectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelEventsBadEventsSelectOutputReference
 ```
@@ -1848,6 +1896,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.resetAttribute">ResetAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.resetThreshold">ResetThreshold</a></code> | *No description.* |
 
 ---
 
@@ -2007,6 +2056,12 @@ Returns a reversible string representation.
 func ResetAttribute()
 ```
 
+##### `ResetThreshold` <a name="ResetThreshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.resetThreshold"></a>
+
+```go
+func ResetThreshold()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2016,8 +2071,10 @@ func ResetAttribute()
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.attributeInput">AttributeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.functionInput">FunctionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.thresholdInput">ThresholdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.attribute">Attribute</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.function">Function</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.threshold">Threshold</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect">ServiceLevelEventsBadEventsSelect</a></code> | *No description.* |
 
 ---
@@ -2066,6 +2123,16 @@ func FunctionInput() *string
 
 ---
 
+##### `ThresholdInput`<sup>Optional</sup> <a name="ThresholdInput" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.thresholdInput"></a>
+
+```go
+func ThresholdInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `Attribute`<sup>Required</sup> <a name="Attribute" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.attribute"></a>
 
 ```go
@@ -2086,6 +2153,16 @@ func Function() *string
 
 ---
 
+##### `Threshold`<sup>Required</sup> <a name="Threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.threshold"></a>
+
+```go
+func Threshold() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.internalValue"></a>
 
 ```go
@@ -2102,7 +2179,7 @@ func InternalValue() ServiceLevelEventsBadEventsSelect
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 servicelevel.NewServiceLevelEventsGoodEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelEventsGoodEventsOutputReference
 ```
@@ -2444,7 +2521,7 @@ func InternalValue() ServiceLevelEventsGoodEvents
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 servicelevel.NewServiceLevelEventsGoodEventsSelectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelEventsGoodEventsSelectOutputReference
 ```
@@ -2490,6 +2567,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.resetAttribute">ResetAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.resetThreshold">ResetThreshold</a></code> | *No description.* |
 
 ---
 
@@ -2649,6 +2727,12 @@ Returns a reversible string representation.
 func ResetAttribute()
 ```
 
+##### `ResetThreshold` <a name="ResetThreshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.resetThreshold"></a>
+
+```go
+func ResetThreshold()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2658,8 +2742,10 @@ func ResetAttribute()
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.attributeInput">AttributeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.functionInput">FunctionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.thresholdInput">ThresholdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.attribute">Attribute</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.function">Function</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.threshold">Threshold</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect">ServiceLevelEventsGoodEventsSelect</a></code> | *No description.* |
 
 ---
@@ -2708,6 +2794,16 @@ func FunctionInput() *string
 
 ---
 
+##### `ThresholdInput`<sup>Optional</sup> <a name="ThresholdInput" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.thresholdInput"></a>
+
+```go
+func ThresholdInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `Attribute`<sup>Required</sup> <a name="Attribute" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.attribute"></a>
 
 ```go
@@ -2728,6 +2824,16 @@ func Function() *string
 
 ---
 
+##### `Threshold`<sup>Required</sup> <a name="Threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.threshold"></a>
+
+```go
+func Threshold() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.internalValue"></a>
 
 ```go
@@ -2744,7 +2850,7 @@ func InternalValue() ServiceLevelEventsGoodEventsSelect
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 servicelevel.NewServiceLevelEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelEventsOutputReference
 ```
@@ -3134,7 +3240,7 @@ func InternalValue() ServiceLevelEvents
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 servicelevel.NewServiceLevelEventsValidEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelEventsValidEventsOutputReference
 ```
@@ -3476,7 +3582,7 @@ func InternalValue() ServiceLevelEventsValidEvents
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 servicelevel.NewServiceLevelEventsValidEventsSelectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelEventsValidEventsSelectOutputReference
 ```
@@ -3522,6 +3628,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.resetAttribute">ResetAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.resetThreshold">ResetThreshold</a></code> | *No description.* |
 
 ---
 
@@ -3681,6 +3788,12 @@ Returns a reversible string representation.
 func ResetAttribute()
 ```
 
+##### `ResetThreshold` <a name="ResetThreshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.resetThreshold"></a>
+
+```go
+func ResetThreshold()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3690,8 +3803,10 @@ func ResetAttribute()
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.attributeInput">AttributeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.functionInput">FunctionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.thresholdInput">ThresholdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.attribute">Attribute</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.function">Function</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.threshold">Threshold</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect">ServiceLevelEventsValidEventsSelect</a></code> | *No description.* |
 
 ---
@@ -3740,6 +3855,16 @@ func FunctionInput() *string
 
 ---
 
+##### `ThresholdInput`<sup>Optional</sup> <a name="ThresholdInput" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.thresholdInput"></a>
+
+```go
+func ThresholdInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `Attribute`<sup>Required</sup> <a name="Attribute" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.attribute"></a>
 
 ```go
@@ -3760,6 +3885,16 @@ func Function() *string
 
 ---
 
+##### `Threshold`<sup>Required</sup> <a name="Threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.threshold"></a>
+
+```go
+func Threshold() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.internalValue"></a>
 
 ```go
@@ -3776,7 +3911,7 @@ func InternalValue() ServiceLevelEventsValidEventsSelect
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelObjectiveOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 servicelevel.NewServiceLevelObjectiveOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelObjectiveOutputReference
 ```
@@ -4140,7 +4275,7 @@ func InternalValue() ServiceLevelObjective
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelObjectiveTimeWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 servicelevel.NewServiceLevelObjectiveTimeWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelObjectiveTimeWindowOutputReference
 ```
@@ -4424,7 +4559,7 @@ func InternalValue() ServiceLevelObjectiveTimeWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelObjectiveTimeWindowRollingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 
 servicelevel.NewServiceLevelObjectiveTimeWindowRollingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelObjectiveTimeWindowRollingOutputReference
 ```

@@ -48,6 +48,12 @@ export interface ServiceLevelEventsBadEventsSelect {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#function ServiceLevel#function}
   */
   readonly function: string;
+  /**
+  * The event threshold to use in the SELECT clause
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#threshold ServiceLevel#threshold}
+  */
+  readonly threshold?: number;
 }
 
 export function serviceLevelEventsBadEventsSelectToTerraform(struct?: ServiceLevelEventsBadEventsSelectOutputReference | ServiceLevelEventsBadEventsSelect): any {
@@ -58,6 +64,7 @@ export function serviceLevelEventsBadEventsSelectToTerraform(struct?: ServiceLev
   return {
     attribute: cdktf.stringToTerraform(struct!.attribute),
     function: cdktf.stringToTerraform(struct!.function),
+    threshold: cdktf.numberToTerraform(struct!.threshold),
   }
 }
 
@@ -83,6 +90,10 @@ export class ServiceLevelEventsBadEventsSelectOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.function = this._function;
     }
+    if (this._threshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.threshold = this._threshold;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -91,11 +102,13 @@ export class ServiceLevelEventsBadEventsSelectOutputReference extends cdktf.Comp
       this.isEmptyObject = false;
       this._attribute = undefined;
       this._function = undefined;
+      this._threshold = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._attribute = value.attribute;
       this._function = value.function;
+      this._threshold = value.threshold;
     }
   }
 
@@ -126,6 +139,22 @@ export class ServiceLevelEventsBadEventsSelectOutputReference extends cdktf.Comp
   // Temporarily expose input value. Use with caution.
   public get functionInput() {
     return this._function;
+  }
+
+  // threshold - computed: false, optional: true, required: false
+  private _threshold?: number; 
+  public get threshold() {
+    return this.getNumberAttribute('threshold');
+  }
+  public set threshold(value: number) {
+    this._threshold = value;
+  }
+  public resetThreshold() {
+    this._threshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thresholdInput() {
+    return this._threshold;
   }
 }
 export interface ServiceLevelEventsBadEvents {
@@ -255,6 +284,12 @@ export interface ServiceLevelEventsGoodEventsSelect {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#function ServiceLevel#function}
   */
   readonly function: string;
+  /**
+  * The event threshold to use in the SELECT clause
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#threshold ServiceLevel#threshold}
+  */
+  readonly threshold?: number;
 }
 
 export function serviceLevelEventsGoodEventsSelectToTerraform(struct?: ServiceLevelEventsGoodEventsSelectOutputReference | ServiceLevelEventsGoodEventsSelect): any {
@@ -265,6 +300,7 @@ export function serviceLevelEventsGoodEventsSelectToTerraform(struct?: ServiceLe
   return {
     attribute: cdktf.stringToTerraform(struct!.attribute),
     function: cdktf.stringToTerraform(struct!.function),
+    threshold: cdktf.numberToTerraform(struct!.threshold),
   }
 }
 
@@ -290,6 +326,10 @@ export class ServiceLevelEventsGoodEventsSelectOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.function = this._function;
     }
+    if (this._threshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.threshold = this._threshold;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -298,11 +338,13 @@ export class ServiceLevelEventsGoodEventsSelectOutputReference extends cdktf.Com
       this.isEmptyObject = false;
       this._attribute = undefined;
       this._function = undefined;
+      this._threshold = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._attribute = value.attribute;
       this._function = value.function;
+      this._threshold = value.threshold;
     }
   }
 
@@ -333,6 +375,22 @@ export class ServiceLevelEventsGoodEventsSelectOutputReference extends cdktf.Com
   // Temporarily expose input value. Use with caution.
   public get functionInput() {
     return this._function;
+  }
+
+  // threshold - computed: false, optional: true, required: false
+  private _threshold?: number; 
+  public get threshold() {
+    return this.getNumberAttribute('threshold');
+  }
+  public set threshold(value: number) {
+    this._threshold = value;
+  }
+  public resetThreshold() {
+    this._threshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thresholdInput() {
+    return this._threshold;
   }
 }
 export interface ServiceLevelEventsGoodEvents {
@@ -462,6 +520,12 @@ export interface ServiceLevelEventsValidEventsSelect {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#function ServiceLevel#function}
   */
   readonly function: string;
+  /**
+  * The event threshold to use in the SELECT clause
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#threshold ServiceLevel#threshold}
+  */
+  readonly threshold?: number;
 }
 
 export function serviceLevelEventsValidEventsSelectToTerraform(struct?: ServiceLevelEventsValidEventsSelectOutputReference | ServiceLevelEventsValidEventsSelect): any {
@@ -472,6 +536,7 @@ export function serviceLevelEventsValidEventsSelectToTerraform(struct?: ServiceL
   return {
     attribute: cdktf.stringToTerraform(struct!.attribute),
     function: cdktf.stringToTerraform(struct!.function),
+    threshold: cdktf.numberToTerraform(struct!.threshold),
   }
 }
 
@@ -497,6 +562,10 @@ export class ServiceLevelEventsValidEventsSelectOutputReference extends cdktf.Co
       hasAnyValues = true;
       internalValueResult.function = this._function;
     }
+    if (this._threshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.threshold = this._threshold;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -505,11 +574,13 @@ export class ServiceLevelEventsValidEventsSelectOutputReference extends cdktf.Co
       this.isEmptyObject = false;
       this._attribute = undefined;
       this._function = undefined;
+      this._threshold = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._attribute = value.attribute;
       this._function = value.function;
+      this._threshold = value.threshold;
     }
   }
 
@@ -540,6 +611,22 @@ export class ServiceLevelEventsValidEventsSelectOutputReference extends cdktf.Co
   // Temporarily expose input value. Use with caution.
   public get functionInput() {
     return this._function;
+  }
+
+  // threshold - computed: false, optional: true, required: false
+  private _threshold?: number; 
+  public get threshold() {
+    return this.getNumberAttribute('threshold');
+  }
+  public set threshold(value: number) {
+    this._threshold = value;
+  }
+  public resetThreshold() {
+    this._threshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thresholdInput() {
+    return this._threshold;
   }
 }
 export interface ServiceLevelEventsValidEvents {
@@ -1125,7 +1212,7 @@ export class ServiceLevel extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_service_level',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.17.1',
+        providerVersion: '3.18.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
