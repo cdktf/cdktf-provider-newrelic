@@ -214,7 +214,7 @@ export class SyntheticsCertCheckMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_synthetics_cert_check_monitor',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.17.1',
+        providerVersion: '3.18.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

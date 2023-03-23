@@ -1045,6 +1045,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
 &servicelevel.ServiceLevelEventsBadEventsSelect {
 	Function: *string,
 	Attribute: *string,
+	Threshold: *f64,
 }
 ```
 
@@ -1054,6 +1055,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.property.function">Function</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#function ServiceLevel#function}. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}. |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.property.threshold">Threshold</a></code> | <code>*f64</code> | The event threshold to use in the SELECT clause. |
 
 ---
 
@@ -1078,6 +1080,20 @@ Attribute *string
 - *Type:* *string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}.
+
+---
+
+##### `Threshold`<sup>Optional</sup> <a name="Threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.property.threshold"></a>
+
+```go
+Threshold *f64
+```
+
+- *Type:* *f64
+
+The event threshold to use in the SELECT clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#threshold ServiceLevel#threshold}
 
 ---
 
@@ -1153,6 +1169,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
 &servicelevel.ServiceLevelEventsGoodEventsSelect {
 	Function: *string,
 	Attribute: *string,
+	Threshold: *f64,
 }
 ```
 
@@ -1162,6 +1179,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.property.function">Function</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#function ServiceLevel#function}. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}. |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.property.threshold">Threshold</a></code> | <code>*f64</code> | The event threshold to use in the SELECT clause. |
 
 ---
 
@@ -1186,6 +1204,20 @@ Attribute *string
 - *Type:* *string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}.
+
+---
+
+##### `Threshold`<sup>Optional</sup> <a name="Threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.property.threshold"></a>
+
+```go
+Threshold *f64
+```
+
+- *Type:* *f64
+
+The event threshold to use in the SELECT clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#threshold ServiceLevel#threshold}
 
 ---
 
@@ -1261,6 +1293,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
 &servicelevel.ServiceLevelEventsValidEventsSelect {
 	Function: *string,
 	Attribute: *string,
+	Threshold: *f64,
 }
 ```
 
@@ -1270,6 +1303,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel"
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.property.function">Function</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#function ServiceLevel#function}. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}. |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.property.threshold">Threshold</a></code> | <code>*f64</code> | The event threshold to use in the SELECT clause. |
 
 ---
 
@@ -1294,6 +1328,20 @@ Attribute *string
 - *Type:* *string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}.
+
+---
+
+##### `Threshold`<sup>Optional</sup> <a name="Threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.property.threshold"></a>
+
+```go
+Threshold *f64
+```
+
+- *Type:* *f64
+
+The event threshold to use in the SELECT clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#threshold ServiceLevel#threshold}
 
 ---
 
@@ -1848,6 +1896,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.resetAttribute">ResetAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.resetThreshold">ResetThreshold</a></code> | *No description.* |
 
 ---
 
@@ -2007,6 +2056,12 @@ Returns a reversible string representation.
 func ResetAttribute()
 ```
 
+##### `ResetThreshold` <a name="ResetThreshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.resetThreshold"></a>
+
+```go
+func ResetThreshold()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2016,8 +2071,10 @@ func ResetAttribute()
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.attributeInput">AttributeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.functionInput">FunctionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.thresholdInput">ThresholdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.attribute">Attribute</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.function">Function</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.threshold">Threshold</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect">ServiceLevelEventsBadEventsSelect</a></code> | *No description.* |
 
 ---
@@ -2066,6 +2123,16 @@ func FunctionInput() *string
 
 ---
 
+##### `ThresholdInput`<sup>Optional</sup> <a name="ThresholdInput" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.thresholdInput"></a>
+
+```go
+func ThresholdInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `Attribute`<sup>Required</sup> <a name="Attribute" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.attribute"></a>
 
 ```go
@@ -2083,6 +2150,16 @@ func Function() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Threshold`<sup>Required</sup> <a name="Threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.threshold"></a>
+
+```go
+func Threshold() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -2490,6 +2567,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.resetAttribute">ResetAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.resetThreshold">ResetThreshold</a></code> | *No description.* |
 
 ---
 
@@ -2649,6 +2727,12 @@ Returns a reversible string representation.
 func ResetAttribute()
 ```
 
+##### `ResetThreshold` <a name="ResetThreshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.resetThreshold"></a>
+
+```go
+func ResetThreshold()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2658,8 +2742,10 @@ func ResetAttribute()
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.attributeInput">AttributeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.functionInput">FunctionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.thresholdInput">ThresholdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.attribute">Attribute</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.function">Function</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.threshold">Threshold</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect">ServiceLevelEventsGoodEventsSelect</a></code> | *No description.* |
 
 ---
@@ -2708,6 +2794,16 @@ func FunctionInput() *string
 
 ---
 
+##### `ThresholdInput`<sup>Optional</sup> <a name="ThresholdInput" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.thresholdInput"></a>
+
+```go
+func ThresholdInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `Attribute`<sup>Required</sup> <a name="Attribute" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.attribute"></a>
 
 ```go
@@ -2725,6 +2821,16 @@ func Function() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Threshold`<sup>Required</sup> <a name="Threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.threshold"></a>
+
+```go
+func Threshold() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -3522,6 +3628,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.resetAttribute">ResetAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.resetThreshold">ResetThreshold</a></code> | *No description.* |
 
 ---
 
@@ -3681,6 +3788,12 @@ Returns a reversible string representation.
 func ResetAttribute()
 ```
 
+##### `ResetThreshold` <a name="ResetThreshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.resetThreshold"></a>
+
+```go
+func ResetThreshold()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3690,8 +3803,10 @@ func ResetAttribute()
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.attributeInput">AttributeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.functionInput">FunctionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.thresholdInput">ThresholdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.attribute">Attribute</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.function">Function</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.threshold">Threshold</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect">ServiceLevelEventsValidEventsSelect</a></code> | *No description.* |
 
 ---
@@ -3740,6 +3855,16 @@ func FunctionInput() *string
 
 ---
 
+##### `ThresholdInput`<sup>Optional</sup> <a name="ThresholdInput" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.thresholdInput"></a>
+
+```go
+func ThresholdInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `Attribute`<sup>Required</sup> <a name="Attribute" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.attribute"></a>
 
 ```go
@@ -3757,6 +3882,16 @@ func Function() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Threshold`<sup>Required</sup> <a name="Threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.threshold"></a>
+
+```go
+func Threshold() *f64
+```
+
+- *Type:* *f64
 
 ---
 

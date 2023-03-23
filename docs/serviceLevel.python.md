@@ -1264,7 +1264,8 @@ from cdktf_cdktf_provider_newrelic import service_level
 
 serviceLevel.ServiceLevelEventsBadEventsSelect(
   function: str,
-  attribute: str = None
+  attribute: str = None,
+  threshold: typing.Union[int, float] = None
 )
 ```
 
@@ -1274,6 +1275,7 @@ serviceLevel.ServiceLevelEventsBadEventsSelect(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.property.function">function</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#function ServiceLevel#function}. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}. |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | The event threshold to use in the SELECT clause. |
 
 ---
 
@@ -1298,6 +1300,20 @@ attribute: str
 - *Type:* str
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}.
+
+---
+
+##### `threshold`<sup>Optional</sup> <a name="threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.property.threshold"></a>
+
+```python
+threshold: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The event threshold to use in the SELECT clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#threshold ServiceLevel#threshold}
 
 ---
 
@@ -1372,7 +1388,8 @@ from cdktf_cdktf_provider_newrelic import service_level
 
 serviceLevel.ServiceLevelEventsGoodEventsSelect(
   function: str,
-  attribute: str = None
+  attribute: str = None,
+  threshold: typing.Union[int, float] = None
 )
 ```
 
@@ -1382,6 +1399,7 @@ serviceLevel.ServiceLevelEventsGoodEventsSelect(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.property.function">function</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#function ServiceLevel#function}. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}. |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | The event threshold to use in the SELECT clause. |
 
 ---
 
@@ -1406,6 +1424,20 @@ attribute: str
 - *Type:* str
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}.
+
+---
+
+##### `threshold`<sup>Optional</sup> <a name="threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.property.threshold"></a>
+
+```python
+threshold: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The event threshold to use in the SELECT clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#threshold ServiceLevel#threshold}
 
 ---
 
@@ -1480,7 +1512,8 @@ from cdktf_cdktf_provider_newrelic import service_level
 
 serviceLevel.ServiceLevelEventsValidEventsSelect(
   function: str,
-  attribute: str = None
+  attribute: str = None,
+  threshold: typing.Union[int, float] = None
 )
 ```
 
@@ -1490,6 +1523,7 @@ serviceLevel.ServiceLevelEventsValidEventsSelect(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.property.function">function</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#function ServiceLevel#function}. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.property.attribute">attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}. |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | The event threshold to use in the SELECT clause. |
 
 ---
 
@@ -1514,6 +1548,20 @@ attribute: str
 - *Type:* str
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}.
+
+---
+
+##### `threshold`<sup>Optional</sup> <a name="threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.property.threshold"></a>
+
+```python
+threshold: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The event threshold to use in the SELECT clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#threshold ServiceLevel#threshold}
 
 ---
 
@@ -1911,7 +1959,8 @@ Returns a reversible string representation.
 ```python
 def put_select(
   function: str,
-  attribute: str = None
+  attribute: str = None,
+  threshold: typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -1928,6 +1977,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 - *Type:* str
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}.
+
+---
+
+###### `threshold`<sup>Optional</sup> <a name="threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsOutputReference.putSelect.parameter.threshold"></a>
+
+- *Type:* typing.Union[int, float]
+
+The event threshold to use in the SELECT clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#threshold ServiceLevel#threshold}
 
 ---
 
@@ -2109,6 +2168,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.resetAttribute">reset_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.resetThreshold">reset_threshold</a></code> | *No description.* |
 
 ---
 
@@ -2290,6 +2350,12 @@ Returns a reversible string representation.
 def reset_attribute() -> None
 ```
 
+##### `reset_threshold` <a name="reset_threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.resetThreshold"></a>
+
+```python
+def reset_threshold() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2299,8 +2365,10 @@ def reset_attribute() -> None
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.attributeInput">attribute_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.functionInput">function_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.thresholdInput">threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.attribute">attribute</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.function">function</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect">ServiceLevelEventsBadEventsSelect</a></code> | *No description.* |
 
 ---
@@ -2349,6 +2417,16 @@ function_input: str
 
 ---
 
+##### `threshold_input`<sup>Optional</sup> <a name="threshold_input" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.thresholdInput"></a>
+
+```python
+threshold_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `attribute`<sup>Required</sup> <a name="attribute" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.attribute"></a>
 
 ```python
@@ -2366,6 +2444,16 @@ function: str
 ```
 
 - *Type:* str
+
+---
+
+##### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.property.threshold"></a>
+
+```python
+threshold: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -2616,7 +2704,8 @@ Returns a reversible string representation.
 ```python
 def put_select(
   function: str,
-  attribute: str = None
+  attribute: str = None,
+  threshold: typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -2633,6 +2722,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 - *Type:* str
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}.
+
+---
+
+###### `threshold`<sup>Optional</sup> <a name="threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsOutputReference.putSelect.parameter.threshold"></a>
+
+- *Type:* typing.Union[int, float]
+
+The event threshold to use in the SELECT clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#threshold ServiceLevel#threshold}
 
 ---
 
@@ -2814,6 +2913,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.resetAttribute">reset_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.resetThreshold">reset_threshold</a></code> | *No description.* |
 
 ---
 
@@ -2995,6 +3095,12 @@ Returns a reversible string representation.
 def reset_attribute() -> None
 ```
 
+##### `reset_threshold` <a name="reset_threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.resetThreshold"></a>
+
+```python
+def reset_threshold() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3004,8 +3110,10 @@ def reset_attribute() -> None
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.attributeInput">attribute_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.functionInput">function_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.thresholdInput">threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.attribute">attribute</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.function">function</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect">ServiceLevelEventsGoodEventsSelect</a></code> | *No description.* |
 
 ---
@@ -3054,6 +3162,16 @@ function_input: str
 
 ---
 
+##### `threshold_input`<sup>Optional</sup> <a name="threshold_input" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.thresholdInput"></a>
+
+```python
+threshold_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `attribute`<sup>Required</sup> <a name="attribute" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.attribute"></a>
 
 ```python
@@ -3071,6 +3189,16 @@ function: str
 ```
 
 - *Type:* str
+
+---
+
+##### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.property.threshold"></a>
+
+```python
+threshold: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -3808,7 +3936,8 @@ Returns a reversible string representation.
 ```python
 def put_select(
   function: str,
-  attribute: str = None
+  attribute: str = None,
+  threshold: typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -3825,6 +3954,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 - *Type:* str
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#attribute ServiceLevel#attribute}.
+
+---
+
+###### `threshold`<sup>Optional</sup> <a name="threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsOutputReference.putSelect.parameter.threshold"></a>
+
+- *Type:* typing.Union[int, float]
+
+The event threshold to use in the SELECT clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/service_level#threshold ServiceLevel#threshold}
 
 ---
 
@@ -4006,6 +4145,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.resetAttribute">reset_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.resetThreshold">reset_threshold</a></code> | *No description.* |
 
 ---
 
@@ -4187,6 +4327,12 @@ Returns a reversible string representation.
 def reset_attribute() -> None
 ```
 
+##### `reset_threshold` <a name="reset_threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.resetThreshold"></a>
+
+```python
+def reset_threshold() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -4196,8 +4342,10 @@ def reset_attribute() -> None
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.attributeInput">attribute_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.functionInput">function_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.thresholdInput">threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.attribute">attribute</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.function">function</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect">ServiceLevelEventsValidEventsSelect</a></code> | *No description.* |
 
 ---
@@ -4246,6 +4394,16 @@ function_input: str
 
 ---
 
+##### `threshold_input`<sup>Optional</sup> <a name="threshold_input" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.thresholdInput"></a>
+
+```python
+threshold_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `attribute`<sup>Required</sup> <a name="attribute" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.attribute"></a>
 
 ```python
@@ -4263,6 +4421,16 @@ function: str
 ```
 
 - *Type:* str
+
+---
+
+##### `threshold`<sup>Required</sup> <a name="threshold" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.property.threshold"></a>
+
+```python
+threshold: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
