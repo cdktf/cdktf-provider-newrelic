@@ -515,7 +515,7 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_one_dashboard_raw',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.18.0',
+        providerVersion: '3.18.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

@@ -78,7 +78,7 @@ export class CloudAwsGovcloudLinkAccount extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_aws_govcloud_link_account',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.18.0',
+        providerVersion: '3.18.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
