@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/alert_con
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertCondition.AlertCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/alertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertcondition"
 
 alertcondition.NewAlertCondition(scope Construct, id *string, config AlertConditionConfig) AlertCondition
 ```
@@ -335,7 +335,7 @@ func ResetViolationCloseTimer()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.alertCondition.AlertCondition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/alertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertcondition"
 
 alertcondition.AlertCondition_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.alertCondition.AlertCondition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/alertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertcondition"
 
 alertcondition.AlertCondition_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ alertcondition.AlertCondition_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.alertCondition.AlertCondition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/alertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertcondition"
 
 alertcondition.AlertCondition_IsTerraformResource(x interface{}) *bool
 ```
@@ -410,6 +410,7 @@ alertcondition.AlertCondition_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.property.entityGuid">EntityGuid</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.property.term">Term</a></code> | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertConditionTermList">AlertConditionTermList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.property.conditionScopeInput">ConditionScopeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -580,6 +581,16 @@ func Provisioners() *[]interface{}
 ```
 
 - *Type:* *[]interface{}
+
+---
+
+##### `EntityGuid`<sup>Required</sup> <a name="EntityGuid" id="@cdktf/provider-newrelic.alertCondition.AlertCondition.property.entityGuid"></a>
+
+```go
+func EntityGuid() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -888,7 +899,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.alertCondition.AlertConditionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/alertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertcondition"
 
 &alertcondition.AlertConditionConfig {
 	Connection: interface{},
@@ -1219,7 +1230,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.alertCondition.AlertConditionTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/alertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertcondition"
 
 &alertcondition.AlertConditionTerm {
 	Duration: *f64,
@@ -1319,7 +1330,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertCondition.AlertConditionTermList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/alertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertcondition"
 
 alertcondition.NewAlertConditionTermList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlertConditionTermList
 ```
@@ -1462,7 +1473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertCondition.AlertConditionTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/alertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertcondition"
 
 alertcondition.NewAlertConditionTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlertConditionTermOutputReference
 ```

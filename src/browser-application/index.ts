@@ -72,7 +72,7 @@ export class BrowserApplication extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_browser_application',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.18.1',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

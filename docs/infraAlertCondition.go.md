@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/infra_ale
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.infraAlertCondition.InfraAlertCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/infraalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/infraalertcondition"
 
 infraalertcondition.NewInfraAlertCondition(scope Construct, id *string, config InfraAlertConditionConfig) InfraAlertCondition
 ```
@@ -383,7 +383,7 @@ func ResetWhere()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.infraAlertCondition.InfraAlertCondition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/infraalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/infraalertcondition"
 
 infraalertcondition.InfraAlertCondition_IsConstruct(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.infraAlertCondition.InfraAlertCondition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/infraalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/infraalertcondition"
 
 infraalertcondition.InfraAlertCondition_IsTerraformElement(x interface{}) *bool
 ```
@@ -429,7 +429,7 @@ infraalertcondition.InfraAlertCondition_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.infraAlertCondition.InfraAlertCondition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/infraalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/infraalertcondition"
 
 infraalertcondition.InfraAlertCondition_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,6 +460,7 @@ infraalertcondition.InfraAlertCondition_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-newrelic.infraAlertCondition.InfraAlertCondition.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.infraAlertCondition.InfraAlertCondition.property.createdAt">CreatedAt</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.infraAlertCondition.InfraAlertCondition.property.critical">Critical</a></code> | <code><a href="#@cdktf/provider-newrelic.infraAlertCondition.InfraAlertConditionCriticalOutputReference">InfraAlertConditionCriticalOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.infraAlertCondition.InfraAlertCondition.property.entityGuid">EntityGuid</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.infraAlertCondition.InfraAlertCondition.property.updatedAt">UpdatedAt</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.infraAlertCondition.InfraAlertCondition.property.warning">Warning</a></code> | <code><a href="#@cdktf/provider-newrelic.infraAlertCondition.InfraAlertConditionWarningOutputReference">InfraAlertConditionWarningOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.infraAlertCondition.InfraAlertCondition.property.comparisonInput">ComparisonInput</a></code> | <code>*string</code> | *No description.* |
@@ -654,6 +655,16 @@ func Critical() InfraAlertConditionCriticalOutputReference
 ```
 
 - *Type:* <a href="#@cdktf/provider-newrelic.infraAlertCondition.InfraAlertConditionCriticalOutputReference">InfraAlertConditionCriticalOutputReference</a>
+
+---
+
+##### `EntityGuid`<sup>Required</sup> <a name="EntityGuid" id="@cdktf/provider-newrelic.infraAlertCondition.InfraAlertCondition.property.entityGuid"></a>
+
+```go
+func EntityGuid() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1002,7 +1013,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.infraAlertCondition.InfraAlertConditionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/infraalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/infraalertcondition"
 
 &infraalertcondition.InfraAlertConditionConfig {
 	Connection: interface{},
@@ -1016,7 +1027,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/infraalertcondit
 	PolicyId: *f64,
 	Type: *string,
 	Comparison: *string,
-	Critical: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6.infraAlertCondition.InfraAlertConditionCritical,
+	Critical: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.infraAlertCondition.InfraAlertConditionCritical,
 	Description: *string,
 	Enabled: interface{},
 	Event: *string,
@@ -1026,7 +1037,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/infraalertcondit
 	RunbookUrl: *string,
 	Select: *string,
 	ViolationCloseTimer: *f64,
-	Warning: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6.infraAlertCondition.InfraAlertConditionWarning,
+	Warning: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.infraAlertCondition.InfraAlertConditionWarning,
 	Where: *string,
 }
 ```
@@ -1367,7 +1378,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.infraAlertCondition.InfraAlertConditionCritical.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/infraalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/infraalertcondition"
 
 &infraalertcondition.InfraAlertConditionCritical {
 	Duration: *f64,
@@ -1427,7 +1438,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.infraAlertCondition.InfraAlertConditionWarning.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/infraalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/infraalertcondition"
 
 &infraalertcondition.InfraAlertConditionWarning {
 	Duration: *f64,
@@ -1489,7 +1500,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.infraAlertCondition.InfraAlertConditionCriticalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/infraalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/infraalertcondition"
 
 infraalertcondition.NewInfraAlertConditionCriticalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InfraAlertConditionCriticalOutputReference
 ```
@@ -1818,7 +1829,7 @@ func InternalValue() InfraAlertConditionCritical
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.infraAlertCondition.InfraAlertConditionWarningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/infraalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/infraalertcondition"
 
 infraalertcondition.NewInfraAlertConditionWarningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InfraAlertConditionWarningOutputReference
 ```

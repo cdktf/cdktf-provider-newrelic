@@ -60,7 +60,7 @@ export class DataNewrelicCloudAccount extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_cloud_account',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.18.1',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

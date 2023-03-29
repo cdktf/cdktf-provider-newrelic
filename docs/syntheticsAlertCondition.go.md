@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetic
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/syntheticsalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsalertcondition"
 
 syntheticsalertcondition.NewSyntheticsAlertCondition(scope Construct, id *string, config SyntheticsAlertConditionConfig) SyntheticsAlertCondition
 ```
@@ -287,7 +287,7 @@ func ResetRunbookUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/syntheticsalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsalertcondition"
 
 syntheticsalertcondition.SyntheticsAlertCondition_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/syntheticsalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsalertcondition"
 
 syntheticsalertcondition.SyntheticsAlertCondition_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ syntheticsalertcondition.SyntheticsAlertCondition_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/syntheticsalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsalertcondition"
 
 syntheticsalertcondition.SyntheticsAlertCondition_IsTerraformResource(x interface{}) *bool
 ```
@@ -362,6 +362,7 @@ syntheticsalertcondition.SyntheticsAlertCondition_IsTerraformResource(x interfac
 | <code><a href="#@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.property.entityGuid">EntityGuid</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.property.monitorIdInput">MonitorIdInput</a></code> | <code>*string</code> | *No description.* |
@@ -519,6 +520,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `EntityGuid`<sup>Required</sup> <a name="EntityGuid" id="@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.property.entityGuid"></a>
+
+```go
+func EntityGuid() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.property.enabledInput"></a>
 
 ```go
@@ -664,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertConditionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/syntheticsalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsalertcondition"
 
 &syntheticsalertcondition.SyntheticsAlertConditionConfig {
 	Connection: interface{},

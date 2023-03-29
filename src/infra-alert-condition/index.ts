@@ -364,7 +364,7 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_infra_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.18.1',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -448,6 +448,11 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
     return this._enabled;
+  }
+
+  // entity_guid - computed: true, optional: false, required: false
+  public get entityGuid() {
+    return this.getStringAttribute('entity_guid');
   }
 
   // event - computed: true, optional: true, required: false
