@@ -257,7 +257,7 @@ export class EntityTags extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_entity_tags',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.18.1',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

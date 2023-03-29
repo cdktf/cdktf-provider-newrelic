@@ -410,6 +410,7 @@ alertcondition.AlertCondition_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.property.entityGuid">EntityGuid</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.property.term">Term</a></code> | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertConditionTermList">AlertConditionTermList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.property.conditionScopeInput">ConditionScopeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -580,6 +581,16 @@ func Provisioners() *[]interface{}
 ```
 
 - *Type:* *[]interface{}
+
+---
+
+##### `EntityGuid`<sup>Required</sup> <a name="EntityGuid" id="@cdktf/provider-newrelic.alertCondition.AlertCondition.property.entityGuid"></a>
+
+```go
+func EntityGuid() *string
+```
+
+- *Type:* *string
 
 ---
 
