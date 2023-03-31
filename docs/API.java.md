@@ -27,6 +27,7 @@ The following submodules are available:
 - [dataNewrelicKeyTransaction](./dataNewrelicKeyTransaction.java.md)
 - [dataNewrelicNotificationDestination](./dataNewrelicNotificationDestination.java.md)
 - [dataNewrelicObfuscationExpression](./dataNewrelicObfuscationExpression.java.md)
+- [dataNewrelicServiceLevelAlertHelper](./dataNewrelicServiceLevelAlertHelper.java.md)
 - [dataNewrelicSyntheticsPrivateLocation](./dataNewrelicSyntheticsPrivateLocation.java.md)
 - [dataNewrelicSyntheticsSecureCredential](./dataNewrelicSyntheticsSecureCredential.java.md)
 - [dataNewrelicTestGrokPattern](./dataNewrelicTestGrokPattern.java.md)

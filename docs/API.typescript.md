@@ -27,6 +27,7 @@ The following submodules are available:
 - [dataNewrelicKeyTransaction](./dataNewrelicKeyTransaction.typescript.md)
 - [dataNewrelicNotificationDestination](./dataNewrelicNotificationDestination.typescript.md)
 - [dataNewrelicObfuscationExpression](./dataNewrelicObfuscationExpression.typescript.md)
+- [dataNewrelicServiceLevelAlertHelper](./dataNewrelicServiceLevelAlertHelper.typescript.md)
 - [dataNewrelicSyntheticsPrivateLocation](./dataNewrelicSyntheticsPrivateLocation.typescript.md)
 - [dataNewrelicSyntheticsSecureCredential](./dataNewrelicSyntheticsSecureCredential.typescript.md)
 - [dataNewrelicTestGrokPattern](./dataNewrelicTestGrokPattern.typescript.md)

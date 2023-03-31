@@ -27,6 +27,7 @@ The following submodules are available:
 - [dataNewrelicKeyTransaction](./dataNewrelicKeyTransaction.csharp.md)
 - [dataNewrelicNotificationDestination](./dataNewrelicNotificationDestination.csharp.md)
 - [dataNewrelicObfuscationExpression](./dataNewrelicObfuscationExpression.csharp.md)
+- [dataNewrelicServiceLevelAlertHelper](./dataNewrelicServiceLevelAlertHelper.csharp.md)
 - [dataNewrelicSyntheticsPrivateLocation](./dataNewrelicSyntheticsPrivateLocation.csharp.md)
 - [dataNewrelicSyntheticsSecureCredential](./dataNewrelicSyntheticsSecureCredential.csharp.md)
 - [dataNewrelicTestGrokPattern](./dataNewrelicTestGrokPattern.csharp.md)

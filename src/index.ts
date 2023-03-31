@@ -52,6 +52,7 @@ export * as dataNewrelicEntity from './data-newrelic-entity';
 export * as dataNewrelicKeyTransaction from './data-newrelic-key-transaction';
 export * as dataNewrelicNotificationDestination from './data-newrelic-notification-destination';
 export * as dataNewrelicObfuscationExpression from './data-newrelic-obfuscation-expression';
+export * as dataNewrelicServiceLevelAlertHelper from './data-newrelic-service-level-alert-helper';
 export * as dataNewrelicSyntheticsPrivateLocation from './data-newrelic-synthetics-private-location';
 export * as dataNewrelicSyntheticsSecureCredential from './data-newrelic-synthetics-secure-credential';
 export * as dataNewrelicTestGrokPattern from './data-newrelic-test-grok-pattern';
