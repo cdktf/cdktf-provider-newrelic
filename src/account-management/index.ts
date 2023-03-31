@@ -135,7 +135,7 @@ export class AccountManagement extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_account_management',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

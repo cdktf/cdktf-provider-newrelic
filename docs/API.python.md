@@ -27,6 +27,7 @@ The following submodules are available:
 - [dataNewrelicKeyTransaction](./dataNewrelicKeyTransaction.python.md)
 - [dataNewrelicNotificationDestination](./dataNewrelicNotificationDestination.python.md)
 - [dataNewrelicObfuscationExpression](./dataNewrelicObfuscationExpression.python.md)
+- [dataNewrelicServiceLevelAlertHelper](./dataNewrelicServiceLevelAlertHelper.python.md)
 - [dataNewrelicSyntheticsPrivateLocation](./dataNewrelicSyntheticsPrivateLocation.python.md)
 - [dataNewrelicSyntheticsSecureCredential](./dataNewrelicSyntheticsSecureCredential.python.md)
 - [dataNewrelicTestGrokPattern](./dataNewrelicTestGrokPattern.python.md)

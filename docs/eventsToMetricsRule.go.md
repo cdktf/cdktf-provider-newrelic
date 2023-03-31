@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/events_to
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/eventstometricsrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/eventstometricsrule"
 
 eventstometricsrule.NewEventsToMetricsRule(scope Construct, id *string, config EventsToMetricsRuleConfig) EventsToMetricsRule
 ```
@@ -294,7 +294,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/eventstometricsrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/eventstometricsrule"
 
 eventstometricsrule.EventsToMetricsRule_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/eventstometricsrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/eventstometricsrule"
 
 eventstometricsrule.EventsToMetricsRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ eventstometricsrule.EventsToMetricsRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.eventsToMetricsRule.EventsToMetricsRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/eventstometricsrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/eventstometricsrule"
 
 eventstometricsrule.EventsToMetricsRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.eventsToMetricsRule.EventsToMetricsRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/eventstometricsrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/eventstometricsrule"
 
 &eventstometricsrule.EventsToMetricsRuleConfig {
 	Connection: interface{},

@@ -27,6 +27,7 @@ The following submodules are available:
 - [dataNewrelicKeyTransaction](./dataNewrelicKeyTransaction.go.md)
 - [dataNewrelicNotificationDestination](./dataNewrelicNotificationDestination.go.md)
 - [dataNewrelicObfuscationExpression](./dataNewrelicObfuscationExpression.go.md)
+- [dataNewrelicServiceLevelAlertHelper](./dataNewrelicServiceLevelAlertHelper.go.md)
 - [dataNewrelicSyntheticsPrivateLocation](./dataNewrelicSyntheticsPrivateLocation.go.md)
 - [dataNewrelicSyntheticsSecureCredential](./dataNewrelicSyntheticsSecureCredential.go.md)
 - [dataNewrelicTestGrokPattern](./dataNewrelicTestGrokPattern.go.md)

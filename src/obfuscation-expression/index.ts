@@ -66,7 +66,7 @@ export class ObfuscationExpression extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_obfuscation_expression',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
