@@ -66,7 +66,7 @@ export class DataNewrelicServiceLevelAlertHelper extends cdktf.TerraformDataSour
       terraformResourceType: 'newrelic_service_level_alert_helper',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.20.0',
+        providerVersion: '3.20.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

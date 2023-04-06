@@ -439,7 +439,7 @@ export class NotificationDestination extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_notification_destination',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.20.0',
+        providerVersion: '3.20.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
