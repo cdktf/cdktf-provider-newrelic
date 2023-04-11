@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/service_l
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicServiceLevelAlertHelper.DataNewrelicServiceLevelAlertHelper.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelicservicelevelalerthelper"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicservicelevelalerthelper"
 
 datanewrelicservicelevelalerthelper.NewDataNewrelicServiceLevelAlertHelper(scope Construct, id *string, config DataNewrelicServiceLevelAlertHelperConfig) DataNewrelicServiceLevelAlertHelper
 ```
@@ -287,7 +287,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.dataNewrelicServiceLevelAlertHelper.DataNewrelicServiceLevelAlertHelper.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelicservicelevelalerthelper"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicservicelevelalerthelper"
 
 datanewrelicservicelevelalerthelper.DataNewrelicServiceLevelAlertHelper_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.dataNewrelicServiceLevelAlertHelper.DataNewrelicServiceLevelAlertHelper.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelicservicelevelalerthelper"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicservicelevelalerthelper"
 
 datanewrelicservicelevelalerthelper.DataNewrelicServiceLevelAlertHelper_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ datanewrelicservicelevelalerthelper.DataNewrelicServiceLevelAlertHelper_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-newrelic.dataNewrelicServiceLevelAlertHelper.DataNewrelicServiceLevelAlertHelper.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelicservicelevelalerthelper"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicservicelevelalerthelper"
 
 datanewrelicservicelevelalerthelper.DataNewrelicServiceLevelAlertHelper_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -708,7 +708,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataNewrelicServiceLevelAlertHelper.DataNewrelicServiceLevelAlertHelperConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelicservicelevelalerthelper"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicservicelevelalerthelper"
 
 &datanewrelicservicelevelalerthelper.DataNewrelicServiceLevelAlertHelperConfig {
 	Connection: interface{},
