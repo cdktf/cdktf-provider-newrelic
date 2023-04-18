@@ -1,3 +1,7 @@
+# `data_newrelic_key_transaction`
+
+Refer to the Terraform Registory for docs: [`data_newrelic_key_transaction`](https://www.terraform.io/docs/providers/newrelic/d/key_transaction).
+
 # `dataNewrelicKeyTransaction` Submodule <a name="`dataNewrelicKeyTransaction` Submodule" id="@cdktf/provider-newrelic.dataNewrelicKeyTransaction"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

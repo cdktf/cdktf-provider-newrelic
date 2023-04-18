@@ -1,3 +1,7 @@
+# `newrelic_cloud_azure_integrations`
+
+Refer to the Terraform Registory for docs: [`newrelic_cloud_azure_integrations`](https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations).
+
 # `cloudAzureIntegrations` Submodule <a name="`cloudAzureIntegrations` Submodule" id="@cdktf/provider-newrelic.cloudAzureIntegrations"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

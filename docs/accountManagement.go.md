@@ -1,3 +1,7 @@
+# `newrelic_account_management`
+
+Refer to the Terraform Registory for docs: [`newrelic_account_management`](https://www.terraform.io/docs/providers/newrelic/r/account_management).
+
 # `accountManagement` Submodule <a name="`accountManagement` Submodule" id="@cdktf/provider-newrelic.accountManagement"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

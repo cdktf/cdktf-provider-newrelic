@@ -1,3 +1,7 @@
+# `data_newrelic_synthetics_secure_credential`
+
+Refer to the Terraform Registory for docs: [`data_newrelic_synthetics_secure_credential`](https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential).
+
 # `dataNewrelicSyntheticsSecureCredential` Submodule <a name="`dataNewrelicSyntheticsSecureCredential` Submodule" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

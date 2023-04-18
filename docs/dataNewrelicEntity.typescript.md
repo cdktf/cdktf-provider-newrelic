@@ -1,3 +1,7 @@
+# `data_newrelic_entity`
+
+Refer to the Terraform Registory for docs: [`data_newrelic_entity`](https://www.terraform.io/docs/providers/newrelic/d/entity).
+
 # `dataNewrelicEntity` Submodule <a name="`dataNewrelicEntity` Submodule" id="@cdktf/provider-newrelic.dataNewrelicEntity"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
