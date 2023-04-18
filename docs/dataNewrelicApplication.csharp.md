@@ -1,6 +1,6 @@
 # `data_newrelic_application`
 
-Refer to the Terraform Registory for docs: [`data_newrelic_application`](https://www.terraform.io/docs/providers/newrelic/d/application).
+Refer to the Terraform Registory for docs: [`data_newrelic_application`](https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/application).
 
 # `dataNewrelicApplication` Submodule <a name="`dataNewrelicApplication` Submodule" id="@cdktf/provider-newrelic.dataNewrelicApplication"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_newrelic_application`](https:/
 
 ### DataNewrelicApplication <a name="DataNewrelicApplication" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/application newrelic_application}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/application newrelic_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.Initializer"></a>
 
@@ -345,7 +345,7 @@ DataNewrelicApplication.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -434,10 +434,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -570,7 +570,7 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new DataNewrelicApplicationConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -586,14 +586,14 @@ new DataNewrelicApplicationConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.name">Name</a></code> | <code>string</code> | The name of the application in New Relic. |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/application#id DataNewrelicApplication#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/application#id DataNewrelicApplication#id}. |
 
 ---
 
@@ -610,10 +610,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -677,7 +677,7 @@ public string Name { get; set; }
 
 The name of the application in New Relic.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/application#name DataNewrelicApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/application#name DataNewrelicApplication#name}
 
 ---
 
@@ -689,7 +689,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/application#id DataNewrelicApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/application#id DataNewrelicApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

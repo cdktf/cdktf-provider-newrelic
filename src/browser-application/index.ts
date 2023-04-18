@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/browser_application
+// https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,23 +10,23 @@ export interface BrowserApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account ID.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#account_id BrowserApplication#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#account_id BrowserApplication#account_id}
   */
   readonly accountId?: number;
   /**
   * Configure cookies. The default is enabled: true.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#cookies_enabled BrowserApplication#cookies_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#cookies_enabled BrowserApplication#cookies_enabled}
   */
   readonly cookiesEnabled?: boolean | cdktf.IResolvable;
   /**
   * Configure distributed tracing in browser apps. The default is enabled: true.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#distributed_tracing_enabled BrowserApplication#distributed_tracing_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#distributed_tracing_enabled BrowserApplication#distributed_tracing_enabled}
   */
   readonly distributedTracingEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#id BrowserApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#id BrowserApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,19 +35,19 @@ export interface BrowserApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Determines which browser loader is configured. The default is "SPA".
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#loader_type BrowserApplication#loader_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#loader_type BrowserApplication#loader_type}
   */
   readonly loaderType?: string;
   /**
   * The name of the application to monitor.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#name BrowserApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#name BrowserApplication#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application newrelic_browser_application}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application newrelic_browser_application}
 */
 export class BrowserApplication extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class BrowserApplication extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application newrelic_browser_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application newrelic_browser_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

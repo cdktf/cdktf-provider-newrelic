@@ -1,6 +1,6 @@
 # `newrelic_browser_application`
 
-Refer to the Terraform Registory for docs: [`newrelic_browser_application`](https://www.terraform.io/docs/providers/newrelic/r/browser_application).
+Refer to the Terraform Registory for docs: [`newrelic_browser_application`](https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application).
 
 # `browserApplication` Submodule <a name="`browserApplication` Submodule" id="@cdktf/provider-newrelic.browserApplication"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_browser_application`](http
 
 ### BrowserApplication <a name="BrowserApplication" id="@cdktf/provider-newrelic.browserApplication.BrowserApplication"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application newrelic_browser_application}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application newrelic_browser_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer"></a>
 
@@ -19,6 +19,7 @@ BrowserApplication.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -42,7 +43,7 @@ BrowserApplication.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -52,7 +53,7 @@ BrowserApplication.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | The account ID. |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer.parameter.cookiesEnabled">cookiesEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Configure cookies. The default is enabled: true. |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer.parameter.distributedTracingEnabled">distributedTracingEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Configure distributed tracing in browser apps. The default is enabled: true. |
-| <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#id BrowserApplication#id}. |
+| <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#id BrowserApplication#id}. |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer.parameter.loaderType">loaderType</a></code> | <code>java.lang.String</code> | Determines which browser loader is configured. The default is "SPA". |
 
 ---
@@ -83,7 +84,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -123,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the application to monitor.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#name BrowserApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#name BrowserApplication#name}
 
 ---
 
@@ -133,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 The account ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#account_id BrowserApplication#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#account_id BrowserApplication#account_id}
 
 ---
 
@@ -143,7 +144,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 Configure cookies. The default is enabled: true.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#cookies_enabled BrowserApplication#cookies_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#cookies_enabled BrowserApplication#cookies_enabled}
 
 ---
 
@@ -153,7 +154,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 Configure distributed tracing in browser apps. The default is enabled: true.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#distributed_tracing_enabled BrowserApplication#distributed_tracing_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#distributed_tracing_enabled BrowserApplication#distributed_tracing_enabled}
 
 ---
 
@@ -161,7 +162,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#id BrowserApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#id BrowserApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -174,7 +175,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Determines which browser loader is configured. The default is "SPA".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#loader_type BrowserApplication#loader_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#loader_type BrowserApplication#loader_type}
 
 ---
 
@@ -502,7 +503,7 @@ BrowserApplication.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -609,10 +610,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -827,6 +828,7 @@ BrowserApplicationConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -850,7 +852,7 @@ BrowserApplicationConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -860,7 +862,7 @@ BrowserApplicationConfig.builder()
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | The account ID. |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.cookiesEnabled">cookiesEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Configure cookies. The default is enabled: true. |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.distributedTracingEnabled">distributedTracingEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Configure distributed tracing in browser apps. The default is enabled: true. |
-| <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#id BrowserApplication#id}. |
+| <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#id BrowserApplication#id}. |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.loaderType">loaderType</a></code> | <code>java.lang.String</code> | Determines which browser loader is configured. The default is "SPA". |
 
 ---
@@ -878,10 +880,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -945,7 +947,7 @@ public java.lang.String getName();
 
 The name of the application to monitor.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#name BrowserApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#name BrowserApplication#name}
 
 ---
 
@@ -959,7 +961,7 @@ public java.lang.Number getAccountId();
 
 The account ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#account_id BrowserApplication#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#account_id BrowserApplication#account_id}
 
 ---
 
@@ -973,7 +975,7 @@ public java.lang.Object getCookiesEnabled();
 
 Configure cookies. The default is enabled: true.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#cookies_enabled BrowserApplication#cookies_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#cookies_enabled BrowserApplication#cookies_enabled}
 
 ---
 
@@ -987,7 +989,7 @@ public java.lang.Object getDistributedTracingEnabled();
 
 Configure distributed tracing in browser apps. The default is enabled: true.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#distributed_tracing_enabled BrowserApplication#distributed_tracing_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#distributed_tracing_enabled BrowserApplication#distributed_tracing_enabled}
 
 ---
 
@@ -999,7 +1001,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#id BrowserApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#id BrowserApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1016,7 +1018,7 @@ public java.lang.String getLoaderType();
 
 Determines which browser loader is configured. The default is "SPA".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#loader_type BrowserApplication#loader_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#loader_type BrowserApplication#loader_type}
 
 ---
 

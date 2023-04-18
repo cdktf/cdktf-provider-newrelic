@@ -1,6 +1,6 @@
 # `newrelic_browser_application`
 
-Refer to the Terraform Registory for docs: [`newrelic_browser_application`](https://www.terraform.io/docs/providers/newrelic/r/browser_application).
+Refer to the Terraform Registory for docs: [`newrelic_browser_application`](https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application).
 
 # `browserApplication` Submodule <a name="`browserApplication` Submodule" id="@cdktf/provider-newrelic.browserApplication"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`newrelic_browser_application`](http
 
 ### BrowserApplication <a name="BrowserApplication" id="@cdktf/provider-newrelic.browserApplication.BrowserApplication"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application newrelic_browser_application}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application newrelic_browser_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/browserapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/browserapplication"
 
 browserapplication.NewBrowserApplication(scope Construct, id *string, config BrowserApplicationConfig) BrowserApplication
 ```
@@ -305,7 +305,7 @@ func ResetLoaderType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.browserApplication.BrowserApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/browserapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/browserapplication"
 
 browserapplication.BrowserApplication_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.browserApplication.BrowserApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/browserapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/browserapplication"
 
 browserapplication.BrowserApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ browserapplication.BrowserApplication_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.browserApplication.BrowserApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/browserapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/browserapplication"
 
 browserapplication.BrowserApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ browserapplication.BrowserApplication_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -481,10 +481,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-newrelic.browserApplication.BrowserApplication.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -693,11 +693,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/browserapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/browserapplication"
 
 &browserapplication.BrowserApplicationConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -717,7 +717,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/browserapplicati
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -727,7 +727,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/browserapplicati
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The account ID. |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.cookiesEnabled">CookiesEnabled</a></code> | <code>interface{}</code> | Configure cookies. The default is enabled: true. |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.distributedTracingEnabled">DistributedTracingEnabled</a></code> | <code>interface{}</code> | Configure distributed tracing in browser apps. The default is enabled: true. |
-| <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#id BrowserApplication#id}. |
+| <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#id BrowserApplication#id}. |
 | <code><a href="#@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.loaderType">LoaderType</a></code> | <code>*string</code> | Determines which browser loader is configured. The default is "SPA". |
 
 ---
@@ -745,10 +745,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -812,7 +812,7 @@ Name *string
 
 The name of the application to monitor.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#name BrowserApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#name BrowserApplication#name}
 
 ---
 
@@ -826,7 +826,7 @@ AccountId *f64
 
 The account ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#account_id BrowserApplication#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#account_id BrowserApplication#account_id}
 
 ---
 
@@ -840,7 +840,7 @@ CookiesEnabled interface{}
 
 Configure cookies. The default is enabled: true.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#cookies_enabled BrowserApplication#cookies_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#cookies_enabled BrowserApplication#cookies_enabled}
 
 ---
 
@@ -854,7 +854,7 @@ DistributedTracingEnabled interface{}
 
 Configure distributed tracing in browser apps. The default is enabled: true.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#distributed_tracing_enabled BrowserApplication#distributed_tracing_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#distributed_tracing_enabled BrowserApplication#distributed_tracing_enabled}
 
 ---
 
@@ -866,7 +866,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#id BrowserApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#id BrowserApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -883,7 +883,7 @@ LoaderType *string
 
 Determines which browser loader is configured. The default is "SPA".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/browser_application#loader_type BrowserApplication#loader_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/browser_application#loader_type BrowserApplication#loader_type}
 
 ---
 

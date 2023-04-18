@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/d/cloud_account
+// https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/cloud_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface DataNewrelicCloudAccountConfig extends cdktf.TerraformMetaArgum
   /**
   * The ID of the New Relic account.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/cloud_account#account_id DataNewrelicCloudAccount#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/cloud_account#account_id DataNewrelicCloudAccount#account_id}
   */
   readonly accountId?: number;
   /**
   * The cloud provider of the account, e.g. aws, gcp, azure
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/cloud_account#cloud_provider DataNewrelicCloudAccount#cloud_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/cloud_account#cloud_provider DataNewrelicCloudAccount#cloud_provider}
   */
   readonly cloudProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/cloud_account#id DataNewrelicCloudAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,13 +29,13 @@ export interface DataNewrelicCloudAccountConfig extends cdktf.TerraformMetaArgum
   /**
   * The name of the cloud account.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/cloud_account#name DataNewrelicCloudAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/cloud_account#name DataNewrelicCloudAccount#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/cloud_account newrelic_cloud_account}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/cloud_account newrelic_cloud_account}
 */
 export class DataNewrelicCloudAccount extends cdktf.TerraformDataSource {
 
@@ -49,7 +49,7 @@ export class DataNewrelicCloudAccount extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/cloud_account newrelic_cloud_account} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/cloud_account newrelic_cloud_account} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

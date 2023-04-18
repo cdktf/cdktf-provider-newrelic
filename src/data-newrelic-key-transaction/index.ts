@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/d/key_transaction
+// https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/key_transaction
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataNewrelicKeyTransactionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/key_transaction#id DataNewrelicKeyTransaction#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/key_transaction#id DataNewrelicKeyTransaction#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,13 +17,13 @@ export interface DataNewrelicKeyTransactionConfig extends cdktf.TerraformMetaArg
   /**
   * The name of the key transaction in New Relic.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/key_transaction#name DataNewrelicKeyTransaction#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/key_transaction#name DataNewrelicKeyTransaction#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/key_transaction newrelic_key_transaction}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/key_transaction newrelic_key_transaction}
 */
 export class DataNewrelicKeyTransaction extends cdktf.TerraformDataSource {
 
@@ -37,7 +37,7 @@ export class DataNewrelicKeyTransaction extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/key_transaction newrelic_key_transaction} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/key_transaction newrelic_key_transaction} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

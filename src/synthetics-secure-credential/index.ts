@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential
+// https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_secure_credential
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface SyntheticsSecureCredentialConfig extends cdktf.TerraformMetaArg
   /**
   * The New Relic account ID where you want to create the secure credential.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#account_id SyntheticsSecureCredential#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_secure_credential#account_id SyntheticsSecureCredential#account_id}
   */
   readonly accountId?: number;
   /**
   * The secure credential's description.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#description SyntheticsSecureCredential#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_secure_credential#description SyntheticsSecureCredential#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#id SyntheticsSecureCredential#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_secure_credential#id SyntheticsSecureCredential#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,36 +29,36 @@ export interface SyntheticsSecureCredentialConfig extends cdktf.TerraformMetaArg
   /**
   * The secure credential's key name. Regardless of the case used in the configuration, the provider will provide an upcased key to the underlying API.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#key SyntheticsSecureCredential#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_secure_credential#key SyntheticsSecureCredential#key}
   */
   readonly key: string;
   /**
   * The time the secure credential was last updated.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#last_updated SyntheticsSecureCredential#last_updated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_secure_credential#last_updated SyntheticsSecureCredential#last_updated}
   */
   readonly lastUpdated?: string;
   /**
   * The secure credential's value.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#value SyntheticsSecureCredential#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_secure_credential#value SyntheticsSecureCredential#value}
   */
   readonly value: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#timeouts SyntheticsSecureCredential#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_secure_credential#timeouts SyntheticsSecureCredential#timeouts}
   */
   readonly timeouts?: SyntheticsSecureCredentialTimeouts;
 }
 export interface SyntheticsSecureCredentialTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#read SyntheticsSecureCredential#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_secure_credential#read SyntheticsSecureCredential#read}
   */
   readonly read?: string;
 }
 
-export function syntheticsSecureCredentialTimeoutsToTerraform(struct?: SyntheticsSecureCredentialTimeoutsOutputReference | SyntheticsSecureCredentialTimeouts | cdktf.IResolvable): any {
+export function syntheticsSecureCredentialTimeoutsToTerraform(struct?: SyntheticsSecureCredentialTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -77,7 +77,7 @@ export class SyntheticsSecureCredentialTimeoutsOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): SyntheticsSecureCredentialTimeouts | cdktf.IResolvable | undefined {
@@ -128,7 +128,7 @@ export class SyntheticsSecureCredentialTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential newrelic_synthetics_secure_credential}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_secure_credential newrelic_synthetics_secure_credential}
 */
 export class SyntheticsSecureCredential extends cdktf.TerraformResource {
 
@@ -142,7 +142,7 @@ export class SyntheticsSecureCredential extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential newrelic_synthetics_secure_credential} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_secure_credential newrelic_synthetics_secure_credential} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
