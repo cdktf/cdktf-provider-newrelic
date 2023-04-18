@@ -1,3 +1,7 @@
+# `newrelic_cloud_gcp_link_account`
+
+Refer to the Terraform Registory for docs: [`newrelic_cloud_gcp_link_account`](https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_link_account).
+
 # `cloudGcpLinkAccount` Submodule <a name="`cloudGcpLinkAccount` Submodule" id="@cdktf/provider-newrelic.cloudGcpLinkAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

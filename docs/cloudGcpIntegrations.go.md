@@ -1,3 +1,7 @@
+# `newrelic_cloud_gcp_integrations`
+
+Refer to the Terraform Registory for docs: [`newrelic_cloud_gcp_integrations`](https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations).
+
 # `cloudGcpIntegrations` Submodule <a name="`cloudGcpIntegrations` Submodule" id="@cdktf/provider-newrelic.cloudGcpIntegrations"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

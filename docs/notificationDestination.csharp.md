@@ -1,3 +1,7 @@
+# `newrelic_notification_destination`
+
+Refer to the Terraform Registory for docs: [`newrelic_notification_destination`](https://www.terraform.io/docs/providers/newrelic/r/notification_destination).
+
 # `notificationDestination` Submodule <a name="`notificationDestination` Submodule" id="@cdktf/provider-newrelic.notificationDestination"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

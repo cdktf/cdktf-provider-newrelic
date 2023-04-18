@@ -1,3 +1,7 @@
+# `newrelic_alert_channel`
+
+Refer to the Terraform Registory for docs: [`newrelic_alert_channel`](https://www.terraform.io/docs/providers/newrelic/r/alert_channel).
+
 # `alertChannel` Submodule <a name="`alertChannel` Submodule" id="@cdktf/provider-newrelic.alertChannel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

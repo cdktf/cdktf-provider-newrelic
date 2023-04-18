@@ -1,3 +1,7 @@
+# `newrelic_insights_event`
+
+Refer to the Terraform Registory for docs: [`newrelic_insights_event`](https://www.terraform.io/docs/providers/newrelic/r/insights_event).
+
 # `insightsEvent` Submodule <a name="`insightsEvent` Submodule" id="@cdktf/provider-newrelic.insightsEvent"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

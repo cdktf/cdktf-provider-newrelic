@@ -1,3 +1,7 @@
+# `newrelic_infra_alert_condition`
+
+Refer to the Terraform Registory for docs: [`newrelic_infra_alert_condition`](https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition).
+
 # `infraAlertCondition` Submodule <a name="`infraAlertCondition` Submodule" id="@cdktf/provider-newrelic.infraAlertCondition"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `newrelic_synthetics_script_monitor`
+
+Refer to the Terraform Registory for docs: [`newrelic_synthetics_script_monitor`](https://www.terraform.io/docs/providers/newrelic/r/synthetics_script_monitor).
+
 # `syntheticsScriptMonitor` Submodule <a name="`syntheticsScriptMonitor` Submodule" id="@cdktf/provider-newrelic.syntheticsScriptMonitor"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

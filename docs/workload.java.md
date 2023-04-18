@@ -1,3 +1,7 @@
+# `newrelic_workload`
+
+Refer to the Terraform Registory for docs: [`newrelic_workload`](https://www.terraform.io/docs/providers/newrelic/r/workload).
+
 # `workload` Submodule <a name="`workload` Submodule" id="@cdktf/provider-newrelic.workload"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `newrelic_notification_channel`
+
+Refer to the Terraform Registory for docs: [`newrelic_notification_channel`](https://www.terraform.io/docs/providers/newrelic/r/notification_channel).
+
 # `notificationChannel` Submodule <a name="`notificationChannel` Submodule" id="@cdktf/provider-newrelic.notificationChannel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

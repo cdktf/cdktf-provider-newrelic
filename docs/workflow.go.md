@@ -1,3 +1,7 @@
+# `newrelic_workflow`
+
+Refer to the Terraform Registory for docs: [`newrelic_workflow`](https://www.terraform.io/docs/providers/newrelic/r/workflow).
+
 # `workflow` Submodule <a name="`workflow` Submodule" id="@cdktf/provider-newrelic.workflow"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

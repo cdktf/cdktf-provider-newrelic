@@ -1,3 +1,7 @@
+# `data_newrelic_service_level_alert_helper`
+
+Refer to the Terraform Registory for docs: [`data_newrelic_service_level_alert_helper`](https://www.terraform.io/docs/providers/newrelic/d/service_level_alert_helper).
+
 # `dataNewrelicServiceLevelAlertHelper` Submodule <a name="`dataNewrelicServiceLevelAlertHelper` Submodule" id="@cdktf/provider-newrelic.dataNewrelicServiceLevelAlertHelper"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

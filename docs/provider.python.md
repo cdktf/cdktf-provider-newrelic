@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`newrelic`](https://www.terraform.io/docs/providers/newrelic).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-newrelic.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `newrelic_data_partition_rule`
+
+Refer to the Terraform Registory for docs: [`newrelic_data_partition_rule`](https://www.terraform.io/docs/providers/newrelic/r/data_partition_rule).
+
 # `dataPartitionRule` Submodule <a name="`dataPartitionRule` Submodule" id="@cdktf/provider-newrelic.dataPartitionRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
