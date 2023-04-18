@@ -1,6 +1,6 @@
 # `newrelic_workload`
 
-Refer to the Terraform Registory for docs: [`newrelic_workload`](https://www.terraform.io/docs/providers/newrelic/r/workload).
+Refer to the Terraform Registory for docs: [`newrelic_workload`](https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload).
 
 # `workload` Submodule <a name="`workload` Submodule" id="@cdktf/provider-newrelic.workload"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_workload`](https://www.ter
 
 ### Workload <a name="Workload" id="@cdktf/provider-newrelic.workload.Workload"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/workload newrelic_workload}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload newrelic_workload}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.workload.Workload.Initializer"></a>
 
@@ -19,6 +19,7 @@ Workload.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -44,7 +45,7 @@ Workload.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -55,7 +56,7 @@ Workload.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Relevant information about the workload. |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.entityGuids">entityGuids</a></code> | <code>java.util.List<java.lang.String></code> | A list of entity GUIDs manually assigned to this workload. |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.entitySearchQuery">entitySearchQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>></code> | entity_search_query block. |
-| <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#id Workload#id}. |
+| <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#id Workload#id}. |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.scopeAccountIds">scopeAccountIds</a></code> | <code>java.util.List<java.lang.Number></code> | A list of account IDs that will be used to get entities from. |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.statusConfigAutomatic">statusConfigAutomatic</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomatic">WorkloadStatusConfigAutomatic</a></code> | status_config_automatic block. |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.statusConfigStatic">statusConfigStatic</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStatic">WorkloadStatusConfigStatic</a></code> | status_config_static block. |
@@ -88,7 +89,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -128,7 +129,7 @@ Must be unique amongst siblings in the same scope
 
 The workload's name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#name Workload#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#name Workload#name}
 
 ---
 
@@ -138,7 +139,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 The New Relic account ID where you want to create the workload.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#account_id Workload#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#account_id Workload#account_id}
 
 ---
 
@@ -148,7 +149,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 Relevant information about the workload.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#description Workload#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#description Workload#description}
 
 ---
 
@@ -158,7 +159,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 A list of entity GUIDs manually assigned to this workload.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#entity_guids Workload#entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#entity_guids Workload#entity_guids}
 
 ---
 
@@ -168,7 +169,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 entity_search_query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#entity_search_query Workload#entity_search_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#entity_search_query Workload#entity_search_query}
 
 ---
 
@@ -176,7 +177,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#id Workload#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#id Workload#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -189,7 +190,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 A list of account IDs that will be used to get entities from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#scope_account_ids Workload#scope_account_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#scope_account_ids Workload#scope_account_ids}
 
 ---
 
@@ -199,7 +200,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 status_config_automatic block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#status_config_automatic Workload#status_config_automatic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#status_config_automatic Workload#status_config_automatic}
 
 ---
 
@@ -209,7 +210,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newre
 
 status_config_static block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#status_config_static Workload#status_config_static}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#status_config_static Workload#status_config_static}
 
 ---
 
@@ -597,7 +598,7 @@ Workload.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -713,10 +714,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.workload.Workload.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1021,6 +1022,7 @@ WorkloadConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -1046,7 +1048,7 @@ WorkloadConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1057,7 +1059,7 @@ WorkloadConfig.builder()
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.description">description</a></code> | <code>java.lang.String</code> | Relevant information about the workload. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.entityGuids">entityGuids</a></code> | <code>java.util.List<java.lang.String></code> | A list of entity GUIDs manually assigned to this workload. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.entitySearchQuery">entitySearchQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>></code> | entity_search_query block. |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#id Workload#id}. |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#id Workload#id}. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.scopeAccountIds">scopeAccountIds</a></code> | <code>java.util.List<java.lang.Number></code> | A list of account IDs that will be used to get entities from. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.statusConfigAutomatic">statusConfigAutomatic</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomatic">WorkloadStatusConfigAutomatic</a></code> | status_config_automatic block. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.statusConfigStatic">statusConfigStatic</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStatic">WorkloadStatusConfigStatic</a></code> | status_config_static block. |
@@ -1077,10 +1079,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.workload.WorkloadConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1144,7 +1146,7 @@ public java.lang.String getName();
 
 The workload's name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#name Workload#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#name Workload#name}
 
 ---
 
@@ -1158,7 +1160,7 @@ public java.lang.Number getAccountId();
 
 The New Relic account ID where you want to create the workload.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#account_id Workload#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#account_id Workload#account_id}
 
 ---
 
@@ -1172,7 +1174,7 @@ public java.lang.String getDescription();
 
 Relevant information about the workload.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#description Workload#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#description Workload#description}
 
 ---
 
@@ -1186,7 +1188,7 @@ public java.util.List<java.lang.String> getEntityGuids();
 
 A list of entity GUIDs manually assigned to this workload.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#entity_guids Workload#entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#entity_guids Workload#entity_guids}
 
 ---
 
@@ -1200,7 +1202,7 @@ public java.lang.Object getEntitySearchQuery();
 
 entity_search_query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#entity_search_query Workload#entity_search_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#entity_search_query Workload#entity_search_query}
 
 ---
 
@@ -1212,7 +1214,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#id Workload#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#id Workload#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1229,7 +1231,7 @@ public java.util.List<java.lang.Number> getScopeAccountIds();
 
 A list of account IDs that will be used to get entities from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#scope_account_ids Workload#scope_account_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#scope_account_ids Workload#scope_account_ids}
 
 ---
 
@@ -1243,7 +1245,7 @@ public WorkloadStatusConfigAutomatic getStatusConfigAutomatic();
 
 status_config_automatic block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#status_config_automatic Workload#status_config_automatic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#status_config_automatic Workload#status_config_automatic}
 
 ---
 
@@ -1257,7 +1259,7 @@ public WorkloadStatusConfigStatic getStatusConfigStatic();
 
 status_config_static block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#status_config_static Workload#status_config_static}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#status_config_static Workload#status_config_static}
 
 ---
 
@@ -1291,7 +1293,7 @@ public java.lang.String getQuery();
 
 The query.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#query Workload#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#query Workload#query}
 
 ---
 
@@ -1331,7 +1333,7 @@ public java.lang.Object getEnabled();
 
 Whether the automatic status configuration is enabled or not.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#enabled Workload#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#enabled Workload#enabled}
 
 ---
 
@@ -1345,7 +1347,7 @@ public WorkloadStatusConfigAutomaticRemainingEntitiesRule getRemainingEntitiesRu
 
 remaining_entities_rule block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#remaining_entities_rule Workload#remaining_entities_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#remaining_entities_rule Workload#remaining_entities_rule}
 
 ---
 
@@ -1359,7 +1361,7 @@ public java.lang.Object getRule();
 
 rule block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#rule Workload#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#rule Workload#rule}
 
 ---
 
@@ -1393,7 +1395,7 @@ public WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRo
 
 remaining_entities_rule_rollup block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#remaining_entities_rule_rollup Workload#remaining_entities_rule_rollup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#remaining_entities_rule_rollup Workload#remaining_entities_rule_rollup}
 
 ---
 
@@ -1433,7 +1435,7 @@ public java.lang.String getGroupBy();
 
 The grouping to be applied to the remaining entities.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#group_by Workload#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#group_by Workload#group_by}
 
 ---
 
@@ -1447,7 +1449,7 @@ public java.lang.String getStrategy();
 
 The rollup strategy that is applied to a group of entities.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#strategy Workload#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#strategy Workload#strategy}
 
 ---
 
@@ -1463,7 +1465,7 @@ Type of threshold defined for the rule.
 
 This is an optional field that only applies when strategy is WORST_STATUS_WINS. Use a threshold to roll up the worst status only after a certain amount of entities are not operational.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#threshold_type Workload#threshold_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#threshold_type Workload#threshold_type}
 
 ---
 
@@ -1479,7 +1481,7 @@ Threshold value defined for the rule.
 
 This optional field is used in combination with thresholdType. If the threshold type is null, the threshold value will be ignored.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#threshold_value Workload#threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#threshold_value Workload#threshold_value}
 
 ---
 
@@ -1518,7 +1520,7 @@ public WorkloadStatusConfigAutomaticRuleRollup getRollup();
 
 rollup block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#rollup Workload#rollup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#rollup Workload#rollup}
 
 ---
 
@@ -1532,7 +1534,7 @@ public java.util.List<java.lang.String> getEntityGuids();
 
 A list of entity GUIDs composing the rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#entity_guids Workload#entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#entity_guids Workload#entity_guids}
 
 ---
 
@@ -1546,7 +1548,7 @@ public java.lang.Object getNrqlQuery();
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#nrql_query Workload#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#nrql_query Workload#nrql_query}
 
 ---
 
@@ -1580,7 +1582,7 @@ public java.lang.String getQuery();
 
 The entity search query that is used to perform the search of a group of entities.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#query Workload#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#query Workload#query}
 
 ---
 
@@ -1618,7 +1620,7 @@ public java.lang.String getStrategy();
 
 The rollup strategy that is applied to a group of entities.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#strategy Workload#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#strategy Workload#strategy}
 
 ---
 
@@ -1634,7 +1636,7 @@ Type of threshold defined for the rule.
 
 This is an optional field that only applies when strategy is WORST_STATUS_WINS. Use a threshold to roll up the worst status only after a certain amount of entities are not operational.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#threshold_type Workload#threshold_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#threshold_type Workload#threshold_type}
 
 ---
 
@@ -1650,7 +1652,7 @@ Threshold value defined for the rule.
 
 This optional field is used in combination with thresholdType. If the threshold type is null, the threshold value will be ignored.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#threshold_value Workload#threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#threshold_value Workload#threshold_value}
 
 ---
 
@@ -1691,7 +1693,7 @@ public java.lang.Object getEnabled();
 
 Whether the static status configuration is enabled or not.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#enabled Workload#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#enabled Workload#enabled}
 
 ---
 
@@ -1705,7 +1707,7 @@ public java.lang.String getStatus();
 
 The status of the workload.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#status Workload#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#status Workload#status}
 
 ---
 
@@ -1719,7 +1721,7 @@ public java.lang.String getDescription();
 
 A description that provides additional details about the status of the workload.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#description Workload#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#description Workload#description}
 
 ---
 
@@ -1733,7 +1735,7 @@ public java.lang.String getSummary();
 
 A short description of the status of the workload.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#summary Workload#summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#summary Workload#summary}
 
 ---
 
