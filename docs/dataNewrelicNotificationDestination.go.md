@@ -1,6 +1,6 @@
 # `data_newrelic_notification_destination`
 
-Refer to the Terraform Registory for docs: [`data_newrelic_notification_destination`](https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/notification_destination).
+Refer to the Terraform Registory for docs: [`data_newrelic_notification_destination`](https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/data-sources/notification_destination).
 
 # `dataNewrelicNotificationDestination` Submodule <a name="`dataNewrelicNotificationDestination` Submodule" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_newrelic_notification_destinat
 
 ### DataNewrelicNotificationDestination <a name="DataNewrelicNotificationDestination" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/notification_destination newrelic_notification_destination}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/data-sources/notification_destination newrelic_notification_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicnotificationdestination"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicnotificationdestination"
 
 datanewrelicnotificationdestination.NewDataNewrelicNotificationDestination(scope Construct, id *string, config DataNewrelicNotificationDestinationConfig) DataNewrelicNotificationDestination
 ```
@@ -277,7 +277,7 @@ func ResetAccountId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicnotificationdestination"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicnotificationdestination"
 
 datanewrelicnotificationdestination.DataNewrelicNotificationDestination_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicnotificationdestination"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicnotificationdestination"
 
 datanewrelicnotificationdestination.DataNewrelicNotificationDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datanewrelicnotificationdestination.DataNewrelicNotificationDestination_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicnotificationdestination"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicnotificationdestination"
 
 datanewrelicnotificationdestination.DataNewrelicNotificationDestination_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicnotificationdestination"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicnotificationdestination"
 
 &datanewrelicnotificationdestination.DataNewrelicNotificationDestinationConfig {
 	Connection: interface{},
@@ -710,7 +710,7 @@ Id *string
 
 The ID of the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -727,7 +727,7 @@ AccountId *f64
 
 The account ID under which to put the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
 
 ---
 
@@ -736,7 +736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicnotificationdestination"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicnotificationdestination"
 
 &datanewrelicnotificationdestination.DataNewrelicNotificationDestinationProperty {
 
@@ -751,7 +751,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicnoti
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationPropertyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicnotificationdestination"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicnotificationdestination"
 
 datanewrelicnotificationdestination.NewDataNewrelicNotificationDestinationPropertyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNewrelicNotificationDestinationPropertyList
 ```
@@ -883,7 +883,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicnotificationdestination"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicnotificationdestination"
 
 datanewrelicnotificationdestination.NewDataNewrelicNotificationDestinationPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNewrelicNotificationDestinationPropertyOutputReference
 ```

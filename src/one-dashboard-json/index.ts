@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json
+// https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface OneDashboardJsonConfig extends cdktf.TerraformMetaArguments {
   /**
   * The New Relic account ID where you want to create the dashboard.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json#account_id OneDashboardJson#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json#account_id OneDashboardJson#account_id}
   */
   readonly accountId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json#id OneDashboardJson#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json#id OneDashboardJson#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,23 +23,23 @@ export interface OneDashboardJsonConfig extends cdktf.TerraformMetaArguments {
   /**
   * The dashboard's json.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json#json OneDashboardJson#json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json#json OneDashboardJson#json}
   */
   readonly json: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json#timeouts OneDashboardJson#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json#timeouts OneDashboardJson#timeouts}
   */
   readonly timeouts?: OneDashboardJsonTimeouts;
 }
 export interface OneDashboardJsonTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json#create OneDashboardJson#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json#create OneDashboardJson#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json#update OneDashboardJson#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json#update OneDashboardJson#update}
   */
   readonly update?: string;
 }
@@ -137,7 +137,7 @@ export class OneDashboardJsonTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json newrelic_one_dashboard_json}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json newrelic_one_dashboard_json}
 */
 export class OneDashboardJson extends cdktf.TerraformResource {
 
@@ -151,7 +151,7 @@ export class OneDashboardJson extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json newrelic_one_dashboard_json} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json newrelic_one_dashboard_json} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -162,7 +162,7 @@ export class OneDashboardJson extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_one_dashboard_json',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.20.2',
+        providerVersion: '3.21.3',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
