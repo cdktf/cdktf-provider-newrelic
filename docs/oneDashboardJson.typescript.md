@@ -1,6 +1,6 @@
 # `newrelic_one_dashboard_json`
 
-Refer to the Terraform Registory for docs: [`newrelic_one_dashboard_json`](https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json).
+Refer to the Terraform Registory for docs: [`newrelic_one_dashboard_json`](https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json).
 
 # `oneDashboardJson` Submodule <a name="`oneDashboardJson` Submodule" id="@cdktf/provider-newrelic.oneDashboardJson"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_one_dashboard_json`](https
 
 ### OneDashboardJson <a name="OneDashboardJson" id="@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJson"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json newrelic_one_dashboard_json}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json newrelic_one_dashboard_json}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJson.Initializer"></a>
 
@@ -688,7 +688,7 @@ const oneDashboardJsonConfig: oneDashboardJson.OneDashboardJsonConfig = { ... }
 | <code><a href="#@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJsonConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJsonConfig.property.json">json</a></code> | <code>string</code> | The dashboard's json. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJsonConfig.property.accountId">accountId</a></code> | <code>number</code> | The New Relic account ID where you want to create the dashboard. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJsonConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json#id OneDashboardJson#id}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJsonConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json#id OneDashboardJson#id}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJsonConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJsonTimeouts">OneDashboardJsonTimeouts</a></code> | timeouts block. |
 
 ---
@@ -773,7 +773,7 @@ public readonly json: string;
 
 The dashboard's json.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json#json OneDashboardJson#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json#json OneDashboardJson#json}
 
 ---
 
@@ -787,7 +787,7 @@ public readonly accountId: number;
 
 The New Relic account ID where you want to create the dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json#account_id OneDashboardJson#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json#account_id OneDashboardJson#account_id}
 
 ---
 
@@ -799,7 +799,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json#id OneDashboardJson#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json#id OneDashboardJson#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -816,7 +816,7 @@ public readonly timeouts: OneDashboardJsonTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json#timeouts OneDashboardJson#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json#timeouts OneDashboardJson#timeouts}
 
 ---
 
@@ -834,8 +834,8 @@ const oneDashboardJsonTimeouts: oneDashboardJson.OneDashboardJsonTimeouts = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJsonTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json#create OneDashboardJson#create}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJsonTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json#update OneDashboardJson#update}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJsonTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json#create OneDashboardJson#create}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJsonTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json#update OneDashboardJson#update}. |
 
 ---
 
@@ -847,7 +847,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json#create OneDashboardJson#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json#create OneDashboardJson#create}.
 
 ---
 
@@ -859,7 +859,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/one_dashboard_json#update OneDashboardJson#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_json#update OneDashboardJson#update}.
 
 ---
 
