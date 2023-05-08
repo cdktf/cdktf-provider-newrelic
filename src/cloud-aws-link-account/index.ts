@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_link_account
+// https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_link_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface CloudAwsLinkAccountConfig extends cdktf.TerraformMetaArguments 
   /**
   * The New Relic account ID where you want to link the AWS account.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_link_account#account_id CloudAwsLinkAccount#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_link_account#account_id CloudAwsLinkAccount#account_id}
   */
   readonly accountId?: number;
   /**
   * The AWS role ARN.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_link_account#arn CloudAwsLinkAccount#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_link_account#arn CloudAwsLinkAccount#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_link_account#id CloudAwsLinkAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_link_account#id CloudAwsLinkAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,25 +29,25 @@ export interface CloudAwsLinkAccountConfig extends cdktf.TerraformMetaArguments 
   /**
   * How metrics will be collected. Defaults to `PULL` if empty.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_link_account#metric_collection_mode CloudAwsLinkAccount#metric_collection_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_link_account#metric_collection_mode CloudAwsLinkAccount#metric_collection_mode}
   */
   readonly metricCollectionMode?: string;
   /**
   * The name of the linked account.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_link_account#name CloudAwsLinkAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_link_account#name CloudAwsLinkAccount#name}
   */
   readonly name: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_link_account#timeouts CloudAwsLinkAccount#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_link_account#timeouts CloudAwsLinkAccount#timeouts}
   */
   readonly timeouts?: CloudAwsLinkAccountTimeouts;
 }
 export interface CloudAwsLinkAccountTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_link_account#create CloudAwsLinkAccount#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_link_account#create CloudAwsLinkAccount#create}
   */
   readonly create?: string;
 }
@@ -122,7 +122,7 @@ export class CloudAwsLinkAccountTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account}
 */
 export class CloudAwsLinkAccount extends cdktf.TerraformResource {
 
@@ -136,7 +136,7 @@ export class CloudAwsLinkAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -147,7 +147,7 @@ export class CloudAwsLinkAccount extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_aws_link_account',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.21.3',
+        providerVersion: '3.22.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

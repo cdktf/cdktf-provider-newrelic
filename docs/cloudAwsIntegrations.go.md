@@ -1,6 +1,6 @@
 # `newrelic_cloud_aws_integrations`
 
-Refer to the Terraform Registory for docs: [`newrelic_cloud_aws_integrations`](https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations).
+Refer to the Terraform Registory for docs: [`newrelic_cloud_aws_integrations`](https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations).
 
 # `cloudAwsIntegrations` Submodule <a name="`cloudAwsIntegrations` Submodule" id="@cdktf/provider-newrelic.cloudAwsIntegrations"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`newrelic_cloud_aws_integrations`](h
 
 ### CloudAwsIntegrations <a name="CloudAwsIntegrations" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrations(scope Construct, id *string, config CloudAwsIntegrationsConfig) CloudAwsIntegrations
 ```
@@ -444,7 +444,7 @@ func ResetXRay()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 cloudawsintegrations.CloudAwsIntegrations_IsConstruct(x interface{}) *bool
 ```
@@ -476,7 +476,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 cloudawsintegrations.CloudAwsIntegrations_IsTerraformElement(x interface{}) *bool
 ```
@@ -490,7 +490,7 @@ cloudawsintegrations.CloudAwsIntegrations_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 cloudawsintegrations.CloudAwsIntegrations_IsTerraformResource(x interface{}) *bool
 ```
@@ -931,7 +931,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsBilling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsBilling {
 	MetricsPollingInterval: *f64,
@@ -956,7 +956,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -965,7 +965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudtrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsCloudtrail {
 	AwsRegions: *[]*string,
@@ -992,7 +992,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -1006,7 +1006,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1015,7 +1015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsConfig {
 	Connection: interface{},
@@ -1027,15 +1027,15 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrat
 	Provisioners: *[]interface{},
 	LinkedAccountId: *f64,
 	AccountId: *f64,
-	Billing: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7.cloudAwsIntegrations.CloudAwsIntegrationsBilling,
-	Cloudtrail: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7.cloudAwsIntegrations.CloudAwsIntegrationsCloudtrail,
-	DocDb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7.cloudAwsIntegrations.CloudAwsIntegrationsDocDb,
-	Health: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7.cloudAwsIntegrations.CloudAwsIntegrationsHealth,
+	Billing: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsIntegrations.CloudAwsIntegrationsBilling,
+	Cloudtrail: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudtrail,
+	DocDb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDocDb,
+	Health: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsIntegrations.CloudAwsIntegrationsHealth,
 	Id: *string,
-	S3: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7.cloudAwsIntegrations.CloudAwsIntegrationsS3,
-	TrustedAdvisor: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7.cloudAwsIntegrations.CloudAwsIntegrationsTrustedAdvisor,
-	Vpc: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7.cloudAwsIntegrations.CloudAwsIntegrationsVpc,
-	XRay: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7.cloudAwsIntegrations.CloudAwsIntegrationsXRay,
+	S3: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3,
+	TrustedAdvisor: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsIntegrations.CloudAwsIntegrationsTrustedAdvisor,
+	Vpc: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpc,
+	XRay: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsIntegrations.CloudAwsIntegrationsXRay,
 }
 ```
 
@@ -1056,7 +1056,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrat
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.cloudtrail">Cloudtrail</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudtrail">CloudAwsIntegrationsCloudtrail</a></code> | cloudtrail block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.docDb">DocDb</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDocDb">CloudAwsIntegrationsDocDb</a></code> | doc_db block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.health">Health</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsHealth">CloudAwsIntegrationsHealth</a></code> | health block. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#id CloudAwsIntegrations#id}. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#id CloudAwsIntegrations#id}. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.s3">S3</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3">CloudAwsIntegrationsS3</a></code> | s3 block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.trustedAdvisor">TrustedAdvisor</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsTrustedAdvisor">CloudAwsIntegrationsTrustedAdvisor</a></code> | trusted_advisor block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.vpc">Vpc</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpc">CloudAwsIntegrationsVpc</a></code> | vpc block. |
@@ -1144,7 +1144,7 @@ LinkedAccountId *f64
 
 The ID of the linked AWS account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#linked_account_id CloudAwsIntegrations#linked_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#linked_account_id CloudAwsIntegrations#linked_account_id}
 
 ---
 
@@ -1158,7 +1158,7 @@ AccountId *f64
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#account_id CloudAwsIntegrations#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#account_id CloudAwsIntegrations#account_id}
 
 ---
 
@@ -1172,7 +1172,7 @@ Billing CloudAwsIntegrationsBilling
 
 billing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#billing CloudAwsIntegrations#billing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#billing CloudAwsIntegrations#billing}
 
 ---
 
@@ -1186,7 +1186,7 @@ Cloudtrail CloudAwsIntegrationsCloudtrail
 
 cloudtrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#cloudtrail CloudAwsIntegrations#cloudtrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#cloudtrail CloudAwsIntegrations#cloudtrail}
 
 ---
 
@@ -1200,7 +1200,7 @@ DocDb CloudAwsIntegrationsDocDb
 
 doc_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#doc_db CloudAwsIntegrations#doc_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#doc_db CloudAwsIntegrations#doc_db}
 
 ---
 
@@ -1214,7 +1214,7 @@ Health CloudAwsIntegrationsHealth
 
 health block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#health CloudAwsIntegrations#health}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#health CloudAwsIntegrations#health}
 
 ---
 
@@ -1226,7 +1226,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#id CloudAwsIntegrations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#id CloudAwsIntegrations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1243,7 +1243,7 @@ S3 CloudAwsIntegrationsS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#s3 CloudAwsIntegrations#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#s3 CloudAwsIntegrations#s3}
 
 ---
 
@@ -1257,7 +1257,7 @@ TrustedAdvisor CloudAwsIntegrationsTrustedAdvisor
 
 trusted_advisor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#trusted_advisor CloudAwsIntegrations#trusted_advisor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#trusted_advisor CloudAwsIntegrations#trusted_advisor}
 
 ---
 
@@ -1271,7 +1271,7 @@ Vpc CloudAwsIntegrationsVpc
 
 vpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#vpc CloudAwsIntegrations#vpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#vpc CloudAwsIntegrations#vpc}
 
 ---
 
@@ -1285,7 +1285,7 @@ XRay CloudAwsIntegrationsXRay
 
 x_ray block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#x_ray CloudAwsIntegrations#x_ray}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#x_ray CloudAwsIntegrations#x_ray}
 
 ---
 
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDocDb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsDocDb {
 	MetricsPollingInterval: *f64,
@@ -1319,7 +1319,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1328,7 +1328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsHealth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsHealth {
 	MetricsPollingInterval: *f64,
@@ -1353,7 +1353,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1362,7 +1362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsS3 {
 	MetricsPollingInterval: *f64,
@@ -1387,7 +1387,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1396,7 +1396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsTrustedAdvisor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsTrustedAdvisor {
 	MetricsPollingInterval: *f64,
@@ -1421,7 +1421,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1430,7 +1430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsVpc {
 	AwsRegions: *[]*string,
@@ -1465,7 +1465,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -1481,7 +1481,7 @@ Specify if NAT gateway should be monitored.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#fetch_nat_gateway CloudAwsIntegrations#fetch_nat_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#fetch_nat_gateway CloudAwsIntegrations#fetch_nat_gateway}
 
 ---
 
@@ -1497,7 +1497,7 @@ Specify if VPN should be monitored.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#fetch_vpn CloudAwsIntegrations#fetch_vpn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#fetch_vpn CloudAwsIntegrations#fetch_vpn}
 
 ---
 
@@ -1511,7 +1511,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1525,7 +1525,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -1539,7 +1539,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -1548,7 +1548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsXRay.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsXRay {
 	AwsRegions: *[]*string,
@@ -1575,7 +1575,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -1589,7 +1589,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1600,7 +1600,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsBillingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsBillingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsBillingOutputReference
 ```
@@ -1878,7 +1878,7 @@ func InternalValue() CloudAwsIntegrationsBilling
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudtrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsCloudtrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsCloudtrailOutputReference
 ```
@@ -2185,7 +2185,7 @@ func InternalValue() CloudAwsIntegrationsCloudtrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDocDbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsDocDbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsDocDbOutputReference
 ```
@@ -2463,7 +2463,7 @@ func InternalValue() CloudAwsIntegrationsDocDb
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsHealthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsHealthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsHealthOutputReference
 ```
@@ -2741,7 +2741,7 @@ func InternalValue() CloudAwsIntegrationsHealth
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsS3OutputReference
 ```
@@ -3019,7 +3019,7 @@ func InternalValue() CloudAwsIntegrationsS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsTrustedAdvisorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsTrustedAdvisorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsTrustedAdvisorOutputReference
 ```
@@ -3297,7 +3297,7 @@ func InternalValue() CloudAwsIntegrationsTrustedAdvisor
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsVpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsVpcOutputReference
 ```
@@ -3720,7 +3720,7 @@ func InternalValue() CloudAwsIntegrationsVpc
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsXRayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsXRayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsXRayOutputReference
 ```
