@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/synthetics_private_location
+// https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/synthetics_private_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface SyntheticsPrivateLocationConfig extends cdktf.TerraformMetaArgu
   /**
   * The ID of the account in New Relic.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/synthetics_private_location#account_id SyntheticsPrivateLocation#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/synthetics_private_location#account_id SyntheticsPrivateLocation#account_id}
   */
   readonly accountId?: number;
   /**
   * The private location description.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,19 +29,19 @@ export interface SyntheticsPrivateLocationConfig extends cdktf.TerraformMetaArgu
   /**
   * The name of the private location.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
   */
   readonly name: string;
   /**
   * The private location requires a password to edit if value is true.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/synthetics_private_location#verified_script_execution SyntheticsPrivateLocation#verified_script_execution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/synthetics_private_location#verified_script_execution SyntheticsPrivateLocation#verified_script_execution}
   */
   readonly verifiedScriptExecution?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/synthetics_private_location newrelic_synthetics_private_location}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/synthetics_private_location newrelic_synthetics_private_location}
 */
 export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/synthetics_private_location newrelic_synthetics_private_location} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/synthetics_private_location newrelic_synthetics_private_location} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_synthetics_private_location',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.21.3',
+        providerVersion: '3.22.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
