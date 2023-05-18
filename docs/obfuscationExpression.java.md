@@ -1,6 +1,6 @@
 # `newrelic_obfuscation_expression`
 
-Refer to the Terraform Registory for docs: [`newrelic_obfuscation_expression`](https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/obfuscation_expression).
+Refer to the Terraform Registory for docs: [`newrelic_obfuscation_expression`](https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/obfuscation_expression).
 
 # `obfuscationExpression` Submodule <a name="`obfuscationExpression` Submodule" id="@cdktf/provider-newrelic.obfuscationExpression"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_obfuscation_expression`](h
 
 ### ObfuscationExpression <a name="ObfuscationExpression" id="@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpression"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/obfuscation_expression newrelic_obfuscation_expression}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/obfuscation_expression newrelic_obfuscation_expression}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpression.Initializer"></a>
 
@@ -50,7 +50,7 @@ ObfuscationExpression.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpression.Initializer.parameter.regex">regex</a></code> | <code>java.lang.String</code> | Regex of expression. |
 | <code><a href="#@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpression.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | The account id associated with the obfuscation expression. |
 | <code><a href="#@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpression.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description of expression. |
-| <code><a href="#@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpression.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/obfuscation_expression#id ObfuscationExpression#id}. |
+| <code><a href="#@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpression.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/obfuscation_expression#id ObfuscationExpression#id}. |
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Name of expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/obfuscation_expression#name ObfuscationExpression#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/obfuscation_expression#name ObfuscationExpression#name}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Regex of expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/obfuscation_expression#regex ObfuscationExpression#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/obfuscation_expression#regex ObfuscationExpression#regex}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The account id associated with the obfuscation expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/obfuscation_expression#account_id ObfuscationExpression#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/obfuscation_expression#account_id ObfuscationExpression#account_id}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Description of expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/obfuscation_expression#description ObfuscationExpression#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/obfuscation_expression#description ObfuscationExpression#description}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/obfuscation_expression#id ObfuscationExpression#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/obfuscation_expression#id ObfuscationExpression#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -798,7 +798,7 @@ ObfuscationExpressionConfig.builder()
 | <code><a href="#@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpressionConfig.property.regex">regex</a></code> | <code>java.lang.String</code> | Regex of expression. |
 | <code><a href="#@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpressionConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | The account id associated with the obfuscation expression. |
 | <code><a href="#@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpressionConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description of expression. |
-| <code><a href="#@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpressionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/obfuscation_expression#id ObfuscationExpression#id}. |
+| <code><a href="#@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpressionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/obfuscation_expression#id ObfuscationExpression#id}. |
 
 ---
 
@@ -882,7 +882,7 @@ public java.lang.String getName();
 
 Name of expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/obfuscation_expression#name ObfuscationExpression#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/obfuscation_expression#name ObfuscationExpression#name}
 
 ---
 
@@ -896,7 +896,7 @@ public java.lang.String getRegex();
 
 Regex of expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/obfuscation_expression#regex ObfuscationExpression#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/obfuscation_expression#regex ObfuscationExpression#regex}
 
 ---
 
@@ -910,7 +910,7 @@ public java.lang.Number getAccountId();
 
 The account id associated with the obfuscation expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/obfuscation_expression#account_id ObfuscationExpression#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/obfuscation_expression#account_id ObfuscationExpression#account_id}
 
 ---
 
@@ -924,7 +924,7 @@ public java.lang.String getDescription();
 
 Description of expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/obfuscation_expression#description ObfuscationExpression#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/obfuscation_expression#description ObfuscationExpression#description}
 
 ---
 
@@ -936,7 +936,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/obfuscation_expression#id ObfuscationExpression#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/obfuscation_expression#id ObfuscationExpression#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
