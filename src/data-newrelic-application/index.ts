@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/data-sources/application
+// https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataNewrelicApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/data-sources/application#id DataNewrelicApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application#id DataNewrelicApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,13 +17,13 @@ export interface DataNewrelicApplicationConfig extends cdktf.TerraformMetaArgume
   /**
   * The name of the application in New Relic.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/data-sources/application#name DataNewrelicApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application#name DataNewrelicApplication#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/data-sources/application newrelic_application}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application newrelic_application}
 */
 export class DataNewrelicApplication extends cdktf.TerraformDataSource {
 
@@ -37,7 +37,7 @@ export class DataNewrelicApplication extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/data-sources/application newrelic_application} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application newrelic_application} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -48,7 +48,7 @@ export class DataNewrelicApplication extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_application',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.22.0',
+        providerVersion: '3.23.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

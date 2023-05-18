@@ -1,6 +1,6 @@
 # `newrelic_one_dashboard_raw`
 
-Refer to the Terraform Registory for docs: [`newrelic_one_dashboard_raw`](https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw).
+Refer to the Terraform Registory for docs: [`newrelic_one_dashboard_raw`](https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw).
 
 # `oneDashboardRaw` Submodule <a name="`oneDashboardRaw` Submodule" id="@cdktf/provider-newrelic.oneDashboardRaw"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_one_dashboard_raw`](https:
 
 ### OneDashboardRaw <a name="OneDashboardRaw" id="@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRaw"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw newrelic_one_dashboard_raw}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw newrelic_one_dashboard_raw}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRaw.Initializer"></a>
 
@@ -730,7 +730,7 @@ const oneDashboardRawConfig: oneDashboardRaw.OneDashboardRawConfig = { ... }
 | <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawConfig.property.page">page</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPage">OneDashboardRawPage</a>[]</code> | page block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawConfig.property.accountId">accountId</a></code> | <code>number</code> | The New Relic account ID where you want to create the dashboard. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawConfig.property.description">description</a></code> | <code>string</code> | The dashboard's description. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#id OneDashboardRaw#id}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#id OneDashboardRaw#id}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawConfig.property.permissions">permissions</a></code> | <code>string</code> | Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only. |
 
 ---
@@ -815,7 +815,7 @@ public readonly name: string;
 
 The dashboard's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#name OneDashboardRaw#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#name OneDashboardRaw#name}
 
 ---
 
@@ -829,7 +829,7 @@ public readonly page: IResolvable | OneDashboardRawPage[];
 
 page block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#page OneDashboardRaw#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#page OneDashboardRaw#page}
 
 ---
 
@@ -843,7 +843,7 @@ public readonly accountId: number;
 
 The New Relic account ID where you want to create the dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#account_id OneDashboardRaw#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#account_id OneDashboardRaw#account_id}
 
 ---
 
@@ -857,7 +857,7 @@ public readonly description: string;
 
 The dashboard's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#description OneDashboardRaw#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#description OneDashboardRaw#description}
 
 ---
 
@@ -869,7 +869,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#id OneDashboardRaw#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#id OneDashboardRaw#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -886,7 +886,7 @@ public readonly permissions: string;
 
 Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#permissions OneDashboardRaw#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#permissions OneDashboardRaw#permissions}
 
 ---
 
@@ -920,7 +920,7 @@ public readonly name: string;
 
 The dashboard page's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#name OneDashboardRaw#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#name OneDashboardRaw#name}
 
 ---
 
@@ -934,7 +934,7 @@ public readonly description: string;
 
 The dashboard page's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#description OneDashboardRaw#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#description OneDashboardRaw#description}
 
 ---
 
@@ -948,7 +948,7 @@ public readonly widget: IResolvable | OneDashboardRawPageWidget[];
 
 widget block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#widget OneDashboardRaw#widget}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#widget OneDashboardRaw#widget}
 
 ---
 
@@ -966,14 +966,14 @@ const oneDashboardRawPageWidget: oneDashboardRaw.OneDashboardRawPageWidget = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidget.property.column">column</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#column OneDashboardRaw#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidget.property.column">column</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#column OneDashboardRaw#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidget.property.configuration">configuration</a></code> | <code>string</code> | The configuration of the widget. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidget.property.row">row</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#row OneDashboardRaw#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidget.property.row">row</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#row OneDashboardRaw#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidget.property.title">title</a></code> | <code>string</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidget.property.visualizationId">visualizationId</a></code> | <code>string</code> | The visualization ID of the widget. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidget.property.height">height</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#height OneDashboardRaw#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidget.property.height">height</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#height OneDashboardRaw#height}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidget.property.linkedEntityGuids">linkedEntityGuids</a></code> | <code>string[]</code> | (Optional) Related entity GUIDs. Currently only supports Dashboard entity GUIDs. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidget.property.width">width</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#width OneDashboardRaw#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidget.property.width">width</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#width OneDashboardRaw#width}. |
 
 ---
 
@@ -985,7 +985,7 @@ public readonly column: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#column OneDashboardRaw#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#column OneDashboardRaw#column}.
 
 ---
 
@@ -999,7 +999,7 @@ public readonly configuration: string;
 
 The configuration of the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#configuration OneDashboardRaw#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#configuration OneDashboardRaw#configuration}
 
 ---
 
@@ -1011,7 +1011,7 @@ public readonly row: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#row OneDashboardRaw#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#row OneDashboardRaw#row}.
 
 ---
 
@@ -1025,7 +1025,7 @@ public readonly title: string;
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#title OneDashboardRaw#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#title OneDashboardRaw#title}
 
 ---
 
@@ -1039,7 +1039,7 @@ public readonly visualizationId: string;
 
 The visualization ID of the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#visualization_id OneDashboardRaw#visualization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#visualization_id OneDashboardRaw#visualization_id}
 
 ---
 
@@ -1051,7 +1051,7 @@ public readonly height: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#height OneDashboardRaw#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#height OneDashboardRaw#height}.
 
 ---
 
@@ -1065,7 +1065,7 @@ public readonly linkedEntityGuids: string[];
 
 (Optional) Related entity GUIDs. Currently only supports Dashboard entity GUIDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#linked_entity_guids OneDashboardRaw#linked_entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#linked_entity_guids OneDashboardRaw#linked_entity_guids}
 
 ---
 
@@ -1077,7 +1077,7 @@ public readonly width: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw#width OneDashboardRaw#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/one_dashboard_raw#width OneDashboardRaw#width}.
 
 ---
 
