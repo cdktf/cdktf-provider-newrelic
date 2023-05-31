@@ -1,6 +1,6 @@
 # `data_newrelic_application`
 
-Refer to the Terraform Registory for docs: [`data_newrelic_application`](https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application).
+Refer to the Terraform Registory for docs: [`data_newrelic_application`](https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/data-sources/application).
 
 # `dataNewrelicApplication` Submodule <a name="`dataNewrelicApplication` Submodule" id="@cdktf/provider-newrelic.dataNewrelicApplication"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_newrelic_application`](https:/
 
 ### DataNewrelicApplication <a name="DataNewrelicApplication" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application newrelic_application}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/data-sources/application newrelic_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.Initializer"></a>
 
@@ -44,7 +44,7 @@ DataNewrelicApplication.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the application in New Relic. |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application#id DataNewrelicApplication#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/data-sources/application#id DataNewrelicApplication#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the application in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application#name DataNewrelicApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/data-sources/application#name DataNewrelicApplication#name}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application#id DataNewrelicApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/data-sources/application#id DataNewrelicApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -676,7 +676,7 @@ DataNewrelicApplicationConfig.builder()
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the application in New Relic. |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application#id DataNewrelicApplication#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/data-sources/application#id DataNewrelicApplication#id}. |
 
 ---
 
@@ -760,7 +760,7 @@ public java.lang.String getName();
 
 The name of the application in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application#name DataNewrelicApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/data-sources/application#name DataNewrelicApplication#name}
 
 ---
 
@@ -772,7 +772,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application#id DataNewrelicApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/data-sources/application#id DataNewrelicApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
