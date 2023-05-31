@@ -1,6 +1,6 @@
 # `data_newrelic_application`
 
-Refer to the Terraform Registory for docs: [`data_newrelic_application`](https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application).
+Refer to the Terraform Registory for docs: [`data_newrelic_application`](https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/data-sources/application).
 
 # `dataNewrelicApplication` Submodule <a name="`dataNewrelicApplication` Submodule" id="@cdktf/provider-newrelic.dataNewrelicApplication"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_newrelic_application`](https:/
 
 ### DataNewrelicApplication <a name="DataNewrelicApplication" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application newrelic_application}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/data-sources/application newrelic_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicapplication"
 
 datanewrelicapplication.NewDataNewrelicApplication(scope Construct, id *string, config DataNewrelicApplicationConfig) DataNewrelicApplication
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicapplication"
 
 datanewrelicapplication.DataNewrelicApplication_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicapplication"
 
 datanewrelicapplication.DataNewrelicApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datanewrelicapplication.DataNewrelicApplication_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicapplication"
 
 datanewrelicapplication.DataNewrelicApplication_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicapplication"
 
 &datanewrelicapplication.DataNewrelicApplicationConfig {
 	Connection: interface{},
@@ -593,7 +593,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicappl
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.name">Name</a></code> | <code>*string</code> | The name of the application in New Relic. |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application#id DataNewrelicApplication#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/data-sources/application#id DataNewrelicApplication#id}. |
 
 ---
 
@@ -677,7 +677,7 @@ Name *string
 
 The name of the application in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application#name DataNewrelicApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/data-sources/application#name DataNewrelicApplication#name}
 
 ---
 
@@ -689,7 +689,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/data-sources/application#id DataNewrelicApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/data-sources/application#id DataNewrelicApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
