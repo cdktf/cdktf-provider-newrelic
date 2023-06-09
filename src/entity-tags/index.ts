@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/entity_tags
+// https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/entity_tags
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface EntityTagsConfig extends cdktf.TerraformMetaArguments {
   /**
   * The guid of the entity to tag.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/entity_tags#guid EntityTags#guid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/entity_tags#guid EntityTags#guid}
   */
   readonly guid: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/entity_tags#id EntityTags#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/entity_tags#id EntityTags#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface EntityTagsConfig extends cdktf.TerraformMetaArguments {
   /**
   * tag block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/entity_tags#tag EntityTags#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/entity_tags#tag EntityTags#tag}
   */
   readonly tag: EntityTagsTag[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/entity_tags#timeouts EntityTags#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/entity_tags#timeouts EntityTags#timeouts}
   */
   readonly timeouts?: EntityTagsTimeouts;
 }
@@ -42,13 +42,13 @@ export interface EntityTagsTag {
   /**
   * The tag key.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/entity_tags#key EntityTags#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/entity_tags#key EntityTags#key}
   */
   readonly key: string;
   /**
   * The tag values.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/entity_tags#values EntityTags#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/entity_tags#values EntityTags#values}
   */
   readonly values: string[];
 }
@@ -162,7 +162,7 @@ export class EntityTagsTagList extends cdktf.ComplexList {
 }
 export interface EntityTagsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/entity_tags#create EntityTags#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/entity_tags#create EntityTags#create}
   */
   readonly create?: string;
 }
@@ -237,7 +237,7 @@ export class EntityTagsTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/entity_tags newrelic_entity_tags}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/entity_tags newrelic_entity_tags}
 */
 export class EntityTags extends cdktf.TerraformResource {
 
@@ -251,7 +251,7 @@ export class EntityTags extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/entity_tags newrelic_entity_tags} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/entity_tags newrelic_entity_tags} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -262,7 +262,7 @@ export class EntityTags extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_entity_tags',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.24.0',
+        providerVersion: '3.24.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

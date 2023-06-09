@@ -1,6 +1,6 @@
 # `newrelic_synthetics_secure_credential`
 
-Refer to the Terraform Registory for docs: [`newrelic_synthetics_secure_credential`](https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/synthetics_secure_credential).
+Refer to the Terraform Registory for docs: [`newrelic_synthetics_secure_credential`](https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/synthetics_secure_credential).
 
 # `syntheticsSecureCredential` Submodule <a name="`syntheticsSecureCredential` Submodule" id="@cdktf/provider-newrelic.syntheticsSecureCredential"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_synthetics_secure_credenti
 
 ### SyntheticsSecureCredential <a name="SyntheticsSecureCredential" id="@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredential"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/synthetics_secure_credential newrelic_synthetics_secure_credential}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/synthetics_secure_credential newrelic_synthetics_secure_credential}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredential.Initializer"></a>
 
@@ -737,7 +737,7 @@ const syntheticsSecureCredentialConfig: syntheticsSecureCredential.SyntheticsSec
 | <code><a href="#@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredentialConfig.property.value">value</a></code> | <code>string</code> | The secure credential's value. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredentialConfig.property.accountId">accountId</a></code> | <code>number</code> | The New Relic account ID where you want to create the secure credential. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredentialConfig.property.description">description</a></code> | <code>string</code> | The secure credential's description. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredentialConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/synthetics_secure_credential#id SyntheticsSecureCredential#id}. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredentialConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/synthetics_secure_credential#id SyntheticsSecureCredential#id}. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredentialConfig.property.lastUpdated">lastUpdated</a></code> | <code>string</code> | The time the secure credential was last updated. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredentialConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredentialTimeouts">SyntheticsSecureCredentialTimeouts</a></code> | timeouts block. |
 
@@ -825,7 +825,7 @@ The secure credential's key name.
 
 Regardless of the case used in the configuration, the provider will provide an upcased key to the underlying API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/synthetics_secure_credential#key SyntheticsSecureCredential#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/synthetics_secure_credential#key SyntheticsSecureCredential#key}
 
 ---
 
@@ -839,7 +839,7 @@ public readonly value: string;
 
 The secure credential's value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/synthetics_secure_credential#value SyntheticsSecureCredential#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/synthetics_secure_credential#value SyntheticsSecureCredential#value}
 
 ---
 
@@ -853,7 +853,7 @@ public readonly accountId: number;
 
 The New Relic account ID where you want to create the secure credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/synthetics_secure_credential#account_id SyntheticsSecureCredential#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/synthetics_secure_credential#account_id SyntheticsSecureCredential#account_id}
 
 ---
 
@@ -867,7 +867,7 @@ public readonly description: string;
 
 The secure credential's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/synthetics_secure_credential#description SyntheticsSecureCredential#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/synthetics_secure_credential#description SyntheticsSecureCredential#description}
 
 ---
 
@@ -879,7 +879,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/synthetics_secure_credential#id SyntheticsSecureCredential#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/synthetics_secure_credential#id SyntheticsSecureCredential#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -896,7 +896,7 @@ public readonly lastUpdated: string;
 
 The time the secure credential was last updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/synthetics_secure_credential#last_updated SyntheticsSecureCredential#last_updated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/synthetics_secure_credential#last_updated SyntheticsSecureCredential#last_updated}
 
 ---
 
@@ -910,7 +910,7 @@ public readonly timeouts: SyntheticsSecureCredentialTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/synthetics_secure_credential#timeouts SyntheticsSecureCredential#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/synthetics_secure_credential#timeouts SyntheticsSecureCredential#timeouts}
 
 ---
 
@@ -928,7 +928,7 @@ const syntheticsSecureCredentialTimeouts: syntheticsSecureCredential.SyntheticsS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredentialTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/synthetics_secure_credential#read SyntheticsSecureCredential#read}. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredentialTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/synthetics_secure_credential#read SyntheticsSecureCredential#read}. |
 
 ---
 
@@ -940,7 +940,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/synthetics_secure_credential#read SyntheticsSecureCredential#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/synthetics_secure_credential#read SyntheticsSecureCredential#read}.
 
 ---
 

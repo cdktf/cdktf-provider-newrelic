@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/alert_policy_channel
+// https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/alert_policy_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface AlertPolicyChannelConfig extends cdktf.TerraformMetaArguments {
   /**
   * The New Relic account ID where you want to link the channel to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/alert_policy_channel#account_id AlertPolicyChannel#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/alert_policy_channel#account_id AlertPolicyChannel#account_id}
   */
   readonly accountId?: number;
   /**
   * Array of channel IDs to apply to the specified policy. We recommended sorting channel IDs in ascending order to avoid drift your Terraform state.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/alert_policy_channel#channel_ids AlertPolicyChannel#channel_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/alert_policy_channel#channel_ids AlertPolicyChannel#channel_ids}
   */
   readonly channelIds: number[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/alert_policy_channel#id AlertPolicyChannel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/alert_policy_channel#id AlertPolicyChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +34,19 @@ export interface AlertPolicyChannelConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the policy.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/alert_policy_channel#policy_id AlertPolicyChannel#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/alert_policy_channel#policy_id AlertPolicyChannel#policy_id}
   */
   readonly policyId: number;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/alert_policy_channel#timeouts AlertPolicyChannel#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/alert_policy_channel#timeouts AlertPolicyChannel#timeouts}
   */
   readonly timeouts?: AlertPolicyChannelTimeouts;
 }
 export interface AlertPolicyChannelTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/alert_policy_channel#create AlertPolicyChannel#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/alert_policy_channel#create AlertPolicyChannel#create}
   */
   readonly create?: string;
 }
@@ -121,7 +121,7 @@ export class AlertPolicyChannelTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/alert_policy_channel newrelic_alert_policy_channel}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/alert_policy_channel newrelic_alert_policy_channel}
 */
 export class AlertPolicyChannel extends cdktf.TerraformResource {
 
@@ -135,7 +135,7 @@ export class AlertPolicyChannel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.0/docs/resources/alert_policy_channel newrelic_alert_policy_channel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/alert_policy_channel newrelic_alert_policy_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -146,7 +146,7 @@ export class AlertPolicyChannel extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_alert_policy_channel',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.24.0',
+        providerVersion: '3.24.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
