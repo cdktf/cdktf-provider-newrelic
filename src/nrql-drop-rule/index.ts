@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/nrql_drop_rule
+// https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/nrql_drop_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface NrqlDropRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Account with the NRQL drop rule will be put.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/nrql_drop_rule#account_id NrqlDropRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/nrql_drop_rule#account_id NrqlDropRule#account_id}
   */
   readonly accountId?: number;
   /**
   * The drop rule action (drop_data, drop_attributes, or drop_attributes_from_metric_aggregates).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/nrql_drop_rule#action NrqlDropRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/nrql_drop_rule#action NrqlDropRule#action}
   */
   readonly action: string;
   /**
   * Provides additional information about the rule.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/nrql_drop_rule#description NrqlDropRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/nrql_drop_rule#description NrqlDropRule#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/nrql_drop_rule#id NrqlDropRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/nrql_drop_rule#id NrqlDropRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,13 +40,13 @@ export interface NrqlDropRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Explains which data to apply the drop rule to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/nrql_drop_rule#nrql NrqlDropRule#nrql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/nrql_drop_rule#nrql NrqlDropRule#nrql}
   */
   readonly nrql: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule}
 */
 export class NrqlDropRule extends cdktf.TerraformResource {
 
@@ -60,7 +60,7 @@ export class NrqlDropRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,7 @@ export class NrqlDropRule extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_nrql_drop_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.24.1',
+        providerVersion: '3.24.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

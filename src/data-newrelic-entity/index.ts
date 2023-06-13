@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/entity
+// https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/entity
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataNewrelicEntityConfig extends cdktf.TerraformMetaArguments {
   /**
   * The entity's domain. Valid values are APM, BROWSER, INFRA, MOBILE, SYNTH, and EXT. If not specified, all domains are searched.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/entity#domain DataNewrelicEntity#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/entity#domain DataNewrelicEntity#domain}
   */
   readonly domain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/entity#id DataNewrelicEntity#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/entity#id DataNewrelicEntity#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface DataNewrelicEntityConfig extends cdktf.TerraformMetaArguments {
   /**
   * Ignore case when searching the entity name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/entity#ignore_case DataNewrelicEntity#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/entity#ignore_case DataNewrelicEntity#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktf.IResolvable;
   /**
   * The name of the entity in New Relic One.  The first entity matching this name for the given search parameters will be returned.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/entity#name DataNewrelicEntity#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/entity#name DataNewrelicEntity#name}
   */
   readonly name: string;
   /**
   * The entity's type. Valid values are APPLICATION, DASHBOARD, HOST, MONITOR, SERVICE and WORKLOAD.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/entity#type DataNewrelicEntity#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/entity#type DataNewrelicEntity#type}
   */
   readonly type?: string;
   /**
   * tag block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/entity#tag DataNewrelicEntity#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/entity#tag DataNewrelicEntity#tag}
   */
   readonly tag?: DataNewrelicEntityTag[] | cdktf.IResolvable;
 }
@@ -54,13 +54,13 @@ export interface DataNewrelicEntityTag {
   /**
   * The tag key.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/entity#key DataNewrelicEntity#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/entity#key DataNewrelicEntity#key}
   */
   readonly key: string;
   /**
   * The tag value.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/entity#value DataNewrelicEntity#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/entity#value DataNewrelicEntity#value}
   */
   readonly value: string;
 }
@@ -174,7 +174,7 @@ export class DataNewrelicEntityTagList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/entity newrelic_entity}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/entity newrelic_entity}
 */
 export class DataNewrelicEntity extends cdktf.TerraformDataSource {
 
@@ -188,7 +188,7 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/entity newrelic_entity} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/entity newrelic_entity} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -199,7 +199,7 @@ export class DataNewrelicEntity extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_entity',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.24.1',
+        providerVersion: '3.24.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
