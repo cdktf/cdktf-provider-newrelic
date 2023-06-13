@@ -1,6 +1,6 @@
 # `newrelic_obfuscation_rule`
 
-Refer to the Terraform Registory for docs: [`newrelic_obfuscation_rule`](https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/obfuscation_rule).
+Refer to the Terraform Registory for docs: [`newrelic_obfuscation_rule`](https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/obfuscation_rule).
 
 # `obfuscationRule` Submodule <a name="`obfuscationRule` Submodule" id="@cdktf/provider-newrelic.obfuscationRule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_obfuscation_rule`](https:/
 
 ### ObfuscationRule <a name="ObfuscationRule" id="@cdktf/provider-newrelic.obfuscationRule.ObfuscationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/obfuscation_rule newrelic_obfuscation_rule}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/obfuscation_rule newrelic_obfuscation_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.obfuscationRule.ObfuscationRule.Initializer"></a>
 
@@ -728,7 +728,7 @@ public readonly attribute: string[];
 
 Attribute names for action. An empty list applies the action to all the attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/obfuscation_rule#attribute ObfuscationRule#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/obfuscation_rule#attribute ObfuscationRule#attribute}
 
 ---
 
@@ -742,7 +742,7 @@ public readonly expressionId: string;
 
 Expression Id for action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/obfuscation_rule#expression_id ObfuscationRule#expression_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/obfuscation_rule#expression_id ObfuscationRule#expression_id}
 
 ---
 
@@ -756,7 +756,7 @@ public readonly method: string;
 
 Obfuscation method to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/obfuscation_rule#method ObfuscationRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/obfuscation_rule#method ObfuscationRule#method}
 
 ---
 
@@ -787,7 +787,7 @@ const obfuscationRuleConfig: obfuscationRule.ObfuscationRuleConfig = { ... }
 | <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleConfig.property.name">name</a></code> | <code>string</code> | Name of rule. |
 | <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleConfig.property.accountId">accountId</a></code> | <code>number</code> | The account id associated with the obfuscation rule. |
 | <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleConfig.property.description">description</a></code> | <code>string</code> | Description of rule. |
-| <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/obfuscation_rule#id ObfuscationRule#id}. |
+| <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/obfuscation_rule#id ObfuscationRule#id}. |
 
 ---
 
@@ -871,7 +871,7 @@ public readonly action: IResolvable | ObfuscationRuleAction[];
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/obfuscation_rule#action ObfuscationRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/obfuscation_rule#action ObfuscationRule#action}
 
 ---
 
@@ -885,7 +885,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether the rule should be applied or not to incoming data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/obfuscation_rule#enabled ObfuscationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/obfuscation_rule#enabled ObfuscationRule#enabled}
 
 ---
 
@@ -899,7 +899,7 @@ public readonly filter: string;
 
 NRQL for determining whether a given log record should have obfuscation actions applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/obfuscation_rule#filter ObfuscationRule#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/obfuscation_rule#filter ObfuscationRule#filter}
 
 ---
 
@@ -913,7 +913,7 @@ public readonly name: string;
 
 Name of rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/obfuscation_rule#name ObfuscationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/obfuscation_rule#name ObfuscationRule#name}
 
 ---
 
@@ -927,7 +927,7 @@ public readonly accountId: number;
 
 The account id associated with the obfuscation rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/obfuscation_rule#account_id ObfuscationRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/obfuscation_rule#account_id ObfuscationRule#account_id}
 
 ---
 
@@ -941,7 +941,7 @@ public readonly description: string;
 
 Description of rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/obfuscation_rule#description ObfuscationRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/obfuscation_rule#description ObfuscationRule#description}
 
 ---
 
@@ -953,7 +953,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/obfuscation_rule#id ObfuscationRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/obfuscation_rule#id ObfuscationRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
