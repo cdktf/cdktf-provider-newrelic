@@ -390,7 +390,7 @@ entityTags.EntityTags.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTags.property.guidInput">guidInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTags.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTags.property.tagInput">tagInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTag">EntityTagsTag</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTags.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTags.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTags.property.guid">guid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTags.property.id">id</a></code> | <code>string</code> | *No description.* |
 
@@ -591,10 +591,10 @@ public readonly tagInput: IResolvable | EntityTagsTag[];
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-newrelic.entityTags.EntityTags.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: EntityTagsTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | EntityTagsTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a>
 
 ---
 
@@ -1247,7 +1247,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTagOutputReference.property.valuesInput">valuesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTagOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTagOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTagOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTag">EntityTagsTag</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTagOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTag">EntityTagsTag</a></code> | *No description.* |
 
 ---
 
@@ -1318,10 +1318,10 @@ public readonly values: string[];
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.entityTags.EntityTagsTagOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: EntityTagsTag | IResolvable;
+public readonly internalValue: IResolvable | EntityTagsTag;
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTag">EntityTagsTag</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTag">EntityTagsTag</a>
 
 ---
 
@@ -1545,7 +1545,7 @@ public resetCreate(): void
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1596,10 +1596,10 @@ public readonly create: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.entityTags.EntityTagsTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: EntityTagsTimeouts | IResolvable;
+public readonly internalValue: IResolvable | EntityTagsTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a>
 
 ---
 

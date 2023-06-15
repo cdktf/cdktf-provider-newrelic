@@ -528,7 +528,7 @@ entityTags.EntityTags.is_terraform_resource(
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTags.property.guidInput">guid_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTags.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTags.property.tagInput">tag_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTag">EntityTagsTag</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTags.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTags.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTags.property.guid">guid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTags.property.id">id</a></code> | <code>str</code> | *No description.* |
 
@@ -729,10 +729,10 @@ tag_input: typing.Union[IResolvable, typing.List[EntityTagsTag]]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-newrelic.entityTags.EntityTags.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[EntityTagsTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, EntityTagsTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a>]
 
 ---
 
@@ -1437,7 +1437,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTagOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTagOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTagOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTagOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTag">EntityTagsTag</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTagOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTag">EntityTagsTag</a>]</code> | *No description.* |
 
 ---
 
@@ -1508,10 +1508,10 @@ values: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.entityTags.EntityTagsTagOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EntityTagsTag, IResolvable]
+internal_value: typing.Union[IResolvable, EntityTagsTag]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTag">EntityTagsTag</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTag">EntityTagsTag</a>]
 
 ---
 
@@ -1760,7 +1760,7 @@ def reset_create() -> None
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1811,10 +1811,10 @@ create: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.entityTags.EntityTagsTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EntityTagsTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, EntityTagsTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a>]
 
 ---
 

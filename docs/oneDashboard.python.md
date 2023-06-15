@@ -10502,7 +10502,7 @@ def reset_widget_table() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageOutputReference.property.widgetTableInput">widget_table_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable">OneDashboardPageWidgetTable</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPage">OneDashboardPage</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPage">OneDashboardPage</a>]</code> | *No description.* |
 
 ---
 
@@ -10863,10 +10863,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPage, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPage]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPage">OneDashboardPage</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPage">OneDashboardPage</a>]
 
 ---
 
@@ -11310,7 +11310,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsOutputReference.property.colorInput">color_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsSeriesOverrides">OneDashboardPageWidgetAreaColorsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColors">OneDashboardPageWidgetAreaColors</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColors">OneDashboardPageWidgetAreaColors</a>]</code> | *No description.* |
 
 ---
 
@@ -11381,10 +11381,10 @@ color: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetAreaColors, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetAreaColors]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColors">OneDashboardPageWidgetAreaColors</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColors">OneDashboardPageWidgetAreaColors</a>]
 
 ---
 
@@ -11813,7 +11813,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsSeriesOverridesOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsSeriesOverrides">OneDashboardPageWidgetAreaColorsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsSeriesOverrides">OneDashboardPageWidgetAreaColorsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -11884,10 +11884,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetAreaColorsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetAreaColorsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsSeriesOverrides">OneDashboardPageWidgetAreaColorsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsSeriesOverrides">OneDashboardPageWidgetAreaColorsSeriesOverrides</a>]
 
 ---
 
@@ -12460,7 +12460,7 @@ def reset_account_id() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNrqlQueryOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNrqlQueryOutputReference.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNrqlQueryOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNrqlQuery">OneDashboardPageWidgetAreaNrqlQuery</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNrqlQuery">OneDashboardPageWidgetAreaNrqlQuery</a>]</code> | *No description.* |
 
 ---
 
@@ -12531,10 +12531,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNrqlQueryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetAreaNrqlQuery, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetAreaNrqlQuery]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNrqlQuery">OneDashboardPageWidgetAreaNrqlQuery</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNrqlQuery">OneDashboardPageWidgetAreaNrqlQuery</a>]
 
 ---
 
@@ -12978,7 +12978,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesOutputReference.property.nullValueInput">null_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesSeriesOverrides">OneDashboardPageWidgetAreaNullValuesSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues">OneDashboardPageWidgetAreaNullValues</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues">OneDashboardPageWidgetAreaNullValues</a>]</code> | *No description.* |
 
 ---
 
@@ -13049,10 +13049,10 @@ null_value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetAreaNullValues, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetAreaNullValues]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues">OneDashboardPageWidgetAreaNullValues</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues">OneDashboardPageWidgetAreaNullValues</a>]
 
 ---
 
@@ -13481,7 +13481,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesSeriesOverridesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesSeriesOverrides">OneDashboardPageWidgetAreaNullValuesSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesSeriesOverrides">OneDashboardPageWidgetAreaNullValuesSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -13552,10 +13552,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetAreaNullValuesSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetAreaNullValuesSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesSeriesOverrides">OneDashboardPageWidgetAreaNullValuesSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesSeriesOverrides">OneDashboardPageWidgetAreaNullValuesSeriesOverrides</a>]
 
 ---
 
@@ -13974,7 +13974,7 @@ def reset_y_axis_left_min() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.width">width</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea">OneDashboardPageWidgetArea</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea">OneDashboardPageWidgetArea</a>]</code> | *No description.* |
 
 ---
 
@@ -14295,10 +14295,10 @@ y_axis_left_min: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetArea, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetArea]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea">OneDashboardPageWidgetArea</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea">OneDashboardPageWidgetArea</a>]
 
 ---
 
@@ -14742,7 +14742,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsSeriesOverrides">OneDashboardPageWidgetAreaUnitsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnits">OneDashboardPageWidgetAreaUnits</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnits">OneDashboardPageWidgetAreaUnits</a>]</code> | *No description.* |
 
 ---
 
@@ -14813,10 +14813,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetAreaUnits, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetAreaUnits]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnits">OneDashboardPageWidgetAreaUnits</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnits">OneDashboardPageWidgetAreaUnits</a>]
 
 ---
 
@@ -15245,7 +15245,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsSeriesOverridesOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsSeriesOverridesOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsSeriesOverrides">OneDashboardPageWidgetAreaUnitsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsSeriesOverrides">OneDashboardPageWidgetAreaUnitsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -15316,10 +15316,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetAreaUnitsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetAreaUnitsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsSeriesOverrides">OneDashboardPageWidgetAreaUnitsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsSeriesOverrides">OneDashboardPageWidgetAreaUnitsSeriesOverrides</a>]
 
 ---
 
@@ -15763,7 +15763,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsOutputReference.property.colorInput">color_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsSeriesOverrides">OneDashboardPageWidgetBarColorsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColors">OneDashboardPageWidgetBarColors</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColors">OneDashboardPageWidgetBarColors</a>]</code> | *No description.* |
 
 ---
 
@@ -15834,10 +15834,10 @@ color: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBarColors, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBarColors]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColors">OneDashboardPageWidgetBarColors</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColors">OneDashboardPageWidgetBarColors</a>]
 
 ---
 
@@ -16266,7 +16266,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsSeriesOverridesOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsSeriesOverrides">OneDashboardPageWidgetBarColorsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsSeriesOverrides">OneDashboardPageWidgetBarColorsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -16337,10 +16337,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBarColorsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBarColorsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsSeriesOverrides">OneDashboardPageWidgetBarColorsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsSeriesOverrides">OneDashboardPageWidgetBarColorsSeriesOverrides</a>]
 
 ---
 
@@ -16913,7 +16913,7 @@ def reset_account_id() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNrqlQueryOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNrqlQueryOutputReference.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNrqlQueryOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNrqlQuery">OneDashboardPageWidgetBarNrqlQuery</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNrqlQuery">OneDashboardPageWidgetBarNrqlQuery</a>]</code> | *No description.* |
 
 ---
 
@@ -16984,10 +16984,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNrqlQueryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBarNrqlQuery, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBarNrqlQuery]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNrqlQuery">OneDashboardPageWidgetBarNrqlQuery</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNrqlQuery">OneDashboardPageWidgetBarNrqlQuery</a>]
 
 ---
 
@@ -17431,7 +17431,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesOutputReference.property.nullValueInput">null_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesSeriesOverrides">OneDashboardPageWidgetBarNullValuesSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues">OneDashboardPageWidgetBarNullValues</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues">OneDashboardPageWidgetBarNullValues</a>]</code> | *No description.* |
 
 ---
 
@@ -17502,10 +17502,10 @@ null_value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBarNullValues, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBarNullValues]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues">OneDashboardPageWidgetBarNullValues</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues">OneDashboardPageWidgetBarNullValues</a>]
 
 ---
 
@@ -17934,7 +17934,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesSeriesOverridesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesSeriesOverrides">OneDashboardPageWidgetBarNullValuesSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesSeriesOverrides">OneDashboardPageWidgetBarNullValuesSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -18005,10 +18005,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBarNullValuesSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBarNullValuesSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesSeriesOverrides">OneDashboardPageWidgetBarNullValuesSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesSeriesOverrides">OneDashboardPageWidgetBarNullValuesSeriesOverrides</a>]
 
 ---
 
@@ -18445,7 +18445,7 @@ def reset_y_axis_left_min() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.width">width</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar">OneDashboardPageWidgetBar</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar">OneDashboardPageWidgetBar</a>]</code> | *No description.* |
 
 ---
 
@@ -18806,10 +18806,10 @@ y_axis_left_min: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBar, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBar]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar">OneDashboardPageWidgetBar</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar">OneDashboardPageWidgetBar</a>]
 
 ---
 
@@ -19253,7 +19253,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsSeriesOverrides">OneDashboardPageWidgetBarUnitsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnits">OneDashboardPageWidgetBarUnits</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnits">OneDashboardPageWidgetBarUnits</a>]</code> | *No description.* |
 
 ---
 
@@ -19324,10 +19324,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBarUnits, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBarUnits]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnits">OneDashboardPageWidgetBarUnits</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnits">OneDashboardPageWidgetBarUnits</a>]
 
 ---
 
@@ -19756,7 +19756,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsSeriesOverridesOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsSeriesOverridesOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsSeriesOverrides">OneDashboardPageWidgetBarUnitsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsSeriesOverrides">OneDashboardPageWidgetBarUnitsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -19827,10 +19827,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBarUnitsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBarUnitsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsSeriesOverrides">OneDashboardPageWidgetBarUnitsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsSeriesOverrides">OneDashboardPageWidgetBarUnitsSeriesOverrides</a>]
 
 ---
 
@@ -20274,7 +20274,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsOutputReference.property.colorInput">color_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsSeriesOverrides">OneDashboardPageWidgetBillboardColorsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColors">OneDashboardPageWidgetBillboardColors</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColors">OneDashboardPageWidgetBillboardColors</a>]</code> | *No description.* |
 
 ---
 
@@ -20345,10 +20345,10 @@ color: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBillboardColors, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBillboardColors]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColors">OneDashboardPageWidgetBillboardColors</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColors">OneDashboardPageWidgetBillboardColors</a>]
 
 ---
 
@@ -20777,7 +20777,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsSeriesOverridesOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsSeriesOverrides">OneDashboardPageWidgetBillboardColorsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsSeriesOverrides">OneDashboardPageWidgetBillboardColorsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -20848,10 +20848,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBillboardColorsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBillboardColorsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsSeriesOverrides">OneDashboardPageWidgetBillboardColorsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsSeriesOverrides">OneDashboardPageWidgetBillboardColorsSeriesOverrides</a>]
 
 ---
 
@@ -21424,7 +21424,7 @@ def reset_account_id() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNrqlQueryOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNrqlQueryOutputReference.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNrqlQueryOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNrqlQuery">OneDashboardPageWidgetBillboardNrqlQuery</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNrqlQuery">OneDashboardPageWidgetBillboardNrqlQuery</a>]</code> | *No description.* |
 
 ---
 
@@ -21495,10 +21495,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNrqlQueryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBillboardNrqlQuery, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBillboardNrqlQuery]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNrqlQuery">OneDashboardPageWidgetBillboardNrqlQuery</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNrqlQuery">OneDashboardPageWidgetBillboardNrqlQuery</a>]
 
 ---
 
@@ -21942,7 +21942,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesOutputReference.property.nullValueInput">null_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesSeriesOverrides">OneDashboardPageWidgetBillboardNullValuesSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues">OneDashboardPageWidgetBillboardNullValues</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues">OneDashboardPageWidgetBillboardNullValues</a>]</code> | *No description.* |
 
 ---
 
@@ -22013,10 +22013,10 @@ null_value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBillboardNullValues, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBillboardNullValues]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues">OneDashboardPageWidgetBillboardNullValues</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues">OneDashboardPageWidgetBillboardNullValues</a>]
 
 ---
 
@@ -22445,7 +22445,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesSeriesOverridesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesSeriesOverrides">OneDashboardPageWidgetBillboardNullValuesSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesSeriesOverrides">OneDashboardPageWidgetBillboardNullValuesSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -22516,10 +22516,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBillboardNullValuesSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBillboardNullValuesSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesSeriesOverrides">OneDashboardPageWidgetBillboardNullValuesSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesSeriesOverrides">OneDashboardPageWidgetBillboardNullValuesSeriesOverrides</a>]
 
 ---
 
@@ -22956,7 +22956,7 @@ def reset_y_axis_left_min() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.width">width</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard">OneDashboardPageWidgetBillboard</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard">OneDashboardPageWidgetBillboard</a>]</code> | *No description.* |
 
 ---
 
@@ -23317,10 +23317,10 @@ y_axis_left_min: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBillboard, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBillboard]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard">OneDashboardPageWidgetBillboard</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard">OneDashboardPageWidgetBillboard</a>]
 
 ---
 
@@ -23764,7 +23764,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsSeriesOverrides">OneDashboardPageWidgetBillboardUnitsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnits">OneDashboardPageWidgetBillboardUnits</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnits">OneDashboardPageWidgetBillboardUnits</a>]</code> | *No description.* |
 
 ---
 
@@ -23835,10 +23835,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBillboardUnits, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBillboardUnits]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnits">OneDashboardPageWidgetBillboardUnits</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnits">OneDashboardPageWidgetBillboardUnits</a>]
 
 ---
 
@@ -24267,7 +24267,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsSeriesOverridesOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsSeriesOverridesOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsSeriesOverrides">OneDashboardPageWidgetBillboardUnitsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsSeriesOverrides">OneDashboardPageWidgetBillboardUnitsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -24338,10 +24338,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBillboardUnitsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBillboardUnitsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsSeriesOverrides">OneDashboardPageWidgetBillboardUnitsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsSeriesOverrides">OneDashboardPageWidgetBillboardUnitsSeriesOverrides</a>]
 
 ---
 
@@ -24785,7 +24785,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsOutputReference.property.colorInput">color_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsSeriesOverrides">OneDashboardPageWidgetBulletColorsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColors">OneDashboardPageWidgetBulletColors</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColors">OneDashboardPageWidgetBulletColors</a>]</code> | *No description.* |
 
 ---
 
@@ -24856,10 +24856,10 @@ color: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBulletColors, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBulletColors]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColors">OneDashboardPageWidgetBulletColors</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColors">OneDashboardPageWidgetBulletColors</a>]
 
 ---
 
@@ -25288,7 +25288,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsSeriesOverridesOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsSeriesOverrides">OneDashboardPageWidgetBulletColorsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsSeriesOverrides">OneDashboardPageWidgetBulletColorsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -25359,10 +25359,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBulletColorsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBulletColorsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsSeriesOverrides">OneDashboardPageWidgetBulletColorsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsSeriesOverrides">OneDashboardPageWidgetBulletColorsSeriesOverrides</a>]
 
 ---
 
@@ -25935,7 +25935,7 @@ def reset_account_id() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNrqlQueryOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNrqlQueryOutputReference.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNrqlQueryOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNrqlQuery">OneDashboardPageWidgetBulletNrqlQuery</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNrqlQuery">OneDashboardPageWidgetBulletNrqlQuery</a>]</code> | *No description.* |
 
 ---
 
@@ -26006,10 +26006,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNrqlQueryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBulletNrqlQuery, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBulletNrqlQuery]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNrqlQuery">OneDashboardPageWidgetBulletNrqlQuery</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNrqlQuery">OneDashboardPageWidgetBulletNrqlQuery</a>]
 
 ---
 
@@ -26453,7 +26453,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesOutputReference.property.nullValueInput">null_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesSeriesOverrides">OneDashboardPageWidgetBulletNullValuesSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues">OneDashboardPageWidgetBulletNullValues</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues">OneDashboardPageWidgetBulletNullValues</a>]</code> | *No description.* |
 
 ---
 
@@ -26524,10 +26524,10 @@ null_value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBulletNullValues, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBulletNullValues]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues">OneDashboardPageWidgetBulletNullValues</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues">OneDashboardPageWidgetBulletNullValues</a>]
 
 ---
 
@@ -26956,7 +26956,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesSeriesOverridesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesSeriesOverrides">OneDashboardPageWidgetBulletNullValuesSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesSeriesOverrides">OneDashboardPageWidgetBulletNullValuesSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -27027,10 +27027,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBulletNullValuesSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBulletNullValuesSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesSeriesOverrides">OneDashboardPageWidgetBulletNullValuesSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesSeriesOverrides">OneDashboardPageWidgetBulletNullValuesSeriesOverrides</a>]
 
 ---
 
@@ -27451,7 +27451,7 @@ def reset_y_axis_left_min() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.width">width</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet">OneDashboardPageWidgetBullet</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet">OneDashboardPageWidgetBullet</a>]</code> | *No description.* |
 
 ---
 
@@ -27792,10 +27792,10 @@ y_axis_left_min: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBullet, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBullet]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet">OneDashboardPageWidgetBullet</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet">OneDashboardPageWidgetBullet</a>]
 
 ---
 
@@ -28239,7 +28239,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsSeriesOverrides">OneDashboardPageWidgetBulletUnitsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnits">OneDashboardPageWidgetBulletUnits</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnits">OneDashboardPageWidgetBulletUnits</a>]</code> | *No description.* |
 
 ---
 
@@ -28310,10 +28310,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBulletUnits, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBulletUnits]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnits">OneDashboardPageWidgetBulletUnits</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnits">OneDashboardPageWidgetBulletUnits</a>]
 
 ---
 
@@ -28742,7 +28742,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsSeriesOverridesOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsSeriesOverridesOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsSeriesOverrides">OneDashboardPageWidgetBulletUnitsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsSeriesOverrides">OneDashboardPageWidgetBulletUnitsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -28813,10 +28813,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetBulletUnitsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetBulletUnitsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsSeriesOverrides">OneDashboardPageWidgetBulletUnitsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsSeriesOverrides">OneDashboardPageWidgetBulletUnitsSeriesOverrides</a>]
 
 ---
 
@@ -29260,7 +29260,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsOutputReference.property.colorInput">color_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsSeriesOverrides">OneDashboardPageWidgetFunnelColorsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColors">OneDashboardPageWidgetFunnelColors</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColors">OneDashboardPageWidgetFunnelColors</a>]</code> | *No description.* |
 
 ---
 
@@ -29331,10 +29331,10 @@ color: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetFunnelColors, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetFunnelColors]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColors">OneDashboardPageWidgetFunnelColors</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColors">OneDashboardPageWidgetFunnelColors</a>]
 
 ---
 
@@ -29763,7 +29763,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsSeriesOverridesOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsSeriesOverrides">OneDashboardPageWidgetFunnelColorsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsSeriesOverrides">OneDashboardPageWidgetFunnelColorsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -29834,10 +29834,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetFunnelColorsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetFunnelColorsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsSeriesOverrides">OneDashboardPageWidgetFunnelColorsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsSeriesOverrides">OneDashboardPageWidgetFunnelColorsSeriesOverrides</a>]
 
 ---
 
@@ -30410,7 +30410,7 @@ def reset_account_id() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNrqlQueryOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNrqlQueryOutputReference.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNrqlQueryOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNrqlQuery">OneDashboardPageWidgetFunnelNrqlQuery</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNrqlQuery">OneDashboardPageWidgetFunnelNrqlQuery</a>]</code> | *No description.* |
 
 ---
 
@@ -30481,10 +30481,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNrqlQueryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetFunnelNrqlQuery, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetFunnelNrqlQuery]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNrqlQuery">OneDashboardPageWidgetFunnelNrqlQuery</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNrqlQuery">OneDashboardPageWidgetFunnelNrqlQuery</a>]
 
 ---
 
@@ -30928,7 +30928,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesOutputReference.property.nullValueInput">null_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesSeriesOverrides">OneDashboardPageWidgetFunnelNullValuesSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues">OneDashboardPageWidgetFunnelNullValues</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues">OneDashboardPageWidgetFunnelNullValues</a>]</code> | *No description.* |
 
 ---
 
@@ -30999,10 +30999,10 @@ null_value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetFunnelNullValues, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetFunnelNullValues]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues">OneDashboardPageWidgetFunnelNullValues</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues">OneDashboardPageWidgetFunnelNullValues</a>]
 
 ---
 
@@ -31431,7 +31431,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesSeriesOverridesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesSeriesOverrides">OneDashboardPageWidgetFunnelNullValuesSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesSeriesOverrides">OneDashboardPageWidgetFunnelNullValuesSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -31502,10 +31502,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetFunnelNullValuesSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetFunnelNullValuesSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesSeriesOverrides">OneDashboardPageWidgetFunnelNullValuesSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesSeriesOverrides">OneDashboardPageWidgetFunnelNullValuesSeriesOverrides</a>]
 
 ---
 
@@ -31924,7 +31924,7 @@ def reset_y_axis_left_min() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.width">width</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel">OneDashboardPageWidgetFunnel</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel">OneDashboardPageWidgetFunnel</a>]</code> | *No description.* |
 
 ---
 
@@ -32245,10 +32245,10 @@ y_axis_left_min: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetFunnel, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetFunnel]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel">OneDashboardPageWidgetFunnel</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel">OneDashboardPageWidgetFunnel</a>]
 
 ---
 
@@ -32692,7 +32692,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsSeriesOverrides">OneDashboardPageWidgetFunnelUnitsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnits">OneDashboardPageWidgetFunnelUnits</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnits">OneDashboardPageWidgetFunnelUnits</a>]</code> | *No description.* |
 
 ---
 
@@ -32763,10 +32763,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetFunnelUnits, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetFunnelUnits]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnits">OneDashboardPageWidgetFunnelUnits</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnits">OneDashboardPageWidgetFunnelUnits</a>]
 
 ---
 
@@ -33195,7 +33195,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsSeriesOverridesOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsSeriesOverridesOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsSeriesOverrides">OneDashboardPageWidgetFunnelUnitsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsSeriesOverrides">OneDashboardPageWidgetFunnelUnitsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -33266,10 +33266,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetFunnelUnitsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetFunnelUnitsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsSeriesOverrides">OneDashboardPageWidgetFunnelUnitsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsSeriesOverrides">OneDashboardPageWidgetFunnelUnitsSeriesOverrides</a>]
 
 ---
 
@@ -33713,7 +33713,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsOutputReference.property.colorInput">color_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsSeriesOverrides">OneDashboardPageWidgetHeatmapColorsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColors">OneDashboardPageWidgetHeatmapColors</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColors">OneDashboardPageWidgetHeatmapColors</a>]</code> | *No description.* |
 
 ---
 
@@ -33784,10 +33784,10 @@ color: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetHeatmapColors, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetHeatmapColors]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColors">OneDashboardPageWidgetHeatmapColors</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColors">OneDashboardPageWidgetHeatmapColors</a>]
 
 ---
 
@@ -34216,7 +34216,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsSeriesOverridesOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsSeriesOverrides">OneDashboardPageWidgetHeatmapColorsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsSeriesOverrides">OneDashboardPageWidgetHeatmapColorsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -34287,10 +34287,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetHeatmapColorsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetHeatmapColorsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsSeriesOverrides">OneDashboardPageWidgetHeatmapColorsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsSeriesOverrides">OneDashboardPageWidgetHeatmapColorsSeriesOverrides</a>]
 
 ---
 
@@ -34863,7 +34863,7 @@ def reset_account_id() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNrqlQueryOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNrqlQueryOutputReference.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNrqlQueryOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNrqlQuery">OneDashboardPageWidgetHeatmapNrqlQuery</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNrqlQuery">OneDashboardPageWidgetHeatmapNrqlQuery</a>]</code> | *No description.* |
 
 ---
 
@@ -34934,10 +34934,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNrqlQueryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetHeatmapNrqlQuery, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetHeatmapNrqlQuery]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNrqlQuery">OneDashboardPageWidgetHeatmapNrqlQuery</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNrqlQuery">OneDashboardPageWidgetHeatmapNrqlQuery</a>]
 
 ---
 
@@ -35381,7 +35381,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesOutputReference.property.nullValueInput">null_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides">OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues">OneDashboardPageWidgetHeatmapNullValues</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues">OneDashboardPageWidgetHeatmapNullValues</a>]</code> | *No description.* |
 
 ---
 
@@ -35452,10 +35452,10 @@ null_value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetHeatmapNullValues, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetHeatmapNullValues]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues">OneDashboardPageWidgetHeatmapNullValues</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues">OneDashboardPageWidgetHeatmapNullValues</a>]
 
 ---
 
@@ -35884,7 +35884,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesSeriesOverridesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides">OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides">OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -35955,10 +35955,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides">OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides">OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides</a>]
 
 ---
 
@@ -36395,7 +36395,7 @@ def reset_y_axis_left_min() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.width">width</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap">OneDashboardPageWidgetHeatmap</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap">OneDashboardPageWidgetHeatmap</a>]</code> | *No description.* |
 
 ---
 
@@ -36756,10 +36756,10 @@ y_axis_left_min: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetHeatmap, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetHeatmap]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap">OneDashboardPageWidgetHeatmap</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap">OneDashboardPageWidgetHeatmap</a>]
 
 ---
 
@@ -37203,7 +37203,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsSeriesOverrides">OneDashboardPageWidgetHeatmapUnitsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnits">OneDashboardPageWidgetHeatmapUnits</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnits">OneDashboardPageWidgetHeatmapUnits</a>]</code> | *No description.* |
 
 ---
 
@@ -37274,10 +37274,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetHeatmapUnits, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetHeatmapUnits]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnits">OneDashboardPageWidgetHeatmapUnits</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnits">OneDashboardPageWidgetHeatmapUnits</a>]
 
 ---
 
@@ -37706,7 +37706,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsSeriesOverridesOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsSeriesOverridesOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsSeriesOverrides">OneDashboardPageWidgetHeatmapUnitsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsSeriesOverrides">OneDashboardPageWidgetHeatmapUnitsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -37777,10 +37777,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetHeatmapUnitsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetHeatmapUnitsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsSeriesOverrides">OneDashboardPageWidgetHeatmapUnitsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsSeriesOverrides">OneDashboardPageWidgetHeatmapUnitsSeriesOverrides</a>]
 
 ---
 
@@ -38224,7 +38224,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsOutputReference.property.colorInput">color_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsSeriesOverrides">OneDashboardPageWidgetHistogramColorsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColors">OneDashboardPageWidgetHistogramColors</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColors">OneDashboardPageWidgetHistogramColors</a>]</code> | *No description.* |
 
 ---
 
@@ -38295,10 +38295,10 @@ color: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetHistogramColors, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetHistogramColors]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColors">OneDashboardPageWidgetHistogramColors</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColors">OneDashboardPageWidgetHistogramColors</a>]
 
 ---
 
@@ -38727,7 +38727,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsSeriesOverridesOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsSeriesOverrides">OneDashboardPageWidgetHistogramColorsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsSeriesOverrides">OneDashboardPageWidgetHistogramColorsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -38798,10 +38798,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetHistogramColorsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetHistogramColorsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsSeriesOverrides">OneDashboardPageWidgetHistogramColorsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsSeriesOverrides">OneDashboardPageWidgetHistogramColorsSeriesOverrides</a>]
 
 ---
 
@@ -39374,7 +39374,7 @@ def reset_account_id() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNrqlQueryOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNrqlQueryOutputReference.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNrqlQueryOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNrqlQuery">OneDashboardPageWidgetHistogramNrqlQuery</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNrqlQuery">OneDashboardPageWidgetHistogramNrqlQuery</a>]</code> | *No description.* |
 
 ---
 
@@ -39445,10 +39445,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNrqlQueryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetHistogramNrqlQuery, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetHistogramNrqlQuery]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNrqlQuery">OneDashboardPageWidgetHistogramNrqlQuery</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNrqlQuery">OneDashboardPageWidgetHistogramNrqlQuery</a>]
 
 ---
 
@@ -39892,7 +39892,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesOutputReference.property.nullValueInput">null_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesSeriesOverrides">OneDashboardPageWidgetHistogramNullValuesSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues">OneDashboardPageWidgetHistogramNullValues</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues">OneDashboardPageWidgetHistogramNullValues</a>]</code> | *No description.* |
 
 ---
 
@@ -39963,10 +39963,10 @@ null_value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetHistogramNullValues, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetHistogramNullValues]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues">OneDashboardPageWidgetHistogramNullValues</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues">OneDashboardPageWidgetHistogramNullValues</a>]
 
 ---
 
@@ -40395,7 +40395,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesSeriesOverridesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesSeriesOverrides">OneDashboardPageWidgetHistogramNullValuesSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesSeriesOverrides">OneDashboardPageWidgetHistogramNullValuesSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -40466,10 +40466,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetHistogramNullValuesSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetHistogramNullValuesSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesSeriesOverrides">OneDashboardPageWidgetHistogramNullValuesSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesSeriesOverrides">OneDashboardPageWidgetHistogramNullValuesSeriesOverrides</a>]
 
 ---
 
@@ -40888,7 +40888,7 @@ def reset_y_axis_left_min() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.width">width</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram">OneDashboardPageWidgetHistogram</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram">OneDashboardPageWidgetHistogram</a>]</code> | *No description.* |
 
 ---
 
@@ -41209,10 +41209,10 @@ y_axis_left_min: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetHistogram, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetHistogram]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram">OneDashboardPageWidgetHistogram</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram">OneDashboardPageWidgetHistogram</a>]
 
 ---
 
@@ -41656,7 +41656,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsSeriesOverrides">OneDashboardPageWidgetHistogramUnitsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnits">OneDashboardPageWidgetHistogramUnits</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnits">OneDashboardPageWidgetHistogramUnits</a>]</code> | *No description.* |
 
 ---
 
@@ -41727,10 +41727,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetHistogramUnits, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetHistogramUnits]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnits">OneDashboardPageWidgetHistogramUnits</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnits">OneDashboardPageWidgetHistogramUnits</a>]
 
 ---
 
@@ -42159,7 +42159,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsSeriesOverridesOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsSeriesOverridesOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsSeriesOverrides">OneDashboardPageWidgetHistogramUnitsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsSeriesOverrides">OneDashboardPageWidgetHistogramUnitsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -42230,10 +42230,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetHistogramUnitsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetHistogramUnitsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsSeriesOverrides">OneDashboardPageWidgetHistogramUnitsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsSeriesOverrides">OneDashboardPageWidgetHistogramUnitsSeriesOverrides</a>]
 
 ---
 
@@ -42677,7 +42677,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsOutputReference.property.colorInput">color_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsSeriesOverrides">OneDashboardPageWidgetJsonColorsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColors">OneDashboardPageWidgetJsonColors</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColors">OneDashboardPageWidgetJsonColors</a>]</code> | *No description.* |
 
 ---
 
@@ -42748,10 +42748,10 @@ color: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetJsonColors, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetJsonColors]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColors">OneDashboardPageWidgetJsonColors</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColors">OneDashboardPageWidgetJsonColors</a>]
 
 ---
 
@@ -43180,7 +43180,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsSeriesOverridesOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsSeriesOverrides">OneDashboardPageWidgetJsonColorsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsSeriesOverrides">OneDashboardPageWidgetJsonColorsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -43251,10 +43251,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetJsonColorsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetJsonColorsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsSeriesOverrides">OneDashboardPageWidgetJsonColorsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsSeriesOverrides">OneDashboardPageWidgetJsonColorsSeriesOverrides</a>]
 
 ---
 
@@ -43827,7 +43827,7 @@ def reset_account_id() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNrqlQueryOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNrqlQueryOutputReference.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNrqlQueryOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNrqlQuery">OneDashboardPageWidgetJsonNrqlQuery</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNrqlQuery">OneDashboardPageWidgetJsonNrqlQuery</a>]</code> | *No description.* |
 
 ---
 
@@ -43898,10 +43898,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNrqlQueryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetJsonNrqlQuery, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetJsonNrqlQuery]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNrqlQuery">OneDashboardPageWidgetJsonNrqlQuery</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNrqlQuery">OneDashboardPageWidgetJsonNrqlQuery</a>]
 
 ---
 
@@ -44345,7 +44345,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesOutputReference.property.nullValueInput">null_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesSeriesOverrides">OneDashboardPageWidgetJsonNullValuesSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues">OneDashboardPageWidgetJsonNullValues</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues">OneDashboardPageWidgetJsonNullValues</a>]</code> | *No description.* |
 
 ---
 
@@ -44416,10 +44416,10 @@ null_value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetJsonNullValues, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetJsonNullValues]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues">OneDashboardPageWidgetJsonNullValues</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues">OneDashboardPageWidgetJsonNullValues</a>]
 
 ---
 
@@ -44848,7 +44848,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesSeriesOverridesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesSeriesOverrides">OneDashboardPageWidgetJsonNullValuesSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesSeriesOverrides">OneDashboardPageWidgetJsonNullValuesSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -44919,10 +44919,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetJsonNullValuesSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetJsonNullValuesSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesSeriesOverrides">OneDashboardPageWidgetJsonNullValuesSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesSeriesOverrides">OneDashboardPageWidgetJsonNullValuesSeriesOverrides</a>]
 
 ---
 
@@ -45341,7 +45341,7 @@ def reset_y_axis_left_min() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.width">width</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson">OneDashboardPageWidgetJson</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson">OneDashboardPageWidgetJson</a>]</code> | *No description.* |
 
 ---
 
@@ -45662,10 +45662,10 @@ y_axis_left_min: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetJson, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetJson]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson">OneDashboardPageWidgetJson</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson">OneDashboardPageWidgetJson</a>]
 
 ---
 
@@ -46109,7 +46109,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsSeriesOverrides">OneDashboardPageWidgetJsonUnitsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnits">OneDashboardPageWidgetJsonUnits</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnits">OneDashboardPageWidgetJsonUnits</a>]</code> | *No description.* |
 
 ---
 
@@ -46180,10 +46180,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetJsonUnits, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetJsonUnits]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnits">OneDashboardPageWidgetJsonUnits</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnits">OneDashboardPageWidgetJsonUnits</a>]
 
 ---
 
@@ -46612,7 +46612,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsSeriesOverridesOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsSeriesOverridesOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsSeriesOverrides">OneDashboardPageWidgetJsonUnitsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsSeriesOverrides">OneDashboardPageWidgetJsonUnitsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -46683,10 +46683,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetJsonUnitsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetJsonUnitsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsSeriesOverrides">OneDashboardPageWidgetJsonUnitsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsSeriesOverrides">OneDashboardPageWidgetJsonUnitsSeriesOverrides</a>]
 
 ---
 
@@ -47130,7 +47130,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsOutputReference.property.colorInput">color_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsSeriesOverrides">OneDashboardPageWidgetLineColorsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColors">OneDashboardPageWidgetLineColors</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColors">OneDashboardPageWidgetLineColors</a>]</code> | *No description.* |
 
 ---
 
@@ -47201,10 +47201,10 @@ color: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetLineColors, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetLineColors]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColors">OneDashboardPageWidgetLineColors</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColors">OneDashboardPageWidgetLineColors</a>]
 
 ---
 
@@ -47633,7 +47633,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsSeriesOverridesOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsSeriesOverrides">OneDashboardPageWidgetLineColorsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsSeriesOverrides">OneDashboardPageWidgetLineColorsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -47704,10 +47704,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetLineColorsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetLineColorsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsSeriesOverrides">OneDashboardPageWidgetLineColorsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsSeriesOverrides">OneDashboardPageWidgetLineColorsSeriesOverrides</a>]
 
 ---
 
@@ -48280,7 +48280,7 @@ def reset_account_id() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQueryOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQueryOutputReference.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQueryOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQuery">OneDashboardPageWidgetLineNrqlQuery</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQuery">OneDashboardPageWidgetLineNrqlQuery</a>]</code> | *No description.* |
 
 ---
 
@@ -48351,10 +48351,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQueryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetLineNrqlQuery, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetLineNrqlQuery]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQuery">OneDashboardPageWidgetLineNrqlQuery</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQuery">OneDashboardPageWidgetLineNrqlQuery</a>]
 
 ---
 
@@ -48798,7 +48798,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesOutputReference.property.nullValueInput">null_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesSeriesOverrides">OneDashboardPageWidgetLineNullValuesSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues">OneDashboardPageWidgetLineNullValues</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues">OneDashboardPageWidgetLineNullValues</a>]</code> | *No description.* |
 
 ---
 
@@ -48869,10 +48869,10 @@ null_value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetLineNullValues, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetLineNullValues]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues">OneDashboardPageWidgetLineNullValues</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues">OneDashboardPageWidgetLineNullValues</a>]
 
 ---
 
@@ -49301,7 +49301,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesSeriesOverridesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesSeriesOverrides">OneDashboardPageWidgetLineNullValuesSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesSeriesOverrides">OneDashboardPageWidgetLineNullValuesSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -49372,10 +49372,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetLineNullValuesSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetLineNullValuesSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesSeriesOverrides">OneDashboardPageWidgetLineNullValuesSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesSeriesOverrides">OneDashboardPageWidgetLineNullValuesSeriesOverrides</a>]
 
 ---
 
@@ -49803,7 +49803,7 @@ def reset_y_axis_left_zero() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.yAxisLeftZero">y_axis_left_zero</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine">OneDashboardPageWidgetLine</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine">OneDashboardPageWidgetLine</a>]</code> | *No description.* |
 
 ---
 
@@ -50144,10 +50144,10 @@ y_axis_left_zero: typing.Union[bool, IResolvable]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetLine, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetLine]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine">OneDashboardPageWidgetLine</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine">OneDashboardPageWidgetLine</a>]
 
 ---
 
@@ -50591,7 +50591,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsSeriesOverrides">OneDashboardPageWidgetLineUnitsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnits">OneDashboardPageWidgetLineUnits</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnits">OneDashboardPageWidgetLineUnits</a>]</code> | *No description.* |
 
 ---
 
@@ -50662,10 +50662,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetLineUnits, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetLineUnits]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnits">OneDashboardPageWidgetLineUnits</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnits">OneDashboardPageWidgetLineUnits</a>]
 
 ---
 
@@ -51094,7 +51094,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsSeriesOverridesOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsSeriesOverridesOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsSeriesOverrides">OneDashboardPageWidgetLineUnitsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsSeriesOverrides">OneDashboardPageWidgetLineUnitsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -51165,10 +51165,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetLineUnitsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetLineUnitsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsSeriesOverrides">OneDashboardPageWidgetLineUnitsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsSeriesOverrides">OneDashboardPageWidgetLineUnitsSeriesOverrides</a>]
 
 ---
 
@@ -51612,7 +51612,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsOutputReference.property.colorInput">color_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsSeriesOverrides">OneDashboardPageWidgetLogTableColorsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColors">OneDashboardPageWidgetLogTableColors</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColors">OneDashboardPageWidgetLogTableColors</a>]</code> | *No description.* |
 
 ---
 
@@ -51683,10 +51683,10 @@ color: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetLogTableColors, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetLogTableColors]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColors">OneDashboardPageWidgetLogTableColors</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColors">OneDashboardPageWidgetLogTableColors</a>]
 
 ---
 
@@ -52115,7 +52115,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsSeriesOverridesOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsSeriesOverrides">OneDashboardPageWidgetLogTableColorsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsSeriesOverrides">OneDashboardPageWidgetLogTableColorsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -52186,10 +52186,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetLogTableColorsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetLogTableColorsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsSeriesOverrides">OneDashboardPageWidgetLogTableColorsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsSeriesOverrides">OneDashboardPageWidgetLogTableColorsSeriesOverrides</a>]
 
 ---
 
@@ -52762,7 +52762,7 @@ def reset_account_id() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNrqlQuery">OneDashboardPageWidgetLogTableNrqlQuery</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNrqlQuery">OneDashboardPageWidgetLogTableNrqlQuery</a>]</code> | *No description.* |
 
 ---
 
@@ -52833,10 +52833,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNrqlQueryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetLogTableNrqlQuery, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetLogTableNrqlQuery]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNrqlQuery">OneDashboardPageWidgetLogTableNrqlQuery</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNrqlQuery">OneDashboardPageWidgetLogTableNrqlQuery</a>]
 
 ---
 
@@ -53280,7 +53280,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesOutputReference.property.nullValueInput">null_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesSeriesOverrides">OneDashboardPageWidgetLogTableNullValuesSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues">OneDashboardPageWidgetLogTableNullValues</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues">OneDashboardPageWidgetLogTableNullValues</a>]</code> | *No description.* |
 
 ---
 
@@ -53351,10 +53351,10 @@ null_value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetLogTableNullValues, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetLogTableNullValues]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues">OneDashboardPageWidgetLogTableNullValues</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues">OneDashboardPageWidgetLogTableNullValues</a>]
 
 ---
 
@@ -53783,7 +53783,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesSeriesOverridesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesSeriesOverrides">OneDashboardPageWidgetLogTableNullValuesSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesSeriesOverrides">OneDashboardPageWidgetLogTableNullValuesSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -53854,10 +53854,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetLogTableNullValuesSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetLogTableNullValuesSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesSeriesOverrides">OneDashboardPageWidgetLogTableNullValuesSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesSeriesOverrides">OneDashboardPageWidgetLogTableNullValuesSeriesOverrides</a>]
 
 ---
 
@@ -54276,7 +54276,7 @@ def reset_y_axis_left_min() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.width">width</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable">OneDashboardPageWidgetLogTable</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable">OneDashboardPageWidgetLogTable</a>]</code> | *No description.* |
 
 ---
 
@@ -54597,10 +54597,10 @@ y_axis_left_min: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetLogTable, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetLogTable]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable">OneDashboardPageWidgetLogTable</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable">OneDashboardPageWidgetLogTable</a>]
 
 ---
 
@@ -55044,7 +55044,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsSeriesOverrides">OneDashboardPageWidgetLogTableUnitsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnits">OneDashboardPageWidgetLogTableUnits</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnits">OneDashboardPageWidgetLogTableUnits</a>]</code> | *No description.* |
 
 ---
 
@@ -55115,10 +55115,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetLogTableUnits, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetLogTableUnits]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnits">OneDashboardPageWidgetLogTableUnits</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnits">OneDashboardPageWidgetLogTableUnits</a>]
 
 ---
 
@@ -55547,7 +55547,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsSeriesOverridesOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsSeriesOverridesOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsSeriesOverrides">OneDashboardPageWidgetLogTableUnitsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsSeriesOverrides">OneDashboardPageWidgetLogTableUnitsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -55618,10 +55618,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetLogTableUnitsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetLogTableUnitsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsSeriesOverrides">OneDashboardPageWidgetLogTableUnitsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsSeriesOverrides">OneDashboardPageWidgetLogTableUnitsSeriesOverrides</a>]
 
 ---
 
@@ -56065,7 +56065,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsOutputReference.property.colorInput">color_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsSeriesOverrides">OneDashboardPageWidgetMarkdownColorsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColors">OneDashboardPageWidgetMarkdownColors</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColors">OneDashboardPageWidgetMarkdownColors</a>]</code> | *No description.* |
 
 ---
 
@@ -56136,10 +56136,10 @@ color: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetMarkdownColors, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetMarkdownColors]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColors">OneDashboardPageWidgetMarkdownColors</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColors">OneDashboardPageWidgetMarkdownColors</a>]
 
 ---
 
@@ -56568,7 +56568,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsSeriesOverridesOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsSeriesOverrides">OneDashboardPageWidgetMarkdownColorsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsSeriesOverrides">OneDashboardPageWidgetMarkdownColorsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -56639,10 +56639,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetMarkdownColorsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetMarkdownColorsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsSeriesOverrides">OneDashboardPageWidgetMarkdownColorsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsSeriesOverrides">OneDashboardPageWidgetMarkdownColorsSeriesOverrides</a>]
 
 ---
 
@@ -57237,7 +57237,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesOutputReference.property.nullValueInput">null_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides">OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues">OneDashboardPageWidgetMarkdownNullValues</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues">OneDashboardPageWidgetMarkdownNullValues</a>]</code> | *No description.* |
 
 ---
 
@@ -57308,10 +57308,10 @@ null_value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetMarkdownNullValues, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetMarkdownNullValues]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues">OneDashboardPageWidgetMarkdownNullValues</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues">OneDashboardPageWidgetMarkdownNullValues</a>]
 
 ---
 
@@ -57740,7 +57740,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides">OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides">OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -57811,10 +57811,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides">OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides">OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides</a>]
 
 ---
 
@@ -58225,7 +58225,7 @@ def reset_y_axis_left_min() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.width">width</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown">OneDashboardPageWidgetMarkdown</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown">OneDashboardPageWidgetMarkdown</a>]</code> | *No description.* |
 
 ---
 
@@ -58546,10 +58546,10 @@ y_axis_left_min: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetMarkdown, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetMarkdown]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown">OneDashboardPageWidgetMarkdown</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown">OneDashboardPageWidgetMarkdown</a>]
 
 ---
 
@@ -58993,7 +58993,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsSeriesOverrides">OneDashboardPageWidgetMarkdownUnitsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnits">OneDashboardPageWidgetMarkdownUnits</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnits">OneDashboardPageWidgetMarkdownUnits</a>]</code> | *No description.* |
 
 ---
 
@@ -59064,10 +59064,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetMarkdownUnits, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetMarkdownUnits]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnits">OneDashboardPageWidgetMarkdownUnits</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnits">OneDashboardPageWidgetMarkdownUnits</a>]
 
 ---
 
@@ -59496,7 +59496,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsSeriesOverridesOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsSeriesOverridesOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsSeriesOverrides">OneDashboardPageWidgetMarkdownUnitsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsSeriesOverrides">OneDashboardPageWidgetMarkdownUnitsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -59567,10 +59567,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetMarkdownUnitsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetMarkdownUnitsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsSeriesOverrides">OneDashboardPageWidgetMarkdownUnitsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsSeriesOverrides">OneDashboardPageWidgetMarkdownUnitsSeriesOverrides</a>]
 
 ---
 
@@ -60014,7 +60014,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsOutputReference.property.colorInput">color_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsSeriesOverrides">OneDashboardPageWidgetPieColorsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColors">OneDashboardPageWidgetPieColors</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColors">OneDashboardPageWidgetPieColors</a>]</code> | *No description.* |
 
 ---
 
@@ -60085,10 +60085,10 @@ color: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetPieColors, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetPieColors]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColors">OneDashboardPageWidgetPieColors</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColors">OneDashboardPageWidgetPieColors</a>]
 
 ---
 
@@ -60517,7 +60517,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsSeriesOverridesOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsSeriesOverrides">OneDashboardPageWidgetPieColorsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsSeriesOverrides">OneDashboardPageWidgetPieColorsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -60588,10 +60588,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetPieColorsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetPieColorsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsSeriesOverrides">OneDashboardPageWidgetPieColorsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsSeriesOverrides">OneDashboardPageWidgetPieColorsSeriesOverrides</a>]
 
 ---
 
@@ -61164,7 +61164,7 @@ def reset_account_id() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNrqlQueryOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNrqlQueryOutputReference.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNrqlQueryOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNrqlQuery">OneDashboardPageWidgetPieNrqlQuery</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNrqlQuery">OneDashboardPageWidgetPieNrqlQuery</a>]</code> | *No description.* |
 
 ---
 
@@ -61235,10 +61235,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNrqlQueryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetPieNrqlQuery, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetPieNrqlQuery]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNrqlQuery">OneDashboardPageWidgetPieNrqlQuery</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNrqlQuery">OneDashboardPageWidgetPieNrqlQuery</a>]
 
 ---
 
@@ -61682,7 +61682,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesOutputReference.property.nullValueInput">null_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesSeriesOverrides">OneDashboardPageWidgetPieNullValuesSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues">OneDashboardPageWidgetPieNullValues</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues">OneDashboardPageWidgetPieNullValues</a>]</code> | *No description.* |
 
 ---
 
@@ -61753,10 +61753,10 @@ null_value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetPieNullValues, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetPieNullValues]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues">OneDashboardPageWidgetPieNullValues</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues">OneDashboardPageWidgetPieNullValues</a>]
 
 ---
 
@@ -62185,7 +62185,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesSeriesOverridesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesSeriesOverrides">OneDashboardPageWidgetPieNullValuesSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesSeriesOverrides">OneDashboardPageWidgetPieNullValuesSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -62256,10 +62256,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetPieNullValuesSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetPieNullValuesSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesSeriesOverrides">OneDashboardPageWidgetPieNullValuesSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesSeriesOverrides">OneDashboardPageWidgetPieNullValuesSeriesOverrides</a>]
 
 ---
 
@@ -62696,7 +62696,7 @@ def reset_y_axis_left_min() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.width">width</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie">OneDashboardPageWidgetPie</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie">OneDashboardPageWidgetPie</a>]</code> | *No description.* |
 
 ---
 
@@ -63057,10 +63057,10 @@ y_axis_left_min: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetPie, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetPie]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie">OneDashboardPageWidgetPie</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie">OneDashboardPageWidgetPie</a>]
 
 ---
 
@@ -63504,7 +63504,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsSeriesOverrides">OneDashboardPageWidgetPieUnitsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnits">OneDashboardPageWidgetPieUnits</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnits">OneDashboardPageWidgetPieUnits</a>]</code> | *No description.* |
 
 ---
 
@@ -63575,10 +63575,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetPieUnits, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetPieUnits]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnits">OneDashboardPageWidgetPieUnits</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnits">OneDashboardPageWidgetPieUnits</a>]
 
 ---
 
@@ -64007,7 +64007,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsSeriesOverridesOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsSeriesOverridesOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsSeriesOverrides">OneDashboardPageWidgetPieUnitsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsSeriesOverrides">OneDashboardPageWidgetPieUnitsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -64078,10 +64078,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetPieUnitsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetPieUnitsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsSeriesOverrides">OneDashboardPageWidgetPieUnitsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsSeriesOverrides">OneDashboardPageWidgetPieUnitsSeriesOverrides</a>]
 
 ---
 
@@ -64525,7 +64525,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsOutputReference.property.colorInput">color_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsSeriesOverrides">OneDashboardPageWidgetStackedBarColorsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColors">OneDashboardPageWidgetStackedBarColors</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColors">OneDashboardPageWidgetStackedBarColors</a>]</code> | *No description.* |
 
 ---
 
@@ -64596,10 +64596,10 @@ color: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetStackedBarColors, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetStackedBarColors]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColors">OneDashboardPageWidgetStackedBarColors</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColors">OneDashboardPageWidgetStackedBarColors</a>]
 
 ---
 
@@ -65028,7 +65028,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsSeriesOverridesOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsSeriesOverrides">OneDashboardPageWidgetStackedBarColorsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsSeriesOverrides">OneDashboardPageWidgetStackedBarColorsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -65099,10 +65099,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetStackedBarColorsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetStackedBarColorsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsSeriesOverrides">OneDashboardPageWidgetStackedBarColorsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsSeriesOverrides">OneDashboardPageWidgetStackedBarColorsSeriesOverrides</a>]
 
 ---
 
@@ -65675,7 +65675,7 @@ def reset_account_id() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNrqlQueryOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNrqlQueryOutputReference.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNrqlQueryOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNrqlQuery">OneDashboardPageWidgetStackedBarNrqlQuery</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNrqlQuery">OneDashboardPageWidgetStackedBarNrqlQuery</a>]</code> | *No description.* |
 
 ---
 
@@ -65746,10 +65746,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNrqlQueryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetStackedBarNrqlQuery, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetStackedBarNrqlQuery]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNrqlQuery">OneDashboardPageWidgetStackedBarNrqlQuery</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNrqlQuery">OneDashboardPageWidgetStackedBarNrqlQuery</a>]
 
 ---
 
@@ -66193,7 +66193,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesOutputReference.property.nullValueInput">null_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides">OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues">OneDashboardPageWidgetStackedBarNullValues</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues">OneDashboardPageWidgetStackedBarNullValues</a>]</code> | *No description.* |
 
 ---
 
@@ -66264,10 +66264,10 @@ null_value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetStackedBarNullValues, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetStackedBarNullValues]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues">OneDashboardPageWidgetStackedBarNullValues</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues">OneDashboardPageWidgetStackedBarNullValues</a>]
 
 ---
 
@@ -66696,7 +66696,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides">OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides">OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -66767,10 +66767,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides">OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides">OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides</a>]
 
 ---
 
@@ -67189,7 +67189,7 @@ def reset_y_axis_left_min() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.width">width</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar">OneDashboardPageWidgetStackedBar</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar">OneDashboardPageWidgetStackedBar</a>]</code> | *No description.* |
 
 ---
 
@@ -67510,10 +67510,10 @@ y_axis_left_min: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetStackedBar, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetStackedBar]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar">OneDashboardPageWidgetStackedBar</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar">OneDashboardPageWidgetStackedBar</a>]
 
 ---
 
@@ -67957,7 +67957,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsSeriesOverrides">OneDashboardPageWidgetStackedBarUnitsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnits">OneDashboardPageWidgetStackedBarUnits</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnits">OneDashboardPageWidgetStackedBarUnits</a>]</code> | *No description.* |
 
 ---
 
@@ -68028,10 +68028,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetStackedBarUnits, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetStackedBarUnits]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnits">OneDashboardPageWidgetStackedBarUnits</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnits">OneDashboardPageWidgetStackedBarUnits</a>]
 
 ---
 
@@ -68460,7 +68460,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsSeriesOverridesOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsSeriesOverridesOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsSeriesOverrides">OneDashboardPageWidgetStackedBarUnitsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsSeriesOverrides">OneDashboardPageWidgetStackedBarUnitsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -68531,10 +68531,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetStackedBarUnitsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetStackedBarUnitsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsSeriesOverrides">OneDashboardPageWidgetStackedBarUnitsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsSeriesOverrides">OneDashboardPageWidgetStackedBarUnitsSeriesOverrides</a>]
 
 ---
 
@@ -68978,7 +68978,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsOutputReference.property.colorInput">color_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsSeriesOverrides">OneDashboardPageWidgetTableColorsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColors">OneDashboardPageWidgetTableColors</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColors">OneDashboardPageWidgetTableColors</a>]</code> | *No description.* |
 
 ---
 
@@ -69049,10 +69049,10 @@ color: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetTableColors, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetTableColors]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColors">OneDashboardPageWidgetTableColors</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColors">OneDashboardPageWidgetTableColors</a>]
 
 ---
 
@@ -69481,7 +69481,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsSeriesOverridesOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsSeriesOverrides">OneDashboardPageWidgetTableColorsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsSeriesOverrides">OneDashboardPageWidgetTableColorsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -69552,10 +69552,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetTableColorsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetTableColorsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsSeriesOverrides">OneDashboardPageWidgetTableColorsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsSeriesOverrides">OneDashboardPageWidgetTableColorsSeriesOverrides</a>]
 
 ---
 
@@ -70128,7 +70128,7 @@ def reset_account_id() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQueryOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQueryOutputReference.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQueryOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQuery">OneDashboardPageWidgetTableNrqlQuery</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQuery">OneDashboardPageWidgetTableNrqlQuery</a>]</code> | *No description.* |
 
 ---
 
@@ -70199,10 +70199,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQueryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetTableNrqlQuery, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetTableNrqlQuery]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQuery">OneDashboardPageWidgetTableNrqlQuery</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQuery">OneDashboardPageWidgetTableNrqlQuery</a>]
 
 ---
 
@@ -70646,7 +70646,7 @@ def reset_series_overrides() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesOutputReference.property.nullValueInput">null_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesSeriesOverrides">OneDashboardPageWidgetTableNullValuesSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues">OneDashboardPageWidgetTableNullValues</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues">OneDashboardPageWidgetTableNullValues</a>]</code> | *No description.* |
 
 ---
 
@@ -70717,10 +70717,10 @@ null_value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetTableNullValues, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetTableNullValues]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues">OneDashboardPageWidgetTableNullValues</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues">OneDashboardPageWidgetTableNullValues</a>]
 
 ---
 
@@ -71149,7 +71149,7 @@ def reset_series_name() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesSeriesOverridesOutputReference.property.seriesNameInput">series_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesSeriesOverridesOutputReference.property.nullValue">null_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesSeriesOverrides">OneDashboardPageWidgetTableNullValuesSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesSeriesOverrides">OneDashboardPageWidgetTableNullValuesSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -71220,10 +71220,10 @@ series_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetTableNullValuesSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetTableNullValuesSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesSeriesOverrides">OneDashboardPageWidgetTableNullValuesSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesSeriesOverrides">OneDashboardPageWidgetTableNullValuesSeriesOverrides</a>]
 
 ---
 
@@ -71660,7 +71660,7 @@ def reset_y_axis_left_min() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.width">width</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable">OneDashboardPageWidgetTable</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable">OneDashboardPageWidgetTable</a>]</code> | *No description.* |
 
 ---
 
@@ -72021,10 +72021,10 @@ y_axis_left_min: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetTable, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetTable]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable">OneDashboardPageWidgetTable</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable">OneDashboardPageWidgetTable</a>]
 
 ---
 
@@ -72468,7 +72468,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsOutputReference.property.seriesOverridesInput">series_overrides_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsSeriesOverrides">OneDashboardPageWidgetTableUnitsSeriesOverrides</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnits">OneDashboardPageWidgetTableUnits</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnits">OneDashboardPageWidgetTableUnits</a>]</code> | *No description.* |
 
 ---
 
@@ -72539,10 +72539,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetTableUnits, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetTableUnits]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnits">OneDashboardPageWidgetTableUnits</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnits">OneDashboardPageWidgetTableUnits</a>]
 
 ---
 
@@ -72971,7 +72971,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsSeriesOverridesOutputReference.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsSeriesOverridesOutputReference.property.seriesName">series_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsSeriesOverridesOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsSeriesOverrides">OneDashboardPageWidgetTableUnitsSeriesOverrides</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsSeriesOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsSeriesOverrides">OneDashboardPageWidgetTableUnitsSeriesOverrides</a>]</code> | *No description.* |
 
 ---
 
@@ -73042,10 +73042,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsSeriesOverridesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardPageWidgetTableUnitsSeriesOverrides, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardPageWidgetTableUnitsSeriesOverrides]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsSeriesOverrides">OneDashboardPageWidgetTableUnitsSeriesOverrides</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsSeriesOverrides">OneDashboardPageWidgetTableUnitsSeriesOverrides</a>]
 
 ---
 
@@ -73467,7 +73467,7 @@ def reset_title() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariableItemOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariableItemOutputReference.property.title">title</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariableItemOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariableItemOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariableItem">OneDashboardVariableItem</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariableItemOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariableItem">OneDashboardVariableItem</a>]</code> | *No description.* |
 
 ---
 
@@ -73538,10 +73538,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardVariableItemOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardVariableItem, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardVariableItem]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariableItem">OneDashboardVariableItem</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariableItem">OneDashboardVariableItem</a>]
 
 ---
 
@@ -74366,7 +74366,7 @@ def reset_nrql_query() -> None
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariableOutputReference.property.replacementStrategy">replacement_strategy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariableOutputReference.property.title">title</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariableOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariable">OneDashboardVariable</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariable">OneDashboardVariable</a>]</code> | *No description.* |
 
 ---
 
@@ -74557,10 +74557,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardVariableOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OneDashboardVariable, IResolvable]
+internal_value: typing.Union[IResolvable, OneDashboardVariable]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariable">OneDashboardVariable</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariable">OneDashboardVariable</a>]
 
 ---
 
