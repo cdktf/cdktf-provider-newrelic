@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudazurelinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazurelinkaccount"
 
 cloudazurelinkaccount.NewCloudAzureLinkAccount(scope Construct, id *string, config CloudAzureLinkAccountConfig) CloudAzureLinkAccount
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudazurelinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazurelinkaccount"
 
 cloudazurelinkaccount.CloudAzureLinkAccount_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudazurelinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazurelinkaccount"
 
 cloudazurelinkaccount.CloudAzureLinkAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ cloudazurelinkaccount.CloudAzureLinkAccount_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudazurelinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazurelinkaccount"
 
 cloudazurelinkaccount.CloudAzureLinkAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -683,7 +683,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudazurelinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazurelinkaccount"
 
 &cloudazurelinkaccount.CloudAzureLinkAccountConfig {
 	Connection: interface{},

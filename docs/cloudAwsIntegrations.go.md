@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrations(scope Construct, id *string, config CloudAwsIntegrationsConfig) CloudAwsIntegrations
 ```
@@ -1324,7 +1324,7 @@ func ResetXRay()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.CloudAwsIntegrations_IsConstruct(x interface{}) *bool
 ```
@@ -1356,7 +1356,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.CloudAwsIntegrations_IsTerraformElement(x interface{}) *bool
 ```
@@ -1370,7 +1370,7 @@ cloudawsintegrations.CloudAwsIntegrations_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.CloudAwsIntegrations_IsTerraformResource(x interface{}) *bool
 ```
@@ -2779,7 +2779,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAlb {
 	AwsRegions: *[]*string,
@@ -2913,7 +2913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsApiGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsApiGateway {
 	AwsRegions: *[]*string,
@@ -3013,7 +3013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAutoScaling {
 	AwsRegions: *[]*string,
@@ -3063,7 +3063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAppSync.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsAppSync {
 	AwsRegions: *[]*string,
@@ -3113,7 +3113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAthena.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsAthena {
 	AwsRegions: *[]*string,
@@ -3163,7 +3163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsCognito.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsCognito {
 	AwsRegions: *[]*string,
@@ -3213,7 +3213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsConnect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsConnect {
 	AwsRegions: *[]*string,
@@ -3263,7 +3263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsDirectConnect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsDirectConnect {
 	AwsRegions: *[]*string,
@@ -3313,7 +3313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsFsx.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsFsx {
 	AwsRegions: *[]*string,
@@ -3363,7 +3363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsGlue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsGlue {
 	AwsRegions: *[]*string,
@@ -3413,7 +3413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsKinesisAnalytics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsKinesisAnalytics {
 	AwsRegions: *[]*string,
@@ -3463,7 +3463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsMediaConvert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsMediaConvert {
 	AwsRegions: *[]*string,
@@ -3513,7 +3513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsMediaPackageVod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsMediaPackageVod {
 	AwsRegions: *[]*string,
@@ -3563,7 +3563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsMq.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsMq {
 	AwsRegions: *[]*string,
@@ -3613,7 +3613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsMsk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsMsk {
 	AwsRegions: *[]*string,
@@ -3663,7 +3663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsNeptune.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsNeptune {
 	AwsRegions: *[]*string,
@@ -3713,7 +3713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsQldb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsQldb {
 	AwsRegions: *[]*string,
@@ -3763,7 +3763,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsRoute53Resolver.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsRoute53Resolver {
 	AwsRegions: *[]*string,
@@ -3813,7 +3813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsStates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsStates {
 	AwsRegions: *[]*string,
@@ -3863,7 +3863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsTransitGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsTransitGateway {
 	AwsRegions: *[]*string,
@@ -3913,7 +3913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsWaf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsWaf {
 	AwsRegions: *[]*string,
@@ -3963,7 +3963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsWafv2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsAwsWafv2 {
 	AwsRegions: *[]*string,
@@ -4013,7 +4013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsBilling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsBilling {
 	MetricsPollingInterval: *f64,
@@ -4047,7 +4047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfront.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsCloudfront {
 	FetchLambdasAtEdge: interface{},
@@ -4149,7 +4149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudtrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsCloudtrail {
 	AwsRegions: *[]*string,
@@ -4199,7 +4199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsConfig {
 	Connection: interface{},
@@ -4211,59 +4211,59 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrat
 	Provisioners: *[]interface{},
 	LinkedAccountId: *f64,
 	AccountId: *f64,
-	Alb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAlb,
-	ApiGateway: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsApiGateway,
-	AutoScaling: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAutoScaling,
-	AwsAppSync: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsAppSync,
-	AwsAthena: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsAthena,
-	AwsCognito: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsCognito,
-	AwsConnect: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsConnect,
-	AwsDirectConnect: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsDirectConnect,
-	AwsFsx: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsFsx,
-	AwsGlue: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsGlue,
-	AwsKinesisAnalytics: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsKinesisAnalytics,
-	AwsMediaConvert: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsMediaConvert,
-	AwsMediaPackageVod: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsMediaPackageVod,
-	AwsMq: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsMq,
-	AwsMsk: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsMsk,
-	AwsNeptune: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsNeptune,
-	AwsQldb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsQldb,
-	AwsRoute53Resolver: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsRoute53Resolver,
-	AwsStates: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsStates,
-	AwsTransitGateway: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsTransitGateway,
-	AwsWaf: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsWaf,
-	AwsWafv2: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsAwsWafv2,
-	Billing: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsBilling,
-	Cloudfront: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsCloudfront,
-	Cloudtrail: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsCloudtrail,
-	DocDb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsDocDb,
-	Dynamodb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsDynamodb,
-	Ebs: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsEbs,
-	Ec2: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsEc2,
-	Ecs: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsEcs,
-	Efs: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsEfs,
-	Elasticache: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsElasticache,
-	Elasticbeanstalk: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalk,
-	Elasticsearch: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearch,
-	Elb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsElb,
-	Emr: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsEmr,
-	Health: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsHealth,
-	Iam: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsIam,
+	Alb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAlb,
+	ApiGateway: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsApiGateway,
+	AutoScaling: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAutoScaling,
+	AwsAppSync: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsAppSync,
+	AwsAthena: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsAthena,
+	AwsCognito: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsCognito,
+	AwsConnect: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsConnect,
+	AwsDirectConnect: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsDirectConnect,
+	AwsFsx: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsFsx,
+	AwsGlue: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsGlue,
+	AwsKinesisAnalytics: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsKinesisAnalytics,
+	AwsMediaConvert: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsMediaConvert,
+	AwsMediaPackageVod: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsMediaPackageVod,
+	AwsMq: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsMq,
+	AwsMsk: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsMsk,
+	AwsNeptune: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsNeptune,
+	AwsQldb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsQldb,
+	AwsRoute53Resolver: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsRoute53Resolver,
+	AwsStates: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsStates,
+	AwsTransitGateway: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsTransitGateway,
+	AwsWaf: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsWaf,
+	AwsWafv2: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsAwsWafv2,
+	Billing: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsBilling,
+	Cloudfront: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsCloudfront,
+	Cloudtrail: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsCloudtrail,
+	DocDb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsDocDb,
+	Dynamodb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsDynamodb,
+	Ebs: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsEbs,
+	Ec2: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsEc2,
+	Ecs: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsEcs,
+	Efs: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsEfs,
+	Elasticache: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsElasticache,
+	Elasticbeanstalk: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalk,
+	Elasticsearch: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearch,
+	Elb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsElb,
+	Emr: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsEmr,
+	Health: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsHealth,
+	Iam: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsIam,
 	Id: *string,
-	Iot: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsIot,
-	Kinesis: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsKinesis,
-	KinesisFirehose: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsKinesisFirehose,
-	Lambda: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsLambda,
-	Rds: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsRds,
-	Redshift: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsRedshift,
-	Route53: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsRoute53,
-	S3: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsS3,
-	Ses: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsSes,
-	Sns: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsSns,
-	Sqs: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsSqs,
-	TrustedAdvisor: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsTrustedAdvisor,
-	Vpc: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsVpc,
-	XRay: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8.cloudAwsIntegrations.CloudAwsIntegrationsXRay,
+	Iot: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsIot,
+	Kinesis: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsKinesis,
+	KinesisFirehose: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsKinesisFirehose,
+	Lambda: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsLambda,
+	Rds: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsRds,
+	Redshift: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsRedshift,
+	Route53: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsRoute53,
+	S3: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsS3,
+	Ses: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsSes,
+	Sns: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsSns,
+	Sqs: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsSqs,
+	TrustedAdvisor: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsTrustedAdvisor,
+	Vpc: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsVpc,
+	XRay: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsIntegrations.CloudAwsIntegrationsXRay,
 }
 ```
 
@@ -5182,7 +5182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDocDb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsDocDb {
 	AwsRegions: *[]*string,
@@ -5232,7 +5232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsDynamodb {
 	AwsRegions: *[]*string,
@@ -5350,7 +5350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsEbs {
 	AwsRegions: *[]*string,
@@ -5450,7 +5450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsEc2 {
 	AwsRegions: *[]*string,
@@ -5564,7 +5564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsEcs {
 	AwsRegions: *[]*string,
@@ -5664,7 +5664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsEfs {
 	AwsRegions: *[]*string,
@@ -5764,7 +5764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticache.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsElasticache {
 	AwsRegions: *[]*string,
@@ -5864,7 +5864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsElasticbeanstalk {
 	AwsRegions: *[]*string,
@@ -5982,7 +5982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsElasticsearch {
 	AwsRegions: *[]*string,
@@ -6082,7 +6082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsElb {
 	AwsRegions: *[]*string,
@@ -6168,7 +6168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmr.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsEmr {
 	AwsRegions: *[]*string,
@@ -6268,7 +6268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsHealth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsHealth {
 	MetricsPollingInterval: *f64,
@@ -6302,7 +6302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsIam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsIam {
 	MetricsPollingInterval: *f64,
@@ -6368,7 +6368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsIot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsIot {
 	AwsRegions: *[]*string,
@@ -6418,7 +6418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsKinesis {
 	AwsRegions: *[]*string,
@@ -6536,7 +6536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisFirehose.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsKinesisFirehose {
 	AwsRegions: *[]*string,
@@ -6586,7 +6586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambda.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsLambda {
 	AwsRegions: *[]*string,
@@ -6686,7 +6686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsRds {
 	AwsRegions: *[]*string,
@@ -6786,7 +6786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRedshift.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsRedshift {
 	AwsRegions: *[]*string,
@@ -6868,7 +6868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsRoute53 {
 	FetchExtendedInventory: interface{},
@@ -6920,7 +6920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsS3 {
 	FetchExtendedInventory: interface{},
@@ -7022,7 +7022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsSes {
 	AwsRegions: *[]*string,
@@ -7072,7 +7072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsSns {
 	AwsRegions: *[]*string,
@@ -7140,7 +7140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsSqs {
 	AwsRegions: *[]*string,
@@ -7274,7 +7274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsTrustedAdvisor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsTrustedAdvisor {
 	MetricsPollingInterval: *f64,
@@ -7308,7 +7308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsVpc {
 	AwsRegions: *[]*string,
@@ -7426,7 +7426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsXRay.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 &cloudawsintegrations.CloudAwsIntegrationsXRay {
 	AwsRegions: *[]*string,
@@ -7478,7 +7478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAlbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAlbOutputReference
 ```
@@ -7930,7 +7930,7 @@ func InternalValue() CloudAwsIntegrationsAlb
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsApiGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsApiGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsApiGatewayOutputReference
 ```
@@ -8324,7 +8324,7 @@ func InternalValue() CloudAwsIntegrationsApiGateway
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAutoScalingOutputReference
 ```
@@ -8631,7 +8631,7 @@ func InternalValue() CloudAwsIntegrationsAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAppSyncOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsAppSyncOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsAppSyncOutputReference
 ```
@@ -8938,7 +8938,7 @@ func InternalValue() CloudAwsIntegrationsAwsAppSync
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAthenaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsAthenaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsAthenaOutputReference
 ```
@@ -9245,7 +9245,7 @@ func InternalValue() CloudAwsIntegrationsAwsAthena
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsCognitoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsCognitoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsCognitoOutputReference
 ```
@@ -9552,7 +9552,7 @@ func InternalValue() CloudAwsIntegrationsAwsCognito
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsConnectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsConnectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsConnectOutputReference
 ```
@@ -9859,7 +9859,7 @@ func InternalValue() CloudAwsIntegrationsAwsConnect
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsDirectConnectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsDirectConnectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsDirectConnectOutputReference
 ```
@@ -10166,7 +10166,7 @@ func InternalValue() CloudAwsIntegrationsAwsDirectConnect
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsFsxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsFsxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsFsxOutputReference
 ```
@@ -10473,7 +10473,7 @@ func InternalValue() CloudAwsIntegrationsAwsFsx
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsGlueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsGlueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsGlueOutputReference
 ```
@@ -10780,7 +10780,7 @@ func InternalValue() CloudAwsIntegrationsAwsGlue
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsKinesisAnalyticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsKinesisAnalyticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsKinesisAnalyticsOutputReference
 ```
@@ -11087,7 +11087,7 @@ func InternalValue() CloudAwsIntegrationsAwsKinesisAnalytics
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsMediaConvertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsMediaConvertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsMediaConvertOutputReference
 ```
@@ -11394,7 +11394,7 @@ func InternalValue() CloudAwsIntegrationsAwsMediaConvert
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsMediaPackageVodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsMediaPackageVodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsMediaPackageVodOutputReference
 ```
@@ -11701,7 +11701,7 @@ func InternalValue() CloudAwsIntegrationsAwsMediaPackageVod
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsMqOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsMqOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsMqOutputReference
 ```
@@ -12008,7 +12008,7 @@ func InternalValue() CloudAwsIntegrationsAwsMq
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsMskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsMskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsMskOutputReference
 ```
@@ -12315,7 +12315,7 @@ func InternalValue() CloudAwsIntegrationsAwsMsk
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsNeptuneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsNeptuneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsNeptuneOutputReference
 ```
@@ -12622,7 +12622,7 @@ func InternalValue() CloudAwsIntegrationsAwsNeptune
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsQldbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsQldbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsQldbOutputReference
 ```
@@ -12929,7 +12929,7 @@ func InternalValue() CloudAwsIntegrationsAwsQldb
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsRoute53ResolverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsRoute53ResolverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsRoute53ResolverOutputReference
 ```
@@ -13236,7 +13236,7 @@ func InternalValue() CloudAwsIntegrationsAwsRoute53Resolver
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsStatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsStatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsStatesOutputReference
 ```
@@ -13543,7 +13543,7 @@ func InternalValue() CloudAwsIntegrationsAwsStates
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsTransitGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsTransitGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsTransitGatewayOutputReference
 ```
@@ -13850,7 +13850,7 @@ func InternalValue() CloudAwsIntegrationsAwsTransitGateway
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsWafOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsWafOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsWafOutputReference
 ```
@@ -14157,7 +14157,7 @@ func InternalValue() CloudAwsIntegrationsAwsWaf
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsWafv2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsAwsWafv2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsWafv2OutputReference
 ```
@@ -14464,7 +14464,7 @@ func InternalValue() CloudAwsIntegrationsAwsWafv2
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsBillingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsBillingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsBillingOutputReference
 ```
@@ -14742,7 +14742,7 @@ func InternalValue() CloudAwsIntegrationsBilling
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsCloudfrontOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsCloudfrontOutputReference
 ```
@@ -15136,7 +15136,7 @@ func InternalValue() CloudAwsIntegrationsCloudfront
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudtrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsCloudtrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsCloudtrailOutputReference
 ```
@@ -15443,7 +15443,7 @@ func InternalValue() CloudAwsIntegrationsCloudtrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDocDbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsDocDbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsDocDbOutputReference
 ```
@@ -15750,7 +15750,7 @@ func InternalValue() CloudAwsIntegrationsDocDb
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsDynamodbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsDynamodbOutputReference
 ```
@@ -16173,7 +16173,7 @@ func InternalValue() CloudAwsIntegrationsDynamodb
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsEbsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsEbsOutputReference
 ```
@@ -16567,7 +16567,7 @@ func InternalValue() CloudAwsIntegrationsEbs
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsEc2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsEc2OutputReference
 ```
@@ -16990,7 +16990,7 @@ func InternalValue() CloudAwsIntegrationsEc2
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsEcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsEcsOutputReference
 ```
@@ -17384,7 +17384,7 @@ func InternalValue() CloudAwsIntegrationsEcs
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsEfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsEfsOutputReference
 ```
@@ -17778,7 +17778,7 @@ func InternalValue() CloudAwsIntegrationsEfs
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticacheOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsElasticacheOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsElasticacheOutputReference
 ```
@@ -18172,7 +18172,7 @@ func InternalValue() CloudAwsIntegrationsElasticache
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsElasticbeanstalkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsElasticbeanstalkOutputReference
 ```
@@ -18595,7 +18595,7 @@ func InternalValue() CloudAwsIntegrationsElasticbeanstalk
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsElasticsearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsElasticsearchOutputReference
 ```
@@ -18989,7 +18989,7 @@ func InternalValue() CloudAwsIntegrationsElasticsearch
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsElbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsElbOutputReference
 ```
@@ -19354,7 +19354,7 @@ func InternalValue() CloudAwsIntegrationsElb
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsEmrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsEmrOutputReference
 ```
@@ -19748,7 +19748,7 @@ func InternalValue() CloudAwsIntegrationsEmr
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsHealthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsHealthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsHealthOutputReference
 ```
@@ -20026,7 +20026,7 @@ func InternalValue() CloudAwsIntegrationsHealth
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsIamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsIamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsIamOutputReference
 ```
@@ -20362,7 +20362,7 @@ func InternalValue() CloudAwsIntegrationsIam
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsIotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsIotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsIotOutputReference
 ```
@@ -20669,7 +20669,7 @@ func InternalValue() CloudAwsIntegrationsIot
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisFirehoseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsKinesisFirehoseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsKinesisFirehoseOutputReference
 ```
@@ -20976,7 +20976,7 @@ func InternalValue() CloudAwsIntegrationsKinesisFirehose
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsKinesisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsKinesisOutputReference
 ```
@@ -21399,7 +21399,7 @@ func InternalValue() CloudAwsIntegrationsKinesis
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambdaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsLambdaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsLambdaOutputReference
 ```
@@ -21793,7 +21793,7 @@ func InternalValue() CloudAwsIntegrationsLambda
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsRdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsRdsOutputReference
 ```
@@ -22187,7 +22187,7 @@ func InternalValue() CloudAwsIntegrationsRds
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRedshiftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsRedshiftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsRedshiftOutputReference
 ```
@@ -22552,7 +22552,7 @@ func InternalValue() CloudAwsIntegrationsRedshift
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsRoute53OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsRoute53OutputReference
 ```
@@ -22859,7 +22859,7 @@ func InternalValue() CloudAwsIntegrationsRoute53
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsS3OutputReference
 ```
@@ -23253,7 +23253,7 @@ func InternalValue() CloudAwsIntegrationsS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsSesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsSesOutputReference
 ```
@@ -23560,7 +23560,7 @@ func InternalValue() CloudAwsIntegrationsSes
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsSnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsSnsOutputReference
 ```
@@ -23896,7 +23896,7 @@ func InternalValue() CloudAwsIntegrationsSns
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsSqsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsSqsOutputReference
 ```
@@ -24348,7 +24348,7 @@ func InternalValue() CloudAwsIntegrationsSqs
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsTrustedAdvisorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsTrustedAdvisorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsTrustedAdvisorOutputReference
 ```
@@ -24626,7 +24626,7 @@ func InternalValue() CloudAwsIntegrationsTrustedAdvisor
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsVpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsVpcOutputReference
 ```
@@ -25049,7 +25049,7 @@ func InternalValue() CloudAwsIntegrationsVpc
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsXRayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/cloudawsintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsintegrations"
 
 cloudawsintegrations.NewCloudAwsIntegrationsXRayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsXRayOutputReference
 ```
