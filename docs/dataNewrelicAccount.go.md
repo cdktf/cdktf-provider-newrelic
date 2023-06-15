@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/datanewrelicaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicaccount"
 
 datanewrelicaccount.NewDataNewrelicAccount(scope Construct, id *string, config DataNewrelicAccountConfig) DataNewrelicAccount
 ```
@@ -298,7 +298,7 @@ func ResetScope()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/datanewrelicaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicaccount"
 
 datanewrelicaccount.DataNewrelicAccount_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/datanewrelicaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicaccount"
 
 datanewrelicaccount.DataNewrelicAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datanewrelicaccount.DataNewrelicAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/datanewrelicaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicaccount"
 
 datanewrelicaccount.DataNewrelicAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/datanewrelicaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicaccount"
 
 &datanewrelicaccount.DataNewrelicAccountConfig {
 	Connection: interface{},
