@@ -1,6 +1,6 @@
 # `data_newrelic_notification_destination`
 
-Refer to the Terraform Registory for docs: [`data_newrelic_notification_destination`](https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/notification_destination).
+Refer to the Terraform Registory for docs: [`data_newrelic_notification_destination`](https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/notification_destination).
 
 # `dataNewrelicNotificationDestination` Submodule <a name="`dataNewrelicNotificationDestination` Submodule" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination"></a>
 
@@ -8,14 +8,14 @@ Refer to the Terraform Registory for docs: [`data_newrelic_notification_destinat
 
 ### DataNewrelicNotificationDestination <a name="DataNewrelicNotificationDestination" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/notification_destination newrelic_notification_destination}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/notification_destination newrelic_notification_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.Initializer"></a>
 
 ```csharp
 using HashiCorp.Cdktf.Providers.Newrelic;
 
-new DataNewrelicNotificationDestination(Construct Scope, string Id, DataNewrelicNotificationDestinationConfig Config);
+new DataNewrelicNotificationDestination(Construct Scope, string Id, DataNewrelicNotificationDestinationConfig Config = null);
 ```
 
 | **Name** | **Type** | **Description** |
@@ -44,7 +44,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `Config`<sup>Required</sup> <a name="Config" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.Initializer.parameter.config"></a>
+##### `Config`<sup>Optional</sup> <a name="Config" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig">DataNewrelicNotificationDestinationConfig</a>
 
@@ -71,6 +71,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetAccountId">ResetAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetName">ResetName</a></code> | *No description.* |
 
 ---
 
@@ -264,6 +266,18 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetAccountId()
 ```
 
+##### `ResetId` <a name="ResetId" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetId"></a>
+
+```csharp
+private void ResetId()
+```
+
+##### `ResetName` <a name="ResetName" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.resetName"></a>
+
+```csharp
+private void ResetName()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -351,14 +365,15 @@ DataNewrelicNotificationDestination.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.active">Active</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.property">Property</a></code> | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationPropertyList">DataNewrelicNotificationDestinationPropertyList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.status">Status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.accountIdInput">AccountIdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.accountId">AccountId</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.name">Name</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -494,16 +509,6 @@ public IResolvable Active { get; }
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.name"></a>
-
-```csharp
-public string Name { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.property"></a>
 
 ```csharp
@@ -554,6 +559,16 @@ public string IdInput { get; }
 
 ---
 
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.nameInput"></a>
+
+```csharp
+public string NameInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.accountId"></a>
 
 ```csharp
@@ -568,6 +583,16 @@ public double AccountId { get; }
 
 ```csharp
 public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestination.property.name"></a>
+
+```csharp
+public string Name { get; }
 ```
 
 - *Type:* string
@@ -609,8 +634,9 @@ new DataNewrelicNotificationDestinationConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     object[] Provisioners = null,
-    string Id,
-    double AccountId = null
+    double AccountId = null,
+    string Id = null,
+    string Name = null
 };
 ```
 
@@ -625,8 +651,9 @@ new DataNewrelicNotificationDestinationConfig {
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.id">Id</a></code> | <code>string</code> | The ID of the destination. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.accountId">AccountId</a></code> | <code>double</code> | The account ID under which to put the destination. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.id">Id</a></code> | <code>string</code> | The ID of the destination. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.name">Name</a></code> | <code>string</code> | The name of the destination. |
 
 ---
 
@@ -700,23 +727,6 @@ public object[] Provisioners { get; set; }
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.id"></a>
-
-```csharp
-public string Id { get; set; }
-```
-
-- *Type:* string
-
-The ID of the destination.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
 ##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.accountId"></a>
 
 ```csharp
@@ -727,7 +737,38 @@ public double AccountId { get; set; }
 
 The account ID under which to put the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
+
+---
+
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.id"></a>
+
+```csharp
+public string Id { get; set; }
+```
+
+- *Type:* string
+
+The ID of the destination.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Name`<sup>Optional</sup> <a name="Name" id="@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationConfig.property.name"></a>
+
+```csharp
+public string Name { get; set; }
+```
+
+- *Type:* string
+
+The name of the destination.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/notification_destination#name DataNewrelicNotificationDestination#name}
 
 ---
 

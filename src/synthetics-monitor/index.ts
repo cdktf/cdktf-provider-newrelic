@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor
+// https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface SyntheticsMonitorConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the newrelic account
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#account_id SyntheticsMonitor#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#account_id SyntheticsMonitor#account_id}
   */
   readonly accountId?: number;
   /**
   * Bypass HEAD request.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#bypass_head_request SyntheticsMonitor#bypass_head_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#bypass_head_request SyntheticsMonitor#bypass_head_request}
   */
   readonly bypassHeadRequest?: boolean | cdktf.IResolvable;
   /**
   * Capture a screenshot during job execution
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#enable_screenshot_on_failure_and_script SyntheticsMonitor#enable_screenshot_on_failure_and_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#enable_screenshot_on_failure_and_script SyntheticsMonitor#enable_screenshot_on_failure_and_script}
   */
   readonly enableScreenshotOnFailureAndScript?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#id SyntheticsMonitor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#id SyntheticsMonitor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,91 +35,91 @@ export interface SyntheticsMonitorConfig extends cdktf.TerraformMetaArguments {
   /**
   * The locations in which this monitor should be run.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#locations_private SyntheticsMonitor#locations_private}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#locations_private SyntheticsMonitor#locations_private}
   */
   readonly locationsPrivate?: string[];
   /**
   * The locations in which this monitor should be run.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#locations_public SyntheticsMonitor#locations_public}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#locations_public SyntheticsMonitor#locations_public}
   */
   readonly locationsPublic?: string[];
   /**
   * The title of this monitor.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#name SyntheticsMonitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#name SyntheticsMonitor#name}
   */
   readonly name: string;
   /**
   * The interval at which this monitor should run. Valid values are EVERY_MINUTE, EVERY_5_MINUTES, EVERY_10_MINUTES, EVERY_15_MINUTES, EVERY_30_MINUTES, EVERY_HOUR, EVERY_6_HOURS, EVERY_12_HOURS, or EVERY_DAY.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#period SyntheticsMonitor#period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#period SyntheticsMonitor#period}
   */
   readonly period?: string;
   /**
   * The runtime type that the monitor will run
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#runtime_type SyntheticsMonitor#runtime_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#runtime_type SyntheticsMonitor#runtime_type}
   */
   readonly runtimeType?: string;
   /**
   * The specific version of the runtime type selected
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#runtime_type_version SyntheticsMonitor#runtime_type_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#runtime_type_version SyntheticsMonitor#runtime_type_version}
   */
   readonly runtimeTypeVersion?: string;
   /**
   * The programing language that should execute the script
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#script_language SyntheticsMonitor#script_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#script_language SyntheticsMonitor#script_language}
   */
   readonly scriptLanguage?: string;
   /**
   * The monitor status (i.e. ENABLED, MUTED, DISABLED).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#status SyntheticsMonitor#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#status SyntheticsMonitor#status}
   */
   readonly status: string;
   /**
   * Fail the monitor check if redirected.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#treat_redirect_as_failure SyntheticsMonitor#treat_redirect_as_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#treat_redirect_as_failure SyntheticsMonitor#treat_redirect_as_failure}
   */
   readonly treatRedirectAsFailure?: boolean | cdktf.IResolvable;
   /**
   * The monitor type. Valid values are SIMPLE AND BROWSER.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#type SyntheticsMonitor#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#type SyntheticsMonitor#type}
   */
   readonly type: string;
   /**
   * The URI for the monitor to hit.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#uri SyntheticsMonitor#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#uri SyntheticsMonitor#uri}
   */
   readonly uri?: string;
   /**
   * The string to validate against in the response.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#validation_string SyntheticsMonitor#validation_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#validation_string SyntheticsMonitor#validation_string}
   */
   readonly validationString?: string;
   /**
   * Verify SSL.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#verify_ssl SyntheticsMonitor#verify_ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#verify_ssl SyntheticsMonitor#verify_ssl}
   */
   readonly verifySsl?: boolean | cdktf.IResolvable;
   /**
   * custom_header block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#custom_header SyntheticsMonitor#custom_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#custom_header SyntheticsMonitor#custom_header}
   */
   readonly customHeader?: SyntheticsMonitorCustomHeader[] | cdktf.IResolvable;
   /**
   * tag block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#tag SyntheticsMonitor#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#tag SyntheticsMonitor#tag}
   */
   readonly tag?: SyntheticsMonitorTag[] | cdktf.IResolvable;
 }
@@ -132,13 +127,13 @@ export interface SyntheticsMonitorCustomHeader {
   /**
   * Header name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#name SyntheticsMonitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#name SyntheticsMonitor#name}
   */
   readonly name?: string;
   /**
   * Header value
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#value SyntheticsMonitor#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#value SyntheticsMonitor#value}
   */
   readonly value?: string;
 }
@@ -260,13 +255,13 @@ export interface SyntheticsMonitorTag {
   /**
   * Name of the tag key
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#key SyntheticsMonitor#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#key SyntheticsMonitor#key}
   */
   readonly key: string;
   /**
   * Values associated with the tag key
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor#values SyntheticsMonitor#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor#values SyntheticsMonitor#values}
   */
   readonly values: string[];
 }
@@ -380,7 +375,7 @@ export class SyntheticsMonitorTagList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor newrelic_synthetics_monitor}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor newrelic_synthetics_monitor}
 */
 export class SyntheticsMonitor extends cdktf.TerraformResource {
 
@@ -394,7 +389,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -405,7 +400,7 @@ export class SyntheticsMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_synthetics_monitor',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.24.2',
+        providerVersion: '3.25.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

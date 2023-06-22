@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`newrelic`](https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs).
+Refer to the Terraform Registory for docs: [`newrelic`](https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-newrelic.provider"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`newrelic`](https://registry.terrafo
 
 ### NewrelicProvider <a name="NewrelicProvider" id="@cdktf/provider-newrelic.provider.NewrelicProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs newrelic}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs newrelic}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/provider"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/provider"
 
 provider.NewNewrelicProvider(scope Construct, id *string, config NewrelicProviderConfig) NewrelicProvider
 ```
@@ -224,7 +224,7 @@ func ResetSyntheticsApiUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/provider"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/provider"
 
 provider.NewrelicProvider_IsConstruct(x interface{}) *bool
 ```
@@ -256,7 +256,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/provider"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/provider"
 
 provider.NewrelicProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -270,7 +270,7 @@ provider.NewrelicProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/provider"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/provider"
 
 provider.NewrelicProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/provider"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/provider"
 
 &provider.NewrelicProviderConfig {
 	AccountId: *f64,
@@ -735,20 +735,20 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/provider"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#account_id NewrelicProvider#account_id}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.apiKey">ApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#api_key NewrelicProvider#api_key}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.adminApiKey">AdminApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#admin_api_key NewrelicProvider#admin_api_key}. |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#account_id NewrelicProvider#account_id}. |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.apiKey">ApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#api_key NewrelicProvider#api_key}. |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.adminApiKey">AdminApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#admin_api_key NewrelicProvider#admin_api_key}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.apiUrl">ApiUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#api_url NewrelicProvider#api_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.cacertFile">CacertFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#cacert_file NewrelicProvider#cacert_file}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.infrastructureApiUrl">InfrastructureApiUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify">InsecureSkipVerify</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertKey">InsightsInsertKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#insights_insert_key NewrelicProvider#insights_insert_key}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertUrl">InsightsInsertUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#insights_insert_url NewrelicProvider#insights_insert_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsQueryUrl">InsightsQueryUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#insights_query_url NewrelicProvider#insights_query_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.nerdgraphApiUrl">NerdgraphApiUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}. |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.apiUrl">ApiUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#api_url NewrelicProvider#api_url}. |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.cacertFile">CacertFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#cacert_file NewrelicProvider#cacert_file}. |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.infrastructureApiUrl">InfrastructureApiUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}. |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify">InsecureSkipVerify</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertKey">InsightsInsertKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#insights_insert_key NewrelicProvider#insights_insert_key}. |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertUrl">InsightsInsertUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#insights_insert_url NewrelicProvider#insights_insert_url}. |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsQueryUrl">InsightsQueryUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#insights_query_url NewrelicProvider#insights_query_url}. |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.nerdgraphApiUrl">NerdgraphApiUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.region">Region</a></code> | <code>*string</code> | The data center for which your New Relic account is configured. Only one region per provider block is permitted. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.syntheticsApiUrl">SyntheticsApiUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}. |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.syntheticsApiUrl">SyntheticsApiUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}. |
 
 ---
 
@@ -760,7 +760,7 @@ AccountId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#account_id NewrelicProvider#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#account_id NewrelicProvider#account_id}.
 
 ---
 
@@ -772,7 +772,7 @@ ApiKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#api_key NewrelicProvider#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#api_key NewrelicProvider#api_key}.
 
 ---
 
@@ -784,7 +784,7 @@ AdminApiKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#admin_api_key NewrelicProvider#admin_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#admin_api_key NewrelicProvider#admin_api_key}.
 
 ---
 
@@ -798,7 +798,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#alias NewrelicProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#alias NewrelicProvider#alias}
 
 ---
 
@@ -810,7 +810,7 @@ ApiUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#api_url NewrelicProvider#api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#api_url NewrelicProvider#api_url}.
 
 ---
 
@@ -822,7 +822,7 @@ CacertFile *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#cacert_file NewrelicProvider#cacert_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#cacert_file NewrelicProvider#cacert_file}.
 
 ---
 
@@ -834,7 +834,7 @@ InfrastructureApiUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}.
 
 ---
 
@@ -846,7 +846,7 @@ InsecureSkipVerify interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}.
 
 ---
 
@@ -858,7 +858,7 @@ InsightsInsertKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#insights_insert_key NewrelicProvider#insights_insert_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#insights_insert_key NewrelicProvider#insights_insert_key}.
 
 ---
 
@@ -870,7 +870,7 @@ InsightsInsertUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#insights_insert_url NewrelicProvider#insights_insert_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#insights_insert_url NewrelicProvider#insights_insert_url}.
 
 ---
 
@@ -882,7 +882,7 @@ InsightsQueryUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#insights_query_url NewrelicProvider#insights_query_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#insights_query_url NewrelicProvider#insights_query_url}.
 
 ---
 
@@ -894,7 +894,7 @@ NerdgraphApiUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}.
 
 ---
 
@@ -908,7 +908,7 @@ Region *string
 
 The data center for which your New Relic account is configured. Only one region per provider block is permitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#region NewrelicProvider#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#region NewrelicProvider#region}
 
 ---
 
@@ -920,7 +920,7 @@ SyntheticsApiUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}.
 
 ---
 
