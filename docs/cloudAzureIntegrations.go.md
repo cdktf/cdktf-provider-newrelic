@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrations(scope Construct, id *string, config CloudAzureIntegrationsConfig) CloudAzureIntegrations
 ```
@@ -924,7 +924,7 @@ func ResetVpnGateway()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.CloudAzureIntegrations_IsConstruct(x interface{}) *bool
 ```
@@ -956,7 +956,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.CloudAzureIntegrations_IsTerraformElement(x interface{}) *bool
 ```
@@ -970,7 +970,7 @@ cloudazureintegrations.CloudAzureIntegrations_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.CloudAzureIntegrations_IsTerraformResource(x interface{}) *bool
 ```
@@ -1939,7 +1939,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsApiManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsApiManagement {
 	MetricsPollingInterval: *f64,
@@ -1989,7 +1989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsAppGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsAppGateway {
 	MetricsPollingInterval: *f64,
@@ -2039,7 +2039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsAppService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsAppService {
 	MetricsPollingInterval: *f64,
@@ -2089,7 +2089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsConfig {
 	Connection: interface{},
@@ -2101,39 +2101,39 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrati
 	Provisioners: *[]interface{},
 	LinkedAccountId: *f64,
 	AccountId: *f64,
-	ApiManagement: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsApiManagement,
-	AppGateway: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsAppGateway,
-	AppService: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsAppService,
-	Containers: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsContainers,
-	CosmosDb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsCosmosDb,
-	CostManagement: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsCostManagement,
-	DataFactory: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsDataFactory,
-	EventHub: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsEventHub,
-	ExpressRoute: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsExpressRoute,
-	Firewalls: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFirewalls,
-	FrontDoor: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFrontDoor,
-	Functions: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFunctions,
+	ApiManagement: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsApiManagement,
+	AppGateway: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsAppGateway,
+	AppService: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsAppService,
+	Containers: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsContainers,
+	CosmosDb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsCosmosDb,
+	CostManagement: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsCostManagement,
+	DataFactory: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsDataFactory,
+	EventHub: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsEventHub,
+	ExpressRoute: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsExpressRoute,
+	Firewalls: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsFirewalls,
+	FrontDoor: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsFrontDoor,
+	Functions: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsFunctions,
 	Id: *string,
-	KeyVault: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsKeyVault,
-	LoadBalancer: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLoadBalancer,
-	LogicApps: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLogicApps,
-	MachineLearning: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMachineLearning,
-	MariaDb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMariaDb,
-	Monitor: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMonitor,
-	Mysql: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMysql,
-	MysqlFlexible: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMysqlFlexible,
-	Postgresql: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPostgresql,
-	PostgresqlFlexible: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPostgresqlFlexible,
-	PowerBiDedicated: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPowerBiDedicated,
-	RedisCache: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsRedisCache,
-	ServiceBus: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsServiceBus,
-	Sql: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsSql,
-	SqlManaged: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsSqlManaged,
-	Storage: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsStorage,
-	VirtualMachine: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVirtualMachine,
-	VirtualNetworks: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVirtualNetworks,
-	Vms: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVms,
-	VpnGateway: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVpnGateway,
+	KeyVault: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsKeyVault,
+	LoadBalancer: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsLoadBalancer,
+	LogicApps: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsLogicApps,
+	MachineLearning: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsMachineLearning,
+	MariaDb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsMariaDb,
+	Monitor: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsMonitor,
+	Mysql: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsMysql,
+	MysqlFlexible: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsMysqlFlexible,
+	Postgresql: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsPostgresql,
+	PostgresqlFlexible: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsPostgresqlFlexible,
+	PowerBiDedicated: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsPowerBiDedicated,
+	RedisCache: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsRedisCache,
+	ServiceBus: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsServiceBus,
+	Sql: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsSql,
+	SqlManaged: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsSqlManaged,
+	Storage: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsStorage,
+	VirtualMachine: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsVirtualMachine,
+	VirtualNetworks: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsVirtualNetworks,
+	Vms: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsVms,
+	VpnGateway: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAzureIntegrations.CloudAzureIntegrationsVpnGateway,
 }
 ```
 
@@ -2752,7 +2752,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsContainers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsContainers {
 	MetricsPollingInterval: *f64,
@@ -2802,7 +2802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsCosmosDb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsCosmosDb {
 	MetricsPollingInterval: *f64,
@@ -2852,7 +2852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsCostManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsCostManagement {
 	MetricsPollingInterval: *f64,
@@ -2902,7 +2902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsDataFactory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsDataFactory {
 	MetricsPollingInterval: *f64,
@@ -2952,7 +2952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsEventHub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsEventHub {
 	MetricsPollingInterval: *f64,
@@ -3002,7 +3002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsExpressRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsExpressRoute {
 	MetricsPollingInterval: *f64,
@@ -3052,7 +3052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFirewalls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsFirewalls {
 	MetricsPollingInterval: *f64,
@@ -3102,7 +3102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFrontDoor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsFrontDoor {
 	MetricsPollingInterval: *f64,
@@ -3152,7 +3152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsFunctions {
 	MetricsPollingInterval: *f64,
@@ -3202,7 +3202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsKeyVault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsKeyVault {
 	MetricsPollingInterval: *f64,
@@ -3252,7 +3252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLoadBalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsLoadBalancer {
 	MetricsPollingInterval: *f64,
@@ -3302,7 +3302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLogicApps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsLogicApps {
 	MetricsPollingInterval: *f64,
@@ -3352,7 +3352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMachineLearning.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsMachineLearning {
 	MetricsPollingInterval: *f64,
@@ -3402,7 +3402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMariaDb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsMariaDb {
 	MetricsPollingInterval: *f64,
@@ -3452,7 +3452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsMonitor {
 	Enabled: interface{},
@@ -3566,7 +3566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMysql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsMysql {
 	MetricsPollingInterval: *f64,
@@ -3616,7 +3616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMysqlFlexible.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsMysqlFlexible {
 	MetricsPollingInterval: *f64,
@@ -3666,7 +3666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPostgresql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsPostgresql {
 	MetricsPollingInterval: *f64,
@@ -3716,7 +3716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPostgresqlFlexible.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsPostgresqlFlexible {
 	MetricsPollingInterval: *f64,
@@ -3766,7 +3766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPowerBiDedicated.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsPowerBiDedicated {
 	MetricsPollingInterval: *f64,
@@ -3816,7 +3816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsRedisCache.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsRedisCache {
 	MetricsPollingInterval: *f64,
@@ -3866,7 +3866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsServiceBus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsServiceBus {
 	MetricsPollingInterval: *f64,
@@ -3916,7 +3916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsSql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsSql {
 	MetricsPollingInterval: *f64,
@@ -3966,7 +3966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsSqlManaged.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsSqlManaged {
 	MetricsPollingInterval: *f64,
@@ -4016,7 +4016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsStorage {
 	MetricsPollingInterval: *f64,
@@ -4066,7 +4066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVirtualMachine.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsVirtualMachine {
 	MetricsPollingInterval: *f64,
@@ -4116,7 +4116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVirtualNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsVirtualNetworks {
 	MetricsPollingInterval: *f64,
@@ -4166,7 +4166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsVms {
 	MetricsPollingInterval: *f64,
@@ -4216,7 +4216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVpnGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsVpnGateway {
 	MetricsPollingInterval: *f64,
@@ -4268,7 +4268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsApiManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsApiManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsApiManagementOutputReference
 ```
@@ -4575,7 +4575,7 @@ func InternalValue() CloudAzureIntegrationsApiManagement
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsAppGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsAppGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsAppGatewayOutputReference
 ```
@@ -4882,7 +4882,7 @@ func InternalValue() CloudAzureIntegrationsAppGateway
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsAppServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsAppServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsAppServiceOutputReference
 ```
@@ -5189,7 +5189,7 @@ func InternalValue() CloudAzureIntegrationsAppService
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsContainersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsContainersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsContainersOutputReference
 ```
@@ -5496,7 +5496,7 @@ func InternalValue() CloudAzureIntegrationsContainers
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsCosmosDbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsCosmosDbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsCosmosDbOutputReference
 ```
@@ -5803,7 +5803,7 @@ func InternalValue() CloudAzureIntegrationsCosmosDb
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsCostManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsCostManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsCostManagementOutputReference
 ```
@@ -6110,7 +6110,7 @@ func InternalValue() CloudAzureIntegrationsCostManagement
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsDataFactoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsDataFactoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsDataFactoryOutputReference
 ```
@@ -6417,7 +6417,7 @@ func InternalValue() CloudAzureIntegrationsDataFactory
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsEventHubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsEventHubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsEventHubOutputReference
 ```
@@ -6724,7 +6724,7 @@ func InternalValue() CloudAzureIntegrationsEventHub
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsExpressRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsExpressRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsExpressRouteOutputReference
 ```
@@ -7031,7 +7031,7 @@ func InternalValue() CloudAzureIntegrationsExpressRoute
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFirewallsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsFirewallsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsFirewallsOutputReference
 ```
@@ -7338,7 +7338,7 @@ func InternalValue() CloudAzureIntegrationsFirewalls
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFrontDoorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsFrontDoorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsFrontDoorOutputReference
 ```
@@ -7645,7 +7645,7 @@ func InternalValue() CloudAzureIntegrationsFrontDoor
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFunctionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsFunctionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsFunctionsOutputReference
 ```
@@ -7952,7 +7952,7 @@ func InternalValue() CloudAzureIntegrationsFunctions
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsKeyVaultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsKeyVaultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsKeyVaultOutputReference
 ```
@@ -8259,7 +8259,7 @@ func InternalValue() CloudAzureIntegrationsKeyVault
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLoadBalancerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsLoadBalancerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsLoadBalancerOutputReference
 ```
@@ -8566,7 +8566,7 @@ func InternalValue() CloudAzureIntegrationsLoadBalancer
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLogicAppsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsLogicAppsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsLogicAppsOutputReference
 ```
@@ -8873,7 +8873,7 @@ func InternalValue() CloudAzureIntegrationsLogicApps
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMachineLearningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsMachineLearningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsMachineLearningOutputReference
 ```
@@ -9180,7 +9180,7 @@ func InternalValue() CloudAzureIntegrationsMachineLearning
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMariaDbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsMariaDbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsMariaDbOutputReference
 ```
@@ -9487,7 +9487,7 @@ func InternalValue() CloudAzureIntegrationsMariaDb
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMonitorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsMonitorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsMonitorOutputReference
 ```
@@ -9910,7 +9910,7 @@ func InternalValue() CloudAzureIntegrationsMonitor
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMysqlFlexibleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsMysqlFlexibleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsMysqlFlexibleOutputReference
 ```
@@ -10217,7 +10217,7 @@ func InternalValue() CloudAzureIntegrationsMysqlFlexible
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMysqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsMysqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsMysqlOutputReference
 ```
@@ -10524,7 +10524,7 @@ func InternalValue() CloudAzureIntegrationsMysql
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPostgresqlFlexibleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsPostgresqlFlexibleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsPostgresqlFlexibleOutputReference
 ```
@@ -10831,7 +10831,7 @@ func InternalValue() CloudAzureIntegrationsPostgresqlFlexible
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPostgresqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsPostgresqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsPostgresqlOutputReference
 ```
@@ -11138,7 +11138,7 @@ func InternalValue() CloudAzureIntegrationsPostgresql
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPowerBiDedicatedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsPowerBiDedicatedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsPowerBiDedicatedOutputReference
 ```
@@ -11445,7 +11445,7 @@ func InternalValue() CloudAzureIntegrationsPowerBiDedicated
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsRedisCacheOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsRedisCacheOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsRedisCacheOutputReference
 ```
@@ -11752,7 +11752,7 @@ func InternalValue() CloudAzureIntegrationsRedisCache
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsServiceBusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsServiceBusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsServiceBusOutputReference
 ```
@@ -12059,7 +12059,7 @@ func InternalValue() CloudAzureIntegrationsServiceBus
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsSqlManagedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsSqlManagedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsSqlManagedOutputReference
 ```
@@ -12366,7 +12366,7 @@ func InternalValue() CloudAzureIntegrationsSqlManaged
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsSqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsSqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsSqlOutputReference
 ```
@@ -12673,7 +12673,7 @@ func InternalValue() CloudAzureIntegrationsSql
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsStorageOutputReference
 ```
@@ -12980,7 +12980,7 @@ func InternalValue() CloudAzureIntegrationsStorage
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVirtualMachineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsVirtualMachineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsVirtualMachineOutputReference
 ```
@@ -13287,7 +13287,7 @@ func InternalValue() CloudAzureIntegrationsVirtualMachine
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVirtualNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsVirtualNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsVirtualNetworksOutputReference
 ```
@@ -13594,7 +13594,7 @@ func InternalValue() CloudAzureIntegrationsVirtualNetworks
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVmsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsVmsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsVmsOutputReference
 ```
@@ -13901,7 +13901,7 @@ func InternalValue() CloudAzureIntegrationsVms
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVpnGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsVpnGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsVpnGatewayOutputReference
 ```
