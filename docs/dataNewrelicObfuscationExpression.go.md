@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicobfuscationexpression"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/datanewrelicobfuscationexpression"
 
 datanewrelicobfuscationexpression.NewDataNewrelicObfuscationExpression(scope Construct, id *string, config DataNewrelicObfuscationExpressionConfig) DataNewrelicObfuscationExpression
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicobfuscationexpression"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/datanewrelicobfuscationexpression"
 
 datanewrelicobfuscationexpression.DataNewrelicObfuscationExpression_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicobfuscationexpression"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/datanewrelicobfuscationexpression"
 
 datanewrelicobfuscationexpression.DataNewrelicObfuscationExpression_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datanewrelicobfuscationexpression.DataNewrelicObfuscationExpression_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicobfuscationexpression"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/datanewrelicobfuscationexpression"
 
 datanewrelicobfuscationexpression.DataNewrelicObfuscationExpression_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpressionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicobfuscationexpression"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/datanewrelicobfuscationexpression"
 
 &datanewrelicobfuscationexpression.DataNewrelicObfuscationExpressionConfig {
 	Connection: interface{},
