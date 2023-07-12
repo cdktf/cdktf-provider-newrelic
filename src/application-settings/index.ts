@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/application_settings
+// https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/application_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface ApplicationSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/application_settings#app_apdex_threshold ApplicationSettings#app_apdex_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/application_settings#app_apdex_threshold ApplicationSettings#app_apdex_threshold}
   */
   readonly appApdexThreshold: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/application_settings#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/application_settings#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}
   */
   readonly enableRealUserMonitoring: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/application_settings#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/application_settings#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}
   */
   readonly endUserApdexThreshold: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/application_settings#id ApplicationSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/application_settings#id ApplicationSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/application_settings#name ApplicationSettings#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/application_settings#name ApplicationSettings#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/application_settings newrelic_application_settings}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/application_settings newrelic_application_settings}
 */
 export class ApplicationSettings extends cdktf.TerraformResource {
 
@@ -52,7 +47,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/application_settings newrelic_application_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/application_settings newrelic_application_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +58,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_application_settings',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.25.0',
+        providerVersion: '3.25.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

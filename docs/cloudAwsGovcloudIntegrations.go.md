@@ -1,6 +1,6 @@
 # `newrelic_cloud_aws_govcloud_integrations`
 
-Refer to the Terraform Registory for docs: [`newrelic_cloud_aws_govcloud_integrations`](https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations).
+Refer to the Terraform Registory for docs: [`newrelic_cloud_aws_govcloud_integrations`](https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations).
 
 # `cloudAwsGovcloudIntegrations` Submodule <a name="`cloudAwsGovcloudIntegrations` Submodule" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`newrelic_cloud_aws_govcloud_integra
 
 ### CloudAwsGovcloudIntegrations <a name="CloudAwsGovcloudIntegrations" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations newrelic_cloud_aws_govcloud_integrations}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations newrelic_cloud_aws_govcloud_integrations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrations(scope Construct, id *string, config CloudAwsGovcloudIntegrationsConfig) CloudAwsGovcloudIntegrations
 ```
@@ -684,7 +684,7 @@ func ResetSqs()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrations_IsConstruct(x interface{}) *bool
 ```
@@ -716,7 +716,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrations_IsTerraformElement(x interface{}) *bool
 ```
@@ -730,7 +730,7 @@ cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrations_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrations.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrations_IsTerraformResource(x interface{}) *bool
 ```
@@ -1435,7 +1435,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsAlb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsAlb {
 	AwsRegions: *[]*string,
@@ -1472,7 +1472,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
 
 ---
 
@@ -1488,7 +1488,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
 
 ---
 
@@ -1504,7 +1504,7 @@ Specify if tags should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
 
 ---
 
@@ -1518,7 +1518,7 @@ LoadBalancerPrefixes *[]*string
 
 Specify each name or prefix for the LBs that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#load_balancer_prefixes CloudAwsGovcloudIntegrations#load_balancer_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#load_balancer_prefixes CloudAwsGovcloudIntegrations#load_balancer_prefixes}
 
 ---
 
@@ -1532,7 +1532,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1546,7 +1546,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
 
 ---
 
@@ -1560,7 +1560,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
 
 ---
 
@@ -1569,7 +1569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsApiGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsApiGateway {
 	AwsRegions: *[]*string,
@@ -1602,7 +1602,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
 
 ---
 
@@ -1616,7 +1616,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1632,7 +1632,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#stage_prefixes CloudAwsGovcloudIntegrations#stage_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#stage_prefixes CloudAwsGovcloudIntegrations#stage_prefixes}
 
 ---
 
@@ -1646,7 +1646,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
 
 ---
 
@@ -1660,7 +1660,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
 
 ---
 
@@ -1669,7 +1669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsAutoScaling {
 	AwsRegions: *[]*string,
@@ -1696,7 +1696,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
 
 ---
 
@@ -1710,7 +1710,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1719,7 +1719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsAwsDirectConnect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsAwsDirectConnect {
 	AwsRegions: *[]*string,
@@ -1746,7 +1746,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
 
 ---
 
@@ -1760,7 +1760,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1769,7 +1769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsAwsStates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsAwsStates {
 	AwsRegions: *[]*string,
@@ -1796,7 +1796,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
 
 ---
 
@@ -1810,7 +1810,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1819,7 +1819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsCloudtrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsCloudtrail {
 	AwsRegions: *[]*string,
@@ -1846,7 +1846,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
 
 ---
 
@@ -1860,7 +1860,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1869,7 +1869,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsConfig {
 	Connection: interface{},
@@ -1881,27 +1881,27 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloud
 	Provisioners: *[]interface{},
 	LinkedAccountId: *f64,
 	AccountId: *f64,
-	Alb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsAlb,
-	ApiGateway: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsApiGateway,
-	AutoScaling: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsAutoScaling,
-	AwsDirectConnect: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsAwsDirectConnect,
-	AwsStates: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsAwsStates,
-	Cloudtrail: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsCloudtrail,
-	DynamoDb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsDynamoDb,
-	Ebs: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsEbs,
-	Ec2: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsEc2,
-	ElasticSearch: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsElasticSearch,
-	Elb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsElb,
-	Emr: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsEmr,
-	Iam: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsIam,
+	Alb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsAlb,
+	ApiGateway: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsApiGateway,
+	AutoScaling: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsAutoScaling,
+	AwsDirectConnect: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsAwsDirectConnect,
+	AwsStates: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsAwsStates,
+	Cloudtrail: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsCloudtrail,
+	DynamoDb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsDynamoDb,
+	Ebs: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsEbs,
+	Ec2: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsEc2,
+	ElasticSearch: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsElasticSearch,
+	Elb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsElb,
+	Emr: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsEmr,
+	Iam: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsIam,
 	Id: *string,
-	Lambda: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsLambda,
-	Rds: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsRds,
-	RedShift: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsRedShift,
-	Route53: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsRoute53,
-	S3: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsS3,
-	Sns: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsSns,
-	Sqs: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsSqs,
+	Lambda: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsLambda,
+	Rds: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsRds,
+	RedShift: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsRedShift,
+	Route53: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsRoute53,
+	S3: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsS3,
+	Sns: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsSns,
+	Sqs: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsSqs,
 }
 ```
 
@@ -1931,7 +1931,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloud
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsConfig.property.elb">Elb</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsElb">CloudAwsGovcloudIntegrationsElb</a></code> | elb block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsConfig.property.emr">Emr</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsEmr">CloudAwsGovcloudIntegrationsEmr</a></code> | emr block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsConfig.property.iam">Iam</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsIam">CloudAwsGovcloudIntegrationsIam</a></code> | iam block. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#id CloudAwsGovcloudIntegrations#id}. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#id CloudAwsGovcloudIntegrations#id}. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsConfig.property.lambda">Lambda</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsLambda">CloudAwsGovcloudIntegrationsLambda</a></code> | lambda block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsConfig.property.rds">Rds</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsRds">CloudAwsGovcloudIntegrationsRds</a></code> | rds block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsConfig.property.redShift">RedShift</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsRedShift">CloudAwsGovcloudIntegrationsRedShift</a></code> | red_shift block. |
@@ -2022,7 +2022,7 @@ LinkedAccountId *f64
 
 The ID of the linked AwsGovCloud account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#linked_account_id CloudAwsGovcloudIntegrations#linked_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#linked_account_id CloudAwsGovcloudIntegrations#linked_account_id}
 
 ---
 
@@ -2036,7 +2036,7 @@ AccountId *f64
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#account_id CloudAwsGovcloudIntegrations#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#account_id CloudAwsGovcloudIntegrations#account_id}
 
 ---
 
@@ -2050,7 +2050,7 @@ Alb CloudAwsGovcloudIntegrationsAlb
 
 alb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#alb CloudAwsGovcloudIntegrations#alb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#alb CloudAwsGovcloudIntegrations#alb}
 
 ---
 
@@ -2064,7 +2064,7 @@ ApiGateway CloudAwsGovcloudIntegrationsApiGateway
 
 api_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#api_gateway CloudAwsGovcloudIntegrations#api_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#api_gateway CloudAwsGovcloudIntegrations#api_gateway}
 
 ---
 
@@ -2078,7 +2078,7 @@ AutoScaling CloudAwsGovcloudIntegrationsAutoScaling
 
 auto_scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#auto_scaling CloudAwsGovcloudIntegrations#auto_scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#auto_scaling CloudAwsGovcloudIntegrations#auto_scaling}
 
 ---
 
@@ -2092,7 +2092,7 @@ AwsDirectConnect CloudAwsGovcloudIntegrationsAwsDirectConnect
 
 aws_direct_connect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_direct_connect CloudAwsGovcloudIntegrations#aws_direct_connect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_direct_connect CloudAwsGovcloudIntegrations#aws_direct_connect}
 
 ---
 
@@ -2106,7 +2106,7 @@ AwsStates CloudAwsGovcloudIntegrationsAwsStates
 
 aws_states block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_states CloudAwsGovcloudIntegrations#aws_states}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_states CloudAwsGovcloudIntegrations#aws_states}
 
 ---
 
@@ -2120,7 +2120,7 @@ Cloudtrail CloudAwsGovcloudIntegrationsCloudtrail
 
 cloudtrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#cloudtrail CloudAwsGovcloudIntegrations#cloudtrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#cloudtrail CloudAwsGovcloudIntegrations#cloudtrail}
 
 ---
 
@@ -2134,7 +2134,7 @@ DynamoDb CloudAwsGovcloudIntegrationsDynamoDb
 
 dynamo_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#dynamo_db CloudAwsGovcloudIntegrations#dynamo_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#dynamo_db CloudAwsGovcloudIntegrations#dynamo_db}
 
 ---
 
@@ -2148,7 +2148,7 @@ Ebs CloudAwsGovcloudIntegrationsEbs
 
 ebs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#ebs CloudAwsGovcloudIntegrations#ebs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#ebs CloudAwsGovcloudIntegrations#ebs}
 
 ---
 
@@ -2162,7 +2162,7 @@ Ec2 CloudAwsGovcloudIntegrationsEc2
 
 ec2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#ec2 CloudAwsGovcloudIntegrations#ec2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#ec2 CloudAwsGovcloudIntegrations#ec2}
 
 ---
 
@@ -2176,7 +2176,7 @@ ElasticSearch CloudAwsGovcloudIntegrationsElasticSearch
 
 elastic_search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#elastic_search CloudAwsGovcloudIntegrations#elastic_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#elastic_search CloudAwsGovcloudIntegrations#elastic_search}
 
 ---
 
@@ -2190,7 +2190,7 @@ Elb CloudAwsGovcloudIntegrationsElb
 
 elb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#elb CloudAwsGovcloudIntegrations#elb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#elb CloudAwsGovcloudIntegrations#elb}
 
 ---
 
@@ -2204,7 +2204,7 @@ Emr CloudAwsGovcloudIntegrationsEmr
 
 emr block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#emr CloudAwsGovcloudIntegrations#emr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#emr CloudAwsGovcloudIntegrations#emr}
 
 ---
 
@@ -2218,7 +2218,7 @@ Iam CloudAwsGovcloudIntegrationsIam
 
 iam block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#iam CloudAwsGovcloudIntegrations#iam}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#iam CloudAwsGovcloudIntegrations#iam}
 
 ---
 
@@ -2230,7 +2230,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#id CloudAwsGovcloudIntegrations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#id CloudAwsGovcloudIntegrations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2247,7 +2247,7 @@ Lambda CloudAwsGovcloudIntegrationsLambda
 
 lambda block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#lambda CloudAwsGovcloudIntegrations#lambda}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#lambda CloudAwsGovcloudIntegrations#lambda}
 
 ---
 
@@ -2261,7 +2261,7 @@ Rds CloudAwsGovcloudIntegrationsRds
 
 rds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#rds CloudAwsGovcloudIntegrations#rds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#rds CloudAwsGovcloudIntegrations#rds}
 
 ---
 
@@ -2275,7 +2275,7 @@ RedShift CloudAwsGovcloudIntegrationsRedShift
 
 red_shift block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#red_shift CloudAwsGovcloudIntegrations#red_shift}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#red_shift CloudAwsGovcloudIntegrations#red_shift}
 
 ---
 
@@ -2289,7 +2289,7 @@ Route53 CloudAwsGovcloudIntegrationsRoute53
 
 route53 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#route53 CloudAwsGovcloudIntegrations#route53}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#route53 CloudAwsGovcloudIntegrations#route53}
 
 ---
 
@@ -2303,7 +2303,7 @@ S3 CloudAwsGovcloudIntegrationsS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#s3 CloudAwsGovcloudIntegrations#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#s3 CloudAwsGovcloudIntegrations#s3}
 
 ---
 
@@ -2317,7 +2317,7 @@ Sns CloudAwsGovcloudIntegrationsSns
 
 sns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#sns CloudAwsGovcloudIntegrations#sns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#sns CloudAwsGovcloudIntegrations#sns}
 
 ---
 
@@ -2331,7 +2331,7 @@ Sqs CloudAwsGovcloudIntegrationsSqs
 
 sqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#sqs CloudAwsGovcloudIntegrations#sqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#sqs CloudAwsGovcloudIntegrations#sqs}
 
 ---
 
@@ -2340,7 +2340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsDynamoDb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsDynamoDb {
 	AwsRegions: *[]*string,
@@ -2375,7 +2375,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
 
 ---
 
@@ -2391,7 +2391,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
 
 ---
 
@@ -2407,7 +2407,7 @@ Specify if tags should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
 
 ---
 
@@ -2421,7 +2421,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2435,7 +2435,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
 
 ---
 
@@ -2449,7 +2449,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
 
 ---
 
@@ -2458,7 +2458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsEbs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsEbs {
 	AwsRegions: *[]*string,
@@ -2491,7 +2491,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
 
 ---
 
@@ -2507,7 +2507,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
 
 ---
 
@@ -2521,7 +2521,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2535,7 +2535,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
 
 ---
 
@@ -2549,7 +2549,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
 
 ---
 
@@ -2558,7 +2558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsEc2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsEc2 {
 	AwsRegions: *[]*string,
@@ -2591,7 +2591,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
 
 ---
 
@@ -2605,7 +2605,7 @@ FetchIpAddresses interface{}
 
 Specify if IP addresses of ec2 instance should be collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_ip_addresses CloudAwsGovcloudIntegrations#fetch_ip_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_ip_addresses CloudAwsGovcloudIntegrations#fetch_ip_addresses}
 
 ---
 
@@ -2619,7 +2619,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2633,7 +2633,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
 
 ---
 
@@ -2647,7 +2647,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
 
 ---
 
@@ -2656,7 +2656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsElasticSearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsElasticSearch {
 	AwsRegions: *[]*string,
@@ -2689,7 +2689,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
 
 ---
 
@@ -2703,7 +2703,7 @@ FetchNodes interface{}
 
 Specify if IP addresses of ec2 instance should be collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_nodes CloudAwsGovcloudIntegrations#fetch_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_nodes CloudAwsGovcloudIntegrations#fetch_nodes}
 
 ---
 
@@ -2717,7 +2717,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2731,7 +2731,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
 
 ---
 
@@ -2745,7 +2745,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
 
 ---
 
@@ -2754,7 +2754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsElb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsElb {
 	AwsRegions: *[]*string,
@@ -2785,7 +2785,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
 
 ---
 
@@ -2801,7 +2801,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
 
 ---
 
@@ -2817,7 +2817,7 @@ Specify if tags should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
 
 ---
 
@@ -2831,7 +2831,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2840,7 +2840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsEmr.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsEmr {
 	AwsRegions: *string,
@@ -2873,7 +2873,7 @@ AwsRegions *string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
 
 ---
 
@@ -2889,7 +2889,7 @@ Specify if tags should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
 
 ---
 
@@ -2903,7 +2903,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2917,7 +2917,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
 
 ---
 
@@ -2931,7 +2931,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
 
 ---
 
@@ -2940,7 +2940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsIam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsIam {
 	MetricsPollingInterval: *f64,
@@ -2969,7 +2969,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2983,7 +2983,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
 
 ---
 
@@ -2997,7 +2997,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
 
 ---
 
@@ -3006,7 +3006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsLambda.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsLambda {
 	AwsRegions: *[]*string,
@@ -3039,7 +3039,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
 
 ---
 
@@ -3055,7 +3055,7 @@ Specify if tags should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
 
 ---
 
@@ -3069,7 +3069,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3083,7 +3083,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
 
 ---
 
@@ -3097,7 +3097,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
 
 ---
 
@@ -3106,7 +3106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsRds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsRds {
 	AwsRegions: *[]*string,
@@ -3139,7 +3139,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
 
 ---
 
@@ -3155,7 +3155,7 @@ Specify if tags should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
 
 ---
 
@@ -3169,7 +3169,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3183,7 +3183,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
 
 ---
 
@@ -3197,7 +3197,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
 
 ---
 
@@ -3206,7 +3206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsRedShift.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsRedShift {
 	AwsRegions: *[]*string,
@@ -3237,7 +3237,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
 
 ---
 
@@ -3251,7 +3251,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3265,7 +3265,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
 
 ---
 
@@ -3279,7 +3279,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
 
 ---
 
@@ -3288,7 +3288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsRoute53.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsRoute53 {
 	FetchExtendedInventory: interface{},
@@ -3317,7 +3317,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
 
 ---
 
@@ -3331,7 +3331,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3340,7 +3340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsS3 {
 	FetchExtendedInventory: interface{},
@@ -3375,7 +3375,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
 
 ---
 
@@ -3391,7 +3391,7 @@ Specify if tags should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
 
 ---
 
@@ -3405,7 +3405,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3419,7 +3419,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
 
 ---
 
@@ -3433,7 +3433,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
 
 ---
 
@@ -3442,7 +3442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsSns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsSns {
 	AwsRegions: *[]*string,
@@ -3471,7 +3471,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
 
 ---
 
@@ -3487,7 +3487,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
 
 ---
 
@@ -3501,7 +3501,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3510,7 +3510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsSqs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 &cloudawsgovcloudintegrations.CloudAwsGovcloudIntegrationsSqs {
 	AwsRegions: *[]*string,
@@ -3547,7 +3547,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#aws_regions CloudAwsGovcloudIntegrations#aws_regions}
 
 ---
 
@@ -3563,7 +3563,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_extended_inventory CloudAwsGovcloudIntegrations#fetch_extended_inventory}
 
 ---
 
@@ -3579,7 +3579,7 @@ Specify if tags should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#fetch_tags CloudAwsGovcloudIntegrations#fetch_tags}
 
 ---
 
@@ -3593,7 +3593,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#metrics_polling_interval CloudAwsGovcloudIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3607,7 +3607,7 @@ QueuePrefixes *[]*string
 
 Specify each name or prefix for the Queues that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#queue_prefixes CloudAwsGovcloudIntegrations#queue_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#queue_prefixes CloudAwsGovcloudIntegrations#queue_prefixes}
 
 ---
 
@@ -3621,7 +3621,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_key CloudAwsGovcloudIntegrations#tag_key}
 
 ---
 
@@ -3635,7 +3635,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/cloud_aws_govcloud_integrations#tag_value CloudAwsGovcloudIntegrations#tag_value}
 
 ---
 
@@ -3646,7 +3646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsAlbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsAlbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsAlbOutputReference
 ```
@@ -4098,7 +4098,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsAlb
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsApiGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsApiGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsApiGatewayOutputReference
 ```
@@ -4492,7 +4492,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsApiGateway
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsAutoScalingOutputReference
 ```
@@ -4799,7 +4799,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference
 ```
@@ -5106,7 +5106,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsAwsDirectConnect
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsAwsStatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsAwsStatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsAwsStatesOutputReference
 ```
@@ -5413,7 +5413,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsAwsStates
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsCloudtrailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsCloudtrailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsCloudtrailOutputReference
 ```
@@ -5720,7 +5720,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsCloudtrail
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsDynamoDbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsDynamoDbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsDynamoDbOutputReference
 ```
@@ -6143,7 +6143,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsDynamoDb
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsEbsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsEbsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsEbsOutputReference
 ```
@@ -6537,7 +6537,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsEbs
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsEc2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsEc2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsEc2OutputReference
 ```
@@ -6931,7 +6931,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsEc2
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsElasticSearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsElasticSearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsElasticSearchOutputReference
 ```
@@ -7325,7 +7325,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsElasticSearch
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsElbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsElbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsElbOutputReference
 ```
@@ -7690,7 +7690,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsElb
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsEmrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsEmrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsEmrOutputReference
 ```
@@ -8084,7 +8084,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsEmr
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsIamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsIamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsIamOutputReference
 ```
@@ -8420,7 +8420,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsIam
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsLambdaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsLambdaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsLambdaOutputReference
 ```
@@ -8814,7 +8814,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsLambda
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsRdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsRdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsRdsOutputReference
 ```
@@ -9208,7 +9208,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsRds
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsRedShiftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsRedShiftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsRedShiftOutputReference
 ```
@@ -9573,7 +9573,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsRedShift
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsRoute53OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsRoute53OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsRoute53OutputReference
 ```
@@ -9880,7 +9880,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsRoute53
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsS3OutputReference
 ```
@@ -10274,7 +10274,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsSnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsSnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsSnsOutputReference
 ```
@@ -10610,7 +10610,7 @@ func InternalValue() CloudAwsGovcloudIntegrationsSns
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudIntegrations.CloudAwsGovcloudIntegrationsSqsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/cloudawsgovcloudintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudintegrations"
 
 cloudawsgovcloudintegrations.NewCloudAwsGovcloudIntegrationsSqsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsSqsOutputReference
 ```

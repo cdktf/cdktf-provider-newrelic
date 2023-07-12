@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/alert_policy
+// https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/data-sources/alert_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataNewrelicAlertPolicyConfig extends cdktf.TerraformMetaArgume
   /**
   * The New Relic account ID to operate on.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/alert_policy#account_id DataNewrelicAlertPolicy#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/data-sources/alert_policy#account_id DataNewrelicAlertPolicy#account_id}
   */
   readonly accountId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/alert_policy#id DataNewrelicAlertPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/data-sources/alert_policy#id DataNewrelicAlertPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +23,19 @@ export interface DataNewrelicAlertPolicyConfig extends cdktf.TerraformMetaArgume
   /**
   * The rollup strategy for the policy. Options include: `PER_POLICY`, `PER_CONDITION`, or `PER_CONDITION_AND_TARGET`. The default is `PER_POLICY`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/alert_policy#incident_preference DataNewrelicAlertPolicy#incident_preference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/data-sources/alert_policy#incident_preference DataNewrelicAlertPolicy#incident_preference}
   */
   readonly incidentPreference?: string;
   /**
   * The name of the alert policy in New Relic.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/alert_policy#name DataNewrelicAlertPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/data-sources/alert_policy#name DataNewrelicAlertPolicy#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/alert_policy newrelic_alert_policy}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/data-sources/alert_policy newrelic_alert_policy}
 */
 export class DataNewrelicAlertPolicy extends cdktf.TerraformDataSource {
 
@@ -54,7 +49,7 @@ export class DataNewrelicAlertPolicy extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/alert_policy newrelic_alert_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/data-sources/alert_policy newrelic_alert_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +60,7 @@ export class DataNewrelicAlertPolicy extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_alert_policy',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.25.0',
+        providerVersion: '3.25.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

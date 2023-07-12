@@ -1,6 +1,6 @@
 # `newrelic_synthetics_step_monitor`
 
-Refer to the Terraform Registory for docs: [`newrelic_synthetics_step_monitor`](https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor).
+Refer to the Terraform Registory for docs: [`newrelic_synthetics_step_monitor`](https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor).
 
 # `syntheticsStepMonitor` Submodule <a name="`syntheticsStepMonitor` Submodule" id="@cdktf/provider-newrelic.syntheticsStepMonitor"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_synthetics_step_monitor`](
 
 ### SyntheticsStepMonitor <a name="SyntheticsStepMonitor" id="@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitor.Initializer"></a>
 
@@ -860,7 +860,7 @@ const syntheticsStepMonitorConfig: syntheticsStepMonitor.SyntheticsStepMonitorCo
 | <code><a href="#@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorConfig.property.steps">steps</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorSteps">SyntheticsStepMonitorSteps</a>[]</code> | steps block. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorConfig.property.accountId">accountId</a></code> | <code>number</code> | ID of the newrelic account. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorConfig.property.enableScreenshotOnFailureAndScript">enableScreenshotOnFailureAndScript</a></code> | <code>boolean \| cdktf.IResolvable</code> | Capture a screenshot during job execution. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#id SyntheticsStepMonitor#id}. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#id SyntheticsStepMonitor#id}. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorConfig.property.locationPrivate">locationPrivate</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorLocationPrivate">SyntheticsStepMonitorLocationPrivate</a>[]</code> | location_private block. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorConfig.property.locationsPublic">locationsPublic</a></code> | <code>string[]</code> | The public location(s) that the monitor will run jobs from. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorConfig.property.tag">tag</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorTag">SyntheticsStepMonitorTag</a>[]</code> | tag block. |
@@ -947,7 +947,7 @@ public readonly name: string;
 
 The title of this monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#name SyntheticsStepMonitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#name SyntheticsStepMonitor#name}
 
 ---
 
@@ -963,7 +963,7 @@ The interval at which this monitor should run.
 
 Valid values are EVERY_MINUTE, EVERY_5_MINUTES, EVERY_10_MINUTES, EVERY_15_MINUTES, EVERY_30_MINUTES, EVERY_HOUR, EVERY_6_HOURS, EVERY_12_HOURS, or EVERY_DAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#period SyntheticsStepMonitor#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#period SyntheticsStepMonitor#period}
 
 ---
 
@@ -977,7 +977,7 @@ public readonly status: string;
 
 The monitor status (i.e. ENABLED, MUTED, DISABLED).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#status SyntheticsStepMonitor#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#status SyntheticsStepMonitor#status}
 
 ---
 
@@ -991,7 +991,7 @@ public readonly steps: IResolvable | SyntheticsStepMonitorSteps[];
 
 steps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#steps SyntheticsStepMonitor#steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#steps SyntheticsStepMonitor#steps}
 
 ---
 
@@ -1005,7 +1005,7 @@ public readonly accountId: number;
 
 ID of the newrelic account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#account_id SyntheticsStepMonitor#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#account_id SyntheticsStepMonitor#account_id}
 
 ---
 
@@ -1019,7 +1019,7 @@ public readonly enableScreenshotOnFailureAndScript: boolean | IResolvable;
 
 Capture a screenshot during job execution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#enable_screenshot_on_failure_and_script SyntheticsStepMonitor#enable_screenshot_on_failure_and_script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#enable_screenshot_on_failure_and_script SyntheticsStepMonitor#enable_screenshot_on_failure_and_script}
 
 ---
 
@@ -1031,7 +1031,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#id SyntheticsStepMonitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#id SyntheticsStepMonitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1048,7 +1048,7 @@ public readonly locationPrivate: IResolvable | SyntheticsStepMonitorLocationPriv
 
 location_private block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#location_private SyntheticsStepMonitor#location_private}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#location_private SyntheticsStepMonitor#location_private}
 
 ---
 
@@ -1062,7 +1062,7 @@ public readonly locationsPublic: string[];
 
 The public location(s) that the monitor will run jobs from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#locations_public SyntheticsStepMonitor#locations_public}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#locations_public SyntheticsStepMonitor#locations_public}
 
 ---
 
@@ -1076,7 +1076,7 @@ public readonly tag: IResolvable | SyntheticsStepMonitorTag[];
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#tag SyntheticsStepMonitor#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#tag SyntheticsStepMonitor#tag}
 
 ---
 
@@ -1109,7 +1109,7 @@ public readonly guid: string;
 
 The unique identifier for the Synthetics private location in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#guid SyntheticsStepMonitor#guid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#guid SyntheticsStepMonitor#guid}
 
 ---
 
@@ -1123,7 +1123,7 @@ public readonly vsePassword: string;
 
 The location's Verified Script Execution password (Only necessary if Verified Script Execution is enabled for the location).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#vse_password SyntheticsStepMonitor#vse_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#vse_password SyntheticsStepMonitor#vse_password}
 
 ---
 
@@ -1157,7 +1157,7 @@ public readonly ordinal: number;
 
 The position of the step within the script ranging from 0-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#ordinal SyntheticsStepMonitor#ordinal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#ordinal SyntheticsStepMonitor#ordinal}
 
 ---
 
@@ -1171,7 +1171,7 @@ public readonly type: string;
 
 The type of step to be added to the script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#type SyntheticsStepMonitor#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#type SyntheticsStepMonitor#type}
 
 ---
 
@@ -1185,7 +1185,7 @@ public readonly values: string[];
 
 The metadata values related to the check the step performs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#values SyntheticsStepMonitor#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#values SyntheticsStepMonitor#values}
 
 ---
 
@@ -1218,7 +1218,7 @@ public readonly key: string;
 
 Name of the tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#key SyntheticsStepMonitor#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#key SyntheticsStepMonitor#key}
 
 ---
 
@@ -1232,7 +1232,7 @@ public readonly values: string[];
 
 Values associated with the tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_step_monitor#values SyntheticsStepMonitor#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.1/docs/resources/synthetics_step_monitor#values SyntheticsStepMonitor#values}
 
 ---
 
