@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/log_parsing_rule
+// https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/log_parsing_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface LogParsingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account id associated with the obfuscation expression.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/log_parsing_rule#account_id LogParsingRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/log_parsing_rule#account_id LogParsingRule#account_id}
   */
   readonly accountId?: number;
   /**
   * The parsing rule will apply to value of this attribute. If field is not provided, value will default to message.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/log_parsing_rule#attribute LogParsingRule#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/log_parsing_rule#attribute LogParsingRule#attribute}
   */
   readonly attribute?: string;
   /**
   * Whether or not this rule is enabled.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/log_parsing_rule#enabled LogParsingRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/log_parsing_rule#enabled LogParsingRule#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * The Grok of what to parse.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/log_parsing_rule#grok LogParsingRule#grok}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/log_parsing_rule#grok LogParsingRule#grok}
   */
   readonly grok: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/log_parsing_rule#id LogParsingRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/log_parsing_rule#id LogParsingRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,31 +46,31 @@ export interface LogParsingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Lucene to match events to the parsing rule.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/log_parsing_rule#lucene LogParsingRule#lucene}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/log_parsing_rule#lucene LogParsingRule#lucene}
   */
   readonly lucene: string;
   /**
   * Whether the Grok pattern matched.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/log_parsing_rule#matched LogParsingRule#matched}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/log_parsing_rule#matched LogParsingRule#matched}
   */
   readonly matched?: boolean | cdktf.IResolvable;
   /**
   * A description of what this parsing rule represents.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/log_parsing_rule#name LogParsingRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/log_parsing_rule#name LogParsingRule#name}
   */
   readonly name: string;
   /**
   * The NRQL to match events to the parsing rule.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/log_parsing_rule#nrql LogParsingRule#nrql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/log_parsing_rule#nrql LogParsingRule#nrql}
   */
   readonly nrql: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/log_parsing_rule newrelic_log_parsing_rule}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/log_parsing_rule newrelic_log_parsing_rule}
 */
 export class LogParsingRule extends cdktf.TerraformResource {
 
@@ -84,7 +84,7 @@ export class LogParsingRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/log_parsing_rule newrelic_log_parsing_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/log_parsing_rule newrelic_log_parsing_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +95,7 @@ export class LogParsingRule extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_log_parsing_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.25.0',
+        providerVersion: '3.25.2',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
