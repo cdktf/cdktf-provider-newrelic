@@ -1,6 +1,6 @@
 # `newrelic_entity_tags`
 
-Refer to the Terraform Registory for docs: [`newrelic_entity_tags`](https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/entity_tags).
+Refer to the Terraform Registory for docs: [`newrelic_entity_tags`](https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/entity_tags).
 
 # `entityTags` Submodule <a name="`entityTags` Submodule" id="@cdktf/provider-newrelic.entityTags"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`newrelic_entity_tags`](https://regi
 
 ### EntityTags <a name="EntityTags" id="@cdktf/provider-newrelic.entityTags.EntityTags"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/entity_tags newrelic_entity_tags}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/entity_tags newrelic_entity_tags}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.entityTags.EntityTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/entitytags"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/entitytags"
 
 entitytags.NewEntityTags(scope Construct, id *string, config EntityTagsConfig) EntityTags
 ```
@@ -310,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.entityTags.EntityTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/entitytags"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/entitytags"
 
 entitytags.EntityTags_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.entityTags.EntityTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/entitytags"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/entitytags"
 
 entitytags.EntityTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ entitytags.EntityTags_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.entityTags.EntityTags.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/entitytags"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/entitytags"
 
 entitytags.EntityTags_IsTerraformResource(x interface{}) *bool
 ```
@@ -643,7 +643,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.entityTags.EntityTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/entitytags"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/entitytags"
 
 &entitytags.EntityTagsConfig {
 	Connection: interface{},
@@ -656,7 +656,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/entitytags"
 	Guid: *string,
 	Tag: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9.entityTags.EntityTagsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.entityTags.EntityTagsTimeouts,
 }
 ```
 
@@ -673,7 +673,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/entitytags"
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.guid">Guid</a></code> | <code>*string</code> | The guid of the entity to tag. |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.tag">Tag</a></code> | <code>interface{}</code> | tag block. |
-| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/entity_tags#id EntityTags#id}. |
+| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/entity_tags#id EntityTags#id}. |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -758,7 +758,7 @@ Guid *string
 
 The guid of the entity to tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/entity_tags#guid EntityTags#guid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/entity_tags#guid EntityTags#guid}
 
 ---
 
@@ -772,7 +772,7 @@ Tag interface{}
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/entity_tags#tag EntityTags#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/entity_tags#tag EntityTags#tag}
 
 ---
 
@@ -784,7 +784,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/entity_tags#id EntityTags#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/entity_tags#id EntityTags#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -801,7 +801,7 @@ Timeouts EntityTagsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/entity_tags#timeouts EntityTags#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/entity_tags#timeouts EntityTags#timeouts}
 
 ---
 
@@ -810,7 +810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.entityTags.EntityTagsTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/entitytags"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/entitytags"
 
 &entitytags.EntityTagsTag {
 	Key: *string,
@@ -837,7 +837,7 @@ Key *string
 
 The tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/entity_tags#key EntityTags#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/entity_tags#key EntityTags#key}
 
 ---
 
@@ -851,7 +851,7 @@ Values *[]*string
 
 The tag values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/entity_tags#values EntityTags#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/entity_tags#values EntityTags#values}
 
 ---
 
@@ -860,7 +860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/entitytags"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/entitytags"
 
 &entitytags.EntityTagsTimeouts {
 	Create: *string,
@@ -871,7 +871,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/entitytags"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/entity_tags#create EntityTags#create}. |
+| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/entity_tags#create EntityTags#create}. |
 
 ---
 
@@ -883,7 +883,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/entity_tags#create EntityTags#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/entity_tags#create EntityTags#create}.
 
 ---
 
@@ -894,7 +894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.entityTags.EntityTagsTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/entitytags"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/entitytags"
 
 entitytags.NewEntityTagsTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EntityTagsTagList
 ```
@@ -1037,7 +1037,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.entityTags.EntityTagsTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/entitytags"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/entitytags"
 
 entitytags.NewEntityTagsTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EntityTagsTagOutputReference
 ```
@@ -1348,7 +1348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.entityTags.EntityTagsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/entitytags"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/entitytags"
 
 entitytags.NewEntityTagsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EntityTagsTimeoutsOutputReference
 ```
