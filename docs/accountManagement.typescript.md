@@ -1,6 +1,6 @@
 # `newrelic_account_management`
 
-Refer to the Terraform Registory for docs: [`newrelic_account_management`](https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/account_management).
+Refer to the Terraform Registory for docs: [`newrelic_account_management`](https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/account_management).
 
 # `accountManagement` Submodule <a name="`accountManagement` Submodule" id="@cdktf/provider-newrelic.accountManagement"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_account_management`](https
 
 ### AccountManagement <a name="AccountManagement" id="@cdktf/provider-newrelic.accountManagement.AccountManagement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/account_management newrelic_account_management}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/account_management newrelic_account_management}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.accountManagement.AccountManagement.Initializer"></a>
 
@@ -70,9 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagement.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagement.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagement.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagement.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagement.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagement.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -260,28 +258,10 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-newrelic.accountManagement.AccountManagement.putTimeouts"></a>
-
-```typescript
-public putTimeouts(value: AccountManagementTimeouts): void
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.accountManagement.AccountManagement.putTimeouts.parameter.value"></a>
-
-- *Type:* <a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeouts">AccountManagementTimeouts</a>
-
----
-
 ##### `resetId` <a name="resetId" id="@cdktf/provider-newrelic.accountManagement.AccountManagement.resetId"></a>
 
 ```typescript
 public resetId(): void
-```
-
-##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-newrelic.accountManagement.AccountManagement.resetTimeouts"></a>
-
-```typescript
-public resetTimeouts(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -372,11 +352,9 @@ accountManagement.AccountManagement.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagement.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagement.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagement.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagement.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference">AccountManagementTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagement.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagement.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagement.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagement.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeouts">AccountManagementTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagement.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagement.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagement.property.region">region</a></code> | <code>string</code> | *No description.* |
@@ -525,16 +503,6 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-newrelic.accountManagement.AccountManagement.property.timeouts"></a>
-
-```typescript
-public readonly timeouts: AccountManagementTimeoutsOutputReference;
-```
-
-- *Type:* <a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference">AccountManagementTimeoutsOutputReference</a>
-
----
-
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-newrelic.accountManagement.AccountManagement.property.idInput"></a>
 
 ```typescript
@@ -562,16 +530,6 @@ public readonly regionInput: string;
 ```
 
 - *Type:* string
-
----
-
-##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-newrelic.accountManagement.AccountManagement.property.timeoutsInput"></a>
-
-```typescript
-public readonly timeoutsInput: AccountManagementTimeouts | IResolvable;
-```
-
-- *Type:* <a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeouts">AccountManagementTimeouts</a> | cdktf.IResolvable
 
 ---
 
@@ -648,8 +606,7 @@ const accountManagementConfig: accountManagement.AccountManagementConfig = { ...
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementConfig.property.name">name</a></code> | <code>string</code> | Name of the account to be created. |
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementConfig.property.region">region</a></code> | <code>string</code> | A description of what this parsing rule represents. |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/account_management#id AccountManagement#id}. |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeouts">AccountManagementTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/account_management#id AccountManagement#id}. |
 
 ---
 
@@ -733,7 +690,7 @@ public readonly name: string;
 
 Name of the account to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/account_management#name AccountManagement#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/account_management#name AccountManagement#name}
 
 ---
 
@@ -747,7 +704,7 @@ public readonly region: string;
 
 A description of what this parsing rule represents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/account_management#region AccountManagement#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/account_management#region AccountManagement#region}
 
 ---
 
@@ -759,333 +716,10 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/account_management#id AccountManagement#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/account_management#id AccountManagement#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-newrelic.accountManagement.AccountManagementConfig.property.timeouts"></a>
-
-```typescript
-public readonly timeouts: AccountManagementTimeouts;
-```
-
-- *Type:* <a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeouts">AccountManagementTimeouts</a>
-
-timeouts block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/account_management#timeouts AccountManagement#timeouts}
-
----
-
-### AccountManagementTimeouts <a name="AccountManagementTimeouts" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeouts"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeouts.Initializer"></a>
-
-```typescript
-import { accountManagement } from '@cdktf/provider-newrelic'
-
-const accountManagementTimeouts: accountManagement.AccountManagementTimeouts = { ... }
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/account_management#create AccountManagement#create}. |
-
----
-
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeouts.property.create"></a>
-
-```typescript
-public readonly create: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/account_management#create AccountManagement#create}.
-
----
-
-## Classes <a name="Classes" id="Classes"></a>
-
-### AccountManagementTimeoutsOutputReference <a name="AccountManagementTimeoutsOutputReference" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.Initializer"></a>
-
-```typescript
-import { accountManagement } from '@cdktf/provider-newrelic'
-
-new accountManagement.AccountManagementTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.computeFqn"></a>
-
-```typescript
-public computeFqn(): string
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getAnyMapAttribute"></a>
-
-```typescript
-public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getBooleanAttribute"></a>
-
-```typescript
-public getBooleanAttribute(terraformAttribute: string): IResolvable
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getBooleanMapAttribute"></a>
-
-```typescript
-public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getListAttribute"></a>
-
-```typescript
-public getListAttribute(terraformAttribute: string): string[]
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getNumberAttribute"></a>
-
-```typescript
-public getNumberAttribute(terraformAttribute: string): number
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getNumberListAttribute"></a>
-
-```typescript
-public getNumberListAttribute(terraformAttribute: string): number[]
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getNumberMapAttribute"></a>
-
-```typescript
-public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getStringAttribute"></a>
-
-```typescript
-public getStringAttribute(terraformAttribute: string): string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getStringMapAttribute"></a>
-
-```typescript
-public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.interpolationForAttribute"></a>
-
-```typescript
-public interpolationForAttribute(property: string): IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* string
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.resolve"></a>
-
-```typescript
-public resolve(_context: IResolveContext): any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.toString"></a>
-
-```typescript
-public toString(): string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.resetCreate"></a>
-
-```typescript
-public resetCreate(): void
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeouts">AccountManagementTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.property.creationStack"></a>
-
-```typescript
-public readonly creationStack: string[];
-```
-
-- *Type:* string[]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.property.fqn"></a>
-
-```typescript
-public readonly fqn: string;
-```
-
-- *Type:* string
-
----
-
-##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.property.createInput"></a>
-
-```typescript
-public readonly createInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.property.create"></a>
-
-```typescript
-public readonly create: string;
-```
-
-- *Type:* string
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.accountManagement.AccountManagementTimeoutsOutputReference.property.internalValue"></a>
-
-```typescript
-public readonly internalValue: AccountManagementTimeouts | IResolvable;
-```
-
-- *Type:* <a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementTimeouts">AccountManagementTimeouts</a> | cdktf.IResolvable
 
 ---
 

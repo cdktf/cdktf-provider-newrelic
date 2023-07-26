@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/account_management
+// https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/account_management
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface AccountManagementConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/account_management#id AccountManagement#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/account_management#id AccountManagement#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -21,101 +21,20 @@ export interface AccountManagementConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name of the account to be created
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/account_management#name AccountManagement#name}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/account_management#name AccountManagement#name}
   */
   readonly name: string;
   /**
   * A description of what this parsing rule represents.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/account_management#region AccountManagement#region}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/account_management#region AccountManagement#region}
   */
   readonly region: string;
-  /**
-  * timeouts block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/account_management#timeouts AccountManagement#timeouts}
-  */
-  readonly timeouts?: AccountManagementTimeouts;
-}
-export interface AccountManagementTimeouts {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/account_management#create AccountManagement#create}
-  */
-  readonly create?: string;
-}
-
-export function accountManagementTimeoutsToTerraform(struct?: AccountManagementTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-  }
-}
-
-export class AccountManagementTimeoutsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): AccountManagementTimeouts | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._create !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.create = this._create;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: AccountManagementTimeouts | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._create = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._create = value.create;
-    }
-  }
-
-  // create - computed: false, optional: true, required: false
-  private _create?: string; 
-  public get create() {
-    return this.getStringAttribute('create');
-  }
-  public set create(value: string) {
-    this._create = value;
-  }
-  public resetCreate() {
-    this._create = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get createInput() {
-    return this._create;
-  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/account_management newrelic_account_management}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/account_management newrelic_account_management}
 */
 export class AccountManagement extends cdktf.TerraformResource {
 
@@ -129,7 +48,7 @@ export class AccountManagement extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/account_management newrelic_account_management} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/account_management newrelic_account_management} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -140,7 +59,7 @@ export class AccountManagement extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_account_management',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.25.2',
+        providerVersion: '3.26.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -154,7 +73,6 @@ export class AccountManagement extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._region = config.region;
-    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -203,22 +121,6 @@ export class AccountManagement extends cdktf.TerraformResource {
     return this._region;
   }
 
-  // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new AccountManagementTimeoutsOutputReference(this, "timeouts");
-  public get timeouts() {
-    return this._timeouts;
-  }
-  public putTimeouts(value: AccountManagementTimeouts) {
-    this._timeouts.internalValue = value;
-  }
-  public resetTimeouts() {
-    this._timeouts.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -228,7 +130,6 @@ export class AccountManagement extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
-      timeouts: accountManagementTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

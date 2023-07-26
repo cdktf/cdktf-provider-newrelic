@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/data-sources/notification_destination
+// https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/data-sources/notification_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,14 +14,14 @@ import * as cdktf from 'cdktf';
 export interface DataNewrelicNotificationDestinationConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account ID under which to put the destination.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/data-sources/notification_destination#account_id DataNewrelicNotificationDestination#account_id}
   */
   readonly accountId?: number;
   /**
   * The ID of the destination.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/data-sources/notification_destination#id DataNewrelicNotificationDestination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,8 +29,8 @@ export interface DataNewrelicNotificationDestinationConfig extends cdktf.Terrafo
   readonly id?: string;
   /**
   * The name of the destination.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/data-sources/notification_destination#name DataNewrelicNotificationDestination#name}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/data-sources/notification_destination#name DataNewrelicNotificationDestination#name}
   */
   readonly name?: string;
 }
@@ -115,7 +115,7 @@ export class DataNewrelicNotificationDestinationPropertyList extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/data-sources/notification_destination newrelic_notification_destination}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/data-sources/notification_destination newrelic_notification_destination}
 */
 export class DataNewrelicNotificationDestination extends cdktf.TerraformDataSource {
 
@@ -129,7 +129,7 @@ export class DataNewrelicNotificationDestination extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/data-sources/notification_destination newrelic_notification_destination} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/data-sources/notification_destination newrelic_notification_destination} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -140,7 +140,7 @@ export class DataNewrelicNotificationDestination extends cdktf.TerraformDataSour
       terraformResourceType: 'newrelic_notification_destination',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.25.2',
+        providerVersion: '3.26.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

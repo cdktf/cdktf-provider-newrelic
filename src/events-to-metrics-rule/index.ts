@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/events_to_metrics_rule
+// https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/events_to_metrics_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,24 +14,24 @@ import * as cdktf from 'cdktf';
 export interface EventsToMetricsRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Account with the event and where the metrics will be put.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/events_to_metrics_rule#account_id EventsToMetricsRule#account_id}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/events_to_metrics_rule#account_id EventsToMetricsRule#account_id}
   */
   readonly accountId?: number;
   /**
   * Provides additional information about the rule.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/events_to_metrics_rule#description EventsToMetricsRule#description}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/events_to_metrics_rule#description EventsToMetricsRule#description}
   */
   readonly description?: string;
   /**
   * True means this rule is enabled. False means the rule is currently not creating metrics.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/events_to_metrics_rule#enabled EventsToMetricsRule#enabled}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/events_to_metrics_rule#enabled EventsToMetricsRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/events_to_metrics_rule#id EventsToMetricsRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/events_to_metrics_rule#id EventsToMetricsRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,20 +39,20 @@ export interface EventsToMetricsRuleConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * The name of the rule. This must be unique within an account.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/events_to_metrics_rule#name EventsToMetricsRule#name}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/events_to_metrics_rule#name EventsToMetricsRule#name}
   */
   readonly name: string;
   /**
   * Explains how to create metrics from events.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/events_to_metrics_rule#nrql EventsToMetricsRule#nrql}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/events_to_metrics_rule#nrql EventsToMetricsRule#nrql}
   */
   readonly nrql: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/events_to_metrics_rule newrelic_events_to_metrics_rule}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/events_to_metrics_rule newrelic_events_to_metrics_rule}
 */
 export class EventsToMetricsRule extends cdktf.TerraformResource {
 
@@ -66,7 +66,7 @@ export class EventsToMetricsRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/events_to_metrics_rule newrelic_events_to_metrics_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/events_to_metrics_rule newrelic_events_to_metrics_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,7 @@ export class EventsToMetricsRule extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_events_to_metrics_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.25.2',
+        providerVersion: '3.26.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
