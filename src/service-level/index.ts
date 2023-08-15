@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level
+// https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface ServiceLevelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#description ServiceLevel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#description ServiceLevel#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#guid ServiceLevel#guid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#guid ServiceLevel#guid}
   */
   readonly guid: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#id ServiceLevel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#id ServiceLevel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#name ServiceLevel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#name ServiceLevel#name}
   */
   readonly name: string;
   /**
   * events block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#events ServiceLevel#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#events ServiceLevel#events}
   */
   readonly events: ServiceLevelEvents;
   /**
   * objective block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#objective ServiceLevel#objective}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#objective ServiceLevel#objective}
   */
   readonly objective: ServiceLevelObjective;
 }
 export interface ServiceLevelEventsBadEventsSelect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#attribute ServiceLevel#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#attribute ServiceLevel#attribute}
   */
   readonly attribute?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#function ServiceLevel#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#function ServiceLevel#function}
   */
   readonly function: string;
   /**
   * The event threshold to use in the SELECT clause
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#threshold ServiceLevel#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#threshold ServiceLevel#threshold}
   */
   readonly threshold?: number;
 }
@@ -164,17 +164,17 @@ export class ServiceLevelEventsBadEventsSelectOutputReference extends cdktf.Comp
 }
 export interface ServiceLevelEventsBadEvents {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#from ServiceLevel#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#from ServiceLevel#from}
   */
   readonly from: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#where ServiceLevel#where}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#where ServiceLevel#where}
   */
   readonly where?: string;
   /**
   * select block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#select ServiceLevel#select}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#select ServiceLevel#select}
   */
   readonly select?: ServiceLevelEventsBadEventsSelect;
 }
@@ -282,17 +282,17 @@ export class ServiceLevelEventsBadEventsOutputReference extends cdktf.ComplexObj
 }
 export interface ServiceLevelEventsGoodEventsSelect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#attribute ServiceLevel#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#attribute ServiceLevel#attribute}
   */
   readonly attribute?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#function ServiceLevel#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#function ServiceLevel#function}
   */
   readonly function: string;
   /**
   * The event threshold to use in the SELECT clause
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#threshold ServiceLevel#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#threshold ServiceLevel#threshold}
   */
   readonly threshold?: number;
 }
@@ -400,17 +400,17 @@ export class ServiceLevelEventsGoodEventsSelectOutputReference extends cdktf.Com
 }
 export interface ServiceLevelEventsGoodEvents {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#from ServiceLevel#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#from ServiceLevel#from}
   */
   readonly from: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#where ServiceLevel#where}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#where ServiceLevel#where}
   */
   readonly where?: string;
   /**
   * select block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#select ServiceLevel#select}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#select ServiceLevel#select}
   */
   readonly select?: ServiceLevelEventsGoodEventsSelect;
 }
@@ -518,17 +518,17 @@ export class ServiceLevelEventsGoodEventsOutputReference extends cdktf.ComplexOb
 }
 export interface ServiceLevelEventsValidEventsSelect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#attribute ServiceLevel#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#attribute ServiceLevel#attribute}
   */
   readonly attribute?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#function ServiceLevel#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#function ServiceLevel#function}
   */
   readonly function: string;
   /**
   * The event threshold to use in the SELECT clause
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#threshold ServiceLevel#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#threshold ServiceLevel#threshold}
   */
   readonly threshold?: number;
 }
@@ -636,17 +636,17 @@ export class ServiceLevelEventsValidEventsSelectOutputReference extends cdktf.Co
 }
 export interface ServiceLevelEventsValidEvents {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#from ServiceLevel#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#from ServiceLevel#from}
   */
   readonly from: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#where ServiceLevel#where}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#where ServiceLevel#where}
   */
   readonly where?: string;
   /**
   * select block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#select ServiceLevel#select}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#select ServiceLevel#select}
   */
   readonly select?: ServiceLevelEventsValidEventsSelect;
 }
@@ -754,25 +754,25 @@ export class ServiceLevelEventsValidEventsOutputReference extends cdktf.ComplexO
 }
 export interface ServiceLevelEvents {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#account_id ServiceLevel#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#account_id ServiceLevel#account_id}
   */
   readonly accountId: number;
   /**
   * bad_events block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#bad_events ServiceLevel#bad_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#bad_events ServiceLevel#bad_events}
   */
   readonly badEvents?: ServiceLevelEventsBadEvents;
   /**
   * good_events block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#good_events ServiceLevel#good_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#good_events ServiceLevel#good_events}
   */
   readonly goodEvents?: ServiceLevelEventsGoodEvents;
   /**
   * valid_events block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#valid_events ServiceLevel#valid_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#valid_events ServiceLevel#valid_events}
   */
   readonly validEvents: ServiceLevelEventsValidEvents;
 }
@@ -900,11 +900,11 @@ export class ServiceLevelEventsOutputReference extends cdktf.ComplexObject {
 }
 export interface ServiceLevelObjectiveTimeWindowRolling {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#count ServiceLevel#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#count ServiceLevel#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#unit ServiceLevel#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#unit ServiceLevel#unit}
   */
   readonly unit: string;
 }
@@ -988,7 +988,7 @@ export interface ServiceLevelObjectiveTimeWindow {
   /**
   * rolling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#rolling ServiceLevel#rolling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#rolling ServiceLevel#rolling}
   */
   readonly rolling: ServiceLevelObjectiveTimeWindowRolling;
 }
@@ -1050,21 +1050,21 @@ export class ServiceLevelObjectiveTimeWindowOutputReference extends cdktf.Comple
 }
 export interface ServiceLevelObjective {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#description ServiceLevel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#description ServiceLevel#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#name ServiceLevel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#name ServiceLevel#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#target ServiceLevel#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#target ServiceLevel#target}
   */
   readonly target: number;
   /**
   * time_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level#time_window ServiceLevel#time_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level#time_window ServiceLevel#time_window}
   */
   readonly timeWindow: ServiceLevelObjectiveTimeWindow;
 }
@@ -1192,7 +1192,7 @@ export class ServiceLevelObjectiveOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level newrelic_service_level}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level newrelic_service_level}
 */
 export class ServiceLevel extends cdktf.TerraformResource {
 
@@ -1206,7 +1206,7 @@ export class ServiceLevel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/service_level newrelic_service_level} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/service_level newrelic_service_level} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1217,7 +1217,7 @@ export class ServiceLevel extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_service_level',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.26.0',
+        providerVersion: '3.26.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

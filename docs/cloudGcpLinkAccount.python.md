@@ -1,6 +1,6 @@
 # `newrelic_cloud_gcp_link_account`
 
-Refer to the Terraform Registory for docs: [`newrelic_cloud_gcp_link_account`](https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/cloud_gcp_link_account).
+Refer to the Terraform Registory for docs: [`newrelic_cloud_gcp_link_account`](https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/cloud_gcp_link_account).
 
 # `cloudGcpLinkAccount` Submodule <a name="`cloudGcpLinkAccount` Submodule" id="@cdktf/provider-newrelic.cloudGcpLinkAccount"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_cloud_gcp_link_account`](h
 
 ### CloudGcpLinkAccount <a name="CloudGcpLinkAccount" id="@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/cloud_gcp_link_account newrelic_cloud_gcp_link_account}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/cloud_gcp_link_account newrelic_cloud_gcp_link_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer"></a>
 
@@ -46,7 +46,7 @@ cloudGcpLinkAccount.CloudGcpLinkAccount(
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.name">name</a></code> | <code>str</code> | name of the linked account. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | project id of the Gcp account. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | accountID of newrelic account. |
-| <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}. |
+| <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 name of the linked account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/cloud_gcp_link_account#name CloudGcpLinkAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/cloud_gcp_link_account#name CloudGcpLinkAccount#name}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 project id of the Gcp account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/cloud_gcp_link_account#project_id CloudGcpLinkAccount#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/cloud_gcp_link_account#project_id CloudGcpLinkAccount#project_id}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 accountID of newrelic account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -780,7 +780,7 @@ cloudGcpLinkAccount.CloudGcpLinkAccountConfig(
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.name">name</a></code> | <code>str</code> | name of the linked account. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.projectId">project_id</a></code> | <code>str</code> | project id of the Gcp account. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | accountID of newrelic account. |
-| <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}. |
+| <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}. |
 
 ---
 
@@ -864,7 +864,7 @@ name: str
 
 name of the linked account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/cloud_gcp_link_account#name CloudGcpLinkAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/cloud_gcp_link_account#name CloudGcpLinkAccount#name}
 
 ---
 
@@ -878,7 +878,7 @@ project_id: str
 
 project id of the Gcp account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/cloud_gcp_link_account#project_id CloudGcpLinkAccount#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/cloud_gcp_link_account#project_id CloudGcpLinkAccount#project_id}
 
 ---
 
@@ -892,7 +892,7 @@ account_id: typing.Union[int, float]
 
 accountID of newrelic account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
 
 ---
 
@@ -904,7 +904,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
