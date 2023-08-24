@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.browserApplication.BrowserApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/browserapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/browserapplication"
 
 browserapplication.NewBrowserApplication(scope Construct, id *string, config BrowserApplicationConfig) BrowserApplication
 ```
@@ -305,7 +305,7 @@ func ResetLoaderType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.browserApplication.BrowserApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/browserapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/browserapplication"
 
 browserapplication.BrowserApplication_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.browserApplication.BrowserApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/browserapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/browserapplication"
 
 browserapplication.BrowserApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ browserapplication.BrowserApplication_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.browserApplication.BrowserApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/browserapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/browserapplication"
 
 browserapplication.BrowserApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -693,7 +693,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.browserApplication.BrowserApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/browserapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/browserapplication"
 
 &browserapplication.BrowserApplicationConfig {
 	Connection: interface{},
