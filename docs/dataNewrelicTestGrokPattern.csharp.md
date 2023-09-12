@@ -1,6 +1,6 @@
 # `data_newrelic_test_grok_pattern`
 
-Refer to the Terraform Registory for docs: [`data_newrelic_test_grok_pattern`](https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/data-sources/test_grok_pattern).
+Refer to the Terraform Registory for docs: [`data_newrelic_test_grok_pattern`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/test_grok_pattern).
 
 # `dataNewrelicTestGrokPattern` Submodule <a name="`dataNewrelicTestGrokPattern` Submodule" id="@cdktf/provider-newrelic.dataNewrelicTestGrokPattern"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_newrelic_test_grok_pattern`](h
 
 ### DataNewrelicTestGrokPattern <a name="DataNewrelicTestGrokPattern" id="@cdktf/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPattern"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/data-sources/test_grok_pattern newrelic_test_grok_pattern}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/test_grok_pattern newrelic_test_grok_pattern}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPattern.Initializer"></a>
 
@@ -637,7 +637,7 @@ new DataNewrelicTestGrokPatternConfig {
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPatternConfig.property.grok">Grok</a></code> | <code>string</code> | The Grok pattern to test. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPatternConfig.property.logLines">LogLines</a></code> | <code>string[]</code> | The log lines to test the Grok pattern against. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPatternConfig.property.accountId">AccountId</a></code> | <code>double</code> | The account id associated with the test grok. |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPatternConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/data-sources/test_grok_pattern#id DataNewrelicTestGrokPattern#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPatternConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/test_grok_pattern#id DataNewrelicTestGrokPattern#id}. |
 
 ---
 
@@ -721,7 +721,7 @@ public string Grok { get; set; }
 
 The Grok pattern to test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/data-sources/test_grok_pattern#grok DataNewrelicTestGrokPattern#grok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/test_grok_pattern#grok DataNewrelicTestGrokPattern#grok}
 
 ---
 
@@ -735,7 +735,7 @@ public string[] LogLines { get; set; }
 
 The log lines to test the Grok pattern against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/data-sources/test_grok_pattern#log_lines DataNewrelicTestGrokPattern#log_lines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/test_grok_pattern#log_lines DataNewrelicTestGrokPattern#log_lines}
 
 ---
 
@@ -749,7 +749,7 @@ public double AccountId { get; set; }
 
 The account id associated with the test grok.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/data-sources/test_grok_pattern#account_id DataNewrelicTestGrokPattern#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/test_grok_pattern#account_id DataNewrelicTestGrokPattern#account_id}
 
 ---
 
@@ -761,7 +761,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/data-sources/test_grok_pattern#id DataNewrelicTestGrokPattern#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/test_grok_pattern#id DataNewrelicTestGrokPattern#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

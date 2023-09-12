@@ -1,6 +1,6 @@
 # `data_newrelic_synthetics_private_location`
 
-Refer to the Terraform Registory for docs: [`data_newrelic_synthetics_private_location`](https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/data-sources/synthetics_private_location).
+Refer to the Terraform Registory for docs: [`data_newrelic_synthetics_private_location`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/synthetics_private_location).
 
 # `dataNewrelicSyntheticsPrivateLocation` Submodule <a name="`dataNewrelicSyntheticsPrivateLocation` Submodule" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_newrelic_synthetics_private_lo
 
 ### DataNewrelicSyntheticsPrivateLocation <a name="DataNewrelicSyntheticsPrivateLocation" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/data-sources/synthetics_private_location newrelic_synthetics_private_location}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/synthetics_private_location newrelic_synthetics_private_location}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/datanewrelicsyntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicsyntheticsprivatelocation"
 
 datanewrelicsyntheticsprivatelocation.NewDataNewrelicSyntheticsPrivateLocation(scope Construct, id *string, config DataNewrelicSyntheticsPrivateLocationConfig) DataNewrelicSyntheticsPrivateLocation
 ```
@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.resetAccountId">ResetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.resetKey">ResetKey</a></code> | *No description.* |
 
 ---
 
@@ -271,6 +272,12 @@ func ResetAccountId()
 func ResetId()
 ```
 
+##### `ResetKey` <a name="ResetKey" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.resetKey"></a>
+
+```go
+func ResetKey()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -284,7 +291,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/datanewrelicsyntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicsyntheticsprivatelocation"
 
 datanewrelicsyntheticsprivatelocation.DataNewrelicSyntheticsPrivateLocation_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/datanewrelicsyntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicsyntheticsprivatelocation"
 
 datanewrelicsyntheticsprivatelocation.DataNewrelicSyntheticsPrivateLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +337,7 @@ datanewrelicsyntheticsprivatelocation.DataNewrelicSyntheticsPrivateLocation_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/datanewrelicsyntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicsyntheticsprivatelocation"
 
 datanewrelicsyntheticsprivatelocation.DataNewrelicSyntheticsPrivateLocation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -359,9 +366,11 @@ datanewrelicsyntheticsprivatelocation.DataNewrelicSyntheticsPrivateLocation_IsTe
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.property.accountIdInput">AccountIdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.property.keyInput">KeyInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.property.accountId">AccountId</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.property.key">Key</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -508,6 +517,16 @@ func IdInput() *string
 
 ---
 
+##### `KeyInput`<sup>Optional</sup> <a name="KeyInput" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.property.keyInput"></a>
+
+```go
+func KeyInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.property.nameInput"></a>
 
 ```go
@@ -535,6 +554,16 @@ func Id() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.property.key"></a>
+
+```go
+func Key() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -573,7 +602,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/datanewrelicsyntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicsyntheticsprivatelocation"
 
 &datanewrelicsyntheticsprivatelocation.DataNewrelicSyntheticsPrivateLocationConfig {
 	Connection: interface{},
@@ -586,6 +615,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/datanewrelicsyn
 	Name: *string,
 	AccountId: *f64,
 	Id: *string,
+	Key: *[]*string,
 }
 ```
 
@@ -602,7 +632,8 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/datanewrelicsyn
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocationConfig.property.name">Name</a></code> | <code>*string</code> | The name of the Synthetics monitor private location. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocationConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The ID of the account in New Relic. |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/data-sources/synthetics_private_location#id DataNewrelicSyntheticsPrivateLocation#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/synthetics_private_location#id DataNewrelicSyntheticsPrivateLocation#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocationConfig.property.key">Key</a></code> | <code>*[]*string</code> | The key of the queried private location. |
 
 ---
 
@@ -686,7 +717,7 @@ Name *string
 
 The name of the Synthetics monitor private location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/data-sources/synthetics_private_location#name DataNewrelicSyntheticsPrivateLocation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/synthetics_private_location#name DataNewrelicSyntheticsPrivateLocation#name}
 
 ---
 
@@ -700,7 +731,7 @@ AccountId *f64
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/data-sources/synthetics_private_location#account_id DataNewrelicSyntheticsPrivateLocation#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/synthetics_private_location#account_id DataNewrelicSyntheticsPrivateLocation#account_id}
 
 ---
 
@@ -712,10 +743,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/data-sources/synthetics_private_location#id DataNewrelicSyntheticsPrivateLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/synthetics_private_location#id DataNewrelicSyntheticsPrivateLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Key`<sup>Optional</sup> <a name="Key" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocationConfig.property.key"></a>
+
+```go
+Key *[]*string
+```
+
+- *Type:* *[]*string
+
+The key of the queried private location.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/synthetics_private_location#key DataNewrelicSyntheticsPrivateLocation#key}
 
 ---
 

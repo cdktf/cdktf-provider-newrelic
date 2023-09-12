@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import * as cdktf from 'cdktf';
 import { OneDashboardPageWidgetStackedBarColors,
 oneDashboardPageWidgetStackedBarColorsToTerraform,
@@ -53,13 +48,13 @@ export interface OneDashboardPageWidgetStackedBarUnitsSeriesOverrides {
   /**
   * Series name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
   */
   readonly seriesName?: string;
   /**
   * Unit name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#unit OneDashboard#unit}
   */
   readonly unit?: string;
 }
@@ -179,13 +174,13 @@ export class OneDashboardPageWidgetStackedBarUnitsSeriesOverridesList extends cd
 }
 export interface OneDashboardPageWidgetStackedBarUnits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#unit OneDashboard#unit}
   */
   readonly unit?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
   readonly seriesOverrides?: OneDashboardPageWidgetStackedBarUnitsSeriesOverrides[] | cdktf.IResolvable;
 }
@@ -305,69 +300,69 @@ export class OneDashboardPageWidgetStackedBarUnitsList extends cdktf.ComplexList
 }
 export interface OneDashboardPageWidgetStackedBar {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#column OneDashboard#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#column OneDashboard#column}
   */
   readonly column: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}
   */
   readonly facetShowOtherSeries?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#height OneDashboard#height}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#height OneDashboard#height}
   */
   readonly height?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
   */
   readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}
   */
   readonly legendEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#row OneDashboard#row}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#row OneDashboard#row}
   */
   readonly row: number;
   /**
   * A title for the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#title OneDashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#title OneDashboard#title}
   */
   readonly title: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#width OneDashboard#width}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#width OneDashboard#width}
   */
   readonly width?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}
   */
   readonly yAxisLeftMax?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}
   */
   readonly yAxisLeftMin?: number;
   /**
   * colors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#colors OneDashboard#colors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#colors OneDashboard#colors}
   */
   readonly colors?: OneDashboardPageWidgetStackedBarColors[] | cdktf.IResolvable;
   /**
   * nrql_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
   readonly nrqlQuery: OneDashboardPageWidgetStackedBarNrqlQuery[] | cdktf.IResolvable;
   /**
   * null_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
   */
   readonly nullValues?: OneDashboardPageWidgetStackedBarNullValues[] | cdktf.IResolvable;
   /**
   * units block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#units OneDashboard#units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#units OneDashboard#units}
   */
   readonly units?: OneDashboardPageWidgetStackedBarUnits[] | cdktf.IResolvable;
 }
@@ -758,13 +753,13 @@ export interface OneDashboardPageWidgetTableColorsSeriesOverrides {
   /**
   * Color code
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#color OneDashboard#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#color OneDashboard#color}
   */
   readonly color?: string;
   /**
   * Series name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
   */
   readonly seriesName?: string;
 }
@@ -884,13 +879,13 @@ export class OneDashboardPageWidgetTableColorsSeriesOverridesList extends cdktf.
 }
 export interface OneDashboardPageWidgetTableColors {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#color OneDashboard#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#color OneDashboard#color}
   */
   readonly color?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
   readonly seriesOverrides?: OneDashboardPageWidgetTableColorsSeriesOverrides[] | cdktf.IResolvable;
 }
@@ -1012,13 +1007,13 @@ export interface OneDashboardPageWidgetTableNrqlQuery {
   /**
   * The account id used for the NRQL query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
   */
   readonly accountId?: number;
   /**
   * The NRQL query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#query OneDashboard#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#query OneDashboard#query}
   */
   readonly query: string;
 }
@@ -1137,13 +1132,13 @@ export interface OneDashboardPageWidgetTableNullValuesSeriesOverrides {
   /**
   * Null value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
   */
   readonly nullValue?: string;
   /**
   * Series name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
   */
   readonly seriesName?: string;
 }
@@ -1263,13 +1258,13 @@ export class OneDashboardPageWidgetTableNullValuesSeriesOverridesList extends cd
 }
 export interface OneDashboardPageWidgetTableNullValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
   */
   readonly nullValue?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
   readonly seriesOverrides?: OneDashboardPageWidgetTableNullValuesSeriesOverrides[] | cdktf.IResolvable;
 }
@@ -1391,13 +1386,13 @@ export interface OneDashboardPageWidgetTableUnitsSeriesOverrides {
   /**
   * Series name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
   */
   readonly seriesName?: string;
   /**
   * Unit name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#unit OneDashboard#unit}
   */
   readonly unit?: string;
 }
@@ -1517,13 +1512,13 @@ export class OneDashboardPageWidgetTableUnitsSeriesOverridesList extends cdktf.C
 }
 export interface OneDashboardPageWidgetTableUnits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#unit OneDashboard#unit}
   */
   readonly unit?: string;
   /**
   * series_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
   */
   readonly seriesOverrides?: OneDashboardPageWidgetTableUnitsSeriesOverrides[] | cdktf.IResolvable;
 }
@@ -1643,81 +1638,81 @@ export class OneDashboardPageWidgetTableUnitsList extends cdktf.ComplexList {
 }
 export interface OneDashboardPageWidgetTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#column OneDashboard#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#column OneDashboard#column}
   */
   readonly column: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}
   */
   readonly facetShowOtherSeries?: boolean | cdktf.IResolvable;
   /**
   * Use this item to filter the current dashboard
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
   */
   readonly filterCurrentDashboard?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#height OneDashboard#height}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#height OneDashboard#height}
   */
   readonly height?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
   */
   readonly ignoreTimeRange?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}
   */
   readonly legendEnabled?: boolean | cdktf.IResolvable;
   /**
   * Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
   */
   readonly linkedEntityGuids?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#row OneDashboard#row}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#row OneDashboard#row}
   */
   readonly row: number;
   /**
   * A title for the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#title OneDashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#title OneDashboard#title}
   */
   readonly title: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#width OneDashboard#width}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#width OneDashboard#width}
   */
   readonly width?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}
   */
   readonly yAxisLeftMax?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}
   */
   readonly yAxisLeftMin?: number;
   /**
   * colors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#colors OneDashboard#colors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#colors OneDashboard#colors}
   */
   readonly colors?: OneDashboardPageWidgetTableColors[] | cdktf.IResolvable;
   /**
   * nrql_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
   readonly nrqlQuery: OneDashboardPageWidgetTableNrqlQuery[] | cdktf.IResolvable;
   /**
   * null_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
   */
   readonly nullValues?: OneDashboardPageWidgetTableNullValues[] | cdktf.IResolvable;
   /**
   * units block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#units OneDashboard#units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#units OneDashboard#units}
   */
   readonly units?: OneDashboardPageWidgetTableUnits[] | cdktf.IResolvable;
 }
@@ -2154,97 +2149,97 @@ export interface OneDashboardPage {
   /**
   * The dashboard page's description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#description OneDashboard#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#description OneDashboard#description}
   */
   readonly description?: string;
   /**
   * The dashboard page's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#name OneDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#name OneDashboard#name}
   */
   readonly name: string;
   /**
   * widget_area block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#widget_area OneDashboard#widget_area}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#widget_area OneDashboard#widget_area}
   */
   readonly widgetArea?: OneDashboardPageWidgetArea[] | cdktf.IResolvable;
   /**
   * widget_bar block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#widget_bar OneDashboard#widget_bar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#widget_bar OneDashboard#widget_bar}
   */
   readonly widgetBar?: OneDashboardPageWidgetBar[] | cdktf.IResolvable;
   /**
   * widget_billboard block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#widget_billboard OneDashboard#widget_billboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#widget_billboard OneDashboard#widget_billboard}
   */
   readonly widgetBillboard?: OneDashboardPageWidgetBillboard[] | cdktf.IResolvable;
   /**
   * widget_bullet block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#widget_bullet OneDashboard#widget_bullet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#widget_bullet OneDashboard#widget_bullet}
   */
   readonly widgetBullet?: OneDashboardPageWidgetBullet[] | cdktf.IResolvable;
   /**
   * widget_funnel block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#widget_funnel OneDashboard#widget_funnel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#widget_funnel OneDashboard#widget_funnel}
   */
   readonly widgetFunnel?: OneDashboardPageWidgetFunnel[] | cdktf.IResolvable;
   /**
   * widget_heatmap block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#widget_heatmap OneDashboard#widget_heatmap}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#widget_heatmap OneDashboard#widget_heatmap}
   */
   readonly widgetHeatmap?: OneDashboardPageWidgetHeatmap[] | cdktf.IResolvable;
   /**
   * widget_histogram block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#widget_histogram OneDashboard#widget_histogram}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#widget_histogram OneDashboard#widget_histogram}
   */
   readonly widgetHistogram?: OneDashboardPageWidgetHistogram[] | cdktf.IResolvable;
   /**
   * widget_json block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#widget_json OneDashboard#widget_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#widget_json OneDashboard#widget_json}
   */
   readonly widgetJson?: OneDashboardPageWidgetJson[] | cdktf.IResolvable;
   /**
   * widget_line block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#widget_line OneDashboard#widget_line}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#widget_line OneDashboard#widget_line}
   */
   readonly widgetLine?: OneDashboardPageWidgetLine[] | cdktf.IResolvable;
   /**
   * widget_log_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#widget_log_table OneDashboard#widget_log_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#widget_log_table OneDashboard#widget_log_table}
   */
   readonly widgetLogTable?: OneDashboardPageWidgetLogTable[] | cdktf.IResolvable;
   /**
   * widget_markdown block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#widget_markdown OneDashboard#widget_markdown}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#widget_markdown OneDashboard#widget_markdown}
   */
   readonly widgetMarkdown?: OneDashboardPageWidgetMarkdown[] | cdktf.IResolvable;
   /**
   * widget_pie block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#widget_pie OneDashboard#widget_pie}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#widget_pie OneDashboard#widget_pie}
   */
   readonly widgetPie?: OneDashboardPageWidgetPie[] | cdktf.IResolvable;
   /**
   * widget_stacked_bar block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#widget_stacked_bar OneDashboard#widget_stacked_bar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#widget_stacked_bar OneDashboard#widget_stacked_bar}
   */
   readonly widgetStackedBar?: OneDashboardPageWidgetStackedBar[] | cdktf.IResolvable;
   /**
   * widget_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#widget_table OneDashboard#widget_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#widget_table OneDashboard#widget_table}
   */
   readonly widgetTable?: OneDashboardPageWidgetTable[] | cdktf.IResolvable;
 }
@@ -2690,13 +2685,13 @@ export interface OneDashboardVariableItem {
   /**
   * A human-friendly display string for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#title OneDashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#title OneDashboard#title}
   */
   readonly title?: string;
   /**
   * A possible variable value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#value OneDashboard#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#value OneDashboard#value}
   */
   readonly value: string;
 }
@@ -2815,13 +2810,13 @@ export interface OneDashboardVariableNrqlQuery {
   /**
   * New Relic account ID(s) to issue the query against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#account_ids OneDashboard#account_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#account_ids OneDashboard#account_ids}
   */
   readonly accountIds?: number[];
   /**
   * NRQL formatted query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#query OneDashboard#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#query OneDashboard#query}
   */
   readonly query: string;
 }
@@ -2908,49 +2903,49 @@ export interface OneDashboardVariable {
   /**
   * Default values for this variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#default_values OneDashboard#default_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#default_values OneDashboard#default_values}
   */
   readonly defaultValues?: string[];
   /**
   * Indicates whether this variable supports multiple selection or not. Only applies to variables of type NRQL or ENUM.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#is_multi_selection OneDashboard#is_multi_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#is_multi_selection OneDashboard#is_multi_selection}
   */
   readonly isMultiSelection?: boolean | cdktf.IResolvable;
   /**
   * The variable identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#name OneDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#name OneDashboard#name}
   */
   readonly name: string;
   /**
   * Indicates the strategy to apply when replacing a variable in a NRQL query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#replacement_strategy OneDashboard#replacement_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#replacement_strategy OneDashboard#replacement_strategy}
   */
   readonly replacementStrategy: string;
   /**
   * Human-friendly display string for this variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#title OneDashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#title OneDashboard#title}
   */
   readonly title: string;
   /**
   * Specifies the data type of the variable and where its possible values may come from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#type OneDashboard#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#type OneDashboard#type}
   */
   readonly type: string;
   /**
   * item block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#item OneDashboard#item}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#item OneDashboard#item}
   */
   readonly item?: OneDashboardVariableItem[] | cdktf.IResolvable;
   /**
   * nrql_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
   */
   readonly nrqlQuery?: OneDashboardVariableNrqlQuery;
 }

@@ -1,6 +1,6 @@
 # `newrelic_data_partition_rule`
 
-Refer to the Terraform Registory for docs: [`newrelic_data_partition_rule`](https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule).
+Refer to the Terraform Registory for docs: [`newrelic_data_partition_rule`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule).
 
 # `dataPartitionRule` Submodule <a name="`dataPartitionRule` Submodule" id="@cdktf/provider-newrelic.dataPartitionRule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_data_partition_rule`](http
 
 ### DataPartitionRule <a name="DataPartitionRule" id="@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule newrelic_data_partition_rule}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule newrelic_data_partition_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRule.Initializer"></a>
 
@@ -56,7 +56,7 @@ DataPartitionRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRule.Initializer.parameter.targetDataPartition">targetDataPartition</a></code> | <code>java.lang.String</code> | The name of the data partition where logs will be allocated once the rule is enabled. |
 | <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRule.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | The account id associated with the data partition rule. |
 | <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The description of the data partition rule. |
-| <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#id DataPartitionRule#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#id DataPartitionRule#id}. |
 | <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRule.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleTimeouts">DataPartitionRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -127,7 +127,7 @@ Must be unique amongst siblings in the same scope
 
 Whether or not this data partition rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#enabled DataPartitionRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#enabled DataPartitionRule#enabled}
 
 ---
 
@@ -139,7 +139,7 @@ The NRQL to match events for this data partition rule.
 
 Logs matching this criteria will be routed to the specified data partition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#nrql DataPartitionRule#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#nrql DataPartitionRule#nrql}
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The retention policy of the data partition data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#retention_policy DataPartitionRule#retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#retention_policy DataPartitionRule#retention_policy}
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The name of the data partition where logs will be allocated once the rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#target_data_partition DataPartitionRule#target_data_partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#target_data_partition DataPartitionRule#target_data_partition}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The account id associated with the data partition rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#account_id DataPartitionRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#account_id DataPartitionRule#account_id}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The description of the data partition rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#description DataPartitionRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#description DataPartitionRule#description}
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#id DataPartitionRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#id DataPartitionRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -200,7 +200,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#timeouts DataPartitionRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#timeouts DataPartitionRule#timeouts}
 
 ---
 
@@ -940,7 +940,7 @@ DataPartitionRuleConfig.builder()
 | <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleConfig.property.targetDataPartition">targetDataPartition</a></code> | <code>java.lang.String</code> | The name of the data partition where logs will be allocated once the rule is enabled. |
 | <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | The account id associated with the data partition rule. |
 | <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleConfig.property.description">description</a></code> | <code>java.lang.String</code> | The description of the data partition rule. |
-| <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#id DataPartitionRule#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#id DataPartitionRule#id}. |
 | <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleTimeouts">DataPartitionRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1025,7 +1025,7 @@ public java.lang.Object getEnabled();
 
 Whether or not this data partition rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#enabled DataPartitionRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#enabled DataPartitionRule#enabled}
 
 ---
 
@@ -1041,7 +1041,7 @@ The NRQL to match events for this data partition rule.
 
 Logs matching this criteria will be routed to the specified data partition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#nrql DataPartitionRule#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#nrql DataPartitionRule#nrql}
 
 ---
 
@@ -1055,7 +1055,7 @@ public java.lang.String getRetentionPolicy();
 
 The retention policy of the data partition data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#retention_policy DataPartitionRule#retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#retention_policy DataPartitionRule#retention_policy}
 
 ---
 
@@ -1069,7 +1069,7 @@ public java.lang.String getTargetDataPartition();
 
 The name of the data partition where logs will be allocated once the rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#target_data_partition DataPartitionRule#target_data_partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#target_data_partition DataPartitionRule#target_data_partition}
 
 ---
 
@@ -1083,7 +1083,7 @@ public java.lang.Number getAccountId();
 
 The account id associated with the data partition rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#account_id DataPartitionRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#account_id DataPartitionRule#account_id}
 
 ---
 
@@ -1097,7 +1097,7 @@ public java.lang.String getDescription();
 
 The description of the data partition rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#description DataPartitionRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#description DataPartitionRule#description}
 
 ---
 
@@ -1109,7 +1109,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#id DataPartitionRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#id DataPartitionRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1126,7 +1126,7 @@ public DataPartitionRuleTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#timeouts DataPartitionRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#timeouts DataPartitionRule#timeouts}
 
 ---
 
@@ -1146,7 +1146,7 @@ DataPartitionRuleTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#create DataPartitionRule#create}. |
+| <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#create DataPartitionRule#create}. |
 
 ---
 
@@ -1158,7 +1158,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/data_partition_rule#create DataPartitionRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/data_partition_rule#create DataPartitionRule#create}.
 
 ---
 

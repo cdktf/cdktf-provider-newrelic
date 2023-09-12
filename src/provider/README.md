@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`newrelic`](https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs).
+Refer to the Terraform Registory for docs: [`newrelic`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs).
