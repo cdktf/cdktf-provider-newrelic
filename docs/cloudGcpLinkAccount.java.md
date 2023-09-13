@@ -1,6 +1,6 @@
 # `newrelic_cloud_gcp_link_account`
 
-Refer to the Terraform Registory for docs: [`newrelic_cloud_gcp_link_account`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/cloud_gcp_link_account).
+Refer to the Terraform Registory for docs: [`newrelic_cloud_gcp_link_account`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/cloud_gcp_link_account).
 
 # `cloudGcpLinkAccount` Submodule <a name="`cloudGcpLinkAccount` Submodule" id="@cdktf/provider-newrelic.cloudGcpLinkAccount"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_cloud_gcp_link_account`](h
 
 ### CloudGcpLinkAccount <a name="CloudGcpLinkAccount" id="@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/cloud_gcp_link_account newrelic_cloud_gcp_link_account}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/cloud_gcp_link_account newrelic_cloud_gcp_link_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer"></a>
 
@@ -48,7 +48,7 @@ CloudGcpLinkAccount.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | name of the linked account. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | project id of the Gcp account. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | accountID of newrelic account. |
-| <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}. |
+| <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 name of the linked account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/cloud_gcp_link_account#name CloudGcpLinkAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/cloud_gcp_link_account#name CloudGcpLinkAccount#name}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 project id of the Gcp account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/cloud_gcp_link_account#project_id CloudGcpLinkAccount#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/cloud_gcp_link_account#project_id CloudGcpLinkAccount#project_id}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 accountID of newrelic account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -755,7 +755,7 @@ CloudGcpLinkAccountConfig.builder()
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.name">name</a></code> | <code>java.lang.String</code> | name of the linked account. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | project id of the Gcp account. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | accountID of newrelic account. |
-| <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}. |
+| <code><a href="#@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}. |
 
 ---
 
@@ -839,7 +839,7 @@ public java.lang.String getName();
 
 name of the linked account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/cloud_gcp_link_account#name CloudGcpLinkAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/cloud_gcp_link_account#name CloudGcpLinkAccount#name}
 
 ---
 
@@ -853,7 +853,7 @@ public java.lang.String getProjectId();
 
 project id of the Gcp account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/cloud_gcp_link_account#project_id CloudGcpLinkAccount#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/cloud_gcp_link_account#project_id CloudGcpLinkAccount#project_id}
 
 ---
 
@@ -867,7 +867,7 @@ public java.lang.Number getAccountId();
 
 accountID of newrelic account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/cloud_gcp_link_account#account_id CloudGcpLinkAccount#account_id}
 
 ---
 
@@ -879,7 +879,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/cloud_gcp_link_account#id CloudGcpLinkAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

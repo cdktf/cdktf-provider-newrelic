@@ -1,6 +1,6 @@
 # `data_newrelic_entity`
 
-Refer to the Terraform Registory for docs: [`data_newrelic_entity`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity).
+Refer to the Terraform Registory for docs: [`data_newrelic_entity`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity).
 
 # `dataNewrelicEntity` Submodule <a name="`dataNewrelicEntity` Submodule" id="@cdktf/provider-newrelic.dataNewrelicEntity"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_newrelic_entity`](https://regi
 
 ### DataNewrelicEntity <a name="DataNewrelicEntity" id="@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity newrelic_entity}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity newrelic_entity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity.Initializer"></a>
 
@@ -53,7 +53,7 @@ DataNewrelicEntity.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the entity in New Relic One. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | The New Relic account ID; |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity.Initializer.parameter.domain">domain</a></code> | <code>java.lang.String</code> | The entity's domain. |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#id DataNewrelicEntity#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#id DataNewrelicEntity#id}. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity.Initializer.parameter.ignoreCase">ignoreCase</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore case when searching the entity name. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity.Initializer.parameter.tag">tag</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntityTag">DataNewrelicEntityTag</a>></code> | tag block. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The entity's type. Valid values are APPLICATION, DASHBOARD, HOST, MONITOR, SERVICE and WORKLOAD. |
@@ -128,7 +128,7 @@ The name of the entity in New Relic One.
 
 The first entity matching this name for the given search parameters will be returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#name DataNewrelicEntity#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#name DataNewrelicEntity#name}
 
 ---
 
@@ -140,7 +140,7 @@ The New Relic account ID;
 
 if specified, constrains the data source to return an entity belonging to the account with this ID, of all matching entities retrieved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#account_id DataNewrelicEntity#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#account_id DataNewrelicEntity#account_id}
 
 ---
 
@@ -152,7 +152,7 @@ The entity's domain.
 
 Valid values are APM, BROWSER, INFRA, MOBILE, SYNTH, and EXT. If not specified, all domains are searched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#domain DataNewrelicEntity#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#domain DataNewrelicEntity#domain}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#id DataNewrelicEntity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#id DataNewrelicEntity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -173,7 +173,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Ignore case when searching the entity name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#ignore_case DataNewrelicEntity#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#ignore_case DataNewrelicEntity#ignore_case}
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#tag DataNewrelicEntity#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#tag DataNewrelicEntity#tag}
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The entity's type. Valid values are APPLICATION, DASHBOARD, HOST, MONITOR, SERVICE and WORKLOAD.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#type DataNewrelicEntity#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#type DataNewrelicEntity#type}
 
 ---
 
@@ -922,7 +922,7 @@ DataNewrelicEntityConfig.builder()
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntityConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the entity in New Relic One. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntityConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | The New Relic account ID; |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntityConfig.property.domain">domain</a></code> | <code>java.lang.String</code> | The entity's domain. |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntityConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#id DataNewrelicEntity#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntityConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#id DataNewrelicEntity#id}. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntityConfig.property.ignoreCase">ignoreCase</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore case when searching the entity name. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntityConfig.property.tag">tag</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntityTag">DataNewrelicEntityTag</a>></code> | tag block. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntityConfig.property.type">type</a></code> | <code>java.lang.String</code> | The entity's type. Valid values are APPLICATION, DASHBOARD, HOST, MONITOR, SERVICE and WORKLOAD. |
@@ -1011,7 +1011,7 @@ The name of the entity in New Relic One.
 
 The first entity matching this name for the given search parameters will be returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#name DataNewrelicEntity#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#name DataNewrelicEntity#name}
 
 ---
 
@@ -1027,7 +1027,7 @@ The New Relic account ID;
 
 if specified, constrains the data source to return an entity belonging to the account with this ID, of all matching entities retrieved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#account_id DataNewrelicEntity#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#account_id DataNewrelicEntity#account_id}
 
 ---
 
@@ -1043,7 +1043,7 @@ The entity's domain.
 
 Valid values are APM, BROWSER, INFRA, MOBILE, SYNTH, and EXT. If not specified, all domains are searched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#domain DataNewrelicEntity#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#domain DataNewrelicEntity#domain}
 
 ---
 
@@ -1055,7 +1055,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#id DataNewrelicEntity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#id DataNewrelicEntity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1072,7 +1072,7 @@ public java.lang.Object getIgnoreCase();
 
 Ignore case when searching the entity name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#ignore_case DataNewrelicEntity#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#ignore_case DataNewrelicEntity#ignore_case}
 
 ---
 
@@ -1086,7 +1086,7 @@ public java.lang.Object getTag();
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#tag DataNewrelicEntity#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#tag DataNewrelicEntity#tag}
 
 ---
 
@@ -1100,7 +1100,7 @@ public java.lang.String getType();
 
 The entity's type. Valid values are APPLICATION, DASHBOARD, HOST, MONITOR, SERVICE and WORKLOAD.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#type DataNewrelicEntity#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#type DataNewrelicEntity#type}
 
 ---
 
@@ -1136,7 +1136,7 @@ public java.lang.String getKey();
 
 The tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#key DataNewrelicEntity#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#key DataNewrelicEntity#key}
 
 ---
 
@@ -1150,7 +1150,7 @@ public java.lang.String getValue();
 
 The tag value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/entity#value DataNewrelicEntity#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/entity#value DataNewrelicEntity#value}
 
 ---
 

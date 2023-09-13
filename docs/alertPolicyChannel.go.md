@@ -1,6 +1,6 @@
 # `newrelic_alert_policy_channel`
 
-Refer to the Terraform Registory for docs: [`newrelic_alert_policy_channel`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/alert_policy_channel).
+Refer to the Terraform Registory for docs: [`newrelic_alert_policy_channel`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/alert_policy_channel).
 
 # `alertPolicyChannel` Submodule <a name="`alertPolicyChannel` Submodule" id="@cdktf/provider-newrelic.alertPolicyChannel"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_alert_policy_channel`](htt
 
 ### AlertPolicyChannel <a name="AlertPolicyChannel" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/alert_policy_channel newrelic_alert_policy_channel}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/alert_policy_channel newrelic_alert_policy_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.Initializer"></a>
 
@@ -691,7 +691,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/alertpolicychan
 | <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelConfig.property.channelIds">ChannelIds</a></code> | <code>*[]*f64</code> | Array of channel IDs to apply to the specified policy. |
 | <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelConfig.property.policyId">PolicyId</a></code> | <code>*f64</code> | The ID of the policy. |
 | <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The New Relic account ID where you want to link the channel to. |
-| <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/alert_policy_channel#id AlertPolicyChannel#id}. |
+| <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/alert_policy_channel#id AlertPolicyChannel#id}. |
 | <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelTimeouts">AlertPolicyChannelTimeouts</a></code> | timeouts block. |
 
 ---
@@ -778,7 +778,7 @@ Array of channel IDs to apply to the specified policy.
 
 We recommended sorting channel IDs in ascending order to avoid drift your Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/alert_policy_channel#channel_ids AlertPolicyChannel#channel_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/alert_policy_channel#channel_ids AlertPolicyChannel#channel_ids}
 
 ---
 
@@ -792,7 +792,7 @@ PolicyId *f64
 
 The ID of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/alert_policy_channel#policy_id AlertPolicyChannel#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/alert_policy_channel#policy_id AlertPolicyChannel#policy_id}
 
 ---
 
@@ -806,7 +806,7 @@ AccountId *f64
 
 The New Relic account ID where you want to link the channel to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/alert_policy_channel#account_id AlertPolicyChannel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/alert_policy_channel#account_id AlertPolicyChannel#account_id}
 
 ---
 
@@ -818,7 +818,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/alert_policy_channel#id AlertPolicyChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/alert_policy_channel#id AlertPolicyChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -835,7 +835,7 @@ Timeouts AlertPolicyChannelTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/alert_policy_channel#timeouts AlertPolicyChannel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/alert_policy_channel#timeouts AlertPolicyChannel#timeouts}
 
 ---
 
@@ -855,7 +855,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/alertpolicychan
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/alert_policy_channel#create AlertPolicyChannel#create}. |
+| <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/alert_policy_channel#create AlertPolicyChannel#create}. |
 
 ---
 
@@ -867,7 +867,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/alert_policy_channel#create AlertPolicyChannel#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/alert_policy_channel#create AlertPolicyChannel#create}.
 
 ---
 
