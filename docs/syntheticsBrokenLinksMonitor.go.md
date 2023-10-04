@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/syntheticsbrokenlinksmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsbrokenlinksmonitor"
 
 syntheticsbrokenlinksmonitor.NewSyntheticsBrokenLinksMonitor(scope Construct, id *string, config SyntheticsBrokenLinksMonitorConfig) SyntheticsBrokenLinksMonitor
 ```
@@ -318,7 +318,7 @@ func ResetTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/syntheticsbrokenlinksmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsbrokenlinksmonitor"
 
 syntheticsbrokenlinksmonitor.SyntheticsBrokenLinksMonitor_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/syntheticsbrokenlinksmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsbrokenlinksmonitor"
 
 syntheticsbrokenlinksmonitor.SyntheticsBrokenLinksMonitor_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ syntheticsbrokenlinksmonitor.SyntheticsBrokenLinksMonitor_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/syntheticsbrokenlinksmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsbrokenlinksmonitor"
 
 syntheticsbrokenlinksmonitor.SyntheticsBrokenLinksMonitor_IsTerraformResource(x interface{}) *bool
 ```
@@ -783,7 +783,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/syntheticsbrokenlinksmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsbrokenlinksmonitor"
 
 &syntheticsbrokenlinksmonitor.SyntheticsBrokenLinksMonitorConfig {
 	Connection: interface{},
@@ -1032,7 +1032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/syntheticsbrokenlinksmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsbrokenlinksmonitor"
 
 &syntheticsbrokenlinksmonitor.SyntheticsBrokenLinksMonitorTag {
 	Key: *string,
@@ -1084,7 +1084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/syntheticsbrokenlinksmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsbrokenlinksmonitor"
 
 syntheticsbrokenlinksmonitor.NewSyntheticsBrokenLinksMonitorTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsBrokenLinksMonitorTagList
 ```
@@ -1227,7 +1227,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/syntheticsbrokenlinksmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsbrokenlinksmonitor"
 
 syntheticsbrokenlinksmonitor.NewSyntheticsBrokenLinksMonitorTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsBrokenLinksMonitorTagOutputReference
 ```
