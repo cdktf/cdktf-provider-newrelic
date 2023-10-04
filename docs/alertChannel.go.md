@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertChannel.AlertChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/alertchannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertchannel"
 
 alertchannel.NewAlertChannel(scope Construct, id *string, config AlertChannelConfig) AlertChannel
 ```
@@ -304,7 +304,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.alertChannel.AlertChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/alertchannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertchannel"
 
 alertchannel.AlertChannel_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.alertChannel.AlertChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/alertchannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertchannel"
 
 alertchannel.AlertChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ alertchannel.AlertChannel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.alertChannel.AlertChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/alertchannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertchannel"
 
 alertchannel.AlertChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -659,7 +659,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/alertchannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertchannel"
 
 &alertchannel.AlertChannelConfig {
 	Connection: interface{},
@@ -672,7 +672,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/alertchannel"
 	Name: *string,
 	Type: *string,
 	AccountId: *f64,
-	Config: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10.alertChannel.AlertChannelConfigA,
+	Config: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.alertChannel.AlertChannelConfigA,
 	Id: *string,
 }
 ```
@@ -689,7 +689,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/alertchannel"
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.name">Name</a></code> | <code>*string</code> | (Required) The name of the channel. |
-| <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.type">Type</a></code> | <code>*string</code> | (Required) The type of channel. One of: (victorops, webhook, email, opsgenie, pagerduty, slack, user). |
+| <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.type">Type</a></code> | <code>*string</code> | (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook). |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The New Relic account ID where you want to create alert channels. |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.config">Config</a></code> | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfigA">AlertChannelConfigA</a></code> | config block. |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/alert_channel#id AlertChannel#id}. |
@@ -788,7 +788,7 @@ Type *string
 
 - *Type:* *string
 
-(Required) The type of channel. One of: (victorops, webhook, email, opsgenie, pagerduty, slack, user).
+(Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/alert_channel#type AlertChannel#type}
 
@@ -842,7 +842,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.alertChannel.AlertChannelConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/alertchannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertchannel"
 
 &alertchannel.AlertChannelConfigA {
 	ApiKey: *string,
@@ -1202,7 +1202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertChannel.AlertChannelConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/alertchannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertchannel"
 
 alertchannel.NewAlertChannelConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertChannelConfigAOutputReference
 ```
