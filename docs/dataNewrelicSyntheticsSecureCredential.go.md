@@ -1,6 +1,6 @@
 # `data_newrelic_synthetics_secure_credential`
 
-Refer to the Terraform Registory for docs: [`data_newrelic_synthetics_secure_credential`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/synthetics_secure_credential).
+Refer to the Terraform Registory for docs: [`data_newrelic_synthetics_secure_credential`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/data-sources/synthetics_secure_credential).
 
 # `dataNewrelicSyntheticsSecureCredential` Submodule <a name="`dataNewrelicSyntheticsSecureCredential` Submodule" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_newrelic_synthetics_secure_cre
 
 ### DataNewrelicSyntheticsSecureCredential <a name="DataNewrelicSyntheticsSecureCredential" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/synthetics_secure_credential newrelic_synthetics_secure_credential}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/data-sources/synthetics_secure_credential newrelic_synthetics_secure_credential}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.Initializer"></a>
 
@@ -624,7 +624,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/datanewrelicsyn
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredentialConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredentialConfig.property.key">Key</a></code> | <code>*string</code> | The secure credential's key name. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredentialConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The New Relic account ID associated with this secure credential. |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredentialConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/synthetics_secure_credential#id DataNewrelicSyntheticsSecureCredential#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredentialConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/data-sources/synthetics_secure_credential#id DataNewrelicSyntheticsSecureCredential#id}. |
 
 ---
 
@@ -710,7 +710,7 @@ The secure credential's key name.
 
 Regardless of the case used in the configuration, the provider will provide an upcased key to the underlying API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/synthetics_secure_credential#key DataNewrelicSyntheticsSecureCredential#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/data-sources/synthetics_secure_credential#key DataNewrelicSyntheticsSecureCredential#key}
 
 ---
 
@@ -724,7 +724,7 @@ AccountId *f64
 
 The New Relic account ID associated with this secure credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/synthetics_secure_credential#account_id DataNewrelicSyntheticsSecureCredential#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/data-sources/synthetics_secure_credential#account_id DataNewrelicSyntheticsSecureCredential#account_id}
 
 ---
 
@@ -736,7 +736,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/data-sources/synthetics_secure_credential#id DataNewrelicSyntheticsSecureCredential#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/data-sources/synthetics_secure_credential#id DataNewrelicSyntheticsSecureCredential#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,3 +1,3 @@
 # `newrelic_synthetics_script_monitor`
 
-Refer to the Terraform Registory for docs: [`newrelic_synthetics_script_monitor`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/synthetics_script_monitor).
+Refer to the Terraform Registory for docs: [`newrelic_synthetics_script_monitor`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/synthetics_script_monitor).
