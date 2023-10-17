@@ -2057,6 +2057,20 @@ export class CloudGcpIntegrations extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "newrelic_cloud_gcp_integrations";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a CloudGcpIntegrations resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the CloudGcpIntegrations to import
+  * @param importFromId The id of the existing CloudGcpIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/cloud_gcp_integrations#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the CloudGcpIntegrations to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_cloud_gcp_integrations", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

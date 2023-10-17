@@ -3425,6 +3425,20 @@ export class CloudAzureIntegrations extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "newrelic_cloud_azure_integrations";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a CloudAzureIntegrations resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the CloudAzureIntegrations to import
+  * @param importFromId The id of the existing CloudAzureIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/cloud_azure_integrations#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the CloudAzureIntegrations to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_cloud_azure_integrations", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
