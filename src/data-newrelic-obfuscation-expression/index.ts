@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/data-sources/obfuscation_expression
 // generated from terraform resource schema
 
@@ -42,6 +37,20 @@ export class DataNewrelicObfuscationExpression extends cdktf.TerraformDataSource
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "newrelic_obfuscation_expression";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataNewrelicObfuscationExpression resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataNewrelicObfuscationExpression to import
+  * @param importFromId The id of the existing DataNewrelicObfuscationExpression that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/data-sources/obfuscation_expression#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataNewrelicObfuscationExpression to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_obfuscation_expression", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicobfuscationexpression"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicobfuscationexpression"
 
 datanewrelicobfuscationexpression.NewDataNewrelicObfuscationExpression(scope Construct, id *string, config DataNewrelicObfuscationExpressionConfig) DataNewrelicObfuscationExpression
 ```
@@ -278,13 +278,14 @@ func ResetId()
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataNewrelicObfuscationExpression resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicobfuscationexpression"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicobfuscationexpression"
 
 datanewrelicobfuscationexpression.DataNewrelicObfuscationExpression_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicobfuscationexpression"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicobfuscationexpression"
 
 datanewrelicobfuscationexpression.DataNewrelicObfuscationExpression_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +331,7 @@ datanewrelicobfuscationexpression.DataNewrelicObfuscationExpression_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicobfuscationexpression"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicobfuscationexpression"
 
 datanewrelicobfuscationexpression.DataNewrelicObfuscationExpression_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,6 +339,50 @@ datanewrelicobfuscationexpression.DataNewrelicObfuscationExpression_IsTerraformD
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicobfuscationexpression"
+
+datanewrelicobfuscationexpression.DataNewrelicObfuscationExpression_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataNewrelicObfuscationExpression resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataNewrelicObfuscationExpression to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataNewrelicObfuscationExpression that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/data-sources/obfuscation_expression#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataNewrelicObfuscationExpression to import is found.
 
 ---
 
@@ -573,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpressionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicobfuscationexpression"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicobfuscationexpression"
 
 &datanewrelicobfuscationexpression.DataNewrelicObfuscationExpressionConfig {
 	Connection: interface{},

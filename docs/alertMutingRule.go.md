@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 alertmutingrule.NewAlertMutingRule(scope Construct, id *string, config AlertMutingRuleConfig) AlertMutingRule
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.putCondition">PutCondition</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.putSchedule">PutSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.resetAccountId">ResetAccountId</a></code> | *No description.* |
@@ -142,6 +145,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.getAnyMapAttribute"></a>
 
@@ -251,6 +270,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.interpolationForAttribute"></a>
 
 ```go
@@ -260,6 +297,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -318,13 +379,14 @@ func ResetSchedule()
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a AlertMutingRule resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 alertmutingrule.AlertMutingRule_IsConstruct(x interface{}) *bool
 ```
@@ -356,7 +418,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 alertmutingrule.AlertMutingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -370,7 +432,7 @@ alertmutingrule.AlertMutingRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 alertmutingrule.AlertMutingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -378,6 +440,50 @@ alertmutingrule.AlertMutingRule_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
+
+alertmutingrule.AlertMutingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a AlertMutingRule resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the AlertMutingRule to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing AlertMutingRule that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/alert_muting_rule#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the AlertMutingRule to import is found.
 
 ---
 
@@ -723,7 +829,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 &alertmutingrule.AlertMutingRuleCondition {
 	Conditions: interface{},
@@ -773,7 +879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleConditionConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 &alertmutingrule.AlertMutingRuleConditionConditions {
 	Attribute: *string,
@@ -839,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 &alertmutingrule.AlertMutingRuleConfig {
 	Connection: interface{},
@@ -849,13 +955,13 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Condition: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.alertMutingRule.AlertMutingRuleCondition,
+	Condition: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.alertMutingRule.AlertMutingRuleCondition,
 	Enabled: interface{},
 	Name: *string,
 	AccountId: *f64,
 	Description: *string,
 	Id: *string,
-	Schedule: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.alertMutingRule.AlertMutingRuleSchedule,
+	Schedule: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.alertMutingRule.AlertMutingRuleSchedule,
 }
 ```
 
@@ -1054,7 +1160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 &alertmutingrule.AlertMutingRuleSchedule {
 	TimeZone: *string,
@@ -1186,7 +1292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleConditionConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 alertmutingrule.NewAlertMutingRuleConditionConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlertMutingRuleConditionConditionsList
 ```
@@ -1329,7 +1435,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleConditionConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 alertmutingrule.NewAlertMutingRuleConditionConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlertMutingRuleConditionConditionsOutputReference
 ```
@@ -1662,7 +1768,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 alertmutingrule.NewAlertMutingRuleConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertMutingRuleConditionOutputReference
 ```
@@ -1968,7 +2074,7 @@ func InternalValue() AlertMutingRuleCondition
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 alertmutingrule.NewAlertMutingRuleScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertMutingRuleScheduleOutputReference
 ```

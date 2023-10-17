@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/alert_condition
 // generated from terraform resource schema
 
@@ -68,7 +63,7 @@ export interface AlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly runbookUrl?: string;
   /**
-  * The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
+  * The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/alert_condition#type AlertCondition#type}
   */
@@ -314,6 +309,20 @@ export class AlertCondition extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "newrelic_alert_condition";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a AlertCondition resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the AlertCondition to import
+  * @param importFromId The id of the existing AlertCondition that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/alert_condition#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the AlertCondition to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_alert_condition", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

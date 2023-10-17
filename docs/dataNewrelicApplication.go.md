@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicapplication"
 
 datanewrelicapplication.NewDataNewrelicApplication(scope Construct, id *string, config DataNewrelicApplicationConfig) DataNewrelicApplication
 ```
@@ -271,13 +271,14 @@ func ResetId()
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataNewrelicApplication resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicapplication"
 
 datanewrelicapplication.DataNewrelicApplication_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicapplication"
 
 datanewrelicapplication.DataNewrelicApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +324,7 @@ datanewrelicapplication.DataNewrelicApplication_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicapplication"
 
 datanewrelicapplication.DataNewrelicApplication_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,6 +332,50 @@ datanewrelicapplication.DataNewrelicApplication_IsTerraformDataSource(x interfac
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicapplication"
+
+datanewrelicapplication.DataNewrelicApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataNewrelicApplication resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataNewrelicApplication to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataNewrelicApplication that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/data-sources/application#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataNewrelicApplication to import is found.
 
 ---
 
@@ -566,7 +611,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicapplication"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicapplication"
 
 &datanewrelicapplication.DataNewrelicApplicationConfig {
 	Connection: interface{},

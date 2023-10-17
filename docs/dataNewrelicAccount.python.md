@@ -418,6 +418,7 @@ def reset_scope() -> None
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataNewrelicAccount resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -484,6 +485,55 @@ dataNewrelicAccount.DataNewrelicAccount.is_terraform_data_source(
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* typing.Any
+
+---
+
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.generateConfigForImport"></a>
+
+```python
+from cdktf_cdktf_provider_newrelic import data_newrelic_account
+
+dataNewrelicAccount.DataNewrelicAccount.generate_config_for_import(
+  scope: Construct,
+  import_to_id: str,
+  import_from_id: str,
+  provider: TerraformProvider = None
+)
+```
+
+Generates CDKTF code for importing a DataNewrelicAccount resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* str
+
+The construct id used in the generated config for the DataNewrelicAccount to import.
+
+---
+
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* str
+
+The id of the existing DataNewrelicAccount that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/data-sources/account#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataNewrelicAccount to import is found.
 
 ---
 

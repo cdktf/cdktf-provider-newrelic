@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/data-sources/synthetics_private_location
 // generated from terraform resource schema
 
@@ -48,6 +43,20 @@ export class DataNewrelicSyntheticsPrivateLocation extends cdktf.TerraformDataSo
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "newrelic_synthetics_private_location";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataNewrelicSyntheticsPrivateLocation resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataNewrelicSyntheticsPrivateLocation to import
+  * @param importFromId The id of the existing DataNewrelicSyntheticsPrivateLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/data-sources/synthetics_private_location#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataNewrelicSyntheticsPrivateLocation to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_synthetics_private_location", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

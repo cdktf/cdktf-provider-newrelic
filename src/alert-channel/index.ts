@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/alert_channel
 // generated from terraform resource schema
 
@@ -32,7 +27,7 @@ export interface AlertChannelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
-  * (Required) The type of channel. One of: (victorops, webhook, email, opsgenie, pagerduty, slack, user).
+  * (Required) The type of channel. One of: (opsgenie, pagerduty, slack, user, victorops, webhook, email).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/alert_channel#type AlertChannel#type}
   */
@@ -701,6 +696,20 @@ export class AlertChannel extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "newrelic_alert_channel";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a AlertChannel resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the AlertChannel to import
+  * @param importFromId The id of the existing AlertChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/alert_channel#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the AlertChannel to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "newrelic_alert_channel", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

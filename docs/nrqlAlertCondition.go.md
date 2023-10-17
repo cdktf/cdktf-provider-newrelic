@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/nrqlalertcondition"
 
 nrqlalertcondition.NewNrqlAlertCondition(scope Construct, id *string, config NrqlAlertConditionConfig) NrqlAlertCondition
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical">PutCritical</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putNrql">PutNrql</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putTerm">PutTerm</a></code> | *No description.* |
@@ -165,6 +168,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.getAnyMapAttribute"></a>
 
@@ -274,6 +293,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.interpolationForAttribute"></a>
 
 ```go
@@ -283,6 +320,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -497,13 +558,14 @@ func ResetWarning()
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a NrqlAlertCondition resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/nrqlalertcondition"
 
 nrqlalertcondition.NrqlAlertCondition_IsConstruct(x interface{}) *bool
 ```
@@ -535,7 +597,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/nrqlalertcondition"
 
 nrqlalertcondition.NrqlAlertCondition_IsTerraformElement(x interface{}) *bool
 ```
@@ -549,7 +611,7 @@ nrqlalertcondition.NrqlAlertCondition_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/nrqlalertcondition"
 
 nrqlalertcondition.NrqlAlertCondition_IsTerraformResource(x interface{}) *bool
 ```
@@ -557,6 +619,50 @@ nrqlalertcondition.NrqlAlertCondition_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/nrqlalertcondition"
+
+nrqlalertcondition.NrqlAlertCondition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a NrqlAlertCondition resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the NrqlAlertCondition to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing NrqlAlertCondition that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/nrql_alert_condition#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the NrqlAlertCondition to import is found.
 
 ---
 
@@ -1353,7 +1459,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/nrqlalertcondition"
 
 &nrqlalertcondition.NrqlAlertConditionConfig {
 	Connection: interface{},
@@ -1364,7 +1470,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondit
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Nrql: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.nrqlAlertCondition.NrqlAlertConditionNrql,
+	Nrql: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.nrqlAlertCondition.NrqlAlertConditionNrql,
 	PolicyId: *f64,
 	AccountId: *f64,
 	AggregationDelay: *string,
@@ -1373,7 +1479,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondit
 	AggregationWindow: *f64,
 	BaselineDirection: *string,
 	CloseViolationsOnExpiration: interface{},
-	Critical: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.nrqlAlertCondition.NrqlAlertConditionCritical,
+	Critical: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.nrqlAlertCondition.NrqlAlertConditionCritical,
 	Description: *string,
 	Enabled: interface{},
 	EvaluationDelay: *f64,
@@ -1385,11 +1491,11 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondit
 	RunbookUrl: *string,
 	SlideBy: *f64,
 	Term: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.nrqlAlertCondition.NrqlAlertConditionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts,
 	Type: *string,
 	ViolationTimeLimit: *string,
 	ViolationTimeLimitSeconds: *f64,
-	Warning: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.nrqlAlertCondition.NrqlAlertConditionWarning,
+	Warning: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.nrqlAlertCondition.NrqlAlertConditionWarning,
 }
 ```
 
@@ -1904,7 +2010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/nrqlalertcondition"
 
 &nrqlalertcondition.NrqlAlertConditionCritical {
 	Threshold: *f64,
@@ -2022,7 +2128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/nrqlalertcondition"
 
 &nrqlalertcondition.NrqlAlertConditionNrql {
 	Query: *string,
@@ -2090,7 +2196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/nrqlalertcondition"
 
 &nrqlalertcondition.NrqlAlertConditionTerm {
 	Threshold: *f64,
@@ -2224,7 +2330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/nrqlalertcondition"
 
 &nrqlalertcondition.NrqlAlertConditionTimeouts {
 	Create: *string,
@@ -2256,7 +2362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/nrqlalertcondition"
 
 &nrqlalertcondition.NrqlAlertConditionWarning {
 	Threshold: *f64,
@@ -2376,7 +2482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/nrqlalertcondition"
 
 nrqlalertcondition.NewNrqlAlertConditionCriticalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NrqlAlertConditionCriticalOutputReference
 ```
@@ -2792,7 +2898,7 @@ func InternalValue() NrqlAlertConditionCritical
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/nrqlalertcondition"
 
 nrqlalertcondition.NewNrqlAlertConditionNrqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NrqlAlertConditionNrqlOutputReference
 ```
@@ -3121,7 +3227,7 @@ func InternalValue() NrqlAlertConditionNrql
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/nrqlalertcondition"
 
 nrqlalertcondition.NewNrqlAlertConditionTermList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NrqlAlertConditionTermList
 ```
@@ -3264,7 +3370,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/nrqlalertcondition"
 
 nrqlalertcondition.NewNrqlAlertConditionTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NrqlAlertConditionTermOutputReference
 ```
@@ -3727,7 +3833,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/nrqlalertcondition"
 
 nrqlalertcondition.NewNrqlAlertConditionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NrqlAlertConditionTimeoutsOutputReference
 ```
@@ -4005,7 +4111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/nrqlalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/nrqlalertcondition"
 
 nrqlalertcondition.NewNrqlAlertConditionWarningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NrqlAlertConditionWarningOutputReference
 ```
