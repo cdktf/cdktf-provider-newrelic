@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRaw.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/onedashboardraw"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/onedashboardraw"
 
 onedashboardraw.NewOneDashboardRaw(scope Construct, id *string, config OneDashboardRawConfig) OneDashboardRaw
 ```
@@ -373,7 +373,7 @@ func ResetPermissions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRaw.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/onedashboardraw"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/onedashboardraw"
 
 onedashboardraw.OneDashboardRaw_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRaw.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/onedashboardraw"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/onedashboardraw"
 
 onedashboardraw.OneDashboardRaw_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ onedashboardraw.OneDashboardRaw_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRaw.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/onedashboardraw"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/onedashboardraw"
 
 onedashboardraw.OneDashboardRaw_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ onedashboardraw.OneDashboardRaw_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRaw.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/onedashboardraw"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/onedashboardraw"
 
 onedashboardraw.OneDashboardRaw_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -816,7 +816,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/onedashboardraw"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/onedashboardraw"
 
 &onedashboardraw.OneDashboardRawConfig {
 	Connection: interface{},
@@ -1015,7 +1015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/onedashboardraw"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/onedashboardraw"
 
 &onedashboardraw.OneDashboardRawPage {
 	Name: *string,
@@ -1081,7 +1081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/onedashboardraw"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/onedashboardraw"
 
 &onedashboardraw.OneDashboardRawPageWidget {
 	Column: *f64,
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/onedashboardraw"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/onedashboardraw"
 
 onedashboardraw.NewOneDashboardRawPageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardRawPageList
 ```
@@ -1364,7 +1364,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/onedashboardraw"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/onedashboardraw"
 
 onedashboardraw.NewOneDashboardRawPageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardRawPageOutputReference
 ```
@@ -1735,7 +1735,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidgetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/onedashboardraw"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/onedashboardraw"
 
 onedashboardraw.NewOneDashboardRawPageWidgetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardRawPageWidgetList
 ```
@@ -1878,7 +1878,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboardRaw.OneDashboardRawPageWidgetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/onedashboardraw"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/onedashboardraw"
 
 onedashboardraw.NewOneDashboardRawPageWidgetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OneDashboardRawPageWidgetOutputReference
 ```
