@@ -1,6 +1,6 @@
 # `newrelic_cloud_aws_link_account`
 
-Refer to the Terraform Registory for docs: [`newrelic_cloud_aws_link_account`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/cloud_aws_link_account).
+Refer to the Terraform Registory for docs: [`newrelic_cloud_aws_link_account`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.3/docs/resources/cloud_aws_link_account).
 
 # `cloudAwsLinkAccount` Submodule <a name="`cloudAwsLinkAccount` Submodule" id="@cdktf/provider-newrelic.cloudAwsLinkAccount"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`newrelic_cloud_aws_link_account`](h
 
 ### CloudAwsLinkAccount <a name="CloudAwsLinkAccount" id="@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.3/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudawslinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawslinkaccount"
 
 cloudawslinkaccount.NewCloudAwsLinkAccount(scope Construct, id *string, config CloudAwsLinkAccountConfig) CloudAwsLinkAccount
 ```
@@ -353,7 +353,7 @@ func ResetMetricCollectionMode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudawslinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawslinkaccount"
 
 cloudawslinkaccount.CloudAwsLinkAccount_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudawslinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawslinkaccount"
 
 cloudawslinkaccount.CloudAwsLinkAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ cloudawslinkaccount.CloudAwsLinkAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudawslinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawslinkaccount"
 
 cloudawslinkaccount.CloudAwsLinkAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ cloudawslinkaccount.CloudAwsLinkAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudawslinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawslinkaccount"
 
 cloudawslinkaccount.CloudAwsLinkAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -442,7 +442,7 @@ The construct id used in the generated config for the CloudAwsLinkAccount to imp
 
 The id of the existing CloudAwsLinkAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/cloud_aws_link_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.3/docs/resources/cloud_aws_link_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -752,7 +752,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudawslinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawslinkaccount"
 
 &cloudawslinkaccount.CloudAwsLinkAccountConfig {
 	Connection: interface{},
@@ -784,7 +784,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudawslinkacc
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccountConfig.property.arn">Arn</a></code> | <code>*string</code> | The AWS role ARN. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccountConfig.property.name">Name</a></code> | <code>*string</code> | The name of the linked account. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccountConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The New Relic account ID where you want to link the AWS account. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/cloud_aws_link_account#id CloudAwsLinkAccount#id}. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.3/docs/resources/cloud_aws_link_account#id CloudAwsLinkAccount#id}. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccountConfig.property.metricCollectionMode">MetricCollectionMode</a></code> | <code>*string</code> | How metrics will be collected. Defaults to `PULL` if empty. |
 
 ---
@@ -869,7 +869,7 @@ Arn *string
 
 The AWS role ARN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/cloud_aws_link_account#arn CloudAwsLinkAccount#arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.3/docs/resources/cloud_aws_link_account#arn CloudAwsLinkAccount#arn}
 
 ---
 
@@ -883,7 +883,7 @@ Name *string
 
 The name of the linked account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/cloud_aws_link_account#name CloudAwsLinkAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.3/docs/resources/cloud_aws_link_account#name CloudAwsLinkAccount#name}
 
 ---
 
@@ -897,7 +897,7 @@ AccountId *f64
 
 The New Relic account ID where you want to link the AWS account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/cloud_aws_link_account#account_id CloudAwsLinkAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.3/docs/resources/cloud_aws_link_account#account_id CloudAwsLinkAccount#account_id}
 
 ---
 
@@ -909,7 +909,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/cloud_aws_link_account#id CloudAwsLinkAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.3/docs/resources/cloud_aws_link_account#id CloudAwsLinkAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -926,7 +926,7 @@ MetricCollectionMode *string
 
 How metrics will be collected. Defaults to `PULL` if empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/cloud_aws_link_account#metric_collection_mode CloudAwsLinkAccount#metric_collection_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.3/docs/resources/cloud_aws_link_account#metric_collection_mode CloudAwsLinkAccount#metric_collection_mode}
 
 ---
 
