@@ -1,3 +1,3 @@
 # `newrelic_application_settings`
 
-Refer to the Terraform Registory for docs: [`newrelic_application_settings`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.3/docs/resources/application_settings).
+Refer to the Terraform Registory for docs: [`newrelic_application_settings`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/application_settings).
