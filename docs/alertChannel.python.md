@@ -1,6 +1,6 @@
 # `newrelic_alert_channel`
 
-Refer to the Terraform Registory for docs: [`newrelic_alert_channel`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel).
+Refer to the Terraform Registory for docs: [`newrelic_alert_channel`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel).
 
 # `alertChannel` Submodule <a name="`alertChannel` Submodule" id="@cdktf/provider-newrelic.alertChannel"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_alert_channel`](https://re
 
 ### AlertChannel <a name="AlertChannel" id="@cdktf/provider-newrelic.alertChannel.AlertChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel newrelic_alert_channel}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel newrelic_alert_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertChannel.AlertChannel.Initializer"></a>
 
@@ -45,10 +45,10 @@ alertChannel.AlertChannel(
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.name">name</a></code> | <code>str</code> | (Required) The name of the channel. |
-| <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.type">type</a></code> | <code>str</code> | (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook). |
+| <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.type">type</a></code> | <code>str</code> | (Required) The type of channel. One of: (webhook, email, opsgenie, pagerduty, slack, user, victorops). |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The New Relic account ID where you want to create alert channels. |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfigA">AlertChannelConfigA</a></code> | config block. |
-| <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#id AlertChannel#id}. |
+| <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannel.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#id AlertChannel#id}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 (Required) The name of the channel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#name AlertChannel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#name AlertChannel#name}
 
 ---
 
@@ -126,9 +126,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-(Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
+(Required) The type of channel. One of: (webhook, email, opsgenie, pagerduty, slack, user, victorops).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#type AlertChannel#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#type AlertChannel#type}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The New Relic account ID where you want to create alert channels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#account_id AlertChannel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#account_id AlertChannel#account_id}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#config AlertChannel#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#config AlertChannel#config}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#id AlertChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#id AlertChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -502,7 +502,7 @@ def put_config(
 
 The API key for integrating with OpsGenie.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#api_key AlertChannel#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#api_key AlertChannel#api_key}
 
 ---
 
@@ -512,7 +512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specifies an authentication password for use with a channel. Supported by the webhook channel type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#auth_password AlertChannel#auth_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#auth_password AlertChannel#auth_password}
 
 ---
 
@@ -524,7 +524,7 @@ Specifies an authentication method for use with a channel.
 
 Supported by the webhook channel type. Only HTTP basic authentication is currently supported via the value BASIC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#auth_type AlertChannel#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#auth_type AlertChannel#auth_type}
 
 ---
 
@@ -534,7 +534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specifies an authentication username for use with a channel. Supported by the webhook channel type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#auth_username AlertChannel#auth_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#auth_username AlertChannel#auth_username}
 
 ---
 
@@ -544,7 +544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The base URL of the webhook destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#base_url AlertChannel#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#base_url AlertChannel#base_url}
 
 ---
 
@@ -554,7 +554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The Slack channel to send notifications to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#channel AlertChannel#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#channel AlertChannel#channel}
 
 ---
 
@@ -564,7 +564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 A map of key/value pairs that represents extra HTTP headers to be sent along with the webhook payload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#headers AlertChannel#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#headers AlertChannel#headers}
 
 ---
 
@@ -574,7 +574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Use instead of headers if the desired payload is more complex than a list of key/value pairs (e.g. a set of headers that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with headers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#headers_string AlertChannel#headers_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#headers_string AlertChannel#headers_string}
 
 ---
 
@@ -586,7 +586,7 @@ true or false.
 
 Flag for whether or not to attach a JSON document containing information about the associated alert to the email that is sent to recipients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#include_json_attachment AlertChannel#include_json_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#include_json_attachment AlertChannel#include_json_attachment}
 
 ---
 
@@ -596,7 +596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The key for integrating with VictorOps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#key AlertChannel#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#key AlertChannel#key}
 
 ---
 
@@ -606,7 +606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 A map of key/value pairs that represents the webhook payload. Must provide payload_type if setting this argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#payload AlertChannel#payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#payload AlertChannel#payload}
 
 ---
 
@@ -616,7 +616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Use instead of payload if the desired payload is more complex than a list of key/value pairs (e.g. a payload that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with payload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#payload_string AlertChannel#payload_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#payload_string AlertChannel#payload_string}
 
 ---
 
@@ -626,7 +626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Can either be application/json or application/x-www-form-urlencoded. The payload_type argument is required if payload is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#payload_type AlertChannel#payload_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#payload_type AlertChannel#payload_type}
 
 ---
 
@@ -636,7 +636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 A set of recipients for targeting notifications. Multiple values are comma separated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#recipients AlertChannel#recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#recipients AlertChannel#recipients}
 
 ---
 
@@ -646,7 +646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The data center region to store your data. Valid values are US and EU. Default is US.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#region AlertChannel#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#region AlertChannel#region}
 
 ---
 
@@ -656,7 +656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The route key for integrating with VictorOps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#route_key AlertChannel#route_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#route_key AlertChannel#route_key}
 
 ---
 
@@ -666,7 +666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specifies the service key for integrating with Pagerduty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#service_key AlertChannel#service_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#service_key AlertChannel#service_key}
 
 ---
 
@@ -676,7 +676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 A set of tags for targeting notifications. Multiple values are comma separated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#tags AlertChannel#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#tags AlertChannel#tags}
 
 ---
 
@@ -686,7 +686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 A set of teams for targeting notifications. Multiple values are comma separated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#teams AlertChannel#teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#teams AlertChannel#teams}
 
 ---
 
@@ -696,7 +696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Your organization's Slack URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#url AlertChannel#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#url AlertChannel#url}
 
 ---
 
@@ -706,7 +706,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The user ID for use with the user channel type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#user_id AlertChannel#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#user_id AlertChannel#user_id}
 
 ---
 
@@ -842,7 +842,7 @@ The construct id used in the generated config for the AlertChannel to import.
 
 The id of the existing AlertChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1182,10 +1182,10 @@ alertChannel.AlertChannelConfig(
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.name">name</a></code> | <code>str</code> | (Required) The name of the channel. |
-| <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.type">type</a></code> | <code>str</code> | (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook). |
+| <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.type">type</a></code> | <code>str</code> | (Required) The type of channel. One of: (webhook, email, opsgenie, pagerduty, slack, user, victorops). |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The New Relic account ID where you want to create alert channels. |
 | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.config">config</a></code> | <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfigA">AlertChannelConfigA</a></code> | config block. |
-| <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#id AlertChannel#id}. |
+| <code><a href="#@cdktf/provider-newrelic.alertChannel.AlertChannelConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#id AlertChannel#id}. |
 
 ---
 
@@ -1269,7 +1269,7 @@ name: str
 
 (Required) The name of the channel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#name AlertChannel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#name AlertChannel#name}
 
 ---
 
@@ -1281,9 +1281,9 @@ type: str
 
 - *Type:* str
 
-(Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
+(Required) The type of channel. One of: (webhook, email, opsgenie, pagerduty, slack, user, victorops).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#type AlertChannel#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#type AlertChannel#type}
 
 ---
 
@@ -1297,7 +1297,7 @@ account_id: typing.Union[int, float]
 
 The New Relic account ID where you want to create alert channels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#account_id AlertChannel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#account_id AlertChannel#account_id}
 
 ---
 
@@ -1311,7 +1311,7 @@ config: AlertChannelConfigA
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#config AlertChannel#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#config AlertChannel#config}
 
 ---
 
@@ -1323,7 +1323,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#id AlertChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#id AlertChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1400,7 +1400,7 @@ api_key: str
 
 The API key for integrating with OpsGenie.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#api_key AlertChannel#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#api_key AlertChannel#api_key}
 
 ---
 
@@ -1414,7 +1414,7 @@ auth_password: str
 
 Specifies an authentication password for use with a channel. Supported by the webhook channel type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#auth_password AlertChannel#auth_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#auth_password AlertChannel#auth_password}
 
 ---
 
@@ -1430,7 +1430,7 @@ Specifies an authentication method for use with a channel.
 
 Supported by the webhook channel type. Only HTTP basic authentication is currently supported via the value BASIC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#auth_type AlertChannel#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#auth_type AlertChannel#auth_type}
 
 ---
 
@@ -1444,7 +1444,7 @@ auth_username: str
 
 Specifies an authentication username for use with a channel. Supported by the webhook channel type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#auth_username AlertChannel#auth_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#auth_username AlertChannel#auth_username}
 
 ---
 
@@ -1458,7 +1458,7 @@ base_url: str
 
 The base URL of the webhook destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#base_url AlertChannel#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#base_url AlertChannel#base_url}
 
 ---
 
@@ -1472,7 +1472,7 @@ channel: str
 
 The Slack channel to send notifications to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#channel AlertChannel#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#channel AlertChannel#channel}
 
 ---
 
@@ -1486,7 +1486,7 @@ headers: typing.Mapping[str]
 
 A map of key/value pairs that represents extra HTTP headers to be sent along with the webhook payload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#headers AlertChannel#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#headers AlertChannel#headers}
 
 ---
 
@@ -1500,7 +1500,7 @@ headers_string: str
 
 Use instead of headers if the desired payload is more complex than a list of key/value pairs (e.g. a set of headers that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with headers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#headers_string AlertChannel#headers_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#headers_string AlertChannel#headers_string}
 
 ---
 
@@ -1516,7 +1516,7 @@ true or false.
 
 Flag for whether or not to attach a JSON document containing information about the associated alert to the email that is sent to recipients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#include_json_attachment AlertChannel#include_json_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#include_json_attachment AlertChannel#include_json_attachment}
 
 ---
 
@@ -1530,7 +1530,7 @@ key: str
 
 The key for integrating with VictorOps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#key AlertChannel#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#key AlertChannel#key}
 
 ---
 
@@ -1544,7 +1544,7 @@ payload: typing.Mapping[str]
 
 A map of key/value pairs that represents the webhook payload. Must provide payload_type if setting this argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#payload AlertChannel#payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#payload AlertChannel#payload}
 
 ---
 
@@ -1558,7 +1558,7 @@ payload_string: str
 
 Use instead of payload if the desired payload is more complex than a list of key/value pairs (e.g. a payload that makes use of nested objects). The value provided should be a valid JSON string with escaped double quotes. Conflicts with payload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#payload_string AlertChannel#payload_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#payload_string AlertChannel#payload_string}
 
 ---
 
@@ -1572,7 +1572,7 @@ payload_type: str
 
 Can either be application/json or application/x-www-form-urlencoded. The payload_type argument is required if payload is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#payload_type AlertChannel#payload_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#payload_type AlertChannel#payload_type}
 
 ---
 
@@ -1586,7 +1586,7 @@ recipients: str
 
 A set of recipients for targeting notifications. Multiple values are comma separated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#recipients AlertChannel#recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#recipients AlertChannel#recipients}
 
 ---
 
@@ -1600,7 +1600,7 @@ region: str
 
 The data center region to store your data. Valid values are US and EU. Default is US.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#region AlertChannel#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#region AlertChannel#region}
 
 ---
 
@@ -1614,7 +1614,7 @@ route_key: str
 
 The route key for integrating with VictorOps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#route_key AlertChannel#route_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#route_key AlertChannel#route_key}
 
 ---
 
@@ -1628,7 +1628,7 @@ service_key: str
 
 Specifies the service key for integrating with Pagerduty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#service_key AlertChannel#service_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#service_key AlertChannel#service_key}
 
 ---
 
@@ -1642,7 +1642,7 @@ tags: str
 
 A set of tags for targeting notifications. Multiple values are comma separated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#tags AlertChannel#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#tags AlertChannel#tags}
 
 ---
 
@@ -1656,7 +1656,7 @@ teams: str
 
 A set of teams for targeting notifications. Multiple values are comma separated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#teams AlertChannel#teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#teams AlertChannel#teams}
 
 ---
 
@@ -1670,7 +1670,7 @@ url: str
 
 Your organization's Slack URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#url AlertChannel#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#url AlertChannel#url}
 
 ---
 
@@ -1684,7 +1684,7 @@ user_id: str
 
 The user ID for use with the user channel type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/alert_channel#user_id AlertChannel#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/alert_channel#user_id AlertChannel#user_id}
 
 ---
 
