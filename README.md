@@ -3,7 +3,7 @@
 
 This repo builds and publishes the Terraform newrelic Provider bindings for [CDK for Terraform](https://cdk.tf).
 
-Is based directly on newrelic 3.27.4
+Is based directly on newrelic 3.27.6
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform newrelic Provider version 
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform newrelic Provider](https://registry.terraform.io/providers/newrelic/newrelic/3.27.4)
+- [Terraform newrelic Provider](https://registry.terraform.io/providers/newrelic/newrelic/3.27.6)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-newrelic/releases)
 - [Terraform Engine](https://terraform.io)
 

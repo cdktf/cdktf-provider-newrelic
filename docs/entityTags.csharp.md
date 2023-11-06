@@ -1,6 +1,6 @@
 # `newrelic_entity_tags`
 
-Refer to the Terraform Registory for docs: [`newrelic_entity_tags`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/entity_tags).
+Refer to the Terraform Registory for docs: [`newrelic_entity_tags`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/entity_tags).
 
 # `entityTags` Submodule <a name="`entityTags` Submodule" id="@cdktf/provider-newrelic.entityTags"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_entity_tags`](https://regi
 
 ### EntityTags <a name="EntityTags" id="@cdktf/provider-newrelic.entityTags.EntityTags"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/entity_tags newrelic_entity_tags}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/entity_tags newrelic_entity_tags}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.entityTags.EntityTags.Initializer"></a>
 
@@ -461,7 +461,7 @@ The construct id used in the generated config for the EntityTags to import.
 
 The id of the existing EntityTags that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/entity_tags#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/entity_tags#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -779,7 +779,7 @@ new EntityTagsConfig {
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.guid">Guid</a></code> | <code>string</code> | The guid of the entity to tag. |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.tag">Tag</a></code> | <code>object</code> | tag block. |
-| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/entity_tags#id EntityTags#id}. |
+| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/entity_tags#id EntityTags#id}. |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -864,7 +864,7 @@ public string Guid { get; set; }
 
 The guid of the entity to tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/entity_tags#guid EntityTags#guid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/entity_tags#guid EntityTags#guid}
 
 ---
 
@@ -878,7 +878,7 @@ public object Tag { get; set; }
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/entity_tags#tag EntityTags#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/entity_tags#tag EntityTags#tag}
 
 ---
 
@@ -890,7 +890,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/entity_tags#id EntityTags#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/entity_tags#id EntityTags#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -907,7 +907,7 @@ public EntityTagsTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/entity_tags#timeouts EntityTags#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/entity_tags#timeouts EntityTags#timeouts}
 
 ---
 
@@ -943,7 +943,7 @@ public string Key { get; set; }
 
 The tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/entity_tags#key EntityTags#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/entity_tags#key EntityTags#key}
 
 ---
 
@@ -957,7 +957,7 @@ public string[] Values { get; set; }
 
 The tag values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/entity_tags#values EntityTags#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/entity_tags#values EntityTags#values}
 
 ---
 
@@ -977,7 +977,7 @@ new EntityTagsTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/entity_tags#create EntityTags#create}. |
+| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/entity_tags#create EntityTags#create}. |
 
 ---
 
@@ -989,7 +989,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/entity_tags#create EntityTags#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/entity_tags#create EntityTags#create}.
 
 ---
 

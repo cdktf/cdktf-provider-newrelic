@@ -1,6 +1,6 @@
 # `newrelic_synthetics_multilocation_alert_condition`
 
-Refer to the Terraform Registory for docs: [`newrelic_synthetics_multilocation_alert_condition`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_multilocation_alert_condition).
+Refer to the Terraform Registory for docs: [`newrelic_synthetics_multilocation_alert_condition`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_multilocation_alert_condition).
 
 # `syntheticsMultilocationAlertCondition` Submodule <a name="`syntheticsMultilocationAlertCondition` Submodule" id="@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`newrelic_synthetics_multilocation_a
 
 ### SyntheticsMultilocationAlertCondition <a name="SyntheticsMultilocationAlertCondition" id="@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertCondition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_multilocation_alert_condition newrelic_synthetics_multilocation_alert_condition}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_multilocation_alert_condition newrelic_synthetics_multilocation_alert_condition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsmultilocationalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmultilocationalertcondition"
 
 syntheticsmultilocationalertcondition.NewSyntheticsMultilocationAlertCondition(scope Construct, id *string, config SyntheticsMultilocationAlertConditionConfig) SyntheticsMultilocationAlertCondition
 ```
@@ -393,7 +393,7 @@ func ResetWarning()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertCondition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsmultilocationalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmultilocationalertcondition"
 
 syntheticsmultilocationalertcondition.SyntheticsMultilocationAlertCondition_IsConstruct(x interface{}) *bool
 ```
@@ -425,7 +425,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertCondition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsmultilocationalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmultilocationalertcondition"
 
 syntheticsmultilocationalertcondition.SyntheticsMultilocationAlertCondition_IsTerraformElement(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ syntheticsmultilocationalertcondition.SyntheticsMultilocationAlertCondition_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertCondition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsmultilocationalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmultilocationalertcondition"
 
 syntheticsmultilocationalertcondition.SyntheticsMultilocationAlertCondition_IsTerraformResource(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ syntheticsmultilocationalertcondition.SyntheticsMultilocationAlertCondition_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertCondition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsmultilocationalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmultilocationalertcondition"
 
 syntheticsmultilocationalertcondition.SyntheticsMultilocationAlertCondition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -482,7 +482,7 @@ The construct id used in the generated config for the SyntheticsMultilocationAle
 
 The id of the existing SyntheticsMultilocationAlertCondition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_multilocation_alert_condition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_multilocation_alert_condition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -891,7 +891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsmultilocationalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmultilocationalertcondition"
 
 &syntheticsmultilocationalertcondition.SyntheticsMultilocationAlertConditionConfig {
 	Connection: interface{},
@@ -901,7 +901,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsmulti
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Critical: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionCritical,
+	Critical: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionCritical,
 	Entities: *[]*string,
 	Name: *string,
 	PolicyId: *f64,
@@ -909,7 +909,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsmulti
 	Id: *string,
 	RunbookUrl: *string,
 	ViolationTimeLimitSeconds: *f64,
-	Warning: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionWarning,
+	Warning: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionWarning,
 }
 ```
 
@@ -929,7 +929,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsmulti
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionConfig.property.name">Name</a></code> | <code>*string</code> | The title of this condition. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionConfig.property.policyId">PolicyId</a></code> | <code>*f64</code> | The ID of the policy where this condition will be used. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Set whether to enable the alert condition. Defaults to true. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_multilocation_alert_condition#id SyntheticsMultilocationAlertCondition#id}. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_multilocation_alert_condition#id SyntheticsMultilocationAlertCondition#id}. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionConfig.property.runbookUrl">RunbookUrl</a></code> | <code>*string</code> | Runbook URL to display in notifications. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionConfig.property.violationTimeLimitSeconds">ViolationTimeLimitSeconds</a></code> | <code>*f64</code> | Sets a time limit, in seconds, that will automatically force-close a long-lasting incident after the time limit you select. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionConfig.property.warning">Warning</a></code> | <code><a href="#@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionWarning">SyntheticsMultilocationAlertConditionWarning</a></code> | warning block. |
@@ -1016,7 +1016,7 @@ Critical SyntheticsMultilocationAlertConditionCritical
 
 critical block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_multilocation_alert_condition#critical SyntheticsMultilocationAlertCondition#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_multilocation_alert_condition#critical SyntheticsMultilocationAlertCondition#critical}
 
 ---
 
@@ -1030,7 +1030,7 @@ Entities *[]*string
 
 The GUIDs of the Synthetics monitors to alert on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_multilocation_alert_condition#entities SyntheticsMultilocationAlertCondition#entities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_multilocation_alert_condition#entities SyntheticsMultilocationAlertCondition#entities}
 
 ---
 
@@ -1044,7 +1044,7 @@ Name *string
 
 The title of this condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_multilocation_alert_condition#name SyntheticsMultilocationAlertCondition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_multilocation_alert_condition#name SyntheticsMultilocationAlertCondition#name}
 
 ---
 
@@ -1058,7 +1058,7 @@ PolicyId *f64
 
 The ID of the policy where this condition will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_multilocation_alert_condition#policy_id SyntheticsMultilocationAlertCondition#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_multilocation_alert_condition#policy_id SyntheticsMultilocationAlertCondition#policy_id}
 
 ---
 
@@ -1072,7 +1072,7 @@ Enabled interface{}
 
 Set whether to enable the alert condition. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_multilocation_alert_condition#enabled SyntheticsMultilocationAlertCondition#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_multilocation_alert_condition#enabled SyntheticsMultilocationAlertCondition#enabled}
 
 ---
 
@@ -1084,7 +1084,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_multilocation_alert_condition#id SyntheticsMultilocationAlertCondition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_multilocation_alert_condition#id SyntheticsMultilocationAlertCondition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1101,7 +1101,7 @@ RunbookUrl *string
 
 Runbook URL to display in notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_multilocation_alert_condition#runbook_url SyntheticsMultilocationAlertCondition#runbook_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_multilocation_alert_condition#runbook_url SyntheticsMultilocationAlertCondition#runbook_url}
 
 ---
 
@@ -1117,7 +1117,7 @@ Sets a time limit, in seconds, that will automatically force-close a long-lastin
 
 Must be in the range of 300 to 2592000 (inclusive)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_multilocation_alert_condition#violation_time_limit_seconds SyntheticsMultilocationAlertCondition#violation_time_limit_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_multilocation_alert_condition#violation_time_limit_seconds SyntheticsMultilocationAlertCondition#violation_time_limit_seconds}
 
 ---
 
@@ -1131,7 +1131,7 @@ Warning SyntheticsMultilocationAlertConditionWarning
 
 warning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_multilocation_alert_condition#warning SyntheticsMultilocationAlertCondition#warning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_multilocation_alert_condition#warning SyntheticsMultilocationAlertCondition#warning}
 
 ---
 
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionCritical.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsmultilocationalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmultilocationalertcondition"
 
 &syntheticsmultilocationalertcondition.SyntheticsMultilocationAlertConditionCritical {
 	Threshold: *f64,
@@ -1165,7 +1165,7 @@ Threshold *f64
 
 The minimum number of monitor locations that must be concurrently failing before an incident is opened.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_multilocation_alert_condition#threshold SyntheticsMultilocationAlertCondition#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_multilocation_alert_condition#threshold SyntheticsMultilocationAlertCondition#threshold}
 
 ---
 
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionWarning.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsmultilocationalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmultilocationalertcondition"
 
 &syntheticsmultilocationalertcondition.SyntheticsMultilocationAlertConditionWarning {
 	Threshold: *f64,
@@ -1199,7 +1199,7 @@ Threshold *f64
 
 The minimum number of monitor locations that must be concurrently failing before an incident is opened.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_multilocation_alert_condition#threshold SyntheticsMultilocationAlertCondition#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_multilocation_alert_condition#threshold SyntheticsMultilocationAlertCondition#threshold}
 
 ---
 
@@ -1210,7 +1210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionCriticalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsmultilocationalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmultilocationalertcondition"
 
 syntheticsmultilocationalertcondition.NewSyntheticsMultilocationAlertConditionCriticalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsMultilocationAlertConditionCriticalOutputReference
 ```
@@ -1481,7 +1481,7 @@ func InternalValue() SyntheticsMultilocationAlertConditionCritical
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertConditionWarningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsmultilocationalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmultilocationalertcondition"
 
 syntheticsmultilocationalertcondition.NewSyntheticsMultilocationAlertConditionWarningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsMultilocationAlertConditionWarningOutputReference
 ```

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor
+// https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface SyntheticsStepMonitorConfig extends cdktf.TerraformMetaArgument
   /**
   * ID of the newrelic account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#account_id SyntheticsStepMonitor#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#account_id SyntheticsStepMonitor#account_id}
   */
   readonly accountId?: number;
   /**
   * Capture a screenshot during job execution.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#enable_screenshot_on_failure_and_script SyntheticsStepMonitor#enable_screenshot_on_failure_and_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#enable_screenshot_on_failure_and_script SyntheticsStepMonitor#enable_screenshot_on_failure_and_script}
   */
   readonly enableScreenshotOnFailureAndScript?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#id SyntheticsStepMonitor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#id SyntheticsStepMonitor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,43 +29,43 @@ export interface SyntheticsStepMonitorConfig extends cdktf.TerraformMetaArgument
   /**
   * The public location(s) that the monitor will run jobs from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#locations_public SyntheticsStepMonitor#locations_public}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#locations_public SyntheticsStepMonitor#locations_public}
   */
   readonly locationsPublic?: string[];
   /**
   * The title of this monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#name SyntheticsStepMonitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#name SyntheticsStepMonitor#name}
   */
   readonly name: string;
   /**
   * The interval at which this monitor should run. Valid values are EVERY_MINUTE, EVERY_5_MINUTES, EVERY_10_MINUTES, EVERY_15_MINUTES, EVERY_30_MINUTES, EVERY_HOUR, EVERY_6_HOURS, EVERY_12_HOURS, or EVERY_DAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#period SyntheticsStepMonitor#period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#period SyntheticsStepMonitor#period}
   */
   readonly period: string;
   /**
   * The monitor status (i.e. ENABLED, MUTED, DISABLED). Note: The 'MUTED' status will be deprecated in a future release and it is recommended to refrain from using it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#status SyntheticsStepMonitor#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#status SyntheticsStepMonitor#status}
   */
   readonly status: string;
   /**
   * location_private block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#location_private SyntheticsStepMonitor#location_private}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#location_private SyntheticsStepMonitor#location_private}
   */
   readonly locationPrivate?: SyntheticsStepMonitorLocationPrivate[] | cdktf.IResolvable;
   /**
   * steps block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#steps SyntheticsStepMonitor#steps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#steps SyntheticsStepMonitor#steps}
   */
   readonly steps: SyntheticsStepMonitorSteps[] | cdktf.IResolvable;
   /**
   * tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#tag SyntheticsStepMonitor#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#tag SyntheticsStepMonitor#tag}
   */
   readonly tag?: SyntheticsStepMonitorTag[] | cdktf.IResolvable;
 }
@@ -78,13 +73,13 @@ export interface SyntheticsStepMonitorLocationPrivate {
   /**
   * The unique identifier for the Synthetics private location in New Relic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#guid SyntheticsStepMonitor#guid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#guid SyntheticsStepMonitor#guid}
   */
   readonly guid: string;
   /**
   * The location's Verified Script Execution password (Only necessary if Verified Script Execution is enabled for the location).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#vse_password SyntheticsStepMonitor#vse_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#vse_password SyntheticsStepMonitor#vse_password}
   */
   readonly vsePassword?: string;
 }
@@ -203,19 +198,19 @@ export interface SyntheticsStepMonitorSteps {
   /**
   * The position of the step within the script ranging from 0-100
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#ordinal SyntheticsStepMonitor#ordinal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#ordinal SyntheticsStepMonitor#ordinal}
   */
   readonly ordinal: number;
   /**
   * The type of step to be added to the script.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#type SyntheticsStepMonitor#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#type SyntheticsStepMonitor#type}
   */
   readonly type: string;
   /**
   * The metadata values related to the check the step performs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#values SyntheticsStepMonitor#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#values SyntheticsStepMonitor#values}
   */
   readonly values?: string[];
 }
@@ -354,13 +349,13 @@ export interface SyntheticsStepMonitorTag {
   /**
   * Name of the tag key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#key SyntheticsStepMonitor#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#key SyntheticsStepMonitor#key}
   */
   readonly key: string;
   /**
   * Values associated with the tag key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#values SyntheticsStepMonitor#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#values SyntheticsStepMonitor#values}
   */
   readonly values: string[];
 }
@@ -474,7 +469,7 @@ export class SyntheticsStepMonitorTagList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor}
 */
 export class SyntheticsStepMonitor extends cdktf.TerraformResource {
 
@@ -490,7 +485,7 @@ export class SyntheticsStepMonitor extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SyntheticsStepMonitor resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SyntheticsStepMonitor to import
-  * @param importFromId The id of the existing SyntheticsStepMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SyntheticsStepMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SyntheticsStepMonitor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -502,7 +497,7 @@ export class SyntheticsStepMonitor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.4/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -513,7 +508,7 @@ export class SyntheticsStepMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_synthetics_step_monitor',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.27.4',
+        providerVersion: '3.27.6',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
