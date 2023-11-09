@@ -1,6 +1,6 @@
 # `newrelic_log_parsing_rule`
 
-Refer to the Terraform Registory for docs: [`newrelic_log_parsing_rule`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule).
+Refer to the Terraform Registory for docs: [`newrelic_log_parsing_rule`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule).
 
 # `logParsingRule` Submodule <a name="`logParsingRule` Submodule" id="@cdktf/provider-newrelic.logParsingRule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_log_parsing_rule`](https:/
 
 ### LogParsingRule <a name="LogParsingRule" id="@cdktf/provider-newrelic.logParsingRule.LogParsingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule newrelic_log_parsing_rule}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule newrelic_log_parsing_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.logParsingRule.LogParsingRule.Initializer"></a>
 
@@ -55,7 +55,7 @@ logParsingRule.LogParsingRule(
 | <code><a href="#@cdktf/provider-newrelic.logParsingRule.LogParsingRule.Initializer.parameter.nrql">nrql</a></code> | <code>str</code> | The NRQL to match events to the parsing rule. |
 | <code><a href="#@cdktf/provider-newrelic.logParsingRule.LogParsingRule.Initializer.parameter.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The account id associated with the obfuscation expression. |
 | <code><a href="#@cdktf/provider-newrelic.logParsingRule.LogParsingRule.Initializer.parameter.attribute">attribute</a></code> | <code>str</code> | The parsing rule will apply to value of this attribute. |
-| <code><a href="#@cdktf/provider-newrelic.logParsingRule.LogParsingRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#id LogParsingRule#id}. |
+| <code><a href="#@cdktf/provider-newrelic.logParsingRule.LogParsingRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#id LogParsingRule#id}. |
 | <code><a href="#@cdktf/provider-newrelic.logParsingRule.LogParsingRule.Initializer.parameter.matched">matched</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the Grok pattern matched. |
 
 ---
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 Whether or not this rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#enabled LogParsingRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#enabled LogParsingRule#enabled}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The Grok of what to parse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#grok LogParsingRule#grok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#grok LogParsingRule#grok}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The Lucene to match events to the parsing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#lucene LogParsingRule#lucene}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#lucene LogParsingRule#lucene}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 A description of what this parsing rule represents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#name LogParsingRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#name LogParsingRule#name}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The NRQL to match events to the parsing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#nrql LogParsingRule#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#nrql LogParsingRule#nrql}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The account id associated with the obfuscation expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#account_id LogParsingRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#account_id LogParsingRule#account_id}
 
 ---
 
@@ -188,7 +188,7 @@ The parsing rule will apply to value of this attribute.
 
 If field is not provided, value will default to message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#attribute LogParsingRule#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#attribute LogParsingRule#attribute}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#id LogParsingRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#id LogParsingRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -209,7 +209,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Whether the Grok pattern matched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#matched LogParsingRule#matched}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#matched LogParsingRule#matched}
 
 ---
 
@@ -656,7 +656,7 @@ The construct id used in the generated config for the LogParsingRule to import.
 
 The id of the existing LogParsingRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1105,7 +1105,7 @@ logParsingRule.LogParsingRuleConfig(
 | <code><a href="#@cdktf/provider-newrelic.logParsingRule.LogParsingRuleConfig.property.nrql">nrql</a></code> | <code>str</code> | The NRQL to match events to the parsing rule. |
 | <code><a href="#@cdktf/provider-newrelic.logParsingRule.LogParsingRuleConfig.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The account id associated with the obfuscation expression. |
 | <code><a href="#@cdktf/provider-newrelic.logParsingRule.LogParsingRuleConfig.property.attribute">attribute</a></code> | <code>str</code> | The parsing rule will apply to value of this attribute. |
-| <code><a href="#@cdktf/provider-newrelic.logParsingRule.LogParsingRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#id LogParsingRule#id}. |
+| <code><a href="#@cdktf/provider-newrelic.logParsingRule.LogParsingRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#id LogParsingRule#id}. |
 | <code><a href="#@cdktf/provider-newrelic.logParsingRule.LogParsingRuleConfig.property.matched">matched</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the Grok pattern matched. |
 
 ---
@@ -1190,7 +1190,7 @@ enabled: typing.Union[bool, IResolvable]
 
 Whether or not this rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#enabled LogParsingRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#enabled LogParsingRule#enabled}
 
 ---
 
@@ -1204,7 +1204,7 @@ grok: str
 
 The Grok of what to parse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#grok LogParsingRule#grok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#grok LogParsingRule#grok}
 
 ---
 
@@ -1218,7 +1218,7 @@ lucene: str
 
 The Lucene to match events to the parsing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#lucene LogParsingRule#lucene}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#lucene LogParsingRule#lucene}
 
 ---
 
@@ -1232,7 +1232,7 @@ name: str
 
 A description of what this parsing rule represents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#name LogParsingRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#name LogParsingRule#name}
 
 ---
 
@@ -1246,7 +1246,7 @@ nrql: str
 
 The NRQL to match events to the parsing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#nrql LogParsingRule#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#nrql LogParsingRule#nrql}
 
 ---
 
@@ -1260,7 +1260,7 @@ account_id: typing.Union[int, float]
 
 The account id associated with the obfuscation expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#account_id LogParsingRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#account_id LogParsingRule#account_id}
 
 ---
 
@@ -1276,7 +1276,7 @@ The parsing rule will apply to value of this attribute.
 
 If field is not provided, value will default to message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#attribute LogParsingRule#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#attribute LogParsingRule#attribute}
 
 ---
 
@@ -1288,7 +1288,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#id LogParsingRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#id LogParsingRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1305,7 +1305,7 @@ matched: typing.Union[bool, IResolvable]
 
 Whether the Grok pattern matched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/log_parsing_rule#matched LogParsingRule#matched}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/log_parsing_rule#matched LogParsingRule#matched}
 
 ---
 
