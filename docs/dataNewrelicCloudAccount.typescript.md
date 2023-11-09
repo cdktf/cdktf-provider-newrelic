@@ -1,6 +1,6 @@
 # `data_newrelic_cloud_account`
 
-Refer to the Terraform Registory for docs: [`data_newrelic_cloud_account`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/data-sources/cloud_account).
+Refer to the Terraform Registory for docs: [`data_newrelic_cloud_account`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/cloud_account).
 
 # `dataNewrelicCloudAccount` Submodule <a name="`dataNewrelicCloudAccount` Submodule" id="@cdktf/provider-newrelic.dataNewrelicCloudAccount"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_newrelic_cloud_account`](https
 
 ### DataNewrelicCloudAccount <a name="DataNewrelicCloudAccount" id="@cdktf/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/data-sources/cloud_account newrelic_cloud_account}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/cloud_account newrelic_cloud_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccount.Initializer"></a>
 
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataNewrelicCloudAccount t
 
 The id of the existing DataNewrelicCloudAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/data-sources/cloud_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/cloud_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -659,7 +659,7 @@ const dataNewrelicCloudAccountConfig: dataNewrelicCloudAccount.DataNewrelicCloud
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.cloudProvider">cloudProvider</a></code> | <code>string</code> | The cloud provider of the account, e.g. aws, gcp, azure. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.name">name</a></code> | <code>string</code> | The name of the cloud account. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.accountId">accountId</a></code> | <code>number</code> | The ID of the New Relic account. |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicCloudAccount.DataNewrelicCloudAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}. |
 
 ---
 
@@ -743,7 +743,7 @@ public readonly cloudProvider: string;
 
 The cloud provider of the account, e.g. aws, gcp, azure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/data-sources/cloud_account#cloud_provider DataNewrelicCloudAccount#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/cloud_account#cloud_provider DataNewrelicCloudAccount#cloud_provider}
 
 ---
 
@@ -757,7 +757,7 @@ public readonly name: string;
 
 The name of the cloud account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/data-sources/cloud_account#name DataNewrelicCloudAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/cloud_account#name DataNewrelicCloudAccount#name}
 
 ---
 
@@ -771,7 +771,7 @@ public readonly accountId: number;
 
 The ID of the New Relic account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/data-sources/cloud_account#account_id DataNewrelicCloudAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/cloud_account#account_id DataNewrelicCloudAccount#account_id}
 
 ---
 
@@ -783,7 +783,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

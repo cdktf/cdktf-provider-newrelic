@@ -1,6 +1,6 @@
 # `newrelic_synthetics_broken_links_monitor`
 
-Refer to the Terraform Registory for docs: [`newrelic_synthetics_broken_links_monitor`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor).
+Refer to the Terraform Registory for docs: [`newrelic_synthetics_broken_links_monitor`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor).
 
 # `syntheticsBrokenLinksMonitor` Submodule <a name="`syntheticsBrokenLinksMonitor` Submodule" id="@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_synthetics_broken_links_mo
 
 ### SyntheticsBrokenLinksMonitor <a name="SyntheticsBrokenLinksMonitor" id="@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor.Initializer"></a>
 
@@ -53,10 +53,10 @@ SyntheticsBrokenLinksMonitor.Builder.create(Construct scope, java.lang.String id
 | <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The title of this monitor. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor.Initializer.parameter.period">period</a></code> | <code>java.lang.String</code> | The interval at which this monitor should run. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | The monitor status (i.e. ENABLED, MUTED, DISABLED). Note: The 'MUTED' status will be deprecated in a future release and it is recommended to refrain from using it. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | The monitor status (i.e. ENABLED, MUTED, DISABLED). Note: The 'MUTED' status is now deprecated, and support for this value will soon be removed from the Terraform Provider in an upcoming release. It is highly recommended for users to refrain from using this value and shift to alternatives. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor.Initializer.parameter.uri">uri</a></code> | <code>java.lang.String</code> | The URI the monitor runs against. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | ID of the newrelic account. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#id SyntheticsBrokenLinksMonitor#id}. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#id SyntheticsBrokenLinksMonitor#id}. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor.Initializer.parameter.locationsPrivate">locationsPrivate</a></code> | <code>java.util.List<java.lang.String></code> | List private location GUIDs for which the monitor will run. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor.Initializer.parameter.locationsPublic">locationsPublic</a></code> | <code>java.util.List<java.lang.String></code> | Publicly available location names in which the monitor will run. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitor.Initializer.parameter.tag">tag</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorTag">SyntheticsBrokenLinksMonitorTag</a>></code> | tag block. |
@@ -129,7 +129,7 @@ Must be unique amongst siblings in the same scope
 
 The title of this monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#name SyntheticsBrokenLinksMonitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#name SyntheticsBrokenLinksMonitor#name}
 
 ---
 
@@ -141,7 +141,7 @@ The interval at which this monitor should run.
 
 Valid values are EVERY_MINUTE, EVERY_5_MINUTES, EVERY_10_MINUTES, EVERY_15_MINUTES, EVERY_30_MINUTES, EVERY_HOUR, EVERY_6_HOURS, EVERY_12_HOURS, or EVERY_DAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#period SyntheticsBrokenLinksMonitor#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#period SyntheticsBrokenLinksMonitor#period}
 
 ---
 
@@ -149,9 +149,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-The monitor status (i.e. ENABLED, MUTED, DISABLED). Note: The 'MUTED' status will be deprecated in a future release and it is recommended to refrain from using it.
+The monitor status (i.e. ENABLED, MUTED, DISABLED). Note: The 'MUTED' status is now deprecated, and support for this value will soon be removed from the Terraform Provider in an upcoming release. It is highly recommended for users to refrain from using this value and shift to alternatives.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#status SyntheticsBrokenLinksMonitor#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#status SyntheticsBrokenLinksMonitor#status}
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The URI the monitor runs against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#uri SyntheticsBrokenLinksMonitor#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#uri SyntheticsBrokenLinksMonitor#uri}
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ID of the newrelic account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#account_id SyntheticsBrokenLinksMonitor#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#account_id SyntheticsBrokenLinksMonitor#account_id}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#id SyntheticsBrokenLinksMonitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#id SyntheticsBrokenLinksMonitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -192,7 +192,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 List private location GUIDs for which the monitor will run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#locations_private SyntheticsBrokenLinksMonitor#locations_private}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#locations_private SyntheticsBrokenLinksMonitor#locations_private}
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Publicly available location names in which the monitor will run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#locations_public SyntheticsBrokenLinksMonitor#locations_public}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#locations_public SyntheticsBrokenLinksMonitor#locations_public}
 
 ---
 
@@ -212,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#tag SyntheticsBrokenLinksMonitor#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#tag SyntheticsBrokenLinksMonitor#tag}
 
 ---
 
@@ -637,7 +637,7 @@ The construct id used in the generated config for the SyntheticsBrokenLinksMonit
 
 The id of the existing SyntheticsBrokenLinksMonitor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1097,10 +1097,10 @@ SyntheticsBrokenLinksMonitorConfig.builder()
 | <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorConfig.property.name">name</a></code> | <code>java.lang.String</code> | The title of this monitor. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorConfig.property.period">period</a></code> | <code>java.lang.String</code> | The interval at which this monitor should run. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorConfig.property.status">status</a></code> | <code>java.lang.String</code> | The monitor status (i.e. ENABLED, MUTED, DISABLED). Note: The 'MUTED' status will be deprecated in a future release and it is recommended to refrain from using it. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorConfig.property.status">status</a></code> | <code>java.lang.String</code> | The monitor status (i.e. ENABLED, MUTED, DISABLED). Note: The 'MUTED' status is now deprecated, and support for this value will soon be removed from the Terraform Provider in an upcoming release. It is highly recommended for users to refrain from using this value and shift to alternatives. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorConfig.property.uri">uri</a></code> | <code>java.lang.String</code> | The URI the monitor runs against. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | ID of the newrelic account. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#id SyntheticsBrokenLinksMonitor#id}. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#id SyntheticsBrokenLinksMonitor#id}. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorConfig.property.locationsPrivate">locationsPrivate</a></code> | <code>java.util.List<java.lang.String></code> | List private location GUIDs for which the monitor will run. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorConfig.property.locationsPublic">locationsPublic</a></code> | <code>java.util.List<java.lang.String></code> | Publicly available location names in which the monitor will run. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorConfig.property.tag">tag</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.syntheticsBrokenLinksMonitor.SyntheticsBrokenLinksMonitorTag">SyntheticsBrokenLinksMonitorTag</a>></code> | tag block. |
@@ -1187,7 +1187,7 @@ public java.lang.String getName();
 
 The title of this monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#name SyntheticsBrokenLinksMonitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#name SyntheticsBrokenLinksMonitor#name}
 
 ---
 
@@ -1203,7 +1203,7 @@ The interval at which this monitor should run.
 
 Valid values are EVERY_MINUTE, EVERY_5_MINUTES, EVERY_10_MINUTES, EVERY_15_MINUTES, EVERY_30_MINUTES, EVERY_HOUR, EVERY_6_HOURS, EVERY_12_HOURS, or EVERY_DAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#period SyntheticsBrokenLinksMonitor#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#period SyntheticsBrokenLinksMonitor#period}
 
 ---
 
@@ -1215,9 +1215,9 @@ public java.lang.String getStatus();
 
 - *Type:* java.lang.String
 
-The monitor status (i.e. ENABLED, MUTED, DISABLED). Note: The 'MUTED' status will be deprecated in a future release and it is recommended to refrain from using it.
+The monitor status (i.e. ENABLED, MUTED, DISABLED). Note: The 'MUTED' status is now deprecated, and support for this value will soon be removed from the Terraform Provider in an upcoming release. It is highly recommended for users to refrain from using this value and shift to alternatives.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#status SyntheticsBrokenLinksMonitor#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#status SyntheticsBrokenLinksMonitor#status}
 
 ---
 
@@ -1231,7 +1231,7 @@ public java.lang.String getUri();
 
 The URI the monitor runs against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#uri SyntheticsBrokenLinksMonitor#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#uri SyntheticsBrokenLinksMonitor#uri}
 
 ---
 
@@ -1245,7 +1245,7 @@ public java.lang.Number getAccountId();
 
 ID of the newrelic account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#account_id SyntheticsBrokenLinksMonitor#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#account_id SyntheticsBrokenLinksMonitor#account_id}
 
 ---
 
@@ -1257,7 +1257,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#id SyntheticsBrokenLinksMonitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#id SyntheticsBrokenLinksMonitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1274,7 +1274,7 @@ public java.util.List<java.lang.String> getLocationsPrivate();
 
 List private location GUIDs for which the monitor will run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#locations_private SyntheticsBrokenLinksMonitor#locations_private}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#locations_private SyntheticsBrokenLinksMonitor#locations_private}
 
 ---
 
@@ -1288,7 +1288,7 @@ public java.util.List<java.lang.String> getLocationsPublic();
 
 Publicly available location names in which the monitor will run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#locations_public SyntheticsBrokenLinksMonitor#locations_public}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#locations_public SyntheticsBrokenLinksMonitor#locations_public}
 
 ---
 
@@ -1302,7 +1302,7 @@ public java.lang.Object getTag();
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#tag SyntheticsBrokenLinksMonitor#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#tag SyntheticsBrokenLinksMonitor#tag}
 
 ---
 
@@ -1338,7 +1338,7 @@ public java.lang.String getKey();
 
 Name of the tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#key SyntheticsBrokenLinksMonitor#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#key SyntheticsBrokenLinksMonitor#key}
 
 ---
 
@@ -1352,7 +1352,7 @@ public java.util.List<java.lang.String> getValues();
 
 Values associated with the tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/synthetics_broken_links_monitor#values SyntheticsBrokenLinksMonitor#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_broken_links_monitor#values SyntheticsBrokenLinksMonitor#values}
 
 ---
 

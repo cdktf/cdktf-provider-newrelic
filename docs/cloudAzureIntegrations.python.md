@@ -1,6 +1,6 @@
 # `newrelic_cloud_azure_integrations`
 
-Refer to the Terraform Registory for docs: [`newrelic_cloud_azure_integrations`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations).
+Refer to the Terraform Registory for docs: [`newrelic_cloud_azure_integrations`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations).
 
 # `cloudAzureIntegrations` Submodule <a name="`cloudAzureIntegrations` Submodule" id="@cdktf/provider-newrelic.cloudAzureIntegrations"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`newrelic_cloud_azure_integrations`]
 
 ### CloudAzureIntegrations <a name="CloudAzureIntegrations" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer"></a>
 
@@ -88,7 +88,7 @@ cloudAzureIntegrations.CloudAzureIntegrations(
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer.parameter.firewalls">firewalls</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFirewalls">CloudAzureIntegrationsFirewalls</a></code> | firewalls block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer.parameter.frontDoor">front_door</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFrontDoor">CloudAzureIntegrationsFrontDoor</a></code> | front_door block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer.parameter.functions">functions</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFunctions">CloudAzureIntegrationsFunctions</a></code> | functions block. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer.parameter.keyVault">key_vault</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsKeyVault">CloudAzureIntegrationsKeyVault</a></code> | key_vault block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer.parameter.loadBalancer">load_balancer</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLoadBalancer">CloudAzureIntegrationsLoadBalancer</a></code> | load_balancer block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer.parameter.logicApps">logic_apps</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLogicApps">CloudAzureIntegrationsLogicApps</a></code> | logic_apps block. |
@@ -178,7 +178,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the linked Azure account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#linked_account_id CloudAzureIntegrations#linked_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#linked_account_id CloudAzureIntegrations#linked_account_id}
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#account_id CloudAzureIntegrations#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#account_id CloudAzureIntegrations#account_id}
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 api_management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#api_management CloudAzureIntegrations#api_management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#api_management CloudAzureIntegrations#api_management}
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 app_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#app_gateway CloudAzureIntegrations#app_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#app_gateway CloudAzureIntegrations#app_gateway}
 
 ---
 
@@ -218,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 app_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#app_service CloudAzureIntegrations#app_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#app_service CloudAzureIntegrations#app_service}
 
 ---
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 containers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#containers CloudAzureIntegrations#containers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#containers CloudAzureIntegrations#containers}
 
 ---
 
@@ -238,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 cosmos_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#cosmos_db CloudAzureIntegrations#cosmos_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#cosmos_db CloudAzureIntegrations#cosmos_db}
 
 ---
 
@@ -248,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 cost_management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#cost_management CloudAzureIntegrations#cost_management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#cost_management CloudAzureIntegrations#cost_management}
 
 ---
 
@@ -258,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 data_factory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#data_factory CloudAzureIntegrations#data_factory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#data_factory CloudAzureIntegrations#data_factory}
 
 ---
 
@@ -268,7 +268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 event_hub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#event_hub CloudAzureIntegrations#event_hub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#event_hub CloudAzureIntegrations#event_hub}
 
 ---
 
@@ -278,7 +278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 express_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#express_route CloudAzureIntegrations#express_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#express_route CloudAzureIntegrations#express_route}
 
 ---
 
@@ -288,7 +288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 firewalls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#firewalls CloudAzureIntegrations#firewalls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#firewalls CloudAzureIntegrations#firewalls}
 
 ---
 
@@ -298,7 +298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 front_door block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#front_door CloudAzureIntegrations#front_door}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#front_door CloudAzureIntegrations#front_door}
 
 ---
 
@@ -308,7 +308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#functions CloudAzureIntegrations#functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#functions CloudAzureIntegrations#functions}
 
 ---
 
@@ -316,7 +316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -329,7 +329,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 key_vault block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#key_vault CloudAzureIntegrations#key_vault}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#key_vault CloudAzureIntegrations#key_vault}
 
 ---
 
@@ -339,7 +339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 load_balancer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#load_balancer CloudAzureIntegrations#load_balancer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#load_balancer CloudAzureIntegrations#load_balancer}
 
 ---
 
@@ -349,7 +349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 logic_apps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#logic_apps CloudAzureIntegrations#logic_apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#logic_apps CloudAzureIntegrations#logic_apps}
 
 ---
 
@@ -359,7 +359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 machine_learning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#machine_learning CloudAzureIntegrations#machine_learning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#machine_learning CloudAzureIntegrations#machine_learning}
 
 ---
 
@@ -369,7 +369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 maria_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#maria_db CloudAzureIntegrations#maria_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#maria_db CloudAzureIntegrations#maria_db}
 
 ---
 
@@ -379,7 +379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 monitor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#monitor CloudAzureIntegrations#monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#monitor CloudAzureIntegrations#monitor}
 
 ---
 
@@ -389,7 +389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 mysql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#mysql CloudAzureIntegrations#mysql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#mysql CloudAzureIntegrations#mysql}
 
 ---
 
@@ -399,7 +399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 mysql_flexible block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#mysql_flexible CloudAzureIntegrations#mysql_flexible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#mysql_flexible CloudAzureIntegrations#mysql_flexible}
 
 ---
 
@@ -409,7 +409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 postgresql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#postgresql CloudAzureIntegrations#postgresql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#postgresql CloudAzureIntegrations#postgresql}
 
 ---
 
@@ -419,7 +419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 postgresql_flexible block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#postgresql_flexible CloudAzureIntegrations#postgresql_flexible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#postgresql_flexible CloudAzureIntegrations#postgresql_flexible}
 
 ---
 
@@ -429,7 +429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 power_bi_dedicated block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#power_bi_dedicated CloudAzureIntegrations#power_bi_dedicated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#power_bi_dedicated CloudAzureIntegrations#power_bi_dedicated}
 
 ---
 
@@ -439,7 +439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 redis_cache block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#redis_cache CloudAzureIntegrations#redis_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#redis_cache CloudAzureIntegrations#redis_cache}
 
 ---
 
@@ -449,7 +449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 service_bus block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#service_bus CloudAzureIntegrations#service_bus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#service_bus CloudAzureIntegrations#service_bus}
 
 ---
 
@@ -459,7 +459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 sql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#sql CloudAzureIntegrations#sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#sql CloudAzureIntegrations#sql}
 
 ---
 
@@ -469,7 +469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 sql_managed block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#sql_managed CloudAzureIntegrations#sql_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#sql_managed CloudAzureIntegrations#sql_managed}
 
 ---
 
@@ -479,7 +479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#storage CloudAzureIntegrations#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#storage CloudAzureIntegrations#storage}
 
 ---
 
@@ -489,7 +489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 virtual_machine block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#virtual_machine CloudAzureIntegrations#virtual_machine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#virtual_machine CloudAzureIntegrations#virtual_machine}
 
 ---
 
@@ -499,7 +499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 virtual_networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#virtual_networks CloudAzureIntegrations#virtual_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#virtual_networks CloudAzureIntegrations#virtual_networks}
 
 ---
 
@@ -509,7 +509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 vms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#vms CloudAzureIntegrations#vms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#vms CloudAzureIntegrations#vms}
 
 ---
 
@@ -519,7 +519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 vpn_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#vpn_gateway CloudAzureIntegrations#vpn_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#vpn_gateway CloudAzureIntegrations#vpn_gateway}
 
 ---
 
@@ -905,7 +905,7 @@ def put_api_management(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -915,7 +915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -934,7 +934,7 @@ def put_app_gateway(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -944,7 +944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -963,7 +963,7 @@ def put_app_service(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -973,7 +973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -992,7 +992,7 @@ def put_containers(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1002,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1021,7 +1021,7 @@ def put_cosmos_db(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1050,7 +1050,7 @@ def put_cost_management(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify if additional cost data per tag should be collected. This field is case sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#tag_keys CloudAzureIntegrations#tag_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#tag_keys CloudAzureIntegrations#tag_keys}
 
 ---
 
@@ -1079,7 +1079,7 @@ def put_data_factory(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1108,7 +1108,7 @@ def put_event_hub(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1118,7 +1118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1137,7 +1137,7 @@ def put_express_route(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1147,7 +1147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1166,7 +1166,7 @@ def put_firewalls(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1195,7 +1195,7 @@ def put_front_door(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1205,7 +1205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1224,7 +1224,7 @@ def put_functions(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1253,7 +1253,7 @@ def put_key_vault(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1263,7 +1263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1282,7 +1282,7 @@ def put_load_balancer(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1292,7 +1292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1311,7 +1311,7 @@ def put_logic_apps(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1340,7 +1340,7 @@ def put_machine_learning(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1350,7 +1350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1369,7 +1369,7 @@ def put_maria_db(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1379,7 +1379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1402,7 +1402,7 @@ def put_monitor(
 
 A flag that specifies if the integration is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#enabled CloudAzureIntegrations#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#enabled CloudAzureIntegrations#enabled}
 
 ---
 
@@ -1412,7 +1412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify resource tags in 'key:value' form to be excluded from monitoring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#exclude_tags CloudAzureIntegrations#exclude_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#exclude_tags CloudAzureIntegrations#exclude_tags}
 
 ---
 
@@ -1422,7 +1422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify resource tags in 'key:value' form to be monitored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#include_tags CloudAzureIntegrations#include_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#include_tags CloudAzureIntegrations#include_tags}
 
 ---
 
@@ -1432,7 +1432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1442,7 +1442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1452,7 +1452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Azure resource type that needs to be monitored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_types CloudAzureIntegrations#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_types CloudAzureIntegrations#resource_types}
 
 ---
 
@@ -1471,7 +1471,7 @@ def put_mysql(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1481,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1500,7 +1500,7 @@ def put_mysql_flexible(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1510,7 +1510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1529,7 +1529,7 @@ def put_postgresql(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1539,7 +1539,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1558,7 +1558,7 @@ def put_postgresql_flexible(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1568,7 +1568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1587,7 +1587,7 @@ def put_power_bi_dedicated(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1597,7 +1597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1616,7 +1616,7 @@ def put_redis_cache(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1626,7 +1626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1645,7 +1645,7 @@ def put_service_bus(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1655,7 +1655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1674,7 +1674,7 @@ def put_sql(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1684,7 +1684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1703,7 +1703,7 @@ def put_sql_managed(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1713,7 +1713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1732,7 +1732,7 @@ def put_storage(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1742,7 +1742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1761,7 +1761,7 @@ def put_virtual_machine(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1771,7 +1771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1790,7 +1790,7 @@ def put_virtual_networks(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1800,7 +1800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1819,7 +1819,7 @@ def put_vms(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1829,7 +1829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -1848,7 +1848,7 @@ def put_vpn_gateway(
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -1858,7 +1858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -2180,7 +2180,7 @@ The construct id used in the generated config for the CloudAzureIntegrations to 
 
 The id of the existing CloudAzureIntegrations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -3177,7 +3177,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3191,7 +3191,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3227,7 +3227,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3241,7 +3241,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3277,7 +3277,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3291,7 +3291,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3373,7 +3373,7 @@ cloudAzureIntegrations.CloudAzureIntegrationsConfig(
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.firewalls">firewalls</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFirewalls">CloudAzureIntegrationsFirewalls</a></code> | firewalls block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.frontDoor">front_door</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFrontDoor">CloudAzureIntegrationsFrontDoor</a></code> | front_door block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.functions">functions</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFunctions">CloudAzureIntegrationsFunctions</a></code> | functions block. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.keyVault">key_vault</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsKeyVault">CloudAzureIntegrationsKeyVault</a></code> | key_vault block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.loadBalancer">load_balancer</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLoadBalancer">CloudAzureIntegrationsLoadBalancer</a></code> | load_balancer block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.logicApps">logic_apps</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLogicApps">CloudAzureIntegrationsLogicApps</a></code> | logic_apps block. |
@@ -3477,7 +3477,7 @@ linked_account_id: typing.Union[int, float]
 
 The ID of the linked Azure account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#linked_account_id CloudAzureIntegrations#linked_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#linked_account_id CloudAzureIntegrations#linked_account_id}
 
 ---
 
@@ -3491,7 +3491,7 @@ account_id: typing.Union[int, float]
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#account_id CloudAzureIntegrations#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#account_id CloudAzureIntegrations#account_id}
 
 ---
 
@@ -3505,7 +3505,7 @@ api_management: CloudAzureIntegrationsApiManagement
 
 api_management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#api_management CloudAzureIntegrations#api_management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#api_management CloudAzureIntegrations#api_management}
 
 ---
 
@@ -3519,7 +3519,7 @@ app_gateway: CloudAzureIntegrationsAppGateway
 
 app_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#app_gateway CloudAzureIntegrations#app_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#app_gateway CloudAzureIntegrations#app_gateway}
 
 ---
 
@@ -3533,7 +3533,7 @@ app_service: CloudAzureIntegrationsAppService
 
 app_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#app_service CloudAzureIntegrations#app_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#app_service CloudAzureIntegrations#app_service}
 
 ---
 
@@ -3547,7 +3547,7 @@ containers: CloudAzureIntegrationsContainers
 
 containers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#containers CloudAzureIntegrations#containers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#containers CloudAzureIntegrations#containers}
 
 ---
 
@@ -3561,7 +3561,7 @@ cosmos_db: CloudAzureIntegrationsCosmosDb
 
 cosmos_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#cosmos_db CloudAzureIntegrations#cosmos_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#cosmos_db CloudAzureIntegrations#cosmos_db}
 
 ---
 
@@ -3575,7 +3575,7 @@ cost_management: CloudAzureIntegrationsCostManagement
 
 cost_management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#cost_management CloudAzureIntegrations#cost_management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#cost_management CloudAzureIntegrations#cost_management}
 
 ---
 
@@ -3589,7 +3589,7 @@ data_factory: CloudAzureIntegrationsDataFactory
 
 data_factory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#data_factory CloudAzureIntegrations#data_factory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#data_factory CloudAzureIntegrations#data_factory}
 
 ---
 
@@ -3603,7 +3603,7 @@ event_hub: CloudAzureIntegrationsEventHub
 
 event_hub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#event_hub CloudAzureIntegrations#event_hub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#event_hub CloudAzureIntegrations#event_hub}
 
 ---
 
@@ -3617,7 +3617,7 @@ express_route: CloudAzureIntegrationsExpressRoute
 
 express_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#express_route CloudAzureIntegrations#express_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#express_route CloudAzureIntegrations#express_route}
 
 ---
 
@@ -3631,7 +3631,7 @@ firewalls: CloudAzureIntegrationsFirewalls
 
 firewalls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#firewalls CloudAzureIntegrations#firewalls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#firewalls CloudAzureIntegrations#firewalls}
 
 ---
 
@@ -3645,7 +3645,7 @@ front_door: CloudAzureIntegrationsFrontDoor
 
 front_door block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#front_door CloudAzureIntegrations#front_door}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#front_door CloudAzureIntegrations#front_door}
 
 ---
 
@@ -3659,7 +3659,7 @@ functions: CloudAzureIntegrationsFunctions
 
 functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#functions CloudAzureIntegrations#functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#functions CloudAzureIntegrations#functions}
 
 ---
 
@@ -3671,7 +3671,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3688,7 +3688,7 @@ key_vault: CloudAzureIntegrationsKeyVault
 
 key_vault block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#key_vault CloudAzureIntegrations#key_vault}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#key_vault CloudAzureIntegrations#key_vault}
 
 ---
 
@@ -3702,7 +3702,7 @@ load_balancer: CloudAzureIntegrationsLoadBalancer
 
 load_balancer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#load_balancer CloudAzureIntegrations#load_balancer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#load_balancer CloudAzureIntegrations#load_balancer}
 
 ---
 
@@ -3716,7 +3716,7 @@ logic_apps: CloudAzureIntegrationsLogicApps
 
 logic_apps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#logic_apps CloudAzureIntegrations#logic_apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#logic_apps CloudAzureIntegrations#logic_apps}
 
 ---
 
@@ -3730,7 +3730,7 @@ machine_learning: CloudAzureIntegrationsMachineLearning
 
 machine_learning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#machine_learning CloudAzureIntegrations#machine_learning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#machine_learning CloudAzureIntegrations#machine_learning}
 
 ---
 
@@ -3744,7 +3744,7 @@ maria_db: CloudAzureIntegrationsMariaDb
 
 maria_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#maria_db CloudAzureIntegrations#maria_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#maria_db CloudAzureIntegrations#maria_db}
 
 ---
 
@@ -3758,7 +3758,7 @@ monitor: CloudAzureIntegrationsMonitor
 
 monitor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#monitor CloudAzureIntegrations#monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#monitor CloudAzureIntegrations#monitor}
 
 ---
 
@@ -3772,7 +3772,7 @@ mysql: CloudAzureIntegrationsMysql
 
 mysql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#mysql CloudAzureIntegrations#mysql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#mysql CloudAzureIntegrations#mysql}
 
 ---
 
@@ -3786,7 +3786,7 @@ mysql_flexible: CloudAzureIntegrationsMysqlFlexible
 
 mysql_flexible block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#mysql_flexible CloudAzureIntegrations#mysql_flexible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#mysql_flexible CloudAzureIntegrations#mysql_flexible}
 
 ---
 
@@ -3800,7 +3800,7 @@ postgresql: CloudAzureIntegrationsPostgresql
 
 postgresql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#postgresql CloudAzureIntegrations#postgresql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#postgresql CloudAzureIntegrations#postgresql}
 
 ---
 
@@ -3814,7 +3814,7 @@ postgresql_flexible: CloudAzureIntegrationsPostgresqlFlexible
 
 postgresql_flexible block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#postgresql_flexible CloudAzureIntegrations#postgresql_flexible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#postgresql_flexible CloudAzureIntegrations#postgresql_flexible}
 
 ---
 
@@ -3828,7 +3828,7 @@ power_bi_dedicated: CloudAzureIntegrationsPowerBiDedicated
 
 power_bi_dedicated block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#power_bi_dedicated CloudAzureIntegrations#power_bi_dedicated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#power_bi_dedicated CloudAzureIntegrations#power_bi_dedicated}
 
 ---
 
@@ -3842,7 +3842,7 @@ redis_cache: CloudAzureIntegrationsRedisCache
 
 redis_cache block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#redis_cache CloudAzureIntegrations#redis_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#redis_cache CloudAzureIntegrations#redis_cache}
 
 ---
 
@@ -3856,7 +3856,7 @@ service_bus: CloudAzureIntegrationsServiceBus
 
 service_bus block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#service_bus CloudAzureIntegrations#service_bus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#service_bus CloudAzureIntegrations#service_bus}
 
 ---
 
@@ -3870,7 +3870,7 @@ sql: CloudAzureIntegrationsSql
 
 sql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#sql CloudAzureIntegrations#sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#sql CloudAzureIntegrations#sql}
 
 ---
 
@@ -3884,7 +3884,7 @@ sql_managed: CloudAzureIntegrationsSqlManaged
 
 sql_managed block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#sql_managed CloudAzureIntegrations#sql_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#sql_managed CloudAzureIntegrations#sql_managed}
 
 ---
 
@@ -3898,7 +3898,7 @@ storage: CloudAzureIntegrationsStorage
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#storage CloudAzureIntegrations#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#storage CloudAzureIntegrations#storage}
 
 ---
 
@@ -3912,7 +3912,7 @@ virtual_machine: CloudAzureIntegrationsVirtualMachine
 
 virtual_machine block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#virtual_machine CloudAzureIntegrations#virtual_machine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#virtual_machine CloudAzureIntegrations#virtual_machine}
 
 ---
 
@@ -3926,7 +3926,7 @@ virtual_networks: CloudAzureIntegrationsVirtualNetworks
 
 virtual_networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#virtual_networks CloudAzureIntegrations#virtual_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#virtual_networks CloudAzureIntegrations#virtual_networks}
 
 ---
 
@@ -3940,7 +3940,7 @@ vms: CloudAzureIntegrationsVms
 
 vms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#vms CloudAzureIntegrations#vms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#vms CloudAzureIntegrations#vms}
 
 ---
 
@@ -3954,7 +3954,7 @@ vpn_gateway: CloudAzureIntegrationsVpnGateway
 
 vpn_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#vpn_gateway CloudAzureIntegrations#vpn_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#vpn_gateway CloudAzureIntegrations#vpn_gateway}
 
 ---
 
@@ -3990,7 +3990,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4004,7 +4004,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4040,7 +4040,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4054,7 +4054,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4090,7 +4090,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4104,7 +4104,7 @@ tag_keys: typing.List[str]
 
 Specify if additional cost data per tag should be collected. This field is case sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#tag_keys CloudAzureIntegrations#tag_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#tag_keys CloudAzureIntegrations#tag_keys}
 
 ---
 
@@ -4140,7 +4140,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4154,7 +4154,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4190,7 +4190,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4204,7 +4204,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4240,7 +4240,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4254,7 +4254,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4290,7 +4290,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4304,7 +4304,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4340,7 +4340,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4354,7 +4354,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4390,7 +4390,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4404,7 +4404,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4440,7 +4440,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4454,7 +4454,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4490,7 +4490,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4504,7 +4504,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4540,7 +4540,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4554,7 +4554,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4590,7 +4590,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4604,7 +4604,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4640,7 +4640,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4654,7 +4654,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4698,7 +4698,7 @@ enabled: typing.Union[bool, IResolvable]
 
 A flag that specifies if the integration is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#enabled CloudAzureIntegrations#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#enabled CloudAzureIntegrations#enabled}
 
 ---
 
@@ -4712,7 +4712,7 @@ exclude_tags: typing.List[str]
 
 Specify resource tags in 'key:value' form to be excluded from monitoring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#exclude_tags CloudAzureIntegrations#exclude_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#exclude_tags CloudAzureIntegrations#exclude_tags}
 
 ---
 
@@ -4726,7 +4726,7 @@ include_tags: typing.List[str]
 
 Specify resource tags in 'key:value' form to be monitored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#include_tags CloudAzureIntegrations#include_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#include_tags CloudAzureIntegrations#include_tags}
 
 ---
 
@@ -4740,7 +4740,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4754,7 +4754,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4768,7 +4768,7 @@ resource_types: typing.List[str]
 
 Specify each Azure resource type that needs to be monitored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_types CloudAzureIntegrations#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_types CloudAzureIntegrations#resource_types}
 
 ---
 
@@ -4804,7 +4804,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4818,7 +4818,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4854,7 +4854,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4868,7 +4868,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4904,7 +4904,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4918,7 +4918,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4954,7 +4954,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4968,7 +4968,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -5004,7 +5004,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -5018,7 +5018,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -5054,7 +5054,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -5068,7 +5068,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -5104,7 +5104,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -5118,7 +5118,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -5154,7 +5154,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -5168,7 +5168,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -5204,7 +5204,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -5218,7 +5218,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -5254,7 +5254,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -5268,7 +5268,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -5304,7 +5304,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -5318,7 +5318,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -5354,7 +5354,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -5368,7 +5368,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -5404,7 +5404,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -5418,7 +5418,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -5454,7 +5454,7 @@ metrics_polling_interval: typing.Union[int, float]
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -5468,7 +5468,7 @@ resource_groups: typing.List[str]
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.6/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
