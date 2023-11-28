@@ -1,7 +1,3 @@
-# `newrelic_synthetics_private_location`
-
-Refer to the Terraform Registory for docs: [`newrelic_synthetics_private_location`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_private_location).
-
 # `syntheticsPrivateLocation` Submodule <a name="`syntheticsPrivateLocation` Submodule" id="@cdktf/provider-newrelic.syntheticsPrivateLocation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

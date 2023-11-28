@@ -1,7 +1,3 @@
-# `newrelic_nrql_alert_condition`
-
-Refer to the Terraform Registory for docs: [`newrelic_nrql_alert_condition`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/nrql_alert_condition).
-
 # `nrqlAlertCondition` Submodule <a name="`nrqlAlertCondition` Submodule" id="@cdktf/provider-newrelic.nrqlAlertCondition"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `newrelic_api_access_key`
-
-Refer to the Terraform Registory for docs: [`newrelic_api_access_key`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/api_access_key).
-
 # `apiAccessKey` Submodule <a name="`apiAccessKey` Submodule" id="@cdktf/provider-newrelic.apiAccessKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

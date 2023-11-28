@@ -1,7 +1,3 @@
-# `newrelic_synthetics_step_monitor`
-
-Refer to the Terraform Registory for docs: [`newrelic_synthetics_step_monitor`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_step_monitor).
-
 # `syntheticsStepMonitor` Submodule <a name="`syntheticsStepMonitor` Submodule" id="@cdktf/provider-newrelic.syntheticsStepMonitor"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

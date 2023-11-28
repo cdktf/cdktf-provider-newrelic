@@ -1,7 +1,3 @@
-# `newrelic_entity_tags`
-
-Refer to the Terraform Registory for docs: [`newrelic_entity_tags`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/entity_tags).
-
 # `entityTags` Submodule <a name="`entityTags` Submodule" id="@cdktf/provider-newrelic.entityTags"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

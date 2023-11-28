@@ -1,7 +1,3 @@
-# `data_newrelic_cloud_account`
-
-Refer to the Terraform Registory for docs: [`data_newrelic_cloud_account`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/cloud_account).
-
 # `dataNewrelicCloudAccount` Submodule <a name="`dataNewrelicCloudAccount` Submodule" id="@cdktf/provider-newrelic.dataNewrelicCloudAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

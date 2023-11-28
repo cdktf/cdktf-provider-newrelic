@@ -1,7 +1,3 @@
-# `newrelic_obfuscation_expression`
-
-Refer to the Terraform Registory for docs: [`newrelic_obfuscation_expression`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_expression).
-
 # `obfuscationExpression` Submodule <a name="`obfuscationExpression` Submodule" id="@cdktf/provider-newrelic.obfuscationExpression"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

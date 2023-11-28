@@ -1,7 +1,3 @@
-# `newrelic_obfuscation_rule`
-
-Refer to the Terraform Registory for docs: [`newrelic_obfuscation_rule`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_rule).
-
 # `obfuscationRule` Submodule <a name="`obfuscationRule` Submodule" id="@cdktf/provider-newrelic.obfuscationRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
