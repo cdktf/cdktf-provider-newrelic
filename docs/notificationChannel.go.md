@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.notificationChannel.NotificationChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/notificationchannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/notificationchannel"
 
 notificationchannel.NewNotificationChannel(scope Construct, id *string, config NotificationChannelConfig) NotificationChannel
 ```
@@ -362,7 +362,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.notificationChannel.NotificationChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/notificationchannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/notificationchannel"
 
 notificationchannel.NotificationChannel_IsConstruct(x interface{}) *bool
 ```
@@ -394,7 +394,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.notificationChannel.NotificationChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/notificationchannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/notificationchannel"
 
 notificationchannel.NotificationChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -408,7 +408,7 @@ notificationchannel.NotificationChannel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.notificationChannel.NotificationChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/notificationchannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/notificationchannel"
 
 notificationchannel.NotificationChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -422,7 +422,7 @@ notificationchannel.NotificationChannel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.notificationChannel.NotificationChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/notificationchannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/notificationchannel"
 
 notificationchannel.NotificationChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.notificationChannel.NotificationChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/notificationchannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/notificationchannel"
 
 &notificationchannel.NotificationChannelConfig {
 	Connection: interface{},
@@ -1069,7 +1069,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.notificationChannel.NotificationChannelProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/notificationchannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/notificationchannel"
 
 &notificationchannel.NotificationChannelProperty {
 	Key: *string,
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.notificationChannel.NotificationChannelPropertyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/notificationchannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/notificationchannel"
 
 notificationchannel.NewNotificationChannelPropertyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationChannelPropertyList
 ```
@@ -1296,7 +1296,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.notificationChannel.NotificationChannelPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/notificationchannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/notificationchannel"
 
 notificationchannel.NewNotificationChannelPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NotificationChannelPropertyOutputReference
 ```

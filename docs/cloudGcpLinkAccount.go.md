@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudgcplinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudgcplinkaccount"
 
 cloudgcplinkaccount.NewCloudGcpLinkAccount(scope Construct, id *string, config CloudGcpLinkAccountConfig) CloudGcpLinkAccount
 ```
@@ -342,7 +342,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudgcplinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudgcplinkaccount"
 
 cloudgcplinkaccount.CloudGcpLinkAccount_IsConstruct(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudgcplinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudgcplinkaccount"
 
 cloudgcplinkaccount.CloudGcpLinkAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ cloudgcplinkaccount.CloudGcpLinkAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudgcplinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudgcplinkaccount"
 
 cloudgcplinkaccount.CloudGcpLinkAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ cloudgcplinkaccount.CloudGcpLinkAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudgcplinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudgcplinkaccount"
 
 cloudgcplinkaccount.CloudGcpLinkAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -719,7 +719,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudGcpLinkAccount.CloudGcpLinkAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudgcplinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudgcplinkaccount"
 
 &cloudgcplinkaccount.CloudGcpLinkAccountConfig {
 	Connection: interface{},
