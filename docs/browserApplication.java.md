@@ -1,7 +1,3 @@
-# `newrelic_browser_application`
-
-Refer to the Terraform Registory for docs: [`newrelic_browser_application`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/browser_application).
-
 # `browserApplication` Submodule <a name="`browserApplication` Submodule" id="@cdktf/provider-newrelic.browserApplication"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

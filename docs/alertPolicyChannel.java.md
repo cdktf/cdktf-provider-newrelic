@@ -1,7 +1,3 @@
-# `newrelic_alert_policy_channel`
-
-Refer to the Terraform Registory for docs: [`newrelic_alert_policy_channel`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_policy_channel).
-
 # `alertPolicyChannel` Submodule <a name="`alertPolicyChannel` Submodule" id="@cdktf/provider-newrelic.alertPolicyChannel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `newrelic_application_settings`
-
-Refer to the Terraform Registory for docs: [`newrelic_application_settings`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/application_settings).
-
 # `applicationSettings` Submodule <a name="`applicationSettings` Submodule" id="@cdktf/provider-newrelic.applicationSettings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

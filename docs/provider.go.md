@@ -1,7 +1,3 @@
-# `provider`
-
-Refer to the Terraform Registory for docs: [`newrelic`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs).
-
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-newrelic.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/provider"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/provider"
 
 provider.NewNewrelicProvider(scope Construct, id *string, config NewrelicProviderConfig) NewrelicProvider
 ```
@@ -225,7 +221,7 @@ func ResetSyntheticsApiUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/provider"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/provider"
 
 provider.NewrelicProvider_IsConstruct(x interface{}) *bool
 ```
@@ -257,7 +253,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/provider"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/provider"
 
 provider.NewrelicProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -271,7 +267,7 @@ provider.NewrelicProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-newrelic.provider.NewrelicProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/provider"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/provider"
 
 provider.NewrelicProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -285,7 +281,7 @@ provider.NewrelicProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.provider.NewrelicProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/provider"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/provider"
 
 provider.NewrelicProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -756,7 +752,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/provider"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/provider"
 
 &provider.NewrelicProviderConfig {
 	AccountId: *f64,

@@ -1,7 +1,3 @@
-# `data_newrelic_synthetics_private_location`
-
-Refer to the Terraform Registory for docs: [`data_newrelic_synthetics_private_location`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/synthetics_private_location).
-
 # `dataNewrelicSyntheticsPrivateLocation` Submodule <a name="`dataNewrelicSyntheticsPrivateLocation` Submodule" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicsyntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicsyntheticsprivatelocation"
 
 datanewrelicsyntheticsprivatelocation.NewDataNewrelicSyntheticsPrivateLocation(scope Construct, id *string, config DataNewrelicSyntheticsPrivateLocationConfig) DataNewrelicSyntheticsPrivateLocation
 ```
@@ -292,7 +288,7 @@ func ResetKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicsyntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicsyntheticsprivatelocation"
 
 datanewrelicsyntheticsprivatelocation.DataNewrelicSyntheticsPrivateLocation_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicsyntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicsyntheticsprivatelocation"
 
 datanewrelicsyntheticsprivatelocation.DataNewrelicSyntheticsPrivateLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datanewrelicsyntheticsprivatelocation.DataNewrelicSyntheticsPrivateLocation_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicsyntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicsyntheticsprivatelocation"
 
 datanewrelicsyntheticsprivatelocation.DataNewrelicSyntheticsPrivateLocation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ datanewrelicsyntheticsprivatelocation.DataNewrelicSyntheticsPrivateLocation_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicsyntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicsyntheticsprivatelocation"
 
 datanewrelicsyntheticsprivatelocation.DataNewrelicSyntheticsPrivateLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -647,7 +643,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsPrivateLocation.DataNewrelicSyntheticsPrivateLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicsyntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicsyntheticsprivatelocation"
 
 &datanewrelicsyntheticsprivatelocation.DataNewrelicSyntheticsPrivateLocationConfig {
 	Connection: interface{},

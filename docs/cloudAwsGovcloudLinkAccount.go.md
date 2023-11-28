@@ -1,7 +1,3 @@
-# `newrelic_cloud_aws_govcloud_link_account`
-
-Refer to the Terraform Registory for docs: [`newrelic_cloud_aws_govcloud_link_account`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_aws_govcloud_link_account).
-
 # `cloudAwsGovcloudLinkAccount` Submodule <a name="`cloudAwsGovcloudLinkAccount` Submodule" id="@cdktf/provider-newrelic.cloudAwsGovcloudLinkAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsGovcloudLinkAccount.CloudAwsGovcloudLinkAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudawsgovcloudlinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudlinkaccount"
 
 cloudawsgovcloudlinkaccount.NewCloudAwsGovcloudLinkAccount(scope Construct, id *string, config CloudAwsGovcloudLinkAccountConfig) CloudAwsGovcloudLinkAccount
 ```
@@ -353,7 +349,7 @@ func ResetMetricCollectionMode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.cloudAwsGovcloudLinkAccount.CloudAwsGovcloudLinkAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudawsgovcloudlinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudlinkaccount"
 
 cloudawsgovcloudlinkaccount.CloudAwsGovcloudLinkAccount_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.cloudAwsGovcloudLinkAccount.CloudAwsGovcloudLinkAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudawsgovcloudlinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudlinkaccount"
 
 cloudawsgovcloudlinkaccount.CloudAwsGovcloudLinkAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ cloudawsgovcloudlinkaccount.CloudAwsGovcloudLinkAccount_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.cloudAwsGovcloudLinkAccount.CloudAwsGovcloudLinkAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudawsgovcloudlinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudlinkaccount"
 
 cloudawsgovcloudlinkaccount.CloudAwsGovcloudLinkAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ cloudawsgovcloudlinkaccount.CloudAwsGovcloudLinkAccount_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.cloudAwsGovcloudLinkAccount.CloudAwsGovcloudLinkAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudawsgovcloudlinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudlinkaccount"
 
 cloudawsgovcloudlinkaccount.CloudAwsGovcloudLinkAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -796,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsGovcloudLinkAccount.CloudAwsGovcloudLinkAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudawsgovcloudlinkaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudawsgovcloudlinkaccount"
 
 &cloudawsgovcloudlinkaccount.CloudAwsGovcloudLinkAccountConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `newrelic_obfuscation_expression`
-
-Refer to the Terraform Registory for docs: [`newrelic_obfuscation_expression`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_expression).
-
 # `obfuscationExpression` Submodule <a name="`obfuscationExpression` Submodule" id="@cdktf/provider-newrelic.obfuscationExpression"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/obfuscationexpression"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/obfuscationexpression"
 
 obfuscationexpression.NewObfuscationExpression(scope Construct, id *string, config ObfuscationExpressionConfig) ObfuscationExpression
 ```
@@ -353,7 +349,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpression.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/obfuscationexpression"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/obfuscationexpression"
 
 obfuscationexpression.ObfuscationExpression_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpression.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/obfuscationexpression"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/obfuscationexpression"
 
 obfuscationexpression.ObfuscationExpression_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ obfuscationexpression.ObfuscationExpression_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpression.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/obfuscationexpression"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/obfuscationexpression"
 
 obfuscationexpression.ObfuscationExpression_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ obfuscationexpression.ObfuscationExpression_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpression.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/obfuscationexpression"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/obfuscationexpression"
 
 obfuscationexpression.ObfuscationExpression_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -752,7 +748,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.obfuscationExpression.ObfuscationExpressionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/obfuscationexpression"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/obfuscationexpression"
 
 &obfuscationexpression.ObfuscationExpressionConfig {
 	Connection: interface{},

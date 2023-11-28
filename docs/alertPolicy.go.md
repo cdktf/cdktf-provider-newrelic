@@ -1,7 +1,3 @@
-# `newrelic_alert_policy`
-
-Refer to the Terraform Registory for docs: [`newrelic_alert_policy`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_policy).
-
 # `alertPolicy` Submodule <a name="`alertPolicy` Submodule" id="@cdktf/provider-newrelic.alertPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertPolicy.AlertPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertpolicy"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicy"
 
 alertpolicy.NewAlertPolicy(scope Construct, id *string, config AlertPolicyConfig) AlertPolicy
 ```
@@ -360,7 +356,7 @@ func ResetIncidentPreference()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.alertPolicy.AlertPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertpolicy"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicy"
 
 alertpolicy.AlertPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.alertPolicy.AlertPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertpolicy"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicy"
 
 alertpolicy.AlertPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ alertpolicy.AlertPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.alertPolicy.AlertPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertpolicy"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicy"
 
 alertpolicy.AlertPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +416,7 @@ alertpolicy.AlertPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.alertPolicy.AlertPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertpolicy"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicy"
 
 alertpolicy.AlertPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -759,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.alertPolicy.AlertPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertpolicy"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicy"
 
 &alertpolicy.AlertPolicyConfig {
 	Connection: interface{},

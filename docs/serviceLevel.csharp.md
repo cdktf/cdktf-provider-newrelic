@@ -1,7 +1,3 @@
-# `newrelic_service_level`
-
-Refer to the Terraform Registory for docs: [`newrelic_service_level`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/service_level).
-
 # `serviceLevel` Submodule <a name="`serviceLevel` Submodule" id="@cdktf/provider-newrelic.serviceLevel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

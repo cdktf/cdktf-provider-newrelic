@@ -1,7 +1,3 @@
-# `data_newrelic_alert_policy`
-
-Refer to the Terraform Registory for docs: [`data_newrelic_alert_policy`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/alert_policy).
-
 # `dataNewrelicAlertPolicy` Submodule <a name="`dataNewrelicAlertPolicy` Submodule" id="@cdktf/provider-newrelic.dataNewrelicAlertPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

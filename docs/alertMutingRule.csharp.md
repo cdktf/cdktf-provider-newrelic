@@ -1,7 +1,3 @@
-# `newrelic_alert_muting_rule`
-
-Refer to the Terraform Registory for docs: [`newrelic_alert_muting_rule`](https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule).
-
 # `alertMutingRule` Submodule <a name="`alertMutingRule` Submodule" id="@cdktf/provider-newrelic.alertMutingRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
