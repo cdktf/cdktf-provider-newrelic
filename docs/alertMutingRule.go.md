@@ -4,12 +4,12 @@
 
 ### AlertMutingRule <a name="AlertMutingRule" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule newrelic_alert_muting_rule}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule newrelic_alert_muting_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 alertmutingrule.NewAlertMutingRule(scope Construct, id *string, config AlertMutingRuleConfig) AlertMutingRule
 ```
@@ -425,7 +425,7 @@ func ResetSchedule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 alertmutingrule.AlertMutingRule_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 alertmutingrule.AlertMutingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ alertmutingrule.AlertMutingRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 alertmutingrule.AlertMutingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ alertmutingrule.AlertMutingRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 alertmutingrule.AlertMutingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -514,7 +514,7 @@ The construct id used in the generated config for the AlertMutingRule to import.
 
 The id of the existing AlertMutingRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -868,7 +868,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 &alertmutingrule.AlertMutingRuleCondition {
 	Conditions: interface{},
@@ -895,7 +895,7 @@ Conditions interface{}
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#conditions AlertMutingRule#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#conditions AlertMutingRule#conditions}
 
 ---
 
@@ -909,7 +909,7 @@ Operator *string
 
 The operator used to combine all the MutingRuleConditions within the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#operator AlertMutingRule#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#operator AlertMutingRule#operator}
 
 ---
 
@@ -918,7 +918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleConditionConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 &alertmutingrule.AlertMutingRuleConditionConditions {
 	Attribute: *string,
@@ -947,7 +947,7 @@ Attribute *string
 
 The attribute on an incident.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#attribute AlertMutingRule#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#attribute AlertMutingRule#attribute}
 
 ---
 
@@ -961,7 +961,7 @@ Operator *string
 
 The operator used to compare the attribute's value with the supplied value(s).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#operator AlertMutingRule#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#operator AlertMutingRule#operator}
 
 ---
 
@@ -975,7 +975,7 @@ Values *[]*string
 
 The value(s) to compare against the attribute's value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#values AlertMutingRule#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#values AlertMutingRule#values}
 
 ---
 
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 &alertmutingrule.AlertMutingRuleConfig {
 	Connection: interface{},
@@ -994,13 +994,13 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Condition: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.alertMutingRule.AlertMutingRuleCondition,
+	Condition: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.alertMutingRule.AlertMutingRuleCondition,
 	Enabled: interface{},
 	Name: *string,
 	AccountId: *f64,
 	Description: *string,
 	Id: *string,
-	Schedule: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.alertMutingRule.AlertMutingRuleSchedule,
+	Schedule: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.alertMutingRule.AlertMutingRuleSchedule,
 }
 ```
 
@@ -1020,7 +1020,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleConfig.property.name">Name</a></code> | <code>*string</code> | The name of the MutingRule. |
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The account id of the MutingRule.. |
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleConfig.property.description">Description</a></code> | <code>*string</code> | The description of the MutingRule. |
-| <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#id AlertMutingRule#id}. |
+| <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#id AlertMutingRule#id}. |
 | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleConfig.property.schedule">Schedule</a></code> | <code><a href="#@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleSchedule">AlertMutingRuleSchedule</a></code> | schedule block. |
 
 ---
@@ -1105,7 +1105,7 @@ Condition AlertMutingRuleCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#condition AlertMutingRule#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#condition AlertMutingRule#condition}
 
 ---
 
@@ -1119,7 +1119,7 @@ Enabled interface{}
 
 Whether the MutingRule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#enabled AlertMutingRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#enabled AlertMutingRule#enabled}
 
 ---
 
@@ -1133,7 +1133,7 @@ Name *string
 
 The name of the MutingRule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#name AlertMutingRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#name AlertMutingRule#name}
 
 ---
 
@@ -1147,7 +1147,7 @@ AccountId *f64
 
 The account id of the MutingRule..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#account_id AlertMutingRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#account_id AlertMutingRule#account_id}
 
 ---
 
@@ -1161,7 +1161,7 @@ Description *string
 
 The description of the MutingRule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#description AlertMutingRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#description AlertMutingRule#description}
 
 ---
 
@@ -1173,7 +1173,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#id AlertMutingRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#id AlertMutingRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1190,7 +1190,7 @@ Schedule AlertMutingRuleSchedule
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#schedule AlertMutingRule#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#schedule AlertMutingRule#schedule}
 
 ---
 
@@ -1199,7 +1199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 &alertmutingrule.AlertMutingRuleSchedule {
 	TimeZone: *string,
@@ -1236,7 +1236,7 @@ TimeZone *string
 
 The time zone that applies to the MutingRule schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#time_zone AlertMutingRule#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#time_zone AlertMutingRule#time_zone}
 
 ---
 
@@ -1250,7 +1250,7 @@ EndRepeat *string
 
 The datetime stamp when the MutingRule schedule should stop repeating.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#end_repeat AlertMutingRule#end_repeat}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#end_repeat AlertMutingRule#end_repeat}
 
 ---
 
@@ -1264,7 +1264,7 @@ EndTime *string
 
 The datetime stamp representing when the MutingRule should end.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#end_time AlertMutingRule#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#end_time AlertMutingRule#end_time}
 
 ---
 
@@ -1278,7 +1278,7 @@ Repeat *string
 
 The frequency the MutingRule schedule repeats. One of [DAILY, WEEKLY, MONTHLY].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#repeat AlertMutingRule#repeat}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#repeat AlertMutingRule#repeat}
 
 ---
 
@@ -1292,7 +1292,7 @@ RepeatCount *f64
 
 The number of times the MutingRule schedule should repeat.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#repeat_count AlertMutingRule#repeat_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#repeat_count AlertMutingRule#repeat_count}
 
 ---
 
@@ -1306,7 +1306,7 @@ StartTime *string
 
 The datetime stamp representing when the MutingRule should start.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#start_time AlertMutingRule#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#start_time AlertMutingRule#start_time}
 
 ---
 
@@ -1320,7 +1320,7 @@ WeeklyRepeatDays *[]*string
 
 The day(s) of the week that a MutingRule should repeat when the repeat field is set to WEEKLY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule#weekly_repeat_days AlertMutingRule#weekly_repeat_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule#weekly_repeat_days AlertMutingRule#weekly_repeat_days}
 
 ---
 
@@ -1331,7 +1331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleConditionConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 alertmutingrule.NewAlertMutingRuleConditionConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlertMutingRuleConditionConditionsList
 ```
@@ -1474,7 +1474,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleConditionConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 alertmutingrule.NewAlertMutingRuleConditionConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlertMutingRuleConditionConditionsOutputReference
 ```
@@ -1807,7 +1807,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 alertmutingrule.NewAlertMutingRuleConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertMutingRuleConditionOutputReference
 ```
@@ -2113,7 +2113,7 @@ func InternalValue() AlertMutingRuleCondition
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertMutingRule.AlertMutingRuleScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertmutingrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertmutingrule"
 
 alertmutingrule.NewAlertMutingRuleScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertMutingRuleScheduleOutputReference
 ```

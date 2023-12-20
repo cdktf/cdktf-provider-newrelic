@@ -4,12 +4,12 @@
 
 ### ObfuscationRule <a name="ObfuscationRule" id="@cdktf/provider-newrelic.obfuscationRule.ObfuscationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_rule newrelic_obfuscation_rule}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/obfuscation_rule newrelic_obfuscation_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.obfuscationRule.ObfuscationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/obfuscationrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/obfuscationrule"
 
 obfuscationrule.NewObfuscationRule(scope Construct, id *string, config ObfuscationRuleConfig) ObfuscationRule
 ```
@@ -405,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.obfuscationRule.ObfuscationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/obfuscationrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/obfuscationrule"
 
 obfuscationrule.ObfuscationRule_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.obfuscationRule.ObfuscationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/obfuscationrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/obfuscationrule"
 
 obfuscationrule.ObfuscationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ obfuscationrule.ObfuscationRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.obfuscationRule.ObfuscationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/obfuscationrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/obfuscationrule"
 
 obfuscationrule.ObfuscationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ obfuscationrule.ObfuscationRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.obfuscationRule.ObfuscationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/obfuscationrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/obfuscationrule"
 
 obfuscationrule.ObfuscationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ObfuscationRule to import.
 
 The id of the existing ObfuscationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/obfuscation_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/obfuscationrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/obfuscationrule"
 
 &obfuscationrule.ObfuscationRuleAction {
 	Attribute: *[]*string,
@@ -877,7 +877,7 @@ Attribute *[]*string
 
 Attribute names for action. An empty list applies the action to all the attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_rule#attribute ObfuscationRule#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/obfuscation_rule#attribute ObfuscationRule#attribute}
 
 ---
 
@@ -891,7 +891,7 @@ ExpressionId *string
 
 Expression Id for action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_rule#expression_id ObfuscationRule#expression_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/obfuscation_rule#expression_id ObfuscationRule#expression_id}
 
 ---
 
@@ -905,7 +905,7 @@ Method *string
 
 Obfuscation method to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_rule#method ObfuscationRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/obfuscation_rule#method ObfuscationRule#method}
 
 ---
 
@@ -914,7 +914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/obfuscationrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/obfuscationrule"
 
 &obfuscationrule.ObfuscationRuleConfig {
 	Connection: interface{},
@@ -951,7 +951,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/obfuscationrule
 | <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleConfig.property.name">Name</a></code> | <code>*string</code> | Name of rule. |
 | <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The account id associated with the obfuscation rule. |
 | <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleConfig.property.description">Description</a></code> | <code>*string</code> | Description of rule. |
-| <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_rule#id ObfuscationRule#id}. |
+| <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/obfuscation_rule#id ObfuscationRule#id}. |
 
 ---
 
@@ -1035,7 +1035,7 @@ Action interface{}
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_rule#action ObfuscationRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/obfuscation_rule#action ObfuscationRule#action}
 
 ---
 
@@ -1049,7 +1049,7 @@ Enabled interface{}
 
 Whether the rule should be applied or not to incoming data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_rule#enabled ObfuscationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/obfuscation_rule#enabled ObfuscationRule#enabled}
 
 ---
 
@@ -1063,7 +1063,7 @@ Filter *string
 
 NRQL for determining whether a given log record should have obfuscation actions applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_rule#filter ObfuscationRule#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/obfuscation_rule#filter ObfuscationRule#filter}
 
 ---
 
@@ -1077,7 +1077,7 @@ Name *string
 
 Name of rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_rule#name ObfuscationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/obfuscation_rule#name ObfuscationRule#name}
 
 ---
 
@@ -1091,7 +1091,7 @@ AccountId *f64
 
 The account id associated with the obfuscation rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_rule#account_id ObfuscationRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/obfuscation_rule#account_id ObfuscationRule#account_id}
 
 ---
 
@@ -1105,7 +1105,7 @@ Description *string
 
 Description of rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_rule#description ObfuscationRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/obfuscation_rule#description ObfuscationRule#description}
 
 ---
 
@@ -1117,7 +1117,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_rule#id ObfuscationRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/obfuscation_rule#id ObfuscationRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1131,7 +1131,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/obfuscationrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/obfuscationrule"
 
 obfuscationrule.NewObfuscationRuleActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObfuscationRuleActionList
 ```
@@ -1274,7 +1274,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/obfuscationrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/obfuscationrule"
 
 obfuscationrule.NewObfuscationRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObfuscationRuleActionOutputReference
 ```

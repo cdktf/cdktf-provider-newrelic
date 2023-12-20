@@ -37,6 +37,7 @@ The following submodules are available:
 - [infraAlertCondition](./infraAlertCondition.csharp.md)
 - [insightsEvent](./insightsEvent.csharp.md)
 - [logParsingRule](./logParsingRule.csharp.md)
+- [monitorDowntime](./monitorDowntime.csharp.md)
 - [notificationChannel](./notificationChannel.csharp.md)
 - [notificationDestination](./notificationDestination.csharp.md)
 - [nrqlAlertCondition](./nrqlAlertCondition.csharp.md)

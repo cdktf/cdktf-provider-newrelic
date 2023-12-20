@@ -4,12 +4,12 @@
 
 ### DataNewrelicAccount <a name="DataNewrelicAccount" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/account newrelic_account}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/data-sources/account newrelic_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicaccount"
 
 datanewrelicaccount.NewDataNewrelicAccount(scope Construct, id *string, config DataNewrelicAccountConfig) DataNewrelicAccount
 ```
@@ -295,7 +295,7 @@ func ResetScope()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicaccount"
 
 datanewrelicaccount.DataNewrelicAccount_IsConstruct(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicaccount"
 
 datanewrelicaccount.DataNewrelicAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ datanewrelicaccount.DataNewrelicAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicaccount"
 
 datanewrelicaccount.DataNewrelicAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ datanewrelicaccount.DataNewrelicAccount_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicaccount"
 
 datanewrelicaccount.DataNewrelicAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -384,7 +384,7 @@ The construct id used in the generated config for the DataNewrelicAccount to imp
 
 The id of the existing DataNewrelicAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/data-sources/account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -650,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicaccount"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicaccount"
 
 &datanewrelicaccount.DataNewrelicAccountConfig {
 	Connection: interface{},
@@ -679,7 +679,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicacc
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccountConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccountConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The ID of the account in New Relic. |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/account#id DataNewrelicAccount#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/data-sources/account#id DataNewrelicAccount#id}. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccountConfig.property.name">Name</a></code> | <code>*string</code> | The name of the account in New Relic. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicAccount.DataNewrelicAccountConfig.property.scope">Scope</a></code> | <code>*string</code> | The scope of the account in New Relic.  Valid values are "global" and "in_region".  Defaults to "in_region". |
 
@@ -765,7 +765,7 @@ AccountId *f64
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/account#account_id DataNewrelicAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/data-sources/account#account_id DataNewrelicAccount#account_id}
 
 ---
 
@@ -777,7 +777,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/account#id DataNewrelicAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/data-sources/account#id DataNewrelicAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -794,7 +794,7 @@ Name *string
 
 The name of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/account#name DataNewrelicAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/data-sources/account#name DataNewrelicAccount#name}
 
 ---
 
@@ -808,7 +808,7 @@ Scope *string
 
 The scope of the account in New Relic.  Valid values are "global" and "in_region".  Defaults to "in_region".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/data-sources/account#scope DataNewrelicAccount#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/data-sources/account#scope DataNewrelicAccount#scope}
 
 ---
 

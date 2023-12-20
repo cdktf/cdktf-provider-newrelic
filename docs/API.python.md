@@ -37,6 +37,7 @@ The following submodules are available:
 - [infraAlertCondition](./infraAlertCondition.python.md)
 - [insightsEvent](./insightsEvent.python.md)
 - [logParsingRule](./logParsingRule.python.md)
+- [monitorDowntime](./monitorDowntime.python.md)
 - [notificationChannel](./notificationChannel.python.md)
 - [notificationDestination](./notificationDestination.python.md)
 - [nrqlAlertCondition](./nrqlAlertCondition.python.md)

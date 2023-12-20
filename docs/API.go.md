@@ -37,6 +37,7 @@ The following submodules are available:
 - [infraAlertCondition](./infraAlertCondition.go.md)
 - [insightsEvent](./insightsEvent.go.md)
 - [logParsingRule](./logParsingRule.go.md)
+- [monitorDowntime](./monitorDowntime.go.md)
 - [notificationChannel](./notificationChannel.go.md)
 - [notificationDestination](./notificationDestination.go.md)
 - [nrqlAlertCondition](./nrqlAlertCondition.go.md)

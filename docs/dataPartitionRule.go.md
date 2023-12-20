@@ -4,12 +4,12 @@
 
 ### DataPartitionRule <a name="DataPartitionRule" id="@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/data_partition_rule newrelic_data_partition_rule}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/data_partition_rule newrelic_data_partition_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datapartitionrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datapartitionrule"
 
 datapartitionrule.NewDataPartitionRule(scope Construct, id *string, config DataPartitionRuleConfig) DataPartitionRule
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datapartitionrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datapartitionrule"
 
 datapartitionrule.DataPartitionRule_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datapartitionrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datapartitionrule"
 
 datapartitionrule.DataPartitionRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ datapartitionrule.DataPartitionRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datapartitionrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datapartitionrule"
 
 datapartitionrule.DataPartitionRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ datapartitionrule.DataPartitionRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datapartitionrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datapartitionrule"
 
 datapartitionrule.DataPartitionRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the DataPartitionRule to impor
 
 The id of the existing DataPartitionRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/data_partition_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/data_partition_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datapartitionrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datapartitionrule"
 
 &datapartitionrule.DataPartitionRuleConfig {
 	Connection: interface{},
@@ -905,7 +905,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datapartitionru
 	AccountId: *f64,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.dataPartitionRule.DataPartitionRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.dataPartitionRule.DataPartitionRuleTimeouts,
 }
 ```
 
@@ -926,7 +926,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datapartitionru
 | <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleConfig.property.targetDataPartition">TargetDataPartition</a></code> | <code>*string</code> | The name of the data partition where logs will be allocated once the rule is enabled. |
 | <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The account id associated with the data partition rule. |
 | <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleConfig.property.description">Description</a></code> | <code>*string</code> | The description of the data partition rule. |
-| <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/data_partition_rule#id DataPartitionRule#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/data_partition_rule#id DataPartitionRule#id}. |
 | <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleTimeouts">DataPartitionRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1011,7 +1011,7 @@ Enabled interface{}
 
 Whether or not this data partition rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/data_partition_rule#enabled DataPartitionRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/data_partition_rule#enabled DataPartitionRule#enabled}
 
 ---
 
@@ -1027,7 +1027,7 @@ The NRQL to match events for this data partition rule.
 
 Logs matching this criteria will be routed to the specified data partition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/data_partition_rule#nrql DataPartitionRule#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/data_partition_rule#nrql DataPartitionRule#nrql}
 
 ---
 
@@ -1041,7 +1041,7 @@ RetentionPolicy *string
 
 The retention policy of the data partition data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/data_partition_rule#retention_policy DataPartitionRule#retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/data_partition_rule#retention_policy DataPartitionRule#retention_policy}
 
 ---
 
@@ -1055,7 +1055,7 @@ TargetDataPartition *string
 
 The name of the data partition where logs will be allocated once the rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/data_partition_rule#target_data_partition DataPartitionRule#target_data_partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/data_partition_rule#target_data_partition DataPartitionRule#target_data_partition}
 
 ---
 
@@ -1069,7 +1069,7 @@ AccountId *f64
 
 The account id associated with the data partition rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/data_partition_rule#account_id DataPartitionRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/data_partition_rule#account_id DataPartitionRule#account_id}
 
 ---
 
@@ -1083,7 +1083,7 @@ Description *string
 
 The description of the data partition rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/data_partition_rule#description DataPartitionRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/data_partition_rule#description DataPartitionRule#description}
 
 ---
 
@@ -1095,7 +1095,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/data_partition_rule#id DataPartitionRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/data_partition_rule#id DataPartitionRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1112,7 +1112,7 @@ Timeouts DataPartitionRuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/data_partition_rule#timeouts DataPartitionRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/data_partition_rule#timeouts DataPartitionRule#timeouts}
 
 ---
 
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datapartitionrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datapartitionrule"
 
 &datapartitionrule.DataPartitionRuleTimeouts {
 	Create: *string,
@@ -1132,7 +1132,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datapartitionru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/data_partition_rule#create DataPartitionRule#create}. |
+| <code><a href="#@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/data_partition_rule#create DataPartitionRule#create}. |
 
 ---
 
@@ -1144,7 +1144,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/data_partition_rule#create DataPartitionRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/data_partition_rule#create DataPartitionRule#create}.
 
 ---
 
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataPartitionRule.DataPartitionRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datapartitionrule"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datapartitionrule"
 
 datapartitionrule.NewDataPartitionRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataPartitionRuleTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### Workload <a name="Workload" id="@cdktf/provider-newrelic.workload.Workload"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload newrelic_workload}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload newrelic_workload}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.workload.Workload.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 workload.NewWorkload(scope Construct, id *string, config WorkloadConfig) Workload
 ```
@@ -466,7 +466,7 @@ func ResetStatusConfigStatic()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.workload.Workload.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 workload.Workload_IsConstruct(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.workload.Workload.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 workload.Workload_IsTerraformElement(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ workload.Workload_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.workload.Workload.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 workload.Workload_IsTerraformResource(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ workload.Workload_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.workload.Workload.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 workload.Workload_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -555,7 +555,7 @@ The construct id used in the generated config for the Workload to import.
 
 The id of the existing Workload that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -997,7 +997,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.workload.WorkloadConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 &workload.WorkloadConfig {
 	Connection: interface{},
@@ -1014,8 +1014,8 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
 	EntitySearchQuery: interface{},
 	Id: *string,
 	ScopeAccountIds: *[]*f64,
-	StatusConfigAutomatic: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.workload.WorkloadStatusConfigAutomatic,
-	StatusConfigStatic: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.workload.WorkloadStatusConfigStatic,
+	StatusConfigAutomatic: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.workload.WorkloadStatusConfigAutomatic,
+	StatusConfigStatic: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.workload.WorkloadStatusConfigStatic,
 }
 ```
 
@@ -1035,7 +1035,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.description">Description</a></code> | <code>*string</code> | Relevant information about the workload. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.entityGuids">EntityGuids</a></code> | <code>*[]*string</code> | A list of entity GUIDs manually assigned to this workload. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.entitySearchQuery">EntitySearchQuery</a></code> | <code>interface{}</code> | entity_search_query block. |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#id Workload#id}. |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#id Workload#id}. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.scopeAccountIds">ScopeAccountIds</a></code> | <code>*[]*f64</code> | A list of account IDs that will be used to get entities from. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.statusConfigAutomatic">StatusConfigAutomatic</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomatic">WorkloadStatusConfigAutomatic</a></code> | status_config_automatic block. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.statusConfigStatic">StatusConfigStatic</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStatic">WorkloadStatusConfigStatic</a></code> | status_config_static block. |
@@ -1122,7 +1122,7 @@ Name *string
 
 The workload's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#name Workload#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#name Workload#name}
 
 ---
 
@@ -1136,7 +1136,7 @@ AccountId *f64
 
 The New Relic account ID where you want to create the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#account_id Workload#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#account_id Workload#account_id}
 
 ---
 
@@ -1150,7 +1150,7 @@ Description *string
 
 Relevant information about the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#description Workload#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#description Workload#description}
 
 ---
 
@@ -1164,7 +1164,7 @@ EntityGuids *[]*string
 
 A list of entity GUIDs manually assigned to this workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#entity_guids Workload#entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#entity_guids Workload#entity_guids}
 
 ---
 
@@ -1178,7 +1178,7 @@ EntitySearchQuery interface{}
 
 entity_search_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#entity_search_query Workload#entity_search_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#entity_search_query Workload#entity_search_query}
 
 ---
 
@@ -1190,7 +1190,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#id Workload#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#id Workload#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1207,7 +1207,7 @@ ScopeAccountIds *[]*f64
 
 A list of account IDs that will be used to get entities from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#scope_account_ids Workload#scope_account_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#scope_account_ids Workload#scope_account_ids}
 
 ---
 
@@ -1221,7 +1221,7 @@ StatusConfigAutomatic WorkloadStatusConfigAutomatic
 
 status_config_automatic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#status_config_automatic Workload#status_config_automatic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#status_config_automatic Workload#status_config_automatic}
 
 ---
 
@@ -1235,7 +1235,7 @@ StatusConfigStatic WorkloadStatusConfigStatic
 
 status_config_static block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#status_config_static Workload#status_config_static}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#status_config_static Workload#status_config_static}
 
 ---
 
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 &workload.WorkloadEntitySearchQuery {
 	Query: *string,
@@ -1269,7 +1269,7 @@ Query *string
 
 The query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#query Workload#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#query Workload#query}
 
 ---
 
@@ -1278,11 +1278,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomatic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 &workload.WorkloadStatusConfigAutomatic {
 	Enabled: interface{},
-	RemainingEntitiesRule: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRule,
+	RemainingEntitiesRule: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRule,
 	Rule: interface{},
 }
 ```
@@ -1307,7 +1307,7 @@ Enabled interface{}
 
 Whether the automatic status configuration is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#enabled Workload#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#enabled Workload#enabled}
 
 ---
 
@@ -1321,7 +1321,7 @@ RemainingEntitiesRule WorkloadStatusConfigAutomaticRemainingEntitiesRule
 
 remaining_entities_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#remaining_entities_rule Workload#remaining_entities_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#remaining_entities_rule Workload#remaining_entities_rule}
 
 ---
 
@@ -1335,7 +1335,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#rule Workload#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#rule Workload#rule}
 
 ---
 
@@ -1344,10 +1344,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 &workload.WorkloadStatusConfigAutomaticRemainingEntitiesRule {
-	RemainingEntitiesRuleRollup: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollup,
+	RemainingEntitiesRuleRollup: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollup,
 }
 ```
 
@@ -1369,7 +1369,7 @@ RemainingEntitiesRuleRollup WorkloadStatusConfigAutomaticRemainingEntitiesRuleRe
 
 remaining_entities_rule_rollup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#remaining_entities_rule_rollup Workload#remaining_entities_rule_rollup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#remaining_entities_rule_rollup Workload#remaining_entities_rule_rollup}
 
 ---
 
@@ -1378,7 +1378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 &workload.WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollup {
 	GroupBy: *string,
@@ -1409,7 +1409,7 @@ GroupBy *string
 
 The grouping to be applied to the remaining entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#group_by Workload#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#group_by Workload#group_by}
 
 ---
 
@@ -1423,7 +1423,7 @@ Strategy *string
 
 The rollup strategy that is applied to a group of entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#strategy Workload#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#strategy Workload#strategy}
 
 ---
 
@@ -1439,7 +1439,7 @@ Type of threshold defined for the rule.
 
 This is an optional field that only applies when strategy is WORST_STATUS_WINS. Use a threshold to roll up the worst status only after a certain amount of entities are not operational.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#threshold_type Workload#threshold_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#threshold_type Workload#threshold_type}
 
 ---
 
@@ -1455,7 +1455,7 @@ Threshold value defined for the rule.
 
 This optional field is used in combination with thresholdType. If the threshold type is null, the threshold value will be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#threshold_value Workload#threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#threshold_value Workload#threshold_value}
 
 ---
 
@@ -1464,10 +1464,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 &workload.WorkloadStatusConfigAutomaticRule {
-	Rollup: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.workload.WorkloadStatusConfigAutomaticRuleRollup,
+	Rollup: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.workload.WorkloadStatusConfigAutomaticRuleRollup,
 	EntityGuids: *[]*string,
 	NrqlQuery: interface{},
 }
@@ -1493,7 +1493,7 @@ Rollup WorkloadStatusConfigAutomaticRuleRollup
 
 rollup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#rollup Workload#rollup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#rollup Workload#rollup}
 
 ---
 
@@ -1507,7 +1507,7 @@ EntityGuids *[]*string
 
 A list of entity GUIDs composing the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#entity_guids Workload#entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#entity_guids Workload#entity_guids}
 
 ---
 
@@ -1521,7 +1521,7 @@ NrqlQuery interface{}
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#nrql_query Workload#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#nrql_query Workload#nrql_query}
 
 ---
 
@@ -1530,7 +1530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 &workload.WorkloadStatusConfigAutomaticRuleNrqlQuery {
 	Query: *string,
@@ -1555,7 +1555,7 @@ Query *string
 
 The entity search query that is used to perform the search of a group of entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#query Workload#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#query Workload#query}
 
 ---
 
@@ -1564,7 +1564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleRollup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 &workload.WorkloadStatusConfigAutomaticRuleRollup {
 	Strategy: *string,
@@ -1593,7 +1593,7 @@ Strategy *string
 
 The rollup strategy that is applied to a group of entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#strategy Workload#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#strategy Workload#strategy}
 
 ---
 
@@ -1609,7 +1609,7 @@ Type of threshold defined for the rule.
 
 This is an optional field that only applies when strategy is WORST_STATUS_WINS. Use a threshold to roll up the worst status only after a certain amount of entities are not operational.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#threshold_type Workload#threshold_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#threshold_type Workload#threshold_type}
 
 ---
 
@@ -1625,7 +1625,7 @@ Threshold value defined for the rule.
 
 This optional field is used in combination with thresholdType. If the threshold type is null, the threshold value will be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#threshold_value Workload#threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#threshold_value Workload#threshold_value}
 
 ---
 
@@ -1634,7 +1634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigStatic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 &workload.WorkloadStatusConfigStatic {
 	Enabled: interface{},
@@ -1665,7 +1665,7 @@ Enabled interface{}
 
 Whether the static status configuration is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#enabled Workload#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#enabled Workload#enabled}
 
 ---
 
@@ -1679,7 +1679,7 @@ Status *string
 
 The status of the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#status Workload#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#status Workload#status}
 
 ---
 
@@ -1693,7 +1693,7 @@ Description *string
 
 A description that provides additional details about the status of the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#description Workload#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#description Workload#description}
 
 ---
 
@@ -1707,7 +1707,7 @@ Summary *string
 
 A short description of the status of the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#summary Workload#summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#summary Workload#summary}
 
 ---
 
@@ -1718,7 +1718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.workload.WorkloadEntitySearchQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 workload.NewWorkloadEntitySearchQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkloadEntitySearchQueryList
 ```
@@ -1861,7 +1861,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.workload.WorkloadEntitySearchQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 workload.NewWorkloadEntitySearchQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkloadEntitySearchQueryOutputReference
 ```
@@ -2150,7 +2150,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 workload.NewWorkloadStatusConfigAutomaticOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadStatusConfigAutomaticOutputReference
 ```
@@ -2505,7 +2505,7 @@ func InternalValue() WorkloadStatusConfigAutomatic
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 workload.NewWorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference
 ```
@@ -2789,7 +2789,7 @@ func InternalValue() WorkloadStatusConfigAutomaticRemainingEntitiesRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 workload.NewWorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupOutputReference
 ```
@@ -3140,7 +3140,7 @@ func InternalValue() WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemaining
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 workload.NewWorkloadStatusConfigAutomaticRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkloadStatusConfigAutomaticRuleList
 ```
@@ -3283,7 +3283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 workload.NewWorkloadStatusConfigAutomaticRuleNrqlQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkloadStatusConfigAutomaticRuleNrqlQueryList
 ```
@@ -3426,7 +3426,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 workload.NewWorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference
 ```
@@ -3715,7 +3715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 workload.NewWorkloadStatusConfigAutomaticRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkloadStatusConfigAutomaticRuleOutputReference
 ```
@@ -4088,7 +4088,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleRollupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 workload.NewWorkloadStatusConfigAutomaticRuleRollupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadStatusConfigAutomaticRuleRollupOutputReference
 ```
@@ -4417,7 +4417,7 @@ func InternalValue() WorkloadStatusConfigAutomaticRuleRollup
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/workload"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/workload"
 
 workload.NewWorkloadStatusConfigStaticOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadStatusConfigStaticOutputReference
 ```
