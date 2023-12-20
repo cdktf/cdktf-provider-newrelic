@@ -37,6 +37,7 @@ The following submodules are available:
 - [infraAlertCondition](./infraAlertCondition.typescript.md)
 - [insightsEvent](./insightsEvent.typescript.md)
 - [logParsingRule](./logParsingRule.typescript.md)
+- [monitorDowntime](./monitorDowntime.typescript.md)
 - [notificationChannel](./notificationChannel.typescript.md)
 - [notificationDestination](./notificationDestination.typescript.md)
 - [nrqlAlertCondition](./nrqlAlertCondition.typescript.md)

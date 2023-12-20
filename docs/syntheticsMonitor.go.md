@@ -4,7 +4,7 @@
 
 ### SyntheticsMonitor <a name="SyntheticsMonitor" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor newrelic_synthetics_monitor}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor newrelic_synthetics_monitor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer"></a>
 
@@ -612,7 +612,7 @@ The construct id used in the generated config for the SyntheticsMonitor to impor
 
 The id of the existing SyntheticsMonitor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1339,7 +1339,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsmonit
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.deviceOrientation">DeviceOrientation</a></code> | <code>*string</code> | The device orientation the user would like to represent. Valid values are LANDSCAPE, PORTRAIT, or NONE. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.deviceType">DeviceType</a></code> | <code>*string</code> | The device type that a user can select. Valid values are MOBILE, TABLET, or NONE. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.enableScreenshotOnFailureAndScript">EnableScreenshotOnFailureAndScript</a></code> | <code>interface{}</code> | Capture a screenshot during job execution. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#id SyntheticsMonitor#id}. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#id SyntheticsMonitor#id}. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.locationsPrivate">LocationsPrivate</a></code> | <code>*[]*string</code> | The locations in which this monitor should be run. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.locationsPublic">LocationsPublic</a></code> | <code>*[]*string</code> | The locations in which this monitor should be run. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.period">Period</a></code> | <code>*string</code> | The interval at which this monitor should run. |
@@ -1434,7 +1434,7 @@ Name *string
 
 The title of this monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#name SyntheticsMonitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#name SyntheticsMonitor#name}
 
 ---
 
@@ -1448,7 +1448,7 @@ Status *string
 
 The monitor status (i.e. ENABLED, MUTED, DISABLED). Note: The 'MUTED' status is now deprecated, and support for this value will soon be removed from the Terraform Provider in an upcoming release. It is highly recommended for users to refrain from using this value and shift to alternatives.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#status SyntheticsMonitor#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#status SyntheticsMonitor#status}
 
 ---
 
@@ -1462,7 +1462,7 @@ Type *string
 
 The monitor type. Valid values are SIMPLE AND BROWSER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#type SyntheticsMonitor#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#type SyntheticsMonitor#type}
 
 ---
 
@@ -1476,7 +1476,7 @@ AccountId *f64
 
 ID of the newrelic account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#account_id SyntheticsMonitor#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#account_id SyntheticsMonitor#account_id}
 
 ---
 
@@ -1490,7 +1490,7 @@ BypassHeadRequest interface{}
 
 Bypass HEAD request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#bypass_head_request SyntheticsMonitor#bypass_head_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#bypass_head_request SyntheticsMonitor#bypass_head_request}
 
 ---
 
@@ -1504,7 +1504,7 @@ CustomHeader interface{}
 
 custom_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#custom_header SyntheticsMonitor#custom_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#custom_header SyntheticsMonitor#custom_header}
 
 ---
 
@@ -1518,7 +1518,7 @@ DeviceOrientation *string
 
 The device orientation the user would like to represent. Valid values are LANDSCAPE, PORTRAIT, or NONE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#device_orientation SyntheticsMonitor#device_orientation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#device_orientation SyntheticsMonitor#device_orientation}
 
 ---
 
@@ -1532,7 +1532,7 @@ DeviceType *string
 
 The device type that a user can select. Valid values are MOBILE, TABLET, or NONE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#device_type SyntheticsMonitor#device_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#device_type SyntheticsMonitor#device_type}
 
 ---
 
@@ -1546,7 +1546,7 @@ EnableScreenshotOnFailureAndScript interface{}
 
 Capture a screenshot during job execution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#enable_screenshot_on_failure_and_script SyntheticsMonitor#enable_screenshot_on_failure_and_script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#enable_screenshot_on_failure_and_script SyntheticsMonitor#enable_screenshot_on_failure_and_script}
 
 ---
 
@@ -1558,7 +1558,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#id SyntheticsMonitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#id SyntheticsMonitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1575,7 +1575,7 @@ LocationsPrivate *[]*string
 
 The locations in which this monitor should be run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#locations_private SyntheticsMonitor#locations_private}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#locations_private SyntheticsMonitor#locations_private}
 
 ---
 
@@ -1589,7 +1589,7 @@ LocationsPublic *[]*string
 
 The locations in which this monitor should be run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#locations_public SyntheticsMonitor#locations_public}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#locations_public SyntheticsMonitor#locations_public}
 
 ---
 
@@ -1605,7 +1605,7 @@ The interval at which this monitor should run.
 
 Valid values are EVERY_MINUTE, EVERY_5_MINUTES, EVERY_10_MINUTES, EVERY_15_MINUTES, EVERY_30_MINUTES, EVERY_HOUR, EVERY_6_HOURS, EVERY_12_HOURS, or EVERY_DAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#period SyntheticsMonitor#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#period SyntheticsMonitor#period}
 
 ---
 
@@ -1619,7 +1619,7 @@ RuntimeType *string
 
 The runtime type that the monitor will run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#runtime_type SyntheticsMonitor#runtime_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#runtime_type SyntheticsMonitor#runtime_type}
 
 ---
 
@@ -1633,7 +1633,7 @@ RuntimeTypeVersion *string
 
 The specific version of the runtime type selected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#runtime_type_version SyntheticsMonitor#runtime_type_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#runtime_type_version SyntheticsMonitor#runtime_type_version}
 
 ---
 
@@ -1647,7 +1647,7 @@ ScriptLanguage *string
 
 The programing language that should execute the script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#script_language SyntheticsMonitor#script_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#script_language SyntheticsMonitor#script_language}
 
 ---
 
@@ -1661,7 +1661,7 @@ Tag interface{}
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#tag SyntheticsMonitor#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#tag SyntheticsMonitor#tag}
 
 ---
 
@@ -1675,7 +1675,7 @@ TreatRedirectAsFailure interface{}
 
 Fail the monitor check if redirected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#treat_redirect_as_failure SyntheticsMonitor#treat_redirect_as_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#treat_redirect_as_failure SyntheticsMonitor#treat_redirect_as_failure}
 
 ---
 
@@ -1689,7 +1689,7 @@ Uri *string
 
 The URI for the monitor to hit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#uri SyntheticsMonitor#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#uri SyntheticsMonitor#uri}
 
 ---
 
@@ -1703,7 +1703,7 @@ ValidationString *string
 
 The string to validate against in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#validation_string SyntheticsMonitor#validation_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#validation_string SyntheticsMonitor#validation_string}
 
 ---
 
@@ -1717,7 +1717,7 @@ VerifySsl interface{}
 
 Verify SSL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#verify_ssl SyntheticsMonitor#verify_ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#verify_ssl SyntheticsMonitor#verify_ssl}
 
 ---
 
@@ -1753,7 +1753,7 @@ Name *string
 
 Header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#name SyntheticsMonitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#name SyntheticsMonitor#name}
 
 ---
 
@@ -1767,7 +1767,7 @@ Value *string
 
 Header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#value SyntheticsMonitor#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#value SyntheticsMonitor#value}
 
 ---
 
@@ -1803,7 +1803,7 @@ Key *string
 
 Name of the tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#key SyntheticsMonitor#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#key SyntheticsMonitor#key}
 
 ---
 
@@ -1817,7 +1817,7 @@ Values *[]*string
 
 Values associated with the tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_monitor#values SyntheticsMonitor#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_monitor#values SyntheticsMonitor#values}
 
 ---
 

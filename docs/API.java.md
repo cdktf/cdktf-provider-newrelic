@@ -37,6 +37,7 @@ The following submodules are available:
 - [infraAlertCondition](./infraAlertCondition.java.md)
 - [insightsEvent](./insightsEvent.java.md)
 - [logParsingRule](./logParsingRule.java.md)
+- [monitorDowntime](./monitorDowntime.java.md)
 - [notificationChannel](./notificationChannel.java.md)
 - [notificationDestination](./notificationDestination.java.md)
 - [nrqlAlertCondition](./nrqlAlertCondition.java.md)

@@ -27,6 +27,7 @@ export * as eventsToMetricsRule from './events-to-metrics-rule';
 export * as infraAlertCondition from './infra-alert-condition';
 export * as insightsEvent from './insights-event';
 export * as logParsingRule from './log-parsing-rule';
+export * as monitorDowntime from './monitor-downtime';
 export * as notificationChannel from './notification-channel';
 export * as notificationDestination from './notification-destination';
 export * as nrqlAlertCondition from './nrql-alert-condition';

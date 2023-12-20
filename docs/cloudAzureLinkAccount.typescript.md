@@ -4,7 +4,7 @@
 
 ### CloudAzureLinkAccount <a name="CloudAzureLinkAccount" id="@cdktf/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_link_account newrelic_cloud_azure_link_account}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/cloud_azure_link_account newrelic_cloud_azure_link_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccount.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the CloudAzureLinkAccount to i
 
 The id of the existing CloudAzureLinkAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_link_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/cloud_azure_link_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -850,7 +850,7 @@ const cloudAzureLinkAccountConfig: cloudAzureLinkAccount.CloudAzureLinkAccountCo
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccountConfig.property.subscriptionId">subscriptionId</a></code> | <code>string</code> | Subscription ID for the Azure account. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccountConfig.property.tenantId">tenantId</a></code> | <code>string</code> | Tenant ID for the Azure account. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccountConfig.property.accountId">accountId</a></code> | <code>number</code> | The New Relic account ID where you want to link the Azure account. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_link_account#id CloudAzureLinkAccount#id}. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAzureLinkAccount.CloudAzureLinkAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/cloud_azure_link_account#id CloudAzureLinkAccount#id}. |
 
 ---
 
@@ -934,7 +934,7 @@ public readonly applicationId: string;
 
 Application ID for Azure account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_link_account#application_id CloudAzureLinkAccount#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/cloud_azure_link_account#application_id CloudAzureLinkAccount#application_id}
 
 ---
 
@@ -948,7 +948,7 @@ public readonly clientSecret: string;
 
 Value of the client secret from Azure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_link_account#client_secret CloudAzureLinkAccount#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/cloud_azure_link_account#client_secret CloudAzureLinkAccount#client_secret}
 
 ---
 
@@ -962,7 +962,7 @@ public readonly name: string;
 
 Name of the linked account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_link_account#name CloudAzureLinkAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/cloud_azure_link_account#name CloudAzureLinkAccount#name}
 
 ---
 
@@ -976,7 +976,7 @@ public readonly subscriptionId: string;
 
 Subscription ID for the Azure account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_link_account#subscription_id CloudAzureLinkAccount#subscription_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/cloud_azure_link_account#subscription_id CloudAzureLinkAccount#subscription_id}
 
 ---
 
@@ -990,7 +990,7 @@ public readonly tenantId: string;
 
 Tenant ID for the Azure account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_link_account#tenant_id CloudAzureLinkAccount#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/cloud_azure_link_account#tenant_id CloudAzureLinkAccount#tenant_id}
 
 ---
 
@@ -1004,7 +1004,7 @@ public readonly accountId: number;
 
 The New Relic account ID where you want to link the Azure account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_link_account#account_id CloudAzureLinkAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/cloud_azure_link_account#account_id CloudAzureLinkAccount#account_id}
 
 ---
 
@@ -1016,7 +1016,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_azure_link_account#id CloudAzureLinkAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/cloud_azure_link_account#id CloudAzureLinkAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

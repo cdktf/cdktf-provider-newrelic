@@ -27,6 +27,7 @@ Object.defineProperty(exports, 'eventsToMetricsRule', { get: function () { retur
 Object.defineProperty(exports, 'infraAlertCondition', { get: function () { return require('./infra-alert-condition'); } });
 Object.defineProperty(exports, 'insightsEvent', { get: function () { return require('./insights-event'); } });
 Object.defineProperty(exports, 'logParsingRule', { get: function () { return require('./log-parsing-rule'); } });
+Object.defineProperty(exports, 'monitorDowntime', { get: function () { return require('./monitor-downtime'); } });
 Object.defineProperty(exports, 'notificationChannel', { get: function () { return require('./notification-channel'); } });
 Object.defineProperty(exports, 'notificationDestination', { get: function () { return require('./notification-destination'); } });
 Object.defineProperty(exports, 'nrqlAlertCondition', { get: function () { return require('./nrql-alert-condition'); } });

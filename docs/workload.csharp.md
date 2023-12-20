@@ -4,7 +4,7 @@
 
 ### Workload <a name="Workload" id="@cdktf/provider-newrelic.workload.Workload"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload newrelic_workload}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload newrelic_workload}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.workload.Workload.Initializer"></a>
 
@@ -555,7 +555,7 @@ The construct id used in the generated config for the Workload to import.
 
 The id of the existing Workload that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1035,7 +1035,7 @@ new WorkloadConfig {
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.description">Description</a></code> | <code>string</code> | Relevant information about the workload. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.entityGuids">EntityGuids</a></code> | <code>string[]</code> | A list of entity GUIDs manually assigned to this workload. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.entitySearchQuery">EntitySearchQuery</a></code> | <code>object</code> | entity_search_query block. |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#id Workload#id}. |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#id Workload#id}. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.scopeAccountIds">ScopeAccountIds</a></code> | <code>double[]</code> | A list of account IDs that will be used to get entities from. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.statusConfigAutomatic">StatusConfigAutomatic</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomatic">WorkloadStatusConfigAutomatic</a></code> | status_config_automatic block. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.statusConfigStatic">StatusConfigStatic</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStatic">WorkloadStatusConfigStatic</a></code> | status_config_static block. |
@@ -1122,7 +1122,7 @@ public string Name { get; set; }
 
 The workload's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#name Workload#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#name Workload#name}
 
 ---
 
@@ -1136,7 +1136,7 @@ public double AccountId { get; set; }
 
 The New Relic account ID where you want to create the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#account_id Workload#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#account_id Workload#account_id}
 
 ---
 
@@ -1150,7 +1150,7 @@ public string Description { get; set; }
 
 Relevant information about the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#description Workload#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#description Workload#description}
 
 ---
 
@@ -1164,7 +1164,7 @@ public string[] EntityGuids { get; set; }
 
 A list of entity GUIDs manually assigned to this workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#entity_guids Workload#entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#entity_guids Workload#entity_guids}
 
 ---
 
@@ -1178,7 +1178,7 @@ public object EntitySearchQuery { get; set; }
 
 entity_search_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#entity_search_query Workload#entity_search_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#entity_search_query Workload#entity_search_query}
 
 ---
 
@@ -1190,7 +1190,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#id Workload#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#id Workload#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1207,7 +1207,7 @@ public double[] ScopeAccountIds { get; set; }
 
 A list of account IDs that will be used to get entities from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#scope_account_ids Workload#scope_account_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#scope_account_ids Workload#scope_account_ids}
 
 ---
 
@@ -1221,7 +1221,7 @@ public WorkloadStatusConfigAutomatic StatusConfigAutomatic { get; set; }
 
 status_config_automatic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#status_config_automatic Workload#status_config_automatic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#status_config_automatic Workload#status_config_automatic}
 
 ---
 
@@ -1235,7 +1235,7 @@ public WorkloadStatusConfigStatic StatusConfigStatic { get; set; }
 
 status_config_static block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#status_config_static Workload#status_config_static}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#status_config_static Workload#status_config_static}
 
 ---
 
@@ -1269,7 +1269,7 @@ public string Query { get; set; }
 
 The query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#query Workload#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#query Workload#query}
 
 ---
 
@@ -1307,7 +1307,7 @@ public object Enabled { get; set; }
 
 Whether the automatic status configuration is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#enabled Workload#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#enabled Workload#enabled}
 
 ---
 
@@ -1321,7 +1321,7 @@ public WorkloadStatusConfigAutomaticRemainingEntitiesRule RemainingEntitiesRule 
 
 remaining_entities_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#remaining_entities_rule Workload#remaining_entities_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#remaining_entities_rule Workload#remaining_entities_rule}
 
 ---
 
@@ -1335,7 +1335,7 @@ public object Rule { get; set; }
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#rule Workload#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#rule Workload#rule}
 
 ---
 
@@ -1369,7 +1369,7 @@ public WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRo
 
 remaining_entities_rule_rollup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#remaining_entities_rule_rollup Workload#remaining_entities_rule_rollup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#remaining_entities_rule_rollup Workload#remaining_entities_rule_rollup}
 
 ---
 
@@ -1409,7 +1409,7 @@ public string GroupBy { get; set; }
 
 The grouping to be applied to the remaining entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#group_by Workload#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#group_by Workload#group_by}
 
 ---
 
@@ -1423,7 +1423,7 @@ public string Strategy { get; set; }
 
 The rollup strategy that is applied to a group of entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#strategy Workload#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#strategy Workload#strategy}
 
 ---
 
@@ -1439,7 +1439,7 @@ Type of threshold defined for the rule.
 
 This is an optional field that only applies when strategy is WORST_STATUS_WINS. Use a threshold to roll up the worst status only after a certain amount of entities are not operational.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#threshold_type Workload#threshold_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#threshold_type Workload#threshold_type}
 
 ---
 
@@ -1455,7 +1455,7 @@ Threshold value defined for the rule.
 
 This optional field is used in combination with thresholdType. If the threshold type is null, the threshold value will be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#threshold_value Workload#threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#threshold_value Workload#threshold_value}
 
 ---
 
@@ -1493,7 +1493,7 @@ public WorkloadStatusConfigAutomaticRuleRollup Rollup { get; set; }
 
 rollup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#rollup Workload#rollup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#rollup Workload#rollup}
 
 ---
 
@@ -1507,7 +1507,7 @@ public string[] EntityGuids { get; set; }
 
 A list of entity GUIDs composing the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#entity_guids Workload#entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#entity_guids Workload#entity_guids}
 
 ---
 
@@ -1521,7 +1521,7 @@ public object NrqlQuery { get; set; }
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#nrql_query Workload#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#nrql_query Workload#nrql_query}
 
 ---
 
@@ -1555,7 +1555,7 @@ public string Query { get; set; }
 
 The entity search query that is used to perform the search of a group of entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#query Workload#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#query Workload#query}
 
 ---
 
@@ -1593,7 +1593,7 @@ public string Strategy { get; set; }
 
 The rollup strategy that is applied to a group of entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#strategy Workload#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#strategy Workload#strategy}
 
 ---
 
@@ -1609,7 +1609,7 @@ Type of threshold defined for the rule.
 
 This is an optional field that only applies when strategy is WORST_STATUS_WINS. Use a threshold to roll up the worst status only after a certain amount of entities are not operational.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#threshold_type Workload#threshold_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#threshold_type Workload#threshold_type}
 
 ---
 
@@ -1625,7 +1625,7 @@ Threshold value defined for the rule.
 
 This optional field is used in combination with thresholdType. If the threshold type is null, the threshold value will be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#threshold_value Workload#threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#threshold_value Workload#threshold_value}
 
 ---
 
@@ -1665,7 +1665,7 @@ public object Enabled { get; set; }
 
 Whether the static status configuration is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#enabled Workload#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#enabled Workload#enabled}
 
 ---
 
@@ -1679,7 +1679,7 @@ public string Status { get; set; }
 
 The status of the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#status Workload#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#status Workload#status}
 
 ---
 
@@ -1693,7 +1693,7 @@ public string Description { get; set; }
 
 A description that provides additional details about the status of the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#description Workload#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#description Workload#description}
 
 ---
 
@@ -1707,7 +1707,7 @@ public string Summary { get; set; }
 
 A short description of the status of the workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload#summary Workload#summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload#summary Workload#summary}
 
 ---
 
