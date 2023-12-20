@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 servicelevel.NewServiceLevel(scope Construct, id *string, config ServiceLevelConfig) ServiceLevel
 ```
@@ -411,7 +411,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 servicelevel.ServiceLevel_IsConstruct(x interface{}) *bool
 ```
@@ -443,7 +443,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 servicelevel.ServiceLevel_IsTerraformElement(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ servicelevel.ServiceLevel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 servicelevel.ServiceLevel_IsTerraformResource(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ servicelevel.ServiceLevel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 servicelevel.ServiceLevel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -854,7 +854,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 &servicelevel.ServiceLevelConfig {
 	Connection: interface{},
@@ -864,10 +864,10 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Events: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelEvents,
+	Events: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.serviceLevel.ServiceLevelEvents,
 	Guid: *string,
 	Name: *string,
-	Objective: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelObjective,
+	Objective: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.serviceLevel.ServiceLevelObjective,
 	Description: *string,
 	Id: *string,
 }
@@ -1047,13 +1047,13 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 &servicelevel.ServiceLevelEvents {
 	AccountId: *f64,
-	ValidEvents: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelEventsValidEvents,
-	BadEvents: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelEventsBadEvents,
-	GoodEvents: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelEventsGoodEvents,
+	ValidEvents: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.serviceLevel.ServiceLevelEventsValidEvents,
+	BadEvents: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.serviceLevel.ServiceLevelEventsBadEvents,
+	GoodEvents: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.serviceLevel.ServiceLevelEventsGoodEvents,
 }
 ```
 
@@ -1127,11 +1127,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 &servicelevel.ServiceLevelEventsBadEvents {
 	From: *string,
-	Select: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect,
+	Select: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.serviceLevel.ServiceLevelEventsBadEventsSelect,
 	Where: *string,
 }
 ```
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 &servicelevel.ServiceLevelEventsBadEventsSelect {
 	Function: *string,
@@ -1251,11 +1251,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 &servicelevel.ServiceLevelEventsGoodEvents {
 	From: *string,
-	Select: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect,
+	Select: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.serviceLevel.ServiceLevelEventsGoodEventsSelect,
 	Where: *string,
 }
 ```
@@ -1313,7 +1313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 &servicelevel.ServiceLevelEventsGoodEventsSelect {
 	Function: *string,
@@ -1375,11 +1375,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 &servicelevel.ServiceLevelEventsValidEvents {
 	From: *string,
-	Select: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect,
+	Select: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.serviceLevel.ServiceLevelEventsValidEventsSelect,
 	Where: *string,
 }
 ```
@@ -1437,7 +1437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 &servicelevel.ServiceLevelEventsValidEventsSelect {
 	Function: *string,
@@ -1499,11 +1499,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelObjective.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 &servicelevel.ServiceLevelObjective {
 	Target: *f64,
-	TimeWindow: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelObjectiveTimeWindow,
+	TimeWindow: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.serviceLevel.ServiceLevelObjectiveTimeWindow,
 	Description: *string,
 	Name: *string,
 }
@@ -1575,10 +1575,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelObjectiveTimeWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 &servicelevel.ServiceLevelObjectiveTimeWindow {
-	Rolling: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.serviceLevel.ServiceLevelObjectiveTimeWindowRolling,
+	Rolling: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.serviceLevel.ServiceLevelObjectiveTimeWindowRolling,
 }
 ```
 
@@ -1609,7 +1609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelObjectiveTimeWindowRolling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 &servicelevel.ServiceLevelObjectiveTimeWindowRolling {
 	Count: *f64,
@@ -1657,7 +1657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 servicelevel.NewServiceLevelEventsBadEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelEventsBadEventsOutputReference
 ```
@@ -1999,7 +1999,7 @@ func InternalValue() ServiceLevelEventsBadEvents
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsBadEventsSelectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 servicelevel.NewServiceLevelEventsBadEventsSelectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelEventsBadEventsSelectOutputReference
 ```
@@ -2328,7 +2328,7 @@ func InternalValue() ServiceLevelEventsBadEventsSelect
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 servicelevel.NewServiceLevelEventsGoodEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelEventsGoodEventsOutputReference
 ```
@@ -2670,7 +2670,7 @@ func InternalValue() ServiceLevelEventsGoodEvents
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsGoodEventsSelectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 servicelevel.NewServiceLevelEventsGoodEventsSelectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelEventsGoodEventsSelectOutputReference
 ```
@@ -2999,7 +2999,7 @@ func InternalValue() ServiceLevelEventsGoodEventsSelect
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 servicelevel.NewServiceLevelEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelEventsOutputReference
 ```
@@ -3389,7 +3389,7 @@ func InternalValue() ServiceLevelEvents
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 servicelevel.NewServiceLevelEventsValidEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelEventsValidEventsOutputReference
 ```
@@ -3731,7 +3731,7 @@ func InternalValue() ServiceLevelEventsValidEvents
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelEventsValidEventsSelectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 servicelevel.NewServiceLevelEventsValidEventsSelectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelEventsValidEventsSelectOutputReference
 ```
@@ -4060,7 +4060,7 @@ func InternalValue() ServiceLevelEventsValidEventsSelect
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelObjectiveOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 servicelevel.NewServiceLevelObjectiveOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelObjectiveOutputReference
 ```
@@ -4424,7 +4424,7 @@ func InternalValue() ServiceLevelObjective
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelObjectiveTimeWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 servicelevel.NewServiceLevelObjectiveTimeWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelObjectiveTimeWindowOutputReference
 ```
@@ -4708,7 +4708,7 @@ func InternalValue() ServiceLevelObjectiveTimeWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.serviceLevel.ServiceLevelObjectiveTimeWindowRollingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/servicelevel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/servicelevel"
 
 servicelevel.NewServiceLevelObjectiveTimeWindowRollingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelObjectiveTimeWindowRollingOutputReference
 ```
