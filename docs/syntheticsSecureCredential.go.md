@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticssecurecredential"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticssecurecredential"
 
 syntheticssecurecredential.NewSyntheticsSecureCredential(scope Construct, id *string, config SyntheticsSecureCredentialConfig) SyntheticsSecureCredential
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredential.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticssecurecredential"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticssecurecredential"
 
 syntheticssecurecredential.SyntheticsSecureCredential_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredential.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticssecurecredential"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticssecurecredential"
 
 syntheticssecurecredential.SyntheticsSecureCredential_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ syntheticssecurecredential.SyntheticsSecureCredential_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredential.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticssecurecredential"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticssecurecredential"
 
 syntheticssecurecredential.SyntheticsSecureCredential_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ syntheticssecurecredential.SyntheticsSecureCredential_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredential.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticssecurecredential"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticssecurecredential"
 
 syntheticssecurecredential.SyntheticsSecureCredential_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredentialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticssecurecredential"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticssecurecredential"
 
 &syntheticssecurecredential.SyntheticsSecureCredentialConfig {
 	Connection: interface{},
@@ -878,7 +878,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticssecur
 	Description: *string,
 	Id: *string,
 	LastUpdated: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.syntheticsSecureCredential.SyntheticsSecureCredentialTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.syntheticsSecureCredential.SyntheticsSecureCredentialTimeouts,
 }
 ```
 
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredentialTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticssecurecredential"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticssecurecredential"
 
 &syntheticssecurecredential.SyntheticsSecureCredentialTimeouts {
 	Read: *string,
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsSecureCredential.SyntheticsSecureCredentialTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticssecurecredential"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticssecurecredential"
 
 syntheticssecurecredential.NewSyntheticsSecureCredentialTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsSecureCredentialTimeoutsOutputReference
 ```
