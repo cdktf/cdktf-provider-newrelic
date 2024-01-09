@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/insightsevent"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/insightsevent"
 
 insightsevent.NewInsightsEvent(scope Construct, id *string, config InsightsEventConfig) InsightsEvent
 ```
@@ -391,7 +391,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.insightsEvent.InsightsEvent.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/insightsevent"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/insightsevent"
 
 insightsevent.InsightsEvent_IsConstruct(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.insightsEvent.InsightsEvent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/insightsevent"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/insightsevent"
 
 insightsevent.InsightsEvent_IsTerraformElement(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ insightsevent.InsightsEvent_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.insightsEvent.InsightsEvent.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/insightsevent"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/insightsevent"
 
 insightsevent.InsightsEvent_IsTerraformResource(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ insightsevent.InsightsEvent_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.insightsEvent.InsightsEvent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/insightsevent"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/insightsevent"
 
 insightsevent.InsightsEvent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -724,7 +724,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/insightsevent"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/insightsevent"
 
 &insightsevent.InsightsEventConfig {
 	Connection: interface{},
@@ -859,7 +859,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/insightsevent"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/insightsevent"
 
 &insightsevent.InsightsEventEvent {
 	Attribute: interface{},
@@ -925,7 +925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/insightsevent"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/insightsevent"
 
 &insightsevent.InsightsEventEventAttribute {
 	Key: *string,
@@ -995,7 +995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttributeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/insightsevent"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/insightsevent"
 
 insightsevent.NewInsightsEventEventAttributeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InsightsEventEventAttributeList
 ```
@@ -1138,7 +1138,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttributeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/insightsevent"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/insightsevent"
 
 insightsevent.NewInsightsEventEventAttributeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) InsightsEventEventAttributeOutputReference
 ```
@@ -1478,7 +1478,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventEventList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/insightsevent"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/insightsevent"
 
 insightsevent.NewInsightsEventEventList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InsightsEventEventList
 ```
@@ -1621,7 +1621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventEventOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/insightsevent"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/insightsevent"
 
 insightsevent.NewInsightsEventEventOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) InsightsEventEventOutputReference
 ```
