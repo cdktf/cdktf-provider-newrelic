@@ -64,6 +64,31 @@ export function entityTagsTagToTerraform(struct?: EntityTagsTag | cdktf.IResolva
   }
 }
 
+
+export function entityTagsTagToHclTerraform(struct?: EntityTagsTag | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EntityTagsTagOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -175,6 +200,25 @@ export function entityTagsTimeoutsToTerraform(struct?: EntityTagsTimeouts | cdkt
   return {
     create: cdktf.stringToTerraform(struct!.create),
   }
+}
+
+
+export function entityTagsTimeoutsToHclTerraform(struct?: EntityTagsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EntityTagsTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -366,5 +410,37 @@ export class EntityTags extends cdktf.TerraformResource {
       tag: cdktf.listMapper(entityTagsTagToTerraform, true)(this._tag.internalValue),
       timeouts: entityTagsTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      guid: {
+        value: cdktf.stringToHclTerraform(this._guid),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag: {
+        value: cdktf.listMapperHcl(entityTagsTagToHclTerraform, true)(this._tag.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "EntityTagsTagList",
+      },
+      timeouts: {
+        value: entityTagsTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "EntityTagsTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -84,6 +84,31 @@ export function notificationDestinationAuthBasicToTerraform(struct?: Notificatio
   }
 }
 
+
+export function notificationDestinationAuthBasicToHclTerraform(struct?: NotificationDestinationAuthBasicOutputReference | NotificationDestinationAuthBasic): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user: {
+      value: cdktf.stringToHclTerraform(struct!.user),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NotificationDestinationAuthBasicOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -168,6 +193,31 @@ export function notificationDestinationAuthTokenToTerraform(struct?: Notificatio
     prefix: cdktf.stringToTerraform(struct!.prefix),
     token: cdktf.stringToTerraform(struct!.token),
   }
+}
+
+
+export function notificationDestinationAuthTokenToHclTerraform(struct?: NotificationDestinationAuthTokenOutputReference | NotificationDestinationAuthToken): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token: {
+      value: cdktf.stringToHclTerraform(struct!.token),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NotificationDestinationAuthTokenOutputReference extends cdktf.ComplexObject {
@@ -275,6 +325,43 @@ export function notificationDestinationPropertyToTerraform(struct?: Notification
     label: cdktf.stringToTerraform(struct!.label),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function notificationDestinationPropertyToHclTerraform(struct?: NotificationDestinationProperty | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    display_value: {
+      value: cdktf.stringToHclTerraform(struct!.displayValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    label: {
+      value: cdktf.stringToHclTerraform(struct!.label),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NotificationDestinationPropertyOutputReference extends cdktf.ComplexObject {
@@ -627,5 +714,61 @@ export class NotificationDestination extends cdktf.TerraformResource {
       auth_token: notificationDestinationAuthTokenToTerraform(this._authToken.internalValue),
       property: cdktf.listMapper(notificationDestinationPropertyToTerraform, true)(this._property.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.numberToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      active: {
+        value: cdktf.booleanToHclTerraform(this._active),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auth_basic: {
+        value: notificationDestinationAuthBasicToHclTerraform(this._authBasic.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NotificationDestinationAuthBasicList",
+      },
+      auth_token: {
+        value: notificationDestinationAuthTokenToHclTerraform(this._authToken.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NotificationDestinationAuthTokenList",
+      },
+      property: {
+        value: cdktf.listMapperHcl(notificationDestinationPropertyToHclTerraform, true)(this._property.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "NotificationDestinationPropertyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

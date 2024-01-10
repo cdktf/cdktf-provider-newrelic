@@ -379,4 +379,96 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
       alias: cdktf.stringToTerraform(this._alias),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.numberToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      admin_api_key: {
+        value: cdktf.stringToHclTerraform(this._adminApiKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      api_key: {
+        value: cdktf.stringToHclTerraform(this._apiKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      api_url: {
+        value: cdktf.stringToHclTerraform(this._apiUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cacert_file: {
+        value: cdktf.stringToHclTerraform(this._cacertFile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      infrastructure_api_url: {
+        value: cdktf.stringToHclTerraform(this._infrastructureApiUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      insecure_skip_verify: {
+        value: cdktf.booleanToHclTerraform(this._insecureSkipVerify),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      insights_insert_key: {
+        value: cdktf.stringToHclTerraform(this._insightsInsertKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      insights_insert_url: {
+        value: cdktf.stringToHclTerraform(this._insightsInsertUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      insights_query_url: {
+        value: cdktf.stringToHclTerraform(this._insightsQueryUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      nerdgraph_api_url: {
+        value: cdktf.stringToHclTerraform(this._nerdgraphApiUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      synthetics_api_url: {
+        value: cdktf.stringToHclTerraform(this._syntheticsApiUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

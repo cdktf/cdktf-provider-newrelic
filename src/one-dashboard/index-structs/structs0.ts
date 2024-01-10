@@ -30,6 +30,31 @@ export function oneDashboardPageWidgetAreaColorsSeriesOverridesToTerraform(struc
   }
 }
 
+
+export function oneDashboardPageWidgetAreaColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetAreaColorsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetAreaColorsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -154,6 +179,31 @@ export function oneDashboardPageWidgetAreaColorsToTerraform(struct?: OneDashboar
     color: cdktf.stringToTerraform(struct!.color),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetAreaColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetAreaColorsToHclTerraform(struct?: OneDashboardPageWidgetAreaColors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetAreaColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetAreaColorsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetAreaColorsOutputReference extends cdktf.ComplexObject {
@@ -284,6 +334,31 @@ export function oneDashboardPageWidgetAreaNrqlQueryToTerraform(struct?: OneDashb
   }
 }
 
+
+export function oneDashboardPageWidgetAreaNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetAreaNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_id: {
+      value: cdktf.numberToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetAreaNrqlQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -407,6 +482,31 @@ export function oneDashboardPageWidgetAreaNullValuesSeriesOverridesToTerraform(s
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_name: cdktf.stringToTerraform(struct!.seriesName),
   }
+}
+
+
+export function oneDashboardPageWidgetAreaNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetAreaNullValuesSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetAreaNullValuesSeriesOverridesOutputReference extends cdktf.ComplexObject {
@@ -533,6 +633,31 @@ export function oneDashboardPageWidgetAreaNullValuesToTerraform(struct?: OneDash
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetAreaNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetAreaNullValuesToHclTerraform(struct?: OneDashboardPageWidgetAreaNullValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetAreaNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetAreaNullValuesSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetAreaNullValuesOutputReference extends cdktf.ComplexObject {
@@ -663,6 +788,31 @@ export function oneDashboardPageWidgetAreaUnitsSeriesOverridesToTerraform(struct
   }
 }
 
+
+export function oneDashboardPageWidgetAreaUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetAreaUnitsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetAreaUnitsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -787,6 +937,31 @@ export function oneDashboardPageWidgetAreaUnitsToTerraform(struct?: OneDashboard
     unit: cdktf.stringToTerraform(struct!.unit),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetAreaUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetAreaUnitsToHclTerraform(struct?: OneDashboardPageWidgetAreaUnits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetAreaUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetAreaUnitsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetAreaUnitsOutputReference extends cdktf.ComplexObject {
@@ -981,6 +1156,103 @@ export function oneDashboardPageWidgetAreaToTerraform(struct?: OneDashboardPageW
     null_values: cdktf.listMapper(oneDashboardPageWidgetAreaNullValuesToTerraform, true)(struct!.nullValues),
     units: cdktf.listMapper(oneDashboardPageWidgetAreaUnitsToTerraform, true)(struct!.units),
   }
+}
+
+
+export function oneDashboardPageWidgetAreaToHclTerraform(struct?: OneDashboardPageWidgetArea | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.numberToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    facet_show_other_series: {
+      value: cdktf.booleanToHclTerraform(struct!.facetShowOtherSeries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    height: {
+      value: cdktf.numberToHclTerraform(struct!.height),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ignore_time_range: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    legend_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.legendEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    row: {
+      value: cdktf.numberToHclTerraform(struct!.row),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    width: {
+      value: cdktf.numberToHclTerraform(struct!.width),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_max: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMax),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_min: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    colors: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetAreaColorsToHclTerraform, true)(struct!.colors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetAreaColorsList",
+    },
+    nrql_query: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetAreaNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetAreaNrqlQueryList",
+    },
+    null_values: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetAreaNullValuesToHclTerraform, true)(struct!.nullValues),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetAreaNullValuesList",
+    },
+    units: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetAreaUnitsToHclTerraform, true)(struct!.units),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetAreaUnitsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetAreaOutputReference extends cdktf.ComplexObject {
@@ -1368,6 +1640,31 @@ export function oneDashboardPageWidgetBarColorsSeriesOverridesToTerraform(struct
   }
 }
 
+
+export function oneDashboardPageWidgetBarColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetBarColorsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetBarColorsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1492,6 +1789,31 @@ export function oneDashboardPageWidgetBarColorsToTerraform(struct?: OneDashboard
     color: cdktf.stringToTerraform(struct!.color),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetBarColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetBarColorsToHclTerraform(struct?: OneDashboardPageWidgetBarColors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBarColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBarColorsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetBarColorsOutputReference extends cdktf.ComplexObject {
@@ -1622,6 +1944,31 @@ export function oneDashboardPageWidgetBarNrqlQueryToTerraform(struct?: OneDashbo
   }
 }
 
+
+export function oneDashboardPageWidgetBarNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetBarNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_id: {
+      value: cdktf.numberToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetBarNrqlQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1745,6 +2092,31 @@ export function oneDashboardPageWidgetBarNullValuesSeriesOverridesToTerraform(st
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_name: cdktf.stringToTerraform(struct!.seriesName),
   }
+}
+
+
+export function oneDashboardPageWidgetBarNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetBarNullValuesSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetBarNullValuesSeriesOverridesOutputReference extends cdktf.ComplexObject {
@@ -1871,6 +2243,31 @@ export function oneDashboardPageWidgetBarNullValuesToTerraform(struct?: OneDashb
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetBarNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetBarNullValuesToHclTerraform(struct?: OneDashboardPageWidgetBarNullValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBarNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBarNullValuesSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetBarNullValuesOutputReference extends cdktf.ComplexObject {
@@ -2001,6 +2398,31 @@ export function oneDashboardPageWidgetBarUnitsSeriesOverridesToTerraform(struct?
   }
 }
 
+
+export function oneDashboardPageWidgetBarUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetBarUnitsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetBarUnitsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -2125,6 +2547,31 @@ export function oneDashboardPageWidgetBarUnitsToTerraform(struct?: OneDashboardP
     unit: cdktf.stringToTerraform(struct!.unit),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetBarUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetBarUnitsToHclTerraform(struct?: OneDashboardPageWidgetBarUnits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBarUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBarUnitsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetBarUnitsOutputReference extends cdktf.ComplexObject {
@@ -2333,6 +2780,115 @@ export function oneDashboardPageWidgetBarToTerraform(struct?: OneDashboardPageWi
     null_values: cdktf.listMapper(oneDashboardPageWidgetBarNullValuesToTerraform, true)(struct!.nullValues),
     units: cdktf.listMapper(oneDashboardPageWidgetBarUnitsToTerraform, true)(struct!.units),
   }
+}
+
+
+export function oneDashboardPageWidgetBarToHclTerraform(struct?: OneDashboardPageWidgetBar | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.numberToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    facet_show_other_series: {
+      value: cdktf.booleanToHclTerraform(struct!.facetShowOtherSeries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    filter_current_dashboard: {
+      value: cdktf.booleanToHclTerraform(struct!.filterCurrentDashboard),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    height: {
+      value: cdktf.numberToHclTerraform(struct!.height),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ignore_time_range: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    legend_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.legendEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    linked_entity_guids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.linkedEntityGuids),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    row: {
+      value: cdktf.numberToHclTerraform(struct!.row),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    width: {
+      value: cdktf.numberToHclTerraform(struct!.width),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_max: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMax),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_min: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    colors: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBarColorsToHclTerraform, true)(struct!.colors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBarColorsList",
+    },
+    nrql_query: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBarNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBarNrqlQueryList",
+    },
+    null_values: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBarNullValuesToHclTerraform, true)(struct!.nullValues),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBarNullValuesList",
+    },
+    units: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBarUnitsToHclTerraform, true)(struct!.units),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBarUnitsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetBarOutputReference extends cdktf.ComplexObject {
@@ -2764,6 +3320,31 @@ export function oneDashboardPageWidgetBillboardColorsSeriesOverridesToTerraform(
   }
 }
 
+
+export function oneDashboardPageWidgetBillboardColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetBillboardColorsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetBillboardColorsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -2888,6 +3469,31 @@ export function oneDashboardPageWidgetBillboardColorsToTerraform(struct?: OneDas
     color: cdktf.stringToTerraform(struct!.color),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetBillboardColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetBillboardColorsToHclTerraform(struct?: OneDashboardPageWidgetBillboardColors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBillboardColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBillboardColorsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetBillboardColorsOutputReference extends cdktf.ComplexObject {
@@ -3018,6 +3624,31 @@ export function oneDashboardPageWidgetBillboardNrqlQueryToTerraform(struct?: One
   }
 }
 
+
+export function oneDashboardPageWidgetBillboardNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetBillboardNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_id: {
+      value: cdktf.numberToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetBillboardNrqlQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -3141,6 +3772,31 @@ export function oneDashboardPageWidgetBillboardNullValuesSeriesOverridesToTerraf
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_name: cdktf.stringToTerraform(struct!.seriesName),
   }
+}
+
+
+export function oneDashboardPageWidgetBillboardNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetBillboardNullValuesSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetBillboardNullValuesSeriesOverridesOutputReference extends cdktf.ComplexObject {
@@ -3267,6 +3923,31 @@ export function oneDashboardPageWidgetBillboardNullValuesToTerraform(struct?: On
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetBillboardNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetBillboardNullValuesToHclTerraform(struct?: OneDashboardPageWidgetBillboardNullValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBillboardNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBillboardNullValuesSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetBillboardNullValuesOutputReference extends cdktf.ComplexObject {
@@ -3397,6 +4078,31 @@ export function oneDashboardPageWidgetBillboardUnitsSeriesOverridesToTerraform(s
   }
 }
 
+
+export function oneDashboardPageWidgetBillboardUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetBillboardUnitsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetBillboardUnitsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -3521,6 +4227,31 @@ export function oneDashboardPageWidgetBillboardUnitsToTerraform(struct?: OneDash
     unit: cdktf.stringToTerraform(struct!.unit),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetBillboardUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetBillboardUnitsToHclTerraform(struct?: OneDashboardPageWidgetBillboardUnits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBillboardUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBillboardUnitsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetBillboardUnitsOutputReference extends cdktf.ComplexObject {
@@ -3729,6 +4460,115 @@ export function oneDashboardPageWidgetBillboardToTerraform(struct?: OneDashboard
     null_values: cdktf.listMapper(oneDashboardPageWidgetBillboardNullValuesToTerraform, true)(struct!.nullValues),
     units: cdktf.listMapper(oneDashboardPageWidgetBillboardUnitsToTerraform, true)(struct!.units),
   }
+}
+
+
+export function oneDashboardPageWidgetBillboardToHclTerraform(struct?: OneDashboardPageWidgetBillboard | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.numberToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    critical: {
+      value: cdktf.stringToHclTerraform(struct!.critical),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    facet_show_other_series: {
+      value: cdktf.booleanToHclTerraform(struct!.facetShowOtherSeries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    height: {
+      value: cdktf.numberToHclTerraform(struct!.height),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ignore_time_range: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    legend_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.legendEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    row: {
+      value: cdktf.numberToHclTerraform(struct!.row),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    warning: {
+      value: cdktf.stringToHclTerraform(struct!.warning),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    width: {
+      value: cdktf.numberToHclTerraform(struct!.width),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_max: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMax),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_min: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    colors: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBillboardColorsToHclTerraform, true)(struct!.colors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBillboardColorsList",
+    },
+    nrql_query: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBillboardNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBillboardNrqlQueryList",
+    },
+    null_values: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBillboardNullValuesToHclTerraform, true)(struct!.nullValues),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBillboardNullValuesList",
+    },
+    units: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBillboardUnitsToHclTerraform, true)(struct!.units),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBillboardUnitsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetBillboardOutputReference extends cdktf.ComplexObject {
@@ -4160,6 +5000,31 @@ export function oneDashboardPageWidgetBulletColorsSeriesOverridesToTerraform(str
   }
 }
 
+
+export function oneDashboardPageWidgetBulletColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetBulletColorsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetBulletColorsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -4284,6 +5149,31 @@ export function oneDashboardPageWidgetBulletColorsToTerraform(struct?: OneDashbo
     color: cdktf.stringToTerraform(struct!.color),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetBulletColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetBulletColorsToHclTerraform(struct?: OneDashboardPageWidgetBulletColors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBulletColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBulletColorsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetBulletColorsOutputReference extends cdktf.ComplexObject {
@@ -4414,6 +5304,31 @@ export function oneDashboardPageWidgetBulletNrqlQueryToTerraform(struct?: OneDas
   }
 }
 
+
+export function oneDashboardPageWidgetBulletNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetBulletNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_id: {
+      value: cdktf.numberToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetBulletNrqlQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -4537,6 +5452,31 @@ export function oneDashboardPageWidgetBulletNullValuesSeriesOverridesToTerraform
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_name: cdktf.stringToTerraform(struct!.seriesName),
   }
+}
+
+
+export function oneDashboardPageWidgetBulletNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetBulletNullValuesSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetBulletNullValuesSeriesOverridesOutputReference extends cdktf.ComplexObject {
@@ -4663,6 +5603,31 @@ export function oneDashboardPageWidgetBulletNullValuesToTerraform(struct?: OneDa
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetBulletNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetBulletNullValuesToHclTerraform(struct?: OneDashboardPageWidgetBulletNullValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBulletNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBulletNullValuesSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetBulletNullValuesOutputReference extends cdktf.ComplexObject {
@@ -4793,6 +5758,31 @@ export function oneDashboardPageWidgetBulletUnitsSeriesOverridesToTerraform(stru
   }
 }
 
+
+export function oneDashboardPageWidgetBulletUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetBulletUnitsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetBulletUnitsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -4917,6 +5907,31 @@ export function oneDashboardPageWidgetBulletUnitsToTerraform(struct?: OneDashboa
     unit: cdktf.stringToTerraform(struct!.unit),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetBulletUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetBulletUnitsToHclTerraform(struct?: OneDashboardPageWidgetBulletUnits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBulletUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBulletUnitsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetBulletUnitsOutputReference extends cdktf.ComplexObject {
@@ -5118,6 +6133,109 @@ export function oneDashboardPageWidgetBulletToTerraform(struct?: OneDashboardPag
     null_values: cdktf.listMapper(oneDashboardPageWidgetBulletNullValuesToTerraform, true)(struct!.nullValues),
     units: cdktf.listMapper(oneDashboardPageWidgetBulletUnitsToTerraform, true)(struct!.units),
   }
+}
+
+
+export function oneDashboardPageWidgetBulletToHclTerraform(struct?: OneDashboardPageWidgetBullet | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.numberToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    facet_show_other_series: {
+      value: cdktf.booleanToHclTerraform(struct!.facetShowOtherSeries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    height: {
+      value: cdktf.numberToHclTerraform(struct!.height),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ignore_time_range: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    legend_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.legendEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    limit: {
+      value: cdktf.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    row: {
+      value: cdktf.numberToHclTerraform(struct!.row),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    width: {
+      value: cdktf.numberToHclTerraform(struct!.width),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_max: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMax),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_min: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    colors: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBulletColorsToHclTerraform, true)(struct!.colors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBulletColorsList",
+    },
+    nrql_query: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBulletNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBulletNrqlQueryList",
+    },
+    null_values: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBulletNullValuesToHclTerraform, true)(struct!.nullValues),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBulletNullValuesList",
+    },
+    units: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetBulletUnitsToHclTerraform, true)(struct!.units),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetBulletUnitsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetBulletOutputReference extends cdktf.ComplexObject {
@@ -5524,6 +6642,31 @@ export function oneDashboardPageWidgetFunnelColorsSeriesOverridesToTerraform(str
   }
 }
 
+
+export function oneDashboardPageWidgetFunnelColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetFunnelColorsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetFunnelColorsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -5648,6 +6791,31 @@ export function oneDashboardPageWidgetFunnelColorsToTerraform(struct?: OneDashbo
     color: cdktf.stringToTerraform(struct!.color),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetFunnelColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetFunnelColorsToHclTerraform(struct?: OneDashboardPageWidgetFunnelColors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetFunnelColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetFunnelColorsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetFunnelColorsOutputReference extends cdktf.ComplexObject {
@@ -5778,6 +6946,31 @@ export function oneDashboardPageWidgetFunnelNrqlQueryToTerraform(struct?: OneDas
   }
 }
 
+
+export function oneDashboardPageWidgetFunnelNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetFunnelNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_id: {
+      value: cdktf.numberToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetFunnelNrqlQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -5901,6 +7094,31 @@ export function oneDashboardPageWidgetFunnelNullValuesSeriesOverridesToTerraform
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_name: cdktf.stringToTerraform(struct!.seriesName),
   }
+}
+
+
+export function oneDashboardPageWidgetFunnelNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetFunnelNullValuesSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetFunnelNullValuesSeriesOverridesOutputReference extends cdktf.ComplexObject {
@@ -6027,6 +7245,31 @@ export function oneDashboardPageWidgetFunnelNullValuesToTerraform(struct?: OneDa
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetFunnelNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetFunnelNullValuesToHclTerraform(struct?: OneDashboardPageWidgetFunnelNullValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetFunnelNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetFunnelNullValuesSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetFunnelNullValuesOutputReference extends cdktf.ComplexObject {
@@ -6157,6 +7400,31 @@ export function oneDashboardPageWidgetFunnelUnitsSeriesOverridesToTerraform(stru
   }
 }
 
+
+export function oneDashboardPageWidgetFunnelUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetFunnelUnitsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetFunnelUnitsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -6281,6 +7549,31 @@ export function oneDashboardPageWidgetFunnelUnitsToTerraform(struct?: OneDashboa
     unit: cdktf.stringToTerraform(struct!.unit),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetFunnelUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetFunnelUnitsToHclTerraform(struct?: OneDashboardPageWidgetFunnelUnits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetFunnelUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetFunnelUnitsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetFunnelUnitsOutputReference extends cdktf.ComplexObject {
@@ -6475,6 +7768,103 @@ export function oneDashboardPageWidgetFunnelToTerraform(struct?: OneDashboardPag
     null_values: cdktf.listMapper(oneDashboardPageWidgetFunnelNullValuesToTerraform, true)(struct!.nullValues),
     units: cdktf.listMapper(oneDashboardPageWidgetFunnelUnitsToTerraform, true)(struct!.units),
   }
+}
+
+
+export function oneDashboardPageWidgetFunnelToHclTerraform(struct?: OneDashboardPageWidgetFunnel | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.numberToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    facet_show_other_series: {
+      value: cdktf.booleanToHclTerraform(struct!.facetShowOtherSeries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    height: {
+      value: cdktf.numberToHclTerraform(struct!.height),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ignore_time_range: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    legend_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.legendEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    row: {
+      value: cdktf.numberToHclTerraform(struct!.row),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    width: {
+      value: cdktf.numberToHclTerraform(struct!.width),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_max: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMax),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_min: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    colors: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetFunnelColorsToHclTerraform, true)(struct!.colors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetFunnelColorsList",
+    },
+    nrql_query: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetFunnelNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetFunnelNrqlQueryList",
+    },
+    null_values: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetFunnelNullValuesToHclTerraform, true)(struct!.nullValues),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetFunnelNullValuesList",
+    },
+    units: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetFunnelUnitsToHclTerraform, true)(struct!.units),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetFunnelUnitsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetFunnelOutputReference extends cdktf.ComplexObject {
@@ -6862,6 +8252,31 @@ export function oneDashboardPageWidgetHeatmapColorsSeriesOverridesToTerraform(st
   }
 }
 
+
+export function oneDashboardPageWidgetHeatmapColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetHeatmapColorsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetHeatmapColorsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -6986,6 +8401,31 @@ export function oneDashboardPageWidgetHeatmapColorsToTerraform(struct?: OneDashb
     color: cdktf.stringToTerraform(struct!.color),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetHeatmapColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetHeatmapColorsToHclTerraform(struct?: OneDashboardPageWidgetHeatmapColors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetHeatmapColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetHeatmapColorsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetHeatmapColorsOutputReference extends cdktf.ComplexObject {
@@ -7116,6 +8556,31 @@ export function oneDashboardPageWidgetHeatmapNrqlQueryToTerraform(struct?: OneDa
   }
 }
 
+
+export function oneDashboardPageWidgetHeatmapNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetHeatmapNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_id: {
+      value: cdktf.numberToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetHeatmapNrqlQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -7239,6 +8704,31 @@ export function oneDashboardPageWidgetHeatmapNullValuesSeriesOverridesToTerrafor
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_name: cdktf.stringToTerraform(struct!.seriesName),
   }
+}
+
+
+export function oneDashboardPageWidgetHeatmapNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetHeatmapNullValuesSeriesOverridesOutputReference extends cdktf.ComplexObject {
@@ -7365,6 +8855,31 @@ export function oneDashboardPageWidgetHeatmapNullValuesToTerraform(struct?: OneD
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetHeatmapNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetHeatmapNullValuesToHclTerraform(struct?: OneDashboardPageWidgetHeatmapNullValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetHeatmapNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetHeatmapNullValuesSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetHeatmapNullValuesOutputReference extends cdktf.ComplexObject {
@@ -7495,6 +9010,31 @@ export function oneDashboardPageWidgetHeatmapUnitsSeriesOverridesToTerraform(str
   }
 }
 
+
+export function oneDashboardPageWidgetHeatmapUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetHeatmapUnitsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetHeatmapUnitsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -7619,6 +9159,31 @@ export function oneDashboardPageWidgetHeatmapUnitsToTerraform(struct?: OneDashbo
     unit: cdktf.stringToTerraform(struct!.unit),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetHeatmapUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetHeatmapUnitsToHclTerraform(struct?: OneDashboardPageWidgetHeatmapUnits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetHeatmapUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetHeatmapUnitsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetHeatmapUnitsOutputReference extends cdktf.ComplexObject {
@@ -7827,6 +9392,115 @@ export function oneDashboardPageWidgetHeatmapToTerraform(struct?: OneDashboardPa
     null_values: cdktf.listMapper(oneDashboardPageWidgetHeatmapNullValuesToTerraform, true)(struct!.nullValues),
     units: cdktf.listMapper(oneDashboardPageWidgetHeatmapUnitsToTerraform, true)(struct!.units),
   }
+}
+
+
+export function oneDashboardPageWidgetHeatmapToHclTerraform(struct?: OneDashboardPageWidgetHeatmap | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.numberToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    facet_show_other_series: {
+      value: cdktf.booleanToHclTerraform(struct!.facetShowOtherSeries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    filter_current_dashboard: {
+      value: cdktf.booleanToHclTerraform(struct!.filterCurrentDashboard),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    height: {
+      value: cdktf.numberToHclTerraform(struct!.height),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ignore_time_range: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    legend_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.legendEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    linked_entity_guids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.linkedEntityGuids),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    row: {
+      value: cdktf.numberToHclTerraform(struct!.row),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    width: {
+      value: cdktf.numberToHclTerraform(struct!.width),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_max: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMax),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_min: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    colors: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetHeatmapColorsToHclTerraform, true)(struct!.colors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetHeatmapColorsList",
+    },
+    nrql_query: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetHeatmapNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetHeatmapNrqlQueryList",
+    },
+    null_values: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetHeatmapNullValuesToHclTerraform, true)(struct!.nullValues),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetHeatmapNullValuesList",
+    },
+    units: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetHeatmapUnitsToHclTerraform, true)(struct!.units),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetHeatmapUnitsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetHeatmapOutputReference extends cdktf.ComplexObject {
@@ -8258,6 +9932,31 @@ export function oneDashboardPageWidgetHistogramColorsSeriesOverridesToTerraform(
   }
 }
 
+
+export function oneDashboardPageWidgetHistogramColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetHistogramColorsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetHistogramColorsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -8382,6 +10081,31 @@ export function oneDashboardPageWidgetHistogramColorsToTerraform(struct?: OneDas
     color: cdktf.stringToTerraform(struct!.color),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetHistogramColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetHistogramColorsToHclTerraform(struct?: OneDashboardPageWidgetHistogramColors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetHistogramColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetHistogramColorsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetHistogramColorsOutputReference extends cdktf.ComplexObject {
@@ -8512,6 +10236,31 @@ export function oneDashboardPageWidgetHistogramNrqlQueryToTerraform(struct?: One
   }
 }
 
+
+export function oneDashboardPageWidgetHistogramNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetHistogramNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_id: {
+      value: cdktf.numberToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetHistogramNrqlQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -8635,6 +10384,31 @@ export function oneDashboardPageWidgetHistogramNullValuesSeriesOverridesToTerraf
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_name: cdktf.stringToTerraform(struct!.seriesName),
   }
+}
+
+
+export function oneDashboardPageWidgetHistogramNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetHistogramNullValuesSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetHistogramNullValuesSeriesOverridesOutputReference extends cdktf.ComplexObject {
@@ -8761,6 +10535,31 @@ export function oneDashboardPageWidgetHistogramNullValuesToTerraform(struct?: On
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetHistogramNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetHistogramNullValuesToHclTerraform(struct?: OneDashboardPageWidgetHistogramNullValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetHistogramNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetHistogramNullValuesSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetHistogramNullValuesOutputReference extends cdktf.ComplexObject {
@@ -8891,6 +10690,31 @@ export function oneDashboardPageWidgetHistogramUnitsSeriesOverridesToTerraform(s
   }
 }
 
+
+export function oneDashboardPageWidgetHistogramUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetHistogramUnitsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetHistogramUnitsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -9015,6 +10839,31 @@ export function oneDashboardPageWidgetHistogramUnitsToTerraform(struct?: OneDash
     unit: cdktf.stringToTerraform(struct!.unit),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetHistogramUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetHistogramUnitsToHclTerraform(struct?: OneDashboardPageWidgetHistogramUnits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetHistogramUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetHistogramUnitsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetHistogramUnitsOutputReference extends cdktf.ComplexObject {
@@ -9209,6 +11058,103 @@ export function oneDashboardPageWidgetHistogramToTerraform(struct?: OneDashboard
     null_values: cdktf.listMapper(oneDashboardPageWidgetHistogramNullValuesToTerraform, true)(struct!.nullValues),
     units: cdktf.listMapper(oneDashboardPageWidgetHistogramUnitsToTerraform, true)(struct!.units),
   }
+}
+
+
+export function oneDashboardPageWidgetHistogramToHclTerraform(struct?: OneDashboardPageWidgetHistogram | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.numberToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    facet_show_other_series: {
+      value: cdktf.booleanToHclTerraform(struct!.facetShowOtherSeries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    height: {
+      value: cdktf.numberToHclTerraform(struct!.height),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ignore_time_range: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    legend_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.legendEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    row: {
+      value: cdktf.numberToHclTerraform(struct!.row),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    width: {
+      value: cdktf.numberToHclTerraform(struct!.width),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_max: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMax),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_min: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    colors: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetHistogramColorsToHclTerraform, true)(struct!.colors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetHistogramColorsList",
+    },
+    nrql_query: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetHistogramNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetHistogramNrqlQueryList",
+    },
+    null_values: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetHistogramNullValuesToHclTerraform, true)(struct!.nullValues),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetHistogramNullValuesList",
+    },
+    units: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetHistogramUnitsToHclTerraform, true)(struct!.units),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetHistogramUnitsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetHistogramOutputReference extends cdktf.ComplexObject {
@@ -9596,6 +11542,31 @@ export function oneDashboardPageWidgetJsonColorsSeriesOverridesToTerraform(struc
   }
 }
 
+
+export function oneDashboardPageWidgetJsonColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetJsonColorsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetJsonColorsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -9720,6 +11691,31 @@ export function oneDashboardPageWidgetJsonColorsToTerraform(struct?: OneDashboar
     color: cdktf.stringToTerraform(struct!.color),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetJsonColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetJsonColorsToHclTerraform(struct?: OneDashboardPageWidgetJsonColors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetJsonColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetJsonColorsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetJsonColorsOutputReference extends cdktf.ComplexObject {
@@ -9850,6 +11846,31 @@ export function oneDashboardPageWidgetJsonNrqlQueryToTerraform(struct?: OneDashb
   }
 }
 
+
+export function oneDashboardPageWidgetJsonNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetJsonNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_id: {
+      value: cdktf.numberToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetJsonNrqlQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -9973,6 +11994,31 @@ export function oneDashboardPageWidgetJsonNullValuesSeriesOverridesToTerraform(s
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_name: cdktf.stringToTerraform(struct!.seriesName),
   }
+}
+
+
+export function oneDashboardPageWidgetJsonNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetJsonNullValuesSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetJsonNullValuesSeriesOverridesOutputReference extends cdktf.ComplexObject {
@@ -10099,6 +12145,31 @@ export function oneDashboardPageWidgetJsonNullValuesToTerraform(struct?: OneDash
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetJsonNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetJsonNullValuesToHclTerraform(struct?: OneDashboardPageWidgetJsonNullValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetJsonNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetJsonNullValuesSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetJsonNullValuesOutputReference extends cdktf.ComplexObject {
@@ -10229,6 +12300,31 @@ export function oneDashboardPageWidgetJsonUnitsSeriesOverridesToTerraform(struct
   }
 }
 
+
+export function oneDashboardPageWidgetJsonUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetJsonUnitsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetJsonUnitsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -10353,6 +12449,31 @@ export function oneDashboardPageWidgetJsonUnitsToTerraform(struct?: OneDashboard
     unit: cdktf.stringToTerraform(struct!.unit),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetJsonUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetJsonUnitsToHclTerraform(struct?: OneDashboardPageWidgetJsonUnits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetJsonUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetJsonUnitsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetJsonUnitsOutputReference extends cdktf.ComplexObject {
@@ -10547,6 +12668,103 @@ export function oneDashboardPageWidgetJsonToTerraform(struct?: OneDashboardPageW
     null_values: cdktf.listMapper(oneDashboardPageWidgetJsonNullValuesToTerraform, true)(struct!.nullValues),
     units: cdktf.listMapper(oneDashboardPageWidgetJsonUnitsToTerraform, true)(struct!.units),
   }
+}
+
+
+export function oneDashboardPageWidgetJsonToHclTerraform(struct?: OneDashboardPageWidgetJson | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.numberToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    facet_show_other_series: {
+      value: cdktf.booleanToHclTerraform(struct!.facetShowOtherSeries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    height: {
+      value: cdktf.numberToHclTerraform(struct!.height),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ignore_time_range: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    legend_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.legendEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    row: {
+      value: cdktf.numberToHclTerraform(struct!.row),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    width: {
+      value: cdktf.numberToHclTerraform(struct!.width),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_max: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMax),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_min: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    colors: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetJsonColorsToHclTerraform, true)(struct!.colors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetJsonColorsList",
+    },
+    nrql_query: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetJsonNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetJsonNrqlQueryList",
+    },
+    null_values: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetJsonNullValuesToHclTerraform, true)(struct!.nullValues),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetJsonNullValuesList",
+    },
+    units: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetJsonUnitsToHclTerraform, true)(struct!.units),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetJsonUnitsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetJsonOutputReference extends cdktf.ComplexObject {
@@ -10934,6 +13152,31 @@ export function oneDashboardPageWidgetLineColorsSeriesOverridesToTerraform(struc
   }
 }
 
+
+export function oneDashboardPageWidgetLineColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetLineColorsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetLineColorsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -11058,6 +13301,31 @@ export function oneDashboardPageWidgetLineColorsToTerraform(struct?: OneDashboar
     color: cdktf.stringToTerraform(struct!.color),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetLineColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetLineColorsToHclTerraform(struct?: OneDashboardPageWidgetLineColors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetLineColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetLineColorsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetLineColorsOutputReference extends cdktf.ComplexObject {
@@ -11188,6 +13456,31 @@ export function oneDashboardPageWidgetLineNrqlQueryToTerraform(struct?: OneDashb
   }
 }
 
+
+export function oneDashboardPageWidgetLineNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetLineNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_id: {
+      value: cdktf.numberToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetLineNrqlQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -11311,6 +13604,31 @@ export function oneDashboardPageWidgetLineNullValuesSeriesOverridesToTerraform(s
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_name: cdktf.stringToTerraform(struct!.seriesName),
   }
+}
+
+
+export function oneDashboardPageWidgetLineNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetLineNullValuesSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetLineNullValuesSeriesOverridesOutputReference extends cdktf.ComplexObject {
@@ -11437,6 +13755,31 @@ export function oneDashboardPageWidgetLineNullValuesToTerraform(struct?: OneDash
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetLineNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetLineNullValuesToHclTerraform(struct?: OneDashboardPageWidgetLineNullValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetLineNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetLineNullValuesSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetLineNullValuesOutputReference extends cdktf.ComplexObject {
@@ -11567,6 +13910,31 @@ export function oneDashboardPageWidgetLineUnitsSeriesOverridesToTerraform(struct
   }
 }
 
+
+export function oneDashboardPageWidgetLineUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetLineUnitsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetLineUnitsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -11691,6 +14059,31 @@ export function oneDashboardPageWidgetLineUnitsToTerraform(struct?: OneDashboard
     unit: cdktf.stringToTerraform(struct!.unit),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetLineUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetLineUnitsToHclTerraform(struct?: OneDashboardPageWidgetLineUnits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetLineUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetLineUnitsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetLineUnitsOutputReference extends cdktf.ComplexObject {
@@ -11892,6 +14285,109 @@ export function oneDashboardPageWidgetLineToTerraform(struct?: OneDashboardPageW
     null_values: cdktf.listMapper(oneDashboardPageWidgetLineNullValuesToTerraform, true)(struct!.nullValues),
     units: cdktf.listMapper(oneDashboardPageWidgetLineUnitsToTerraform, true)(struct!.units),
   }
+}
+
+
+export function oneDashboardPageWidgetLineToHclTerraform(struct?: OneDashboardPageWidgetLine | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.numberToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    facet_show_other_series: {
+      value: cdktf.booleanToHclTerraform(struct!.facetShowOtherSeries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    height: {
+      value: cdktf.numberToHclTerraform(struct!.height),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ignore_time_range: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    legend_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.legendEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    row: {
+      value: cdktf.numberToHclTerraform(struct!.row),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    width: {
+      value: cdktf.numberToHclTerraform(struct!.width),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_max: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMax),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_min: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_zero: {
+      value: cdktf.booleanToHclTerraform(struct!.yAxisLeftZero),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    colors: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetLineColorsToHclTerraform, true)(struct!.colors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetLineColorsList",
+    },
+    nrql_query: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetLineNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetLineNrqlQueryList",
+    },
+    null_values: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetLineNullValuesToHclTerraform, true)(struct!.nullValues),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetLineNullValuesList",
+    },
+    units: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetLineUnitsToHclTerraform, true)(struct!.units),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetLineUnitsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetLineOutputReference extends cdktf.ComplexObject {
@@ -12301,6 +14797,31 @@ export function oneDashboardPageWidgetLogTableColorsSeriesOverridesToTerraform(s
   }
 }
 
+
+export function oneDashboardPageWidgetLogTableColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetLogTableColorsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetLogTableColorsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -12425,6 +14946,31 @@ export function oneDashboardPageWidgetLogTableColorsToTerraform(struct?: OneDash
     color: cdktf.stringToTerraform(struct!.color),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetLogTableColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetLogTableColorsToHclTerraform(struct?: OneDashboardPageWidgetLogTableColors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetLogTableColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetLogTableColorsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetLogTableColorsOutputReference extends cdktf.ComplexObject {
@@ -12555,6 +15101,31 @@ export function oneDashboardPageWidgetLogTableNrqlQueryToTerraform(struct?: OneD
   }
 }
 
+
+export function oneDashboardPageWidgetLogTableNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetLogTableNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_id: {
+      value: cdktf.numberToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetLogTableNrqlQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -12678,6 +15249,31 @@ export function oneDashboardPageWidgetLogTableNullValuesSeriesOverridesToTerrafo
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_name: cdktf.stringToTerraform(struct!.seriesName),
   }
+}
+
+
+export function oneDashboardPageWidgetLogTableNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetLogTableNullValuesSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetLogTableNullValuesSeriesOverridesOutputReference extends cdktf.ComplexObject {
@@ -12804,6 +15400,31 @@ export function oneDashboardPageWidgetLogTableNullValuesToTerraform(struct?: One
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetLogTableNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetLogTableNullValuesToHclTerraform(struct?: OneDashboardPageWidgetLogTableNullValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetLogTableNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetLogTableNullValuesSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetLogTableNullValuesOutputReference extends cdktf.ComplexObject {
@@ -12934,6 +15555,31 @@ export function oneDashboardPageWidgetLogTableUnitsSeriesOverridesToTerraform(st
   }
 }
 
+
+export function oneDashboardPageWidgetLogTableUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetLogTableUnitsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetLogTableUnitsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -13058,6 +15704,31 @@ export function oneDashboardPageWidgetLogTableUnitsToTerraform(struct?: OneDashb
     unit: cdktf.stringToTerraform(struct!.unit),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetLogTableUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetLogTableUnitsToHclTerraform(struct?: OneDashboardPageWidgetLogTableUnits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetLogTableUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetLogTableUnitsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetLogTableUnitsOutputReference extends cdktf.ComplexObject {
@@ -13252,6 +15923,103 @@ export function oneDashboardPageWidgetLogTableToTerraform(struct?: OneDashboardP
     null_values: cdktf.listMapper(oneDashboardPageWidgetLogTableNullValuesToTerraform, true)(struct!.nullValues),
     units: cdktf.listMapper(oneDashboardPageWidgetLogTableUnitsToTerraform, true)(struct!.units),
   }
+}
+
+
+export function oneDashboardPageWidgetLogTableToHclTerraform(struct?: OneDashboardPageWidgetLogTable | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.numberToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    facet_show_other_series: {
+      value: cdktf.booleanToHclTerraform(struct!.facetShowOtherSeries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    height: {
+      value: cdktf.numberToHclTerraform(struct!.height),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ignore_time_range: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    legend_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.legendEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    row: {
+      value: cdktf.numberToHclTerraform(struct!.row),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    width: {
+      value: cdktf.numberToHclTerraform(struct!.width),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_max: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMax),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_min: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    colors: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetLogTableColorsToHclTerraform, true)(struct!.colors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetLogTableColorsList",
+    },
+    nrql_query: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetLogTableNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetLogTableNrqlQueryList",
+    },
+    null_values: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetLogTableNullValuesToHclTerraform, true)(struct!.nullValues),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetLogTableNullValuesList",
+    },
+    units: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetLogTableUnitsToHclTerraform, true)(struct!.units),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetLogTableUnitsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetLogTableOutputReference extends cdktf.ComplexObject {
@@ -13639,6 +16407,31 @@ export function oneDashboardPageWidgetMarkdownColorsSeriesOverridesToTerraform(s
   }
 }
 
+
+export function oneDashboardPageWidgetMarkdownColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetMarkdownColorsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetMarkdownColorsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -13763,6 +16556,31 @@ export function oneDashboardPageWidgetMarkdownColorsToTerraform(struct?: OneDash
     color: cdktf.stringToTerraform(struct!.color),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetMarkdownColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetMarkdownColorsToHclTerraform(struct?: OneDashboardPageWidgetMarkdownColors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetMarkdownColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetMarkdownColorsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetMarkdownColorsOutputReference extends cdktf.ComplexObject {
@@ -13893,6 +16711,31 @@ export function oneDashboardPageWidgetMarkdownNullValuesSeriesOverridesToTerrafo
   }
 }
 
+
+export function oneDashboardPageWidgetMarkdownNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -14017,6 +16860,31 @@ export function oneDashboardPageWidgetMarkdownNullValuesToTerraform(struct?: One
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetMarkdownNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetMarkdownNullValuesToHclTerraform(struct?: OneDashboardPageWidgetMarkdownNullValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetMarkdownNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetMarkdownNullValuesSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetMarkdownNullValuesOutputReference extends cdktf.ComplexObject {
@@ -14147,6 +17015,31 @@ export function oneDashboardPageWidgetMarkdownUnitsSeriesOverridesToTerraform(st
   }
 }
 
+
+export function oneDashboardPageWidgetMarkdownUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetMarkdownUnitsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetMarkdownUnitsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -14271,6 +17164,31 @@ export function oneDashboardPageWidgetMarkdownUnitsToTerraform(struct?: OneDashb
     unit: cdktf.stringToTerraform(struct!.unit),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetMarkdownUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetMarkdownUnitsToHclTerraform(struct?: OneDashboardPageWidgetMarkdownUnits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetMarkdownUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetMarkdownUnitsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetMarkdownUnitsOutputReference extends cdktf.ComplexObject {
@@ -14463,6 +17381,103 @@ export function oneDashboardPageWidgetMarkdownToTerraform(struct?: OneDashboardP
     null_values: cdktf.listMapper(oneDashboardPageWidgetMarkdownNullValuesToTerraform, true)(struct!.nullValues),
     units: cdktf.listMapper(oneDashboardPageWidgetMarkdownUnitsToTerraform, true)(struct!.units),
   }
+}
+
+
+export function oneDashboardPageWidgetMarkdownToHclTerraform(struct?: OneDashboardPageWidgetMarkdown | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.numberToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    facet_show_other_series: {
+      value: cdktf.booleanToHclTerraform(struct!.facetShowOtherSeries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    height: {
+      value: cdktf.numberToHclTerraform(struct!.height),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ignore_time_range: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    legend_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.legendEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    row: {
+      value: cdktf.numberToHclTerraform(struct!.row),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    text: {
+      value: cdktf.stringToHclTerraform(struct!.text),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    width: {
+      value: cdktf.numberToHclTerraform(struct!.width),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_max: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMax),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_min: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    colors: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetMarkdownColorsToHclTerraform, true)(struct!.colors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetMarkdownColorsList",
+    },
+    null_values: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetMarkdownNullValuesToHclTerraform, true)(struct!.nullValues),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetMarkdownNullValuesList",
+    },
+    units: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetMarkdownUnitsToHclTerraform, true)(struct!.units),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetMarkdownUnitsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetMarkdownOutputReference extends cdktf.ComplexObject {
@@ -14850,6 +17865,31 @@ export function oneDashboardPageWidgetPieColorsSeriesOverridesToTerraform(struct
   }
 }
 
+
+export function oneDashboardPageWidgetPieColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetPieColorsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetPieColorsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -14974,6 +18014,31 @@ export function oneDashboardPageWidgetPieColorsToTerraform(struct?: OneDashboard
     color: cdktf.stringToTerraform(struct!.color),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetPieColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetPieColorsToHclTerraform(struct?: OneDashboardPageWidgetPieColors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetPieColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetPieColorsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetPieColorsOutputReference extends cdktf.ComplexObject {
@@ -15104,6 +18169,31 @@ export function oneDashboardPageWidgetPieNrqlQueryToTerraform(struct?: OneDashbo
   }
 }
 
+
+export function oneDashboardPageWidgetPieNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetPieNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_id: {
+      value: cdktf.numberToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetPieNrqlQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -15227,6 +18317,31 @@ export function oneDashboardPageWidgetPieNullValuesSeriesOverridesToTerraform(st
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_name: cdktf.stringToTerraform(struct!.seriesName),
   }
+}
+
+
+export function oneDashboardPageWidgetPieNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetPieNullValuesSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetPieNullValuesSeriesOverridesOutputReference extends cdktf.ComplexObject {
@@ -15353,6 +18468,31 @@ export function oneDashboardPageWidgetPieNullValuesToTerraform(struct?: OneDashb
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetPieNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetPieNullValuesToHclTerraform(struct?: OneDashboardPageWidgetPieNullValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetPieNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetPieNullValuesSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetPieNullValuesOutputReference extends cdktf.ComplexObject {
@@ -15483,6 +18623,31 @@ export function oneDashboardPageWidgetPieUnitsSeriesOverridesToTerraform(struct?
   }
 }
 
+
+export function oneDashboardPageWidgetPieUnitsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetPieUnitsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetPieUnitsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -15607,6 +18772,31 @@ export function oneDashboardPageWidgetPieUnitsToTerraform(struct?: OneDashboardP
     unit: cdktf.stringToTerraform(struct!.unit),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetPieUnitsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetPieUnitsToHclTerraform(struct?: OneDashboardPageWidgetPieUnits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetPieUnitsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetPieUnitsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetPieUnitsOutputReference extends cdktf.ComplexObject {
@@ -15815,6 +19005,115 @@ export function oneDashboardPageWidgetPieToTerraform(struct?: OneDashboardPageWi
     null_values: cdktf.listMapper(oneDashboardPageWidgetPieNullValuesToTerraform, true)(struct!.nullValues),
     units: cdktf.listMapper(oneDashboardPageWidgetPieUnitsToTerraform, true)(struct!.units),
   }
+}
+
+
+export function oneDashboardPageWidgetPieToHclTerraform(struct?: OneDashboardPageWidgetPie | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.numberToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    facet_show_other_series: {
+      value: cdktf.booleanToHclTerraform(struct!.facetShowOtherSeries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    filter_current_dashboard: {
+      value: cdktf.booleanToHclTerraform(struct!.filterCurrentDashboard),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    height: {
+      value: cdktf.numberToHclTerraform(struct!.height),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ignore_time_range: {
+      value: cdktf.booleanToHclTerraform(struct!.ignoreTimeRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    legend_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.legendEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    linked_entity_guids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.linkedEntityGuids),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    row: {
+      value: cdktf.numberToHclTerraform(struct!.row),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    width: {
+      value: cdktf.numberToHclTerraform(struct!.width),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_max: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMax),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    y_axis_left_min: {
+      value: cdktf.numberToHclTerraform(struct!.yAxisLeftMin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    colors: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetPieColorsToHclTerraform, true)(struct!.colors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetPieColorsList",
+    },
+    nrql_query: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetPieNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetPieNrqlQueryList",
+    },
+    null_values: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetPieNullValuesToHclTerraform, true)(struct!.nullValues),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetPieNullValuesList",
+    },
+    units: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetPieUnitsToHclTerraform, true)(struct!.units),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetPieUnitsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetPieOutputReference extends cdktf.ComplexObject {
@@ -16246,6 +19545,31 @@ export function oneDashboardPageWidgetStackedBarColorsSeriesOverridesToTerraform
   }
 }
 
+
+export function oneDashboardPageWidgetStackedBarColorsSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetStackedBarColorsSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetStackedBarColorsSeriesOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -16370,6 +19694,31 @@ export function oneDashboardPageWidgetStackedBarColorsToTerraform(struct?: OneDa
     color: cdktf.stringToTerraform(struct!.color),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetStackedBarColorsSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetStackedBarColorsToHclTerraform(struct?: OneDashboardPageWidgetStackedBarColors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetStackedBarColorsSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetStackedBarColorsSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetStackedBarColorsOutputReference extends cdktf.ComplexObject {
@@ -16500,6 +19849,31 @@ export function oneDashboardPageWidgetStackedBarNrqlQueryToTerraform(struct?: On
   }
 }
 
+
+export function oneDashboardPageWidgetStackedBarNrqlQueryToHclTerraform(struct?: OneDashboardPageWidgetStackedBarNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_id: {
+      value: cdktf.numberToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OneDashboardPageWidgetStackedBarNrqlQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -16623,6 +19997,31 @@ export function oneDashboardPageWidgetStackedBarNullValuesSeriesOverridesToTerra
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_name: cdktf.stringToTerraform(struct!.seriesName),
   }
+}
+
+
+export function oneDashboardPageWidgetStackedBarNullValuesSeriesOverridesToHclTerraform(struct?: OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_name: {
+      value: cdktf.stringToHclTerraform(struct!.seriesName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesOutputReference extends cdktf.ComplexObject {
@@ -16749,6 +20148,31 @@ export function oneDashboardPageWidgetStackedBarNullValuesToTerraform(struct?: O
     null_value: cdktf.stringToTerraform(struct!.nullValue),
     series_overrides: cdktf.listMapper(oneDashboardPageWidgetStackedBarNullValuesSeriesOverridesToTerraform, true)(struct!.seriesOverrides),
   }
+}
+
+
+export function oneDashboardPageWidgetStackedBarNullValuesToHclTerraform(struct?: OneDashboardPageWidgetStackedBarNullValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    null_value: {
+      value: cdktf.stringToHclTerraform(struct!.nullValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    series_overrides: {
+      value: cdktf.listMapperHcl(oneDashboardPageWidgetStackedBarNullValuesSeriesOverridesToHclTerraform, true)(struct!.seriesOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardPageWidgetStackedBarNullValuesSeriesOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardPageWidgetStackedBarNullValuesOutputReference extends cdktf.ComplexObject {

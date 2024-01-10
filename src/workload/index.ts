@@ -87,6 +87,25 @@ export function workloadEntitySearchQueryToTerraform(struct?: WorkloadEntitySear
   }
 }
 
+
+export function workloadEntitySearchQueryToHclTerraform(struct?: WorkloadEntitySearchQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WorkloadEntitySearchQueryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -202,6 +221,43 @@ export function workloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntit
     threshold_type: cdktf.stringToTerraform(struct!.thresholdType),
     threshold_value: cdktf.numberToTerraform(struct!.thresholdValue),
   }
+}
+
+
+export function workloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupToHclTerraform(struct?: WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupOutputReference | WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_by: {
+      value: cdktf.stringToHclTerraform(struct!.groupBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    strategy: {
+      value: cdktf.stringToHclTerraform(struct!.strategy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    threshold_type: {
+      value: cdktf.stringToHclTerraform(struct!.thresholdType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    threshold_value: {
+      value: cdktf.numberToHclTerraform(struct!.thresholdValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupOutputReference extends cdktf.ComplexObject {
@@ -331,6 +387,25 @@ export function workloadStatusConfigAutomaticRemainingEntitiesRuleToTerraform(st
   }
 }
 
+
+export function workloadStatusConfigAutomaticRemainingEntitiesRuleToHclTerraform(struct?: WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference | WorkloadStatusConfigAutomaticRemainingEntitiesRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    remaining_entities_rule_rollup: {
+      value: workloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupToHclTerraform(struct!.remainingEntitiesRuleRollup),
+      isBlock: true,
+      type: "set",
+      storageClassType: "WorkloadStatusConfigAutomaticRemainingEntitiesRuleRemainingEntitiesRuleRollupList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -393,6 +468,25 @@ export function workloadStatusConfigAutomaticRuleNrqlQueryToTerraform(struct?: W
   return {
     query: cdktf.stringToTerraform(struct!.query),
   }
+}
+
+
+export function workloadStatusConfigAutomaticRuleNrqlQueryToHclTerraform(struct?: WorkloadStatusConfigAutomaticRuleNrqlQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference extends cdktf.ComplexObject {
@@ -503,6 +597,37 @@ export function workloadStatusConfigAutomaticRuleRollupToTerraform(struct?: Work
     threshold_type: cdktf.stringToTerraform(struct!.thresholdType),
     threshold_value: cdktf.numberToTerraform(struct!.thresholdValue),
   }
+}
+
+
+export function workloadStatusConfigAutomaticRuleRollupToHclTerraform(struct?: WorkloadStatusConfigAutomaticRuleRollupOutputReference | WorkloadStatusConfigAutomaticRuleRollup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    strategy: {
+      value: cdktf.stringToHclTerraform(struct!.strategy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    threshold_type: {
+      value: cdktf.stringToHclTerraform(struct!.thresholdType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    threshold_value: {
+      value: cdktf.numberToHclTerraform(struct!.thresholdValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorkloadStatusConfigAutomaticRuleRollupOutputReference extends cdktf.ComplexObject {
@@ -625,6 +750,37 @@ export function workloadStatusConfigAutomaticRuleToTerraform(struct?: WorkloadSt
     nrql_query: cdktf.listMapper(workloadStatusConfigAutomaticRuleNrqlQueryToTerraform, true)(struct!.nrqlQuery),
     rollup: workloadStatusConfigAutomaticRuleRollupToTerraform(struct!.rollup),
   }
+}
+
+
+export function workloadStatusConfigAutomaticRuleToHclTerraform(struct?: WorkloadStatusConfigAutomaticRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    entity_guids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.entityGuids),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    nrql_query: {
+      value: cdktf.listMapperHcl(workloadStatusConfigAutomaticRuleNrqlQueryToHclTerraform, true)(struct!.nrqlQuery),
+      isBlock: true,
+      type: "set",
+      storageClassType: "WorkloadStatusConfigAutomaticRuleNrqlQueryList",
+    },
+    rollup: {
+      value: workloadStatusConfigAutomaticRuleRollupToHclTerraform(struct!.rollup),
+      isBlock: true,
+      type: "set",
+      storageClassType: "WorkloadStatusConfigAutomaticRuleRollupList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorkloadStatusConfigAutomaticRuleOutputReference extends cdktf.ComplexObject {
@@ -781,6 +937,37 @@ export function workloadStatusConfigAutomaticToTerraform(struct?: WorkloadStatus
   }
 }
 
+
+export function workloadStatusConfigAutomaticToHclTerraform(struct?: WorkloadStatusConfigAutomaticOutputReference | WorkloadStatusConfigAutomatic): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    remaining_entities_rule: {
+      value: workloadStatusConfigAutomaticRemainingEntitiesRuleToHclTerraform(struct!.remainingEntitiesRule),
+      isBlock: true,
+      type: "set",
+      storageClassType: "WorkloadStatusConfigAutomaticRemainingEntitiesRuleList",
+    },
+    rule: {
+      value: cdktf.listMapperHcl(workloadStatusConfigAutomaticRuleToHclTerraform, true)(struct!.rule),
+      isBlock: true,
+      type: "set",
+      storageClassType: "WorkloadStatusConfigAutomaticRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WorkloadStatusConfigAutomaticOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -908,6 +1095,43 @@ export function workloadStatusConfigStaticToTerraform(struct?: WorkloadStatusCon
     status: cdktf.stringToTerraform(struct!.status),
     summary: cdktf.stringToTerraform(struct!.summary),
   }
+}
+
+
+export function workloadStatusConfigStaticToHclTerraform(struct?: WorkloadStatusConfigStaticOutputReference | WorkloadStatusConfigStatic): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    summary: {
+      value: cdktf.stringToHclTerraform(struct!.summary),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorkloadStatusConfigStaticOutputReference extends cdktf.ComplexObject {
@@ -1262,5 +1486,67 @@ export class Workload extends cdktf.TerraformResource {
       status_config_automatic: workloadStatusConfigAutomaticToTerraform(this._statusConfigAutomatic.internalValue),
       status_config_static: workloadStatusConfigStaticToTerraform(this._statusConfigStatic.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.numberToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      entity_guids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._entityGuids),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scope_account_ids: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._scopeAccountIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "numberList",
+      },
+      entity_search_query: {
+        value: cdktf.listMapperHcl(workloadEntitySearchQueryToHclTerraform, true)(this._entitySearchQuery.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkloadEntitySearchQueryList",
+      },
+      status_config_automatic: {
+        value: workloadStatusConfigAutomaticToHclTerraform(this._statusConfigAutomatic.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkloadStatusConfigAutomaticList",
+      },
+      status_config_static: {
+        value: workloadStatusConfigStaticToHclTerraform(this._statusConfigStatic.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkloadStatusConfigStaticList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -32,7 +32,7 @@ export interface AlertChannelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
-  * (Required) The type of channel. One of: (webhook, email, opsgenie, pagerduty, slack, user, victorops).
+  * (Required) The type of channel. One of: (user, victorops, webhook, email, opsgenie, pagerduty, slack).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_channel#type AlertChannel#type}
   */
@@ -201,6 +201,145 @@ export function alertChannelConfigAToTerraform(struct?: AlertChannelConfigAOutpu
     url: cdktf.stringToTerraform(struct!.url),
     user_id: cdktf.stringToTerraform(struct!.userId),
   }
+}
+
+
+export function alertChannelConfigAToHclTerraform(struct?: AlertChannelConfigAOutputReference | AlertChannelConfigA): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    api_key: {
+      value: cdktf.stringToHclTerraform(struct!.apiKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    auth_password: {
+      value: cdktf.stringToHclTerraform(struct!.authPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    auth_type: {
+      value: cdktf.stringToHclTerraform(struct!.authType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    auth_username: {
+      value: cdktf.stringToHclTerraform(struct!.authUsername),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    base_url: {
+      value: cdktf.stringToHclTerraform(struct!.baseUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    channel: {
+      value: cdktf.stringToHclTerraform(struct!.channel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    headers: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.headers),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    headers_string: {
+      value: cdktf.stringToHclTerraform(struct!.headersString),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    include_json_attachment: {
+      value: cdktf.stringToHclTerraform(struct!.includeJsonAttachment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    payload: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.payload),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    payload_string: {
+      value: cdktf.stringToHclTerraform(struct!.payloadString),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    payload_type: {
+      value: cdktf.stringToHclTerraform(struct!.payloadType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    recipients: {
+      value: cdktf.stringToHclTerraform(struct!.recipients),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    route_key: {
+      value: cdktf.stringToHclTerraform(struct!.routeKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_key: {
+      value: cdktf.stringToHclTerraform(struct!.serviceKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags: {
+      value: cdktf.stringToHclTerraform(struct!.tags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    teams: {
+      value: cdktf.stringToHclTerraform(struct!.teams),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    url: {
+      value: cdktf.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_id: {
+      value: cdktf.stringToHclTerraform(struct!.userId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AlertChannelConfigAOutputReference extends cdktf.ComplexObject {
@@ -840,5 +979,43 @@ export class AlertChannel extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       config: alertChannelConfigAToTerraform(this._config.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.numberToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config: {
+        value: alertChannelConfigAToHclTerraform(this._config.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AlertChannelConfigAList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

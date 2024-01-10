@@ -100,6 +100,31 @@ export function syntheticsStepMonitorLocationPrivateToTerraform(struct?: Synthet
   }
 }
 
+
+export function syntheticsStepMonitorLocationPrivateToHclTerraform(struct?: SyntheticsStepMonitorLocationPrivate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    guid: {
+      value: cdktf.stringToHclTerraform(struct!.guid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vse_password: {
+      value: cdktf.stringToHclTerraform(struct!.vsePassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsStepMonitorLocationPrivateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -230,6 +255,37 @@ export function syntheticsStepMonitorStepsToTerraform(struct?: SyntheticsStepMon
     type: cdktf.stringToTerraform(struct!.type),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function syntheticsStepMonitorStepsToHclTerraform(struct?: SyntheticsStepMonitorSteps | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ordinal: {
+      value: cdktf.numberToHclTerraform(struct!.ordinal),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsStepMonitorStepsOutputReference extends cdktf.ComplexObject {
@@ -374,6 +430,31 @@ export function syntheticsStepMonitorTagToTerraform(struct?: SyntheticsStepMonit
     key: cdktf.stringToTerraform(struct!.key),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function syntheticsStepMonitorTagToHclTerraform(struct?: SyntheticsStepMonitorTag | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsStepMonitorTagOutputReference extends cdktf.ComplexObject {
@@ -715,5 +796,73 @@ export class SyntheticsStepMonitor extends cdktf.TerraformResource {
       steps: cdktf.listMapper(syntheticsStepMonitorStepsToTerraform, true)(this._steps.internalValue),
       tag: cdktf.listMapper(syntheticsStepMonitorTagToTerraform, true)(this._tag.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.numberToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      enable_screenshot_on_failure_and_script: {
+        value: cdktf.booleanToHclTerraform(this._enableScreenshotOnFailureAndScript),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      locations_public: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._locationsPublic),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      period: {
+        value: cdktf.stringToHclTerraform(this._period),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location_private: {
+        value: cdktf.listMapperHcl(syntheticsStepMonitorLocationPrivateToHclTerraform, true)(this._locationPrivate.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SyntheticsStepMonitorLocationPrivateList",
+      },
+      steps: {
+        value: cdktf.listMapperHcl(syntheticsStepMonitorStepsToHclTerraform, true)(this._steps.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsStepMonitorStepsList",
+      },
+      tag: {
+        value: cdktf.listMapperHcl(syntheticsStepMonitorTagToHclTerraform, true)(this._tag.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SyntheticsStepMonitorTagList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

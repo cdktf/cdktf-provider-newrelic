@@ -7,9 +7,11 @@
 
 import { OneDashboardPage, 
 oneDashboardPageToTerraform, 
+oneDashboardPageToHclTerraform, 
 OneDashboardPageList, 
 OneDashboardVariable, 
 oneDashboardVariableToTerraform, 
+oneDashboardVariableToHclTerraform, 
 OneDashboardVariableList} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
@@ -254,5 +256,55 @@ export class OneDashboard extends cdktf.TerraformResource {
       page: cdktf.listMapper(oneDashboardPageToTerraform, true)(this._page.internalValue),
       variable: cdktf.listMapper(oneDashboardVariableToTerraform, true)(this._variable.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.numberToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permissions: {
+        value: cdktf.stringToHclTerraform(this._permissions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      page: {
+        value: cdktf.listMapperHcl(oneDashboardPageToHclTerraform, true)(this._page.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OneDashboardPageList",
+      },
+      variable: {
+        value: cdktf.listMapperHcl(oneDashboardVariableToHclTerraform, true)(this._variable.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OneDashboardVariableList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
