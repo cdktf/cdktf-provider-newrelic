@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/insights_event
 // generated from terraform resource schema
 
@@ -57,6 +52,37 @@ export function insightsEventEventAttributeToTerraform(struct?: InsightsEventEve
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function insightsEventEventAttributeToHclTerraform(struct?: InsightsEventEventAttribute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class InsightsEventEventAttributeOutputReference extends cdktf.ComplexObject {
@@ -208,6 +234,37 @@ export function insightsEventEventToTerraform(struct?: InsightsEventEvent | cdkt
     type: cdktf.stringToTerraform(struct!.type),
     attribute: cdktf.listMapper(insightsEventEventAttributeToTerraform, true)(struct!.attribute),
   }
+}
+
+
+export function insightsEventEventToHclTerraform(struct?: InsightsEventEvent | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    timestamp: {
+      value: cdktf.numberToHclTerraform(struct!.timestamp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    attribute: {
+      value: cdktf.listMapperHcl(insightsEventEventAttributeToHclTerraform, true)(struct!.attribute),
+      isBlock: true,
+      type: "set",
+      storageClassType: "InsightsEventEventAttributeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class InsightsEventEventOutputReference extends cdktf.ComplexObject {
@@ -426,5 +483,25 @@ export class InsightsEvent extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       event: cdktf.listMapper(insightsEventEventToTerraform, true)(this._event.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      event: {
+        value: cdktf.listMapperHcl(insightsEventEventToHclTerraform, true)(this._event.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "InsightsEventEventList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

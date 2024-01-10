@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/one_dashboard_raw
 // generated from terraform resource schema
 
@@ -108,6 +103,67 @@ export function oneDashboardRawPageWidgetToTerraform(struct?: OneDashboardRawPag
     visualization_id: cdktf.stringToTerraform(struct!.visualizationId),
     width: cdktf.numberToTerraform(struct!.width),
   }
+}
+
+
+export function oneDashboardRawPageWidgetToHclTerraform(struct?: OneDashboardRawPageWidget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.numberToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    configuration: {
+      value: cdktf.stringToHclTerraform(struct!.configuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    height: {
+      value: cdktf.numberToHclTerraform(struct!.height),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    linked_entity_guids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.linkedEntityGuids),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    row: {
+      value: cdktf.numberToHclTerraform(struct!.row),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    visualization_id: {
+      value: cdktf.stringToHclTerraform(struct!.visualizationId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    width: {
+      value: cdktf.numberToHclTerraform(struct!.width),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardRawPageWidgetOutputReference extends cdktf.ComplexObject {
@@ -365,6 +421,37 @@ export function oneDashboardRawPageToTerraform(struct?: OneDashboardRawPage | cd
     name: cdktf.stringToTerraform(struct!.name),
     widget: cdktf.listMapper(oneDashboardRawPageWidgetToTerraform, true)(struct!.widget),
   }
+}
+
+
+export function oneDashboardRawPageToHclTerraform(struct?: OneDashboardRawPage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    widget: {
+      value: cdktf.listMapperHcl(oneDashboardRawPageWidgetToHclTerraform, true)(struct!.widget),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OneDashboardRawPageWidgetList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OneDashboardRawPageOutputReference extends cdktf.ComplexObject {
@@ -670,5 +757,49 @@ export class OneDashboardRaw extends cdktf.TerraformResource {
       permissions: cdktf.stringToTerraform(this._permissions),
       page: cdktf.listMapper(oneDashboardRawPageToTerraform, true)(this._page.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.numberToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permissions: {
+        value: cdktf.stringToHclTerraform(this._permissions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      page: {
+        value: cdktf.listMapperHcl(oneDashboardRawPageToHclTerraform, true)(this._page.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OneDashboardRawPageList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

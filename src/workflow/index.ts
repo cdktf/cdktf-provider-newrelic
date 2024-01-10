@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workflow
 // generated from terraform resource schema
 
@@ -98,6 +93,31 @@ export function workflowDestinationToTerraform(struct?: WorkflowDestination | cd
     channel_id: cdktf.stringToTerraform(struct!.channelId),
     notification_triggers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notificationTriggers),
   }
+}
+
+
+export function workflowDestinationToHclTerraform(struct?: WorkflowDestination | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    channel_id: {
+      value: cdktf.stringToHclTerraform(struct!.channelId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    notification_triggers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notificationTriggers),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorkflowDestinationOutputReference extends cdktf.ComplexObject {
@@ -228,6 +248,25 @@ export function workflowEnrichmentsNrqlConfigurationToTerraform(struct?: Workflo
   }
 }
 
+
+export function workflowEnrichmentsNrqlConfigurationToHclTerraform(struct?: WorkflowEnrichmentsNrqlConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WorkflowEnrichmentsNrqlConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -329,6 +368,31 @@ export function workflowEnrichmentsNrqlToTerraform(struct?: WorkflowEnrichmentsN
     name: cdktf.stringToTerraform(struct!.name),
     configuration: cdktf.listMapper(workflowEnrichmentsNrqlConfigurationToTerraform, true)(struct!.configuration),
   }
+}
+
+
+export function workflowEnrichmentsNrqlToHclTerraform(struct?: WorkflowEnrichmentsNrql | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    configuration: {
+      value: cdktf.listMapperHcl(workflowEnrichmentsNrqlConfigurationToHclTerraform, true)(struct!.configuration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "WorkflowEnrichmentsNrqlConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorkflowEnrichmentsNrqlOutputReference extends cdktf.ComplexObject {
@@ -461,6 +525,25 @@ export function workflowEnrichmentsToTerraform(struct?: WorkflowEnrichmentsOutpu
   }
 }
 
+
+export function workflowEnrichmentsToHclTerraform(struct?: WorkflowEnrichmentsOutputReference | WorkflowEnrichments): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    nrql: {
+      value: cdktf.listMapperHcl(workflowEnrichmentsNrqlToHclTerraform, true)(struct!.nrql),
+      isBlock: true,
+      type: "list",
+      storageClassType: "WorkflowEnrichmentsNrqlList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WorkflowEnrichmentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -537,6 +620,37 @@ export function workflowIssuesFilterPredicateToTerraform(struct?: WorkflowIssues
     operator: cdktf.stringToTerraform(struct!.operator),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function workflowIssuesFilterPredicateToHclTerraform(struct?: WorkflowIssuesFilterPredicate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attribute: {
+      value: cdktf.stringToHclTerraform(struct!.attribute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operator: {
+      value: cdktf.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorkflowIssuesFilterPredicateOutputReference extends cdktf.ComplexObject {
@@ -685,6 +799,37 @@ export function workflowIssuesFilterToTerraform(struct?: WorkflowIssuesFilterOut
     type: cdktf.stringToTerraform(struct!.type),
     predicate: cdktf.listMapper(workflowIssuesFilterPredicateToTerraform, true)(struct!.predicate),
   }
+}
+
+
+export function workflowIssuesFilterToHclTerraform(struct?: WorkflowIssuesFilterOutputReference | WorkflowIssuesFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    predicate: {
+      value: cdktf.listMapperHcl(workflowIssuesFilterPredicateToHclTerraform, true)(struct!.predicate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "WorkflowIssuesFilterPredicateList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorkflowIssuesFilterOutputReference extends cdktf.ComplexObject {
@@ -1026,5 +1171,73 @@ export class Workflow extends cdktf.TerraformResource {
       enrichments: workflowEnrichmentsToTerraform(this._enrichments.internalValue),
       issues_filter: workflowIssuesFilterToTerraform(this._issuesFilter.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.numberToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      destinations_enabled: {
+        value: cdktf.booleanToHclTerraform(this._destinationsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enrichments_enabled: {
+        value: cdktf.booleanToHclTerraform(this._enrichmentsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      muting_rules_handling: {
+        value: cdktf.stringToHclTerraform(this._mutingRulesHandling),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination: {
+        value: cdktf.listMapperHcl(workflowDestinationToHclTerraform, true)(this._destination.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkflowDestinationList",
+      },
+      enrichments: {
+        value: workflowEnrichmentsToHclTerraform(this._enrichments.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkflowEnrichmentsList",
+      },
+      issues_filter: {
+        value: workflowIssuesFilterToHclTerraform(this._issuesFilter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WorkflowIssuesFilterList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

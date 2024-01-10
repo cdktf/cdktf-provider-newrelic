@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/infra_alert_condition
 // generated from terraform resource schema
 
@@ -137,6 +132,37 @@ export function infraAlertConditionCriticalToTerraform(struct?: InfraAlertCondit
   }
 }
 
+
+export function infraAlertConditionCriticalToHclTerraform(struct?: InfraAlertConditionCriticalOutputReference | InfraAlertConditionCritical): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    duration: {
+      value: cdktf.numberToHclTerraform(struct!.duration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    time_function: {
+      value: cdktf.stringToHclTerraform(struct!.timeFunction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class InfraAlertConditionCriticalOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -251,6 +277,37 @@ export function infraAlertConditionWarningToTerraform(struct?: InfraAlertConditi
     time_function: cdktf.stringToTerraform(struct!.timeFunction),
     value: cdktf.numberToTerraform(struct!.value),
   }
+}
+
+
+export function infraAlertConditionWarningToHclTerraform(struct?: InfraAlertConditionWarningOutputReference | InfraAlertConditionWarning): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    duration: {
+      value: cdktf.numberToHclTerraform(struct!.duration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    time_function: {
+      value: cdktf.stringToHclTerraform(struct!.timeFunction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class InfraAlertConditionWarningOutputReference extends cdktf.ComplexObject {
@@ -701,5 +758,109 @@ export class InfraAlertCondition extends cdktf.TerraformResource {
       critical: infraAlertConditionCriticalToTerraform(this._critical.internalValue),
       warning: infraAlertConditionWarningToTerraform(this._warning.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      comparison: {
+        value: cdktf.stringToHclTerraform(this._comparison),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      event: {
+        value: cdktf.stringToHclTerraform(this._event),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      integration_provider: {
+        value: cdktf.stringToHclTerraform(this._integrationProvider),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_id: {
+        value: cdktf.numberToHclTerraform(this._policyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      process_where: {
+        value: cdktf.stringToHclTerraform(this._processWhere),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      runbook_url: {
+        value: cdktf.stringToHclTerraform(this._runbookUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      select: {
+        value: cdktf.stringToHclTerraform(this._select),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      violation_close_timer: {
+        value: cdktf.numberToHclTerraform(this._violationCloseTimer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      where: {
+        value: cdktf.stringToHclTerraform(this._where),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      critical: {
+        value: infraAlertConditionCriticalToHclTerraform(this._critical.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "InfraAlertConditionCriticalList",
+      },
+      warning: {
+        value: infraAlertConditionWarningToHclTerraform(this._warning.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "InfraAlertConditionWarningList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

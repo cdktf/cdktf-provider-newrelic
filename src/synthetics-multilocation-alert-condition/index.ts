@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_multilocation_alert_condition
 // generated from terraform resource schema
 
@@ -87,6 +82,25 @@ export function syntheticsMultilocationAlertConditionCriticalToTerraform(struct?
   }
 }
 
+
+export function syntheticsMultilocationAlertConditionCriticalToHclTerraform(struct?: SyntheticsMultilocationAlertConditionCriticalOutputReference | SyntheticsMultilocationAlertConditionCritical): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    threshold: {
+      value: cdktf.numberToHclTerraform(struct!.threshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsMultilocationAlertConditionCriticalOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -149,6 +163,25 @@ export function syntheticsMultilocationAlertConditionWarningToTerraform(struct?:
   return {
     threshold: cdktf.numberToTerraform(struct!.threshold),
   }
+}
+
+
+export function syntheticsMultilocationAlertConditionWarningToHclTerraform(struct?: SyntheticsMultilocationAlertConditionWarningOutputReference | SyntheticsMultilocationAlertConditionWarning): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    threshold: {
+      value: cdktf.numberToHclTerraform(struct!.threshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsMultilocationAlertConditionWarningOutputReference extends cdktf.ComplexObject {
@@ -416,5 +449,67 @@ export class SyntheticsMultilocationAlertCondition extends cdktf.TerraformResour
       critical: syntheticsMultilocationAlertConditionCriticalToTerraform(this._critical.internalValue),
       warning: syntheticsMultilocationAlertConditionWarningToTerraform(this._warning.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      entities: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._entities),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_id: {
+        value: cdktf.numberToHclTerraform(this._policyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      runbook_url: {
+        value: cdktf.stringToHclTerraform(this._runbookUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      violation_time_limit_seconds: {
+        value: cdktf.numberToHclTerraform(this._violationTimeLimitSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      critical: {
+        value: syntheticsMultilocationAlertConditionCriticalToHclTerraform(this._critical.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsMultilocationAlertConditionCriticalList",
+      },
+      warning: {
+        value: syntheticsMultilocationAlertConditionWarningToHclTerraform(this._warning.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsMultilocationAlertConditionWarningList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

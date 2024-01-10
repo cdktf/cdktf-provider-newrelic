@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/cloud_aws_govcloud_link_account
 // generated from terraform resource schema
 
@@ -235,5 +230,55 @@ export class CloudAwsGovcloudLinkAccount extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       secret_access_key: cdktf.stringToTerraform(this._secretAccessKey),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_key_id: {
+        value: cdktf.stringToHclTerraform(this._accessKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      account_id: {
+        value: cdktf.numberToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      aws_account_id: {
+        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metric_collection_mode: {
+        value: cdktf.stringToHclTerraform(this._metricCollectionMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_access_key: {
+        value: cdktf.stringToHclTerraform(this._secretAccessKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

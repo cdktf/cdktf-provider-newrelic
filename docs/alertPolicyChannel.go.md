@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertpolicychannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicychannel"
 
 alertpolicychannel.NewAlertPolicyChannel(scope Construct, id *string, config AlertPolicyChannelConfig) AlertPolicyChannel
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -128,6 +129,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.toMetadata"></a>
 
@@ -405,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertpolicychannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicychannel"
 
 alertpolicychannel.AlertPolicyChannel_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertpolicychannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicychannel"
 
 alertpolicychannel.AlertPolicyChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ alertpolicychannel.AlertPolicyChannel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertpolicychannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicychannel"
 
 alertpolicychannel.AlertPolicyChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ alertpolicychannel.AlertPolicyChannel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertpolicychannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicychannel"
 
 alertpolicychannel.AlertPolicyChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertpolicychannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicychannel"
 
 &alertpolicychannel.AlertPolicyChannelConfig {
 	Connection: interface{},
@@ -818,7 +825,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertpolicychan
 	PolicyId: *f64,
 	AccountId: *f64,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.alertPolicyChannel.AlertPolicyChannelTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.alertPolicyChannel.AlertPolicyChannelTimeouts,
 }
 ```
 
@@ -989,7 +996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertpolicychannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicychannel"
 
 &alertpolicychannel.AlertPolicyChannelTimeouts {
 	Create: *string,
@@ -1023,7 +1030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/alertpolicychannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicychannel"
 
 alertpolicychannel.NewAlertPolicyChannelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertPolicyChannelTimeoutsOutputReference
 ```

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/cloud_aws_govcloud_integrations
 // generated from terraform resource schema
 
@@ -213,6 +208,61 @@ export function cloudAwsGovcloudIntegrationsAlbToTerraform(struct?: CloudAwsGovc
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
     tag_value: cdktf.stringToTerraform(struct!.tagValue),
   }
+}
+
+
+export function cloudAwsGovcloudIntegrationsAlbToHclTerraform(struct?: CloudAwsGovcloudIntegrationsAlbOutputReference | CloudAwsGovcloudIntegrationsAlb): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    fetch_extended_inventory: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    fetch_tags: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    load_balancer_prefixes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.loadBalancerPrefixes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    tag_key: {
+      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudAwsGovcloudIntegrationsAlbOutputReference extends cdktf.ComplexObject {
@@ -444,6 +494,49 @@ export function cloudAwsGovcloudIntegrationsApiGatewayToTerraform(struct?: Cloud
   }
 }
 
+
+export function cloudAwsGovcloudIntegrationsApiGatewayToHclTerraform(struct?: CloudAwsGovcloudIntegrationsApiGatewayOutputReference | CloudAwsGovcloudIntegrationsApiGateway): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    stage_prefixes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.stagePrefixes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    tag_key: {
+      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudAwsGovcloudIntegrationsApiGatewayOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -606,6 +699,31 @@ export function cloudAwsGovcloudIntegrationsAutoScalingToTerraform(struct?: Clou
   }
 }
 
+
+export function cloudAwsGovcloudIntegrationsAutoScalingToHclTerraform(struct?: CloudAwsGovcloudIntegrationsAutoScalingOutputReference | CloudAwsGovcloudIntegrationsAutoScaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudAwsGovcloudIntegrationsAutoScalingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -700,6 +818,31 @@ export function cloudAwsGovcloudIntegrationsAwsDirectConnectToTerraform(struct?:
     aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
   }
+}
+
+
+export function cloudAwsGovcloudIntegrationsAwsDirectConnectToHclTerraform(struct?: CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference | CloudAwsGovcloudIntegrationsAwsDirectConnect): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudAwsGovcloudIntegrationsAwsDirectConnectOutputReference extends cdktf.ComplexObject {
@@ -798,6 +941,31 @@ export function cloudAwsGovcloudIntegrationsAwsStatesToTerraform(struct?: CloudA
   }
 }
 
+
+export function cloudAwsGovcloudIntegrationsAwsStatesToHclTerraform(struct?: CloudAwsGovcloudIntegrationsAwsStatesOutputReference | CloudAwsGovcloudIntegrationsAwsStates): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudAwsGovcloudIntegrationsAwsStatesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -892,6 +1060,31 @@ export function cloudAwsGovcloudIntegrationsCloudtrailToTerraform(struct?: Cloud
     aws_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.awsRegions),
     metrics_polling_interval: cdktf.numberToTerraform(struct!.metricsPollingInterval),
   }
+}
+
+
+export function cloudAwsGovcloudIntegrationsCloudtrailToHclTerraform(struct?: CloudAwsGovcloudIntegrationsCloudtrailOutputReference | CloudAwsGovcloudIntegrationsCloudtrail): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudAwsGovcloudIntegrationsCloudtrailOutputReference extends cdktf.ComplexObject {
@@ -1018,6 +1211,55 @@ export function cloudAwsGovcloudIntegrationsDynamoDbToTerraform(struct?: CloudAw
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
     tag_value: cdktf.stringToTerraform(struct!.tagValue),
   }
+}
+
+
+export function cloudAwsGovcloudIntegrationsDynamoDbToHclTerraform(struct?: CloudAwsGovcloudIntegrationsDynamoDbOutputReference | CloudAwsGovcloudIntegrationsDynamoDb): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    fetch_extended_inventory: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    fetch_tags: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    tag_key: {
+      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudAwsGovcloudIntegrationsDynamoDbOutputReference extends cdktf.ComplexObject {
@@ -1227,6 +1469,49 @@ export function cloudAwsGovcloudIntegrationsEbsToTerraform(struct?: CloudAwsGovc
   }
 }
 
+
+export function cloudAwsGovcloudIntegrationsEbsToHclTerraform(struct?: CloudAwsGovcloudIntegrationsEbsOutputReference | CloudAwsGovcloudIntegrationsEbs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    fetch_extended_inventory: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    tag_key: {
+      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudAwsGovcloudIntegrationsEbsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1410,6 +1695,49 @@ export function cloudAwsGovcloudIntegrationsEc2ToTerraform(struct?: CloudAwsGovc
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
     tag_value: cdktf.stringToTerraform(struct!.tagValue),
   }
+}
+
+
+export function cloudAwsGovcloudIntegrationsEc2ToHclTerraform(struct?: CloudAwsGovcloudIntegrationsEc2OutputReference | CloudAwsGovcloudIntegrationsEc2): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    fetch_ip_addresses: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchIpAddresses),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    tag_key: {
+      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudAwsGovcloudIntegrationsEc2OutputReference extends cdktf.ComplexObject {
@@ -1597,6 +1925,49 @@ export function cloudAwsGovcloudIntegrationsElasticSearchToTerraform(struct?: Cl
   }
 }
 
+
+export function cloudAwsGovcloudIntegrationsElasticSearchToHclTerraform(struct?: CloudAwsGovcloudIntegrationsElasticSearchOutputReference | CloudAwsGovcloudIntegrationsElasticSearch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    fetch_nodes: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchNodes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    tag_key: {
+      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudAwsGovcloudIntegrationsElasticSearchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1773,6 +2144,43 @@ export function cloudAwsGovcloudIntegrationsElbToTerraform(struct?: CloudAwsGovc
   }
 }
 
+
+export function cloudAwsGovcloudIntegrationsElbToHclTerraform(struct?: CloudAwsGovcloudIntegrationsElbOutputReference | CloudAwsGovcloudIntegrationsElb): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    fetch_extended_inventory: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    fetch_tags: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudAwsGovcloudIntegrationsElbOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1936,6 +2344,49 @@ export function cloudAwsGovcloudIntegrationsEmrToTerraform(struct?: CloudAwsGovc
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
     tag_value: cdktf.stringToTerraform(struct!.tagValue),
   }
+}
+
+
+export function cloudAwsGovcloudIntegrationsEmrToHclTerraform(struct?: CloudAwsGovcloudIntegrationsEmrOutputReference | CloudAwsGovcloudIntegrationsEmr): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktf.stringToHclTerraform(struct!.awsRegions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    fetch_tags: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    tag_key: {
+      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudAwsGovcloudIntegrationsEmrOutputReference extends cdktf.ComplexObject {
@@ -2109,6 +2560,37 @@ export function cloudAwsGovcloudIntegrationsIamToTerraform(struct?: CloudAwsGovc
   }
 }
 
+
+export function cloudAwsGovcloudIntegrationsIamToHclTerraform(struct?: CloudAwsGovcloudIntegrationsIamOutputReference | CloudAwsGovcloudIntegrationsIam): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    tag_key: {
+      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudAwsGovcloudIntegrationsIamOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2250,6 +2732,49 @@ export function cloudAwsGovcloudIntegrationsLambdaToTerraform(struct?: CloudAwsG
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
     tag_value: cdktf.stringToTerraform(struct!.tagValue),
   }
+}
+
+
+export function cloudAwsGovcloudIntegrationsLambdaToHclTerraform(struct?: CloudAwsGovcloudIntegrationsLambdaOutputReference | CloudAwsGovcloudIntegrationsLambda): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    fetch_tags: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    tag_key: {
+      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudAwsGovcloudIntegrationsLambdaOutputReference extends cdktf.ComplexObject {
@@ -2437,6 +2962,49 @@ export function cloudAwsGovcloudIntegrationsRdsToTerraform(struct?: CloudAwsGovc
   }
 }
 
+
+export function cloudAwsGovcloudIntegrationsRdsToHclTerraform(struct?: CloudAwsGovcloudIntegrationsRdsOutputReference | CloudAwsGovcloudIntegrationsRds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    fetch_tags: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    tag_key: {
+      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudAwsGovcloudIntegrationsRdsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2615,6 +3183,43 @@ export function cloudAwsGovcloudIntegrationsRedShiftToTerraform(struct?: CloudAw
   }
 }
 
+
+export function cloudAwsGovcloudIntegrationsRedShiftToHclTerraform(struct?: CloudAwsGovcloudIntegrationsRedShiftOutputReference | CloudAwsGovcloudIntegrationsRedShift): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    tag_key: {
+      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudAwsGovcloudIntegrationsRedShiftOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2755,6 +3360,31 @@ export function cloudAwsGovcloudIntegrationsRoute53ToTerraform(struct?: CloudAws
   }
 }
 
+
+export function cloudAwsGovcloudIntegrationsRoute53ToHclTerraform(struct?: CloudAwsGovcloudIntegrationsRoute53OutputReference | CloudAwsGovcloudIntegrationsRoute53): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fetch_extended_inventory: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudAwsGovcloudIntegrationsRoute53OutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2872,6 +3502,49 @@ export function cloudAwsGovcloudIntegrationsS3ToTerraform(struct?: CloudAwsGovcl
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
     tag_value: cdktf.stringToTerraform(struct!.tagValue),
   }
+}
+
+
+export function cloudAwsGovcloudIntegrationsS3ToHclTerraform(struct?: CloudAwsGovcloudIntegrationsS3OutputReference | CloudAwsGovcloudIntegrationsS3): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fetch_extended_inventory: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    fetch_tags: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    tag_key: {
+      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudAwsGovcloudIntegrationsS3OutputReference extends cdktf.ComplexObject {
@@ -3043,6 +3716,37 @@ export function cloudAwsGovcloudIntegrationsSnsToTerraform(struct?: CloudAwsGovc
   }
 }
 
+
+export function cloudAwsGovcloudIntegrationsSnsToHclTerraform(struct?: CloudAwsGovcloudIntegrationsSnsOutputReference | CloudAwsGovcloudIntegrationsSns): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    fetch_extended_inventory: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudAwsGovcloudIntegrationsSnsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3196,6 +3900,61 @@ export function cloudAwsGovcloudIntegrationsSqsToTerraform(struct?: CloudAwsGovc
     tag_key: cdktf.stringToTerraform(struct!.tagKey),
     tag_value: cdktf.stringToTerraform(struct!.tagValue),
   }
+}
+
+
+export function cloudAwsGovcloudIntegrationsSqsToHclTerraform(struct?: CloudAwsGovcloudIntegrationsSqsOutputReference | CloudAwsGovcloudIntegrationsSqs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.awsRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    fetch_extended_inventory: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchExtendedInventory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    fetch_tags: {
+      value: cdktf.booleanToHclTerraform(struct!.fetchTags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    metrics_polling_interval: {
+      value: cdktf.numberToHclTerraform(struct!.metricsPollingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    queue_prefixes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.queuePrefixes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    tag_key: {
+      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_value: {
+      value: cdktf.stringToHclTerraform(struct!.tagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudAwsGovcloudIntegrationsSqsOutputReference extends cdktf.ComplexObject {
@@ -3854,5 +4613,151 @@ export class CloudAwsGovcloudIntegrations extends cdktf.TerraformResource {
       sns: cloudAwsGovcloudIntegrationsSnsToTerraform(this._sns.internalValue),
       sqs: cloudAwsGovcloudIntegrationsSqsToTerraform(this._sqs.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.numberToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      linked_account_id: {
+        value: cdktf.numberToHclTerraform(this._linkedAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      alb: {
+        value: cloudAwsGovcloudIntegrationsAlbToHclTerraform(this._alb.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsAlbList",
+      },
+      api_gateway: {
+        value: cloudAwsGovcloudIntegrationsApiGatewayToHclTerraform(this._apiGateway.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsApiGatewayList",
+      },
+      auto_scaling: {
+        value: cloudAwsGovcloudIntegrationsAutoScalingToHclTerraform(this._autoScaling.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsAutoScalingList",
+      },
+      aws_direct_connect: {
+        value: cloudAwsGovcloudIntegrationsAwsDirectConnectToHclTerraform(this._awsDirectConnect.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsAwsDirectConnectList",
+      },
+      aws_states: {
+        value: cloudAwsGovcloudIntegrationsAwsStatesToHclTerraform(this._awsStates.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsAwsStatesList",
+      },
+      cloudtrail: {
+        value: cloudAwsGovcloudIntegrationsCloudtrailToHclTerraform(this._cloudtrail.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsCloudtrailList",
+      },
+      dynamo_db: {
+        value: cloudAwsGovcloudIntegrationsDynamoDbToHclTerraform(this._dynamoDb.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsDynamoDbList",
+      },
+      ebs: {
+        value: cloudAwsGovcloudIntegrationsEbsToHclTerraform(this._ebs.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsEbsList",
+      },
+      ec2: {
+        value: cloudAwsGovcloudIntegrationsEc2ToHclTerraform(this._ec2.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsEc2List",
+      },
+      elastic_search: {
+        value: cloudAwsGovcloudIntegrationsElasticSearchToHclTerraform(this._elasticSearch.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsElasticSearchList",
+      },
+      elb: {
+        value: cloudAwsGovcloudIntegrationsElbToHclTerraform(this._elb.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsElbList",
+      },
+      emr: {
+        value: cloudAwsGovcloudIntegrationsEmrToHclTerraform(this._emr.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsEmrList",
+      },
+      iam: {
+        value: cloudAwsGovcloudIntegrationsIamToHclTerraform(this._iam.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsIamList",
+      },
+      lambda: {
+        value: cloudAwsGovcloudIntegrationsLambdaToHclTerraform(this._lambda.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsLambdaList",
+      },
+      rds: {
+        value: cloudAwsGovcloudIntegrationsRdsToHclTerraform(this._rds.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsRdsList",
+      },
+      red_shift: {
+        value: cloudAwsGovcloudIntegrationsRedShiftToHclTerraform(this._redShift.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsRedShiftList",
+      },
+      route53: {
+        value: cloudAwsGovcloudIntegrationsRoute53ToHclTerraform(this._route53.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsRoute53List",
+      },
+      s3: {
+        value: cloudAwsGovcloudIntegrationsS3ToHclTerraform(this._s3.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsS3List",
+      },
+      sns: {
+        value: cloudAwsGovcloudIntegrationsSnsToHclTerraform(this._sns.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsSnsList",
+      },
+      sqs: {
+        value: cloudAwsGovcloudIntegrationsSqsToHclTerraform(this._sqs.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudAwsGovcloudIntegrationsSqsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

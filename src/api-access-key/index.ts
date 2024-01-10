@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/api_access_key
 // generated from terraform resource schema
 
@@ -234,5 +229,55 @@ export class ApiAccessKey extends cdktf.TerraformResource {
       notes: cdktf.stringToTerraform(this._notes),
       user_id: cdktf.numberToTerraform(this._userId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.numberToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ingest_type: {
+        value: cdktf.stringToHclTerraform(this._ingestType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_type: {
+        value: cdktf.stringToHclTerraform(this._keyType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notes: {
+        value: cdktf.stringToHclTerraform(this._notes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_id: {
+        value: cdktf.numberToHclTerraform(this._userId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

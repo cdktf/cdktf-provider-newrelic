@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsprivatelocation"
 
 syntheticsprivatelocation.NewSyntheticsPrivateLocation(scope Construct, id *string, config SyntheticsPrivateLocationConfig) SyntheticsPrivateLocation
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.toMetadata"></a>
 
@@ -392,7 +399,7 @@ func ResetVerifiedScriptExecution()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsprivatelocation"
 
 syntheticsprivatelocation.SyntheticsPrivateLocation_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsprivatelocation"
 
 syntheticsprivatelocation.SyntheticsPrivateLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ syntheticsprivatelocation.SyntheticsPrivateLocation_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsprivatelocation"
 
 syntheticsprivatelocation.SyntheticsPrivateLocation_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ syntheticsprivatelocation.SyntheticsPrivateLocation_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsprivatelocation"
 
 syntheticsprivatelocation.SyntheticsPrivateLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +842,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsprivatelocation"
 
 &syntheticsprivatelocation.SyntheticsPrivateLocationConfig {
 	Connection: interface{},

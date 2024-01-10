@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.monitorDowntime.MonitorDowntime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/monitordowntime"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/monitordowntime"
 
 monitordowntime.NewMonitorDowntime(scope Construct, id *string, config MonitorDowntimeConfig) MonitorDowntime
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-newrelic.monitorDowntime.MonitorDowntime.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.monitorDowntime.MonitorDowntime.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-newrelic.monitorDowntime.MonitorDowntime.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-newrelic.monitorDowntime.MonitorDowntime.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.monitorDowntime.MonitorDowntime.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.monitorDowntime.MonitorDowntime.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-newrelic.monitorDowntime.MonitorDowntime.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -132,6 +133,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-newrelic.monitorDowntime.MonitorDowntime.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-newrelic.monitorDowntime.MonitorDowntime.toMetadata"></a>
 
@@ -439,7 +446,7 @@ func ResetMonitorGuids()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.monitorDowntime.MonitorDowntime.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/monitordowntime"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/monitordowntime"
 
 monitordowntime.MonitorDowntime_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.monitorDowntime.MonitorDowntime.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/monitordowntime"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/monitordowntime"
 
 monitordowntime.MonitorDowntime_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +492,7 @@ monitordowntime.MonitorDowntime_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.monitorDowntime.MonitorDowntime.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/monitordowntime"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/monitordowntime"
 
 monitordowntime.MonitorDowntime_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +506,7 @@ monitordowntime.MonitorDowntime_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.monitorDowntime.MonitorDowntime.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/monitordowntime"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/monitordowntime"
 
 monitordowntime.MonitorDowntime_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -970,7 +977,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.monitorDowntime.MonitorDowntimeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/monitordowntime"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/monitordowntime"
 
 &monitordowntime.MonitorDowntimeConfig {
 	Connection: interface{},
@@ -986,8 +993,8 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/monitordowntime
 	StartTime: *string,
 	TimeZone: *string,
 	AccountId: *string,
-	EndRepeat: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.monitorDowntime.MonitorDowntimeEndRepeat,
-	Frequency: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.monitorDowntime.MonitorDowntimeFrequency,
+	EndRepeat: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.monitorDowntime.MonitorDowntimeEndRepeat,
+	Frequency: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.monitorDowntime.MonitorDowntimeFrequency,
 	Id: *string,
 	MaintenanceDays: *[]*string,
 	MonitorGuids: *[]*string,
@@ -1251,7 +1258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.monitorDowntime.MonitorDowntimeEndRepeat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/monitordowntime"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/monitordowntime"
 
 &monitordowntime.MonitorDowntimeEndRepeat {
 	OnDate: *string,
@@ -1301,11 +1308,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.monitorDowntime.MonitorDowntimeFrequency.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/monitordowntime"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/monitordowntime"
 
 &monitordowntime.MonitorDowntimeFrequency {
 	DaysOfMonth: *[]*f64,
-	DaysOfWeek: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11.monitorDowntime.MonitorDowntimeFrequencyDaysOfWeek,
+	DaysOfWeek: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.monitorDowntime.MonitorDowntimeFrequencyDaysOfWeek,
 }
 ```
 
@@ -1351,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.monitorDowntime.MonitorDowntimeFrequencyDaysOfWeek.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/monitordowntime"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/monitordowntime"
 
 &monitordowntime.MonitorDowntimeFrequencyDaysOfWeek {
 	OrdinalDayOfMonth: *string,
@@ -1403,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.monitorDowntime.MonitorDowntimeEndRepeatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/monitordowntime"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/monitordowntime"
 
 monitordowntime.NewMonitorDowntimeEndRepeatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorDowntimeEndRepeatOutputReference
 ```
@@ -1710,7 +1717,7 @@ func InternalValue() MonitorDowntimeEndRepeat
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.monitorDowntime.MonitorDowntimeFrequencyDaysOfWeekOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/monitordowntime"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/monitordowntime"
 
 monitordowntime.NewMonitorDowntimeFrequencyDaysOfWeekOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorDowntimeFrequencyDaysOfWeekOutputReference
 ```
@@ -2003,7 +2010,7 @@ func InternalValue() MonitorDowntimeFrequencyDaysOfWeek
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.monitorDowntime.MonitorDowntimeFrequencyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/monitordowntime"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/monitordowntime"
 
 monitordowntime.NewMonitorDowntimeFrequencyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorDowntimeFrequencyOutputReference
 ```

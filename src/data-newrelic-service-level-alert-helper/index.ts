@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/data-sources/service_level_alert_helper
 // generated from terraform resource schema
 
@@ -265,5 +260,61 @@ export class DataNewrelicServiceLevelAlertHelper extends cdktf.TerraformDataSour
       slo_period: cdktf.numberToTerraform(this._sloPeriod),
       slo_target: cdktf.numberToTerraform(this._sloTarget),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      alert_type: {
+        value: cdktf.stringToHclTerraform(this._alertType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_evaluation_period: {
+        value: cdktf.numberToHclTerraform(this._customEvaluationPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      custom_tolerated_budget_consumption: {
+        value: cdktf.numberToHclTerraform(this._customToleratedBudgetConsumption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_bad_events: {
+        value: cdktf.booleanToHclTerraform(this._isBadEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      sli_guid: {
+        value: cdktf.stringToHclTerraform(this._sliGuid),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      slo_period: {
+        value: cdktf.numberToHclTerraform(this._sloPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      slo_target: {
+        value: cdktf.numberToHclTerraform(this._sloTarget),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

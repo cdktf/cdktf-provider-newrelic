@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicsyntheticssecurecredential"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicsyntheticssecurecredential"
 
 datanewrelicsyntheticssecurecredential.NewDataNewrelicSyntheticsSecureCredential(scope Construct, id *string, config DataNewrelicSyntheticsSecureCredentialConfig) DataNewrelicSyntheticsSecureCredential
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicsyntheticssecurecredential"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicsyntheticssecurecredential"
 
 datanewrelicsyntheticssecurecredential.DataNewrelicSyntheticsSecureCredential_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicsyntheticssecurecredential"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicsyntheticssecurecredential"
 
 datanewrelicsyntheticssecurecredential.DataNewrelicSyntheticsSecureCredential_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ datanewrelicsyntheticssecurecredential.DataNewrelicSyntheticsSecureCredential_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicsyntheticssecurecredential"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicsyntheticssecurecredential"
 
 datanewrelicsyntheticssecurecredential.DataNewrelicSyntheticsSecureCredential_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ datanewrelicsyntheticssecurecredential.DataNewrelicSyntheticsSecureCredential_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicsyntheticssecurecredential"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicsyntheticssecurecredential"
 
 datanewrelicsyntheticssecurecredential.DataNewrelicSyntheticsSecureCredential_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -636,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredentialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelicsyntheticssecurecredential"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicsyntheticssecurecredential"
 
 &datanewrelicsyntheticssecurecredential.DataNewrelicSyntheticsSecureCredentialConfig {
 	Connection: interface{},

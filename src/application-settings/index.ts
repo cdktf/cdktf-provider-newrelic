@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/application_settings
 // generated from terraform resource schema
 
@@ -179,5 +174,43 @@ export class ApplicationSettings extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_apdex_threshold: {
+        value: cdktf.numberToHclTerraform(this._appApdexThreshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      enable_real_user_monitoring: {
+        value: cdktf.booleanToHclTerraform(this._enableRealUserMonitoring),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      end_user_apdex_threshold: {
+        value: cdktf.numberToHclTerraform(this._endUserApdexThreshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

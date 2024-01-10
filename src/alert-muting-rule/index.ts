@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule
 // generated from terraform resource schema
 
@@ -87,6 +82,37 @@ export function alertMutingRuleConditionConditionsToTerraform(struct?: AlertMuti
     operator: cdktf.stringToTerraform(struct!.operator),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function alertMutingRuleConditionConditionsToHclTerraform(struct?: AlertMutingRuleConditionConditions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attribute: {
+      value: cdktf.stringToHclTerraform(struct!.attribute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operator: {
+      value: cdktf.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AlertMutingRuleConditionConditionsOutputReference extends cdktf.ComplexObject {
@@ -230,6 +256,31 @@ export function alertMutingRuleConditionToTerraform(struct?: AlertMutingRuleCond
   }
 }
 
+
+export function alertMutingRuleConditionToHclTerraform(struct?: AlertMutingRuleConditionOutputReference | AlertMutingRuleCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    operator: {
+      value: cdktf.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    conditions: {
+      value: cdktf.listMapperHcl(alertMutingRuleConditionConditionsToHclTerraform, true)(struct!.conditions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AlertMutingRuleConditionConditionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AlertMutingRuleConditionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -353,6 +404,61 @@ export function alertMutingRuleScheduleToTerraform(struct?: AlertMutingRuleSched
     time_zone: cdktf.stringToTerraform(struct!.timeZone),
     weekly_repeat_days: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.weeklyRepeatDays),
   }
+}
+
+
+export function alertMutingRuleScheduleToHclTerraform(struct?: AlertMutingRuleScheduleOutputReference | AlertMutingRuleSchedule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end_repeat: {
+      value: cdktf.stringToHclTerraform(struct!.endRepeat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    end_time: {
+      value: cdktf.stringToHclTerraform(struct!.endTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    repeat: {
+      value: cdktf.stringToHclTerraform(struct!.repeat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    repeat_count: {
+      value: cdktf.numberToHclTerraform(struct!.repeatCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    start_time: {
+      value: cdktf.stringToHclTerraform(struct!.startTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time_zone: {
+      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    weekly_repeat_days: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.weeklyRepeatDays),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject {
@@ -714,5 +820,55 @@ export class AlertMutingRule extends cdktf.TerraformResource {
       condition: alertMutingRuleConditionToTerraform(this._condition.internalValue),
       schedule: alertMutingRuleScheduleToTerraform(this._schedule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.numberToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      condition: {
+        value: alertMutingRuleConditionToHclTerraform(this._condition.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AlertMutingRuleConditionList",
+      },
+      schedule: {
+        value: alertMutingRuleScheduleToHclTerraform(this._schedule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AlertMutingRuleScheduleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
