@@ -25,6 +25,7 @@ The following submodules are available:
 - [dataNewrelicAlertChannel](./dataNewrelicAlertChannel.typescript.md)
 - [dataNewrelicAlertPolicy](./dataNewrelicAlertPolicy.typescript.md)
 - [dataNewrelicApplication](./dataNewrelicApplication.typescript.md)
+- [dataNewrelicAuthenticationDomain](./dataNewrelicAuthenticationDomain.typescript.md)
 - [dataNewrelicCloudAccount](./dataNewrelicCloudAccount.typescript.md)
 - [dataNewrelicEntity](./dataNewrelicEntity.typescript.md)
 - [dataNewrelicKeyTransaction](./dataNewrelicKeyTransaction.typescript.md)

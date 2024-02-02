@@ -53,6 +53,7 @@ Object.defineProperty(exports, 'dataNewrelicAccount', { get: function () { retur
 Object.defineProperty(exports, 'dataNewrelicAlertChannel', { get: function () { return require('./data-newrelic-alert-channel'); } });
 Object.defineProperty(exports, 'dataNewrelicAlertPolicy', { get: function () { return require('./data-newrelic-alert-policy'); } });
 Object.defineProperty(exports, 'dataNewrelicApplication', { get: function () { return require('./data-newrelic-application'); } });
+Object.defineProperty(exports, 'dataNewrelicAuthenticationDomain', { get: function () { return require('./data-newrelic-authentication-domain'); } });
 Object.defineProperty(exports, 'dataNewrelicCloudAccount', { get: function () { return require('./data-newrelic-cloud-account'); } });
 Object.defineProperty(exports, 'dataNewrelicEntity', { get: function () { return require('./data-newrelic-entity'); } });
 Object.defineProperty(exports, 'dataNewrelicKeyTransaction', { get: function () { return require('./data-newrelic-key-transaction'); } });

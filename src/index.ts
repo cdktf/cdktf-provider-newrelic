@@ -53,6 +53,7 @@ export * as dataNewrelicAccount from './data-newrelic-account';
 export * as dataNewrelicAlertChannel from './data-newrelic-alert-channel';
 export * as dataNewrelicAlertPolicy from './data-newrelic-alert-policy';
 export * as dataNewrelicApplication from './data-newrelic-application';
+export * as dataNewrelicAuthenticationDomain from './data-newrelic-authentication-domain';
 export * as dataNewrelicCloudAccount from './data-newrelic-cloud-account';
 export * as dataNewrelicEntity from './data-newrelic-entity';
 export * as dataNewrelicKeyTransaction from './data-newrelic-key-transaction';

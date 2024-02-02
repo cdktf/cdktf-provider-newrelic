@@ -25,6 +25,7 @@ The following submodules are available:
 - [dataNewrelicAlertChannel](./dataNewrelicAlertChannel.java.md)
 - [dataNewrelicAlertPolicy](./dataNewrelicAlertPolicy.java.md)
 - [dataNewrelicApplication](./dataNewrelicApplication.java.md)
+- [dataNewrelicAuthenticationDomain](./dataNewrelicAuthenticationDomain.java.md)
 - [dataNewrelicCloudAccount](./dataNewrelicCloudAccount.java.md)
 - [dataNewrelicEntity](./dataNewrelicEntity.java.md)
 - [dataNewrelicKeyTransaction](./dataNewrelicKeyTransaction.java.md)
