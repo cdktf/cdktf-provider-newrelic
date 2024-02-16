@@ -47,6 +47,7 @@ Object.defineProperty(exports, 'syntheticsPrivateLocation', { get: function () {
 Object.defineProperty(exports, 'syntheticsScriptMonitor', { get: function () { return require('./synthetics-script-monitor'); } });
 Object.defineProperty(exports, 'syntheticsSecureCredential', { get: function () { return require('./synthetics-secure-credential'); } });
 Object.defineProperty(exports, 'syntheticsStepMonitor', { get: function () { return require('./synthetics-step-monitor'); } });
+Object.defineProperty(exports, 'user', { get: function () { return require('./user'); } });
 Object.defineProperty(exports, 'workflow', { get: function () { return require('./workflow'); } });
 Object.defineProperty(exports, 'workload', { get: function () { return require('./workload'); } });
 Object.defineProperty(exports, 'dataNewrelicAccount', { get: function () { return require('./data-newrelic-account'); } });
@@ -63,5 +64,6 @@ Object.defineProperty(exports, 'dataNewrelicServiceLevelAlertHelper', { get: fun
 Object.defineProperty(exports, 'dataNewrelicSyntheticsPrivateLocation', { get: function () { return require('./data-newrelic-synthetics-private-location'); } });
 Object.defineProperty(exports, 'dataNewrelicSyntheticsSecureCredential', { get: function () { return require('./data-newrelic-synthetics-secure-credential'); } });
 Object.defineProperty(exports, 'dataNewrelicTestGrokPattern', { get: function () { return require('./data-newrelic-test-grok-pattern'); } });
+Object.defineProperty(exports, 'dataNewrelicUser', { get: function () { return require('./data-newrelic-user'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });
 

@@ -35,6 +35,7 @@ The following submodules are available:
 - [dataNewrelicSyntheticsPrivateLocation](./dataNewrelicSyntheticsPrivateLocation.java.md)
 - [dataNewrelicSyntheticsSecureCredential](./dataNewrelicSyntheticsSecureCredential.java.md)
 - [dataNewrelicTestGrokPattern](./dataNewrelicTestGrokPattern.java.md)
+- [dataNewrelicUser](./dataNewrelicUser.java.md)
 - [dataPartitionRule](./dataPartitionRule.java.md)
 - [entityTags](./entityTags.java.md)
 - [eventsToMetricsRule](./eventsToMetricsRule.java.md)
@@ -62,6 +63,7 @@ The following submodules are available:
 - [syntheticsScriptMonitor](./syntheticsScriptMonitor.java.md)
 - [syntheticsSecureCredential](./syntheticsSecureCredential.java.md)
 - [syntheticsStepMonitor](./syntheticsStepMonitor.java.md)
+- [user](./user.java.md)
 - [workflow](./workflow.java.md)
 - [workload](./workload.java.md)
 

@@ -35,6 +35,7 @@ The following submodules are available:
 - [dataNewrelicSyntheticsPrivateLocation](./dataNewrelicSyntheticsPrivateLocation.python.md)
 - [dataNewrelicSyntheticsSecureCredential](./dataNewrelicSyntheticsSecureCredential.python.md)
 - [dataNewrelicTestGrokPattern](./dataNewrelicTestGrokPattern.python.md)
+- [dataNewrelicUser](./dataNewrelicUser.python.md)
 - [dataPartitionRule](./dataPartitionRule.python.md)
 - [entityTags](./entityTags.python.md)
 - [eventsToMetricsRule](./eventsToMetricsRule.python.md)
@@ -62,6 +63,7 @@ The following submodules are available:
 - [syntheticsScriptMonitor](./syntheticsScriptMonitor.python.md)
 - [syntheticsSecureCredential](./syntheticsSecureCredential.python.md)
 - [syntheticsStepMonitor](./syntheticsStepMonitor.python.md)
+- [user](./user.python.md)
 - [workflow](./workflow.python.md)
 - [workload](./workload.python.md)
 

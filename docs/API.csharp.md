@@ -35,6 +35,7 @@ The following submodules are available:
 - [dataNewrelicSyntheticsPrivateLocation](./dataNewrelicSyntheticsPrivateLocation.csharp.md)
 - [dataNewrelicSyntheticsSecureCredential](./dataNewrelicSyntheticsSecureCredential.csharp.md)
 - [dataNewrelicTestGrokPattern](./dataNewrelicTestGrokPattern.csharp.md)
+- [dataNewrelicUser](./dataNewrelicUser.csharp.md)
 - [dataPartitionRule](./dataPartitionRule.csharp.md)
 - [entityTags](./entityTags.csharp.md)
 - [eventsToMetricsRule](./eventsToMetricsRule.csharp.md)
@@ -62,6 +63,7 @@ The following submodules are available:
 - [syntheticsScriptMonitor](./syntheticsScriptMonitor.csharp.md)
 - [syntheticsSecureCredential](./syntheticsSecureCredential.csharp.md)
 - [syntheticsStepMonitor](./syntheticsStepMonitor.csharp.md)
+- [user](./user.csharp.md)
 - [workflow](./workflow.csharp.md)
 - [workload](./workload.csharp.md)
 

@@ -47,6 +47,7 @@ export * as syntheticsPrivateLocation from './synthetics-private-location';
 export * as syntheticsScriptMonitor from './synthetics-script-monitor';
 export * as syntheticsSecureCredential from './synthetics-secure-credential';
 export * as syntheticsStepMonitor from './synthetics-step-monitor';
+export * as user from './user';
 export * as workflow from './workflow';
 export * as workload from './workload';
 export * as dataNewrelicAccount from './data-newrelic-account';
@@ -63,5 +64,6 @@ export * as dataNewrelicServiceLevelAlertHelper from './data-newrelic-service-le
 export * as dataNewrelicSyntheticsPrivateLocation from './data-newrelic-synthetics-private-location';
 export * as dataNewrelicSyntheticsSecureCredential from './data-newrelic-synthetics-secure-credential';
 export * as dataNewrelicTestGrokPattern from './data-newrelic-test-grok-pattern';
+export * as dataNewrelicUser from './data-newrelic-user';
 export * as provider from './provider';
 
