@@ -35,6 +35,7 @@ The following submodules are available:
 - [dataNewrelicSyntheticsPrivateLocation](./dataNewrelicSyntheticsPrivateLocation.typescript.md)
 - [dataNewrelicSyntheticsSecureCredential](./dataNewrelicSyntheticsSecureCredential.typescript.md)
 - [dataNewrelicTestGrokPattern](./dataNewrelicTestGrokPattern.typescript.md)
+- [dataNewrelicUser](./dataNewrelicUser.typescript.md)
 - [dataPartitionRule](./dataPartitionRule.typescript.md)
 - [entityTags](./entityTags.typescript.md)
 - [eventsToMetricsRule](./eventsToMetricsRule.typescript.md)
@@ -62,6 +63,7 @@ The following submodules are available:
 - [syntheticsScriptMonitor](./syntheticsScriptMonitor.typescript.md)
 - [syntheticsSecureCredential](./syntheticsSecureCredential.typescript.md)
 - [syntheticsStepMonitor](./syntheticsStepMonitor.typescript.md)
+- [user](./user.typescript.md)
 - [workflow](./workflow.typescript.md)
 - [workload](./workload.typescript.md)
 
