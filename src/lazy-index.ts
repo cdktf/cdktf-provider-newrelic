@@ -24,6 +24,7 @@ Object.defineProperty(exports, 'cloudGcpLinkAccount', { get: function () { retur
 Object.defineProperty(exports, 'dataPartitionRule', { get: function () { return require('./data-partition-rule'); } });
 Object.defineProperty(exports, 'entityTags', { get: function () { return require('./entity-tags'); } });
 Object.defineProperty(exports, 'eventsToMetricsRule', { get: function () { return require('./events-to-metrics-rule'); } });
+Object.defineProperty(exports, 'group', { get: function () { return require('./group'); } });
 Object.defineProperty(exports, 'infraAlertCondition', { get: function () { return require('./infra-alert-condition'); } });
 Object.defineProperty(exports, 'insightsEvent', { get: function () { return require('./insights-event'); } });
 Object.defineProperty(exports, 'logParsingRule', { get: function () { return require('./log-parsing-rule'); } });
@@ -57,6 +58,7 @@ Object.defineProperty(exports, 'dataNewrelicApplication', { get: function () { r
 Object.defineProperty(exports, 'dataNewrelicAuthenticationDomain', { get: function () { return require('./data-newrelic-authentication-domain'); } });
 Object.defineProperty(exports, 'dataNewrelicCloudAccount', { get: function () { return require('./data-newrelic-cloud-account'); } });
 Object.defineProperty(exports, 'dataNewrelicEntity', { get: function () { return require('./data-newrelic-entity'); } });
+Object.defineProperty(exports, 'dataNewrelicGroup', { get: function () { return require('./data-newrelic-group'); } });
 Object.defineProperty(exports, 'dataNewrelicKeyTransaction', { get: function () { return require('./data-newrelic-key-transaction'); } });
 Object.defineProperty(exports, 'dataNewrelicNotificationDestination', { get: function () { return require('./data-newrelic-notification-destination'); } });
 Object.defineProperty(exports, 'dataNewrelicObfuscationExpression', { get: function () { return require('./data-newrelic-obfuscation-expression'); } });
