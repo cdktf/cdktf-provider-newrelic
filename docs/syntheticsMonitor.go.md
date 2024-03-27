@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsmonitor"
 
 syntheticsmonitor.NewSyntheticsMonitor(scope Construct, id *string, config SyntheticsMonitorConfig) SyntheticsMonitor
 ```
@@ -530,7 +530,7 @@ func ResetVerifySsl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsmonitor"
 
 syntheticsmonitor.SyntheticsMonitor_IsConstruct(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsmonitor"
 
 syntheticsmonitor.SyntheticsMonitor_IsTerraformElement(x interface{}) *bool
 ```
@@ -576,7 +576,7 @@ syntheticsmonitor.SyntheticsMonitor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsmonitor"
 
 syntheticsmonitor.SyntheticsMonitor_IsTerraformResource(x interface{}) *bool
 ```
@@ -590,7 +590,7 @@ syntheticsmonitor.SyntheticsMonitor_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsmonitor"
 
 syntheticsmonitor.SyntheticsMonitor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1292,7 +1292,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsmonitor"
 
 &syntheticsmonitor.SyntheticsMonitorConfig {
 	Connection: interface{},
@@ -1733,7 +1733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsmonitor"
 
 &syntheticsmonitor.SyntheticsMonitorCustomHeader {
 	Name: *string,
@@ -1783,7 +1783,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsmonitor"
 
 &syntheticsmonitor.SyntheticsMonitorTag {
 	Key: *string,
@@ -1835,7 +1835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsmonitor"
 
 syntheticsmonitor.NewSyntheticsMonitorCustomHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsMonitorCustomHeaderList
 ```
@@ -1995,7 +1995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsmonitor"
 
 syntheticsmonitor.NewSyntheticsMonitorCustomHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsMonitorCustomHeaderOutputReference
 ```
@@ -2320,7 +2320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsmonitor"
 
 syntheticsmonitor.NewSyntheticsMonitorTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsMonitorTagList
 ```
@@ -2480,7 +2480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsmonitor"
 
 syntheticsmonitor.NewSyntheticsMonitorTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsMonitorTagOutputReference
 ```
