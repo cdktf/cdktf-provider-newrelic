@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor
+// https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface SyntheticsCertCheckMonitorConfig extends cdktf.TerraformMetaArg
   /**
   * ID of the newrelic account
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor#account_id SyntheticsCertCheckMonitor#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor#account_id SyntheticsCertCheckMonitor#account_id}
   */
   readonly accountId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor#certificate_expiration SyntheticsCertCheckMonitor#certificate_expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor#certificate_expiration SyntheticsCertCheckMonitor#certificate_expiration}
   */
   readonly certificateExpiration: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor#domain SyntheticsCertCheckMonitor#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor#domain SyntheticsCertCheckMonitor#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor#id SyntheticsCertCheckMonitor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor#id SyntheticsCertCheckMonitor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,37 +31,49 @@ export interface SyntheticsCertCheckMonitorConfig extends cdktf.TerraformMetaArg
   /**
   * The locations in which this monitor should be run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor#locations_private SyntheticsCertCheckMonitor#locations_private}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor#locations_private SyntheticsCertCheckMonitor#locations_private}
   */
   readonly locationsPrivate?: string[];
   /**
   * The locations in which this monitor should be run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor#locations_public SyntheticsCertCheckMonitor#locations_public}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor#locations_public SyntheticsCertCheckMonitor#locations_public}
   */
   readonly locationsPublic?: string[];
   /**
   * name of the cert check monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor#name SyntheticsCertCheckMonitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor#name SyntheticsCertCheckMonitor#name}
   */
   readonly name: string;
   /**
   * The interval at which this monitor should run. Valid values are EVERY_MINUTE, EVERY_5_MINUTES, EVERY_10_MINUTES, EVERY_15_MINUTES, EVERY_30_MINUTES, EVERY_HOUR, EVERY_6_HOURS, EVERY_12_HOURS, or EVERY_DAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor#period SyntheticsCertCheckMonitor#period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor#period SyntheticsCertCheckMonitor#period}
   */
   readonly period: string;
   /**
+  * The runtime type that the monitor will run.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor#runtime_type SyntheticsCertCheckMonitor#runtime_type}
+  */
+  readonly runtimeType?: string;
+  /**
+  * The specific semver version of the runtime type.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor#runtime_type_version SyntheticsCertCheckMonitor#runtime_type_version}
+  */
+  readonly runtimeTypeVersion?: string;
+  /**
   * The monitor status (ENABLED or DISABLED).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor#status SyntheticsCertCheckMonitor#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor#status SyntheticsCertCheckMonitor#status}
   */
   readonly status: string;
   /**
   * tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor#tag SyntheticsCertCheckMonitor#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor#tag SyntheticsCertCheckMonitor#tag}
   */
   readonly tag?: SyntheticsCertCheckMonitorTag[] | cdktf.IResolvable;
 }
@@ -74,13 +81,13 @@ export interface SyntheticsCertCheckMonitorTag {
   /**
   * Name of the tag key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor#key SyntheticsCertCheckMonitor#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor#key SyntheticsCertCheckMonitor#key}
   */
   readonly key: string;
   /**
   * Values associated with the tag key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor#values SyntheticsCertCheckMonitor#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor#values SyntheticsCertCheckMonitor#values}
   */
   readonly values: string[];
 }
@@ -219,7 +226,7 @@ export class SyntheticsCertCheckMonitorTagList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor}
 */
 export class SyntheticsCertCheckMonitor extends cdktf.TerraformResource {
 
@@ -235,7 +242,7 @@ export class SyntheticsCertCheckMonitor extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SyntheticsCertCheckMonitor resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SyntheticsCertCheckMonitor to import
-  * @param importFromId The id of the existing SyntheticsCertCheckMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SyntheticsCertCheckMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SyntheticsCertCheckMonitor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -247,7 +254,7 @@ export class SyntheticsCertCheckMonitor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -258,7 +265,7 @@ export class SyntheticsCertCheckMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_synthetics_cert_check_monitor',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.33.0',
+        providerVersion: '3.34.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -277,6 +284,8 @@ export class SyntheticsCertCheckMonitor extends cdktf.TerraformResource {
     this._locationsPublic = config.locationsPublic;
     this._name = config.name;
     this._period = config.period;
+    this._runtimeType = config.runtimeType;
+    this._runtimeTypeVersion = config.runtimeTypeVersion;
     this._status = config.status;
     this._tag.internalValue = config.tag;
   }
@@ -406,6 +415,38 @@ export class SyntheticsCertCheckMonitor extends cdktf.TerraformResource {
     return this.getNumberAttribute('period_in_minutes');
   }
 
+  // runtime_type - computed: false, optional: true, required: false
+  private _runtimeType?: string; 
+  public get runtimeType() {
+    return this.getStringAttribute('runtime_type');
+  }
+  public set runtimeType(value: string) {
+    this._runtimeType = value;
+  }
+  public resetRuntimeType() {
+    this._runtimeType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeTypeInput() {
+    return this._runtimeType;
+  }
+
+  // runtime_type_version - computed: false, optional: true, required: false
+  private _runtimeTypeVersion?: string; 
+  public get runtimeTypeVersion() {
+    return this.getStringAttribute('runtime_type_version');
+  }
+  public set runtimeTypeVersion(value: string) {
+    this._runtimeTypeVersion = value;
+  }
+  public resetRuntimeTypeVersion() {
+    this._runtimeTypeVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeTypeVersionInput() {
+    return this._runtimeTypeVersion;
+  }
+
   // status - computed: false, optional: false, required: true
   private _status?: string; 
   public get status() {
@@ -449,6 +490,8 @@ export class SyntheticsCertCheckMonitor extends cdktf.TerraformResource {
       locations_public: cdktf.listMapper(cdktf.stringToTerraform, false)(this._locationsPublic),
       name: cdktf.stringToTerraform(this._name),
       period: cdktf.stringToTerraform(this._period),
+      runtime_type: cdktf.stringToTerraform(this._runtimeType),
+      runtime_type_version: cdktf.stringToTerraform(this._runtimeTypeVersion),
       status: cdktf.stringToTerraform(this._status),
       tag: cdktf.listMapper(syntheticsCertCheckMonitorTagToTerraform, true)(this._tag.internalValue),
     };
@@ -500,6 +543,18 @@ export class SyntheticsCertCheckMonitor extends cdktf.TerraformResource {
       },
       period: {
         value: cdktf.stringToHclTerraform(this._period),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      runtime_type: {
+        value: cdktf.stringToHclTerraform(this._runtimeType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      runtime_type_version: {
+        value: cdktf.stringToHclTerraform(this._runtimeTypeVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor
+// https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface SyntheticsBrokenLinksMonitorConfig extends cdktf.TerraformMetaA
   /**
   * ID of the newrelic account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor#account_id SyntheticsBrokenLinksMonitor#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor#account_id SyntheticsBrokenLinksMonitor#account_id}
   */
   readonly accountId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor#id SyntheticsBrokenLinksMonitor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor#id SyntheticsBrokenLinksMonitor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,43 +23,55 @@ export interface SyntheticsBrokenLinksMonitorConfig extends cdktf.TerraformMetaA
   /**
   * List private location GUIDs for which the monitor will run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor#locations_private SyntheticsBrokenLinksMonitor#locations_private}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor#locations_private SyntheticsBrokenLinksMonitor#locations_private}
   */
   readonly locationsPrivate?: string[];
   /**
   * Publicly available location names in which the monitor will run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor#locations_public SyntheticsBrokenLinksMonitor#locations_public}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor#locations_public SyntheticsBrokenLinksMonitor#locations_public}
   */
   readonly locationsPublic?: string[];
   /**
   * The title of this monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor#name SyntheticsBrokenLinksMonitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor#name SyntheticsBrokenLinksMonitor#name}
   */
   readonly name: string;
   /**
   * The interval at which this monitor should run. Valid values are EVERY_MINUTE, EVERY_5_MINUTES, EVERY_10_MINUTES, EVERY_15_MINUTES, EVERY_30_MINUTES, EVERY_HOUR, EVERY_6_HOURS, EVERY_12_HOURS, or EVERY_DAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor#period SyntheticsBrokenLinksMonitor#period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor#period SyntheticsBrokenLinksMonitor#period}
   */
   readonly period: string;
   /**
+  * The runtime type that the monitor will run.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor#runtime_type SyntheticsBrokenLinksMonitor#runtime_type}
+  */
+  readonly runtimeType?: string;
+  /**
+  * The specific semver version of the runtime type.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor#runtime_type_version SyntheticsBrokenLinksMonitor#runtime_type_version}
+  */
+  readonly runtimeTypeVersion?: string;
+  /**
   * The monitor status (ENABLED or DISABLED).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor#status SyntheticsBrokenLinksMonitor#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor#status SyntheticsBrokenLinksMonitor#status}
   */
   readonly status: string;
   /**
   * The URI the monitor runs against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor#uri SyntheticsBrokenLinksMonitor#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor#uri SyntheticsBrokenLinksMonitor#uri}
   */
   readonly uri: string;
   /**
   * tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor#tag SyntheticsBrokenLinksMonitor#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor#tag SyntheticsBrokenLinksMonitor#tag}
   */
   readonly tag?: SyntheticsBrokenLinksMonitorTag[] | cdktf.IResolvable;
 }
@@ -72,13 +79,13 @@ export interface SyntheticsBrokenLinksMonitorTag {
   /**
   * Name of the tag key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor#key SyntheticsBrokenLinksMonitor#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor#key SyntheticsBrokenLinksMonitor#key}
   */
   readonly key: string;
   /**
   * Values associated with the tag key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor#values SyntheticsBrokenLinksMonitor#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor#values SyntheticsBrokenLinksMonitor#values}
   */
   readonly values: string[];
 }
@@ -217,7 +224,7 @@ export class SyntheticsBrokenLinksMonitorTagList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor}
 */
 export class SyntheticsBrokenLinksMonitor extends cdktf.TerraformResource {
 
@@ -233,7 +240,7 @@ export class SyntheticsBrokenLinksMonitor extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SyntheticsBrokenLinksMonitor resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SyntheticsBrokenLinksMonitor to import
-  * @param importFromId The id of the existing SyntheticsBrokenLinksMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SyntheticsBrokenLinksMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SyntheticsBrokenLinksMonitor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -245,7 +252,7 @@ export class SyntheticsBrokenLinksMonitor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -256,7 +263,7 @@ export class SyntheticsBrokenLinksMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_synthetics_broken_links_monitor',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.33.0',
+        providerVersion: '3.34.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -273,6 +280,8 @@ export class SyntheticsBrokenLinksMonitor extends cdktf.TerraformResource {
     this._locationsPublic = config.locationsPublic;
     this._name = config.name;
     this._period = config.period;
+    this._runtimeType = config.runtimeType;
+    this._runtimeTypeVersion = config.runtimeTypeVersion;
     this._status = config.status;
     this._uri = config.uri;
     this._tag.internalValue = config.tag;
@@ -382,6 +391,38 @@ export class SyntheticsBrokenLinksMonitor extends cdktf.TerraformResource {
     return this.getNumberAttribute('period_in_minutes');
   }
 
+  // runtime_type - computed: false, optional: true, required: false
+  private _runtimeType?: string; 
+  public get runtimeType() {
+    return this.getStringAttribute('runtime_type');
+  }
+  public set runtimeType(value: string) {
+    this._runtimeType = value;
+  }
+  public resetRuntimeType() {
+    this._runtimeType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeTypeInput() {
+    return this._runtimeType;
+  }
+
+  // runtime_type_version - computed: false, optional: true, required: false
+  private _runtimeTypeVersion?: string; 
+  public get runtimeTypeVersion() {
+    return this.getStringAttribute('runtime_type_version');
+  }
+  public set runtimeTypeVersion(value: string) {
+    this._runtimeTypeVersion = value;
+  }
+  public resetRuntimeTypeVersion() {
+    this._runtimeTypeVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeTypeVersionInput() {
+    return this._runtimeTypeVersion;
+  }
+
   // status - computed: false, optional: false, required: true
   private _status?: string; 
   public get status() {
@@ -436,6 +477,8 @@ export class SyntheticsBrokenLinksMonitor extends cdktf.TerraformResource {
       locations_public: cdktf.listMapper(cdktf.stringToTerraform, false)(this._locationsPublic),
       name: cdktf.stringToTerraform(this._name),
       period: cdktf.stringToTerraform(this._period),
+      runtime_type: cdktf.stringToTerraform(this._runtimeType),
+      runtime_type_version: cdktf.stringToTerraform(this._runtimeTypeVersion),
       status: cdktf.stringToTerraform(this._status),
       uri: cdktf.stringToTerraform(this._uri),
       tag: cdktf.listMapper(syntheticsBrokenLinksMonitorTagToTerraform, true)(this._tag.internalValue),
@@ -476,6 +519,18 @@ export class SyntheticsBrokenLinksMonitor extends cdktf.TerraformResource {
       },
       period: {
         value: cdktf.stringToHclTerraform(this._period),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      runtime_type: {
+        value: cdktf.stringToHclTerraform(this._runtimeType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      runtime_type_version: {
+        value: cdktf.stringToHclTerraform(this._runtimeTypeVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

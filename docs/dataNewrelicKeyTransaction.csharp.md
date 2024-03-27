@@ -4,7 +4,7 @@
 
 ### DataNewrelicKeyTransaction <a name="DataNewrelicKeyTransaction" id="@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransaction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/data-sources/key_transaction newrelic_key_transaction}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/data-sources/key_transaction newrelic_key_transaction}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransaction.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataNewrelicKeyTransaction
 
 The id of the existing DataNewrelicKeyTransaction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/data-sources/key_transaction#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/data-sources/key_transaction#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -621,7 +621,7 @@ new DataNewrelicKeyTransactionConfig {
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransactionConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransactionConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransactionConfig.property.name">Name</a></code> | <code>string</code> | The name of the key transaction in New Relic. |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransactionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/data-sources/key_transaction#id DataNewrelicKeyTransaction#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransactionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/data-sources/key_transaction#id DataNewrelicKeyTransaction#id}. |
 
 ---
 
@@ -705,7 +705,7 @@ public string Name { get; set; }
 
 The name of the key transaction in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/data-sources/key_transaction#name DataNewrelicKeyTransaction#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/data-sources/key_transaction#name DataNewrelicKeyTransaction#name}
 
 ---
 
@@ -717,7 +717,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/data-sources/key_transaction#id DataNewrelicKeyTransaction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/data-sources/key_transaction#id DataNewrelicKeyTransaction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
