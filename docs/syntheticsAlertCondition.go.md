@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsalertcondition"
 
 syntheticsalertcondition.NewSyntheticsAlertCondition(scope Construct, id *string, config SyntheticsAlertConditionConfig) SyntheticsAlertCondition
 ```
@@ -399,7 +399,7 @@ func ResetRunbookUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsalertcondition"
 
 syntheticsalertcondition.SyntheticsAlertCondition_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsalertcondition"
 
 syntheticsalertcondition.SyntheticsAlertCondition_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ syntheticsalertcondition.SyntheticsAlertCondition_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsalertcondition"
 
 syntheticsalertcondition.SyntheticsAlertCondition_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ syntheticsalertcondition.SyntheticsAlertCondition_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsalertcondition"
 
 syntheticsalertcondition.SyntheticsAlertCondition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertConditionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsalertcondition"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsalertcondition"
 
 &syntheticsalertcondition.SyntheticsAlertConditionConfig {
 	Connection: interface{},
