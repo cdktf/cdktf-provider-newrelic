@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination
+// https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface NotificationDestinationConfig extends cdktf.TerraformMetaArgume
   /**
   * The account ID under which to put the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination#account_id NotificationDestination#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#account_id NotificationDestination#account_id}
   */
   readonly accountId?: number;
   /**
   * Indicates whether the destination is active.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination#active NotificationDestination#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#active NotificationDestination#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination#id NotificationDestination#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#id NotificationDestination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,41 +29,53 @@ export interface NotificationDestinationConfig extends cdktf.TerraformMetaArgume
   /**
   * (Required) The name of the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination#name NotificationDestination#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#name NotificationDestination#name}
   */
   readonly name: string;
   /**
   * (Required) The type of the destination. One of: (WEBHOOK, EMAIL, SERVICE_NOW, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION, JIRA, SLACK, SLACK_COLLABORATION, SLACK_LEGACY, MOBILE_PUSH, EVENT_BRIDGE).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination#type NotificationDestination#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#type NotificationDestination#type}
   */
   readonly type: string;
   /**
   * auth_basic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination#auth_basic NotificationDestination#auth_basic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#auth_basic NotificationDestination#auth_basic}
   */
   readonly authBasic?: NotificationDestinationAuthBasic;
   /**
+  * auth_custom_header block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#auth_custom_header NotificationDestination#auth_custom_header}
+  */
+  readonly authCustomHeader?: NotificationDestinationAuthCustomHeader[] | cdktf.IResolvable;
+  /**
   * auth_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination#auth_token NotificationDestination#auth_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#auth_token NotificationDestination#auth_token}
   */
   readonly authToken?: NotificationDestinationAuthToken;
   /**
   * property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination#property NotificationDestination#property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#property NotificationDestination#property}
   */
   readonly property: NotificationDestinationProperty[] | cdktf.IResolvable;
+  /**
+  * secure_url block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#secure_url NotificationDestination#secure_url}
+  */
+  readonly secureUrl?: NotificationDestinationSecureUrl;
 }
 export interface NotificationDestinationAuthBasic {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination#password NotificationDestination#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#password NotificationDestination#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination#user NotificationDestination#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#user NotificationDestination#user}
   */
   readonly user: string;
 }
@@ -173,13 +180,156 @@ export class NotificationDestinationAuthBasicOutputReference extends cdktf.Compl
     return this._user;
   }
 }
+export interface NotificationDestinationAuthCustomHeader {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#key NotificationDestination#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#value NotificationDestination#value}
+  */
+  readonly value: string;
+}
+
+export function notificationDestinationAuthCustomHeaderToTerraform(struct?: NotificationDestinationAuthCustomHeader | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function notificationDestinationAuthCustomHeaderToHclTerraform(struct?: NotificationDestinationAuthCustomHeader | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NotificationDestinationAuthCustomHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NotificationDestinationAuthCustomHeader | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NotificationDestinationAuthCustomHeader | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class NotificationDestinationAuthCustomHeaderList extends cdktf.ComplexList {
+  public internalValue? : NotificationDestinationAuthCustomHeader[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NotificationDestinationAuthCustomHeaderOutputReference {
+    return new NotificationDestinationAuthCustomHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface NotificationDestinationAuthToken {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination#prefix NotificationDestination#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#prefix NotificationDestination#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination#token NotificationDestination#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#token NotificationDestination#token}
   */
   readonly token: string;
 }
@@ -291,25 +441,25 @@ export interface NotificationDestinationProperty {
   /**
   * Notification property display key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination#display_value NotificationDestination#display_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#display_value NotificationDestination#display_value}
   */
   readonly displayValue?: string;
   /**
   * Notification property key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination#key NotificationDestination#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#key NotificationDestination#key}
   */
   readonly key: string;
   /**
   * Notification property label.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination#label NotificationDestination#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#label NotificationDestination#label}
   */
   readonly label?: string;
   /**
   * Notification property value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination#value NotificationDestination#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#value NotificationDestination#value}
   */
   readonly value: string;
 }
@@ -504,9 +654,120 @@ export class NotificationDestinationPropertyList extends cdktf.ComplexList {
     return new NotificationDestinationPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface NotificationDestinationSecureUrl {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#prefix NotificationDestination#prefix}
+  */
+  readonly prefix: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#secure_suffix NotificationDestination#secure_suffix}
+  */
+  readonly secureSuffix: string;
+}
+
+export function notificationDestinationSecureUrlToTerraform(struct?: NotificationDestinationSecureUrlOutputReference | NotificationDestinationSecureUrl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+    secure_suffix: cdktf.stringToTerraform(struct!.secureSuffix),
+  }
+}
+
+
+export function notificationDestinationSecureUrlToHclTerraform(struct?: NotificationDestinationSecureUrlOutputReference | NotificationDestinationSecureUrl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secure_suffix: {
+      value: cdktf.stringToHclTerraform(struct!.secureSuffix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NotificationDestinationSecureUrlOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NotificationDestinationSecureUrl | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._prefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefix = this._prefix;
+    }
+    if (this._secureSuffix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secureSuffix = this._secureSuffix;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NotificationDestinationSecureUrl | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._prefix = undefined;
+      this._secureSuffix = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._prefix = value.prefix;
+      this._secureSuffix = value.secureSuffix;
+    }
+  }
+
+  // prefix - computed: false, optional: false, required: true
+  private _prefix?: string; 
+  public get prefix() {
+    return this.getStringAttribute('prefix');
+  }
+  public set prefix(value: string) {
+    this._prefix = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix;
+  }
+
+  // secure_suffix - computed: false, optional: false, required: true
+  private _secureSuffix?: string; 
+  public get secureSuffix() {
+    return this.getStringAttribute('secure_suffix');
+  }
+  public set secureSuffix(value: string) {
+    this._secureSuffix = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secureSuffixInput() {
+    return this._secureSuffix;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination newrelic_notification_destination}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination newrelic_notification_destination}
 */
 export class NotificationDestination extends cdktf.TerraformResource {
 
@@ -522,7 +783,7 @@ export class NotificationDestination extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NotificationDestination resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationDestination to import
-  * @param importFromId The id of the existing NotificationDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NotificationDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -534,7 +795,7 @@ export class NotificationDestination extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination newrelic_notification_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination newrelic_notification_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -545,7 +806,7 @@ export class NotificationDestination extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_notification_destination',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.34.1',
+        providerVersion: '3.35.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -562,8 +823,10 @@ export class NotificationDestination extends cdktf.TerraformResource {
     this._name = config.name;
     this._type = config.type;
     this._authBasic.internalValue = config.authBasic;
+    this._authCustomHeader.internalValue = config.authCustomHeader;
     this._authToken.internalValue = config.authToken;
     this._property.internalValue = config.property;
+    this._secureUrl.internalValue = config.secureUrl;
   }
 
   // ==========
@@ -675,6 +938,22 @@ export class NotificationDestination extends cdktf.TerraformResource {
     return this._authBasic.internalValue;
   }
 
+  // auth_custom_header - computed: false, optional: true, required: false
+  private _authCustomHeader = new NotificationDestinationAuthCustomHeaderList(this, "auth_custom_header", false);
+  public get authCustomHeader() {
+    return this._authCustomHeader;
+  }
+  public putAuthCustomHeader(value: NotificationDestinationAuthCustomHeader[] | cdktf.IResolvable) {
+    this._authCustomHeader.internalValue = value;
+  }
+  public resetAuthCustomHeader() {
+    this._authCustomHeader.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authCustomHeaderInput() {
+    return this._authCustomHeader.internalValue;
+  }
+
   // auth_token - computed: false, optional: true, required: false
   private _authToken = new NotificationDestinationAuthTokenOutputReference(this, "auth_token");
   public get authToken() {
@@ -704,6 +983,22 @@ export class NotificationDestination extends cdktf.TerraformResource {
     return this._property.internalValue;
   }
 
+  // secure_url - computed: false, optional: true, required: false
+  private _secureUrl = new NotificationDestinationSecureUrlOutputReference(this, "secure_url");
+  public get secureUrl() {
+    return this._secureUrl;
+  }
+  public putSecureUrl(value: NotificationDestinationSecureUrl) {
+    this._secureUrl.internalValue = value;
+  }
+  public resetSecureUrl() {
+    this._secureUrl.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secureUrlInput() {
+    return this._secureUrl.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -716,8 +1011,10 @@ export class NotificationDestination extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
       auth_basic: notificationDestinationAuthBasicToTerraform(this._authBasic.internalValue),
+      auth_custom_header: cdktf.listMapper(notificationDestinationAuthCustomHeaderToTerraform, true)(this._authCustomHeader.internalValue),
       auth_token: notificationDestinationAuthTokenToTerraform(this._authToken.internalValue),
       property: cdktf.listMapper(notificationDestinationPropertyToTerraform, true)(this._property.internalValue),
+      secure_url: notificationDestinationSecureUrlToTerraform(this._secureUrl.internalValue),
     };
   }
 
@@ -759,6 +1056,12 @@ export class NotificationDestination extends cdktf.TerraformResource {
         type: "list",
         storageClassType: "NotificationDestinationAuthBasicList",
       },
+      auth_custom_header: {
+        value: cdktf.listMapperHcl(notificationDestinationAuthCustomHeaderToHclTerraform, true)(this._authCustomHeader.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NotificationDestinationAuthCustomHeaderList",
+      },
       auth_token: {
         value: notificationDestinationAuthTokenToHclTerraform(this._authToken.internalValue),
         isBlock: true,
@@ -770,6 +1073,12 @@ export class NotificationDestination extends cdktf.TerraformResource {
         isBlock: true,
         type: "set",
         storageClassType: "NotificationDestinationPropertyList",
+      },
+      secure_url: {
+        value: notificationDestinationSecureUrlToHclTerraform(this._secureUrl.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NotificationDestinationSecureUrlList",
       },
     };
 
