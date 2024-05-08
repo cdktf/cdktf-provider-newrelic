@@ -1,3 +1,3 @@
 # `newrelic_workload`
 
-Refer to the Terraform Registry for docs: [`newrelic_workload`](https://registry.terraform.io/providers/newrelic/newrelic/3.35.1/docs/resources/workload).
+Refer to the Terraform Registry for docs: [`newrelic_workload`](https://registry.terraform.io/providers/newrelic/newrelic/3.35.2/docs/resources/workload).
