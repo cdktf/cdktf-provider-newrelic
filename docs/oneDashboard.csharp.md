@@ -4,7 +4,7 @@
 
 ### OneDashboard <a name="OneDashboard" id="@cdktf/provider-newrelic.oneDashboard.OneDashboard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard newrelic_one_dashboard}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard newrelic_one_dashboard}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboard.Initializer"></a>
 
@@ -528,7 +528,7 @@ The construct id used in the generated config for the OneDashboard to import.
 
 The id of the existing OneDashboard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -939,7 +939,7 @@ new OneDashboardConfig {
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.page">Page</a></code> | <code>object</code> | page block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.accountId">AccountId</a></code> | <code>double</code> | The New Relic account ID where you want to create the dashboard. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.description">Description</a></code> | <code>string</code> | The dashboard's description. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#id OneDashboard#id}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#id OneDashboard#id}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.permissions">Permissions</a></code> | <code>string</code> | Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.variable">Variable</a></code> | <code>object</code> | variable block. |
 
@@ -1025,7 +1025,7 @@ public string Name { get; set; }
 
 The dashboard's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#name OneDashboard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -1039,7 +1039,7 @@ public object Page { get; set; }
 
 page block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#page OneDashboard#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#page OneDashboard#page}
 
 ---
 
@@ -1053,7 +1053,7 @@ public double AccountId { get; set; }
 
 The New Relic account ID where you want to create the dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -1067,7 +1067,7 @@ public string Description { get; set; }
 
 The dashboard's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#description OneDashboard#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#description OneDashboard#description}
 
 ---
 
@@ -1079,7 +1079,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#id OneDashboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#id OneDashboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1096,7 +1096,7 @@ public string Permissions { get; set; }
 
 Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#permissions OneDashboard#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#permissions OneDashboard#permissions}
 
 ---
 
@@ -1110,7 +1110,7 @@ public object Variable { get; set; }
 
 variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#variable OneDashboard#variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#variable OneDashboard#variable}
 
 ---
 
@@ -1174,7 +1174,7 @@ public string Name { get; set; }
 
 The dashboard page's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#name OneDashboard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -1188,7 +1188,7 @@ public string Description { get; set; }
 
 The dashboard page's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#description OneDashboard#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#description OneDashboard#description}
 
 ---
 
@@ -1202,7 +1202,7 @@ public object WidgetArea { get; set; }
 
 widget_area block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#widget_area OneDashboard#widget_area}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#widget_area OneDashboard#widget_area}
 
 ---
 
@@ -1216,7 +1216,7 @@ public object WidgetBar { get; set; }
 
 widget_bar block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#widget_bar OneDashboard#widget_bar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#widget_bar OneDashboard#widget_bar}
 
 ---
 
@@ -1230,7 +1230,7 @@ public object WidgetBillboard { get; set; }
 
 widget_billboard block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#widget_billboard OneDashboard#widget_billboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#widget_billboard OneDashboard#widget_billboard}
 
 ---
 
@@ -1244,7 +1244,7 @@ public object WidgetBullet { get; set; }
 
 widget_bullet block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#widget_bullet OneDashboard#widget_bullet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#widget_bullet OneDashboard#widget_bullet}
 
 ---
 
@@ -1258,7 +1258,7 @@ public object WidgetFunnel { get; set; }
 
 widget_funnel block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#widget_funnel OneDashboard#widget_funnel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#widget_funnel OneDashboard#widget_funnel}
 
 ---
 
@@ -1272,7 +1272,7 @@ public object WidgetHeatmap { get; set; }
 
 widget_heatmap block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#widget_heatmap OneDashboard#widget_heatmap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#widget_heatmap OneDashboard#widget_heatmap}
 
 ---
 
@@ -1286,7 +1286,7 @@ public object WidgetHistogram { get; set; }
 
 widget_histogram block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#widget_histogram OneDashboard#widget_histogram}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#widget_histogram OneDashboard#widget_histogram}
 
 ---
 
@@ -1300,7 +1300,7 @@ public object WidgetJson { get; set; }
 
 widget_json block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#widget_json OneDashboard#widget_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#widget_json OneDashboard#widget_json}
 
 ---
 
@@ -1314,7 +1314,7 @@ public object WidgetLine { get; set; }
 
 widget_line block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#widget_line OneDashboard#widget_line}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#widget_line OneDashboard#widget_line}
 
 ---
 
@@ -1328,7 +1328,7 @@ public object WidgetLogTable { get; set; }
 
 widget_log_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#widget_log_table OneDashboard#widget_log_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#widget_log_table OneDashboard#widget_log_table}
 
 ---
 
@@ -1342,7 +1342,7 @@ public object WidgetMarkdown { get; set; }
 
 widget_markdown block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#widget_markdown OneDashboard#widget_markdown}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#widget_markdown OneDashboard#widget_markdown}
 
 ---
 
@@ -1356,7 +1356,7 @@ public object WidgetPie { get; set; }
 
 widget_pie block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#widget_pie OneDashboard#widget_pie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#widget_pie OneDashboard#widget_pie}
 
 ---
 
@@ -1370,7 +1370,7 @@ public object WidgetStackedBar { get; set; }
 
 widget_stacked_bar block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#widget_stacked_bar OneDashboard#widget_stacked_bar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#widget_stacked_bar OneDashboard#widget_stacked_bar}
 
 ---
 
@@ -1384,7 +1384,7 @@ public object WidgetTable { get; set; }
 
 widget_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#widget_table OneDashboard#widget_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#widget_table OneDashboard#widget_table}
 
 ---
 
@@ -1417,20 +1417,20 @@ new OneDashboardPageWidgetArea {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.nrqlQuery">NrqlQuery</a></code> | <code>object</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.title">Title</a></code> | <code>string</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.colors">Colors</a></code> | <code>object</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.nullValues">NullValues</a></code> | <code>object</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.units">Units</a></code> | <code>object</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -1442,7 +1442,7 @@ public double Column { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -1456,7 +1456,7 @@ public object NrqlQuery { get; set; }
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -1468,7 +1468,7 @@ public double Row { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -1482,7 +1482,7 @@ public string Title { get; set; }
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -1496,7 +1496,7 @@ public object Colors { get; set; }
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -1508,7 +1508,7 @@ public object FacetShowOtherSeries { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -1520,7 +1520,7 @@ public double Height { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -1532,7 +1532,7 @@ public object IgnoreTimeRange { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -1544,7 +1544,7 @@ public object LegendEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -1558,7 +1558,7 @@ public object NullValues { get; set; }
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -1572,7 +1572,7 @@ public object Units { get; set; }
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -1584,7 +1584,7 @@ public double Width { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -1596,7 +1596,7 @@ public double YAxisLeftMax { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -1608,7 +1608,7 @@ public double YAxisLeftMin { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -1629,7 +1629,7 @@ new OneDashboardPageWidgetAreaColors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColors.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -1642,7 +1642,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -1656,7 +1656,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -1692,7 +1692,7 @@ public string Color { get; set; }
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -1706,7 +1706,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -1742,7 +1742,7 @@ public string Query { get; set; }
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -1756,7 +1756,7 @@ public double AccountId { get; set; }
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -1777,7 +1777,7 @@ new OneDashboardPageWidgetAreaNullValues {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -1790,7 +1790,7 @@ public string NullValue { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -1804,7 +1804,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -1840,7 +1840,7 @@ public string NullValue { get; set; }
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -1854,7 +1854,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -1876,7 +1876,7 @@ new OneDashboardPageWidgetAreaUnits {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnits.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -1890,7 +1890,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -1902,7 +1902,7 @@ public string Unit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -1938,7 +1938,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -1952,7 +1952,7 @@ public string Unit { get; set; }
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -1987,22 +1987,22 @@ new OneDashboardPageWidgetBar {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.nrqlQuery">NrqlQuery</a></code> | <code>object</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.title">Title</a></code> | <code>string</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.colors">Colors</a></code> | <code>object</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.filterCurrentDashboard">FilterCurrentDashboard</a></code> | <code>object</code> | Use this item to filter the current dashboard. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.linkedEntityGuids">LinkedEntityGuids</a></code> | <code>string[]</code> | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.nullValues">NullValues</a></code> | <code>object</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.units">Units</a></code> | <code>object</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -2014,7 +2014,7 @@ public double Column { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -2028,7 +2028,7 @@ public object NrqlQuery { get; set; }
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -2040,7 +2040,7 @@ public double Row { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -2054,7 +2054,7 @@ public string Title { get; set; }
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -2068,7 +2068,7 @@ public object Colors { get; set; }
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -2080,7 +2080,7 @@ public object FacetShowOtherSeries { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -2094,7 +2094,7 @@ public object FilterCurrentDashboard { get; set; }
 
 Use this item to filter the current dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
 
 ---
 
@@ -2106,7 +2106,7 @@ public double Height { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -2118,7 +2118,7 @@ public object IgnoreTimeRange { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -2130,7 +2130,7 @@ public object LegendEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -2144,7 +2144,7 @@ public string[] LinkedEntityGuids { get; set; }
 
 Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
 
 ---
 
@@ -2158,7 +2158,7 @@ public object NullValues { get; set; }
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -2172,7 +2172,7 @@ public object Units { get; set; }
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -2184,7 +2184,7 @@ public double Width { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -2196,7 +2196,7 @@ public double YAxisLeftMax { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -2208,7 +2208,7 @@ public double YAxisLeftMin { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -2229,7 +2229,7 @@ new OneDashboardPageWidgetBarColors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColors.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -2242,7 +2242,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -2256,7 +2256,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -2292,7 +2292,7 @@ public string Color { get; set; }
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -2306,7 +2306,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -2342,7 +2342,7 @@ public string Query { get; set; }
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -2356,7 +2356,7 @@ public double AccountId { get; set; }
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -2377,7 +2377,7 @@ new OneDashboardPageWidgetBarNullValues {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -2390,7 +2390,7 @@ public string NullValue { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -2404,7 +2404,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -2440,7 +2440,7 @@ public string NullValue { get; set; }
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -2454,7 +2454,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -2476,7 +2476,7 @@ new OneDashboardPageWidgetBarUnits {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnits.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -2490,7 +2490,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -2502,7 +2502,7 @@ public string Unit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -2538,7 +2538,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -2552,7 +2552,7 @@ public string Unit { get; set; }
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -2587,22 +2587,22 @@ new OneDashboardPageWidgetBillboard {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.nrqlQuery">NrqlQuery</a></code> | <code>object</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.title">Title</a></code> | <code>string</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.colors">Colors</a></code> | <code>object</code> | colors block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.critical">Critical</a></code> | <code>string</code> | The critical threshold value. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.nullValues">NullValues</a></code> | <code>object</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.units">Units</a></code> | <code>object</code> | units block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.warning">Warning</a></code> | <code>string</code> | The warning threshold value. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -2614,7 +2614,7 @@ public double Column { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -2628,7 +2628,7 @@ public object NrqlQuery { get; set; }
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -2640,7 +2640,7 @@ public double Row { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -2654,7 +2654,7 @@ public string Title { get; set; }
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -2668,7 +2668,7 @@ public object Colors { get; set; }
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -2682,7 +2682,7 @@ public string Critical { get; set; }
 
 The critical threshold value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#critical OneDashboard#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#critical OneDashboard#critical}
 
 ---
 
@@ -2694,7 +2694,7 @@ public object FacetShowOtherSeries { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -2706,7 +2706,7 @@ public double Height { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -2718,7 +2718,7 @@ public object IgnoreTimeRange { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -2730,7 +2730,7 @@ public object LegendEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -2744,7 +2744,7 @@ public object NullValues { get; set; }
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -2758,7 +2758,7 @@ public object Units { get; set; }
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -2772,7 +2772,7 @@ public string Warning { get; set; }
 
 The warning threshold value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#warning OneDashboard#warning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#warning OneDashboard#warning}
 
 ---
 
@@ -2784,7 +2784,7 @@ public double Width { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -2796,7 +2796,7 @@ public double YAxisLeftMax { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -2808,7 +2808,7 @@ public double YAxisLeftMin { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -2829,7 +2829,7 @@ new OneDashboardPageWidgetBillboardColors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColors.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -2842,7 +2842,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -2856,7 +2856,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -2892,7 +2892,7 @@ public string Color { get; set; }
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -2906,7 +2906,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -2942,7 +2942,7 @@ public string Query { get; set; }
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -2956,7 +2956,7 @@ public double AccountId { get; set; }
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -2977,7 +2977,7 @@ new OneDashboardPageWidgetBillboardNullValues {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -2990,7 +2990,7 @@ public string NullValue { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -3004,7 +3004,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -3040,7 +3040,7 @@ public string NullValue { get; set; }
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -3054,7 +3054,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -3076,7 +3076,7 @@ new OneDashboardPageWidgetBillboardUnits {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnits.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -3090,7 +3090,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -3102,7 +3102,7 @@ public string Unit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -3138,7 +3138,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -3152,7 +3152,7 @@ public string Unit { get; set; }
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -3186,21 +3186,21 @@ new OneDashboardPageWidgetBullet {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.limit">Limit</a></code> | <code>double</code> | The maximum value for the visualization. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.nrqlQuery">NrqlQuery</a></code> | <code>object</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.title">Title</a></code> | <code>string</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.colors">Colors</a></code> | <code>object</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.nullValues">NullValues</a></code> | <code>object</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.units">Units</a></code> | <code>object</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -3212,7 +3212,7 @@ public double Column { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -3226,7 +3226,7 @@ public double Limit { get; set; }
 
 The maximum value for the visualization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#limit OneDashboard#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#limit OneDashboard#limit}
 
 ---
 
@@ -3240,7 +3240,7 @@ public object NrqlQuery { get; set; }
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -3252,7 +3252,7 @@ public double Row { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -3266,7 +3266,7 @@ public string Title { get; set; }
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -3280,7 +3280,7 @@ public object Colors { get; set; }
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -3292,7 +3292,7 @@ public object FacetShowOtherSeries { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -3304,7 +3304,7 @@ public double Height { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -3316,7 +3316,7 @@ public object IgnoreTimeRange { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -3328,7 +3328,7 @@ public object LegendEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -3342,7 +3342,7 @@ public object NullValues { get; set; }
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -3356,7 +3356,7 @@ public object Units { get; set; }
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -3368,7 +3368,7 @@ public double Width { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -3380,7 +3380,7 @@ public double YAxisLeftMax { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -3392,7 +3392,7 @@ public double YAxisLeftMin { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -3413,7 +3413,7 @@ new OneDashboardPageWidgetBulletColors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColors.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -3426,7 +3426,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -3440,7 +3440,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -3476,7 +3476,7 @@ public string Color { get; set; }
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -3490,7 +3490,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -3526,7 +3526,7 @@ public string Query { get; set; }
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -3540,7 +3540,7 @@ public double AccountId { get; set; }
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -3561,7 +3561,7 @@ new OneDashboardPageWidgetBulletNullValues {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -3574,7 +3574,7 @@ public string NullValue { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -3588,7 +3588,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -3624,7 +3624,7 @@ public string NullValue { get; set; }
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -3638,7 +3638,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -3660,7 +3660,7 @@ new OneDashboardPageWidgetBulletUnits {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnits.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -3674,7 +3674,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -3686,7 +3686,7 @@ public string Unit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -3722,7 +3722,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -3736,7 +3736,7 @@ public string Unit { get; set; }
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -3769,20 +3769,20 @@ new OneDashboardPageWidgetFunnel {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.nrqlQuery">NrqlQuery</a></code> | <code>object</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.title">Title</a></code> | <code>string</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.colors">Colors</a></code> | <code>object</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.nullValues">NullValues</a></code> | <code>object</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.units">Units</a></code> | <code>object</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -3794,7 +3794,7 @@ public double Column { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -3808,7 +3808,7 @@ public object NrqlQuery { get; set; }
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -3820,7 +3820,7 @@ public double Row { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -3834,7 +3834,7 @@ public string Title { get; set; }
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -3848,7 +3848,7 @@ public object Colors { get; set; }
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -3860,7 +3860,7 @@ public object FacetShowOtherSeries { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -3872,7 +3872,7 @@ public double Height { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -3884,7 +3884,7 @@ public object IgnoreTimeRange { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -3896,7 +3896,7 @@ public object LegendEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -3910,7 +3910,7 @@ public object NullValues { get; set; }
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -3924,7 +3924,7 @@ public object Units { get; set; }
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -3936,7 +3936,7 @@ public double Width { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -3948,7 +3948,7 @@ public double YAxisLeftMax { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -3960,7 +3960,7 @@ public double YAxisLeftMin { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -3981,7 +3981,7 @@ new OneDashboardPageWidgetFunnelColors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColors.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -3994,7 +3994,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -4008,7 +4008,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -4044,7 +4044,7 @@ public string Color { get; set; }
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -4058,7 +4058,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -4094,7 +4094,7 @@ public string Query { get; set; }
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -4108,7 +4108,7 @@ public double AccountId { get; set; }
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -4129,7 +4129,7 @@ new OneDashboardPageWidgetFunnelNullValues {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -4142,7 +4142,7 @@ public string NullValue { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -4156,7 +4156,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -4192,7 +4192,7 @@ public string NullValue { get; set; }
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -4206,7 +4206,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -4228,7 +4228,7 @@ new OneDashboardPageWidgetFunnelUnits {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnits.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -4242,7 +4242,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -4254,7 +4254,7 @@ public string Unit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -4290,7 +4290,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -4304,7 +4304,7 @@ public string Unit { get; set; }
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -4339,22 +4339,22 @@ new OneDashboardPageWidgetHeatmap {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.nrqlQuery">NrqlQuery</a></code> | <code>object</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.title">Title</a></code> | <code>string</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.colors">Colors</a></code> | <code>object</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.filterCurrentDashboard">FilterCurrentDashboard</a></code> | <code>object</code> | Use this item to filter the current dashboard. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.linkedEntityGuids">LinkedEntityGuids</a></code> | <code>string[]</code> | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.nullValues">NullValues</a></code> | <code>object</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.units">Units</a></code> | <code>object</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -4366,7 +4366,7 @@ public double Column { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -4380,7 +4380,7 @@ public object NrqlQuery { get; set; }
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -4392,7 +4392,7 @@ public double Row { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -4406,7 +4406,7 @@ public string Title { get; set; }
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -4420,7 +4420,7 @@ public object Colors { get; set; }
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -4432,7 +4432,7 @@ public object FacetShowOtherSeries { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -4446,7 +4446,7 @@ public object FilterCurrentDashboard { get; set; }
 
 Use this item to filter the current dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
 
 ---
 
@@ -4458,7 +4458,7 @@ public double Height { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -4470,7 +4470,7 @@ public object IgnoreTimeRange { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -4482,7 +4482,7 @@ public object LegendEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -4496,7 +4496,7 @@ public string[] LinkedEntityGuids { get; set; }
 
 Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
 
 ---
 
@@ -4510,7 +4510,7 @@ public object NullValues { get; set; }
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -4524,7 +4524,7 @@ public object Units { get; set; }
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -4536,7 +4536,7 @@ public double Width { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -4548,7 +4548,7 @@ public double YAxisLeftMax { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -4560,7 +4560,7 @@ public double YAxisLeftMin { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -4581,7 +4581,7 @@ new OneDashboardPageWidgetHeatmapColors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColors.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -4594,7 +4594,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -4608,7 +4608,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -4644,7 +4644,7 @@ public string Color { get; set; }
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -4658,7 +4658,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -4694,7 +4694,7 @@ public string Query { get; set; }
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -4708,7 +4708,7 @@ public double AccountId { get; set; }
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -4729,7 +4729,7 @@ new OneDashboardPageWidgetHeatmapNullValues {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -4742,7 +4742,7 @@ public string NullValue { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -4756,7 +4756,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -4792,7 +4792,7 @@ public string NullValue { get; set; }
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -4806,7 +4806,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -4828,7 +4828,7 @@ new OneDashboardPageWidgetHeatmapUnits {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnits.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -4842,7 +4842,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -4854,7 +4854,7 @@ public string Unit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -4890,7 +4890,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -4904,7 +4904,7 @@ public string Unit { get; set; }
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -4937,20 +4937,20 @@ new OneDashboardPageWidgetHistogram {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.nrqlQuery">NrqlQuery</a></code> | <code>object</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.title">Title</a></code> | <code>string</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.colors">Colors</a></code> | <code>object</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.nullValues">NullValues</a></code> | <code>object</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.units">Units</a></code> | <code>object</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -4962,7 +4962,7 @@ public double Column { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -4976,7 +4976,7 @@ public object NrqlQuery { get; set; }
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -4988,7 +4988,7 @@ public double Row { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -5002,7 +5002,7 @@ public string Title { get; set; }
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -5016,7 +5016,7 @@ public object Colors { get; set; }
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -5028,7 +5028,7 @@ public object FacetShowOtherSeries { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -5040,7 +5040,7 @@ public double Height { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -5052,7 +5052,7 @@ public object IgnoreTimeRange { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -5064,7 +5064,7 @@ public object LegendEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -5078,7 +5078,7 @@ public object NullValues { get; set; }
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -5092,7 +5092,7 @@ public object Units { get; set; }
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -5104,7 +5104,7 @@ public double Width { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -5116,7 +5116,7 @@ public double YAxisLeftMax { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -5128,7 +5128,7 @@ public double YAxisLeftMin { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -5149,7 +5149,7 @@ new OneDashboardPageWidgetHistogramColors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColors.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -5162,7 +5162,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -5176,7 +5176,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -5212,7 +5212,7 @@ public string Color { get; set; }
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -5226,7 +5226,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -5262,7 +5262,7 @@ public string Query { get; set; }
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -5276,7 +5276,7 @@ public double AccountId { get; set; }
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -5297,7 +5297,7 @@ new OneDashboardPageWidgetHistogramNullValues {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -5310,7 +5310,7 @@ public string NullValue { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -5324,7 +5324,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -5360,7 +5360,7 @@ public string NullValue { get; set; }
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -5374,7 +5374,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -5396,7 +5396,7 @@ new OneDashboardPageWidgetHistogramUnits {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnits.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -5410,7 +5410,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -5422,7 +5422,7 @@ public string Unit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -5458,7 +5458,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -5472,7 +5472,7 @@ public string Unit { get; set; }
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -5505,20 +5505,20 @@ new OneDashboardPageWidgetJson {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.nrqlQuery">NrqlQuery</a></code> | <code>object</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.title">Title</a></code> | <code>string</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.colors">Colors</a></code> | <code>object</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.nullValues">NullValues</a></code> | <code>object</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.units">Units</a></code> | <code>object</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -5530,7 +5530,7 @@ public double Column { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -5544,7 +5544,7 @@ public object NrqlQuery { get; set; }
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -5556,7 +5556,7 @@ public double Row { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -5570,7 +5570,7 @@ public string Title { get; set; }
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -5584,7 +5584,7 @@ public object Colors { get; set; }
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -5596,7 +5596,7 @@ public object FacetShowOtherSeries { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -5608,7 +5608,7 @@ public double Height { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -5620,7 +5620,7 @@ public object IgnoreTimeRange { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -5632,7 +5632,7 @@ public object LegendEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -5646,7 +5646,7 @@ public object NullValues { get; set; }
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -5660,7 +5660,7 @@ public object Units { get; set; }
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -5672,7 +5672,7 @@ public double Width { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -5684,7 +5684,7 @@ public double YAxisLeftMax { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -5696,7 +5696,7 @@ public double YAxisLeftMin { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -5717,7 +5717,7 @@ new OneDashboardPageWidgetJsonColors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColors.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -5730,7 +5730,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -5744,7 +5744,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -5780,7 +5780,7 @@ public string Color { get; set; }
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -5794,7 +5794,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -5830,7 +5830,7 @@ public string Query { get; set; }
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -5844,7 +5844,7 @@ public double AccountId { get; set; }
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -5865,7 +5865,7 @@ new OneDashboardPageWidgetJsonNullValues {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -5878,7 +5878,7 @@ public string NullValue { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -5892,7 +5892,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -5928,7 +5928,7 @@ public string NullValue { get; set; }
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -5942,7 +5942,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -5964,7 +5964,7 @@ new OneDashboardPageWidgetJsonUnits {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnits.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -5978,7 +5978,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -5990,7 +5990,7 @@ public string Unit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -6026,7 +6026,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -6040,7 +6040,7 @@ public string Unit { get; set; }
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -6060,13 +6060,16 @@ new OneDashboardPageWidgetLine {
     object FacetShowOtherSeries = null,
     double Height = null,
     object IgnoreTimeRange = null,
+    object IsLabelVisible = null,
     object LegendEnabled = null,
     object NullValues = null,
+    object Threshold = null,
     object Units = null,
     double Width = null,
     double YAxisLeftMax = null,
     double YAxisLeftMin = null,
-    object YAxisLeftZero = null
+    object YAxisLeftZero = null,
+    OneDashboardPageWidgetLineYAxisRight YAxisRight = null
 };
 ```
 
@@ -6074,21 +6077,24 @@ new OneDashboardPageWidgetLine {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.nrqlQuery">NrqlQuery</a></code> | <code>object</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.title">Title</a></code> | <code>string</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.colors">Colors</a></code> | <code>object</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.isLabelVisible">IsLabelVisible</a></code> | <code>object</code> | Specified if the label should be visible in the graph created when specified with thresholds. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.nullValues">NullValues</a></code> | <code>object</code> | null_values block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.threshold">Threshold</a></code> | <code>object</code> | threshold block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.units">Units</a></code> | <code>object</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisLeftZero">YAxisLeftZero</a></code> | <code>object</code> | Specifies if the values on the graph to be rendered need to be fit to scale, or printed within the specified range. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisRight">YAxisRight</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight">OneDashboardPageWidgetLineYAxisRight</a></code> | y_axis_right block. |
 
 ---
 
@@ -6100,7 +6106,7 @@ public double Column { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -6114,7 +6120,7 @@ public object NrqlQuery { get; set; }
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -6126,7 +6132,7 @@ public double Row { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -6140,7 +6146,7 @@ public string Title { get; set; }
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -6154,7 +6160,7 @@ public object Colors { get; set; }
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -6166,7 +6172,7 @@ public object FacetShowOtherSeries { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -6178,7 +6184,7 @@ public double Height { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -6190,7 +6196,21 @@ public object IgnoreTimeRange { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
+##### `IsLabelVisible`<sup>Optional</sup> <a name="IsLabelVisible" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.isLabelVisible"></a>
+
+```csharp
+public object IsLabelVisible { get; set; }
+```
+
+- *Type:* object
+
+Specified if the label should be visible in the graph created when specified with thresholds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#is_label_visible OneDashboard#is_label_visible}
 
 ---
 
@@ -6202,7 +6222,7 @@ public object LegendEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -6216,7 +6236,21 @@ public object NullValues { get; set; }
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+
+---
+
+##### `Threshold`<sup>Optional</sup> <a name="Threshold" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.threshold"></a>
+
+```csharp
+public object Threshold { get; set; }
+```
+
+- *Type:* object
+
+threshold block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#threshold OneDashboard#threshold}
 
 ---
 
@@ -6230,7 +6264,7 @@ public object Units { get; set; }
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -6242,7 +6276,7 @@ public double Width { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -6254,7 +6288,7 @@ public double YAxisLeftMax { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -6266,7 +6300,7 @@ public double YAxisLeftMin { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -6280,7 +6314,21 @@ public object YAxisLeftZero { get; set; }
 
 Specifies if the values on the graph to be rendered need to be fit to scale, or printed within the specified range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_zero OneDashboard#y_axis_left_zero}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_zero OneDashboard#y_axis_left_zero}
+
+---
+
+##### `YAxisRight`<sup>Optional</sup> <a name="YAxisRight" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisRight"></a>
+
+```csharp
+public OneDashboardPageWidgetLineYAxisRight YAxisRight { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight">OneDashboardPageWidgetLineYAxisRight</a>
+
+y_axis_right block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_right OneDashboard#y_axis_right}
 
 ---
 
@@ -6301,7 +6349,7 @@ new OneDashboardPageWidgetLineColors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColors.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -6314,7 +6362,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -6328,7 +6376,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -6364,7 +6412,7 @@ public string Color { get; set; }
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -6378,7 +6426,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -6414,7 +6462,7 @@ public string Query { get; set; }
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -6428,7 +6476,7 @@ public double AccountId { get; set; }
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -6449,7 +6497,7 @@ new OneDashboardPageWidgetLineNullValues {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -6462,7 +6510,7 @@ public string NullValue { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -6476,7 +6524,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -6512,7 +6560,7 @@ public string NullValue { get; set; }
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -6526,7 +6574,89 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+
+---
+
+### OneDashboardPageWidgetLineThreshold <a name="OneDashboardPageWidgetLineThreshold" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThreshold"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThreshold.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Newrelic;
+
+new OneDashboardPageWidgetLineThreshold {
+    double From = null,
+    string Name = null,
+    string Severity = null,
+    double To = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThreshold.property.from">From</a></code> | <code>double</code> | The number from which the range starts in thresholds. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThreshold.property.name">Name</a></code> | <code>string</code> | Name of the threshold created. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThreshold.property.severity">Severity</a></code> | <code>string</code> | Severity of the threshold, which would reflect in the widget, in the range of the threshold specified. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThreshold.property.to">To</a></code> | <code>double</code> | The number at which the range ends in thresholds. |
+
+---
+
+##### `From`<sup>Optional</sup> <a name="From" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThreshold.property.from"></a>
+
+```csharp
+public double From { get; set; }
+```
+
+- *Type:* double
+
+The number from which the range starts in thresholds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#from OneDashboard#from}
+
+---
+
+##### `Name`<sup>Optional</sup> <a name="Name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThreshold.property.name"></a>
+
+```csharp
+public string Name { get; set; }
+```
+
+- *Type:* string
+
+Name of the threshold created.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#name OneDashboard#name}
+
+---
+
+##### `Severity`<sup>Optional</sup> <a name="Severity" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThreshold.property.severity"></a>
+
+```csharp
+public string Severity { get; set; }
+```
+
+- *Type:* string
+
+Severity of the threshold, which would reflect in the widget, in the range of the threshold specified.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#severity OneDashboard#severity}
+
+---
+
+##### `To`<sup>Optional</sup> <a name="To" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThreshold.property.to"></a>
+
+```csharp
+public double To { get; set; }
+```
+
+- *Type:* double
+
+The number at which the range ends in thresholds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#to OneDashboard#to}
 
 ---
 
@@ -6548,7 +6678,7 @@ new OneDashboardPageWidgetLineUnits {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnits.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -6562,7 +6692,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -6574,7 +6704,7 @@ public string Unit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -6610,7 +6740,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -6624,7 +6754,89 @@ public string Unit { get; set; }
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+
+---
+
+### OneDashboardPageWidgetLineYAxisRight <a name="OneDashboardPageWidgetLineYAxisRight" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Newrelic;
+
+new OneDashboardPageWidgetLineYAxisRight {
+    double YAxisRightMax = null,
+    double YAxisRightMin = null,
+    string[] YAxisRightSeries = null,
+    object YAxisRightZero = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight.property.yAxisRightMax">YAxisRightMax</a></code> | <code>double</code> | Minimum value of the range to be specified with the Y-Axis on the right of the line widget. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight.property.yAxisRightMin">YAxisRightMin</a></code> | <code>double</code> | Minimum value of the range to be specified with the Y-Axis on the right of the line widget. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight.property.yAxisRightSeries">YAxisRightSeries</a></code> | <code>string[]</code> | A set of series that helps specify the Y-Axis on the right of the line widget. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight.property.yAxisRightZero">YAxisRightZero</a></code> | <code>object</code> | An attribute that helps specify the Y-Axis on the right of the line widget. |
+
+---
+
+##### `YAxisRightMax`<sup>Optional</sup> <a name="YAxisRightMax" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight.property.yAxisRightMax"></a>
+
+```csharp
+public double YAxisRightMax { get; set; }
+```
+
+- *Type:* double
+
+Minimum value of the range to be specified with the Y-Axis on the right of the line widget.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_right_max OneDashboard#y_axis_right_max}
+
+---
+
+##### `YAxisRightMin`<sup>Optional</sup> <a name="YAxisRightMin" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight.property.yAxisRightMin"></a>
+
+```csharp
+public double YAxisRightMin { get; set; }
+```
+
+- *Type:* double
+
+Minimum value of the range to be specified with the Y-Axis on the right of the line widget.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_right_min OneDashboard#y_axis_right_min}
+
+---
+
+##### `YAxisRightSeries`<sup>Optional</sup> <a name="YAxisRightSeries" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight.property.yAxisRightSeries"></a>
+
+```csharp
+public string[] YAxisRightSeries { get; set; }
+```
+
+- *Type:* string[]
+
+A set of series that helps specify the Y-Axis on the right of the line widget.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_right_series OneDashboard#y_axis_right_series}
+
+---
+
+##### `YAxisRightZero`<sup>Optional</sup> <a name="YAxisRightZero" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight.property.yAxisRightZero"></a>
+
+```csharp
+public object YAxisRightZero { get; set; }
+```
+
+- *Type:* object
+
+An attribute that helps specify the Y-Axis on the right of the line widget.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_right_zero OneDashboard#y_axis_right_zero}
 
 ---
 
@@ -6657,20 +6869,20 @@ new OneDashboardPageWidgetLogTable {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.nrqlQuery">NrqlQuery</a></code> | <code>object</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.title">Title</a></code> | <code>string</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.colors">Colors</a></code> | <code>object</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.nullValues">NullValues</a></code> | <code>object</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.units">Units</a></code> | <code>object</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -6682,7 +6894,7 @@ public double Column { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -6696,7 +6908,7 @@ public object NrqlQuery { get; set; }
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -6708,7 +6920,7 @@ public double Row { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -6722,7 +6934,7 @@ public string Title { get; set; }
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -6736,7 +6948,7 @@ public object Colors { get; set; }
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -6748,7 +6960,7 @@ public object FacetShowOtherSeries { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -6760,7 +6972,7 @@ public double Height { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -6772,7 +6984,7 @@ public object IgnoreTimeRange { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -6784,7 +6996,7 @@ public object LegendEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -6798,7 +7010,7 @@ public object NullValues { get; set; }
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -6812,7 +7024,7 @@ public object Units { get; set; }
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -6824,7 +7036,7 @@ public double Width { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -6836,7 +7048,7 @@ public double YAxisLeftMax { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -6848,7 +7060,7 @@ public double YAxisLeftMin { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -6869,7 +7081,7 @@ new OneDashboardPageWidgetLogTableColors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColors.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -6882,7 +7094,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -6896,7 +7108,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -6932,7 +7144,7 @@ public string Color { get; set; }
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -6946,7 +7158,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -6982,7 +7194,7 @@ public string Query { get; set; }
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -6996,7 +7208,7 @@ public double AccountId { get; set; }
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -7017,7 +7229,7 @@ new OneDashboardPageWidgetLogTableNullValues {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -7030,7 +7242,7 @@ public string NullValue { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -7044,7 +7256,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -7080,7 +7292,7 @@ public string NullValue { get; set; }
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -7094,7 +7306,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -7116,7 +7328,7 @@ new OneDashboardPageWidgetLogTableUnits {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnits.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -7130,7 +7342,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -7142,7 +7354,7 @@ public string Unit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -7178,7 +7390,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -7192,7 +7404,7 @@ public string Unit { get; set; }
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -7225,20 +7437,20 @@ new OneDashboardPageWidgetMarkdown {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.text">Text</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#text OneDashboard#text}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.text">Text</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#text OneDashboard#text}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.title">Title</a></code> | <code>string</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.colors">Colors</a></code> | <code>object</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.nullValues">NullValues</a></code> | <code>object</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.units">Units</a></code> | <code>object</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -7250,7 +7462,7 @@ public double Column { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -7262,7 +7474,7 @@ public double Row { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -7274,7 +7486,7 @@ public string Text { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#text OneDashboard#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#text OneDashboard#text}.
 
 ---
 
@@ -7288,7 +7500,7 @@ public string Title { get; set; }
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -7302,7 +7514,7 @@ public object Colors { get; set; }
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -7314,7 +7526,7 @@ public object FacetShowOtherSeries { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -7326,7 +7538,7 @@ public double Height { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -7338,7 +7550,7 @@ public object IgnoreTimeRange { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -7350,7 +7562,7 @@ public object LegendEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -7364,7 +7576,7 @@ public object NullValues { get; set; }
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -7378,7 +7590,7 @@ public object Units { get; set; }
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -7390,7 +7602,7 @@ public double Width { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -7402,7 +7614,7 @@ public double YAxisLeftMax { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -7414,7 +7626,7 @@ public double YAxisLeftMin { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -7435,7 +7647,7 @@ new OneDashboardPageWidgetMarkdownColors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColors.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -7448,7 +7660,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -7462,7 +7674,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -7498,7 +7710,7 @@ public string Color { get; set; }
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -7512,7 +7724,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -7533,7 +7745,7 @@ new OneDashboardPageWidgetMarkdownNullValues {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -7546,7 +7758,7 @@ public string NullValue { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -7560,7 +7772,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -7596,7 +7808,7 @@ public string NullValue { get; set; }
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -7610,7 +7822,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -7632,7 +7844,7 @@ new OneDashboardPageWidgetMarkdownUnits {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnits.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -7646,7 +7858,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -7658,7 +7870,7 @@ public string Unit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -7694,7 +7906,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -7708,7 +7920,7 @@ public string Unit { get; set; }
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -7743,22 +7955,22 @@ new OneDashboardPageWidgetPie {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.nrqlQuery">NrqlQuery</a></code> | <code>object</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.title">Title</a></code> | <code>string</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.colors">Colors</a></code> | <code>object</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.filterCurrentDashboard">FilterCurrentDashboard</a></code> | <code>object</code> | Use this item to filter the current dashboard. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.linkedEntityGuids">LinkedEntityGuids</a></code> | <code>string[]</code> | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.nullValues">NullValues</a></code> | <code>object</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.units">Units</a></code> | <code>object</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -7770,7 +7982,7 @@ public double Column { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -7784,7 +7996,7 @@ public object NrqlQuery { get; set; }
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -7796,7 +8008,7 @@ public double Row { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -7810,7 +8022,7 @@ public string Title { get; set; }
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -7824,7 +8036,7 @@ public object Colors { get; set; }
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -7836,7 +8048,7 @@ public object FacetShowOtherSeries { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -7850,7 +8062,7 @@ public object FilterCurrentDashboard { get; set; }
 
 Use this item to filter the current dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
 
 ---
 
@@ -7862,7 +8074,7 @@ public double Height { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -7874,7 +8086,7 @@ public object IgnoreTimeRange { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -7886,7 +8098,7 @@ public object LegendEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -7900,7 +8112,7 @@ public string[] LinkedEntityGuids { get; set; }
 
 Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
 
 ---
 
@@ -7914,7 +8126,7 @@ public object NullValues { get; set; }
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -7928,7 +8140,7 @@ public object Units { get; set; }
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -7940,7 +8152,7 @@ public double Width { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -7952,7 +8164,7 @@ public double YAxisLeftMax { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -7964,7 +8176,7 @@ public double YAxisLeftMin { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -7985,7 +8197,7 @@ new OneDashboardPageWidgetPieColors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColors.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -7998,7 +8210,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -8012,7 +8224,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -8048,7 +8260,7 @@ public string Color { get; set; }
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -8062,7 +8274,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -8098,7 +8310,7 @@ public string Query { get; set; }
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -8112,7 +8324,7 @@ public double AccountId { get; set; }
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -8133,7 +8345,7 @@ new OneDashboardPageWidgetPieNullValues {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -8146,7 +8358,7 @@ public string NullValue { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -8160,7 +8372,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -8196,7 +8408,7 @@ public string NullValue { get; set; }
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -8210,7 +8422,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -8232,7 +8444,7 @@ new OneDashboardPageWidgetPieUnits {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnits.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -8246,7 +8458,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -8258,7 +8470,7 @@ public string Unit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -8294,7 +8506,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -8308,7 +8520,7 @@ public string Unit { get; set; }
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -8341,20 +8553,20 @@ new OneDashboardPageWidgetStackedBar {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.nrqlQuery">NrqlQuery</a></code> | <code>object</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.title">Title</a></code> | <code>string</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.colors">Colors</a></code> | <code>object</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.nullValues">NullValues</a></code> | <code>object</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.units">Units</a></code> | <code>object</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -8366,7 +8578,7 @@ public double Column { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -8380,7 +8592,7 @@ public object NrqlQuery { get; set; }
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -8392,7 +8604,7 @@ public double Row { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -8406,7 +8618,7 @@ public string Title { get; set; }
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -8420,7 +8632,7 @@ public object Colors { get; set; }
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -8432,7 +8644,7 @@ public object FacetShowOtherSeries { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -8444,7 +8656,7 @@ public double Height { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -8456,7 +8668,7 @@ public object IgnoreTimeRange { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -8468,7 +8680,7 @@ public object LegendEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -8482,7 +8694,7 @@ public object NullValues { get; set; }
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -8496,7 +8708,7 @@ public object Units { get; set; }
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -8508,7 +8720,7 @@ public double Width { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -8520,7 +8732,7 @@ public double YAxisLeftMax { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -8532,7 +8744,7 @@ public double YAxisLeftMin { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -8553,7 +8765,7 @@ new OneDashboardPageWidgetStackedBarColors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColors.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -8566,7 +8778,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -8580,7 +8792,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -8616,7 +8828,7 @@ public string Color { get; set; }
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -8630,7 +8842,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -8666,7 +8878,7 @@ public string Query { get; set; }
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -8680,7 +8892,7 @@ public double AccountId { get; set; }
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -8701,7 +8913,7 @@ new OneDashboardPageWidgetStackedBarNullValues {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -8714,7 +8926,7 @@ public string NullValue { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -8728,7 +8940,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -8764,7 +8976,7 @@ public string NullValue { get; set; }
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -8778,7 +8990,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -8800,7 +9012,7 @@ new OneDashboardPageWidgetStackedBarUnits {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnits.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -8814,7 +9026,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -8826,7 +9038,7 @@ public string Unit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -8862,7 +9074,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -8876,7 +9088,7 @@ public string Unit { get; set; }
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -8900,6 +9112,7 @@ new OneDashboardPageWidgetTable {
     object LegendEnabled = null,
     string[] LinkedEntityGuids = null,
     object NullValues = null,
+    object Threshold = null,
     object Units = null,
     double Width = null,
     double YAxisLeftMax = null,
@@ -8911,22 +9124,23 @@ new OneDashboardPageWidgetTable {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.column">Column</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.nrqlQuery">NrqlQuery</a></code> | <code>object</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.row">Row</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.title">Title</a></code> | <code>string</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.colors">Colors</a></code> | <code>object</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.filterCurrentDashboard">FilterCurrentDashboard</a></code> | <code>object</code> | Use this item to filter the current dashboard. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.height">Height</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.linkedEntityGuids">LinkedEntityGuids</a></code> | <code>string[]</code> | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.nullValues">NullValues</a></code> | <code>object</code> | null_values block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.threshold">Threshold</a></code> | <code>object</code> | threshold block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.units">Units</a></code> | <code>object</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.width">Width</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.yAxisLeftMax">YAxisLeftMax</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.yAxisLeftMin">YAxisLeftMin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -8938,7 +9152,7 @@ public double Column { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -8952,7 +9166,7 @@ public object NrqlQuery { get; set; }
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -8964,7 +9178,7 @@ public double Row { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -8978,7 +9192,7 @@ public string Title { get; set; }
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -8992,7 +9206,7 @@ public object Colors { get; set; }
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -9004,7 +9218,7 @@ public object FacetShowOtherSeries { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -9018,7 +9232,7 @@ public object FilterCurrentDashboard { get; set; }
 
 Use this item to filter the current dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
 
 ---
 
@@ -9030,7 +9244,7 @@ public double Height { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -9042,7 +9256,7 @@ public object IgnoreTimeRange { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -9054,7 +9268,7 @@ public object LegendEnabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -9068,7 +9282,7 @@ public string[] LinkedEntityGuids { get; set; }
 
 Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
 
 ---
 
@@ -9082,7 +9296,21 @@ public object NullValues { get; set; }
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+
+---
+
+##### `Threshold`<sup>Optional</sup> <a name="Threshold" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.threshold"></a>
+
+```csharp
+public object Threshold { get; set; }
+```
+
+- *Type:* object
+
+threshold block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#threshold OneDashboard#threshold}
 
 ---
 
@@ -9096,7 +9324,7 @@ public object Units { get; set; }
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -9108,7 +9336,7 @@ public double Width { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -9120,7 +9348,7 @@ public double YAxisLeftMax { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -9132,7 +9360,7 @@ public double YAxisLeftMin { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -9153,7 +9381,7 @@ new OneDashboardPageWidgetTableColors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColors.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColors.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -9166,7 +9394,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -9180,7 +9408,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -9216,7 +9444,7 @@ public string Color { get; set; }
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -9230,7 +9458,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -9266,7 +9494,7 @@ public string Query { get; set; }
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -9280,7 +9508,7 @@ public double AccountId { get; set; }
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -9301,7 +9529,7 @@ new OneDashboardPageWidgetTableNullValues {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues.property.nullValue">NullValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
 
 ---
@@ -9314,7 +9542,7 @@ public string NullValue { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -9328,7 +9556,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -9364,7 +9592,7 @@ public string NullValue { get; set; }
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -9378,7 +9606,89 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+
+---
+
+### OneDashboardPageWidgetTableThreshold <a name="OneDashboardPageWidgetTableThreshold" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThreshold"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThreshold.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Newrelic;
+
+new OneDashboardPageWidgetTableThreshold {
+    string ColumnName = null,
+    double From = null,
+    string Severity = null,
+    double To = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThreshold.property.columnName">ColumnName</a></code> | <code>string</code> | Name of the column in the table, to which the threshold would be applied. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThreshold.property.from">From</a></code> | <code>double</code> | The number from which the range starts in thresholds. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThreshold.property.severity">Severity</a></code> | <code>string</code> | Severity of the threshold, which would reflect in the widget, in the range of the threshold specified. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThreshold.property.to">To</a></code> | <code>double</code> | The number at which the range ends in thresholds. |
+
+---
+
+##### `ColumnName`<sup>Optional</sup> <a name="ColumnName" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThreshold.property.columnName"></a>
+
+```csharp
+public string ColumnName { get; set; }
+```
+
+- *Type:* string
+
+Name of the column in the table, to which the threshold would be applied.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#column_name OneDashboard#column_name}
+
+---
+
+##### `From`<sup>Optional</sup> <a name="From" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThreshold.property.from"></a>
+
+```csharp
+public double From { get; set; }
+```
+
+- *Type:* double
+
+The number from which the range starts in thresholds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#from OneDashboard#from}
+
+---
+
+##### `Severity`<sup>Optional</sup> <a name="Severity" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThreshold.property.severity"></a>
+
+```csharp
+public string Severity { get; set; }
+```
+
+- *Type:* string
+
+Severity of the threshold, which would reflect in the widget, in the range of the threshold specified.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#severity OneDashboard#severity}
+
+---
+
+##### `To`<sup>Optional</sup> <a name="To" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThreshold.property.to"></a>
+
+```csharp
+public double To { get; set; }
+```
+
+- *Type:* double
+
+The number at which the range ends in thresholds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#to OneDashboard#to}
 
 ---
 
@@ -9400,7 +9710,7 @@ new OneDashboardPageWidgetTableUnits {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnits.property.seriesOverrides">SeriesOverrides</a></code> | <code>object</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnits.property.unit">Unit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -9414,7 +9724,7 @@ public object SeriesOverrides { get; set; }
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -9426,7 +9736,7 @@ public string Unit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -9462,7 +9772,7 @@ public string SeriesName { get; set; }
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -9476,7 +9786,7 @@ public string Unit { get; set; }
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -9526,7 +9836,7 @@ public string Name { get; set; }
 
 The variable identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#name OneDashboard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -9540,7 +9850,7 @@ public string ReplacementStrategy { get; set; }
 
 Indicates the strategy to apply when replacing a variable in a NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#replacement_strategy OneDashboard#replacement_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#replacement_strategy OneDashboard#replacement_strategy}
 
 ---
 
@@ -9554,7 +9864,7 @@ public string Title { get; set; }
 
 Human-friendly display string for this variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -9568,7 +9878,7 @@ public string Type { get; set; }
 
 Specifies the data type of the variable and where its possible values may come from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#type OneDashboard#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#type OneDashboard#type}
 
 ---
 
@@ -9582,7 +9892,7 @@ public string[] DefaultValues { get; set; }
 
 Default values for this variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#default_values OneDashboard#default_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#default_values OneDashboard#default_values}
 
 ---
 
@@ -9596,7 +9906,7 @@ public object IsMultiSelection { get; set; }
 
 Indicates whether this variable supports multiple selection or not. Only applies to variables of type NRQL or ENUM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#is_multi_selection OneDashboard#is_multi_selection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#is_multi_selection OneDashboard#is_multi_selection}
 
 ---
 
@@ -9610,7 +9920,7 @@ public object Item { get; set; }
 
 item block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#item OneDashboard#item}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#item OneDashboard#item}
 
 ---
 
@@ -9624,7 +9934,7 @@ public OneDashboardVariableNrqlQuery NrqlQuery { get; set; }
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -9638,7 +9948,7 @@ public object Options { get; set; }
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#options OneDashboard#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#options OneDashboard#options}
 
 ---
 
@@ -9674,7 +9984,7 @@ public string Value { get; set; }
 
 A possible variable value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#value OneDashboard#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#value OneDashboard#value}
 
 ---
 
@@ -9688,7 +9998,7 @@ public string Title { get; set; }
 
 A human-friendly display string for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -9724,7 +10034,7 @@ public string Query { get; set; }
 
 NRQL formatted query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -9738,7 +10048,7 @@ public double[] AccountIds { get; set; }
 
 New Relic account ID(s) to issue the query against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#account_ids OneDashboard#account_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#account_ids OneDashboard#account_ids}
 
 ---
 
@@ -9774,7 +10084,7 @@ Only applies to variables of type NRQL.
 
 With this turned on, the time range for the NRQL query will override the time picker on dashboards and other pages. Turn this off to use the time picker as normal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.36.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
 
 ---
 
@@ -48088,18 +48398,23 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putColors">PutColors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putNrqlQuery">PutNrqlQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putNullValues">PutNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putThreshold">PutThreshold</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putUnits">PutUnits</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putYAxisRight">PutYAxisRight</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetColors">ResetColors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetFacetShowOtherSeries">ResetFacetShowOtherSeries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetHeight">ResetHeight</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetIgnoreTimeRange">ResetIgnoreTimeRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetIsLabelVisible">ResetIsLabelVisible</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetLegendEnabled">ResetLegendEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetNullValues">ResetNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetThreshold">ResetThreshold</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetUnits">ResetUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetWidth">ResetWidth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetYAxisLeftMax">ResetYAxisLeftMax</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetYAxisLeftMin">ResetYAxisLeftMin</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetYAxisLeftZero">ResetYAxisLeftZero</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetYAxisRight">ResetYAxisRight</a></code> | *No description.* |
 
 ---
 
@@ -48289,6 +48604,18 @@ private void PutNullValues(object Value)
 
 ---
 
+##### `PutThreshold` <a name="PutThreshold" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putThreshold"></a>
+
+```csharp
+private void PutThreshold(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putThreshold.parameter.value"></a>
+
+- *Type:* object
+
+---
+
 ##### `PutUnits` <a name="PutUnits" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putUnits"></a>
 
 ```csharp
@@ -48298,6 +48625,18 @@ private void PutUnits(object Value)
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putUnits.parameter.value"></a>
 
 - *Type:* object
+
+---
+
+##### `PutYAxisRight` <a name="PutYAxisRight" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putYAxisRight"></a>
+
+```csharp
+private void PutYAxisRight(OneDashboardPageWidgetLineYAxisRight Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putYAxisRight.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight">OneDashboardPageWidgetLineYAxisRight</a>
 
 ---
 
@@ -48325,6 +48664,12 @@ private void ResetHeight()
 private void ResetIgnoreTimeRange()
 ```
 
+##### `ResetIsLabelVisible` <a name="ResetIsLabelVisible" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetIsLabelVisible"></a>
+
+```csharp
+private void ResetIsLabelVisible()
+```
+
 ##### `ResetLegendEnabled` <a name="ResetLegendEnabled" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetLegendEnabled"></a>
 
 ```csharp
@@ -48335,6 +48680,12 @@ private void ResetLegendEnabled()
 
 ```csharp
 private void ResetNullValues()
+```
+
+##### `ResetThreshold` <a name="ResetThreshold" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetThreshold"></a>
+
+```csharp
+private void ResetThreshold()
 ```
 
 ##### `ResetUnits` <a name="ResetUnits" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetUnits"></a>
@@ -48367,6 +48718,12 @@ private void ResetYAxisLeftMin()
 private void ResetYAxisLeftZero()
 ```
 
+##### `ResetYAxisRight` <a name="ResetYAxisRight" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetYAxisRight"></a>
+
+```csharp
+private void ResetYAxisRight()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -48378,26 +48735,32 @@ private void ResetYAxisLeftZero()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.nrqlQuery">NrqlQuery</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQueryList">OneDashboardPageWidgetLineNrqlQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.nullValues">NullValues</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesList">OneDashboardPageWidgetLineNullValuesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.threshold">Threshold</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList">OneDashboardPageWidgetLineThresholdList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.units">Units</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsList">OneDashboardPageWidgetLineUnitsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.yAxisRight">YAxisRight</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference">OneDashboardPageWidgetLineYAxisRightOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.colorsInput">ColorsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.columnInput">ColumnInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.facetShowOtherSeriesInput">FacetShowOtherSeriesInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.heightInput">HeightInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.ignoreTimeRangeInput">IgnoreTimeRangeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.isLabelVisibleInput">IsLabelVisibleInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.legendEnabledInput">LegendEnabledInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.nrqlQueryInput">NrqlQueryInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.nullValuesInput">NullValuesInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.rowInput">RowInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.thresholdInput">ThresholdInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.titleInput">TitleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.unitsInput">UnitsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.widthInput">WidthInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.yAxisLeftMaxInput">YAxisLeftMaxInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.yAxisLeftMinInput">YAxisLeftMinInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.yAxisLeftZeroInput">YAxisLeftZeroInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.yAxisRightInput">YAxisRightInput</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight">OneDashboardPageWidgetLineYAxisRight</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.column">Column</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.facetShowOtherSeries">FacetShowOtherSeries</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.height">Height</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.ignoreTimeRange">IgnoreTimeRange</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.isLabelVisible">IsLabelVisible</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.legendEnabled">LegendEnabled</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.row">Row</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.title">Title</a></code> | <code>string</code> | *No description.* |
@@ -48473,6 +48836,16 @@ public OneDashboardPageWidgetLineNullValuesList NullValues { get; }
 
 ---
 
+##### `Threshold`<sup>Required</sup> <a name="Threshold" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.threshold"></a>
+
+```csharp
+public OneDashboardPageWidgetLineThresholdList Threshold { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList">OneDashboardPageWidgetLineThresholdList</a>
+
+---
+
 ##### `Units`<sup>Required</sup> <a name="Units" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.units"></a>
 
 ```csharp
@@ -48480,6 +48853,16 @@ public OneDashboardPageWidgetLineUnitsList Units { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsList">OneDashboardPageWidgetLineUnitsList</a>
+
+---
+
+##### `YAxisRight`<sup>Required</sup> <a name="YAxisRight" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.yAxisRight"></a>
+
+```csharp
+public OneDashboardPageWidgetLineYAxisRightOutputReference YAxisRight { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference">OneDashboardPageWidgetLineYAxisRightOutputReference</a>
 
 ---
 
@@ -48533,6 +48916,16 @@ public object IgnoreTimeRangeInput { get; }
 
 ---
 
+##### `IsLabelVisibleInput`<sup>Optional</sup> <a name="IsLabelVisibleInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.isLabelVisibleInput"></a>
+
+```csharp
+public object IsLabelVisibleInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `LegendEnabledInput`<sup>Optional</sup> <a name="LegendEnabledInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.legendEnabledInput"></a>
 
 ```csharp
@@ -48570,6 +48963,16 @@ public double RowInput { get; }
 ```
 
 - *Type:* double
+
+---
+
+##### `ThresholdInput`<sup>Optional</sup> <a name="ThresholdInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.thresholdInput"></a>
+
+```csharp
+public object ThresholdInput { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -48633,6 +49036,16 @@ public object YAxisLeftZeroInput { get; }
 
 ---
 
+##### `YAxisRightInput`<sup>Optional</sup> <a name="YAxisRightInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.yAxisRightInput"></a>
+
+```csharp
+public OneDashboardPageWidgetLineYAxisRight YAxisRightInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight">OneDashboardPageWidgetLineYAxisRight</a>
+
+---
+
 ##### `Column`<sup>Required</sup> <a name="Column" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.column"></a>
 
 ```csharp
@@ -48667,6 +49080,16 @@ public double Height { get; }
 
 ```csharp
 public object IgnoreTimeRange { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `IsLabelVisible`<sup>Required</sup> <a name="IsLabelVisible" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.isLabelVisible"></a>
+
+```csharp
+public object IsLabelVisible { get; }
 ```
 
 - *Type:* object
@@ -48744,6 +49167,549 @@ public object YAxisLeftZero { get; }
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### OneDashboardPageWidgetLineThresholdList <a name="OneDashboardPageWidgetLineThresholdList" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Newrelic;
+
+new OneDashboardPageWidgetLineThresholdList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.get"></a>
+
+```csharp
+private OneDashboardPageWidgetLineThresholdOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### OneDashboardPageWidgetLineThresholdOutputReference <a name="OneDashboardPageWidgetLineThresholdOutputReference" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Newrelic;
+
+new OneDashboardPageWidgetLineThresholdOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.resetFrom">ResetFrom</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.resetName">ResetName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.resetSeverity">ResetSeverity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.resetTo">ResetTo</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetFrom` <a name="ResetFrom" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.resetFrom"></a>
+
+```csharp
+private void ResetFrom()
+```
+
+##### `ResetName` <a name="ResetName" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.resetName"></a>
+
+```csharp
+private void ResetName()
+```
+
+##### `ResetSeverity` <a name="ResetSeverity" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.resetSeverity"></a>
+
+```csharp
+private void ResetSeverity()
+```
+
+##### `ResetTo` <a name="ResetTo" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.resetTo"></a>
+
+```csharp
+private void ResetTo()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.fromInput">FromInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.severityInput">SeverityInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.toInput">ToInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.from">From</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.severity">Severity</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.to">To</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `FromInput`<sup>Optional</sup> <a name="FromInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.fromInput"></a>
+
+```csharp
+public double FromInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.nameInput"></a>
+
+```csharp
+public string NameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SeverityInput`<sup>Optional</sup> <a name="SeverityInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.severityInput"></a>
+
+```csharp
+public string SeverityInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ToInput`<sup>Optional</sup> <a name="ToInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.toInput"></a>
+
+```csharp
+public double ToInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `From`<sup>Required</sup> <a name="From" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.from"></a>
+
+```csharp
+public double From { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.name"></a>
+
+```csharp
+public string Name { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Severity`<sup>Required</sup> <a name="Severity" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.severity"></a>
+
+```csharp
+public string Severity { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `To`<sup>Required</sup> <a name="To" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.to"></a>
+
+```csharp
+public double To { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference.property.internalValue"></a>
 
 ```csharp
 public object InternalValue { get; }
@@ -49733,6 +50699,371 @@ public object InternalValue { get; }
 ```
 
 - *Type:* object
+
+---
+
+
+### OneDashboardPageWidgetLineYAxisRightOutputReference <a name="OneDashboardPageWidgetLineYAxisRightOutputReference" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Newrelic;
+
+new OneDashboardPageWidgetLineYAxisRightOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.resetYAxisRightMax">ResetYAxisRightMax</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.resetYAxisRightMin">ResetYAxisRightMin</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.resetYAxisRightSeries">ResetYAxisRightSeries</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.resetYAxisRightZero">ResetYAxisRightZero</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetYAxisRightMax` <a name="ResetYAxisRightMax" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.resetYAxisRightMax"></a>
+
+```csharp
+private void ResetYAxisRightMax()
+```
+
+##### `ResetYAxisRightMin` <a name="ResetYAxisRightMin" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.resetYAxisRightMin"></a>
+
+```csharp
+private void ResetYAxisRightMin()
+```
+
+##### `ResetYAxisRightSeries` <a name="ResetYAxisRightSeries" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.resetYAxisRightSeries"></a>
+
+```csharp
+private void ResetYAxisRightSeries()
+```
+
+##### `ResetYAxisRightZero` <a name="ResetYAxisRightZero" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.resetYAxisRightZero"></a>
+
+```csharp
+private void ResetYAxisRightZero()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.yAxisRightMaxInput">YAxisRightMaxInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.yAxisRightMinInput">YAxisRightMinInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.yAxisRightSeriesInput">YAxisRightSeriesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.yAxisRightZeroInput">YAxisRightZeroInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.yAxisRightMax">YAxisRightMax</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.yAxisRightMin">YAxisRightMin</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.yAxisRightSeries">YAxisRightSeries</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.yAxisRightZero">YAxisRightZero</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight">OneDashboardPageWidgetLineYAxisRight</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `YAxisRightMaxInput`<sup>Optional</sup> <a name="YAxisRightMaxInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.yAxisRightMaxInput"></a>
+
+```csharp
+public double YAxisRightMaxInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `YAxisRightMinInput`<sup>Optional</sup> <a name="YAxisRightMinInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.yAxisRightMinInput"></a>
+
+```csharp
+public double YAxisRightMinInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `YAxisRightSeriesInput`<sup>Optional</sup> <a name="YAxisRightSeriesInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.yAxisRightSeriesInput"></a>
+
+```csharp
+public string[] YAxisRightSeriesInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `YAxisRightZeroInput`<sup>Optional</sup> <a name="YAxisRightZeroInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.yAxisRightZeroInput"></a>
+
+```csharp
+public object YAxisRightZeroInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `YAxisRightMax`<sup>Required</sup> <a name="YAxisRightMax" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.yAxisRightMax"></a>
+
+```csharp
+public double YAxisRightMax { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `YAxisRightMin`<sup>Required</sup> <a name="YAxisRightMin" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.yAxisRightMin"></a>
+
+```csharp
+public double YAxisRightMin { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `YAxisRightSeries`<sup>Required</sup> <a name="YAxisRightSeries" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.yAxisRightSeries"></a>
+
+```csharp
+public string[] YAxisRightSeries { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `YAxisRightZero`<sup>Required</sup> <a name="YAxisRightZero" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.yAxisRightZero"></a>
+
+```csharp
+public object YAxisRightZero { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference.property.internalValue"></a>
+
+```csharp
+public OneDashboardPageWidgetLineYAxisRight InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight">OneDashboardPageWidgetLineYAxisRight</a>
 
 ---
 
@@ -69159,6 +70490,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.putColors">PutColors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.putNrqlQuery">PutNrqlQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.putNullValues">PutNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.putThreshold">PutThreshold</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.putUnits">PutUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetColors">ResetColors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetFacetShowOtherSeries">ResetFacetShowOtherSeries</a></code> | *No description.* |
@@ -69168,6 +70500,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetLegendEnabled">ResetLegendEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetLinkedEntityGuids">ResetLinkedEntityGuids</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetNullValues">ResetNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetThreshold">ResetThreshold</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetUnits">ResetUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetWidth">ResetWidth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetYAxisLeftMax">ResetYAxisLeftMax</a></code> | *No description.* |
@@ -69361,6 +70694,18 @@ private void PutNullValues(object Value)
 
 ---
 
+##### `PutThreshold` <a name="PutThreshold" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.putThreshold"></a>
+
+```csharp
+private void PutThreshold(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.putThreshold.parameter.value"></a>
+
+- *Type:* object
+
+---
+
 ##### `PutUnits` <a name="PutUnits" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.putUnits"></a>
 
 ```csharp
@@ -69421,6 +70766,12 @@ private void ResetLinkedEntityGuids()
 private void ResetNullValues()
 ```
 
+##### `ResetThreshold` <a name="ResetThreshold" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetThreshold"></a>
+
+```csharp
+private void ResetThreshold()
+```
+
 ##### `ResetUnits` <a name="ResetUnits" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetUnits"></a>
 
 ```csharp
@@ -69456,6 +70807,7 @@ private void ResetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.nrqlQuery">NrqlQuery</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQueryList">OneDashboardPageWidgetTableNrqlQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.nullValues">NullValues</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesList">OneDashboardPageWidgetTableNullValuesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.threshold">Threshold</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList">OneDashboardPageWidgetTableThresholdList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.units">Units</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsList">OneDashboardPageWidgetTableUnitsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.colorsInput">ColorsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.columnInput">ColumnInput</a></code> | <code>double</code> | *No description.* |
@@ -69468,6 +70820,7 @@ private void ResetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.nrqlQueryInput">NrqlQueryInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.nullValuesInput">NullValuesInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.rowInput">RowInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.thresholdInput">ThresholdInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.titleInput">TitleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.unitsInput">UnitsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.widthInput">WidthInput</a></code> | <code>double</code> | *No description.* |
@@ -69550,6 +70903,16 @@ public OneDashboardPageWidgetTableNullValuesList NullValues { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesList">OneDashboardPageWidgetTableNullValuesList</a>
+
+---
+
+##### `Threshold`<sup>Required</sup> <a name="Threshold" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.threshold"></a>
+
+```csharp
+public OneDashboardPageWidgetTableThresholdList Threshold { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList">OneDashboardPageWidgetTableThresholdList</a>
 
 ---
 
@@ -69670,6 +71033,16 @@ public double RowInput { get; }
 ```
 
 - *Type:* double
+
+---
+
+##### `ThresholdInput`<sup>Optional</sup> <a name="ThresholdInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.thresholdInput"></a>
+
+```csharp
+public object ThresholdInput { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -69844,6 +71217,549 @@ public double YAxisLeftMin { get; }
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### OneDashboardPageWidgetTableThresholdList <a name="OneDashboardPageWidgetTableThresholdList" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Newrelic;
+
+new OneDashboardPageWidgetTableThresholdList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.get"></a>
+
+```csharp
+private OneDashboardPageWidgetTableThresholdOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### OneDashboardPageWidgetTableThresholdOutputReference <a name="OneDashboardPageWidgetTableThresholdOutputReference" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Newrelic;
+
+new OneDashboardPageWidgetTableThresholdOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.resetColumnName">ResetColumnName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.resetFrom">ResetFrom</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.resetSeverity">ResetSeverity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.resetTo">ResetTo</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetColumnName` <a name="ResetColumnName" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.resetColumnName"></a>
+
+```csharp
+private void ResetColumnName()
+```
+
+##### `ResetFrom` <a name="ResetFrom" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.resetFrom"></a>
+
+```csharp
+private void ResetFrom()
+```
+
+##### `ResetSeverity` <a name="ResetSeverity" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.resetSeverity"></a>
+
+```csharp
+private void ResetSeverity()
+```
+
+##### `ResetTo` <a name="ResetTo" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.resetTo"></a>
+
+```csharp
+private void ResetTo()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.columnNameInput">ColumnNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.fromInput">FromInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.severityInput">SeverityInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.toInput">ToInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.columnName">ColumnName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.from">From</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.severity">Severity</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.to">To</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ColumnNameInput`<sup>Optional</sup> <a name="ColumnNameInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.columnNameInput"></a>
+
+```csharp
+public string ColumnNameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `FromInput`<sup>Optional</sup> <a name="FromInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.fromInput"></a>
+
+```csharp
+public double FromInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `SeverityInput`<sup>Optional</sup> <a name="SeverityInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.severityInput"></a>
+
+```csharp
+public string SeverityInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ToInput`<sup>Optional</sup> <a name="ToInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.toInput"></a>
+
+```csharp
+public double ToInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `ColumnName`<sup>Required</sup> <a name="ColumnName" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.columnName"></a>
+
+```csharp
+public string ColumnName { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `From`<sup>Required</sup> <a name="From" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.from"></a>
+
+```csharp
+public double From { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `Severity`<sup>Required</sup> <a name="Severity" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.severity"></a>
+
+```csharp
+public string Severity { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `To`<sup>Required</sup> <a name="To" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.to"></a>
+
+```csharp
+public double To { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference.property.internalValue"></a>
 
 ```csharp
 public object InternalValue { get; }
