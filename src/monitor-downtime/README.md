@@ -1,3 +1,3 @@
 # `newrelic_monitor_downtime`
 
-Refer to the Terraform Registry for docs: [`newrelic_monitor_downtime`](https://registry.terraform.io/providers/newrelic/newrelic/3.37.1/docs/resources/monitor_downtime).
+Refer to the Terraform Registry for docs: [`newrelic_monitor_downtime`](https://registry.terraform.io/providers/newrelic/newrelic/3.38.0/docs/resources/monitor_downtime).
