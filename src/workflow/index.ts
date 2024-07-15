@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow
+// https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +10,29 @@ export interface WorkflowConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account id of the workflow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#account_id Workflow#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#account_id Workflow#account_id}
   */
   readonly accountId?: number;
   /**
   * Indicates whether the destinations are enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#destinations_enabled Workflow#destinations_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#destinations_enabled Workflow#destinations_enabled}
   */
   readonly destinationsEnabled?: boolean | cdktf.IResolvable;
   /**
   * Indicates whether the workflow is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#enabled Workflow#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#enabled Workflow#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Indicates whether the enrichments are enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#enrichments_enabled Workflow#enrichments_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#enrichments_enabled Workflow#enrichments_enabled}
   */
   readonly enrichmentsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#id Workflow#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#id Workflow#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,31 +41,31 @@ export interface WorkflowConfig extends cdktf.TerraformMetaArguments {
   /**
   * The type of the muting rule handling. One of: (NOTIFY_ALL_ISSUES, DONT_NOTIFY_FULLY_MUTED_ISSUES, DONT_NOTIFY_FULLY_OR_PARTIALLY_MUTED_ISSUES).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#muting_rules_handling Workflow#muting_rules_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#muting_rules_handling Workflow#muting_rules_handling}
   */
   readonly mutingRulesHandling: string;
   /**
   * (Required) The name of the workflow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#name Workflow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#name Workflow#name}
   */
   readonly name: string;
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#destination Workflow#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#destination Workflow#destination}
   */
   readonly destination: WorkflowDestination[] | cdktf.IResolvable;
   /**
   * enrichments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#enrichments Workflow#enrichments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#enrichments Workflow#enrichments}
   */
   readonly enrichments?: WorkflowEnrichments;
   /**
   * issues_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#issues_filter Workflow#issues_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#issues_filter Workflow#issues_filter}
   */
   readonly issuesFilter: WorkflowIssuesFilter;
 }
@@ -78,15 +73,21 @@ export interface WorkflowDestination {
   /**
   * (Required) Destination's channel id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#channel_id Workflow#channel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#channel_id Workflow#channel_id}
   */
   readonly channelId: string;
   /**
   * List of triggers to notify about in this destination configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#notification_triggers Workflow#notification_triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#notification_triggers Workflow#notification_triggers}
   */
   readonly notificationTriggers?: string[];
+  /**
+  * Update original notification message (Slack channels only)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#update_original_message Workflow#update_original_message}
+  */
+  readonly updateOriginalMessage?: boolean | cdktf.IResolvable;
 }
 
 export function workflowDestinationToTerraform(struct?: WorkflowDestination | cdktf.IResolvable): any {
@@ -97,6 +98,7 @@ export function workflowDestinationToTerraform(struct?: WorkflowDestination | cd
   return {
     channel_id: cdktf.stringToTerraform(struct!.channelId),
     notification_triggers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notificationTriggers),
+    update_original_message: cdktf.booleanToTerraform(struct!.updateOriginalMessage),
   }
 }
 
@@ -118,6 +120,12 @@ export function workflowDestinationToHclTerraform(struct?: WorkflowDestination |
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
+    },
+    update_original_message: {
+      value: cdktf.booleanToHclTerraform(struct!.updateOriginalMessage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
   };
 
@@ -153,6 +161,10 @@ export class WorkflowDestinationOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.notificationTriggers = this._notificationTriggers;
     }
+    if (this._updateOriginalMessage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.updateOriginalMessage = this._updateOriginalMessage;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -162,6 +174,7 @@ export class WorkflowDestinationOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._channelId = undefined;
       this._notificationTriggers = undefined;
+      this._updateOriginalMessage = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -172,6 +185,7 @@ export class WorkflowDestinationOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._channelId = value.channelId;
       this._notificationTriggers = value.notificationTriggers;
+      this._updateOriginalMessage = value.updateOriginalMessage;
     }
   }
 
@@ -213,6 +227,22 @@ export class WorkflowDestinationOutputReference extends cdktf.ComplexObject {
   public get type() {
     return this.getStringAttribute('type');
   }
+
+  // update_original_message - computed: true, optional: true, required: false
+  private _updateOriginalMessage?: boolean | cdktf.IResolvable; 
+  public get updateOriginalMessage() {
+    return this.getBooleanAttribute('update_original_message');
+  }
+  public set updateOriginalMessage(value: boolean | cdktf.IResolvable) {
+    this._updateOriginalMessage = value;
+  }
+  public resetUpdateOriginalMessage() {
+    this._updateOriginalMessage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateOriginalMessageInput() {
+    return this._updateOriginalMessage;
+  }
 }
 
 export class WorkflowDestinationList extends cdktf.ComplexList {
@@ -238,7 +268,7 @@ export interface WorkflowEnrichmentsNrqlConfiguration {
   /**
   * enrichment's NRQL query
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#query Workflow#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#query Workflow#query}
   */
   readonly query: string;
 }
@@ -353,13 +383,13 @@ export interface WorkflowEnrichmentsNrql {
   /**
   * (Required) Enrichment's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#name Workflow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#name Workflow#name}
   */
   readonly name: string;
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#configuration Workflow#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#configuration Workflow#configuration}
   */
   readonly configuration: WorkflowEnrichmentsNrqlConfiguration[] | cdktf.IResolvable;
 }
@@ -515,7 +545,7 @@ export interface WorkflowEnrichments {
   /**
   * nrql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#nrql Workflow#nrql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#nrql Workflow#nrql}
   */
   readonly nrql: WorkflowEnrichmentsNrql[] | cdktf.IResolvable;
 }
@@ -598,19 +628,19 @@ export interface WorkflowIssuesFilterPredicate {
   /**
   * (Required) predicate's attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#attribute Workflow#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#attribute Workflow#attribute}
   */
   readonly attribute: string;
   /**
   * The type of the operator. One of: (CONTAINS, DOES_NOT_CONTAIN, DOES_NOT_EQUAL, DOES_NOT_EXACTLY_MATCH, ENDS_WITH, EQUAL, EXACTLY_MATCHES, GREATER_OR_EQUAL, GREATER_THAN, IS, IS_NOT, LESS_OR_EQUAL, LESS_THAN, STARTS_WITH).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#operator Workflow#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#operator Workflow#operator}
   */
   readonly operator: string;
   /**
   * List of predicate values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#values Workflow#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#values Workflow#values}
   */
   readonly values: string[];
 }
@@ -777,19 +807,19 @@ export interface WorkflowIssuesFilter {
   /**
   * (Required) Filter's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#name Workflow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#name Workflow#name}
   */
   readonly name: string;
   /**
   * (Required) The type of the filter. One of: (FILTER, VIEW).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#type Workflow#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#type Workflow#type}
   */
   readonly type: string;
   /**
   * predicate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#predicate Workflow#predicate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#predicate Workflow#predicate}
   */
   readonly predicate?: WorkflowIssuesFilterPredicate[] | cdktf.IResolvable;
 }
@@ -930,7 +960,7 @@ export class WorkflowIssuesFilterOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow newrelic_workflow}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow newrelic_workflow}
 */
 export class Workflow extends cdktf.TerraformResource {
 
@@ -946,7 +976,7 @@ export class Workflow extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Workflow resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Workflow to import
-  * @param importFromId The id of the existing Workflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Workflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Workflow to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -958,7 +988,7 @@ export class Workflow extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow newrelic_workflow} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow newrelic_workflow} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -969,7 +999,7 @@ export class Workflow extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_workflow',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.39.1',
+        providerVersion: '3.40.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
