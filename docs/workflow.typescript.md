@@ -4,7 +4,7 @@
 
 ### Workflow <a name="Workflow" id="@cdktf/provider-newrelic.workflow.Workflow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow newrelic_workflow}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow newrelic_workflow}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.workflow.Workflow.Initializer"></a>
 
@@ -548,7 +548,7 @@ The construct id used in the generated config for the Workflow to import.
 
 The id of the existing Workflow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1026,7 +1026,7 @@ const workflowConfig: workflow.WorkflowConfig = { ... }
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates whether the workflow is enabled. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enrichments">enrichments</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichments">WorkflowEnrichments</a></code> | enrichments block. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enrichmentsEnabled">enrichmentsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates whether the enrichments are enabled. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#id Workflow#id}. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#id Workflow#id}. |
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly destination: IResolvable | WorkflowDestination[];
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#destination Workflow#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#destination Workflow#destination}
 
 ---
 
@@ -1124,7 +1124,7 @@ public readonly issuesFilter: WorkflowIssuesFilter;
 
 issues_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#issues_filter Workflow#issues_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#issues_filter Workflow#issues_filter}
 
 ---
 
@@ -1138,7 +1138,7 @@ public readonly mutingRulesHandling: string;
 
 The type of the muting rule handling. One of: (NOTIFY_ALL_ISSUES, DONT_NOTIFY_FULLY_MUTED_ISSUES, DONT_NOTIFY_FULLY_OR_PARTIALLY_MUTED_ISSUES).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#muting_rules_handling Workflow#muting_rules_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#muting_rules_handling Workflow#muting_rules_handling}
 
 ---
 
@@ -1152,7 +1152,7 @@ public readonly name: string;
 
 (Required) The name of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#name Workflow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#name Workflow#name}
 
 ---
 
@@ -1166,7 +1166,7 @@ public readonly accountId: number;
 
 The account id of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#account_id Workflow#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#account_id Workflow#account_id}
 
 ---
 
@@ -1180,7 +1180,7 @@ public readonly destinationsEnabled: boolean | IResolvable;
 
 Indicates whether the destinations are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#destinations_enabled Workflow#destinations_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#destinations_enabled Workflow#destinations_enabled}
 
 ---
 
@@ -1194,7 +1194,7 @@ public readonly enabled: boolean | IResolvable;
 
 Indicates whether the workflow is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#enabled Workflow#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#enabled Workflow#enabled}
 
 ---
 
@@ -1208,7 +1208,7 @@ public readonly enrichments: WorkflowEnrichments;
 
 enrichments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#enrichments Workflow#enrichments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#enrichments Workflow#enrichments}
 
 ---
 
@@ -1222,7 +1222,7 @@ public readonly enrichmentsEnabled: boolean | IResolvable;
 
 Indicates whether the enrichments are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#enrichments_enabled Workflow#enrichments_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#enrichments_enabled Workflow#enrichments_enabled}
 
 ---
 
@@ -1234,7 +1234,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#id Workflow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#id Workflow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1257,6 +1257,7 @@ const workflowDestination: workflow.WorkflowDestination = { ... }
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination.property.channelId">channelId</a></code> | <code>string</code> | (Required) Destination's channel id. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination.property.notificationTriggers">notificationTriggers</a></code> | <code>string[]</code> | List of triggers to notify about in this destination configuration. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination.property.updateOriginalMessage">updateOriginalMessage</a></code> | <code>boolean \| cdktf.IResolvable</code> | Update original notification message (Slack channels only). |
 
 ---
 
@@ -1270,7 +1271,7 @@ public readonly channelId: string;
 
 (Required) Destination's channel id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#channel_id Workflow#channel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#channel_id Workflow#channel_id}
 
 ---
 
@@ -1284,7 +1285,21 @@ public readonly notificationTriggers: string[];
 
 List of triggers to notify about in this destination configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#notification_triggers Workflow#notification_triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#notification_triggers Workflow#notification_triggers}
+
+---
+
+##### `updateOriginalMessage`<sup>Optional</sup> <a name="updateOriginalMessage" id="@cdktf/provider-newrelic.workflow.WorkflowDestination.property.updateOriginalMessage"></a>
+
+```typescript
+public readonly updateOriginalMessage: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Update original notification message (Slack channels only).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#update_original_message Workflow#update_original_message}
 
 ---
 
@@ -1316,7 +1331,7 @@ public readonly nrql: IResolvable | WorkflowEnrichmentsNrql[];
 
 nrql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#nrql Workflow#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#nrql Workflow#nrql}
 
 ---
 
@@ -1349,7 +1364,7 @@ public readonly configuration: IResolvable | WorkflowEnrichmentsNrqlConfiguratio
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#configuration Workflow#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#configuration Workflow#configuration}
 
 ---
 
@@ -1363,7 +1378,7 @@ public readonly name: string;
 
 (Required) Enrichment's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#name Workflow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#name Workflow#name}
 
 ---
 
@@ -1395,7 +1410,7 @@ public readonly query: string;
 
 enrichment's NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#query Workflow#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#query Workflow#query}
 
 ---
 
@@ -1429,7 +1444,7 @@ public readonly name: string;
 
 (Required) Filter's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#name Workflow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#name Workflow#name}
 
 ---
 
@@ -1443,7 +1458,7 @@ public readonly type: string;
 
 (Required) The type of the filter. One of: (FILTER, VIEW).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#type Workflow#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#type Workflow#type}
 
 ---
 
@@ -1457,7 +1472,7 @@ public readonly predicate: IResolvable | WorkflowIssuesFilterPredicate[];
 
 predicate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#predicate Workflow#predicate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#predicate Workflow#predicate}
 
 ---
 
@@ -1491,7 +1506,7 @@ public readonly attribute: string;
 
 (Required) predicate's attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#attribute Workflow#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#attribute Workflow#attribute}
 
 ---
 
@@ -1507,7 +1522,7 @@ The type of the operator.
 
 One of: (CONTAINS, DOES_NOT_CONTAIN, DOES_NOT_EQUAL, DOES_NOT_EXACTLY_MATCH, ENDS_WITH, EQUAL, EXACTLY_MATCHES, GREATER_OR_EQUAL, GREATER_THAN, IS, IS_NOT, LESS_OR_EQUAL, LESS_THAN, STARTS_WITH).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#operator Workflow#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#operator Workflow#operator}
 
 ---
 
@@ -1521,7 +1536,7 @@ public readonly values: string[];
 
 List of predicate values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/workflow#values Workflow#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/workflow#values Workflow#values}
 
 ---
 
@@ -1756,6 +1771,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.resetNotificationTriggers">resetNotificationTriggers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.resetUpdateOriginalMessage">resetUpdateOriginalMessage</a></code> | *No description.* |
 
 ---
 
@@ -1915,6 +1931,12 @@ Returns a reversible string representation.
 public resetNotificationTriggers(): void
 ```
 
+##### `resetUpdateOriginalMessage` <a name="resetUpdateOriginalMessage" id="@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.resetUpdateOriginalMessage"></a>
+
+```typescript
+public resetUpdateOriginalMessage(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1926,8 +1948,10 @@ public resetNotificationTriggers(): void
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.channelIdInput">channelIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.notificationTriggersInput">notificationTriggersInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.updateOriginalMessageInput">updateOriginalMessageInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.channelId">channelId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.notificationTriggers">notificationTriggers</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.updateOriginalMessage">updateOriginalMessage</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a></code> | *No description.* |
 
 ---
@@ -1996,6 +2020,16 @@ public readonly notificationTriggersInput: string[];
 
 ---
 
+##### `updateOriginalMessageInput`<sup>Optional</sup> <a name="updateOriginalMessageInput" id="@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.updateOriginalMessageInput"></a>
+
+```typescript
+public readonly updateOriginalMessageInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `channelId`<sup>Required</sup> <a name="channelId" id="@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.channelId"></a>
 
 ```typescript
@@ -2013,6 +2047,16 @@ public readonly notificationTriggers: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `updateOriginalMessage`<sup>Required</sup> <a name="updateOriginalMessage" id="@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.updateOriginalMessage"></a>
+
+```typescript
+public readonly updateOriginalMessage: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
