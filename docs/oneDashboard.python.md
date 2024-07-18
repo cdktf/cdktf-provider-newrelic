@@ -4,7 +4,7 @@
 
 ### OneDashboard <a name="OneDashboard" id="@cdktf/provider-newrelic.oneDashboard.OneDashboard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard newrelic_one_dashboard}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard newrelic_one_dashboard}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboard.Initializer"></a>
 
@@ -46,7 +46,7 @@ oneDashboard.OneDashboard(
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboard.Initializer.parameter.page">page</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPage">OneDashboardPage</a>]]</code> | page block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboard.Initializer.parameter.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The New Relic account ID where you want to create the dashboard. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboard.Initializer.parameter.description">description</a></code> | <code>str</code> | The dashboard's description. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboard.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#id OneDashboard#id}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboard.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#id OneDashboard#id}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboard.Initializer.parameter.permissions">permissions</a></code> | <code>str</code> | Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboard.Initializer.parameter.variable">variable</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariable">OneDashboardVariable</a>]]</code> | variable block. |
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The dashboard's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#name OneDashboard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 page block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#page OneDashboard#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#page OneDashboard#page}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The New Relic account ID where you want to create the dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The dashboard's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#description OneDashboard#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#description OneDashboard#description}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#id OneDashboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#id OneDashboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +169,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#permissions OneDashboard#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#permissions OneDashboard#permissions}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#variable OneDashboard#variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#variable OneDashboard#variable}
 
 ---
 
@@ -717,7 +717,7 @@ The construct id used in the generated config for the OneDashboard to import.
 
 The id of the existing OneDashboard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1128,7 +1128,7 @@ oneDashboard.OneDashboardConfig(
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.page">page</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPage">OneDashboardPage</a>]]</code> | page block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The New Relic account ID where you want to create the dashboard. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.description">description</a></code> | <code>str</code> | The dashboard's description. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#id OneDashboard#id}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#id OneDashboard#id}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.permissions">permissions</a></code> | <code>str</code> | Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.variable">variable</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariable">OneDashboardVariable</a>]]</code> | variable block. |
 
@@ -1214,7 +1214,7 @@ name: str
 
 The dashboard's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#name OneDashboard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -1228,7 +1228,7 @@ page: typing.Union[IResolvable, typing.List[OneDashboardPage]]
 
 page block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#page OneDashboard#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#page OneDashboard#page}
 
 ---
 
@@ -1242,7 +1242,7 @@ account_id: typing.Union[int, float]
 
 The New Relic account ID where you want to create the dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -1256,7 +1256,7 @@ description: str
 
 The dashboard's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#description OneDashboard#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#description OneDashboard#description}
 
 ---
 
@@ -1268,7 +1268,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#id OneDashboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#id OneDashboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1285,7 +1285,7 @@ permissions: str
 
 Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#permissions OneDashboard#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#permissions OneDashboard#permissions}
 
 ---
 
@@ -1299,7 +1299,7 @@ variable: typing.Union[IResolvable, typing.List[OneDashboardVariable]]
 
 variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#variable OneDashboard#variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#variable OneDashboard#variable}
 
 ---
 
@@ -1363,7 +1363,7 @@ name: str
 
 The dashboard page's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#name OneDashboard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -1377,7 +1377,7 @@ description: str
 
 The dashboard page's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#description OneDashboard#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#description OneDashboard#description}
 
 ---
 
@@ -1391,7 +1391,7 @@ widget_area: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetArea]]
 
 widget_area block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#widget_area OneDashboard#widget_area}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#widget_area OneDashboard#widget_area}
 
 ---
 
@@ -1405,7 +1405,7 @@ widget_bar: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBar]]
 
 widget_bar block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#widget_bar OneDashboard#widget_bar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#widget_bar OneDashboard#widget_bar}
 
 ---
 
@@ -1419,7 +1419,7 @@ widget_billboard: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBi
 
 widget_billboard block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#widget_billboard OneDashboard#widget_billboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#widget_billboard OneDashboard#widget_billboard}
 
 ---
 
@@ -1433,7 +1433,7 @@ widget_bullet: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBulle
 
 widget_bullet block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#widget_bullet OneDashboard#widget_bullet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#widget_bullet OneDashboard#widget_bullet}
 
 ---
 
@@ -1447,7 +1447,7 @@ widget_funnel: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetFunne
 
 widget_funnel block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#widget_funnel OneDashboard#widget_funnel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#widget_funnel OneDashboard#widget_funnel}
 
 ---
 
@@ -1461,7 +1461,7 @@ widget_heatmap: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetHeat
 
 widget_heatmap block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#widget_heatmap OneDashboard#widget_heatmap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#widget_heatmap OneDashboard#widget_heatmap}
 
 ---
 
@@ -1475,7 +1475,7 @@ widget_histogram: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetHi
 
 widget_histogram block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#widget_histogram OneDashboard#widget_histogram}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#widget_histogram OneDashboard#widget_histogram}
 
 ---
 
@@ -1489,7 +1489,7 @@ widget_json: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetJson]]
 
 widget_json block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#widget_json OneDashboard#widget_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#widget_json OneDashboard#widget_json}
 
 ---
 
@@ -1503,7 +1503,7 @@ widget_line: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetLine]]
 
 widget_line block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#widget_line OneDashboard#widget_line}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#widget_line OneDashboard#widget_line}
 
 ---
 
@@ -1517,7 +1517,7 @@ widget_log_table: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetLo
 
 widget_log_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#widget_log_table OneDashboard#widget_log_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#widget_log_table OneDashboard#widget_log_table}
 
 ---
 
@@ -1531,7 +1531,7 @@ widget_markdown: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetMar
 
 widget_markdown block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#widget_markdown OneDashboard#widget_markdown}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#widget_markdown OneDashboard#widget_markdown}
 
 ---
 
@@ -1545,7 +1545,7 @@ widget_pie: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetPie]]
 
 widget_pie block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#widget_pie OneDashboard#widget_pie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#widget_pie OneDashboard#widget_pie}
 
 ---
 
@@ -1559,7 +1559,7 @@ widget_stacked_bar: typing.Union[IResolvable, typing.List[OneDashboardPageWidget
 
 widget_stacked_bar block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#widget_stacked_bar OneDashboard#widget_stacked_bar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#widget_stacked_bar OneDashboard#widget_stacked_bar}
 
 ---
 
@@ -1573,7 +1573,7 @@ widget_table: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetTable]
 
 widget_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#widget_table OneDashboard#widget_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#widget_table OneDashboard#widget_table}
 
 ---
 
@@ -1606,20 +1606,20 @@ oneDashboard.OneDashboardPageWidgetArea(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.nrqlQuery">nrql_query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNrqlQuery">OneDashboardPageWidgetAreaNrqlQuery</a>]]</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.title">title</a></code> | <code>str</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.colors">colors</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColors">OneDashboardPageWidgetAreaColors</a>]]</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.nullValues">null_values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues">OneDashboardPageWidgetAreaNullValues</a>]]</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.units">units</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnits">OneDashboardPageWidgetAreaUnits</a>]]</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -1631,7 +1631,7 @@ column: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -1645,7 +1645,7 @@ nrql_query: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetAreaNrql
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -1657,7 +1657,7 @@ row: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -1671,7 +1671,7 @@ title: str
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -1685,7 +1685,7 @@ colors: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetAreaColors]]
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -1697,7 +1697,7 @@ facet_show_other_series: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -1709,7 +1709,7 @@ height: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -1721,7 +1721,7 @@ ignore_time_range: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -1733,7 +1733,7 @@ legend_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -1747,7 +1747,7 @@ null_values: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetAreaNul
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -1761,7 +1761,7 @@ units: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetAreaUnits]]
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -1773,7 +1773,7 @@ width: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -1785,7 +1785,7 @@ y_axis_left_max: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -1797,7 +1797,7 @@ y_axis_left_min: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -1818,7 +1818,7 @@ oneDashboard.OneDashboardPageWidgetAreaColors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColors.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsSeriesOverrides">OneDashboardPageWidgetAreaColorsSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -1831,7 +1831,7 @@ color: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -1845,7 +1845,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetAr
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -1881,7 +1881,7 @@ color: str
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -1895,7 +1895,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -1931,7 +1931,7 @@ query: str
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -1945,7 +1945,7 @@ account_id: typing.Union[int, float]
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -1966,7 +1966,7 @@ oneDashboard.OneDashboardPageWidgetAreaNullValues(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesSeriesOverrides">OneDashboardPageWidgetAreaNullValuesSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -1979,7 +1979,7 @@ null_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -1993,7 +1993,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetAr
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -2029,7 +2029,7 @@ null_value: str
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -2043,7 +2043,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -2065,7 +2065,7 @@ oneDashboard.OneDashboardPageWidgetAreaUnits(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnits.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsSeriesOverrides">OneDashboardPageWidgetAreaUnitsSeriesOverrides</a>]]</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -2079,7 +2079,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetAr
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -2091,7 +2091,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -2127,7 +2127,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -2141,7 +2141,7 @@ unit: str
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -2176,22 +2176,22 @@ oneDashboard.OneDashboardPageWidgetBar(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.nrqlQuery">nrql_query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNrqlQuery">OneDashboardPageWidgetBarNrqlQuery</a>]]</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.title">title</a></code> | <code>str</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.colors">colors</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColors">OneDashboardPageWidgetBarColors</a>]]</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.filterCurrentDashboard">filter_current_dashboard</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use this item to filter the current dashboard. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.linkedEntityGuids">linked_entity_guids</a></code> | <code>typing.List[str]</code> | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.nullValues">null_values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues">OneDashboardPageWidgetBarNullValues</a>]]</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.units">units</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnits">OneDashboardPageWidgetBarUnits</a>]]</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -2203,7 +2203,7 @@ column: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -2217,7 +2217,7 @@ nrql_query: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBarNrqlQ
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -2229,7 +2229,7 @@ row: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -2243,7 +2243,7 @@ title: str
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -2257,7 +2257,7 @@ colors: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBarColors]]
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -2269,7 +2269,7 @@ facet_show_other_series: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -2283,7 +2283,7 @@ filter_current_dashboard: typing.Union[bool, IResolvable]
 
 Use this item to filter the current dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
 
 ---
 
@@ -2295,7 +2295,7 @@ height: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -2307,7 +2307,7 @@ ignore_time_range: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -2319,7 +2319,7 @@ legend_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -2333,7 +2333,7 @@ linked_entity_guids: typing.List[str]
 
 Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
 
 ---
 
@@ -2347,7 +2347,7 @@ null_values: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBarNull
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -2361,7 +2361,7 @@ units: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBarUnits]]
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -2373,7 +2373,7 @@ width: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -2385,7 +2385,7 @@ y_axis_left_max: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -2397,7 +2397,7 @@ y_axis_left_min: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -2418,7 +2418,7 @@ oneDashboard.OneDashboardPageWidgetBarColors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColors.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsSeriesOverrides">OneDashboardPageWidgetBarColorsSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -2431,7 +2431,7 @@ color: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -2445,7 +2445,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBa
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -2481,7 +2481,7 @@ color: str
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -2495,7 +2495,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -2531,7 +2531,7 @@ query: str
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -2545,7 +2545,7 @@ account_id: typing.Union[int, float]
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -2566,7 +2566,7 @@ oneDashboard.OneDashboardPageWidgetBarNullValues(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesSeriesOverrides">OneDashboardPageWidgetBarNullValuesSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -2579,7 +2579,7 @@ null_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -2593,7 +2593,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBa
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -2629,7 +2629,7 @@ null_value: str
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -2643,7 +2643,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -2665,7 +2665,7 @@ oneDashboard.OneDashboardPageWidgetBarUnits(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnits.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsSeriesOverrides">OneDashboardPageWidgetBarUnitsSeriesOverrides</a>]]</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -2679,7 +2679,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBa
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -2691,7 +2691,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -2727,7 +2727,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -2741,7 +2741,7 @@ unit: str
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -2776,22 +2776,22 @@ oneDashboard.OneDashboardPageWidgetBillboard(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.nrqlQuery">nrql_query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNrqlQuery">OneDashboardPageWidgetBillboardNrqlQuery</a>]]</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.title">title</a></code> | <code>str</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.colors">colors</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColors">OneDashboardPageWidgetBillboardColors</a>]]</code> | colors block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.critical">critical</a></code> | <code>str</code> | The critical threshold value. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.nullValues">null_values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues">OneDashboardPageWidgetBillboardNullValues</a>]]</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.units">units</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnits">OneDashboardPageWidgetBillboardUnits</a>]]</code> | units block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.warning">warning</a></code> | <code>str</code> | The warning threshold value. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -2803,7 +2803,7 @@ column: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -2817,7 +2817,7 @@ nrql_query: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBillboar
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -2829,7 +2829,7 @@ row: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -2843,7 +2843,7 @@ title: str
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -2857,7 +2857,7 @@ colors: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBillboardCol
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -2871,7 +2871,7 @@ critical: str
 
 The critical threshold value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#critical OneDashboard#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#critical OneDashboard#critical}
 
 ---
 
@@ -2883,7 +2883,7 @@ facet_show_other_series: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -2895,7 +2895,7 @@ height: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -2907,7 +2907,7 @@ ignore_time_range: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -2919,7 +2919,7 @@ legend_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -2933,7 +2933,7 @@ null_values: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBillboa
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -2947,7 +2947,7 @@ units: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBillboardUnit
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -2961,7 +2961,7 @@ warning: str
 
 The warning threshold value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#warning OneDashboard#warning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#warning OneDashboard#warning}
 
 ---
 
@@ -2973,7 +2973,7 @@ width: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -2985,7 +2985,7 @@ y_axis_left_max: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -2997,7 +2997,7 @@ y_axis_left_min: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -3018,7 +3018,7 @@ oneDashboard.OneDashboardPageWidgetBillboardColors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColors.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsSeriesOverrides">OneDashboardPageWidgetBillboardColorsSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -3031,7 +3031,7 @@ color: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -3045,7 +3045,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBi
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -3081,7 +3081,7 @@ color: str
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -3095,7 +3095,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -3131,7 +3131,7 @@ query: str
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -3145,7 +3145,7 @@ account_id: typing.Union[int, float]
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -3166,7 +3166,7 @@ oneDashboard.OneDashboardPageWidgetBillboardNullValues(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesSeriesOverrides">OneDashboardPageWidgetBillboardNullValuesSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -3179,7 +3179,7 @@ null_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -3193,7 +3193,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBi
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -3229,7 +3229,7 @@ null_value: str
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -3243,7 +3243,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -3265,7 +3265,7 @@ oneDashboard.OneDashboardPageWidgetBillboardUnits(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnits.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsSeriesOverrides">OneDashboardPageWidgetBillboardUnitsSeriesOverrides</a>]]</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -3279,7 +3279,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBi
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -3291,7 +3291,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -3327,7 +3327,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -3341,7 +3341,7 @@ unit: str
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -3375,21 +3375,21 @@ oneDashboard.OneDashboardPageWidgetBullet(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.limit">limit</a></code> | <code>typing.Union[int, float]</code> | The maximum value for the visualization. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.nrqlQuery">nrql_query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNrqlQuery">OneDashboardPageWidgetBulletNrqlQuery</a>]]</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.title">title</a></code> | <code>str</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.colors">colors</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColors">OneDashboardPageWidgetBulletColors</a>]]</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.nullValues">null_values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues">OneDashboardPageWidgetBulletNullValues</a>]]</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.units">units</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnits">OneDashboardPageWidgetBulletUnits</a>]]</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -3401,7 +3401,7 @@ column: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -3415,7 +3415,7 @@ limit: typing.Union[int, float]
 
 The maximum value for the visualization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#limit OneDashboard#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#limit OneDashboard#limit}
 
 ---
 
@@ -3429,7 +3429,7 @@ nrql_query: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBulletNr
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -3441,7 +3441,7 @@ row: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -3455,7 +3455,7 @@ title: str
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -3469,7 +3469,7 @@ colors: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBulletColors
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -3481,7 +3481,7 @@ facet_show_other_series: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -3493,7 +3493,7 @@ height: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -3505,7 +3505,7 @@ ignore_time_range: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -3517,7 +3517,7 @@ legend_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -3531,7 +3531,7 @@ null_values: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBulletN
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -3545,7 +3545,7 @@ units: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBulletUnits]]
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -3557,7 +3557,7 @@ width: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -3569,7 +3569,7 @@ y_axis_left_max: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -3581,7 +3581,7 @@ y_axis_left_min: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -3602,7 +3602,7 @@ oneDashboard.OneDashboardPageWidgetBulletColors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColors.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsSeriesOverrides">OneDashboardPageWidgetBulletColorsSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -3615,7 +3615,7 @@ color: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -3629,7 +3629,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBu
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -3665,7 +3665,7 @@ color: str
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -3679,7 +3679,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -3715,7 +3715,7 @@ query: str
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -3729,7 +3729,7 @@ account_id: typing.Union[int, float]
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -3750,7 +3750,7 @@ oneDashboard.OneDashboardPageWidgetBulletNullValues(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesSeriesOverrides">OneDashboardPageWidgetBulletNullValuesSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -3763,7 +3763,7 @@ null_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -3777,7 +3777,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBu
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -3813,7 +3813,7 @@ null_value: str
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -3827,7 +3827,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -3849,7 +3849,7 @@ oneDashboard.OneDashboardPageWidgetBulletUnits(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnits.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsSeriesOverrides">OneDashboardPageWidgetBulletUnitsSeriesOverrides</a>]]</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -3863,7 +3863,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetBu
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -3875,7 +3875,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -3911,7 +3911,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -3925,7 +3925,7 @@ unit: str
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -3958,20 +3958,20 @@ oneDashboard.OneDashboardPageWidgetFunnel(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.nrqlQuery">nrql_query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNrqlQuery">OneDashboardPageWidgetFunnelNrqlQuery</a>]]</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.title">title</a></code> | <code>str</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.colors">colors</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColors">OneDashboardPageWidgetFunnelColors</a>]]</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.nullValues">null_values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues">OneDashboardPageWidgetFunnelNullValues</a>]]</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.units">units</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnits">OneDashboardPageWidgetFunnelUnits</a>]]</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -3983,7 +3983,7 @@ column: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -3997,7 +3997,7 @@ nrql_query: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetFunnelNr
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -4009,7 +4009,7 @@ row: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -4023,7 +4023,7 @@ title: str
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -4037,7 +4037,7 @@ colors: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetFunnelColors
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -4049,7 +4049,7 @@ facet_show_other_series: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -4061,7 +4061,7 @@ height: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -4073,7 +4073,7 @@ ignore_time_range: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -4085,7 +4085,7 @@ legend_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -4099,7 +4099,7 @@ null_values: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetFunnelN
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -4113,7 +4113,7 @@ units: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetFunnelUnits]]
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -4125,7 +4125,7 @@ width: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -4137,7 +4137,7 @@ y_axis_left_max: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -4149,7 +4149,7 @@ y_axis_left_min: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -4170,7 +4170,7 @@ oneDashboard.OneDashboardPageWidgetFunnelColors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColors.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsSeriesOverrides">OneDashboardPageWidgetFunnelColorsSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -4183,7 +4183,7 @@ color: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -4197,7 +4197,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetFu
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -4233,7 +4233,7 @@ color: str
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -4247,7 +4247,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -4283,7 +4283,7 @@ query: str
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -4297,7 +4297,7 @@ account_id: typing.Union[int, float]
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -4318,7 +4318,7 @@ oneDashboard.OneDashboardPageWidgetFunnelNullValues(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesSeriesOverrides">OneDashboardPageWidgetFunnelNullValuesSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -4331,7 +4331,7 @@ null_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -4345,7 +4345,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetFu
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -4381,7 +4381,7 @@ null_value: str
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -4395,7 +4395,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -4417,7 +4417,7 @@ oneDashboard.OneDashboardPageWidgetFunnelUnits(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnits.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsSeriesOverrides">OneDashboardPageWidgetFunnelUnitsSeriesOverrides</a>]]</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -4431,7 +4431,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetFu
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -4443,7 +4443,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -4479,7 +4479,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -4493,7 +4493,7 @@ unit: str
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -4528,22 +4528,22 @@ oneDashboard.OneDashboardPageWidgetHeatmap(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.nrqlQuery">nrql_query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNrqlQuery">OneDashboardPageWidgetHeatmapNrqlQuery</a>]]</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.title">title</a></code> | <code>str</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.colors">colors</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColors">OneDashboardPageWidgetHeatmapColors</a>]]</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.filterCurrentDashboard">filter_current_dashboard</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use this item to filter the current dashboard. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.linkedEntityGuids">linked_entity_guids</a></code> | <code>typing.List[str]</code> | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.nullValues">null_values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues">OneDashboardPageWidgetHeatmapNullValues</a>]]</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.units">units</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnits">OneDashboardPageWidgetHeatmapUnits</a>]]</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -4555,7 +4555,7 @@ column: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -4569,7 +4569,7 @@ nrql_query: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetHeatmapN
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -4581,7 +4581,7 @@ row: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -4595,7 +4595,7 @@ title: str
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -4609,7 +4609,7 @@ colors: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetHeatmapColor
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -4621,7 +4621,7 @@ facet_show_other_series: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -4635,7 +4635,7 @@ filter_current_dashboard: typing.Union[bool, IResolvable]
 
 Use this item to filter the current dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
 
 ---
 
@@ -4647,7 +4647,7 @@ height: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -4659,7 +4659,7 @@ ignore_time_range: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -4671,7 +4671,7 @@ legend_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -4685,7 +4685,7 @@ linked_entity_guids: typing.List[str]
 
 Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
 
 ---
 
@@ -4699,7 +4699,7 @@ null_values: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetHeatmap
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -4713,7 +4713,7 @@ units: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetHeatmapUnits]
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -4725,7 +4725,7 @@ width: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -4737,7 +4737,7 @@ y_axis_left_max: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -4749,7 +4749,7 @@ y_axis_left_min: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -4770,7 +4770,7 @@ oneDashboard.OneDashboardPageWidgetHeatmapColors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColors.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsSeriesOverrides">OneDashboardPageWidgetHeatmapColorsSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -4783,7 +4783,7 @@ color: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -4797,7 +4797,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetHe
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -4833,7 +4833,7 @@ color: str
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -4847,7 +4847,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -4883,7 +4883,7 @@ query: str
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -4897,7 +4897,7 @@ account_id: typing.Union[int, float]
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -4918,7 +4918,7 @@ oneDashboard.OneDashboardPageWidgetHeatmapNullValues(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides">OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -4931,7 +4931,7 @@ null_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -4945,7 +4945,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetHe
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -4981,7 +4981,7 @@ null_value: str
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -4995,7 +4995,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -5017,7 +5017,7 @@ oneDashboard.OneDashboardPageWidgetHeatmapUnits(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnits.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsSeriesOverrides">OneDashboardPageWidgetHeatmapUnitsSeriesOverrides</a>]]</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -5031,7 +5031,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetHe
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -5043,7 +5043,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -5079,7 +5079,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -5093,7 +5093,7 @@ unit: str
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -5126,20 +5126,20 @@ oneDashboard.OneDashboardPageWidgetHistogram(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.nrqlQuery">nrql_query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNrqlQuery">OneDashboardPageWidgetHistogramNrqlQuery</a>]]</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.title">title</a></code> | <code>str</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.colors">colors</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColors">OneDashboardPageWidgetHistogramColors</a>]]</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.nullValues">null_values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues">OneDashboardPageWidgetHistogramNullValues</a>]]</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.units">units</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnits">OneDashboardPageWidgetHistogramUnits</a>]]</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -5151,7 +5151,7 @@ column: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -5165,7 +5165,7 @@ nrql_query: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetHistogra
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -5177,7 +5177,7 @@ row: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -5191,7 +5191,7 @@ title: str
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -5205,7 +5205,7 @@ colors: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetHistogramCol
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -5217,7 +5217,7 @@ facet_show_other_series: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -5229,7 +5229,7 @@ height: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -5241,7 +5241,7 @@ ignore_time_range: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -5253,7 +5253,7 @@ legend_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -5267,7 +5267,7 @@ null_values: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetHistogr
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -5281,7 +5281,7 @@ units: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetHistogramUnit
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -5293,7 +5293,7 @@ width: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -5305,7 +5305,7 @@ y_axis_left_max: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -5317,7 +5317,7 @@ y_axis_left_min: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -5338,7 +5338,7 @@ oneDashboard.OneDashboardPageWidgetHistogramColors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColors.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsSeriesOverrides">OneDashboardPageWidgetHistogramColorsSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -5351,7 +5351,7 @@ color: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -5365,7 +5365,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetHi
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -5401,7 +5401,7 @@ color: str
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -5415,7 +5415,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -5451,7 +5451,7 @@ query: str
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -5465,7 +5465,7 @@ account_id: typing.Union[int, float]
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -5486,7 +5486,7 @@ oneDashboard.OneDashboardPageWidgetHistogramNullValues(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesSeriesOverrides">OneDashboardPageWidgetHistogramNullValuesSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -5499,7 +5499,7 @@ null_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -5513,7 +5513,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetHi
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -5549,7 +5549,7 @@ null_value: str
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -5563,7 +5563,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -5585,7 +5585,7 @@ oneDashboard.OneDashboardPageWidgetHistogramUnits(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnits.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsSeriesOverrides">OneDashboardPageWidgetHistogramUnitsSeriesOverrides</a>]]</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -5599,7 +5599,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetHi
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -5611,7 +5611,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -5647,7 +5647,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -5661,7 +5661,7 @@ unit: str
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -5694,20 +5694,20 @@ oneDashboard.OneDashboardPageWidgetJson(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.nrqlQuery">nrql_query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNrqlQuery">OneDashboardPageWidgetJsonNrqlQuery</a>]]</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.title">title</a></code> | <code>str</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.colors">colors</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColors">OneDashboardPageWidgetJsonColors</a>]]</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.nullValues">null_values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues">OneDashboardPageWidgetJsonNullValues</a>]]</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.units">units</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnits">OneDashboardPageWidgetJsonUnits</a>]]</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -5719,7 +5719,7 @@ column: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -5733,7 +5733,7 @@ nrql_query: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetJsonNrql
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -5745,7 +5745,7 @@ row: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -5759,7 +5759,7 @@ title: str
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -5773,7 +5773,7 @@ colors: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetJsonColors]]
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -5785,7 +5785,7 @@ facet_show_other_series: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -5797,7 +5797,7 @@ height: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -5809,7 +5809,7 @@ ignore_time_range: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -5821,7 +5821,7 @@ legend_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -5835,7 +5835,7 @@ null_values: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetJsonNul
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -5849,7 +5849,7 @@ units: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetJsonUnits]]
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -5861,7 +5861,7 @@ width: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -5873,7 +5873,7 @@ y_axis_left_max: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -5885,7 +5885,7 @@ y_axis_left_min: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -5906,7 +5906,7 @@ oneDashboard.OneDashboardPageWidgetJsonColors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColors.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsSeriesOverrides">OneDashboardPageWidgetJsonColorsSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -5919,7 +5919,7 @@ color: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -5933,7 +5933,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetJs
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -5969,7 +5969,7 @@ color: str
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -5983,7 +5983,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -6019,7 +6019,7 @@ query: str
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -6033,7 +6033,7 @@ account_id: typing.Union[int, float]
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -6054,7 +6054,7 @@ oneDashboard.OneDashboardPageWidgetJsonNullValues(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesSeriesOverrides">OneDashboardPageWidgetJsonNullValuesSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -6067,7 +6067,7 @@ null_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -6081,7 +6081,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetJs
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -6117,7 +6117,7 @@ null_value: str
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -6131,7 +6131,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -6153,7 +6153,7 @@ oneDashboard.OneDashboardPageWidgetJsonUnits(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnits.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsSeriesOverrides">OneDashboardPageWidgetJsonUnitsSeriesOverrides</a>]]</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -6167,7 +6167,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetJs
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -6179,7 +6179,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -6215,7 +6215,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -6229,7 +6229,7 @@ unit: str
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -6266,22 +6266,22 @@ oneDashboard.OneDashboardPageWidgetLine(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.nrqlQuery">nrql_query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQuery">OneDashboardPageWidgetLineNrqlQuery</a>]]</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.title">title</a></code> | <code>str</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.colors">colors</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColors">OneDashboardPageWidgetLineColors</a>]]</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.isLabelVisible">is_label_visible</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specified if the label should be visible in the graph created when specified with thresholds. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.nullValues">null_values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues">OneDashboardPageWidgetLineNullValues</a>]]</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.threshold">threshold</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThreshold">OneDashboardPageWidgetLineThreshold</a>]]</code> | threshold block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.units">units</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnits">OneDashboardPageWidgetLineUnits</a>]]</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisLeftZero">y_axis_left_zero</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if the values on the graph to be rendered need to be fit to scale, or printed within the specified range. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisRight">y_axis_right</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight">OneDashboardPageWidgetLineYAxisRight</a></code> | y_axis_right block. |
 
@@ -6295,7 +6295,7 @@ column: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -6309,7 +6309,7 @@ nrql_query: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetLineNrql
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -6321,7 +6321,7 @@ row: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -6335,7 +6335,7 @@ title: str
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -6349,7 +6349,7 @@ colors: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetLineColors]]
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -6361,7 +6361,7 @@ facet_show_other_series: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -6373,7 +6373,7 @@ height: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -6385,7 +6385,7 @@ ignore_time_range: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -6399,7 +6399,7 @@ is_label_visible: typing.Union[bool, IResolvable]
 
 Specified if the label should be visible in the graph created when specified with thresholds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#is_label_visible OneDashboard#is_label_visible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#is_label_visible OneDashboard#is_label_visible}
 
 ---
 
@@ -6411,7 +6411,7 @@ legend_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -6425,7 +6425,7 @@ null_values: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetLineNul
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -6439,7 +6439,7 @@ threshold: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetLineThres
 
 threshold block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#threshold OneDashboard#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#threshold OneDashboard#threshold}
 
 ---
 
@@ -6453,7 +6453,7 @@ units: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetLineUnits]]
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -6465,7 +6465,7 @@ width: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -6477,7 +6477,7 @@ y_axis_left_max: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -6489,7 +6489,7 @@ y_axis_left_min: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -6503,7 +6503,7 @@ y_axis_left_zero: typing.Union[bool, IResolvable]
 
 Specifies if the values on the graph to be rendered need to be fit to scale, or printed within the specified range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_zero OneDashboard#y_axis_left_zero}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_zero OneDashboard#y_axis_left_zero}
 
 ---
 
@@ -6517,7 +6517,7 @@ y_axis_right: OneDashboardPageWidgetLineYAxisRight
 
 y_axis_right block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_right OneDashboard#y_axis_right}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_right OneDashboard#y_axis_right}
 
 ---
 
@@ -6538,7 +6538,7 @@ oneDashboard.OneDashboardPageWidgetLineColors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColors.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsSeriesOverrides">OneDashboardPageWidgetLineColorsSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -6551,7 +6551,7 @@ color: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -6565,7 +6565,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetLi
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -6601,7 +6601,7 @@ color: str
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -6615,7 +6615,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -6651,7 +6651,7 @@ query: str
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -6665,7 +6665,7 @@ account_id: typing.Union[int, float]
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -6686,7 +6686,7 @@ oneDashboard.OneDashboardPageWidgetLineNullValues(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesSeriesOverrides">OneDashboardPageWidgetLineNullValuesSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -6699,7 +6699,7 @@ null_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -6713,7 +6713,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetLi
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -6749,7 +6749,7 @@ null_value: str
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -6763,7 +6763,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -6803,7 +6803,7 @@ from: typing.Union[int, float]
 
 The number from which the range starts in thresholds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#from OneDashboard#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#from OneDashboard#from}
 
 ---
 
@@ -6817,7 +6817,7 @@ name: str
 
 Name of the threshold created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#name OneDashboard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -6831,7 +6831,7 @@ severity: str
 
 Severity of the threshold, which would reflect in the widget, in the range of the threshold specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#severity OneDashboard#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#severity OneDashboard#severity}
 
 ---
 
@@ -6845,7 +6845,7 @@ to: typing.Union[int, float]
 
 The number at which the range ends in thresholds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#to OneDashboard#to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#to OneDashboard#to}
 
 ---
 
@@ -6867,7 +6867,7 @@ oneDashboard.OneDashboardPageWidgetLineUnits(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnits.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsSeriesOverrides">OneDashboardPageWidgetLineUnitsSeriesOverrides</a>]]</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -6881,7 +6881,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetLi
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -6893,7 +6893,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -6929,7 +6929,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -6943,7 +6943,7 @@ unit: str
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -6983,7 +6983,7 @@ y_axis_right_max: typing.Union[int, float]
 
 Minimum value of the range to be specified with the Y-Axis on the right of the line widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_right_max OneDashboard#y_axis_right_max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_right_max OneDashboard#y_axis_right_max}
 
 ---
 
@@ -6997,7 +6997,7 @@ y_axis_right_min: typing.Union[int, float]
 
 Minimum value of the range to be specified with the Y-Axis on the right of the line widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_right_min OneDashboard#y_axis_right_min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_right_min OneDashboard#y_axis_right_min}
 
 ---
 
@@ -7011,7 +7011,7 @@ y_axis_right_series: typing.List[str]
 
 A set of series that helps specify the Y-Axis on the right of the line widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_right_series OneDashboard#y_axis_right_series}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_right_series OneDashboard#y_axis_right_series}
 
 ---
 
@@ -7025,7 +7025,7 @@ y_axis_right_zero: typing.Union[bool, IResolvable]
 
 An attribute that helps specify the Y-Axis on the right of the line widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_right_zero OneDashboard#y_axis_right_zero}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_right_zero OneDashboard#y_axis_right_zero}
 
 ---
 
@@ -7058,20 +7058,20 @@ oneDashboard.OneDashboardPageWidgetLogTable(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.nrqlQuery">nrql_query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNrqlQuery">OneDashboardPageWidgetLogTableNrqlQuery</a>]]</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.title">title</a></code> | <code>str</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.colors">colors</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColors">OneDashboardPageWidgetLogTableColors</a>]]</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.nullValues">null_values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues">OneDashboardPageWidgetLogTableNullValues</a>]]</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.units">units</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnits">OneDashboardPageWidgetLogTableUnits</a>]]</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -7083,7 +7083,7 @@ column: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -7097,7 +7097,7 @@ nrql_query: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetLogTable
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -7109,7 +7109,7 @@ row: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -7123,7 +7123,7 @@ title: str
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -7137,7 +7137,7 @@ colors: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetLogTableColo
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -7149,7 +7149,7 @@ facet_show_other_series: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -7161,7 +7161,7 @@ height: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -7173,7 +7173,7 @@ ignore_time_range: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -7185,7 +7185,7 @@ legend_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -7199,7 +7199,7 @@ null_values: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetLogTabl
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -7213,7 +7213,7 @@ units: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetLogTableUnits
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -7225,7 +7225,7 @@ width: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -7237,7 +7237,7 @@ y_axis_left_max: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -7249,7 +7249,7 @@ y_axis_left_min: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -7270,7 +7270,7 @@ oneDashboard.OneDashboardPageWidgetLogTableColors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColors.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsSeriesOverrides">OneDashboardPageWidgetLogTableColorsSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -7283,7 +7283,7 @@ color: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -7297,7 +7297,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetLo
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -7333,7 +7333,7 @@ color: str
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -7347,7 +7347,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -7383,7 +7383,7 @@ query: str
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -7397,7 +7397,7 @@ account_id: typing.Union[int, float]
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -7418,7 +7418,7 @@ oneDashboard.OneDashboardPageWidgetLogTableNullValues(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesSeriesOverrides">OneDashboardPageWidgetLogTableNullValuesSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -7431,7 +7431,7 @@ null_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -7445,7 +7445,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetLo
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -7481,7 +7481,7 @@ null_value: str
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -7495,7 +7495,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -7517,7 +7517,7 @@ oneDashboard.OneDashboardPageWidgetLogTableUnits(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnits.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsSeriesOverrides">OneDashboardPageWidgetLogTableUnitsSeriesOverrides</a>]]</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -7531,7 +7531,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetLo
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -7543,7 +7543,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -7579,7 +7579,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -7593,7 +7593,7 @@ unit: str
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -7626,20 +7626,20 @@ oneDashboard.OneDashboardPageWidgetMarkdown(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.text">text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#text OneDashboard#text}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.text">text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#text OneDashboard#text}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.title">title</a></code> | <code>str</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.colors">colors</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColors">OneDashboardPageWidgetMarkdownColors</a>]]</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.nullValues">null_values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues">OneDashboardPageWidgetMarkdownNullValues</a>]]</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.units">units</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnits">OneDashboardPageWidgetMarkdownUnits</a>]]</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -7651,7 +7651,7 @@ column: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -7663,7 +7663,7 @@ row: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -7675,7 +7675,7 @@ text: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#text OneDashboard#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#text OneDashboard#text}.
 
 ---
 
@@ -7689,7 +7689,7 @@ title: str
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -7703,7 +7703,7 @@ colors: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetMarkdownColo
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -7715,7 +7715,7 @@ facet_show_other_series: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -7727,7 +7727,7 @@ height: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -7739,7 +7739,7 @@ ignore_time_range: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -7751,7 +7751,7 @@ legend_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -7765,7 +7765,7 @@ null_values: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetMarkdow
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -7779,7 +7779,7 @@ units: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetMarkdownUnits
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -7791,7 +7791,7 @@ width: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -7803,7 +7803,7 @@ y_axis_left_max: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -7815,7 +7815,7 @@ y_axis_left_min: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -7836,7 +7836,7 @@ oneDashboard.OneDashboardPageWidgetMarkdownColors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColors.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsSeriesOverrides">OneDashboardPageWidgetMarkdownColorsSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -7849,7 +7849,7 @@ color: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -7863,7 +7863,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetMa
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -7899,7 +7899,7 @@ color: str
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -7913,7 +7913,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -7934,7 +7934,7 @@ oneDashboard.OneDashboardPageWidgetMarkdownNullValues(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides">OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -7947,7 +7947,7 @@ null_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -7961,7 +7961,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetMa
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -7997,7 +7997,7 @@ null_value: str
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -8011,7 +8011,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -8033,7 +8033,7 @@ oneDashboard.OneDashboardPageWidgetMarkdownUnits(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnits.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsSeriesOverrides">OneDashboardPageWidgetMarkdownUnitsSeriesOverrides</a>]]</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -8047,7 +8047,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetMa
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -8059,7 +8059,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -8095,7 +8095,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -8109,7 +8109,7 @@ unit: str
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -8144,22 +8144,22 @@ oneDashboard.OneDashboardPageWidgetPie(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.nrqlQuery">nrql_query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNrqlQuery">OneDashboardPageWidgetPieNrqlQuery</a>]]</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.title">title</a></code> | <code>str</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.colors">colors</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColors">OneDashboardPageWidgetPieColors</a>]]</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.filterCurrentDashboard">filter_current_dashboard</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use this item to filter the current dashboard. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.linkedEntityGuids">linked_entity_guids</a></code> | <code>typing.List[str]</code> | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.nullValues">null_values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues">OneDashboardPageWidgetPieNullValues</a>]]</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.units">units</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnits">OneDashboardPageWidgetPieUnits</a>]]</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -8171,7 +8171,7 @@ column: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -8185,7 +8185,7 @@ nrql_query: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetPieNrqlQ
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -8197,7 +8197,7 @@ row: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -8211,7 +8211,7 @@ title: str
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -8225,7 +8225,7 @@ colors: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetPieColors]]
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -8237,7 +8237,7 @@ facet_show_other_series: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -8251,7 +8251,7 @@ filter_current_dashboard: typing.Union[bool, IResolvable]
 
 Use this item to filter the current dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
 
 ---
 
@@ -8263,7 +8263,7 @@ height: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -8275,7 +8275,7 @@ ignore_time_range: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -8287,7 +8287,7 @@ legend_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -8301,7 +8301,7 @@ linked_entity_guids: typing.List[str]
 
 Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
 
 ---
 
@@ -8315,7 +8315,7 @@ null_values: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetPieNull
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -8329,7 +8329,7 @@ units: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetPieUnits]]
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -8341,7 +8341,7 @@ width: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -8353,7 +8353,7 @@ y_axis_left_max: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -8365,7 +8365,7 @@ y_axis_left_min: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -8386,7 +8386,7 @@ oneDashboard.OneDashboardPageWidgetPieColors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColors.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsSeriesOverrides">OneDashboardPageWidgetPieColorsSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -8399,7 +8399,7 @@ color: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -8413,7 +8413,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetPi
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -8449,7 +8449,7 @@ color: str
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -8463,7 +8463,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -8499,7 +8499,7 @@ query: str
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -8513,7 +8513,7 @@ account_id: typing.Union[int, float]
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -8534,7 +8534,7 @@ oneDashboard.OneDashboardPageWidgetPieNullValues(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesSeriesOverrides">OneDashboardPageWidgetPieNullValuesSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -8547,7 +8547,7 @@ null_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -8561,7 +8561,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetPi
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -8597,7 +8597,7 @@ null_value: str
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -8611,7 +8611,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -8633,7 +8633,7 @@ oneDashboard.OneDashboardPageWidgetPieUnits(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnits.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsSeriesOverrides">OneDashboardPageWidgetPieUnitsSeriesOverrides</a>]]</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -8647,7 +8647,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetPi
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -8659,7 +8659,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -8695,7 +8695,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -8709,7 +8709,7 @@ unit: str
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -8742,20 +8742,20 @@ oneDashboard.OneDashboardPageWidgetStackedBar(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.nrqlQuery">nrql_query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNrqlQuery">OneDashboardPageWidgetStackedBarNrqlQuery</a>]]</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.title">title</a></code> | <code>str</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.colors">colors</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColors">OneDashboardPageWidgetStackedBarColors</a>]]</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.nullValues">null_values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues">OneDashboardPageWidgetStackedBarNullValues</a>]]</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.units">units</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnits">OneDashboardPageWidgetStackedBarUnits</a>]]</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -8767,7 +8767,7 @@ column: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -8781,7 +8781,7 @@ nrql_query: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetStackedB
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -8793,7 +8793,7 @@ row: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -8807,7 +8807,7 @@ title: str
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -8821,7 +8821,7 @@ colors: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetStackedBarCo
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -8833,7 +8833,7 @@ facet_show_other_series: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -8845,7 +8845,7 @@ height: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -8857,7 +8857,7 @@ ignore_time_range: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -8869,7 +8869,7 @@ legend_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -8883,7 +8883,7 @@ null_values: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetStacked
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -8897,7 +8897,7 @@ units: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetStackedBarUni
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -8909,7 +8909,7 @@ width: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -8921,7 +8921,7 @@ y_axis_left_max: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -8933,7 +8933,7 @@ y_axis_left_min: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -8954,7 +8954,7 @@ oneDashboard.OneDashboardPageWidgetStackedBarColors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColors.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsSeriesOverrides">OneDashboardPageWidgetStackedBarColorsSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -8967,7 +8967,7 @@ color: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -8981,7 +8981,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetSt
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -9017,7 +9017,7 @@ color: str
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -9031,7 +9031,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -9067,7 +9067,7 @@ query: str
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -9081,7 +9081,7 @@ account_id: typing.Union[int, float]
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -9102,7 +9102,7 @@ oneDashboard.OneDashboardPageWidgetStackedBarNullValues(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides">OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -9115,7 +9115,7 @@ null_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -9129,7 +9129,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetSt
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -9165,7 +9165,7 @@ null_value: str
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -9179,7 +9179,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -9201,7 +9201,7 @@ oneDashboard.OneDashboardPageWidgetStackedBarUnits(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnits.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsSeriesOverrides">OneDashboardPageWidgetStackedBarUnitsSeriesOverrides</a>]]</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -9215,7 +9215,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetSt
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -9227,7 +9227,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -9263,7 +9263,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -9277,7 +9277,7 @@ unit: str
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -9313,23 +9313,23 @@ oneDashboard.OneDashboardPageWidgetTable(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.column">column</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.nrqlQuery">nrql_query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQuery">OneDashboardPageWidgetTableNrqlQuery</a>]]</code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.row">row</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.title">title</a></code> | <code>str</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.colors">colors</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColors">OneDashboardPageWidgetTableColors</a>]]</code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.facetShowOtherSeries">facet_show_other_series</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.filterCurrentDashboard">filter_current_dashboard</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use this item to filter the current dashboard. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.height">height</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.ignoreTimeRange">ignore_time_range</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.legendEnabled">legend_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.linkedEntityGuids">linked_entity_guids</a></code> | <code>typing.List[str]</code> | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.nullValues">null_values</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues">OneDashboardPageWidgetTableNullValues</a>]]</code> | null_values block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.threshold">threshold</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThreshold">OneDashboardPageWidgetTableThreshold</a>]]</code> | threshold block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.units">units</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnits">OneDashboardPageWidgetTableUnits</a>]]</code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.width">width</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.yAxisLeftMax">y_axis_left_max</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.yAxisLeftMin">y_axis_left_min</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -9341,7 +9341,7 @@ column: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -9355,7 +9355,7 @@ nrql_query: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetTableNrq
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -9367,7 +9367,7 @@ row: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -9381,7 +9381,7 @@ title: str
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -9395,7 +9395,7 @@ colors: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetTableColors]
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -9407,7 +9407,7 @@ facet_show_other_series: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -9421,7 +9421,7 @@ filter_current_dashboard: typing.Union[bool, IResolvable]
 
 Use this item to filter the current dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
 
 ---
 
@@ -9433,7 +9433,7 @@ height: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -9445,7 +9445,7 @@ ignore_time_range: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
 
 ---
 
@@ -9457,7 +9457,7 @@ legend_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -9471,7 +9471,7 @@ linked_entity_guids: typing.List[str]
 
 Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
 
 ---
 
@@ -9485,7 +9485,7 @@ null_values: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetTableNu
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_values OneDashboard#null_values}
 
 ---
 
@@ -9499,7 +9499,7 @@ threshold: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetTableThre
 
 threshold block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#threshold OneDashboard#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#threshold OneDashboard#threshold}
 
 ---
 
@@ -9513,7 +9513,7 @@ units: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetTableUnits]]
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -9525,7 +9525,7 @@ width: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -9537,7 +9537,7 @@ y_axis_left_max: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -9549,7 +9549,7 @@ y_axis_left_min: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -9570,7 +9570,7 @@ oneDashboard.OneDashboardPageWidgetTableColors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColors.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColors.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsSeriesOverrides">OneDashboardPageWidgetTableColorsSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -9583,7 +9583,7 @@ color: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -9597,7 +9597,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetTa
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -9633,7 +9633,7 @@ color: str
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -9647,7 +9647,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -9683,7 +9683,7 @@ query: str
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -9697,7 +9697,7 @@ account_id: typing.Union[int, float]
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -9718,7 +9718,7 @@ oneDashboard.OneDashboardPageWidgetTableNullValues(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues.property.nullValue">null_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesSeriesOverrides">OneDashboardPageWidgetTableNullValuesSeriesOverrides</a>]]</code> | series_overrides block. |
 
 ---
@@ -9731,7 +9731,7 @@ null_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -9745,7 +9745,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetTa
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -9781,7 +9781,7 @@ null_value: str
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -9795,7 +9795,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -9835,7 +9835,7 @@ column_name: str
 
 Name of the column in the table, to which the threshold would be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#column_name OneDashboard#column_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#column_name OneDashboard#column_name}
 
 ---
 
@@ -9849,7 +9849,7 @@ from: typing.Union[int, float]
 
 The number from which the range starts in thresholds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#from OneDashboard#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#from OneDashboard#from}
 
 ---
 
@@ -9863,7 +9863,7 @@ severity: str
 
 Severity of the threshold, which would reflect in the widget, in the range of the threshold specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#severity OneDashboard#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#severity OneDashboard#severity}
 
 ---
 
@@ -9877,7 +9877,7 @@ to: typing.Union[int, float]
 
 The number at which the range ends in thresholds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#to OneDashboard#to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#to OneDashboard#to}
 
 ---
 
@@ -9899,7 +9899,7 @@ oneDashboard.OneDashboardPageWidgetTableUnits(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnits.property.seriesOverrides">series_overrides</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsSeriesOverrides">OneDashboardPageWidgetTableUnitsSeriesOverrides</a>]]</code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnits.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -9913,7 +9913,7 @@ series_overrides: typing.Union[IResolvable, typing.List[OneDashboardPageWidgetTa
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -9925,7 +9925,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -9961,7 +9961,7 @@ series_name: str
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -9975,7 +9975,7 @@ unit: str
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -10025,7 +10025,7 @@ name: str
 
 The variable identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#name OneDashboard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -10039,7 +10039,7 @@ replacement_strategy: str
 
 Indicates the strategy to apply when replacing a variable in a NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#replacement_strategy OneDashboard#replacement_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#replacement_strategy OneDashboard#replacement_strategy}
 
 ---
 
@@ -10053,7 +10053,7 @@ title: str
 
 Human-friendly display string for this variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -10067,7 +10067,7 @@ type: str
 
 Specifies the data type of the variable and where its possible values may come from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#type OneDashboard#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#type OneDashboard#type}
 
 ---
 
@@ -10081,7 +10081,7 @@ default_values: typing.List[str]
 
 Default values for this variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#default_values OneDashboard#default_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#default_values OneDashboard#default_values}
 
 ---
 
@@ -10095,7 +10095,7 @@ is_multi_selection: typing.Union[bool, IResolvable]
 
 Indicates whether this variable supports multiple selection or not. Only applies to variables of type NRQL or ENUM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#is_multi_selection OneDashboard#is_multi_selection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#is_multi_selection OneDashboard#is_multi_selection}
 
 ---
 
@@ -10109,7 +10109,7 @@ item: typing.Union[IResolvable, typing.List[OneDashboardVariableItem]]
 
 item block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#item OneDashboard#item}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#item OneDashboard#item}
 
 ---
 
@@ -10123,7 +10123,7 @@ nrql_query: OneDashboardVariableNrqlQuery
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -10137,7 +10137,7 @@ options: typing.Union[IResolvable, typing.List[OneDashboardVariableOptions]]
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#options OneDashboard#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#options OneDashboard#options}
 
 ---
 
@@ -10173,7 +10173,7 @@ value: str
 
 A possible variable value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#value OneDashboard#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#value OneDashboard#value}
 
 ---
 
@@ -10187,7 +10187,7 @@ title: str
 
 A human-friendly display string for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -10223,7 +10223,7 @@ query: str
 
 NRQL formatted query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -10237,7 +10237,7 @@ account_ids: typing.List[typing.Union[int, float]]
 
 New Relic account ID(s) to issue the query against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#account_ids OneDashboard#account_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#account_ids OneDashboard#account_ids}
 
 ---
 
@@ -10273,7 +10273,7 @@ Only applies to variables of type NRQL.
 
 With this turned on, the time range for the NRQL query will override the time picker on dashboards and other pages. Turn this off to use the time picker as normal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
 
 ---
 
@@ -51615,7 +51615,7 @@ def put_y_axis_right(
 
 Minimum value of the range to be specified with the Y-Axis on the right of the line widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_right_max OneDashboard#y_axis_right_max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_right_max OneDashboard#y_axis_right_max}
 
 ---
 
@@ -51625,7 +51625,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Minimum value of the range to be specified with the Y-Axis on the right of the line widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_right_min OneDashboard#y_axis_right_min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_right_min OneDashboard#y_axis_right_min}
 
 ---
 
@@ -51635,7 +51635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 A set of series that helps specify the Y-Axis on the right of the line widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_right_series OneDashboard#y_axis_right_series}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_right_series OneDashboard#y_axis_right_series}
 
 ---
 
@@ -51645,7 +51645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 An attribute that helps specify the Y-Axis on the right of the line widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#y_axis_right_zero OneDashboard#y_axis_right_zero}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#y_axis_right_zero OneDashboard#y_axis_right_zero}
 
 ---
 
@@ -79238,7 +79238,7 @@ def put_nrql_query(
 
 NRQL formatted query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -79248,7 +79248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 New Relic account ID(s) to issue the query against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/one_dashboard#account_ids OneDashboard#account_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/one_dashboard#account_ids OneDashboard#account_ids}
 
 ---
 
