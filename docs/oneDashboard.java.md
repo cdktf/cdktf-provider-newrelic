@@ -4,7 +4,7 @@
 
 ### OneDashboard <a name="OneDashboard" id="@cdktf/provider-newrelic.oneDashboard.OneDashboard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard newrelic_one_dashboard}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard newrelic_one_dashboard}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboard.Initializer"></a>
 
@@ -50,7 +50,7 @@ OneDashboard.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboard.Initializer.parameter.page">page</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPage">OneDashboardPage</a>></code> | page block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboard.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | The New Relic account ID where you want to create the dashboard. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboard.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The dashboard's description. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboard.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#id OneDashboard#id}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboard.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#id OneDashboard#id}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboard.Initializer.parameter.permissions">permissions</a></code> | <code>java.lang.String</code> | Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboard.Initializer.parameter.variable">variable</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariable">OneDashboardVariable</a>></code> | variable block. |
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The dashboard's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#name OneDashboard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 page block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#page OneDashboard#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#page OneDashboard#page}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The New Relic account ID where you want to create the dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The dashboard's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#description OneDashboard#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#description OneDashboard#description}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#id OneDashboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#id OneDashboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -173,7 +173,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#permissions OneDashboard#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#permissions OneDashboard#permissions}
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#variable OneDashboard#variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#variable OneDashboard#variable}
 
 ---
 
@@ -671,7 +671,7 @@ The construct id used in the generated config for the OneDashboard to import.
 
 The id of the existing OneDashboard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1088,7 +1088,7 @@ OneDashboardConfig.builder()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.page">page</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPage">OneDashboardPage</a>></code> | page block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | The New Relic account ID where you want to create the dashboard. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.description">description</a></code> | <code>java.lang.String</code> | The dashboard's description. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#id OneDashboard#id}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#id OneDashboard#id}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.permissions">permissions</a></code> | <code>java.lang.String</code> | Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardConfig.property.variable">variable</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardVariable">OneDashboardVariable</a>></code> | variable block. |
 
@@ -1174,7 +1174,7 @@ public java.lang.String getName();
 
 The dashboard's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#name OneDashboard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -1188,7 +1188,7 @@ public java.lang.Object getPage();
 
 page block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#page OneDashboard#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#page OneDashboard#page}
 
 ---
 
@@ -1202,7 +1202,7 @@ public java.lang.Number getAccountId();
 
 The New Relic account ID where you want to create the dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -1216,7 +1216,7 @@ public java.lang.String getDescription();
 
 The dashboard's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#description OneDashboard#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#description OneDashboard#description}
 
 ---
 
@@ -1228,7 +1228,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#id OneDashboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#id OneDashboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1245,7 +1245,7 @@ public java.lang.String getPermissions();
 
 Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#permissions OneDashboard#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#permissions OneDashboard#permissions}
 
 ---
 
@@ -1259,7 +1259,7 @@ public java.lang.Object getVariable();
 
 variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#variable OneDashboard#variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#variable OneDashboard#variable}
 
 ---
 
@@ -1337,7 +1337,7 @@ public java.lang.String getName();
 
 The dashboard page's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#name OneDashboard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -1351,7 +1351,7 @@ public java.lang.String getDescription();
 
 The dashboard page's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#description OneDashboard#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#description OneDashboard#description}
 
 ---
 
@@ -1365,7 +1365,7 @@ public java.lang.Object getWidgetArea();
 
 widget_area block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#widget_area OneDashboard#widget_area}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#widget_area OneDashboard#widget_area}
 
 ---
 
@@ -1379,7 +1379,7 @@ public java.lang.Object getWidgetBar();
 
 widget_bar block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#widget_bar OneDashboard#widget_bar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#widget_bar OneDashboard#widget_bar}
 
 ---
 
@@ -1393,7 +1393,7 @@ public java.lang.Object getWidgetBillboard();
 
 widget_billboard block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#widget_billboard OneDashboard#widget_billboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#widget_billboard OneDashboard#widget_billboard}
 
 ---
 
@@ -1407,7 +1407,7 @@ public java.lang.Object getWidgetBullet();
 
 widget_bullet block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#widget_bullet OneDashboard#widget_bullet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#widget_bullet OneDashboard#widget_bullet}
 
 ---
 
@@ -1421,7 +1421,7 @@ public java.lang.Object getWidgetFunnel();
 
 widget_funnel block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#widget_funnel OneDashboard#widget_funnel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#widget_funnel OneDashboard#widget_funnel}
 
 ---
 
@@ -1435,7 +1435,7 @@ public java.lang.Object getWidgetHeatmap();
 
 widget_heatmap block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#widget_heatmap OneDashboard#widget_heatmap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#widget_heatmap OneDashboard#widget_heatmap}
 
 ---
 
@@ -1449,7 +1449,7 @@ public java.lang.Object getWidgetHistogram();
 
 widget_histogram block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#widget_histogram OneDashboard#widget_histogram}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#widget_histogram OneDashboard#widget_histogram}
 
 ---
 
@@ -1463,7 +1463,7 @@ public java.lang.Object getWidgetJson();
 
 widget_json block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#widget_json OneDashboard#widget_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#widget_json OneDashboard#widget_json}
 
 ---
 
@@ -1477,7 +1477,7 @@ public java.lang.Object getWidgetLine();
 
 widget_line block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#widget_line OneDashboard#widget_line}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#widget_line OneDashboard#widget_line}
 
 ---
 
@@ -1491,7 +1491,7 @@ public java.lang.Object getWidgetLogTable();
 
 widget_log_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#widget_log_table OneDashboard#widget_log_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#widget_log_table OneDashboard#widget_log_table}
 
 ---
 
@@ -1505,7 +1505,7 @@ public java.lang.Object getWidgetMarkdown();
 
 widget_markdown block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#widget_markdown OneDashboard#widget_markdown}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#widget_markdown OneDashboard#widget_markdown}
 
 ---
 
@@ -1519,7 +1519,7 @@ public java.lang.Object getWidgetPie();
 
 widget_pie block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#widget_pie OneDashboard#widget_pie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#widget_pie OneDashboard#widget_pie}
 
 ---
 
@@ -1533,7 +1533,7 @@ public java.lang.Object getWidgetStackedBar();
 
 widget_stacked_bar block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#widget_stacked_bar OneDashboard#widget_stacked_bar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#widget_stacked_bar OneDashboard#widget_stacked_bar}
 
 ---
 
@@ -1547,7 +1547,7 @@ public java.lang.Object getWidgetTable();
 
 widget_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#widget_table OneDashboard#widget_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#widget_table OneDashboard#widget_table}
 
 ---
 
@@ -1571,10 +1571,12 @@ OneDashboardPageWidgetArea.builder()
 //  .height(java.lang.Number)
 //  .ignoreTimeRange(java.lang.Boolean)
 //  .ignoreTimeRange(IResolvable)
+//  .initialSorting(OneDashboardPageWidgetAreaInitialSorting)
 //  .legendEnabled(java.lang.Boolean)
 //  .legendEnabled(IResolvable)
 //  .nullValues(IResolvable)
 //  .nullValues(java.util.List<OneDashboardPageWidgetAreaNullValues>)
+//  .refreshRate(java.lang.String)
 //  .units(IResolvable)
 //  .units(java.util.List<OneDashboardPageWidgetAreaUnits>)
 //  .width(java.lang.Number)
@@ -1587,20 +1589,22 @@ OneDashboardPageWidgetArea.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.nrqlQuery">nrqlQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNrqlQuery">OneDashboardPageWidgetAreaNrqlQuery</a>></code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.title">title</a></code> | <code>java.lang.String</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.colors">colors</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColors">OneDashboardPageWidgetAreaColors</a>></code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSorting">OneDashboardPageWidgetAreaInitialSorting</a></code> | initial_sorting block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.nullValues">nullValues</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues">OneDashboardPageWidgetAreaNullValues</a>></code> | null_values block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.units">units</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnits">OneDashboardPageWidgetAreaUnits</a>></code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -1612,7 +1616,7 @@ public java.lang.Number getColumn();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -1626,7 +1630,7 @@ public java.lang.Object getNrqlQuery();
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -1638,7 +1642,7 @@ public java.lang.Number getRow();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -1652,7 +1656,7 @@ public java.lang.String getTitle();
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -1666,7 +1670,7 @@ public java.lang.Object getColors();
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -1678,7 +1682,7 @@ public java.lang.Object getFacetShowOtherSeries();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -1690,7 +1694,7 @@ public java.lang.Number getHeight();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -1702,7 +1706,21 @@ public java.lang.Object getIgnoreTimeRange();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
+##### `initialSorting`<sup>Optional</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetAreaInitialSorting getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSorting">OneDashboardPageWidgetAreaInitialSorting</a>
+
+initial_sorting block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
 
 ---
 
@@ -1714,7 +1732,7 @@ public java.lang.Object getLegendEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -1728,7 +1746,19 @@ public java.lang.Object getNullValues();
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+
+---
+
+##### `refreshRate`<sup>Optional</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetArea.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}.
 
 ---
 
@@ -1742,7 +1772,7 @@ public java.lang.Object getUnits();
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -1754,7 +1784,7 @@ public java.lang.Number getWidth();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -1766,7 +1796,7 @@ public java.lang.Number getYAxisLeftMax();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -1778,7 +1808,7 @@ public java.lang.Number getYAxisLeftMin();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -1800,7 +1830,7 @@ OneDashboardPageWidgetAreaColors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColors.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsSeriesOverrides">OneDashboardPageWidgetAreaColorsSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -1813,7 +1843,7 @@ public java.lang.String getColor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -1827,7 +1857,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -1863,7 +1893,7 @@ public java.lang.String getColor();
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -1877,7 +1907,57 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+
+---
+
+### OneDashboardPageWidgetAreaInitialSorting <a name="OneDashboardPageWidgetAreaInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSorting"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSorting.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetAreaInitialSorting;
+
+OneDashboardPageWidgetAreaInitialSorting.builder()
+    .direction(java.lang.String)
+    .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSorting.property.direction">direction</a></code> | <code>java.lang.String</code> | Defines the sort order. Either ascending or descending. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSorting.property.name">name</a></code> | <code>java.lang.String</code> | The column name to be sorted. |
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSorting.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+Defines the sort order. Either ascending or descending.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#direction OneDashboard#direction}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSorting.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+The column name to be sorted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -1913,7 +1993,7 @@ public java.lang.String getQuery();
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -1927,7 +2007,7 @@ public java.lang.Number getAccountId();
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -1949,7 +2029,7 @@ OneDashboardPageWidgetAreaNullValues.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesSeriesOverrides">OneDashboardPageWidgetAreaNullValuesSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -1962,7 +2042,7 @@ public java.lang.String getNullValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -1976,7 +2056,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -2012,7 +2092,7 @@ public java.lang.String getNullValue();
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -2026,7 +2106,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -2049,7 +2129,7 @@ OneDashboardPageWidgetAreaUnits.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnits.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsSeriesOverrides">OneDashboardPageWidgetAreaUnitsSeriesOverrides</a>></code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -2063,7 +2143,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -2075,7 +2155,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -2111,7 +2191,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -2125,7 +2205,7 @@ public java.lang.String getUnit();
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -2151,11 +2231,13 @@ OneDashboardPageWidgetBar.builder()
 //  .height(java.lang.Number)
 //  .ignoreTimeRange(java.lang.Boolean)
 //  .ignoreTimeRange(IResolvable)
+//  .initialSorting(OneDashboardPageWidgetBarInitialSorting)
 //  .legendEnabled(java.lang.Boolean)
 //  .legendEnabled(IResolvable)
 //  .linkedEntityGuids(java.util.List<java.lang.String>)
 //  .nullValues(IResolvable)
 //  .nullValues(java.util.List<OneDashboardPageWidgetBarNullValues>)
+//  .refreshRate(java.lang.String)
 //  .units(IResolvable)
 //  .units(java.util.List<OneDashboardPageWidgetBarUnits>)
 //  .width(java.lang.Number)
@@ -2168,22 +2250,24 @@ OneDashboardPageWidgetBar.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.nrqlQuery">nrqlQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNrqlQuery">OneDashboardPageWidgetBarNrqlQuery</a>></code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.title">title</a></code> | <code>java.lang.String</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.colors">colors</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColors">OneDashboardPageWidgetBarColors</a>></code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.filterCurrentDashboard">filterCurrentDashboard</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Use this item to filter the current dashboard. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSorting">OneDashboardPageWidgetBarInitialSorting</a></code> | initial_sorting block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.linkedEntityGuids">linkedEntityGuids</a></code> | <code>java.util.List<java.lang.String></code> | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.nullValues">nullValues</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues">OneDashboardPageWidgetBarNullValues</a>></code> | null_values block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.units">units</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnits">OneDashboardPageWidgetBarUnits</a>></code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -2195,7 +2279,7 @@ public java.lang.Number getColumn();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -2209,7 +2293,7 @@ public java.lang.Object getNrqlQuery();
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -2221,7 +2305,7 @@ public java.lang.Number getRow();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -2235,7 +2319,7 @@ public java.lang.String getTitle();
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -2249,7 +2333,7 @@ public java.lang.Object getColors();
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -2261,7 +2345,7 @@ public java.lang.Object getFacetShowOtherSeries();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -2275,7 +2359,7 @@ public java.lang.Object getFilterCurrentDashboard();
 
 Use this item to filter the current dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
 
 ---
 
@@ -2287,7 +2371,7 @@ public java.lang.Number getHeight();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -2299,7 +2383,21 @@ public java.lang.Object getIgnoreTimeRange();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
+##### `initialSorting`<sup>Optional</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetBarInitialSorting getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSorting">OneDashboardPageWidgetBarInitialSorting</a>
+
+initial_sorting block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
 
 ---
 
@@ -2311,7 +2409,7 @@ public java.lang.Object getLegendEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -2325,7 +2423,7 @@ public java.util.List<java.lang.String> getLinkedEntityGuids();
 
 Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
 
 ---
 
@@ -2339,7 +2437,19 @@ public java.lang.Object getNullValues();
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+
+---
+
+##### `refreshRate`<sup>Optional</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBar.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}.
 
 ---
 
@@ -2353,7 +2463,7 @@ public java.lang.Object getUnits();
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -2365,7 +2475,7 @@ public java.lang.Number getWidth();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -2377,7 +2487,7 @@ public java.lang.Number getYAxisLeftMax();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -2389,7 +2499,7 @@ public java.lang.Number getYAxisLeftMin();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -2411,7 +2521,7 @@ OneDashboardPageWidgetBarColors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColors.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsSeriesOverrides">OneDashboardPageWidgetBarColorsSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -2424,7 +2534,7 @@ public java.lang.String getColor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -2438,7 +2548,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -2474,7 +2584,7 @@ public java.lang.String getColor();
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -2488,7 +2598,57 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+
+---
+
+### OneDashboardPageWidgetBarInitialSorting <a name="OneDashboardPageWidgetBarInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSorting"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSorting.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetBarInitialSorting;
+
+OneDashboardPageWidgetBarInitialSorting.builder()
+    .direction(java.lang.String)
+    .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSorting.property.direction">direction</a></code> | <code>java.lang.String</code> | Defines the sort order. Either ascending or descending. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSorting.property.name">name</a></code> | <code>java.lang.String</code> | The column name to be sorted. |
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSorting.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+Defines the sort order. Either ascending or descending.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#direction OneDashboard#direction}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSorting.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+The column name to be sorted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -2524,7 +2684,7 @@ public java.lang.String getQuery();
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -2538,7 +2698,7 @@ public java.lang.Number getAccountId();
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -2560,7 +2720,7 @@ OneDashboardPageWidgetBarNullValues.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesSeriesOverrides">OneDashboardPageWidgetBarNullValuesSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -2573,7 +2733,7 @@ public java.lang.String getNullValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -2587,7 +2747,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -2623,7 +2783,7 @@ public java.lang.String getNullValue();
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -2637,7 +2797,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -2660,7 +2820,7 @@ OneDashboardPageWidgetBarUnits.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnits.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsSeriesOverrides">OneDashboardPageWidgetBarUnitsSeriesOverrides</a>></code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -2674,7 +2834,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -2686,7 +2846,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -2722,7 +2882,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -2736,7 +2896,7 @@ public java.lang.String getUnit();
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -2761,10 +2921,12 @@ OneDashboardPageWidgetBillboard.builder()
 //  .height(java.lang.Number)
 //  .ignoreTimeRange(java.lang.Boolean)
 //  .ignoreTimeRange(IResolvable)
+//  .initialSorting(OneDashboardPageWidgetBillboardInitialSorting)
 //  .legendEnabled(java.lang.Boolean)
 //  .legendEnabled(IResolvable)
 //  .nullValues(IResolvable)
 //  .nullValues(java.util.List<OneDashboardPageWidgetBillboardNullValues>)
+//  .refreshRate(java.lang.String)
 //  .units(IResolvable)
 //  .units(java.util.List<OneDashboardPageWidgetBillboardUnits>)
 //  .warning(java.lang.String)
@@ -2778,22 +2940,24 @@ OneDashboardPageWidgetBillboard.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.nrqlQuery">nrqlQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNrqlQuery">OneDashboardPageWidgetBillboardNrqlQuery</a>></code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.title">title</a></code> | <code>java.lang.String</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.colors">colors</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColors">OneDashboardPageWidgetBillboardColors</a>></code> | colors block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.critical">critical</a></code> | <code>java.lang.String</code> | The critical threshold value. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSorting">OneDashboardPageWidgetBillboardInitialSorting</a></code> | initial_sorting block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.nullValues">nullValues</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues">OneDashboardPageWidgetBillboardNullValues</a>></code> | null_values block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.units">units</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnits">OneDashboardPageWidgetBillboardUnits</a>></code> | units block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.warning">warning</a></code> | <code>java.lang.String</code> | The warning threshold value. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -2805,7 +2969,7 @@ public java.lang.Number getColumn();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -2819,7 +2983,7 @@ public java.lang.Object getNrqlQuery();
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -2831,7 +2995,7 @@ public java.lang.Number getRow();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -2845,7 +3009,7 @@ public java.lang.String getTitle();
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -2859,7 +3023,7 @@ public java.lang.Object getColors();
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -2873,7 +3037,7 @@ public java.lang.String getCritical();
 
 The critical threshold value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#critical OneDashboard#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#critical OneDashboard#critical}
 
 ---
 
@@ -2885,7 +3049,7 @@ public java.lang.Object getFacetShowOtherSeries();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -2897,7 +3061,7 @@ public java.lang.Number getHeight();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -2909,7 +3073,21 @@ public java.lang.Object getIgnoreTimeRange();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
+##### `initialSorting`<sup>Optional</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetBillboardInitialSorting getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSorting">OneDashboardPageWidgetBillboardInitialSorting</a>
+
+initial_sorting block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
 
 ---
 
@@ -2921,7 +3099,7 @@ public java.lang.Object getLegendEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -2935,7 +3113,19 @@ public java.lang.Object getNullValues();
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+
+---
+
+##### `refreshRate`<sup>Optional</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboard.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}.
 
 ---
 
@@ -2949,7 +3139,7 @@ public java.lang.Object getUnits();
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -2963,7 +3153,7 @@ public java.lang.String getWarning();
 
 The warning threshold value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#warning OneDashboard#warning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#warning OneDashboard#warning}
 
 ---
 
@@ -2975,7 +3165,7 @@ public java.lang.Number getWidth();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -2987,7 +3177,7 @@ public java.lang.Number getYAxisLeftMax();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -2999,7 +3189,7 @@ public java.lang.Number getYAxisLeftMin();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -3021,7 +3211,7 @@ OneDashboardPageWidgetBillboardColors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColors.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsSeriesOverrides">OneDashboardPageWidgetBillboardColorsSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -3034,7 +3224,7 @@ public java.lang.String getColor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -3048,7 +3238,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -3084,7 +3274,7 @@ public java.lang.String getColor();
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -3098,7 +3288,57 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+
+---
+
+### OneDashboardPageWidgetBillboardInitialSorting <a name="OneDashboardPageWidgetBillboardInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSorting"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSorting.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetBillboardInitialSorting;
+
+OneDashboardPageWidgetBillboardInitialSorting.builder()
+    .direction(java.lang.String)
+    .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSorting.property.direction">direction</a></code> | <code>java.lang.String</code> | Defines the sort order. Either ascending or descending. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSorting.property.name">name</a></code> | <code>java.lang.String</code> | The column name to be sorted. |
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSorting.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+Defines the sort order. Either ascending or descending.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#direction OneDashboard#direction}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSorting.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+The column name to be sorted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -3134,7 +3374,7 @@ public java.lang.String getQuery();
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -3148,7 +3388,7 @@ public java.lang.Number getAccountId();
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -3170,7 +3410,7 @@ OneDashboardPageWidgetBillboardNullValues.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesSeriesOverrides">OneDashboardPageWidgetBillboardNullValuesSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -3183,7 +3423,7 @@ public java.lang.String getNullValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -3197,7 +3437,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -3233,7 +3473,7 @@ public java.lang.String getNullValue();
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -3247,7 +3487,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -3270,7 +3510,7 @@ OneDashboardPageWidgetBillboardUnits.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnits.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsSeriesOverrides">OneDashboardPageWidgetBillboardUnitsSeriesOverrides</a>></code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -3284,7 +3524,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -3296,7 +3536,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -3332,7 +3572,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -3346,7 +3586,7 @@ public java.lang.String getUnit();
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -3371,10 +3611,12 @@ OneDashboardPageWidgetBullet.builder()
 //  .height(java.lang.Number)
 //  .ignoreTimeRange(java.lang.Boolean)
 //  .ignoreTimeRange(IResolvable)
+//  .initialSorting(OneDashboardPageWidgetBulletInitialSorting)
 //  .legendEnabled(java.lang.Boolean)
 //  .legendEnabled(IResolvable)
 //  .nullValues(IResolvable)
 //  .nullValues(java.util.List<OneDashboardPageWidgetBulletNullValues>)
+//  .refreshRate(java.lang.String)
 //  .units(IResolvable)
 //  .units(java.util.List<OneDashboardPageWidgetBulletUnits>)
 //  .width(java.lang.Number)
@@ -3387,21 +3629,23 @@ OneDashboardPageWidgetBullet.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.limit">limit</a></code> | <code>java.lang.Number</code> | The maximum value for the visualization. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.nrqlQuery">nrqlQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNrqlQuery">OneDashboardPageWidgetBulletNrqlQuery</a>></code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.title">title</a></code> | <code>java.lang.String</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.colors">colors</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColors">OneDashboardPageWidgetBulletColors</a>></code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSorting">OneDashboardPageWidgetBulletInitialSorting</a></code> | initial_sorting block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.nullValues">nullValues</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues">OneDashboardPageWidgetBulletNullValues</a>></code> | null_values block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.units">units</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnits">OneDashboardPageWidgetBulletUnits</a>></code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -3413,7 +3657,7 @@ public java.lang.Number getColumn();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -3427,7 +3671,7 @@ public java.lang.Number getLimit();
 
 The maximum value for the visualization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#limit OneDashboard#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#limit OneDashboard#limit}
 
 ---
 
@@ -3441,7 +3685,7 @@ public java.lang.Object getNrqlQuery();
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -3453,7 +3697,7 @@ public java.lang.Number getRow();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -3467,7 +3711,7 @@ public java.lang.String getTitle();
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -3481,7 +3725,7 @@ public java.lang.Object getColors();
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -3493,7 +3737,7 @@ public java.lang.Object getFacetShowOtherSeries();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -3505,7 +3749,7 @@ public java.lang.Number getHeight();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -3517,7 +3761,21 @@ public java.lang.Object getIgnoreTimeRange();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
+##### `initialSorting`<sup>Optional</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetBulletInitialSorting getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSorting">OneDashboardPageWidgetBulletInitialSorting</a>
+
+initial_sorting block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
 
 ---
 
@@ -3529,7 +3787,7 @@ public java.lang.Object getLegendEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -3543,7 +3801,19 @@ public java.lang.Object getNullValues();
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+
+---
+
+##### `refreshRate`<sup>Optional</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBullet.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}.
 
 ---
 
@@ -3557,7 +3827,7 @@ public java.lang.Object getUnits();
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -3569,7 +3839,7 @@ public java.lang.Number getWidth();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -3581,7 +3851,7 @@ public java.lang.Number getYAxisLeftMax();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -3593,7 +3863,7 @@ public java.lang.Number getYAxisLeftMin();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -3615,7 +3885,7 @@ OneDashboardPageWidgetBulletColors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColors.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsSeriesOverrides">OneDashboardPageWidgetBulletColorsSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -3628,7 +3898,7 @@ public java.lang.String getColor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -3642,7 +3912,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -3678,7 +3948,7 @@ public java.lang.String getColor();
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -3692,7 +3962,57 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+
+---
+
+### OneDashboardPageWidgetBulletInitialSorting <a name="OneDashboardPageWidgetBulletInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSorting"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSorting.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetBulletInitialSorting;
+
+OneDashboardPageWidgetBulletInitialSorting.builder()
+    .direction(java.lang.String)
+    .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSorting.property.direction">direction</a></code> | <code>java.lang.String</code> | Defines the sort order. Either ascending or descending. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSorting.property.name">name</a></code> | <code>java.lang.String</code> | The column name to be sorted. |
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSorting.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+Defines the sort order. Either ascending or descending.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#direction OneDashboard#direction}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSorting.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+The column name to be sorted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -3728,7 +4048,7 @@ public java.lang.String getQuery();
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -3742,7 +4062,7 @@ public java.lang.Number getAccountId();
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -3764,7 +4084,7 @@ OneDashboardPageWidgetBulletNullValues.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesSeriesOverrides">OneDashboardPageWidgetBulletNullValuesSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -3777,7 +4097,7 @@ public java.lang.String getNullValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -3791,7 +4111,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -3827,7 +4147,7 @@ public java.lang.String getNullValue();
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -3841,7 +4161,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -3864,7 +4184,7 @@ OneDashboardPageWidgetBulletUnits.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnits.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsSeriesOverrides">OneDashboardPageWidgetBulletUnitsSeriesOverrides</a>></code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -3878,7 +4198,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -3890,7 +4210,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -3926,7 +4246,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -3940,7 +4260,7 @@ public java.lang.String getUnit();
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -3964,10 +4284,12 @@ OneDashboardPageWidgetFunnel.builder()
 //  .height(java.lang.Number)
 //  .ignoreTimeRange(java.lang.Boolean)
 //  .ignoreTimeRange(IResolvable)
+//  .initialSorting(OneDashboardPageWidgetFunnelInitialSorting)
 //  .legendEnabled(java.lang.Boolean)
 //  .legendEnabled(IResolvable)
 //  .nullValues(IResolvable)
 //  .nullValues(java.util.List<OneDashboardPageWidgetFunnelNullValues>)
+//  .refreshRate(java.lang.String)
 //  .units(IResolvable)
 //  .units(java.util.List<OneDashboardPageWidgetFunnelUnits>)
 //  .width(java.lang.Number)
@@ -3980,20 +4302,22 @@ OneDashboardPageWidgetFunnel.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.nrqlQuery">nrqlQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNrqlQuery">OneDashboardPageWidgetFunnelNrqlQuery</a>></code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.title">title</a></code> | <code>java.lang.String</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.colors">colors</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColors">OneDashboardPageWidgetFunnelColors</a>></code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSorting">OneDashboardPageWidgetFunnelInitialSorting</a></code> | initial_sorting block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.nullValues">nullValues</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues">OneDashboardPageWidgetFunnelNullValues</a>></code> | null_values block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.units">units</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnits">OneDashboardPageWidgetFunnelUnits</a>></code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -4005,7 +4329,7 @@ public java.lang.Number getColumn();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -4019,7 +4343,7 @@ public java.lang.Object getNrqlQuery();
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -4031,7 +4355,7 @@ public java.lang.Number getRow();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -4045,7 +4369,7 @@ public java.lang.String getTitle();
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -4059,7 +4383,7 @@ public java.lang.Object getColors();
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -4071,7 +4395,7 @@ public java.lang.Object getFacetShowOtherSeries();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -4083,7 +4407,7 @@ public java.lang.Number getHeight();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -4095,7 +4419,21 @@ public java.lang.Object getIgnoreTimeRange();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
+##### `initialSorting`<sup>Optional</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetFunnelInitialSorting getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSorting">OneDashboardPageWidgetFunnelInitialSorting</a>
+
+initial_sorting block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
 
 ---
 
@@ -4107,7 +4445,7 @@ public java.lang.Object getLegendEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -4121,7 +4459,19 @@ public java.lang.Object getNullValues();
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+
+---
+
+##### `refreshRate`<sup>Optional</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnel.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}.
 
 ---
 
@@ -4135,7 +4485,7 @@ public java.lang.Object getUnits();
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -4147,7 +4497,7 @@ public java.lang.Number getWidth();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -4159,7 +4509,7 @@ public java.lang.Number getYAxisLeftMax();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -4171,7 +4521,7 @@ public java.lang.Number getYAxisLeftMin();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -4193,7 +4543,7 @@ OneDashboardPageWidgetFunnelColors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColors.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsSeriesOverrides">OneDashboardPageWidgetFunnelColorsSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -4206,7 +4556,7 @@ public java.lang.String getColor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -4220,7 +4570,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -4256,7 +4606,7 @@ public java.lang.String getColor();
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -4270,7 +4620,57 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+
+---
+
+### OneDashboardPageWidgetFunnelInitialSorting <a name="OneDashboardPageWidgetFunnelInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSorting"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSorting.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetFunnelInitialSorting;
+
+OneDashboardPageWidgetFunnelInitialSorting.builder()
+    .direction(java.lang.String)
+    .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSorting.property.direction">direction</a></code> | <code>java.lang.String</code> | Defines the sort order. Either ascending or descending. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSorting.property.name">name</a></code> | <code>java.lang.String</code> | The column name to be sorted. |
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSorting.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+Defines the sort order. Either ascending or descending.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#direction OneDashboard#direction}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSorting.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+The column name to be sorted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -4306,7 +4706,7 @@ public java.lang.String getQuery();
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -4320,7 +4720,7 @@ public java.lang.Number getAccountId();
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -4342,7 +4742,7 @@ OneDashboardPageWidgetFunnelNullValues.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesSeriesOverrides">OneDashboardPageWidgetFunnelNullValuesSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -4355,7 +4755,7 @@ public java.lang.String getNullValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -4369,7 +4769,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -4405,7 +4805,7 @@ public java.lang.String getNullValue();
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -4419,7 +4819,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -4442,7 +4842,7 @@ OneDashboardPageWidgetFunnelUnits.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnits.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsSeriesOverrides">OneDashboardPageWidgetFunnelUnitsSeriesOverrides</a>></code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -4456,7 +4856,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -4468,7 +4868,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -4504,7 +4904,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -4518,7 +4918,7 @@ public java.lang.String getUnit();
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -4544,11 +4944,13 @@ OneDashboardPageWidgetHeatmap.builder()
 //  .height(java.lang.Number)
 //  .ignoreTimeRange(java.lang.Boolean)
 //  .ignoreTimeRange(IResolvable)
+//  .initialSorting(OneDashboardPageWidgetHeatmapInitialSorting)
 //  .legendEnabled(java.lang.Boolean)
 //  .legendEnabled(IResolvable)
 //  .linkedEntityGuids(java.util.List<java.lang.String>)
 //  .nullValues(IResolvable)
 //  .nullValues(java.util.List<OneDashboardPageWidgetHeatmapNullValues>)
+//  .refreshRate(java.lang.String)
 //  .units(IResolvable)
 //  .units(java.util.List<OneDashboardPageWidgetHeatmapUnits>)
 //  .width(java.lang.Number)
@@ -4561,22 +4963,24 @@ OneDashboardPageWidgetHeatmap.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.nrqlQuery">nrqlQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNrqlQuery">OneDashboardPageWidgetHeatmapNrqlQuery</a>></code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.title">title</a></code> | <code>java.lang.String</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.colors">colors</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColors">OneDashboardPageWidgetHeatmapColors</a>></code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.filterCurrentDashboard">filterCurrentDashboard</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Use this item to filter the current dashboard. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSorting">OneDashboardPageWidgetHeatmapInitialSorting</a></code> | initial_sorting block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.linkedEntityGuids">linkedEntityGuids</a></code> | <code>java.util.List<java.lang.String></code> | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.nullValues">nullValues</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues">OneDashboardPageWidgetHeatmapNullValues</a>></code> | null_values block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.units">units</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnits">OneDashboardPageWidgetHeatmapUnits</a>></code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -4588,7 +4992,7 @@ public java.lang.Number getColumn();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -4602,7 +5006,7 @@ public java.lang.Object getNrqlQuery();
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -4614,7 +5018,7 @@ public java.lang.Number getRow();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -4628,7 +5032,7 @@ public java.lang.String getTitle();
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -4642,7 +5046,7 @@ public java.lang.Object getColors();
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -4654,7 +5058,7 @@ public java.lang.Object getFacetShowOtherSeries();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -4668,7 +5072,7 @@ public java.lang.Object getFilterCurrentDashboard();
 
 Use this item to filter the current dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
 
 ---
 
@@ -4680,7 +5084,7 @@ public java.lang.Number getHeight();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -4692,7 +5096,21 @@ public java.lang.Object getIgnoreTimeRange();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
+##### `initialSorting`<sup>Optional</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetHeatmapInitialSorting getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSorting">OneDashboardPageWidgetHeatmapInitialSorting</a>
+
+initial_sorting block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
 
 ---
 
@@ -4704,7 +5122,7 @@ public java.lang.Object getLegendEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -4718,7 +5136,7 @@ public java.util.List<java.lang.String> getLinkedEntityGuids();
 
 Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
 
 ---
 
@@ -4732,7 +5150,19 @@ public java.lang.Object getNullValues();
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+
+---
+
+##### `refreshRate`<sup>Optional</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmap.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}.
 
 ---
 
@@ -4746,7 +5176,7 @@ public java.lang.Object getUnits();
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -4758,7 +5188,7 @@ public java.lang.Number getWidth();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -4770,7 +5200,7 @@ public java.lang.Number getYAxisLeftMax();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -4782,7 +5212,7 @@ public java.lang.Number getYAxisLeftMin();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -4804,7 +5234,7 @@ OneDashboardPageWidgetHeatmapColors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColors.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsSeriesOverrides">OneDashboardPageWidgetHeatmapColorsSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -4817,7 +5247,7 @@ public java.lang.String getColor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -4831,7 +5261,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -4867,7 +5297,7 @@ public java.lang.String getColor();
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -4881,7 +5311,57 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+
+---
+
+### OneDashboardPageWidgetHeatmapInitialSorting <a name="OneDashboardPageWidgetHeatmapInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSorting"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSorting.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetHeatmapInitialSorting;
+
+OneDashboardPageWidgetHeatmapInitialSorting.builder()
+    .direction(java.lang.String)
+    .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSorting.property.direction">direction</a></code> | <code>java.lang.String</code> | Defines the sort order. Either ascending or descending. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSorting.property.name">name</a></code> | <code>java.lang.String</code> | The column name to be sorted. |
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSorting.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+Defines the sort order. Either ascending or descending.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#direction OneDashboard#direction}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSorting.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+The column name to be sorted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -4917,7 +5397,7 @@ public java.lang.String getQuery();
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -4931,7 +5411,7 @@ public java.lang.Number getAccountId();
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -4953,7 +5433,7 @@ OneDashboardPageWidgetHeatmapNullValues.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides">OneDashboardPageWidgetHeatmapNullValuesSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -4966,7 +5446,7 @@ public java.lang.String getNullValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -4980,7 +5460,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -5016,7 +5496,7 @@ public java.lang.String getNullValue();
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -5030,7 +5510,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -5053,7 +5533,7 @@ OneDashboardPageWidgetHeatmapUnits.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnits.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsSeriesOverrides">OneDashboardPageWidgetHeatmapUnitsSeriesOverrides</a>></code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -5067,7 +5547,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -5079,7 +5559,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -5115,7 +5595,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -5129,7 +5609,7 @@ public java.lang.String getUnit();
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -5153,10 +5633,12 @@ OneDashboardPageWidgetHistogram.builder()
 //  .height(java.lang.Number)
 //  .ignoreTimeRange(java.lang.Boolean)
 //  .ignoreTimeRange(IResolvable)
+//  .initialSorting(OneDashboardPageWidgetHistogramInitialSorting)
 //  .legendEnabled(java.lang.Boolean)
 //  .legendEnabled(IResolvable)
 //  .nullValues(IResolvable)
 //  .nullValues(java.util.List<OneDashboardPageWidgetHistogramNullValues>)
+//  .refreshRate(java.lang.String)
 //  .units(IResolvable)
 //  .units(java.util.List<OneDashboardPageWidgetHistogramUnits>)
 //  .width(java.lang.Number)
@@ -5169,20 +5651,22 @@ OneDashboardPageWidgetHistogram.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.nrqlQuery">nrqlQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNrqlQuery">OneDashboardPageWidgetHistogramNrqlQuery</a>></code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.title">title</a></code> | <code>java.lang.String</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.colors">colors</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColors">OneDashboardPageWidgetHistogramColors</a>></code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSorting">OneDashboardPageWidgetHistogramInitialSorting</a></code> | initial_sorting block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.nullValues">nullValues</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues">OneDashboardPageWidgetHistogramNullValues</a>></code> | null_values block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.units">units</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnits">OneDashboardPageWidgetHistogramUnits</a>></code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -5194,7 +5678,7 @@ public java.lang.Number getColumn();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -5208,7 +5692,7 @@ public java.lang.Object getNrqlQuery();
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -5220,7 +5704,7 @@ public java.lang.Number getRow();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -5234,7 +5718,7 @@ public java.lang.String getTitle();
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -5248,7 +5732,7 @@ public java.lang.Object getColors();
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -5260,7 +5744,7 @@ public java.lang.Object getFacetShowOtherSeries();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -5272,7 +5756,7 @@ public java.lang.Number getHeight();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -5284,7 +5768,21 @@ public java.lang.Object getIgnoreTimeRange();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
+##### `initialSorting`<sup>Optional</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetHistogramInitialSorting getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSorting">OneDashboardPageWidgetHistogramInitialSorting</a>
+
+initial_sorting block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
 
 ---
 
@@ -5296,7 +5794,7 @@ public java.lang.Object getLegendEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -5310,7 +5808,19 @@ public java.lang.Object getNullValues();
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+
+---
+
+##### `refreshRate`<sup>Optional</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogram.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}.
 
 ---
 
@@ -5324,7 +5834,7 @@ public java.lang.Object getUnits();
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -5336,7 +5846,7 @@ public java.lang.Number getWidth();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -5348,7 +5858,7 @@ public java.lang.Number getYAxisLeftMax();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -5360,7 +5870,7 @@ public java.lang.Number getYAxisLeftMin();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -5382,7 +5892,7 @@ OneDashboardPageWidgetHistogramColors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColors.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsSeriesOverrides">OneDashboardPageWidgetHistogramColorsSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -5395,7 +5905,7 @@ public java.lang.String getColor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -5409,7 +5919,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -5445,7 +5955,7 @@ public java.lang.String getColor();
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -5459,7 +5969,57 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+
+---
+
+### OneDashboardPageWidgetHistogramInitialSorting <a name="OneDashboardPageWidgetHistogramInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSorting"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSorting.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetHistogramInitialSorting;
+
+OneDashboardPageWidgetHistogramInitialSorting.builder()
+    .direction(java.lang.String)
+    .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSorting.property.direction">direction</a></code> | <code>java.lang.String</code> | Defines the sort order. Either ascending or descending. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSorting.property.name">name</a></code> | <code>java.lang.String</code> | The column name to be sorted. |
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSorting.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+Defines the sort order. Either ascending or descending.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#direction OneDashboard#direction}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSorting.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+The column name to be sorted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -5495,7 +6055,7 @@ public java.lang.String getQuery();
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -5509,7 +6069,7 @@ public java.lang.Number getAccountId();
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -5531,7 +6091,7 @@ OneDashboardPageWidgetHistogramNullValues.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesSeriesOverrides">OneDashboardPageWidgetHistogramNullValuesSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -5544,7 +6104,7 @@ public java.lang.String getNullValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -5558,7 +6118,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -5594,7 +6154,7 @@ public java.lang.String getNullValue();
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -5608,7 +6168,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -5631,7 +6191,7 @@ OneDashboardPageWidgetHistogramUnits.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnits.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsSeriesOverrides">OneDashboardPageWidgetHistogramUnitsSeriesOverrides</a>></code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -5645,7 +6205,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -5657,7 +6217,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -5693,7 +6253,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -5707,7 +6267,7 @@ public java.lang.String getUnit();
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -5731,10 +6291,12 @@ OneDashboardPageWidgetJson.builder()
 //  .height(java.lang.Number)
 //  .ignoreTimeRange(java.lang.Boolean)
 //  .ignoreTimeRange(IResolvable)
+//  .initialSorting(OneDashboardPageWidgetJsonInitialSorting)
 //  .legendEnabled(java.lang.Boolean)
 //  .legendEnabled(IResolvable)
 //  .nullValues(IResolvable)
 //  .nullValues(java.util.List<OneDashboardPageWidgetJsonNullValues>)
+//  .refreshRate(java.lang.String)
 //  .units(IResolvable)
 //  .units(java.util.List<OneDashboardPageWidgetJsonUnits>)
 //  .width(java.lang.Number)
@@ -5747,20 +6309,22 @@ OneDashboardPageWidgetJson.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.nrqlQuery">nrqlQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNrqlQuery">OneDashboardPageWidgetJsonNrqlQuery</a>></code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.title">title</a></code> | <code>java.lang.String</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.colors">colors</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColors">OneDashboardPageWidgetJsonColors</a>></code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSorting">OneDashboardPageWidgetJsonInitialSorting</a></code> | initial_sorting block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.nullValues">nullValues</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues">OneDashboardPageWidgetJsonNullValues</a>></code> | null_values block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.units">units</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnits">OneDashboardPageWidgetJsonUnits</a>></code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -5772,7 +6336,7 @@ public java.lang.Number getColumn();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -5786,7 +6350,7 @@ public java.lang.Object getNrqlQuery();
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -5798,7 +6362,7 @@ public java.lang.Number getRow();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -5812,7 +6376,7 @@ public java.lang.String getTitle();
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -5826,7 +6390,7 @@ public java.lang.Object getColors();
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -5838,7 +6402,7 @@ public java.lang.Object getFacetShowOtherSeries();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -5850,7 +6414,7 @@ public java.lang.Number getHeight();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -5862,7 +6426,21 @@ public java.lang.Object getIgnoreTimeRange();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
+##### `initialSorting`<sup>Optional</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetJsonInitialSorting getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSorting">OneDashboardPageWidgetJsonInitialSorting</a>
+
+initial_sorting block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
 
 ---
 
@@ -5874,7 +6452,7 @@ public java.lang.Object getLegendEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -5888,7 +6466,19 @@ public java.lang.Object getNullValues();
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+
+---
+
+##### `refreshRate`<sup>Optional</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJson.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}.
 
 ---
 
@@ -5902,7 +6492,7 @@ public java.lang.Object getUnits();
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -5914,7 +6504,7 @@ public java.lang.Number getWidth();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -5926,7 +6516,7 @@ public java.lang.Number getYAxisLeftMax();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -5938,7 +6528,7 @@ public java.lang.Number getYAxisLeftMin();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -5960,7 +6550,7 @@ OneDashboardPageWidgetJsonColors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColors.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsSeriesOverrides">OneDashboardPageWidgetJsonColorsSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -5973,7 +6563,7 @@ public java.lang.String getColor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -5987,7 +6577,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -6023,7 +6613,7 @@ public java.lang.String getColor();
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -6037,7 +6627,57 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+
+---
+
+### OneDashboardPageWidgetJsonInitialSorting <a name="OneDashboardPageWidgetJsonInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSorting"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSorting.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetJsonInitialSorting;
+
+OneDashboardPageWidgetJsonInitialSorting.builder()
+    .direction(java.lang.String)
+    .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSorting.property.direction">direction</a></code> | <code>java.lang.String</code> | Defines the sort order. Either ascending or descending. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSorting.property.name">name</a></code> | <code>java.lang.String</code> | The column name to be sorted. |
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSorting.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+Defines the sort order. Either ascending or descending.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#direction OneDashboard#direction}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSorting.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+The column name to be sorted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -6073,7 +6713,7 @@ public java.lang.String getQuery();
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -6087,7 +6727,7 @@ public java.lang.Number getAccountId();
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -6109,7 +6749,7 @@ OneDashboardPageWidgetJsonNullValues.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesSeriesOverrides">OneDashboardPageWidgetJsonNullValuesSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -6122,7 +6762,7 @@ public java.lang.String getNullValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -6136,7 +6776,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -6172,7 +6812,7 @@ public java.lang.String getNullValue();
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -6186,7 +6826,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -6209,7 +6849,7 @@ OneDashboardPageWidgetJsonUnits.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnits.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsSeriesOverrides">OneDashboardPageWidgetJsonUnitsSeriesOverrides</a>></code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -6223,7 +6863,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -6235,7 +6875,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -6271,7 +6911,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -6285,7 +6925,7 @@ public java.lang.String getUnit();
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -6309,12 +6949,14 @@ OneDashboardPageWidgetLine.builder()
 //  .height(java.lang.Number)
 //  .ignoreTimeRange(java.lang.Boolean)
 //  .ignoreTimeRange(IResolvable)
+//  .initialSorting(OneDashboardPageWidgetLineInitialSorting)
 //  .isLabelVisible(java.lang.Boolean)
 //  .isLabelVisible(IResolvable)
 //  .legendEnabled(java.lang.Boolean)
 //  .legendEnabled(IResolvable)
 //  .nullValues(IResolvable)
 //  .nullValues(java.util.List<OneDashboardPageWidgetLineNullValues>)
+//  .refreshRate(java.lang.String)
 //  .threshold(IResolvable)
 //  .threshold(java.util.List<OneDashboardPageWidgetLineThreshold>)
 //  .units(IResolvable)
@@ -6332,22 +6974,24 @@ OneDashboardPageWidgetLine.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.nrqlQuery">nrqlQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQuery">OneDashboardPageWidgetLineNrqlQuery</a>></code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.title">title</a></code> | <code>java.lang.String</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.colors">colors</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColors">OneDashboardPageWidgetLineColors</a>></code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSorting">OneDashboardPageWidgetLineInitialSorting</a></code> | initial_sorting block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.isLabelVisible">isLabelVisible</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specified if the label should be visible in the graph created when specified with thresholds. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.nullValues">nullValues</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues">OneDashboardPageWidgetLineNullValues</a>></code> | null_values block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.threshold">threshold</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThreshold">OneDashboardPageWidgetLineThreshold</a>></code> | threshold block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.units">units</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnits">OneDashboardPageWidgetLineUnits</a>></code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisLeftZero">yAxisLeftZero</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies if the values on the graph to be rendered need to be fit to scale, or printed within the specified range. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.yAxisRight">yAxisRight</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight">OneDashboardPageWidgetLineYAxisRight</a></code> | y_axis_right block. |
 
@@ -6361,7 +7005,7 @@ public java.lang.Number getColumn();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -6375,7 +7019,7 @@ public java.lang.Object getNrqlQuery();
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -6387,7 +7031,7 @@ public java.lang.Number getRow();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -6401,7 +7045,7 @@ public java.lang.String getTitle();
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -6415,7 +7059,7 @@ public java.lang.Object getColors();
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -6427,7 +7071,7 @@ public java.lang.Object getFacetShowOtherSeries();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -6439,7 +7083,7 @@ public java.lang.Number getHeight();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -6451,7 +7095,21 @@ public java.lang.Object getIgnoreTimeRange();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
+##### `initialSorting`<sup>Optional</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetLineInitialSorting getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSorting">OneDashboardPageWidgetLineInitialSorting</a>
+
+initial_sorting block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
 
 ---
 
@@ -6465,7 +7123,7 @@ public java.lang.Object getIsLabelVisible();
 
 Specified if the label should be visible in the graph created when specified with thresholds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#is_label_visible OneDashboard#is_label_visible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#is_label_visible OneDashboard#is_label_visible}
 
 ---
 
@@ -6477,7 +7135,7 @@ public java.lang.Object getLegendEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -6491,7 +7149,19 @@ public java.lang.Object getNullValues();
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+
+---
+
+##### `refreshRate`<sup>Optional</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLine.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}.
 
 ---
 
@@ -6505,7 +7175,7 @@ public java.lang.Object getThreshold();
 
 threshold block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#threshold OneDashboard#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#threshold OneDashboard#threshold}
 
 ---
 
@@ -6519,7 +7189,7 @@ public java.lang.Object getUnits();
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -6531,7 +7201,7 @@ public java.lang.Number getWidth();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -6543,7 +7213,7 @@ public java.lang.Number getYAxisLeftMax();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -6555,7 +7225,7 @@ public java.lang.Number getYAxisLeftMin();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -6569,7 +7239,7 @@ public java.lang.Object getYAxisLeftZero();
 
 Specifies if the values on the graph to be rendered need to be fit to scale, or printed within the specified range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_zero OneDashboard#y_axis_left_zero}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_zero OneDashboard#y_axis_left_zero}
 
 ---
 
@@ -6583,7 +7253,7 @@ public OneDashboardPageWidgetLineYAxisRight getYAxisRight();
 
 y_axis_right block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_right OneDashboard#y_axis_right}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_right OneDashboard#y_axis_right}
 
 ---
 
@@ -6605,7 +7275,7 @@ OneDashboardPageWidgetLineColors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColors.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsSeriesOverrides">OneDashboardPageWidgetLineColorsSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -6618,7 +7288,7 @@ public java.lang.String getColor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -6632,7 +7302,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -6668,7 +7338,7 @@ public java.lang.String getColor();
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -6682,7 +7352,57 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+
+---
+
+### OneDashboardPageWidgetLineInitialSorting <a name="OneDashboardPageWidgetLineInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSorting"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSorting.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetLineInitialSorting;
+
+OneDashboardPageWidgetLineInitialSorting.builder()
+    .direction(java.lang.String)
+    .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSorting.property.direction">direction</a></code> | <code>java.lang.String</code> | Defines the sort order. Either ascending or descending. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSorting.property.name">name</a></code> | <code>java.lang.String</code> | The column name to be sorted. |
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSorting.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+Defines the sort order. Either ascending or descending.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#direction OneDashboard#direction}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSorting.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+The column name to be sorted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -6718,7 +7438,7 @@ public java.lang.String getQuery();
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -6732,7 +7452,7 @@ public java.lang.Number getAccountId();
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -6754,7 +7474,7 @@ OneDashboardPageWidgetLineNullValues.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesSeriesOverrides">OneDashboardPageWidgetLineNullValuesSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -6767,7 +7487,7 @@ public java.lang.String getNullValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -6781,7 +7501,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -6817,7 +7537,7 @@ public java.lang.String getNullValue();
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -6831,7 +7551,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -6871,7 +7591,7 @@ public java.lang.String getFrom();
 
 The number from which the range starts in thresholds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#from OneDashboard#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#from OneDashboard#from}
 
 ---
 
@@ -6885,7 +7605,7 @@ public java.lang.String getName();
 
 Name of the threshold created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#name OneDashboard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -6899,7 +7619,7 @@ public java.lang.String getSeverity();
 
 Severity of the threshold, which would reflect in the widget, in the range of the threshold specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#severity OneDashboard#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#severity OneDashboard#severity}
 
 ---
 
@@ -6913,7 +7633,7 @@ public java.lang.String getTo();
 
 The number at which the range ends in thresholds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#to OneDashboard#to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#to OneDashboard#to}
 
 ---
 
@@ -6936,7 +7656,7 @@ OneDashboardPageWidgetLineUnits.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnits.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnitsSeriesOverrides">OneDashboardPageWidgetLineUnitsSeriesOverrides</a>></code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -6950,7 +7670,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -6962,7 +7682,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -6998,7 +7718,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -7012,7 +7732,7 @@ public java.lang.String getUnit();
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -7053,7 +7773,7 @@ public java.lang.Number getYAxisRightMax();
 
 Minimum value of the range to be specified with the Y-Axis on the right of the line widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_right_max OneDashboard#y_axis_right_max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_right_max OneDashboard#y_axis_right_max}
 
 ---
 
@@ -7067,7 +7787,7 @@ public java.lang.Number getYAxisRightMin();
 
 Minimum value of the range to be specified with the Y-Axis on the right of the line widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_right_min OneDashboard#y_axis_right_min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_right_min OneDashboard#y_axis_right_min}
 
 ---
 
@@ -7081,7 +7801,7 @@ public java.util.List<java.lang.String> getYAxisRightSeries();
 
 A set of series that helps specify the Y-Axis on the right of the line widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_right_series OneDashboard#y_axis_right_series}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_right_series OneDashboard#y_axis_right_series}
 
 ---
 
@@ -7095,7 +7815,7 @@ public java.lang.Object getYAxisRightZero();
 
 An attribute that helps specify the Y-Axis on the right of the line widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_right_zero OneDashboard#y_axis_right_zero}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_right_zero OneDashboard#y_axis_right_zero}
 
 ---
 
@@ -7119,10 +7839,12 @@ OneDashboardPageWidgetLogTable.builder()
 //  .height(java.lang.Number)
 //  .ignoreTimeRange(java.lang.Boolean)
 //  .ignoreTimeRange(IResolvable)
+//  .initialSorting(OneDashboardPageWidgetLogTableInitialSorting)
 //  .legendEnabled(java.lang.Boolean)
 //  .legendEnabled(IResolvable)
 //  .nullValues(IResolvable)
 //  .nullValues(java.util.List<OneDashboardPageWidgetLogTableNullValues>)
+//  .refreshRate(java.lang.String)
 //  .units(IResolvable)
 //  .units(java.util.List<OneDashboardPageWidgetLogTableUnits>)
 //  .width(java.lang.Number)
@@ -7135,20 +7857,22 @@ OneDashboardPageWidgetLogTable.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.nrqlQuery">nrqlQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNrqlQuery">OneDashboardPageWidgetLogTableNrqlQuery</a>></code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.title">title</a></code> | <code>java.lang.String</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.colors">colors</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColors">OneDashboardPageWidgetLogTableColors</a>></code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSorting">OneDashboardPageWidgetLogTableInitialSorting</a></code> | initial_sorting block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.nullValues">nullValues</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues">OneDashboardPageWidgetLogTableNullValues</a>></code> | null_values block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.units">units</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnits">OneDashboardPageWidgetLogTableUnits</a>></code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -7160,7 +7884,7 @@ public java.lang.Number getColumn();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -7174,7 +7898,7 @@ public java.lang.Object getNrqlQuery();
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -7186,7 +7910,7 @@ public java.lang.Number getRow();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -7200,7 +7924,7 @@ public java.lang.String getTitle();
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -7214,7 +7938,7 @@ public java.lang.Object getColors();
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -7226,7 +7950,7 @@ public java.lang.Object getFacetShowOtherSeries();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -7238,7 +7962,7 @@ public java.lang.Number getHeight();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -7250,7 +7974,21 @@ public java.lang.Object getIgnoreTimeRange();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
+##### `initialSorting`<sup>Optional</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetLogTableInitialSorting getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSorting">OneDashboardPageWidgetLogTableInitialSorting</a>
+
+initial_sorting block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
 
 ---
 
@@ -7262,7 +8000,7 @@ public java.lang.Object getLegendEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -7276,7 +8014,19 @@ public java.lang.Object getNullValues();
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+
+---
+
+##### `refreshRate`<sup>Optional</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTable.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}.
 
 ---
 
@@ -7290,7 +8040,7 @@ public java.lang.Object getUnits();
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -7302,7 +8052,7 @@ public java.lang.Number getWidth();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -7314,7 +8064,7 @@ public java.lang.Number getYAxisLeftMax();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -7326,7 +8076,7 @@ public java.lang.Number getYAxisLeftMin();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -7348,7 +8098,7 @@ OneDashboardPageWidgetLogTableColors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColors.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsSeriesOverrides">OneDashboardPageWidgetLogTableColorsSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -7361,7 +8111,7 @@ public java.lang.String getColor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -7375,7 +8125,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -7411,7 +8161,7 @@ public java.lang.String getColor();
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -7425,7 +8175,57 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+
+---
+
+### OneDashboardPageWidgetLogTableInitialSorting <a name="OneDashboardPageWidgetLogTableInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSorting"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSorting.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetLogTableInitialSorting;
+
+OneDashboardPageWidgetLogTableInitialSorting.builder()
+    .direction(java.lang.String)
+    .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSorting.property.direction">direction</a></code> | <code>java.lang.String</code> | Defines the sort order. Either ascending or descending. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSorting.property.name">name</a></code> | <code>java.lang.String</code> | The column name to be sorted. |
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSorting.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+Defines the sort order. Either ascending or descending.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#direction OneDashboard#direction}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSorting.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+The column name to be sorted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -7461,7 +8261,7 @@ public java.lang.String getQuery();
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -7475,7 +8275,7 @@ public java.lang.Number getAccountId();
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -7497,7 +8297,7 @@ OneDashboardPageWidgetLogTableNullValues.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesSeriesOverrides">OneDashboardPageWidgetLogTableNullValuesSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -7510,7 +8310,7 @@ public java.lang.String getNullValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -7524,7 +8324,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -7560,7 +8360,7 @@ public java.lang.String getNullValue();
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -7574,7 +8374,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -7597,7 +8397,7 @@ OneDashboardPageWidgetLogTableUnits.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnits.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsSeriesOverrides">OneDashboardPageWidgetLogTableUnitsSeriesOverrides</a>></code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -7611,7 +8411,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -7623,7 +8423,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -7659,7 +8459,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -7673,7 +8473,7 @@ public java.lang.String getUnit();
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -7696,10 +8496,12 @@ OneDashboardPageWidgetMarkdown.builder()
 //  .height(java.lang.Number)
 //  .ignoreTimeRange(java.lang.Boolean)
 //  .ignoreTimeRange(IResolvable)
+//  .initialSorting(OneDashboardPageWidgetMarkdownInitialSorting)
 //  .legendEnabled(java.lang.Boolean)
 //  .legendEnabled(IResolvable)
 //  .nullValues(IResolvable)
 //  .nullValues(java.util.List<OneDashboardPageWidgetMarkdownNullValues>)
+//  .refreshRate(java.lang.String)
 //  .units(IResolvable)
 //  .units(java.util.List<OneDashboardPageWidgetMarkdownUnits>)
 //  .width(java.lang.Number)
@@ -7712,20 +8514,22 @@ OneDashboardPageWidgetMarkdown.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.text">text</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#text OneDashboard#text}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.text">text</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#text OneDashboard#text}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.title">title</a></code> | <code>java.lang.String</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.colors">colors</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColors">OneDashboardPageWidgetMarkdownColors</a>></code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSorting">OneDashboardPageWidgetMarkdownInitialSorting</a></code> | initial_sorting block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.nullValues">nullValues</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues">OneDashboardPageWidgetMarkdownNullValues</a>></code> | null_values block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.units">units</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnits">OneDashboardPageWidgetMarkdownUnits</a>></code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -7737,7 +8541,7 @@ public java.lang.Number getColumn();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -7749,7 +8553,7 @@ public java.lang.Number getRow();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -7761,7 +8565,7 @@ public java.lang.String getText();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#text OneDashboard#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#text OneDashboard#text}.
 
 ---
 
@@ -7775,7 +8579,7 @@ public java.lang.String getTitle();
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -7789,7 +8593,7 @@ public java.lang.Object getColors();
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -7801,7 +8605,7 @@ public java.lang.Object getFacetShowOtherSeries();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -7813,7 +8617,7 @@ public java.lang.Number getHeight();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -7825,7 +8629,21 @@ public java.lang.Object getIgnoreTimeRange();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
+##### `initialSorting`<sup>Optional</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetMarkdownInitialSorting getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSorting">OneDashboardPageWidgetMarkdownInitialSorting</a>
+
+initial_sorting block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
 
 ---
 
@@ -7837,7 +8655,7 @@ public java.lang.Object getLegendEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -7851,7 +8669,19 @@ public java.lang.Object getNullValues();
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+
+---
+
+##### `refreshRate`<sup>Optional</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdown.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}.
 
 ---
 
@@ -7865,7 +8695,7 @@ public java.lang.Object getUnits();
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -7877,7 +8707,7 @@ public java.lang.Number getWidth();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -7889,7 +8719,7 @@ public java.lang.Number getYAxisLeftMax();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -7901,7 +8731,7 @@ public java.lang.Number getYAxisLeftMin();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -7923,7 +8753,7 @@ OneDashboardPageWidgetMarkdownColors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColors.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsSeriesOverrides">OneDashboardPageWidgetMarkdownColorsSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -7936,7 +8766,7 @@ public java.lang.String getColor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -7950,7 +8780,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -7986,7 +8816,7 @@ public java.lang.String getColor();
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -8000,7 +8830,57 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+
+---
+
+### OneDashboardPageWidgetMarkdownInitialSorting <a name="OneDashboardPageWidgetMarkdownInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSorting"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSorting.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetMarkdownInitialSorting;
+
+OneDashboardPageWidgetMarkdownInitialSorting.builder()
+    .direction(java.lang.String)
+    .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSorting.property.direction">direction</a></code> | <code>java.lang.String</code> | Defines the sort order. Either ascending or descending. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSorting.property.name">name</a></code> | <code>java.lang.String</code> | The column name to be sorted. |
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSorting.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+Defines the sort order. Either ascending or descending.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#direction OneDashboard#direction}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSorting.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+The column name to be sorted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -8022,7 +8902,7 @@ OneDashboardPageWidgetMarkdownNullValues.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides">OneDashboardPageWidgetMarkdownNullValuesSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -8035,7 +8915,7 @@ public java.lang.String getNullValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -8049,7 +8929,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -8085,7 +8965,7 @@ public java.lang.String getNullValue();
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -8099,7 +8979,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -8122,7 +9002,7 @@ OneDashboardPageWidgetMarkdownUnits.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnits.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsSeriesOverrides">OneDashboardPageWidgetMarkdownUnitsSeriesOverrides</a>></code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -8136,7 +9016,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -8148,7 +9028,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -8184,7 +9064,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -8198,7 +9078,7 @@ public java.lang.String getUnit();
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -8224,11 +9104,13 @@ OneDashboardPageWidgetPie.builder()
 //  .height(java.lang.Number)
 //  .ignoreTimeRange(java.lang.Boolean)
 //  .ignoreTimeRange(IResolvable)
+//  .initialSorting(OneDashboardPageWidgetPieInitialSorting)
 //  .legendEnabled(java.lang.Boolean)
 //  .legendEnabled(IResolvable)
 //  .linkedEntityGuids(java.util.List<java.lang.String>)
 //  .nullValues(IResolvable)
 //  .nullValues(java.util.List<OneDashboardPageWidgetPieNullValues>)
+//  .refreshRate(java.lang.String)
 //  .units(IResolvable)
 //  .units(java.util.List<OneDashboardPageWidgetPieUnits>)
 //  .width(java.lang.Number)
@@ -8241,22 +9123,24 @@ OneDashboardPageWidgetPie.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.nrqlQuery">nrqlQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNrqlQuery">OneDashboardPageWidgetPieNrqlQuery</a>></code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.title">title</a></code> | <code>java.lang.String</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.colors">colors</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColors">OneDashboardPageWidgetPieColors</a>></code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.filterCurrentDashboard">filterCurrentDashboard</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Use this item to filter the current dashboard. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSorting">OneDashboardPageWidgetPieInitialSorting</a></code> | initial_sorting block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.linkedEntityGuids">linkedEntityGuids</a></code> | <code>java.util.List<java.lang.String></code> | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.nullValues">nullValues</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues">OneDashboardPageWidgetPieNullValues</a>></code> | null_values block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.units">units</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnits">OneDashboardPageWidgetPieUnits</a>></code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -8268,7 +9152,7 @@ public java.lang.Number getColumn();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -8282,7 +9166,7 @@ public java.lang.Object getNrqlQuery();
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -8294,7 +9178,7 @@ public java.lang.Number getRow();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -8308,7 +9192,7 @@ public java.lang.String getTitle();
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -8322,7 +9206,7 @@ public java.lang.Object getColors();
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -8334,7 +9218,7 @@ public java.lang.Object getFacetShowOtherSeries();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -8348,7 +9232,7 @@ public java.lang.Object getFilterCurrentDashboard();
 
 Use this item to filter the current dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
 
 ---
 
@@ -8360,7 +9244,7 @@ public java.lang.Number getHeight();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -8372,7 +9256,21 @@ public java.lang.Object getIgnoreTimeRange();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
+##### `initialSorting`<sup>Optional</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetPieInitialSorting getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSorting">OneDashboardPageWidgetPieInitialSorting</a>
+
+initial_sorting block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
 
 ---
 
@@ -8384,7 +9282,7 @@ public java.lang.Object getLegendEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -8398,7 +9296,7 @@ public java.util.List<java.lang.String> getLinkedEntityGuids();
 
 Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
 
 ---
 
@@ -8412,7 +9310,19 @@ public java.lang.Object getNullValues();
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+
+---
+
+##### `refreshRate`<sup>Optional</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPie.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}.
 
 ---
 
@@ -8426,7 +9336,7 @@ public java.lang.Object getUnits();
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -8438,7 +9348,7 @@ public java.lang.Number getWidth();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -8450,7 +9360,7 @@ public java.lang.Number getYAxisLeftMax();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -8462,7 +9372,7 @@ public java.lang.Number getYAxisLeftMin();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -8484,7 +9394,7 @@ OneDashboardPageWidgetPieColors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColors.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsSeriesOverrides">OneDashboardPageWidgetPieColorsSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -8497,7 +9407,7 @@ public java.lang.String getColor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -8511,7 +9421,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -8547,7 +9457,7 @@ public java.lang.String getColor();
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -8561,7 +9471,57 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+
+---
+
+### OneDashboardPageWidgetPieInitialSorting <a name="OneDashboardPageWidgetPieInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSorting"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSorting.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetPieInitialSorting;
+
+OneDashboardPageWidgetPieInitialSorting.builder()
+    .direction(java.lang.String)
+    .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSorting.property.direction">direction</a></code> | <code>java.lang.String</code> | Defines the sort order. Either ascending or descending. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSorting.property.name">name</a></code> | <code>java.lang.String</code> | The column name to be sorted. |
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSorting.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+Defines the sort order. Either ascending or descending.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#direction OneDashboard#direction}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSorting.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+The column name to be sorted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -8597,7 +9557,7 @@ public java.lang.String getQuery();
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -8611,7 +9571,7 @@ public java.lang.Number getAccountId();
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -8633,7 +9593,7 @@ OneDashboardPageWidgetPieNullValues.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesSeriesOverrides">OneDashboardPageWidgetPieNullValuesSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -8646,7 +9606,7 @@ public java.lang.String getNullValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -8660,7 +9620,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -8696,7 +9656,7 @@ public java.lang.String getNullValue();
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -8710,7 +9670,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -8733,7 +9693,7 @@ OneDashboardPageWidgetPieUnits.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnits.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsSeriesOverrides">OneDashboardPageWidgetPieUnitsSeriesOverrides</a>></code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -8747,7 +9707,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -8759,7 +9719,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -8795,7 +9755,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -8809,7 +9769,7 @@ public java.lang.String getUnit();
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -8833,10 +9793,12 @@ OneDashboardPageWidgetStackedBar.builder()
 //  .height(java.lang.Number)
 //  .ignoreTimeRange(java.lang.Boolean)
 //  .ignoreTimeRange(IResolvable)
+//  .initialSorting(OneDashboardPageWidgetStackedBarInitialSorting)
 //  .legendEnabled(java.lang.Boolean)
 //  .legendEnabled(IResolvable)
 //  .nullValues(IResolvable)
 //  .nullValues(java.util.List<OneDashboardPageWidgetStackedBarNullValues>)
+//  .refreshRate(java.lang.String)
 //  .units(IResolvable)
 //  .units(java.util.List<OneDashboardPageWidgetStackedBarUnits>)
 //  .width(java.lang.Number)
@@ -8849,20 +9811,22 @@ OneDashboardPageWidgetStackedBar.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.nrqlQuery">nrqlQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNrqlQuery">OneDashboardPageWidgetStackedBarNrqlQuery</a>></code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.title">title</a></code> | <code>java.lang.String</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.colors">colors</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColors">OneDashboardPageWidgetStackedBarColors</a>></code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSorting">OneDashboardPageWidgetStackedBarInitialSorting</a></code> | initial_sorting block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.nullValues">nullValues</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues">OneDashboardPageWidgetStackedBarNullValues</a>></code> | null_values block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.units">units</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnits">OneDashboardPageWidgetStackedBarUnits</a>></code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -8874,7 +9838,7 @@ public java.lang.Number getColumn();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -8888,7 +9852,7 @@ public java.lang.Object getNrqlQuery();
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -8900,7 +9864,7 @@ public java.lang.Number getRow();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -8914,7 +9878,7 @@ public java.lang.String getTitle();
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -8928,7 +9892,7 @@ public java.lang.Object getColors();
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -8940,7 +9904,7 @@ public java.lang.Object getFacetShowOtherSeries();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -8952,7 +9916,7 @@ public java.lang.Number getHeight();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -8964,7 +9928,21 @@ public java.lang.Object getIgnoreTimeRange();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
+##### `initialSorting`<sup>Optional</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetStackedBarInitialSorting getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSorting">OneDashboardPageWidgetStackedBarInitialSorting</a>
+
+initial_sorting block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
 
 ---
 
@@ -8976,7 +9954,7 @@ public java.lang.Object getLegendEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -8990,7 +9968,19 @@ public java.lang.Object getNullValues();
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+
+---
+
+##### `refreshRate`<sup>Optional</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBar.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}.
 
 ---
 
@@ -9004,7 +9994,7 @@ public java.lang.Object getUnits();
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -9016,7 +10006,7 @@ public java.lang.Number getWidth();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -9028,7 +10018,7 @@ public java.lang.Number getYAxisLeftMax();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -9040,7 +10030,7 @@ public java.lang.Number getYAxisLeftMin();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -9062,7 +10052,7 @@ OneDashboardPageWidgetStackedBarColors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColors.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsSeriesOverrides">OneDashboardPageWidgetStackedBarColorsSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -9075,7 +10065,7 @@ public java.lang.String getColor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -9089,7 +10079,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -9125,7 +10115,7 @@ public java.lang.String getColor();
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -9139,7 +10129,57 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+
+---
+
+### OneDashboardPageWidgetStackedBarInitialSorting <a name="OneDashboardPageWidgetStackedBarInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSorting"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSorting.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetStackedBarInitialSorting;
+
+OneDashboardPageWidgetStackedBarInitialSorting.builder()
+    .direction(java.lang.String)
+    .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSorting.property.direction">direction</a></code> | <code>java.lang.String</code> | Defines the sort order. Either ascending or descending. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSorting.property.name">name</a></code> | <code>java.lang.String</code> | The column name to be sorted. |
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSorting.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+Defines the sort order. Either ascending or descending.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#direction OneDashboard#direction}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSorting.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+The column name to be sorted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -9175,7 +10215,7 @@ public java.lang.String getQuery();
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -9189,7 +10229,7 @@ public java.lang.Number getAccountId();
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -9211,7 +10251,7 @@ OneDashboardPageWidgetStackedBarNullValues.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides">OneDashboardPageWidgetStackedBarNullValuesSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -9224,7 +10264,7 @@ public java.lang.String getNullValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -9238,7 +10278,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -9274,7 +10314,7 @@ public java.lang.String getNullValue();
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -9288,7 +10328,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -9311,7 +10351,7 @@ OneDashboardPageWidgetStackedBarUnits.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnits.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsSeriesOverrides">OneDashboardPageWidgetStackedBarUnitsSeriesOverrides</a>></code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -9325,7 +10365,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -9337,7 +10377,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -9373,7 +10413,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -9387,7 +10427,7 @@ public java.lang.String getUnit();
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -9413,11 +10453,13 @@ OneDashboardPageWidgetTable.builder()
 //  .height(java.lang.Number)
 //  .ignoreTimeRange(java.lang.Boolean)
 //  .ignoreTimeRange(IResolvable)
+//  .initialSorting(OneDashboardPageWidgetTableInitialSorting)
 //  .legendEnabled(java.lang.Boolean)
 //  .legendEnabled(IResolvable)
 //  .linkedEntityGuids(java.util.List<java.lang.String>)
 //  .nullValues(IResolvable)
 //  .nullValues(java.util.List<OneDashboardPageWidgetTableNullValues>)
+//  .refreshRate(java.lang.String)
 //  .threshold(IResolvable)
 //  .threshold(java.util.List<OneDashboardPageWidgetTableThreshold>)
 //  .units(IResolvable)
@@ -9432,23 +10474,25 @@ OneDashboardPageWidgetTable.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.column">column</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.nrqlQuery">nrqlQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQuery">OneDashboardPageWidgetTableNrqlQuery</a>></code> | nrql_query block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.row">row</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.title">title</a></code> | <code>java.lang.String</code> | A title for the widget. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.colors">colors</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColors">OneDashboardPageWidgetTableColors</a>></code> | colors block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.facetShowOtherSeries">facetShowOtherSeries</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.filterCurrentDashboard">filterCurrentDashboard</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Use this item to filter the current dashboard. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.height">height</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSorting">OneDashboardPageWidgetTableInitialSorting</a></code> | initial_sorting block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.linkedEntityGuids">linkedEntityGuids</a></code> | <code>java.util.List<java.lang.String></code> | Related entities. Currently only supports Dashboard entities, but may allow other cases in the future. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.nullValues">nullValues</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues">OneDashboardPageWidgetTableNullValues</a>></code> | null_values block. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.threshold">threshold</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThreshold">OneDashboardPageWidgetTableThreshold</a>></code> | threshold block. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.units">units</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnits">OneDashboardPageWidgetTableUnits</a>></code> | units block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.width">width</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.yAxisLeftMax">yAxisLeftMax</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.yAxisLeftMin">yAxisLeftMin</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}. |
 
 ---
 
@@ -9460,7 +10504,7 @@ public java.lang.Number getColumn();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column OneDashboard#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column OneDashboard#column}.
 
 ---
 
@@ -9474,7 +10518,7 @@ public java.lang.Object getNrqlQuery();
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -9486,7 +10530,7 @@ public java.lang.Number getRow();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#row OneDashboard#row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#row OneDashboard#row}.
 
 ---
 
@@ -9500,7 +10544,7 @@ public java.lang.String getTitle();
 
 A title for the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -9514,7 +10558,7 @@ public java.lang.Object getColors();
 
 colors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#colors OneDashboard#colors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#colors OneDashboard#colors}
 
 ---
 
@@ -9526,7 +10570,7 @@ public java.lang.Object getFacetShowOtherSeries();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#facet_show_other_series OneDashboard#facet_show_other_series}.
 
 ---
 
@@ -9540,7 +10584,7 @@ public java.lang.Object getFilterCurrentDashboard();
 
 Use this item to filter the current dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#filter_current_dashboard OneDashboard#filter_current_dashboard}
 
 ---
 
@@ -9552,7 +10596,7 @@ public java.lang.Number getHeight();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#height OneDashboard#height}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#height OneDashboard#height}.
 
 ---
 
@@ -9564,7 +10608,21 @@ public java.lang.Object getIgnoreTimeRange();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}.
+
+---
+
+##### `initialSorting`<sup>Optional</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetTableInitialSorting getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSorting">OneDashboardPageWidgetTableInitialSorting</a>
+
+initial_sorting block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#initial_sorting OneDashboard#initial_sorting}
 
 ---
 
@@ -9576,7 +10634,7 @@ public java.lang.Object getLegendEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#legend_enabled OneDashboard#legend_enabled}.
 
 ---
 
@@ -9590,7 +10648,7 @@ public java.util.List<java.lang.String> getLinkedEntityGuids();
 
 Related entities. Currently only supports Dashboard entities, but may allow other cases in the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#linked_entity_guids OneDashboard#linked_entity_guids}
 
 ---
 
@@ -9604,7 +10662,19 @@ public java.lang.Object getNullValues();
 
 null_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_values OneDashboard#null_values}
+
+---
+
+##### `refreshRate`<sup>Optional</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTable.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#refresh_rate OneDashboard#refresh_rate}.
 
 ---
 
@@ -9618,7 +10688,7 @@ public java.lang.Object getThreshold();
 
 threshold block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#threshold OneDashboard#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#threshold OneDashboard#threshold}
 
 ---
 
@@ -9632,7 +10702,7 @@ public java.lang.Object getUnits();
 
 units block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#units OneDashboard#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#units OneDashboard#units}
 
 ---
 
@@ -9644,7 +10714,7 @@ public java.lang.Number getWidth();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#width OneDashboard#width}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#width OneDashboard#width}.
 
 ---
 
@@ -9656,7 +10726,7 @@ public java.lang.Number getYAxisLeftMax();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_max OneDashboard#y_axis_left_max}.
 
 ---
 
@@ -9668,7 +10738,7 @@ public java.lang.Number getYAxisLeftMin();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#y_axis_left_min OneDashboard#y_axis_left_min}.
 
 ---
 
@@ -9690,7 +10760,7 @@ OneDashboardPageWidgetTableColors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColors.property.color">color</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColors.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsSeriesOverrides">OneDashboardPageWidgetTableColorsSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -9703,7 +10773,7 @@ public java.lang.String getColor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}.
 
 ---
 
@@ -9717,7 +10787,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -9753,7 +10823,7 @@ public java.lang.String getColor();
 
 Color code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#color OneDashboard#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#color OneDashboard#color}
 
 ---
 
@@ -9767,7 +10837,57 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+
+---
+
+### OneDashboardPageWidgetTableInitialSorting <a name="OneDashboardPageWidgetTableInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSorting"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSorting.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetTableInitialSorting;
+
+OneDashboardPageWidgetTableInitialSorting.builder()
+    .direction(java.lang.String)
+    .name(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSorting.property.direction">direction</a></code> | <code>java.lang.String</code> | Defines the sort order. Either ascending or descending. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSorting.property.name">name</a></code> | <code>java.lang.String</code> | The column name to be sorted. |
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSorting.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+Defines the sort order. Either ascending or descending.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#direction OneDashboard#direction}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSorting.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+The column name to be sorted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -9803,7 +10923,7 @@ public java.lang.String getQuery();
 
 The NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -9817,7 +10937,7 @@ public java.lang.Number getAccountId();
 
 The account id used for the NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
 
 ---
 
@@ -9839,7 +10959,7 @@ OneDashboardPageWidgetTableNullValues.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues.property.nullValue">nullValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesSeriesOverrides">OneDashboardPageWidgetTableNullValuesSeriesOverrides</a>></code> | series_overrides block. |
 
 ---
@@ -9852,7 +10972,7 @@ public java.lang.String getNullValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}.
 
 ---
 
@@ -9866,7 +10986,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -9902,7 +11022,7 @@ public java.lang.String getNullValue();
 
 Null value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#null_value OneDashboard#null_value}
 
 ---
 
@@ -9916,7 +11036,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -9956,7 +11076,7 @@ public java.lang.String getColumnName();
 
 Name of the column in the table, to which the threshold would be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#column_name OneDashboard#column_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#column_name OneDashboard#column_name}
 
 ---
 
@@ -9970,7 +11090,7 @@ public java.lang.String getFrom();
 
 The number from which the range starts in thresholds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#from OneDashboard#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#from OneDashboard#from}
 
 ---
 
@@ -9984,7 +11104,7 @@ public java.lang.String getSeverity();
 
 Severity of the threshold, which would reflect in the widget, in the range of the threshold specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#severity OneDashboard#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#severity OneDashboard#severity}
 
 ---
 
@@ -9998,7 +11118,7 @@ public java.lang.String getTo();
 
 The number at which the range ends in thresholds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#to OneDashboard#to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#to OneDashboard#to}
 
 ---
 
@@ -10021,7 +11141,7 @@ OneDashboardPageWidgetTableUnits.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnits.property.seriesOverrides">seriesOverrides</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnitsSeriesOverrides">OneDashboardPageWidgetTableUnitsSeriesOverrides</a>></code> | series_overrides block. |
-| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableUnits.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}. |
 
 ---
 
@@ -10035,7 +11155,7 @@ public java.lang.Object getSeriesOverrides();
 
 series_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 
 ---
 
@@ -10047,7 +11167,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 
 ---
 
@@ -10083,7 +11203,7 @@ public java.lang.String getSeriesName();
 
 Series name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_name OneDashboard#series_name}
 
 ---
 
@@ -10097,7 +11217,7 @@ public java.lang.String getUnit();
 
 Unit name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#unit OneDashboard#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}
 
 ---
 
@@ -10150,7 +11270,7 @@ public java.lang.String getName();
 
 The variable identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#name OneDashboard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#name OneDashboard#name}
 
 ---
 
@@ -10164,7 +11284,7 @@ public java.lang.String getReplacementStrategy();
 
 Indicates the strategy to apply when replacing a variable in a NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#replacement_strategy OneDashboard#replacement_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#replacement_strategy OneDashboard#replacement_strategy}
 
 ---
 
@@ -10178,7 +11298,7 @@ public java.lang.String getTitle();
 
 Human-friendly display string for this variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -10192,7 +11312,7 @@ public java.lang.String getType();
 
 Specifies the data type of the variable and where its possible values may come from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#type OneDashboard#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#type OneDashboard#type}
 
 ---
 
@@ -10206,7 +11326,7 @@ public java.util.List<java.lang.String> getDefaultValues();
 
 Default values for this variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#default_values OneDashboard#default_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#default_values OneDashboard#default_values}
 
 ---
 
@@ -10220,7 +11340,7 @@ public java.lang.Object getIsMultiSelection();
 
 Indicates whether this variable supports multiple selection or not. Only applies to variables of type NRQL or ENUM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#is_multi_selection OneDashboard#is_multi_selection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#is_multi_selection OneDashboard#is_multi_selection}
 
 ---
 
@@ -10234,7 +11354,7 @@ public java.lang.Object getItem();
 
 item block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#item OneDashboard#item}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#item OneDashboard#item}
 
 ---
 
@@ -10248,7 +11368,7 @@ public OneDashboardVariableNrqlQuery getNrqlQuery();
 
 nrql_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#nrql_query OneDashboard#nrql_query}
 
 ---
 
@@ -10262,7 +11382,7 @@ public java.lang.Object getOptions();
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#options OneDashboard#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#options OneDashboard#options}
 
 ---
 
@@ -10298,7 +11418,7 @@ public java.lang.String getValue();
 
 A possible variable value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#value OneDashboard#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#value OneDashboard#value}
 
 ---
 
@@ -10312,7 +11432,7 @@ public java.lang.String getTitle();
 
 A human-friendly display string for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#title OneDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#title OneDashboard#title}
 
 ---
 
@@ -10348,7 +11468,7 @@ public java.lang.String getQuery();
 
 NRQL formatted query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#query OneDashboard#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#query OneDashboard#query}
 
 ---
 
@@ -10362,7 +11482,7 @@ public java.util.List<java.lang.Number> getAccountIds();
 
 New Relic account ID(s) to issue the query against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#account_ids OneDashboard#account_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#account_ids OneDashboard#account_ids}
 
 ---
 
@@ -10399,7 +11519,7 @@ Only applies to variables of type NRQL.
 
 With this turned on, the time range for the NRQL query will override the time picker on dashboards and other pages. Turn this off to use the time picker as normal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
 
 ---
 
@@ -12465,6 +13585,299 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### OneDashboardPageWidgetAreaInitialSortingOutputReference <a name="OneDashboardPageWidgetAreaInitialSortingOutputReference" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference;
+
+new OneDashboardPageWidgetAreaInitialSortingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSorting">OneDashboardPageWidgetAreaInitialSorting</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.property.directionInput"></a>
+
+```java
+public java.lang.String getDirectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference.property.internalValue"></a>
+
+```java
+public OneDashboardPageWidgetAreaInitialSorting getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSorting">OneDashboardPageWidgetAreaInitialSorting</a>
+
+---
+
+
 ### OneDashboardPageWidgetAreaList <a name="OneDashboardPageWidgetAreaList" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaList.Initializer"></a>
@@ -14155,6 +15568,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.putColors">putColors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.putInitialSorting">putInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.putNrqlQuery">putNrqlQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.putNullValues">putNullValues</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.putUnits">putUnits</a></code> | *No description.* |
@@ -14162,8 +15576,10 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.resetFacetShowOtherSeries">resetFacetShowOtherSeries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.resetHeight">resetHeight</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.resetIgnoreTimeRange">resetIgnoreTimeRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.resetInitialSorting">resetInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.resetLegendEnabled">resetLegendEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.resetNullValues">resetNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.resetRefreshRate">resetRefreshRate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.resetUnits">resetUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.resetWidth">resetWidth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.resetYAxisLeftMax">resetYAxisLeftMax</a></code> | *No description.* |
@@ -14333,6 +15749,18 @@ public void putColors(IResolvable OR java.util.List<OneDashboardPageWidgetAreaCo
 
 ---
 
+##### `putInitialSorting` <a name="putInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.putInitialSorting"></a>
+
+```java
+public void putInitialSorting(OneDashboardPageWidgetAreaInitialSorting value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.putInitialSorting.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSorting">OneDashboardPageWidgetAreaInitialSorting</a>
+
+---
+
 ##### `putNrqlQuery` <a name="putNrqlQuery" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.putNrqlQuery"></a>
 
 ```java
@@ -14393,6 +15821,12 @@ public void resetHeight()
 public void resetIgnoreTimeRange()
 ```
 
+##### `resetInitialSorting` <a name="resetInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.resetInitialSorting"></a>
+
+```java
+public void resetInitialSorting()
+```
+
 ##### `resetLegendEnabled` <a name="resetLegendEnabled" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.resetLegendEnabled"></a>
 
 ```java
@@ -14403,6 +15837,12 @@ public void resetLegendEnabled()
 
 ```java
 public void resetNullValues()
+```
+
+##### `resetRefreshRate` <a name="resetRefreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.resetRefreshRate"></a>
+
+```java
+public void resetRefreshRate()
 ```
 
 ##### `resetUnits` <a name="resetUnits" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.resetUnits"></a>
@@ -14438,6 +15878,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.colors">colors</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaColorsList">OneDashboardPageWidgetAreaColorsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference">OneDashboardPageWidgetAreaInitialSortingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.nrqlQuery">nrqlQuery</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNrqlQueryList">OneDashboardPageWidgetAreaNrqlQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.nullValues">nullValues</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValuesList">OneDashboardPageWidgetAreaNullValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.units">units</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnitsList">OneDashboardPageWidgetAreaUnitsList</a></code> | *No description.* |
@@ -14446,9 +15887,11 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.facetShowOtherSeriesInput">facetShowOtherSeriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.heightInput">heightInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.ignoreTimeRangeInput">ignoreTimeRangeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.initialSortingInput">initialSortingInput</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSorting">OneDashboardPageWidgetAreaInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.legendEnabledInput">legendEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.nrqlQueryInput">nrqlQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNrqlQuery">OneDashboardPageWidgetAreaNrqlQuery</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.nullValuesInput">nullValuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues">OneDashboardPageWidgetAreaNullValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.refreshRateInput">refreshRateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.rowInput">rowInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.unitsInput">unitsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaUnits">OneDashboardPageWidgetAreaUnits</a>></code> | *No description.* |
@@ -14460,6 +15903,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.height">height</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.row">row</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.width">width</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -14510,6 +15954,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `initialSorting`<sup>Required</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetAreaInitialSortingOutputReference getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSortingOutputReference">OneDashboardPageWidgetAreaInitialSortingOutputReference</a>
 
 ---
 
@@ -14593,6 +16047,16 @@ public java.lang.Object getIgnoreTimeRangeInput();
 
 ---
 
+##### `initialSortingInput`<sup>Optional</sup> <a name="initialSortingInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.initialSortingInput"></a>
+
+```java
+public OneDashboardPageWidgetAreaInitialSorting getInitialSortingInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaInitialSorting">OneDashboardPageWidgetAreaInitialSorting</a>
+
+---
+
 ##### `legendEnabledInput`<sup>Optional</sup> <a name="legendEnabledInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.legendEnabledInput"></a>
 
 ```java
@@ -14620,6 +16084,16 @@ public java.lang.Object getNullValuesInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaNullValues">OneDashboardPageWidgetAreaNullValues</a>>
+
+---
+
+##### `refreshRateInput`<sup>Optional</sup> <a name="refreshRateInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.refreshRateInput"></a>
+
+```java
+public java.lang.String getRefreshRateInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -14730,6 +16204,16 @@ public java.lang.Object getLegendEnabled();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `refreshRate`<sup>Required</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaOutputReference.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -16760,6 +18244,299 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### OneDashboardPageWidgetBarInitialSortingOutputReference <a name="OneDashboardPageWidgetBarInitialSortingOutputReference" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetBarInitialSortingOutputReference;
+
+new OneDashboardPageWidgetBarInitialSortingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSorting">OneDashboardPageWidgetBarInitialSorting</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.property.directionInput"></a>
+
+```java
+public java.lang.String getDirectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference.property.internalValue"></a>
+
+```java
+public OneDashboardPageWidgetBarInitialSorting getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSorting">OneDashboardPageWidgetBarInitialSorting</a>
+
+---
+
+
 ### OneDashboardPageWidgetBarList <a name="OneDashboardPageWidgetBarList" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarList.Initializer"></a>
@@ -18450,6 +20227,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.putColors">putColors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.putInitialSorting">putInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.putNrqlQuery">putNrqlQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.putNullValues">putNullValues</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.putUnits">putUnits</a></code> | *No description.* |
@@ -18458,9 +20236,11 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.resetFilterCurrentDashboard">resetFilterCurrentDashboard</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.resetHeight">resetHeight</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.resetIgnoreTimeRange">resetIgnoreTimeRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.resetInitialSorting">resetInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.resetLegendEnabled">resetLegendEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.resetLinkedEntityGuids">resetLinkedEntityGuids</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.resetNullValues">resetNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.resetRefreshRate">resetRefreshRate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.resetUnits">resetUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.resetWidth">resetWidth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.resetYAxisLeftMax">resetYAxisLeftMax</a></code> | *No description.* |
@@ -18630,6 +20410,18 @@ public void putColors(IResolvable OR java.util.List<OneDashboardPageWidgetBarCol
 
 ---
 
+##### `putInitialSorting` <a name="putInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.putInitialSorting"></a>
+
+```java
+public void putInitialSorting(OneDashboardPageWidgetBarInitialSorting value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.putInitialSorting.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSorting">OneDashboardPageWidgetBarInitialSorting</a>
+
+---
+
 ##### `putNrqlQuery` <a name="putNrqlQuery" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.putNrqlQuery"></a>
 
 ```java
@@ -18696,6 +20488,12 @@ public void resetHeight()
 public void resetIgnoreTimeRange()
 ```
 
+##### `resetInitialSorting` <a name="resetInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.resetInitialSorting"></a>
+
+```java
+public void resetInitialSorting()
+```
+
 ##### `resetLegendEnabled` <a name="resetLegendEnabled" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.resetLegendEnabled"></a>
 
 ```java
@@ -18712,6 +20510,12 @@ public void resetLinkedEntityGuids()
 
 ```java
 public void resetNullValues()
+```
+
+##### `resetRefreshRate` <a name="resetRefreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.resetRefreshRate"></a>
+
+```java
+public void resetRefreshRate()
 ```
 
 ##### `resetUnits` <a name="resetUnits" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.resetUnits"></a>
@@ -18747,6 +20551,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.colors">colors</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarColorsList">OneDashboardPageWidgetBarColorsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference">OneDashboardPageWidgetBarInitialSortingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.nrqlQuery">nrqlQuery</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNrqlQueryList">OneDashboardPageWidgetBarNrqlQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.nullValues">nullValues</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValuesList">OneDashboardPageWidgetBarNullValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.units">units</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnitsList">OneDashboardPageWidgetBarUnitsList</a></code> | *No description.* |
@@ -18756,10 +20561,12 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.filterCurrentDashboardInput">filterCurrentDashboardInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.heightInput">heightInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.ignoreTimeRangeInput">ignoreTimeRangeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.initialSortingInput">initialSortingInput</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSorting">OneDashboardPageWidgetBarInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.legendEnabledInput">legendEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.linkedEntityGuidsInput">linkedEntityGuidsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.nrqlQueryInput">nrqlQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNrqlQuery">OneDashboardPageWidgetBarNrqlQuery</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.nullValuesInput">nullValuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues">OneDashboardPageWidgetBarNullValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.refreshRateInput">refreshRateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.rowInput">rowInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.unitsInput">unitsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarUnits">OneDashboardPageWidgetBarUnits</a>></code> | *No description.* |
@@ -18773,6 +20580,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.linkedEntityGuids">linkedEntityGuids</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.row">row</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.width">width</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -18823,6 +20631,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `initialSorting`<sup>Required</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetBarInitialSortingOutputReference getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSortingOutputReference">OneDashboardPageWidgetBarInitialSortingOutputReference</a>
 
 ---
 
@@ -18916,6 +20734,16 @@ public java.lang.Object getIgnoreTimeRangeInput();
 
 ---
 
+##### `initialSortingInput`<sup>Optional</sup> <a name="initialSortingInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.initialSortingInput"></a>
+
+```java
+public OneDashboardPageWidgetBarInitialSorting getInitialSortingInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarInitialSorting">OneDashboardPageWidgetBarInitialSorting</a>
+
+---
+
 ##### `legendEnabledInput`<sup>Optional</sup> <a name="legendEnabledInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.legendEnabledInput"></a>
 
 ```java
@@ -18953,6 +20781,16 @@ public java.lang.Object getNullValuesInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarNullValues">OneDashboardPageWidgetBarNullValues</a>>
+
+---
+
+##### `refreshRateInput`<sup>Optional</sup> <a name="refreshRateInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.refreshRateInput"></a>
+
+```java
+public java.lang.String getRefreshRateInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -19083,6 +20921,16 @@ public java.util.List<java.lang.String> getLinkedEntityGuids();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `refreshRate`<sup>Required</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBarOutputReference.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -21113,6 +22961,299 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### OneDashboardPageWidgetBillboardInitialSortingOutputReference <a name="OneDashboardPageWidgetBillboardInitialSortingOutputReference" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference;
+
+new OneDashboardPageWidgetBillboardInitialSortingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSorting">OneDashboardPageWidgetBillboardInitialSorting</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.property.directionInput"></a>
+
+```java
+public java.lang.String getDirectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference.property.internalValue"></a>
+
+```java
+public OneDashboardPageWidgetBillboardInitialSorting getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSorting">OneDashboardPageWidgetBillboardInitialSorting</a>
+
+---
+
+
 ### OneDashboardPageWidgetBillboardList <a name="OneDashboardPageWidgetBillboardList" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardList.Initializer"></a>
@@ -22803,6 +24944,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.putColors">putColors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.putInitialSorting">putInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.putNrqlQuery">putNrqlQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.putNullValues">putNullValues</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.putUnits">putUnits</a></code> | *No description.* |
@@ -22811,8 +24953,10 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.resetFacetShowOtherSeries">resetFacetShowOtherSeries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.resetHeight">resetHeight</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.resetIgnoreTimeRange">resetIgnoreTimeRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.resetInitialSorting">resetInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.resetLegendEnabled">resetLegendEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.resetNullValues">resetNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.resetRefreshRate">resetRefreshRate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.resetUnits">resetUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.resetWarning">resetWarning</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.resetWidth">resetWidth</a></code> | *No description.* |
@@ -22983,6 +25127,18 @@ public void putColors(IResolvable OR java.util.List<OneDashboardPageWidgetBillbo
 
 ---
 
+##### `putInitialSorting` <a name="putInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.putInitialSorting"></a>
+
+```java
+public void putInitialSorting(OneDashboardPageWidgetBillboardInitialSorting value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.putInitialSorting.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSorting">OneDashboardPageWidgetBillboardInitialSorting</a>
+
+---
+
 ##### `putNrqlQuery` <a name="putNrqlQuery" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.putNrqlQuery"></a>
 
 ```java
@@ -23049,6 +25205,12 @@ public void resetHeight()
 public void resetIgnoreTimeRange()
 ```
 
+##### `resetInitialSorting` <a name="resetInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.resetInitialSorting"></a>
+
+```java
+public void resetInitialSorting()
+```
+
 ##### `resetLegendEnabled` <a name="resetLegendEnabled" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.resetLegendEnabled"></a>
 
 ```java
@@ -23059,6 +25221,12 @@ public void resetLegendEnabled()
 
 ```java
 public void resetNullValues()
+```
+
+##### `resetRefreshRate` <a name="resetRefreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.resetRefreshRate"></a>
+
+```java
+public void resetRefreshRate()
 ```
 
 ##### `resetUnits` <a name="resetUnits" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.resetUnits"></a>
@@ -23100,6 +25268,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.colors">colors</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColorsList">OneDashboardPageWidgetBillboardColorsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference">OneDashboardPageWidgetBillboardInitialSortingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.nrqlQuery">nrqlQuery</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNrqlQueryList">OneDashboardPageWidgetBillboardNrqlQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.nullValues">nullValues</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValuesList">OneDashboardPageWidgetBillboardNullValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.units">units</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnitsList">OneDashboardPageWidgetBillboardUnitsList</a></code> | *No description.* |
@@ -23109,9 +25278,11 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.facetShowOtherSeriesInput">facetShowOtherSeriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.heightInput">heightInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.ignoreTimeRangeInput">ignoreTimeRangeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.initialSortingInput">initialSortingInput</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSorting">OneDashboardPageWidgetBillboardInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.legendEnabledInput">legendEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.nrqlQueryInput">nrqlQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNrqlQuery">OneDashboardPageWidgetBillboardNrqlQuery</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.nullValuesInput">nullValuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues">OneDashboardPageWidgetBillboardNullValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.refreshRateInput">refreshRateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.rowInput">rowInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.unitsInput">unitsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardUnits">OneDashboardPageWidgetBillboardUnits</a>></code> | *No description.* |
@@ -23125,6 +25296,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.height">height</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.row">row</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.warning">warning</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -23176,6 +25348,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `initialSorting`<sup>Required</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetBillboardInitialSortingOutputReference getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSortingOutputReference">OneDashboardPageWidgetBillboardInitialSortingOutputReference</a>
 
 ---
 
@@ -23269,6 +25451,16 @@ public java.lang.Object getIgnoreTimeRangeInput();
 
 ---
 
+##### `initialSortingInput`<sup>Optional</sup> <a name="initialSortingInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.initialSortingInput"></a>
+
+```java
+public OneDashboardPageWidgetBillboardInitialSorting getInitialSortingInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardInitialSorting">OneDashboardPageWidgetBillboardInitialSorting</a>
+
+---
+
 ##### `legendEnabledInput`<sup>Optional</sup> <a name="legendEnabledInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.legendEnabledInput"></a>
 
 ```java
@@ -23296,6 +25488,16 @@ public java.lang.Object getNullValuesInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardNullValues">OneDashboardPageWidgetBillboardNullValues</a>>
+
+---
+
+##### `refreshRateInput`<sup>Optional</sup> <a name="refreshRateInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.refreshRateInput"></a>
+
+```java
+public java.lang.String getRefreshRateInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -23426,6 +25628,16 @@ public java.lang.Object getLegendEnabled();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `refreshRate`<sup>Required</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -25466,6 +27678,299 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### OneDashboardPageWidgetBulletInitialSortingOutputReference <a name="OneDashboardPageWidgetBulletInitialSortingOutputReference" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference;
+
+new OneDashboardPageWidgetBulletInitialSortingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSorting">OneDashboardPageWidgetBulletInitialSorting</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.property.directionInput"></a>
+
+```java
+public java.lang.String getDirectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference.property.internalValue"></a>
+
+```java
+public OneDashboardPageWidgetBulletInitialSorting getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSorting">OneDashboardPageWidgetBulletInitialSorting</a>
+
+---
+
+
 ### OneDashboardPageWidgetBulletList <a name="OneDashboardPageWidgetBulletList" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletList.Initializer"></a>
@@ -27156,6 +29661,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.putColors">putColors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.putInitialSorting">putInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.putNrqlQuery">putNrqlQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.putNullValues">putNullValues</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.putUnits">putUnits</a></code> | *No description.* |
@@ -27163,8 +29669,10 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.resetFacetShowOtherSeries">resetFacetShowOtherSeries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.resetHeight">resetHeight</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.resetIgnoreTimeRange">resetIgnoreTimeRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.resetInitialSorting">resetInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.resetLegendEnabled">resetLegendEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.resetNullValues">resetNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.resetRefreshRate">resetRefreshRate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.resetUnits">resetUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.resetWidth">resetWidth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.resetYAxisLeftMax">resetYAxisLeftMax</a></code> | *No description.* |
@@ -27334,6 +29842,18 @@ public void putColors(IResolvable OR java.util.List<OneDashboardPageWidgetBullet
 
 ---
 
+##### `putInitialSorting` <a name="putInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.putInitialSorting"></a>
+
+```java
+public void putInitialSorting(OneDashboardPageWidgetBulletInitialSorting value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.putInitialSorting.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSorting">OneDashboardPageWidgetBulletInitialSorting</a>
+
+---
+
 ##### `putNrqlQuery` <a name="putNrqlQuery" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.putNrqlQuery"></a>
 
 ```java
@@ -27394,6 +29914,12 @@ public void resetHeight()
 public void resetIgnoreTimeRange()
 ```
 
+##### `resetInitialSorting` <a name="resetInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.resetInitialSorting"></a>
+
+```java
+public void resetInitialSorting()
+```
+
 ##### `resetLegendEnabled` <a name="resetLegendEnabled" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.resetLegendEnabled"></a>
 
 ```java
@@ -27404,6 +29930,12 @@ public void resetLegendEnabled()
 
 ```java
 public void resetNullValues()
+```
+
+##### `resetRefreshRate` <a name="resetRefreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.resetRefreshRate"></a>
+
+```java
+public void resetRefreshRate()
 ```
 
 ##### `resetUnits` <a name="resetUnits" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.resetUnits"></a>
@@ -27439,6 +29971,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.colors">colors</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletColorsList">OneDashboardPageWidgetBulletColorsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference">OneDashboardPageWidgetBulletInitialSortingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.nrqlQuery">nrqlQuery</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNrqlQueryList">OneDashboardPageWidgetBulletNrqlQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.nullValues">nullValues</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValuesList">OneDashboardPageWidgetBulletNullValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.units">units</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnitsList">OneDashboardPageWidgetBulletUnitsList</a></code> | *No description.* |
@@ -27447,10 +29980,12 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.facetShowOtherSeriesInput">facetShowOtherSeriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.heightInput">heightInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.ignoreTimeRangeInput">ignoreTimeRangeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.initialSortingInput">initialSortingInput</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSorting">OneDashboardPageWidgetBulletInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.legendEnabledInput">legendEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.limitInput">limitInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.nrqlQueryInput">nrqlQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNrqlQuery">OneDashboardPageWidgetBulletNrqlQuery</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.nullValuesInput">nullValuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues">OneDashboardPageWidgetBulletNullValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.refreshRateInput">refreshRateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.rowInput">rowInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.unitsInput">unitsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletUnits">OneDashboardPageWidgetBulletUnits</a>></code> | *No description.* |
@@ -27463,6 +29998,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.limit">limit</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.row">row</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.width">width</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -27513,6 +30049,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `initialSorting`<sup>Required</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetBulletInitialSortingOutputReference getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSortingOutputReference">OneDashboardPageWidgetBulletInitialSortingOutputReference</a>
 
 ---
 
@@ -27596,6 +30142,16 @@ public java.lang.Object getIgnoreTimeRangeInput();
 
 ---
 
+##### `initialSortingInput`<sup>Optional</sup> <a name="initialSortingInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.initialSortingInput"></a>
+
+```java
+public OneDashboardPageWidgetBulletInitialSorting getInitialSortingInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletInitialSorting">OneDashboardPageWidgetBulletInitialSorting</a>
+
+---
+
 ##### `legendEnabledInput`<sup>Optional</sup> <a name="legendEnabledInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.legendEnabledInput"></a>
 
 ```java
@@ -27633,6 +30189,16 @@ public java.lang.Object getNullValuesInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletNullValues">OneDashboardPageWidgetBulletNullValues</a>>
+
+---
+
+##### `refreshRateInput`<sup>Optional</sup> <a name="refreshRateInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.refreshRateInput"></a>
+
+```java
+public java.lang.String getRefreshRateInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -27753,6 +30319,16 @@ public java.lang.Number getLimit();
 ```
 
 - *Type:* java.lang.Number
+
+---
+
+##### `refreshRate`<sup>Required</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBulletOutputReference.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -29783,6 +32359,299 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### OneDashboardPageWidgetFunnelInitialSortingOutputReference <a name="OneDashboardPageWidgetFunnelInitialSortingOutputReference" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference;
+
+new OneDashboardPageWidgetFunnelInitialSortingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSorting">OneDashboardPageWidgetFunnelInitialSorting</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.property.directionInput"></a>
+
+```java
+public java.lang.String getDirectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference.property.internalValue"></a>
+
+```java
+public OneDashboardPageWidgetFunnelInitialSorting getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSorting">OneDashboardPageWidgetFunnelInitialSorting</a>
+
+---
+
+
 ### OneDashboardPageWidgetFunnelList <a name="OneDashboardPageWidgetFunnelList" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelList.Initializer"></a>
@@ -31473,6 +34342,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.putColors">putColors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.putInitialSorting">putInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.putNrqlQuery">putNrqlQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.putNullValues">putNullValues</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.putUnits">putUnits</a></code> | *No description.* |
@@ -31480,8 +34350,10 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.resetFacetShowOtherSeries">resetFacetShowOtherSeries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.resetHeight">resetHeight</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.resetIgnoreTimeRange">resetIgnoreTimeRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.resetInitialSorting">resetInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.resetLegendEnabled">resetLegendEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.resetNullValues">resetNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.resetRefreshRate">resetRefreshRate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.resetUnits">resetUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.resetWidth">resetWidth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.resetYAxisLeftMax">resetYAxisLeftMax</a></code> | *No description.* |
@@ -31651,6 +34523,18 @@ public void putColors(IResolvable OR java.util.List<OneDashboardPageWidgetFunnel
 
 ---
 
+##### `putInitialSorting` <a name="putInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.putInitialSorting"></a>
+
+```java
+public void putInitialSorting(OneDashboardPageWidgetFunnelInitialSorting value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.putInitialSorting.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSorting">OneDashboardPageWidgetFunnelInitialSorting</a>
+
+---
+
 ##### `putNrqlQuery` <a name="putNrqlQuery" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.putNrqlQuery"></a>
 
 ```java
@@ -31711,6 +34595,12 @@ public void resetHeight()
 public void resetIgnoreTimeRange()
 ```
 
+##### `resetInitialSorting` <a name="resetInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.resetInitialSorting"></a>
+
+```java
+public void resetInitialSorting()
+```
+
 ##### `resetLegendEnabled` <a name="resetLegendEnabled" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.resetLegendEnabled"></a>
 
 ```java
@@ -31721,6 +34611,12 @@ public void resetLegendEnabled()
 
 ```java
 public void resetNullValues()
+```
+
+##### `resetRefreshRate` <a name="resetRefreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.resetRefreshRate"></a>
+
+```java
+public void resetRefreshRate()
 ```
 
 ##### `resetUnits` <a name="resetUnits" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.resetUnits"></a>
@@ -31756,6 +34652,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.colors">colors</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelColorsList">OneDashboardPageWidgetFunnelColorsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference">OneDashboardPageWidgetFunnelInitialSortingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.nrqlQuery">nrqlQuery</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNrqlQueryList">OneDashboardPageWidgetFunnelNrqlQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.nullValues">nullValues</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValuesList">OneDashboardPageWidgetFunnelNullValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.units">units</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnitsList">OneDashboardPageWidgetFunnelUnitsList</a></code> | *No description.* |
@@ -31764,9 +34661,11 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.facetShowOtherSeriesInput">facetShowOtherSeriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.heightInput">heightInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.ignoreTimeRangeInput">ignoreTimeRangeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.initialSortingInput">initialSortingInput</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSorting">OneDashboardPageWidgetFunnelInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.legendEnabledInput">legendEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.nrqlQueryInput">nrqlQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNrqlQuery">OneDashboardPageWidgetFunnelNrqlQuery</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.nullValuesInput">nullValuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues">OneDashboardPageWidgetFunnelNullValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.refreshRateInput">refreshRateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.rowInput">rowInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.unitsInput">unitsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelUnits">OneDashboardPageWidgetFunnelUnits</a>></code> | *No description.* |
@@ -31778,6 +34677,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.height">height</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.row">row</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.width">width</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -31828,6 +34728,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `initialSorting`<sup>Required</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetFunnelInitialSortingOutputReference getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSortingOutputReference">OneDashboardPageWidgetFunnelInitialSortingOutputReference</a>
 
 ---
 
@@ -31911,6 +34821,16 @@ public java.lang.Object getIgnoreTimeRangeInput();
 
 ---
 
+##### `initialSortingInput`<sup>Optional</sup> <a name="initialSortingInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.initialSortingInput"></a>
+
+```java
+public OneDashboardPageWidgetFunnelInitialSorting getInitialSortingInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelInitialSorting">OneDashboardPageWidgetFunnelInitialSorting</a>
+
+---
+
 ##### `legendEnabledInput`<sup>Optional</sup> <a name="legendEnabledInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.legendEnabledInput"></a>
 
 ```java
@@ -31938,6 +34858,16 @@ public java.lang.Object getNullValuesInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelNullValues">OneDashboardPageWidgetFunnelNullValues</a>>
+
+---
+
+##### `refreshRateInput`<sup>Optional</sup> <a name="refreshRateInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.refreshRateInput"></a>
+
+```java
+public java.lang.String getRefreshRateInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -32048,6 +34978,16 @@ public java.lang.Object getLegendEnabled();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `refreshRate`<sup>Required</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetFunnelOutputReference.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -34078,6 +37018,299 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### OneDashboardPageWidgetHeatmapInitialSortingOutputReference <a name="OneDashboardPageWidgetHeatmapInitialSortingOutputReference" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference;
+
+new OneDashboardPageWidgetHeatmapInitialSortingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSorting">OneDashboardPageWidgetHeatmapInitialSorting</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.property.directionInput"></a>
+
+```java
+public java.lang.String getDirectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference.property.internalValue"></a>
+
+```java
+public OneDashboardPageWidgetHeatmapInitialSorting getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSorting">OneDashboardPageWidgetHeatmapInitialSorting</a>
+
+---
+
+
 ### OneDashboardPageWidgetHeatmapList <a name="OneDashboardPageWidgetHeatmapList" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapList.Initializer"></a>
@@ -35768,6 +39001,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.putColors">putColors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.putInitialSorting">putInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.putNrqlQuery">putNrqlQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.putNullValues">putNullValues</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.putUnits">putUnits</a></code> | *No description.* |
@@ -35776,9 +39010,11 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.resetFilterCurrentDashboard">resetFilterCurrentDashboard</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.resetHeight">resetHeight</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.resetIgnoreTimeRange">resetIgnoreTimeRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.resetInitialSorting">resetInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.resetLegendEnabled">resetLegendEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.resetLinkedEntityGuids">resetLinkedEntityGuids</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.resetNullValues">resetNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.resetRefreshRate">resetRefreshRate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.resetUnits">resetUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.resetWidth">resetWidth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.resetYAxisLeftMax">resetYAxisLeftMax</a></code> | *No description.* |
@@ -35948,6 +39184,18 @@ public void putColors(IResolvable OR java.util.List<OneDashboardPageWidgetHeatma
 
 ---
 
+##### `putInitialSorting` <a name="putInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.putInitialSorting"></a>
+
+```java
+public void putInitialSorting(OneDashboardPageWidgetHeatmapInitialSorting value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.putInitialSorting.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSorting">OneDashboardPageWidgetHeatmapInitialSorting</a>
+
+---
+
 ##### `putNrqlQuery` <a name="putNrqlQuery" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.putNrqlQuery"></a>
 
 ```java
@@ -36014,6 +39262,12 @@ public void resetHeight()
 public void resetIgnoreTimeRange()
 ```
 
+##### `resetInitialSorting` <a name="resetInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.resetInitialSorting"></a>
+
+```java
+public void resetInitialSorting()
+```
+
 ##### `resetLegendEnabled` <a name="resetLegendEnabled" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.resetLegendEnabled"></a>
 
 ```java
@@ -36030,6 +39284,12 @@ public void resetLinkedEntityGuids()
 
 ```java
 public void resetNullValues()
+```
+
+##### `resetRefreshRate` <a name="resetRefreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.resetRefreshRate"></a>
+
+```java
+public void resetRefreshRate()
 ```
 
 ##### `resetUnits` <a name="resetUnits" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.resetUnits"></a>
@@ -36065,6 +39325,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.colors">colors</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapColorsList">OneDashboardPageWidgetHeatmapColorsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference">OneDashboardPageWidgetHeatmapInitialSortingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.nrqlQuery">nrqlQuery</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNrqlQueryList">OneDashboardPageWidgetHeatmapNrqlQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.nullValues">nullValues</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValuesList">OneDashboardPageWidgetHeatmapNullValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.units">units</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnitsList">OneDashboardPageWidgetHeatmapUnitsList</a></code> | *No description.* |
@@ -36074,10 +39335,12 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.filterCurrentDashboardInput">filterCurrentDashboardInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.heightInput">heightInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.ignoreTimeRangeInput">ignoreTimeRangeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.initialSortingInput">initialSortingInput</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSorting">OneDashboardPageWidgetHeatmapInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.legendEnabledInput">legendEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.linkedEntityGuidsInput">linkedEntityGuidsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.nrqlQueryInput">nrqlQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNrqlQuery">OneDashboardPageWidgetHeatmapNrqlQuery</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.nullValuesInput">nullValuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues">OneDashboardPageWidgetHeatmapNullValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.refreshRateInput">refreshRateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.rowInput">rowInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.unitsInput">unitsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapUnits">OneDashboardPageWidgetHeatmapUnits</a>></code> | *No description.* |
@@ -36091,6 +39354,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.linkedEntityGuids">linkedEntityGuids</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.row">row</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.width">width</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -36141,6 +39405,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `initialSorting`<sup>Required</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetHeatmapInitialSortingOutputReference getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSortingOutputReference">OneDashboardPageWidgetHeatmapInitialSortingOutputReference</a>
 
 ---
 
@@ -36234,6 +39508,16 @@ public java.lang.Object getIgnoreTimeRangeInput();
 
 ---
 
+##### `initialSortingInput`<sup>Optional</sup> <a name="initialSortingInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.initialSortingInput"></a>
+
+```java
+public OneDashboardPageWidgetHeatmapInitialSorting getInitialSortingInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapInitialSorting">OneDashboardPageWidgetHeatmapInitialSorting</a>
+
+---
+
 ##### `legendEnabledInput`<sup>Optional</sup> <a name="legendEnabledInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.legendEnabledInput"></a>
 
 ```java
@@ -36271,6 +39555,16 @@ public java.lang.Object getNullValuesInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapNullValues">OneDashboardPageWidgetHeatmapNullValues</a>>
+
+---
+
+##### `refreshRateInput`<sup>Optional</sup> <a name="refreshRateInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.refreshRateInput"></a>
+
+```java
+public java.lang.String getRefreshRateInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -36401,6 +39695,16 @@ public java.util.List<java.lang.String> getLinkedEntityGuids();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `refreshRate`<sup>Required</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHeatmapOutputReference.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -38431,6 +41735,299 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### OneDashboardPageWidgetHistogramInitialSortingOutputReference <a name="OneDashboardPageWidgetHistogramInitialSortingOutputReference" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference;
+
+new OneDashboardPageWidgetHistogramInitialSortingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSorting">OneDashboardPageWidgetHistogramInitialSorting</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.property.directionInput"></a>
+
+```java
+public java.lang.String getDirectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference.property.internalValue"></a>
+
+```java
+public OneDashboardPageWidgetHistogramInitialSorting getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSorting">OneDashboardPageWidgetHistogramInitialSorting</a>
+
+---
+
+
 ### OneDashboardPageWidgetHistogramList <a name="OneDashboardPageWidgetHistogramList" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramList.Initializer"></a>
@@ -40121,6 +43718,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.putColors">putColors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.putInitialSorting">putInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.putNrqlQuery">putNrqlQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.putNullValues">putNullValues</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.putUnits">putUnits</a></code> | *No description.* |
@@ -40128,8 +43726,10 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.resetFacetShowOtherSeries">resetFacetShowOtherSeries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.resetHeight">resetHeight</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.resetIgnoreTimeRange">resetIgnoreTimeRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.resetInitialSorting">resetInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.resetLegendEnabled">resetLegendEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.resetNullValues">resetNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.resetRefreshRate">resetRefreshRate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.resetUnits">resetUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.resetWidth">resetWidth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.resetYAxisLeftMax">resetYAxisLeftMax</a></code> | *No description.* |
@@ -40299,6 +43899,18 @@ public void putColors(IResolvable OR java.util.List<OneDashboardPageWidgetHistog
 
 ---
 
+##### `putInitialSorting` <a name="putInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.putInitialSorting"></a>
+
+```java
+public void putInitialSorting(OneDashboardPageWidgetHistogramInitialSorting value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.putInitialSorting.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSorting">OneDashboardPageWidgetHistogramInitialSorting</a>
+
+---
+
 ##### `putNrqlQuery` <a name="putNrqlQuery" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.putNrqlQuery"></a>
 
 ```java
@@ -40359,6 +43971,12 @@ public void resetHeight()
 public void resetIgnoreTimeRange()
 ```
 
+##### `resetInitialSorting` <a name="resetInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.resetInitialSorting"></a>
+
+```java
+public void resetInitialSorting()
+```
+
 ##### `resetLegendEnabled` <a name="resetLegendEnabled" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.resetLegendEnabled"></a>
 
 ```java
@@ -40369,6 +43987,12 @@ public void resetLegendEnabled()
 
 ```java
 public void resetNullValues()
+```
+
+##### `resetRefreshRate` <a name="resetRefreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.resetRefreshRate"></a>
+
+```java
+public void resetRefreshRate()
 ```
 
 ##### `resetUnits` <a name="resetUnits" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.resetUnits"></a>
@@ -40404,6 +44028,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.colors">colors</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramColorsList">OneDashboardPageWidgetHistogramColorsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference">OneDashboardPageWidgetHistogramInitialSortingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.nrqlQuery">nrqlQuery</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNrqlQueryList">OneDashboardPageWidgetHistogramNrqlQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.nullValues">nullValues</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValuesList">OneDashboardPageWidgetHistogramNullValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.units">units</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnitsList">OneDashboardPageWidgetHistogramUnitsList</a></code> | *No description.* |
@@ -40412,9 +44037,11 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.facetShowOtherSeriesInput">facetShowOtherSeriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.heightInput">heightInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.ignoreTimeRangeInput">ignoreTimeRangeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.initialSortingInput">initialSortingInput</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSorting">OneDashboardPageWidgetHistogramInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.legendEnabledInput">legendEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.nrqlQueryInput">nrqlQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNrqlQuery">OneDashboardPageWidgetHistogramNrqlQuery</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.nullValuesInput">nullValuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues">OneDashboardPageWidgetHistogramNullValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.refreshRateInput">refreshRateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.rowInput">rowInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.unitsInput">unitsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramUnits">OneDashboardPageWidgetHistogramUnits</a>></code> | *No description.* |
@@ -40426,6 +44053,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.height">height</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.row">row</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.width">width</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -40476,6 +44104,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `initialSorting`<sup>Required</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetHistogramInitialSortingOutputReference getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSortingOutputReference">OneDashboardPageWidgetHistogramInitialSortingOutputReference</a>
 
 ---
 
@@ -40559,6 +44197,16 @@ public java.lang.Object getIgnoreTimeRangeInput();
 
 ---
 
+##### `initialSortingInput`<sup>Optional</sup> <a name="initialSortingInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.initialSortingInput"></a>
+
+```java
+public OneDashboardPageWidgetHistogramInitialSorting getInitialSortingInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramInitialSorting">OneDashboardPageWidgetHistogramInitialSorting</a>
+
+---
+
 ##### `legendEnabledInput`<sup>Optional</sup> <a name="legendEnabledInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.legendEnabledInput"></a>
 
 ```java
@@ -40586,6 +44234,16 @@ public java.lang.Object getNullValuesInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramNullValues">OneDashboardPageWidgetHistogramNullValues</a>>
+
+---
+
+##### `refreshRateInput`<sup>Optional</sup> <a name="refreshRateInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.refreshRateInput"></a>
+
+```java
+public java.lang.String getRefreshRateInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -40696,6 +44354,16 @@ public java.lang.Object getLegendEnabled();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `refreshRate`<sup>Required</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetHistogramOutputReference.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -42726,6 +46394,299 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### OneDashboardPageWidgetJsonInitialSortingOutputReference <a name="OneDashboardPageWidgetJsonInitialSortingOutputReference" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference;
+
+new OneDashboardPageWidgetJsonInitialSortingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSorting">OneDashboardPageWidgetJsonInitialSorting</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.property.directionInput"></a>
+
+```java
+public java.lang.String getDirectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference.property.internalValue"></a>
+
+```java
+public OneDashboardPageWidgetJsonInitialSorting getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSorting">OneDashboardPageWidgetJsonInitialSorting</a>
+
+---
+
+
 ### OneDashboardPageWidgetJsonList <a name="OneDashboardPageWidgetJsonList" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonList.Initializer"></a>
@@ -44416,6 +48377,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.putColors">putColors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.putInitialSorting">putInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.putNrqlQuery">putNrqlQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.putNullValues">putNullValues</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.putUnits">putUnits</a></code> | *No description.* |
@@ -44423,8 +48385,10 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.resetFacetShowOtherSeries">resetFacetShowOtherSeries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.resetHeight">resetHeight</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.resetIgnoreTimeRange">resetIgnoreTimeRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.resetInitialSorting">resetInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.resetLegendEnabled">resetLegendEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.resetNullValues">resetNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.resetRefreshRate">resetRefreshRate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.resetUnits">resetUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.resetWidth">resetWidth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.resetYAxisLeftMax">resetYAxisLeftMax</a></code> | *No description.* |
@@ -44594,6 +48558,18 @@ public void putColors(IResolvable OR java.util.List<OneDashboardPageWidgetJsonCo
 
 ---
 
+##### `putInitialSorting` <a name="putInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.putInitialSorting"></a>
+
+```java
+public void putInitialSorting(OneDashboardPageWidgetJsonInitialSorting value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.putInitialSorting.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSorting">OneDashboardPageWidgetJsonInitialSorting</a>
+
+---
+
 ##### `putNrqlQuery` <a name="putNrqlQuery" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.putNrqlQuery"></a>
 
 ```java
@@ -44654,6 +48630,12 @@ public void resetHeight()
 public void resetIgnoreTimeRange()
 ```
 
+##### `resetInitialSorting` <a name="resetInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.resetInitialSorting"></a>
+
+```java
+public void resetInitialSorting()
+```
+
 ##### `resetLegendEnabled` <a name="resetLegendEnabled" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.resetLegendEnabled"></a>
 
 ```java
@@ -44664,6 +48646,12 @@ public void resetLegendEnabled()
 
 ```java
 public void resetNullValues()
+```
+
+##### `resetRefreshRate` <a name="resetRefreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.resetRefreshRate"></a>
+
+```java
+public void resetRefreshRate()
 ```
 
 ##### `resetUnits` <a name="resetUnits" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.resetUnits"></a>
@@ -44699,6 +48687,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.colors">colors</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonColorsList">OneDashboardPageWidgetJsonColorsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference">OneDashboardPageWidgetJsonInitialSortingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.nrqlQuery">nrqlQuery</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNrqlQueryList">OneDashboardPageWidgetJsonNrqlQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.nullValues">nullValues</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValuesList">OneDashboardPageWidgetJsonNullValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.units">units</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnitsList">OneDashboardPageWidgetJsonUnitsList</a></code> | *No description.* |
@@ -44707,9 +48696,11 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.facetShowOtherSeriesInput">facetShowOtherSeriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.heightInput">heightInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.ignoreTimeRangeInput">ignoreTimeRangeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.initialSortingInput">initialSortingInput</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSorting">OneDashboardPageWidgetJsonInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.legendEnabledInput">legendEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.nrqlQueryInput">nrqlQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNrqlQuery">OneDashboardPageWidgetJsonNrqlQuery</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.nullValuesInput">nullValuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues">OneDashboardPageWidgetJsonNullValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.refreshRateInput">refreshRateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.rowInput">rowInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.unitsInput">unitsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonUnits">OneDashboardPageWidgetJsonUnits</a>></code> | *No description.* |
@@ -44721,6 +48712,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.height">height</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.row">row</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.width">width</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -44771,6 +48763,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `initialSorting`<sup>Required</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetJsonInitialSortingOutputReference getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSortingOutputReference">OneDashboardPageWidgetJsonInitialSortingOutputReference</a>
 
 ---
 
@@ -44854,6 +48856,16 @@ public java.lang.Object getIgnoreTimeRangeInput();
 
 ---
 
+##### `initialSortingInput`<sup>Optional</sup> <a name="initialSortingInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.initialSortingInput"></a>
+
+```java
+public OneDashboardPageWidgetJsonInitialSorting getInitialSortingInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonInitialSorting">OneDashboardPageWidgetJsonInitialSorting</a>
+
+---
+
 ##### `legendEnabledInput`<sup>Optional</sup> <a name="legendEnabledInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.legendEnabledInput"></a>
 
 ```java
@@ -44881,6 +48893,16 @@ public java.lang.Object getNullValuesInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonNullValues">OneDashboardPageWidgetJsonNullValues</a>>
+
+---
+
+##### `refreshRateInput`<sup>Optional</sup> <a name="refreshRateInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.refreshRateInput"></a>
+
+```java
+public java.lang.String getRefreshRateInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -44991,6 +49013,16 @@ public java.lang.Object getLegendEnabled();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `refreshRate`<sup>Required</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetJsonOutputReference.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -47021,6 +51053,299 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### OneDashboardPageWidgetLineInitialSortingOutputReference <a name="OneDashboardPageWidgetLineInitialSortingOutputReference" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetLineInitialSortingOutputReference;
+
+new OneDashboardPageWidgetLineInitialSortingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSorting">OneDashboardPageWidgetLineInitialSorting</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.property.directionInput"></a>
+
+```java
+public java.lang.String getDirectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference.property.internalValue"></a>
+
+```java
+public OneDashboardPageWidgetLineInitialSorting getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSorting">OneDashboardPageWidgetLineInitialSorting</a>
+
+---
+
+
 ### OneDashboardPageWidgetLineList <a name="OneDashboardPageWidgetLineList" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineList.Initializer"></a>
@@ -48711,6 +53036,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putColors">putColors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putInitialSorting">putInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putNrqlQuery">putNrqlQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putNullValues">putNullValues</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putThreshold">putThreshold</a></code> | *No description.* |
@@ -48720,9 +53046,11 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetFacetShowOtherSeries">resetFacetShowOtherSeries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetHeight">resetHeight</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetIgnoreTimeRange">resetIgnoreTimeRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetInitialSorting">resetInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetIsLabelVisible">resetIsLabelVisible</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetLegendEnabled">resetLegendEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetNullValues">resetNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetRefreshRate">resetRefreshRate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetThreshold">resetThreshold</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetUnits">resetUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetWidth">resetWidth</a></code> | *No description.* |
@@ -48895,6 +53223,18 @@ public void putColors(IResolvable OR java.util.List<OneDashboardPageWidgetLineCo
 
 ---
 
+##### `putInitialSorting` <a name="putInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putInitialSorting"></a>
+
+```java
+public void putInitialSorting(OneDashboardPageWidgetLineInitialSorting value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putInitialSorting.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSorting">OneDashboardPageWidgetLineInitialSorting</a>
+
+---
+
 ##### `putNrqlQuery` <a name="putNrqlQuery" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.putNrqlQuery"></a>
 
 ```java
@@ -48979,6 +53319,12 @@ public void resetHeight()
 public void resetIgnoreTimeRange()
 ```
 
+##### `resetInitialSorting` <a name="resetInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetInitialSorting"></a>
+
+```java
+public void resetInitialSorting()
+```
+
 ##### `resetIsLabelVisible` <a name="resetIsLabelVisible" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetIsLabelVisible"></a>
 
 ```java
@@ -48995,6 +53341,12 @@ public void resetLegendEnabled()
 
 ```java
 public void resetNullValues()
+```
+
+##### `resetRefreshRate` <a name="resetRefreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetRefreshRate"></a>
+
+```java
+public void resetRefreshRate()
 ```
 
 ##### `resetThreshold` <a name="resetThreshold" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.resetThreshold"></a>
@@ -49048,6 +53400,7 @@ public void resetYAxisRight()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.colors">colors</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineColorsList">OneDashboardPageWidgetLineColorsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference">OneDashboardPageWidgetLineInitialSortingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.nrqlQuery">nrqlQuery</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQueryList">OneDashboardPageWidgetLineNrqlQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.nullValues">nullValues</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValuesList">OneDashboardPageWidgetLineNullValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.threshold">threshold</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList">OneDashboardPageWidgetLineThresholdList</a></code> | *No description.* |
@@ -49058,10 +53411,12 @@ public void resetYAxisRight()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.facetShowOtherSeriesInput">facetShowOtherSeriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.heightInput">heightInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.ignoreTimeRangeInput">ignoreTimeRangeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.initialSortingInput">initialSortingInput</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSorting">OneDashboardPageWidgetLineInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.isLabelVisibleInput">isLabelVisibleInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.legendEnabledInput">legendEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.nrqlQueryInput">nrqlQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNrqlQuery">OneDashboardPageWidgetLineNrqlQuery</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.nullValuesInput">nullValuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues">OneDashboardPageWidgetLineNullValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.refreshRateInput">refreshRateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.rowInput">rowInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.thresholdInput">thresholdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThreshold">OneDashboardPageWidgetLineThreshold</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -49077,6 +53432,7 @@ public void resetYAxisRight()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.isLabelVisible">isLabelVisible</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.row">row</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.width">width</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -49128,6 +53484,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `initialSorting`<sup>Required</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetLineInitialSortingOutputReference getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSortingOutputReference">OneDashboardPageWidgetLineInitialSortingOutputReference</a>
 
 ---
 
@@ -49231,6 +53597,16 @@ public java.lang.Object getIgnoreTimeRangeInput();
 
 ---
 
+##### `initialSortingInput`<sup>Optional</sup> <a name="initialSortingInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.initialSortingInput"></a>
+
+```java
+public OneDashboardPageWidgetLineInitialSorting getInitialSortingInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineInitialSorting">OneDashboardPageWidgetLineInitialSorting</a>
+
+---
+
 ##### `isLabelVisibleInput`<sup>Optional</sup> <a name="isLabelVisibleInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.isLabelVisibleInput"></a>
 
 ```java
@@ -49268,6 +53644,16 @@ public java.lang.Object getNullValuesInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineNullValues">OneDashboardPageWidgetLineNullValues</a>>
+
+---
+
+##### `refreshRateInput`<sup>Optional</sup> <a name="refreshRateInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.refreshRateInput"></a>
+
+```java
+public java.lang.String getRefreshRateInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -49418,6 +53804,16 @@ public java.lang.Object getLegendEnabled();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `refreshRate`<sup>Required</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineOutputReference.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -52366,6 +56762,299 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### OneDashboardPageWidgetLogTableInitialSortingOutputReference <a name="OneDashboardPageWidgetLogTableInitialSortingOutputReference" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference;
+
+new OneDashboardPageWidgetLogTableInitialSortingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSorting">OneDashboardPageWidgetLogTableInitialSorting</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.property.directionInput"></a>
+
+```java
+public java.lang.String getDirectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference.property.internalValue"></a>
+
+```java
+public OneDashboardPageWidgetLogTableInitialSorting getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSorting">OneDashboardPageWidgetLogTableInitialSorting</a>
+
+---
+
+
 ### OneDashboardPageWidgetLogTableList <a name="OneDashboardPageWidgetLogTableList" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableList.Initializer"></a>
@@ -54056,6 +58745,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.putColors">putColors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.putInitialSorting">putInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.putNrqlQuery">putNrqlQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.putNullValues">putNullValues</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.putUnits">putUnits</a></code> | *No description.* |
@@ -54063,8 +58753,10 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.resetFacetShowOtherSeries">resetFacetShowOtherSeries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.resetHeight">resetHeight</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.resetIgnoreTimeRange">resetIgnoreTimeRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.resetInitialSorting">resetInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.resetLegendEnabled">resetLegendEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.resetNullValues">resetNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.resetRefreshRate">resetRefreshRate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.resetUnits">resetUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.resetWidth">resetWidth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.resetYAxisLeftMax">resetYAxisLeftMax</a></code> | *No description.* |
@@ -54234,6 +58926,18 @@ public void putColors(IResolvable OR java.util.List<OneDashboardPageWidgetLogTab
 
 ---
 
+##### `putInitialSorting` <a name="putInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.putInitialSorting"></a>
+
+```java
+public void putInitialSorting(OneDashboardPageWidgetLogTableInitialSorting value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.putInitialSorting.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSorting">OneDashboardPageWidgetLogTableInitialSorting</a>
+
+---
+
 ##### `putNrqlQuery` <a name="putNrqlQuery" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.putNrqlQuery"></a>
 
 ```java
@@ -54294,6 +58998,12 @@ public void resetHeight()
 public void resetIgnoreTimeRange()
 ```
 
+##### `resetInitialSorting` <a name="resetInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.resetInitialSorting"></a>
+
+```java
+public void resetInitialSorting()
+```
+
 ##### `resetLegendEnabled` <a name="resetLegendEnabled" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.resetLegendEnabled"></a>
 
 ```java
@@ -54304,6 +59014,12 @@ public void resetLegendEnabled()
 
 ```java
 public void resetNullValues()
+```
+
+##### `resetRefreshRate` <a name="resetRefreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.resetRefreshRate"></a>
+
+```java
+public void resetRefreshRate()
 ```
 
 ##### `resetUnits` <a name="resetUnits" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.resetUnits"></a>
@@ -54339,6 +59055,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.colors">colors</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableColorsList">OneDashboardPageWidgetLogTableColorsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference">OneDashboardPageWidgetLogTableInitialSortingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.nrqlQuery">nrqlQuery</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNrqlQueryList">OneDashboardPageWidgetLogTableNrqlQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.nullValues">nullValues</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValuesList">OneDashboardPageWidgetLogTableNullValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.units">units</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnitsList">OneDashboardPageWidgetLogTableUnitsList</a></code> | *No description.* |
@@ -54347,9 +59064,11 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.facetShowOtherSeriesInput">facetShowOtherSeriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.heightInput">heightInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.ignoreTimeRangeInput">ignoreTimeRangeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.initialSortingInput">initialSortingInput</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSorting">OneDashboardPageWidgetLogTableInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.legendEnabledInput">legendEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.nrqlQueryInput">nrqlQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNrqlQuery">OneDashboardPageWidgetLogTableNrqlQuery</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.nullValuesInput">nullValuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues">OneDashboardPageWidgetLogTableNullValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.refreshRateInput">refreshRateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.rowInput">rowInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.unitsInput">unitsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableUnits">OneDashboardPageWidgetLogTableUnits</a>></code> | *No description.* |
@@ -54361,6 +59080,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.height">height</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.row">row</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.width">width</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -54411,6 +59131,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `initialSorting`<sup>Required</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetLogTableInitialSortingOutputReference getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSortingOutputReference">OneDashboardPageWidgetLogTableInitialSortingOutputReference</a>
 
 ---
 
@@ -54494,6 +59224,16 @@ public java.lang.Object getIgnoreTimeRangeInput();
 
 ---
 
+##### `initialSortingInput`<sup>Optional</sup> <a name="initialSortingInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.initialSortingInput"></a>
+
+```java
+public OneDashboardPageWidgetLogTableInitialSorting getInitialSortingInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableInitialSorting">OneDashboardPageWidgetLogTableInitialSorting</a>
+
+---
+
 ##### `legendEnabledInput`<sup>Optional</sup> <a name="legendEnabledInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.legendEnabledInput"></a>
 
 ```java
@@ -54521,6 +59261,16 @@ public java.lang.Object getNullValuesInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableNullValues">OneDashboardPageWidgetLogTableNullValues</a>>
+
+---
+
+##### `refreshRateInput`<sup>Optional</sup> <a name="refreshRateInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.refreshRateInput"></a>
+
+```java
+public java.lang.String getRefreshRateInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -54631,6 +59381,16 @@ public java.lang.Object getLegendEnabled();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `refreshRate`<sup>Required</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLogTableOutputReference.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -56661,6 +61421,299 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### OneDashboardPageWidgetMarkdownInitialSortingOutputReference <a name="OneDashboardPageWidgetMarkdownInitialSortingOutputReference" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference;
+
+new OneDashboardPageWidgetMarkdownInitialSortingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSorting">OneDashboardPageWidgetMarkdownInitialSorting</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.property.directionInput"></a>
+
+```java
+public java.lang.String getDirectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference.property.internalValue"></a>
+
+```java
+public OneDashboardPageWidgetMarkdownInitialSorting getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSorting">OneDashboardPageWidgetMarkdownInitialSorting</a>
+
+---
+
+
 ### OneDashboardPageWidgetMarkdownList <a name="OneDashboardPageWidgetMarkdownList" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownList.Initializer"></a>
@@ -57873,14 +62926,17 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.putColors">putColors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.putInitialSorting">putInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.putNullValues">putNullValues</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.putUnits">putUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.resetColors">resetColors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.resetFacetShowOtherSeries">resetFacetShowOtherSeries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.resetHeight">resetHeight</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.resetIgnoreTimeRange">resetIgnoreTimeRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.resetInitialSorting">resetInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.resetLegendEnabled">resetLegendEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.resetNullValues">resetNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.resetRefreshRate">resetRefreshRate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.resetUnits">resetUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.resetWidth">resetWidth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.resetYAxisLeftMax">resetYAxisLeftMax</a></code> | *No description.* |
@@ -58050,6 +63106,18 @@ public void putColors(IResolvable OR java.util.List<OneDashboardPageWidgetMarkdo
 
 ---
 
+##### `putInitialSorting` <a name="putInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.putInitialSorting"></a>
+
+```java
+public void putInitialSorting(OneDashboardPageWidgetMarkdownInitialSorting value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.putInitialSorting.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSorting">OneDashboardPageWidgetMarkdownInitialSorting</a>
+
+---
+
 ##### `putNullValues` <a name="putNullValues" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.putNullValues"></a>
 
 ```java
@@ -58098,6 +63166,12 @@ public void resetHeight()
 public void resetIgnoreTimeRange()
 ```
 
+##### `resetInitialSorting` <a name="resetInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.resetInitialSorting"></a>
+
+```java
+public void resetInitialSorting()
+```
+
 ##### `resetLegendEnabled` <a name="resetLegendEnabled" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.resetLegendEnabled"></a>
 
 ```java
@@ -58108,6 +63182,12 @@ public void resetLegendEnabled()
 
 ```java
 public void resetNullValues()
+```
+
+##### `resetRefreshRate` <a name="resetRefreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.resetRefreshRate"></a>
+
+```java
+public void resetRefreshRate()
 ```
 
 ##### `resetUnits` <a name="resetUnits" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.resetUnits"></a>
@@ -58143,6 +63223,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.colors">colors</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColorsList">OneDashboardPageWidgetMarkdownColorsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference">OneDashboardPageWidgetMarkdownInitialSortingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.nullValues">nullValues</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValuesList">OneDashboardPageWidgetMarkdownNullValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.units">units</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownUnitsList">OneDashboardPageWidgetMarkdownUnitsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.colorsInput">colorsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownColors">OneDashboardPageWidgetMarkdownColors</a>></code> | *No description.* |
@@ -58150,8 +63231,10 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.facetShowOtherSeriesInput">facetShowOtherSeriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.heightInput">heightInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.ignoreTimeRangeInput">ignoreTimeRangeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.initialSortingInput">initialSortingInput</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSorting">OneDashboardPageWidgetMarkdownInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.legendEnabledInput">legendEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.nullValuesInput">nullValuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues">OneDashboardPageWidgetMarkdownNullValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.refreshRateInput">refreshRateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.rowInput">rowInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.textInput">textInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -58164,6 +63247,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.height">height</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.row">row</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.text">text</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -58215,6 +63299,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `initialSorting`<sup>Required</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetMarkdownInitialSortingOutputReference getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSortingOutputReference">OneDashboardPageWidgetMarkdownInitialSortingOutputReference</a>
 
 ---
 
@@ -58288,6 +63382,16 @@ public java.lang.Object getIgnoreTimeRangeInput();
 
 ---
 
+##### `initialSortingInput`<sup>Optional</sup> <a name="initialSortingInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.initialSortingInput"></a>
+
+```java
+public OneDashboardPageWidgetMarkdownInitialSorting getInitialSortingInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownInitialSorting">OneDashboardPageWidgetMarkdownInitialSorting</a>
+
+---
+
 ##### `legendEnabledInput`<sup>Optional</sup> <a name="legendEnabledInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.legendEnabledInput"></a>
 
 ```java
@@ -58305,6 +63409,16 @@ public java.lang.Object getNullValuesInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownNullValues">OneDashboardPageWidgetMarkdownNullValues</a>>
+
+---
+
+##### `refreshRateInput`<sup>Optional</sup> <a name="refreshRateInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.refreshRateInput"></a>
+
+```java
+public java.lang.String getRefreshRateInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -58425,6 +63539,16 @@ public java.lang.Object getLegendEnabled();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `refreshRate`<sup>Required</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetMarkdownOutputReference.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -60465,6 +65589,299 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### OneDashboardPageWidgetPieInitialSortingOutputReference <a name="OneDashboardPageWidgetPieInitialSortingOutputReference" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetPieInitialSortingOutputReference;
+
+new OneDashboardPageWidgetPieInitialSortingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSorting">OneDashboardPageWidgetPieInitialSorting</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.property.directionInput"></a>
+
+```java
+public java.lang.String getDirectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference.property.internalValue"></a>
+
+```java
+public OneDashboardPageWidgetPieInitialSorting getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSorting">OneDashboardPageWidgetPieInitialSorting</a>
+
+---
+
+
 ### OneDashboardPageWidgetPieList <a name="OneDashboardPageWidgetPieList" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieList.Initializer"></a>
@@ -62155,6 +67572,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.putColors">putColors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.putInitialSorting">putInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.putNrqlQuery">putNrqlQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.putNullValues">putNullValues</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.putUnits">putUnits</a></code> | *No description.* |
@@ -62163,9 +67581,11 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.resetFilterCurrentDashboard">resetFilterCurrentDashboard</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.resetHeight">resetHeight</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.resetIgnoreTimeRange">resetIgnoreTimeRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.resetInitialSorting">resetInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.resetLegendEnabled">resetLegendEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.resetLinkedEntityGuids">resetLinkedEntityGuids</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.resetNullValues">resetNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.resetRefreshRate">resetRefreshRate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.resetUnits">resetUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.resetWidth">resetWidth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.resetYAxisLeftMax">resetYAxisLeftMax</a></code> | *No description.* |
@@ -62335,6 +67755,18 @@ public void putColors(IResolvable OR java.util.List<OneDashboardPageWidgetPieCol
 
 ---
 
+##### `putInitialSorting` <a name="putInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.putInitialSorting"></a>
+
+```java
+public void putInitialSorting(OneDashboardPageWidgetPieInitialSorting value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.putInitialSorting.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSorting">OneDashboardPageWidgetPieInitialSorting</a>
+
+---
+
 ##### `putNrqlQuery` <a name="putNrqlQuery" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.putNrqlQuery"></a>
 
 ```java
@@ -62401,6 +67833,12 @@ public void resetHeight()
 public void resetIgnoreTimeRange()
 ```
 
+##### `resetInitialSorting` <a name="resetInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.resetInitialSorting"></a>
+
+```java
+public void resetInitialSorting()
+```
+
 ##### `resetLegendEnabled` <a name="resetLegendEnabled" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.resetLegendEnabled"></a>
 
 ```java
@@ -62417,6 +67855,12 @@ public void resetLinkedEntityGuids()
 
 ```java
 public void resetNullValues()
+```
+
+##### `resetRefreshRate` <a name="resetRefreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.resetRefreshRate"></a>
+
+```java
+public void resetRefreshRate()
 ```
 
 ##### `resetUnits` <a name="resetUnits" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.resetUnits"></a>
@@ -62452,6 +67896,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.colors">colors</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieColorsList">OneDashboardPageWidgetPieColorsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference">OneDashboardPageWidgetPieInitialSortingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.nrqlQuery">nrqlQuery</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNrqlQueryList">OneDashboardPageWidgetPieNrqlQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.nullValues">nullValues</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValuesList">OneDashboardPageWidgetPieNullValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.units">units</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnitsList">OneDashboardPageWidgetPieUnitsList</a></code> | *No description.* |
@@ -62461,10 +67906,12 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.filterCurrentDashboardInput">filterCurrentDashboardInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.heightInput">heightInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.ignoreTimeRangeInput">ignoreTimeRangeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.initialSortingInput">initialSortingInput</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSorting">OneDashboardPageWidgetPieInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.legendEnabledInput">legendEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.linkedEntityGuidsInput">linkedEntityGuidsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.nrqlQueryInput">nrqlQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNrqlQuery">OneDashboardPageWidgetPieNrqlQuery</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.nullValuesInput">nullValuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues">OneDashboardPageWidgetPieNullValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.refreshRateInput">refreshRateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.rowInput">rowInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.unitsInput">unitsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieUnits">OneDashboardPageWidgetPieUnits</a>></code> | *No description.* |
@@ -62478,6 +67925,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.linkedEntityGuids">linkedEntityGuids</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.row">row</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.width">width</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -62528,6 +67976,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `initialSorting`<sup>Required</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetPieInitialSortingOutputReference getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSortingOutputReference">OneDashboardPageWidgetPieInitialSortingOutputReference</a>
 
 ---
 
@@ -62621,6 +68079,16 @@ public java.lang.Object getIgnoreTimeRangeInput();
 
 ---
 
+##### `initialSortingInput`<sup>Optional</sup> <a name="initialSortingInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.initialSortingInput"></a>
+
+```java
+public OneDashboardPageWidgetPieInitialSorting getInitialSortingInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieInitialSorting">OneDashboardPageWidgetPieInitialSorting</a>
+
+---
+
 ##### `legendEnabledInput`<sup>Optional</sup> <a name="legendEnabledInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.legendEnabledInput"></a>
 
 ```java
@@ -62658,6 +68126,16 @@ public java.lang.Object getNullValuesInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieNullValues">OneDashboardPageWidgetPieNullValues</a>>
+
+---
+
+##### `refreshRateInput`<sup>Optional</sup> <a name="refreshRateInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.refreshRateInput"></a>
+
+```java
+public java.lang.String getRefreshRateInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -62788,6 +68266,16 @@ public java.util.List<java.lang.String> getLinkedEntityGuids();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `refreshRate`<sup>Required</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetPieOutputReference.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -64818,6 +70306,299 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### OneDashboardPageWidgetStackedBarInitialSortingOutputReference <a name="OneDashboardPageWidgetStackedBarInitialSortingOutputReference" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference;
+
+new OneDashboardPageWidgetStackedBarInitialSortingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSorting">OneDashboardPageWidgetStackedBarInitialSorting</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.property.directionInput"></a>
+
+```java
+public java.lang.String getDirectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference.property.internalValue"></a>
+
+```java
+public OneDashboardPageWidgetStackedBarInitialSorting getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSorting">OneDashboardPageWidgetStackedBarInitialSorting</a>
+
+---
+
+
 ### OneDashboardPageWidgetStackedBarList <a name="OneDashboardPageWidgetStackedBarList" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarList.Initializer"></a>
@@ -66508,6 +72289,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.putColors">putColors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.putInitialSorting">putInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.putNrqlQuery">putNrqlQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.putNullValues">putNullValues</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.putUnits">putUnits</a></code> | *No description.* |
@@ -66515,8 +72297,10 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.resetFacetShowOtherSeries">resetFacetShowOtherSeries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.resetHeight">resetHeight</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.resetIgnoreTimeRange">resetIgnoreTimeRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.resetInitialSorting">resetInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.resetLegendEnabled">resetLegendEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.resetNullValues">resetNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.resetRefreshRate">resetRefreshRate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.resetUnits">resetUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.resetWidth">resetWidth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.resetYAxisLeftMax">resetYAxisLeftMax</a></code> | *No description.* |
@@ -66686,6 +72470,18 @@ public void putColors(IResolvable OR java.util.List<OneDashboardPageWidgetStacke
 
 ---
 
+##### `putInitialSorting` <a name="putInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.putInitialSorting"></a>
+
+```java
+public void putInitialSorting(OneDashboardPageWidgetStackedBarInitialSorting value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.putInitialSorting.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSorting">OneDashboardPageWidgetStackedBarInitialSorting</a>
+
+---
+
 ##### `putNrqlQuery` <a name="putNrqlQuery" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.putNrqlQuery"></a>
 
 ```java
@@ -66746,6 +72542,12 @@ public void resetHeight()
 public void resetIgnoreTimeRange()
 ```
 
+##### `resetInitialSorting` <a name="resetInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.resetInitialSorting"></a>
+
+```java
+public void resetInitialSorting()
+```
+
 ##### `resetLegendEnabled` <a name="resetLegendEnabled" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.resetLegendEnabled"></a>
 
 ```java
@@ -66756,6 +72558,12 @@ public void resetLegendEnabled()
 
 ```java
 public void resetNullValues()
+```
+
+##### `resetRefreshRate` <a name="resetRefreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.resetRefreshRate"></a>
+
+```java
+public void resetRefreshRate()
 ```
 
 ##### `resetUnits` <a name="resetUnits" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.resetUnits"></a>
@@ -66791,6 +72599,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.colors">colors</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarColorsList">OneDashboardPageWidgetStackedBarColorsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference">OneDashboardPageWidgetStackedBarInitialSortingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.nrqlQuery">nrqlQuery</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNrqlQueryList">OneDashboardPageWidgetStackedBarNrqlQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.nullValues">nullValues</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValuesList">OneDashboardPageWidgetStackedBarNullValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.units">units</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnitsList">OneDashboardPageWidgetStackedBarUnitsList</a></code> | *No description.* |
@@ -66799,9 +72608,11 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.facetShowOtherSeriesInput">facetShowOtherSeriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.heightInput">heightInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.ignoreTimeRangeInput">ignoreTimeRangeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.initialSortingInput">initialSortingInput</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSorting">OneDashboardPageWidgetStackedBarInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.legendEnabledInput">legendEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.nrqlQueryInput">nrqlQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNrqlQuery">OneDashboardPageWidgetStackedBarNrqlQuery</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.nullValuesInput">nullValuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues">OneDashboardPageWidgetStackedBarNullValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.refreshRateInput">refreshRateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.rowInput">rowInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.unitsInput">unitsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarUnits">OneDashboardPageWidgetStackedBarUnits</a>></code> | *No description.* |
@@ -66813,6 +72624,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.height">height</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.row">row</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.width">width</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -66863,6 +72675,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `initialSorting`<sup>Required</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetStackedBarInitialSortingOutputReference getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSortingOutputReference">OneDashboardPageWidgetStackedBarInitialSortingOutputReference</a>
 
 ---
 
@@ -66946,6 +72768,16 @@ public java.lang.Object getIgnoreTimeRangeInput();
 
 ---
 
+##### `initialSortingInput`<sup>Optional</sup> <a name="initialSortingInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.initialSortingInput"></a>
+
+```java
+public OneDashboardPageWidgetStackedBarInitialSorting getInitialSortingInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarInitialSorting">OneDashboardPageWidgetStackedBarInitialSorting</a>
+
+---
+
 ##### `legendEnabledInput`<sup>Optional</sup> <a name="legendEnabledInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.legendEnabledInput"></a>
 
 ```java
@@ -66973,6 +72805,16 @@ public java.lang.Object getNullValuesInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarNullValues">OneDashboardPageWidgetStackedBarNullValues</a>>
+
+---
+
+##### `refreshRateInput`<sup>Optional</sup> <a name="refreshRateInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.refreshRateInput"></a>
+
+```java
+public java.lang.String getRefreshRateInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -67083,6 +72925,16 @@ public java.lang.Object getLegendEnabled();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `refreshRate`<sup>Required</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarOutputReference.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -69113,6 +74965,299 @@ public java.lang.Object getInternalValue();
 ---
 
 
+### OneDashboardPageWidgetTableInitialSortingOutputReference <a name="OneDashboardPageWidgetTableInitialSortingOutputReference" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.newrelic.one_dashboard.OneDashboardPageWidgetTableInitialSortingOutputReference;
+
+new OneDashboardPageWidgetTableInitialSortingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.property.directionInput">directionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.property.direction">direction</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSorting">OneDashboardPageWidgetTableInitialSorting</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.property.directionInput"></a>
+
+```java
+public java.lang.String getDirectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.property.direction"></a>
+
+```java
+public java.lang.String getDirection();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference.property.internalValue"></a>
+
+```java
+public OneDashboardPageWidgetTableInitialSorting getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSorting">OneDashboardPageWidgetTableInitialSorting</a>
+
+---
+
+
 ### OneDashboardPageWidgetTableList <a name="OneDashboardPageWidgetTableList" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableList.Initializer"></a>
@@ -70803,6 +76948,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.putColors">putColors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.putInitialSorting">putInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.putNrqlQuery">putNrqlQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.putNullValues">putNullValues</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.putThreshold">putThreshold</a></code> | *No description.* |
@@ -70812,9 +76958,11 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetFilterCurrentDashboard">resetFilterCurrentDashboard</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetHeight">resetHeight</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetIgnoreTimeRange">resetIgnoreTimeRange</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetInitialSorting">resetInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetLegendEnabled">resetLegendEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetLinkedEntityGuids">resetLinkedEntityGuids</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetNullValues">resetNullValues</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetRefreshRate">resetRefreshRate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetThreshold">resetThreshold</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetUnits">resetUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetWidth">resetWidth</a></code> | *No description.* |
@@ -70985,6 +77133,18 @@ public void putColors(IResolvable OR java.util.List<OneDashboardPageWidgetTableC
 
 ---
 
+##### `putInitialSorting` <a name="putInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.putInitialSorting"></a>
+
+```java
+public void putInitialSorting(OneDashboardPageWidgetTableInitialSorting value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.putInitialSorting.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSorting">OneDashboardPageWidgetTableInitialSorting</a>
+
+---
+
 ##### `putNrqlQuery` <a name="putNrqlQuery" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.putNrqlQuery"></a>
 
 ```java
@@ -71063,6 +77223,12 @@ public void resetHeight()
 public void resetIgnoreTimeRange()
 ```
 
+##### `resetInitialSorting` <a name="resetInitialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetInitialSorting"></a>
+
+```java
+public void resetInitialSorting()
+```
+
 ##### `resetLegendEnabled` <a name="resetLegendEnabled" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetLegendEnabled"></a>
 
 ```java
@@ -71079,6 +77245,12 @@ public void resetLinkedEntityGuids()
 
 ```java
 public void resetNullValues()
+```
+
+##### `resetRefreshRate` <a name="resetRefreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetRefreshRate"></a>
+
+```java
+public void resetRefreshRate()
 ```
 
 ##### `resetThreshold` <a name="resetThreshold" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.resetThreshold"></a>
@@ -71120,6 +77292,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.colors">colors</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableColorsList">OneDashboardPageWidgetTableColorsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.initialSorting">initialSorting</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference">OneDashboardPageWidgetTableInitialSortingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.nrqlQuery">nrqlQuery</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQueryList">OneDashboardPageWidgetTableNrqlQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.nullValues">nullValues</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValuesList">OneDashboardPageWidgetTableNullValuesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.threshold">threshold</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList">OneDashboardPageWidgetTableThresholdList</a></code> | *No description.* |
@@ -71130,10 +77303,12 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.filterCurrentDashboardInput">filterCurrentDashboardInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.heightInput">heightInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.ignoreTimeRangeInput">ignoreTimeRangeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.initialSortingInput">initialSortingInput</a></code> | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSorting">OneDashboardPageWidgetTableInitialSorting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.legendEnabledInput">legendEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.linkedEntityGuidsInput">linkedEntityGuidsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.nrqlQueryInput">nrqlQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNrqlQuery">OneDashboardPageWidgetTableNrqlQuery</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.nullValuesInput">nullValuesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues">OneDashboardPageWidgetTableNullValues</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.refreshRateInput">refreshRateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.rowInput">rowInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.thresholdInput">thresholdInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThreshold">OneDashboardPageWidgetTableThreshold</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -71148,6 +77323,7 @@ public void resetYAxisLeftMin()
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.ignoreTimeRange">ignoreTimeRange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.legendEnabled">legendEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.linkedEntityGuids">linkedEntityGuids</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.refreshRate">refreshRate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.row">row</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.width">width</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -71198,6 +77374,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `initialSorting`<sup>Required</sup> <a name="initialSorting" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.initialSorting"></a>
+
+```java
+public OneDashboardPageWidgetTableInitialSortingOutputReference getInitialSorting();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSortingOutputReference">OneDashboardPageWidgetTableInitialSortingOutputReference</a>
 
 ---
 
@@ -71301,6 +77487,16 @@ public java.lang.Object getIgnoreTimeRangeInput();
 
 ---
 
+##### `initialSortingInput`<sup>Optional</sup> <a name="initialSortingInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.initialSortingInput"></a>
+
+```java
+public OneDashboardPageWidgetTableInitialSorting getInitialSortingInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableInitialSorting">OneDashboardPageWidgetTableInitialSorting</a>
+
+---
+
 ##### `legendEnabledInput`<sup>Optional</sup> <a name="legendEnabledInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.legendEnabledInput"></a>
 
 ```java
@@ -71338,6 +77534,16 @@ public java.lang.Object getNullValuesInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableNullValues">OneDashboardPageWidgetTableNullValues</a>>
+
+---
+
+##### `refreshRateInput`<sup>Optional</sup> <a name="refreshRateInput" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.refreshRateInput"></a>
+
+```java
+public java.lang.String getRefreshRateInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -71478,6 +77684,16 @@ public java.util.List<java.lang.String> getLinkedEntityGuids();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `refreshRate`<sup>Required</sup> <a name="refreshRate" id="@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableOutputReference.property.refreshRate"></a>
+
+```java
+public java.lang.String getRefreshRate();
+```
+
+- *Type:* java.lang.String
 
 ---
 
