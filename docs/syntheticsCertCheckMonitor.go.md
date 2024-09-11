@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsCertCheckMonitor.SyntheticsCertCheckMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticscertcheckmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticscertcheckmonitor"
 
 syntheticscertcheckmonitor.NewSyntheticsCertCheckMonitor(scope Construct, id *string, config SyntheticsCertCheckMonitorConfig) SyntheticsCertCheckMonitor
 ```
@@ -447,7 +447,7 @@ func ResetUseUnsupportedLegacyRuntime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.syntheticsCertCheckMonitor.SyntheticsCertCheckMonitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticscertcheckmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticscertcheckmonitor"
 
 syntheticscertcheckmonitor.SyntheticsCertCheckMonitor_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.syntheticsCertCheckMonitor.SyntheticsCertCheckMonitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticscertcheckmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticscertcheckmonitor"
 
 syntheticscertcheckmonitor.SyntheticsCertCheckMonitor_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ syntheticscertcheckmonitor.SyntheticsCertCheckMonitor_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.syntheticsCertCheckMonitor.SyntheticsCertCheckMonitor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticscertcheckmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticscertcheckmonitor"
 
 syntheticscertcheckmonitor.SyntheticsCertCheckMonitor_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ syntheticscertcheckmonitor.SyntheticsCertCheckMonitor_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.syntheticsCertCheckMonitor.SyntheticsCertCheckMonitor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticscertcheckmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticscertcheckmonitor"
 
 syntheticscertcheckmonitor.SyntheticsCertCheckMonitor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1033,7 +1033,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsCertCheckMonitor.SyntheticsCertCheckMonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticscertcheckmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticscertcheckmonitor"
 
 &syntheticscertcheckmonitor.SyntheticsCertCheckMonitorConfig {
 	Connection: interface{},
@@ -1344,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsCertCheckMonitor.SyntheticsCertCheckMonitorTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticscertcheckmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticscertcheckmonitor"
 
 &syntheticscertcheckmonitor.SyntheticsCertCheckMonitorTag {
 	Key: *string,
@@ -1396,7 +1396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsCertCheckMonitor.SyntheticsCertCheckMonitorTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticscertcheckmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticscertcheckmonitor"
 
 syntheticscertcheckmonitor.NewSyntheticsCertCheckMonitorTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsCertCheckMonitorTagList
 ```
@@ -1556,7 +1556,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsCertCheckMonitor.SyntheticsCertCheckMonitorTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticscertcheckmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticscertcheckmonitor"
 
 syntheticscertcheckmonitor.NewSyntheticsCertCheckMonitorTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsCertCheckMonitorTagOutputReference
 ```
