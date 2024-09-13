@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor
+// https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,41 @@ export interface SyntheticsScriptMonitorConfig extends cdktf.TerraformMetaArgume
   /**
   * ID of the newrelic account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#account_id SyntheticsScriptMonitor#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#account_id SyntheticsScriptMonitor#account_id}
   */
   readonly accountId?: number;
   /**
+  * The multiple browsers list on which synthetic monitors will run. Valid values are array of CHROME,and FIREFOX
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#browsers SyntheticsScriptMonitor#browsers}
+  */
+  readonly browsers?: string[];
+  /**
   * The device orientation the user would like to represent. Valid values are LANDSCAPE, PORTRAIT, or NONE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#device_orientation SyntheticsScriptMonitor#device_orientation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#device_orientation SyntheticsScriptMonitor#device_orientation}
   */
   readonly deviceOrientation?: string;
   /**
   * The device type that a user can select. Valid values are MOBILE, TABLET, or NONE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#device_type SyntheticsScriptMonitor#device_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#device_type SyntheticsScriptMonitor#device_type}
   */
   readonly deviceType?: string;
   /**
+  * The multiple devices list on which synthetic monitors will run. Valid values are array of DESKTOP, MOBILE_LANDSCAPE, MOBILE_PORTRAIT, TABLET_LANDSCAPE and TABLET_PORTRAIT
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#devices SyntheticsScriptMonitor#devices}
+  */
+  readonly devices?: string[];
+  /**
   * Capture a screenshot during job execution.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#enable_screenshot_on_failure_and_script SyntheticsScriptMonitor#enable_screenshot_on_failure_and_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#enable_screenshot_on_failure_and_script SyntheticsScriptMonitor#enable_screenshot_on_failure_and_script}
   */
   readonly enableScreenshotOnFailureAndScript?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#id SyntheticsScriptMonitor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#id SyntheticsScriptMonitor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,73 +58,73 @@ export interface SyntheticsScriptMonitorConfig extends cdktf.TerraformMetaArgume
   /**
   * The public location(s) that the monitor will run jobs from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#locations_public SyntheticsScriptMonitor#locations_public}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#locations_public SyntheticsScriptMonitor#locations_public}
   */
   readonly locationsPublic?: string[];
   /**
   * The title of this monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#name SyntheticsScriptMonitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#name SyntheticsScriptMonitor#name}
   */
   readonly name: string;
   /**
   * The interval at which this monitor should run. Valid values are EVERY_MINUTE, EVERY_5_MINUTES, EVERY_10_MINUTES, EVERY_15_MINUTES, EVERY_30_MINUTES, EVERY_HOUR, EVERY_6_HOURS, EVERY_12_HOURS, or EVERY_DAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#period SyntheticsScriptMonitor#period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#period SyntheticsScriptMonitor#period}
   */
   readonly period: string;
   /**
   * The runtime type that the monitor will run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#runtime_type SyntheticsScriptMonitor#runtime_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#runtime_type SyntheticsScriptMonitor#runtime_type}
   */
   readonly runtimeType?: string;
   /**
   * The specific semver version of the runtime type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#runtime_type_version SyntheticsScriptMonitor#runtime_type_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#runtime_type_version SyntheticsScriptMonitor#runtime_type_version}
   */
   readonly runtimeTypeVersion?: string;
   /**
   * The script that the monitor runs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#script SyntheticsScriptMonitor#script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#script SyntheticsScriptMonitor#script}
   */
   readonly script?: string;
   /**
   * The programing language that should execute the script.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#script_language SyntheticsScriptMonitor#script_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#script_language SyntheticsScriptMonitor#script_language}
   */
   readonly scriptLanguage?: string;
   /**
   * The monitor status (ENABLED or DISABLED).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#status SyntheticsScriptMonitor#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#status SyntheticsScriptMonitor#status}
   */
   readonly status: string;
   /**
   * The monitor type. Valid values are SCRIPT_BROWSER, and SCRIPT_API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#type SyntheticsScriptMonitor#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#type SyntheticsScriptMonitor#type}
   */
   readonly type: string;
   /**
   * A boolean attribute to be set true by the customer, if they would like to use the unsupported legacy runtime of Synthetic Monitors by means of an exemption given until the October 22, 2024 Legacy Runtime EOL. Setting this attribute to true would allow skipping validation performed by the the New Relic Terraform Provider starting v3.43.0 to disallow using the legacy runtime with new monitors. This would, hence, allow creation of monitors in the legacy runtime until the October 22, 2024 Legacy Runtime EOL, if exempt by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#use_unsupported_legacy_runtime SyntheticsScriptMonitor#use_unsupported_legacy_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#use_unsupported_legacy_runtime SyntheticsScriptMonitor#use_unsupported_legacy_runtime}
   */
   readonly useUnsupportedLegacyRuntime?: boolean | cdktf.IResolvable;
   /**
   * location_private block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#location_private SyntheticsScriptMonitor#location_private}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#location_private SyntheticsScriptMonitor#location_private}
   */
   readonly locationPrivate?: SyntheticsScriptMonitorLocationPrivate[] | cdktf.IResolvable;
   /**
   * tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#tag SyntheticsScriptMonitor#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#tag SyntheticsScriptMonitor#tag}
   */
   readonly tag?: SyntheticsScriptMonitorTag[] | cdktf.IResolvable;
 }
@@ -120,13 +132,13 @@ export interface SyntheticsScriptMonitorLocationPrivate {
   /**
   * The unique identifier for the Synthetics private location in New Relic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#guid SyntheticsScriptMonitor#guid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#guid SyntheticsScriptMonitor#guid}
   */
   readonly guid: string;
   /**
   * The location's Verified Script Execution password (Only necessary if Verified Script Execution is enabled for the location).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#vse_password SyntheticsScriptMonitor#vse_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#vse_password SyntheticsScriptMonitor#vse_password}
   */
   readonly vsePassword?: string;
 }
@@ -270,13 +282,13 @@ export interface SyntheticsScriptMonitorTag {
   /**
   * Name of the tag key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#key SyntheticsScriptMonitor#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#key SyntheticsScriptMonitor#key}
   */
   readonly key: string;
   /**
   * Values associated with the tag key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#values SyntheticsScriptMonitor#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#values SyntheticsScriptMonitor#values}
   */
   readonly values: string[];
 }
@@ -415,7 +427,7 @@ export class SyntheticsScriptMonitorTagList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor}
 */
 export class SyntheticsScriptMonitor extends cdktf.TerraformResource {
 
@@ -431,7 +443,7 @@ export class SyntheticsScriptMonitor extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SyntheticsScriptMonitor resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SyntheticsScriptMonitor to import
-  * @param importFromId The id of the existing SyntheticsScriptMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SyntheticsScriptMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SyntheticsScriptMonitor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -443,7 +455,7 @@ export class SyntheticsScriptMonitor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -454,7 +466,7 @@ export class SyntheticsScriptMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_synthetics_script_monitor',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.45.2',
+        providerVersion: '3.46.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -466,8 +478,10 @@ export class SyntheticsScriptMonitor extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
+    this._browsers = config.browsers;
     this._deviceOrientation = config.deviceOrientation;
     this._deviceType = config.deviceType;
+    this._devices = config.devices;
     this._enableScreenshotOnFailureAndScript = config.enableScreenshotOnFailureAndScript;
     this._id = config.id;
     this._locationsPublic = config.locationsPublic;
@@ -504,6 +518,22 @@ export class SyntheticsScriptMonitor extends cdktf.TerraformResource {
     return this._accountId;
   }
 
+  // browsers - computed: false, optional: true, required: false
+  private _browsers?: string[]; 
+  public get browsers() {
+    return cdktf.Fn.tolist(this.getListAttribute('browsers'));
+  }
+  public set browsers(value: string[]) {
+    this._browsers = value;
+  }
+  public resetBrowsers() {
+    this._browsers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get browsersInput() {
+    return this._browsers;
+  }
+
   // device_orientation - computed: false, optional: true, required: false
   private _deviceOrientation?: string; 
   public get deviceOrientation() {
@@ -534,6 +564,22 @@ export class SyntheticsScriptMonitor extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get deviceTypeInput() {
     return this._deviceType;
+  }
+
+  // devices - computed: false, optional: true, required: false
+  private _devices?: string[]; 
+  public get devices() {
+    return cdktf.Fn.tolist(this.getListAttribute('devices'));
+  }
+  public set devices(value: string[]) {
+    this._devices = value;
+  }
+  public resetDevices() {
+    this._devices = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get devicesInput() {
+    return this._devices;
   }
 
   // enable_screenshot_on_failure_and_script - computed: false, optional: true, required: false
@@ -765,8 +811,10 @@ export class SyntheticsScriptMonitor extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.numberToTerraform(this._accountId),
+      browsers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._browsers),
       device_orientation: cdktf.stringToTerraform(this._deviceOrientation),
       device_type: cdktf.stringToTerraform(this._deviceType),
+      devices: cdktf.listMapper(cdktf.stringToTerraform, false)(this._devices),
       enable_screenshot_on_failure_and_script: cdktf.booleanToTerraform(this._enableScreenshotOnFailureAndScript),
       id: cdktf.stringToTerraform(this._id),
       locations_public: cdktf.listMapper(cdktf.stringToTerraform, false)(this._locationsPublic),
@@ -792,6 +840,12 @@ export class SyntheticsScriptMonitor extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "number",
       },
+      browsers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._browsers),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
       device_orientation: {
         value: cdktf.stringToHclTerraform(this._deviceOrientation),
         isBlock: false,
@@ -803,6 +857,12 @@ export class SyntheticsScriptMonitor extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      devices: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._devices),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
       },
       enable_screenshot_on_failure_and_script: {
         value: cdktf.booleanToHclTerraform(this._enableScreenshotOnFailureAndScript),

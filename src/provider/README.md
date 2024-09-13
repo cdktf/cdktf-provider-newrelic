@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registry for docs: [`newrelic`](https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs).
+Refer to the Terraform Registry for docs: [`newrelic`](https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs).
