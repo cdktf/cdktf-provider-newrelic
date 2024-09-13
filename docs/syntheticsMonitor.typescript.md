@@ -4,7 +4,7 @@
 
 ### SyntheticsMonitor <a name="SyntheticsMonitor" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor newrelic_synthetics_monitor}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor newrelic_synthetics_monitor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer"></a>
 
@@ -76,9 +76,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.putCustomHeader">putCustomHeader</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.putTag">putTag</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.resetAccountId">resetAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.resetBrowsers">resetBrowsers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.resetBypassHeadRequest">resetBypassHeadRequest</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.resetCustomHeader">resetCustomHeader</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.resetDeviceOrientation">resetDeviceOrientation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.resetDevices">resetDevices</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.resetDeviceType">resetDeviceType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.resetEnableScreenshotOnFailureAndScript">resetEnableScreenshotOnFailureAndScript</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.resetId">resetId</a></code> | *No description.* |
@@ -415,6 +417,12 @@ public putTag(value: IResolvable | SyntheticsMonitorTag[]): void
 public resetAccountId(): void
 ```
 
+##### `resetBrowsers` <a name="resetBrowsers" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.resetBrowsers"></a>
+
+```typescript
+public resetBrowsers(): void
+```
+
 ##### `resetBypassHeadRequest` <a name="resetBypassHeadRequest" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.resetBypassHeadRequest"></a>
 
 ```typescript
@@ -431,6 +439,12 @@ public resetCustomHeader(): void
 
 ```typescript
 public resetDeviceOrientation(): void
+```
+
+##### `resetDevices` <a name="resetDevices" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.resetDevices"></a>
+
+```typescript
+public resetDevices(): void
 ```
 
 ##### `resetDeviceType` <a name="resetDeviceType" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.resetDeviceType"></a>
@@ -626,7 +640,7 @@ The construct id used in the generated config for the SyntheticsMonitor to impor
 
 The id of the existing SyntheticsMonitor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -660,9 +674,11 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.periodInMinutes">periodInMinutes</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTagList">SyntheticsMonitorTagList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.accountIdInput">accountIdInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.browsersInput">browsersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.bypassHeadRequestInput">bypassHeadRequestInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.customHeaderInput">customHeaderInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.deviceOrientationInput">deviceOrientationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.devicesInput">devicesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.deviceTypeInput">deviceTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.enableScreenshotOnFailureAndScriptInput">enableScreenshotOnFailureAndScriptInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -682,8 +698,10 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.validationStringInput">validationStringInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.verifySslInput">verifySslInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.accountId">accountId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.browsers">browsers</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.bypassHeadRequest">bypassHeadRequest</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.deviceOrientation">deviceOrientation</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.devices">devices</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.deviceType">deviceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.enableScreenshotOnFailureAndScript">enableScreenshotOnFailureAndScript</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -886,6 +904,16 @@ public readonly accountIdInput: number;
 
 ---
 
+##### `browsersInput`<sup>Optional</sup> <a name="browsersInput" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.browsersInput"></a>
+
+```typescript
+public readonly browsersInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `bypassHeadRequestInput`<sup>Optional</sup> <a name="bypassHeadRequestInput" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.bypassHeadRequestInput"></a>
 
 ```typescript
@@ -913,6 +941,16 @@ public readonly deviceOrientationInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `devicesInput`<sup>Optional</sup> <a name="devicesInput" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.devicesInput"></a>
+
+```typescript
+public readonly devicesInput: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -1106,6 +1144,16 @@ public readonly accountId: number;
 
 ---
 
+##### `browsers`<sup>Required</sup> <a name="browsers" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.browsers"></a>
+
+```typescript
+public readonly browsers: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `bypassHeadRequest`<sup>Required</sup> <a name="bypassHeadRequest" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.bypassHeadRequest"></a>
 
 ```typescript
@@ -1123,6 +1171,16 @@ public readonly deviceOrientation: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `devices`<sup>Required</sup> <a name="devices" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.devices"></a>
+
+```typescript
+public readonly devices: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -1341,12 +1399,14 @@ const syntheticsMonitorConfig: syntheticsMonitor.SyntheticsMonitorConfig = { ...
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.status">status</a></code> | <code>string</code> | The monitor status (ENABLED or DISABLED). |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.type">type</a></code> | <code>string</code> | The monitor type. Valid values are SIMPLE AND BROWSER. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.accountId">accountId</a></code> | <code>number</code> | ID of the newrelic account. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.browsers">browsers</a></code> | <code>string[]</code> | The multiple browsers list on which synthetic monitors will run. Valid values are array of CHROME,and FIREFOX. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.bypassHeadRequest">bypassHeadRequest</a></code> | <code>boolean \| cdktf.IResolvable</code> | Bypass HEAD request. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.customHeader">customHeader</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>[]</code> | custom_header block. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.deviceOrientation">deviceOrientation</a></code> | <code>string</code> | The device orientation the user would like to represent. Valid values are LANDSCAPE, PORTRAIT, or NONE. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.devices">devices</a></code> | <code>string[]</code> | The multiple devices list on which synthetic monitors will run. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.deviceType">deviceType</a></code> | <code>string</code> | The device type that a user can select. Valid values are MOBILE, TABLET, or NONE. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.enableScreenshotOnFailureAndScript">enableScreenshotOnFailureAndScript</a></code> | <code>boolean \| cdktf.IResolvable</code> | Capture a screenshot during job execution. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#id SyntheticsMonitor#id}. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#id SyntheticsMonitor#id}. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.locationsPrivate">locationsPrivate</a></code> | <code>string[]</code> | The locations in which this monitor should be run. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.locationsPublic">locationsPublic</a></code> | <code>string[]</code> | The locations in which this monitor should be run. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.period">period</a></code> | <code>string</code> | The interval at which this monitor should run. |
@@ -1442,7 +1502,7 @@ public readonly name: string;
 
 The title of this monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#name SyntheticsMonitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#name SyntheticsMonitor#name}
 
 ---
 
@@ -1456,7 +1516,7 @@ public readonly status: string;
 
 The monitor status (ENABLED or DISABLED).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#status SyntheticsMonitor#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#status SyntheticsMonitor#status}
 
 ---
 
@@ -1470,7 +1530,7 @@ public readonly type: string;
 
 The monitor type. Valid values are SIMPLE AND BROWSER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#type SyntheticsMonitor#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#type SyntheticsMonitor#type}
 
 ---
 
@@ -1484,7 +1544,21 @@ public readonly accountId: number;
 
 ID of the newrelic account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#account_id SyntheticsMonitor#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#account_id SyntheticsMonitor#account_id}
+
+---
+
+##### `browsers`<sup>Optional</sup> <a name="browsers" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.browsers"></a>
+
+```typescript
+public readonly browsers: string[];
+```
+
+- *Type:* string[]
+
+The multiple browsers list on which synthetic monitors will run. Valid values are array of CHROME,and FIREFOX.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#browsers SyntheticsMonitor#browsers}
 
 ---
 
@@ -1498,7 +1572,7 @@ public readonly bypassHeadRequest: boolean | IResolvable;
 
 Bypass HEAD request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#bypass_head_request SyntheticsMonitor#bypass_head_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#bypass_head_request SyntheticsMonitor#bypass_head_request}
 
 ---
 
@@ -1512,7 +1586,7 @@ public readonly customHeader: IResolvable | SyntheticsMonitorCustomHeader[];
 
 custom_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#custom_header SyntheticsMonitor#custom_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#custom_header SyntheticsMonitor#custom_header}
 
 ---
 
@@ -1526,7 +1600,23 @@ public readonly deviceOrientation: string;
 
 The device orientation the user would like to represent. Valid values are LANDSCAPE, PORTRAIT, or NONE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#device_orientation SyntheticsMonitor#device_orientation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#device_orientation SyntheticsMonitor#device_orientation}
+
+---
+
+##### `devices`<sup>Optional</sup> <a name="devices" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.devices"></a>
+
+```typescript
+public readonly devices: string[];
+```
+
+- *Type:* string[]
+
+The multiple devices list on which synthetic monitors will run.
+
+Valid values are array of DESKTOP, MOBILE_LANDSCAPE, MOBILE_PORTRAIT, TABLET_LANDSCAPE and TABLET_PORTRAIT
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#devices SyntheticsMonitor#devices}
 
 ---
 
@@ -1540,7 +1630,7 @@ public readonly deviceType: string;
 
 The device type that a user can select. Valid values are MOBILE, TABLET, or NONE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#device_type SyntheticsMonitor#device_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#device_type SyntheticsMonitor#device_type}
 
 ---
 
@@ -1554,7 +1644,7 @@ public readonly enableScreenshotOnFailureAndScript: boolean | IResolvable;
 
 Capture a screenshot during job execution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#enable_screenshot_on_failure_and_script SyntheticsMonitor#enable_screenshot_on_failure_and_script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#enable_screenshot_on_failure_and_script SyntheticsMonitor#enable_screenshot_on_failure_and_script}
 
 ---
 
@@ -1566,7 +1656,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#id SyntheticsMonitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#id SyntheticsMonitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1583,7 +1673,7 @@ public readonly locationsPrivate: string[];
 
 The locations in which this monitor should be run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#locations_private SyntheticsMonitor#locations_private}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#locations_private SyntheticsMonitor#locations_private}
 
 ---
 
@@ -1597,7 +1687,7 @@ public readonly locationsPublic: string[];
 
 The locations in which this monitor should be run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#locations_public SyntheticsMonitor#locations_public}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#locations_public SyntheticsMonitor#locations_public}
 
 ---
 
@@ -1613,7 +1703,7 @@ The interval at which this monitor should run.
 
 Valid values are EVERY_MINUTE, EVERY_5_MINUTES, EVERY_10_MINUTES, EVERY_15_MINUTES, EVERY_30_MINUTES, EVERY_HOUR, EVERY_6_HOURS, EVERY_12_HOURS, or EVERY_DAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#period SyntheticsMonitor#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#period SyntheticsMonitor#period}
 
 ---
 
@@ -1627,7 +1717,7 @@ public readonly runtimeType: string;
 
 The runtime type that the monitor will run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#runtime_type SyntheticsMonitor#runtime_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#runtime_type SyntheticsMonitor#runtime_type}
 
 ---
 
@@ -1641,7 +1731,7 @@ public readonly runtimeTypeVersion: string;
 
 The specific version of the runtime type selected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#runtime_type_version SyntheticsMonitor#runtime_type_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#runtime_type_version SyntheticsMonitor#runtime_type_version}
 
 ---
 
@@ -1655,7 +1745,7 @@ public readonly scriptLanguage: string;
 
 The programing language that should execute the script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#script_language SyntheticsMonitor#script_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#script_language SyntheticsMonitor#script_language}
 
 ---
 
@@ -1669,7 +1759,7 @@ public readonly tag: IResolvable | SyntheticsMonitorTag[];
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#tag SyntheticsMonitor#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#tag SyntheticsMonitor#tag}
 
 ---
 
@@ -1683,7 +1773,7 @@ public readonly treatRedirectAsFailure: boolean | IResolvable;
 
 Fail the monitor check if redirected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#treat_redirect_as_failure SyntheticsMonitor#treat_redirect_as_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#treat_redirect_as_failure SyntheticsMonitor#treat_redirect_as_failure}
 
 ---
 
@@ -1697,7 +1787,7 @@ public readonly uri: string;
 
 The URI for the monitor to hit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#uri SyntheticsMonitor#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#uri SyntheticsMonitor#uri}
 
 ---
 
@@ -1713,7 +1803,7 @@ A boolean attribute to be set true by the customer, if they would like to use th
 
 Setting this attribute to true would allow skipping validation performed by the the New Relic Terraform Provider starting v3.43.0 to disallow using the legacy runtime with new monitors. This would, hence, allow creation of monitors in the legacy runtime until the October 22, 2024 Legacy Runtime EOL, if exempt by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#use_unsupported_legacy_runtime SyntheticsMonitor#use_unsupported_legacy_runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#use_unsupported_legacy_runtime SyntheticsMonitor#use_unsupported_legacy_runtime}
 
 ---
 
@@ -1727,7 +1817,7 @@ public readonly validationString: string;
 
 The string to validate against in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#validation_string SyntheticsMonitor#validation_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#validation_string SyntheticsMonitor#validation_string}
 
 ---
 
@@ -1741,7 +1831,7 @@ public readonly verifySsl: boolean | IResolvable;
 
 Verify SSL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#verify_ssl SyntheticsMonitor#verify_ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#verify_ssl SyntheticsMonitor#verify_ssl}
 
 ---
 
@@ -1774,7 +1864,7 @@ public readonly name: string;
 
 Header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#name SyntheticsMonitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#name SyntheticsMonitor#name}
 
 ---
 
@@ -1788,7 +1878,7 @@ public readonly value: string;
 
 Header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#value SyntheticsMonitor#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#value SyntheticsMonitor#value}
 
 ---
 
@@ -1821,7 +1911,7 @@ public readonly key: string;
 
 Name of the tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#key SyntheticsMonitor#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#key SyntheticsMonitor#key}
 
 ---
 
@@ -1835,7 +1925,7 @@ public readonly values: string[];
 
 Values associated with the tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor#values SyntheticsMonitor#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor#values SyntheticsMonitor#values}
 
 ---
 
