@@ -43,6 +43,7 @@ The following submodules are available:
 - [group](./group.typescript.md)
 - [infraAlertCondition](./infraAlertCondition.typescript.md)
 - [insightsEvent](./insightsEvent.typescript.md)
+- [keyTransaction](./keyTransaction.typescript.md)
 - [logParsingRule](./logParsingRule.typescript.md)
 - [monitorDowntime](./monitorDowntime.typescript.md)
 - [notificationChannel](./notificationChannel.typescript.md)

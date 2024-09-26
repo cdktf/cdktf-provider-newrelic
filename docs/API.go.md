@@ -43,6 +43,7 @@ The following submodules are available:
 - [group](./group.go.md)
 - [infraAlertCondition](./infraAlertCondition.go.md)
 - [insightsEvent](./insightsEvent.go.md)
+- [keyTransaction](./keyTransaction.go.md)
 - [logParsingRule](./logParsingRule.go.md)
 - [monitorDowntime](./monitorDowntime.go.md)
 - [notificationChannel](./notificationChannel.go.md)
