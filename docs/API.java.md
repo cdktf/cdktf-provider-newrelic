@@ -43,6 +43,7 @@ The following submodules are available:
 - [group](./group.java.md)
 - [infraAlertCondition](./infraAlertCondition.java.md)
 - [insightsEvent](./insightsEvent.java.md)
+- [keyTransaction](./keyTransaction.java.md)
 - [logParsingRule](./logParsingRule.java.md)
 - [monitorDowntime](./monitorDowntime.java.md)
 - [notificationChannel](./notificationChannel.java.md)

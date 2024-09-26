@@ -43,6 +43,7 @@ The following submodules are available:
 - [group](./group.python.md)
 - [infraAlertCondition](./infraAlertCondition.python.md)
 - [insightsEvent](./insightsEvent.python.md)
+- [keyTransaction](./keyTransaction.python.md)
 - [logParsingRule](./logParsingRule.python.md)
 - [monitorDowntime](./monitorDowntime.python.md)
 - [notificationChannel](./notificationChannel.python.md)

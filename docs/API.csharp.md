@@ -43,6 +43,7 @@ The following submodules are available:
 - [group](./group.csharp.md)
 - [infraAlertCondition](./infraAlertCondition.csharp.md)
 - [insightsEvent](./insightsEvent.csharp.md)
+- [keyTransaction](./keyTransaction.csharp.md)
 - [logParsingRule](./logParsingRule.csharp.md)
 - [monitorDowntime](./monitorDowntime.csharp.md)
 - [notificationChannel](./notificationChannel.csharp.md)
