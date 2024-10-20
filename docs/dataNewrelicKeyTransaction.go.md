@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransaction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelickeytransaction"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/datanewrelickeytransaction"
 
 datanewrelickeytransaction.NewDataNewrelicKeyTransaction(scope Construct, id *string, config DataNewrelicKeyTransactionConfig) DataNewrelicKeyTransaction
 ```
@@ -290,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransaction.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelickeytransaction"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/datanewrelickeytransaction"
 
 datanewrelickeytransaction.DataNewrelicKeyTransaction_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransaction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelickeytransaction"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/datanewrelickeytransaction"
 
 datanewrelickeytransaction.DataNewrelicKeyTransaction_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datanewrelickeytransaction.DataNewrelicKeyTransaction_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransaction.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelickeytransaction"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/datanewrelickeytransaction"
 
 datanewrelickeytransaction.DataNewrelicKeyTransaction_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datanewrelickeytransaction.DataNewrelicKeyTransaction_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransaction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelickeytransaction"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/datanewrelickeytransaction"
 
 datanewrelickeytransaction.DataNewrelicKeyTransaction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransactionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelickeytransaction"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/datanewrelickeytransaction"
 
 &datanewrelickeytransaction.DataNewrelicKeyTransactionConfig {
 	Connection: interface{},
