@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/cloud_account
+// https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/cloud_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataNewrelicCloudAccountConfig extends cdktf.TerraformMetaArgum
   /**
   * The ID of the New Relic account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/cloud_account#account_id DataNewrelicCloudAccount#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/cloud_account#account_id DataNewrelicCloudAccount#account_id}
   */
   readonly accountId?: number;
   /**
   * The cloud provider of the account, e.g. aws, gcp, azure
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/cloud_account#cloud_provider DataNewrelicCloudAccount#cloud_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/cloud_account#cloud_provider DataNewrelicCloudAccount#cloud_provider}
   */
   readonly cloudProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/cloud_account#id DataNewrelicCloudAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +34,13 @@ export interface DataNewrelicCloudAccountConfig extends cdktf.TerraformMetaArgum
   /**
   * The name of the cloud account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/cloud_account#name DataNewrelicCloudAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/cloud_account#name DataNewrelicCloudAccount#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/cloud_account newrelic_cloud_account}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/cloud_account newrelic_cloud_account}
 */
 export class DataNewrelicCloudAccount extends cdktf.TerraformDataSource {
 
@@ -56,7 +56,7 @@ export class DataNewrelicCloudAccount extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataNewrelicCloudAccount resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNewrelicCloudAccount to import
-  * @param importFromId The id of the existing DataNewrelicCloudAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/cloud_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNewrelicCloudAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/cloud_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNewrelicCloudAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +68,7 @@ export class DataNewrelicCloudAccount extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/cloud_account newrelic_cloud_account} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/cloud_account newrelic_cloud_account} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class DataNewrelicCloudAccount extends cdktf.TerraformDataSource {
       terraformResourceType: 'newrelic_cloud_account',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.50.0',
+        providerVersion: '3.51.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
