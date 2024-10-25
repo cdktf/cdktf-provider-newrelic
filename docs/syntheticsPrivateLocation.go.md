@@ -4,12 +4,12 @@
 
 ### SyntheticsPrivateLocation <a name="SyntheticsPrivateLocation" id="@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/resources/synthetics_private_location newrelic_synthetics_private_location}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/synthetics_private_location newrelic_synthetics_private_location}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsprivatelocation"
 
 syntheticsprivatelocation.NewSyntheticsPrivateLocation(scope Construct, id *string, config SyntheticsPrivateLocationConfig) SyntheticsPrivateLocation
 ```
@@ -399,7 +399,7 @@ func ResetVerifiedScriptExecution()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsprivatelocation"
 
 syntheticsprivatelocation.SyntheticsPrivateLocation_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsprivatelocation"
 
 syntheticsprivatelocation.SyntheticsPrivateLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ syntheticsprivatelocation.SyntheticsPrivateLocation_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsprivatelocation"
 
 syntheticsprivatelocation.SyntheticsPrivateLocation_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ syntheticsprivatelocation.SyntheticsPrivateLocation_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsprivatelocation"
 
 syntheticsprivatelocation.SyntheticsPrivateLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the SyntheticsPrivateLocation 
 
 The id of the existing SyntheticsPrivateLocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/resources/synthetics_private_location#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/synthetics_private_location#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,7 +842,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsprivatelocation"
 
 &syntheticsprivatelocation.SyntheticsPrivateLocationConfig {
 	Connection: interface{},
@@ -874,7 +874,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticspriva
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.description">Description</a></code> | <code>*string</code> | The private location description. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.name">Name</a></code> | <code>*string</code> | The name of the private location. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The ID of the account in New Relic. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.verifiedScriptExecution">VerifiedScriptExecution</a></code> | <code>interface{}</code> | The private location requires a password to edit if value is true. |
 
 ---
@@ -959,7 +959,7 @@ Description *string
 
 The private location description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
 
 ---
 
@@ -973,7 +973,7 @@ Name *string
 
 The name of the private location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
 
 ---
 
@@ -987,7 +987,7 @@ AccountId *f64
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/resources/synthetics_private_location#account_id SyntheticsPrivateLocation#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/synthetics_private_location#account_id SyntheticsPrivateLocation#account_id}
 
 ---
 
@@ -999,7 +999,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1016,7 +1016,7 @@ VerifiedScriptExecution interface{}
 
 The private location requires a password to edit if value is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/resources/synthetics_private_location#verified_script_execution SyntheticsPrivateLocation#verified_script_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/synthetics_private_location#verified_script_execution SyntheticsPrivateLocation#verified_script_execution}
 
 ---
 

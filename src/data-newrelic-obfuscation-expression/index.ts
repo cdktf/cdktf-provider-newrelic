@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/obfuscation_expression
+// https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/obfuscation_expression
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataNewrelicObfuscationExpressionConfig extends cdktf.Terraform
   /**
   * The account id associated with the obfuscation expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/obfuscation_expression#account_id DataNewrelicObfuscationExpression#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/obfuscation_expression#account_id DataNewrelicObfuscationExpression#account_id}
   */
   readonly accountId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/obfuscation_expression#id DataNewrelicObfuscationExpression#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/obfuscation_expression#id DataNewrelicObfuscationExpression#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +23,13 @@ export interface DataNewrelicObfuscationExpressionConfig extends cdktf.Terraform
   /**
   * Name of expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/obfuscation_expression#name DataNewrelicObfuscationExpression#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/obfuscation_expression#name DataNewrelicObfuscationExpression#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/obfuscation_expression newrelic_obfuscation_expression}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/obfuscation_expression newrelic_obfuscation_expression}
 */
 export class DataNewrelicObfuscationExpression extends cdktf.TerraformDataSource {
 
@@ -50,7 +45,7 @@ export class DataNewrelicObfuscationExpression extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataNewrelicObfuscationExpression resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNewrelicObfuscationExpression to import
-  * @param importFromId The id of the existing DataNewrelicObfuscationExpression that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/obfuscation_expression#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNewrelicObfuscationExpression that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/obfuscation_expression#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNewrelicObfuscationExpression to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +57,7 @@ export class DataNewrelicObfuscationExpression extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/obfuscation_expression newrelic_obfuscation_expression} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/obfuscation_expression newrelic_obfuscation_expression} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +68,7 @@ export class DataNewrelicObfuscationExpression extends cdktf.TerraformDataSource
       terraformResourceType: 'newrelic_obfuscation_expression',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.50.0',
+        providerVersion: '3.51.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
