@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.apiAccessKey.ApiAccessKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/apiaccesskey"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/apiaccesskey"
 
 apiaccesskey.NewApiAccessKey(scope Construct, id *string, config ApiAccessKeyConfig) ApiAccessKey
 ```
@@ -413,7 +413,7 @@ func ResetUserId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.apiAccessKey.ApiAccessKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/apiaccesskey"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/apiaccesskey"
 
 apiaccesskey.ApiAccessKey_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.apiAccessKey.ApiAccessKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/apiaccesskey"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/apiaccesskey"
 
 apiaccesskey.ApiAccessKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ apiaccesskey.ApiAccessKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.apiAccessKey.ApiAccessKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/apiaccesskey"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/apiaccesskey"
 
 apiaccesskey.ApiAccessKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ apiaccesskey.ApiAccessKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.apiAccessKey.ApiAccessKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/apiaccesskey"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/apiaccesskey"
 
 apiaccesskey.ApiAccessKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -867,7 +867,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.apiAccessKey.ApiAccessKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/apiaccesskey"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/apiaccesskey"
 
 &apiaccesskey.ApiAccessKeyConfig {
 	Connection: interface{},
