@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsScriptMonitor.SyntheticsScriptMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsscriptmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsscriptmonitor"
 
 syntheticsscriptmonitor.NewSyntheticsScriptMonitor(scope Construct, id *string, config SyntheticsScriptMonitorConfig) SyntheticsScriptMonitor
 ```
@@ -509,7 +509,7 @@ func ResetUseUnsupportedLegacyRuntime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.syntheticsScriptMonitor.SyntheticsScriptMonitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsscriptmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsscriptmonitor"
 
 syntheticsscriptmonitor.SyntheticsScriptMonitor_IsConstruct(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.syntheticsScriptMonitor.SyntheticsScriptMonitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsscriptmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsscriptmonitor"
 
 syntheticsscriptmonitor.SyntheticsScriptMonitor_IsTerraformElement(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ syntheticsscriptmonitor.SyntheticsScriptMonitor_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.syntheticsScriptMonitor.SyntheticsScriptMonitor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsscriptmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsscriptmonitor"
 
 syntheticsscriptmonitor.SyntheticsScriptMonitor_IsTerraformResource(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ syntheticsscriptmonitor.SyntheticsScriptMonitor_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.syntheticsScriptMonitor.SyntheticsScriptMonitor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsscriptmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsscriptmonitor"
 
 syntheticsscriptmonitor.SyntheticsScriptMonitor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1238,7 +1238,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsScriptMonitor.SyntheticsScriptMonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsscriptmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsscriptmonitor"
 
 &syntheticsscriptmonitor.SyntheticsScriptMonitorConfig {
 	Connection: interface{},
@@ -1651,7 +1651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsScriptMonitor.SyntheticsScriptMonitorLocationPrivate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsscriptmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsscriptmonitor"
 
 &syntheticsscriptmonitor.SyntheticsScriptMonitorLocationPrivate {
 	Guid: *string,
@@ -1701,7 +1701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsScriptMonitor.SyntheticsScriptMonitorTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsscriptmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsscriptmonitor"
 
 &syntheticsscriptmonitor.SyntheticsScriptMonitorTag {
 	Key: *string,
@@ -1753,7 +1753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsScriptMonitor.SyntheticsScriptMonitorLocationPrivateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsscriptmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsscriptmonitor"
 
 syntheticsscriptmonitor.NewSyntheticsScriptMonitorLocationPrivateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsScriptMonitorLocationPrivateList
 ```
@@ -1913,7 +1913,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsScriptMonitor.SyntheticsScriptMonitorLocationPrivateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsscriptmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsscriptmonitor"
 
 syntheticsscriptmonitor.NewSyntheticsScriptMonitorLocationPrivateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsScriptMonitorLocationPrivateOutputReference
 ```
@@ -2231,7 +2231,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsScriptMonitor.SyntheticsScriptMonitorTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsscriptmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsscriptmonitor"
 
 syntheticsscriptmonitor.NewSyntheticsScriptMonitorTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsScriptMonitorTagList
 ```
@@ -2391,7 +2391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsScriptMonitor.SyntheticsScriptMonitorTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/syntheticsscriptmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsscriptmonitor"
 
 syntheticsscriptmonitor.NewSyntheticsScriptMonitorTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsScriptMonitorTagOutputReference
 ```

@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/entity_tags
 // generated from terraform resource schema
 
