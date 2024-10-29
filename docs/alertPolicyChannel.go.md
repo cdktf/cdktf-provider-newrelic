@@ -4,12 +4,12 @@
 
 ### AlertPolicyChannel <a name="AlertPolicyChannel" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/alert_policy_channel newrelic_alert_policy_channel}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/alert_policy_channel newrelic_alert_policy_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/alertpolicychannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicychannel"
 
 alertpolicychannel.NewAlertPolicyChannel(scope Construct, id *string, config AlertPolicyChannelConfig) AlertPolicyChannel
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/alertpolicychannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicychannel"
 
 alertpolicychannel.AlertPolicyChannel_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/alertpolicychannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicychannel"
 
 alertpolicychannel.AlertPolicyChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ alertpolicychannel.AlertPolicyChannel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/alertpolicychannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicychannel"
 
 alertpolicychannel.AlertPolicyChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ alertpolicychannel.AlertPolicyChannel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/alertpolicychannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicychannel"
 
 alertpolicychannel.AlertPolicyChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the AlertPolicyChannel to impo
 
 The id of the existing AlertPolicyChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/alert_policy_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/alert_policy_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/alertpolicychannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicychannel"
 
 &alertpolicychannel.AlertPolicyChannelConfig {
 	Connection: interface{},
@@ -825,7 +825,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/alertpolicychan
 	PolicyId: *f64,
 	AccountId: *f64,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.alertPolicyChannel.AlertPolicyChannelTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.alertPolicyChannel.AlertPolicyChannelTimeouts,
 }
 ```
 
@@ -843,7 +843,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/alertpolicychan
 | <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelConfig.property.channelIds">ChannelIds</a></code> | <code>*[]*f64</code> | Array of channel IDs to apply to the specified policy. |
 | <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelConfig.property.policyId">PolicyId</a></code> | <code>*f64</code> | The ID of the policy. |
 | <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelConfig.property.accountId">AccountId</a></code> | <code>*f64</code> | The New Relic account ID where you want to link the channel to. |
-| <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/alert_policy_channel#id AlertPolicyChannel#id}. |
+| <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/alert_policy_channel#id AlertPolicyChannel#id}. |
 | <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelTimeouts">AlertPolicyChannelTimeouts</a></code> | timeouts block. |
 
 ---
@@ -930,7 +930,7 @@ Array of channel IDs to apply to the specified policy.
 
 We recommended sorting channel IDs in ascending order to avoid drift your Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/alert_policy_channel#channel_ids AlertPolicyChannel#channel_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/alert_policy_channel#channel_ids AlertPolicyChannel#channel_ids}
 
 ---
 
@@ -944,7 +944,7 @@ PolicyId *f64
 
 The ID of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/alert_policy_channel#policy_id AlertPolicyChannel#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/alert_policy_channel#policy_id AlertPolicyChannel#policy_id}
 
 ---
 
@@ -958,7 +958,7 @@ AccountId *f64
 
 The New Relic account ID where you want to link the channel to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/alert_policy_channel#account_id AlertPolicyChannel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/alert_policy_channel#account_id AlertPolicyChannel#account_id}
 
 ---
 
@@ -970,7 +970,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/alert_policy_channel#id AlertPolicyChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/alert_policy_channel#id AlertPolicyChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -987,7 +987,7 @@ Timeouts AlertPolicyChannelTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/alert_policy_channel#timeouts AlertPolicyChannel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/alert_policy_channel#timeouts AlertPolicyChannel#timeouts}
 
 ---
 
@@ -996,7 +996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/alertpolicychannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicychannel"
 
 &alertpolicychannel.AlertPolicyChannelTimeouts {
 	Create: *string,
@@ -1007,7 +1007,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/alertpolicychan
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/alert_policy_channel#create AlertPolicyChannel#create}. |
+| <code><a href="#@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/alert_policy_channel#create AlertPolicyChannel#create}. |
 
 ---
 
@@ -1019,7 +1019,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/alert_policy_channel#create AlertPolicyChannel#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/alert_policy_channel#create AlertPolicyChannel#create}.
 
 ---
 
@@ -1030,7 +1030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/alertpolicychannel"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/alertpolicychannel"
 
 alertpolicychannel.NewAlertPolicyChannelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertPolicyChannelTimeoutsOutputReference
 ```
