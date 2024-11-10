@@ -54,7 +54,7 @@ alertCondition.AlertCondition(
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.Initializer.parameter.name">name</a></code> | <code>str</code> | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.Initializer.parameter.policyId">policy_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the policy where this condition should be used. |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.Initializer.parameter.term">term</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.alertCondition.AlertConditionTerm">AlertConditionTerm</a>]]</code> | term block. |
-| <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.Initializer.parameter.type">type</a></code> | <code>str</code> | The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric). |
+| <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.Initializer.parameter.type">type</a></code> | <code>str</code> | The type of condition. One of: (apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric). |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.Initializer.parameter.conditionScope">condition_scope</a></code> | <code>str</code> | One of (application, instance). |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the condition is enabled. |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertCondition.Initializer.parameter.gcMetric">gc_metric</a></code> | <code>str</code> | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
+The type of condition. One of: (apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric).
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/alert_condition#type AlertCondition#type}
 
@@ -1373,7 +1373,7 @@ alertCondition.AlertConditionConfig(
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertConditionConfig.property.name">name</a></code> | <code>str</code> | The title of the condition. Must be between 1 and 128 characters, inclusive. |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertConditionConfig.property.policyId">policy_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the policy where this condition should be used. |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertConditionConfig.property.term">term</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.alertCondition.AlertConditionTerm">AlertConditionTerm</a>]]</code> | term block. |
-| <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertConditionConfig.property.type">type</a></code> | <code>str</code> | The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric). |
+| <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertConditionConfig.property.type">type</a></code> | <code>str</code> | The type of condition. One of: (apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric). |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertConditionConfig.property.conditionScope">condition_scope</a></code> | <code>str</code> | One of (application, instance). |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertConditionConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the condition is enabled. |
 | <code><a href="#@cdktf/provider-newrelic.alertCondition.AlertConditionConfig.property.gcMetric">gc_metric</a></code> | <code>str</code> | A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type. |
@@ -1533,7 +1533,7 @@ type: str
 
 - *Type:* str
 
-The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
+The type of condition. One of: (apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric).
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/alert_condition#type AlertCondition#type}
 
