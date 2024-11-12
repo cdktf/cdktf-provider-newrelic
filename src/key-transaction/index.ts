@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/key_transaction
+// https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/key_transaction
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface KeyTransactionConfig extends cdktf.TerraformMetaArguments {
   /**
   * The acceptable amount of the time spent in the backend before customers get frustrated (Apdex target)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/key_transaction#apdex_index KeyTransaction#apdex_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/key_transaction#apdex_index KeyTransaction#apdex_index}
   */
   readonly apdexIndex: number;
   /**
   * The GUID of the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/key_transaction#application_guid KeyTransaction#application_guid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/key_transaction#application_guid KeyTransaction#application_guid}
   */
   readonly applicationGuid: string;
   /**
   * The acceptable amount of time for rendering a page in a browser before customers get frustrated (browser Apdex target).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/key_transaction#browser_apdex_target KeyTransaction#browser_apdex_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/key_transaction#browser_apdex_target KeyTransaction#browser_apdex_target}
   */
   readonly browserApdexTarget: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/key_transaction#id KeyTransaction#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/key_transaction#id KeyTransaction#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,19 +40,19 @@ export interface KeyTransactionConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the metric underlying this key transaction
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/key_transaction#metric_name KeyTransaction#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/key_transaction#metric_name KeyTransaction#metric_name}
   */
   readonly metricName: string;
   /**
   * The name of the key transaction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/key_transaction#name KeyTransaction#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/key_transaction#name KeyTransaction#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/key_transaction newrelic_key_transaction}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/key_transaction newrelic_key_transaction}
 */
 export class KeyTransaction extends cdktf.TerraformResource {
 
@@ -68,7 +68,7 @@ export class KeyTransaction extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KeyTransaction resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeyTransaction to import
-  * @param importFromId The id of the existing KeyTransaction that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/key_transaction#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KeyTransaction that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/key_transaction#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeyTransaction to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +80,7 @@ export class KeyTransaction extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/key_transaction newrelic_key_transaction} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/key_transaction newrelic_key_transaction} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +91,7 @@ export class KeyTransaction extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_key_transaction',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.52.0',
+        providerVersion: '3.52.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
