@@ -4,12 +4,12 @@
 
 ### AccountManagement <a name="AccountManagement" id="@cdktf/provider-newrelic.accountManagement.AccountManagement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/account_management newrelic_account_management}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/account_management newrelic_account_management}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.accountManagement.AccountManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/accountmanagement"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/accountmanagement"
 
 accountmanagement.NewAccountManagement(scope Construct, id *string, config AccountManagementConfig) AccountManagement
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.accountManagement.AccountManagement.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/accountmanagement"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/accountmanagement"
 
 accountmanagement.AccountManagement_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.accountManagement.AccountManagement.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/accountmanagement"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/accountmanagement"
 
 accountmanagement.AccountManagement_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ accountmanagement.AccountManagement_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.accountManagement.AccountManagement.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/accountmanagement"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/accountmanagement"
 
 accountmanagement.AccountManagement_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ accountmanagement.AccountManagement_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.accountManagement.AccountManagement.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/accountmanagement"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/accountmanagement"
 
 accountmanagement.AccountManagement_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the AccountManagement to impor
 
 The id of the existing AccountManagement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/account_management#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/account_management#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.accountManagement.AccountManagementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/accountmanagement"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/accountmanagement"
 
 &accountmanagement.AccountManagementConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/accountmanageme
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementConfig.property.name">Name</a></code> | <code>*string</code> | Name of the account to be created. |
 | <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementConfig.property.region">Region</a></code> | <code>*string</code> | A description of what this parsing rule represents. |
-| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/account_management#id AccountManagement#id}. |
+| <code><a href="#@cdktf/provider-newrelic.accountManagement.AccountManagementConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/account_management#id AccountManagement#id}. |
 
 ---
 
@@ -853,7 +853,7 @@ Name *string
 
 Name of the account to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/account_management#name AccountManagement#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/account_management#name AccountManagement#name}
 
 ---
 
@@ -867,7 +867,7 @@ Region *string
 
 A description of what this parsing rule represents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/account_management#region AccountManagement#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/account_management#region AccountManagement#region}
 
 ---
 
@@ -879,7 +879,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/account_management#id AccountManagement#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/account_management#id AccountManagement#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
