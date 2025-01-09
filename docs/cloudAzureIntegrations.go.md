@@ -4,12 +4,12 @@
 
 ### CloudAzureIntegrations <a name="CloudAzureIntegrations" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrations(scope Construct, id *string, config CloudAzureIntegrationsConfig) CloudAzureIntegrations
 ```
@@ -1032,7 +1032,7 @@ func ResetVpnGateway()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.CloudAzureIntegrations_IsConstruct(x interface{}) *bool
 ```
@@ -1064,7 +1064,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.CloudAzureIntegrations_IsTerraformElement(x interface{}) *bool
 ```
@@ -1078,7 +1078,7 @@ cloudazureintegrations.CloudAzureIntegrations_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.CloudAzureIntegrations_IsTerraformResource(x interface{}) *bool
 ```
@@ -1092,7 +1092,7 @@ cloudazureintegrations.CloudAzureIntegrations_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.CloudAzureIntegrations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1121,7 +1121,7 @@ The construct id used in the generated config for the CloudAzureIntegrations to 
 
 The id of the existing CloudAzureIntegrations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2091,7 +2091,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsApiManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsApiManagement {
 	MetricsPollingInterval: *f64,
@@ -2118,7 +2118,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2132,7 +2132,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -2141,7 +2141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsAppGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsAppGateway {
 	MetricsPollingInterval: *f64,
@@ -2168,7 +2168,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2182,7 +2182,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -2191,7 +2191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsAppService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsAppService {
 	MetricsPollingInterval: *f64,
@@ -2218,7 +2218,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2232,7 +2232,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -2241,7 +2241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsConfig {
 	Connection: interface{},
@@ -2253,39 +2253,39 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureinteg
 	Provisioners: *[]interface{},
 	LinkedAccountId: *f64,
 	AccountId: *f64,
-	ApiManagement: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsApiManagement,
-	AppGateway: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsAppGateway,
-	AppService: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsAppService,
-	Containers: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsContainers,
-	CosmosDb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsCosmosDb,
-	CostManagement: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsCostManagement,
-	DataFactory: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsDataFactory,
-	EventHub: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsEventHub,
-	ExpressRoute: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsExpressRoute,
-	Firewalls: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsFirewalls,
-	FrontDoor: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsFrontDoor,
-	Functions: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsFunctions,
+	ApiManagement: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsApiManagement,
+	AppGateway: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsAppGateway,
+	AppService: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsAppService,
+	Containers: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsContainers,
+	CosmosDb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsCosmosDb,
+	CostManagement: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsCostManagement,
+	DataFactory: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsDataFactory,
+	EventHub: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsEventHub,
+	ExpressRoute: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsExpressRoute,
+	Firewalls: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFirewalls,
+	FrontDoor: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFrontDoor,
+	Functions: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFunctions,
 	Id: *string,
-	KeyVault: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsKeyVault,
-	LoadBalancer: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsLoadBalancer,
-	LogicApps: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsLogicApps,
-	MachineLearning: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsMachineLearning,
-	MariaDb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsMariaDb,
-	Monitor: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsMonitor,
-	Mysql: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsMysql,
-	MysqlFlexible: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsMysqlFlexible,
-	Postgresql: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsPostgresql,
-	PostgresqlFlexible: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsPostgresqlFlexible,
-	PowerBiDedicated: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsPowerBiDedicated,
-	RedisCache: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsRedisCache,
-	ServiceBus: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsServiceBus,
-	Sql: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsSql,
-	SqlManaged: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsSqlManaged,
-	Storage: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsStorage,
-	VirtualMachine: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsVirtualMachine,
-	VirtualNetworks: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsVirtualNetworks,
-	Vms: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsVms,
-	VpnGateway: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.cloudAzureIntegrations.CloudAzureIntegrationsVpnGateway,
+	KeyVault: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsKeyVault,
+	LoadBalancer: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLoadBalancer,
+	LogicApps: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLogicApps,
+	MachineLearning: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMachineLearning,
+	MariaDb: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMariaDb,
+	Monitor: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMonitor,
+	Mysql: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMysql,
+	MysqlFlexible: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMysqlFlexible,
+	Postgresql: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPostgresql,
+	PostgresqlFlexible: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPostgresqlFlexible,
+	PowerBiDedicated: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPowerBiDedicated,
+	RedisCache: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsRedisCache,
+	ServiceBus: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsServiceBus,
+	Sql: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsSql,
+	SqlManaged: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsSqlManaged,
+	Storage: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsStorage,
+	VirtualMachine: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVirtualMachine,
+	VirtualNetworks: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVirtualNetworks,
+	Vms: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVms,
+	VpnGateway: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVpnGateway,
 }
 ```
 
@@ -2314,7 +2314,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureinteg
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.firewalls">Firewalls</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFirewalls">CloudAzureIntegrationsFirewalls</a></code> | firewalls block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.frontDoor">FrontDoor</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFrontDoor">CloudAzureIntegrationsFrontDoor</a></code> | front_door block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.functions">Functions</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFunctions">CloudAzureIntegrationsFunctions</a></code> | functions block. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.keyVault">KeyVault</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsKeyVault">CloudAzureIntegrationsKeyVault</a></code> | key_vault block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.loadBalancer">LoadBalancer</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLoadBalancer">CloudAzureIntegrationsLoadBalancer</a></code> | load_balancer block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.logicApps">LogicApps</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLogicApps">CloudAzureIntegrationsLogicApps</a></code> | logic_apps block. |
@@ -2418,7 +2418,7 @@ LinkedAccountId *f64
 
 The ID of the linked Azure account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#linked_account_id CloudAzureIntegrations#linked_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#linked_account_id CloudAzureIntegrations#linked_account_id}
 
 ---
 
@@ -2432,7 +2432,7 @@ AccountId *f64
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#account_id CloudAzureIntegrations#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#account_id CloudAzureIntegrations#account_id}
 
 ---
 
@@ -2446,7 +2446,7 @@ ApiManagement CloudAzureIntegrationsApiManagement
 
 api_management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#api_management CloudAzureIntegrations#api_management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#api_management CloudAzureIntegrations#api_management}
 
 ---
 
@@ -2460,7 +2460,7 @@ AppGateway CloudAzureIntegrationsAppGateway
 
 app_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#app_gateway CloudAzureIntegrations#app_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#app_gateway CloudAzureIntegrations#app_gateway}
 
 ---
 
@@ -2474,7 +2474,7 @@ AppService CloudAzureIntegrationsAppService
 
 app_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#app_service CloudAzureIntegrations#app_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#app_service CloudAzureIntegrations#app_service}
 
 ---
 
@@ -2488,7 +2488,7 @@ Containers CloudAzureIntegrationsContainers
 
 containers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#containers CloudAzureIntegrations#containers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#containers CloudAzureIntegrations#containers}
 
 ---
 
@@ -2502,7 +2502,7 @@ CosmosDb CloudAzureIntegrationsCosmosDb
 
 cosmos_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#cosmos_db CloudAzureIntegrations#cosmos_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#cosmos_db CloudAzureIntegrations#cosmos_db}
 
 ---
 
@@ -2516,7 +2516,7 @@ CostManagement CloudAzureIntegrationsCostManagement
 
 cost_management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#cost_management CloudAzureIntegrations#cost_management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#cost_management CloudAzureIntegrations#cost_management}
 
 ---
 
@@ -2530,7 +2530,7 @@ DataFactory CloudAzureIntegrationsDataFactory
 
 data_factory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#data_factory CloudAzureIntegrations#data_factory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#data_factory CloudAzureIntegrations#data_factory}
 
 ---
 
@@ -2544,7 +2544,7 @@ EventHub CloudAzureIntegrationsEventHub
 
 event_hub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#event_hub CloudAzureIntegrations#event_hub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#event_hub CloudAzureIntegrations#event_hub}
 
 ---
 
@@ -2558,7 +2558,7 @@ ExpressRoute CloudAzureIntegrationsExpressRoute
 
 express_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#express_route CloudAzureIntegrations#express_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#express_route CloudAzureIntegrations#express_route}
 
 ---
 
@@ -2572,7 +2572,7 @@ Firewalls CloudAzureIntegrationsFirewalls
 
 firewalls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#firewalls CloudAzureIntegrations#firewalls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#firewalls CloudAzureIntegrations#firewalls}
 
 ---
 
@@ -2586,7 +2586,7 @@ FrontDoor CloudAzureIntegrationsFrontDoor
 
 front_door block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#front_door CloudAzureIntegrations#front_door}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#front_door CloudAzureIntegrations#front_door}
 
 ---
 
@@ -2600,7 +2600,7 @@ Functions CloudAzureIntegrationsFunctions
 
 functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#functions CloudAzureIntegrations#functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#functions CloudAzureIntegrations#functions}
 
 ---
 
@@ -2612,7 +2612,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2629,7 +2629,7 @@ KeyVault CloudAzureIntegrationsKeyVault
 
 key_vault block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#key_vault CloudAzureIntegrations#key_vault}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#key_vault CloudAzureIntegrations#key_vault}
 
 ---
 
@@ -2643,7 +2643,7 @@ LoadBalancer CloudAzureIntegrationsLoadBalancer
 
 load_balancer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#load_balancer CloudAzureIntegrations#load_balancer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#load_balancer CloudAzureIntegrations#load_balancer}
 
 ---
 
@@ -2657,7 +2657,7 @@ LogicApps CloudAzureIntegrationsLogicApps
 
 logic_apps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#logic_apps CloudAzureIntegrations#logic_apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#logic_apps CloudAzureIntegrations#logic_apps}
 
 ---
 
@@ -2671,7 +2671,7 @@ MachineLearning CloudAzureIntegrationsMachineLearning
 
 machine_learning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#machine_learning CloudAzureIntegrations#machine_learning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#machine_learning CloudAzureIntegrations#machine_learning}
 
 ---
 
@@ -2685,7 +2685,7 @@ MariaDb CloudAzureIntegrationsMariaDb
 
 maria_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#maria_db CloudAzureIntegrations#maria_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#maria_db CloudAzureIntegrations#maria_db}
 
 ---
 
@@ -2699,7 +2699,7 @@ Monitor CloudAzureIntegrationsMonitor
 
 monitor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#monitor CloudAzureIntegrations#monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#monitor CloudAzureIntegrations#monitor}
 
 ---
 
@@ -2713,7 +2713,7 @@ Mysql CloudAzureIntegrationsMysql
 
 mysql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#mysql CloudAzureIntegrations#mysql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#mysql CloudAzureIntegrations#mysql}
 
 ---
 
@@ -2727,7 +2727,7 @@ MysqlFlexible CloudAzureIntegrationsMysqlFlexible
 
 mysql_flexible block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#mysql_flexible CloudAzureIntegrations#mysql_flexible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#mysql_flexible CloudAzureIntegrations#mysql_flexible}
 
 ---
 
@@ -2741,7 +2741,7 @@ Postgresql CloudAzureIntegrationsPostgresql
 
 postgresql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#postgresql CloudAzureIntegrations#postgresql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#postgresql CloudAzureIntegrations#postgresql}
 
 ---
 
@@ -2755,7 +2755,7 @@ PostgresqlFlexible CloudAzureIntegrationsPostgresqlFlexible
 
 postgresql_flexible block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#postgresql_flexible CloudAzureIntegrations#postgresql_flexible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#postgresql_flexible CloudAzureIntegrations#postgresql_flexible}
 
 ---
 
@@ -2769,7 +2769,7 @@ PowerBiDedicated CloudAzureIntegrationsPowerBiDedicated
 
 power_bi_dedicated block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#power_bi_dedicated CloudAzureIntegrations#power_bi_dedicated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#power_bi_dedicated CloudAzureIntegrations#power_bi_dedicated}
 
 ---
 
@@ -2783,7 +2783,7 @@ RedisCache CloudAzureIntegrationsRedisCache
 
 redis_cache block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#redis_cache CloudAzureIntegrations#redis_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#redis_cache CloudAzureIntegrations#redis_cache}
 
 ---
 
@@ -2797,7 +2797,7 @@ ServiceBus CloudAzureIntegrationsServiceBus
 
 service_bus block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#service_bus CloudAzureIntegrations#service_bus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#service_bus CloudAzureIntegrations#service_bus}
 
 ---
 
@@ -2811,7 +2811,7 @@ Sql CloudAzureIntegrationsSql
 
 sql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#sql CloudAzureIntegrations#sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#sql CloudAzureIntegrations#sql}
 
 ---
 
@@ -2825,7 +2825,7 @@ SqlManaged CloudAzureIntegrationsSqlManaged
 
 sql_managed block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#sql_managed CloudAzureIntegrations#sql_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#sql_managed CloudAzureIntegrations#sql_managed}
 
 ---
 
@@ -2839,7 +2839,7 @@ Storage CloudAzureIntegrationsStorage
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#storage CloudAzureIntegrations#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#storage CloudAzureIntegrations#storage}
 
 ---
 
@@ -2853,7 +2853,7 @@ VirtualMachine CloudAzureIntegrationsVirtualMachine
 
 virtual_machine block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#virtual_machine CloudAzureIntegrations#virtual_machine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#virtual_machine CloudAzureIntegrations#virtual_machine}
 
 ---
 
@@ -2867,7 +2867,7 @@ VirtualNetworks CloudAzureIntegrationsVirtualNetworks
 
 virtual_networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#virtual_networks CloudAzureIntegrations#virtual_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#virtual_networks CloudAzureIntegrations#virtual_networks}
 
 ---
 
@@ -2881,7 +2881,7 @@ Vms CloudAzureIntegrationsVms
 
 vms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#vms CloudAzureIntegrations#vms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#vms CloudAzureIntegrations#vms}
 
 ---
 
@@ -2895,7 +2895,7 @@ VpnGateway CloudAzureIntegrationsVpnGateway
 
 vpn_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#vpn_gateway CloudAzureIntegrations#vpn_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#vpn_gateway CloudAzureIntegrations#vpn_gateway}
 
 ---
 
@@ -2904,7 +2904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsContainers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsContainers {
 	MetricsPollingInterval: *f64,
@@ -2931,7 +2931,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2945,7 +2945,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -2954,7 +2954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsCosmosDb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsCosmosDb {
 	MetricsPollingInterval: *f64,
@@ -2981,7 +2981,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2995,7 +2995,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3004,7 +3004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsCostManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsCostManagement {
 	MetricsPollingInterval: *f64,
@@ -3031,7 +3031,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3045,7 +3045,7 @@ TagKeys *[]*string
 
 Specify if additional cost data per tag should be collected. This field is case sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#tag_keys CloudAzureIntegrations#tag_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#tag_keys CloudAzureIntegrations#tag_keys}
 
 ---
 
@@ -3054,7 +3054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsDataFactory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsDataFactory {
 	MetricsPollingInterval: *f64,
@@ -3081,7 +3081,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3095,7 +3095,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3104,7 +3104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsEventHub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsEventHub {
 	MetricsPollingInterval: *f64,
@@ -3131,7 +3131,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3145,7 +3145,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3154,7 +3154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsExpressRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsExpressRoute {
 	MetricsPollingInterval: *f64,
@@ -3181,7 +3181,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3195,7 +3195,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3204,7 +3204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFirewalls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsFirewalls {
 	MetricsPollingInterval: *f64,
@@ -3231,7 +3231,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3245,7 +3245,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3254,7 +3254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFrontDoor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsFrontDoor {
 	MetricsPollingInterval: *f64,
@@ -3281,7 +3281,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3295,7 +3295,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3304,7 +3304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsFunctions {
 	MetricsPollingInterval: *f64,
@@ -3331,7 +3331,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3345,7 +3345,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3354,7 +3354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsKeyVault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsKeyVault {
 	MetricsPollingInterval: *f64,
@@ -3381,7 +3381,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3395,7 +3395,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3404,7 +3404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLoadBalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsLoadBalancer {
 	MetricsPollingInterval: *f64,
@@ -3431,7 +3431,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3445,7 +3445,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3454,7 +3454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLogicApps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsLogicApps {
 	MetricsPollingInterval: *f64,
@@ -3481,7 +3481,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3495,7 +3495,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3504,7 +3504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMachineLearning.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsMachineLearning {
 	MetricsPollingInterval: *f64,
@@ -3531,7 +3531,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3545,7 +3545,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3554,7 +3554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMariaDb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsMariaDb {
 	MetricsPollingInterval: *f64,
@@ -3581,7 +3581,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3595,7 +3595,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3604,7 +3604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsMonitor {
 	Enabled: interface{},
@@ -3639,7 +3639,7 @@ Enabled interface{}
 
 A flag that specifies if the integration is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#enabled CloudAzureIntegrations#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#enabled CloudAzureIntegrations#enabled}
 
 ---
 
@@ -3653,7 +3653,7 @@ ExcludeTags *[]*string
 
 Specify resource tags in 'key:value' form to be excluded from monitoring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#exclude_tags CloudAzureIntegrations#exclude_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#exclude_tags CloudAzureIntegrations#exclude_tags}
 
 ---
 
@@ -3667,7 +3667,7 @@ IncludeTags *[]*string
 
 Specify resource tags in 'key:value' form to be monitored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#include_tags CloudAzureIntegrations#include_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#include_tags CloudAzureIntegrations#include_tags}
 
 ---
 
@@ -3681,7 +3681,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3695,7 +3695,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3709,7 +3709,7 @@ ResourceTypes *[]*string
 
 Specify each Azure resource type that needs to be monitored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_types CloudAzureIntegrations#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_types CloudAzureIntegrations#resource_types}
 
 ---
 
@@ -3718,7 +3718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMysql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsMysql {
 	MetricsPollingInterval: *f64,
@@ -3745,7 +3745,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3759,7 +3759,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3768,7 +3768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMysqlFlexible.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsMysqlFlexible {
 	MetricsPollingInterval: *f64,
@@ -3795,7 +3795,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3809,7 +3809,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3818,7 +3818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPostgresql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsPostgresql {
 	MetricsPollingInterval: *f64,
@@ -3845,7 +3845,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3859,7 +3859,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3868,7 +3868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPostgresqlFlexible.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsPostgresqlFlexible {
 	MetricsPollingInterval: *f64,
@@ -3895,7 +3895,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3909,7 +3909,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3918,7 +3918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPowerBiDedicated.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsPowerBiDedicated {
 	MetricsPollingInterval: *f64,
@@ -3945,7 +3945,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3959,7 +3959,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3968,7 +3968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsRedisCache.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsRedisCache {
 	MetricsPollingInterval: *f64,
@@ -3995,7 +3995,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4009,7 +4009,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4018,7 +4018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsServiceBus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsServiceBus {
 	MetricsPollingInterval: *f64,
@@ -4045,7 +4045,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4059,7 +4059,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4068,7 +4068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsSql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsSql {
 	MetricsPollingInterval: *f64,
@@ -4095,7 +4095,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4109,7 +4109,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4118,7 +4118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsSqlManaged.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsSqlManaged {
 	MetricsPollingInterval: *f64,
@@ -4145,7 +4145,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4159,7 +4159,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4168,7 +4168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsStorage {
 	MetricsPollingInterval: *f64,
@@ -4195,7 +4195,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4209,7 +4209,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4218,7 +4218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVirtualMachine.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsVirtualMachine {
 	MetricsPollingInterval: *f64,
@@ -4245,7 +4245,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4259,7 +4259,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4268,7 +4268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVirtualNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsVirtualNetworks {
 	MetricsPollingInterval: *f64,
@@ -4295,7 +4295,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4309,7 +4309,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4318,7 +4318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsVms {
 	MetricsPollingInterval: *f64,
@@ -4345,7 +4345,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4359,7 +4359,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4368,7 +4368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVpnGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 &cloudazureintegrations.CloudAzureIntegrationsVpnGateway {
 	MetricsPollingInterval: *f64,
@@ -4395,7 +4395,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4409,7 +4409,7 @@ ResourceGroups *[]*string
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4420,7 +4420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsApiManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsApiManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsApiManagementOutputReference
 ```
@@ -4727,7 +4727,7 @@ func InternalValue() CloudAzureIntegrationsApiManagement
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsAppGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsAppGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsAppGatewayOutputReference
 ```
@@ -5034,7 +5034,7 @@ func InternalValue() CloudAzureIntegrationsAppGateway
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsAppServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsAppServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsAppServiceOutputReference
 ```
@@ -5341,7 +5341,7 @@ func InternalValue() CloudAzureIntegrationsAppService
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsContainersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsContainersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsContainersOutputReference
 ```
@@ -5648,7 +5648,7 @@ func InternalValue() CloudAzureIntegrationsContainers
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsCosmosDbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsCosmosDbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsCosmosDbOutputReference
 ```
@@ -5955,7 +5955,7 @@ func InternalValue() CloudAzureIntegrationsCosmosDb
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsCostManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsCostManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsCostManagementOutputReference
 ```
@@ -6262,7 +6262,7 @@ func InternalValue() CloudAzureIntegrationsCostManagement
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsDataFactoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsDataFactoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsDataFactoryOutputReference
 ```
@@ -6569,7 +6569,7 @@ func InternalValue() CloudAzureIntegrationsDataFactory
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsEventHubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsEventHubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsEventHubOutputReference
 ```
@@ -6876,7 +6876,7 @@ func InternalValue() CloudAzureIntegrationsEventHub
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsExpressRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsExpressRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsExpressRouteOutputReference
 ```
@@ -7183,7 +7183,7 @@ func InternalValue() CloudAzureIntegrationsExpressRoute
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFirewallsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsFirewallsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsFirewallsOutputReference
 ```
@@ -7490,7 +7490,7 @@ func InternalValue() CloudAzureIntegrationsFirewalls
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFrontDoorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsFrontDoorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsFrontDoorOutputReference
 ```
@@ -7797,7 +7797,7 @@ func InternalValue() CloudAzureIntegrationsFrontDoor
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFunctionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsFunctionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsFunctionsOutputReference
 ```
@@ -8104,7 +8104,7 @@ func InternalValue() CloudAzureIntegrationsFunctions
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsKeyVaultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsKeyVaultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsKeyVaultOutputReference
 ```
@@ -8411,7 +8411,7 @@ func InternalValue() CloudAzureIntegrationsKeyVault
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLoadBalancerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsLoadBalancerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsLoadBalancerOutputReference
 ```
@@ -8718,7 +8718,7 @@ func InternalValue() CloudAzureIntegrationsLoadBalancer
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLogicAppsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsLogicAppsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsLogicAppsOutputReference
 ```
@@ -9025,7 +9025,7 @@ func InternalValue() CloudAzureIntegrationsLogicApps
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMachineLearningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsMachineLearningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsMachineLearningOutputReference
 ```
@@ -9332,7 +9332,7 @@ func InternalValue() CloudAzureIntegrationsMachineLearning
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMariaDbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsMariaDbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsMariaDbOutputReference
 ```
@@ -9639,7 +9639,7 @@ func InternalValue() CloudAzureIntegrationsMariaDb
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMonitorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsMonitorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsMonitorOutputReference
 ```
@@ -10062,7 +10062,7 @@ func InternalValue() CloudAzureIntegrationsMonitor
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMysqlFlexibleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsMysqlFlexibleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsMysqlFlexibleOutputReference
 ```
@@ -10369,7 +10369,7 @@ func InternalValue() CloudAzureIntegrationsMysqlFlexible
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMysqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsMysqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsMysqlOutputReference
 ```
@@ -10676,7 +10676,7 @@ func InternalValue() CloudAzureIntegrationsMysql
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPostgresqlFlexibleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsPostgresqlFlexibleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsPostgresqlFlexibleOutputReference
 ```
@@ -10983,7 +10983,7 @@ func InternalValue() CloudAzureIntegrationsPostgresqlFlexible
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPostgresqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsPostgresqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsPostgresqlOutputReference
 ```
@@ -11290,7 +11290,7 @@ func InternalValue() CloudAzureIntegrationsPostgresql
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPowerBiDedicatedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsPowerBiDedicatedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsPowerBiDedicatedOutputReference
 ```
@@ -11597,7 +11597,7 @@ func InternalValue() CloudAzureIntegrationsPowerBiDedicated
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsRedisCacheOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsRedisCacheOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsRedisCacheOutputReference
 ```
@@ -11904,7 +11904,7 @@ func InternalValue() CloudAzureIntegrationsRedisCache
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsServiceBusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsServiceBusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsServiceBusOutputReference
 ```
@@ -12211,7 +12211,7 @@ func InternalValue() CloudAzureIntegrationsServiceBus
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsSqlManagedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsSqlManagedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsSqlManagedOutputReference
 ```
@@ -12518,7 +12518,7 @@ func InternalValue() CloudAzureIntegrationsSqlManaged
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsSqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsSqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsSqlOutputReference
 ```
@@ -12825,7 +12825,7 @@ func InternalValue() CloudAzureIntegrationsSql
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsStorageOutputReference
 ```
@@ -13132,7 +13132,7 @@ func InternalValue() CloudAzureIntegrationsStorage
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVirtualMachineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsVirtualMachineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsVirtualMachineOutputReference
 ```
@@ -13439,7 +13439,7 @@ func InternalValue() CloudAzureIntegrationsVirtualMachine
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVirtualNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsVirtualNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsVirtualNetworksOutputReference
 ```
@@ -13746,7 +13746,7 @@ func InternalValue() CloudAzureIntegrationsVirtualNetworks
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVmsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsVmsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsVmsOutputReference
 ```
@@ -14053,7 +14053,7 @@ func InternalValue() CloudAzureIntegrationsVms
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsVpnGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudazureintegrations"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/cloudazureintegrations"
 
 cloudazureintegrations.NewCloudAzureIntegrationsVpnGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsVpnGatewayOutputReference
 ```
