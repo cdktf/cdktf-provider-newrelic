@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule
+// https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,29 @@ export interface AlertMutingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account id of the MutingRule..
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#account_id AlertMutingRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#account_id AlertMutingRule#account_id}
   */
   readonly accountId?: number;
   /**
+  * The action when the muting rule window is ended or disabled.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#action_on_muting_rule_window_ended AlertMutingRule#action_on_muting_rule_window_ended}
+  */
+  readonly actionOnMutingRuleWindowEnded?: string;
+  /**
   * The description of the MutingRule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#description AlertMutingRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#description AlertMutingRule#description}
   */
   readonly description?: string;
   /**
   * Whether the MutingRule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#enabled AlertMutingRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#enabled AlertMutingRule#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#id AlertMutingRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#id AlertMutingRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,19 +46,19 @@ export interface AlertMutingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the MutingRule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#name AlertMutingRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#name AlertMutingRule#name}
   */
   readonly name: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#condition AlertMutingRule#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#condition AlertMutingRule#condition}
   */
   readonly condition: AlertMutingRuleCondition;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#schedule AlertMutingRule#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#schedule AlertMutingRule#schedule}
   */
   readonly schedule?: AlertMutingRuleSchedule;
 }
@@ -60,19 +66,19 @@ export interface AlertMutingRuleConditionConditions {
   /**
   * The attribute on an incident.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#attribute AlertMutingRule#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#attribute AlertMutingRule#attribute}
   */
   readonly attribute: string;
   /**
   * The operator used to compare the attribute's value with the supplied value(s).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#operator AlertMutingRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#operator AlertMutingRule#operator}
   */
   readonly operator: string;
   /**
   * The value(s) to compare against the attribute's value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#values AlertMutingRule#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#values AlertMutingRule#values}
   */
   readonly values: string[];
 }
@@ -239,13 +245,13 @@ export interface AlertMutingRuleCondition {
   /**
   * The operator used to combine all the MutingRuleConditions within the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#operator AlertMutingRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#operator AlertMutingRule#operator}
   */
   readonly operator: string;
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#conditions AlertMutingRule#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#conditions AlertMutingRule#conditions}
   */
   readonly conditions: AlertMutingRuleConditionConditions[] | cdktf.IResolvable;
 }
@@ -354,43 +360,43 @@ export interface AlertMutingRuleSchedule {
   /**
   * The datetime stamp when the MutingRule schedule should stop repeating.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#end_repeat AlertMutingRule#end_repeat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#end_repeat AlertMutingRule#end_repeat}
   */
   readonly endRepeat?: string;
   /**
   * The datetime stamp representing when the MutingRule should end.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#end_time AlertMutingRule#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#end_time AlertMutingRule#end_time}
   */
   readonly endTime?: string;
   /**
   * The frequency the MutingRule schedule repeats. One of [DAILY, WEEKLY, MONTHLY]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#repeat AlertMutingRule#repeat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#repeat AlertMutingRule#repeat}
   */
   readonly repeat?: string;
   /**
   * The number of times the MutingRule schedule should repeat.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#repeat_count AlertMutingRule#repeat_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#repeat_count AlertMutingRule#repeat_count}
   */
   readonly repeatCount?: number;
   /**
   * The datetime stamp representing when the MutingRule should start.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#start_time AlertMutingRule#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#start_time AlertMutingRule#start_time}
   */
   readonly startTime?: string;
   /**
   * The time zone that applies to the MutingRule schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#time_zone AlertMutingRule#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#time_zone AlertMutingRule#time_zone}
   */
   readonly timeZone: string;
   /**
   * The day(s) of the week that a MutingRule should repeat when the repeat field is set to WEEKLY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#weekly_repeat_days AlertMutingRule#weekly_repeat_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#weekly_repeat_days AlertMutingRule#weekly_repeat_days}
   */
   readonly weeklyRepeatDays?: string[];
 }
@@ -645,7 +651,7 @@ export class AlertMutingRuleScheduleOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule newrelic_alert_muting_rule}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule newrelic_alert_muting_rule}
 */
 export class AlertMutingRule extends cdktf.TerraformResource {
 
@@ -661,7 +667,7 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AlertMutingRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AlertMutingRule to import
-  * @param importFromId The id of the existing AlertMutingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AlertMutingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AlertMutingRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -673,7 +679,7 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule newrelic_alert_muting_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule newrelic_alert_muting_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -684,7 +690,7 @@ export class AlertMutingRule extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_alert_muting_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.53.0',
+        providerVersion: '3.54.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
@@ -696,6 +702,7 @@ export class AlertMutingRule extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._accountId = config.accountId;
+    this._actionOnMutingRuleWindowEnded = config.actionOnMutingRuleWindowEnded;
     this._description = config.description;
     this._enabled = config.enabled;
     this._id = config.id;
@@ -722,6 +729,22 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
     return this._accountId;
+  }
+
+  // action_on_muting_rule_window_ended - computed: true, optional: true, required: false
+  private _actionOnMutingRuleWindowEnded?: string; 
+  public get actionOnMutingRuleWindowEnded() {
+    return this.getStringAttribute('action_on_muting_rule_window_ended');
+  }
+  public set actionOnMutingRuleWindowEnded(value: string) {
+    this._actionOnMutingRuleWindowEnded = value;
+  }
+  public resetActionOnMutingRuleWindowEnded() {
+    this._actionOnMutingRuleWindowEnded = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionOnMutingRuleWindowEndedInput() {
+    return this._actionOnMutingRuleWindowEnded;
   }
 
   // description - computed: false, optional: true, required: false
@@ -818,6 +841,7 @@ export class AlertMutingRule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.numberToTerraform(this._accountId),
+      action_on_muting_rule_window_ended: cdktf.stringToTerraform(this._actionOnMutingRuleWindowEnded),
       description: cdktf.stringToTerraform(this._description),
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),
@@ -834,6 +858,12 @@ export class AlertMutingRule extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      action_on_muting_rule_window_ended: {
+        value: cdktf.stringToHclTerraform(this._actionOnMutingRuleWindowEnded),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       description: {
         value: cdktf.stringToHclTerraform(this._description),
