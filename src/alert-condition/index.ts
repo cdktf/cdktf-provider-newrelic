@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition
+// https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +10,29 @@ export interface AlertConditionConfig extends cdktf.TerraformMetaArguments {
   /**
   * One of (application, instance). Choose application for most scenarios. If you are using the JVM plugin in New Relic, the instance setting allows your condition to trigger for specific app instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#condition_scope AlertCondition#condition_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#condition_scope AlertCondition#condition_scope}
   */
   readonly conditionScope?: string;
   /**
   * Whether the condition is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#enabled AlertCondition#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#enabled AlertCondition#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The instance IDs associated with this condition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#entities AlertCondition#entities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#entities AlertCondition#entities}
   */
   readonly entities: number[];
   /**
   * A valid Garbage Collection metric e.g. GC/G1 Young Generation. This is required if you are using apm_jvm_metric with gc_cpu_time condition type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#gc_metric AlertCondition#gc_metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#gc_metric AlertCondition#gc_metric}
   */
   readonly gcMetric?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#id AlertCondition#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#id AlertCondition#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,55 +41,55 @@ export interface AlertConditionConfig extends cdktf.TerraformMetaArguments {
   /**
   * The metric field accepts parameters based on the type set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#metric AlertCondition#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#metric AlertCondition#metric}
   */
   readonly metric: string;
   /**
   * The title of the condition. Must be between 1 and 128 characters, inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#name AlertCondition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#name AlertCondition#name}
   */
   readonly name: string;
   /**
   * The ID of the policy where this condition should be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#policy_id AlertCondition#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#policy_id AlertCondition#policy_id}
   */
   readonly policyId: number;
   /**
   * Runbook URL to display in notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#runbook_url AlertCondition#runbook_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#runbook_url AlertCondition#runbook_url}
   */
   readonly runbookUrl?: string;
   /**
-  * The type of condition. One of: (browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric).
+  * The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#type AlertCondition#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#type AlertCondition#type}
   */
   readonly type: string;
   /**
   * A custom metric to be evaluated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#user_defined_metric AlertCondition#user_defined_metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#user_defined_metric AlertCondition#user_defined_metric}
   */
   readonly userDefinedMetric?: string;
   /**
   * One of: (average, min, max, total, sample_size, percent, rate).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#user_defined_value_function AlertCondition#user_defined_value_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#user_defined_value_function AlertCondition#user_defined_value_function}
   */
   readonly userDefinedValueFunction?: string;
   /**
   * Automatically close instance-based incidents, including JVM health metric incidents, after the number of hours specified. Must be between 1 and 720 hours.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#violation_close_timer AlertCondition#violation_close_timer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#violation_close_timer AlertCondition#violation_close_timer}
   */
   readonly violationCloseTimer?: number;
   /**
   * term block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#term AlertCondition#term}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#term AlertCondition#term}
   */
   readonly term: AlertConditionTerm[] | cdktf.IResolvable;
 }
@@ -102,31 +97,31 @@ export interface AlertConditionTerm {
   /**
   * In minutes, must be in the range of 5 to 120, inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#duration AlertCondition#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#duration AlertCondition#duration}
   */
   readonly duration: number;
   /**
   * One of (above, below, equal). Defaults to equal.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#operator AlertCondition#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#operator AlertCondition#operator}
   */
   readonly operator?: string;
   /**
   * One of (critical, warning). Defaults to critical.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#priority AlertCondition#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#priority AlertCondition#priority}
   */
   readonly priority?: string;
   /**
   * Must be 0 or greater.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#threshold AlertCondition#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#threshold AlertCondition#threshold}
   */
   readonly threshold: number;
   /**
   * One of (all, any).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#time_function AlertCondition#time_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#time_function AlertCondition#time_function}
   */
   readonly timeFunction: string;
 }
@@ -349,7 +344,7 @@ export class AlertConditionTermList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition newrelic_alert_condition}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition newrelic_alert_condition}
 */
 export class AlertCondition extends cdktf.TerraformResource {
 
@@ -365,7 +360,7 @@ export class AlertCondition extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AlertCondition resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AlertCondition to import
-  * @param importFromId The id of the existing AlertCondition that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AlertCondition that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AlertCondition to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -377,7 +372,7 @@ export class AlertCondition extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_condition newrelic_alert_condition} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/alert_condition newrelic_alert_condition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -388,7 +383,7 @@ export class AlertCondition extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.54.0',
+        providerVersion: '3.54.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
