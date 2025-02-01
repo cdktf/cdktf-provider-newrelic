@@ -4,7 +4,7 @@
 
 ### EntityTags <a name="EntityTags" id="@cdktf/provider-newrelic.entityTags.EntityTags"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/entity_tags newrelic_entity_tags}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/entity_tags newrelic_entity_tags}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.entityTags.EntityTags.Initializer"></a>
 
@@ -507,7 +507,7 @@ The construct id used in the generated config for the EntityTags to import.
 
 The id of the existing EntityTags that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/entity_tags#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/entity_tags#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,7 +813,7 @@ const entityTagsConfig: entityTags.EntityTagsConfig = { ... }
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.guid">guid</a></code> | <code>string</code> | The guid of the entity to tag. |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.tag">tag</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTag">EntityTagsTag</a>[]</code> | tag block. |
-| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/entity_tags#id EntityTags#id}. |
+| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/entity_tags#id EntityTags#id}. |
 | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts">EntityTagsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -898,7 +898,7 @@ public readonly guid: string;
 
 The guid of the entity to tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/entity_tags#guid EntityTags#guid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/entity_tags#guid EntityTags#guid}
 
 ---
 
@@ -912,7 +912,7 @@ public readonly tag: IResolvable | EntityTagsTag[];
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/entity_tags#tag EntityTags#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/entity_tags#tag EntityTags#tag}
 
 ---
 
@@ -924,7 +924,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/entity_tags#id EntityTags#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/entity_tags#id EntityTags#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -941,7 +941,7 @@ public readonly timeouts: EntityTagsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/entity_tags#timeouts EntityTags#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/entity_tags#timeouts EntityTags#timeouts}
 
 ---
 
@@ -974,7 +974,7 @@ public readonly key: string;
 
 The tag key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/entity_tags#key EntityTags#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/entity_tags#key EntityTags#key}
 
 ---
 
@@ -988,7 +988,7 @@ public readonly values: string[];
 
 The tag values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/entity_tags#values EntityTags#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/entity_tags#values EntityTags#values}
 
 ---
 
@@ -1006,7 +1006,7 @@ const entityTagsTimeouts: entityTags.EntityTagsTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/entity_tags#create EntityTags#create}. |
+| <code><a href="#@cdktf/provider-newrelic.entityTags.EntityTagsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/entity_tags#create EntityTags#create}. |
 
 ---
 
@@ -1018,7 +1018,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/entity_tags#create EntityTags#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/resources/entity_tags#create EntityTags#create}.
 
 ---
 
