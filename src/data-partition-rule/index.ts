@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/resources/data_partition_rule
+// https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/data_partition_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface DataPartitionRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account id associated with the data partition rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/resources/data_partition_rule#account_id DataPartitionRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/data_partition_rule#account_id DataPartitionRule#account_id}
   */
   readonly accountId?: number;
   /**
   * The description of the data partition rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/resources/data_partition_rule#description DataPartitionRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/data_partition_rule#description DataPartitionRule#description}
   */
   readonly description?: string;
   /**
   * Whether or not this data partition rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/resources/data_partition_rule#enabled DataPartitionRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/data_partition_rule#enabled DataPartitionRule#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/resources/data_partition_rule#id DataPartitionRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/data_partition_rule#id DataPartitionRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,31 +35,31 @@ export interface DataPartitionRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The NRQL to match events for this data partition rule. Logs matching this criteria will be routed to the specified data partition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/resources/data_partition_rule#nrql DataPartitionRule#nrql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/data_partition_rule#nrql DataPartitionRule#nrql}
   */
   readonly nrql: string;
   /**
   * The retention policy of the data partition data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/resources/data_partition_rule#retention_policy DataPartitionRule#retention_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/data_partition_rule#retention_policy DataPartitionRule#retention_policy}
   */
   readonly retentionPolicy: string;
   /**
   * The name of the data partition where logs will be allocated once the rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/resources/data_partition_rule#target_data_partition DataPartitionRule#target_data_partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/data_partition_rule#target_data_partition DataPartitionRule#target_data_partition}
   */
   readonly targetDataPartition: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/resources/data_partition_rule#timeouts DataPartitionRule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/data_partition_rule#timeouts DataPartitionRule#timeouts}
   */
   readonly timeouts?: DataPartitionRuleTimeouts;
 }
 export interface DataPartitionRuleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/resources/data_partition_rule#create DataPartitionRule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/data_partition_rule#create DataPartitionRule#create}
   */
   readonly create?: string;
 }
@@ -158,7 +153,7 @@ export class DataPartitionRuleTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/resources/data_partition_rule newrelic_data_partition_rule}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/data_partition_rule newrelic_data_partition_rule}
 */
 export class DataPartitionRule extends cdktf.TerraformResource {
 
@@ -174,7 +169,7 @@ export class DataPartitionRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DataPartitionRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPartitionRule to import
-  * @param importFromId The id of the existing DataPartitionRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/resources/data_partition_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPartitionRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/data_partition_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPartitionRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -186,7 +181,7 @@ export class DataPartitionRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/resources/data_partition_rule newrelic_data_partition_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/data_partition_rule newrelic_data_partition_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -197,7 +192,7 @@ export class DataPartitionRule extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_data_partition_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.55.0',
+        providerVersion: '3.56.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
