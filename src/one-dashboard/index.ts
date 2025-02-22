@@ -20,17 +20,17 @@ export interface OneDashboardConfig extends cdktf.TerraformMetaArguments {
   /**
   * The New Relic account ID where you want to create the dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/one_dashboard#account_id OneDashboard#account_id}
   */
   readonly accountId?: number;
   /**
   * The dashboard's description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/one_dashboard#description OneDashboard#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/one_dashboard#description OneDashboard#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/one_dashboard#id OneDashboard#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/one_dashboard#id OneDashboard#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,31 +39,31 @@ export interface OneDashboardConfig extends cdktf.TerraformMetaArguments {
   /**
   * The dashboard's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/one_dashboard#name OneDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/one_dashboard#name OneDashboard#name}
   */
   readonly name: string;
   /**
   * Determines who can see or edit the dashboard. Valid values are private, public_read_only, public_read_write. Defaults to public_read_only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/one_dashboard#permissions OneDashboard#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/one_dashboard#permissions OneDashboard#permissions}
   */
   readonly permissions?: string;
   /**
   * page block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/one_dashboard#page OneDashboard#page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/one_dashboard#page OneDashboard#page}
   */
   readonly page: OneDashboardPage[] | cdktf.IResolvable;
   /**
   * variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/one_dashboard#variable OneDashboard#variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/one_dashboard#variable OneDashboard#variable}
   */
   readonly variable?: OneDashboardVariable[] | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/one_dashboard newrelic_one_dashboard}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/one_dashboard newrelic_one_dashboard}
 */
 export class OneDashboard extends cdktf.TerraformResource {
 
@@ -79,7 +79,7 @@ export class OneDashboard extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OneDashboard resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OneDashboard to import
-  * @param importFromId The id of the existing OneDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/one_dashboard#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OneDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/one_dashboard#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OneDashboard to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -91,7 +91,7 @@ export class OneDashboard extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/one_dashboard newrelic_one_dashboard} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/one_dashboard newrelic_one_dashboard} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +102,7 @@ export class OneDashboard extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_one_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.56.0',
+        providerVersion: '3.57.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

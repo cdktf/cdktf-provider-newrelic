@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition
+// https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,83 +15,83 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   /**
   * The New Relic account ID for managing your NRQL alert conditions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#account_id NrqlAlertCondition#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#account_id NrqlAlertCondition#account_id}
   */
   readonly accountId?: number;
   /**
   * How long we wait for data that belongs in each aggregation window. Depending on your data, a longer delay may increase accuracy but delay notifications. Use aggregationDelay with the EVENT_FLOW and CADENCE aggregation methods.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#aggregation_delay NrqlAlertCondition#aggregation_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#aggregation_delay NrqlAlertCondition#aggregation_delay}
   */
   readonly aggregationDelay?: string;
   /**
   * The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for incidents. Default is EVENT_FLOW.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#aggregation_method NrqlAlertCondition#aggregation_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#aggregation_method NrqlAlertCondition#aggregation_method}
   */
   readonly aggregationMethod?: string;
   /**
   * How long we wait after each data point arrives to make sure we've processed the whole batch. Use aggregationTimer with the EVENT_TIMER aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#aggregation_timer NrqlAlertCondition#aggregation_timer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#aggregation_timer NrqlAlertCondition#aggregation_timer}
   */
   readonly aggregationTimer?: string;
   /**
   * The duration of the time window used to evaluate the NRQL query, in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#aggregation_window NrqlAlertCondition#aggregation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#aggregation_window NrqlAlertCondition#aggregation_window}
   */
   readonly aggregationWindow?: number;
   /**
   * The baseline direction of a baseline NRQL alert condition. Valid values are: 'LOWER_ONLY', 'UPPER_AND_LOWER', 'UPPER_ONLY' (case insensitive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#baseline_direction NrqlAlertCondition#baseline_direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#baseline_direction NrqlAlertCondition#baseline_direction}
   */
   readonly baselineDirection?: string;
   /**
   * Whether to close all open incidents when the signal expires.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#close_violations_on_expiration NrqlAlertCondition#close_violations_on_expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#close_violations_on_expiration NrqlAlertCondition#close_violations_on_expiration}
   */
   readonly closeViolationsOnExpiration?: boolean | cdktf.IResolvable;
   /**
   * The description of the NRQL alert condition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#description NrqlAlertCondition#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#description NrqlAlertCondition#description}
   */
   readonly description?: string;
   /**
   * Whether or not to enable the alert condition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#enabled NrqlAlertCondition#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#enabled NrqlAlertCondition#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * How long we wait until the signal starts evaluating. The maximum delay is 7200 seconds (120 minutes)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#evaluation_delay NrqlAlertCondition#evaluation_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#evaluation_delay NrqlAlertCondition#evaluation_delay}
   */
   readonly evaluationDelay?: number;
   /**
   * The amount of time (in seconds) to wait before considering the signal expired.  Must be in the range of 30 to 172800 (inclusive)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#expiration_duration NrqlAlertCondition#expiration_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#expiration_duration NrqlAlertCondition#expiration_duration}
   */
   readonly expirationDuration?: number;
   /**
   * Which strategy to use when filling gaps in the signal. If static, the 'fill value' will be used for filling gaps in the signal. Valid values are: 'NONE', 'LAST_VALUE', or 'STATIC' (case insensitive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#fill_option NrqlAlertCondition#fill_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#fill_option NrqlAlertCondition#fill_option}
   */
   readonly fillOption?: string;
   /**
   * If using the 'static' fill option, this value will be used for filling gaps in the signal.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#fill_value NrqlAlertCondition#fill_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#fill_value NrqlAlertCondition#fill_value}
   */
   readonly fillValue?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#id NrqlAlertCondition#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#id NrqlAlertCondition#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -100,131 +100,258 @@ export interface NrqlAlertConditionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether to ignore expected termination of a signal when considering whether to create a loss of signal incident
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#ignore_on_expected_termination NrqlAlertCondition#ignore_on_expected_termination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#ignore_on_expected_termination NrqlAlertCondition#ignore_on_expected_termination}
   */
   readonly ignoreOnExpectedTermination?: boolean | cdktf.IResolvable;
   /**
   * The title of the condition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#name NrqlAlertCondition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#name NrqlAlertCondition#name}
   */
   readonly name: string;
   /**
   * Whether to create a new incident to capture that the signal expired.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#open_violation_on_expiration NrqlAlertCondition#open_violation_on_expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#open_violation_on_expiration NrqlAlertCondition#open_violation_on_expiration}
   */
   readonly openViolationOnExpiration?: boolean | cdktf.IResolvable;
   /**
   * The ID of the policy where this condition should be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#policy_id NrqlAlertCondition#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#policy_id NrqlAlertCondition#policy_id}
   */
   readonly policyId: number;
   /**
   * Runbook URL to display in notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#runbook_url NrqlAlertCondition#runbook_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#runbook_url NrqlAlertCondition#runbook_url}
   */
   readonly runbookUrl?: string;
   /**
   * The duration of overlapping time windows used to smooth the chart line, in seconds. Must be a factor of `aggregation_window` and less than the aggregation window. If `aggregation_window` is less than or equal to 3600 seconds, it should be greater or equal to 30 seconds. If `aggregation_window` is greater than 3600 seconds but less than 7200 seconds, it should be greater or equal to `aggregation_window / 120`.  If `aggregation_window` is greater than 7200 seconds, it should be greater or equal to `aggregation_window / 24
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#slide_by NrqlAlertCondition#slide_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#slide_by NrqlAlertCondition#slide_by}
   */
   readonly slideBy?: number;
   /**
   * This field allows you to create a custom title to be used when incidents are opened by the condition. Setting this field will override the default title. Must be Handlebars format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#title_template NrqlAlertCondition#title_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#title_template NrqlAlertCondition#title_template}
   */
   readonly titleTemplate?: string;
   /**
   * The type of NRQL alert condition to create. Valid values are: 'static', 'baseline'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#type NrqlAlertCondition#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#type NrqlAlertCondition#type}
   */
   readonly type?: string;
   /**
   * Sets a time limit, in hours, that will automatically force-close a long-lasting incident after the time limit you select. Possible values are 'ONE_HOUR', 'TWO_HOURS', 'FOUR_HOURS', 'EIGHT_HOURS', 'TWELVE_HOURS', 'TWENTY_FOUR_HOURS', 'THIRTY_DAYS' (case insensitive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#violation_time_limit NrqlAlertCondition#violation_time_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#violation_time_limit NrqlAlertCondition#violation_time_limit}
   */
   readonly violationTimeLimit?: string;
   /**
   * Sets a time limit, in seconds, that will automatically force-close a long-lasting incident after the time limit you select.  Must be in the range of 300 to 2592000 (inclusive)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#violation_time_limit_seconds NrqlAlertCondition#violation_time_limit_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#violation_time_limit_seconds NrqlAlertCondition#violation_time_limit_seconds}
   */
   readonly violationTimeLimitSeconds?: number;
   /**
   * critical block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#critical NrqlAlertCondition#critical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#critical NrqlAlertCondition#critical}
   */
   readonly critical?: NrqlAlertConditionCritical;
   /**
   * nrql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#nrql NrqlAlertCondition#nrql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#nrql NrqlAlertCondition#nrql}
   */
   readonly nrql: NrqlAlertConditionNrql;
   /**
   * term block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#term NrqlAlertCondition#term}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#term NrqlAlertCondition#term}
   */
   readonly term?: NrqlAlertConditionTerm[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#timeouts NrqlAlertCondition#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#timeouts NrqlAlertCondition#timeouts}
   */
   readonly timeouts?: NrqlAlertConditionTimeouts;
   /**
   * warning block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#warning NrqlAlertCondition#warning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#warning NrqlAlertCondition#warning}
   */
   readonly warning?: NrqlAlertConditionWarning;
+}
+export interface NrqlAlertConditionCriticalPrediction {
+  /**
+  * BETA PREVIEW: the `predict_by` field is in limited release and only enabled for preview on a per-account basis. - The duration, in seconds, that the prediction should look into the future.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#predict_by NrqlAlertCondition#predict_by}
+  */
+  readonly predictBy?: number;
+  /**
+  * BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis. - If a prediction incident is open when a term's static threshold is breached by the actual signal, default behavior is to close the prediction incident and open a static incident. Setting `prefer_prediction_violation` to `true` overrides this behavior leaving the prediction incident open and preventing a static incident from opening.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#prefer_prediction_violation NrqlAlertCondition#prefer_prediction_violation}
+  */
+  readonly preferPredictionViolation?: boolean | cdktf.IResolvable;
+}
+
+export function nrqlAlertConditionCriticalPredictionToTerraform(struct?: NrqlAlertConditionCriticalPredictionOutputReference | NrqlAlertConditionCriticalPrediction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    predict_by: cdktf.numberToTerraform(struct!.predictBy),
+    prefer_prediction_violation: cdktf.booleanToTerraform(struct!.preferPredictionViolation),
+  }
+}
+
+
+export function nrqlAlertConditionCriticalPredictionToHclTerraform(struct?: NrqlAlertConditionCriticalPredictionOutputReference | NrqlAlertConditionCriticalPrediction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    predict_by: {
+      value: cdktf.numberToHclTerraform(struct!.predictBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    prefer_prediction_violation: {
+      value: cdktf.booleanToHclTerraform(struct!.preferPredictionViolation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NrqlAlertConditionCriticalPredictionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NrqlAlertConditionCriticalPrediction | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._predictBy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.predictBy = this._predictBy;
+    }
+    if (this._preferPredictionViolation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.preferPredictionViolation = this._preferPredictionViolation;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NrqlAlertConditionCriticalPrediction | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._predictBy = undefined;
+      this._preferPredictionViolation = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._predictBy = value.predictBy;
+      this._preferPredictionViolation = value.preferPredictionViolation;
+    }
+  }
+
+  // predict_by - computed: false, optional: true, required: false
+  private _predictBy?: number; 
+  public get predictBy() {
+    return this.getNumberAttribute('predict_by');
+  }
+  public set predictBy(value: number) {
+    this._predictBy = value;
+  }
+  public resetPredictBy() {
+    this._predictBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get predictByInput() {
+    return this._predictBy;
+  }
+
+  // prefer_prediction_violation - computed: false, optional: true, required: false
+  private _preferPredictionViolation?: boolean | cdktf.IResolvable; 
+  public get preferPredictionViolation() {
+    return this.getBooleanAttribute('prefer_prediction_violation');
+  }
+  public set preferPredictionViolation(value: boolean | cdktf.IResolvable) {
+    this._preferPredictionViolation = value;
+  }
+  public resetPreferPredictionViolation() {
+    this._preferPredictionViolation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferPredictionViolationInput() {
+    return this._preferPredictionViolation;
+  }
 }
 export interface NrqlAlertConditionCritical {
   /**
   * In minutes, must be in the range of 1 to 120 (inclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#duration NrqlAlertCondition#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#duration NrqlAlertCondition#duration}
   */
   readonly duration?: number;
   /**
   * One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#operator NrqlAlertCondition#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#operator NrqlAlertCondition#operator}
   */
   readonly operator?: string;
   /**
   * For baseline conditions must be in range [1, 1000].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
   */
   readonly threshold: number;
   /**
   * The duration, in seconds, that the threshold must violate in order to create an incident. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-86400 seconds for baseline conditions, and within 60-86400 seconds for static conditions
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
   */
   readonly thresholdDuration?: number;
   /**
   * The criteria for how many data points must be in violation for the specified threshold duration. Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
   */
   readonly thresholdOccurrences?: string;
   /**
   * Valid values are: 'all' or 'any'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
   */
   readonly timeFunction?: string;
+  /**
+  * prediction block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#prediction NrqlAlertCondition#prediction}
+  */
+  readonly prediction?: NrqlAlertConditionCriticalPrediction;
 }
 
 export function nrqlAlertConditionCriticalToTerraform(struct?: NrqlAlertConditionCriticalOutputReference | NrqlAlertConditionCritical): any {
@@ -239,6 +366,7 @@ export function nrqlAlertConditionCriticalToTerraform(struct?: NrqlAlertConditio
     threshold_duration: cdktf.numberToTerraform(struct!.thresholdDuration),
     threshold_occurrences: cdktf.stringToTerraform(struct!.thresholdOccurrences),
     time_function: cdktf.stringToTerraform(struct!.timeFunction),
+    prediction: nrqlAlertConditionCriticalPredictionToTerraform(struct!.prediction),
   }
 }
 
@@ -285,6 +413,12 @@ export function nrqlAlertConditionCriticalToHclTerraform(struct?: NrqlAlertCondi
       type: "simple",
       storageClassType: "string",
     },
+    prediction: {
+      value: nrqlAlertConditionCriticalPredictionToHclTerraform(struct!.prediction),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NrqlAlertConditionCriticalPredictionList",
+    },
   };
 
   // remove undefined attributes
@@ -329,6 +463,10 @@ export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObje
       hasAnyValues = true;
       internalValueResult.timeFunction = this._timeFunction;
     }
+    if (this._prediction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prediction = this._prediction?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -341,6 +479,7 @@ export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObje
       this._thresholdDuration = undefined;
       this._thresholdOccurrences = undefined;
       this._timeFunction = undefined;
+      this._prediction.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -350,6 +489,7 @@ export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObje
       this._thresholdDuration = value.thresholdDuration;
       this._thresholdOccurrences = value.thresholdOccurrences;
       this._timeFunction = value.timeFunction;
+      this._prediction.internalValue = value.prediction;
     }
   }
 
@@ -445,28 +585,44 @@ export class NrqlAlertConditionCriticalOutputReference extends cdktf.ComplexObje
   public get timeFunctionInput() {
     return this._timeFunction;
   }
+
+  // prediction - computed: false, optional: true, required: false
+  private _prediction = new NrqlAlertConditionCriticalPredictionOutputReference(this, "prediction");
+  public get prediction() {
+    return this._prediction;
+  }
+  public putPrediction(value: NrqlAlertConditionCriticalPrediction) {
+    this._prediction.internalValue = value;
+  }
+  public resetPrediction() {
+    this._prediction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get predictionInput() {
+    return this._prediction.internalValue;
+  }
 }
 export interface NrqlAlertConditionNrql {
   /**
   * The New Relic account ID to use as the basis for the NRQL alert condition's `query`; will default to `account_id` if unspecified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#data_account_id NrqlAlertCondition#data_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#data_account_id NrqlAlertCondition#data_account_id}
   */
   readonly dataAccountId?: number;
   /**
   * NRQL queries are evaluated in one-minute time windows. The start time depends on the value you provide in the NRQL condition's `evaluation_offset`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#evaluation_offset NrqlAlertCondition#evaluation_offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#evaluation_offset NrqlAlertCondition#evaluation_offset}
   */
   readonly evaluationOffset?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#query NrqlAlertCondition#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#query NrqlAlertCondition#query}
   */
   readonly query: string;
   /**
   * NRQL queries are evaluated in one-minute time windows. The start time depends on the value you provide in the NRQL condition's `since_value`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#since_value NrqlAlertCondition#since_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#since_value NrqlAlertCondition#since_value}
   */
   readonly sinceValue?: string;
 }
@@ -632,49 +788,176 @@ export class NrqlAlertConditionNrqlOutputReference extends cdktf.ComplexObject {
     return this._sinceValue;
   }
 }
+export interface NrqlAlertConditionTermPrediction {
+  /**
+  * BETA PREVIEW: the `predict_by` field is in limited release and only enabled for preview on a per-account basis. - The duration, in seconds, that the prediction should look into the future.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#predict_by NrqlAlertCondition#predict_by}
+  */
+  readonly predictBy?: number;
+  /**
+  * BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis. - If a prediction incident is open when a term's static threshold is breached by the actual signal, default behavior is to close the prediction incident and open a static incident. Setting `prefer_prediction_violation` to `true` overrides this behavior leaving the prediction incident open and preventing a static incident from opening.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#prefer_prediction_violation NrqlAlertCondition#prefer_prediction_violation}
+  */
+  readonly preferPredictionViolation?: boolean | cdktf.IResolvable;
+}
+
+export function nrqlAlertConditionTermPredictionToTerraform(struct?: NrqlAlertConditionTermPredictionOutputReference | NrqlAlertConditionTermPrediction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    predict_by: cdktf.numberToTerraform(struct!.predictBy),
+    prefer_prediction_violation: cdktf.booleanToTerraform(struct!.preferPredictionViolation),
+  }
+}
+
+
+export function nrqlAlertConditionTermPredictionToHclTerraform(struct?: NrqlAlertConditionTermPredictionOutputReference | NrqlAlertConditionTermPrediction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    predict_by: {
+      value: cdktf.numberToHclTerraform(struct!.predictBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    prefer_prediction_violation: {
+      value: cdktf.booleanToHclTerraform(struct!.preferPredictionViolation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NrqlAlertConditionTermPredictionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NrqlAlertConditionTermPrediction | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._predictBy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.predictBy = this._predictBy;
+    }
+    if (this._preferPredictionViolation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.preferPredictionViolation = this._preferPredictionViolation;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NrqlAlertConditionTermPrediction | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._predictBy = undefined;
+      this._preferPredictionViolation = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._predictBy = value.predictBy;
+      this._preferPredictionViolation = value.preferPredictionViolation;
+    }
+  }
+
+  // predict_by - computed: false, optional: true, required: false
+  private _predictBy?: number; 
+  public get predictBy() {
+    return this.getNumberAttribute('predict_by');
+  }
+  public set predictBy(value: number) {
+    this._predictBy = value;
+  }
+  public resetPredictBy() {
+    this._predictBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get predictByInput() {
+    return this._predictBy;
+  }
+
+  // prefer_prediction_violation - computed: false, optional: true, required: false
+  private _preferPredictionViolation?: boolean | cdktf.IResolvable; 
+  public get preferPredictionViolation() {
+    return this.getBooleanAttribute('prefer_prediction_violation');
+  }
+  public set preferPredictionViolation(value: boolean | cdktf.IResolvable) {
+    this._preferPredictionViolation = value;
+  }
+  public resetPreferPredictionViolation() {
+    this._preferPredictionViolation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferPredictionViolationInput() {
+    return this._preferPredictionViolation;
+  }
+}
 export interface NrqlAlertConditionTerm {
   /**
   * In minutes, must be in the range of 1 to 120 (inclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#duration NrqlAlertCondition#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#duration NrqlAlertCondition#duration}
   */
   readonly duration?: number;
   /**
   * One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#operator NrqlAlertCondition#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#operator NrqlAlertCondition#operator}
   */
   readonly operator?: string;
   /**
   * One of (critical, warning). Defaults to 'critical'. At least one condition term must have priority set to 'critical'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#priority NrqlAlertCondition#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#priority NrqlAlertCondition#priority}
   */
   readonly priority?: string;
   /**
   * For baseline conditions must be in range [1, 1000].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
   */
   readonly threshold: number;
   /**
   * The duration, in seconds, that the threshold must violate in order to create an incident. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-86400 seconds for baseline conditions, and within 60-86400 seconds for static conditions
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
   */
   readonly thresholdDuration?: number;
   /**
   * The criteria for how many data points must be in violation for the specified threshold duration. Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
   */
   readonly thresholdOccurrences?: string;
   /**
   * Valid values are: 'all' or 'any'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
   */
   readonly timeFunction?: string;
+  /**
+  * prediction block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#prediction NrqlAlertCondition#prediction}
+  */
+  readonly prediction?: NrqlAlertConditionTermPrediction;
 }
 
 export function nrqlAlertConditionTermToTerraform(struct?: NrqlAlertConditionTerm | cdktf.IResolvable): any {
@@ -690,6 +973,7 @@ export function nrqlAlertConditionTermToTerraform(struct?: NrqlAlertConditionTer
     threshold_duration: cdktf.numberToTerraform(struct!.thresholdDuration),
     threshold_occurrences: cdktf.stringToTerraform(struct!.thresholdOccurrences),
     time_function: cdktf.stringToTerraform(struct!.timeFunction),
+    prediction: nrqlAlertConditionTermPredictionToTerraform(struct!.prediction),
   }
 }
 
@@ -741,6 +1025,12 @@ export function nrqlAlertConditionTermToHclTerraform(struct?: NrqlAlertCondition
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    prediction: {
+      value: nrqlAlertConditionTermPredictionToHclTerraform(struct!.prediction),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NrqlAlertConditionTermPredictionList",
     },
   };
 
@@ -796,6 +1086,10 @@ export class NrqlAlertConditionTermOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.timeFunction = this._timeFunction;
     }
+    if (this._prediction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prediction = this._prediction?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -810,6 +1104,7 @@ export class NrqlAlertConditionTermOutputReference extends cdktf.ComplexObject {
       this._thresholdDuration = undefined;
       this._thresholdOccurrences = undefined;
       this._timeFunction = undefined;
+      this._prediction.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -825,6 +1120,7 @@ export class NrqlAlertConditionTermOutputReference extends cdktf.ComplexObject {
       this._thresholdDuration = value.thresholdDuration;
       this._thresholdOccurrences = value.thresholdOccurrences;
       this._timeFunction = value.timeFunction;
+      this._prediction.internalValue = value.prediction;
     }
   }
 
@@ -936,6 +1232,22 @@ export class NrqlAlertConditionTermOutputReference extends cdktf.ComplexObject {
   public get timeFunctionInput() {
     return this._timeFunction;
   }
+
+  // prediction - computed: false, optional: true, required: false
+  private _prediction = new NrqlAlertConditionTermPredictionOutputReference(this, "prediction");
+  public get prediction() {
+    return this._prediction;
+  }
+  public putPrediction(value: NrqlAlertConditionTermPrediction) {
+    this._prediction.internalValue = value;
+  }
+  public resetPrediction() {
+    this._prediction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get predictionInput() {
+    return this._prediction.internalValue;
+  }
 }
 
 export class NrqlAlertConditionTermList extends cdktf.ComplexList {
@@ -959,7 +1271,7 @@ export class NrqlAlertConditionTermList extends cdktf.ComplexList {
 }
 export interface NrqlAlertConditionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#create NrqlAlertCondition#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#create NrqlAlertCondition#create}
   */
   readonly create?: string;
 }
@@ -1051,43 +1363,170 @@ export class NrqlAlertConditionTimeoutsOutputReference extends cdktf.ComplexObje
     return this._create;
   }
 }
+export interface NrqlAlertConditionWarningPrediction {
+  /**
+  * BETA PREVIEW: the `predict_by` field is in limited release and only enabled for preview on a per-account basis. - The duration, in seconds, that the prediction should look into the future.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#predict_by NrqlAlertCondition#predict_by}
+  */
+  readonly predictBy?: number;
+  /**
+  * BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis. - If a prediction incident is open when a term's static threshold is breached by the actual signal, default behavior is to close the prediction incident and open a static incident. Setting `prefer_prediction_violation` to `true` overrides this behavior leaving the prediction incident open and preventing a static incident from opening.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#prefer_prediction_violation NrqlAlertCondition#prefer_prediction_violation}
+  */
+  readonly preferPredictionViolation?: boolean | cdktf.IResolvable;
+}
+
+export function nrqlAlertConditionWarningPredictionToTerraform(struct?: NrqlAlertConditionWarningPredictionOutputReference | NrqlAlertConditionWarningPrediction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    predict_by: cdktf.numberToTerraform(struct!.predictBy),
+    prefer_prediction_violation: cdktf.booleanToTerraform(struct!.preferPredictionViolation),
+  }
+}
+
+
+export function nrqlAlertConditionWarningPredictionToHclTerraform(struct?: NrqlAlertConditionWarningPredictionOutputReference | NrqlAlertConditionWarningPrediction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    predict_by: {
+      value: cdktf.numberToHclTerraform(struct!.predictBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    prefer_prediction_violation: {
+      value: cdktf.booleanToHclTerraform(struct!.preferPredictionViolation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NrqlAlertConditionWarningPredictionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NrqlAlertConditionWarningPrediction | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._predictBy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.predictBy = this._predictBy;
+    }
+    if (this._preferPredictionViolation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.preferPredictionViolation = this._preferPredictionViolation;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NrqlAlertConditionWarningPrediction | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._predictBy = undefined;
+      this._preferPredictionViolation = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._predictBy = value.predictBy;
+      this._preferPredictionViolation = value.preferPredictionViolation;
+    }
+  }
+
+  // predict_by - computed: false, optional: true, required: false
+  private _predictBy?: number; 
+  public get predictBy() {
+    return this.getNumberAttribute('predict_by');
+  }
+  public set predictBy(value: number) {
+    this._predictBy = value;
+  }
+  public resetPredictBy() {
+    this._predictBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get predictByInput() {
+    return this._predictBy;
+  }
+
+  // prefer_prediction_violation - computed: false, optional: true, required: false
+  private _preferPredictionViolation?: boolean | cdktf.IResolvable; 
+  public get preferPredictionViolation() {
+    return this.getBooleanAttribute('prefer_prediction_violation');
+  }
+  public set preferPredictionViolation(value: boolean | cdktf.IResolvable) {
+    this._preferPredictionViolation = value;
+  }
+  public resetPreferPredictionViolation() {
+    this._preferPredictionViolation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferPredictionViolationInput() {
+    return this._preferPredictionViolation;
+  }
+}
 export interface NrqlAlertConditionWarning {
   /**
   * In minutes, must be in the range of 1 to 120 (inclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#duration NrqlAlertCondition#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#duration NrqlAlertCondition#duration}
   */
   readonly duration?: number;
   /**
   * One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#operator NrqlAlertCondition#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#operator NrqlAlertCondition#operator}
   */
   readonly operator?: string;
   /**
   * For baseline conditions must be in range [1, 1000].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#threshold NrqlAlertCondition#threshold}
   */
   readonly threshold: number;
   /**
   * The duration, in seconds, that the threshold must violate in order to create an incident. Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-86400 seconds for baseline conditions, and within 60-86400 seconds for static conditions
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
   */
   readonly thresholdDuration?: number;
   /**
   * The criteria for how many data points must be in violation for the specified threshold duration. Valid values are: 'ALL' or 'AT_LEAST_ONCE' (case insensitive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#threshold_occurrences NrqlAlertCondition#threshold_occurrences}
   */
   readonly thresholdOccurrences?: string;
   /**
   * Valid values are: 'all' or 'any'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#time_function NrqlAlertCondition#time_function}
   */
   readonly timeFunction?: string;
+  /**
+  * prediction block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#prediction NrqlAlertCondition#prediction}
+  */
+  readonly prediction?: NrqlAlertConditionWarningPrediction;
 }
 
 export function nrqlAlertConditionWarningToTerraform(struct?: NrqlAlertConditionWarningOutputReference | NrqlAlertConditionWarning): any {
@@ -1102,6 +1541,7 @@ export function nrqlAlertConditionWarningToTerraform(struct?: NrqlAlertCondition
     threshold_duration: cdktf.numberToTerraform(struct!.thresholdDuration),
     threshold_occurrences: cdktf.stringToTerraform(struct!.thresholdOccurrences),
     time_function: cdktf.stringToTerraform(struct!.timeFunction),
+    prediction: nrqlAlertConditionWarningPredictionToTerraform(struct!.prediction),
   }
 }
 
@@ -1148,6 +1588,12 @@ export function nrqlAlertConditionWarningToHclTerraform(struct?: NrqlAlertCondit
       type: "simple",
       storageClassType: "string",
     },
+    prediction: {
+      value: nrqlAlertConditionWarningPredictionToHclTerraform(struct!.prediction),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NrqlAlertConditionWarningPredictionList",
+    },
   };
 
   // remove undefined attributes
@@ -1192,6 +1638,10 @@ export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObjec
       hasAnyValues = true;
       internalValueResult.timeFunction = this._timeFunction;
     }
+    if (this._prediction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prediction = this._prediction?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1204,6 +1654,7 @@ export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObjec
       this._thresholdDuration = undefined;
       this._thresholdOccurrences = undefined;
       this._timeFunction = undefined;
+      this._prediction.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -1213,6 +1664,7 @@ export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObjec
       this._thresholdDuration = value.thresholdDuration;
       this._thresholdOccurrences = value.thresholdOccurrences;
       this._timeFunction = value.timeFunction;
+      this._prediction.internalValue = value.prediction;
     }
   }
 
@@ -1308,10 +1760,26 @@ export class NrqlAlertConditionWarningOutputReference extends cdktf.ComplexObjec
   public get timeFunctionInput() {
     return this._timeFunction;
   }
+
+  // prediction - computed: false, optional: true, required: false
+  private _prediction = new NrqlAlertConditionWarningPredictionOutputReference(this, "prediction");
+  public get prediction() {
+    return this._prediction;
+  }
+  public putPrediction(value: NrqlAlertConditionWarningPrediction) {
+    this._prediction.internalValue = value;
+  }
+  public resetPrediction() {
+    this._prediction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get predictionInput() {
+    return this._prediction.internalValue;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition}
 */
 export class NrqlAlertCondition extends cdktf.TerraformResource {
 
@@ -1327,7 +1795,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NrqlAlertCondition resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NrqlAlertCondition to import
-  * @param importFromId The id of the existing NrqlAlertCondition that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NrqlAlertCondition that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NrqlAlertCondition to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1339,7 +1807,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1350,7 +1818,7 @@ export class NrqlAlertCondition extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_nrql_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.56.0',
+        providerVersion: '3.57.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
