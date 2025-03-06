@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/data-sources/synthetics_private_location
+// https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/data-sources/synthetics_private_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataNewrelicSyntheticsPrivateLocationConfig extends cdktf.Terra
   /**
   * The ID of the account in New Relic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/data-sources/synthetics_private_location#account_id DataNewrelicSyntheticsPrivateLocation#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/data-sources/synthetics_private_location#account_id DataNewrelicSyntheticsPrivateLocation#account_id}
   */
   readonly accountId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/data-sources/synthetics_private_location#id DataNewrelicSyntheticsPrivateLocation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/data-sources/synthetics_private_location#id DataNewrelicSyntheticsPrivateLocation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,19 @@ export interface DataNewrelicSyntheticsPrivateLocationConfig extends cdktf.Terra
   /**
   * The key of the queried private location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/data-sources/synthetics_private_location#key DataNewrelicSyntheticsPrivateLocation#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/data-sources/synthetics_private_location#key DataNewrelicSyntheticsPrivateLocation#key}
   */
   readonly key?: string[];
   /**
   * The name of the Synthetics monitor private location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/data-sources/synthetics_private_location#name DataNewrelicSyntheticsPrivateLocation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/data-sources/synthetics_private_location#name DataNewrelicSyntheticsPrivateLocation#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/data-sources/synthetics_private_location newrelic_synthetics_private_location}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/data-sources/synthetics_private_location newrelic_synthetics_private_location}
 */
 export class DataNewrelicSyntheticsPrivateLocation extends cdktf.TerraformDataSource {
 
@@ -56,7 +56,7 @@ export class DataNewrelicSyntheticsPrivateLocation extends cdktf.TerraformDataSo
   * Generates CDKTF code for importing a DataNewrelicSyntheticsPrivateLocation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNewrelicSyntheticsPrivateLocation to import
-  * @param importFromId The id of the existing DataNewrelicSyntheticsPrivateLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/data-sources/synthetics_private_location#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNewrelicSyntheticsPrivateLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/data-sources/synthetics_private_location#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNewrelicSyntheticsPrivateLocation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +68,7 @@ export class DataNewrelicSyntheticsPrivateLocation extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.0/docs/data-sources/synthetics_private_location newrelic_synthetics_private_location} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/data-sources/synthetics_private_location newrelic_synthetics_private_location} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class DataNewrelicSyntheticsPrivateLocation extends cdktf.TerraformDataSo
       terraformResourceType: 'newrelic_synthetics_private_location',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.57.0',
+        providerVersion: '3.57.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
