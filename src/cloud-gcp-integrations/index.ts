@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/cloud_gcp_integrations
 // generated from terraform resource schema
 
