@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel
+// https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface NotificationChannelConfig extends cdktf.TerraformMetaArguments 
   /**
   * The account id of the channel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel#account_id NotificationChannel#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel#account_id NotificationChannel#account_id}
   */
   readonly accountId?: number;
   /**
   * Indicates whether the channel is active.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel#active NotificationChannel#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel#active NotificationChannel#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
   /**
   * (Required) The id of the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel#destination_id NotificationChannel#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel#destination_id NotificationChannel#destination_id}
   */
   readonly destinationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel#id NotificationChannel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel#id NotificationChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,31 +35,31 @@ export interface NotificationChannelConfig extends cdktf.TerraformMetaArguments 
   /**
   * (Required) The name of the channel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel#name NotificationChannel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel#name NotificationChannel#name}
   */
   readonly name: string;
   /**
   * (Required) The type of the channel product. One of: (DISCUSSIONS, ERROR_TRACKING, IINT).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel#product NotificationChannel#product}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel#product NotificationChannel#product}
   */
   readonly product: string;
   /**
   * (Required) The type of the channel. One of: (WEBHOOK, EMAIL, SERVICENOW_INCIDENTS, SERVICE_NOW_APP, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION, JIRA_CLASSIC, SLACK, SLACK_COLLABORATION, SLACK_LEGACY, MOBILE_PUSH, EVENT_BRIDGE).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel#type NotificationChannel#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel#type NotificationChannel#type}
   */
   readonly type: string;
   /**
   * property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel#property NotificationChannel#property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel#property NotificationChannel#property}
   */
   readonly property: NotificationChannelProperty[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel#timeouts NotificationChannel#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel#timeouts NotificationChannel#timeouts}
   */
   readonly timeouts?: NotificationChannelTimeouts;
 }
@@ -72,25 +67,25 @@ export interface NotificationChannelProperty {
   /**
   * Notification property display key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel#display_value NotificationChannel#display_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel#display_value NotificationChannel#display_value}
   */
   readonly displayValue?: string;
   /**
   * Notification property key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel#key NotificationChannel#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel#key NotificationChannel#key}
   */
   readonly key: string;
   /**
   * Notification property label.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel#label NotificationChannel#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel#label NotificationChannel#label}
   */
   readonly label?: string;
   /**
   * Notification property value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel#value NotificationChannel#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel#value NotificationChannel#value}
   */
   readonly value: string;
 }
@@ -287,11 +282,11 @@ export class NotificationChannelPropertyList extends cdktf.ComplexList {
 }
 export interface NotificationChannelTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel#create NotificationChannel#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel#create NotificationChannel#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel#update NotificationChannel#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel#update NotificationChannel#update}
   */
   readonly update?: string;
 }
@@ -414,7 +409,7 @@ export class NotificationChannelTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel newrelic_notification_channel}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel newrelic_notification_channel}
 */
 export class NotificationChannel extends cdktf.TerraformResource {
 
@@ -430,7 +425,7 @@ export class NotificationChannel extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NotificationChannel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationChannel to import
-  * @param importFromId The id of the existing NotificationChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NotificationChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationChannel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -442,7 +437,7 @@ export class NotificationChannel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/notification_channel newrelic_notification_channel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/notification_channel newrelic_notification_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -453,7 +448,7 @@ export class NotificationChannel extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_notification_channel',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.57.1',
+        providerVersion: '3.58.1',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

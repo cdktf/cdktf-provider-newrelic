@@ -4,12 +4,12 @@
 
 ### DataNewrelicGroup <a name="DataNewrelicGroup" id="@cdktf/provider-newrelic.dataNewrelicGroup.DataNewrelicGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/data-sources/group newrelic_group}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/data-sources/group newrelic_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicGroup.DataNewrelicGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/datanewrelicgroup"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicgroup"
 
 datanewrelicgroup.NewDataNewrelicGroup(scope Construct, id *string, config DataNewrelicGroupConfig) DataNewrelicGroup
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.dataNewrelicGroup.DataNewrelicGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/datanewrelicgroup"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicgroup"
 
 datanewrelicgroup.DataNewrelicGroup_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.dataNewrelicGroup.DataNewrelicGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/datanewrelicgroup"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicgroup"
 
 datanewrelicgroup.DataNewrelicGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datanewrelicgroup.DataNewrelicGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-newrelic.dataNewrelicGroup.DataNewrelicGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/datanewrelicgroup"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicgroup"
 
 datanewrelicgroup.DataNewrelicGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datanewrelicgroup.DataNewrelicGroup_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.dataNewrelicGroup.DataNewrelicGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/datanewrelicgroup"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicgroup"
 
 datanewrelicgroup.DataNewrelicGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataNewrelicGroup to impor
 
 The id of the existing DataNewrelicGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.dataNewrelicGroup.DataNewrelicGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/datanewrelicgroup"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/datanewrelicgroup"
 
 &datanewrelicgroup.DataNewrelicGroupConfig {
 	Connection: interface{},
@@ -720,7 +720,7 @@ AuthenticationDomainId *string
 
 The ID of the Authentication Domain the group being queried would belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/data-sources/group#authentication_domain_id DataNewrelicGroup#authentication_domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/data-sources/group#authentication_domain_id DataNewrelicGroup#authentication_domain_id}
 
 ---
 
@@ -734,7 +734,7 @@ Name *string
 
 The name of the group to be queried.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/data-sources/group#name DataNewrelicGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/data-sources/group#name DataNewrelicGroup#name}
 
 ---
 
