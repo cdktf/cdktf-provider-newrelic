@@ -4,12 +4,12 @@
 
 ### ApplicationSettings <a name="ApplicationSettings" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings newrelic_application_settings}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings newrelic_application_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsettings"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/applicationsettings"
 
 applicationsettings.NewApplicationSettings(scope Construct, id *string, config ApplicationSettingsConfig) ApplicationSettings
 ```
@@ -488,7 +488,7 @@ func ResetUseServerSideConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsettings"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/applicationsettings"
 
 applicationsettings.ApplicationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsettings"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/applicationsettings"
 
 applicationsettings.ApplicationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ applicationsettings.ApplicationSettings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsettings"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/applicationsettings"
 
 applicationsettings.ApplicationSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ applicationsettings.ApplicationSettings_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsettings"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/applicationsettings"
 
 applicationsettings.ApplicationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -577,7 +577,7 @@ The construct id used in the generated config for the ApplicationSettings to imp
 
 The id of the existing ApplicationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1052,7 +1052,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsettings"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/applicationsettings"
 
 &applicationsettings.ApplicationSettingsConfig {
 	Connection: interface{},
@@ -1095,7 +1095,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsett
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.endUserApdexThreshold">EndUserApdexThreshold</a></code> | <code>*f64</code> | Dummy field to support backward compatibility of previous version.should be removed with next major version. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.errorCollector">ErrorCollector</a></code> | <code>interface{}</code> | error_collector block. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.guid">Guid</a></code> | <code>*string</code> | The GUID of the application in New Relic. |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#id ApplicationSettings#id}. |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#id ApplicationSettings#id}. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.name">Name</a></code> | <code>*string</code> | The name of the application in New Relic. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.tracerType">TracerType</a></code> | <code>*string</code> | The type of tracer to use, either 'CROSS_APPLICATION_TRACER', 'DISTRIBUTED_TRACING', 'NONE', or 'OPT_OUT'. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.transactionTracer">TransactionTracer</a></code> | <code>interface{}</code> | transaction_tracer block. |
@@ -1183,7 +1183,7 @@ AppApdexThreshold *f64
 
 The response time threshold value for Apdex score calculation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#app_apdex_threshold ApplicationSettings#app_apdex_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#app_apdex_threshold ApplicationSettings#app_apdex_threshold}
 
 ---
 
@@ -1197,7 +1197,7 @@ EnableRealUserMonitoring interface{}
 
 Dummy field to support backward compatibility of previous version.should be removed with next major version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}
 
 ---
 
@@ -1211,7 +1211,7 @@ EnableSlowSql interface{}
 
 Samples and reports the slowest database queries in your traces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#enable_slow_sql ApplicationSettings#enable_slow_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#enable_slow_sql ApplicationSettings#enable_slow_sql}
 
 ---
 
@@ -1225,7 +1225,7 @@ EnableThreadProfiler interface{}
 
 Enable or disable the thread profiler.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#enable_thread_profiler ApplicationSettings#enable_thread_profiler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#enable_thread_profiler ApplicationSettings#enable_thread_profiler}
 
 ---
 
@@ -1239,7 +1239,7 @@ EndUserApdexThreshold *f64
 
 Dummy field to support backward compatibility of previous version.should be removed with next major version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}
 
 ---
 
@@ -1253,7 +1253,7 @@ ErrorCollector interface{}
 
 error_collector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#error_collector ApplicationSettings#error_collector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#error_collector ApplicationSettings#error_collector}
 
 ---
 
@@ -1267,7 +1267,7 @@ Guid *string
 
 The GUID of the application in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#guid ApplicationSettings#guid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#guid ApplicationSettings#guid}
 
 ---
 
@@ -1279,7 +1279,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#id ApplicationSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#id ApplicationSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1296,7 +1296,7 @@ Name *string
 
 The name of the application in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#name ApplicationSettings#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#name ApplicationSettings#name}
 
 ---
 
@@ -1310,7 +1310,7 @@ TracerType *string
 
 The type of tracer to use, either 'CROSS_APPLICATION_TRACER', 'DISTRIBUTED_TRACING', 'NONE', or 'OPT_OUT'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#tracer_type ApplicationSettings#tracer_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#tracer_type ApplicationSettings#tracer_type}
 
 ---
 
@@ -1324,7 +1324,7 @@ TransactionTracer interface{}
 
 transaction_tracer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#transaction_tracer ApplicationSettings#transaction_tracer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#transaction_tracer ApplicationSettings#transaction_tracer}
 
 ---
 
@@ -1338,7 +1338,7 @@ UseServerSideConfig interface{}
 
 Enable or disable server side monitoring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#use_server_side_config ApplicationSettings#use_server_side_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#use_server_side_config ApplicationSettings#use_server_side_config}
 
 ---
 
@@ -1347,7 +1347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsettings"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/applicationsettings"
 
 &applicationsettings.ApplicationSettingsErrorCollector {
 	ExpectedErrorClasses: *[]*string,
@@ -1378,7 +1378,7 @@ ExpectedErrorClasses *[]*string
 
 A list of error classes that are expected and should not trigger alerts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#expected_error_classes ApplicationSettings#expected_error_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#expected_error_classes ApplicationSettings#expected_error_classes}
 
 ---
 
@@ -1392,7 +1392,7 @@ ExpectedErrorCodes *[]*string
 
 A list of error codes that are expected and should not trigger alerts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#expected_error_codes ApplicationSettings#expected_error_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#expected_error_codes ApplicationSettings#expected_error_codes}
 
 ---
 
@@ -1406,7 +1406,7 @@ IgnoredErrorClasses *[]*string
 
 A list of error classes that should be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#ignored_error_classes ApplicationSettings#ignored_error_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#ignored_error_classes ApplicationSettings#ignored_error_classes}
 
 ---
 
@@ -1420,7 +1420,7 @@ IgnoredErrorCodes *[]*string
 
 A list of error codes that should be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#ignored_error_codes ApplicationSettings#ignored_error_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#ignored_error_codes ApplicationSettings#ignored_error_codes}
 
 ---
 
@@ -1429,11 +1429,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsettings"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/applicationsettings"
 
 &applicationsettings.ApplicationSettingsTransactionTracer {
 	ExplainQueryPlans: interface{},
-	Sql: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12.applicationSettings.ApplicationSettingsTransactionTracerSql,
+	Sql: github.com/cdktf/cdktf-provider-newrelic-go/newrelic.applicationSettings.ApplicationSettingsTransactionTracerSql,
 	StackTraceThresholdValue: *f64,
 	TransactionThresholdType: *string,
 	TransactionThresholdValue: *f64,
@@ -1462,7 +1462,7 @@ ExplainQueryPlans interface{}
 
 explain_query_plans block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#explain_query_plans ApplicationSettings#explain_query_plans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#explain_query_plans ApplicationSettings#explain_query_plans}
 
 ---
 
@@ -1476,7 +1476,7 @@ Sql ApplicationSettingsTransactionTracerSql
 
 sql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#sql ApplicationSettings#sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#sql ApplicationSettings#sql}
 
 ---
 
@@ -1490,7 +1490,7 @@ StackTraceThresholdValue *f64
 
 The response time threshold value for capturing stack traces of SQL queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#stack_trace_threshold_value ApplicationSettings#stack_trace_threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#stack_trace_threshold_value ApplicationSettings#stack_trace_threshold_value}
 
 ---
 
@@ -1504,7 +1504,7 @@ TransactionThresholdType *string
 
 The type of threshold for transaction tracing, either 'APDEX_F' or 'VALUE'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#transaction_threshold_type ApplicationSettings#transaction_threshold_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#transaction_threshold_type ApplicationSettings#transaction_threshold_type}
 
 ---
 
@@ -1518,7 +1518,7 @@ TransactionThresholdValue *f64
 
 The threshold value for transaction tracing when 'transaction_threshold_type' is 'VALUE'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#transaction_threshold_value ApplicationSettings#transaction_threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#transaction_threshold_value ApplicationSettings#transaction_threshold_value}
 
 ---
 
@@ -1527,7 +1527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsettings"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/applicationsettings"
 
 &applicationsettings.ApplicationSettingsTransactionTracerExplainQueryPlans {
 	QueryPlanThresholdType: *string,
@@ -1554,7 +1554,7 @@ QueryPlanThresholdType *string
 
 The type of threshold for explain plans, either 'APDEX_F' or 'VALUE'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#query_plan_threshold_type ApplicationSettings#query_plan_threshold_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#query_plan_threshold_type ApplicationSettings#query_plan_threshold_type}
 
 ---
 
@@ -1568,7 +1568,7 @@ QueryPlanThresholdValue *f64
 
 The threshold value for explain plans when 'query_plan_threshold_type' is 'VALUE'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#query_plan_threshold_value ApplicationSettings#query_plan_threshold_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#query_plan_threshold_value ApplicationSettings#query_plan_threshold_value}
 
 ---
 
@@ -1577,7 +1577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerSql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsettings"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/applicationsettings"
 
 &applicationsettings.ApplicationSettingsTransactionTracerSql {
 	RecordSql: *string,
@@ -1602,7 +1602,7 @@ RecordSql *string
 
 The level of SQL recording, either 'OBFUSCATED', 'OFF', or 'RAW'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings#record_sql ApplicationSettings#record_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/application_settings#record_sql ApplicationSettings#record_sql}
 
 ---
 
@@ -1613,7 +1613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsettings"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/applicationsettings"
 
 applicationsettings.NewApplicationSettingsErrorCollectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationSettingsErrorCollectorList
 ```
@@ -1773,7 +1773,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsettings"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/applicationsettings"
 
 applicationsettings.NewApplicationSettingsErrorCollectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationSettingsErrorCollectorOutputReference
 ```
@@ -2156,7 +2156,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlansList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsettings"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/applicationsettings"
 
 applicationsettings.NewApplicationSettingsTransactionTracerExplainQueryPlansList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationSettingsTransactionTracerExplainQueryPlansList
 ```
@@ -2316,7 +2316,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlansOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsettings"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/applicationsettings"
 
 applicationsettings.NewApplicationSettingsTransactionTracerExplainQueryPlansOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationSettingsTransactionTracerExplainQueryPlansOutputReference
 ```
@@ -2641,7 +2641,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsettings"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/applicationsettings"
 
 applicationsettings.NewApplicationSettingsTransactionTracerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationSettingsTransactionTracerList
 ```
@@ -2801,7 +2801,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsettings"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/applicationsettings"
 
 applicationsettings.NewApplicationSettingsTransactionTracerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationSettingsTransactionTracerOutputReference
 ```
@@ -3239,7 +3239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerSqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/applicationsettings"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/applicationsettings"
 
 applicationsettings.NewApplicationSettingsTransactionTracerSqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationSettingsTransactionTracerSqlOutputReference
 ```
