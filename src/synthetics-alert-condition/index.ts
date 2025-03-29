@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/synthetics_alert_condition
+// https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/synthetics_alert_condition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface SyntheticsAlertConditionConfig extends cdktf.TerraformMetaArgum
   /**
   * Set whether to enable the alert condition. Defaults to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/synthetics_alert_condition#enabled SyntheticsAlertCondition#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/synthetics_alert_condition#enabled SyntheticsAlertCondition#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/synthetics_alert_condition#id SyntheticsAlertCondition#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/synthetics_alert_condition#id SyntheticsAlertCondition#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +23,31 @@ export interface SyntheticsAlertConditionConfig extends cdktf.TerraformMetaArgum
   /**
   * The ID of the Synthetics monitor to be referenced in the alert condition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/synthetics_alert_condition#monitor_id SyntheticsAlertCondition#monitor_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/synthetics_alert_condition#monitor_id SyntheticsAlertCondition#monitor_id}
   */
   readonly monitorId: string;
   /**
   * The title of this condition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/synthetics_alert_condition#name SyntheticsAlertCondition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/synthetics_alert_condition#name SyntheticsAlertCondition#name}
   */
   readonly name: string;
   /**
   * The ID of the policy where this condition should be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/synthetics_alert_condition#policy_id SyntheticsAlertCondition#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/synthetics_alert_condition#policy_id SyntheticsAlertCondition#policy_id}
   */
   readonly policyId: number;
   /**
   * Runbook URL to display in notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/synthetics_alert_condition#runbook_url SyntheticsAlertCondition#runbook_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/synthetics_alert_condition#runbook_url SyntheticsAlertCondition#runbook_url}
   */
   readonly runbookUrl?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/synthetics_alert_condition newrelic_synthetics_alert_condition}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/synthetics_alert_condition newrelic_synthetics_alert_condition}
 */
 export class SyntheticsAlertCondition extends cdktf.TerraformResource {
 
@@ -68,7 +63,7 @@ export class SyntheticsAlertCondition extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SyntheticsAlertCondition resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SyntheticsAlertCondition to import
-  * @param importFromId The id of the existing SyntheticsAlertCondition that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/synthetics_alert_condition#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SyntheticsAlertCondition that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/synthetics_alert_condition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SyntheticsAlertCondition to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +75,7 @@ export class SyntheticsAlertCondition extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/synthetics_alert_condition newrelic_synthetics_alert_condition} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/synthetics_alert_condition newrelic_synthetics_alert_condition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +86,7 @@ export class SyntheticsAlertCondition extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_synthetics_alert_condition',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.59.0',
+        providerVersion: '3.60.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
