@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs
+// https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,69 +13,69 @@ import * as cdktf from 'cdktf';
 
 export interface NewrelicProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs#account_id NewrelicProvider#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs#account_id NewrelicProvider#account_id}
   */
   readonly accountId: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs#admin_api_key NewrelicProvider#admin_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs#admin_api_key NewrelicProvider#admin_api_key}
   */
   readonly adminApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs#api_key NewrelicProvider#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs#api_key NewrelicProvider#api_key}
   */
   readonly apiKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs#api_url NewrelicProvider#api_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs#api_url NewrelicProvider#api_url}
   */
   readonly apiUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs#cacert_file NewrelicProvider#cacert_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs#cacert_file NewrelicProvider#cacert_file}
   */
   readonly cacertFile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}
   */
   readonly infrastructureApiUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}
   */
   readonly insecureSkipVerify?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs#insights_insert_key NewrelicProvider#insights_insert_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs#insights_insert_key NewrelicProvider#insights_insert_key}
   */
   readonly insightsInsertKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs#insights_insert_url NewrelicProvider#insights_insert_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs#insights_insert_url NewrelicProvider#insights_insert_url}
   */
   readonly insightsInsertUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs#insights_query_url NewrelicProvider#insights_query_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs#insights_query_url NewrelicProvider#insights_query_url}
   */
   readonly insightsQueryUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs#nerdgraph_api_url NewrelicProvider#nerdgraph_api_url}
   */
   readonly nerdgraphApiUrl?: string;
   /**
   * The data center for which your New Relic account is configured. Only one region per provider block is permitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs#region NewrelicProvider#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs#region NewrelicProvider#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs#synthetics_api_url NewrelicProvider#synthetics_api_url}
   */
   readonly syntheticsApiUrl?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs#alias NewrelicProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs#alias NewrelicProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs newrelic}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs newrelic}
 */
 export class NewrelicProvider extends cdktf.TerraformProvider {
 
@@ -91,7 +91,7 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   * Generates CDKTF code for importing a NewrelicProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NewrelicProvider to import
-  * @param importFromId The id of the existing NewrelicProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NewrelicProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NewrelicProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -103,7 +103,7 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs newrelic} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs newrelic} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -114,7 +114,7 @@ export class NewrelicProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'newrelic',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.59.0',
+        providerVersion: '3.60.0',
         providerVersionConstraint: '~> 3.7'
       },
       terraformProviderSource: 'newrelic/newrelic'

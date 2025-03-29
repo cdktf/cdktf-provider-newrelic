@@ -4,7 +4,7 @@
 
 ### CloudGcpIntegrations <a name="CloudGcpIntegrations" id="@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations newrelic_cloud_gcp_integrations}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations newrelic_cloud_gcp_integrations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrations.Initializer"></a>
 
@@ -81,7 +81,7 @@ CloudGcpIntegrations.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrations.Initializer.parameter.fireBaseStorage">fireBaseStorage</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsFireBaseStorage">CloudGcpIntegrationsFireBaseStorage</a></code> | fire_base_storage block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrations.Initializer.parameter.fireStore">fireStore</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsFireStore">CloudGcpIntegrationsFireStore</a></code> | fire_store block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrations.Initializer.parameter.functions">functions</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsFunctions">CloudGcpIntegrationsFunctions</a></code> | functions block. |
-| <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrations.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#id CloudGcpIntegrations#id}. |
+| <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrations.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#id CloudGcpIntegrations#id}. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrations.Initializer.parameter.interconnect">interconnect</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsInterconnect">CloudGcpIntegrationsInterconnect</a></code> | interconnect block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrations.Initializer.parameter.kubernetes">kubernetes</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsKubernetes">CloudGcpIntegrationsKubernetes</a></code> | kubernetes block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrations.Initializer.parameter.loadBalancing">loadBalancing</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsLoadBalancing">CloudGcpIntegrationsLoadBalancing</a></code> | load_balancing block. |
@@ -164,7 +164,7 @@ Must be unique amongst siblings in the same scope
 
 Id of the linked gcp account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#linked_account_id CloudGcpIntegrations#linked_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#linked_account_id CloudGcpIntegrations#linked_account_id}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ID of the newrelic account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#account_id CloudGcpIntegrations#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#account_id CloudGcpIntegrations#account_id}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 alloy_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#alloy_db CloudGcpIntegrations#alloy_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#alloy_db CloudGcpIntegrations#alloy_db}
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 app_engine block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#app_engine CloudGcpIntegrations#app_engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#app_engine CloudGcpIntegrations#app_engine}
 
 ---
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 big_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#big_query CloudGcpIntegrations#big_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#big_query CloudGcpIntegrations#big_query}
 
 ---
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 big_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#big_table CloudGcpIntegrations#big_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#big_table CloudGcpIntegrations#big_table}
 
 ---
 
@@ -224,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 composer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#composer CloudGcpIntegrations#composer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#composer CloudGcpIntegrations#composer}
 
 ---
 
@@ -234,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 data_flow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#data_flow CloudGcpIntegrations#data_flow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#data_flow CloudGcpIntegrations#data_flow}
 
 ---
 
@@ -244,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 data_proc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#data_proc CloudGcpIntegrations#data_proc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#data_proc CloudGcpIntegrations#data_proc}
 
 ---
 
@@ -254,7 +254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 data_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#data_store CloudGcpIntegrations#data_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#data_store CloudGcpIntegrations#data_store}
 
 ---
 
@@ -264,7 +264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 fire_base_database block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#fire_base_database CloudGcpIntegrations#fire_base_database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#fire_base_database CloudGcpIntegrations#fire_base_database}
 
 ---
 
@@ -274,7 +274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 fire_base_hosting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#fire_base_hosting CloudGcpIntegrations#fire_base_hosting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#fire_base_hosting CloudGcpIntegrations#fire_base_hosting}
 
 ---
 
@@ -284,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 fire_base_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#fire_base_storage CloudGcpIntegrations#fire_base_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#fire_base_storage CloudGcpIntegrations#fire_base_storage}
 
 ---
 
@@ -294,7 +294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 fire_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#fire_store CloudGcpIntegrations#fire_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#fire_store CloudGcpIntegrations#fire_store}
 
 ---
 
@@ -304,7 +304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#functions CloudGcpIntegrations#functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#functions CloudGcpIntegrations#functions}
 
 ---
 
@@ -312,7 +312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#id CloudGcpIntegrations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#id CloudGcpIntegrations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -325,7 +325,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 interconnect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#interconnect CloudGcpIntegrations#interconnect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#interconnect CloudGcpIntegrations#interconnect}
 
 ---
 
@@ -335,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 kubernetes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#kubernetes CloudGcpIntegrations#kubernetes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#kubernetes CloudGcpIntegrations#kubernetes}
 
 ---
 
@@ -345,7 +345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 load_balancing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#load_balancing CloudGcpIntegrations#load_balancing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#load_balancing CloudGcpIntegrations#load_balancing}
 
 ---
 
@@ -355,7 +355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 mem_cache block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#mem_cache CloudGcpIntegrations#mem_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#mem_cache CloudGcpIntegrations#mem_cache}
 
 ---
 
@@ -365,7 +365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 pub_sub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#pub_sub CloudGcpIntegrations#pub_sub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#pub_sub CloudGcpIntegrations#pub_sub}
 
 ---
 
@@ -375,7 +375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 redis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#redis CloudGcpIntegrations#redis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#redis CloudGcpIntegrations#redis}
 
 ---
 
@@ -385,7 +385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 router block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#router CloudGcpIntegrations#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#router CloudGcpIntegrations#router}
 
 ---
 
@@ -395,7 +395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 run block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#run CloudGcpIntegrations#run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#run CloudGcpIntegrations#run}
 
 ---
 
@@ -405,7 +405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 spanner block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#spanner CloudGcpIntegrations#spanner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#spanner CloudGcpIntegrations#spanner}
 
 ---
 
@@ -415,7 +415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 sql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#sql CloudGcpIntegrations#sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#sql CloudGcpIntegrations#sql}
 
 ---
 
@@ -425,7 +425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#storage CloudGcpIntegrations#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#storage CloudGcpIntegrations#storage}
 
 ---
 
@@ -435,7 +435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 virtual_machines block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#virtual_machines CloudGcpIntegrations#virtual_machines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#virtual_machines CloudGcpIntegrations#virtual_machines}
 
 ---
 
@@ -445,7 +445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 vpc_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#vpc_access CloudGcpIntegrations#vpc_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#vpc_access CloudGcpIntegrations#vpc_access}
 
 ---
 
@@ -1406,7 +1406,7 @@ The construct id used in the generated config for the CloudGcpIntegrations to im
 
 The id of the existing CloudGcpIntegrations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2269,7 +2269,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2303,7 +2303,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2340,7 +2340,7 @@ public java.lang.Object getFetchTags();
 
 to fetch tags of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
 
 ---
 
@@ -2354,7 +2354,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2388,7 +2388,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2422,7 +2422,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2503,7 +2503,7 @@ CloudGcpIntegrationsConfig.builder()
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsConfig.property.fireBaseStorage">fireBaseStorage</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsFireBaseStorage">CloudGcpIntegrationsFireBaseStorage</a></code> | fire_base_storage block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsConfig.property.fireStore">fireStore</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsFireStore">CloudGcpIntegrationsFireStore</a></code> | fire_store block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsConfig.property.functions">functions</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsFunctions">CloudGcpIntegrationsFunctions</a></code> | functions block. |
-| <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#id CloudGcpIntegrations#id}. |
+| <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#id CloudGcpIntegrations#id}. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsConfig.property.interconnect">interconnect</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsInterconnect">CloudGcpIntegrationsInterconnect</a></code> | interconnect block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsConfig.property.kubernetes">kubernetes</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsKubernetes">CloudGcpIntegrationsKubernetes</a></code> | kubernetes block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsConfig.property.loadBalancing">loadBalancing</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsLoadBalancing">CloudGcpIntegrationsLoadBalancing</a></code> | load_balancing block. |
@@ -2600,7 +2600,7 @@ public java.lang.Number getLinkedAccountId();
 
 Id of the linked gcp account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#linked_account_id CloudGcpIntegrations#linked_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#linked_account_id CloudGcpIntegrations#linked_account_id}
 
 ---
 
@@ -2614,7 +2614,7 @@ public java.lang.Number getAccountId();
 
 ID of the newrelic account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#account_id CloudGcpIntegrations#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#account_id CloudGcpIntegrations#account_id}
 
 ---
 
@@ -2628,7 +2628,7 @@ public CloudGcpIntegrationsAlloyDb getAlloyDb();
 
 alloy_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#alloy_db CloudGcpIntegrations#alloy_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#alloy_db CloudGcpIntegrations#alloy_db}
 
 ---
 
@@ -2642,7 +2642,7 @@ public CloudGcpIntegrationsAppEngine getAppEngine();
 
 app_engine block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#app_engine CloudGcpIntegrations#app_engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#app_engine CloudGcpIntegrations#app_engine}
 
 ---
 
@@ -2656,7 +2656,7 @@ public CloudGcpIntegrationsBigQuery getBigQuery();
 
 big_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#big_query CloudGcpIntegrations#big_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#big_query CloudGcpIntegrations#big_query}
 
 ---
 
@@ -2670,7 +2670,7 @@ public CloudGcpIntegrationsBigTable getBigTable();
 
 big_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#big_table CloudGcpIntegrations#big_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#big_table CloudGcpIntegrations#big_table}
 
 ---
 
@@ -2684,7 +2684,7 @@ public CloudGcpIntegrationsComposer getComposer();
 
 composer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#composer CloudGcpIntegrations#composer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#composer CloudGcpIntegrations#composer}
 
 ---
 
@@ -2698,7 +2698,7 @@ public CloudGcpIntegrationsDataFlow getDataFlow();
 
 data_flow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#data_flow CloudGcpIntegrations#data_flow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#data_flow CloudGcpIntegrations#data_flow}
 
 ---
 
@@ -2712,7 +2712,7 @@ public CloudGcpIntegrationsDataProc getDataProc();
 
 data_proc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#data_proc CloudGcpIntegrations#data_proc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#data_proc CloudGcpIntegrations#data_proc}
 
 ---
 
@@ -2726,7 +2726,7 @@ public CloudGcpIntegrationsDataStore getDataStore();
 
 data_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#data_store CloudGcpIntegrations#data_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#data_store CloudGcpIntegrations#data_store}
 
 ---
 
@@ -2740,7 +2740,7 @@ public CloudGcpIntegrationsFireBaseDatabase getFireBaseDatabase();
 
 fire_base_database block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#fire_base_database CloudGcpIntegrations#fire_base_database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#fire_base_database CloudGcpIntegrations#fire_base_database}
 
 ---
 
@@ -2754,7 +2754,7 @@ public CloudGcpIntegrationsFireBaseHosting getFireBaseHosting();
 
 fire_base_hosting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#fire_base_hosting CloudGcpIntegrations#fire_base_hosting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#fire_base_hosting CloudGcpIntegrations#fire_base_hosting}
 
 ---
 
@@ -2768,7 +2768,7 @@ public CloudGcpIntegrationsFireBaseStorage getFireBaseStorage();
 
 fire_base_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#fire_base_storage CloudGcpIntegrations#fire_base_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#fire_base_storage CloudGcpIntegrations#fire_base_storage}
 
 ---
 
@@ -2782,7 +2782,7 @@ public CloudGcpIntegrationsFireStore getFireStore();
 
 fire_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#fire_store CloudGcpIntegrations#fire_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#fire_store CloudGcpIntegrations#fire_store}
 
 ---
 
@@ -2796,7 +2796,7 @@ public CloudGcpIntegrationsFunctions getFunctions();
 
 functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#functions CloudGcpIntegrations#functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#functions CloudGcpIntegrations#functions}
 
 ---
 
@@ -2808,7 +2808,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#id CloudGcpIntegrations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#id CloudGcpIntegrations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2825,7 +2825,7 @@ public CloudGcpIntegrationsInterconnect getInterconnect();
 
 interconnect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#interconnect CloudGcpIntegrations#interconnect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#interconnect CloudGcpIntegrations#interconnect}
 
 ---
 
@@ -2839,7 +2839,7 @@ public CloudGcpIntegrationsKubernetes getKubernetes();
 
 kubernetes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#kubernetes CloudGcpIntegrations#kubernetes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#kubernetes CloudGcpIntegrations#kubernetes}
 
 ---
 
@@ -2853,7 +2853,7 @@ public CloudGcpIntegrationsLoadBalancing getLoadBalancing();
 
 load_balancing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#load_balancing CloudGcpIntegrations#load_balancing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#load_balancing CloudGcpIntegrations#load_balancing}
 
 ---
 
@@ -2867,7 +2867,7 @@ public CloudGcpIntegrationsMemCache getMemCache();
 
 mem_cache block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#mem_cache CloudGcpIntegrations#mem_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#mem_cache CloudGcpIntegrations#mem_cache}
 
 ---
 
@@ -2881,7 +2881,7 @@ public CloudGcpIntegrationsPubSub getPubSub();
 
 pub_sub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#pub_sub CloudGcpIntegrations#pub_sub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#pub_sub CloudGcpIntegrations#pub_sub}
 
 ---
 
@@ -2895,7 +2895,7 @@ public CloudGcpIntegrationsRedis getRedis();
 
 redis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#redis CloudGcpIntegrations#redis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#redis CloudGcpIntegrations#redis}
 
 ---
 
@@ -2909,7 +2909,7 @@ public CloudGcpIntegrationsRouter getRouter();
 
 router block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#router CloudGcpIntegrations#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#router CloudGcpIntegrations#router}
 
 ---
 
@@ -2923,7 +2923,7 @@ public CloudGcpIntegrationsRun getRun();
 
 run block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#run CloudGcpIntegrations#run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#run CloudGcpIntegrations#run}
 
 ---
 
@@ -2937,7 +2937,7 @@ public CloudGcpIntegrationsSpanner getSpanner();
 
 spanner block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#spanner CloudGcpIntegrations#spanner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#spanner CloudGcpIntegrations#spanner}
 
 ---
 
@@ -2951,7 +2951,7 @@ public CloudGcpIntegrationsSql getSql();
 
 sql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#sql CloudGcpIntegrations#sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#sql CloudGcpIntegrations#sql}
 
 ---
 
@@ -2965,7 +2965,7 @@ public CloudGcpIntegrationsStorage getStorage();
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#storage CloudGcpIntegrations#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#storage CloudGcpIntegrations#storage}
 
 ---
 
@@ -2979,7 +2979,7 @@ public CloudGcpIntegrationsVirtualMachines getVirtualMachines();
 
 virtual_machines block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#virtual_machines CloudGcpIntegrations#virtual_machines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#virtual_machines CloudGcpIntegrations#virtual_machines}
 
 ---
 
@@ -2993,7 +2993,7 @@ public CloudGcpIntegrationsVpcAccess getVpcAccess();
 
 vpc_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#vpc_access CloudGcpIntegrations#vpc_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#vpc_access CloudGcpIntegrations#vpc_access}
 
 ---
 
@@ -3027,7 +3027,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3061,7 +3061,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3095,7 +3095,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3129,7 +3129,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3163,7 +3163,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3197,7 +3197,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3231,7 +3231,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3265,7 +3265,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3299,7 +3299,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3333,7 +3333,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3367,7 +3367,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3401,7 +3401,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3438,7 +3438,7 @@ public java.lang.Object getFetchTags();
 
 to fetch tags of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
 
 ---
 
@@ -3452,7 +3452,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3486,7 +3486,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3520,7 +3520,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3554,7 +3554,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3591,7 +3591,7 @@ public java.lang.Object getFetchTags();
 
 to fetch tags of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
 
 ---
 
@@ -3605,7 +3605,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3639,7 +3639,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3676,7 +3676,7 @@ public java.lang.Object getFetchTags();
 
 to fetch tags of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#fetch_tags CloudGcpIntegrations#fetch_tags}
 
 ---
 
@@ -3690,7 +3690,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3724,7 +3724,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3758,7 +3758,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 the data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.59.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.0/docs/resources/cloud_gcp_integrations#metrics_polling_interval CloudGcpIntegrations#metrics_polling_interval}
 
 ---
 
