@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/newrelic/newrelic/3.60.2/docs/resources/nrql_drop_rule
 // generated from terraform resource schema
 
