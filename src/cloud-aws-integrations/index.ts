@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/cloud_aws_integrations
 // generated from terraform resource schema
 
