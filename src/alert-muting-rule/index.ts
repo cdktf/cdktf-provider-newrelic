@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/newrelic/newrelic/3.61.3/docs/resources/alert_muting_rule
 // generated from terraform resource schema
 
