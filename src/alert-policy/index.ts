@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/alert_policy
+// https://registry.terraform.io/providers/newrelic/newrelic/3.61.3/docs/resources/alert_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface AlertPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The New Relic account ID to operate on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/alert_policy#account_id AlertPolicy#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.3/docs/resources/alert_policy#account_id AlertPolicy#account_id}
   */
   readonly accountId?: number;
   /**
   * An array of channel IDs (integers) to assign to the policy. Adding or removing channel IDs from this array will result in a new alert policy resource being created and the old one being destroyed. Also note that channel IDs cannot be imported via terraform import.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/alert_policy#channel_ids AlertPolicy#channel_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.3/docs/resources/alert_policy#channel_ids AlertPolicy#channel_ids}
   */
   readonly channelIds?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/alert_policy#id AlertPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.3/docs/resources/alert_policy#id AlertPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +34,19 @@ export interface AlertPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The rollup strategy for the policy. Options include: PER_POLICY, PER_CONDITION, or PER_CONDITION_AND_TARGET. The default is PER_POLICY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/alert_policy#incident_preference AlertPolicy#incident_preference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.3/docs/resources/alert_policy#incident_preference AlertPolicy#incident_preference}
   */
   readonly incidentPreference?: string;
   /**
   * The name of the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/alert_policy#name AlertPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.3/docs/resources/alert_policy#name AlertPolicy#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/alert_policy newrelic_alert_policy}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.3/docs/resources/alert_policy newrelic_alert_policy}
 */
 export class AlertPolicy extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class AlertPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AlertPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AlertPolicy to import
-  * @param importFromId The id of the existing AlertPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/alert_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AlertPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.3/docs/resources/alert_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AlertPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class AlertPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/alert_policy newrelic_alert_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.3/docs/resources/alert_policy newrelic_alert_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class AlertPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_alert_policy',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.61.0',
+        providerVersion: '3.61.3',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
