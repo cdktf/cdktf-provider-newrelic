@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsstepmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/syntheticsstepmonitor"
 
 syntheticsstepmonitor.NewSyntheticsStepMonitor(scope Construct, id *string, config SyntheticsStepMonitorConfig) SyntheticsStepMonitor
 ```
@@ -494,7 +494,7 @@ func ResetUseUnsupportedLegacyRuntime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsstepmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/syntheticsstepmonitor"
 
 syntheticsstepmonitor.SyntheticsStepMonitor_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsstepmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/syntheticsstepmonitor"
 
 syntheticsstepmonitor.SyntheticsStepMonitor_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ syntheticsstepmonitor.SyntheticsStepMonitor_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsstepmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/syntheticsstepmonitor"
 
 syntheticsstepmonitor.SyntheticsStepMonitor_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ syntheticsstepmonitor.SyntheticsStepMonitor_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsstepmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/syntheticsstepmonitor"
 
 syntheticsstepmonitor.SyntheticsStepMonitor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1146,7 +1146,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsstepmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/syntheticsstepmonitor"
 
 &syntheticsstepmonitor.SyntheticsStepMonitorConfig {
 	Connection: interface{},
@@ -1495,7 +1495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorLocationPrivate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsstepmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/syntheticsstepmonitor"
 
 &syntheticsstepmonitor.SyntheticsStepMonitorLocationPrivate {
 	Guid: *string,
@@ -1545,7 +1545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorSteps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsstepmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/syntheticsstepmonitor"
 
 &syntheticsstepmonitor.SyntheticsStepMonitorSteps {
 	Ordinal: *f64,
@@ -1611,7 +1611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsstepmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/syntheticsstepmonitor"
 
 &syntheticsstepmonitor.SyntheticsStepMonitorTag {
 	Key: *string,
@@ -1663,7 +1663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorLocationPrivateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsstepmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/syntheticsstepmonitor"
 
 syntheticsstepmonitor.NewSyntheticsStepMonitorLocationPrivateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsStepMonitorLocationPrivateList
 ```
@@ -1823,7 +1823,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorLocationPrivateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsstepmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/syntheticsstepmonitor"
 
 syntheticsstepmonitor.NewSyntheticsStepMonitorLocationPrivateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsStepMonitorLocationPrivateOutputReference
 ```
@@ -2141,7 +2141,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorStepsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsstepmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/syntheticsstepmonitor"
 
 syntheticsstepmonitor.NewSyntheticsStepMonitorStepsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsStepMonitorStepsList
 ```
@@ -2301,7 +2301,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorStepsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsstepmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/syntheticsstepmonitor"
 
 syntheticsstepmonitor.NewSyntheticsStepMonitorStepsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsStepMonitorStepsOutputReference
 ```
@@ -2641,7 +2641,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsstepmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/syntheticsstepmonitor"
 
 syntheticsstepmonitor.NewSyntheticsStepMonitorTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsStepMonitorTagList
 ```
@@ -2801,7 +2801,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsStepMonitor.SyntheticsStepMonitorTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/syntheticsstepmonitor"
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/syntheticsstepmonitor"
 
 syntheticsstepmonitor.NewSyntheticsStepMonitorTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsStepMonitorTagOutputReference
 ```
