@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/newrelic/newrelic/3.62.0/docs/resources/alert_channel
 // generated from terraform resource schema
 
@@ -32,7 +27,7 @@ export interface AlertChannelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
-  * (Required) The type of channel. One of: (opsgenie, pagerduty, slack, user, victorops, webhook, email).
+  * (Required) The type of channel. One of: (victorops, webhook, email, opsgenie, pagerduty, slack, user).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.0/docs/resources/alert_channel#type AlertChannel#type}
   */
