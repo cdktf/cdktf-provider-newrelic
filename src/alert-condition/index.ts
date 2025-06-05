@@ -68,7 +68,7 @@ export interface AlertConditionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly runbookUrl?: string;
   /**
-  * The type of condition. One of: (mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric).
+  * The type of condition. One of: (apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.0/docs/resources/alert_condition#type AlertCondition#type}
   */
