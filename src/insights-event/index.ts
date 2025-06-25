@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/insights_event
+// https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/insights_event
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface InsightsEventConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/insights_event#id InsightsEvent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/insights_event#id InsightsEvent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface InsightsEventConfig extends cdktf.TerraformMetaArguments {
   /**
   * event block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/insights_event#event InsightsEvent#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/insights_event#event InsightsEvent#event}
   */
   readonly event: InsightsEventEvent[] | cdktf.IResolvable;
 }
@@ -30,19 +30,19 @@ export interface InsightsEventEventAttribute {
   /**
   * The name of the attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/insights_event#key InsightsEvent#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/insights_event#key InsightsEvent#key}
   */
   readonly key: string;
   /**
   * Specify the type for the attribute value. This is useful when passing integer or float values to Insights. Allowed values are string, int, or float. Defaults to string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/insights_event#type InsightsEvent#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/insights_event#type InsightsEvent#type}
   */
   readonly type?: string;
   /**
   * The value of the attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/insights_event#value InsightsEvent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/insights_event#value InsightsEvent#value}
   */
   readonly value: string;
 }
@@ -212,19 +212,19 @@ export interface InsightsEventEvent {
   /**
   * Must be a Unix epoch timestamp. You can define timestamps either in seconds or in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/insights_event#timestamp InsightsEvent#timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/insights_event#timestamp InsightsEvent#timestamp}
   */
   readonly timestamp?: number;
   /**
   * The event's name. Can be a combination of alphanumeric characters, underscores, and colons.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/insights_event#type InsightsEvent#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/insights_event#type InsightsEvent#type}
   */
   readonly type: string;
   /**
   * attribute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/insights_event#attribute InsightsEvent#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/insights_event#attribute InsightsEvent#attribute}
   */
   readonly attribute: InsightsEventEventAttribute[] | cdktf.IResolvable;
 }
@@ -392,7 +392,7 @@ export class InsightsEventEventList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/insights_event newrelic_insights_event}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/insights_event newrelic_insights_event}
 */
 export class InsightsEvent extends cdktf.TerraformResource {
 
@@ -408,7 +408,7 @@ export class InsightsEvent extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a InsightsEvent resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the InsightsEvent to import
-  * @param importFromId The id of the existing InsightsEvent that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/insights_event#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing InsightsEvent that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/insights_event#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the InsightsEvent to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -420,7 +420,7 @@ export class InsightsEvent extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/insights_event newrelic_insights_event} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/insights_event newrelic_insights_event} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -431,7 +431,7 @@ export class InsightsEvent extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_insights_event',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.62.1',
+        providerVersion: '3.63.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
