@@ -4,7 +4,7 @@
 
 ### CloudAwsIntegrations <a name="CloudAwsIntegrations" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.putAutoScaling">PutAutoScaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.putAwsAppSync">PutAwsAppSync</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.putAwsAthena">PutAwsAthena</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.putAwsAutoDiscovery">PutAwsAutoDiscovery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.putAwsCognito">PutAwsCognito</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.putAwsConnect">PutAwsConnect</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.putAwsDirectConnect">PutAwsDirectConnect</a></code> | *No description.* |
@@ -131,6 +132,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.resetAutoScaling">ResetAutoScaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.resetAwsAppSync">ResetAwsAppSync</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.resetAwsAthena">ResetAwsAthena</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.resetAwsAutoDiscovery">ResetAwsAutoDiscovery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.resetAwsCognito">ResetAwsCognito</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.resetAwsConnect">ResetAwsConnect</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.resetAwsDirectConnect">ResetAwsDirectConnect</a></code> | *No description.* |
@@ -527,6 +529,18 @@ func PutAwsAthena(value CloudAwsIntegrationsAwsAthena)
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.putAwsAthena.parameter.value"></a>
 
 - *Type:* <a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAthena">CloudAwsIntegrationsAwsAthena</a>
+
+---
+
+##### `PutAwsAutoDiscovery` <a name="PutAwsAutoDiscovery" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.putAwsAutoDiscovery"></a>
+
+```go
+func PutAwsAutoDiscovery(value CloudAwsIntegrationsAwsAutoDiscovery)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.putAwsAutoDiscovery.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscovery">CloudAwsIntegrationsAwsAutoDiscovery</a>
 
 ---
 
@@ -1130,6 +1144,12 @@ func ResetAwsAppSync()
 func ResetAwsAthena()
 ```
 
+##### `ResetAwsAutoDiscovery` <a name="ResetAwsAutoDiscovery" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.resetAwsAutoDiscovery"></a>
+
+```go
+func ResetAwsAutoDiscovery()
+```
+
 ##### `ResetAwsCognito` <a name="ResetAwsCognito" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.resetAwsCognito"></a>
 
 ```go
@@ -1521,7 +1541,7 @@ The construct id used in the generated config for the CloudAwsIntegrations to im
 
 The id of the existing CloudAwsIntegrations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1556,6 +1576,7 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.autoScaling">AutoScaling</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAutoScalingOutputReference">CloudAwsIntegrationsAutoScalingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.awsAppSync">AwsAppSync</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAppSyncOutputReference">CloudAwsIntegrationsAwsAppSyncOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.awsAthena">AwsAthena</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAthenaOutputReference">CloudAwsIntegrationsAwsAthenaOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.awsAutoDiscovery">AwsAutoDiscovery</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference">CloudAwsIntegrationsAwsAutoDiscoveryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.awsCognito">AwsCognito</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsCognitoOutputReference">CloudAwsIntegrationsAwsCognitoOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.awsConnect">AwsConnect</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsConnectOutputReference">CloudAwsIntegrationsAwsConnectOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.awsDirectConnect">AwsDirectConnect</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsDirectConnectOutputReference">CloudAwsIntegrationsAwsDirectConnectOutputReference</a></code> | *No description.* |
@@ -1609,6 +1630,7 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.autoScalingInput">AutoScalingInput</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAutoScaling">CloudAwsIntegrationsAutoScaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.awsAppSyncInput">AwsAppSyncInput</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAppSync">CloudAwsIntegrationsAwsAppSync</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.awsAthenaInput">AwsAthenaInput</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAthena">CloudAwsIntegrationsAwsAthena</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.awsAutoDiscoveryInput">AwsAutoDiscoveryInput</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscovery">CloudAwsIntegrationsAwsAutoDiscovery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.awsCognitoInput">AwsCognitoInput</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsCognito">CloudAwsIntegrationsAwsCognito</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.awsConnectInput">AwsConnectInput</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsConnect">CloudAwsIntegrationsAwsConnect</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.awsDirectConnectInput">AwsDirectConnectInput</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsDirectConnect">CloudAwsIntegrationsAwsDirectConnect</a></code> | *No description.* |
@@ -1853,6 +1875,16 @@ func AwsAthena() CloudAwsIntegrationsAwsAthenaOutputReference
 ```
 
 - *Type:* <a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAthenaOutputReference">CloudAwsIntegrationsAwsAthenaOutputReference</a>
+
+---
+
+##### `AwsAutoDiscovery`<sup>Required</sup> <a name="AwsAutoDiscovery" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.awsAutoDiscovery"></a>
+
+```go
+func AwsAutoDiscovery() CloudAwsIntegrationsAwsAutoDiscoveryOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference">CloudAwsIntegrationsAwsAutoDiscoveryOutputReference</a>
 
 ---
 
@@ -2383,6 +2415,16 @@ func AwsAthenaInput() CloudAwsIntegrationsAwsAthena
 ```
 
 - *Type:* <a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAthena">CloudAwsIntegrationsAwsAthena</a>
+
+---
+
+##### `AwsAutoDiscoveryInput`<sup>Optional</sup> <a name="AwsAutoDiscoveryInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.awsAutoDiscoveryInput"></a>
+
+```go
+func AwsAutoDiscoveryInput() CloudAwsIntegrationsAwsAutoDiscovery
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscovery">CloudAwsIntegrationsAwsAutoDiscovery</a>
 
 ---
 
@@ -2968,7 +3010,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -2984,7 +3026,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
 
 ---
 
@@ -3000,7 +3042,7 @@ Specify if tags should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
 
 ---
 
@@ -3014,7 +3056,7 @@ LoadBalancerPrefixes *[]*string
 
 Specify each name or prefix for the LBs that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#load_balancer_prefixes CloudAwsIntegrations#load_balancer_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#load_balancer_prefixes CloudAwsIntegrations#load_balancer_prefixes}
 
 ---
 
@@ -3028,7 +3070,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3042,7 +3084,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -3056,7 +3098,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -3098,7 +3140,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -3112,7 +3154,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3128,7 +3170,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#stage_prefixes CloudAwsIntegrations#stage_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#stage_prefixes CloudAwsIntegrations#stage_prefixes}
 
 ---
 
@@ -3142,7 +3184,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -3156,7 +3198,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -3192,7 +3234,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -3206,7 +3248,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3242,7 +3284,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -3256,7 +3298,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3292,7 +3334,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -3306,7 +3348,57 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+
+---
+
+### CloudAwsIntegrationsAwsAutoDiscovery <a name="CloudAwsIntegrationsAwsAutoDiscovery" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscovery"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscovery.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/cloudawsintegrations"
+
+&cloudawsintegrations.CloudAwsIntegrationsAwsAutoDiscovery {
+	AwsRegions: *[]*string,
+	MetricsPollingInterval: *f64,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscovery.property.awsRegions">AwsRegions</a></code> | <code>*[]*string</code> | Specify each AWS region that includes the resources that you want to monitor. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscovery.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>*f64</code> | The data polling interval in seconds. |
+
+---
+
+##### `AwsRegions`<sup>Optional</sup> <a name="AwsRegions" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscovery.property.awsRegions"></a>
+
+```go
+AwsRegions *[]*string
+```
+
+- *Type:* *[]*string
+
+Specify each AWS region that includes the resources that you want to monitor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+
+---
+
+##### `MetricsPollingInterval`<sup>Optional</sup> <a name="MetricsPollingInterval" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscovery.property.metricsPollingInterval"></a>
+
+```go
+MetricsPollingInterval *f64
+```
+
+- *Type:* *f64
+
+The data polling interval in seconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3342,7 +3434,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -3356,7 +3448,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3392,7 +3484,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -3406,7 +3498,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3442,7 +3534,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -3456,7 +3548,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3492,7 +3584,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -3506,7 +3598,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3542,7 +3634,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -3556,7 +3648,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3592,7 +3684,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -3606,7 +3698,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3642,7 +3734,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -3656,7 +3748,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3692,7 +3784,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -3706,7 +3798,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3742,7 +3834,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -3756,7 +3848,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3792,7 +3884,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -3806,7 +3898,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3842,7 +3934,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -3856,7 +3948,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3892,7 +3984,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -3906,7 +3998,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3942,7 +4034,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -3956,7 +4048,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3992,7 +4084,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -4006,7 +4098,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4042,7 +4134,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -4056,7 +4148,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4092,7 +4184,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -4106,7 +4198,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4142,7 +4234,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -4156,7 +4248,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4190,7 +4282,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4234,7 +4326,7 @@ Specify if Lambdas@Edge should be monitored.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_lambdas_at_edge CloudAwsIntegrations#fetch_lambdas_at_edge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_lambdas_at_edge CloudAwsIntegrations#fetch_lambdas_at_edge}
 
 ---
 
@@ -4250,7 +4342,7 @@ Specify if tags should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
 
 ---
 
@@ -4264,7 +4356,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4278,7 +4370,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -4292,7 +4384,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -4328,7 +4420,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -4342,7 +4434,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4368,6 +4460,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/cloudawsintegra
 	AutoScaling: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13.cloudAwsIntegrations.CloudAwsIntegrationsAutoScaling,
 	AwsAppSync: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13.cloudAwsIntegrations.CloudAwsIntegrationsAwsAppSync,
 	AwsAthena: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13.cloudAwsIntegrations.CloudAwsIntegrationsAwsAthena,
+	AwsAutoDiscovery: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscovery,
 	AwsCognito: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13.cloudAwsIntegrations.CloudAwsIntegrationsAwsCognito,
 	AwsConnect: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13.cloudAwsIntegrations.CloudAwsIntegrationsAwsConnect,
 	AwsDirectConnect: github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13.cloudAwsIntegrations.CloudAwsIntegrationsAwsDirectConnect,
@@ -4437,6 +4530,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/cloudawsintegra
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.autoScaling">AutoScaling</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAutoScaling">CloudAwsIntegrationsAutoScaling</a></code> | auto_scaling block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.awsAppSync">AwsAppSync</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAppSync">CloudAwsIntegrationsAwsAppSync</a></code> | aws_app_sync block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.awsAthena">AwsAthena</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAthena">CloudAwsIntegrationsAwsAthena</a></code> | aws_athena block. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.awsAutoDiscovery">AwsAutoDiscovery</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscovery">CloudAwsIntegrationsAwsAutoDiscovery</a></code> | aws_auto_discovery block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.awsCognito">AwsCognito</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsCognito">CloudAwsIntegrationsAwsCognito</a></code> | aws_cognito block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.awsConnect">AwsConnect</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsConnect">CloudAwsIntegrationsAwsConnect</a></code> | aws_connect block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.awsDirectConnect">AwsDirectConnect</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsDirectConnect">CloudAwsIntegrationsAwsDirectConnect</a></code> | aws_direct_connect block. |
@@ -4470,7 +4564,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/cloudawsintegra
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.emr">Emr</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmr">CloudAwsIntegrationsEmr</a></code> | emr block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.health">Health</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsHealth">CloudAwsIntegrationsHealth</a></code> | health block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.iam">Iam</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsIam">CloudAwsIntegrationsIam</a></code> | iam block. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#id CloudAwsIntegrations#id}. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#id CloudAwsIntegrations#id}. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.iot">Iot</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsIot">CloudAwsIntegrationsIot</a></code> | iot block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.kinesis">Kinesis</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesis">CloudAwsIntegrationsKinesis</a></code> | kinesis block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.kinesisFirehose">KinesisFirehose</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisFirehose">CloudAwsIntegrationsKinesisFirehose</a></code> | kinesis_firehose block. |
@@ -4568,7 +4662,7 @@ LinkedAccountId *f64
 
 The ID of the linked AWS account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#linked_account_id CloudAwsIntegrations#linked_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#linked_account_id CloudAwsIntegrations#linked_account_id}
 
 ---
 
@@ -4582,7 +4676,7 @@ AccountId *f64
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#account_id CloudAwsIntegrations#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#account_id CloudAwsIntegrations#account_id}
 
 ---
 
@@ -4596,7 +4690,7 @@ Alb CloudAwsIntegrationsAlb
 
 alb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#alb CloudAwsIntegrations#alb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#alb CloudAwsIntegrations#alb}
 
 ---
 
@@ -4610,7 +4704,7 @@ ApiGateway CloudAwsIntegrationsApiGateway
 
 api_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#api_gateway CloudAwsIntegrations#api_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#api_gateway CloudAwsIntegrations#api_gateway}
 
 ---
 
@@ -4624,7 +4718,7 @@ AutoScaling CloudAwsIntegrationsAutoScaling
 
 auto_scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#auto_scaling CloudAwsIntegrations#auto_scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#auto_scaling CloudAwsIntegrations#auto_scaling}
 
 ---
 
@@ -4638,7 +4732,7 @@ AwsAppSync CloudAwsIntegrationsAwsAppSync
 
 aws_app_sync block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_app_sync CloudAwsIntegrations#aws_app_sync}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_app_sync CloudAwsIntegrations#aws_app_sync}
 
 ---
 
@@ -4652,7 +4746,21 @@ AwsAthena CloudAwsIntegrationsAwsAthena
 
 aws_athena block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_athena CloudAwsIntegrations#aws_athena}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_athena CloudAwsIntegrations#aws_athena}
+
+---
+
+##### `AwsAutoDiscovery`<sup>Optional</sup> <a name="AwsAutoDiscovery" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.awsAutoDiscovery"></a>
+
+```go
+AwsAutoDiscovery CloudAwsIntegrationsAwsAutoDiscovery
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscovery">CloudAwsIntegrationsAwsAutoDiscovery</a>
+
+aws_auto_discovery block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_auto_discovery CloudAwsIntegrations#aws_auto_discovery}
 
 ---
 
@@ -4666,7 +4774,7 @@ AwsCognito CloudAwsIntegrationsAwsCognito
 
 aws_cognito block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_cognito CloudAwsIntegrations#aws_cognito}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_cognito CloudAwsIntegrations#aws_cognito}
 
 ---
 
@@ -4680,7 +4788,7 @@ AwsConnect CloudAwsIntegrationsAwsConnect
 
 aws_connect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_connect CloudAwsIntegrations#aws_connect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_connect CloudAwsIntegrations#aws_connect}
 
 ---
 
@@ -4694,7 +4802,7 @@ AwsDirectConnect CloudAwsIntegrationsAwsDirectConnect
 
 aws_direct_connect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_direct_connect CloudAwsIntegrations#aws_direct_connect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_direct_connect CloudAwsIntegrations#aws_direct_connect}
 
 ---
 
@@ -4708,7 +4816,7 @@ AwsFsx CloudAwsIntegrationsAwsFsx
 
 aws_fsx block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_fsx CloudAwsIntegrations#aws_fsx}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_fsx CloudAwsIntegrations#aws_fsx}
 
 ---
 
@@ -4722,7 +4830,7 @@ AwsGlue CloudAwsIntegrationsAwsGlue
 
 aws_glue block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_glue CloudAwsIntegrations#aws_glue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_glue CloudAwsIntegrations#aws_glue}
 
 ---
 
@@ -4736,7 +4844,7 @@ AwsKinesisAnalytics CloudAwsIntegrationsAwsKinesisAnalytics
 
 aws_kinesis_analytics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_kinesis_analytics CloudAwsIntegrations#aws_kinesis_analytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_kinesis_analytics CloudAwsIntegrations#aws_kinesis_analytics}
 
 ---
 
@@ -4750,7 +4858,7 @@ AwsMediaConvert CloudAwsIntegrationsAwsMediaConvert
 
 aws_media_convert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_media_convert CloudAwsIntegrations#aws_media_convert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_media_convert CloudAwsIntegrations#aws_media_convert}
 
 ---
 
@@ -4764,7 +4872,7 @@ AwsMediaPackageVod CloudAwsIntegrationsAwsMediaPackageVod
 
 aws_media_package_vod block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_media_package_vod CloudAwsIntegrations#aws_media_package_vod}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_media_package_vod CloudAwsIntegrations#aws_media_package_vod}
 
 ---
 
@@ -4778,7 +4886,7 @@ AwsMq CloudAwsIntegrationsAwsMq
 
 aws_mq block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_mq CloudAwsIntegrations#aws_mq}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_mq CloudAwsIntegrations#aws_mq}
 
 ---
 
@@ -4792,7 +4900,7 @@ AwsMsk CloudAwsIntegrationsAwsMsk
 
 aws_msk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_msk CloudAwsIntegrations#aws_msk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_msk CloudAwsIntegrations#aws_msk}
 
 ---
 
@@ -4806,7 +4914,7 @@ AwsNeptune CloudAwsIntegrationsAwsNeptune
 
 aws_neptune block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_neptune CloudAwsIntegrations#aws_neptune}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_neptune CloudAwsIntegrations#aws_neptune}
 
 ---
 
@@ -4820,7 +4928,7 @@ AwsQldb CloudAwsIntegrationsAwsQldb
 
 aws_qldb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_qldb CloudAwsIntegrations#aws_qldb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_qldb CloudAwsIntegrations#aws_qldb}
 
 ---
 
@@ -4834,7 +4942,7 @@ AwsRoute53Resolver CloudAwsIntegrationsAwsRoute53Resolver
 
 aws_route53resolver block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_route53resolver CloudAwsIntegrations#aws_route53resolver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_route53resolver CloudAwsIntegrations#aws_route53resolver}
 
 ---
 
@@ -4848,7 +4956,7 @@ AwsStates CloudAwsIntegrationsAwsStates
 
 aws_states block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_states CloudAwsIntegrations#aws_states}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_states CloudAwsIntegrations#aws_states}
 
 ---
 
@@ -4862,7 +4970,7 @@ AwsTransitGateway CloudAwsIntegrationsAwsTransitGateway
 
 aws_transit_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_transit_gateway CloudAwsIntegrations#aws_transit_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_transit_gateway CloudAwsIntegrations#aws_transit_gateway}
 
 ---
 
@@ -4876,7 +4984,7 @@ AwsWaf CloudAwsIntegrationsAwsWaf
 
 aws_waf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_waf CloudAwsIntegrations#aws_waf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_waf CloudAwsIntegrations#aws_waf}
 
 ---
 
@@ -4890,7 +4998,7 @@ AwsWafv2 CloudAwsIntegrationsAwsWafv2
 
 aws_wafv2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_wafv2 CloudAwsIntegrations#aws_wafv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_wafv2 CloudAwsIntegrations#aws_wafv2}
 
 ---
 
@@ -4904,7 +5012,7 @@ Billing CloudAwsIntegrationsBilling
 
 billing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#billing CloudAwsIntegrations#billing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#billing CloudAwsIntegrations#billing}
 
 ---
 
@@ -4918,7 +5026,7 @@ Cloudfront CloudAwsIntegrationsCloudfront
 
 cloudfront block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#cloudfront CloudAwsIntegrations#cloudfront}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#cloudfront CloudAwsIntegrations#cloudfront}
 
 ---
 
@@ -4932,7 +5040,7 @@ Cloudtrail CloudAwsIntegrationsCloudtrail
 
 cloudtrail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#cloudtrail CloudAwsIntegrations#cloudtrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#cloudtrail CloudAwsIntegrations#cloudtrail}
 
 ---
 
@@ -4946,7 +5054,7 @@ DocDb CloudAwsIntegrationsDocDb
 
 doc_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#doc_db CloudAwsIntegrations#doc_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#doc_db CloudAwsIntegrations#doc_db}
 
 ---
 
@@ -4960,7 +5068,7 @@ Dynamodb CloudAwsIntegrationsDynamodb
 
 dynamodb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#dynamodb CloudAwsIntegrations#dynamodb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#dynamodb CloudAwsIntegrations#dynamodb}
 
 ---
 
@@ -4974,7 +5082,7 @@ Ebs CloudAwsIntegrationsEbs
 
 ebs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#ebs CloudAwsIntegrations#ebs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#ebs CloudAwsIntegrations#ebs}
 
 ---
 
@@ -4988,7 +5096,7 @@ Ec2 CloudAwsIntegrationsEc2
 
 ec2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#ec2 CloudAwsIntegrations#ec2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#ec2 CloudAwsIntegrations#ec2}
 
 ---
 
@@ -5002,7 +5110,7 @@ Ecs CloudAwsIntegrationsEcs
 
 ecs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#ecs CloudAwsIntegrations#ecs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#ecs CloudAwsIntegrations#ecs}
 
 ---
 
@@ -5016,7 +5124,7 @@ Efs CloudAwsIntegrationsEfs
 
 efs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#efs CloudAwsIntegrations#efs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#efs CloudAwsIntegrations#efs}
 
 ---
 
@@ -5030,7 +5138,7 @@ Elasticache CloudAwsIntegrationsElasticache
 
 elasticache block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#elasticache CloudAwsIntegrations#elasticache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#elasticache CloudAwsIntegrations#elasticache}
 
 ---
 
@@ -5044,7 +5152,7 @@ Elasticbeanstalk CloudAwsIntegrationsElasticbeanstalk
 
 elasticbeanstalk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#elasticbeanstalk CloudAwsIntegrations#elasticbeanstalk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#elasticbeanstalk CloudAwsIntegrations#elasticbeanstalk}
 
 ---
 
@@ -5058,7 +5166,7 @@ Elasticsearch CloudAwsIntegrationsElasticsearch
 
 elasticsearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#elasticsearch CloudAwsIntegrations#elasticsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#elasticsearch CloudAwsIntegrations#elasticsearch}
 
 ---
 
@@ -5072,7 +5180,7 @@ Elb CloudAwsIntegrationsElb
 
 elb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#elb CloudAwsIntegrations#elb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#elb CloudAwsIntegrations#elb}
 
 ---
 
@@ -5086,7 +5194,7 @@ Emr CloudAwsIntegrationsEmr
 
 emr block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#emr CloudAwsIntegrations#emr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#emr CloudAwsIntegrations#emr}
 
 ---
 
@@ -5100,7 +5208,7 @@ Health CloudAwsIntegrationsHealth
 
 health block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#health CloudAwsIntegrations#health}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#health CloudAwsIntegrations#health}
 
 ---
 
@@ -5114,7 +5222,7 @@ Iam CloudAwsIntegrationsIam
 
 iam block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#iam CloudAwsIntegrations#iam}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#iam CloudAwsIntegrations#iam}
 
 ---
 
@@ -5126,7 +5234,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#id CloudAwsIntegrations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#id CloudAwsIntegrations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5143,7 +5251,7 @@ Iot CloudAwsIntegrationsIot
 
 iot block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#iot CloudAwsIntegrations#iot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#iot CloudAwsIntegrations#iot}
 
 ---
 
@@ -5157,7 +5265,7 @@ Kinesis CloudAwsIntegrationsKinesis
 
 kinesis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#kinesis CloudAwsIntegrations#kinesis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#kinesis CloudAwsIntegrations#kinesis}
 
 ---
 
@@ -5171,7 +5279,7 @@ KinesisFirehose CloudAwsIntegrationsKinesisFirehose
 
 kinesis_firehose block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#kinesis_firehose CloudAwsIntegrations#kinesis_firehose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#kinesis_firehose CloudAwsIntegrations#kinesis_firehose}
 
 ---
 
@@ -5185,7 +5293,7 @@ Lambda CloudAwsIntegrationsLambda
 
 lambda block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#lambda CloudAwsIntegrations#lambda}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#lambda CloudAwsIntegrations#lambda}
 
 ---
 
@@ -5199,7 +5307,7 @@ Rds CloudAwsIntegrationsRds
 
 rds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#rds CloudAwsIntegrations#rds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#rds CloudAwsIntegrations#rds}
 
 ---
 
@@ -5213,7 +5321,7 @@ Redshift CloudAwsIntegrationsRedshift
 
 redshift block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#redshift CloudAwsIntegrations#redshift}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#redshift CloudAwsIntegrations#redshift}
 
 ---
 
@@ -5227,7 +5335,7 @@ Route53 CloudAwsIntegrationsRoute53
 
 route53 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#route53 CloudAwsIntegrations#route53}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#route53 CloudAwsIntegrations#route53}
 
 ---
 
@@ -5241,7 +5349,7 @@ S3 CloudAwsIntegrationsS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#s3 CloudAwsIntegrations#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#s3 CloudAwsIntegrations#s3}
 
 ---
 
@@ -5255,7 +5363,7 @@ Ses CloudAwsIntegrationsSes
 
 ses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#ses CloudAwsIntegrations#ses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#ses CloudAwsIntegrations#ses}
 
 ---
 
@@ -5269,7 +5377,7 @@ Sns CloudAwsIntegrationsSns
 
 sns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#sns CloudAwsIntegrations#sns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#sns CloudAwsIntegrations#sns}
 
 ---
 
@@ -5283,7 +5391,7 @@ Sqs CloudAwsIntegrationsSqs
 
 sqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#sqs CloudAwsIntegrations#sqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#sqs CloudAwsIntegrations#sqs}
 
 ---
 
@@ -5297,7 +5405,7 @@ TrustedAdvisor CloudAwsIntegrationsTrustedAdvisor
 
 trusted_advisor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#trusted_advisor CloudAwsIntegrations#trusted_advisor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#trusted_advisor CloudAwsIntegrations#trusted_advisor}
 
 ---
 
@@ -5311,7 +5419,7 @@ Vpc CloudAwsIntegrationsVpc
 
 vpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#vpc CloudAwsIntegrations#vpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#vpc CloudAwsIntegrations#vpc}
 
 ---
 
@@ -5325,7 +5433,7 @@ XRay CloudAwsIntegrationsXRay
 
 x_ray block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#x_ray CloudAwsIntegrations#x_ray}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#x_ray CloudAwsIntegrations#x_ray}
 
 ---
 
@@ -5361,7 +5469,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -5375,7 +5483,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -5419,7 +5527,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -5435,7 +5543,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
 
 ---
 
@@ -5451,7 +5559,7 @@ Specify if tags and the extended inventory should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
 
 ---
 
@@ -5465,7 +5573,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -5479,7 +5587,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -5493,7 +5601,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -5535,7 +5643,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -5551,7 +5659,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
 
 ---
 
@@ -5565,7 +5673,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -5579,7 +5687,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -5593,7 +5701,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -5637,7 +5745,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -5651,7 +5759,7 @@ DuplicateEc2Tags interface{}
 
 Specify if the old legacy metadata and tag names have to be kept, it will consume more ingest data size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#duplicate_ec2_tags CloudAwsIntegrations#duplicate_ec2_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#duplicate_ec2_tags CloudAwsIntegrations#duplicate_ec2_tags}
 
 ---
 
@@ -5665,7 +5773,7 @@ FetchIpAddresses interface{}
 
 Specify if IP addresses of ec2 instance should be collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_ip_addresses CloudAwsIntegrations#fetch_ip_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_ip_addresses CloudAwsIntegrations#fetch_ip_addresses}
 
 ---
 
@@ -5679,7 +5787,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -5693,7 +5801,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -5707,7 +5815,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -5749,7 +5857,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -5765,7 +5873,7 @@ Specify if tags and the extended inventory should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
 
 ---
 
@@ -5779,7 +5887,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -5793,7 +5901,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -5807,7 +5915,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -5849,7 +5957,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -5865,7 +5973,7 @@ Specify if tags and the extended inventory should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
 
 ---
 
@@ -5879,7 +5987,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -5893,7 +6001,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -5907,7 +6015,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -5949,7 +6057,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -5965,7 +6073,7 @@ Specify if tags should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
 
 ---
 
@@ -5979,7 +6087,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -5993,7 +6101,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -6007,7 +6115,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -6051,7 +6159,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -6067,7 +6175,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
 
 ---
 
@@ -6083,7 +6191,7 @@ Specify if tags and the extended inventory should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
 
 ---
 
@@ -6097,7 +6205,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -6111,7 +6219,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -6125,7 +6233,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -6167,7 +6275,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -6183,7 +6291,7 @@ Specify if metrics should be collected for nodes.
 
 Turning it on will increase the number of API calls made to CloudWatch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_nodes CloudAwsIntegrations#fetch_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_nodes CloudAwsIntegrations#fetch_nodes}
 
 ---
 
@@ -6197,7 +6305,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -6211,7 +6319,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -6225,7 +6333,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -6265,7 +6373,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -6281,7 +6389,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
 
 ---
 
@@ -6297,7 +6405,7 @@ Specify if tags should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
 
 ---
 
@@ -6311,7 +6419,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -6353,7 +6461,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -6369,7 +6477,7 @@ Specify if tags and the extended inventory should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
 
 ---
 
@@ -6383,7 +6491,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -6397,7 +6505,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -6411,7 +6519,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -6445,7 +6553,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -6483,7 +6591,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -6497,7 +6605,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -6511,7 +6619,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -6547,7 +6655,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -6561,7 +6669,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -6605,7 +6713,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -6621,7 +6729,7 @@ Specify if Shards should be monitored.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_shards CloudAwsIntegrations#fetch_shards}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_shards CloudAwsIntegrations#fetch_shards}
 
 ---
 
@@ -6637,7 +6745,7 @@ Specify if tags and the extended inventory should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
 
 ---
 
@@ -6651,7 +6759,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -6665,7 +6773,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -6679,7 +6787,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -6715,7 +6823,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -6729,7 +6837,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -6771,7 +6879,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -6787,7 +6895,7 @@ Specify if tags and the extended inventory should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
 
 ---
 
@@ -6801,7 +6909,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -6815,7 +6923,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -6829,7 +6937,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -6871,7 +6979,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -6887,7 +6995,7 @@ Specify if tags and the extended inventory should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
 
 ---
 
@@ -6901,7 +7009,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -6915,7 +7023,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -6929,7 +7037,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -6969,7 +7077,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -6983,7 +7091,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -6997,7 +7105,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -7011,7 +7119,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -7049,7 +7157,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
 
 ---
 
@@ -7063,7 +7171,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -7107,7 +7215,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
 
 ---
 
@@ -7123,7 +7231,7 @@ Specify if tags should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
 
 ---
 
@@ -7137,7 +7245,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -7151,7 +7259,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -7165,7 +7273,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -7201,7 +7309,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -7215,7 +7323,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -7253,7 +7361,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -7269,7 +7377,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
 
 ---
 
@@ -7283,7 +7391,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -7329,7 +7437,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -7345,7 +7453,7 @@ Determine if extra inventory data be collected or not.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_extended_inventory CloudAwsIntegrations#fetch_extended_inventory}
 
 ---
 
@@ -7361,7 +7469,7 @@ Specify if tags should be collected.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_tags CloudAwsIntegrations#fetch_tags}
 
 ---
 
@@ -7375,7 +7483,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -7389,7 +7497,7 @@ QueuePrefixes *[]*string
 
 Specify each name or prefix for the Queues that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#queue_prefixes CloudAwsIntegrations#queue_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#queue_prefixes CloudAwsIntegrations#queue_prefixes}
 
 ---
 
@@ -7403,7 +7511,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -7417,7 +7525,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -7451,7 +7559,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -7495,7 +7603,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -7511,7 +7619,7 @@ Specify if NAT gateway should be monitored.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_nat_gateway CloudAwsIntegrations#fetch_nat_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_nat_gateway CloudAwsIntegrations#fetch_nat_gateway}
 
 ---
 
@@ -7527,7 +7635,7 @@ Specify if VPN should be monitored.
 
 May affect total data collection time and contribute to the Cloud provider API rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#fetch_vpn CloudAwsIntegrations#fetch_vpn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#fetch_vpn CloudAwsIntegrations#fetch_vpn}
 
 ---
 
@@ -7541,7 +7649,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -7555,7 +7663,7 @@ TagKey *string
 
 Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_key CloudAwsIntegrations#tag_key}
 
 ---
 
@@ -7569,7 +7677,7 @@ TagValue *string
 
 Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#tag_value CloudAwsIntegrations#tag_value}
 
 ---
 
@@ -7605,7 +7713,7 @@ AwsRegions *[]*string
 
 Specify each AWS region that includes the resources that you want to monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#aws_regions CloudAwsIntegrations#aws_regions}
 
 ---
 
@@ -7619,7 +7727,7 @@ MetricsPollingInterval *f64
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations#metrics_polling_interval CloudAwsIntegrations#metrics_polling_interval}
 
 ---
 
@@ -9388,6 +9496,313 @@ func InternalValue() CloudAwsIntegrationsAwsAthena
 ```
 
 - *Type:* <a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAthena">CloudAwsIntegrationsAwsAthena</a>
+
+---
+
+
+### CloudAwsIntegrationsAwsAutoDiscoveryOutputReference <a name="CloudAwsIntegrationsAwsAutoDiscoveryOutputReference" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/cloudawsintegrations"
+
+cloudawsintegrations.NewCloudAwsIntegrationsAwsAutoDiscoveryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsAwsAutoDiscoveryOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.resetAwsRegions">ResetAwsRegions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.resetMetricsPollingInterval">ResetMetricsPollingInterval</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAwsRegions` <a name="ResetAwsRegions" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.resetAwsRegions"></a>
+
+```go
+func ResetAwsRegions()
+```
+
+##### `ResetMetricsPollingInterval` <a name="ResetMetricsPollingInterval" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.resetMetricsPollingInterval"></a>
+
+```go
+func ResetMetricsPollingInterval()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.property.awsRegions">AwsRegions</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscovery">CloudAwsIntegrationsAwsAutoDiscovery</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AwsRegionsInput`<sup>Optional</sup> <a name="AwsRegionsInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.property.awsRegionsInput"></a>
+
+```go
+func AwsRegionsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `MetricsPollingIntervalInput`<sup>Optional</sup> <a name="MetricsPollingIntervalInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.property.metricsPollingIntervalInput"></a>
+
+```go
+func MetricsPollingIntervalInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `AwsRegions`<sup>Required</sup> <a name="AwsRegions" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.property.awsRegions"></a>
+
+```go
+func AwsRegions() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `MetricsPollingInterval`<sup>Required</sup> <a name="MetricsPollingInterval" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.property.metricsPollingInterval"></a>
+
+```go
+func MetricsPollingInterval() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() CloudAwsIntegrationsAwsAutoDiscovery
+```
+
+- *Type:* <a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscovery">CloudAwsIntegrationsAwsAutoDiscovery</a>
 
 ---
 
