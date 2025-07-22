@@ -4,7 +4,7 @@
 
 ### Group <a name="Group" id="@cdktf/provider-newrelic.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/group newrelic_group}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/group newrelic_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.group.Group.Initializer"></a>
 
@@ -41,7 +41,7 @@ group.Group(
 | <code><a href="#@cdktf/provider-newrelic.group.Group.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.group.Group.Initializer.parameter.authenticationDomainId">authentication_domain_id</a></code> | <code>str</code> | The ID of the authentication domain the group will belong to. |
 | <code><a href="#@cdktf/provider-newrelic.group.Group.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the group. |
-| <code><a href="#@cdktf/provider-newrelic.group.Group.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-newrelic.group.Group.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/group#id Group#id}. |
 | <code><a href="#@cdktf/provider-newrelic.group.Group.Initializer.parameter.userIds">user_ids</a></code> | <code>typing.List[str]</code> | IDs of users to be added to the group. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the authentication domain the group will belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/group#authentication_domain_id Group#authentication_domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/group#authentication_domain_id Group#authentication_domain_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The name of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/group#name Group#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/group#name Group#name}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 IDs of users to be added to the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/group#user_ids Group#user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/group#user_ids Group#user_ids}
 
 ---
 
@@ -630,7 +630,7 @@ The construct id used in the generated config for the Group to import.
 
 The id of the existing Group that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -948,7 +948,7 @@ group.GroupConfig(
 | <code><a href="#@cdktf/provider-newrelic.group.GroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.group.GroupConfig.property.authenticationDomainId">authentication_domain_id</a></code> | <code>str</code> | The ID of the authentication domain the group will belong to. |
 | <code><a href="#@cdktf/provider-newrelic.group.GroupConfig.property.name">name</a></code> | <code>str</code> | The name of the group. |
-| <code><a href="#@cdktf/provider-newrelic.group.GroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-newrelic.group.GroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/group#id Group#id}. |
 | <code><a href="#@cdktf/provider-newrelic.group.GroupConfig.property.userIds">user_ids</a></code> | <code>typing.List[str]</code> | IDs of users to be added to the group. |
 
 ---
@@ -1033,7 +1033,7 @@ authentication_domain_id: str
 
 The ID of the authentication domain the group will belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/group#authentication_domain_id Group#authentication_domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/group#authentication_domain_id Group#authentication_domain_id}
 
 ---
 
@@ -1047,7 +1047,7 @@ name: str
 
 The name of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/group#name Group#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/group#name Group#name}
 
 ---
 
@@ -1059,7 +1059,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1076,7 +1076,7 @@ user_ids: typing.List[str]
 
 IDs of users to be added to the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/group#user_ids Group#user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/group#user_ids Group#user_ids}
 
 ---
 
