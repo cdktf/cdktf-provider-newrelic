@@ -4,7 +4,7 @@
 
 ### User <a name="User" id="@cdktf/provider-newrelic.user.User"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/user newrelic_user}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/user newrelic_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.user.User.Initializer"></a>
 
@@ -43,7 +43,7 @@ user.User(
 | <code><a href="#@cdktf/provider-newrelic.user.User.Initializer.parameter.authenticationDomainId">authentication_domain_id</a></code> | <code>str</code> | The ID of the authentication domain the user will belong to. |
 | <code><a href="#@cdktf/provider-newrelic.user.User.Initializer.parameter.emailId">email_id</a></code> | <code>str</code> | The email ID of the user. |
 | <code><a href="#@cdktf/provider-newrelic.user.User.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the user. |
-| <code><a href="#@cdktf/provider-newrelic.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-newrelic.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-newrelic.user.User.Initializer.parameter.userType">user_type</a></code> | <code>str</code> | The type of the user to be created. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the authentication domain the user will belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/user#authentication_domain_id User#authentication_domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/user#authentication_domain_id User#authentication_domain_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The email ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/user#email_id User#email_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/user#email_id User#email_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The name of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/user#name User#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/user#name User#name}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The type of the user to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/user#user_type User#user_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/user#user_type User#user_type}
 
 ---
 
@@ -642,7 +642,7 @@ The construct id used in the generated config for the User to import.
 
 The id of the existing User that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -984,7 +984,7 @@ user.UserConfig(
 | <code><a href="#@cdktf/provider-newrelic.user.UserConfig.property.authenticationDomainId">authentication_domain_id</a></code> | <code>str</code> | The ID of the authentication domain the user will belong to. |
 | <code><a href="#@cdktf/provider-newrelic.user.UserConfig.property.emailId">email_id</a></code> | <code>str</code> | The email ID of the user. |
 | <code><a href="#@cdktf/provider-newrelic.user.UserConfig.property.name">name</a></code> | <code>str</code> | The name of the user. |
-| <code><a href="#@cdktf/provider-newrelic.user.UserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-newrelic.user.UserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-newrelic.user.UserConfig.property.userType">user_type</a></code> | <code>str</code> | The type of the user to be created. |
 
 ---
@@ -1069,7 +1069,7 @@ authentication_domain_id: str
 
 The ID of the authentication domain the user will belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/user#authentication_domain_id User#authentication_domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/user#authentication_domain_id User#authentication_domain_id}
 
 ---
 
@@ -1083,7 +1083,7 @@ email_id: str
 
 The email ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/user#email_id User#email_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/user#email_id User#email_id}
 
 ---
 
@@ -1097,7 +1097,7 @@ name: str
 
 The name of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/user#name User#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/user#name User#name}
 
 ---
 
@@ -1109,7 +1109,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1126,7 +1126,7 @@ user_type: str
 
 The type of the user to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/user#user_type User#user_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/user#user_type User#user_type}
 
 ---
 
