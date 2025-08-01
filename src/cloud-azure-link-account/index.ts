@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/cloud_azure_link_account
+// https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/cloud_azure_link_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface CloudAzureLinkAccountConfig extends cdktf.TerraformMetaArgument
   /**
   * The New Relic account ID where you want to link the Azure account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/cloud_azure_link_account#account_id CloudAzureLinkAccount#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/cloud_azure_link_account#account_id CloudAzureLinkAccount#account_id}
   */
   readonly accountId?: number;
   /**
   * Application ID for Azure account
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/cloud_azure_link_account#application_id CloudAzureLinkAccount#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/cloud_azure_link_account#application_id CloudAzureLinkAccount#application_id}
   */
   readonly applicationId: string;
   /**
   * Value of the client secret from Azure
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/cloud_azure_link_account#client_secret CloudAzureLinkAccount#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/cloud_azure_link_account#client_secret CloudAzureLinkAccount#client_secret}
   */
   readonly clientSecret: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/cloud_azure_link_account#id CloudAzureLinkAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/cloud_azure_link_account#id CloudAzureLinkAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,25 +40,25 @@ export interface CloudAzureLinkAccountConfig extends cdktf.TerraformMetaArgument
   /**
   * Name of the linked account
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/cloud_azure_link_account#name CloudAzureLinkAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/cloud_azure_link_account#name CloudAzureLinkAccount#name}
   */
   readonly name: string;
   /**
   * Subscription ID for the Azure account
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/cloud_azure_link_account#subscription_id CloudAzureLinkAccount#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/cloud_azure_link_account#subscription_id CloudAzureLinkAccount#subscription_id}
   */
   readonly subscriptionId: string;
   /**
   * Tenant ID for the Azure account
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/cloud_azure_link_account#tenant_id CloudAzureLinkAccount#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/cloud_azure_link_account#tenant_id CloudAzureLinkAccount#tenant_id}
   */
   readonly tenantId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/cloud_azure_link_account newrelic_cloud_azure_link_account}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/cloud_azure_link_account newrelic_cloud_azure_link_account}
 */
 export class CloudAzureLinkAccount extends cdktf.TerraformResource {
 
@@ -74,7 +74,7 @@ export class CloudAzureLinkAccount extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudAzureLinkAccount resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudAzureLinkAccount to import
-  * @param importFromId The id of the existing CloudAzureLinkAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/cloud_azure_link_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudAzureLinkAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/cloud_azure_link_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudAzureLinkAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +86,7 @@ export class CloudAzureLinkAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/cloud_azure_link_account newrelic_cloud_azure_link_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/cloud_azure_link_account newrelic_cloud_azure_link_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class CloudAzureLinkAccount extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_cloud_azure_link_account',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.64.0',
+        providerVersion: '3.65.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/obfuscation_rule
+// https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/obfuscation_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface ObfuscationRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account id associated with the obfuscation rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/obfuscation_rule#account_id ObfuscationRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/obfuscation_rule#account_id ObfuscationRule#account_id}
   */
   readonly accountId?: number;
   /**
   * Description of rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/obfuscation_rule#description ObfuscationRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/obfuscation_rule#description ObfuscationRule#description}
   */
   readonly description?: string;
   /**
   * Whether the rule should be applied or not to incoming data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/obfuscation_rule#enabled ObfuscationRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/obfuscation_rule#enabled ObfuscationRule#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * NRQL for determining whether a given log record should have obfuscation actions applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/obfuscation_rule#filter ObfuscationRule#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/obfuscation_rule#filter ObfuscationRule#filter}
   */
   readonly filter: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/obfuscation_rule#id ObfuscationRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/obfuscation_rule#id ObfuscationRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,13 +46,13 @@ export interface ObfuscationRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/obfuscation_rule#name ObfuscationRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/obfuscation_rule#name ObfuscationRule#name}
   */
   readonly name: string;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/obfuscation_rule#action ObfuscationRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/obfuscation_rule#action ObfuscationRule#action}
   */
   readonly action: ObfuscationRuleAction[] | cdktf.IResolvable;
 }
@@ -60,19 +60,19 @@ export interface ObfuscationRuleAction {
   /**
   * Attribute names for action. An empty list applies the action to all the attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/obfuscation_rule#attribute ObfuscationRule#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/obfuscation_rule#attribute ObfuscationRule#attribute}
   */
   readonly attribute: string[];
   /**
   * Expression Id for action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/obfuscation_rule#expression_id ObfuscationRule#expression_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/obfuscation_rule#expression_id ObfuscationRule#expression_id}
   */
   readonly expressionId: string;
   /**
   * Obfuscation method to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/obfuscation_rule#method ObfuscationRule#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/obfuscation_rule#method ObfuscationRule#method}
   */
   readonly method: string;
 }
@@ -237,7 +237,7 @@ export class ObfuscationRuleActionList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/obfuscation_rule newrelic_obfuscation_rule}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/obfuscation_rule newrelic_obfuscation_rule}
 */
 export class ObfuscationRule extends cdktf.TerraformResource {
 
@@ -253,7 +253,7 @@ export class ObfuscationRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ObfuscationRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObfuscationRule to import
-  * @param importFromId The id of the existing ObfuscationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/obfuscation_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObfuscationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/obfuscation_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObfuscationRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -265,7 +265,7 @@ export class ObfuscationRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/obfuscation_rule newrelic_obfuscation_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/obfuscation_rule newrelic_obfuscation_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -276,7 +276,7 @@ export class ObfuscationRule extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_obfuscation_rule',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.64.0',
+        providerVersion: '3.65.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
