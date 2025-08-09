@@ -4,7 +4,7 @@
 
 ### NrqlDropRule <a name="NrqlDropRule" id="@cdktf/provider-newrelic.nrqlDropRule.NrqlDropRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.66.0/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.nrqlDropRule.NrqlDropRule.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the NrqlDropRule to import.
 
 The id of the existing NrqlDropRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/nrql_drop_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.66.0/docs/resources/nrql_drop_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -829,7 +829,7 @@ const nrqlDropRuleConfig: nrqlDropRule.NrqlDropRuleConfig = { ... }
 | <code><a href="#@cdktf/provider-newrelic.nrqlDropRule.NrqlDropRuleConfig.property.nrql">nrql</a></code> | <code>string</code> | Explains which data to apply the drop rule to. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlDropRule.NrqlDropRuleConfig.property.accountId">accountId</a></code> | <code>number</code> | Account with the NRQL drop rule will be put. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlDropRule.NrqlDropRuleConfig.property.description">description</a></code> | <code>string</code> | Provides additional information about the rule. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlDropRule.NrqlDropRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/nrql_drop_rule#id NrqlDropRule#id}. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlDropRule.NrqlDropRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.66.0/docs/resources/nrql_drop_rule#id NrqlDropRule#id}. |
 
 ---
 
@@ -913,7 +913,7 @@ public readonly action: string;
 
 The drop rule action (drop_data, drop_attributes, or drop_attributes_from_metric_aggregates).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/nrql_drop_rule#action NrqlDropRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.66.0/docs/resources/nrql_drop_rule#action NrqlDropRule#action}
 
 ---
 
@@ -927,7 +927,7 @@ public readonly nrql: string;
 
 Explains which data to apply the drop rule to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/nrql_drop_rule#nrql NrqlDropRule#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.66.0/docs/resources/nrql_drop_rule#nrql NrqlDropRule#nrql}
 
 ---
 
@@ -941,7 +941,7 @@ public readonly accountId: number;
 
 Account with the NRQL drop rule will be put.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/nrql_drop_rule#account_id NrqlDropRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.66.0/docs/resources/nrql_drop_rule#account_id NrqlDropRule#account_id}
 
 ---
 
@@ -955,7 +955,7 @@ public readonly description: string;
 
 Provides additional information about the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/nrql_drop_rule#description NrqlDropRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.66.0/docs/resources/nrql_drop_rule#description NrqlDropRule#description}
 
 ---
 
@@ -967,7 +967,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/nrql_drop_rule#id NrqlDropRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.66.0/docs/resources/nrql_drop_rule#id NrqlDropRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
