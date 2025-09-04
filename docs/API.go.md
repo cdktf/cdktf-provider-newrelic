@@ -55,6 +55,7 @@ The following submodules are available:
 - [oneDashboard](./oneDashboard.go.md)
 - [oneDashboardJson](./oneDashboardJson.go.md)
 - [oneDashboardRaw](./oneDashboardRaw.go.md)
+- [pipelineCloudRule](./pipelineCloudRule.go.md)
 - [provider](./provider.go.md)
 - [serviceLevel](./serviceLevel.go.md)
 - [syntheticsAlertCondition](./syntheticsAlertCondition.go.md)

@@ -55,6 +55,7 @@ The following submodules are available:
 - [oneDashboard](./oneDashboard.typescript.md)
 - [oneDashboardJson](./oneDashboardJson.typescript.md)
 - [oneDashboardRaw](./oneDashboardRaw.typescript.md)
+- [pipelineCloudRule](./pipelineCloudRule.typescript.md)
 - [provider](./provider.typescript.md)
 - [serviceLevel](./serviceLevel.typescript.md)
 - [syntheticsAlertCondition](./syntheticsAlertCondition.typescript.md)

@@ -55,6 +55,7 @@ The following submodules are available:
 - [oneDashboard](./oneDashboard.csharp.md)
 - [oneDashboardJson](./oneDashboardJson.csharp.md)
 - [oneDashboardRaw](./oneDashboardRaw.csharp.md)
+- [pipelineCloudRule](./pipelineCloudRule.csharp.md)
 - [provider](./provider.csharp.md)
 - [serviceLevel](./serviceLevel.csharp.md)
 - [syntheticsAlertCondition](./syntheticsAlertCondition.csharp.md)
