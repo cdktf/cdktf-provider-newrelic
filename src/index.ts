@@ -39,6 +39,7 @@ export * as obfuscationRule from './obfuscation-rule';
 export * as oneDashboard from './one-dashboard';
 export * as oneDashboardJson from './one-dashboard-json';
 export * as oneDashboardRaw from './one-dashboard-raw';
+export * as pipelineCloudRule from './pipeline-cloud-rule';
 export * as serviceLevel from './service-level';
 export * as syntheticsAlertCondition from './synthetics-alert-condition';
 export * as syntheticsBrokenLinksMonitor from './synthetics-broken-links-monitor';
