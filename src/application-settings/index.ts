@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings
+// https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +15,41 @@ export interface ApplicationSettingsConfig extends cdktf.TerraformMetaArguments 
   /**
   * The response time threshold value for Apdex score calculation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#app_apdex_threshold ApplicationSettings#app_apdex_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#app_apdex_threshold ApplicationSettings#app_apdex_threshold}
   */
   readonly appApdexThreshold?: number;
   /**
   * Dummy field to support backward compatibility of previous version.should be removed with next major version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#enable_real_user_monitoring ApplicationSettings#enable_real_user_monitoring}
   */
   readonly enableRealUserMonitoring?: boolean | cdktf.IResolvable;
   /**
   * Samples and reports the slowest database queries in your traces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#enable_slow_sql ApplicationSettings#enable_slow_sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#enable_slow_sql ApplicationSettings#enable_slow_sql}
   */
   readonly enableSlowSql?: boolean | cdktf.IResolvable;
   /**
   * Enable or disable the thread profiler.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#enable_thread_profiler ApplicationSettings#enable_thread_profiler}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#enable_thread_profiler ApplicationSettings#enable_thread_profiler}
   */
   readonly enableThreadProfiler?: boolean | cdktf.IResolvable;
   /**
   * Dummy field to support backward compatibility of previous version.should be removed with next major version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#end_user_apdex_threshold ApplicationSettings#end_user_apdex_threshold}
   */
   readonly endUserApdexThreshold?: number;
   /**
   * The GUID of the application in New Relic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#guid ApplicationSettings#guid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#guid ApplicationSettings#guid}
   */
   readonly guid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#id ApplicationSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#id ApplicationSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,31 +58,31 @@ export interface ApplicationSettingsConfig extends cdktf.TerraformMetaArguments 
   /**
   * The name of the application in New Relic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#name ApplicationSettings#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#name ApplicationSettings#name}
   */
   readonly name?: string;
   /**
   * The type of tracer to use, either 'CROSS_APPLICATION_TRACER', 'DISTRIBUTED_TRACING', 'NONE', or 'OPT_OUT'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#tracer_type ApplicationSettings#tracer_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#tracer_type ApplicationSettings#tracer_type}
   */
   readonly tracerType?: string;
   /**
   * Enable or disable server side monitoring.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#use_server_side_config ApplicationSettings#use_server_side_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#use_server_side_config ApplicationSettings#use_server_side_config}
   */
   readonly useServerSideConfig?: boolean | cdktf.IResolvable;
   /**
   * error_collector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#error_collector ApplicationSettings#error_collector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#error_collector ApplicationSettings#error_collector}
   */
   readonly errorCollector?: ApplicationSettingsErrorCollector[] | cdktf.IResolvable;
   /**
   * transaction_tracer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#transaction_tracer ApplicationSettings#transaction_tracer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#transaction_tracer ApplicationSettings#transaction_tracer}
   */
   readonly transactionTracer?: ApplicationSettingsTransactionTracer[] | cdktf.IResolvable;
 }
@@ -90,25 +90,25 @@ export interface ApplicationSettingsErrorCollector {
   /**
   * A list of error classes that are expected and should not trigger alerts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#expected_error_classes ApplicationSettings#expected_error_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#expected_error_classes ApplicationSettings#expected_error_classes}
   */
   readonly expectedErrorClasses?: string[];
   /**
   * A list of error codes that are expected and should not trigger alerts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#expected_error_codes ApplicationSettings#expected_error_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#expected_error_codes ApplicationSettings#expected_error_codes}
   */
   readonly expectedErrorCodes?: string[];
   /**
   * A list of error classes that should be ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#ignored_error_classes ApplicationSettings#ignored_error_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#ignored_error_classes ApplicationSettings#ignored_error_classes}
   */
   readonly ignoredErrorClasses?: string[];
   /**
   * A list of error codes that should be ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#ignored_error_codes ApplicationSettings#ignored_error_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#ignored_error_codes ApplicationSettings#ignored_error_codes}
   */
   readonly ignoredErrorCodes?: string[];
 }
@@ -313,13 +313,13 @@ export interface ApplicationSettingsTransactionTracerExplainQueryPlans {
   /**
   * The type of threshold for explain plans, either 'APDEX_F' or 'VALUE'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#query_plan_threshold_type ApplicationSettings#query_plan_threshold_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#query_plan_threshold_type ApplicationSettings#query_plan_threshold_type}
   */
   readonly queryPlanThresholdType?: string;
   /**
   * The threshold value for explain plans when 'query_plan_threshold_type' is 'VALUE'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#query_plan_threshold_value ApplicationSettings#query_plan_threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#query_plan_threshold_value ApplicationSettings#query_plan_threshold_value}
   */
   readonly queryPlanThresholdValue?: number;
 }
@@ -466,7 +466,7 @@ export interface ApplicationSettingsTransactionTracerSql {
   /**
   * The level of SQL recording, either 'OBFUSCATED', 'OFF', or 'RAW'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#record_sql ApplicationSettings#record_sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#record_sql ApplicationSettings#record_sql}
   */
   readonly recordSql: string;
 }
@@ -549,31 +549,31 @@ export interface ApplicationSettingsTransactionTracer {
   /**
   * The response time threshold value for capturing stack traces of SQL queries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#stack_trace_threshold_value ApplicationSettings#stack_trace_threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#stack_trace_threshold_value ApplicationSettings#stack_trace_threshold_value}
   */
   readonly stackTraceThresholdValue?: number;
   /**
   * The type of threshold for transaction tracing, either 'APDEX_F' or 'VALUE'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#transaction_threshold_type ApplicationSettings#transaction_threshold_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#transaction_threshold_type ApplicationSettings#transaction_threshold_type}
   */
   readonly transactionThresholdType?: string;
   /**
   * The threshold value for transaction tracing when 'transaction_threshold_type' is 'VALUE'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#transaction_threshold_value ApplicationSettings#transaction_threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#transaction_threshold_value ApplicationSettings#transaction_threshold_value}
   */
   readonly transactionThresholdValue?: number;
   /**
   * explain_query_plans block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#explain_query_plans ApplicationSettings#explain_query_plans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#explain_query_plans ApplicationSettings#explain_query_plans}
   */
   readonly explainQueryPlans?: ApplicationSettingsTransactionTracerExplainQueryPlans[] | cdktf.IResolvable;
   /**
   * sql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#sql ApplicationSettings#sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#sql ApplicationSettings#sql}
   */
   readonly sql?: ApplicationSettingsTransactionTracerSql;
 }
@@ -805,7 +805,7 @@ export class ApplicationSettingsTransactionTracerList extends cdktf.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings newrelic_application_settings}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings newrelic_application_settings}
 */
 export class ApplicationSettings extends cdktf.TerraformResource {
 
@@ -821,7 +821,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApplicationSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationSettings to import
-  * @param importFromId The id of the existing ApplicationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApplicationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -833,7 +833,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/application_settings newrelic_application_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/application_settings newrelic_application_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -844,7 +844,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_application_settings',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.67.0',
+        providerVersion: '3.68.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
