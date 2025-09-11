@@ -4,7 +4,7 @@
 
 ### DataNewrelicApplication <a name="DataNewrelicApplication" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/data-sources/application newrelic_application}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.69.0/docs/data-sources/application newrelic_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplication.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataNewrelicApplication to
 
 The id of the existing DataNewrelicApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/data-sources/application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.69.0/docs/data-sources/application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -643,7 +643,7 @@ new DataNewrelicApplicationConfig {
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.name">Name</a></code> | <code>string</code> | The name of the application in New Relic. |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/data-sources/application#id DataNewrelicApplication#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicApplication.DataNewrelicApplicationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.69.0/docs/data-sources/application#id DataNewrelicApplication#id}. |
 
 ---
 
@@ -727,7 +727,7 @@ public string Name { get; set; }
 
 The name of the application in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/data-sources/application#name DataNewrelicApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.69.0/docs/data-sources/application#name DataNewrelicApplication#name}
 
 ---
 
@@ -739,7 +739,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/data-sources/application#id DataNewrelicApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.69.0/docs/data-sources/application#id DataNewrelicApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
