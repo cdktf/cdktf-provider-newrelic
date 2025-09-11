@@ -1,3 +1,3 @@
 # `newrelic_cloud_aws_link_account`
 
-Refer to the Terraform Registry for docs: [`newrelic_cloud_aws_link_account`](https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/cloud_aws_link_account).
+Refer to the Terraform Registry for docs: [`newrelic_cloud_aws_link_account`](https://registry.terraform.io/providers/newrelic/newrelic/3.69.0/docs/resources/cloud_aws_link_account).
