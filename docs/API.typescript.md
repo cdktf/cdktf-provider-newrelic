@@ -21,6 +21,7 @@ The following submodules are available:
 - [cloudAzureLinkAccount](./cloudAzureLinkAccount.typescript.md)
 - [cloudGcpIntegrations](./cloudGcpIntegrations.typescript.md)
 - [cloudGcpLinkAccount](./cloudGcpLinkAccount.typescript.md)
+- [cloudOciLinkAccount](./cloudOciLinkAccount.typescript.md)
 - [dataNewrelicAccount](./dataNewrelicAccount.typescript.md)
 - [dataNewrelicAlertChannel](./dataNewrelicAlertChannel.typescript.md)
 - [dataNewrelicAlertPolicy](./dataNewrelicAlertPolicy.typescript.md)

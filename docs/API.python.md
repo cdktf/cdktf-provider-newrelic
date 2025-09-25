@@ -21,6 +21,7 @@ The following submodules are available:
 - [cloudAzureLinkAccount](./cloudAzureLinkAccount.python.md)
 - [cloudGcpIntegrations](./cloudGcpIntegrations.python.md)
 - [cloudGcpLinkAccount](./cloudGcpLinkAccount.python.md)
+- [cloudOciLinkAccount](./cloudOciLinkAccount.python.md)
 - [dataNewrelicAccount](./dataNewrelicAccount.python.md)
 - [dataNewrelicAlertChannel](./dataNewrelicAlertChannel.python.md)
 - [dataNewrelicAlertPolicy](./dataNewrelicAlertPolicy.python.md)

@@ -21,6 +21,7 @@ export * as cloudAzureIntegrations from './cloud-azure-integrations';
 export * as cloudAzureLinkAccount from './cloud-azure-link-account';
 export * as cloudGcpIntegrations from './cloud-gcp-integrations';
 export * as cloudGcpLinkAccount from './cloud-gcp-link-account';
+export * as cloudOciLinkAccount from './cloud-oci-link-account';
 export * as dataPartitionRule from './data-partition-rule';
 export * as entityTags from './entity-tags';
 export * as eventsToMetricsRule from './events-to-metrics-rule';

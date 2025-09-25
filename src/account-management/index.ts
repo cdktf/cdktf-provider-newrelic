@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.69.1/docs/resources/account_management
+// https://registry.terraform.io/providers/newrelic/newrelic/3.70.0/docs/resources/account_management
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface AccountManagementConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.69.1/docs/resources/account_management#id AccountManagement#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.0/docs/resources/account_management#id AccountManagement#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface AccountManagementConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the account to be created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.69.1/docs/resources/account_management#name AccountManagement#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.0/docs/resources/account_management#name AccountManagement#name}
   */
   readonly name: string;
   /**
   * A description of what this parsing rule represents.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.69.1/docs/resources/account_management#region AccountManagement#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.0/docs/resources/account_management#region AccountManagement#region}
   */
   readonly region: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.69.1/docs/resources/account_management newrelic_account_management}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.0/docs/resources/account_management newrelic_account_management}
 */
 export class AccountManagement extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class AccountManagement extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AccountManagement resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountManagement to import
-  * @param importFromId The id of the existing AccountManagement that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.69.1/docs/resources/account_management#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountManagement that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.0/docs/resources/account_management#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountManagement to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class AccountManagement extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.69.1/docs/resources/account_management newrelic_account_management} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.0/docs/resources/account_management newrelic_account_management} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class AccountManagement extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_account_management',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.69.1',
+        providerVersion: '3.70.0',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,

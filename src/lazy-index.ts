@@ -21,6 +21,7 @@ Object.defineProperty(exports, 'cloudAzureIntegrations', { get: function () { re
 Object.defineProperty(exports, 'cloudAzureLinkAccount', { get: function () { return require('./cloud-azure-link-account'); } });
 Object.defineProperty(exports, 'cloudGcpIntegrations', { get: function () { return require('./cloud-gcp-integrations'); } });
 Object.defineProperty(exports, 'cloudGcpLinkAccount', { get: function () { return require('./cloud-gcp-link-account'); } });
+Object.defineProperty(exports, 'cloudOciLinkAccount', { get: function () { return require('./cloud-oci-link-account'); } });
 Object.defineProperty(exports, 'dataPartitionRule', { get: function () { return require('./data-partition-rule'); } });
 Object.defineProperty(exports, 'entityTags', { get: function () { return require('./entity-tags'); } });
 Object.defineProperty(exports, 'eventsToMetricsRule', { get: function () { return require('./events-to-metrics-rule'); } });
