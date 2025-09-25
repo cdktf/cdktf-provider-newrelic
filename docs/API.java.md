@@ -21,6 +21,7 @@ The following submodules are available:
 - [cloudAzureLinkAccount](./cloudAzureLinkAccount.java.md)
 - [cloudGcpIntegrations](./cloudGcpIntegrations.java.md)
 - [cloudGcpLinkAccount](./cloudGcpLinkAccount.java.md)
+- [cloudOciLinkAccount](./cloudOciLinkAccount.java.md)
 - [dataNewrelicAccount](./dataNewrelicAccount.java.md)
 - [dataNewrelicAlertChannel](./dataNewrelicAlertChannel.java.md)
 - [dataNewrelicAlertPolicy](./dataNewrelicAlertPolicy.java.md)

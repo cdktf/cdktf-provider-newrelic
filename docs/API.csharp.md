@@ -21,6 +21,7 @@ The following submodules are available:
 - [cloudAzureLinkAccount](./cloudAzureLinkAccount.csharp.md)
 - [cloudGcpIntegrations](./cloudGcpIntegrations.csharp.md)
 - [cloudGcpLinkAccount](./cloudGcpLinkAccount.csharp.md)
+- [cloudOciLinkAccount](./cloudOciLinkAccount.csharp.md)
 - [dataNewrelicAccount](./dataNewrelicAccount.csharp.md)
 - [dataNewrelicAlertChannel](./dataNewrelicAlertChannel.csharp.md)
 - [dataNewrelicAlertPolicy](./dataNewrelicAlertPolicy.csharp.md)
