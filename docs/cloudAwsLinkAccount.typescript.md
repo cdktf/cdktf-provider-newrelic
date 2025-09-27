@@ -4,7 +4,7 @@
 
 ### CloudAwsLinkAccount <a name="CloudAwsLinkAccount" id="@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.2/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccount.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the CloudAwsLinkAccount to imp
 
 The id of the existing CloudAwsLinkAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.2/docs/resources/cloud_aws_link_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/cloud_aws_link_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,7 +817,7 @@ const cloudAwsLinkAccountConfig: cloudAwsLinkAccount.CloudAwsLinkAccountConfig =
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccountConfig.property.arn">arn</a></code> | <code>string</code> | The AWS role ARN. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccountConfig.property.name">name</a></code> | <code>string</code> | The name of the linked account. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccountConfig.property.accountId">accountId</a></code> | <code>number</code> | The New Relic account ID where you want to link the AWS account. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.2/docs/resources/cloud_aws_link_account#id CloudAwsLinkAccount#id}. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/cloud_aws_link_account#id CloudAwsLinkAccount#id}. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsLinkAccount.CloudAwsLinkAccountConfig.property.metricCollectionMode">metricCollectionMode</a></code> | <code>string</code> | How metrics will be collected. Defaults to `PULL` if empty. |
 
 ---
@@ -902,7 +902,7 @@ public readonly arn: string;
 
 The AWS role ARN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.2/docs/resources/cloud_aws_link_account#arn CloudAwsLinkAccount#arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/cloud_aws_link_account#arn CloudAwsLinkAccount#arn}
 
 ---
 
@@ -916,7 +916,7 @@ public readonly name: string;
 
 The name of the linked account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.2/docs/resources/cloud_aws_link_account#name CloudAwsLinkAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/cloud_aws_link_account#name CloudAwsLinkAccount#name}
 
 ---
 
@@ -930,7 +930,7 @@ public readonly accountId: number;
 
 The New Relic account ID where you want to link the AWS account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.2/docs/resources/cloud_aws_link_account#account_id CloudAwsLinkAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/cloud_aws_link_account#account_id CloudAwsLinkAccount#account_id}
 
 ---
 
@@ -942,7 +942,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.2/docs/resources/cloud_aws_link_account#id CloudAwsLinkAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/cloud_aws_link_account#id CloudAwsLinkAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -959,7 +959,7 @@ public readonly metricCollectionMode: string;
 
 How metrics will be collected. Defaults to `PULL` if empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.2/docs/resources/cloud_aws_link_account#metric_collection_mode CloudAwsLinkAccount#metric_collection_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/cloud_aws_link_account#metric_collection_mode CloudAwsLinkAccount#metric_collection_mode}
 
 ---
 
