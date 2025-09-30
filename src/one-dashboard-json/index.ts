@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/one_dashboard_json
+// https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/one_dashboard_json
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface OneDashboardJsonConfig extends cdktf.TerraformMetaArguments {
   /**
   * The New Relic account ID where you want to create the dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/one_dashboard_json#account_id OneDashboardJson#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/one_dashboard_json#account_id OneDashboardJson#account_id}
   */
   readonly accountId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/one_dashboard_json#id OneDashboardJson#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/one_dashboard_json#id OneDashboardJson#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,23 +28,23 @@ export interface OneDashboardJsonConfig extends cdktf.TerraformMetaArguments {
   /**
   * The dashboard's json.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/one_dashboard_json#json OneDashboardJson#json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/one_dashboard_json#json OneDashboardJson#json}
   */
   readonly json: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/one_dashboard_json#timeouts OneDashboardJson#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/one_dashboard_json#timeouts OneDashboardJson#timeouts}
   */
   readonly timeouts?: OneDashboardJsonTimeouts;
 }
 export interface OneDashboardJsonTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/one_dashboard_json#create OneDashboardJson#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/one_dashboard_json#create OneDashboardJson#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/one_dashboard_json#update OneDashboardJson#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/one_dashboard_json#update OneDashboardJson#update}
   */
   readonly update?: string;
 }
@@ -167,7 +167,7 @@ export class OneDashboardJsonTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/one_dashboard_json newrelic_one_dashboard_json}
+* Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/one_dashboard_json newrelic_one_dashboard_json}
 */
 export class OneDashboardJson extends cdktf.TerraformResource {
 
@@ -183,7 +183,7 @@ export class OneDashboardJson extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OneDashboardJson resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OneDashboardJson to import
-  * @param importFromId The id of the existing OneDashboardJson that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/one_dashboard_json#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OneDashboardJson that should be imported. Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/one_dashboard_json#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OneDashboardJson to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -195,7 +195,7 @@ export class OneDashboardJson extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/one_dashboard_json newrelic_one_dashboard_json} Resource
+  * Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/one_dashboard_json newrelic_one_dashboard_json} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -206,7 +206,7 @@ export class OneDashboardJson extends cdktf.TerraformResource {
       terraformResourceType: 'newrelic_one_dashboard_json',
       terraformGeneratorMetadata: {
         providerName: 'newrelic',
-        providerVersion: '3.70.4',
+        providerVersion: '3.70.5',
         providerVersionConstraint: '~> 3.7'
       },
       provider: config.provider,
