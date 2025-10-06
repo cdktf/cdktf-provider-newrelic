@@ -21,7 +21,7 @@ provider.NewrelicProvider(
   api_url: str = None,
   cacert_file: str = None,
   infrastructure_api_url: str = None,
-  insecure_skip_verify: typing.Union[bool, IResolvable] = None,
+  insecure_skip_verify: bool | IResolvable = None,
   insights_insert_key: str = None,
   insights_insert_url: str = None,
   insights_query_url: str = None,
@@ -42,7 +42,7 @@ provider.NewrelicProvider(
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.apiUrl">api_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#api_url NewrelicProvider#api_url}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.cacertFile">cacert_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#cacert_file NewrelicProvider#cacert_file}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.infrastructureApiUrl">infrastructure_api_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insecureSkipVerify">insecure_skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insecureSkipVerify">insecure_skip_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insightsInsertKey">insights_insert_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insights_insert_key NewrelicProvider#insights_insert_key}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insightsInsertUrl">insights_insert_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insights_insert_url NewrelicProvider#insights_insert_url}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insightsQueryUrl">insights_query_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insights_query_url NewrelicProvider#insights_query_url}. |
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `insecure_skip_verify`<sup>Optional</sup> <a name="insecure_skip_verify" id="@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insecureSkipVerify"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}.
 
@@ -505,7 +505,7 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiUrlInput">api_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.cacertFileInput">cacert_file_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrlInput">infrastructure_api_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerifyInput">insecure_skip_verify_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerifyInput">insecure_skip_verify_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKeyInput">insights_insert_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrlInput">insights_insert_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrlInput">insights_query_url_input</a></code> | <code>str</code> | *No description.* |
@@ -518,7 +518,7 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiUrl">api_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.cacertFile">cacert_file</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrl">infrastructure_api_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerify">insecure_skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerify">insecure_skip_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKey">insights_insert_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrl">insights_insert_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrl">insights_query_url</a></code> | <code>str</code> | *No description.* |
@@ -693,10 +693,10 @@ infrastructure_api_url_input: str
 ##### `insecure_skip_verify_input`<sup>Optional</sup> <a name="insecure_skip_verify_input" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerifyInput"></a>
 
 ```python
-insecure_skip_verify_input: typing.Union[bool, IResolvable]
+insecure_skip_verify_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -823,10 +823,10 @@ infrastructure_api_url: str
 ##### `insecure_skip_verify`<sup>Optional</sup> <a name="insecure_skip_verify" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerify"></a>
 
 ```python
-insecure_skip_verify: typing.Union[bool, IResolvable]
+insecure_skip_verify: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -925,7 +925,7 @@ provider.NewrelicProviderConfig(
   api_url: str = None,
   cacert_file: str = None,
   infrastructure_api_url: str = None,
-  insecure_skip_verify: typing.Union[bool, IResolvable] = None,
+  insecure_skip_verify: bool | IResolvable = None,
   insights_insert_key: str = None,
   insights_insert_url: str = None,
   insights_query_url: str = None,
@@ -946,7 +946,7 @@ provider.NewrelicProviderConfig(
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.apiUrl">api_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#api_url NewrelicProvider#api_url}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.cacertFile">cacert_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#cacert_file NewrelicProvider#cacert_file}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.infrastructureApiUrl">infrastructure_api_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify">insecure_skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify">insecure_skip_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertKey">insights_insert_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insights_insert_key NewrelicProvider#insights_insert_key}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertUrl">insights_insert_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insights_insert_url NewrelicProvider#insights_insert_url}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsQueryUrl">insights_query_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insights_query_url NewrelicProvider#insights_query_url}. |
@@ -1045,10 +1045,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `insecure_skip_verify`<sup>Optional</sup> <a name="insecure_skip_verify" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify"></a>
 
 ```python
-insecure_skip_verify: typing.Union[bool, IResolvable]
+insecure_skip_verify: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}.
 
