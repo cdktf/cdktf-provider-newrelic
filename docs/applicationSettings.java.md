@@ -12,35 +12,25 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 import com.hashicorp.cdktf.providers.newrelic.application_settings.ApplicationSettings;
 
 ApplicationSettings.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
 //  .appApdexThreshold(java.lang.Number)
-//  .enableRealUserMonitoring(java.lang.Boolean)
-//  .enableRealUserMonitoring(IResolvable)
-//  .enableSlowSql(java.lang.Boolean)
-//  .enableSlowSql(IResolvable)
-//  .enableThreadProfiler(java.lang.Boolean)
-//  .enableThreadProfiler(IResolvable)
+//  .enableRealUserMonitoring(java.lang.Boolean|IResolvable)
+//  .enableSlowSql(java.lang.Boolean|IResolvable)
+//  .enableThreadProfiler(java.lang.Boolean|IResolvable)
 //  .endUserApdexThreshold(java.lang.Number)
-//  .errorCollector(IResolvable)
-//  .errorCollector(java.util.List<ApplicationSettingsErrorCollector>)
+//  .errorCollector(IResolvable|java.util.List<ApplicationSettingsErrorCollector>)
 //  .guid(java.lang.String)
 //  .id(java.lang.String)
 //  .name(java.lang.String)
 //  .tracerType(java.lang.String)
-//  .transactionTracer(IResolvable)
-//  .transactionTracer(java.util.List<ApplicationSettingsTransactionTracer>)
-//  .useServerSideConfig(java.lang.Boolean)
-//  .useServerSideConfig(IResolvable)
+//  .transactionTracer(IResolvable|java.util.List<ApplicationSettingsTransactionTracer>)
+//  .useServerSideConfig(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -48,25 +38,25 @@ ApplicationSettings.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.appApdexThreshold">appApdexThreshold</a></code> | <code>java.lang.Number</code> | The response time threshold value for Apdex score calculation. |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.enableRealUserMonitoring">enableRealUserMonitoring</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Dummy field to support backward compatibility of previous version.should be removed with next major version. |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.enableSlowSql">enableSlowSql</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Samples and reports the slowest database queries in your traces. |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.enableThreadProfiler">enableThreadProfiler</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable or disable the thread profiler. |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.enableRealUserMonitoring">enableRealUserMonitoring</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Dummy field to support backward compatibility of previous version.should be removed with next major version. |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.enableSlowSql">enableSlowSql</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Samples and reports the slowest database queries in your traces. |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.enableThreadProfiler">enableThreadProfiler</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Enable or disable the thread profiler. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.endUserApdexThreshold">endUserApdexThreshold</a></code> | <code>java.lang.Number</code> | Dummy field to support backward compatibility of previous version.should be removed with next major version. |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.errorCollector">errorCollector</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>></code> | error_collector block. |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.errorCollector">errorCollector</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>></code> | error_collector block. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.guid">guid</a></code> | <code>java.lang.String</code> | The GUID of the application in New Relic. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/application_settings#id ApplicationSettings#id}. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the application in New Relic. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.tracerType">tracerType</a></code> | <code>java.lang.String</code> | The type of tracer to use, either 'CROSS_APPLICATION_TRACER', 'DISTRIBUTED_TRACING', 'NONE', or 'OPT_OUT'. |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.transactionTracer">transactionTracer</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>></code> | transaction_tracer block. |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.useServerSideConfig">useServerSideConfig</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable or disable server side monitoring. |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.transactionTracer">transactionTracer</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>></code> | transaction_tracer block. |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.useServerSideConfig">useServerSideConfig</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Enable or disable server side monitoring. |
 
 ---
 
@@ -90,13 +80,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -126,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -142,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `enableRealUserMonitoring`<sup>Optional</sup> <a name="enableRealUserMonitoring" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.enableRealUserMonitoring"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Dummy field to support backward compatibility of previous version.should be removed with next major version.
 
@@ -152,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `enableSlowSql`<sup>Optional</sup> <a name="enableSlowSql" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.enableSlowSql"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Samples and reports the slowest database queries in your traces.
 
@@ -162,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `enableThreadProfiler`<sup>Optional</sup> <a name="enableThreadProfiler" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.enableThreadProfiler"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Enable or disable the thread profiler.
 
@@ -182,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `errorCollector`<sup>Optional</sup> <a name="errorCollector" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.errorCollector"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>>
 
 error_collector block.
 
@@ -233,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `transactionTracer`<sup>Optional</sup> <a name="transactionTracer" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.transactionTracer"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>>
 
 transaction_tracer block.
 
@@ -243,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `useServerSideConfig`<sup>Optional</sup> <a name="useServerSideConfig" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.Initializer.parameter.useServerSideConfig"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Enable or disable server side monitoring.
 
@@ -492,7 +482,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.importFrom"></a>
@@ -548,7 +538,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -563,7 +553,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -588,24 +578,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putErrorCollector` <a name="putErrorCollector" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.putErrorCollector"></a>
 
 ```java
-public void putErrorCollector(IResolvable OR java.util.List<ApplicationSettingsErrorCollector> value)
+public void putErrorCollector(IResolvable|java.util.List<ApplicationSettingsErrorCollector> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.putErrorCollector.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>>
 
 ---
 
 ##### `putTransactionTracer` <a name="putTransactionTracer" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.putTransactionTracer"></a>
 
 ```java
-public void putTransactionTracer(IResolvable OR java.util.List<ApplicationSettingsTransactionTracer> value)
+public void putTransactionTracer(IResolvable|java.util.List<ApplicationSettingsTransactionTracer> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.putTransactionTracer.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>>
 
 ---
 
@@ -807,38 +797,38 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.errorCollector">errorCollector</a></code> | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollectorList">ApplicationSettingsErrorCollectorList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.isImported">isImported</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.transactionTracer">transactionTracer</a></code> | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerList">ApplicationSettingsTransactionTracerList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.appApdexThresholdInput">appApdexThresholdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableRealUserMonitoringInput">enableRealUserMonitoringInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableSlowSqlInput">enableSlowSqlInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableThreadProfilerInput">enableThreadProfilerInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableRealUserMonitoringInput">enableRealUserMonitoringInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableSlowSqlInput">enableSlowSqlInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableThreadProfilerInput">enableThreadProfilerInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.endUserApdexThresholdInput">endUserApdexThresholdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.errorCollectorInput">errorCollectorInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.errorCollectorInput">errorCollectorInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.guidInput">guidInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.tracerTypeInput">tracerTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.transactionTracerInput">transactionTracerInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.useServerSideConfigInput">useServerSideConfigInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.transactionTracerInput">transactionTracerInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.useServerSideConfigInput">useServerSideConfigInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.appApdexThreshold">appApdexThreshold</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableRealUserMonitoring">enableRealUserMonitoring</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableSlowSql">enableSlowSql</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableThreadProfiler">enableThreadProfiler</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableRealUserMonitoring">enableRealUserMonitoring</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableSlowSql">enableSlowSql</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableThreadProfiler">enableThreadProfiler</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.endUserApdexThreshold">endUserApdexThreshold</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.guid">guid</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.tracerType">tracerType</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.useServerSideConfig">useServerSideConfig</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.useServerSideConfig">useServerSideConfig</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -917,20 +907,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -977,10 +967,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1027,30 +1017,30 @@ public java.lang.Number getAppApdexThresholdInput();
 ##### `enableRealUserMonitoringInput`<sup>Optional</sup> <a name="enableRealUserMonitoringInput" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableRealUserMonitoringInput"></a>
 
 ```java
-public java.lang.Object getEnableRealUserMonitoringInput();
+public java.lang.Boolean|IResolvable getEnableRealUserMonitoringInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enableSlowSqlInput`<sup>Optional</sup> <a name="enableSlowSqlInput" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableSlowSqlInput"></a>
 
 ```java
-public java.lang.Object getEnableSlowSqlInput();
+public java.lang.Boolean|IResolvable getEnableSlowSqlInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enableThreadProfilerInput`<sup>Optional</sup> <a name="enableThreadProfilerInput" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableThreadProfilerInput"></a>
 
 ```java
-public java.lang.Object getEnableThreadProfilerInput();
+public java.lang.Boolean|IResolvable getEnableThreadProfilerInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1067,10 +1057,10 @@ public java.lang.Number getEndUserApdexThresholdInput();
 ##### `errorCollectorInput`<sup>Optional</sup> <a name="errorCollectorInput" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.errorCollectorInput"></a>
 
 ```java
-public java.lang.Object getErrorCollectorInput();
+public IResolvable|java.util.List<ApplicationSettingsErrorCollector> getErrorCollectorInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>>
 
 ---
 
@@ -1117,20 +1107,20 @@ public java.lang.String getTracerTypeInput();
 ##### `transactionTracerInput`<sup>Optional</sup> <a name="transactionTracerInput" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.transactionTracerInput"></a>
 
 ```java
-public java.lang.Object getTransactionTracerInput();
+public IResolvable|java.util.List<ApplicationSettingsTransactionTracer> getTransactionTracerInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>>
 
 ---
 
 ##### `useServerSideConfigInput`<sup>Optional</sup> <a name="useServerSideConfigInput" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.useServerSideConfigInput"></a>
 
 ```java
-public java.lang.Object getUseServerSideConfigInput();
+public java.lang.Boolean|IResolvable getUseServerSideConfigInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1147,30 +1137,30 @@ public java.lang.Number getAppApdexThreshold();
 ##### `enableRealUserMonitoring`<sup>Required</sup> <a name="enableRealUserMonitoring" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableRealUserMonitoring"></a>
 
 ```java
-public java.lang.Object getEnableRealUserMonitoring();
+public java.lang.Boolean|IResolvable getEnableRealUserMonitoring();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enableSlowSql`<sup>Required</sup> <a name="enableSlowSql" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableSlowSql"></a>
 
 ```java
-public java.lang.Object getEnableSlowSql();
+public java.lang.Boolean|IResolvable getEnableSlowSql();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enableThreadProfiler`<sup>Required</sup> <a name="enableThreadProfiler" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.enableThreadProfiler"></a>
 
 ```java
-public java.lang.Object getEnableThreadProfiler();
+public java.lang.Boolean|IResolvable getEnableThreadProfiler();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1227,10 +1217,10 @@ public java.lang.String getTracerType();
 ##### `useServerSideConfig`<sup>Required</sup> <a name="useServerSideConfig" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettings.property.useServerSideConfig"></a>
 
 ```java
-public java.lang.Object getUseServerSideConfig();
+public java.lang.Boolean|IResolvable getUseServerSideConfig();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1262,35 +1252,25 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.newrelic.application_settings.ApplicationSettingsConfig;
 
 ApplicationSettingsConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
 //  .appApdexThreshold(java.lang.Number)
-//  .enableRealUserMonitoring(java.lang.Boolean)
-//  .enableRealUserMonitoring(IResolvable)
-//  .enableSlowSql(java.lang.Boolean)
-//  .enableSlowSql(IResolvable)
-//  .enableThreadProfiler(java.lang.Boolean)
-//  .enableThreadProfiler(IResolvable)
+//  .enableRealUserMonitoring(java.lang.Boolean|IResolvable)
+//  .enableSlowSql(java.lang.Boolean|IResolvable)
+//  .enableThreadProfiler(java.lang.Boolean|IResolvable)
 //  .endUserApdexThreshold(java.lang.Number)
-//  .errorCollector(IResolvable)
-//  .errorCollector(java.util.List<ApplicationSettingsErrorCollector>)
+//  .errorCollector(IResolvable|java.util.List<ApplicationSettingsErrorCollector>)
 //  .guid(java.lang.String)
 //  .id(java.lang.String)
 //  .name(java.lang.String)
 //  .tracerType(java.lang.String)
-//  .transactionTracer(IResolvable)
-//  .transactionTracer(java.util.List<ApplicationSettingsTransactionTracer>)
-//  .useServerSideConfig(java.lang.Boolean)
-//  .useServerSideConfig(IResolvable)
+//  .transactionTracer(IResolvable|java.util.List<ApplicationSettingsTransactionTracer>)
+//  .useServerSideConfig(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1298,45 +1278,45 @@ ApplicationSettingsConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.appApdexThreshold">appApdexThreshold</a></code> | <code>java.lang.Number</code> | The response time threshold value for Apdex score calculation. |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.enableRealUserMonitoring">enableRealUserMonitoring</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Dummy field to support backward compatibility of previous version.should be removed with next major version. |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.enableSlowSql">enableSlowSql</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Samples and reports the slowest database queries in your traces. |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.enableThreadProfiler">enableThreadProfiler</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable or disable the thread profiler. |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.enableRealUserMonitoring">enableRealUserMonitoring</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Dummy field to support backward compatibility of previous version.should be removed with next major version. |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.enableSlowSql">enableSlowSql</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Samples and reports the slowest database queries in your traces. |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.enableThreadProfiler">enableThreadProfiler</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Enable or disable the thread profiler. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.endUserApdexThreshold">endUserApdexThreshold</a></code> | <code>java.lang.Number</code> | Dummy field to support backward compatibility of previous version.should be removed with next major version. |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.errorCollector">errorCollector</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>></code> | error_collector block. |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.errorCollector">errorCollector</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>></code> | error_collector block. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.guid">guid</a></code> | <code>java.lang.String</code> | The GUID of the application in New Relic. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/application_settings#id ApplicationSettings#id}. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the application in New Relic. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.tracerType">tracerType</a></code> | <code>java.lang.String</code> | The type of tracer to use, either 'CROSS_APPLICATION_TRACER', 'DISTRIBUTED_TRACING', 'NONE', or 'OPT_OUT'. |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.transactionTracer">transactionTracer</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>></code> | transaction_tracer block. |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.useServerSideConfig">useServerSideConfig</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable or disable server side monitoring. |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.transactionTracer">transactionTracer</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>></code> | transaction_tracer block. |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.useServerSideConfig">useServerSideConfig</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Enable or disable server side monitoring. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1383,10 +1363,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1407,10 +1387,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `enableRealUserMonitoring`<sup>Optional</sup> <a name="enableRealUserMonitoring" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.enableRealUserMonitoring"></a>
 
 ```java
-public java.lang.Object getEnableRealUserMonitoring();
+public java.lang.Boolean|IResolvable getEnableRealUserMonitoring();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Dummy field to support backward compatibility of previous version.should be removed with next major version.
 
@@ -1421,10 +1401,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `enableSlowSql`<sup>Optional</sup> <a name="enableSlowSql" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.enableSlowSql"></a>
 
 ```java
-public java.lang.Object getEnableSlowSql();
+public java.lang.Boolean|IResolvable getEnableSlowSql();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Samples and reports the slowest database queries in your traces.
 
@@ -1435,10 +1415,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `enableThreadProfiler`<sup>Optional</sup> <a name="enableThreadProfiler" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.enableThreadProfiler"></a>
 
 ```java
-public java.lang.Object getEnableThreadProfiler();
+public java.lang.Boolean|IResolvable getEnableThreadProfiler();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Enable or disable the thread profiler.
 
@@ -1463,10 +1443,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `errorCollector`<sup>Optional</sup> <a name="errorCollector" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.errorCollector"></a>
 
 ```java
-public java.lang.Object getErrorCollector();
+public IResolvable|java.util.List<ApplicationSettingsErrorCollector> getErrorCollector();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>>
 
 error_collector block.
 
@@ -1534,10 +1514,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `transactionTracer`<sup>Optional</sup> <a name="transactionTracer" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.transactionTracer"></a>
 
 ```java
-public java.lang.Object getTransactionTracer();
+public IResolvable|java.util.List<ApplicationSettingsTransactionTracer> getTransactionTracer();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>>
 
 transaction_tracer block.
 
@@ -1548,10 +1528,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `useServerSideConfig`<sup>Optional</sup> <a name="useServerSideConfig" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsConfig.property.useServerSideConfig"></a>
 
 ```java
-public java.lang.Object getUseServerSideConfig();
+public java.lang.Boolean|IResolvable getUseServerSideConfig();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Enable or disable server side monitoring.
 
@@ -1649,8 +1629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 import com.hashicorp.cdktf.providers.newrelic.application_settings.ApplicationSettingsTransactionTracer;
 
 ApplicationSettingsTransactionTracer.builder()
-//  .explainQueryPlans(IResolvable)
-//  .explainQueryPlans(java.util.List<ApplicationSettingsTransactionTracerExplainQueryPlans>)
+//  .explainQueryPlans(IResolvable|java.util.List<ApplicationSettingsTransactionTracerExplainQueryPlans>)
 //  .sql(ApplicationSettingsTransactionTracerSql)
 //  .stackTraceThresholdValue(java.lang.Number)
 //  .transactionThresholdType(java.lang.String)
@@ -1662,7 +1641,7 @@ ApplicationSettingsTransactionTracer.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer.property.explainQueryPlans">explainQueryPlans</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a>></code> | explain_query_plans block. |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer.property.explainQueryPlans">explainQueryPlans</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a>></code> | explain_query_plans block. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer.property.sql">sql</a></code> | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerSql">ApplicationSettingsTransactionTracerSql</a></code> | sql block. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer.property.stackTraceThresholdValue">stackTraceThresholdValue</a></code> | <code>java.lang.Number</code> | The response time threshold value for capturing stack traces of SQL queries. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer.property.transactionThresholdType">transactionThresholdType</a></code> | <code>java.lang.String</code> | The type of threshold for transaction tracing, either 'APDEX_F' or 'VALUE'. |
@@ -1673,10 +1652,10 @@ ApplicationSettingsTransactionTracer.builder()
 ##### `explainQueryPlans`<sup>Optional</sup> <a name="explainQueryPlans" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer.property.explainQueryPlans"></a>
 
 ```java
-public java.lang.Object getExplainQueryPlans();
+public IResolvable|java.util.List<ApplicationSettingsTransactionTracerExplainQueryPlans> getExplainQueryPlans();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a>>
 
 explain_query_plans block.
 
@@ -1947,7 +1926,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollectorList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollectorList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollectorList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollectorList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>></code> | *No description.* |
 
 ---
 
@@ -1978,10 +1957,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollectorList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<ApplicationSettingsErrorCollector> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>>
 
 ---
 
@@ -2250,7 +2229,7 @@ public void resetIgnoredErrorCodes()
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollectorOutputReference.property.expectedErrorCodes">expectedErrorCodes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollectorOutputReference.property.ignoredErrorClasses">ignoredErrorClasses</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollectorOutputReference.property.ignoredErrorCodes">ignoredErrorCodes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollectorOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollectorOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a></code> | *No description.* |
 
 ---
 
@@ -2361,10 +2340,10 @@ public java.util.List<java.lang.String> getIgnoredErrorCodes();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollectorOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|ApplicationSettingsErrorCollector getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsErrorCollector">ApplicationSettingsErrorCollector</a>
 
 ---
 
@@ -2490,7 +2469,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlansList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlansList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlansList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlansList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a>></code> | *No description.* |
 
 ---
 
@@ -2521,10 +2500,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlansList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<ApplicationSettingsTransactionTracerExplainQueryPlans> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a>>
 
 ---
 
@@ -2775,7 +2754,7 @@ public void resetQueryPlanThresholdValue()
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlansOutputReference.property.queryPlanThresholdValueInput">queryPlanThresholdValueInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlansOutputReference.property.queryPlanThresholdType">queryPlanThresholdType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlansOutputReference.property.queryPlanThresholdValue">queryPlanThresholdValue</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlansOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlansOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a></code> | *No description.* |
 
 ---
 
@@ -2846,10 +2825,10 @@ public java.lang.Number getQueryPlanThresholdValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlansOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|ApplicationSettingsTransactionTracerExplainQueryPlans getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a>
 
 ---
 
@@ -2975,7 +2954,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>></code> | *No description.* |
 
 ---
 
@@ -3006,10 +2985,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<ApplicationSettingsTransactionTracer> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>>
 
 ---
 
@@ -3245,12 +3224,12 @@ Returns a reversible string representation.
 ##### `putExplainQueryPlans` <a name="putExplainQueryPlans" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.putExplainQueryPlans"></a>
 
 ```java
-public void putExplainQueryPlans(IResolvable OR java.util.List<ApplicationSettingsTransactionTracerExplainQueryPlans> value)
+public void putExplainQueryPlans(IResolvable|java.util.List<ApplicationSettingsTransactionTracerExplainQueryPlans> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.putExplainQueryPlans.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a>>
 
 ---
 
@@ -3305,7 +3284,7 @@ public void resetTransactionThresholdValue()
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.property.explainQueryPlans">explainQueryPlans</a></code> | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlansList">ApplicationSettingsTransactionTracerExplainQueryPlansList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.property.sql">sql</a></code> | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerSqlOutputReference">ApplicationSettingsTransactionTracerSqlOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.property.explainQueryPlansInput">explainQueryPlansInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.property.explainQueryPlansInput">explainQueryPlansInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.property.sqlInput">sqlInput</a></code> | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerSql">ApplicationSettingsTransactionTracerSql</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.property.stackTraceThresholdValueInput">stackTraceThresholdValueInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.property.transactionThresholdTypeInput">transactionThresholdTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3313,7 +3292,7 @@ public void resetTransactionThresholdValue()
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.property.stackTraceThresholdValue">stackTraceThresholdValue</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.property.transactionThresholdType">transactionThresholdType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.property.transactionThresholdValue">transactionThresholdValue</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a></code> | *No description.* |
 
 ---
 
@@ -3364,10 +3343,10 @@ public ApplicationSettingsTransactionTracerSqlOutputReference getSql();
 ##### `explainQueryPlansInput`<sup>Optional</sup> <a name="explainQueryPlansInput" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.property.explainQueryPlansInput"></a>
 
 ```java
-public java.lang.Object getExplainQueryPlansInput();
+public IResolvable|java.util.List<ApplicationSettingsTransactionTracerExplainQueryPlans> getExplainQueryPlansInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerExplainQueryPlans">ApplicationSettingsTransactionTracerExplainQueryPlans</a>>
 
 ---
 
@@ -3444,10 +3423,10 @@ public java.lang.Number getTransactionThresholdValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracerOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|ApplicationSettingsTransactionTracer getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-newrelic.applicationSettings.ApplicationSettingsTransactionTracer">ApplicationSettingsTransactionTracer</a>
 
 ---
 

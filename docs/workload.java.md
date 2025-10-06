@@ -12,23 +12,18 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 import com.hashicorp.cdktf.providers.newrelic.workload.Workload;
 
 Workload.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
 //  .accountId(java.lang.Number)
 //  .description(java.lang.String)
 //  .entityGuids(java.util.List<java.lang.String>)
-//  .entitySearchQuery(IResolvable)
-//  .entitySearchQuery(java.util.List<WorkloadEntitySearchQuery>)
+//  .entitySearchQuery(IResolvable|java.util.List<WorkloadEntitySearchQuery>)
 //  .id(java.lang.String)
 //  .scopeAccountIds(java.util.List<java.lang.Number>)
 //  .statusConfigAutomatic(WorkloadStatusConfigAutomatic)
@@ -40,18 +35,18 @@ Workload.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The workload's name. |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | The New Relic account ID where you want to create the workload. |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Relevant information about the workload. |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.entityGuids">entityGuids</a></code> | <code>java.util.List<java.lang.String></code> | A list of entity GUIDs manually assigned to this workload. |
-| <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.entitySearchQuery">entitySearchQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>></code> | entity_search_query block. |
+| <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.entitySearchQuery">entitySearchQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>></code> | entity_search_query block. |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/workload#id Workload#id}. |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.scopeAccountIds">scopeAccountIds</a></code> | <code>java.util.List<java.lang.Number></code> | A list of account IDs that will be used to get entities from. |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.statusConfigAutomatic">statusConfigAutomatic</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomatic">WorkloadStatusConfigAutomatic</a></code> | status_config_automatic block. |
@@ -79,13 +74,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -115,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -161,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `entitySearchQuery`<sup>Optional</sup> <a name="entitySearchQuery" id="@cdktf/provider-newrelic.workload.Workload.Initializer.parameter.entitySearchQuery"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>>
 
 entity_search_query block.
 
@@ -448,7 +443,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-newrelic.workload.Workload.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-newrelic.workload.Workload.importFrom"></a>
@@ -504,7 +499,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -519,7 +514,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-newrelic.workload.Workload.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -544,12 +539,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putEntitySearchQuery` <a name="putEntitySearchQuery" id="@cdktf/provider-newrelic.workload.Workload.putEntitySearchQuery"></a>
 
 ```java
-public void putEntitySearchQuery(IResolvable OR java.util.List<WorkloadEntitySearchQuery> value)
+public void putEntitySearchQuery(IResolvable|java.util.List<WorkloadEntitySearchQuery> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.workload.Workload.putEntitySearchQuery.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>>
 
 ---
 
@@ -751,13 +746,13 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.compositeEntitySearchQuery">compositeEntitySearchQuery</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.entitySearchQuery">entitySearchQuery</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQueryList">WorkloadEntitySearchQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.guid">guid</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -768,7 +763,7 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.entityGuidsInput">entityGuidsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.entitySearchQueryInput">entitySearchQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.entitySearchQueryInput">entitySearchQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.Workload.property.scopeAccountIdsInput">scopeAccountIdsInput</a></code> | <code>java.util.List<java.lang.Number></code> | *No description.* |
@@ -858,20 +853,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.workload.Workload.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.workload.Workload.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -918,10 +913,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.workload.Workload.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1028,10 +1023,10 @@ public java.util.List<java.lang.String> getEntityGuidsInput();
 ##### `entitySearchQueryInput`<sup>Optional</sup> <a name="entitySearchQueryInput" id="@cdktf/provider-newrelic.workload.Workload.property.entitySearchQueryInput"></a>
 
 ```java
-public java.lang.Object getEntitySearchQueryInput();
+public IResolvable|java.util.List<WorkloadEntitySearchQuery> getEntitySearchQueryInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>>
 
 ---
 
@@ -1173,23 +1168,18 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.newrelic.workload.WorkloadConfig;
 
 WorkloadConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
 //  .accountId(java.lang.Number)
 //  .description(java.lang.String)
 //  .entityGuids(java.util.List<java.lang.String>)
-//  .entitySearchQuery(IResolvable)
-//  .entitySearchQuery(java.util.List<WorkloadEntitySearchQuery>)
+//  .entitySearchQuery(IResolvable|java.util.List<WorkloadEntitySearchQuery>)
 //  .id(java.lang.String)
 //  .scopeAccountIds(java.util.List<java.lang.Number>)
 //  .statusConfigAutomatic(WorkloadStatusConfigAutomatic)
@@ -1201,18 +1191,18 @@ WorkloadConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.name">name</a></code> | <code>java.lang.String</code> | The workload's name. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | The New Relic account ID where you want to create the workload. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.description">description</a></code> | <code>java.lang.String</code> | Relevant information about the workload. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.entityGuids">entityGuids</a></code> | <code>java.util.List<java.lang.String></code> | A list of entity GUIDs manually assigned to this workload. |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.entitySearchQuery">entitySearchQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>></code> | entity_search_query block. |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.entitySearchQuery">entitySearchQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>></code> | entity_search_query block. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/workload#id Workload#id}. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.scopeAccountIds">scopeAccountIds</a></code> | <code>java.util.List<java.lang.Number></code> | A list of account IDs that will be used to get entities from. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadConfig.property.statusConfigAutomatic">statusConfigAutomatic</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomatic">WorkloadStatusConfigAutomatic</a></code> | status_config_automatic block. |
@@ -1223,20 +1213,20 @@ WorkloadConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.workload.WorkloadConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.workload.WorkloadConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1283,10 +1273,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.workload.WorkloadConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1349,10 +1339,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `entitySearchQuery`<sup>Optional</sup> <a name="entitySearchQuery" id="@cdktf/provider-newrelic.workload.WorkloadConfig.property.entitySearchQuery"></a>
 
 ```java
-public java.lang.Object getEntitySearchQuery();
+public IResolvable|java.util.List<WorkloadEntitySearchQuery> getEntitySearchQuery();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>>
 
 entity_search_query block.
 
@@ -1459,11 +1449,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 import com.hashicorp.cdktf.providers.newrelic.workload.WorkloadStatusConfigAutomatic;
 
 WorkloadStatusConfigAutomatic.builder()
-    .enabled(java.lang.Boolean)
-    .enabled(IResolvable)
+    .enabled(java.lang.Boolean|IResolvable)
 //  .remainingEntitiesRule(WorkloadStatusConfigAutomaticRemainingEntitiesRule)
-//  .rule(IResolvable)
-//  .rule(java.util.List<WorkloadStatusConfigAutomaticRule>)
+//  .rule(IResolvable|java.util.List<WorkloadStatusConfigAutomaticRule>)
     .build();
 ```
 
@@ -1471,19 +1459,19 @@ WorkloadStatusConfigAutomatic.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomatic.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the automatic status configuration is enabled or not. |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomatic.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether the automatic status configuration is enabled or not. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomatic.property.remainingEntitiesRule">remainingEntitiesRule</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRule">WorkloadStatusConfigAutomaticRemainingEntitiesRule</a></code> | remaining_entities_rule block. |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomatic.property.rule">rule</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a>></code> | rule block. |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomatic.property.rule">rule</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a>></code> | rule block. |
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomatic.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether the automatic status configuration is enabled or not.
 
@@ -1508,10 +1496,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `rule`<sup>Optional</sup> <a name="rule" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomatic.property.rule"></a>
 
 ```java
-public java.lang.Object getRule();
+public IResolvable|java.util.List<WorkloadStatusConfigAutomaticRule> getRule();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a>>
 
 rule block.
 
@@ -1649,8 +1637,7 @@ import com.hashicorp.cdktf.providers.newrelic.workload.WorkloadStatusConfigAutom
 WorkloadStatusConfigAutomaticRule.builder()
     .rollup(WorkloadStatusConfigAutomaticRuleRollup)
 //  .entityGuids(java.util.List<java.lang.String>)
-//  .nrqlQuery(IResolvable)
-//  .nrqlQuery(java.util.List<WorkloadStatusConfigAutomaticRuleNrqlQuery>)
+//  .nrqlQuery(IResolvable|java.util.List<WorkloadStatusConfigAutomaticRuleNrqlQuery>)
     .build();
 ```
 
@@ -1660,7 +1647,7 @@ WorkloadStatusConfigAutomaticRule.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule.property.rollup">rollup</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleRollup">WorkloadStatusConfigAutomaticRuleRollup</a></code> | rollup block. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule.property.entityGuids">entityGuids</a></code> | <code>java.util.List<java.lang.String></code> | A list of entity GUIDs composing the rule. |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule.property.nrqlQuery">nrqlQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a>></code> | nrql_query block. |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule.property.nrqlQuery">nrqlQuery</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a>></code> | nrql_query block. |
 
 ---
 
@@ -1695,10 +1682,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `nrqlQuery`<sup>Optional</sup> <a name="nrqlQuery" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule.property.nrqlQuery"></a>
 
 ```java
-public java.lang.Object getNrqlQuery();
+public IResolvable|java.util.List<WorkloadStatusConfigAutomaticRuleNrqlQuery> getNrqlQuery();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a>>
 
 nrql_query block.
 
@@ -1818,8 +1805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 import com.hashicorp.cdktf.providers.newrelic.workload.WorkloadStatusConfigStatic;
 
 WorkloadStatusConfigStatic.builder()
-    .enabled(java.lang.Boolean)
-    .enabled(IResolvable)
+    .enabled(java.lang.Boolean|IResolvable)
     .status(java.lang.String)
 //  .description(java.lang.String)
 //  .summary(java.lang.String)
@@ -1830,7 +1816,7 @@ WorkloadStatusConfigStatic.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStatic.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the static status configuration is enabled or not. |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStatic.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether the static status configuration is enabled or not. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStatic.property.status">status</a></code> | <code>java.lang.String</code> | The status of the workload. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStatic.property.description">description</a></code> | <code>java.lang.String</code> | A description that provides additional details about the status of the workload. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStatic.property.summary">summary</a></code> | <code>java.lang.String</code> | A short description of the status of the workload. |
@@ -1840,10 +1826,10 @@ WorkloadStatusConfigStatic.builder()
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigStatic.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether the static status configuration is enabled or not.
 
@@ -2016,7 +2002,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQueryList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQueryList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQueryList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQueryList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>></code> | *No description.* |
 
 ---
 
@@ -2047,10 +2033,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.workload.WorkloadEntitySearchQueryList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<WorkloadEntitySearchQuery> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>>
 
 ---
 
@@ -2285,7 +2271,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQueryOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQueryOutputReference.property.queryInput">queryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQueryOutputReference.property.query">query</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQueryOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQueryOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a></code> | *No description.* |
 
 ---
 
@@ -2336,10 +2322,10 @@ public java.lang.String getQuery();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.workload.WorkloadEntitySearchQueryOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|WorkloadEntitySearchQuery getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-newrelic.workload.WorkloadEntitySearchQuery">WorkloadEntitySearchQuery</a>
 
 ---
 
@@ -2566,12 +2552,12 @@ public void putRemainingEntitiesRule(WorkloadStatusConfigAutomaticRemainingEntit
 ##### `putRule` <a name="putRule" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.putRule"></a>
 
 ```java
-public void putRule(IResolvable OR java.util.List<WorkloadStatusConfigAutomaticRule> value)
+public void putRule(IResolvable|java.util.List<WorkloadStatusConfigAutomaticRule> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.putRule.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a>>
 
 ---
 
@@ -2596,10 +2582,10 @@ public void resetRule()
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.property.remainingEntitiesRule">remainingEntitiesRule</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference">WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.property.rule">rule</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleList">WorkloadStatusConfigAutomaticRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.property.remainingEntitiesRuleInput">remainingEntitiesRuleInput</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRemainingEntitiesRule">WorkloadStatusConfigAutomaticRemainingEntitiesRule</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.property.ruleInput">ruleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.property.ruleInput">ruleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomatic">WorkloadStatusConfigAutomatic</a></code> | *No description.* |
 
 ---
@@ -2651,10 +2637,10 @@ public WorkloadStatusConfigAutomaticRuleList getRule();
 ##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.property.enabledInput"></a>
 
 ```java
-public java.lang.Object getEnabledInput();
+public java.lang.Boolean|IResolvable getEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2671,20 +2657,20 @@ public WorkloadStatusConfigAutomaticRemainingEntitiesRule getRemainingEntitiesRu
 ##### `ruleInput`<sup>Optional</sup> <a name="ruleInput" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.property.ruleInput"></a>
 
 ```java
-public java.lang.Object getRuleInput();
+public IResolvable|java.util.List<WorkloadStatusConfigAutomaticRule> getRuleInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a>>
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticOutputReference.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -3455,7 +3441,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a>></code> | *No description.* |
 
 ---
 
@@ -3486,10 +3472,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<WorkloadStatusConfigAutomaticRule> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a>>
 
 ---
 
@@ -3615,7 +3601,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQueryList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQueryList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQueryList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQueryList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a>></code> | *No description.* |
 
 ---
 
@@ -3646,10 +3632,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQueryList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<WorkloadStatusConfigAutomaticRuleNrqlQuery> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a>>
 
 ---
 
@@ -3884,7 +3870,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference.property.queryInput">queryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference.property.query">query</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a></code> | *No description.* |
 
 ---
 
@@ -3935,10 +3921,10 @@ public java.lang.String getQuery();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|WorkloadStatusConfigAutomaticRuleNrqlQuery getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a>
 
 ---
 
@@ -4171,12 +4157,12 @@ Returns a reversible string representation.
 ##### `putNrqlQuery` <a name="putNrqlQuery" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleOutputReference.putNrqlQuery"></a>
 
 ```java
-public void putNrqlQuery(IResolvable OR java.util.List<WorkloadStatusConfigAutomaticRuleNrqlQuery> value)
+public void putNrqlQuery(IResolvable|java.util.List<WorkloadStatusConfigAutomaticRuleNrqlQuery> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleOutputReference.putNrqlQuery.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a>>
 
 ---
 
@@ -4214,10 +4200,10 @@ public void resetNrqlQuery()
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleOutputReference.property.nrqlQuery">nrqlQuery</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQueryList">WorkloadStatusConfigAutomaticRuleNrqlQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleOutputReference.property.rollup">rollup</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleRollupOutputReference">WorkloadStatusConfigAutomaticRuleRollupOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleOutputReference.property.entityGuidsInput">entityGuidsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleOutputReference.property.nrqlQueryInput">nrqlQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleOutputReference.property.nrqlQueryInput">nrqlQueryInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleOutputReference.property.rollupInput">rollupInput</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleRollup">WorkloadStatusConfigAutomaticRuleRollup</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleOutputReference.property.entityGuids">entityGuids</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a></code> | *No description.* |
 
 ---
 
@@ -4278,10 +4264,10 @@ public java.util.List<java.lang.String> getEntityGuidsInput();
 ##### `nrqlQueryInput`<sup>Optional</sup> <a name="nrqlQueryInput" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleOutputReference.property.nrqlQueryInput"></a>
 
 ```java
-public java.lang.Object getNrqlQueryInput();
+public IResolvable|java.util.List<WorkloadStatusConfigAutomaticRuleNrqlQuery> getNrqlQueryInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleNrqlQuery">WorkloadStatusConfigAutomaticRuleNrqlQuery</a>>
 
 ---
 
@@ -4308,10 +4294,10 @@ public java.util.List<java.lang.String> getEntityGuids();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRuleOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|WorkloadStatusConfigAutomaticRule getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigAutomaticRule">WorkloadStatusConfigAutomaticRule</a>
 
 ---
 
@@ -4870,11 +4856,11 @@ public void resetSummary()
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference.property.statusInput">statusInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference.property.summaryInput">summaryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference.property.status">status</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference.property.summary">summary</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.workload.WorkloadStatusConfigStatic">WorkloadStatusConfigStatic</a></code> | *No description.* |
@@ -4918,10 +4904,10 @@ public java.lang.String getDescriptionInput();
 ##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference.property.enabledInput"></a>
 
 ```java
-public java.lang.Object getEnabledInput();
+public java.lang.Boolean|IResolvable getEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -4958,10 +4944,10 @@ public java.lang.String getDescription();
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-newrelic.workload.WorkloadStatusConfigStaticOutputReference.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 

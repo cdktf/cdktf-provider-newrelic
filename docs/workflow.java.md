@@ -12,30 +12,22 @@ Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 import com.hashicorp.cdktf.providers.newrelic.workflow.Workflow;
 
 Workflow.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
-    .destination(IResolvable)
-    .destination(java.util.List<WorkflowDestination>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .destination(IResolvable|java.util.List<WorkflowDestination>)
     .issuesFilter(WorkflowIssuesFilter)
     .mutingRulesHandling(java.lang.String)
     .name(java.lang.String)
 //  .accountId(java.lang.Number)
-//  .destinationsEnabled(java.lang.Boolean)
-//  .destinationsEnabled(IResolvable)
-//  .enabled(java.lang.Boolean)
-//  .enabled(IResolvable)
+//  .destinationsEnabled(java.lang.Boolean|IResolvable)
+//  .enabled(java.lang.Boolean|IResolvable)
 //  .enrichments(WorkflowEnrichments)
-//  .enrichmentsEnabled(java.lang.Boolean)
-//  .enrichmentsEnabled(IResolvable)
+//  .enrichmentsEnabled(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
     .build();
 ```
@@ -44,22 +36,22 @@ Workflow.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.destination">destination</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>></code> | destination block. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.destination">destination</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>></code> | destination block. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.issuesFilter">issuesFilter</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilter">WorkflowIssuesFilter</a></code> | issues_filter block. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.mutingRulesHandling">mutingRulesHandling</a></code> | <code>java.lang.String</code> | The type of the muting rule handling. One of: (NOTIFY_ALL_ISSUES, DONT_NOTIFY_FULLY_MUTED_ISSUES, DONT_NOTIFY_FULLY_OR_PARTIALLY_MUTED_ISSUES). |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | (Required) The name of the workflow. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | The account id of the workflow. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.destinationsEnabled">destinationsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether the destinations are enabled. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether the workflow is enabled. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.destinationsEnabled">destinationsEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates whether the destinations are enabled. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates whether the workflow is enabled. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.enrichments">enrichments</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichments">WorkflowEnrichments</a></code> | enrichments block. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.enrichmentsEnabled">enrichmentsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether the enrichments are enabled. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.enrichmentsEnabled">enrichmentsEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates whether the enrichments are enabled. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/workflow#id Workflow#id}. |
 
 ---
@@ -84,13 +76,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -120,13 +112,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
 ##### `destination`<sup>Required</sup> <a name="destination" id="@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.destination"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>>
 
 destination block.
 
@@ -176,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `destinationsEnabled`<sup>Optional</sup> <a name="destinationsEnabled" id="@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.destinationsEnabled"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates whether the destinations are enabled.
 
@@ -186,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.enabled"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates whether the workflow is enabled.
 
@@ -206,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `enrichmentsEnabled`<sup>Optional</sup> <a name="enrichmentsEnabled" id="@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.enrichmentsEnabled"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates whether the enrichments are enabled.
 
@@ -461,7 +453,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-newrelic.workflow.Workflow.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-newrelic.workflow.Workflow.importFrom"></a>
@@ -517,7 +509,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -532,7 +524,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-newrelic.workflow.Workflow.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -557,12 +549,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putDestination` <a name="putDestination" id="@cdktf/provider-newrelic.workflow.Workflow.putDestination"></a>
 
 ```java
-public void putDestination(IResolvable OR java.util.List<WorkflowDestination> value)
+public void putDestination(IResolvable|java.util.List<WorkflowDestination> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.workflow.Workflow.putDestination.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>>
 
 ---
 
@@ -752,13 +744,13 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.destination">destination</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationList">WorkflowDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enrichments">enrichments</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference">WorkflowEnrichmentsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.guid">guid</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -766,19 +758,19 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.lastRun">lastRun</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.workflowId">workflowId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.destinationInput">destinationInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.destinationsEnabledInput">destinationsEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enrichmentsEnabledInput">enrichmentsEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.destinationInput">destinationInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.destinationsEnabledInput">destinationsEnabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enrichmentsEnabledInput">enrichmentsEnabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enrichmentsInput">enrichmentsInput</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichments">WorkflowEnrichments</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.issuesFilterInput">issuesFilterInput</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilter">WorkflowIssuesFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.mutingRulesHandlingInput">mutingRulesHandlingInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.destinationsEnabled">destinationsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enrichmentsEnabled">enrichmentsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.destinationsEnabled">destinationsEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enrichmentsEnabled">enrichmentsEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.mutingRulesHandling">mutingRulesHandling</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -860,20 +852,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.workflow.Workflow.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.workflow.Workflow.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -920,10 +912,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.workflow.Workflow.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1000,40 +992,40 @@ public java.lang.Number getAccountIdInput();
 ##### `destinationInput`<sup>Optional</sup> <a name="destinationInput" id="@cdktf/provider-newrelic.workflow.Workflow.property.destinationInput"></a>
 
 ```java
-public java.lang.Object getDestinationInput();
+public IResolvable|java.util.List<WorkflowDestination> getDestinationInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>>
 
 ---
 
 ##### `destinationsEnabledInput`<sup>Optional</sup> <a name="destinationsEnabledInput" id="@cdktf/provider-newrelic.workflow.Workflow.property.destinationsEnabledInput"></a>
 
 ```java
-public java.lang.Object getDestinationsEnabledInput();
+public java.lang.Boolean|IResolvable getDestinationsEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-newrelic.workflow.Workflow.property.enabledInput"></a>
 
 ```java
-public java.lang.Object getEnabledInput();
+public java.lang.Boolean|IResolvable getEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enrichmentsEnabledInput`<sup>Optional</sup> <a name="enrichmentsEnabledInput" id="@cdktf/provider-newrelic.workflow.Workflow.property.enrichmentsEnabledInput"></a>
 
 ```java
-public java.lang.Object getEnrichmentsEnabledInput();
+public java.lang.Boolean|IResolvable getEnrichmentsEnabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1100,30 +1092,30 @@ public java.lang.Number getAccountId();
 ##### `destinationsEnabled`<sup>Required</sup> <a name="destinationsEnabled" id="@cdktf/provider-newrelic.workflow.Workflow.property.destinationsEnabled"></a>
 
 ```java
-public java.lang.Object getDestinationsEnabled();
+public java.lang.Boolean|IResolvable getDestinationsEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-newrelic.workflow.Workflow.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enrichmentsEnabled`<sup>Required</sup> <a name="enrichmentsEnabled" id="@cdktf/provider-newrelic.workflow.Workflow.property.enrichmentsEnabled"></a>
 
 ```java
-public java.lang.Object getEnrichmentsEnabled();
+public java.lang.Boolean|IResolvable getEnrichmentsEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1185,30 +1177,22 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.newrelic.workflow.WorkflowConfig;
 
 WorkflowConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
-    .destination(IResolvable)
-    .destination(java.util.List<WorkflowDestination>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .destination(IResolvable|java.util.List<WorkflowDestination>)
     .issuesFilter(WorkflowIssuesFilter)
     .mutingRulesHandling(java.lang.String)
     .name(java.lang.String)
 //  .accountId(java.lang.Number)
-//  .destinationsEnabled(java.lang.Boolean)
-//  .destinationsEnabled(IResolvable)
-//  .enabled(java.lang.Boolean)
-//  .enabled(IResolvable)
+//  .destinationsEnabled(java.lang.Boolean|IResolvable)
+//  .enabled(java.lang.Boolean|IResolvable)
 //  .enrichments(WorkflowEnrichments)
-//  .enrichmentsEnabled(java.lang.Boolean)
-//  .enrichmentsEnabled(IResolvable)
+//  .enrichmentsEnabled(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
     .build();
 ```
@@ -1217,22 +1201,22 @@ WorkflowConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.destination">destination</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>></code> | destination block. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.destination">destination</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>></code> | destination block. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.issuesFilter">issuesFilter</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilter">WorkflowIssuesFilter</a></code> | issues_filter block. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.mutingRulesHandling">mutingRulesHandling</a></code> | <code>java.lang.String</code> | The type of the muting rule handling. One of: (NOTIFY_ALL_ISSUES, DONT_NOTIFY_FULLY_MUTED_ISSUES, DONT_NOTIFY_FULLY_OR_PARTIALLY_MUTED_ISSUES). |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.name">name</a></code> | <code>java.lang.String</code> | (Required) The name of the workflow. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | The account id of the workflow. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.destinationsEnabled">destinationsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether the destinations are enabled. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether the workflow is enabled. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.destinationsEnabled">destinationsEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates whether the destinations are enabled. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates whether the workflow is enabled. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enrichments">enrichments</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichments">WorkflowEnrichments</a></code> | enrichments block. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enrichmentsEnabled">enrichmentsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether the enrichments are enabled. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enrichmentsEnabled">enrichmentsEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates whether the enrichments are enabled. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/workflow#id Workflow#id}. |
 
 ---
@@ -1240,20 +1224,20 @@ WorkflowConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.workflow.WorkflowConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.workflow.WorkflowConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1300,20 +1284,20 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.workflow.WorkflowConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
 ##### `destination`<sup>Required</sup> <a name="destination" id="@cdktf/provider-newrelic.workflow.WorkflowConfig.property.destination"></a>
 
 ```java
-public java.lang.Object getDestination();
+public IResolvable|java.util.List<WorkflowDestination> getDestination();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>>
 
 destination block.
 
@@ -1380,10 +1364,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `destinationsEnabled`<sup>Optional</sup> <a name="destinationsEnabled" id="@cdktf/provider-newrelic.workflow.WorkflowConfig.property.destinationsEnabled"></a>
 
 ```java
-public java.lang.Object getDestinationsEnabled();
+public java.lang.Boolean|IResolvable getDestinationsEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates whether the destinations are enabled.
 
@@ -1394,10 +1378,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enabled"></a>
 
 ```java
-public java.lang.Object getEnabled();
+public java.lang.Boolean|IResolvable getEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates whether the workflow is enabled.
 
@@ -1422,10 +1406,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `enrichmentsEnabled`<sup>Optional</sup> <a name="enrichmentsEnabled" id="@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enrichmentsEnabled"></a>
 
 ```java
-public java.lang.Object getEnrichmentsEnabled();
+public java.lang.Boolean|IResolvable getEnrichmentsEnabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Indicates whether the enrichments are enabled.
 
@@ -1458,8 +1442,7 @@ import com.hashicorp.cdktf.providers.newrelic.workflow.WorkflowDestination;
 WorkflowDestination.builder()
     .channelId(java.lang.String)
 //  .notificationTriggers(java.util.List<java.lang.String>)
-//  .updateOriginalMessage(java.lang.Boolean)
-//  .updateOriginalMessage(IResolvable)
+//  .updateOriginalMessage(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1469,7 +1452,7 @@ WorkflowDestination.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination.property.channelId">channelId</a></code> | <code>java.lang.String</code> | (Required) Destination's channel id. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination.property.notificationTriggers">notificationTriggers</a></code> | <code>java.util.List<java.lang.String></code> | List of triggers to notify about in this destination configuration. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination.property.updateOriginalMessage">updateOriginalMessage</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Update original notification message (Slack channels only). |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination.property.updateOriginalMessage">updateOriginalMessage</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Update original notification message (Slack channels only). |
 
 ---
 
@@ -1504,10 +1487,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `updateOriginalMessage`<sup>Optional</sup> <a name="updateOriginalMessage" id="@cdktf/provider-newrelic.workflow.WorkflowDestination.property.updateOriginalMessage"></a>
 
 ```java
-public java.lang.Object getUpdateOriginalMessage();
+public java.lang.Boolean|IResolvable getUpdateOriginalMessage();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Update original notification message (Slack channels only).
 
@@ -1523,8 +1506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 import com.hashicorp.cdktf.providers.newrelic.workflow.WorkflowEnrichments;
 
 WorkflowEnrichments.builder()
-    .nrql(IResolvable)
-    .nrql(java.util.List<WorkflowEnrichmentsNrql>)
+    .nrql(IResolvable|java.util.List<WorkflowEnrichmentsNrql>)
     .build();
 ```
 
@@ -1532,17 +1514,17 @@ WorkflowEnrichments.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichments.property.nrql">nrql</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>></code> | nrql block. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichments.property.nrql">nrql</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>></code> | nrql block. |
 
 ---
 
 ##### `nrql`<sup>Required</sup> <a name="nrql" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichments.property.nrql"></a>
 
 ```java
-public java.lang.Object getNrql();
+public IResolvable|java.util.List<WorkflowEnrichmentsNrql> getNrql();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>>
 
 nrql block.
 
@@ -1558,8 +1540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 import com.hashicorp.cdktf.providers.newrelic.workflow.WorkflowEnrichmentsNrql;
 
 WorkflowEnrichmentsNrql.builder()
-    .configuration(IResolvable)
-    .configuration(java.util.List<WorkflowEnrichmentsNrqlConfiguration>)
+    .configuration(IResolvable|java.util.List<WorkflowEnrichmentsNrqlConfiguration>)
     .name(java.lang.String)
     .build();
 ```
@@ -1568,7 +1549,7 @@ WorkflowEnrichmentsNrql.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql.property.configuration">configuration</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>></code> | configuration block. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql.property.configuration">configuration</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>></code> | configuration block. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql.property.name">name</a></code> | <code>java.lang.String</code> | (Required) Enrichment's name. |
 
 ---
@@ -1576,10 +1557,10 @@ WorkflowEnrichmentsNrql.builder()
 ##### `configuration`<sup>Required</sup> <a name="configuration" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql.property.configuration"></a>
 
 ```java
-public java.lang.Object getConfiguration();
+public IResolvable|java.util.List<WorkflowEnrichmentsNrqlConfiguration> getConfiguration();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>>
 
 configuration block.
 
@@ -1645,8 +1626,7 @@ import com.hashicorp.cdktf.providers.newrelic.workflow.WorkflowIssuesFilter;
 WorkflowIssuesFilter.builder()
     .name(java.lang.String)
     .type(java.lang.String)
-//  .predicate(IResolvable)
-//  .predicate(java.util.List<WorkflowIssuesFilterPredicate>)
+//  .predicate(IResolvable|java.util.List<WorkflowIssuesFilterPredicate>)
     .build();
 ```
 
@@ -1656,7 +1636,7 @@ WorkflowIssuesFilter.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilter.property.name">name</a></code> | <code>java.lang.String</code> | (Required) Filter's name. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilter.property.type">type</a></code> | <code>java.lang.String</code> | (Required) The type of the filter. One of: (FILTER, VIEW). |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilter.property.predicate">predicate</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>></code> | predicate block. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilter.property.predicate">predicate</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>></code> | predicate block. |
 
 ---
 
@@ -1691,10 +1671,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `predicate`<sup>Optional</sup> <a name="predicate" id="@cdktf/provider-newrelic.workflow.WorkflowIssuesFilter.property.predicate"></a>
 
 ```java
-public java.lang.Object getPredicate();
+public IResolvable|java.util.List<WorkflowIssuesFilterPredicate> getPredicate();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>>
 
 predicate block.
 
@@ -1893,7 +1873,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>></code> | *No description.* |
 
 ---
 
@@ -1924,10 +1904,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.workflow.WorkflowDestinationList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<WorkflowDestination> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>>
 
 ---
 
@@ -2178,11 +2158,11 @@ public void resetUpdateOriginalMessage()
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.channelIdInput">channelIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.notificationTriggersInput">notificationTriggersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.updateOriginalMessageInput">updateOriginalMessageInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.updateOriginalMessageInput">updateOriginalMessageInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.channelId">channelId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.notificationTriggers">notificationTriggers</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.updateOriginalMessage">updateOriginalMessage</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.updateOriginalMessage">updateOriginalMessage</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a></code> | *No description.* |
 
 ---
 
@@ -2253,10 +2233,10 @@ public java.util.List<java.lang.String> getNotificationTriggersInput();
 ##### `updateOriginalMessageInput`<sup>Optional</sup> <a name="updateOriginalMessageInput" id="@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.updateOriginalMessageInput"></a>
 
 ```java
-public java.lang.Object getUpdateOriginalMessageInput();
+public java.lang.Boolean|IResolvable getUpdateOriginalMessageInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2283,20 +2263,20 @@ public java.util.List<java.lang.String> getNotificationTriggers();
 ##### `updateOriginalMessage`<sup>Required</sup> <a name="updateOriginalMessage" id="@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.updateOriginalMessage"></a>
 
 ```java
-public java.lang.Object getUpdateOriginalMessage();
+public java.lang.Boolean|IResolvable getUpdateOriginalMessage();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|WorkflowDestination getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>
 
 ---
 
@@ -2422,7 +2402,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>></code> | *No description.* |
 
 ---
 
@@ -2453,10 +2433,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<WorkflowEnrichmentsNrqlConfiguration> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>>
 
 ---
 
@@ -2691,7 +2671,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationOutputReference.property.queryInput">queryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationOutputReference.property.query">query</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -2742,10 +2722,10 @@ public java.lang.String getQuery();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|WorkflowEnrichmentsNrqlConfiguration getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>
 
 ---
 
@@ -2871,7 +2851,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>></code> | *No description.* |
 
 ---
 
@@ -2902,10 +2882,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<WorkflowEnrichmentsNrql> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>>
 
 ---
 
@@ -3135,12 +3115,12 @@ Returns a reversible string representation.
 ##### `putConfiguration` <a name="putConfiguration" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.putConfiguration"></a>
 
 ```java
-public void putConfiguration(IResolvable OR java.util.List<WorkflowEnrichmentsNrqlConfiguration> value)
+public void putConfiguration(IResolvable|java.util.List<WorkflowEnrichmentsNrqlConfiguration> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.putConfiguration.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>>
 
 ---
 
@@ -3155,10 +3135,10 @@ public void putConfiguration(IResolvable OR java.util.List<WorkflowEnrichmentsNr
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.configuration">configuration</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationList">WorkflowEnrichmentsNrqlConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.enrichmentId">enrichmentId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.configurationInput">configurationInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.configurationInput">configurationInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a></code> | *No description.* |
 
 ---
 
@@ -3229,10 +3209,10 @@ public java.lang.String getType();
 ##### `configurationInput`<sup>Optional</sup> <a name="configurationInput" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.configurationInput"></a>
 
 ```java
-public java.lang.Object getConfigurationInput();
+public IResolvable|java.util.List<WorkflowEnrichmentsNrqlConfiguration> getConfigurationInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>>
 
 ---
 
@@ -3259,10 +3239,10 @@ public java.lang.String getName();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|WorkflowEnrichmentsNrql getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>
 
 ---
 
@@ -3474,12 +3454,12 @@ Returns a reversible string representation.
 ##### `putNrql` <a name="putNrql" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.putNrql"></a>
 
 ```java
-public void putNrql(IResolvable OR java.util.List<WorkflowEnrichmentsNrql> value)
+public void putNrql(IResolvable|java.util.List<WorkflowEnrichmentsNrql> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.putNrql.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>>
 
 ---
 
@@ -3491,7 +3471,7 @@ public void putNrql(IResolvable OR java.util.List<WorkflowEnrichmentsNrql> value
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.property.nrql">nrql</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlList">WorkflowEnrichmentsNrqlList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.property.nrqlInput">nrqlInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.property.nrqlInput">nrqlInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichments">WorkflowEnrichments</a></code> | *No description.* |
 
 ---
@@ -3533,10 +3513,10 @@ public WorkflowEnrichmentsNrqlList getNrql();
 ##### `nrqlInput`<sup>Optional</sup> <a name="nrqlInput" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.property.nrqlInput"></a>
 
 ```java
-public java.lang.Object getNrqlInput();
+public IResolvable|java.util.List<WorkflowEnrichmentsNrql> getNrqlInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>>
 
 ---
 
@@ -3759,12 +3739,12 @@ Returns a reversible string representation.
 ##### `putPredicate` <a name="putPredicate" id="@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.putPredicate"></a>
 
 ```java
-public void putPredicate(IResolvable OR java.util.List<WorkflowIssuesFilterPredicate> value)
+public void putPredicate(IResolvable|java.util.List<WorkflowIssuesFilterPredicate> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.putPredicate.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>>
 
 ---
 
@@ -3784,7 +3764,7 @@ public void resetPredicate()
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.filterId">filterId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.predicate">predicate</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateList">WorkflowIssuesFilterPredicateList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.predicateInput">predicateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.predicateInput">predicateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3849,10 +3829,10 @@ public java.lang.String getNameInput();
 ##### `predicateInput`<sup>Optional</sup> <a name="predicateInput" id="@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.predicateInput"></a>
 
 ```java
-public java.lang.Object getPredicateInput();
+public IResolvable|java.util.List<WorkflowIssuesFilterPredicate> getPredicateInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>>
 
 ---
 
@@ -4018,7 +3998,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>></code> | *No description.* |
 
 ---
 
@@ -4049,10 +4029,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<WorkflowIssuesFilterPredicate> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>>
 
 ---
 
@@ -4291,7 +4271,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateOutputReference.property.attribute">attribute</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateOutputReference.property.operator">operator</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateOutputReference.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a></code> | *No description.* |
 
 ---
 
@@ -4382,10 +4362,10 @@ public java.util.List<java.lang.String> getValues();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|WorkflowIssuesFilterPredicate getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>
 
 ---
 

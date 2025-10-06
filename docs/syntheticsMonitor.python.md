@@ -14,24 +14,24 @@ from cdktf_cdktf_provider_newrelic import synthetics_monitor
 syntheticsMonitor.SyntheticsMonitor(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   status: str,
   type: str,
   account_id: typing.Union[int, float] = None,
   browsers: typing.List[str] = None,
-  bypass_head_request: typing.Union[bool, IResolvable] = None,
-  custom_header: typing.Union[IResolvable, typing.List[SyntheticsMonitorCustomHeader]] = None,
+  bypass_head_request: bool | IResolvable = None,
+  custom_header: IResolvable | typing.List[SyntheticsMonitorCustomHeader] = None,
   device_orientation: str = None,
   devices: typing.List[str] = None,
   device_type: str = None,
-  enable_screenshot_on_failure_and_script: typing.Union[bool, IResolvable] = None,
+  enable_screenshot_on_failure_and_script: bool | IResolvable = None,
   id: str = None,
   locations_private: typing.List[str] = None,
   locations_public: typing.List[str] = None,
@@ -39,12 +39,12 @@ syntheticsMonitor.SyntheticsMonitor(
   runtime_type: str = None,
   runtime_type_version: str = None,
   script_language: str = None,
-  tag: typing.Union[IResolvable, typing.List[SyntheticsMonitorTag]] = None,
-  treat_redirect_as_failure: typing.Union[bool, IResolvable] = None,
+  tag: IResolvable | typing.List[SyntheticsMonitorTag] = None,
+  treat_redirect_as_failure: bool | IResolvable = None,
   uri: str = None,
-  use_unsupported_legacy_runtime: typing.Union[bool, IResolvable] = None,
+  use_unsupported_legacy_runtime: bool | IResolvable = None,
   validation_string: str = None,
-  verify_ssl: typing.Union[bool, IResolvable] = None
+  verify_ssl: bool | IResolvable = None
 )
 ```
 
@@ -52,24 +52,24 @@ syntheticsMonitor.SyntheticsMonitor(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.name">name</a></code> | <code>str</code> | The title of this monitor. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.status">status</a></code> | <code>str</code> | The monitor status (ENABLED or DISABLED). |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.type">type</a></code> | <code>str</code> | The monitor type. Valid values are SIMPLE AND BROWSER. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | ID of the newrelic account. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.browsers">browsers</a></code> | <code>typing.List[str]</code> | The multiple browsers list on which synthetic monitors will run. Valid values are array of CHROME,and FIREFOX. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.bypassHeadRequest">bypass_head_request</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Bypass HEAD request. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.customHeader">custom_header</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]]</code> | custom_header block. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.bypassHeadRequest">bypass_head_request</a></code> | <code>bool \| cdktf.IResolvable</code> | Bypass HEAD request. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.customHeader">custom_header</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]</code> | custom_header block. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.deviceOrientation">device_orientation</a></code> | <code>str</code> | The device orientation the user would like to represent. Valid values are LANDSCAPE, PORTRAIT, or NONE. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.devices">devices</a></code> | <code>typing.List[str]</code> | The multiple devices list on which synthetic monitors will run. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.deviceType">device_type</a></code> | <code>str</code> | The device type that a user can select. Valid values are MOBILE, TABLET, or NONE. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.enableScreenshotOnFailureAndScript">enable_screenshot_on_failure_and_script</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Capture a screenshot during job execution. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.enableScreenshotOnFailureAndScript">enable_screenshot_on_failure_and_script</a></code> | <code>bool \| cdktf.IResolvable</code> | Capture a screenshot during job execution. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/synthetics_monitor#id SyntheticsMonitor#id}. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.locationsPrivate">locations_private</a></code> | <code>typing.List[str]</code> | The locations in which this monitor should be run. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.locationsPublic">locations_public</a></code> | <code>typing.List[str]</code> | The locations in which this monitor should be run. |
@@ -77,12 +77,12 @@ syntheticsMonitor.SyntheticsMonitor(
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.runtimeType">runtime_type</a></code> | <code>str</code> | The runtime type that the monitor will run. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.runtimeTypeVersion">runtime_type_version</a></code> | <code>str</code> | The specific version of the runtime type selected. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.scriptLanguage">script_language</a></code> | <code>str</code> | The programing language that should execute the script. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.tag">tag</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]]</code> | tag block. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.treatRedirectAsFailure">treat_redirect_as_failure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Fail the monitor check if redirected. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.tag">tag</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]</code> | tag block. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.treatRedirectAsFailure">treat_redirect_as_failure</a></code> | <code>bool \| cdktf.IResolvable</code> | Fail the monitor check if redirected. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.uri">uri</a></code> | <code>str</code> | The URI for the monitor to hit. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.useUnsupportedLegacyRuntime">use_unsupported_legacy_runtime</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean attribute to be set true by the customer, if they would like to use the unsupported legacy runtime of Synthetic Monitors by means of an exemption given until the October 22, 2024 Legacy Runtime EOL. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.useUnsupportedLegacyRuntime">use_unsupported_legacy_runtime</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean attribute to be set true by the customer, if they would like to use the unsupported legacy runtime of Synthetic Monitors by means of an exemption given until the October 22, 2024 Legacy Runtime EOL. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.validationString">validation_string</a></code> | <code>str</code> | The string to validate against in the response. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.verifySsl">verify_ssl</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Verify SSL. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.verifySsl">verify_ssl</a></code> | <code>bool \| cdktf.IResolvable</code> | Verify SSL. |
 
 ---
 
@@ -106,13 +106,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -142,7 +142,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `bypass_head_request`<sup>Optional</sup> <a name="bypass_head_request" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.bypassHeadRequest"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Bypass HEAD request.
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `custom_header`<sup>Optional</sup> <a name="custom_header" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.customHeader"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]
 
 custom_header block.
 
@@ -250,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `enable_screenshot_on_failure_and_script`<sup>Optional</sup> <a name="enable_screenshot_on_failure_and_script" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.enableScreenshotOnFailureAndScript"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Capture a screenshot during job execution.
 
@@ -333,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `tag`<sup>Optional</sup> <a name="tag" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.tag"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]
 
 tag block.
 
@@ -343,7 +343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `treat_redirect_as_failure`<sup>Optional</sup> <a name="treat_redirect_as_failure" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.treatRedirectAsFailure"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Fail the monitor check if redirected.
 
@@ -363,7 +363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `use_unsupported_legacy_runtime`<sup>Optional</sup> <a name="use_unsupported_legacy_runtime" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.useUnsupportedLegacyRuntime"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean attribute to be set true by the customer, if they would like to use the unsupported legacy runtime of Synthetic Monitors by means of an exemption given until the October 22, 2024 Legacy Runtime EOL.
 
@@ -385,7 +385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `verify_ssl`<sup>Optional</sup> <a name="verify_ssl" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.Initializer.parameter.verifySsl"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Verify SSL.
 
@@ -668,7 +668,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.importFrom"></a>
@@ -731,7 +731,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -747,7 +747,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -775,13 +775,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_custom_header(
-  value: typing.Union[IResolvable, typing.List[SyntheticsMonitorCustomHeader]]
+  value: IResolvable | typing.List[SyntheticsMonitorCustomHeader]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.putCustomHeader.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]
 
 ---
 
@@ -789,13 +789,13 @@ def put_custom_header(
 
 ```python
 def put_tag(
-  value: typing.Union[IResolvable, typing.List[SyntheticsMonitorTag]]
+  value: IResolvable | typing.List[SyntheticsMonitorTag]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.putTag.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]
 
 ---
 
@@ -1062,25 +1062,25 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.customHeader">custom_header</a></code> | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeaderList">SyntheticsMonitorCustomHeaderList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.monitorId">monitor_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.periodInMinutes">period_in_minutes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTagList">SyntheticsMonitorTagList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.accountIdInput">account_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.browsersInput">browsers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.bypassHeadRequestInput">bypass_head_request_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.customHeaderInput">custom_header_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.bypassHeadRequestInput">bypass_head_request_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.customHeaderInput">custom_header_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.deviceOrientationInput">device_orientation_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.devicesInput">devices_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.deviceTypeInput">device_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.enableScreenshotOnFailureAndScriptInput">enable_screenshot_on_failure_and_script_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.enableScreenshotOnFailureAndScriptInput">enable_screenshot_on_failure_and_script_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.locationsPrivateInput">locations_private_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.locationsPublicInput">locations_public_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1090,20 +1090,20 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.runtimeTypeVersionInput">runtime_type_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.scriptLanguageInput">script_language_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.tagInput">tag_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.treatRedirectAsFailureInput">treat_redirect_as_failure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.tagInput">tag_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.treatRedirectAsFailureInput">treat_redirect_as_failure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.uriInput">uri_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.useUnsupportedLegacyRuntimeInput">use_unsupported_legacy_runtime_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.useUnsupportedLegacyRuntimeInput">use_unsupported_legacy_runtime_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.validationStringInput">validation_string_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.verifySslInput">verify_ssl_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.verifySslInput">verify_ssl_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.browsers">browsers</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.bypassHeadRequest">bypass_head_request</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.bypassHeadRequest">bypass_head_request</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.deviceOrientation">device_orientation</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.devices">devices</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.deviceType">device_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.enableScreenshotOnFailureAndScript">enable_screenshot_on_failure_and_script</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.enableScreenshotOnFailureAndScript">enable_screenshot_on_failure_and_script</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.locationsPrivate">locations_private</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.locationsPublic">locations_public</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1113,12 +1113,12 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.runtimeTypeVersion">runtime_type_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.scriptLanguage">script_language</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.status">status</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.treatRedirectAsFailure">treat_redirect_as_failure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.treatRedirectAsFailure">treat_redirect_as_failure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.uri">uri</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.useUnsupportedLegacyRuntime">use_unsupported_legacy_runtime</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.useUnsupportedLegacyRuntime">use_unsupported_legacy_runtime</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.validationString">validation_string</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.verifySsl">verify_ssl</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.verifySsl">verify_ssl</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1197,20 +1197,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1257,10 +1257,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1327,20 +1327,20 @@ browsers_input: typing.List[str]
 ##### `bypass_head_request_input`<sup>Optional</sup> <a name="bypass_head_request_input" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.bypassHeadRequestInput"></a>
 
 ```python
-bypass_head_request_input: typing.Union[bool, IResolvable]
+bypass_head_request_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `custom_header_input`<sup>Optional</sup> <a name="custom_header_input" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.customHeaderInput"></a>
 
 ```python
-custom_header_input: typing.Union[IResolvable, typing.List[SyntheticsMonitorCustomHeader]]
+custom_header_input: IResolvable | typing.List[SyntheticsMonitorCustomHeader]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]
 
 ---
 
@@ -1377,10 +1377,10 @@ device_type_input: str
 ##### `enable_screenshot_on_failure_and_script_input`<sup>Optional</sup> <a name="enable_screenshot_on_failure_and_script_input" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.enableScreenshotOnFailureAndScriptInput"></a>
 
 ```python
-enable_screenshot_on_failure_and_script_input: typing.Union[bool, IResolvable]
+enable_screenshot_on_failure_and_script_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1477,20 +1477,20 @@ status_input: str
 ##### `tag_input`<sup>Optional</sup> <a name="tag_input" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.tagInput"></a>
 
 ```python
-tag_input: typing.Union[IResolvable, typing.List[SyntheticsMonitorTag]]
+tag_input: IResolvable | typing.List[SyntheticsMonitorTag]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]
 
 ---
 
 ##### `treat_redirect_as_failure_input`<sup>Optional</sup> <a name="treat_redirect_as_failure_input" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.treatRedirectAsFailureInput"></a>
 
 ```python
-treat_redirect_as_failure_input: typing.Union[bool, IResolvable]
+treat_redirect_as_failure_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1517,10 +1517,10 @@ uri_input: str
 ##### `use_unsupported_legacy_runtime_input`<sup>Optional</sup> <a name="use_unsupported_legacy_runtime_input" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.useUnsupportedLegacyRuntimeInput"></a>
 
 ```python
-use_unsupported_legacy_runtime_input: typing.Union[bool, IResolvable]
+use_unsupported_legacy_runtime_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1537,10 +1537,10 @@ validation_string_input: str
 ##### `verify_ssl_input`<sup>Optional</sup> <a name="verify_ssl_input" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.verifySslInput"></a>
 
 ```python
-verify_ssl_input: typing.Union[bool, IResolvable]
+verify_ssl_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1567,10 +1567,10 @@ browsers: typing.List[str]
 ##### `bypass_head_request`<sup>Required</sup> <a name="bypass_head_request" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.bypassHeadRequest"></a>
 
 ```python
-bypass_head_request: typing.Union[bool, IResolvable]
+bypass_head_request: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1607,10 +1607,10 @@ device_type: str
 ##### `enable_screenshot_on_failure_and_script`<sup>Required</sup> <a name="enable_screenshot_on_failure_and_script" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.enableScreenshotOnFailureAndScript"></a>
 
 ```python
-enable_screenshot_on_failure_and_script: typing.Union[bool, IResolvable]
+enable_screenshot_on_failure_and_script: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1707,10 +1707,10 @@ status: str
 ##### `treat_redirect_as_failure`<sup>Required</sup> <a name="treat_redirect_as_failure" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.treatRedirectAsFailure"></a>
 
 ```python
-treat_redirect_as_failure: typing.Union[bool, IResolvable]
+treat_redirect_as_failure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1737,10 +1737,10 @@ uri: str
 ##### `use_unsupported_legacy_runtime`<sup>Required</sup> <a name="use_unsupported_legacy_runtime" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.useUnsupportedLegacyRuntime"></a>
 
 ```python
-use_unsupported_legacy_runtime: typing.Union[bool, IResolvable]
+use_unsupported_legacy_runtime: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1757,10 +1757,10 @@ validation_string: str
 ##### `verify_ssl`<sup>Required</sup> <a name="verify_ssl" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor.property.verifySsl"></a>
 
 ```python
-verify_ssl: typing.Union[bool, IResolvable]
+verify_ssl: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1792,24 +1792,24 @@ tfResourceType: str
 from cdktf_cdktf_provider_newrelic import synthetics_monitor
 
 syntheticsMonitor.SyntheticsMonitorConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   status: str,
   type: str,
   account_id: typing.Union[int, float] = None,
   browsers: typing.List[str] = None,
-  bypass_head_request: typing.Union[bool, IResolvable] = None,
-  custom_header: typing.Union[IResolvable, typing.List[SyntheticsMonitorCustomHeader]] = None,
+  bypass_head_request: bool | IResolvable = None,
+  custom_header: IResolvable | typing.List[SyntheticsMonitorCustomHeader] = None,
   device_orientation: str = None,
   devices: typing.List[str] = None,
   device_type: str = None,
-  enable_screenshot_on_failure_and_script: typing.Union[bool, IResolvable] = None,
+  enable_screenshot_on_failure_and_script: bool | IResolvable = None,
   id: str = None,
   locations_private: typing.List[str] = None,
   locations_public: typing.List[str] = None,
@@ -1817,12 +1817,12 @@ syntheticsMonitor.SyntheticsMonitorConfig(
   runtime_type: str = None,
   runtime_type_version: str = None,
   script_language: str = None,
-  tag: typing.Union[IResolvable, typing.List[SyntheticsMonitorTag]] = None,
-  treat_redirect_as_failure: typing.Union[bool, IResolvable] = None,
+  tag: IResolvable | typing.List[SyntheticsMonitorTag] = None,
+  treat_redirect_as_failure: bool | IResolvable = None,
   uri: str = None,
-  use_unsupported_legacy_runtime: typing.Union[bool, IResolvable] = None,
+  use_unsupported_legacy_runtime: bool | IResolvable = None,
   validation_string: str = None,
-  verify_ssl: typing.Union[bool, IResolvable] = None
+  verify_ssl: bool | IResolvable = None
 )
 ```
 
@@ -1830,24 +1830,24 @@ syntheticsMonitor.SyntheticsMonitorConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.name">name</a></code> | <code>str</code> | The title of this monitor. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.status">status</a></code> | <code>str</code> | The monitor status (ENABLED or DISABLED). |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.type">type</a></code> | <code>str</code> | The monitor type. Valid values are SIMPLE AND BROWSER. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | ID of the newrelic account. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.browsers">browsers</a></code> | <code>typing.List[str]</code> | The multiple browsers list on which synthetic monitors will run. Valid values are array of CHROME,and FIREFOX. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.bypassHeadRequest">bypass_head_request</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Bypass HEAD request. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.customHeader">custom_header</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]]</code> | custom_header block. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.bypassHeadRequest">bypass_head_request</a></code> | <code>bool \| cdktf.IResolvable</code> | Bypass HEAD request. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.customHeader">custom_header</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]</code> | custom_header block. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.deviceOrientation">device_orientation</a></code> | <code>str</code> | The device orientation the user would like to represent. Valid values are LANDSCAPE, PORTRAIT, or NONE. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.devices">devices</a></code> | <code>typing.List[str]</code> | The multiple devices list on which synthetic monitors will run. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.deviceType">device_type</a></code> | <code>str</code> | The device type that a user can select. Valid values are MOBILE, TABLET, or NONE. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.enableScreenshotOnFailureAndScript">enable_screenshot_on_failure_and_script</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Capture a screenshot during job execution. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.enableScreenshotOnFailureAndScript">enable_screenshot_on_failure_and_script</a></code> | <code>bool \| cdktf.IResolvable</code> | Capture a screenshot during job execution. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/synthetics_monitor#id SyntheticsMonitor#id}. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.locationsPrivate">locations_private</a></code> | <code>typing.List[str]</code> | The locations in which this monitor should be run. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.locationsPublic">locations_public</a></code> | <code>typing.List[str]</code> | The locations in which this monitor should be run. |
@@ -1855,32 +1855,32 @@ syntheticsMonitor.SyntheticsMonitorConfig(
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.runtimeType">runtime_type</a></code> | <code>str</code> | The runtime type that the monitor will run. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.runtimeTypeVersion">runtime_type_version</a></code> | <code>str</code> | The specific version of the runtime type selected. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.scriptLanguage">script_language</a></code> | <code>str</code> | The programing language that should execute the script. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.tag">tag</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]]</code> | tag block. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.treatRedirectAsFailure">treat_redirect_as_failure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Fail the monitor check if redirected. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.tag">tag</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]</code> | tag block. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.treatRedirectAsFailure">treat_redirect_as_failure</a></code> | <code>bool \| cdktf.IResolvable</code> | Fail the monitor check if redirected. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.uri">uri</a></code> | <code>str</code> | The URI for the monitor to hit. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.useUnsupportedLegacyRuntime">use_unsupported_legacy_runtime</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean attribute to be set true by the customer, if they would like to use the unsupported legacy runtime of Synthetic Monitors by means of an exemption given until the October 22, 2024 Legacy Runtime EOL. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.useUnsupportedLegacyRuntime">use_unsupported_legacy_runtime</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean attribute to be set true by the customer, if they would like to use the unsupported legacy runtime of Synthetic Monitors by means of an exemption given until the October 22, 2024 Legacy Runtime EOL. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.validationString">validation_string</a></code> | <code>str</code> | The string to validate against in the response. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.verifySsl">verify_ssl</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Verify SSL. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.verifySsl">verify_ssl</a></code> | <code>bool \| cdktf.IResolvable</code> | Verify SSL. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1927,10 +1927,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2007,10 +2007,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `bypass_head_request`<sup>Optional</sup> <a name="bypass_head_request" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.bypassHeadRequest"></a>
 
 ```python
-bypass_head_request: typing.Union[bool, IResolvable]
+bypass_head_request: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Bypass HEAD request.
 
@@ -2021,10 +2021,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `custom_header`<sup>Optional</sup> <a name="custom_header" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.customHeader"></a>
 
 ```python
-custom_header: typing.Union[IResolvable, typing.List[SyntheticsMonitorCustomHeader]]
+custom_header: IResolvable | typing.List[SyntheticsMonitorCustomHeader]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]
 
 custom_header block.
 
@@ -2079,10 +2079,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `enable_screenshot_on_failure_and_script`<sup>Optional</sup> <a name="enable_screenshot_on_failure_and_script" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.enableScreenshotOnFailureAndScript"></a>
 
 ```python
-enable_screenshot_on_failure_and_script: typing.Union[bool, IResolvable]
+enable_screenshot_on_failure_and_script: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Capture a screenshot during job execution.
 
@@ -2194,10 +2194,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `tag`<sup>Optional</sup> <a name="tag" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.tag"></a>
 
 ```python
-tag: typing.Union[IResolvable, typing.List[SyntheticsMonitorTag]]
+tag: IResolvable | typing.List[SyntheticsMonitorTag]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]
 
 tag block.
 
@@ -2208,10 +2208,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `treat_redirect_as_failure`<sup>Optional</sup> <a name="treat_redirect_as_failure" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.treatRedirectAsFailure"></a>
 
 ```python
-treat_redirect_as_failure: typing.Union[bool, IResolvable]
+treat_redirect_as_failure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Fail the monitor check if redirected.
 
@@ -2236,10 +2236,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `use_unsupported_legacy_runtime`<sup>Optional</sup> <a name="use_unsupported_legacy_runtime" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.useUnsupportedLegacyRuntime"></a>
 
 ```python
-use_unsupported_legacy_runtime: typing.Union[bool, IResolvable]
+use_unsupported_legacy_runtime: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 A boolean attribute to be set true by the customer, if they would like to use the unsupported legacy runtime of Synthetic Monitors by means of an exemption given until the October 22, 2024 Legacy Runtime EOL.
 
@@ -2266,10 +2266,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `verify_ssl`<sup>Optional</sup> <a name="verify_ssl" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorConfig.property.verifySsl"></a>
 
 ```python
-verify_ssl: typing.Union[bool, IResolvable]
+verify_ssl: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Verify SSL.
 
@@ -2510,7 +2510,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeaderList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeaderList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeaderList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeaderList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]</code> | *No description.* |
 
 ---
 
@@ -2541,10 +2541,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeaderList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SyntheticsMonitorCustomHeader]]
+internal_value: IResolvable | typing.List[SyntheticsMonitorCustomHeader]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]
 
 ---
 
@@ -2822,7 +2822,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeaderOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeaderOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeaderOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a></code> | *No description.* |
 
 ---
 
@@ -2893,10 +2893,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeaderOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SyntheticsMonitorCustomHeader]
+internal_value: IResolvable | SyntheticsMonitorCustomHeader
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorCustomHeader">SyntheticsMonitorCustomHeader</a>
 
 ---
 
@@ -3032,7 +3032,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTagList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTagList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTagList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTagList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]</code> | *No description.* |
 
 ---
 
@@ -3063,10 +3063,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTagList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[SyntheticsMonitorTag]]
+internal_value: IResolvable | typing.List[SyntheticsMonitorTag]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]
 
 ---
 
@@ -3330,7 +3330,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTagOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTagOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTagOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTagOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTagOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a></code> | *No description.* |
 
 ---
 
@@ -3401,10 +3401,10 @@ values: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTagOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, SyntheticsMonitorTag]
+internal_value: IResolvable | SyntheticsMonitorTag
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitorTag">SyntheticsMonitorTag</a>
 
 ---
 

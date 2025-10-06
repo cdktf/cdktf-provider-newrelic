@@ -381,7 +381,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.importFrom"></a>
@@ -435,7 +435,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -450,7 +450,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1564,13 +1564,13 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.alb">Alb</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference">CloudAwsIntegrationsAlbOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.apiGateway">ApiGateway</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsApiGatewayOutputReference">CloudAwsIntegrationsApiGatewayOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.autoScaling">AutoScaling</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAutoScalingOutputReference">CloudAwsIntegrationsAutoScalingOutputReference</a></code> | *No description.* |
@@ -1761,20 +1761,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1821,10 +1821,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrations.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -2977,8 +2977,8 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsAlb {
     string[] AwsRegions = null,
-    object FetchExtendedInventory = null,
-    object FetchTags = null,
+    bool|IResolvable FetchExtendedInventory = null,
+    bool|IResolvable FetchTags = null,
     string[] LoadBalancerPrefixes = null,
     double MetricsPollingInterval = null,
     string TagKey = null,
@@ -2991,8 +2991,8 @@ new CloudAwsIntegrationsAlb {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlb.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | Specify each AWS region that includes the resources that you want to monitor. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlb.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | Determine if extra inventory data be collected or not. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlb.property.fetchTags">FetchTags</a></code> | <code>object</code> | Specify if tags should be collected. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlb.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determine if extra inventory data be collected or not. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlb.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if tags should be collected. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlb.property.loadBalancerPrefixes">LoadBalancerPrefixes</a></code> | <code>string[]</code> | Specify each name or prefix for the LBs that you want to monitor. Filter values are case-sensitive. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlb.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlb.property.tagKey">TagKey</a></code> | <code>string</code> | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
@@ -3017,10 +3017,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchExtendedInventory`<sup>Optional</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlb.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; set; }
+public bool|IResolvable FetchExtendedInventory { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determine if extra inventory data be collected or not.
 
@@ -3033,10 +3033,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchTags`<sup>Optional</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlb.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; set; }
+public bool|IResolvable FetchTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if tags should be collected.
 
@@ -4294,8 +4294,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsCloudfront {
-    object FetchLambdasAtEdge = null,
-    object FetchTags = null,
+    bool|IResolvable FetchLambdasAtEdge = null,
+    bool|IResolvable FetchTags = null,
     double MetricsPollingInterval = null,
     string TagKey = null,
     string TagValue = null
@@ -4306,8 +4306,8 @@ new CloudAwsIntegrationsCloudfront {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfront.property.fetchLambdasAtEdge">FetchLambdasAtEdge</a></code> | <code>object</code> | Specify if Lambdas@Edge should be monitored. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfront.property.fetchTags">FetchTags</a></code> | <code>object</code> | Specify if tags should be collected. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfront.property.fetchLambdasAtEdge">FetchLambdasAtEdge</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if Lambdas@Edge should be monitored. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfront.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if tags should be collected. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfront.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfront.property.tagKey">TagKey</a></code> | <code>string</code> | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfront.property.tagValue">TagValue</a></code> | <code>string</code> | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
@@ -4317,10 +4317,10 @@ new CloudAwsIntegrationsCloudfront {
 ##### `FetchLambdasAtEdge`<sup>Optional</sup> <a name="FetchLambdasAtEdge" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfront.property.fetchLambdasAtEdge"></a>
 
 ```csharp
-public object FetchLambdasAtEdge { get; set; }
+public bool|IResolvable FetchLambdasAtEdge { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if Lambdas@Edge should be monitored.
 
@@ -4333,10 +4333,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchTags`<sup>Optional</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfront.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; set; }
+public bool|IResolvable FetchTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if tags should be collected.
 
@@ -4446,13 +4446,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     double LinkedAccountId,
     double AccountId = null,
     CloudAwsIntegrationsAlb Alb = null,
@@ -4516,13 +4516,13 @@ new CloudAwsIntegrationsConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.linkedAccountId">LinkedAccountId</a></code> | <code>double</code> | The ID of the linked AWS account in New Relic. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.accountId">AccountId</a></code> | <code>double</code> | The ID of the account in New Relic. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.alb">Alb</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlb">CloudAwsIntegrationsAlb</a></code> | alb block. |
@@ -4585,20 +4585,20 @@ new CloudAwsIntegrationsConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -4645,10 +4645,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -5496,8 +5496,8 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsDynamodb {
     string[] AwsRegions = null,
-    object FetchExtendedInventory = null,
-    object FetchTags = null,
+    bool|IResolvable FetchExtendedInventory = null,
+    bool|IResolvable FetchTags = null,
     double MetricsPollingInterval = null,
     string TagKey = null,
     string TagValue = null
@@ -5509,8 +5509,8 @@ new CloudAwsIntegrationsDynamodb {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodb.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | Specify each AWS region that includes the resources that you want to monitor. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodb.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | Determine if extra inventory data be collected or not. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodb.property.fetchTags">FetchTags</a></code> | <code>object</code> | Specify if tags and the extended inventory should be collected. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodb.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determine if extra inventory data be collected or not. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodb.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if tags and the extended inventory should be collected. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodb.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodb.property.tagKey">TagKey</a></code> | <code>string</code> | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodb.property.tagValue">TagValue</a></code> | <code>string</code> | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
@@ -5534,10 +5534,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchExtendedInventory`<sup>Optional</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodb.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; set; }
+public bool|IResolvable FetchExtendedInventory { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determine if extra inventory data be collected or not.
 
@@ -5550,10 +5550,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchTags`<sup>Optional</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodb.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; set; }
+public bool|IResolvable FetchTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if tags and the extended inventory should be collected.
 
@@ -5614,7 +5614,7 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsEbs {
     string[] AwsRegions = null,
-    object FetchExtendedInventory = null,
+    bool|IResolvable FetchExtendedInventory = null,
     double MetricsPollingInterval = null,
     string TagKey = null,
     string TagValue = null
@@ -5626,7 +5626,7 @@ new CloudAwsIntegrationsEbs {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbs.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | Specify each AWS region that includes the resources that you want to monitor. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbs.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | Determine if extra inventory data be collected or not. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbs.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determine if extra inventory data be collected or not. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbs.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbs.property.tagKey">TagKey</a></code> | <code>string</code> | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbs.property.tagValue">TagValue</a></code> | <code>string</code> | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
@@ -5650,10 +5650,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchExtendedInventory`<sup>Optional</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbs.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; set; }
+public bool|IResolvable FetchExtendedInventory { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determine if extra inventory data be collected or not.
 
@@ -5714,8 +5714,8 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsEc2 {
     string[] AwsRegions = null,
-    object DuplicateEc2Tags = null,
-    object FetchIpAddresses = null,
+    bool|IResolvable DuplicateEc2Tags = null,
+    bool|IResolvable FetchIpAddresses = null,
     double MetricsPollingInterval = null,
     string TagKey = null,
     string TagValue = null
@@ -5727,8 +5727,8 @@ new CloudAwsIntegrationsEc2 {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | Specify each AWS region that includes the resources that you want to monitor. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2.property.duplicateEc2Tags">DuplicateEc2Tags</a></code> | <code>object</code> | Specify if the old legacy metadata and tag names have to be kept, it will consume more ingest data size. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2.property.fetchIpAddresses">FetchIpAddresses</a></code> | <code>object</code> | Specify if IP addresses of ec2 instance should be collected. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2.property.duplicateEc2Tags">DuplicateEc2Tags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if the old legacy metadata and tag names have to be kept, it will consume more ingest data size. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2.property.fetchIpAddresses">FetchIpAddresses</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if IP addresses of ec2 instance should be collected. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2.property.tagKey">TagKey</a></code> | <code>string</code> | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2.property.tagValue">TagValue</a></code> | <code>string</code> | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
@@ -5752,10 +5752,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `DuplicateEc2Tags`<sup>Optional</sup> <a name="DuplicateEc2Tags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2.property.duplicateEc2Tags"></a>
 
 ```csharp
-public object DuplicateEc2Tags { get; set; }
+public bool|IResolvable DuplicateEc2Tags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if the old legacy metadata and tag names have to be kept, it will consume more ingest data size.
 
@@ -5766,10 +5766,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchIpAddresses`<sup>Optional</sup> <a name="FetchIpAddresses" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2.property.fetchIpAddresses"></a>
 
 ```csharp
-public object FetchIpAddresses { get; set; }
+public bool|IResolvable FetchIpAddresses { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if IP addresses of ec2 instance should be collected.
 
@@ -5828,7 +5828,7 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsEcs {
     string[] AwsRegions = null,
-    object FetchTags = null,
+    bool|IResolvable FetchTags = null,
     double MetricsPollingInterval = null,
     string TagKey = null,
     string TagValue = null
@@ -5840,7 +5840,7 @@ new CloudAwsIntegrationsEcs {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcs.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | Specify each AWS region that includes the resources that you want to monitor. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcs.property.fetchTags">FetchTags</a></code> | <code>object</code> | Specify if tags and the extended inventory should be collected. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcs.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if tags and the extended inventory should be collected. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcs.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcs.property.tagKey">TagKey</a></code> | <code>string</code> | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcs.property.tagValue">TagValue</a></code> | <code>string</code> | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
@@ -5864,10 +5864,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchTags`<sup>Optional</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcs.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; set; }
+public bool|IResolvable FetchTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if tags and the extended inventory should be collected.
 
@@ -5928,7 +5928,7 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsEfs {
     string[] AwsRegions = null,
-    object FetchTags = null,
+    bool|IResolvable FetchTags = null,
     double MetricsPollingInterval = null,
     string TagKey = null,
     string TagValue = null
@@ -5940,7 +5940,7 @@ new CloudAwsIntegrationsEfs {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfs.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | Specify each AWS region that includes the resources that you want to monitor. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfs.property.fetchTags">FetchTags</a></code> | <code>object</code> | Specify if tags and the extended inventory should be collected. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfs.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if tags and the extended inventory should be collected. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfs.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfs.property.tagKey">TagKey</a></code> | <code>string</code> | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfs.property.tagValue">TagValue</a></code> | <code>string</code> | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
@@ -5964,10 +5964,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchTags`<sup>Optional</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfs.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; set; }
+public bool|IResolvable FetchTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if tags and the extended inventory should be collected.
 
@@ -6028,7 +6028,7 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsElasticache {
     string[] AwsRegions = null,
-    object FetchTags = null,
+    bool|IResolvable FetchTags = null,
     double MetricsPollingInterval = null,
     string TagKey = null,
     string TagValue = null
@@ -6040,7 +6040,7 @@ new CloudAwsIntegrationsElasticache {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticache.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | Specify each AWS region that includes the resources that you want to monitor. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticache.property.fetchTags">FetchTags</a></code> | <code>object</code> | Specify if tags should be collected. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticache.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if tags should be collected. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticache.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticache.property.tagKey">TagKey</a></code> | <code>string</code> | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticache.property.tagValue">TagValue</a></code> | <code>string</code> | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
@@ -6064,10 +6064,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchTags`<sup>Optional</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticache.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; set; }
+public bool|IResolvable FetchTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if tags should be collected.
 
@@ -6128,8 +6128,8 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsElasticbeanstalk {
     string[] AwsRegions = null,
-    object FetchExtendedInventory = null,
-    object FetchTags = null,
+    bool|IResolvable FetchExtendedInventory = null,
+    bool|IResolvable FetchTags = null,
     double MetricsPollingInterval = null,
     string TagKey = null,
     string TagValue = null
@@ -6141,8 +6141,8 @@ new CloudAwsIntegrationsElasticbeanstalk {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalk.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | Specify each AWS region that includes the resources that you want to monitor. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalk.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | Determine if extra inventory data be collected or not. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalk.property.fetchTags">FetchTags</a></code> | <code>object</code> | Specify if tags and the extended inventory should be collected. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalk.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determine if extra inventory data be collected or not. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalk.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if tags and the extended inventory should be collected. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalk.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalk.property.tagKey">TagKey</a></code> | <code>string</code> | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalk.property.tagValue">TagValue</a></code> | <code>string</code> | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
@@ -6166,10 +6166,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchExtendedInventory`<sup>Optional</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalk.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; set; }
+public bool|IResolvable FetchExtendedInventory { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determine if extra inventory data be collected or not.
 
@@ -6182,10 +6182,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchTags`<sup>Optional</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalk.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; set; }
+public bool|IResolvable FetchTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if tags and the extended inventory should be collected.
 
@@ -6246,7 +6246,7 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsElasticsearch {
     string[] AwsRegions = null,
-    object FetchNodes = null,
+    bool|IResolvable FetchNodes = null,
     double MetricsPollingInterval = null,
     string TagKey = null,
     string TagValue = null
@@ -6258,7 +6258,7 @@ new CloudAwsIntegrationsElasticsearch {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearch.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | Specify each AWS region that includes the resources that you want to monitor. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearch.property.fetchNodes">FetchNodes</a></code> | <code>object</code> | Specify if metrics should be collected for nodes. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearch.property.fetchNodes">FetchNodes</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if metrics should be collected for nodes. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearch.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearch.property.tagKey">TagKey</a></code> | <code>string</code> | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearch.property.tagValue">TagValue</a></code> | <code>string</code> | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
@@ -6282,10 +6282,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchNodes`<sup>Optional</sup> <a name="FetchNodes" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearch.property.fetchNodes"></a>
 
 ```csharp
-public object FetchNodes { get; set; }
+public bool|IResolvable FetchNodes { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if metrics should be collected for nodes.
 
@@ -6346,8 +6346,8 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsElb {
     string[] AwsRegions = null,
-    object FetchExtendedInventory = null,
-    object FetchTags = null,
+    bool|IResolvable FetchExtendedInventory = null,
+    bool|IResolvable FetchTags = null,
     double MetricsPollingInterval = null
 };
 ```
@@ -6357,8 +6357,8 @@ new CloudAwsIntegrationsElb {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElb.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | Specify each AWS region that includes the resources that you want to monitor. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElb.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | Determine if extra inventory data be collected or not. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElb.property.fetchTags">FetchTags</a></code> | <code>object</code> | Specify if tags should be collected. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElb.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determine if extra inventory data be collected or not. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElb.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if tags should be collected. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElb.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 
 ---
@@ -6380,10 +6380,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchExtendedInventory`<sup>Optional</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElb.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; set; }
+public bool|IResolvable FetchExtendedInventory { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determine if extra inventory data be collected or not.
 
@@ -6396,10 +6396,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchTags`<sup>Optional</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElb.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; set; }
+public bool|IResolvable FetchTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if tags should be collected.
 
@@ -6432,7 +6432,7 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsEmr {
     string[] AwsRegions = null,
-    object FetchTags = null,
+    bool|IResolvable FetchTags = null,
     double MetricsPollingInterval = null,
     string TagKey = null,
     string TagValue = null
@@ -6444,7 +6444,7 @@ new CloudAwsIntegrationsEmr {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmr.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | Specify each AWS region that includes the resources that you want to monitor. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmr.property.fetchTags">FetchTags</a></code> | <code>object</code> | Specify if tags and the extended inventory should be collected. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmr.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if tags and the extended inventory should be collected. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmr.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmr.property.tagKey">TagKey</a></code> | <code>string</code> | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmr.property.tagValue">TagValue</a></code> | <code>string</code> | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
@@ -6468,10 +6468,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchTags`<sup>Optional</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmr.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; set; }
+public bool|IResolvable FetchTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if tags and the extended inventory should be collected.
 
@@ -6682,8 +6682,8 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsKinesis {
     string[] AwsRegions = null,
-    object FetchShards = null,
-    object FetchTags = null,
+    bool|IResolvable FetchShards = null,
+    bool|IResolvable FetchTags = null,
     double MetricsPollingInterval = null,
     string TagKey = null,
     string TagValue = null
@@ -6695,8 +6695,8 @@ new CloudAwsIntegrationsKinesis {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesis.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | Specify each AWS region that includes the resources that you want to monitor. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesis.property.fetchShards">FetchShards</a></code> | <code>object</code> | Specify if Shards should be monitored. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesis.property.fetchTags">FetchTags</a></code> | <code>object</code> | Specify if tags and the extended inventory should be collected. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesis.property.fetchShards">FetchShards</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if Shards should be monitored. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesis.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if tags and the extended inventory should be collected. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesis.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesis.property.tagKey">TagKey</a></code> | <code>string</code> | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesis.property.tagValue">TagValue</a></code> | <code>string</code> | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
@@ -6720,10 +6720,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchShards`<sup>Optional</sup> <a name="FetchShards" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesis.property.fetchShards"></a>
 
 ```csharp
-public object FetchShards { get; set; }
+public bool|IResolvable FetchShards { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if Shards should be monitored.
 
@@ -6736,10 +6736,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchTags`<sup>Optional</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesis.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; set; }
+public bool|IResolvable FetchTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if tags and the extended inventory should be collected.
 
@@ -6850,7 +6850,7 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsLambda {
     string[] AwsRegions = null,
-    object FetchTags = null,
+    bool|IResolvable FetchTags = null,
     double MetricsPollingInterval = null,
     string TagKey = null,
     string TagValue = null
@@ -6862,7 +6862,7 @@ new CloudAwsIntegrationsLambda {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambda.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | Specify each AWS region that includes the resources that you want to monitor. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambda.property.fetchTags">FetchTags</a></code> | <code>object</code> | Specify if tags and the extended inventory should be collected. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambda.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if tags and the extended inventory should be collected. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambda.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambda.property.tagKey">TagKey</a></code> | <code>string</code> | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambda.property.tagValue">TagValue</a></code> | <code>string</code> | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
@@ -6886,10 +6886,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchTags`<sup>Optional</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambda.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; set; }
+public bool|IResolvable FetchTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if tags and the extended inventory should be collected.
 
@@ -6950,7 +6950,7 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsRds {
     string[] AwsRegions = null,
-    object FetchTags = null,
+    bool|IResolvable FetchTags = null,
     double MetricsPollingInterval = null,
     string TagKey = null,
     string TagValue = null
@@ -6962,7 +6962,7 @@ new CloudAwsIntegrationsRds {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRds.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | Specify each AWS region that includes the resources that you want to monitor. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRds.property.fetchTags">FetchTags</a></code> | <code>object</code> | Specify if tags and the extended inventory should be collected. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRds.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if tags and the extended inventory should be collected. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRds.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRds.property.tagKey">TagKey</a></code> | <code>string</code> | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRds.property.tagValue">TagValue</a></code> | <code>string</code> | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
@@ -6986,10 +6986,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchTags`<sup>Optional</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRds.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; set; }
+public bool|IResolvable FetchTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if tags and the extended inventory should be collected.
 
@@ -7131,7 +7131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsRoute53 {
-    object FetchExtendedInventory = null,
+    bool|IResolvable FetchExtendedInventory = null,
     double MetricsPollingInterval = null
 };
 ```
@@ -7140,7 +7140,7 @@ new CloudAwsIntegrationsRoute53 {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | Determine if extra inventory data be collected or not. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determine if extra inventory data be collected or not. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 
 ---
@@ -7148,10 +7148,10 @@ new CloudAwsIntegrationsRoute53 {
 ##### `FetchExtendedInventory`<sup>Optional</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; set; }
+public bool|IResolvable FetchExtendedInventory { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determine if extra inventory data be collected or not.
 
@@ -7183,8 +7183,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsS3 {
-    object FetchExtendedInventory = null,
-    object FetchTags = null,
+    bool|IResolvable FetchExtendedInventory = null,
+    bool|IResolvable FetchTags = null,
     double MetricsPollingInterval = null,
     string TagKey = null,
     string TagValue = null
@@ -7195,8 +7195,8 @@ new CloudAwsIntegrationsS3 {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | Determine if extra inventory data be collected or not. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3.property.fetchTags">FetchTags</a></code> | <code>object</code> | Specify if tags should be collected. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determine if extra inventory data be collected or not. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if tags should be collected. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3.property.tagKey">TagKey</a></code> | <code>string</code> | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3.property.tagValue">TagValue</a></code> | <code>string</code> | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
@@ -7206,10 +7206,10 @@ new CloudAwsIntegrationsS3 {
 ##### `FetchExtendedInventory`<sup>Optional</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; set; }
+public bool|IResolvable FetchExtendedInventory { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determine if extra inventory data be collected or not.
 
@@ -7222,10 +7222,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchTags`<sup>Optional</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; set; }
+public bool|IResolvable FetchTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if tags should be collected.
 
@@ -7336,7 +7336,7 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsSns {
     string[] AwsRegions = null,
-    object FetchExtendedInventory = null,
+    bool|IResolvable FetchExtendedInventory = null,
     double MetricsPollingInterval = null
 };
 ```
@@ -7346,7 +7346,7 @@ new CloudAwsIntegrationsSns {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSns.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | Specify each AWS region that includes the resources that you want to monitor. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSns.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | Determine if extra inventory data be collected or not. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSns.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determine if extra inventory data be collected or not. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSns.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 
 ---
@@ -7368,10 +7368,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchExtendedInventory`<sup>Optional</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSns.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; set; }
+public bool|IResolvable FetchExtendedInventory { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determine if extra inventory data be collected or not.
 
@@ -7404,8 +7404,8 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsSqs {
     string[] AwsRegions = null,
-    object FetchExtendedInventory = null,
-    object FetchTags = null,
+    bool|IResolvable FetchExtendedInventory = null,
+    bool|IResolvable FetchTags = null,
     double MetricsPollingInterval = null,
     string[] QueuePrefixes = null,
     string TagKey = null,
@@ -7418,8 +7418,8 @@ new CloudAwsIntegrationsSqs {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqs.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | Specify each AWS region that includes the resources that you want to monitor. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqs.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | Determine if extra inventory data be collected or not. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqs.property.fetchTags">FetchTags</a></code> | <code>object</code> | Specify if tags should be collected. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqs.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determine if extra inventory data be collected or not. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqs.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if tags should be collected. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqs.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqs.property.queuePrefixes">QueuePrefixes</a></code> | <code>string[]</code> | Specify each name or prefix for the Queues that you want to monitor. Filter values are case-sensitive. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqs.property.tagKey">TagKey</a></code> | <code>string</code> | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
@@ -7444,10 +7444,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchExtendedInventory`<sup>Optional</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqs.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; set; }
+public bool|IResolvable FetchExtendedInventory { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determine if extra inventory data be collected or not.
 
@@ -7460,10 +7460,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchTags`<sup>Optional</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqs.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; set; }
+public bool|IResolvable FetchTags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if tags should be collected.
 
@@ -7572,8 +7572,8 @@ using HashiCorp.Cdktf.Providers.Newrelic;
 
 new CloudAwsIntegrationsVpc {
     string[] AwsRegions = null,
-    object FetchNatGateway = null,
-    object FetchVpn = null,
+    bool|IResolvable FetchNatGateway = null,
+    bool|IResolvable FetchVpn = null,
     double MetricsPollingInterval = null,
     string TagKey = null,
     string TagValue = null
@@ -7585,8 +7585,8 @@ new CloudAwsIntegrationsVpc {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpc.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | Specify each AWS region that includes the resources that you want to monitor. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpc.property.fetchNatGateway">FetchNatGateway</a></code> | <code>object</code> | Specify if NAT gateway should be monitored. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpc.property.fetchVpn">FetchVpn</a></code> | <code>object</code> | Specify if VPN should be monitored. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpc.property.fetchNatGateway">FetchNatGateway</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if NAT gateway should be monitored. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpc.property.fetchVpn">FetchVpn</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specify if VPN should be monitored. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpc.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | The data polling interval in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpc.property.tagKey">TagKey</a></code> | <code>string</code> | Specify a Tag key associated with the resources that you want to monitor. Filter values are case-sensitive. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpc.property.tagValue">TagValue</a></code> | <code>string</code> | Specify a Tag value associated with the resources that you want to monitor. Filter values are case-sensitive. |
@@ -7610,10 +7610,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchNatGateway`<sup>Optional</sup> <a name="FetchNatGateway" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpc.property.fetchNatGateway"></a>
 
 ```csharp
-public object FetchNatGateway { get; set; }
+public bool|IResolvable FetchNatGateway { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if NAT gateway should be monitored.
 
@@ -7626,10 +7626,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `FetchVpn`<sup>Optional</sup> <a name="FetchVpn" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpc.property.fetchVpn"></a>
 
 ```csharp
-public object FetchVpn { get; set; }
+public bool|IResolvable FetchVpn { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specify if VPN should be monitored.
 
@@ -7993,15 +7993,15 @@ private void ResetTagValue()
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.loadBalancerPrefixesInput">LoadBalancerPrefixesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.tagKeyInput">TagKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.tagValueInput">TagValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.fetchTags">FetchTags</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.loadBalancerPrefixes">LoadBalancerPrefixes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.tagKey">TagKey</a></code> | <code>string</code> | *No description.* |
@@ -8047,20 +8047,20 @@ public string[] AwsRegionsInput { get; }
 ##### `FetchExtendedInventoryInput`<sup>Optional</sup> <a name="FetchExtendedInventoryInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.fetchExtendedInventoryInput"></a>
 
 ```csharp
-public object FetchExtendedInventoryInput { get; }
+public bool|IResolvable FetchExtendedInventoryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchTagsInput`<sup>Optional</sup> <a name="FetchTagsInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.fetchTagsInput"></a>
 
 ```csharp
-public object FetchTagsInput { get; }
+public bool|IResolvable FetchTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8117,20 +8117,20 @@ public string[] AwsRegions { get; }
 ##### `FetchExtendedInventory`<sup>Required</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; }
+public bool|IResolvable FetchExtendedInventory { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchTags`<sup>Required</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAlbOutputReference.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; }
+public bool|IResolvable FetchTags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15549,13 +15549,13 @@ private void ResetTagValue()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.fetchLambdasAtEdgeInput">FetchLambdasAtEdgeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.fetchLambdasAtEdgeInput">FetchLambdasAtEdgeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.tagKeyInput">TagKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.tagValueInput">TagValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.fetchLambdasAtEdge">FetchLambdasAtEdge</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.fetchTags">FetchTags</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.fetchLambdasAtEdge">FetchLambdasAtEdge</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.tagKey">TagKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.tagValue">TagValue</a></code> | <code>string</code> | *No description.* |
@@ -15590,20 +15590,20 @@ public string Fqn { get; }
 ##### `FetchLambdasAtEdgeInput`<sup>Optional</sup> <a name="FetchLambdasAtEdgeInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.fetchLambdasAtEdgeInput"></a>
 
 ```csharp
-public object FetchLambdasAtEdgeInput { get; }
+public bool|IResolvable FetchLambdasAtEdgeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchTagsInput`<sup>Optional</sup> <a name="FetchTagsInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.fetchTagsInput"></a>
 
 ```csharp
-public object FetchTagsInput { get; }
+public bool|IResolvable FetchTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15640,20 +15640,20 @@ public string TagValueInput { get; }
 ##### `FetchLambdasAtEdge`<sup>Required</sup> <a name="FetchLambdasAtEdge" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.fetchLambdasAtEdge"></a>
 
 ```csharp
-public object FetchLambdasAtEdge { get; }
+public bool|IResolvable FetchLambdasAtEdge { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchTags`<sup>Required</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsCloudfrontOutputReference.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; }
+public bool|IResolvable FetchTags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16565,14 +16565,14 @@ private void ResetTagValue()
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.tagKeyInput">TagKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.tagValueInput">TagValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.fetchTags">FetchTags</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.tagKey">TagKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.tagValue">TagValue</a></code> | <code>string</code> | *No description.* |
@@ -16617,20 +16617,20 @@ public string[] AwsRegionsInput { get; }
 ##### `FetchExtendedInventoryInput`<sup>Optional</sup> <a name="FetchExtendedInventoryInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.fetchExtendedInventoryInput"></a>
 
 ```csharp
-public object FetchExtendedInventoryInput { get; }
+public bool|IResolvable FetchExtendedInventoryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchTagsInput`<sup>Optional</sup> <a name="FetchTagsInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.fetchTagsInput"></a>
 
 ```csharp
-public object FetchTagsInput { get; }
+public bool|IResolvable FetchTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16677,20 +16677,20 @@ public string[] AwsRegions { get; }
 ##### `FetchExtendedInventory`<sup>Required</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; }
+public bool|IResolvable FetchExtendedInventory { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchTags`<sup>Required</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDynamodbOutputReference.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; }
+public bool|IResolvable FetchTags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -16981,12 +16981,12 @@ private void ResetTagValue()
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbsOutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbsOutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbsOutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbsOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbsOutputReference.property.tagKeyInput">TagKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbsOutputReference.property.tagValueInput">TagValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbsOutputReference.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbsOutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbsOutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbsOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbsOutputReference.property.tagKey">TagKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbsOutputReference.property.tagValue">TagValue</a></code> | <code>string</code> | *No description.* |
@@ -17031,10 +17031,10 @@ public string[] AwsRegionsInput { get; }
 ##### `FetchExtendedInventoryInput`<sup>Optional</sup> <a name="FetchExtendedInventoryInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbsOutputReference.property.fetchExtendedInventoryInput"></a>
 
 ```csharp
-public object FetchExtendedInventoryInput { get; }
+public bool|IResolvable FetchExtendedInventoryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17081,10 +17081,10 @@ public string[] AwsRegions { get; }
 ##### `FetchExtendedInventory`<sup>Required</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEbsOutputReference.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; }
+public bool|IResolvable FetchExtendedInventory { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17382,14 +17382,14 @@ private void ResetTagValue()
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.duplicateEc2TagsInput">DuplicateEc2TagsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.fetchIpAddressesInput">FetchIpAddressesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.duplicateEc2TagsInput">DuplicateEc2TagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.fetchIpAddressesInput">FetchIpAddressesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.tagKeyInput">TagKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.tagValueInput">TagValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.duplicateEc2Tags">DuplicateEc2Tags</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.fetchIpAddresses">FetchIpAddresses</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.duplicateEc2Tags">DuplicateEc2Tags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.fetchIpAddresses">FetchIpAddresses</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.tagKey">TagKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.tagValue">TagValue</a></code> | <code>string</code> | *No description.* |
@@ -17434,20 +17434,20 @@ public string[] AwsRegionsInput { get; }
 ##### `DuplicateEc2TagsInput`<sup>Optional</sup> <a name="DuplicateEc2TagsInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.duplicateEc2TagsInput"></a>
 
 ```csharp
-public object DuplicateEc2TagsInput { get; }
+public bool|IResolvable DuplicateEc2TagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchIpAddressesInput`<sup>Optional</sup> <a name="FetchIpAddressesInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.fetchIpAddressesInput"></a>
 
 ```csharp
-public object FetchIpAddressesInput { get; }
+public bool|IResolvable FetchIpAddressesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17494,20 +17494,20 @@ public string[] AwsRegions { get; }
 ##### `DuplicateEc2Tags`<sup>Required</sup> <a name="DuplicateEc2Tags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.duplicateEc2Tags"></a>
 
 ```csharp
-public object DuplicateEc2Tags { get; }
+public bool|IResolvable DuplicateEc2Tags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchIpAddresses`<sup>Required</sup> <a name="FetchIpAddresses" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEc2OutputReference.property.fetchIpAddresses"></a>
 
 ```csharp
-public object FetchIpAddresses { get; }
+public bool|IResolvable FetchIpAddresses { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17798,12 +17798,12 @@ private void ResetTagValue()
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcsOutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcsOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcsOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcsOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcsOutputReference.property.tagKeyInput">TagKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcsOutputReference.property.tagValueInput">TagValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcsOutputReference.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcsOutputReference.property.fetchTags">FetchTags</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcsOutputReference.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcsOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcsOutputReference.property.tagKey">TagKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcsOutputReference.property.tagValue">TagValue</a></code> | <code>string</code> | *No description.* |
@@ -17848,10 +17848,10 @@ public string[] AwsRegionsInput { get; }
 ##### `FetchTagsInput`<sup>Optional</sup> <a name="FetchTagsInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcsOutputReference.property.fetchTagsInput"></a>
 
 ```csharp
-public object FetchTagsInput { get; }
+public bool|IResolvable FetchTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -17898,10 +17898,10 @@ public string[] AwsRegions { get; }
 ##### `FetchTags`<sup>Required</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEcsOutputReference.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; }
+public bool|IResolvable FetchTags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -18192,12 +18192,12 @@ private void ResetTagValue()
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfsOutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfsOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfsOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfsOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfsOutputReference.property.tagKeyInput">TagKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfsOutputReference.property.tagValueInput">TagValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfsOutputReference.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfsOutputReference.property.fetchTags">FetchTags</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfsOutputReference.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfsOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfsOutputReference.property.tagKey">TagKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfsOutputReference.property.tagValue">TagValue</a></code> | <code>string</code> | *No description.* |
@@ -18242,10 +18242,10 @@ public string[] AwsRegionsInput { get; }
 ##### `FetchTagsInput`<sup>Optional</sup> <a name="FetchTagsInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfsOutputReference.property.fetchTagsInput"></a>
 
 ```csharp
-public object FetchTagsInput { get; }
+public bool|IResolvable FetchTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -18292,10 +18292,10 @@ public string[] AwsRegions { get; }
 ##### `FetchTags`<sup>Required</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEfsOutputReference.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; }
+public bool|IResolvable FetchTags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -18586,12 +18586,12 @@ private void ResetTagValue()
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticacheOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticacheOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticacheOutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticacheOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticacheOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticacheOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticacheOutputReference.property.tagKeyInput">TagKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticacheOutputReference.property.tagValueInput">TagValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticacheOutputReference.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticacheOutputReference.property.fetchTags">FetchTags</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticacheOutputReference.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticacheOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticacheOutputReference.property.tagKey">TagKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticacheOutputReference.property.tagValue">TagValue</a></code> | <code>string</code> | *No description.* |
@@ -18636,10 +18636,10 @@ public string[] AwsRegionsInput { get; }
 ##### `FetchTagsInput`<sup>Optional</sup> <a name="FetchTagsInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticacheOutputReference.property.fetchTagsInput"></a>
 
 ```csharp
-public object FetchTagsInput { get; }
+public bool|IResolvable FetchTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -18686,10 +18686,10 @@ public string[] AwsRegions { get; }
 ##### `FetchTags`<sup>Required</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticacheOutputReference.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; }
+public bool|IResolvable FetchTags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -18987,14 +18987,14 @@ private void ResetTagValue()
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.tagKeyInput">TagKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.tagValueInput">TagValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.fetchTags">FetchTags</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.tagKey">TagKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.tagValue">TagValue</a></code> | <code>string</code> | *No description.* |
@@ -19039,20 +19039,20 @@ public string[] AwsRegionsInput { get; }
 ##### `FetchExtendedInventoryInput`<sup>Optional</sup> <a name="FetchExtendedInventoryInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.fetchExtendedInventoryInput"></a>
 
 ```csharp
-public object FetchExtendedInventoryInput { get; }
+public bool|IResolvable FetchExtendedInventoryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchTagsInput`<sup>Optional</sup> <a name="FetchTagsInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.fetchTagsInput"></a>
 
 ```csharp
-public object FetchTagsInput { get; }
+public bool|IResolvable FetchTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19099,20 +19099,20 @@ public string[] AwsRegions { get; }
 ##### `FetchExtendedInventory`<sup>Required</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; }
+public bool|IResolvable FetchExtendedInventory { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchTags`<sup>Required</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticbeanstalkOutputReference.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; }
+public bool|IResolvable FetchTags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19403,12 +19403,12 @@ private void ResetTagValue()
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearchOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearchOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearchOutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearchOutputReference.property.fetchNodesInput">FetchNodesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearchOutputReference.property.fetchNodesInput">FetchNodesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearchOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearchOutputReference.property.tagKeyInput">TagKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearchOutputReference.property.tagValueInput">TagValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearchOutputReference.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearchOutputReference.property.fetchNodes">FetchNodes</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearchOutputReference.property.fetchNodes">FetchNodes</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearchOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearchOutputReference.property.tagKey">TagKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearchOutputReference.property.tagValue">TagValue</a></code> | <code>string</code> | *No description.* |
@@ -19453,10 +19453,10 @@ public string[] AwsRegionsInput { get; }
 ##### `FetchNodesInput`<sup>Optional</sup> <a name="FetchNodesInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearchOutputReference.property.fetchNodesInput"></a>
 
 ```csharp
-public object FetchNodesInput { get; }
+public bool|IResolvable FetchNodesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19503,10 +19503,10 @@ public string[] AwsRegions { get; }
 ##### `FetchNodes`<sup>Required</sup> <a name="FetchNodes" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElasticsearchOutputReference.property.fetchNodes"></a>
 
 ```csharp
-public object FetchNodes { get; }
+public bool|IResolvable FetchNodes { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19790,12 +19790,12 @@ private void ResetMetricsPollingInterval()
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.fetchTags">FetchTags</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElb">CloudAwsIntegrationsElb</a></code> | *No description.* |
 
@@ -19838,20 +19838,20 @@ public string[] AwsRegionsInput { get; }
 ##### `FetchExtendedInventoryInput`<sup>Optional</sup> <a name="FetchExtendedInventoryInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.fetchExtendedInventoryInput"></a>
 
 ```csharp
-public object FetchExtendedInventoryInput { get; }
+public bool|IResolvable FetchExtendedInventoryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchTagsInput`<sup>Optional</sup> <a name="FetchTagsInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.fetchTagsInput"></a>
 
 ```csharp
-public object FetchTagsInput { get; }
+public bool|IResolvable FetchTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -19878,20 +19878,20 @@ public string[] AwsRegions { get; }
 ##### `FetchExtendedInventory`<sup>Required</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; }
+public bool|IResolvable FetchExtendedInventory { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchTags`<sup>Required</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsElbOutputReference.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; }
+public bool|IResolvable FetchTags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -20162,12 +20162,12 @@ private void ResetTagValue()
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmrOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmrOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmrOutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmrOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmrOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmrOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmrOutputReference.property.tagKeyInput">TagKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmrOutputReference.property.tagValueInput">TagValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmrOutputReference.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmrOutputReference.property.fetchTags">FetchTags</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmrOutputReference.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmrOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmrOutputReference.property.tagKey">TagKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmrOutputReference.property.tagValue">TagValue</a></code> | <code>string</code> | *No description.* |
@@ -20212,10 +20212,10 @@ public string[] AwsRegionsInput { get; }
 ##### `FetchTagsInput`<sup>Optional</sup> <a name="FetchTagsInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmrOutputReference.property.fetchTagsInput"></a>
 
 ```csharp
-public object FetchTagsInput { get; }
+public bool|IResolvable FetchTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -20262,10 +20262,10 @@ public string[] AwsRegions { get; }
 ##### `FetchTags`<sup>Required</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsEmrOutputReference.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; }
+public bool|IResolvable FetchTags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21791,14 +21791,14 @@ private void ResetTagValue()
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.fetchShardsInput">FetchShardsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.fetchShardsInput">FetchShardsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.tagKeyInput">TagKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.tagValueInput">TagValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.fetchShards">FetchShards</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.fetchTags">FetchTags</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.fetchShards">FetchShards</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.tagKey">TagKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.tagValue">TagValue</a></code> | <code>string</code> | *No description.* |
@@ -21843,20 +21843,20 @@ public string[] AwsRegionsInput { get; }
 ##### `FetchShardsInput`<sup>Optional</sup> <a name="FetchShardsInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.fetchShardsInput"></a>
 
 ```csharp
-public object FetchShardsInput { get; }
+public bool|IResolvable FetchShardsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchTagsInput`<sup>Optional</sup> <a name="FetchTagsInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.fetchTagsInput"></a>
 
 ```csharp
-public object FetchTagsInput { get; }
+public bool|IResolvable FetchTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -21903,20 +21903,20 @@ public string[] AwsRegions { get; }
 ##### `FetchShards`<sup>Required</sup> <a name="FetchShards" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.fetchShards"></a>
 
 ```csharp
-public object FetchShards { get; }
+public bool|IResolvable FetchShards { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchTags`<sup>Required</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsKinesisOutputReference.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; }
+public bool|IResolvable FetchTags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -22207,12 +22207,12 @@ private void ResetTagValue()
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambdaOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambdaOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambdaOutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambdaOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambdaOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambdaOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambdaOutputReference.property.tagKeyInput">TagKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambdaOutputReference.property.tagValueInput">TagValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambdaOutputReference.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambdaOutputReference.property.fetchTags">FetchTags</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambdaOutputReference.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambdaOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambdaOutputReference.property.tagKey">TagKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambdaOutputReference.property.tagValue">TagValue</a></code> | <code>string</code> | *No description.* |
@@ -22257,10 +22257,10 @@ public string[] AwsRegionsInput { get; }
 ##### `FetchTagsInput`<sup>Optional</sup> <a name="FetchTagsInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambdaOutputReference.property.fetchTagsInput"></a>
 
 ```csharp
-public object FetchTagsInput { get; }
+public bool|IResolvable FetchTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -22307,10 +22307,10 @@ public string[] AwsRegions { get; }
 ##### `FetchTags`<sup>Required</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsLambdaOutputReference.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; }
+public bool|IResolvable FetchTags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -22601,12 +22601,12 @@ private void ResetTagValue()
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRdsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRdsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRdsOutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRdsOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRdsOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRdsOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRdsOutputReference.property.tagKeyInput">TagKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRdsOutputReference.property.tagValueInput">TagValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRdsOutputReference.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRdsOutputReference.property.fetchTags">FetchTags</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRdsOutputReference.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRdsOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRdsOutputReference.property.tagKey">TagKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRdsOutputReference.property.tagValue">TagValue</a></code> | <code>string</code> | *No description.* |
@@ -22651,10 +22651,10 @@ public string[] AwsRegionsInput { get; }
 ##### `FetchTagsInput`<sup>Optional</sup> <a name="FetchTagsInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRdsOutputReference.property.fetchTagsInput"></a>
 
 ```csharp
-public object FetchTagsInput { get; }
+public bool|IResolvable FetchTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -22701,10 +22701,10 @@ public string[] AwsRegions { get; }
 ##### `FetchTags`<sup>Required</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRdsOutputReference.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; }
+public bool|IResolvable FetchTags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -23338,9 +23338,9 @@ private void ResetMetricsPollingInterval()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53OutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53OutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53OutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53OutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53OutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53OutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53OutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53OutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53">CloudAwsIntegrationsRoute53</a></code> | *No description.* |
 
@@ -23373,10 +23373,10 @@ public string Fqn { get; }
 ##### `FetchExtendedInventoryInput`<sup>Optional</sup> <a name="FetchExtendedInventoryInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53OutputReference.property.fetchExtendedInventoryInput"></a>
 
 ```csharp
-public object FetchExtendedInventoryInput { get; }
+public bool|IResolvable FetchExtendedInventoryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -23393,10 +23393,10 @@ public double MetricsPollingIntervalInput { get; }
 ##### `FetchExtendedInventory`<sup>Required</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsRoute53OutputReference.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; }
+public bool|IResolvable FetchExtendedInventory { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -23666,13 +23666,13 @@ private void ResetTagValue()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.tagKeyInput">TagKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.tagValueInput">TagValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.fetchTags">FetchTags</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.tagKey">TagKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.tagValue">TagValue</a></code> | <code>string</code> | *No description.* |
@@ -23707,20 +23707,20 @@ public string Fqn { get; }
 ##### `FetchExtendedInventoryInput`<sup>Optional</sup> <a name="FetchExtendedInventoryInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.fetchExtendedInventoryInput"></a>
 
 ```csharp
-public object FetchExtendedInventoryInput { get; }
+public bool|IResolvable FetchExtendedInventoryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchTagsInput`<sup>Optional</sup> <a name="FetchTagsInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.fetchTagsInput"></a>
 
 ```csharp
-public object FetchTagsInput { get; }
+public bool|IResolvable FetchTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -23757,20 +23757,20 @@ public string TagValueInput { get; }
 ##### `FetchExtendedInventory`<sup>Required</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; }
+public bool|IResolvable FetchExtendedInventory { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchTags`<sup>Required</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsS3OutputReference.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; }
+public bool|IResolvable FetchTags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24354,10 +24354,10 @@ private void ResetMetricsPollingInterval()
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSnsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSnsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSnsOutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSnsOutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSnsOutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSnsOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSnsOutputReference.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSnsOutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSnsOutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSnsOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSnsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSns">CloudAwsIntegrationsSns</a></code> | *No description.* |
 
@@ -24400,10 +24400,10 @@ public string[] AwsRegionsInput { get; }
 ##### `FetchExtendedInventoryInput`<sup>Optional</sup> <a name="FetchExtendedInventoryInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSnsOutputReference.property.fetchExtendedInventoryInput"></a>
 
 ```csharp
-public object FetchExtendedInventoryInput { get; }
+public bool|IResolvable FetchExtendedInventoryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24430,10 +24430,10 @@ public string[] AwsRegions { get; }
 ##### `FetchExtendedInventory`<sup>Required</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSnsOutputReference.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; }
+public bool|IResolvable FetchExtendedInventory { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24718,15 +24718,15 @@ private void ResetTagValue()
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.fetchExtendedInventoryInput">FetchExtendedInventoryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.fetchTagsInput">FetchTagsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.queuePrefixesInput">QueuePrefixesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.tagKeyInput">TagKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.tagValueInput">TagValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.fetchTags">FetchTags</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.fetchExtendedInventory">FetchExtendedInventory</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.fetchTags">FetchTags</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.queuePrefixes">QueuePrefixes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.tagKey">TagKey</a></code> | <code>string</code> | *No description.* |
@@ -24772,20 +24772,20 @@ public string[] AwsRegionsInput { get; }
 ##### `FetchExtendedInventoryInput`<sup>Optional</sup> <a name="FetchExtendedInventoryInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.fetchExtendedInventoryInput"></a>
 
 ```csharp
-public object FetchExtendedInventoryInput { get; }
+public bool|IResolvable FetchExtendedInventoryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchTagsInput`<sup>Optional</sup> <a name="FetchTagsInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.fetchTagsInput"></a>
 
 ```csharp
-public object FetchTagsInput { get; }
+public bool|IResolvable FetchTagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -24842,20 +24842,20 @@ public string[] AwsRegions { get; }
 ##### `FetchExtendedInventory`<sup>Required</sup> <a name="FetchExtendedInventory" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.fetchExtendedInventory"></a>
 
 ```csharp
-public object FetchExtendedInventory { get; }
+public bool|IResolvable FetchExtendedInventory { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchTags`<sup>Required</sup> <a name="FetchTags" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsSqsOutputReference.property.fetchTags"></a>
 
 ```csharp
-public object FetchTags { get; }
+public bool|IResolvable FetchTags { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25441,14 +25441,14 @@ private void ResetTagValue()
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.awsRegionsInput">AwsRegionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.fetchNatGatewayInput">FetchNatGatewayInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.fetchVpnInput">FetchVpnInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.fetchNatGatewayInput">FetchNatGatewayInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.fetchVpnInput">FetchVpnInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.metricsPollingIntervalInput">MetricsPollingIntervalInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.tagKeyInput">TagKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.tagValueInput">TagValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.awsRegions">AwsRegions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.fetchNatGateway">FetchNatGateway</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.fetchVpn">FetchVpn</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.fetchNatGateway">FetchNatGateway</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.fetchVpn">FetchVpn</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.metricsPollingInterval">MetricsPollingInterval</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.tagKey">TagKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.tagValue">TagValue</a></code> | <code>string</code> | *No description.* |
@@ -25493,20 +25493,20 @@ public string[] AwsRegionsInput { get; }
 ##### `FetchNatGatewayInput`<sup>Optional</sup> <a name="FetchNatGatewayInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.fetchNatGatewayInput"></a>
 
 ```csharp
-public object FetchNatGatewayInput { get; }
+public bool|IResolvable FetchNatGatewayInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchVpnInput`<sup>Optional</sup> <a name="FetchVpnInput" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.fetchVpnInput"></a>
 
 ```csharp
-public object FetchVpnInput { get; }
+public bool|IResolvable FetchVpnInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -25553,20 +25553,20 @@ public string[] AwsRegions { get; }
 ##### `FetchNatGateway`<sup>Required</sup> <a name="FetchNatGateway" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.fetchNatGateway"></a>
 
 ```csharp
-public object FetchNatGateway { get; }
+public bool|IResolvable FetchNatGateway { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `FetchVpn`<sup>Required</sup> <a name="FetchVpn" id="@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsVpcOutputReference.property.fetchVpn"></a>
 
 ```csharp
-public object FetchVpn { get; }
+public bool|IResolvable FetchVpn { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 

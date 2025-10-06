@@ -19,8 +19,7 @@ NewrelicProvider.Builder.create(Construct scope, java.lang.String id)
 //  .apiUrl(java.lang.String)
 //  .cacertFile(java.lang.String)
 //  .infrastructureApiUrl(java.lang.String)
-//  .insecureSkipVerify(java.lang.Boolean)
-//  .insecureSkipVerify(IResolvable)
+//  .insecureSkipVerify(java.lang.Boolean|IResolvable)
 //  .insightsInsertKey(java.lang.String)
 //  .insightsInsertUrl(java.lang.String)
 //  .insightsQueryUrl(java.lang.String)
@@ -41,7 +40,7 @@ NewrelicProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.apiUrl">apiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#api_url NewrelicProvider#api_url}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.cacertFile">cacertFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#cacert_file NewrelicProvider#cacert_file}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.infrastructureApiUrl">infrastructureApiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insecureSkipVerify">insecureSkipVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insecureSkipVerify">insecureSkipVerify</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insightsInsertKey">insightsInsertKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insights_insert_key NewrelicProvider#insights_insert_key}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insightsInsertUrl">insightsInsertUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insights_insert_url NewrelicProvider#insights_insert_url}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insightsQueryUrl">insightsQueryUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insights_query_url NewrelicProvider#insights_query_url}. |
@@ -129,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `insecureSkipVerify`<sup>Optional</sup> <a name="insecureSkipVerify" id="@cdktf/provider-newrelic.provider.NewrelicProvider.Initializer.parameter.insecureSkipVerify"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}.
 
@@ -488,7 +487,7 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiUrlInput">apiUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.cacertFileInput">cacertFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrlInput">infrastructureApiUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerifyInput">insecureSkipVerifyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerifyInput">insecureSkipVerifyInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKeyInput">insightsInsertKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrlInput">insightsInsertUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrlInput">insightsQueryUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -501,7 +500,7 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.apiUrl">apiUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.cacertFile">cacertFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.infrastructureApiUrl">infrastructureApiUrl</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerify">insecureSkipVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerify">insecureSkipVerify</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertKey">insightsInsertKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsInsertUrl">insightsInsertUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProvider.property.insightsQueryUrl">insightsQueryUrl</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -676,10 +675,10 @@ public java.lang.String getInfrastructureApiUrlInput();
 ##### `insecureSkipVerifyInput`<sup>Optional</sup> <a name="insecureSkipVerifyInput" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerifyInput"></a>
 
 ```java
-public java.lang.Object getInsecureSkipVerifyInput();
+public java.lang.Boolean|IResolvable getInsecureSkipVerifyInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -806,10 +805,10 @@ public java.lang.String getInfrastructureApiUrl();
 ##### `insecureSkipVerify`<sup>Optional</sup> <a name="insecureSkipVerify" id="@cdktf/provider-newrelic.provider.NewrelicProvider.property.insecureSkipVerify"></a>
 
 ```java
-public java.lang.Object getInsecureSkipVerify();
+public java.lang.Boolean|IResolvable getInsecureSkipVerify();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -908,8 +907,7 @@ NewrelicProviderConfig.builder()
 //  .apiUrl(java.lang.String)
 //  .cacertFile(java.lang.String)
 //  .infrastructureApiUrl(java.lang.String)
-//  .insecureSkipVerify(java.lang.Boolean)
-//  .insecureSkipVerify(IResolvable)
+//  .insecureSkipVerify(java.lang.Boolean|IResolvable)
 //  .insightsInsertKey(java.lang.String)
 //  .insightsInsertUrl(java.lang.String)
 //  .insightsQueryUrl(java.lang.String)
@@ -930,7 +928,7 @@ NewrelicProviderConfig.builder()
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.apiUrl">apiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#api_url NewrelicProvider#api_url}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.cacertFile">cacertFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#cacert_file NewrelicProvider#cacert_file}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.infrastructureApiUrl">infrastructureApiUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#infrastructure_api_url NewrelicProvider#infrastructure_api_url}. |
-| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify">insecureSkipVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
+| <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify">insecureSkipVerify</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertKey">insightsInsertKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insights_insert_key NewrelicProvider#insights_insert_key}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsInsertUrl">insightsInsertUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insights_insert_url NewrelicProvider#insights_insert_url}. |
 | <code><a href="#@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insightsQueryUrl">insightsQueryUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insights_query_url NewrelicProvider#insights_query_url}. |
@@ -1029,10 +1027,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `insecureSkipVerify`<sup>Optional</sup> <a name="insecureSkipVerify" id="@cdktf/provider-newrelic.provider.NewrelicProviderConfig.property.insecureSkipVerify"></a>
 
 ```java
-public java.lang.Object getInsecureSkipVerify();
+public java.lang.Boolean|IResolvable getInsecureSkipVerify();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs#insecure_skip_verify NewrelicProvider#insecure_skip_verify}.
 

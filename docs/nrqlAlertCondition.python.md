@@ -14,13 +14,13 @@ from cdktf_cdktf_provider_newrelic import nrql_alert_condition
 nrqlAlertCondition.NrqlAlertCondition(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   nrql: NrqlAlertConditionNrql,
   policy_id: typing.Union[int, float],
@@ -30,21 +30,21 @@ nrqlAlertCondition.NrqlAlertCondition(
   aggregation_timer: str = None,
   aggregation_window: typing.Union[int, float] = None,
   baseline_direction: str = None,
-  close_violations_on_expiration: typing.Union[bool, IResolvable] = None,
+  close_violations_on_expiration: bool | IResolvable = None,
   critical: NrqlAlertConditionCritical = None,
   description: str = None,
-  enabled: typing.Union[bool, IResolvable] = None,
+  enabled: bool | IResolvable = None,
   evaluation_delay: typing.Union[int, float] = None,
   expiration_duration: typing.Union[int, float] = None,
   fill_option: str = None,
   fill_value: typing.Union[int, float] = None,
   id: str = None,
-  ignore_on_expected_termination: typing.Union[bool, IResolvable] = None,
-  open_violation_on_expiration: typing.Union[bool, IResolvable] = None,
+  ignore_on_expected_termination: bool | IResolvable = None,
+  open_violation_on_expiration: bool | IResolvable = None,
   runbook_url: str = None,
   signal_seasonality: str = None,
   slide_by: typing.Union[int, float] = None,
-  term: typing.Union[IResolvable, typing.List[NrqlAlertConditionTerm]] = None,
+  term: IResolvable | typing.List[NrqlAlertConditionTerm] = None,
   timeouts: NrqlAlertConditionTimeouts = None,
   title_template: str = None,
   type: str = None,
@@ -58,13 +58,13 @@ nrqlAlertCondition.NrqlAlertCondition(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.name">name</a></code> | <code>str</code> | The title of the condition. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.nrql">nrql</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a></code> | nrql block. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.policyId">policy_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the policy where this condition should be used. |
@@ -74,21 +74,21 @@ nrqlAlertCondition.NrqlAlertCondition(
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationTimer">aggregation_timer</a></code> | <code>str</code> | How long we wait after each data point arrives to make sure we've processed the whole batch. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.aggregationWindow">aggregation_window</a></code> | <code>typing.Union[int, float]</code> | The duration of the time window used to evaluate the NRQL query, in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.baselineDirection">baseline_direction</a></code> | <code>str</code> | The baseline direction of a baseline NRQL alert condition. Valid values are: 'LOWER_ONLY', 'UPPER_AND_LOWER', 'UPPER_ONLY' (case insensitive). |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.closeViolationsOnExpiration">close_violations_on_expiration</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to close all open incidents when the signal expires. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.closeViolationsOnExpiration">close_violations_on_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to close all open incidents when the signal expires. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.critical">critical</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a></code> | critical block. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the NRQL alert condition. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not to enable the alert condition. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to enable the alert condition. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | How long we wait until the signal starts evaluating. The maximum delay is 7200 seconds (120 minutes). |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.expirationDuration">expiration_duration</a></code> | <code>typing.Union[int, float]</code> | The amount of time (in seconds) to wait before considering the signal expired. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.fillOption">fill_option</a></code> | <code>str</code> | Which strategy to use when filling gaps in the signal. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.fillValue">fill_value</a></code> | <code>typing.Union[int, float]</code> | If using the 'static' fill option, this value will be used for filling gaps in the signal. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/nrql_alert_condition#id NrqlAlertCondition#id}. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.ignoreOnExpectedTermination">ignore_on_expected_termination</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to ignore expected termination of a signal when considering whether to create a loss of signal incident. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.openViolationOnExpiration">open_violation_on_expiration</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to create a new incident to capture that the signal expired. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.ignoreOnExpectedTermination">ignore_on_expected_termination</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to ignore expected termination of a signal when considering whether to create a loss of signal incident. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.openViolationOnExpiration">open_violation_on_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to create a new incident to capture that the signal expired. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.runbookUrl">runbook_url</a></code> | <code>str</code> | Runbook URL to display in notifications. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.signalSeasonality">signal_seasonality</a></code> | <code>str</code> | Seasonality under which a condition's signal(s) are evaluated. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.slideBy">slide_by</a></code> | <code>typing.Union[int, float]</code> | The duration of overlapping time windows used to smooth the chart line, in seconds. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.term">term</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]]</code> | term block. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.term">term</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]</code> | term block. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.titleTemplate">title_template</a></code> | <code>str</code> | This field allows you to create a custom title to be used when incidents are opened by the condition. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.type">type</a></code> | <code>str</code> | The type of NRQL alert condition to create. Valid values are: 'static', 'baseline'. |
@@ -118,13 +118,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -154,7 +154,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -256,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `close_violations_on_expiration`<sup>Optional</sup> <a name="close_violations_on_expiration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.closeViolationsOnExpiration"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to close all open incidents when the signal expires.
 
@@ -286,7 +286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.enabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not to enable the alert condition.
 
@@ -351,7 +351,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `ignore_on_expected_termination`<sup>Optional</sup> <a name="ignore_on_expected_termination" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.ignoreOnExpectedTermination"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to ignore expected termination of a signal when considering whether to create a loss of signal incident.
 
@@ -361,7 +361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `open_violation_on_expiration`<sup>Optional</sup> <a name="open_violation_on_expiration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.openViolationOnExpiration"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to create a new incident to capture that the signal expired.
 
@@ -405,7 +405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `term`<sup>Optional</sup> <a name="term" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.Initializer.parameter.term"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]
 
 term block.
 
@@ -763,7 +763,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.importFrom"></a>
@@ -826,7 +826,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -842,7 +842,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -871,7 +871,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ```python
 def put_critical(
   threshold: typing.Union[int, float],
-  disable_health_status_reporting: typing.Union[bool, IResolvable] = None,
+  disable_health_status_reporting: bool | IResolvable = None,
   duration: typing.Union[int, float] = None,
   operator: str = None,
   prediction: NrqlAlertConditionCriticalPrediction = None,
@@ -893,7 +893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ###### `disable_health_status_reporting`<sup>Optional</sup> <a name="disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putCritical.parameter.disableHealthStatusReporting"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Violations will not change system health status for this term.
 
@@ -1024,13 +1024,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ```python
 def put_term(
-  value: typing.Union[IResolvable, typing.List[NrqlAlertConditionTerm]]
+  value: IResolvable | typing.List[NrqlAlertConditionTerm]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putTerm.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]
 
 ---
 
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ```python
 def put_warning(
   threshold: typing.Union[int, float],
-  disable_health_status_reporting: typing.Union[bool, IResolvable] = None,
+  disable_health_status_reporting: bool | IResolvable = None,
   duration: typing.Union[int, float] = None,
   operator: str = None,
   prediction: NrqlAlertConditionWarningPrediction = None,
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ###### `disable_health_status_reporting`<sup>Optional</sup> <a name="disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.putWarning.parameter.disableHealthStatusReporting"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Violations will not change system health status for this term.
 
@@ -1448,13 +1448,13 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.critical">critical</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference">NrqlAlertConditionCriticalOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.entityGuid">entity_guid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.nrql">nrql</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrqlOutputReference">NrqlAlertConditionNrqlOutputReference</a></code> | *No description.* |
@@ -1467,25 +1467,25 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationTimerInput">aggregation_timer_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationWindowInput">aggregation_window_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.baselineDirectionInput">baseline_direction_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.closeViolationsOnExpirationInput">close_violations_on_expiration_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.closeViolationsOnExpirationInput">close_violations_on_expiration_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.criticalInput">critical_input</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.evaluationDelayInput">evaluation_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.expirationDurationInput">expiration_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillOptionInput">fill_option_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillValueInput">fill_value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.ignoreOnExpectedTerminationInput">ignore_on_expected_termination_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.ignoreOnExpectedTerminationInput">ignore_on_expected_termination_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.nrqlInput">nrql_input</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.openViolationOnExpirationInput">open_violation_on_expiration_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.openViolationOnExpirationInput">open_violation_on_expiration_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.policyIdInput">policy_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.runbookUrlInput">runbook_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.signalSeasonalityInput">signal_seasonality_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.slideByInput">slide_by_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.termInput">term_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.termInput">term_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.titleTemplateInput">title_template_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.violationTimeLimitInput">violation_time_limit_input</a></code> | <code>str</code> | *No description.* |
@@ -1497,17 +1497,17 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationTimer">aggregation_timer</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.aggregationWindow">aggregation_window</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.baselineDirection">baseline_direction</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.closeViolationsOnExpiration">close_violations_on_expiration</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.closeViolationsOnExpiration">close_violations_on_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.expirationDuration">expiration_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillOption">fill_option</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.fillValue">fill_value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.ignoreOnExpectedTermination">ignore_on_expected_termination</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.ignoreOnExpectedTermination">ignore_on_expected_termination</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.openViolationOnExpiration">open_violation_on_expiration</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.openViolationOnExpiration">open_violation_on_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.policyId">policy_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.runbookUrl">runbook_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.signalSeasonality">signal_seasonality</a></code> | <code>str</code> | *No description.* |
@@ -1594,20 +1594,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1654,10 +1654,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1784,10 +1784,10 @@ baseline_direction_input: str
 ##### `close_violations_on_expiration_input`<sup>Optional</sup> <a name="close_violations_on_expiration_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.closeViolationsOnExpirationInput"></a>
 
 ```python
-close_violations_on_expiration_input: typing.Union[bool, IResolvable]
+close_violations_on_expiration_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1814,10 +1814,10 @@ description_input: str
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.enabledInput"></a>
 
 ```python
-enabled_input: typing.Union[bool, IResolvable]
+enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1874,10 +1874,10 @@ id_input: str
 ##### `ignore_on_expected_termination_input`<sup>Optional</sup> <a name="ignore_on_expected_termination_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.ignoreOnExpectedTerminationInput"></a>
 
 ```python
-ignore_on_expected_termination_input: typing.Union[bool, IResolvable]
+ignore_on_expected_termination_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1904,10 +1904,10 @@ nrql_input: NrqlAlertConditionNrql
 ##### `open_violation_on_expiration_input`<sup>Optional</sup> <a name="open_violation_on_expiration_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.openViolationOnExpirationInput"></a>
 
 ```python
-open_violation_on_expiration_input: typing.Union[bool, IResolvable]
+open_violation_on_expiration_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1954,20 +1954,20 @@ slide_by_input: typing.Union[int, float]
 ##### `term_input`<sup>Optional</sup> <a name="term_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.termInput"></a>
 
 ```python
-term_input: typing.Union[IResolvable, typing.List[NrqlAlertConditionTerm]]
+term_input: IResolvable | typing.List[NrqlAlertConditionTerm]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]
 
 ---
 
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, NrqlAlertConditionTimeouts]
+timeouts_input: IResolvable | NrqlAlertConditionTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a>
 
 ---
 
@@ -2084,10 +2084,10 @@ baseline_direction: str
 ##### `close_violations_on_expiration`<sup>Required</sup> <a name="close_violations_on_expiration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.closeViolationsOnExpiration"></a>
 
 ```python
-close_violations_on_expiration: typing.Union[bool, IResolvable]
+close_violations_on_expiration: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2104,10 +2104,10 @@ description: str
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2164,10 +2164,10 @@ id: str
 ##### `ignore_on_expected_termination`<sup>Required</sup> <a name="ignore_on_expected_termination" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.ignoreOnExpectedTermination"></a>
 
 ```python
-ignore_on_expected_termination: typing.Union[bool, IResolvable]
+ignore_on_expected_termination: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2184,10 +2184,10 @@ name: str
 ##### `open_violation_on_expiration`<sup>Required</sup> <a name="open_violation_on_expiration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertCondition.property.openViolationOnExpiration"></a>
 
 ```python
-open_violation_on_expiration: typing.Union[bool, IResolvable]
+open_violation_on_expiration: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2299,13 +2299,13 @@ tfResourceType: str
 from cdktf_cdktf_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   nrql: NrqlAlertConditionNrql,
   policy_id: typing.Union[int, float],
@@ -2315,21 +2315,21 @@ nrqlAlertCondition.NrqlAlertConditionConfig(
   aggregation_timer: str = None,
   aggregation_window: typing.Union[int, float] = None,
   baseline_direction: str = None,
-  close_violations_on_expiration: typing.Union[bool, IResolvable] = None,
+  close_violations_on_expiration: bool | IResolvable = None,
   critical: NrqlAlertConditionCritical = None,
   description: str = None,
-  enabled: typing.Union[bool, IResolvable] = None,
+  enabled: bool | IResolvable = None,
   evaluation_delay: typing.Union[int, float] = None,
   expiration_duration: typing.Union[int, float] = None,
   fill_option: str = None,
   fill_value: typing.Union[int, float] = None,
   id: str = None,
-  ignore_on_expected_termination: typing.Union[bool, IResolvable] = None,
-  open_violation_on_expiration: typing.Union[bool, IResolvable] = None,
+  ignore_on_expected_termination: bool | IResolvable = None,
+  open_violation_on_expiration: bool | IResolvable = None,
   runbook_url: str = None,
   signal_seasonality: str = None,
   slide_by: typing.Union[int, float] = None,
-  term: typing.Union[IResolvable, typing.List[NrqlAlertConditionTerm]] = None,
+  term: IResolvable | typing.List[NrqlAlertConditionTerm] = None,
   timeouts: NrqlAlertConditionTimeouts = None,
   title_template: str = None,
   type: str = None,
@@ -2343,13 +2343,13 @@ nrqlAlertCondition.NrqlAlertConditionConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.name">name</a></code> | <code>str</code> | The title of the condition. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.nrql">nrql</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionNrql">NrqlAlertConditionNrql</a></code> | nrql block. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.policyId">policy_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the policy where this condition should be used. |
@@ -2359,21 +2359,21 @@ nrqlAlertCondition.NrqlAlertConditionConfig(
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationTimer">aggregation_timer</a></code> | <code>str</code> | How long we wait after each data point arrives to make sure we've processed the whole batch. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.aggregationWindow">aggregation_window</a></code> | <code>typing.Union[int, float]</code> | The duration of the time window used to evaluate the NRQL query, in seconds. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.baselineDirection">baseline_direction</a></code> | <code>str</code> | The baseline direction of a baseline NRQL alert condition. Valid values are: 'LOWER_ONLY', 'UPPER_AND_LOWER', 'UPPER_ONLY' (case insensitive). |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.closeViolationsOnExpiration">close_violations_on_expiration</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to close all open incidents when the signal expires. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.closeViolationsOnExpiration">close_violations_on_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to close all open incidents when the signal expires. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.critical">critical</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical">NrqlAlertConditionCritical</a></code> | critical block. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.description">description</a></code> | <code>str</code> | The description of the NRQL alert condition. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not to enable the alert condition. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to enable the alert condition. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | How long we wait until the signal starts evaluating. The maximum delay is 7200 seconds (120 minutes). |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.expirationDuration">expiration_duration</a></code> | <code>typing.Union[int, float]</code> | The amount of time (in seconds) to wait before considering the signal expired. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.fillOption">fill_option</a></code> | <code>str</code> | Which strategy to use when filling gaps in the signal. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.fillValue">fill_value</a></code> | <code>typing.Union[int, float]</code> | If using the 'static' fill option, this value will be used for filling gaps in the signal. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/nrql_alert_condition#id NrqlAlertCondition#id}. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.ignoreOnExpectedTermination">ignore_on_expected_termination</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to ignore expected termination of a signal when considering whether to create a loss of signal incident. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.openViolationOnExpiration">open_violation_on_expiration</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to create a new incident to capture that the signal expired. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.ignoreOnExpectedTermination">ignore_on_expected_termination</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to ignore expected termination of a signal when considering whether to create a loss of signal incident. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.openViolationOnExpiration">open_violation_on_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to create a new incident to capture that the signal expired. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.runbookUrl">runbook_url</a></code> | <code>str</code> | Runbook URL to display in notifications. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.signalSeasonality">signal_seasonality</a></code> | <code>str</code> | Seasonality under which a condition's signal(s) are evaluated. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.slideBy">slide_by</a></code> | <code>typing.Union[int, float]</code> | The duration of overlapping time windows used to smooth the chart line, in seconds. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.term">term</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]]</code> | term block. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.term">term</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]</code> | term block. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.titleTemplate">title_template</a></code> | <code>str</code> | This field allows you to create a custom title to be used when incidents are opened by the condition. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.type">type</a></code> | <code>str</code> | The type of NRQL alert condition to create. Valid values are: 'static', 'baseline'. |
@@ -2386,20 +2386,20 @@ nrqlAlertCondition.NrqlAlertConditionConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2446,10 +2446,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2588,10 +2588,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `close_violations_on_expiration`<sup>Optional</sup> <a name="close_violations_on_expiration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.closeViolationsOnExpiration"></a>
 
 ```python
-close_violations_on_expiration: typing.Union[bool, IResolvable]
+close_violations_on_expiration: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to close all open incidents when the signal expires.
 
@@ -2630,10 +2630,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not to enable the alert condition.
 
@@ -2719,10 +2719,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `ignore_on_expected_termination`<sup>Optional</sup> <a name="ignore_on_expected_termination" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.ignoreOnExpectedTermination"></a>
 
 ```python
-ignore_on_expected_termination: typing.Union[bool, IResolvable]
+ignore_on_expected_termination: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to ignore expected termination of a signal when considering whether to create a loss of signal incident.
 
@@ -2733,10 +2733,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `open_violation_on_expiration`<sup>Optional</sup> <a name="open_violation_on_expiration" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.openViolationOnExpiration"></a>
 
 ```python
-open_violation_on_expiration: typing.Union[bool, IResolvable]
+open_violation_on_expiration: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to create a new incident to capture that the signal expired.
 
@@ -2793,10 +2793,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `term`<sup>Optional</sup> <a name="term" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionConfig.property.term"></a>
 
 ```python
-term: typing.Union[IResolvable, typing.List[NrqlAlertConditionTerm]]
+term: IResolvable | typing.List[NrqlAlertConditionTerm]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]
 
 term block.
 
@@ -2903,7 +2903,7 @@ from cdktf_cdktf_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionCritical(
   threshold: typing.Union[int, float],
-  disable_health_status_reporting: typing.Union[bool, IResolvable] = None,
+  disable_health_status_reporting: bool | IResolvable = None,
   duration: typing.Union[int, float] = None,
   operator: str = None,
   prediction: NrqlAlertConditionCriticalPrediction = None,
@@ -2918,7 +2918,7 @@ nrqlAlertCondition.NrqlAlertConditionCritical(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | For baseline conditions must be in range [1, 1000]. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Violations will not change system health status for this term. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktf.IResolvable</code> | Violations will not change system health status for this term. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | In minutes, must be in the range of 1 to 120 (inclusive). |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.operator">operator</a></code> | <code>str</code> | One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.prediction">prediction</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction">NrqlAlertConditionCriticalPrediction</a></code> | prediction block. |
@@ -2945,10 +2945,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `disable_health_status_reporting`<sup>Optional</sup> <a name="disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCritical.property.disableHealthStatusReporting"></a>
 
 ```python
-disable_health_status_reporting: typing.Union[bool, IResolvable]
+disable_health_status_reporting: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Violations will not change system health status for this term.
 
@@ -3053,7 +3053,7 @@ from cdktf_cdktf_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionCriticalPrediction(
   predict_by: typing.Union[int, float] = None,
-  prefer_prediction_violation: typing.Union[bool, IResolvable] = None
+  prefer_prediction_violation: bool | IResolvable = None
 )
 ```
 
@@ -3062,7 +3062,7 @@ nrqlAlertCondition.NrqlAlertConditionCriticalPrediction(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | BETA PREVIEW: the `predict_by` field is in limited release and only enabled for preview on a per-account basis. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktf.IResolvable</code> | BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis. |
 
 ---
 
@@ -3085,10 +3085,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction.property.preferPredictionViolation"></a>
 
 ```python
-prefer_prediction_violation: typing.Union[bool, IResolvable]
+prefer_prediction_violation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis.
 
@@ -3193,7 +3193,7 @@ from cdktf_cdktf_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionTerm(
   threshold: typing.Union[int, float],
-  disable_health_status_reporting: typing.Union[bool, IResolvable] = None,
+  disable_health_status_reporting: bool | IResolvable = None,
   duration: typing.Union[int, float] = None,
   operator: str = None,
   prediction: NrqlAlertConditionTermPrediction = None,
@@ -3209,7 +3209,7 @@ nrqlAlertCondition.NrqlAlertConditionTerm(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | For baseline conditions must be in range [1, 1000]. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Violations will not change system health status for this term. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktf.IResolvable</code> | Violations will not change system health status for this term. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | In minutes, must be in the range of 1 to 120 (inclusive). |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.operator">operator</a></code> | <code>str</code> | One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.prediction">prediction</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction">NrqlAlertConditionTermPrediction</a></code> | prediction block. |
@@ -3237,10 +3237,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `disable_health_status_reporting`<sup>Optional</sup> <a name="disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm.property.disableHealthStatusReporting"></a>
 
 ```python
-disable_health_status_reporting: typing.Union[bool, IResolvable]
+disable_health_status_reporting: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Violations will not change system health status for this term.
 
@@ -3359,7 +3359,7 @@ from cdktf_cdktf_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionTermPrediction(
   predict_by: typing.Union[int, float] = None,
-  prefer_prediction_violation: typing.Union[bool, IResolvable] = None
+  prefer_prediction_violation: bool | IResolvable = None
 )
 ```
 
@@ -3368,7 +3368,7 @@ nrqlAlertCondition.NrqlAlertConditionTermPrediction(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | BETA PREVIEW: the `predict_by` field is in limited release and only enabled for preview on a per-account basis. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktf.IResolvable</code> | BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis. |
 
 ---
 
@@ -3391,10 +3391,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction.property.preferPredictionViolation"></a>
 
 ```python
-prefer_prediction_violation: typing.Union[bool, IResolvable]
+prefer_prediction_violation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis.
 
@@ -3445,7 +3445,7 @@ from cdktf_cdktf_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionWarning(
   threshold: typing.Union[int, float],
-  disable_health_status_reporting: typing.Union[bool, IResolvable] = None,
+  disable_health_status_reporting: bool | IResolvable = None,
   duration: typing.Union[int, float] = None,
   operator: str = None,
   prediction: NrqlAlertConditionWarningPrediction = None,
@@ -3460,7 +3460,7 @@ nrqlAlertCondition.NrqlAlertConditionWarning(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | For baseline conditions must be in range [1, 1000]. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Violations will not change system health status for this term. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktf.IResolvable</code> | Violations will not change system health status for this term. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | In minutes, must be in the range of 1 to 120 (inclusive). |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.operator">operator</a></code> | <code>str</code> | One of (above, above_or_equals, below, below_or_equals, equals, not_equals). Defaults to 'equals'. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.prediction">prediction</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction">NrqlAlertConditionWarningPrediction</a></code> | prediction block. |
@@ -3487,10 +3487,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `disable_health_status_reporting`<sup>Optional</sup> <a name="disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarning.property.disableHealthStatusReporting"></a>
 
 ```python
-disable_health_status_reporting: typing.Union[bool, IResolvable]
+disable_health_status_reporting: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Violations will not change system health status for this term.
 
@@ -3595,7 +3595,7 @@ from cdktf_cdktf_provider_newrelic import nrql_alert_condition
 
 nrqlAlertCondition.NrqlAlertConditionWarningPrediction(
   predict_by: typing.Union[int, float] = None,
-  prefer_prediction_violation: typing.Union[bool, IResolvable] = None
+  prefer_prediction_violation: bool | IResolvable = None
 )
 ```
 
@@ -3604,7 +3604,7 @@ nrqlAlertCondition.NrqlAlertConditionWarningPrediction(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | BETA PREVIEW: the `predict_by` field is in limited release and only enabled for preview on a per-account basis. |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis. |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktf.IResolvable</code> | BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis. |
 
 ---
 
@@ -3627,10 +3627,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction.property.preferPredictionViolation"></a>
 
 ```python
-prefer_prediction_violation: typing.Union[bool, IResolvable]
+prefer_prediction_violation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis.
 
@@ -3883,7 +3883,7 @@ Returns a reversible string representation.
 ```python
 def put_prediction(
   predict_by: typing.Union[int, float] = None,
-  prefer_prediction_violation: typing.Union[bool, IResolvable] = None
+  prefer_prediction_violation: bool | IResolvable = None
 ) -> None
 ```
 
@@ -3901,7 +3901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ###### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.putPrediction.parameter.preferPredictionViolation"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis.
 
@@ -3961,7 +3961,7 @@ def reset_time_function() -> None
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.prediction">prediction</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference">NrqlAlertConditionCriticalPredictionOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.disableHealthStatusReportingInput">disable_health_status_reporting_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.disableHealthStatusReportingInput">disable_health_status_reporting_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.durationInput">duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.operatorInput">operator_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.predictionInput">prediction_input</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction">NrqlAlertConditionCriticalPrediction</a></code> | *No description.* |
@@ -3969,7 +3969,7 @@ def reset_time_function() -> None
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdInput">threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.thresholdOccurrencesInput">threshold_occurrences_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.timeFunctionInput">time_function_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -4017,10 +4017,10 @@ prediction: NrqlAlertConditionCriticalPredictionOutputReference
 ##### `disable_health_status_reporting_input`<sup>Optional</sup> <a name="disable_health_status_reporting_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.disableHealthStatusReportingInput"></a>
 
 ```python
-disable_health_status_reporting_input: typing.Union[bool, IResolvable]
+disable_health_status_reporting_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4097,10 +4097,10 @@ time_function_input: str
 ##### `disable_health_status_reporting`<sup>Required</sup> <a name="disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalOutputReference.property.disableHealthStatusReporting"></a>
 
 ```python
-disable_health_status_reporting: typing.Union[bool, IResolvable]
+disable_health_status_reporting: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4425,9 +4425,9 @@ def reset_prefer_prediction_violation() -> None
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.predictByInput">predict_by_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.preferPredictionViolationInput">prefer_prediction_violation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.preferPredictionViolationInput">prefer_prediction_violation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction">NrqlAlertConditionCriticalPrediction</a></code> | *No description.* |
 
 ---
@@ -4469,10 +4469,10 @@ predict_by_input: typing.Union[int, float]
 ##### `prefer_prediction_violation_input`<sup>Optional</sup> <a name="prefer_prediction_violation_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.preferPredictionViolationInput"></a>
 
 ```python
-prefer_prediction_violation_input: typing.Union[bool, IResolvable]
+prefer_prediction_violation_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4489,10 +4489,10 @@ predict_by: typing.Union[int, float]
 ##### `prefer_prediction_violation`<sup>Required</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference.property.preferPredictionViolation"></a>
 
 ```python
-prefer_prediction_violation: typing.Union[bool, IResolvable]
+prefer_prediction_violation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5021,7 +5021,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]</code> | *No description.* |
 
 ---
 
@@ -5052,10 +5052,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[NrqlAlertConditionTerm]]
+internal_value: IResolvable | typing.List[NrqlAlertConditionTerm]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]
 
 ---
 
@@ -5322,7 +5322,7 @@ Returns a reversible string representation.
 ```python
 def put_prediction(
   predict_by: typing.Union[int, float] = None,
-  prefer_prediction_violation: typing.Union[bool, IResolvable] = None
+  prefer_prediction_violation: bool | IResolvable = None
 ) -> None
 ```
 
@@ -5340,7 +5340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ###### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.putPrediction.parameter.preferPredictionViolation"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis.
 
@@ -5406,7 +5406,7 @@ def reset_time_function() -> None
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.prediction">prediction</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference">NrqlAlertConditionTermPredictionOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.disableHealthStatusReportingInput">disable_health_status_reporting_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.disableHealthStatusReportingInput">disable_health_status_reporting_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.durationInput">duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.operatorInput">operator_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.predictionInput">prediction_input</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction">NrqlAlertConditionTermPrediction</a></code> | *No description.* |
@@ -5415,7 +5415,7 @@ def reset_time_function() -> None
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdInput">threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdOccurrencesInput">threshold_occurrences_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.timeFunctionInput">time_function_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.priority">priority</a></code> | <code>str</code> | *No description.* |
@@ -5423,7 +5423,7 @@ def reset_time_function() -> None
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdDuration">threshold_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.thresholdOccurrences">threshold_occurrences</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.timeFunction">time_function</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a></code> | *No description.* |
 
 ---
 
@@ -5464,10 +5464,10 @@ prediction: NrqlAlertConditionTermPredictionOutputReference
 ##### `disable_health_status_reporting_input`<sup>Optional</sup> <a name="disable_health_status_reporting_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.disableHealthStatusReportingInput"></a>
 
 ```python
-disable_health_status_reporting_input: typing.Union[bool, IResolvable]
+disable_health_status_reporting_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5554,10 +5554,10 @@ time_function_input: str
 ##### `disable_health_status_reporting`<sup>Required</sup> <a name="disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.disableHealthStatusReporting"></a>
 
 ```python
-disable_health_status_reporting: typing.Union[bool, IResolvable]
+disable_health_status_reporting: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5634,10 +5634,10 @@ time_function: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, NrqlAlertConditionTerm]
+internal_value: IResolvable | NrqlAlertConditionTerm
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTerm">NrqlAlertConditionTerm</a>
 
 ---
 
@@ -5892,9 +5892,9 @@ def reset_prefer_prediction_violation() -> None
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.predictByInput">predict_by_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.preferPredictionViolationInput">prefer_prediction_violation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.preferPredictionViolationInput">prefer_prediction_violation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction">NrqlAlertConditionTermPrediction</a></code> | *No description.* |
 
 ---
@@ -5936,10 +5936,10 @@ predict_by_input: typing.Union[int, float]
 ##### `prefer_prediction_violation_input`<sup>Optional</sup> <a name="prefer_prediction_violation_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.preferPredictionViolationInput"></a>
 
 ```python
-prefer_prediction_violation_input: typing.Union[bool, IResolvable]
+prefer_prediction_violation_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5956,10 +5956,10 @@ predict_by: typing.Union[int, float]
 ##### `prefer_prediction_violation`<sup>Required</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference.property.preferPredictionViolation"></a>
 
 ```python
-prefer_prediction_violation: typing.Union[bool, IResolvable]
+prefer_prediction_violation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -6218,7 +6218,7 @@ def reset_create() -> None
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -6269,10 +6269,10 @@ create: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, NrqlAlertConditionTimeouts]
+internal_value: IResolvable | NrqlAlertConditionTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTimeouts">NrqlAlertConditionTimeouts</a>
 
 ---
 
@@ -6518,7 +6518,7 @@ Returns a reversible string representation.
 ```python
 def put_prediction(
   predict_by: typing.Union[int, float] = None,
-  prefer_prediction_violation: typing.Union[bool, IResolvable] = None
+  prefer_prediction_violation: bool | IResolvable = None
 ) -> None
 ```
 
@@ -6536,7 +6536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ###### `prefer_prediction_violation`<sup>Optional</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.putPrediction.parameter.preferPredictionViolation"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 BETA PREVIEW: the `prefer_prediction_violation` field is in limited release and only enabled for preview on a per-account basis.
 
@@ -6596,7 +6596,7 @@ def reset_time_function() -> None
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.prediction">prediction</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference">NrqlAlertConditionWarningPredictionOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.disableHealthStatusReportingInput">disable_health_status_reporting_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.disableHealthStatusReportingInput">disable_health_status_reporting_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.durationInput">duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.operatorInput">operator_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.predictionInput">prediction_input</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction">NrqlAlertConditionWarningPrediction</a></code> | *No description.* |
@@ -6604,7 +6604,7 @@ def reset_time_function() -> None
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdInput">threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.thresholdOccurrencesInput">threshold_occurrences_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.timeFunctionInput">time_function_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.disableHealthStatusReporting">disable_health_status_reporting</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -6652,10 +6652,10 @@ prediction: NrqlAlertConditionWarningPredictionOutputReference
 ##### `disable_health_status_reporting_input`<sup>Optional</sup> <a name="disable_health_status_reporting_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.disableHealthStatusReportingInput"></a>
 
 ```python
-disable_health_status_reporting_input: typing.Union[bool, IResolvable]
+disable_health_status_reporting_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -6732,10 +6732,10 @@ time_function_input: str
 ##### `disable_health_status_reporting`<sup>Required</sup> <a name="disable_health_status_reporting" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningOutputReference.property.disableHealthStatusReporting"></a>
 
 ```python
-disable_health_status_reporting: typing.Union[bool, IResolvable]
+disable_health_status_reporting: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7060,9 +7060,9 @@ def reset_prefer_prediction_violation() -> None
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.predictByInput">predict_by_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.preferPredictionViolationInput">prefer_prediction_violation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.preferPredictionViolationInput">prefer_prediction_violation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.predictBy">predict_by</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.preferPredictionViolation">prefer_prediction_violation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction">NrqlAlertConditionWarningPrediction</a></code> | *No description.* |
 
 ---
@@ -7104,10 +7104,10 @@ predict_by_input: typing.Union[int, float]
 ##### `prefer_prediction_violation_input`<sup>Optional</sup> <a name="prefer_prediction_violation_input" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.preferPredictionViolationInput"></a>
 
 ```python
-prefer_prediction_violation_input: typing.Union[bool, IResolvable]
+prefer_prediction_violation_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7124,10 +7124,10 @@ predict_by: typing.Union[int, float]
 ##### `prefer_prediction_violation`<sup>Required</sup> <a name="prefer_prediction_violation" id="@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference.property.preferPredictionViolation"></a>
 
 ```python
-prefer_prediction_violation: typing.Union[bool, IResolvable]
+prefer_prediction_violation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 

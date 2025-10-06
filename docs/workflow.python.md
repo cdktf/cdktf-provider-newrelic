@@ -14,22 +14,22 @@ from cdktf_cdktf_provider_newrelic import workflow
 workflow.Workflow(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  destination: typing.Union[IResolvable, typing.List[WorkflowDestination]],
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  destination: IResolvable | typing.List[WorkflowDestination],
   issues_filter: WorkflowIssuesFilter,
   muting_rules_handling: str,
   name: str,
   account_id: typing.Union[int, float] = None,
-  destinations_enabled: typing.Union[bool, IResolvable] = None,
-  enabled: typing.Union[bool, IResolvable] = None,
+  destinations_enabled: bool | IResolvable = None,
+  enabled: bool | IResolvable = None,
   enrichments: WorkflowEnrichments = None,
-  enrichments_enabled: typing.Union[bool, IResolvable] = None,
+  enrichments_enabled: bool | IResolvable = None,
   id: str = None
 )
 ```
@@ -38,22 +38,22 @@ workflow.Workflow(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.destination">destination</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]]</code> | destination block. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.destination">destination</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]</code> | destination block. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.issuesFilter">issues_filter</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilter">WorkflowIssuesFilter</a></code> | issues_filter block. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.mutingRulesHandling">muting_rules_handling</a></code> | <code>str</code> | The type of the muting rule handling. One of: (NOTIFY_ALL_ISSUES, DONT_NOTIFY_FULLY_MUTED_ISSUES, DONT_NOTIFY_FULLY_OR_PARTIALLY_MUTED_ISSUES). |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.name">name</a></code> | <code>str</code> | (Required) The name of the workflow. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The account id of the workflow. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.destinationsEnabled">destinations_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the destinations are enabled. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the workflow is enabled. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.destinationsEnabled">destinations_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the destinations are enabled. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the workflow is enabled. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.enrichments">enrichments</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichments">WorkflowEnrichments</a></code> | enrichments block. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.enrichmentsEnabled">enrichments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the enrichments are enabled. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.enrichmentsEnabled">enrichments_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the enrichments are enabled. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/workflow#id Workflow#id}. |
 
 ---
@@ -78,13 +78,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -114,13 +114,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `destination`<sup>Required</sup> <a name="destination" id="@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.destination"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]
 
 destination block.
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `destinations_enabled`<sup>Optional</sup> <a name="destinations_enabled" id="@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.destinationsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the destinations are enabled.
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.enabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the workflow is enabled.
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ##### `enrichments_enabled`<sup>Optional</sup> <a name="enrichments_enabled" id="@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.enrichmentsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the enrichments are enabled.
 
@@ -480,7 +480,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-newrelic.workflow.Workflow.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-newrelic.workflow.Workflow.importFrom"></a>
@@ -543,7 +543,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -559,7 +559,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-newrelic.workflow.Workflow.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -587,13 +587,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_destination(
-  value: typing.Union[IResolvable, typing.List[WorkflowDestination]]
+  value: IResolvable | typing.List[WorkflowDestination]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.workflow.Workflow.putDestination.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]
 
 ---
 
@@ -601,13 +601,13 @@ def put_destination(
 
 ```python
 def put_enrichments(
-  nrql: typing.Union[IResolvable, typing.List[WorkflowEnrichmentsNrql]]
+  nrql: IResolvable | typing.List[WorkflowEnrichmentsNrql]
 ) -> None
 ```
 
 ###### `nrql`<sup>Required</sup> <a name="nrql" id="@cdktf/provider-newrelic.workflow.Workflow.putEnrichments.parameter.nrql"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]
 
 nrql block.
 
@@ -621,7 +621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 def put_issues_filter(
   name: str,
   type: str,
-  predicate: typing.Union[IResolvable, typing.List[WorkflowIssuesFilterPredicate]] = None
+  predicate: IResolvable | typing.List[WorkflowIssuesFilterPredicate] = None
 ) -> None
 ```
 
@@ -647,7 +647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 ###### `predicate`<sup>Optional</sup> <a name="predicate" id="@cdktf/provider-newrelic.workflow.Workflow.putIssuesFilter.parameter.predicate"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]
 
 predicate block.
 
@@ -828,13 +828,13 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.destination">destination</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationList">WorkflowDestinationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enrichments">enrichments</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference">WorkflowEnrichmentsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.guid">guid</a></code> | <code>str</code> | *No description.* |
@@ -842,19 +842,19 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.lastRun">last_run</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.workflowId">workflow_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.accountIdInput">account_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.destinationInput">destination_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.destinationsEnabledInput">destinations_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enrichmentsEnabledInput">enrichments_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.destinationInput">destination_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.destinationsEnabledInput">destinations_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enrichmentsEnabledInput">enrichments_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enrichmentsInput">enrichments_input</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichments">WorkflowEnrichments</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.issuesFilterInput">issues_filter_input</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilter">WorkflowIssuesFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.mutingRulesHandlingInput">muting_rules_handling_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.destinationsEnabled">destinations_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enrichmentsEnabled">enrichments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.destinationsEnabled">destinations_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.enrichmentsEnabled">enrichments_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.mutingRulesHandling">muting_rules_handling</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -936,20 +936,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.workflow.Workflow.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.workflow.Workflow.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -996,10 +996,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.workflow.Workflow.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1076,40 +1076,40 @@ account_id_input: typing.Union[int, float]
 ##### `destination_input`<sup>Optional</sup> <a name="destination_input" id="@cdktf/provider-newrelic.workflow.Workflow.property.destinationInput"></a>
 
 ```python
-destination_input: typing.Union[IResolvable, typing.List[WorkflowDestination]]
+destination_input: IResolvable | typing.List[WorkflowDestination]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]
 
 ---
 
 ##### `destinations_enabled_input`<sup>Optional</sup> <a name="destinations_enabled_input" id="@cdktf/provider-newrelic.workflow.Workflow.property.destinationsEnabledInput"></a>
 
 ```python
-destinations_enabled_input: typing.Union[bool, IResolvable]
+destinations_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-newrelic.workflow.Workflow.property.enabledInput"></a>
 
 ```python
-enabled_input: typing.Union[bool, IResolvable]
+enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enrichments_enabled_input`<sup>Optional</sup> <a name="enrichments_enabled_input" id="@cdktf/provider-newrelic.workflow.Workflow.property.enrichmentsEnabledInput"></a>
 
 ```python
-enrichments_enabled_input: typing.Union[bool, IResolvable]
+enrichments_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1176,30 +1176,30 @@ account_id: typing.Union[int, float]
 ##### `destinations_enabled`<sup>Required</sup> <a name="destinations_enabled" id="@cdktf/provider-newrelic.workflow.Workflow.property.destinationsEnabled"></a>
 
 ```python
-destinations_enabled: typing.Union[bool, IResolvable]
+destinations_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-newrelic.workflow.Workflow.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enrichments_enabled`<sup>Required</sup> <a name="enrichments_enabled" id="@cdktf/provider-newrelic.workflow.Workflow.property.enrichmentsEnabled"></a>
 
 ```python
-enrichments_enabled: typing.Union[bool, IResolvable]
+enrichments_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1261,22 +1261,22 @@ tfResourceType: str
 from cdktf_cdktf_provider_newrelic import workflow
 
 workflow.WorkflowConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  destination: typing.Union[IResolvable, typing.List[WorkflowDestination]],
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  destination: IResolvable | typing.List[WorkflowDestination],
   issues_filter: WorkflowIssuesFilter,
   muting_rules_handling: str,
   name: str,
   account_id: typing.Union[int, float] = None,
-  destinations_enabled: typing.Union[bool, IResolvable] = None,
-  enabled: typing.Union[bool, IResolvable] = None,
+  destinations_enabled: bool | IResolvable = None,
+  enabled: bool | IResolvable = None,
   enrichments: WorkflowEnrichments = None,
-  enrichments_enabled: typing.Union[bool, IResolvable] = None,
+  enrichments_enabled: bool | IResolvable = None,
   id: str = None
 )
 ```
@@ -1285,22 +1285,22 @@ workflow.WorkflowConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.destination">destination</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]]</code> | destination block. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.destination">destination</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]</code> | destination block. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.issuesFilter">issues_filter</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilter">WorkflowIssuesFilter</a></code> | issues_filter block. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.mutingRulesHandling">muting_rules_handling</a></code> | <code>str</code> | The type of the muting rule handling. One of: (NOTIFY_ALL_ISSUES, DONT_NOTIFY_FULLY_MUTED_ISSUES, DONT_NOTIFY_FULLY_OR_PARTIALLY_MUTED_ISSUES). |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.name">name</a></code> | <code>str</code> | (Required) The name of the workflow. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.accountId">account_id</a></code> | <code>typing.Union[int, float]</code> | The account id of the workflow. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.destinationsEnabled">destinations_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the destinations are enabled. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the workflow is enabled. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.destinationsEnabled">destinations_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the destinations are enabled. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the workflow is enabled. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enrichments">enrichments</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichments">WorkflowEnrichments</a></code> | enrichments block. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enrichmentsEnabled">enrichments_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the enrichments are enabled. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enrichmentsEnabled">enrichments_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the enrichments are enabled. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/workflow#id Workflow#id}. |
 
 ---
@@ -1308,20 +1308,20 @@ workflow.WorkflowConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.workflow.WorkflowConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.workflow.WorkflowConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1368,20 +1368,20 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.workflow.WorkflowConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `destination`<sup>Required</sup> <a name="destination" id="@cdktf/provider-newrelic.workflow.WorkflowConfig.property.destination"></a>
 
 ```python
-destination: typing.Union[IResolvable, typing.List[WorkflowDestination]]
+destination: IResolvable | typing.List[WorkflowDestination]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]
 
 destination block.
 
@@ -1448,10 +1448,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `destinations_enabled`<sup>Optional</sup> <a name="destinations_enabled" id="@cdktf/provider-newrelic.workflow.WorkflowConfig.property.destinationsEnabled"></a>
 
 ```python
-destinations_enabled: typing.Union[bool, IResolvable]
+destinations_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the destinations are enabled.
 
@@ -1462,10 +1462,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the workflow is enabled.
 
@@ -1490,10 +1490,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `enrichments_enabled`<sup>Optional</sup> <a name="enrichments_enabled" id="@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enrichmentsEnabled"></a>
 
 ```python
-enrichments_enabled: typing.Union[bool, IResolvable]
+enrichments_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the enrichments are enabled.
 
@@ -1526,7 +1526,7 @@ from cdktf_cdktf_provider_newrelic import workflow
 workflow.WorkflowDestination(
   channel_id: str,
   notification_triggers: typing.List[str] = None,
-  update_original_message: typing.Union[bool, IResolvable] = None
+  update_original_message: bool | IResolvable = None
 )
 ```
 
@@ -1536,7 +1536,7 @@ workflow.WorkflowDestination(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination.property.channelId">channel_id</a></code> | <code>str</code> | (Required) Destination's channel id. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination.property.notificationTriggers">notification_triggers</a></code> | <code>typing.List[str]</code> | List of triggers to notify about in this destination configuration. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination.property.updateOriginalMessage">update_original_message</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Update original notification message (Slack channels only). |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination.property.updateOriginalMessage">update_original_message</a></code> | <code>bool \| cdktf.IResolvable</code> | Update original notification message (Slack channels only). |
 
 ---
 
@@ -1571,10 +1571,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `update_original_message`<sup>Optional</sup> <a name="update_original_message" id="@cdktf/provider-newrelic.workflow.WorkflowDestination.property.updateOriginalMessage"></a>
 
 ```python
-update_original_message: typing.Union[bool, IResolvable]
+update_original_message: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Update original notification message (Slack channels only).
 
@@ -1590,7 +1590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 from cdktf_cdktf_provider_newrelic import workflow
 
 workflow.WorkflowEnrichments(
-  nrql: typing.Union[IResolvable, typing.List[WorkflowEnrichmentsNrql]]
+  nrql: IResolvable | typing.List[WorkflowEnrichmentsNrql]
 )
 ```
 
@@ -1598,17 +1598,17 @@ workflow.WorkflowEnrichments(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichments.property.nrql">nrql</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]]</code> | nrql block. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichments.property.nrql">nrql</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]</code> | nrql block. |
 
 ---
 
 ##### `nrql`<sup>Required</sup> <a name="nrql" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichments.property.nrql"></a>
 
 ```python
-nrql: typing.Union[IResolvable, typing.List[WorkflowEnrichmentsNrql]]
+nrql: IResolvable | typing.List[WorkflowEnrichmentsNrql]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]
 
 nrql block.
 
@@ -1624,7 +1624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 from cdktf_cdktf_provider_newrelic import workflow
 
 workflow.WorkflowEnrichmentsNrql(
-  configuration: typing.Union[IResolvable, typing.List[WorkflowEnrichmentsNrqlConfiguration]],
+  configuration: IResolvable | typing.List[WorkflowEnrichmentsNrqlConfiguration],
   name: str
 )
 ```
@@ -1633,7 +1633,7 @@ workflow.WorkflowEnrichmentsNrql(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql.property.configuration">configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>]]</code> | configuration block. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql.property.configuration">configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>]</code> | configuration block. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql.property.name">name</a></code> | <code>str</code> | (Required) Enrichment's name. |
 
 ---
@@ -1641,10 +1641,10 @@ workflow.WorkflowEnrichmentsNrql(
 ##### `configuration`<sup>Required</sup> <a name="configuration" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql.property.configuration"></a>
 
 ```python
-configuration: typing.Union[IResolvable, typing.List[WorkflowEnrichmentsNrqlConfiguration]]
+configuration: IResolvable | typing.List[WorkflowEnrichmentsNrqlConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>]
 
 configuration block.
 
@@ -1710,7 +1710,7 @@ from cdktf_cdktf_provider_newrelic import workflow
 workflow.WorkflowIssuesFilter(
   name: str,
   type: str,
-  predicate: typing.Union[IResolvable, typing.List[WorkflowIssuesFilterPredicate]] = None
+  predicate: IResolvable | typing.List[WorkflowIssuesFilterPredicate] = None
 )
 ```
 
@@ -1720,7 +1720,7 @@ workflow.WorkflowIssuesFilter(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilter.property.name">name</a></code> | <code>str</code> | (Required) Filter's name. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilter.property.type">type</a></code> | <code>str</code> | (Required) The type of the filter. One of: (FILTER, VIEW). |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilter.property.predicate">predicate</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]]</code> | predicate block. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilter.property.predicate">predicate</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]</code> | predicate block. |
 
 ---
 
@@ -1755,10 +1755,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 ##### `predicate`<sup>Optional</sup> <a name="predicate" id="@cdktf/provider-newrelic.workflow.WorkflowIssuesFilter.property.predicate"></a>
 
 ```python
-predicate: typing.Union[IResolvable, typing.List[WorkflowIssuesFilterPredicate]]
+predicate: IResolvable | typing.List[WorkflowIssuesFilterPredicate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]
 
 predicate block.
 
@@ -1967,7 +1967,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]</code> | *No description.* |
 
 ---
 
@@ -1998,10 +1998,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.workflow.WorkflowDestinationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[WorkflowDestination]]
+internal_value: IResolvable | typing.List[WorkflowDestination]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]
 
 ---
 
@@ -2279,11 +2279,11 @@ def reset_update_original_message() -> None
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.channelIdInput">channel_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.notificationTriggersInput">notification_triggers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.updateOriginalMessageInput">update_original_message_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.updateOriginalMessageInput">update_original_message_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.channelId">channel_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.notificationTriggers">notification_triggers</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.updateOriginalMessage">update_original_message</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.updateOriginalMessage">update_original_message</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a></code> | *No description.* |
 
 ---
 
@@ -2354,10 +2354,10 @@ notification_triggers_input: typing.List[str]
 ##### `update_original_message_input`<sup>Optional</sup> <a name="update_original_message_input" id="@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.updateOriginalMessageInput"></a>
 
 ```python
-update_original_message_input: typing.Union[bool, IResolvable]
+update_original_message_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2384,20 +2384,20 @@ notification_triggers: typing.List[str]
 ##### `update_original_message`<sup>Required</sup> <a name="update_original_message" id="@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.updateOriginalMessage"></a>
 
 ```python
-update_original_message: typing.Union[bool, IResolvable]
+update_original_message: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.workflow.WorkflowDestinationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkflowDestination]
+internal_value: IResolvable | WorkflowDestination
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-newrelic.workflow.WorkflowDestination">WorkflowDestination</a>
 
 ---
 
@@ -2533,7 +2533,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>]</code> | *No description.* |
 
 ---
 
@@ -2564,10 +2564,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[WorkflowEnrichmentsNrqlConfiguration]]
+internal_value: IResolvable | typing.List[WorkflowEnrichmentsNrqlConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>]
 
 ---
 
@@ -2829,7 +2829,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a></code> | *No description.* |
 
 ---
 
@@ -2880,10 +2880,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkflowEnrichmentsNrqlConfiguration]
+internal_value: IResolvable | WorkflowEnrichmentsNrqlConfiguration
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>
 
 ---
 
@@ -3019,7 +3019,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]</code> | *No description.* |
 
 ---
 
@@ -3050,10 +3050,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[WorkflowEnrichmentsNrql]]
+internal_value: IResolvable | typing.List[WorkflowEnrichmentsNrql]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]
 
 ---
 
@@ -3311,13 +3311,13 @@ Returns a reversible string representation.
 
 ```python
 def put_configuration(
-  value: typing.Union[IResolvable, typing.List[WorkflowEnrichmentsNrqlConfiguration]]
+  value: IResolvable | typing.List[WorkflowEnrichmentsNrqlConfiguration]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.putConfiguration.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>]
 
 ---
 
@@ -3332,10 +3332,10 @@ def put_configuration(
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.configuration">configuration</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfigurationList">WorkflowEnrichmentsNrqlConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.enrichmentId">enrichment_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.configurationInput">configuration_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.configurationInput">configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a></code> | *No description.* |
 
 ---
 
@@ -3406,10 +3406,10 @@ type: str
 ##### `configuration_input`<sup>Optional</sup> <a name="configuration_input" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.configurationInput"></a>
 
 ```python
-configuration_input: typing.Union[IResolvable, typing.List[WorkflowEnrichmentsNrqlConfiguration]]
+configuration_input: IResolvable | typing.List[WorkflowEnrichmentsNrqlConfiguration]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlConfiguration">WorkflowEnrichmentsNrqlConfiguration</a>]
 
 ---
 
@@ -3436,10 +3436,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkflowEnrichmentsNrql]
+internal_value: IResolvable | WorkflowEnrichmentsNrql
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>
 
 ---
 
@@ -3677,13 +3677,13 @@ Returns a reversible string representation.
 
 ```python
 def put_nrql(
-  value: typing.Union[IResolvable, typing.List[WorkflowEnrichmentsNrql]]
+  value: IResolvable | typing.List[WorkflowEnrichmentsNrql]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.putNrql.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]
 
 ---
 
@@ -3695,7 +3695,7 @@ def put_nrql(
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.property.nrql">nrql</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrqlList">WorkflowEnrichmentsNrqlList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.property.nrqlInput">nrql_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.property.nrqlInput">nrql_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichments">WorkflowEnrichments</a></code> | *No description.* |
 
 ---
@@ -3737,10 +3737,10 @@ nrql: WorkflowEnrichmentsNrqlList
 ##### `nrql_input`<sup>Optional</sup> <a name="nrql_input" id="@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsOutputReference.property.nrqlInput"></a>
 
 ```python
-nrql_input: typing.Union[IResolvable, typing.List[WorkflowEnrichmentsNrql]]
+nrql_input: IResolvable | typing.List[WorkflowEnrichmentsNrql]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichmentsNrql">WorkflowEnrichmentsNrql</a>]
 
 ---
 
@@ -3989,13 +3989,13 @@ Returns a reversible string representation.
 
 ```python
 def put_predicate(
-  value: typing.Union[IResolvable, typing.List[WorkflowIssuesFilterPredicate]]
+  value: IResolvable | typing.List[WorkflowIssuesFilterPredicate]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.putPredicate.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]
 
 ---
 
@@ -4015,7 +4015,7 @@ def reset_predicate() -> None
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.filterId">filter_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.predicate">predicate</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateList">WorkflowIssuesFilterPredicateList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.predicateInput">predicate_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.predicateInput">predicate_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
@@ -4080,10 +4080,10 @@ name_input: str
 ##### `predicate_input`<sup>Optional</sup> <a name="predicate_input" id="@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterOutputReference.property.predicateInput"></a>
 
 ```python
-predicate_input: typing.Union[IResolvable, typing.List[WorkflowIssuesFilterPredicate]]
+predicate_input: IResolvable | typing.List[WorkflowIssuesFilterPredicate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]
 
 ---
 
@@ -4259,7 +4259,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]</code> | *No description.* |
 
 ---
 
@@ -4290,10 +4290,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[WorkflowIssuesFilterPredicate]]
+internal_value: IResolvable | typing.List[WorkflowIssuesFilterPredicate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]
 
 ---
 
@@ -4559,7 +4559,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateOutputReference.property.attribute">attribute</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a></code> | *No description.* |
 
 ---
 
@@ -4650,10 +4650,10 @@ values: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicateOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, WorkflowIssuesFilterPredicate]
+internal_value: IResolvable | WorkflowIssuesFilterPredicate
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-newrelic.workflow.WorkflowIssuesFilterPredicate">WorkflowIssuesFilterPredicate</a>
 
 ---
 

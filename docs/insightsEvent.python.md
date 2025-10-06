@@ -14,14 +14,14 @@ from cdktf_cdktf_provider_newrelic import insights_event
 insightsEvent.InsightsEvent(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  event: typing.Union[IResolvable, typing.List[InsightsEventEvent]],
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  event: IResolvable | typing.List[InsightsEventEvent],
   id: str = None
 )
 ```
@@ -30,14 +30,14 @@ insightsEvent.InsightsEvent(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.event">event</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]]</code> | event block. |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.event">event</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]</code> | event block. |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/insights_event#id InsightsEvent#id}. |
 
 ---
@@ -62,13 +62,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -98,13 +98,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `event`<sup>Required</sup> <a name="event" id="@cdktf/provider-newrelic.insightsEvent.InsightsEvent.Initializer.parameter.event"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]
 
 event block.
 
@@ -377,7 +377,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-newrelic.insightsEvent.InsightsEvent.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-newrelic.insightsEvent.InsightsEvent.importFrom"></a>
@@ -440,7 +440,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -456,7 +456,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-newrelic.insightsEvent.InsightsEvent.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -484,13 +484,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_event(
-  value: typing.Union[IResolvable, typing.List[InsightsEventEvent]]
+  value: IResolvable | typing.List[InsightsEventEvent]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.insightsEvent.InsightsEvent.putEvent.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]
 
 ---
 
@@ -637,15 +637,15 @@ Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.event">event</a></code> | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventList">InsightsEventEventList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.eventInput">event_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.eventInput">event_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.id">id</a></code> | <code>str</code> | *No description.* |
 
@@ -726,20 +726,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -786,10 +786,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -806,10 +806,10 @@ event: InsightsEventEventList
 ##### `event_input`<sup>Optional</sup> <a name="event_input" id="@cdktf/provider-newrelic.insightsEvent.InsightsEvent.property.eventInput"></a>
 
 ```python
-event_input: typing.Union[IResolvable, typing.List[InsightsEventEvent]]
+event_input: IResolvable | typing.List[InsightsEventEvent]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]
 
 ---
 
@@ -861,14 +861,14 @@ tfResourceType: str
 from cdktf_cdktf_provider_newrelic import insights_event
 
 insightsEvent.InsightsEventConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  event: typing.Union[IResolvable, typing.List[InsightsEventEvent]],
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  event: IResolvable | typing.List[InsightsEventEvent],
   id: str = None
 )
 ```
@@ -877,14 +877,14 @@ insightsEvent.InsightsEventConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.property.event">event</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]]</code> | event block. |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.property.event">event</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]</code> | event block. |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/insights_event#id InsightsEvent#id}. |
 
 ---
@@ -892,20 +892,20 @@ insightsEvent.InsightsEventConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -952,20 +952,20 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `event`<sup>Required</sup> <a name="event" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventConfig.property.event"></a>
 
 ```python
-event: typing.Union[IResolvable, typing.List[InsightsEventEvent]]
+event: IResolvable | typing.List[InsightsEventEvent]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]
 
 event block.
 
@@ -996,7 +996,7 @@ If you experience problems setting this value it might not be settable. Please t
 from cdktf_cdktf_provider_newrelic import insights_event
 
 insightsEvent.InsightsEventEvent(
-  attribute: typing.Union[IResolvable, typing.List[InsightsEventEventAttribute]],
+  attribute: IResolvable | typing.List[InsightsEventEventAttribute],
   type: str,
   timestamp: typing.Union[int, float] = None
 )
@@ -1006,7 +1006,7 @@ insightsEvent.InsightsEventEvent(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent.property.attribute">attribute</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a>]]</code> | attribute block. |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent.property.attribute">attribute</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a>]</code> | attribute block. |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent.property.type">type</a></code> | <code>str</code> | The event's name. Can be a combination of alphanumeric characters, underscores, and colons. |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent.property.timestamp">timestamp</a></code> | <code>typing.Union[int, float]</code> | Must be a Unix epoch timestamp. You can define timestamps either in seconds or in milliseconds. |
 
@@ -1015,10 +1015,10 @@ insightsEvent.InsightsEventEvent(
 ##### `attribute`<sup>Required</sup> <a name="attribute" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent.property.attribute"></a>
 
 ```python
-attribute: typing.Union[IResolvable, typing.List[InsightsEventEventAttribute]]
+attribute: IResolvable | typing.List[InsightsEventEventAttribute]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a>]
 
 attribute block.
 
@@ -1255,7 +1255,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttributeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttributeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttributeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttributeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a>]</code> | *No description.* |
 
 ---
 
@@ -1286,10 +1286,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttributeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[InsightsEventEventAttribute]]
+internal_value: IResolvable | typing.List[InsightsEventEventAttribute]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a>]
 
 ---
 
@@ -1562,7 +1562,7 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttributeOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttributeOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttributeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttributeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttributeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a></code> | *No description.* |
 
 ---
 
@@ -1653,10 +1653,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttributeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, InsightsEventEventAttribute]
+internal_value: IResolvable | InsightsEventEventAttribute
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a>
 
 ---
 
@@ -1792,7 +1792,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]</code> | *No description.* |
 
 ---
 
@@ -1823,10 +1823,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventEventList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[InsightsEventEvent]]
+internal_value: IResolvable | typing.List[InsightsEventEvent]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]
 
 ---
 
@@ -2085,13 +2085,13 @@ Returns a reversible string representation.
 
 ```python
 def put_attribute(
-  value: typing.Union[IResolvable, typing.List[InsightsEventEventAttribute]]
+  value: IResolvable | typing.List[InsightsEventEventAttribute]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventEventOutputReference.putAttribute.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a>]
 
 ---
 
@@ -2109,12 +2109,12 @@ def reset_timestamp() -> None
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventOutputReference.property.attribute">attribute</a></code> | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttributeList">InsightsEventEventAttributeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventOutputReference.property.attributeInput">attribute_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventOutputReference.property.attributeInput">attribute_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventOutputReference.property.timestampInput">timestamp_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventOutputReference.property.timestamp">timestamp</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a></code> | *No description.* |
 
 ---
 
@@ -2155,10 +2155,10 @@ attribute: InsightsEventEventAttributeList
 ##### `attribute_input`<sup>Optional</sup> <a name="attribute_input" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventEventOutputReference.property.attributeInput"></a>
 
 ```python
-attribute_input: typing.Union[IResolvable, typing.List[InsightsEventEventAttribute]]
+attribute_input: IResolvable | typing.List[InsightsEventEventAttribute]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEventAttribute">InsightsEventEventAttribute</a>]
 
 ---
 
@@ -2205,10 +2205,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-newrelic.insightsEvent.InsightsEventEventOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, InsightsEventEvent]
+internal_value: IResolvable | InsightsEventEvent
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-newrelic.insightsEvent.InsightsEventEvent">InsightsEventEvent</a>
 
 ---
 
