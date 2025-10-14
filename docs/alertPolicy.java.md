@@ -4,7 +4,7 @@
 
 ### AlertPolicy <a name="AlertPolicy" id="@cdktf/provider-newrelic.alertPolicy.AlertPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/alert_policy newrelic_alert_policy}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/alert_policy newrelic_alert_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.alertPolicy.AlertPolicy.Initializer"></a>
 
@@ -41,7 +41,7 @@ AlertPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.alertPolicy.AlertPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the policy. |
 | <code><a href="#@cdktf/provider-newrelic.alertPolicy.AlertPolicy.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | The New Relic account ID to operate on. |
 | <code><a href="#@cdktf/provider-newrelic.alertPolicy.AlertPolicy.Initializer.parameter.channelIds">channelIds</a></code> | <code>java.util.List<java.lang.Number></code> | An array of channel IDs (integers) to assign to the policy. |
-| <code><a href="#@cdktf/provider-newrelic.alertPolicy.AlertPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/alert_policy#id AlertPolicy#id}. |
+| <code><a href="#@cdktf/provider-newrelic.alertPolicy.AlertPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/alert_policy#id AlertPolicy#id}. |
 | <code><a href="#@cdktf/provider-newrelic.alertPolicy.AlertPolicy.Initializer.parameter.incidentPreference">incidentPreference</a></code> | <code>java.lang.String</code> | The rollup strategy for the policy. Options include: PER_POLICY, PER_CONDITION, or PER_CONDITION_AND_TARGET. The default is PER_POLICY. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/alert_policy#name AlertPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/alert_policy#name AlertPolicy#name}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The New Relic account ID to operate on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/alert_policy#account_id AlertPolicy#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/alert_policy#account_id AlertPolicy#account_id}
 
 ---
 
@@ -134,7 +134,7 @@ An array of channel IDs (integers) to assign to the policy.
 
 Adding or removing channel IDs from this array will result in a new alert policy resource being created and the old one being destroyed. Also note that channel IDs cannot be imported via terraform import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/alert_policy#channel_ids AlertPolicy#channel_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/alert_policy#channel_ids AlertPolicy#channel_ids}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/alert_policy#id AlertPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/alert_policy#id AlertPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The rollup strategy for the policy. Options include: PER_POLICY, PER_CONDITION, or PER_CONDITION_AND_TARGET. The default is PER_POLICY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/alert_policy#incident_preference AlertPolicy#incident_preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/alert_policy#incident_preference AlertPolicy#incident_preference}
 
 ---
 
@@ -610,7 +610,7 @@ The construct id used in the generated config for the AlertPolicy to import.
 
 The id of the existing AlertPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/alert_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/alert_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -952,7 +952,7 @@ AlertPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-newrelic.alertPolicy.AlertPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the policy. |
 | <code><a href="#@cdktf/provider-newrelic.alertPolicy.AlertPolicyConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | The New Relic account ID to operate on. |
 | <code><a href="#@cdktf/provider-newrelic.alertPolicy.AlertPolicyConfig.property.channelIds">channelIds</a></code> | <code>java.util.List<java.lang.Number></code> | An array of channel IDs (integers) to assign to the policy. |
-| <code><a href="#@cdktf/provider-newrelic.alertPolicy.AlertPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/alert_policy#id AlertPolicy#id}. |
+| <code><a href="#@cdktf/provider-newrelic.alertPolicy.AlertPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/alert_policy#id AlertPolicy#id}. |
 | <code><a href="#@cdktf/provider-newrelic.alertPolicy.AlertPolicyConfig.property.incidentPreference">incidentPreference</a></code> | <code>java.lang.String</code> | The rollup strategy for the policy. Options include: PER_POLICY, PER_CONDITION, or PER_CONDITION_AND_TARGET. The default is PER_POLICY. |
 
 ---
@@ -1037,7 +1037,7 @@ public java.lang.String getName();
 
 The name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/alert_policy#name AlertPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/alert_policy#name AlertPolicy#name}
 
 ---
 
@@ -1051,7 +1051,7 @@ public java.lang.Number getAccountId();
 
 The New Relic account ID to operate on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/alert_policy#account_id AlertPolicy#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/alert_policy#account_id AlertPolicy#account_id}
 
 ---
 
@@ -1067,7 +1067,7 @@ An array of channel IDs (integers) to assign to the policy.
 
 Adding or removing channel IDs from this array will result in a new alert policy resource being created and the old one being destroyed. Also note that channel IDs cannot be imported via terraform import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/alert_policy#channel_ids AlertPolicy#channel_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/alert_policy#channel_ids AlertPolicy#channel_ids}
 
 ---
 
@@ -1079,7 +1079,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/alert_policy#id AlertPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/alert_policy#id AlertPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1096,7 +1096,7 @@ public java.lang.String getIncidentPreference();
 
 The rollup strategy for the policy. Options include: PER_POLICY, PER_CONDITION, or PER_CONDITION_AND_TARGET. The default is PER_POLICY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/alert_policy#incident_preference AlertPolicy#incident_preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/alert_policy#incident_preference AlertPolicy#incident_preference}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataNewrelicAlertChannel <a name="DataNewrelicAlertChannel" id="@cdktf/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/data-sources/alert_channel newrelic_alert_channel}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/data-sources/alert_channel newrelic_alert_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannel.Initializer"></a>
 
@@ -38,7 +38,7 @@ DataNewrelicAlertChannel.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannel.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannel.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the alert channel in New Relic. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannel.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | The New Relic account ID where you want to retrieve the alert channel. |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannel.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/data-sources/alert_channel#id DataNewrelicAlertChannel#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannel.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/data-sources/alert_channel#id DataNewrelicAlertChannel#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the alert channel in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/data-sources/alert_channel#name DataNewrelicAlertChannel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/data-sources/alert_channel#name DataNewrelicAlertChannel#name}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The New Relic account ID where you want to retrieve the alert channel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/data-sources/alert_channel#account_id DataNewrelicAlertChannel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/data-sources/alert_channel#account_id DataNewrelicAlertChannel#account_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/data-sources/alert_channel#id DataNewrelicAlertChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/data-sources/alert_channel#id DataNewrelicAlertChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -466,7 +466,7 @@ The construct id used in the generated config for the DataNewrelicAlertChannel t
 
 The id of the existing DataNewrelicAlertChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/data-sources/alert_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/data-sources/alert_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -772,7 +772,7 @@ DataNewrelicAlertChannelConfig.builder()
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannelConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannelConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the alert channel in New Relic. |
 | <code><a href="#@cdktf/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannelConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | The New Relic account ID where you want to retrieve the alert channel. |
-| <code><a href="#@cdktf/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannelConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/data-sources/alert_channel#id DataNewrelicAlertChannel#id}. |
+| <code><a href="#@cdktf/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannelConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/data-sources/alert_channel#id DataNewrelicAlertChannel#id}. |
 
 ---
 
@@ -856,7 +856,7 @@ public java.lang.String getName();
 
 The name of the alert channel in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/data-sources/alert_channel#name DataNewrelicAlertChannel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/data-sources/alert_channel#name DataNewrelicAlertChannel#name}
 
 ---
 
@@ -870,7 +870,7 @@ public java.lang.Number getAccountId();
 
 The New Relic account ID where you want to retrieve the alert channel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/data-sources/alert_channel#account_id DataNewrelicAlertChannel#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/data-sources/alert_channel#account_id DataNewrelicAlertChannel#account_id}
 
 ---
 
@@ -882,7 +882,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/data-sources/alert_channel#id DataNewrelicAlertChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/data-sources/alert_channel#id DataNewrelicAlertChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
