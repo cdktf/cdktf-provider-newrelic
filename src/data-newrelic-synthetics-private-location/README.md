@@ -1,3 +1,3 @@
 # `data_newrelic_synthetics_private_location`
 
-Refer to the Terraform Registry for docs: [`data_newrelic_synthetics_private_location`](https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/data-sources/synthetics_private_location).
+Refer to the Terraform Registry for docs: [`data_newrelic_synthetics_private_location`](https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/data-sources/synthetics_private_location).
