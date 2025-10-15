@@ -4,7 +4,7 @@
 
 ### ObfuscationRule <a name="ObfuscationRule" id="@cdktf/provider-newrelic.obfuscationRule.ObfuscationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule newrelic_obfuscation_rule}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule newrelic_obfuscation_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.obfuscationRule.ObfuscationRule.Initializer"></a>
 
@@ -46,7 +46,7 @@ ObfuscationRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRule.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of rule. |
 | <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRule.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | The account id associated with the obfuscation rule. |
 | <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description of rule. |
-| <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#id ObfuscationRule#id}. |
+| <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#id ObfuscationRule#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#action ObfuscationRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#action ObfuscationRule#action}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Whether the rule should be applied or not to incoming data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#enabled ObfuscationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#enabled ObfuscationRule#enabled}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 NRQL for determining whether a given log record should have obfuscation actions applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#filter ObfuscationRule#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#filter ObfuscationRule#filter}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Name of rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#name ObfuscationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#name ObfuscationRule#name}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The account id associated with the obfuscation rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#account_id ObfuscationRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#account_id ObfuscationRule#account_id}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Description of rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#description ObfuscationRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#description ObfuscationRule#description}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#id ObfuscationRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#id ObfuscationRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -638,7 +638,7 @@ The construct id used in the generated config for the ObfuscationRule to import.
 
 The id of the existing ObfuscationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1021,7 +1021,7 @@ public java.util.List<java.lang.String> getAttribute();
 
 Attribute names for action. An empty list applies the action to all the attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#attribute ObfuscationRule#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#attribute ObfuscationRule#attribute}
 
 ---
 
@@ -1035,7 +1035,7 @@ public java.lang.String getExpressionId();
 
 Expression Id for action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#expression_id ObfuscationRule#expression_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#expression_id ObfuscationRule#expression_id}
 
 ---
 
@@ -1049,7 +1049,7 @@ public java.lang.String getMethod();
 
 Obfuscation method to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#method ObfuscationRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#method ObfuscationRule#method}
 
 ---
 
@@ -1095,7 +1095,7 @@ ObfuscationRuleConfig.builder()
 | <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of rule. |
 | <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | The account id associated with the obfuscation rule. |
 | <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description of rule. |
-| <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#id ObfuscationRule#id}. |
+| <code><a href="#@cdktf/provider-newrelic.obfuscationRule.ObfuscationRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#id ObfuscationRule#id}. |
 
 ---
 
@@ -1179,7 +1179,7 @@ public IResolvable|java.util.List<ObfuscationRuleAction> getAction();
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#action ObfuscationRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#action ObfuscationRule#action}
 
 ---
 
@@ -1193,7 +1193,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether the rule should be applied or not to incoming data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#enabled ObfuscationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#enabled ObfuscationRule#enabled}
 
 ---
 
@@ -1207,7 +1207,7 @@ public java.lang.String getFilter();
 
 NRQL for determining whether a given log record should have obfuscation actions applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#filter ObfuscationRule#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#filter ObfuscationRule#filter}
 
 ---
 
@@ -1221,7 +1221,7 @@ public java.lang.String getName();
 
 Name of rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#name ObfuscationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#name ObfuscationRule#name}
 
 ---
 
@@ -1235,7 +1235,7 @@ public java.lang.Number getAccountId();
 
 The account id associated with the obfuscation rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#account_id ObfuscationRule#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#account_id ObfuscationRule#account_id}
 
 ---
 
@@ -1249,7 +1249,7 @@ public java.lang.String getDescription();
 
 Description of rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#description ObfuscationRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#description ObfuscationRule#description}
 
 ---
 
@@ -1261,7 +1261,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.6/docs/resources/obfuscation_rule#id ObfuscationRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/obfuscation_rule#id ObfuscationRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
