@@ -4,7 +4,7 @@
 
 ### CloudAzureIntegrations <a name="CloudAzureIntegrations" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer"></a>
 
@@ -82,7 +82,7 @@ CloudAzureIntegrations.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer.parameter.firewalls">firewalls</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFirewalls">CloudAzureIntegrationsFirewalls</a></code> | firewalls block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer.parameter.frontDoor">frontDoor</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFrontDoor">CloudAzureIntegrationsFrontDoor</a></code> | front_door block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer.parameter.functions">functions</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFunctions">CloudAzureIntegrationsFunctions</a></code> | functions block. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer.parameter.keyVault">keyVault</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsKeyVault">CloudAzureIntegrationsKeyVault</a></code> | key_vault block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer.parameter.loadBalancer">loadBalancer</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLoadBalancer">CloudAzureIntegrationsLoadBalancer</a></code> | load_balancer block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrations.Initializer.parameter.logicApps">logicApps</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLogicApps">CloudAzureIntegrationsLogicApps</a></code> | logic_apps block. |
@@ -172,7 +172,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the linked Azure account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#linked_account_id CloudAzureIntegrations#linked_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#linked_account_id CloudAzureIntegrations#linked_account_id}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#account_id CloudAzureIntegrations#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#account_id CloudAzureIntegrations#account_id}
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 api_management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#api_management CloudAzureIntegrations#api_management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#api_management CloudAzureIntegrations#api_management}
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 app_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#app_gateway CloudAzureIntegrations#app_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#app_gateway CloudAzureIntegrations#app_gateway}
 
 ---
 
@@ -212,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 app_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#app_service CloudAzureIntegrations#app_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#app_service CloudAzureIntegrations#app_service}
 
 ---
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 containers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#containers CloudAzureIntegrations#containers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#containers CloudAzureIntegrations#containers}
 
 ---
 
@@ -232,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 cosmos_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#cosmos_db CloudAzureIntegrations#cosmos_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#cosmos_db CloudAzureIntegrations#cosmos_db}
 
 ---
 
@@ -242,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 cost_management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#cost_management CloudAzureIntegrations#cost_management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#cost_management CloudAzureIntegrations#cost_management}
 
 ---
 
@@ -252,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 data_factory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#data_factory CloudAzureIntegrations#data_factory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#data_factory CloudAzureIntegrations#data_factory}
 
 ---
 
@@ -262,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 event_hub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#event_hub CloudAzureIntegrations#event_hub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#event_hub CloudAzureIntegrations#event_hub}
 
 ---
 
@@ -272,7 +272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 express_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#express_route CloudAzureIntegrations#express_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#express_route CloudAzureIntegrations#express_route}
 
 ---
 
@@ -282,7 +282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 firewalls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#firewalls CloudAzureIntegrations#firewalls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#firewalls CloudAzureIntegrations#firewalls}
 
 ---
 
@@ -292,7 +292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 front_door block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#front_door CloudAzureIntegrations#front_door}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#front_door CloudAzureIntegrations#front_door}
 
 ---
 
@@ -302,7 +302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#functions CloudAzureIntegrations#functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#functions CloudAzureIntegrations#functions}
 
 ---
 
@@ -310,7 +310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -323,7 +323,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 key_vault block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#key_vault CloudAzureIntegrations#key_vault}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#key_vault CloudAzureIntegrations#key_vault}
 
 ---
 
@@ -333,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 load_balancer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#load_balancer CloudAzureIntegrations#load_balancer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#load_balancer CloudAzureIntegrations#load_balancer}
 
 ---
 
@@ -343,7 +343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 logic_apps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#logic_apps CloudAzureIntegrations#logic_apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#logic_apps CloudAzureIntegrations#logic_apps}
 
 ---
 
@@ -353,7 +353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 machine_learning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#machine_learning CloudAzureIntegrations#machine_learning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#machine_learning CloudAzureIntegrations#machine_learning}
 
 ---
 
@@ -363,7 +363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 maria_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#maria_db CloudAzureIntegrations#maria_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#maria_db CloudAzureIntegrations#maria_db}
 
 ---
 
@@ -373,7 +373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 monitor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#monitor CloudAzureIntegrations#monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#monitor CloudAzureIntegrations#monitor}
 
 ---
 
@@ -383,7 +383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 mysql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#mysql CloudAzureIntegrations#mysql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#mysql CloudAzureIntegrations#mysql}
 
 ---
 
@@ -393,7 +393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 mysql_flexible block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#mysql_flexible CloudAzureIntegrations#mysql_flexible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#mysql_flexible CloudAzureIntegrations#mysql_flexible}
 
 ---
 
@@ -403,7 +403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 postgresql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#postgresql CloudAzureIntegrations#postgresql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#postgresql CloudAzureIntegrations#postgresql}
 
 ---
 
@@ -413,7 +413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 postgresql_flexible block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#postgresql_flexible CloudAzureIntegrations#postgresql_flexible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#postgresql_flexible CloudAzureIntegrations#postgresql_flexible}
 
 ---
 
@@ -423,7 +423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 power_bi_dedicated block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#power_bi_dedicated CloudAzureIntegrations#power_bi_dedicated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#power_bi_dedicated CloudAzureIntegrations#power_bi_dedicated}
 
 ---
 
@@ -433,7 +433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 redis_cache block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#redis_cache CloudAzureIntegrations#redis_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#redis_cache CloudAzureIntegrations#redis_cache}
 
 ---
 
@@ -443,7 +443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 service_bus block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#service_bus CloudAzureIntegrations#service_bus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#service_bus CloudAzureIntegrations#service_bus}
 
 ---
 
@@ -453,7 +453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 sql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#sql CloudAzureIntegrations#sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#sql CloudAzureIntegrations#sql}
 
 ---
 
@@ -463,7 +463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 sql_managed block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#sql_managed CloudAzureIntegrations#sql_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#sql_managed CloudAzureIntegrations#sql_managed}
 
 ---
 
@@ -473,7 +473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#storage CloudAzureIntegrations#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#storage CloudAzureIntegrations#storage}
 
 ---
 
@@ -483,7 +483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 virtual_machine block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#virtual_machine CloudAzureIntegrations#virtual_machine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#virtual_machine CloudAzureIntegrations#virtual_machine}
 
 ---
 
@@ -493,7 +493,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 virtual_networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#virtual_networks CloudAzureIntegrations#virtual_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#virtual_networks CloudAzureIntegrations#virtual_networks}
 
 ---
 
@@ -503,7 +503,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 vms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#vms CloudAzureIntegrations#vms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#vms CloudAzureIntegrations#vms}
 
 ---
 
@@ -513,7 +513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 vpn_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#vpn_gateway CloudAzureIntegrations#vpn_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#vpn_gateway CloudAzureIntegrations#vpn_gateway}
 
 ---
 
@@ -1594,7 +1594,7 @@ The construct id used in the generated config for the CloudAzureIntegrations to 
 
 The id of the existing CloudAzureIntegrations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2591,7 +2591,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2605,7 +2605,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -2641,7 +2641,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2655,7 +2655,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -2691,7 +2691,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -2705,7 +2705,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -2787,7 +2787,7 @@ CloudAzureIntegrationsConfig.builder()
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.firewalls">firewalls</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFirewalls">CloudAzureIntegrationsFirewalls</a></code> | firewalls block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.frontDoor">frontDoor</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFrontDoor">CloudAzureIntegrationsFrontDoor</a></code> | front_door block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.functions">functions</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsFunctions">CloudAzureIntegrationsFunctions</a></code> | functions block. |
-| <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}. |
+| <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.keyVault">keyVault</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsKeyVault">CloudAzureIntegrationsKeyVault</a></code> | key_vault block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.loadBalancer">loadBalancer</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLoadBalancer">CloudAzureIntegrationsLoadBalancer</a></code> | load_balancer block. |
 | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsConfig.property.logicApps">logicApps</a></code> | <code><a href="#@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsLogicApps">CloudAzureIntegrationsLogicApps</a></code> | logic_apps block. |
@@ -2891,7 +2891,7 @@ public java.lang.Number getLinkedAccountId();
 
 The ID of the linked Azure account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#linked_account_id CloudAzureIntegrations#linked_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#linked_account_id CloudAzureIntegrations#linked_account_id}
 
 ---
 
@@ -2905,7 +2905,7 @@ public java.lang.Number getAccountId();
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#account_id CloudAzureIntegrations#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#account_id CloudAzureIntegrations#account_id}
 
 ---
 
@@ -2919,7 +2919,7 @@ public CloudAzureIntegrationsApiManagement getApiManagement();
 
 api_management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#api_management CloudAzureIntegrations#api_management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#api_management CloudAzureIntegrations#api_management}
 
 ---
 
@@ -2933,7 +2933,7 @@ public CloudAzureIntegrationsAppGateway getAppGateway();
 
 app_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#app_gateway CloudAzureIntegrations#app_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#app_gateway CloudAzureIntegrations#app_gateway}
 
 ---
 
@@ -2947,7 +2947,7 @@ public CloudAzureIntegrationsAppService getAppService();
 
 app_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#app_service CloudAzureIntegrations#app_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#app_service CloudAzureIntegrations#app_service}
 
 ---
 
@@ -2961,7 +2961,7 @@ public CloudAzureIntegrationsContainers getContainers();
 
 containers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#containers CloudAzureIntegrations#containers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#containers CloudAzureIntegrations#containers}
 
 ---
 
@@ -2975,7 +2975,7 @@ public CloudAzureIntegrationsCosmosDb getCosmosDb();
 
 cosmos_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#cosmos_db CloudAzureIntegrations#cosmos_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#cosmos_db CloudAzureIntegrations#cosmos_db}
 
 ---
 
@@ -2989,7 +2989,7 @@ public CloudAzureIntegrationsCostManagement getCostManagement();
 
 cost_management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#cost_management CloudAzureIntegrations#cost_management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#cost_management CloudAzureIntegrations#cost_management}
 
 ---
 
@@ -3003,7 +3003,7 @@ public CloudAzureIntegrationsDataFactory getDataFactory();
 
 data_factory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#data_factory CloudAzureIntegrations#data_factory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#data_factory CloudAzureIntegrations#data_factory}
 
 ---
 
@@ -3017,7 +3017,7 @@ public CloudAzureIntegrationsEventHub getEventHub();
 
 event_hub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#event_hub CloudAzureIntegrations#event_hub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#event_hub CloudAzureIntegrations#event_hub}
 
 ---
 
@@ -3031,7 +3031,7 @@ public CloudAzureIntegrationsExpressRoute getExpressRoute();
 
 express_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#express_route CloudAzureIntegrations#express_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#express_route CloudAzureIntegrations#express_route}
 
 ---
 
@@ -3045,7 +3045,7 @@ public CloudAzureIntegrationsFirewalls getFirewalls();
 
 firewalls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#firewalls CloudAzureIntegrations#firewalls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#firewalls CloudAzureIntegrations#firewalls}
 
 ---
 
@@ -3059,7 +3059,7 @@ public CloudAzureIntegrationsFrontDoor getFrontDoor();
 
 front_door block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#front_door CloudAzureIntegrations#front_door}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#front_door CloudAzureIntegrations#front_door}
 
 ---
 
@@ -3073,7 +3073,7 @@ public CloudAzureIntegrationsFunctions getFunctions();
 
 functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#functions CloudAzureIntegrations#functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#functions CloudAzureIntegrations#functions}
 
 ---
 
@@ -3085,7 +3085,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#id CloudAzureIntegrations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3102,7 +3102,7 @@ public CloudAzureIntegrationsKeyVault getKeyVault();
 
 key_vault block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#key_vault CloudAzureIntegrations#key_vault}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#key_vault CloudAzureIntegrations#key_vault}
 
 ---
 
@@ -3116,7 +3116,7 @@ public CloudAzureIntegrationsLoadBalancer getLoadBalancer();
 
 load_balancer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#load_balancer CloudAzureIntegrations#load_balancer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#load_balancer CloudAzureIntegrations#load_balancer}
 
 ---
 
@@ -3130,7 +3130,7 @@ public CloudAzureIntegrationsLogicApps getLogicApps();
 
 logic_apps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#logic_apps CloudAzureIntegrations#logic_apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#logic_apps CloudAzureIntegrations#logic_apps}
 
 ---
 
@@ -3144,7 +3144,7 @@ public CloudAzureIntegrationsMachineLearning getMachineLearning();
 
 machine_learning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#machine_learning CloudAzureIntegrations#machine_learning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#machine_learning CloudAzureIntegrations#machine_learning}
 
 ---
 
@@ -3158,7 +3158,7 @@ public CloudAzureIntegrationsMariaDb getMariaDb();
 
 maria_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#maria_db CloudAzureIntegrations#maria_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#maria_db CloudAzureIntegrations#maria_db}
 
 ---
 
@@ -3172,7 +3172,7 @@ public CloudAzureIntegrationsMonitor getMonitor();
 
 monitor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#monitor CloudAzureIntegrations#monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#monitor CloudAzureIntegrations#monitor}
 
 ---
 
@@ -3186,7 +3186,7 @@ public CloudAzureIntegrationsMysql getMysql();
 
 mysql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#mysql CloudAzureIntegrations#mysql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#mysql CloudAzureIntegrations#mysql}
 
 ---
 
@@ -3200,7 +3200,7 @@ public CloudAzureIntegrationsMysqlFlexible getMysqlFlexible();
 
 mysql_flexible block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#mysql_flexible CloudAzureIntegrations#mysql_flexible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#mysql_flexible CloudAzureIntegrations#mysql_flexible}
 
 ---
 
@@ -3214,7 +3214,7 @@ public CloudAzureIntegrationsPostgresql getPostgresql();
 
 postgresql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#postgresql CloudAzureIntegrations#postgresql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#postgresql CloudAzureIntegrations#postgresql}
 
 ---
 
@@ -3228,7 +3228,7 @@ public CloudAzureIntegrationsPostgresqlFlexible getPostgresqlFlexible();
 
 postgresql_flexible block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#postgresql_flexible CloudAzureIntegrations#postgresql_flexible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#postgresql_flexible CloudAzureIntegrations#postgresql_flexible}
 
 ---
 
@@ -3242,7 +3242,7 @@ public CloudAzureIntegrationsPowerBiDedicated getPowerBiDedicated();
 
 power_bi_dedicated block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#power_bi_dedicated CloudAzureIntegrations#power_bi_dedicated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#power_bi_dedicated CloudAzureIntegrations#power_bi_dedicated}
 
 ---
 
@@ -3256,7 +3256,7 @@ public CloudAzureIntegrationsRedisCache getRedisCache();
 
 redis_cache block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#redis_cache CloudAzureIntegrations#redis_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#redis_cache CloudAzureIntegrations#redis_cache}
 
 ---
 
@@ -3270,7 +3270,7 @@ public CloudAzureIntegrationsServiceBus getServiceBus();
 
 service_bus block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#service_bus CloudAzureIntegrations#service_bus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#service_bus CloudAzureIntegrations#service_bus}
 
 ---
 
@@ -3284,7 +3284,7 @@ public CloudAzureIntegrationsSql getSql();
 
 sql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#sql CloudAzureIntegrations#sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#sql CloudAzureIntegrations#sql}
 
 ---
 
@@ -3298,7 +3298,7 @@ public CloudAzureIntegrationsSqlManaged getSqlManaged();
 
 sql_managed block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#sql_managed CloudAzureIntegrations#sql_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#sql_managed CloudAzureIntegrations#sql_managed}
 
 ---
 
@@ -3312,7 +3312,7 @@ public CloudAzureIntegrationsStorage getStorage();
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#storage CloudAzureIntegrations#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#storage CloudAzureIntegrations#storage}
 
 ---
 
@@ -3326,7 +3326,7 @@ public CloudAzureIntegrationsVirtualMachine getVirtualMachine();
 
 virtual_machine block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#virtual_machine CloudAzureIntegrations#virtual_machine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#virtual_machine CloudAzureIntegrations#virtual_machine}
 
 ---
 
@@ -3340,7 +3340,7 @@ public CloudAzureIntegrationsVirtualNetworks getVirtualNetworks();
 
 virtual_networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#virtual_networks CloudAzureIntegrations#virtual_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#virtual_networks CloudAzureIntegrations#virtual_networks}
 
 ---
 
@@ -3354,7 +3354,7 @@ public CloudAzureIntegrationsVms getVms();
 
 vms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#vms CloudAzureIntegrations#vms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#vms CloudAzureIntegrations#vms}
 
 ---
 
@@ -3368,7 +3368,7 @@ public CloudAzureIntegrationsVpnGateway getVpnGateway();
 
 vpn_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#vpn_gateway CloudAzureIntegrations#vpn_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#vpn_gateway CloudAzureIntegrations#vpn_gateway}
 
 ---
 
@@ -3404,7 +3404,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3418,7 +3418,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3454,7 +3454,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3468,7 +3468,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3504,7 +3504,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3518,7 +3518,7 @@ public java.util.List<java.lang.String> getTagKeys();
 
 Specify if additional cost data per tag should be collected. This field is case sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#tag_keys CloudAzureIntegrations#tag_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#tag_keys CloudAzureIntegrations#tag_keys}
 
 ---
 
@@ -3554,7 +3554,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3568,7 +3568,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3604,7 +3604,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3618,7 +3618,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3654,7 +3654,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3668,7 +3668,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3704,7 +3704,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3718,7 +3718,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3754,7 +3754,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3768,7 +3768,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3804,7 +3804,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3818,7 +3818,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3854,7 +3854,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3868,7 +3868,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3904,7 +3904,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3918,7 +3918,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -3954,7 +3954,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -3968,7 +3968,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4004,7 +4004,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4018,7 +4018,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4054,7 +4054,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4068,7 +4068,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4112,7 +4112,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 A flag that specifies if the integration is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#enabled CloudAzureIntegrations#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#enabled CloudAzureIntegrations#enabled}
 
 ---
 
@@ -4126,7 +4126,7 @@ public java.util.List<java.lang.String> getExcludeTags();
 
 Specify resource tags in 'key:value' form to be excluded from monitoring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#exclude_tags CloudAzureIntegrations#exclude_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#exclude_tags CloudAzureIntegrations#exclude_tags}
 
 ---
 
@@ -4140,7 +4140,7 @@ public java.util.List<java.lang.String> getIncludeTags();
 
 Specify resource tags in 'key:value' form to be monitored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#include_tags CloudAzureIntegrations#include_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#include_tags CloudAzureIntegrations#include_tags}
 
 ---
 
@@ -4154,7 +4154,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4168,7 +4168,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4182,7 +4182,7 @@ public java.util.List<java.lang.String> getResourceTypes();
 
 Specify each Azure resource type that needs to be monitored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_types CloudAzureIntegrations#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_types CloudAzureIntegrations#resource_types}
 
 ---
 
@@ -4218,7 +4218,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4232,7 +4232,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4268,7 +4268,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4282,7 +4282,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4318,7 +4318,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4332,7 +4332,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4368,7 +4368,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4382,7 +4382,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4418,7 +4418,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4432,7 +4432,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4468,7 +4468,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4482,7 +4482,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4518,7 +4518,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4532,7 +4532,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4568,7 +4568,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4582,7 +4582,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4618,7 +4618,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4632,7 +4632,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4668,7 +4668,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4682,7 +4682,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4718,7 +4718,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4732,7 +4732,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4768,7 +4768,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4782,7 +4782,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4818,7 +4818,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4832,7 +4832,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
@@ -4868,7 +4868,7 @@ public java.lang.Number getMetricsPollingInterval();
 
 The data polling interval in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#metrics_polling_interval CloudAzureIntegrations#metrics_polling_interval}
 
 ---
 
@@ -4882,7 +4882,7 @@ public java.util.List<java.lang.String> getResourceGroups();
 
 Specify each Resource group associated with the resources that you want to monitor. Filter values are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.0/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/cloud_azure_integrations#resource_groups CloudAzureIntegrations#resource_groups}
 
 ---
 
