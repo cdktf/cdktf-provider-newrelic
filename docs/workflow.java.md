@@ -4,7 +4,7 @@
 
 ### Workflow <a name="Workflow" id="@cdktf/provider-newrelic.workflow.Workflow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow newrelic_workflow}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow newrelic_workflow}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.workflow.Workflow.Initializer"></a>
 
@@ -52,7 +52,7 @@ Workflow.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates whether the workflow is enabled. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.enrichments">enrichments</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichments">WorkflowEnrichments</a></code> | enrichments block. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.enrichmentsEnabled">enrichmentsEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates whether the enrichments are enabled. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#id Workflow#id}. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.Workflow.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#id Workflow#id}. |
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#destination Workflow#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#destination Workflow#destination}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 issues_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#issues_filter Workflow#issues_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#issues_filter Workflow#issues_filter}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The type of the muting rule handling. One of: (NOTIFY_ALL_ISSUES, DONT_NOTIFY_FULLY_MUTED_ISSUES, DONT_NOTIFY_FULLY_OR_PARTIALLY_MUTED_ISSUES).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#muting_rules_handling Workflow#muting_rules_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#muting_rules_handling Workflow#muting_rules_handling}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 (Required) The name of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#name Workflow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#name Workflow#name}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The account id of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#account_id Workflow#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#account_id Workflow#account_id}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Indicates whether the destinations are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#destinations_enabled Workflow#destinations_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#destinations_enabled Workflow#destinations_enabled}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Indicates whether the workflow is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#enabled Workflow#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#enabled Workflow#enabled}
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 enrichments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#enrichments Workflow#enrichments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#enrichments Workflow#enrichments}
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 Indicates whether the enrichments are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#enrichments_enabled Workflow#enrichments_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#enrichments_enabled Workflow#enrichments_enabled}
 
 ---
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#id Workflow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#id Workflow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -721,7 +721,7 @@ The construct id used in the generated config for the Workflow to import.
 
 The id of the existing Workflow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1217,7 +1217,7 @@ WorkflowConfig.builder()
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates whether the workflow is enabled. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enrichments">enrichments</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichments">WorkflowEnrichments</a></code> | enrichments block. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enrichmentsEnabled">enrichmentsEnabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicates whether the enrichments are enabled. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#id Workflow#id}. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#id Workflow#id}. |
 
 ---
 
@@ -1301,7 +1301,7 @@ public IResolvable|java.util.List<WorkflowDestination> getDestination();
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#destination Workflow#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#destination Workflow#destination}
 
 ---
 
@@ -1315,7 +1315,7 @@ public WorkflowIssuesFilter getIssuesFilter();
 
 issues_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#issues_filter Workflow#issues_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#issues_filter Workflow#issues_filter}
 
 ---
 
@@ -1329,7 +1329,7 @@ public java.lang.String getMutingRulesHandling();
 
 The type of the muting rule handling. One of: (NOTIFY_ALL_ISSUES, DONT_NOTIFY_FULLY_MUTED_ISSUES, DONT_NOTIFY_FULLY_OR_PARTIALLY_MUTED_ISSUES).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#muting_rules_handling Workflow#muting_rules_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#muting_rules_handling Workflow#muting_rules_handling}
 
 ---
 
@@ -1343,7 +1343,7 @@ public java.lang.String getName();
 
 (Required) The name of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#name Workflow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#name Workflow#name}
 
 ---
 
@@ -1357,7 +1357,7 @@ public java.lang.Number getAccountId();
 
 The account id of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#account_id Workflow#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#account_id Workflow#account_id}
 
 ---
 
@@ -1371,7 +1371,7 @@ public java.lang.Boolean|IResolvable getDestinationsEnabled();
 
 Indicates whether the destinations are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#destinations_enabled Workflow#destinations_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#destinations_enabled Workflow#destinations_enabled}
 
 ---
 
@@ -1385,7 +1385,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Indicates whether the workflow is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#enabled Workflow#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#enabled Workflow#enabled}
 
 ---
 
@@ -1399,7 +1399,7 @@ public WorkflowEnrichments getEnrichments();
 
 enrichments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#enrichments Workflow#enrichments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#enrichments Workflow#enrichments}
 
 ---
 
@@ -1413,7 +1413,7 @@ public java.lang.Boolean|IResolvable getEnrichmentsEnabled();
 
 Indicates whether the enrichments are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#enrichments_enabled Workflow#enrichments_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#enrichments_enabled Workflow#enrichments_enabled}
 
 ---
 
@@ -1425,7 +1425,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#id Workflow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#id Workflow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1466,7 +1466,7 @@ public java.lang.String getChannelId();
 
 (Required) Destination's channel id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#channel_id Workflow#channel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#channel_id Workflow#channel_id}
 
 ---
 
@@ -1480,7 +1480,7 @@ public java.util.List<java.lang.String> getNotificationTriggers();
 
 List of triggers to notify about in this destination configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#notification_triggers Workflow#notification_triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#notification_triggers Workflow#notification_triggers}
 
 ---
 
@@ -1494,7 +1494,7 @@ public java.lang.Boolean|IResolvable getUpdateOriginalMessage();
 
 Update original notification message (Slack channels only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#update_original_message Workflow#update_original_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#update_original_message Workflow#update_original_message}
 
 ---
 
@@ -1528,7 +1528,7 @@ public IResolvable|java.util.List<WorkflowEnrichmentsNrql> getNrql();
 
 nrql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#nrql Workflow#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#nrql Workflow#nrql}
 
 ---
 
@@ -1564,7 +1564,7 @@ public IResolvable|java.util.List<WorkflowEnrichmentsNrqlConfiguration> getConfi
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#configuration Workflow#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#configuration Workflow#configuration}
 
 ---
 
@@ -1578,7 +1578,7 @@ public java.lang.String getName();
 
 (Required) Enrichment's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#name Workflow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#name Workflow#name}
 
 ---
 
@@ -1612,7 +1612,7 @@ public java.lang.String getQuery();
 
 enrichment's NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#query Workflow#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#query Workflow#query}
 
 ---
 
@@ -1650,7 +1650,7 @@ public java.lang.String getName();
 
 (Required) Filter's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#name Workflow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#name Workflow#name}
 
 ---
 
@@ -1664,7 +1664,7 @@ public java.lang.String getType();
 
 (Required) The type of the filter. One of: (FILTER, VIEW).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#type Workflow#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#type Workflow#type}
 
 ---
 
@@ -1678,7 +1678,7 @@ public IResolvable|java.util.List<WorkflowIssuesFilterPredicate> getPredicate();
 
 predicate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#predicate Workflow#predicate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#predicate Workflow#predicate}
 
 ---
 
@@ -1716,7 +1716,7 @@ public java.lang.String getAttribute();
 
 (Required) predicate's attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#attribute Workflow#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#attribute Workflow#attribute}
 
 ---
 
@@ -1732,7 +1732,7 @@ The type of the operator.
 
 One of: (CONTAINS, DOES_NOT_CONTAIN, DOES_NOT_EQUAL, DOES_NOT_EXACTLY_MATCH, ENDS_WITH, EQUAL, EXACTLY_MATCHES, GREATER_OR_EQUAL, GREATER_THAN, IS, IS_NOT, LESS_OR_EQUAL, LESS_THAN, STARTS_WITH).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#operator Workflow#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#operator Workflow#operator}
 
 ---
 
@@ -1746,7 +1746,7 @@ public java.util.List<java.lang.String> getValues();
 
 List of predicate values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/workflow#values Workflow#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/workflow#values Workflow#values}
 
 ---
 
