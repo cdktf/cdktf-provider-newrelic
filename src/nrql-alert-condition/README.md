@@ -1,3 +1,3 @@
 # `newrelic_nrql_alert_condition`
 
-Refer to the Terraform Registry for docs: [`newrelic_nrql_alert_condition`](https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/nrql_alert_condition).
+Refer to the Terraform Registry for docs: [`newrelic_nrql_alert_condition`](https://registry.terraform.io/providers/newrelic/newrelic/3.73.0/docs/resources/nrql_alert_condition).
