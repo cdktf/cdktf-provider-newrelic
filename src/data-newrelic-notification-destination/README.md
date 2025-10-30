@@ -1,3 +1,3 @@
 # `data_newrelic_notification_destination`
 
-Refer to the Terraform Registry for docs: [`data_newrelic_notification_destination`](https://registry.terraform.io/providers/newrelic/newrelic/3.73.0/docs/data-sources/notification_destination).
+Refer to the Terraform Registry for docs: [`data_newrelic_notification_destination`](https://registry.terraform.io/providers/newrelic/newrelic/3.74.0/docs/data-sources/notification_destination).
