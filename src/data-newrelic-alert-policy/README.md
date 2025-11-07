@@ -1,3 +1,3 @@
 # `data_newrelic_alert_policy`
 
-Refer to the Terraform Registry for docs: [`data_newrelic_alert_policy`](https://registry.terraform.io/providers/newrelic/newrelic/3.75.1/docs/data-sources/alert_policy).
+Refer to the Terraform Registry for docs: [`data_newrelic_alert_policy`](https://registry.terraform.io/providers/newrelic/newrelic/3.75.2/docs/data-sources/alert_policy).
