@@ -1,3 +1,3 @@
 # `newrelic_workflow`
 
-Refer to the Terraform Registry for docs: [`newrelic_workflow`](https://registry.terraform.io/providers/newrelic/newrelic/3.75.4/docs/resources/workflow).
+Refer to the Terraform Registry for docs: [`newrelic_workflow`](https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow).
