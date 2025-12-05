@@ -4,7 +4,7 @@
 
 ### SyntheticsPrivateLocation <a name="SyntheticsPrivateLocation" id="@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/synthetics_private_location newrelic_synthetics_private_location}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_private_location newrelic_synthetics_private_location}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer"></a>
 
@@ -41,7 +41,7 @@ SyntheticsPrivateLocation.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The private location description. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the private location. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.Number</code> | The ID of the account in New Relic. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer.parameter.verifiedScriptExecution">verifiedScriptExecution</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | The private location requires a password to edit if value is true. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The private location description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The name of the private location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/synthetics_private_location#account_id SyntheticsPrivateLocation#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_private_location#account_id SyntheticsPrivateLocation#account_id}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newre
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,7 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The private location requires a password to edit if value is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/synthetics_private_location#verified_script_execution SyntheticsPrivateLocation#verified_script_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_private_location#verified_script_execution SyntheticsPrivateLocation#verified_script_execution}
 
 ---
 
@@ -601,7 +601,7 @@ The construct id used in the generated config for the SyntheticsPrivateLocation 
 
 The id of the existing SyntheticsPrivateLocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/synthetics_private_location#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_private_location#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -987,7 +987,7 @@ SyntheticsPrivateLocationConfig.builder()
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.description">description</a></code> | <code>java.lang.String</code> | The private location description. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the private location. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.accountId">accountId</a></code> | <code>java.lang.Number</code> | The ID of the account in New Relic. |
-| <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}. |
+| <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}. |
 | <code><a href="#@cdktf/provider-newrelic.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.property.verifiedScriptExecution">verifiedScriptExecution</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | The private location requires a password to edit if value is true. |
 
 ---
@@ -1072,7 +1072,7 @@ public java.lang.String getDescription();
 
 The private location description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
 
 ---
 
@@ -1086,7 +1086,7 @@ public java.lang.String getName();
 
 The name of the private location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
 
 ---
 
@@ -1100,7 +1100,7 @@ public java.lang.Number getAccountId();
 
 The ID of the account in New Relic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/synthetics_private_location#account_id SyntheticsPrivateLocation#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_private_location#account_id SyntheticsPrivateLocation#account_id}
 
 ---
 
@@ -1112,7 +1112,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_private_location#id SyntheticsPrivateLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1129,7 +1129,7 @@ public java.lang.Boolean|IResolvable getVerifiedScriptExecution();
 
 The private location requires a password to edit if value is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/synthetics_private_location#verified_script_execution SyntheticsPrivateLocation#verified_script_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/synthetics_private_location#verified_script_execution SyntheticsPrivateLocation#verified_script_execution}
 
 ---
 

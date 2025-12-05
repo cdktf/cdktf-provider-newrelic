@@ -4,7 +4,7 @@
 
 ### KeyTransaction <a name="KeyTransaction" id="@cdktf/provider-newrelic.keyTransaction.KeyTransaction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/key_transaction newrelic_key_transaction}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction newrelic_key_transaction}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.keyTransaction.KeyTransaction.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the KeyTransaction to import.
 
 The id of the existing KeyTransaction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/key_transaction#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -849,7 +849,7 @@ const keyTransactionConfig: keyTransaction.KeyTransactionConfig = { ... }
 | <code><a href="#@cdktf/provider-newrelic.keyTransaction.KeyTransactionConfig.property.browserApdexTarget">browserApdexTarget</a></code> | <code>number</code> | The acceptable amount of time for rendering a page in a browser before customers get frustrated (browser Apdex target). |
 | <code><a href="#@cdktf/provider-newrelic.keyTransaction.KeyTransactionConfig.property.metricName">metricName</a></code> | <code>string</code> | The name of the metric underlying this key transaction. |
 | <code><a href="#@cdktf/provider-newrelic.keyTransaction.KeyTransactionConfig.property.name">name</a></code> | <code>string</code> | The name of the key transaction. |
-| <code><a href="#@cdktf/provider-newrelic.keyTransaction.KeyTransactionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/key_transaction#id KeyTransaction#id}. |
+| <code><a href="#@cdktf/provider-newrelic.keyTransaction.KeyTransactionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction#id KeyTransaction#id}. |
 
 ---
 
@@ -933,7 +933,7 @@ public readonly apdexIndex: number;
 
 The acceptable amount of the time spent in the backend before customers get frustrated (Apdex target).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/key_transaction#apdex_index KeyTransaction#apdex_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction#apdex_index KeyTransaction#apdex_index}
 
 ---
 
@@ -947,7 +947,7 @@ public readonly applicationGuid: string;
 
 The GUID of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/key_transaction#application_guid KeyTransaction#application_guid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction#application_guid KeyTransaction#application_guid}
 
 ---
 
@@ -961,7 +961,7 @@ public readonly browserApdexTarget: number;
 
 The acceptable amount of time for rendering a page in a browser before customers get frustrated (browser Apdex target).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/key_transaction#browser_apdex_target KeyTransaction#browser_apdex_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction#browser_apdex_target KeyTransaction#browser_apdex_target}
 
 ---
 
@@ -975,7 +975,7 @@ public readonly metricName: string;
 
 The name of the metric underlying this key transaction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/key_transaction#metric_name KeyTransaction#metric_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction#metric_name KeyTransaction#metric_name}
 
 ---
 
@@ -989,7 +989,7 @@ public readonly name: string;
 
 The name of the key transaction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/key_transaction#name KeyTransaction#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction#name KeyTransaction#name}
 
 ---
 
@@ -1001,7 +1001,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/key_transaction#id KeyTransaction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/key_transaction#id KeyTransaction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
