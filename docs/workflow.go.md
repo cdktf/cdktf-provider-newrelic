@@ -4,7 +4,7 @@
 
 ### Workflow <a name="Workflow" id="@cdktf/provider-newrelic.workflow.Workflow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow newrelic_workflow}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow newrelic_workflow}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.workflow.Workflow.Initializer"></a>
 
@@ -548,7 +548,7 @@ The construct id used in the generated config for the Workflow to import.
 
 The id of the existing Workflow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1044,7 +1044,7 @@ import "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/workflow"
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Indicates whether the workflow is enabled. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enrichments">Enrichments</a></code> | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowEnrichments">WorkflowEnrichments</a></code> | enrichments block. |
 | <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.enrichmentsEnabled">EnrichmentsEnabled</a></code> | <code>interface{}</code> | Indicates whether the enrichments are enabled. |
-| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#id Workflow#id}. |
+| <code><a href="#@cdktf/provider-newrelic.workflow.WorkflowConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#id Workflow#id}. |
 
 ---
 
@@ -1128,7 +1128,7 @@ Destination interface{}
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#destination Workflow#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#destination Workflow#destination}
 
 ---
 
@@ -1142,7 +1142,7 @@ IssuesFilter WorkflowIssuesFilter
 
 issues_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#issues_filter Workflow#issues_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#issues_filter Workflow#issues_filter}
 
 ---
 
@@ -1156,7 +1156,7 @@ MutingRulesHandling *string
 
 The type of the muting rule handling. One of: (NOTIFY_ALL_ISSUES, DONT_NOTIFY_FULLY_MUTED_ISSUES, DONT_NOTIFY_FULLY_OR_PARTIALLY_MUTED_ISSUES).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#muting_rules_handling Workflow#muting_rules_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#muting_rules_handling Workflow#muting_rules_handling}
 
 ---
 
@@ -1170,7 +1170,7 @@ Name *string
 
 (Required) The name of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#name Workflow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#name Workflow#name}
 
 ---
 
@@ -1184,7 +1184,7 @@ AccountId *f64
 
 The account id of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#account_id Workflow#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#account_id Workflow#account_id}
 
 ---
 
@@ -1198,7 +1198,7 @@ DestinationsEnabled interface{}
 
 Indicates whether the destinations are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#destinations_enabled Workflow#destinations_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#destinations_enabled Workflow#destinations_enabled}
 
 ---
 
@@ -1212,7 +1212,7 @@ Enabled interface{}
 
 Indicates whether the workflow is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#enabled Workflow#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#enabled Workflow#enabled}
 
 ---
 
@@ -1226,7 +1226,7 @@ Enrichments WorkflowEnrichments
 
 enrichments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#enrichments Workflow#enrichments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#enrichments Workflow#enrichments}
 
 ---
 
@@ -1240,7 +1240,7 @@ EnrichmentsEnabled interface{}
 
 Indicates whether the enrichments are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#enrichments_enabled Workflow#enrichments_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#enrichments_enabled Workflow#enrichments_enabled}
 
 ---
 
@@ -1252,7 +1252,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#id Workflow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#id Workflow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1293,7 +1293,7 @@ ChannelId *string
 
 (Required) Destination's channel id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#channel_id Workflow#channel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#channel_id Workflow#channel_id}
 
 ---
 
@@ -1307,7 +1307,7 @@ NotificationTriggers *[]*string
 
 List of triggers to notify about in this destination configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#notification_triggers Workflow#notification_triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#notification_triggers Workflow#notification_triggers}
 
 ---
 
@@ -1321,7 +1321,7 @@ UpdateOriginalMessage interface{}
 
 Update original notification message (Slack channels only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#update_original_message Workflow#update_original_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#update_original_message Workflow#update_original_message}
 
 ---
 
@@ -1355,7 +1355,7 @@ Nrql interface{}
 
 nrql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#nrql Workflow#nrql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#nrql Workflow#nrql}
 
 ---
 
@@ -1391,7 +1391,7 @@ Configuration interface{}
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#configuration Workflow#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#configuration Workflow#configuration}
 
 ---
 
@@ -1405,7 +1405,7 @@ Name *string
 
 (Required) Enrichment's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#name Workflow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#name Workflow#name}
 
 ---
 
@@ -1439,7 +1439,7 @@ Query *string
 
 enrichment's NRQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#query Workflow#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#query Workflow#query}
 
 ---
 
@@ -1477,7 +1477,7 @@ Name *string
 
 (Required) Filter's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#name Workflow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#name Workflow#name}
 
 ---
 
@@ -1491,7 +1491,7 @@ Type *string
 
 (Required) The type of the filter. One of: (FILTER, VIEW).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#type Workflow#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#type Workflow#type}
 
 ---
 
@@ -1505,7 +1505,7 @@ Predicate interface{}
 
 predicate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#predicate Workflow#predicate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#predicate Workflow#predicate}
 
 ---
 
@@ -1543,7 +1543,7 @@ Attribute *string
 
 (Required) predicate's attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#attribute Workflow#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#attribute Workflow#attribute}
 
 ---
 
@@ -1559,7 +1559,7 @@ The type of the operator.
 
 One of: (CONTAINS, DOES_NOT_CONTAIN, DOES_NOT_EQUAL, DOES_NOT_EXACTLY_MATCH, ENDS_WITH, EQUAL, EXACTLY_MATCHES, GREATER_OR_EQUAL, GREATER_THAN, IS, IS_NOT, LESS_OR_EQUAL, LESS_THAN, STARTS_WITH).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#operator Workflow#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#operator Workflow#operator}
 
 ---
 
@@ -1573,7 +1573,7 @@ Values *[]*string
 
 List of predicate values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#values Workflow#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#values Workflow#values}
 
 ---
 

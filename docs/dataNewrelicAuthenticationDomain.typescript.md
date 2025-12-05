@@ -4,7 +4,7 @@
 
 ### DataNewrelicAuthenticationDomain <a name="DataNewrelicAuthenticationDomain" id="@cdktf/provider-newrelic.dataNewrelicAuthenticationDomain.DataNewrelicAuthenticationDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/data-sources/authentication_domain newrelic_authentication_domain}.
+Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/authentication_domain newrelic_authentication_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-newrelic.dataNewrelicAuthenticationDomain.DataNewrelicAuthenticationDomain.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataNewrelicAuthentication
 
 The id of the existing DataNewrelicAuthenticationDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/data-sources/authentication_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/authentication_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -676,7 +676,7 @@ public readonly name: string;
 
 The name of the authentication domain to be queried.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/data-sources/authentication_domain#name DataNewrelicAuthenticationDomain#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/authentication_domain#name DataNewrelicAuthenticationDomain#name}
 
 ---
 

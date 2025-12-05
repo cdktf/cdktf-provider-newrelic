@@ -1,3 +1,3 @@
 # `data_newrelic_authentication_domain`
 
-Refer to the Terraform Registry for docs: [`data_newrelic_authentication_domain`](https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/data-sources/authentication_domain).
+Refer to the Terraform Registry for docs: [`data_newrelic_authentication_domain`](https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/authentication_domain).
